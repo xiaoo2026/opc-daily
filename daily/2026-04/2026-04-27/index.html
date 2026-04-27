@@ -3,156 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📡 OPC 情报日报 · 2026-04-27</title>
+  <title>📡 日报 · 2026-04-27</title>
   <link rel="stylesheet" href="../../css/style.css">
   <style>
-    .report-header { margin-bottom: 28px; }
-    .report-date { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
-    .report-title { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
-    .report-sub { color: var(--text-secondary); font-size: 14px; }
-
     .block { margin-bottom: 32px; }
-    .block h3 {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-    .block h4 {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .block p, .block li {
-      color: var(--text-secondary);
-      font-size: 14px;
-      line-height: 1.75;
-    }
+    .block h3 { color: #58a6ff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 12px; }
+    .block h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .block p, .block li { color: #8b949e; font-size: 14px; line-height: 1.75; }
     .block ul { padding-left: 20px; margin-bottom: 12px; }
-    .block li { margin-bottom: 6px; }
-    .highlight {
-      background: var(--tag-bg);
-      border-left: 3px solid var(--accent);
-      padding: 12px 16px;
-      border-radius: 0 4px 4px 0;
-      margin: 12px 0;
-    }
-    .highlight p { color: var(--text-primary); }
-
-    .judgment {
-      background: #d2992216;
-      border: 1px solid #d2992240;
-      border-radius: 6px;
-      padding: 16px;
-      margin-top: 16px;
-    }
-    .judgment h4 {
-      color: var(--warning);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-    }
-    .judgment p { color: var(--text-primary); font-size: 14px; }
+    .highlight { background: #388bfd26; border-left: 3px solid #58a6ff; padding: 12px 16px; border-radius: 0 4px 4px 0; margin: 12px 0; }
+    .judgment { background: #d2992216; border: 1px solid #d2992240; border-radius: 6px; padding: 16px; margin-top: 16px; }
+    .judgment h4 { color: #d29922; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; }
+    .judgment p { color: #e6edf3; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>📡 OPC 情报日报</h1>
-      <p class="subtitle">每日采集 · 带着判断的资讯</p>
+  <header style="background:#161b22;border-bottom:1px solid #30363d;padding:32px 0;margin-bottom:40px;">
+    <div style="max-width:860px;margin:0 auto;padding:0 20px;">
+      <h1 style="font-size:28px;font-weight:700;">📡 OPC 情报日报</h1>
+      <p style="color:#8b949e;font-size:14px;">每日采集 · 带着判断的资讯</p>
     </div>
   </header>
-
-  <main class="container" style="max-width: 780px;">
-    <div class="report-header">
-      <div class="report-date">2026-04-27 · 第 1 期</div>
-      <div class="report-title">独立开发者天花板：年入 103 万美元的方法论</div>
-      <div class="report-sub">采集源：独立Hack · GitHub Trending · AI行业动态</div>
+  <main style="max-width:860px;margin:0 auto;padding:0 20px 60px;">
+    <!-- 报告头部 -->
+    <div style="margin-bottom:28px;">
+      <div style="font-size:13px;color:#6e7681;margin-bottom:8px;">2026-04-27 · 第2期</div>
+      <h2 style="font-size:24px;font-weight:700;margin-bottom:4px;">DeepSeek打价格战，GPT-5.5同周入场</h2>
+      <div style="color:#8b949e;font-size:14px;">GitHub Trending · 新浪AI · 独立开发者案例</div>
     </div>
 
-    <!-- 案例分析 -->
+    <!-- GitHub 热榜 -->
     <div class="block">
-      <h3>💡 案例分析</h3>
-      <h4>Marc Lou · 法国独立开发者 · 年收入 103 万美元</h4>
-      <p>3年内启动25个项目，12个盈利，1个巨大成功。核心产品：</p>
+      <h3>🔥 GitHub Trending · Python/JS</h3>
+
+      <h4>自我进化Agent成为主旋律</h4>
+      <p>本周GitHub热榜的核心叙事是"会自己成长的AI Agent"。不再是概念，所有主流框架都在做落地。</p>
       <ul>
-        <li><strong>ShipFast</strong>（$20K/月）— NextJS样板代码工具，集成登录/支付/邮件</li>
-        <li><strong>CodeFast</strong>（$22K/月）— 教人快速学编程的在线课程</li>
-        <li><strong>TrustMRR</strong>（$23K/月）— 收入验证平台</li>
+        <li><strong>NousResearch/hermes-agent</strong> · Python · 47,577 ⭐｜今日 +6,115<br>
+        自我进化Agent框架，可随使用不断成长，配置性强。核心卖点：越用越懂你。</li>
+        <li><strong>Self-evolving agent</strong> · Python · 今日 +446<br>
+        技能树自增长，Token消耗降低6倍。小团队做大事的参考路径。</li>
+        <li><strong>DeepTutor</strong> · 个性化AI学习助手 · 15,342 ⭐｜今日 +1,310<br>
+        原生Agent架构，真正个性化教育。这是AI+教育的最新方案。</li>
+        <li><strong>Free APIs 集合</strong> · 423,885 ⭐｜今日 +950<br>
+        聚合免费API，开发者刚需。参考这类"聚合器"思路做垂直整合。</li>
       </ul>
 
       <div class="highlight">
-        <p><strong>学什么？</strong><br>不是抄他的产品，是学他的<strong>决策框架</strong>：</p>
-        <ul>
-          <li>不追求完美，能跑就上线</li>
-          <li>从第一天就考虑商业模式</li>
-          <li>一个产品不成功就快速换方向，25个里12个盈利 = 48%成功率</li>
-          <li>产品间交叉推广：Stripe文档里推 ByeDispute，部署文档里推 IndiePage</li>
-        </ul>
+        <strong>可复制核心：</strong>不是做工具本身，是做"降低使用门槛"的中间层。
+        把复杂能力封装成简单界面，这是独立开发者能切入的地方。
       </div>
-
-      <div class="judgment">
-        <h4>⚠️ 我们的判断</h4>
-        <p>Marc Lou 自己说"学我者死"——他真正想说的是：不要抄产品，要学他的<strong>决策原则</strong>。<br><br>
-        国内复制他的最大风险：<strong>Stripe / Lemon Squeezy 收款</strong>需要海外银行账户，但我们可以用 <strong>Porkbun 域名 + Lemon Squeezy</strong> 的组合绕过一部分问题。更重要的是，我们的约束是5050/月现金流，112.5万债务——<strong>没有本钱去赌"做出来再想变现"的产品</strong>。</p>
-      </div>
-    </div>
-
-    <!-- GitHub 热门 -->
-    <div class="block">
-      <h3>🐙 GitHub 热门</h3>
-      <ul>
-        <li><a href="https://github.com/openai-agents/python" target="_blank"><strong>openai-agents-python</strong></a> — OpenAI多Agent工作流SDK，24K stars ↑</li>
-        <li><a href="https://github.com/google/adk-python" target="_blank"><strong>google/adk-python</strong></a> — Google AI Agent开发工具包，19K stars ↑</li>
-        <li><a href="https://github.com/EvoAgentX/EvoAgent" target="_blank"><strong>EvoAgentX</strong></a> — 自进化AI Agent生态系统，2.7K stars 🆕</li>
-        <li><a href="https://github.com/NovaSky-AI/SkyRL" target="_blank"><strong>NovaSky/SkyRL</strong></a> — 模块化RL训练库，1.7K stars 🆕</li>
-      </ul>
     </div>
 
     <!-- AI 行业动态 -->
     <div class="block">
       <h3>🤖 AI 行业动态</h3>
-      <ul>
-        <li><strong>MCP 协议</strong>：安装量突破9700万次，Google/OpenAI/Anthropic/Microsoft全面采纳为Agent通信标准</li>
-        <li><strong>Gemini 3 Flash</strong>：性价比超 Claude Opus 4.5，输入成本降低90%</li>
-        <li><strong>具身智能</strong>：写入国家"十五五"规划，海康机器人年营收64亿，赛道加速</li>
-      </ul>
-    </div>
 
-    <!-- 我们的机会 -->
-    <div class="block">
-      <h3>🎯 我们的机会</h3>
-      <p>结合 Marc Lou 的框架 + 我们的约束（5050/月现金流、112.5万债务）:</p>
-      <div class="judgment">
-        <h4>✅ 我们的结论</h4>
-        <p><strong>不做"做出来再想变现"的产品。</strong><br><br>
-        优先方向：<br>
-        1. <strong>订阅式 OPC 日报</strong>：我们每天已经在采集信息，只是产品化<br>
-        2. <strong>工具导航站</strong>：用我们的选品眼光做过滤器，不是做收集器<br>
-        两个都可以<strong>立刻验证</strong>，不需要等技术积累<br><br>
-        域名：020755.xyz（大湾区）、968168.xyz、983000.xyz<br>
-        DNS 已指向 Cloudflare，Pages 部署中</p>
+      <h4>DeepSeek发动价格战，API成本打至1/10</h4>
+      <p>4月23-24日，GPT-5.5与DeepSeek-V4同周发布。大模型军备竞赛进入新阶段：</p>
+      <ul>
+        <li><strong>GPT-5.5</strong>：强化Agent与复杂工作流，自主任务执行能力大幅提升</li>
+        <li><strong>DeepSeek-V4</strong>：百万Token超长上下文，API输入缓存命中降价至原价1/10，Pro模型限时2.5折</li>
+        <li><strong>OpenAI "世纪诉讼"</strong>开庭：马斯克起诉要求恢复非营利性质，全球关注</li>
+        <li><strong>OpenAI计划自研手机处理器</strong>：联手高通/联发科/立讯精密，2028年量产</li>
+        <li><strong>富士通×卡内基梅隆</strong>：联合研发物理AI机器人操作系统，2026年内公开</li>
+        <li><strong>地平线发布「星空」芯片</strong>：国产智驾芯片登顶，舱驾融合架构</li>
+        <li><strong>智象HiDream-O1-Image</strong>：千亿参数全模态图像模型，8B开源版本对标FLUX.2</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>关键信号：</strong>DeepSeek把API价格打到1/10——AI调用的边际成本正在趋近于零。
+        这对独立开发者是重大利好：以前不敢想的调用方式，现在可以随便用。
       </div>
     </div>
 
+    <!-- 变现案例 -->
+    <div class="block">
+      <h3>💰 变现案例 · 独立开发者</h3>
+
+      <h4>Cursor的00后创始人：SpaceX 600亿美元收购期权</h4>
+      <p>AI编程工具Cursor可能以600亿美元被SpaceX收购。4位00后创始人，人均套现约200亿元。他们的路径：</p>
+      <ul>
+        <li>2023年推出Cursor（AI代码生成），去年单轮融资23亿美元</li>
+        <li>不是工具厉害，是把"AI写代码"这件事的用户体验做到极致</li>
+      </ul>
+
+      <h4>Cal AI：17岁高中生，4个月收入超百万美元</h4>
+      <p>热量扫描App，通过TikTok实现病毒传播，极轻团队。核心不是AI多先进，是：</p>
+      <ul>
+        <li>真实需求（体重管理）+ 极低使用门槛（拍照即得）</li>
+        <li>短视频平台自然流量，不依赖大KOL</li>
+        <li>极小团队（3人）完成</li>
+      </ul>
+
+      <h4>sideidea真实数据参考（月收入）</h4>
+      <ul>
+        <li>Stencil Stop（产品模板）：¥29W</li>
+        <li>Rent Rround（业主中介比较）：¥27W</li>
+        <li>JustSketchMe（素描工具）：¥3.7W</li>
+        <li>Standard Resume（简历制作）：¥2W</li>
+        <li>ScreenshotAPI（网页截屏API）：¥3,000</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>可复制逻辑：</strong>找一个"用户自己知道有问题但懒得解决"的小事，
+        用AI把解决成本降到极低，然后收月费。Cal AI的逻辑可以复制到无数垂直场景。
+      </div>
+    </div>
+
+    <!-- 我们的判断 -->
+    <div class="judgment">
+      <h4>⚠️ 我们的判断 · 结合廷哥约束</h4>
+      <p>
+        <strong>现实约束：</strong>5050/月现金流 + 112.5万债务 + 2026年9月开始还本金。
+        这意味着窗口期还有约4个月，而在这之前每一个动作都必须带收入回来。
+      </p>
+      <p style="margin-top:8px;">
+        <strong>今天的核心判断：</strong>
+      </p>
+      <p style="margin-top:8px;">
+        1. <strong>API价格战是绿灯。</strong>DeepSeek把成本打到1/10，AI调用的边际成本接近零。
+        以前"舍不得用AI"的理由现在不成立了。可以大胆把AI能力嵌入产品。
+      </p>
+      <p style="margin-top:8px;">
+        2. <strong>不做"做出来再想变现"的产品。</strong>3个域名（020755.xyz / 968168.xyz / 983000.xyz）
+        已上线静态站，这是资产。下一步不是再做一个新东西，是在已有流量入口上嫁接变现模块。
+        先在私域社群验证需求，再扩张。
+      </p>
+      <p style="margin-top:8px;">
+        3. <strong>Marc Lou的21产品逻辑</strong>（昨天提到的）：不是每个产品都赚钱，
+        是快速验证、快速淘汰。核心是决策框架，不是勤奋程度。
+        廷哥的约束下，更适合走这条路——小步验证，赚钱的加大力度，不赚钱的立即停。
+      </p>
+      <p style="margin-top:8px;">
+        4. <strong>TikTok/社交流量</strong>是独立开发者能用的最强杠杆。
+        Cal AI证明：不需要大预算，只需要一个让人"哇"的短视频。
+        廷哥的社群已经有基础，可以在里面测素材。
+      </p>
+      <p style="margin-top:8px;">
+        5. <strong>时间窗口：2026年9月前</strong>——每月净增必须覆盖至少一部分还款本金。
+        倒推：如果月还款2万，需要月收入比现在多2万才有净结余。
+        当前5050现金流几乎无结余，这个差距必须用产品收入填平。
+      </p>
+    </div>
+
     <!-- 数据来源 -->
-    <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);">
-      <p style="font-size:12px;color:var(--text-muted)">
-        数据来源：GitHub Trending · Indie Hackers · 36氪 · 量子位 · Reddit r/SideProject<br>
-        生成时间：2026-04-27 12:00 · 由 Una (Hermes Agent) 自动采集
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid #30363d;">
+      <p style="font-size:12px;color:#6e7681;">
+        数据来源：GitHub Trending · 掘金/博客园独立开发者案例 · 新浪AI热点小时报 · HackerNews · sideidea<br>
+        生成时间：2026-04-27 14:00 · 由 Una (Hermes Agent) 自动采集
       </p>
     </div>
   </main>
-
-  <footer>
-    <div class="container">
-      <p>由 <strong>Una</strong> 生成 · 每 6 小时自动更新</p>
-    </div>
+  <footer style="border-top:1px solid #30363d;padding:24px 0;text-align:center;color:#6e7681;font-size:13px;">
+    <p>由 <strong>Una</strong> 生成 · 每 6 小时自动更新</p>
   </footer>
 </body>
 </html>
