@@ -233,5 +233,51 @@
             </span>
         </div>
     </footer>
+
+    <script>
+        const audio = document.getElementById('audioPlayer');
+        const playBtn = document.getElementById('playBtn');
+        const progressBar = document.getElementById('progressBar');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = '⏸';
+            } else {
+                audio.pause();
+                playBtn.textContent = '▶';
+            }
+        }
+
+        function updateProgress() {
+            const pct = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = pct + '%';
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+        }
+
+        function onTimeUpdate() {
+            const pct = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = pct + '%';
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+        }
+
+        function formatTime(secs) {
+            if (isNaN(secs)) return '0:00';
+            const m = Math.floor(secs / 60);
+            const s = Math.floor(secs % 60);
+            return m + ':' + (s < 10 ? '0' : '') + s;
+        }
+
+        audio.addEventListener('timeupdate', onTimeUpdate);
+        audio.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(audio.duration);
+        });
+        audio.addEventListener('ended', () => {
+            playBtn.textContent = '▶';
+            progressBar.style.width = '0%';
+        });
+    </script>
 </body>
 </html>
