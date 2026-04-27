@@ -1,6 +1,6 @@
 /* ===========================
-   OPC 情报日报 — 样式表
-   浅色主题 · 阅读友好 · Mintlify风格
+   Una陪你看AI — 样式表
+   浅色主题 · 阅读友好 · Mint绿点缀
    =========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
@@ -91,6 +91,10 @@ header h1 {
   font-weight: 700;
   letter-spacing: -0.3px;
   color: var(--text-primary);
+}
+
+header h1 .robot {
+  color: var(--accent);
 }
 
 .subtitle {
