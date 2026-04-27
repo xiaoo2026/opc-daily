@@ -96,9 +96,24 @@
                             <span class="item">📡 <span>Una Agent</span></span>
                             <span class="item">🏷️ <span>白天时事 · GitHub · 融资</span></span>
                         </div>
+                        <div class="voice-player" style="margin-top:var(--space-md);">
+                            <button class="play-btn" id="playBtn" onclick="toggleAudio()">
+                                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                            </button>
+                            <div class="voice-info">
+                                <div class="label">🎙️ 语音播报</div>
+                                <div class="sub">温柔学姐音色 · 适合通勤听</div>
+                            </div>
+                            <div class="voice-progress-wrap">
+                                <span class="voice-time" id="voiceCurrent">0:00</span>
+                                <input type="range" class="voice-progress" id="voiceProgress" value="0" min="0" max="100">
+                                <span class="voice-time" id="voiceDuration">–:––</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <audio id="audioPlayer" src="voice.ogg" preload="auto"></audio>
 
             <div class="report-body">
 
