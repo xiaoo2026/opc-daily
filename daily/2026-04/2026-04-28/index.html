@@ -11,114 +11,94 @@
             padding: var(--space-2xl) 0 var(--space-3xl);
         }
 
-        /* Report Hero */
-        .report-hero {
-            border-bottom: 1px solid var(--border);
-            padding-bottom: var(--space-2xl);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .report-hero .eyebrow {
+        /* Back link */
+        .back-link {
             display: inline-flex;
             align-items: center;
             gap: var(--space-sm);
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: var(--space-md);
-        }
-
-        .report-hero .date {
-            font-size: 13px;
+            font-size: 14px;
+            font-weight: 500;
             color: var(--text-muted);
-            margin-bottom: var(--space-sm);
+            text-decoration: none;
+            margin-bottom: var(--space-xl);
+            transition: color 0.15s;
         }
+        .back-link:hover { color: var(--accent); }
 
-        .report-hero h1 {
-            font-family: var(--font-display);
-            font-size: clamp(28px, 3.5vw, 44px);
-            font-weight: 700;
-            letter-spacing: -0.4px;
-            line-height: 1.2;
-            color: var(--text-primary);
-            margin-bottom: var(--space-lg);
-        }
-
-        .report-meta {
-            display: flex;
-            align-items: center;
-            gap: var(--space-lg);
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        .report-meta .item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
-        }
-
-        /* ===== Report Hero Card with Avatar ===== */
-        .report-hero-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            margin-bottom: var(--space-2xl);
-            display: flex;
-            gap: var(--space-xl);
-            align-items: flex-start;
-            box-shadow: var(--shadow-card);
+        /* ===== HERO: Full-width image + overlay ===== */
+        .report-hero {
             position: relative;
+            border-radius: var(--radius-xl);
             overflow: hidden;
+            margin-bottom: var(--space-2xl);
+            box-shadow: var(--shadow-card);
+            min-height: 360px;
+            display: flex;
+            align-items: flex-end;
         }
 
-        /* 卡片顶部渐变线条 */
-        .report-hero-card::before {
+        .report-hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Gradient overlay */
+        .report-hero::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent) 0%, rgba(232,98,42,0.4) 50%, rgba(107,79,214,0.4) 100%);
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(15,15,20,0.05) 0%,
+                rgba(15,15,20,0.15) 30%,
+                rgba(15,15,20,0.75) 75%,
+                rgba(15,15,20,0.92) 100%
+            );
         }
 
+        .report-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: var(--space-2xl);
+            width: 100%;
+            display: flex;
+            gap: var(--space-xl);
+            align-items: flex-end;
+        }
+
+        /* Avatar bubble */
         .report-hero-avatar {
             flex-shrink: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-sm);
+            text-align: center;
         }
 
         .report-hero-avatar img {
-            width: 88px;
-            height: 88px;
+            width: 96px;
+            height: 96px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--border);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: box-shadow 0.2s, border-color 0.2s;
-        }
-
-        .report-hero-avatar img:hover {
-            border-color: var(--accent);
-            box-shadow: 0 4px 24px rgba(232,98,42,0.25);
+            border: 3px solid rgba(255,255,255,0.35);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+            display: block;
+            margin-bottom: var(--space-xs);
         }
 
         .report-hero-avatar .avatar-name {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
-            color: var(--text-primary);
+            color: rgba(255,255,255,0.9);
         }
 
         .report-hero-avatar .avatar-sub {
             font-size: 11px;
-            color: var(--text-muted);
+            color: rgba(255,255,255,0.55);
         }
 
-        .report-hero-content {
+        .report-hero-info {
             flex: 1;
             min-width: 0;
         }
@@ -146,19 +126,20 @@
 
         .report-hero-date {
             font-size: 13px;
-            color: var(--text-muted);
+            color: rgba(255,255,255,0.55);
             margin-bottom: var(--space-xs);
             font-family: var(--font-mono);
         }
 
         .report-hero-title {
             font-family: var(--font-display);
-            font-size: clamp(22px, 3vw, 34px);
+            font-size: clamp(22px, 3.5vw, 38px);
             font-weight: 700;
             letter-spacing: -0.4px;
             line-height: 1.2;
-            color: var(--text-primary);
+            color: #fff;
             margin-bottom: var(--space-md);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
 
         .report-meta {
@@ -166,8 +147,7 @@
             align-items: center;
             gap: var(--space-lg);
             font-size: 13px;
-            color: var(--text-muted);
-            margin-bottom: var(--space-lg);
+            color: rgba(255,255,255,0.55);
             flex-wrap: wrap;
         }
 
@@ -177,7 +157,6 @@
             gap: 6px;
         }
 
-        /* 每个meta项带小圆点 */
         .report-meta .item::before {
             content: '·';
             color: var(--accent);
@@ -185,19 +164,19 @@
             line-height: 1;
         }
 
-        .report-meta .item:first-child::before {
-            display: none;
-        }
+        .report-meta .item:first-child::before { display: none; }
 
         /* Voice Player */
         .voice-player {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.18);
             border-radius: var(--radius-lg);
             padding: var(--space-md) var(--space-lg);
             display: flex;
             align-items: center;
             gap: var(--space-md);
+            margin-top: var(--space-md);
         }
 
         .voice-player .play-btn {
@@ -212,7 +191,7 @@
             justify-content: center;
             flex-shrink: 0;
             transition: background 0.15s, transform 0.1s;
-            box-shadow: 0 2px 8px rgba(232, 98, 42, 0.3);
+            box-shadow: 0 2px 12px rgba(232,98,42,0.45);
         }
 
         .voice-player .play-btn:hover {
@@ -233,15 +212,17 @@
         }
 
         .voice-info .label {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
-            color: var(--text-primary);
+            color: rgba(255,255,255,0.9);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
             margin-bottom: 2px;
         }
 
         .voice-info .sub {
             font-size: 12px;
-            color: var(--text-muted);
+            color: rgba(255,255,255,0.5);
         }
 
         .voice-progress-wrap {
@@ -254,14 +235,14 @@
         .voice-time {
             font-family: var(--font-mono);
             font-size: 12px;
-            color: var(--text-muted);
+            color: rgba(255,255,255,0.5);
             white-space: nowrap;
         }
 
         .voice-progress {
             flex: 1;
             height: 4px;
-            background: var(--border-medium);
+            background: rgba(255,255,255,0.2);
             border-radius: 2px;
             appearance: none;
             cursor: pointer;
@@ -276,25 +257,7 @@
             cursor: pointer;
         }
 
-        .voice-info {
-            flex: 1;
-        }
-
-        .voice-info .label {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            margin-bottom: 2px;
-        }
-
-        .voice-info .sub {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        /* Report Body — constrained reading width */
+        /* ===== Report Body ===== */
         .report-body {
             max-width: 720px;
             margin: 0 auto;
@@ -305,7 +268,7 @@
             margin-bottom: var(--space-2xl);
         }
 
-        /* Section header with accent left border */
+        /* Section header */
         .report-section-header {
             display: flex;
             align-items: center;
@@ -316,7 +279,6 @@
             position: relative;
         }
 
-        /* Section accent line at bottom */
         .report-section-header::after {
             content: '';
             position: absolute;
@@ -328,15 +290,47 @@
             border-radius: 1px;
         }
 
-        .report-section-header .icon {
-            font-size: 20px;
-        }
+        .report-section-header .icon { font-size: 20px; }
 
         .report-section-header h2 {
             font-family: var(--font-display);
             font-size: 20px;
             font-weight: 600;
             letter-spacing: -0.2px;
+        }
+
+        /* ===== Section Image Banner ===== */
+        .section-img-banner {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: var(--space-lg);
+            box-shadow: var(--shadow-card);
+            position: relative;
+        }
+
+        .section-img-banner img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .section-img-banner:hover img { transform: scale(1.02); }
+
+        .section-img-banner .section-img-label {
+            position: absolute;
+            bottom: var(--space-md);
+            left: var(--space-md);
+            background: rgba(15,15,20,0.75);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            letter-spacing: 0.05em;
         }
 
         /* Report Item Card */
@@ -347,11 +341,25 @@
             padding: var(--space-xl);
             margin-bottom: var(--space-md);
             transition: border-color 0.15s, box-shadow 0.15s;
+            position: relative;
+            overflow: hidden;
         }
 
-        .report-item:last-child {
-            margin-bottom: 0;
+        /* Colored top stripe per category */
+        .report-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
         }
+
+        .report-item.github::before { background: #24292e; }
+        .report-item.ai::before { background: linear-gradient(90deg, #6c5ce7, #a29bfe); }
+        .report-item.tech::before { background: linear-gradient(90deg, #00b894, #00cec9); }
+        .report-item.insight::before { background: linear-gradient(90deg, var(--accent), #e8735a); }
+
+        .report-item:last-child { margin-bottom: 0; }
 
         .report-item:hover {
             border-color: var(--border-medium);
@@ -419,9 +427,7 @@
             transition: color 0.15s;
         }
 
-        .report-item .item-link:hover {
-            color: var(--accent-dark);
-        }
+        .report-item .item-link:hover { color: var(--accent-dark); }
 
         /* Insight Box */
         .insight-box {
@@ -466,31 +472,12 @@
             margin-top: 1px;
         }
 
-        /* Back link */
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-muted);
-            text-decoration: none;
-            margin-bottom: var(--space-xl);
-            transition: color 0.15s;
-        }
-
-        .back-link:hover {
-            color: var(--accent);
-        }
-
         /* Responsive */
         @media (max-width: 600px) {
-            .report-item .item-header {
-                flex-direction: column;
-            }
-            .report-item .item-source {
-                align-self: flex-start;
-            }
+            .report-hero-content { flex-direction: column; align-items: flex-start; gap: var(--space-lg); }
+            .report-item .item-header { flex-direction: column; }
+            .report-item .item-source { align-self: flex-start; }
+            .voice-progress-wrap { display: none; }
         }
     </style>
 </head>
@@ -515,60 +502,63 @@
         <div class="container">
             <a href="../../../index.html" class="back-link">← 返回首页</a>
 
-            <!-- Hero Card: Avatar + Voice -->
-            <div class="report-hero-card">
-                <!-- Avatar -->
-                <div class="report-hero-avatar">
-                    <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una" loading="eager">
-                    <span class="avatar-name">Una</span>
-                    <span class="avatar-sub">陪你听</span>
-                </div>
-
-                <!-- Content -->
+            <!-- HERO IMAGE -->
+            <div class="report-hero">
+                <img src="assets/images/una-reading.jpg" alt="Una陪你读AI" class="report-hero-img">
                 <div class="report-hero-content">
-                    <div class="report-hero-eyebrow">
-                        <span class="dot"></span>
-                        早间版 · 陪你通勤
+                    <!-- Avatar -->
+                    <div class="report-hero-avatar">
+                        <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una" loading="eager">
+                        <div class="avatar-name">Una</div>
+                        <div class="avatar-sub">陪你通勤</div>
                     </div>
-                    <div class="report-hero-date">2026年04月28日 · 周二</div>
-                    <h1 class="report-hero-title">GitHub 热门新项目 · AI 行业动态</h1>
-
-                    <div class="report-meta">
-                        <span class="item">📡 <span>Una Agent</span></span>
-                        <span class="item">🕐 <span>07:00 更新</span></span>
-                        <span class="item">🏷️ <span>GitHub · AI · 行业</span></span>
-                    </div>
-
-                    <!-- Voice Player -->
-                    <div class="voice-player">
-                        <button class="play-btn" id="playBtn" onclick="toggleAudio()">
-                            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-                        </button>
-                        <div class="voice-info">
-                            <div class="label">🎙️ 语音播报</div>
-                            <div class="sub">温柔学姐音色 · 适合通勤听</div>
+                    <!-- Info -->
+                    <div class="report-hero-info">
+                        <div class="report-hero-eyebrow">
+                            <span class="dot"></span>
+                            早间版 · 2026年04月28日
                         </div>
-                        <div class="voice-progress-wrap">
-                            <span class="voice-time" id="voiceCurrent">0:00</span>
-                            <input type="range" class="voice-progress" id="voiceProgress" value="0" min="0" max="100">
-                            <span class="voice-time" id="voiceDuration">–:––</span>
+                        <div class="report-hero-date">周二 · 07:00 更新</div>
+                        <h1 class="report-hero-title">GitHub 热门新项目 · AI 行业动态</h1>
+                        <div class="report-meta">
+                            <span class="item">📡 <span>Una Agent</span></span>
+                            <span class="item">🏷️ <span>GitHub · AI · 行业</span></span>
+                        </div>
+                        <!-- Voice Player -->
+                        <div class="voice-player">
+                            <button class="play-btn" id="playBtn" onclick="toggleAudio()">
+                                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                            </button>
+                            <div class="voice-info">
+                                <div class="label">🎙️ 语音播报</div>
+                                <div class="sub">温柔学姐音色 · 适合通勤听</div>
+                            </div>
+                            <div class="voice-progress-wrap">
+                                <span class="voice-time" id="voiceCurrent">0:00</span>
+                                <input type="range" class="voice-progress" id="voiceProgress" value="0" min="0" max="100">
+                                <span class="voice-time" id="voiceDuration">–:––</span>
+                            </div>
                         </div>
                     </div>
-                    <audio id="audioPlayer" src="voice.ogg" preload="auto"></audio>
                 </div>
             </div>
+            <audio id="audioPlayer" src="voice.ogg" preload="auto"></audio>
 
             <!-- Report Body -->
             <div class="report-body">
 
                 <!-- GitHub 热门 -->
                 <div class="report-section">
+                    <div class="section-img-banner">
+                        <img src="assets/images/tech-abstract.jpg" alt="GitHub 热门项目">
+                        <span class="section-img-label">🔥 GitHub Trending</span>
+                    </div>
                     <div class="report-section-header">
                         <span class="icon">🔥</span>
                         <h2>GitHub 热门新项目</h2>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item github">
                         <div class="item-header">
                             <div class="item-title">mattpocock/skills — AI Agent 技能库爆红</div>
                             <span class="item-source">GitHub</span>
@@ -582,7 +572,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item github">
                         <div class="item-header">
                             <div class="item-title">free-claude-code — 零成本白嫖 Claude Code</div>
                             <span class="item-source">GitHub</span>
@@ -596,7 +586,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item github">
                         <div class="item-header">
                             <div class="item-title">LibreSpark/LibreTV — 一分钟搭建影视站</div>
                             <span class="item-source">GitHub</span>
@@ -610,7 +600,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item github">
                         <div class="item-header">
                             <div class="item-title">PostHog — 全栈开发者平台</div>
                             <span class="item-source">GitHub</span>
@@ -627,12 +617,16 @@
 
                 <!-- AI 动态 -->
                 <div class="report-section">
+                    <div class="section-img-banner">
+                        <img src="assets/images/chip-ai.jpg" alt="AI 行业动态">
+                        <span class="section-img-label">🤖 AI 行业</span>
+                    </div>
                     <div class="report-section-header">
                         <span class="icon">🤖</span>
                         <h2>AI 行业动态</h2>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item ai">
                         <div class="item-header">
                             <div class="item-title">DeepSeek-V4 发布：百万上下文 + Agent 能力飞跃</div>
                             <span class="item-source">AI</span>
@@ -646,7 +640,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item ai">
                         <div class="item-header">
                             <div class="item-title">证监会：强化财务舞弊监管 AI 大模型应用</div>
                             <span class="item-source">监管</span>
@@ -660,7 +654,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item ai">
                         <div class="item-header">
                             <div class="item-title">小米 AI 战略：人车家全生态落地</div>
                             <span class="item-source">企业</span>
@@ -674,7 +668,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item ai">
                         <div class="item-header">
                             <div class="item-title">X Money 即将上线：6% 利率杀入金融</div>
                             <span class="item-source">金融</span>
@@ -688,7 +682,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item ai">
                         <div class="item-header">
                             <div class="item-title">图灵量子完成 10 亿融资：国家队入场</div>
                             <span class="item-source">量子</span>
@@ -705,12 +699,16 @@
 
                 <!-- 科技时事 -->
                 <div class="report-section">
+                    <div class="section-img-banner">
+                        <img src="../../assets/images/chip-ai.jpg" alt="科技时事">
+                        <span class="section-img-label">🌐 科技时事</span>
+                    </div>
                     <div class="report-section-header">
                         <span class="icon">🌐</span>
                         <h2>科技时事</h2>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item tech">
                         <div class="item-header">
                             <div class="item-title">中芯国际暴涨 7%：DeepSeek 带动半导体行情</div>
                             <span class="item-source">半导体</span>
@@ -724,7 +722,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item tech">
                         <div class="item-header">
                             <div class="item-title">机器人半马夺冠：液冷散热成关键</div>
                             <span class="item-source">具身智能</span>
@@ -738,7 +736,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item tech">
                         <div class="item-header">
                             <div class="item-title">清华系排队 IPO：资本版图扩张</div>
                             <span class="item-source">资本</span>
@@ -752,7 +750,7 @@
                         </a>
                     </div>
 
-                    <div class="report-item">
+                    <div class="report-item tech">
                         <div class="item-header">
                             <div class="item-title">华为昇腾生态：国产算力"生态共生"</div>
                             <span class="item-source">算力</span>
@@ -861,7 +859,6 @@
                 var current = document.getElementById('voiceCurrent');
                 if (current) current.textContent = '0:00';
             });
-            // Autoplay on page load
             audio.play().catch(function() {});
         }
 
