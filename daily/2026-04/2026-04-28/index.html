@@ -71,6 +71,17 @@
             gap: var(--space-xl);
             align-items: flex-start;
             box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 卡片顶部渐变线条 */
+        .report-hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent) 0%, rgba(232,98,42,0.4) 50%, rgba(107,79,214,0.4) 100%);
         }
 
         .report-hero-avatar {
@@ -82,16 +93,22 @@
         }
 
         .report-hero-avatar img {
-            width: 80px;
-            height: 80px;
+            width: 88px;
+            height: 88px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--border);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .report-hero-avatar img:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 24px rgba(232,98,42,0.25);
         }
 
         .report-hero-avatar .avatar-name {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
             color: var(--text-primary);
         }
@@ -131,11 +148,12 @@
             font-size: 13px;
             color: var(--text-muted);
             margin-bottom: var(--space-xs);
+            font-family: var(--font-mono);
         }
 
         .report-hero-title {
             font-family: var(--font-display);
-            font-size: clamp(22px, 3vw, 32px);
+            font-size: clamp(22px, 3vw, 34px);
             font-weight: 700;
             letter-spacing: -0.4px;
             line-height: 1.2;
@@ -156,7 +174,19 @@
         .report-meta .item {
             display: flex;
             align-items: center;
-            gap: var(--space-xs);
+            gap: 6px;
+        }
+
+        /* 每个meta项带小圆点 */
+        .report-meta .item::before {
+            content: '·';
+            color: var(--accent);
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .report-meta .item:first-child::before {
+            display: none;
         }
 
         /* Voice Player */
@@ -264,9 +294,10 @@
             color: var(--text-muted);
         }
 
-        /* Report Body */
+        /* Report Body — constrained reading width */
         .report-body {
-            max-width: 740px;
+            max-width: 720px;
+            margin: 0 auto;
         }
 
         /* Section */
@@ -274,13 +305,27 @@
             margin-bottom: var(--space-2xl);
         }
 
+        /* Section header with accent left border */
         .report-section-header {
             display: flex;
             align-items: center;
             gap: var(--space-md);
             margin-bottom: var(--space-lg);
             padding-bottom: var(--space-md);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 2px solid var(--border);
+            position: relative;
+        }
+
+        /* Section accent line at bottom */
+        .report-section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background: var(--accent);
+            border-radius: 1px;
         }
 
         .report-section-header .icon {
@@ -748,9 +793,12 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <span class="footer-brand">Una陪你看AI</span>
+            <span class="footer-brand">
+                <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una">
+                Una陪你看AI
+            </span>
             <span class="footer-meta">
-                由 Una Agent 整理发布
+                由 <a href="../../index.html">Una Agent</a> 整理发布
             </span>
         </div>
     </footer>
