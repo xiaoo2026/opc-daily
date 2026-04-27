@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 情报日报</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📡 OPC 情报日报</h1>
+      <p class="subtitle">每日采集 · 带着判断的资讯</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 最新一期日报 -->
+    <section class="latest-report">
+      <div class="section-label">📰 今日简报</div>
+      <h2 id="report-title">加载中...</h2>
+      <div id="report-meta" class="meta"></div>
+      <div id="report-summary" class="summary"></div>
+      <a id="report-link" href="#" class="btn">阅读全文 →</a>
+    </section>
+
+    <!-- 往期归档 -->
+    <section class="archive">
+      <div class="section-label">📁 历史归档</div>
+      <div id="archive-list" class="archive-list">
+        <p class="loading">加载中...</p>
+      </div>
+    </section>
+
+    <!-- 工具导航 -->
+    <section class="tools-nav">
+      <div class="section-label">🛠️ 工具导航站</div>
+      <div class="tools-preview">
+        <p>独立开发者工具库 · 出海必备</p>
+        <a href="tools/" class="btn btn-outline">进入导航站 →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>由 <strong>Una</strong> 生成 · 每 6 小时自动更新</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

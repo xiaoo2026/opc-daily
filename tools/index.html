@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工具导航站 · OPC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+    .hero h1 { font-size: 24px; margin-bottom: 8px; }
+    .hero p { color: var(--text-secondary); }
+
+    .category { margin-bottom: 36px; }
+    .category h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .tool-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: border-color 0.2s, transform 0.1s;
+      display: block;
+    }
+    .tool-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .tool-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+    .tool-desc { color: var(--text-secondary); font-size: 13px; line-height: 1.5; }
+    .tool-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+    .tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 20px;
+    }
+    .tag.free { background: #3fb95026; color: var(--success); }
+    .tag.paid { background: #d2992226; color: var(--warning); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🛠️ OPC 工具导航站</h1>
+      <p class="subtitle">独立开发者 / 出海必备工具库</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <h1>独立开发者的武器库</h1>
+      <p>精选工具，覆盖：灵感获取 → 原型设计 → 开发部署 → 变现运营全链路</p>
+      <p style="margin-top:8px;font-size:13px;color:var(--text-muted)">持续更新 · 带着判断的选择</p>
+    </div>
+
+    <div class="category">
+      <h2>💡 灵感获取</h2>
+      <div class="tool-grid">
+        <a href="https://producthunt.com" target="_blank" class="tool-card">
+          <div class="tool-name">Product Hunt</div>
+          <div class="tool-desc">全球最新产品发布平台，发现趋势</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+        <a href="https://www.indiehackers.com" target="_blank" class="tool-card">
+          <div class="tool-name">Indie Hackers</div>
+          <div class="tool-desc">独立开发者社区，真实收入分享</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+        <a href="https://news.ycombinator.com" target="_blank" class="tool-card">
+          <div class="tool-name">Hacker News</div>
+          <div class="tool-desc">YC旗下的技术创业资讯聚合</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🎨 原型 & UI</h2>
+      <div class="tool-grid">
+        <a href="https://v0.dev" target="_blank" class="tool-card">
+          <div class="tool-name">v0 (Vercel)</div>
+          <div class="tool-desc">AI生成UI，文本转React组件</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+        <a href="https://ui.shadcn.com" target="_blank" class="tool-card">
+          <div class="tool-name">shadcn/ui</div>
+          <div class="tool-desc">可复制粘贴的React组件库</div>
+          <div class="tool-tags"><span class="tag free">开源</span></div>
+        </a>
+        <a href="https://tailwindcss.com" target="_blank" class="tool-card">
+          <div class="tool-name">Tailwind CSS</div>
+          <div class="tool-desc">实用优先CSS框架，生态庞大</div>
+          <div class="tool-tags"><span class="tag free">开源</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🖥️ 开发工具</h2>
+      <div class="tool-grid">
+        <a href="https://cursor.sh" target="_blank" class="tool-card">
+          <div class="tool-name">Cursor</div>
+          <div class="tool-desc">AI代码编辑器，基于VS Code</div>
+          <div class="tool-tags"><span class="tag free">免费额度</span></div>
+        </a>
+        <a href="https://bolt.new" target="_blank" class="tool-card">
+          <div class="tool-name">Bolt.new</div>
+          <div class="tool-desc">在线AI开发环境，浏览器里写代码</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+        <a href="https://code.visualstudio.com" target="_blank" class="tool-card">
+          <div class="tool-name">VS Code</div>
+          <div class="tool-desc">最流行的代码编辑器，生态无敌</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🚀 部署 & 托管</h2>
+      <div class="tool-grid">
+        <a href="https://vercel.com" target="_blank" class="tool-card">
+          <div class="tool-name">Vercel</div>
+          <div class="tool-desc">前端部署标杆，Next.js官方</div>
+          <div class="tool-tags"><span class="tag free">免费套餐</span></div>
+        </a>
+        <a href="https://pages.cloudflare.com" target="_blank" class="tool-card">
+          <div class="tool-name">Cloudflare Pages</div>
+          <div class="tool-desc">无限带宽，全球CDN，绑定自定义域名</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+        <a href="https://supabase.com" target="_blank" class="tool-card">
+          <div class="tool-name">Supabase</div>
+          <div class="tool-desc">PostgreSQL + Auth + Storage一体化</div>
+          <div class="tool-tags"><span class="tag free">免费额度</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>💰 支付 & 变现</h2>
+      <div class="tool-grid">
+        <a href="https://stripe.com" target="_blank" class="tool-card">
+          <div class="tool-name">Stripe</div>
+          <div class="tool-desc">全球支付首选，支持订阅和一次性</div>
+          <div class="tool-tags"><span class="tag paid">有手续费</span></div>
+        </a>
+        <a href="https://www.lemonsqueezy.com" target="_blank" class="tool-card">
+          <div class="tool-name">Lemon Squeezy</div>
+          <div class="tool-desc">数字产品支付+销售一站式，友好</div>
+          <div class="tool-tags"><span class="tag paid">有手续费</span></div>
+        </a>
+        <a href="https://www.producthunt.com/upcoming" target="_blank" class="tool-card">
+          <div class="tool-name">PH Upcoming</div>
+          <div class="tool-desc">产品发布前的预热阵地，积累早期用户</div>
+          <div class="tool-tags"><span class="tag free">免费</span></div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>由 <strong>Una</strong> 整理 · 不做收集器，只做过滤器</p>
+    </div>
+  </footer>
+</body>
+</html>

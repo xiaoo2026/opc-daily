@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📡 OPC 情报日报 · 2026-04-27</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .report-header { margin-bottom: 28px; }
+    .report-date { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+    .report-title { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+    .report-sub { color: var(--text-secondary); font-size: 14px; }
+
+    .block { margin-bottom: 32px; }
+    .block h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .block h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .block p, .block li {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+    .block ul { padding-left: 20px; margin-bottom: 12px; }
+    .block li { margin-bottom: 6px; }
+    .highlight {
+      background: var(--tag-bg);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 0 4px 4px 0;
+      margin: 12px 0;
+    }
+    .highlight p { color: var(--text-primary); }
+
+    .judgment {
+      background: #d2992216;
+      border: 1px solid #d2992240;
+      border-radius: 6px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+    .judgment h4 {
+      color: var(--warning);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .judgment p { color: var(--text-primary); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📡 OPC 情报日报</h1>
+      <p class="subtitle">每日采集 · 带着判断的资讯</p>
+    </div>
+  </header>
+
+  <main class="container" style="max-width: 780px;">
+    <div class="report-header">
+      <div class="report-date">2026-04-27 · 第 1 期</div>
+      <div class="report-title">独立开发者天花板：年入 103 万美元的方法论</div>
+      <div class="report-sub">采集源：独立Hack · GitHub Trending · AI行业动态</div>
+    </div>
+
+    <!-- 案例分析 -->
+    <div class="block">
+      <h3>💡 案例分析</h3>
+      <h4>Marc Lou · 法国独立开发者 · 年收入 103 万美元</h4>
+      <p>3年内启动25个项目，12个盈利，1个巨大成功。核心产品：</p>
+      <ul>
+        <li><strong>ShipFast</strong>（$20K/月）— NextJS样板代码工具，集成登录/支付/邮件</li>
+        <li><strong>CodeFast</strong>（$22K/月）— 教人快速学编程的在线课程</li>
+        <li><strong>TrustMRR</strong>（$23K/月）— 收入验证平台</li>
+      </ul>
+
+      <div class="highlight">
+        <p><strong>学什么？</strong><br>不是抄他的产品，是学他的<strong>决策框架</strong>：</p>
+        <ul>
+          <li>不追求完美，能跑就上线</li>
+          <li>从第一天就考虑商业模式</li>
+          <li>一个产品不成功就快速换方向，25个里12个盈利 = 48%成功率</li>
+          <li>产品间交叉推广：Stripe文档里推 ByeDispute，部署文档里推 IndiePage</li>
+        </ul>
+      </div>
+
+      <div class="judgment">
+        <h4>⚠️ 我们的判断</h4>
+        <p>Marc Lou 自己说"学我者死"——他真正想说的是：不要抄产品，要学他的<strong>决策原则</strong>。<br><br>
+        国内复制他的最大风险：<strong>Stripe / Lemon Squeezy 收款</strong>需要海外银行账户，但我们可以用 <strong>Porkbun 域名 + Lemon Squeezy</strong> 的组合绕过一部分问题。更重要的是，我们的约束是5050/月现金流，112.5万债务——<strong>没有本钱去赌"做出来再想变现"的产品</strong>。</p>
+      </div>
+    </div>
+
+    <!-- GitHub 热门 -->
+    <div class="block">
+      <h3>🐙 GitHub 热门</h3>
+      <ul>
+        <li><a href="https://github.com/openai-agents/python" target="_blank"><strong>openai-agents-python</strong></a> — OpenAI多Agent工作流SDK，24K stars ↑</li>
+        <li><a href="https://github.com/google/adk-python" target="_blank"><strong>google/adk-python</strong></a> — Google AI Agent开发工具包，19K stars ↑</li>
+        <li><a href="https://github.com/EvoAgentX/EvoAgent" target="_blank"><strong>EvoAgentX</strong></a> — 自进化AI Agent生态系统，2.7K stars 🆕</li>
+        <li><a href="https://github.com/NovaSky-AI/SkyRL" target="_blank"><strong>NovaSky/SkyRL</strong></a> — 模块化RL训练库，1.7K stars 🆕</li>
+      </ul>
+    </div>
+
+    <!-- AI 行业动态 -->
+    <div class="block">
+      <h3>🤖 AI 行业动态</h3>
+      <ul>
+        <li><strong>MCP 协议</strong>：安装量突破9700万次，Google/OpenAI/Anthropic/Microsoft全面采纳为Agent通信标准</li>
+        <li><strong>Gemini 3 Flash</strong>：性价比超 Claude Opus 4.5，输入成本降低90%</li>
+        <li><strong>具身智能</strong>：写入国家"十五五"规划，海康机器人年营收64亿，赛道加速</li>
+      </ul>
+    </div>
+
+    <!-- 我们的机会 -->
+    <div class="block">
+      <h3>🎯 我们的机会</h3>
+      <p>结合 Marc Lou 的框架 + 我们的约束（5050/月现金流、112.5万债务）:</p>
+      <div class="judgment">
+        <h4>✅ 我们的结论</h4>
+        <p><strong>不做"做出来再想变现"的产品。</strong><br><br>
+        优先方向：<br>
+        1. <strong>订阅式 OPC 日报</strong>：我们每天已经在采集信息，只是产品化<br>
+        2. <strong>工具导航站</strong>：用我们的选品眼光做过滤器，不是做收集器<br>
+        两个都可以<strong>立刻验证</strong>，不需要等技术积累<br><br>
+        域名：020755.xyz（大湾区）、968168.xyz、983000.xyz<br>
+        DNS 已指向 Cloudflare，Pages 部署中</p>
+      </div>
+    </div>
+
+    <!-- 数据来源 -->
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);">
+      <p style="font-size:12px;color:var(--text-muted)">
+        数据来源：GitHub Trending · Indie Hackers · 36氪 · 量子位 · Reddit r/SideProject<br>
+        生成时间：2026-04-27 12:00 · 由 Una (Hermes Agent) 自动采集
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>由 <strong>Una</strong> 生成 · 每 6 小时自动更新</p>
+    </div>
+  </footer>
+</body>
+</html>
