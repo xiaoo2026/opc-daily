@@ -1,871 +1,205 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una陪你看AI · 2026年04月28日 早间版</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <style>
-        /* ===== Report Page ===== */
-        .report-page {
-            padding: var(--space-2xl) 0 var(--space-3xl);
-        }
-
-        /* Back link */
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-muted);
-            text-decoration: none;
-            margin-bottom: var(--space-xl);
-            transition: color 0.15s;
-        }
-        .back-link:hover { color: var(--accent); }
-
-        /* ===== HERO: Full-width image + overlay ===== */
-        .report-hero {
-            position: relative;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            margin-bottom: var(--space-2xl);
-            box-shadow: var(--shadow-card);
-            min-height: 360px;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .report-hero-img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Gradient overlay */
-        .report-hero::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to bottom,
-                rgba(15,15,20,0.05) 0%,
-                rgba(15,15,20,0.15) 30%,
-                rgba(15,15,20,0.75) 75%,
-                rgba(15,15,20,0.92) 100%
-            );
-        }
-
-        .report-hero-content {
-            position: relative;
-            z-index: 2;
-            padding: var(--space-2xl);
-            width: 100%;
-            display: flex;
-            gap: var(--space-xl);
-            align-items: flex-end;
-        }
-
-        /* Avatar bubble */
-        .report-hero-avatar {
-            flex-shrink: 0;
-            text-align: center;
-        }
-
-        .report-hero-avatar img {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid rgba(255,255,255,0.35);
-            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-            display: block;
-            margin-bottom: var(--space-xs);
-        }
-
-        .report-hero-avatar .avatar-name {
-            font-size: 13px;
-            font-weight: 600;
-            color: rgba(255,255,255,0.9);
-        }
-
-        .report-hero-avatar .avatar-sub {
-            font-size: 11px;
-            color: rgba(255,255,255,0.55);
-        }
-
-        .report-hero-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .report-hero-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: var(--space-sm);
-        }
-
-        .report-hero-eyebrow .dot {
-            width: 6px;
-            height: 6px;
-            background: var(--accent);
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse 2s infinite;
-        }
-
-        .report-hero-date {
-            font-size: 13px;
-            color: rgba(255,255,255,0.55);
-            margin-bottom: var(--space-xs);
-            font-family: var(--font-mono);
-        }
-
-        .report-hero-title {
-            font-family: var(--font-display);
-            font-size: clamp(22px, 3.5vw, 38px);
-            font-weight: 700;
-            letter-spacing: -0.4px;
-            line-height: 1.2;
-            color: #fff;
-            margin-bottom: var(--space-md);
-            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-
-        .report-meta {
-            display: flex;
-            align-items: center;
-            gap: var(--space-lg);
-            font-size: 13px;
-            color: rgba(255,255,255,0.55);
-            flex-wrap: wrap;
-        }
-
-        .report-meta .item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .report-meta .item::before {
-            content: '·';
-            color: var(--accent);
-            font-size: 16px;
-            line-height: 1;
-        }
-
-        .report-meta .item:first-child::before { display: none; }
-
-        /* Voice Player */
-        .voice-player {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.18);
-            border-radius: var(--radius-lg);
-            padding: var(--space-md) var(--space-lg);
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-            margin-top: var(--space-md);
-        }
-
-        .voice-player .play-btn {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--accent);
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: background 0.15s, transform 0.1s;
-            box-shadow: 0 2px 12px rgba(232,98,42,0.45);
-        }
-
-        .voice-player .play-btn:hover {
-            background: var(--accent-hover);
-            transform: scale(1.06);
-        }
-
-        .voice-player .play-btn svg {
-            fill: #fff;
-            width: 16px;
-            height: 16px;
-            margin-left: 2px;
-        }
-
-        .voice-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .voice-info .label {
-            font-size: 12px;
-            font-weight: 600;
-            color: rgba(255,255,255,0.9);
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            margin-bottom: 2px;
-        }
-
-        .voice-info .sub {
-            font-size: 12px;
-            color: rgba(255,255,255,0.5);
-        }
-
-        .voice-progress-wrap {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        .voice-time {
-            font-family: var(--font-mono);
-            font-size: 12px;
-            color: rgba(255,255,255,0.5);
-            white-space: nowrap;
-        }
-
-        .voice-progress {
-            flex: 1;
-            height: 4px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 2px;
-            appearance: none;
-            cursor: pointer;
-        }
-
-        .voice-progress::-webkit-slider-thumb {
-            appearance: none;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--accent);
-            cursor: pointer;
-        }
-
-        /* ===== Report Body ===== */
-        .report-body {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        /* Section */
-        .report-section {
-            margin-bottom: var(--space-2xl);
-        }
-
-        /* Section header */
-        .report-section-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-            margin-bottom: var(--space-lg);
-            padding-bottom: var(--space-md);
-            border-bottom: 2px solid var(--border);
-            position: relative;
-        }
-
-        .report-section-header::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 48px;
-            height: 2px;
-            background: var(--accent);
-            border-radius: 1px;
-        }
-
-        .report-section-header .icon { font-size: 20px; }
-
-        .report-section-header h2 {
-            font-family: var(--font-display);
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: -0.2px;
-        }
-
-        /* ===== Section Image Banner ===== */
-        .section-img-banner {
-            width: 100%;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            margin-bottom: var(--space-lg);
-            box-shadow: var(--shadow-card);
-            position: relative;
-        }
-
-        .section-img-banner img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s;
-        }
-
-        .section-img-banner:hover img { transform: scale(1.02); }
-
-        .section-img-banner .section-img-label {
-            position: absolute;
-            bottom: var(--space-md);
-            left: var(--space-md);
-            background: rgba(15,15,20,0.75);
-            backdrop-filter: blur(8px);
-            color: #fff;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 4px 12px;
-            border-radius: var(--radius-pill);
-            letter-spacing: 0.05em;
-        }
-
-        /* Report Item Card */
-        .report-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: var(--space-xl);
-            margin-bottom: var(--space-md);
-            transition: border-color 0.15s, box-shadow 0.15s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Colored top stripe per category */
-        .report-item::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-        }
-
-        .report-item.github::before { background: #24292e; }
-        .report-item.ai::before { background: linear-gradient(90deg, #6c5ce7, #a29bfe); }
-        .report-item.tech::before { background: linear-gradient(90deg, #00b894, #00cec9); }
-        .report-item.insight::before { background: linear-gradient(90deg, var(--accent), #e8735a); }
-
-        .report-item:last-child { margin-bottom: 0; }
-
-        .report-item:hover {
-            border-color: var(--border-medium);
-            box-shadow: var(--shadow-card);
-        }
-
-        .report-item .item-header {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: var(--space-md);
-            margin-bottom: var(--space-md);
-        }
-
-        .report-item .item-title {
-            font-family: var(--font-display);
-            font-size: 17px;
-            font-weight: 600;
-            color: var(--text-primary);
-            line-height: 1.4;
-            flex: 1;
-        }
-
-        .report-item .item-source {
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--text-muted);
-            background: var(--bg-secondary);
-            padding: 3px 10px;
-            border-radius: var(--radius-pill);
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .report-item .item-desc {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.75;
-            margin-bottom: var(--space-md);
-        }
-
-        .report-item .item-insight {
-            background: var(--bg-secondary);
-            border-left: 3px solid var(--accent);
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-            padding: var(--space-sm) var(--space-md);
-            margin-bottom: var(--space-md);
-        }
-
-        .report-item .item-insight p {
-            font-size: 13px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            font-style: italic;
-        }
-
-        .report-item .item-link {
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--accent);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-xs);
-            transition: color 0.15s;
-        }
-
-        .report-item .item-link:hover { color: var(--accent-dark); }
-
-        /* Insight Box */
-        .insight-box {
-            background: var(--accent-bg);
-            border: 1px solid rgba(232, 98, 42, 0.15);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            margin-top: var(--space-2xl);
-        }
-
-        .insight-box h3 {
-            font-family: var(--font-display);
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--accent-dark);
-            margin-bottom: var(--space-md);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        .insight-box ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-md);
-        }
-
-        .insight-box li {
-            display: flex;
-            gap: var(--space-md);
-            align-items: flex-start;
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .insight-box li .bullet {
-            color: var(--accent);
-            font-size: 16px;
-            flex-shrink: 0;
-            margin-top: 1px;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .report-hero-content { flex-direction: column; align-items: flex-start; gap: var(--space-lg); }
-            .report-item .item-header { flex-direction: column; }
-            .report-item .item-source { align-self: flex-start; }
-            .voice-progress-wrap { display: none; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《Una陪你看AI》早报 2026-04-28</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.7; font-size: 15px; }
+    .container { max-width: 680px; margin: 0 auto; padding: 24px 16px 80px; }
+    header { margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #2a2a2a; }
+    .date { color: #888; font-size: 13px; letter-spacing: 0.5px; margin-bottom: 8px; }
+    h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .subtitle { color: #666; font-size: 13px; }
+    .summary { background: #1a1a2e; border-left: 3px solid #4a9eff; padding: 14px 18px; margin: 20px 0; border-radius: 0 8px 8px 0; color: #b0b0b0; font-size: 14px; }
+    .section { margin-bottom: 32px; }
+    .section-title { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #222; }
+    .section-title .icon { font-size: 16px; }
+    .card { background: #161616; border: 1px solid #222; border-radius: 10px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
+    .card:hover { border-color: #333; }
+    .card-title { font-size: 14px; font-weight: 600; color: #e8e8e8; margin-bottom: 6px; line-height: 1.5; }
+    .card-title a { color: inherit; text-decoration: none; }
+    .card-title a:hover { color: #4a9eff; }
+    .card-meta { font-size: 12px; color: #555; margin-bottom: 8px; }
+    .card-summary { font-size: 13px; color: #888; line-height: 1.6; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; background: #222; color: #666; margin-right: 6px; }
+    .tag-hot { background: #2d1a1a; color: #e05c5c; }
+    .tool-card { display: flex; gap: 14px; align-items: flex-start; }
+    .tool-icon { width: 40px; height: 40px; background: #1e1e2e; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .tool-info { flex: 1; }
+    .tool-name { font-size: 14px; font-weight: 600; color: #e8e8e8; margin-bottom: 4px; }
+    .tool-desc { font-size: 13px; color: #888; }
+    .tool-how { font-size: 12px; color: #555; margin-top: 4px; }
+    .footer { text-align: center; color: #444; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #1a1a1a; }
+    .github-card { display: flex; gap: 12px; align-items: center; }
+    .github-stars { background: #1a2a1a; color: #5cb85c; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; flex-shrink: 0; }
+  </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <a href="../../../index.html" class="header-brand">
-                <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una" class="header-logo" loading="lazy">
-                <span class="header-title">Una陪你看AI</span>
-            </a>
-            <nav class="header-nav">
-                <a href="../../../index.html">首页</a>
-                <a href="../../../tools/">工具导航</a>
-            </nav>
-        </div>
+  <div class="container">
+    <header>
+      <div class="date">2026-04-28 · 早报</div>
+      <h1>《Una陪你看AI》</h1>
+      <div class="subtitle">AI 爱好者日报 · 每天早上为你摘要</div>
+      <div class="summary">
+        今日概览：微软与 OpenAI 关系重构，独家合作走向松绑；Meta 收购中国 AI  Agent  Manus 被发改委叫停；DeepSeek V4 发布并大幅下调 API 价格；蚂蚁金服上线移动端可交互世界模型。
+      </div>
     </header>
 
-    <!-- Report Page -->
-    <div class="report-page">
-        <div class="container">
-            <a href="../../../index.html" class="back-link">← 返回首页</a>
+    <div class="section">
+      <div class="section-title"><span class="icon">📰</span> 时事</div>
 
-            <!-- HERO IMAGE -->
-            <div class="report-hero">
-                <img src="assets/images/una-reading.jpg" alt="Una陪你读AI" class="report-hero-img">
-                <div class="report-hero-content">
-                    <!-- Avatar -->
-                    <div class="report-hero-avatar">
-                        <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una" loading="eager">
-                        <div class="avatar-name">Una</div>
-                        <div class="avatar-sub">陪你通勤</div>
-                    </div>
-                    <!-- Info -->
-                    <div class="report-hero-info">
-                        <div class="report-hero-eyebrow">
-                            <span class="dot"></span>
-                            早间版 · 2026年04月28日
-                        </div>
-                        <div class="report-hero-date">周二 · 07:00 更新</div>
-                        <h1 class="report-hero-title">GitHub 热门新项目 · AI 行业动态</h1>
-                        <div class="report-meta">
-                            <span class="item">📡 <span>Una Agent</span></span>
-                            <span class="item">🏷️ <span>GitHub · AI · 行业</span></span>
-                        </div>
-                        <!-- Voice Player -->
-                        <div class="voice-player">
-                            <button class="play-btn" id="playBtn" onclick="toggleAudio()">
-                                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-                            </button>
-                            <div class="voice-info">
-                                <div class="label">🎙️ 语音播报</div>
-                                <div class="sub">温柔学姐音色 · 适合通勤听</div>
-                            </div>
-                            <div class="voice-progress-wrap">
-                                <span class="voice-time" id="voiceCurrent">0:00</span>
-                                <input type="range" class="voice-progress" id="voiceProgress" value="0" min="0" max="100">
-                                <span class="voice-time" id="voiceDuration">–:––</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <audio id="audioPlayer" src="voice.ogg" preload="auto"></audio>
-
-            <!-- Report Body -->
-            <div class="report-body">
-
-                <!-- GitHub 热门 -->
-                <div class="report-section">
-                    <div class="section-img-banner">
-                        <img src="assets/images/tech-abstract.jpg" alt="GitHub 热门项目">
-                        <span class="section-img-label">🔥 GitHub Trending</span>
-                    </div>
-                    <div class="report-section-header">
-                        <span class="icon">🔥</span>
-                        <h2>GitHub 热门新项目</h2>
-                    </div>
-
-                    <div class="report-item github">
-                        <div class="item-header">
-                            <div class="item-title">mattpocock/skills — AI Agent 技能库爆红</div>
-                            <span class="item-source">GitHub</span>
-                        </div>
-                        <p class="item-desc">将 AI Agent 技能目录化，共识机制筛选最佳 prompt，24956 stars。工程界正在将"最佳 prompt"资产化，skill 复用成为新趋势。</p>
-                        <div class="item-insight">
-                            <p>适合普通人：把日常重复的 AI 对封装成可复用技能，长期积累自己的 AI 工具箱。</p>
-                        </div>
-                        <a href="https://github.com/mattpocock/skills" target="_blank" class="item-link">
-                            github.com/mattpocock/skills →
-                        </a>
-                    </div>
-
-                    <div class="report-item github">
-                        <div class="item-header">
-                            <div class="item-title">free-claude-code — 零成本白嫖 Claude Code</div>
-                            <span class="item-source">GitHub</span>
-                        </div>
-                        <p class="item-desc">通过 Discord/VSCode 免费使用 Claude Code，14334 stars。CLI 工具的"免费替代"模式持续火热。</p>
-                        <div class="item-insight">
-                            <p>稳定性和合规性存疑，尝试可以，生产环境慎用。</p>
-                        </div>
-                        <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" class="item-link">
-                            github.com/Alishahryar1/free-claude-code →
-                        </a>
-                    </div>
-
-                    <div class="report-item github">
-                        <div class="item-header">
-                            <div class="item-title">LibreSpark/LibreTV — 一分钟搭建影视站</div>
-                            <span class="item-source">GitHub</span>
-                        </div>
-                        <p class="item-desc">支持 Vercel/Docker 快速部署，13403 stars。低代码视频站技术门槛持续降低。</p>
-                        <div class="item-insight">
-                            <p>内容聚合平台将更泛滥，差异化从内容转向体验。</p>
-                        </div>
-                        <a href="https://github.com/LibreSpark/LibreTV" target="_blank" class="item-link">
-                            github.com/LibreSpark/LibreTV →
-                        </a>
-                    </div>
-
-                    <div class="report-item github">
-                        <div class="item-header">
-                            <div class="item-title">PostHog — 全栈开发者平台</div>
-                            <span class="item-source">GitHub</span>
-                        </div>
-                        <p class="item-desc">All-in-one 产品分析平台持续流行，开发者产品竞争加剧，差异化正在从功能转向体验。</p>
-                        <div class="item-insight">
-                            <p>开发者产品的竞争已经进入体验深水区，纯粹功能堆砌已不足以突围。</p>
-                        </div>
-                        <a href="https://github.com/PostHog/posthog" target="_blank" class="item-link">
-                            github.com/PostHog/posthog →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- AI 动态 -->
-                <div class="report-section">
-                    <div class="section-img-banner">
-                        <img src="assets/images/chip-ai.jpg" alt="AI 行业动态">
-                        <span class="section-img-label">🤖 AI 行业</span>
-                    </div>
-                    <div class="report-section-header">
-                        <span class="icon">🤖</span>
-                        <h2>AI 行业动态</h2>
-                    </div>
-
-                    <div class="report-item ai">
-                        <div class="item-header">
-                            <div class="item-title">DeepSeek-V4 发布：百万上下文 + Agent 能力飞跃</div>
-                            <span class="item-source">AI</span>
-                        </div>
-                        <p class="item-desc">开源 1M 上下文窗口，Agentic Coding 评测达开源最佳。开源模型正在"超长上下文"赛道上甩开闭源。</p>
-                        <div class="item-insight">
-                            <p>DeepSeek 正在重塑 AI 性价比标准，长上下文竞赛将成 2026 年主战场。</p>
-                        </div>
-                        <a href="https://finance.sina.com.cn/stock/t/2026-04-27/doc-inhvxatn9252478.shtml" target="_blank" class="item-link">
-                            深度求索发布 V4 系列模型 →
-                        </a>
-                    </div>
-
-                    <div class="report-item ai">
-                        <div class="item-header">
-                            <div class="item-title">证监会：强化财务舞弊监管 AI 大模型应用</div>
-                            <span class="item-source">监管</span>
-                        </div>
-                        <p class="item-desc">2026 年专项行动：建设非现场监测中心 + 第三方配合造假监测中心。监管 AI 化提速。</p>
-                        <div class="item-insight">
-                            <p>上市公司数据造假将更难藏身，AI 监管工具赛道值得关注。</p>
-                        </div>
-                        <a href="https://finance.sina.com.cn/roll/2026-04-27/doc-inhvxhze9050910.shtml" target="_blank" class="item-link">
-                            证监会部署专项行动 →
-                        </a>
-                    </div>
-
-                    <div class="report-item ai">
-                        <div class="item-header">
-                            <div class="item-title">小米 AI 战略：人车家全生态落地</div>
-                            <span class="item-source">企业</span>
-                        </div>
-                        <p class="item-desc">雷军称"做得多说得少"，玄戒 O1 芯片出货超百万颗。硬件 + AI 的垂直整合模式跑通。</p>
-                        <div class="item-insight">
-                            <p>生态协同正在成为 AI 落地主战场，纯软 AI 创业窗口收窄。</p>
-                        </div>
-                        <a href="https://www.163.com/dy/article/KRGV7BSN051191D6.html" target="_blank" class="item-link">
-                            雷军阐述小米 AI 战略 →
-                        </a>
-                    </div>
-
-                    <div class="report-item ai">
-                        <div class="item-header">
-                            <div class="item-title">X Money 即将上线：6% 利率杀入金融</div>
-                            <span class="item-source">金融</span>
-                        </div>
-                        <p class="item-desc">Musk 超级 App 野心落地，6% 利率 + 3% 返现。xAI 融资 $20B 估值 $120B。</p>
-                        <div class="item-insight">
-                            <p>AI + 社交正在重新洗牌，超级 App 浪潮下每个大厂都在做金融入口。</p>
-                        </div>
-                        <a href="https://www.newsbytesapp.com/news/science/musk-is-bringing-banking-to-x-in-super-app-bid/story" target="_blank" class="item-link">
-                            X Money Banking →
-                        </a>
-                    </div>
-
-                    <div class="report-item ai">
-                        <div class="item-header">
-                            <div class="item-title">图灵量子完成 10 亿融资：国家队入场</div>
-                            <span class="item-source">量子</span>
-                        </div>
-                        <p class="item-desc">光量子计算独角兽，国家创业投资引导基金领投。量子计算从实验室走向工程化。</p>
-                        <div class="item-insight">
-                            <p>国家级资本正在布局未来算力，量子计算进入国家竞争层面。</p>
-                        </div>
-                        <a href="https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvwwmk9157810.shtml" target="_blank" class="item-link">
-                            图灵量子融资 →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 科技时事 -->
-                <div class="report-section">
-                    <div class="section-img-banner">
-                        <img src="../../assets/images/chip-ai.jpg" alt="科技时事">
-                        <span class="section-img-label">🌐 科技时事</span>
-                    </div>
-                    <div class="report-section-header">
-                        <span class="icon">🌐</span>
-                        <h2>科技时事</h2>
-                    </div>
-
-                    <div class="report-item tech">
-                        <div class="item-header">
-                            <div class="item-title">中芯国际暴涨 7%：DeepSeek 带动半导体行情</div>
-                            <span class="item-source">半导体</span>
-                        </div>
-                        <p class="item-desc">半导体设备国产化率突破 35% 临界点（2024 年约 15%）。国产替代从"可用"到"规模化"。</p>
-                        <div class="item-insight">
-                            <p>半导体板块景气周期未结束，设备国产化是下一个爆发点。</p>
-                        </div>
-                        <a href="https://finance.sina.com.cn/roll/2026-04-27/doc-inhvxath9164990.shtml" target="_blank" class="item-link">
-                            半导体板块爆发 →
-                        </a>
-                    </div>
-
-                    <div class="report-item tech">
-                        <div class="item-header">
-                            <div class="item-title">机器人半马夺冠：液冷散热成关键</div>
-                            <span class="item-source">具身智能</span>
-                        </div>
-                        <p class="item-desc">天工机器人三项全超人类男子半马世界纪录。液冷方案突破长时续航瓶颈。</p>
-                        <div class="item-insight">
-                            <p>具身智能工程化提速，2026 可能是商业化元年。</p>
-                        </div>
-                        <a href="https://36kr.com/p/3779311984284678" target="_blank" class="item-link">
-                            机器人马拉松夺冠 →
-                        </a>
-                    </div>
-
-                    <div class="report-item tech">
-                        <div class="item-header">
-                            <div class="item-title">清华系排队 IPO：资本版图扩张</div>
-                            <span class="item-source">资本</span>
-                        </div>
-                        <p class="item-desc">2025 年近 20 个清华系 IPO，2026 年势头更猛：智谱、华化、黑芝麻等多单推进中。</p>
-                        <div class="item-insight">
-                            <p>高校科研转化进入收获期，技术出身创始人正在重塑资本市场格局。</p>
-                        </div>
-                        <a href="https://36kr.com/p/3783038559296769" target="_blank" class="item-link">
-                            顶级 985 校友排队 IPO →
-                        </a>
-                    </div>
-
-                    <div class="report-item tech">
-                        <div class="item-header">
-                            <div class="item-title">华为昇腾生态：国产算力"生态共生"</div>
-                            <span class="item-source">算力</span>
-                        </div>
-                        <p class="item-desc">昇腾与 90+ 开源社区对接、70+ 大模型 0day 适配、4000 卡算力开放。</p>
-                        <div class="item-insight">
-                            <p>国产算力正在从"替代"转向"共生"，开发者生态成为下一战场。</p>
-                        </div>
-                        <a href="https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmp2509038.shtml" target="_blank" class="item-link">
-                            昇腾计算生态进展 →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Insight -->
-                <div class="insight-box">
-                    <h3>💡 今日洞察</h3>
-                    <ul>
-                        <li>
-                            <span class="bullet">→</span>
-                            <span>AI 正在从"工具"变成"组织"：吴晓波提出"1人+N个AI"的超级个体模式，效率革命进入深水区，个人杠杆效应将被放大</span>
-                        </li>
-                        <li>
-                            <span class="bullet">→</span>
-                            <span>开源与国产双线并进：DeepSeek-V4 + 昇腾生态 = 开源 + 国产算力协同，中国 AI 闭环正在成形，成本竞争力将是核心壁垒</span>
-                        </li>
-                        <li>
-                            <span class="bullet">→</span>
-                            <span>具身智能工程化提速：机器人马拉松夺冠 + 液冷方案突破，意味着硬件落地比预期更快，2026 可能是具身智能商业化元年</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+      <div class="card">
+        <div class="card-title"><a href="https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvyeeu8967949.shtml" target="_blank">微软与 OpenAI 合作关系重大重组：独家许可变非独家，停止收入分成</a></div>
+        <div class="card-meta">新浪财经 · 2026-04-27</div>
+        <div class="card-summary">
+          4 月 27 日，微软与 OpenAI 同时宣布合作进入新阶段。微软对 OpenAI 模型和产品的知识产权许可从独家改为非独家，有效期维持至 2032 年；微软不再向 OpenAI 支付收入分成，但 OpenAI 继续向微软支付至 2030 年，比例不变但设有总额上限。OpenAI 新产品仍优先在 Azure 发布，但可通过任何云服务商向客户提供全部产品。微软仍持有 OpenAI 营利性实体约 27% 股份，是主要股东之一。这一调整标志着两家公司的深度绑定关系正式走向松绑，OpenAI 自此可自由选择云服务合作伙伴。
         </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvxxwz2249458.shtml" target="_blank">Meta 收购 Manus 被国家发改委叫停，20 亿美元交易告吹</a></div>
+        <div class="card-meta">新浪科技 · 2026-04-27</div>
+        <div class="card-summary">
+          国家发改委下属外商投资安全审查工作机制办公室正式宣布，依法禁止美国 Meta 收购中国背景 AI 企业 Manus 项目，要求相关方撤销已完成交割的 20 亿美元交易。这是 2020 年《外商投资安全审查办法》实施以来，首个被公开叫停的 AI 领域外资收购案。Manus 于 2025 年 3 月发布，凭借一段接管浏览器完成复杂任务的演示视频走红，GAIA 基准测试准确率达 86.5%，超过 OpenAI 同类产品。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvxpia9072389.shtml" target="_blank">小米新款人形机器人亮相投资者日，外形炫酷</a></div>
+        <div class="card-meta">新浪科技 · 2026-04-27</div>
+        <div class="card-summary">
+          在 4 月 27 日举行的小米投资者日上，新款人形机器人正式亮相。该机器人采用人形设计，机身表面疑似覆盖凯夫拉面料，胸前印有小米标志，整体视觉效果科技感十足。这是小米时隔 4 年再次展示新款人形机器人，2022 年其首款全尺寸人形仿生机器人 CyberOne（昵称"铁大"）身高 1.77 米、重 52kg，曾领先特斯拉推出。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://36kr.com/p/3784957482523648" target="_blank">谷歌将在韩国新建人工智能园区，深化与首尔本土合作</a></div>
+        <div class="card-meta">36氪 · 2026-04-27</div>
+        <div class="card-summary">
+          韩国政府与谷歌达成协议，将在首尔共建人工智能园区，深化谷歌与韩国本土技术人才、初创企业的合作。韩国总统李在明当日会见 DeepMind CEO 德米斯·哈萨比斯，韩国科学技术部与谷歌就这一 AI 园区项目签署合作谅解备忘录。
+        </div>
+      </div>
+
     </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <span class="footer-brand">
-                <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una">
-                Una陪你看AI
-            </span>
-            <span class="footer-meta">
-                由 <a href="../../../index.html">Una Agent</a> 整理发布
-            </span>
+    <div class="section">
+      <div class="section-title"><span class="icon">⚡</span> GitHub</div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://github.com/lsdefine/GenericAgent" target="_blank">lsdefine/GenericAgent — 自进化 AI Agent 框架</a></div>
+        <div class="card-meta">MIT License · 2026-04-27 新创建</div>
+        <div class="card-summary">
+          最小化的自进化自主 Agent 框架，核心代码仅约 3300 行，通过从种子程序自主扩展技能树来实现全系统控制。与传统方案相比，Token 消耗降低 6 倍，在复杂任务中表现出更高的自主决策能力。4 月 27 日新创建即获大量关注。
         </div>
-    </footer>
+      </div>
 
-    <script>
-        function formatTime(seconds) {
-            if (isNaN(seconds) || !isFinite(seconds)) return '0:00';
-            var m = Math.floor(seconds / 60);
-            var s = Math.floor(seconds % 60);
-            return m + ':' + (s < 10 ? '0' : '') + s;
-        }
+      <div class="card">
+        <div class="card-title"><a href="https://github.com/HKUDS/Nanobot" target="_blank">HKUDS/Nanobot — 超轻量级个人 AI Agent</a></div>
+        <div class="card-meta">⭐ 40.8K · MIT License</div>
+        <div class="card-summary">
+          面向个人用户的超轻量级 AI Agent，v0.1.5 版本持续更新。支持 Claude、ChatGPT 等多种大模型，拥有超过 250 位贡献者，在 GitHub 上持续增长。适合个人开发者和小型团队快速搭建 AI Agent 工作流。
+        </div>
+      </div>
 
-        function toggleAudio() {
-            var audio = document.getElementById('audioPlayer');
-            var btn = document.getElementById('playBtn');
-            if (!audio) return;
-            if (audio.paused) {
-                audio.play();
-                btn.innerHTML = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
-            } else {
-                audio.pause();
-                btn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
-            }
-        }
+      <div class="card">
+        <div class="card-title"><a href="https://github.com/systalyze/utilyze" target="_blank">systalyze/Utilyze — 比 nvtop 更精确的开源 GPU 监控工具</a></div>
+        <div class="card-meta">Apache 2.0 · Systalyze</div>
+        <div class="card-summary">
+          开源的 GPU 利用率监控工具，解决行业长期痛点：nvidia-smi/nvtop 等工具报告的"100% 利用率"可能是假象——可能实际算力使用仅 10%。Utilyze 通过采样硬件性能计数器，以实际计算吞吐量和内存带宽相对理论上限的比值来衡量真实 GPU 利用率，并估算给定工作负载的可达利用天花板。Apache 2.0 协议开源。
+        </div>
+      </div>
 
-        function updateProgress() {
-            var audio = document.getElementById('audioPlayer');
-            var progress = document.getElementById('voiceProgress');
-            var current = document.getElementById('voiceCurrent');
-            var duration = document.getElementById('voiceDuration');
-            if (!audio || !progress) return;
-            if (audio.duration) {
-                progress.max = Math.floor(audio.duration);
-                progress.value = Math.floor(audio.currentTime);
-                if (current) current.textContent = formatTime(audio.currentTime);
-                if (duration) duration.textContent = formatTime(audio.duration);
-            }
-        }
+    </div>
 
-        function seekAudio() {
-            var audio = document.getElementById('audioPlayer');
-            var progress = document.getElementById('voiceProgress');
-            if (!audio || !progress) return;
-            audio.currentTime = parseInt(progress.value);
-        }
+    <div class="section">
+      <div class="section-title"><span class="icon">🧠</span> AI 动态</div>
 
-        var audio = document.getElementById('audioPlayer');
-        var playBtn = document.getElementById('playBtn');
-        var progress = document.getElementById('voiceProgress');
+      <div class="card">
+        <div class="card-title"><a href="https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxpia9032845.shtml" target="_blank">DeepSeek V4 发布：Agent 作业优化 + 全系 API 大降价</a></div>
+        <div class="card-meta">新浪财经 · 2026-04-27</div>
+        <div class="card-summary">
+          DeepSeek 于 4 月 26 日发布 V4 预览版，专为 AI Agent 作业优化，全面适配华为昇腾芯片，标志着国产"模型-芯片-云"闭环正逐步跑通。配合发布，DeepSeek 全系列 API 输入缓存命中费用降至原价 1/10，Pro 模型限时 2.5 折至 5 月 5 日。V4 在长上下文、复杂推理方向强化明显，A股 AI 算力板块受此催化走强，澜起科技单日涨幅超 8%。
+        </div>
+      </div>
 
-        if (audio) {
-            audio.addEventListener('timeupdate', updateProgress);
-            audio.addEventListener('loadedmetadata', function() {
-                var duration = document.getElementById('voiceDuration');
-                if (duration) duration.textContent = formatTime(audio.duration);
-            });
-            audio.addEventListener('ended', function() {
-                if (playBtn) playBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
-                if (progress) progress.value = 0;
-                var current = document.getElementById('voiceCurrent');
-                if (current) current.textContent = '0:00';
-            });
-            audio.play().catch(function() {});
-        }
+      <div class="card">
+        <div class="card-title"><a href="https://ai.zol.com.cn/1172/11724503.html" target="_blank">蚂蚁灵光 App 上线全球首个移动端可交互世界模型</a></div>
+        <div class="card-meta">中关村在线 · 2026-04-27</div>
+        <div class="card-summary">
+          蚂蚁集团推出的灵光 App 正式上线"体验世界模型"功能，用户上传任意图片即可在手机端生成最长 60 秒、具备空间纵深与逻辑连贯性的可探索三维世界。系统以双摇杆控制角色移动和视角旋转，从发起指令到进入可交互世界全程仅数秒。这是全球首个实现世界模型在移动端本地化部署与实时推理的产品，支持长时间场景一致性和连续低延迟人机交互。
+        </div>
+      </div>
 
-        if (progress) {
-            progress.addEventListener('input', seekAudio);
-        }
-    </script>
+      <div class="card">
+        <div class="card-title"><a href="https://www.artificialintelligence-news.com/news/google-warns-malicious-web-pages-poisoning-ai-agents/" target="_blank">Google 警告：恶意网页正在污染 AI Agent 决策</a></div>
+        <div class="card-meta">AI News · 2026-04-27</div>
+        <div class="card-summary">
+          Google 安全研究团队发现，恶意网页正通过操纵搜索结果和页面内容来干扰 AI Agent 的决策过程。攻击者利用 Agent 依赖网页信息的特性，在页面中植入误导性内容导致 Agent 执行错误操作。这是 Agentic AI 系统面临的新型安全威胁，表明随着 AI Agent 广泛应用，针对 Agent 的攻击面正在扩大。
+        </div>
+      </div>
 
+      <div class="card">
+        <div class="card-title"><a href="https://deepmind.google/blog/decoupled-diloco/" target="_blank">DeepMind 发布 Decoupled DiLoCo：跨区域分布式 AI 训练新方法</a></div>
+        <div class="card-meta">DeepMind Blog · 2026-04-27</div>
+        <div class="card-summary">
+          Decoupled DiLoCo 是一种新的分布式训练方法，可在跨区域、跨时区的异步环境下实现高效 AI 模型训练，同时提升容错性。该方法降低了大规模 AI 训练对数据中心间网络同步的强依赖，对未来全球化分布式训练具有重要意义。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://github.com/blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing" target="_blank">GitHub Copilot 将从订阅制转向按用量计费</a></div>
+        <div class="card-meta">GitHub Blog · 2026-04-27</div>
+        <div class="card-summary">
+          GitHub 宣布 Copilot 将从固定月费模式转向基于用量的计费模式，具体细节尚未公布。此举在开发者社区引发广泛讨论，有人担忧按调用量计费可能增加个人开发者和小型团队的使用成本。
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="icon">🛠️</span> 今日工具</div>
+
+      <div class="card">
+        <div class="tool-card">
+          <div class="tool-icon">📊</div>
+          <div class="tool-info">
+            <div class="tool-name">Gamma AI</div>
+            <div class="tool-desc">用 GPT-4 驱动的新一代 AI 演示文稿工具，输入主题即可生成专业级 PPT，适合快速制作路演、课程和汇报材料。</div>
+            <div class="tool-how">访问 producthunt.com 搜索 Gamma AI</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="tool-card">
+          <div class="tool-icon">🔧</div>
+          <div class="tool-info">
+            <div class="tool-name">FusedFrames</div>
+            <div class="tool-desc">将团队专业知识转化为结构化数据，用于训练 AI Agent 的工具。企业可将内部知识库转化为 Agent 可理解的格式，提升 AI 在特定领域的专业能力。</div>
+            <div class="tool-how">访问 producthunt.com 搜索 FusedFrames</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="tool-card">
+          <div class="tool-icon">🧩</div>
+          <div class="tool-info">
+            <div class="tool-name">Softr AI Co-Builder</div>
+            <div class="tool-desc">无需编程基础即可快速搭建 AI 驱动业务应用的平台，采用"vibe coding"风格，通过自然语言描述即可生成可用的 Web 应用，降低 AI 应用开发门槛。</div>
+            <div class="tool-how">访问 softr.io 或 producthunt.com</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      《Una陪你看AI》早报 · 每日 7:00 自动更新<br>
+      内容人工审核中 · 引用前请核实链接
+    </div>
+  </div>
 </body>
 </html>
