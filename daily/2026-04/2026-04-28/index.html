@@ -60,21 +60,119 @@
             gap: var(--space-xs);
         }
 
+        /* ===== Report Hero Card with Avatar ===== */
+        .report-hero-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-bottom: var(--space-2xl);
+            display: flex;
+            gap: var(--space-xl);
+            align-items: flex-start;
+            box-shadow: var(--shadow-card);
+        }
+
+        .report-hero-avatar {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .report-hero-avatar img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        .report-hero-avatar .avatar-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .report-hero-avatar .avatar-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .report-hero-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .report-hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: var(--space-sm);
+        }
+
+        .report-hero-eyebrow .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        .report-hero-date {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: var(--space-xs);
+        }
+
+        .report-hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(22px, 3vw, 32px);
+            font-weight: 700;
+            letter-spacing: -0.4px;
+            line-height: 1.2;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+        }
+
+        .report-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .report-meta .item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
         /* Voice Player */
         .voice-player {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-            margin-top: var(--space-lg);
+            padding: var(--space-md) var(--space-lg);
             display: flex;
             align-items: center;
             gap: var(--space-md);
         }
 
         .voice-player .play-btn {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             background: var(--accent);
             border: none;
@@ -84,18 +182,68 @@
             justify-content: center;
             flex-shrink: 0;
             transition: background 0.15s, transform 0.1s;
+            box-shadow: 0 2px 8px rgba(232, 98, 42, 0.3);
         }
 
         .voice-player .play-btn:hover {
             background: var(--accent-hover);
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
 
         .voice-player .play-btn svg {
             fill: #fff;
-            width: 14px;
-            height: 14px;
+            width: 16px;
+            height: 16px;
             margin-left: 2px;
+        }
+
+        .voice-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .voice-info .label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .voice-info .sub {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .voice-progress-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .voice-time {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        .voice-progress {
+            flex: 1;
+            height: 4px;
+            background: var(--border-medium);
+            border-radius: 2px;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .voice-progress::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
         }
 
         .voice-info {
@@ -322,30 +470,47 @@
         <div class="container">
             <a href="../../index.html" class="back-link">← 返回首页</a>
 
-            <div class="report-hero">
-                <div class="eyebrow">
-                    <span class="dot" style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulse 2s infinite;"></span>
-                    早间版
-                </div>
-                <div class="date">2026年04月28日 · 周二</div>
-                <h1>GitHub 热门新项目 · AI 行业动态</h1>
-                <div class="report-meta">
-                    <span class="item">📡 <span>Una Agent</span></span>
-                    <span class="item">🕐 <span>07:00 更新</span></span>
-                    <span class="item">🏷️ <span>GitHub · AI · 行业</span></span>
+            <!-- Hero Card: Avatar + Voice -->
+            <div class="report-hero-card">
+                <!-- Avatar -->
+                <div class="report-hero-avatar">
+                    <img src="../../assets/avatars/una-avatar-3.jpg" alt="Una" loading="eager">
+                    <span class="avatar-name">Una</span>
+                    <span class="avatar-sub">陪你听</span>
                 </div>
 
-                <!-- Voice Player -->
-                <div class="voice-player">
-                    <button class="play-btn" id="playBtn" onclick="toggleAudio()">
-                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-                    </button>
-                    <div class="voice-info">
-                        <div class="label">🎙️ 语音播报</div>
-                        <div class="sub">温柔学姐音色 · 适合通勤听</div>
+                <!-- Content -->
+                <div class="report-hero-content">
+                    <div class="report-hero-eyebrow">
+                        <span class="dot"></span>
+                        早间版 · 陪你通勤
                     </div>
+                    <div class="report-hero-date">2026年04月28日 · 周二</div>
+                    <h1 class="report-hero-title">GitHub 热门新项目 · AI 行业动态</h1>
+
+                    <div class="report-meta">
+                        <span class="item">📡 <span>Una Agent</span></span>
+                        <span class="item">🕐 <span>07:00 更新</span></span>
+                        <span class="item">🏷️ <span>GitHub · AI · 行业</span></span>
+                    </div>
+
+                    <!-- Voice Player -->
+                    <div class="voice-player">
+                        <button class="play-btn" id="playBtn" onclick="toggleAudio()">
+                            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                        </button>
+                        <div class="voice-info">
+                            <div class="label">🎙️ 语音播报</div>
+                            <div class="sub">温柔学姐音色 · 适合通勤听</div>
+                        </div>
+                        <div class="voice-progress-wrap">
+                            <span class="voice-time" id="voiceCurrent">0:00</span>
+                            <input type="range" class="voice-progress" id="voiceProgress" value="0" min="0" max="100">
+                            <span class="voice-time" id="voiceDuration">–:––</span>
+                        </div>
+                    </div>
+                    <audio id="audioPlayer" src="voice.ogg" preload="auto"></audio>
                 </div>
-                <audio id="audioPlayer" src="voice.ogg" preload="none"></audio>
             </div>
 
             <!-- Report Body -->
@@ -591,9 +756,17 @@
     </footer>
 
     <script>
+        function formatTime(seconds) {
+            if (isNaN(seconds) || !isFinite(seconds)) return '0:00';
+            var m = Math.floor(seconds / 60);
+            var s = Math.floor(seconds % 60);
+            return m + ':' + (s < 10 ? '0' : '') + s;
+        }
+
         function toggleAudio() {
-            const audio = document.getElementById('audioPlayer');
-            const btn = document.getElementById('playBtn');
+            var audio = document.getElementById('audioPlayer');
+            var btn = document.getElementById('playBtn');
+            if (!audio) return;
             if (audio.paused) {
                 audio.play();
                 btn.innerHTML = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
@@ -603,9 +776,50 @@
             }
         }
 
-        document.getElementById('audioPlayer').addEventListener('ended', function() {
-            document.getElementById('playBtn').innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
-        });
+        function updateProgress() {
+            var audio = document.getElementById('audioPlayer');
+            var progress = document.getElementById('voiceProgress');
+            var current = document.getElementById('voiceCurrent');
+            var duration = document.getElementById('voiceDuration');
+            if (!audio || !progress) return;
+            if (audio.duration) {
+                progress.max = Math.floor(audio.duration);
+                progress.value = Math.floor(audio.currentTime);
+                if (current) current.textContent = formatTime(audio.currentTime);
+                if (duration) duration.textContent = formatTime(audio.duration);
+            }
+        }
+
+        function seekAudio() {
+            var audio = document.getElementById('audioPlayer');
+            var progress = document.getElementById('voiceProgress');
+            if (!audio || !progress) return;
+            audio.currentTime = parseInt(progress.value);
+        }
+
+        var audio = document.getElementById('audioPlayer');
+        var playBtn = document.getElementById('playBtn');
+        var progress = document.getElementById('voiceProgress');
+
+        if (audio) {
+            audio.addEventListener('timeupdate', updateProgress);
+            audio.addEventListener('loadedmetadata', function() {
+                var duration = document.getElementById('voiceDuration');
+                if (duration) duration.textContent = formatTime(audio.duration);
+            });
+            audio.addEventListener('ended', function() {
+                if (playBtn) playBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+                if (progress) progress.value = 0;
+                var current = document.getElementById('voiceCurrent');
+                if (current) current.textContent = '0:00';
+            });
+            // Autoplay on page load
+            audio.play().catch(function() {});
+        }
+
+        if (progress) {
+            progress.addEventListener('input', seekAudio);
+        }
     </script>
 
 </body>
