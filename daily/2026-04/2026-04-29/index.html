@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una陪你看AI | 2026-04-29 早报</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e1e4ea;
+    --muted: #8b8fa3;
+    --accent: #6c8cff;
+    --tag-bg: #1e2235;
+    --tag-text: #8b9fd4;
+    --green: #4ade80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    padding: 0;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a1d27 0%, #252840 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .header .date { color: var(--accent); font-size: 14px; font-weight: 500; }
+  .header .overview {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 680px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .icon { font-size: 22px; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .card h3 a { color: var(--text); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    font-weight: 500;
+  }
+  .highlight { color: var(--green); font-weight: 600; }
+  .source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+  }
+  .github-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .github-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>⚡ Una陪你看AI</h1>
+  <div class="date">2026年4月29日 · 早报</div>
+  <p class="overview">
+    4月28日，AI行业迎来了一个值得记住的日子：OpenAI与微软长达数年的独家协议正式终结，全球AI云计算格局一夜巨变。同一天，小米、商汤、Meta、中科院、IBM不约而同发布了各自的重磅AI模型——从万亿参数MoE到代码世界模型，从AI4Science平台到企业级AI开发助手，密集程度近年罕见。
+  </p>
+</header>
+
+<main class="container">
+
+  <!-- Section 1: 时事 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🌐</span> 时事速览</h2>
+
+    <div class="card">
+      <h3>🔓 OpenAI与微软解除独家协议，AI云计算格局巨变</h3>
+      <p>4月28日，微软与OpenAI联合宣布修订合作协议，核心变化：微软放弃对OpenAI模型的<strong>独家销售权</strong>，OpenAI从此可向所有云厂商（包括AWS）开放全线产品；微软停止向OpenAI支付收入分成，OpenAI对微软的分成设总额上限至2030年。同一天，亚马逊宣布OpenAI模型正式登陆AWS Bedrock。微软仍是OpenAI的"首要云合作伙伴"，新产品优先在Azure上线。市场剧烈反应：微软盘前一度跌近4%，亚马逊涨约1%。</p>
+      <div class="source"><span class="tag">重大协议</span> 来源：新浪财经 · 智东西 · 华尔街见闻</div>
+    </div>
+
+    <div class="card">
+      <h3>⚖️ 马斯克诉OpenAI案开庭，索赔1500亿美元</h3>
+      <p>当地时间4月27日，加州奥克兰联邦法院正式开庭审理马斯克诉OpenAI案。马斯克指控OpenAI背弃非营利使命，要求赔偿1500亿美元、恢复非营利性质、罢免Altman。OpenAI律师反驳称马斯克是为xAI造势。此案正值OpenAI冲刺IPO（估值8520亿美元）的关键节点，若马斯克胜诉，可能波及微软、甲骨文、英伟达、亚马逊等与OpenAI深度合作的科技巨头。</p>
+      <div class="source"><span class="tag">诉讼</span> 来源：央视财经 · 电车通</div>
+    </div>
+
+    <div class="card">
+      <h3>🛑 中国发改委否决Manus外资收购，Meta准备撤销交易</h3>
+      <p>国家发改委外商投资安全审查办公室依法对Manus收购案作出禁止投资决定，这是AI领域首次触发外资安全审查否决。据36氪报道，Meta正准备撤销对Manus的收购，Manus投资方Benchmark已收回投资。此前2025年12月，Manus曾公告将加入Meta。</p>
+      <div class="source"><span class="tag">监管</span> 来源：36氪</div>
+    </div>
+
+    <div class="card">
+      <h3>🏗️ 支付宝推出"AI收"，Agent间支付时代来临</h3>
+      <p>支付宝正式上线"AI收"，与之前的"AI付"形成"一付一收"的AI支付体系。该产品面向商家和开发者，当AI Agent调用某项Skill时自动触发询价和结算，实现"调用即收款"。截至年底个人开发者0费率。同时，网信部门因AI生成内容标识问题对剪映、猫箱、即梦AI进行查处。</p>
+      <div class="source"><span class="tag">产品</span> 来源：新浪财经 · 36氪</div>
+    </div>
+
+    <div class="card">
+      <h3>🐙 Ghostty离开GitHub，Warp终端开源，HN同日霸榜</h3>
+      <p>Mitchell Hashimoto宣布终端模拟器Ghostty将离开GitHub（1281分），AI驱动终端Warp正式开源（202分），两件事同时登上Hacker News首页，引发开源社区对代码托管平台集中化的广泛讨论。同天Wiz还披露了GitHub高危RCE漏洞CVE-2026-3854。</p>
+      <div class="source"><span class="tag">开源社区</span> 来源：Hacker News</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 2: GitHub -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🐙</span> GitHub 亮点</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/lsdefine/GenericAgent" target="_blank">lsdefine/GenericAgent</a> <span style="color:#eac54f">★7,991</span> — 自进化Agent框架</h3>
+      <p>一个极简但极具创新力的自主Agent框架：仅<strong>~3K行核心代码</strong>，通过<strong>9个原子工具+约100行Agent Loop</strong>实现系统级控制。最大亮点是<strong>"不预设技能，靠进化获得能力"</strong>——每次解决新任务后自动将执行路径固化为Skill，用越久能力越强。上下文窗口仅30K（其他Agent的零头），通过分层记忆系统（L0元规则→L4会话归档）实现高效召回。已发布arXiv论文、百万级Skill库，支持多种IM前端（微信/QQ/飞书/钉钉/Telegram）。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 30位贡献者 · 4月21日发布arXiv论文</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">SWE-agent/mini-swe-agent</a> — 100行AI编程Agent</h3>
+      <p>极简主义的AI编程Agent，仅100行代码即可解决GitHub Issue，在SWE-bench Verified上取得<strong>>74%</strong>的成绩。彻底摒弃巨型配置和单体仓库，代表了"少即是多"的Agent设计哲学。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 40位贡献者</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/trycua/cua" target="_blank">trycua/cua</a> — macOS后台GUI操控，无需抢夺光标</h3>
+      <p>Cua Driver通过macOS私有的SkyLight API（SLEventPostToPid）实现对应用的后台操控——点击、输入、滚动、读取界面，同时光标和前台窗口不受影响。对于Agent开发者来说，这意味着可以安全地在同一台Mac上运行GUI自动化Agent而不干扰正常工作。</p>
+      <div class="source"><span class="tag">Rust/macOS</span> HN Show · 28分</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 3: AI动态 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🤖</span> AI 产品与技术</h2>
+
+    <div class="card">
+      <h3>📱 小米MiMo-V2.5：MIT开源的万亿参数MoE，性能超DeepSeek-V4</h3>
+      <p>由小米AI负责人<strong>罗福莉</strong>带队研发，旗舰版MiMo-V2.5-Pro拥有<strong>1.02T（万亿）参数</strong>、420亿激活参数，支持<strong>100万Token超长上下文</strong>。采用SWA与GA以6:1交替的注意力设计，KV缓存减少近7倍；内置MTP模块使吞吐量提升约3倍。预训练27T Token（FP8混合精度），MIT开源协议允许商业部署和二次训练。首日即适配华为昇腾等5种国产芯片，并推出100T Token免费激励计划。</p>
+      <div class="source"><span class="tag">开源大模型</span><span class="tag">MIT</span> 来源：Yahoo HK · 多家媒体</div>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Meta开源Code World Model (CWM)：32B参数，让AI"想象"代码运行</h3>
+      <p>Meta FAIR团队发布的首个代码世界模型，核心理念：<strong>让模型不仅会写代码，还能模拟代码执行过程、推理程序状态、自我检测并修复Bug</strong>。通过Python执行轨迹和Agent交互轨迹（300万条，覆盖10.2万个仓库）进行中期训练，将世界模型能力内化。SWE-bench Verified <strong>65.8%</strong>（启用Test-Time Scaling），接近GPT-4水平。Meta不仅开源最终模型，还公开了从中期训练到SFT与RL各阶段的权重检查点。Yann LeCun亲自站台推荐。</p>
+      <div class="source"><span class="tag">开源模型</span><span class="tag">Meta FAIR</span> 来源：36氪 · Meta Research</div>
+    </div>
+
+    <div class="card">
+      <h3>🔬 中科院发布"磐石100"模型体系，AI4Science进入平台化时代</h3>
+      <p>以磐石·科学基础大模型（升级至1.5pro版，650万条科学推理数据训练）为底座，面向数学、物理、材料、天文、环境、空天、地理、生命8大学科，打造"八仙过海"集群。已在中科院50余家单位、百余个场景中应用：<strong>30天内发现3个未知药物靶点并全部实验验证</strong>、全球首个全景式碳排放核算系统、高铁流场重建等。智能体工厂已沉淀超2000个科研工具。</p>
+      <div class="source"><span class="tag">AI4Science</span> 来源：中新网</div>
+    </div>
+
+    <div class="card">
+      <h3>🎨 商汤发布开源SenseNova U1：单一架构统一多模态理解与生成</h3>
+      <p>基于商汤NEO-unify架构，彻底摒弃主流拼接式方案，去掉视觉编码器和VAE，重构统一表征空间。让语言与视觉作为统一复合体直接建模，理解与生成能力同步增强。未来可望为机器人提供具身大脑，在单一模型中闭环完成环境感知、逻辑推演到精准执行。</p>
+      <div class="source"><span class="tag">多模态</span> 来源：北京商报 · 每日经济新闻</div>
+    </div>
+
+    <div class="card">
+      <h3>🏢 IBM Bob：8万员工内测的企业级AI开发平台</h3>
+      <p>IBM发布AI开发伙伴Bob，定位企业级软件工程全生命周期。支持多模型自动编排（按准确性/性能/成本路由），内置治理、合规、安全控制。内测用户报告<strong>平均45%生产力提升</strong>。在AI编码助手泛滥的当下，IBM选择走"可控速度"路线。</p>
+      <div class="source"><span class="tag">企业AI</span> 来源：IBM Newsroom · AI News</div>
+    </div>
+
+    <div class="card">
+      <h3>🩺 阿里达摩院发布第三个癌症筛查AI：DAMO COCA</h3>
+      <p>继胰腺癌、胃癌筛查模型之后，达摩院联合广东省人民医院推出肠癌筛查AI。从2.7万例平扫CT中精准识别5例漏诊肠癌，敏感性和特异性分别达到86.6%和99.8%。标志着达摩院"平扫CT+AI"多癌筛查技术路线正式跑通。</p>
+      <div class="source"><span class="tag">AI医疗</span> 来源：36氪</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 4: 今日工具推荐 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🔧</span> 今日工具推荐</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/lsdefine/GenericAgent" target="_blank">GenericAgent</a> — 自进化AI Agent，越用越聪明</h3>
+      <p>3K行代码即可让AI接管你的电脑。安装极简（pip install + API Key），自动从每次任务中学习新技能。支持微信/QQ/飞书/钉钉/Telegram作为交互前端。如果你想让AI真正替你干活而不仅仅是聊天，这是目前最值得尝试的开源方案。<br><span class="highlight">获取方式：</span> <code>git clone https://github.com/lsdefine/GenericAgent</code></p>
+      <div class="source"><span class="tag">免费</span><span class="tag">MIT开源</span> ★7,991</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/trycua/cua" target="_blank">Cua Driver</a> — macOS后台操控，不抢光标</h3>
+      <p>让AI Agent在后台操控你的Mac应用，光标和焦点完全不受影响。对开发Agent的macOS用户来说，这解决了"Agent运行=电脑不能用"的核心痛点。<br><span class="highlight">获取方式：</span> <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/trycua/cua/main/libs/cua-driver/scripts/install.sh)"</code></p>
+      <div class="source"><span class="tag">免费</span><span class="tag">macOS 14+</span> MIT</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/posts/competely-ai-agent" target="_blank">Competely AI Agent</a> — AI竞品分析，自动追踪</h3>
+      <p>Product Hunt当天第5名（303票）。输入你的产品，AI自动寻找竞品、分析差异、持续追踪动态。适合独立开发者进行市场调研。<br><span class="highlight">获取方式：</span> competely.com</p>
+      <div class="source"><span class="tag">SaaS</span> Product Hunt · 303▲</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>《Una陪你看AI》每日早报 · 2026年4月29日</p>
+  <p style="margin-top:8px">「让AI信息降噪，让独立开发者看到真正重要的。」</p>
+</footer>
+
+</body>
+</html>
