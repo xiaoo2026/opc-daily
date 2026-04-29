@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una陪你看AI | 2026-04-30 早报</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e1e4ea;
+    --muted: #8b8fa3;
+    --accent: #6c8cff;
+    --tag-bg: #1e2235;
+    --tag-text: #8b9fd4;
+    --green: #4ade80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    padding: 0;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a1d27 0%, #252840 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .header .date { color: var(--accent); font-size: 14px; font-weight: 500; }
+  .header .overview {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 680px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .icon { font-size: 22px; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .card h3 a { color: var(--text); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    font-weight: 500;
+  }
+  .highlight { color: var(--green); font-weight: 600; }
+  .source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+  }
+  .github-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .github-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>⚡ Una陪你看AI</h1>
+  <div class="date">2026年4月30日 · 早报</div>
+  <p class="overview">
+    4月29日，AI产业从"独家绑定"走向"全面竞合"的变革正式落地：微软与OpenAI松绑公告次日，亚马逊火速接入OpenAI模型上架Bedrock。国内同日三连发——中国科学院发布"磐石100"AI4Science平台体系、腾讯ima推出内置四大记忆模块的知识Agent "copilot"、商汤开源统一多模态模型SenseNova U1。GitHub上自进化Agent框架GenericAgent突破8200星。AI正在从模型之争进入Agent系统之争。
+  </p>
+</header>
+
+<main class="container">
+
+  <!-- Section 1: 时事 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🌐</span> 时事速览</h2>
+
+    <div class="card">
+      <h3>🔓 微软OpenAI松绑次日：亚马逊立即接入，OpenAI登陆Bedrock</h3>
+      <p>微软与OpenAI宣布修订独家协议后仅一天，亚马逊云科技宣布与OpenAI扩大合作：GPT-5.5、Codex等核心模型即日起通过Amazon Bedrock提供（有限预览），全面继承AWS企业级安全控制——IAM访问管理、PrivateLink连接、静态/传输加密、CloudTrail日志。OpenAI首席营收官表示"企业已从试验进入规模化部署"。与此同时，外媒披露此次合作得以落地，关键在于微软放弃部分排他限制，换取更优收益分成并移除争议性AGI条款。</p>
+      <div class="source"><span class="tag">产业变局</span> 来源：TechWeb · 金融时报 · 环球网</div>
+    </div>
+
+    <div class="card">
+      <h3>⚖️ 马斯克出庭作证：AI"世纪对决"进入法庭阶段</h3>
+      <p>马斯克在奥克兰联邦法院出庭作证，称起诉OpenAI已超越单一企业纠纷，"直指人工智能这项足以毁灭全人类的技术未来"。他索赔1300亿美元，要求OpenAI恢复非营利架构并罢免Altman与Brockman。马斯克当庭坦言"对AI抱有极度担忧，绝不希望迎来终结者式的悲剧结局"。OpenAI最早今年IPO，本次诉讼可能重创其估值。</p>
+      <div class="source"><span class="tag">诉讼</span> 来源：环球市场播报 · 新浪财经</div>
+    </div>
+
+    <div class="card">
+      <h3>🇺🇸 谷歌与五角大楼签订AI军事协议，允许用于机密工作</h3>
+      <p>五角大楼官员证实，谷歌已修改与国防部的合同，允许其AI系统用于机密军事工作。谷歌发言人称此举是"以行业标准方式提供商业模型API访问，负责任地支持国家安全"，同时强调不应在"无适当人类监督下"将AI用于大规模监控或自主武器。</p>
+      <div class="source"><span class="tag">政策</span> 来源：新浪财经</div>
+    </div>
+
+    <div class="card">
+      <h3>🛒 马里兰州成为美国首个禁止超市"监控定价"的州</h3>
+      <p>马里兰州禁止超市使用电子货架标签和AI进行实时监控定价——即根据顾客行为数据动态调整价格。此事在Hacker News上获得208分讨论，反映出公众对AI驱动"个性化定价"的警惕正在升温。</p>
+      <div class="source"><span class="tag">监管</span> 来源：The Guardian · Hacker News</div>
+    </div>
+
+    <div class="card">
+      <h3>🐛 HN热榜：Copy Fail高危漏洞、Ramp AI泄露财务数据</h3>
+      <p>安全研究者披露CVE-2026-31431剪贴板高危漏洞（414分，196评论），PromptArmor曝光Ramp的Sheets AI功能可被诱导泄露用户财务数据（89分）。两起事件集中揭示了AI集成应用的安全性盲区——剪贴板到AI的数据通道缺乏足够防护。</p>
+      <div class="source"><span class="tag">安全</span> 来源：Hacker News</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 2: GitHub -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🐙</span> GitHub 亮点</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/lsdefine/GenericAgent" target="_blank">lsdefine/GenericAgent</a> <span style="color:#eac54f">★8,220</span> — 自进化Agent框架</h3>
+      <p>极简自进化Agent——仅<strong>~3K行种子代码+9个原子工具+~100行Agent Loop</strong>，赋予任意LLM对电脑的系统级控制。核心哲学：<strong>"不预设技能，靠进化获得能力"</strong>。每次完成任务后自动将执行路径固化为Skill，使用越久越强。五层记忆系统（L0元规则→L4会话归档）在&lt;30K上下文窗口内实现高效召回。已发布arXiv论文，支持微信/QQ/飞书/钉钉/Telegram多前端。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 30位贡献者 · arXiv论文 2604.17091</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/inclusionAI/DR-Venus" target="_blank">inclusionAI/DR-Venus</a> <span style="color:#eac54f">★60</span> — 4B参数深度研究Agent，仅用10K开放数据</h3>
+      <p>仅<strong>4B参数</strong>，仅用<strong>10,001条开放数据</strong>训练，在BrowseComp（29.1%）、GAIA（64.4%）、xBench（74.7%）等多个深度研究基准上建立了小模型新标杆。关键是训练方法创新：SFT阶段对轨迹做turn-aware重采样（加权重采样长轨迹），RL阶段使用IGPO风格信息增益奖励。证明<strong>数据质量远超模型规模</strong>的重要性。</p>
+      <div class="source"><span class="tag">Python</span> 5位贡献者 · arXiv论文 2604.19859</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/HKUDS/nanobot" target="_blank">HKUDS/nanobot</a> — 超轻量个人AI Agent</h3>
+      <p>香港大学数据科学实验室出品，250位贡献者参与的开源个人AI助手。Python+TypeScript混合架构，设计理念为"最轻量的个人Agent"。支持Docker部署，内置web UI。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 250位贡献者</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">SWE-agent/mini-swe-agent</a> — 100行AI编程Agent</h3>
+      <p>极简主义的AI编程Agent，仅100行代码即解决GitHub Issue，SWE-bench Verified &gt;74%。代表"少即是多"的Agent设计哲学——没有巨型配置、没有单体仓库，只有最核心的Agent循环。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 40位贡献者</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/aallan/vera" target="_blank">aallan/vera</a> — 专为AI编写的编程语言</h3>
+      <p>一个设计用于让"机器编写"而非"人类编写"的编程语言，在HN引发讨论。标志着编程语言设计的一个新方向：语言不再优化人类可读性，而是优化AI的代码生成成功率。</p>
+      <div class="source"><span class="tag">编程语言</span> Hacker News</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 3: AI动态 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🤖</span> AI 产品与技术</h2>
+
+    <div class="card">
+      <h3>🎨 商汤开源SenseNova U1："原生统一"多模态，告别拼接式架构</h3>
+      <p>商汤发布并开源日日新SenseNova U1系列，基于自研NEO-unify架构，<strong>彻底摒弃视觉编码器(VE)和变分自编码器(VAE)</strong>，重新构建统一表征空间，让语言与视觉作为复合体直接建模。这是从"模态集成"到"原生统一"的范式跨越，被业界称为"效率怪兽"——理解与生成同步增强，推理开销显著降低。未来可为机器人提供"具身大脑"。</p>
+      <div class="source"><span class="tag">多模态</span><span class="tag">开源</span> 来源：上观新闻 · 财视传播</div>
+    </div>
+
+    <div class="card">
+      <h3>🧠 腾讯ima发布copilot：内置四大记忆模块的知识Agent</h3>
+      <p>历经530天迭代的腾讯ima正式推出知识Agent "copilot"，内置<strong>copilot设定（Soul）、用户档案（User）、长期记忆（Memory）、经验技巧（Agent）</strong>四大记忆模块，实现跨场景连续调用、减少重复输入。支持全场景感知——浏览网页/文件/知识库时无需手动上传即可直接处理。技能生态同步上线，支持按需加载扩展Skills。已在Mac/Windows/iOS/安卓/鸿蒙多端上线（申请制）。</p>
+      <div class="source"><span class="tag">Agent</span><span class="tag">知识管理</span> 来源：新浪科技 · 36氪 · 见实科技</div>
+    </div>
+
+    <div class="card">
+      <h3>📱 小米MiMo-V2.5-Pro：AI 4小时无中断生成完整macOS桌面</h3>
+      <p>小米MiMo-V2.5-Pro在演示中完成了一项惊人任务：4小时全程无中断、无人类接管，从零生成了一个完整的macOS风格桌面系统——含开机动画、用户登录、窗口管理、Dock缩放、Spotlight搜索、明暗主题和54个原生应用，甚至包括一个可真实上网的Safari浏览器。展示了国产Agent在长程任务和模糊指令遵循上的突破性进展。</p>
+      <div class="source"><span class="tag">Agent</span><span class="tag">开源</span> 来源：量子位</div>
+    </div>
+
+    <div class="card">
+      <h3>🔬 中科院"磐石100"发布：AI4Science从单兵作战到集团冲锋</h3>
+      <p>4月28日正式发布，以磐石·科学基础大模型1.5PRO（<strong>650万条科学推理数据训练，支持超150步推理</strong>）为底座，面向8大学科打造百余个应用模型。三大核心功能：文献罗盘（自主综述写作）、创新评价（实时感知前沿）、智能体工厂（已沉淀超2000个科研工具）。已在50余家单位百余场景应用：30天发现3个未知药物靶点，全球首个全景式碳排放核算系统。</p>
+      <div class="source"><span class="tag">AI4Science</span> 来源：光明日报 · 科技日报 · 新华网</div>
+    </div>
+
+    <div class="card">
+      <h3>🖼️ 美图RoboNeo推出影像创作Agent Teams</h3>
+      <p>美图将影像创作AI RoboNeo升级为Agent Teams模式——多AI Agent角色化分工攻克自媒体、内容小团队、"一人公司"的全链路创作痛点。将不同环节的创作功能整合为分工协作的Agent团队，避免反复改稿、调参、格式对齐等繁琐工作。</p>
+      <div class="source"><span class="tag">创作工具</span> 来源：新浪科技</div>
+    </div>
+
+    <div class="card">
+      <h3>🧭 Perplexity AI浏览器Comet全面适配iPad</h3>
+      <p>Perplexity旗下AI浏览器Comet正式上线iPad版，引入多窗口浏览与多任务处理，深度整合OpenAI与Anthropic等主流AI模型。继Mac、iPhone之后，完成苹果生态全平台覆盖。</p>
+      <div class="source"><span class="tag">AI浏览器</span> 来源：IT之家</div>
+    </div>
+
+    <div class="card">
+      <h3>📊 DeepSeek V4深度评测：10位从业者说了什么？</h3>
+      <p>36氪邀请近10位开发者、创业者和投资人对DeepSeek V4进行三天实测。共识：<strong>成本碾压</strong>（V4-Pro单Token成本为前沿模型的1/6-1/7）、<strong>国产算力全栈适配</strong>（华为昇腾完整跑通）、V4-Flash成为垂直微调的首选基座。但落地仍有短板：工具调用稳定性+幻觉率需在Harness层补齐，"脚手架"不可或缺。PingCAP CTO黄东旭已把日常工作流从Claude Opus/GPT5.4切换到V4 Pro。</p>
+      <div class="source"><span class="tag">深度评测</span> 来源：36氪</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 4: 今日工具推荐 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🔧</span> 今日工具推荐</h2>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/posts/competely-ai-agent" target="_blank">Competely AI Agent</a> — AI竞品分析智能体</h3>
+      <p>Product Hunt日榜第5名（303票）。输入产品名，AI自动发现竞品、生成对比分析、持续追踪动态。适合独立开发者做市场调研和竞品监控，省去手动整理竞品表格的繁琐。<br><span class="highlight">获取方式：</span> competely.com</p>
+      <div class="source"><span class="tag">SaaS</span> Product Hunt · 303▲</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/posts/raindrop" target="_blank">Raindrop</a> — AI产品的Sentry</h3>
+      <p>Product Hunt 229票。专为AI产品打造的监控与告警工具——类似Sentry之于传统软件。帮助AI工程师发现模型输出异常、幻觉率飙升、延迟波动等AI产品特有的"隐藏问题"。<br><span class="highlight">获取方式：</span> raindrop.ai</p>
+      <div class="source"><span class="tag">SaaS</span> Product Hunt · 229▲</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/p/pre-ai-search-filter-google-ai-content/pre-ai-search" target="_blank">Pre-AI Search</a> — 过滤Google的AI生成内容</h3>
+      <p>一个简单实用的浏览器扩展：在Google搜索结果中自动过滤AI生成的内容，帮你找到真实人类撰写的网页。AI内容泛滥时代的小型解毒工具。<br><span class="highlight">获取方式：</span> Chrome扩展商店</p>
+      <div class="source"><span class="tag">免费</span> 浏览器扩展</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>《Una陪你看AI》每日早报 · 2026年4月30日</p>
+  <p style="margin-top:8px">「让AI信息降噪，让独立开发者看到真正重要的。」</p>
+</footer>
+
+</body>
+</html>

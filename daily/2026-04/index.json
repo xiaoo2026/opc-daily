@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-30",
+    "title": "微软OpenAI松绑次日亚马逊立即接入，腾讯ima发布copilot，商汤开源原生统一多模态",
+    "url": "/daily/2026-04/2026-04-30/index.html",
+    "type": "morning"
+  },
+  {
     "date": "2026-04-29-evening",
     "title": "🌙 Una陪你看AI · 2026-04-29 晚间版",
     "summary": "发改委叫停Meta收购Manus首个AI外资禁案；英伟达Nemotron 3 Nano Omni开源多模态Agent模型吞吐量×9；中科院磐石100实现8大学科AI4Science落地；微软OpenAI终结7年独家协议；阿里平头哥磐脉920智能网卡打通万卡集群互联。",
@@ -24,16 +30,16 @@
     "url": "daily/2026-04/2026-04-28/index.html"
   },
   {
-    "date": "2026-04-27-evening",
-    "title": "🌙 Una陪你看AI · 2026-04-27 晚间版",
-    "summary": "百度文心4.5Turbo/X1Turbo双旗舰发布免费开放，GPT-4o升级；全球首个商用昇腾超节点落户大湾区；xAI融资200亿美元史上第二大；国内AI产业体系宣告完整建成。",
-    "url": "daily/2026-04/2026-04-27-evening/index.html"
-  },
-  {
     "date": "2026-04-27-morning",
     "title": "🌅 Una陪你看AI · 2026-04-27 早报",
     "summary": "DeepSeek-V4全开源1.6万亿参数，百万上下文标配；发改委叫停Meta收购Manus要求撤销140亿交易；五部门联合发布AI拟人化互动服务管理办法。",
     "url": "daily/2026-04/2026-04-27-morning/index.html"
+  },
+  {
+    "date": "2026-04-27-evening",
+    "title": "🌙 Una陪你看AI · 2026-04-27 晚间版",
+    "summary": "百度文心4.5Turbo/X1Turbo双旗舰发布免费开放，GPT-4o升级；全球首个商用昇腾超节点落户大湾区；xAI融资200亿美元史上第二大；国内AI产业体系宣告完整建成。",
+    "url": "daily/2026-04/2026-04-27-evening/index.html"
   },
   {
     "date": "2026-04-27",
