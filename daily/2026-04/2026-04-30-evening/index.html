@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una陪你看AI | 2026-04-30 晚间版</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e1e4ea;
+    --muted: #8b8fa3;
+    --accent: #6c8cff;
+    --tag-bg: #1e2235;
+    --tag-text: #8b9fd4;
+    --green: #4ade80;
+    --orange: #f59e0b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    padding: 0;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a1d27 0%, #252840 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .header .date { color: var(--accent); font-size: 14px; font-weight: 500; }
+  .header .overview {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 680px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .icon { font-size: 22px; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .card h3 a { color: var(--text); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    font-weight: 500;
+  }
+  .highlight { color: var(--green); font-weight: 600; }
+  .source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+  }
+  .github-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .github-link:hover { text-decoration: underline; }
+  .star { color: #eac54f; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>🌙 Una陪你看AI</h1>
+  <div class="date">2026年4月30日 · 晚间版</div>
+  <p class="overview">
+    今日AI行业密集出牌：英伟达深夜开源Nemotron 3 Nano Omni全模态Agent模型，推理效率提升9倍；蚂蚁集团同天开源万亿参数百灵Ling-2.6-1T；华为小艺Claw接入DeepSeek V4并支持自进化。技术社区热议mini-swe-agent的"100行代码搞定SWE-bench"极简哲学，以及GitHub官方Agentic Workflows对开发者工作流的重塑。Hacker News上，copy.fail和Claude Code计费漏洞双双破千分。
+  </p>
+</header>
+
+<main class="container">
+
+  <!-- Section 1: 时事 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🌐</span> 时事速览</h2>
+
+    <div class="card">
+      <h3>🚀 英伟达发布全模态Agent模型，AI竞争转向"让模型干活"</h3>
+      <p>4月29日深夜，英伟达重磅开源Nemotron 3 Nano Omni——30B-A3B MoE混合专家架构的全模态大模型，原生支持文本、图像、视频和音频输入，256K超长上下文。这是首个将视觉、语音、文本能力整合进单一MoE模型的产品级方案：<strong>推理吞吐量比同尺寸开源模型高9倍</strong>，在OCRBench-V2、WorldSense、DailyOmni等基准上领跑。模型采用7阶段渐进式训练（从视觉对齐到256K超长上下文），并引入Conv3D视频压缩和Efficient Video Sampling两项token缩减技术，在几乎不损失准确率的前提下将时延降低33%。英伟达同步开出了BF16/FP8/FP4三种精度权重和训练数据。</p>
+      <div class="source"><span class="tag">全模态</span><span class="tag">Agent</span><span class="tag">开源</span> 来源：NVIDIA · 新浪财经 · arXiv 2604.24954</div>
+    </div>
+
+    <div class="card">
+      <h3>🏦 蚂蚁集团开源万亿参数百灵Ling-2.6-1T</h3>
+      <p>4月30日，蚂蚁百灵大模型宣布开源Ling-2.6-1T。采用MLA与Linear Attention的Hybrid架构，核心目标不是堆参数而是<strong>系统性优化智效比</strong>——通过抑制"过程冗余"的强化奖励策略，压缩输出成本的同时保持强综合智能。在AIME26、SWE-bench Verified、BFCL-V4、TAU2-Bench等执行类基准上达到开源SOTA。官方强调"让万亿模型真正进入开发者和企业的生产工作流"。</p>
+      <div class="source"><span class="tag">开源</span><span class="tag">万亿参数</span> 来源：IT之家</div>
+    </div>
+
+    <div class="card">
+      <h3>🔧 华为小艺Claw接入DeepSeek V4，上线"自进化"能力</h3>
+      <p>华为鸿蒙版小艺Claw更新至11.6.3.300，正式接入DeepSeek V4大模型底座，拥有百万级超长上下文。最大亮点是<strong>自进化能力</strong>——自主学习并记忆用户使用习惯、创作风格与指令偏好，长期使用后精准度持续提升形成专属体验。同步扩容Skills技能市场，覆盖金融投研、办公创作、开发等场景，实现手机/平板/电脑三端覆盖。</p>
+      <div class="source"><span class="tag">智能体</span><span class="tag">自进化</span> 来源：快科技 · 新浪科技</div>
+    </div>
+
+    <div class="card">
+      <h3>🗽 Joby在纽约JFK启动电动空中出租车历史性首飞</h3>
+      <p>Joby Aviation在纽约肯尼迪国际机场完成电动空中出租车演示飞行，标志着城市空中交通从概念走向商业运营的关键一步。该eVTOL飞行器可搭载4名乘客+1名飞行员，时速200英里，零排放运行。</p>
+      <div class="source"><span class="tag">交通</span><span class="tag">电动航空</span> 来源：Flying Magazine · Hacker News</div>
+    </div>
+
+    <div class="card">
+      <h3>🐛 HN热榜：copy.fail剪贴板漏洞967分，Claude Code计费漏洞1129分</h3>
+      <p>安全研究者披露CVE-2026-31431剪贴板高危漏洞，网站可通过JavaScript读取用户剪贴板内容中的AI生成代码片段。同日，Claude Code的HERMES.md文件被曝导致请求被错误路由至额外计费通道，引发1129分讨论。两起事件揭示了AI工具链中的<strong>安全和计费两大盲区</strong>。</p>
+      <div class="source"><span class="tag">安全</span><span class="tag">计费</span> 来源：Hacker News</div>
+    </div>
+
+    <div class="card">
+      <h3>📜 Zig项目宣布反AI贡献政策，Simon Willison深度分析</h3>
+      <p>Zig编程语言项目正式发布反AI贡献政策，明确不接受AI生成的代码贡献。Simon Willison撰文分析此举背后的考量——代码版权归属、质量保证与社区信任的三重博弈。此事在HN获271分热议。</p>
+      <div class="source"><span class="tag">开源治理</span> 来源：Simon Willison · Hacker News</div>
+    </div>
+
+    <div class="card">
+      <h3>🎬 阿里HappyHorse视频模型开启灰测，被评"没有惊喜"</h3>
+      <p>曾以盲测方式登顶AI Video Arena排行榜的HappyHorse正式开放测试并接入千问App。然而实际体验反馈平淡——相比Seedance 2.0的惊艳首秀，HappyHorse未能掀起同等量级的关注。36氪评价"没有惊喜"。</p>
+      <div class="source"><span class="tag">视频生成</span> 来源：36氪</div>
+    </div>
+
+    <div class="card">
+      <h3>🕯️ 基因组学先驱Craig Venter去世，享年79岁</h3>
+      <p>人类基因组计划的关键推动者、合成生物学开创者Craig Venter于4月29日去世。他领导的团队完成了首个个人基因组测序，并创造了首个合成细胞。HN 231分致敬。</p>
+      <div class="source"><span class="tag">人物</span> 来源：JCVI · Hacker News</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 2: GitHub -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🐙</span> GitHub 亮点</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">SWE-agent/mini-swe-agent</a> <span class="star">★3,614</span> — 100行代码的AI编程Agent</h3>
+      <p>普林斯顿+斯坦福团队打造的极简AI软件工程agent。核心理念——<strong>工具只有一个：bash。不需要function calling，不需要复杂配置。</strong>每个动作用subprocess.run执行，完全独立，线性历史。在SWE-bench Verified上达到&gt;74%，已被Meta、NVIDIA、IBM等采用。最新v2.2.8支持Gemini 3 Pro、GPT-5等模型，随机切换模型甚至能提升性能。代表了"让模型本身成为Agent核心，而不是脚手架成为核心"的设计哲学。</p>
+      <div class="source"><span class="tag">Python</span><span class="tag">MIT</span> 40位贡献者 · 56个Release</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.github.com/gh-aw" target="_blank">GitHub Agentic Workflows</a> <span class="star">★4,000</span> — 官方Agent CI/CD平台</h3>
+      <p>GitHub官方推出的Agent自动化工作流平台，通过简单的Markdown文件定义，让仓库每天早上自动收到改进PR。已支持Copilot、Claude、Codex和<strong>OpenCode</strong>四种AI引擎，v0.68.6版本新增bare模式（跳过AGENTS.md上下文加载）。安全优先设计，运行在GitHub Actions沙箱中。</p>
+      <div class="source"><span class="tag">Go</span> GitHub官方 · 开源</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/open-gitagent/gitagent" target="_blank">open-gitagent/gitagent</a> <span class="star">★281</span> — Git原生AI Agent框架</h3>
+      <p>将Agent的身份、规则、记忆、工具和Skills全部以文件形式管理在Git仓库中，实现<strong>Agent即代码</strong>。TypeScript实现，MIT协议，已发布10个Release。</p>
+      <div class="source"><span class="tag">TypeScript</span><span class="tag">MIT</span> 3位贡献者</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/kennedym-ds/copilot_orchestrator" target="_blank">Copilot Orchestrator</a> — 16个专业Agent的多智能体编排</h3>
+      <p>面向GitHub Copilot的多Agent编排系统，结构化工作流（指挥→规划→实施→审查→完成），11个核心Agent + 5个翻译Agent。提供可复用技能和验证工具，旨在让GitHub Copilot从单人助理升级为多角色工程团队。</p>
+      <div class="source"><span class="tag">Agent编排</span> 版本3.1.1 · 稳定</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 3: AI动态 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🤖</span> AI 产品与技术</h2>
+
+    <div class="card">
+      <h3>📐 讯飞发布玲珑Agent OS：企业AI操作系统的中国方案</h3>
+      <p>讯飞推出面向企业的玲珑Agent OS，定位为"开箱即用的AI原生生产力"平台。解决当前企业AI应用的三大痛点：个人版工具无法跨部门协同、公有云平台数据安全存疑、AI经验随人员流失。提供私有化部署和可沉淀的企业AI资产。</p>
+      <div class="source"><span class="tag">企业AI</span><span class="tag">Agent OS</span> 来源：网易科技</div>
+    </div>
+
+    <div class="card">
+      <h3>🧠 腾讯ima知识Agent copilot：四大记忆模块驱动的私人AI</h3>
+      <p>腾讯ima正式推出copilot，内置<strong>copilot设定（Soul）、用户档案（User）、长期记忆（Memory）、经验技巧（Agent）</strong>四大记忆模块。全场景感知能力——浏览网页/文件/知识库时自动理解当前内容，无需手动上传。技能生态同步开放，支持第三方Skills扩展。Mac/Windows/iOS/安卓/鸿蒙全覆盖，当前采取申请制。</p>
+      <div class="source"><span class="tag">Agent</span><span class="tag">记忆系统</span> 来源：新浪科技 · 36氪</div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ DeepSeek V4预览版全量上线并行科技MaaS平台</h3>
+      <p>并行科技MaaS平台完成DeepSeek V4 Pro+Flash双版本的深度适配和全量部署。Pro版1.6T参数、49B激活参数，百万Token上下文，Agent能力稳居开源第一梯队；Flash版284B参数、13B激活参数，同等推理能力下成本更低。支持华为昇腾等国产芯片平台。</p>
+      <div class="source"><span class="tag">国产大模型</span><span class="tag">MaaS</span> 来源：新浪财经</div>
+    </div>
+
+    <div class="card">
+      <h3>🔬 中科院"磐石100"：AI4Science从作坊到工厂</h3>
+      <p>科学基础大模型1.5PRO + 8大学科集群 + 100+场景模型，构建"根基-骨干-枝叶"三层体系。650万条科学推理数据训练，支持超150步推理链。三大功能：文献罗盘（自动综述）、创新评价（前沿感知）、智能体工厂（2000+科研工具沉淀）。已在高铁流场重建、海洋预报等百余场景落地。</p>
+      <div class="source"><span class="tag">AI4Science</span> 来源：光明日报 · 新华网 · 环球时报</div>
+    </div>
+
+    <div class="card">
+      <h3>🛡️ AI Agent治理：澳大利亚金融监管发出警告</h3>
+      <p>澳大利亚审慎监管局（APRA）对金融机构发出警告：AI Agent治理和控制存在明显缺口。问题包括：模型行为监控不足、变更管理缺失、非人类身份（AI Agent）的权限管理未及时调整、AI生成代码的安全测试不足、过度依赖单一AI供应商。FIDO联盟同期成立Agent认证技术工作组，谷歌和万事达提交了Agent支付和可验证意图框架方案。</p>
+      <div class="source"><span class="tag">监管</span><span class="tag">安全</span> 来源：AI News</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 4: 今日工具推荐 -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🔧</span> 今日工具推荐</h2>
+
+    <div class="card">
+      <h3><a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">mini-swe-agent</a> — 100行代码，胜过千行脚手架</h3>
+      <p>今天的技术焦点。安装极简：<code>pip install mini-swe-agent</code>，敲 <code>mini</code> 就能让AI帮你修GitHub Issue或写代码。没有复杂配置、没有巨型仓库，只有最纯粹的Agent循环。支持所有主流模型。<br><span class="highlight">获取方式：</span> pip install mini-swe-agent · MIT开源</p>
+      <div class="source"><span class="tag">CLI</span><span class="tag">开源</span> ⭐3.6K · 普林斯顿/斯坦福出品</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/p/langflow/langflow-desktop" target="_blank">Langflow Desktop</a> — 可视化构建AI Agent</h3>
+      <p>拖拽式构建AI Agent工作流，无需写代码即可将多个模型、工具和API串联成完整的Agent流水线。适合快速原型和团队协作。<br><span class="highlight">获取方式：</span> langflow.org · Product Hunt热门</p>
+      <div class="source"><span class="tag">Low-code</span> 可视化 · 开源</div>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://www.producthunt.com/posts/raindrop" target="_blank">Raindrop</a> — AI产品的"Sentry"</h3>
+      <p>专为AI应用打造的监控告警工具。检测模型输出异常、幻觉率飙升、响应延迟波动等AI产品特有故障。229票登上Product Hunt。<br><span class="highlight">获取方式：</span> raindrop.ai</p>
+      <div class="source"><span class="tag">SaaS</span> Product Hunt · 229▲</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>《Una陪你看AI》每日晚间版 · 2026年4月30日</p>
+  <p style="margin-top:8px">「让AI信息降噪，让独立开发者看到真正重要的。」</p>
+</footer>
+
+</body>
+</html>

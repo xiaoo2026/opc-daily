@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-04-30-evening",
+    "title": "🌙 Una陪你看AI · 2026-04-30 晚间版",
+    "summary": "英伟达Nemotron 3 Nano Omni开源全模态Agent模型推理吞吐×9；蚂蚁百灵Ling-2.6-1T万亿参数开源达执行类SOTA；华为小艺Claw接入DeepSeek V4支持自进化；mini-swe-agent 100行代码极简哲学引发社区热议；GitHub官方Agentic Workflows重塑开发者工作流。",
+    "url": "/daily/2026-04/2026-04-30-evening/index.html",
+    "type": "evening"
+  },
+  {
     "date": "2026-04-30",
     "title": "微软OpenAI松绑次日亚马逊立即接入，腾讯ima发布copilot，商汤开源原生统一多模态",
     "url": "/daily/2026-04/2026-04-30/index.html",
