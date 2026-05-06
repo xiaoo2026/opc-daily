@@ -10,8 +10,33 @@
     "html_url": "https://020755.xyz/daily/2026-05/2026-05-02/index.html"
   },
   {
+    "date": "2026-05-03",
+    "type": "evening",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-03/index.html"
+  },
+  {
+    "date": "2026-05-04",
+    "type": "morning",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-04-morning/index.html"
+  },
+  {
+    "date": "2026-05-04",
+    "type": "evening",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-04/index.html"
+  },
+  {
+    "date": "2026-05-05",
+    "type": "morning",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-05/index.html"
+  },
+  {
     "date": "2026-05-06",
     "type": "evening",
     "html_url": "https://020755.xyz/daily/2026-05/2026-05-06/index.html"
+  },
+  {
+    "date": "2026-05-06",
+    "type": "morning",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-06-morning/index.html"
   }
 ]
