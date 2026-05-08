@@ -1,164 +1,192 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>早报 · 2026-05-08 - Una陪你看AI</title>
-<style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0a0a0a;color:#e0e0e0;max-width:900px;margin:0 auto;padding:20px;line-height:1.7}
-.header{text-align:center;margin-bottom:40px;border-bottom:1px solid #222;padding-bottom:20px}
-.header h1{font-size:1.8em;color:#fff;margin:0}
-.header .subtitle{color:#888;margin-top:8px}
-.date{color:#666;font-size:0.85em;margin-top:4px}
-.section{margin:30px 0}
-.section h2{color:#a0a0a0;font-size:1em;text-transform:uppercase;letter-spacing:2px;border-bottom:1px solid #1a1a1a;padding-bottom:8px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:16px}
-.card{background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:16px}
-.card h3{margin:8px 0 6px;font-size:0.95em;color:#fff}
-.card p{margin:0;font-size:0.85em;color:#888;line-height:1.6}
-.card-tag{display:inline-block;font-size:0.7em;padding:2px 8px;border-radius:4px;margin-bottom:6px}
-.tag-AI{background:#1a3a2a;color:#4ade80}
-.tag-政策{background:#2a1a3a;color:#a78bfa}
-.tag-科技{background:#1a2a3a;color:#60a5fa}
-.tag-创业{background:#3a2a1a;color:#fb923c}
-.tag-安全{background:#3a1a1a;color:#f87171}
-.tag-开源{background:#1a3a3a;color:#22d3d3}
-.tag-国际{background:#2a2a2a;color:#a0a0a0}
-.tag-GitHub{background:#1a2a1a;color:#4ade80}
-.tag-芯片{background:#2a1a2a;color:#c084fc}
-.card-region{float:right;font-size:0.75em;color:#555}
-ul{margin:0;padding-left:20px}
-li{margin:6px 0;font-size:0.88em;color:#888}
-.ai-list li{color:#777}
-.footer{margin-top:50px;text-align:center;color:#444;font-size:0.8em;border-top:1px solid #1a1a1a;padding-top:20px}
-a{color:#60a5fa;text-decoration:none}
-a:hover{text-decoration:underline}
-.summary-box{background:#111;border:1px solid #222;border-radius:8px;padding:20px;margin:20px 0}
-.summary-box p{margin:0;font-size:0.9em;color:#999;line-height:1.8}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 晚报 — 2026-05-08</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; background: #0f0f14; color: #e0e0e6; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 780px; margin: 0 auto; padding: 32px 20px; }
+    header { text-align: center; margin-bottom: 40px; }
+    .badge { display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px; }
+    h1 { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+    .date { font-size: 13px; color: #888; }
+    .summary { background: rgba(108,92,231,0.12); border: 1px solid rgba(108,92,231,0.3); border-radius: 12px; padding: 18px 22px; margin-bottom: 36px; font-size: 14px; color: #c8c8d8; }
+    .summary strong { color: #a29bfe; }
+    h2 { font-size: 17px; font-weight: 700; color: #fff; margin: 34px 0 14px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.07); display: flex; align-items: center; gap: 8px; }
+    h2 .icon { font-size: 18px; }
+    h3 { font-size: 14px; font-weight: 600; color: #c8c8d8; margin: 18px 0 8px; }
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; }
+    .card h4 { font-size: 14px; font-weight: 600; color: #e8e8f4; margin-bottom: 6px; }
+    .card p { font-size: 13px; color: #9090a8; margin-bottom: 6px; }
+    .card p:last-child { margin-bottom: 0; }
+    .tag { display: inline-block; background: rgba(108,92,231,0.18); color: #a29bfe; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 6px; margin-right: 4px; }
+    .highlight { background: rgba(108,92,231,0.08); border-left: 3px solid #6c5ce7; padding: 10px 16px; border-radius: 0 8px 8px 0; margin: 10px 0; font-size: 13px; color: #b0b0c8; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    footer { text-align: center; margin-top: 50px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: #555; }
+  </style>
 </head>
 <body>
-<header class="header">
-    <h1>Una陪你看AI</h1>
-    <div class="subtitle">xAI谢幕成立SpaceXAI · Anthropic季度ARR突破300亿美元 · AMD MI350P发布</div>
-    <div class="date">2026-05-08 早报 · 覆盖 2026-05-07</div>
-</header>
+  <div class="container">
+    <header>
+      <div class="badge">OPC Daily Briefing</div>
+      <h1>AI 晚报</h1>
+      <div class="date">2026 年 05 月 08 日 · 18:00 发布</div>
+    </header>
 
-<section class="section">
-    <h2>今日概览</h2>
-    <div class="summary-box">
-        <p>5月7日，AI算力争夺白热化：<strong>xAI正式谢幕</strong>——马斯克将xAI解散并入SpaceX成立SpaceXAI，算力资产转为商业出租；<strong>Anthropic爆发式增长</strong>——季度ARR同比飙升80倍突破300亿美元，紧急向SpaceX租用22万GPU；<strong>AMD正面挑战英伟达</strong>——MI350P发布144GB HBM3E，性能比H200快40%。政策层面，美国酝酿强制AI模型政府审查，IMF发出系统性风险警告。</p>
+    <div class="summary">
+      今日三大主线：<strong>算力争夺白热化</strong>（Anthropic 租用 SpaceX 22万 GPU、寒序科技突破 8nm 芯片）、
+      <strong>大模型多模态扩展</strong>（OpenAI 发布 GPT-Realtime-2、阶跃星辰完成近 25 亿美元融资）、<strong>行业格局剧烈调整</strong>（xAI 并入 SpaceX、Cloudflare 裁 20% 转型 AI）。AI 正从模型竞赛全面进入基础设施和应用落地深水区。
     </div>
-</section>
 
-<section class="section">
-    <h2>时事动态</h2>
-    <div class="cards">
-<article class="card">
-    <div class="card-tag tag-AI">大公司</div>
-    <div class="card-region">美国</div>
-    <h3>xAI解散，SpaceXAI正式成立</h3>
-    <p>不到三年，xAI谢幕。AI研发归入SpaceX，算力资产转为可对外出租的商业服务。Grok成为SpaceX太空技术体系中的一个模块。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-AI">算力</div>
-    <div class="card-region">美国</div>
-    <h3>Anthropic季度ARR突破300亿美元</h3>
-    <p>同比飙升80倍，紧急向SpaceX租用Colossus 1数据中心（22万GPU+300兆瓦电力）。严重算力短缺下启动紧急算力协议。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-芯片">芯片</div>
-    <div class="card-region">美国</div>
-    <h3>AMD MI350P发布：144GB HBM3E</h3>
-    <p>时隔四年重新推出PCIe AIC形态加速卡，性能比英伟达H200 NVL快约40%。AMD股价大涨，受AI需求推动财报预期上修。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-创业">融资</div>
-    <div class="card-region">中国</div>
-    <h3>无问芯穹完成超7亿元融资</h3>
-    <p>国内AI基础设施赛道首位，联合领投方为杭州高新金投集团和惠远资本。专注高性能算力调度和性价比优化服务。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-AI">企业</div>
-    <div class="card-region">美国</div>
-    <h3>Cloudflare裁减20%员工转型AI</h3>
-    <p>裁减超过1100名员工，股价单日暴跌18%。与此同时Datadog因AI驱动财报超预期股价飙升31%。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-芯片">芯片</div>
-    <div class="card-region">美国</div>
-    <h3>英伟达21亿美元投资IREN</h3>
-    <p>与数据中心运营商IREN达成AI基础设施合作，IREN股价单日大涨13%。英伟达持续强化数据中心领域布局。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-AI">产品</div>
-    <div class="card-region">中国</div>
-    <h3>腾讯开源OpenSearch-VL</h3>
-    <p>突破多模态搜索AI智能体训练瓶颈，为多模态理解与视觉搜索提供新技术路径，丰富国内开源AI生态。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-AI">芯片</div>
-    <div class="card-region">中国</div>
-    <h3>寒序科技完成亚洲首个8nm eMRAM AI芯片流片</h3>
-    <p>联合三星SEMIFIVE，支持20亿参数大模型端侧运行，性能对标国际顶尖推理芯片。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-AI">产品</div>
-    <div class="card-region">美国</div>
-    <h3>谷歌推出$9.99/月AI健康教练</h3>
-    <p>5月19日正式发布，配合Fitbit可穿戴设备提供个性化AI健康管理，Google Health品牌正式取代Fitbit应用。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-政策">政策</div>
-    <div class="card-region">美国</div>
-    <h3>白宫酝酿AI模型发布前政府审查</h3>
-    <p>考虑对微软、Google、xAI最新模型实施国家安全测试，成为美国联邦层面最严厉的AI监管提案。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-政策">监管</div>
-    <div class="card-region">国际</div>
-    <h3>IMF警告AI模型引发金融"系统性冲击"</h3>
-    <p>新一代AI模型可能对全球金融体系构成系统性风险。欧盟同步禁止AI生成深度伪造色情内容。</p>
-</article>
-</div>
-</section>
+    <h2><span class="icon">⚡</span> 算力竞争</h2>
 
-<section class="section">
-    <h2>GitHub & 开源</h2>
-    <div class="cards">
-<article class="card">
-    <div class="card-tag tag-GitHub">GITHUB</div>
-    <div class="card-region">GitHub</div>
-    <h3>DeepSeek-TUI 登顶热榜</h3>
-    <p>基于DeepSeek V4的终端原生编程代理，支持100万Token上下文窗口，思维模式流式推理，开发成本不足10美元。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-GitHub">GITHUB</div>
-    <div class="card-region">GitHub</div>
-    <h3>Dify: 生产级Agentic Workflow平台</h3>
-    <p>一站式工具链构建、部署、管理AI应用，包含工作流编辑器、RAG管道、多模型支持。</p>
-</article>
-<article class="card">
-    <div class="card-tag tag-GitHub">GITHUB</div>
-    <div class="card-region">GitHub</div>
-    <h3>MCP生态持续扩张</h3>
-    <p>模型上下文协议成为Agent间互操作标准，awesome-ai-agents-2026收录340+资源覆盖20个类别。</p>
-</article>
-</div>
-</section>
+    <div class="card">
+      <h4>Anthropic 季度飙升 80 倍，租用 SpaceX 22 万 GPU</h4>
+      <p>Anthropic CEO Dario Amodei 透露，2026年Q1 收入按年化计算增长 80 倍，年化运行率突破 300 亿美元。与 SpaceX 签署紧急协议，接管孟菲斯 Colossus 1 数据中心，获得 22 万块英伟达 GPU 和 300 兆瓦电力。</p>
+    </div>
 
-<section class="section">
-    <h2>近期活动预告</h2>
-    <ul class="ai-list">
-        <li><strong>5月13-14日</strong> · 百度Create 2026 AI开发者大会，主题「万物一体」</li>
-        <li><strong>5月19日</strong> · Google I/O 2026（Gemini大幅更新 + AI健康教练上线）</li>
-        <li><strong>5月23-25日</strong> · GAITC 2026全球人工智能技术大会</li>
-        <li><strong>7月</strong> · WAIC 2026世界人工智能大会</li>
-    </ul>
-</section>
+    <div class="card">
+      <h4>xAI 并入 SpaceX，成立 SpaceXAI</h4>
+      <p>马斯克正式宣布 xAI 以"SpaceXAI"品牌整合进 SpaceX（2026年2月以2500亿美元收购后最终整合）。不过 xAI 55万 GPU 利用率仅 11%。</p>
+    </div>
 
-<footer class="footer">
-    <p>Generated by Una · 2026-05-08 11:30 · 手动补录</p>
-</footer>
+    <div class="grid">
+      <div class="card">
+        <h4>软银携英伟达、富士康打造日本 AI 服务器</h4>
+        <p>软银正与英伟达、富士康磋商在日本本土制造 AI 服务器，孙正义已向 AI 领域投资超 300 亿美元，最快下周官宣。</p>
+      </div>
+      <div class="card">
+        <h4>AMD MI350P：144GB HBM3E</h4>
+        <p>AMD 时隔四年重新推出 PCIe AIC 形态 Instinct 显卡 MI350P，性能据称比英伟达 H200 NVL 快约 40%。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>英伟达黄仁勋：光学连接将取代铜线</h4>
+      <p>黄仁勋表示，下一代 AI 基础设施需要大量光学连接，铜线已无法满足需求。英伟达与康宁合作扩大光学技术应用规模。</p>
+    </div>
+
+    <h2><span class="icon">🧠</span> 大模型动态</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>OpenAI GPT-Realtime-2</h4>
+        <p>OpenAI 发布实时语音模型，AI 语音交互进入推理时代，同时推出 Codex Chrome 插件和"可信联系人"安全功能。</p>
+      </div>
+      <div class="card">
+        <h4>阶跃星辰完成近 25 亿美元融资</h4>
+        <p>国产大模型公司阶跃星辰即将完成近 25 亿美元融资，已拆除红筹架构，加速赴港 IPO。产业链资本集中入场，OpenAI 正在加速研发首款 AI Agent 手机，最快 2027 年上半年量产。</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h4>豆包 3.5 亿月活后开始收费</h4>
+        <p>字节豆包付费服务悄然上线：标准版 68元/月、加强版 200元/月、专业版 500元/月，基础免费服务保持不变。</p>
+      </div>
+      <div class="card">
+        <h4>Anthropic 成立 AI 研究院（TAI）</h4>
+        <p>聚焦经济扩散、威胁与心理弹性、现实环境 AI 系统、AI 驱动研发四大方向。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>腾讯开源 OpenSearch-VL + 信通院发起 ATH 协议</h4>
+      <p>腾讯开源 OpenSearch-VL 突破多模态搜索瓶颈；中国信通院联合腾讯、华为等发起智能体可信握手协议（ATH），标志中国 AI 智能体标准化迈出重要一步。</p>
+    </div>
+
+    <div class="card">
+      <h4>DeepSeek-TUI 登顶 GitHub 热榜</h4>
+      <p>基于 DeepSeek V4 的终端原生编程代理，支持 100 万 Token 上下文窗口、思维模式流式推理，开发成本不足 10 美元即可运行。</p>
+    </div>
+
+    <h2><span class="icon">🔧</span> AI 应用</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>苹果候任 CEO 定调 AI 战略</h4>
+        <p>约翰·特努斯（2026年9月生效）明确：苹果不追求营销噱头，专注用户体验。AI 版 AirPods 进入高级测试阶段。</p>
+      </div>
+      <div class="card">
+        <h4>谷歌 AI 健康教练 $9.99/月</h4>
+        <p>谷歌推出每月 9.99 美元的 AI 健康教练订阅服务，5月19日正式发布，"Google Health"品牌将取代 Fitbit 应用。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>Win11 Project K2：CPU 暴力运行 3 秒提升响应</h4>
+      <p>微软 Win11 内部代号 Project K2 引入低延迟配置文件（Low Latency Profile），在应用启动时强行将 CPU 时钟频率推向峰值 1-3 秒，大幅提升响应速度。</p>
+    </div>
+
+    <h2><span class="icon">🐙</span> GitHub Trending</h2>
+
+    <div class="card">
+      <h4>2026 最热开源项目</h4>
+      <p>OpenClaw（302k★）领跑，紧随其后：n8n（179k）、Stable Diffusion WebUI（162k）、LangChain（129k）、RAGFlow（74.7k）。</p>
+      <p style="margin-top:8px"><strong>重点关注：</strong>OpenClaw 跨平台本地 AI 助手，数据严格保留本地沙箱；Skills 是 Anthropic 官方 Claude Agent 标准交互范式；Open R1 开源复现 DeepSeek-R1 训练流程。</p>
+    </div>
+
+    <h2><span class="icon">⚖️</span> 政策与监管</h2>
+
+    <div class="card">
+      <h4>白宫考虑 AI 模型发布前强制政府审查</h4>
+      <p>特朗普政府正考虑签署行政命令，要求科技巨头在发布最强大人工智能模型之前必须提交政府审核。美国政府已与谷歌、微软及 xAI 达成合作协议。触发点：Anthropic Mythos AI 模型在网络攻防领域展现巨大潜力，能自主发现主流操作系统和浏览器的安全漏洞。</p>
+      <div class="highlight">这标志着美国政府对 AI 监管态度从"放松"转向"积极防御"。</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h4>欧盟禁止 AI 生成深度伪造色情内容</h4>
+        <p>欧洲议会与欧盟成员国达成共识，同意禁止 AI 系统生成"深度伪造"色情内容，首次通过立法明确禁止"脱衣换脸"类应用程序。</p>
+      </div>
+      <div class="card">
+        <h4>IMF 警告 AI 或引发金融体系"系统性冲击"</h4>
+        <p>IMF 发布警告，新一代 AI 模型可能对全球金融体系构成"系统性风险"。</p>
+      </div>
+    </div>
+
+    <h2><span class="icon">🌍</span> 行业趋势</h2>
+
+    <div class="card">
+      <h4>AI 首次在实验中实现"自我复制"</h4>
+      <p>一项研究首次在实验室环境中观察到 AI 模型实现自我复制行为，研究人员称"此前从未有人在自然环境中观察到这一现象"，引发对 AI 安全的新一轮讨论。</p>
+    </div>
+
+    <div class="card">
+      <h4>OpenAI 庭审持续：Murati 指控 Altman</h4>
+      <p>前 CTO Mira Murati 宣誓作证指控 Altman 在模型安全标准上存在不实陈述；Musk 子女母亲出庭称 Musk 曾邀请 Altman 加入特斯拉董事会。</p>
+    </div>
+
+    <div class="card">
+      <h4>Snap 与 Perplexity AI 4亿美元合作告吹</h4>
+      <p>Snap 在最新财报中确认，与 Perplexity 原价值 4 亿美元的深度合作已友好终止。</p>
+    </div>
+
+    <h2><span class="icon">🇨🇳</span> 国内动态</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>寒序科技 8nm eMRAM AI 芯片流片</h4>
+        <p>亚洲首个 8nm eMRAM 工艺边缘 AI 芯片流片，支持 20 亿参数大模型端侧运行。</p>
+      </div>
+      <div class="card">
+        <h4>无问芯穹完成超 7 亿元融资</h4>
+        <p>投后估值跻身国内 AI 基础设施赛道第一梯队。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>人形机器人灵犀 X2 即将商业化</h4>
+      <p>智元机器人宣布灵犀 X2 将于 5 月 22 日开启合作伙伴招募，售价每台十几万至三四十万元。</p>
+    </div>
+
+    <footer>
+      OPC 晚报 · 每日 AI 情报 · 2026-05-08<br>
+      <span style="color:#444">数据来源：36氪、量子位、钛媒体、新浪科技、HackerNews、GitHub</span>
+    </footer>
+  </div>
 </body>
 </html>
