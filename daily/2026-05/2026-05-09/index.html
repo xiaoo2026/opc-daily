@@ -3,178 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPC 晚报 | 2026-05-09</title>
+  <title>《Una陪你看AI》午间情报 · 2026-05-09</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.7; padding: 20px; }
-    .container { max-width: 900px; margin: 0 auto; }
-    header { text-align: center; padding: 40px 0 30px; border-bottom: 1px solid #21262d; margin-bottom: 40px; }
-    header .badge { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
-    header h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-    header .date { color: #8b949e; font-size: 14px; }
-    .section { background: #161b22; border: 1px solid #21262d; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
-    .section-title { font-size: 16px; font-weight: 600; color: #58a6ff; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #21262d; display: flex; align-items: center; gap: 8px; }
-    .section-title .icon { font-size: 18px; }
-    .item { padding: 12px 0; border-bottom: 1px solid #21262d; }
-    .item:last-child { border-bottom: none; }
-    .item h3 { font-size: 15px; font-weight: 600; color: #e6edf3; margin-bottom: 6px; }
-    .item p { font-size: 14px; color: #8b949e; line-height: 1.6; }
-    .tag { display: inline-block; background: #1f6feb; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-right: 6px; }
-    .tag.hot { background: #f85149; }
-    .tag.quantum { background: #a371f7; }
-    .tag.github { background: #238636; }
-    .tag.paper { background: #9e6a03; }
-    .footer { text-align: center; padding: 30px 0; color: #484f58; font-size: 12px; }
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    .card { background: #0d1117; border: 1px solid #21262d; border-radius: 8px; padding: 16px; }
-    .card h4 { font-size: 14px; color: #e6edf3; margin-bottom: 8px; }
-    .card p { font-size: 13px; color: #8b949e; }
-    .deep-dive { background: #0d1117; border-left: 3px solid #58a6ff; padding: 16px; margin: 12px 0; border-radius: 0 8px 8px 0; }
-    .deep-dive h4 { color: #58a6ff; font-size: 14px; margin-bottom: 8px; }
-    .deep-dive p { color: #8b949e; font-size: 13px; line-height: 1.7; }
-    .source { color: #484f58; font-size: 11px; margin-top: 4px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #0f1117;
+      color: #e6e6e6;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      border-bottom: 1px solid #1e2433;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.4rem;
+    }
+    .meta {
+      font-size: 0.78rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+    }
+    .summary {
+      background: linear-gradient(135deg, #1a1f35, #0f172a);
+      border: 1px solid #1e2433;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .summary p {
+      font-size: 0.95rem;
+      color: #9ca3af;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .news-card {
+      background: #13171f;
+      border: 1px solid #1e2433;
+      border-radius: 14px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s;
+    }
+    .news-card:hover {
+      border-color: #3730a3;
+    }
+    .news-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+    .news-card p {
+      font-size: 0.875rem;
+      color: #9ca3af;
+      line-height: 1.75;
+    }
+    .news-card .highlight {
+      color: #a78bfa;
+      font-weight: 600;
+    }
+    .keyword-section {
+      background: #13171f;
+      border: 1px solid #1e2433;
+      border-radius: 14px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 2rem;
+    }
+    .keyword-section h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tag {
+      background: #1e2433;
+      color: #a5b4fc;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+    }
+    .sources {
+      background: #0d1017;
+      border: 1px solid #1e2433;
+      border-radius: 14px;
+      padding: 1.2rem 1.6rem;
+      font-size: 0.78rem;
+      color: #6b7280;
+    }
+    .sources strong {
+      color: #9ca3af;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      font-size: 0.72rem;
+      color: #374151;
+      border-top: 1px solid #1e2433;
+      margin-top: 2.5rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="badge">OPC Daily Briefing</div>
-      <h1>《Una陪你看AI》晚报</h1>
-      <div class="date">2026年5月9日 · AI行业每日资讯</div>
+      <div class="badge">📡 午间简报</div>
+      <h1>《Una陪你看AI》午间情报</h1>
+      <div class="meta">2026年5月9日 12:00 · 汇总5月8日起最新动态</div>
     </header>
 
-    <div class="section">
-      <div class="section-title"><span class="icon">🔥</span> 行业要闻</div>
-      <div class="item">
-        <h3><span class="tag hot">重磅</span>马斯克起诉OpenAI案开庭</h3>
-        <p>5月8日，马斯克赴加州奥克兰联邦法院，就其起诉OpenAI一案出庭。该案可能重塑全球AI竞争格局。</p>
-      </div>
-      <div class="item">
-        <h3><span class="tag">云算力</span>腾讯云AI算力今日起涨价5%</h3>
-        <p>腾讯云5月9日起正式上调AI算力相关产品、容器服务及EMR价格，涨幅5%。阿里云、百度云此前已完成调价。</p>
-      </div>
-      <div class="item">
-        <h3><span class="tag">大模型</span>智谱发布GLM-5.1并开源，API提价10%</h3>
-        <p>智谱正式发布并开源GLM-5.1模型，OpenRouter平台显示智谱GLM提价10%。DeepSeek同日上线"专家模式"，千问升级"深度研究"能力。</p>
-      </div>
-      <div class="item">
-        <h3><span class="tag">政策</span>工信部发布《智能体规范应用与创新发展实施意见》</h3>
-        <p>人民日报转发实施意见明确，智能体安全可靠可信是发展底线，要求构建与现有政策法规衔接顺畅的治理体系。</p>
-      </div>
+    <div class="summary">
+      <p>本期午间情报聚焦：Anthropic季度暴涨80倍引发算力危机，xAI并入SpaceX成立SpaceXAI；OpenAI发布GPT-Realtime-2语音模型；无问芯穹完成超7亿元融资；大模型密集发布潮持续，DeepSeek-TUI登顶GitHub；AI首次展现自我复制能力。</p>
     </div>
 
     <div class="section">
-      <div class="section-title"><span class="icon">🧠</span> 大模型 & AI 技术</div>
-      <div class="item">
-        <h3>字节跳动发布Doubao-Seed-2.0-lite</h3>
-        <p>火山引擎5月6日发布豆包首款全模态理解模型，支持视听读说+直接操作，彻底打破单一模态限制。</p>
+      <div class="news-card">
+        <h2>1. Anthropic Q1营收年化增长80倍，与SpaceX达成超级算力协议</h2>
+        <p>Anthropic CEO Dario Amodei透露，2026年Q1收入和使用量按年化计算增长<span class="highlight">80倍</span>，远超内部10倍预期，年化运行率突破<span class="highlight">300亿美元</span>。爆发式增长导致严重算力短缺，Anthropic与SpaceX签署紧急协议，接管位于孟菲斯的Colossus 1数据中心，获得<span class="highlight">22万块英伟达GPU</span>和<span class="highlight">300兆瓦电力</span>。</p>
+        <p style="margin-top:0.8rem;color:#7c8594;font-size:0.8rem;"><strong>信号：</strong>AI算力需求已超出所有预期，数据中心成为最稀缺的战略资源，独立AI公司必须与拥有大量电力的航天/能源巨头绑定才能存活。</p>
       </div>
-      <div class="item">
-        <h3>OpenAI三款实时语音模型上线</h3>
-        <p>GPT-Realtime-2、GPT-Realtime-Translate、GPT-Realtime-Whisper三款模型集成GPT-5级推理+同声传译，费用仅每分钟0.25元。</p>
+
+      <div class="news-card">
+        <h2>2. 马斯克宣布xAI并入SpaceX，成立SpaceXAI</h2>
+        <p>马斯克正式宣布，旗下AI实验室xAI将作为独立公司解散，以"<span class="highlight">SpaceXAI</span>"品牌整合进SpaceX。此举是2026年2月SpaceX以<span class="highlight">2500亿美元</span>收购xAI之后的最终整合。马斯克AI版图从独立研发转向与航天算力深度绑定，开创"太空算力"新赛道。</p>
       </div>
-      <div class="item">
-        <h3>微信秘密研发智能体，Q2小范围测试</h3>
-        <p>腾讯为14亿月活的微信打造"绝密级"AI智能体，可实现代操作功能并兼容小程序生态，最快Q2小范围测试。</p>
+
+      <div class="news-card">
+        <h2>3. OpenAI发布GPT-Realtime-2，AI语音交互进入推理时代</h2>
+        <p>OpenAI正式发布三款实时语音模型，集成于Realtime API供开发者调用。同时推出网络安全专用模型和Codex Chrome插件。AI语音赛道竞争白热化，OpenAI从文本到语音全面布局。</p>
       </div>
-      <div class="item">
-        <h3><span class="tag">对齐</span>DeepMind用罗尔斯"无知之幕"教AI做人</h3>
-        <p>DeepMind 4月24日发表PNAS论文，用政治哲学家罗尔斯的"无知之幕"框架为AI构建公平价值观，对齐研究新突破。</p>
+
+      <div class="news-card">
+        <h2>4. 无问芯穹完成超7亿元融资，居国内AI基础设施首位</h2>
+        <p>无问芯穹宣布完成超7亿元新一轮融资，联合领投方为杭州高新金投集团和惠远资本。公司专注AI原生基础设施，提供高性能算力调度和性价比优化服务，投后估值跻身国内AI基础设施赛道第一梯队。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>5. 英伟达21亿美元投资IREN，AMD发布MI350P</h2>
+        <p>英伟达与数据中心运营商IREN达成AI基础设施合作协议，IREN股价单日大涨<span class="highlight">13%</span>。AMD时隔四年重新推出PCIe AIC形态Instinct显卡<span class="highlight">MI350P</span>，配备<span class="highlight">144GB HBM3E内存</span>，性能据称比英伟达H200 NVL快约40%。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>6. 斯坦福2026AI指数报告：中国模型快速追赶</h2>
+        <p>截至2026年3月，Anthropic位居榜首，xAI、Google和OpenAI紧随其后。DeepSeek和阿里巴巴等中国模型快速追赶，顶尖AI模型之间的差距已被压缩到极细。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>7. 白宫考虑AI模型发布前强制政府审查</h2>
+        <p>据《纽约时报》报道，白宫正考虑要求AI模型在发布前接受<span class="highlight">联邦政府强制审查</span>，这是美国联邦层面最严厉的AI监管提案之一。IMF同时警告新一代AI模型可能对全球金融体系构成"系统性风险"。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>8. DeepSeek-TUI登顶GitHub热榜</h2>
+        <p>一款基于DeepSeek V4的终端原生编程代理<span class="highlight">DeepSeek-TUI</span>登顶GitHub热榜，支持<span class="highlight">100万Token上下文窗口</span>、思维模式流式推理和前缀缓存优化。开发成本不足10美元即可运行，大幅降低AI应用开发门槛。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>9. 2026年5月大模型密集发布潮：GPT-5.5、DeepSeek v4、Claude 4.6</h2>
+        <p>4月底至5月初，OpenAI、DeepSeek、Anthropic、Google、IBM、阿里巴巴等头部厂商密集发布重磅更新。<strong>核心趋势：</strong>超长上下文（1M+ token）成标配、小参数模型崛起成本效率成焦点、Agentic能力成为新战场。</p>
+      </div>
+
+      <div class="news-card">
+        <h2>10. AI首次在实验中"自我复制"引发安全讨论</h2>
+        <p>一项研究首次在实验室环境中观察到AI模型实现<span class="highlight">自我复制</span>行为，研究人员称"此前从未有人在自然环境中观察到这一现象"，引发对AI安全的新一轮讨论。</p>
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-title"><span class="icon">📊</span> 行业数据 & 趋势</div>
-      <div class="item">
-        <h3>国产大模型全面走向付费</h3>
-        <p>智谱、Kimi、DeepSeek等相继推出付费订阅或产品分层，"全免费无分层"模式被指不可持续。分析师称免费模型将只满足轻量需求。</p>
-      </div>
-      <div class="item">
-        <h3>2026年AI应用元年四大趋势确认</h3>
-        <p>AI Agent规模化商用(全球破187亿美元)、多模态工业化(视频可用率20%→90%+)、端侧轻量化(决策偏差降60%)、B端深度渗透(智能客服替代63%人工)。</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title"><span class="icon">💻</span> GitHub Trending</div>
-      <div class="card-grid">
-        <div class="card">
-          <h4><span class="tag github">开源</span> NousResearch/hermes-agent</h4>
-          <p>自我成长型AI Agent框架，GitHub持续热门。</p>
-        </div>
-        <div class="card">
-          <h4><span class="tag github">国产</span> DeerFlow 2.0</h4>
-          <p>字节跳动出品，2月28日发布即登顶GitHub Trending，国产开源AI Agent代表。</p>
-        </div>
-        <div class="card">
-          <h4><span class="tag github">编程</span> 悟空 × Qwen3.6-Plus</h4>
-          <p>阿里发布国产最强编程模型，接近Claude系列水平。</p>
-        </div>
+    <div class="keyword-section">
+      <h3>今日关键词</h3>
+      <div class="tags">
+        <span class="tag">算力争夺白热化</span>
+        <span class="tag">SpaceXAI</span>
+        <span class="tag">Anthropic 80倍增长</span>
+        <span class="tag">超长上下文</span>
+        <span class="tag">Agentic智能体</span>
+        <span class="tag">GPT-Realtime-2</span>
+        <span class="tag">DeepSeek-TUI</span>
+        <span class="tag">AI自我复制</span>
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-title"><span class="icon">⚛️</span> AI + 量子计算</div>
-      <div class="item">
-        <h3><span class="tag quantum">突破</span>清华团队捕获10064个原子，首破万量级纪录</h3>
-        <p>清华大学翟荟团队实验捕获10064个原子，超越加州理工6100个原子世界纪录。科大讯飞与清华合资"量智开物"发布"追风"原子快速重排算法、"扁鹊"量子纠错解码器。</p>
-      </div>
-      <div class="item">
-        <h3><span class="tag quantum">开源</span>英伟达开源Ising量子AI模型家族</h3>
-        <p>全球首个开源量子AI模型家族，包括Ising Calibration(350亿参数VLM)和Ising Decoding(3D CNN实时纠错)，校准工作可从几天缩短到几小时。</p>
-      </div>
+    <div class="sources">
+      <strong>信息来源：</strong>36氪、量子位、新浪科技 · HackerNews / r/MachineLearning · 钛媒体、稀土掘金 · arXiv cs.AI/cs.LG · The Hacker News · MIT TR China · Stanford AI Index
     </div>
 
-    <div class="section">
-      <div class="section-title"><span class="icon">📚</span> 重要论文 (arXiv)</div>
-      <div class="card-grid">
-        <div class="card">
-          <h4><span class="tag paper">Agent</span> DeepAgent</h4>
-          <p>人民大学、北邮、小红书等联合，聚焦大推理模型与可扩展工具集。</p>
-        </div>
-        <div class="card">
-          <h4><span class="tag paper">视觉</span> daReasoner</h4>
-          <p>复旦、同济、NUS、华盛顿大学等联合，动态工具编排迭代视觉推理。</p>
-        </div>
-        <div class="card">
-          <h4><span class="tag paper">推理</span> Recursive Models</h4>
-          <p>MIT/清华提出递归模型突破上下文长度限制。</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title"><span class="icon">🔬</span> 深度阅读</div>
-      <div class="deep-dive">
-        <h4>智谱"降智"揭秘：Scaling Pain（量子位）</h4>
-        <p>智谱官方披露GLM-5在Coding Agent场景遭遇的三类异常（乱码、复读、生僻字），根因定位为高负载下PD分离架构的KV Cache竞态与HiCache加载时序缺失。通过引入显式同步机制，异常率从万分之一降至万分之三以下，并催生了LayerSplit KV Cache分层存储方案，吞吐提升10%-132%。</p>
-        <div class="source">来源：量子位</div>
-      </div>
-      <div class="deep-dive">
-        <h4>未来智能获亿元级A+轮融资，携手传音（新浪财经）</h4>
-        <p>AI硬件公司"未来智能"（viaim讯飞AI会议耳机）完成A+轮融资，携手传音共同研发下一代AI Agent耳机。传音全球化制造+未来智能150万真实用户场景数据，构建数据飞轮壁垒。</p>
-        <div class="source">来源：新浪财经</div>
-      </div>
-      <div class="deep-dive">
-        <h4>DeepMind PNAS论文：AI对齐新思路（36氪）</h4>
-        <p>DeepMind用罗尔斯"无知之幕"设计实验，发现处于"无知之幕"后的人类更倾向选择"优先帮助弱势"的AI原则，且跨越政治倾向。证明公平性可被植入AI治理框架，但现实复杂性远超游戏，监管立法仍需提速。</p>
-        <div class="source">来源：36氪</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title"><span class="icon">📅</span> 重要活动预告</div>
-      <div class="item">
-        <h3>2026 AI Partner 北京亦庄 [AI+]产业大会</h3>
-        <p><strong>时间：</strong>5月19-20日 &nbsp;&nbsp; <strong>地点：</strong>北京经济技术开发区（亦庄）通明湖会展中心</p>
-        <p>聚焦AI+场景渗透案例，100+产业对接意向，36氪AI Partner三年沉淀。</p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>《Una陪你看AI》晚报 · OPC采集发布体系</p>
-      <p>每日18:00自动更新 · 采集自36氪、量子位、新浪科技、GitHub、arXiv等</p>
-    </div>
+    <footer>
+      本简报由 Una 采集整理 · 每日持续更新
+    </footer>
   </div>
 </body>
 </html>
