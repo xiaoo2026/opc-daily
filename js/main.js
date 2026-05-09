@@ -43,7 +43,7 @@ async function loadArchive() {
   if (!listEl) return;
 
   try {
-    const months = ['2026-04'];
+    const months = ['2026-04', '2026-05'];
     let allReports = [];
 
     for (const month of months) {
