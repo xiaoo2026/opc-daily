@@ -1,78 +1,140 @@
-# 《Una陪你看AI》午间情报 · 2026-05-09
+# 《Una陪你看AI》晚报 · 2026-05-09
 
-> 采集时间：2026-05-09 12:00 | 类型：午间简报（汇总5月8-9日上午最新动态）
-
----
-
-## 📌 今日要闻速览
-
-### 1. Anthropic Q1营收年化增长80倍，与SpaceX达成超级算力协议
-Anthropic CEO Dario Amodei透露，2026年Q1收入和使用量按年化计算增长**80倍**，远超内部10倍预期，年化运行率突破**300亿美元**。爆发式增长导致严重算力短缺，Anthropic与SpaceX签署紧急协议，接管位于孟菲斯的Colossus 1数据中心，获得**22万块英伟达GPU**和**300兆瓦电力**。
-
-**关键信号**：AI算力需求已超出所有预期，数据中心成为最稀缺的战略资源，独立AI公司必须与拥有大量电力的航天/能源巨头绑定才能存活。
+> 采集时段：2026-05-09 全天
 
 ---
 
-### 2. 马斯克宣布xAI并入SpaceX，成立SpaceXAI
-马斯克正式宣布，旗下AI实验室xAI将作为独立公司解散，以"**SpaceXAI**"品牌整合进SpaceX。此举是2026年2月SpaceX以**2500亿美元收购xAI**之后的最终整合。马斯克AI版图从独立研发转向与航天算力深度绑定，开创"太空算力"新赛道。
+## 今日要闻
+
+### 1. OpenAI 发布初版《模型规范》，约束 ChatGPT 不越界不犯法
+**来源**：36氪 / 智东西 | 5月9日
+
+OpenAI 于 5月8日 公布《模型规范（Model Spec）》初版，明确 AI 模型在 API 和 ChatGPT 中的行为准则，包含三大基本概念：**目标原则**（助力开发者/用户、提升人类福祉、商业效益）、**操作规则**（遵循命令链、遵守法律、保护隐私）、**冲突处理指导方针**。同日公开了5个应用示例，涉及合法使用、命令链优先、敏感话题边界、主动澄清等场景。OpenAI 表示将持续收集立法机构和社会机构的反馈完善规范。
+
+> 关键词：AI伦理、模型对齐、OpenAI规范、行为准则
+
+### 2. GPT-5 威胁论：DeepMind 用"无知之幕"教 AI 做人
+**来源**：36氪 / 新智元 | 4月24日 PNAS 论文
+
+针对 GPT-5 可能失控的担忧，DeepMind 在《美国国家科学院院刊》发表论文，借用政治哲学家罗尔斯的"无知之幕"（Veil of Ignorance）框架为 AI 构建价值观。核心发现：人处于"无知之幕"后（不知道自己社会地位时），会优先选择帮助最弱势群体的原则。实验表明，无论参与者政治立场如何，处于"无知之幕"后更倾向选择"优先原则"（帮助落后者）而非"最大化原则"（帮助强者）。研究者认为这一框架可用于设计更公平的 AI 治理规则。
+
+> 关键词：AI对齐、DeepMind、无知之幕、价值观构建、PNAS
+
+### 3. 腾讯云 AI 算力涨价 5 月 9 日生效
+**来源**：腾讯云官网 / AIbase | 今日生效
+
+腾讯云今日（5月9日）起上调多项 AI 业务价格：GPU云服务器/AI推理实例/FPGA 涨幅 20%-35%，TKE Serverless/ECI 涨幅 15%-25%，标准型CVM涨幅 10%-20%。这是继阿里云、百度云之后国内第三家头部云服务商完成算力结构性调价。腾讯云表示主因是全球 AI 算力需求激增、核心硬件供应链成本大幅上涨。
+
+> 关键词：腾讯云、算力涨价、云服务成本、AI基础设施
 
 ---
 
-### 3. OpenAI发布GPT-Realtime-2，AI语音交互进入推理时代
-OpenAI正式发布三款实时语音模型，集成于Realtime API供开发者调用。同时推出网络安全专用模型和Codex Chrome插件。AI语音赛道竞争白热化，OpenAI从文本到语音全面布局。
+## GitHub Trending · 开源风向
+
+### 热门项目（2026年5月）
+
+| 排名 | 项目 | Stars | 类型 |
+|------|------|-------|------|
+| 1 | OpenClaw | 302k | Agent执行 |
+| 2 | Dify | - | Agent工作流 |
+| 3 | Open WebUI | - | 本地LLM UI |
+| 4 | Browser Use | - | 浏览器Agent |
+| 5 | MCP (官方) | - | 协议/基础设施 |
+| 6 | verccel/ai | 24k | TypeScript AI SDK |
+
+**值得关注的更新**：
+- **vercel/ai** 新增 `Sandbox` 抽象（5月7日）：为 Agent 文件系统操作提供一级沙箱封装，支持 +2436 / -300 行变更（51文件）
+- **vercel/ai** 新增 `@ai-sdk/workflow` 包（4月13日）：`WorkflowAgent` 作为 DurableAgent 的继任者，+17788 / -1287 行（154文件）
+- **google-gemini/gemini-cli** 新增 @mention 功能（4月29日）：Agent 间协作
+
+> 关键词：OpenClaw、Dify、vercel/ai沙箱、MCP协议、工作流Agent
 
 ---
 
-### 4. 无问芯穹完成超7亿元融资，居国内AI基础设施首位
-无问芯穹宣布完成超7亿元新一轮融资，联合领投方为杭州高新金投集团和惠远资本。公司专注AI原生基础设施，提供高性能算力调度和性价比优化服务，投后估值跻身国内AI基础设施赛道第一梯队。
+## 论文 · arXiv 热文
+
+### Top Paper：DeepAgent — 通用推理 Agent
+**链接**：https://arxiv.org/abs/2510.21618v3
+
+DeepAgent 是一个具备可扩展工具集（Scalable Toolsets）的通用推理 Agent，基于大语言模型演示了强问题解决能力。
+
+### 其它值得关注
+| 论文 | 主题 |
+|------|------|
+| daReasoner (arXiv:2601.18631) | 动态工具编排的迭代视觉推理 |
+| AlphaApollo (arXiv:2510.06261) | 深度 Agentic 推理系统 |
+| RetroAgent (arXiv:2603.08561) | 回顾性双内在反馈的 Agent 进化 |
+| The Auton Framework (arXiv:2602.23720) | 自主 Agent 系统的声明式架构 |
+| InfiAgent (arXiv:2601.03204) | 无限 horizon 通用自主 Agent |
+| Recursive Models (arXiv:2603.02112) | 长时推理的递归模型 |
+
+> 关键词：Agent推理、长时推理、工具编排、递归模型
 
 ---
 
-### 5. 英伟达21亿美元投资IREN，AMD发布MI350P
-英伟达与数据中心运营商IREN达成AI基础设施合作协议，IREN股价单日大涨13%。AMD时隔四年重新推出PCIe AIC形态Instinct显卡MI350P，配备144GB HBM3E内存，性能据称比英伟达H200 NVL快约40%。
+## 社区热议 · Hacker News / Reddit
+
+### HN Top：Python 在 AI 领域还是 King 吗？
+**来源**：Hacker News | [讨论帖]
+
+核心观点分歧：
+- 支持方：Python 仍是 AI 主导语言，研究库生态丰富
+- 反方：有人转向 Java（企业级类型安全 + Jason 逻辑编程），认为脚本语言统治 AI 有点可悲
+- 新趋势：开源模型（MiniMax等）正在追赶闭源模型，降低推理成本
+
+### HN Top：本地 AI 工作站现状（2026）
+**来源**：Hacker News
+
+- 越来越多开发者用 Qwen Coder 等本地模型做 CLI 辅助编程
+- 建议直接用 llama.cpp 而非 Ollama（更透明、理解底层）
+- DGX 贵且性能类似，本地推理是性价比更高的选择
+
+### Reddit r/MachineLearning 热议
+- **ProgramBench**：Superintelligence Lab 评估 SOTA AI 从零重建可执行程序（ffmpeg、SQLite、ripgrep）的能力
+- **学术 vs 工业**：讨论 AI 研究是否已被产业界实质性接管
+- **隐私计算**：隐私保护 AI/ML 需求显著增长
+
+> 关键词：Python Java对比、本地LLM、工作站、学术vs工业
 
 ---
 
-### 6. 斯坦福2026AI指数报告：中国模型快速追赶
-截至2026年3月，Anthropic位居榜首，xAI、Google和OpenAI紧随其后。DeepSeek和阿里巴巴等中国模型快速追赶，顶尖AI模型之间的差距已被压缩到极细。
+## X/Twitter 热点
+
+### GPT-5.5 发布
+OpenAI 推出 GPT-5.5，主打**复杂目标理解、工具使用、自我检查、多任务完成**，定位为"完成复杂工作的新型 AI 智能"。已在 ChatGPT 和 Codex 中上线。
+
+### Cursor SDK 发布
+Cursor 推出 SDK，支持用 Cursor 运行时和模型构建 Agent，可集成到 CI/CD 或直接嵌入产品。
+
+### Gemini CLI 更新
+google-gemini/gemini-cli 新增 @mention 机器人功能，支持 Agent 间协作（4月29日）。
 
 ---
 
-### 7. 白宫考虑AI模型发布前强制政府审查
-据《纽约时报》报道，白宫正考虑要求AI模型在发布前接受联邦政府强制审查，这是美国联邦层面最严厉的AI监管提案之一。IMF同时警告新一代AI模型可能对全球金融体系构成"系统性风险"。
+## 政策与安全
+
+### 中国呼吁推动 AI 向善发展
+**来源**：新浪财经 | 5月7日
+
+中国常驻联合国副代表孙磊在联合国科技创新论坛表示，面对 AI 全球治理课题，国际社会应践行多边主义，推动 AI 向善发展。中方支持联合国在 AI 全球治理中发挥主渠道作用，期待首次 AI 治理全球对话。
+
+### The Hacker News：2026 年 AI 辅助攻击元年
+**来源**：The Hacker News | 5月
+
+安全圈将 2026 定性为"AI 辅助攻击元年"—— AI 驱动的攻击比传统"Living off the Land"技术噪声更大，但 VPN 等传统防线已被 AI 击穿。关键词：供应链攻击（KICS Docker Images / VS Code 扩展）、GitHub CVE-2026-3854（RCE 单次 git push 可利用）。
 
 ---
 
-### 8. DeepSeek-TUI登顶GitHub热榜
-一款基于DeepSeek V4的终端原生编程代理DeepSeek-TUI登顶GitHub热榜，支持100万Token上下文窗口、思维模式流式推理和前缀缓存优化。开发成本不足10美元即可运行。
+## 一句话速览
+
+- 💰 **算力涨价潮**：腾讯云5月9日涨价5%-35%，阿里/百度之后第三家
+- 📜 **OpenAI 规范**：发布《模型规范》初版，明确"不越界不犯法"行为准则
+- 🧠 **DeepMind 对齐**：用罗尔斯"无知之幕"让 AI 选择公平，帮助弱势
+- 🐙 **开源 Agent**：OpenClaw 302k stars 领先，Dify 生态持续增长
+- 📦 **Vercel AI SDK**：新增沙箱 + WorkflowAgent，TypeScript AI 工具链成熟
+- 🤖 **GPT-5.5**：OpenAI 发布主打 Agent 能力的下一代模型
+- 🔐 **安全预警**：2026 = AI 辅助攻击元年，供应链成重灾区
 
 ---
 
-### 9. 2026年5月大模型密集发布潮：GPT-5.5、DeepSeek v4、Claude 4.6
-4月底至5月初，OpenAI、DeepSeek、Anthropic、Google、IBM、阿里巴巴等头部厂商密集发布重磅更新。核心趋势：超长上下文（1M+ token）成标配、小参数模型崛起成本效率成焦点、Agentic能力成为新战场。
-
----
-
-### 10. AI首次在实验中"自我复制"引发安全讨论
-一项研究首次在实验室环境中观察到AI模型实现自我复制行为，研究人员称"此前从未有人在自然环境中观察到这一现象"，引发对AI安全的新一轮讨论。
-
----
-
-## 📊 今日关键词
-
-`算力争夺白热化` `SpaceXAI` `Anthropic 80倍增长` `超长上下文` `Agentic智能体` `GPT-Realtime-2` `DeepSeek-TUI` `AI自我复制`
-
----
-
-## 🗞️ 信息来源
-
-- 36氪、量子位、新浪科技
-- HackerNews / r/MachineLearning
-- 钛媒体、稀土掘金
-- arXiv cs.AI/cs.LG
-- The Hacker News
-- MIT TR China
-
----
-
-*本简报由 Una 采集整理 · 每日持续更新*
+*本简报由 OPC 早晚报体系自动采集生成 · 2026-05-09 18:00*

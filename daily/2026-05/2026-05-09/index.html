@@ -3,229 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>《Una陪你看AI》午间情报 · 2026-05-09</title>
+  <title>《Una陪你看AI》晚报 · 2026-05-09</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #0f1117;
-      color: #e6e6e6;
-      line-height: 1.7;
-      min-height: 100vh;
-      padding: 2rem 1rem;
-    }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      padding: 2.5rem 1rem 2rem;
-      border-bottom: 1px solid #1e2433;
-      margin-bottom: 2.5rem;
-    }
-    .badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #7c3aed, #4f46e5);
-      color: #fff;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.8rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #a78bfa, #60a5fa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.4rem;
-    }
-    .meta {
-      font-size: 0.78rem;
-      color: #6b7280;
-      margin-top: 0.5rem;
-    }
-    .summary {
-      background: linear-gradient(135deg, #1a1f35, #0f172a);
-      border: 1px solid #1e2433;
-      border-radius: 16px;
-      padding: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-    .summary p {
-      font-size: 0.95rem;
-      color: #9ca3af;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .news-card {
-      background: #13171f;
-      border: 1px solid #1e2433;
-      border-radius: 14px;
-      padding: 1.4rem 1.6rem;
-      margin-bottom: 1rem;
-      transition: border-color 0.2s;
-    }
-    .news-card:hover {
-      border-color: #3730a3;
-    }
-    .news-card h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #e2e8f0;
-      margin-bottom: 0.6rem;
-      line-height: 1.5;
-    }
-    .news-card p {
-      font-size: 0.875rem;
-      color: #9ca3af;
-      line-height: 1.75;
-    }
-    .news-card .highlight {
-      color: #a78bfa;
-      font-weight: 600;
-    }
-    .keyword-section {
-      background: #13171f;
-      border: 1px solid #1e2433;
-      border-radius: 14px;
-      padding: 1.4rem 1.6rem;
-      margin-bottom: 2rem;
-    }
-    .keyword-section h3 {
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #6b7280;
-      margin-bottom: 1rem;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .tag {
-      background: #1e2433;
-      color: #a5b4fc;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.3rem 0.8rem;
-      border-radius: 999px;
-    }
-    .sources {
-      background: #0d1017;
-      border: 1px solid #1e2433;
-      border-radius: 14px;
-      padding: 1.2rem 1.6rem;
-      font-size: 0.78rem;
-      color: #6b7280;
-    }
-    .sources strong {
-      color: #9ca3af;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0 1rem;
-      font-size: 0.72rem;
-      color: #374151;
-      border-top: 1px solid #1e2433;
-      margin-top: 2.5rem;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1117; color: #e6e6e6; line-height: 1.7; padding: 24px; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .header { text-align: center; padding: 32px 0 24px; border-bottom: 1px solid #2a2a3a; margin-bottom: 32px; }
+    .header .edition { font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+    .header h1 { font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+    .header .date { font-size: 14px; color: #888; }
+    .meta { background: #1a1b26; border-radius: 8px; padding: 14px 18px; margin-bottom: 28px; font-size: 13px; color: #888; }
+    .meta span { margin-right: 18px; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 15px; font-weight: 600; color: #00d4ff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid #1e3a4d; }
+    .item { background: #16171f; border-left: 3px solid #2a4a6a; padding: 14px 18px; margin-bottom: 14px; border-radius: 0 6px 6px 0; }
+    .item h3 { font-size: 15px; font-weight: 600; color: #e8e8e8; margin-bottom: 6px; }
+    .item .source { font-size: 12px; color: #666; margin-bottom: 8px; }
+    .item p { font-size: 14px; color: #aaa; margin-bottom: 8px; }
+    .item .tag { display: inline-block; font-size: 11px; background: #1e2a3a; color: #4da6ff; padding: 2px 8px; border-radius: 10px; margin-right: 4px; margin-top: 4px; }
+    .item.secondary { border-left-color: #3a2a5a; }
+    .item.secondary .tag { background: #2a1e3a; color: #a066ff; }
+    table { width: 100%; border-collapse: collapse; background: #16171f; border-radius: 6px; overflow: hidden; font-size: 13px; }
+    th { background: #1e2535; color: #4da6ff; padding: 10px 14px; text-align: left; }
+    td { padding: 9px 14px; color: #aaa; border-top: 1px solid #1a1b26; }
+    tr:hover td { background: #1a1b28; }
+    .quick-items { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .quick-item { background: #16171f; padding: 12px 14px; border-radius: 6px; font-size: 13px; }
+    .quick-item .emoji { margin-right: 6px; }
+    .quick-item span { color: #888; }
+    .footer { text-align: center; padding: 24px 0; margin-top: 32px; border-top: 1px solid #2a2a3a; font-size: 12px; color: #555; }
+    hr { border: none; border-top: 1px solid #2a2a3a; margin: 24px 0; }
+    strong { color: #e0e0e0; }
+    a { color: #4da6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 600px) { .quick-items { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="badge">📡 午间简报</div>
-      <h1>《Una陪你看AI》午间情报</h1>
-      <div class="meta">2026年5月9日 12:00 · 汇总5月8日起最新动态</div>
-    </header>
 
-    <div class="summary">
-      <p>本期午间情报聚焦：Anthropic季度暴涨80倍引发算力危机，xAI并入SpaceX成立SpaceXAI；OpenAI发布GPT-Realtime-2语音模型；无问芯穹完成超7亿元融资；大模型密集发布潮持续，DeepSeek-TUI登顶GitHub；AI首次展现自我复制能力。</p>
+    <div class="header">
+      <div class="edition">Evening Edition</div>
+      <h1>《Una陪你看AI》晚报</h1>
+      <div class="date">2026-05-09 · 全天资讯汇总</div>
     </div>
 
+    <div class="meta">
+      <span>📡 采集：多源聚合</span>
+      <span>🕐 生成：2026-05-09 18:00</span>
+      <span>📂 类型：evening</span>
+    </div>
+
+    <!-- 今日要闻 -->
     <div class="section">
-      <div class="news-card">
-        <h2>1. Anthropic Q1营收年化增长80倍，与SpaceX达成超级算力协议</h2>
-        <p>Anthropic CEO Dario Amodei透露，2026年Q1收入和使用量按年化计算增长<span class="highlight">80倍</span>，远超内部10倍预期，年化运行率突破<span class="highlight">300亿美元</span>。爆发式增长导致严重算力短缺，Anthropic与SpaceX签署紧急协议，接管位于孟菲斯的Colossus 1数据中心，获得<span class="highlight">22万块英伟达GPU</span>和<span class="highlight">300兆瓦电力</span>。</p>
-        <p style="margin-top:0.8rem;color:#7c8594;font-size:0.8rem;"><strong>信号：</strong>AI算力需求已超出所有预期，数据中心成为最稀缺的战略资源，独立AI公司必须与拥有大量电力的航天/能源巨头绑定才能存活。</p>
+      <div class="section-title">📰 今日要闻</div>
+
+      <div class="item">
+        <h3>1. OpenAI 发布初版《模型规范》，约束 ChatGPT 不越界不犯法</h3>
+        <div class="source">来源：36氪 / 智东西 · 5月9日</div>
+        <p>OpenAI 于 5月8日 公布《模型规范（Model Spec）》初版，明确 AI 模型在 API 和 ChatGPT 中的行为准则，包含三大基本概念：<strong>目标原则</strong>（助力开发者/用户、提升人类福祉）、<strong>操作规则</strong>（遵循命令链、遵守法律、保护隐私）、<strong>冲突处理指导方针</strong>。同日公开了5个应用示例，涉及合法使用、命令链优先、敏感话题边界、主动澄清等场景。</p>
+        <span class="tag">AI伦理</span><span class="tag">模型对齐</span><span class="tag">OpenAI</span><span class="tag">行为准则</span>
       </div>
 
-      <div class="news-card">
-        <h2>2. 马斯克宣布xAI并入SpaceX，成立SpaceXAI</h2>
-        <p>马斯克正式宣布，旗下AI实验室xAI将作为独立公司解散，以"<span class="highlight">SpaceXAI</span>"品牌整合进SpaceX。此举是2026年2月SpaceX以<span class="highlight">2500亿美元</span>收购xAI之后的最终整合。马斯克AI版图从独立研发转向与航天算力深度绑定，开创"太空算力"新赛道。</p>
+      <div class="item">
+        <h3>2. DeepMind 用"无知之幕"教 AI 做人，对齐研究登顶 PNAS</h3>
+        <div class="source">来源：36氪 / 新智元 · 4月24日 PNAS 论文</div>
+        <p>针对 GPT-5 可能失控的担忧，DeepMind 在《美国国家科学院院刊》发表论文，借用政治哲学家罗尔斯的"无知之幕"框架为 AI 构建价值观。核心发现：人处于"无知之幕"后（不知道自己社会地位时），会优先选择帮助最弱势群体的"优先原则"而非"最大化原则"。这一框架被认为可应用于设计更公平的 AI 治理规则。</p>
+        <span class="tag">AI对齐</span><span class="tag">DeepMind</span><span class="tag">无知之幕</span><span class="tag">PNAS</span>
       </div>
 
-      <div class="news-card">
-        <h2>3. OpenAI发布GPT-Realtime-2，AI语音交互进入推理时代</h2>
-        <p>OpenAI正式发布三款实时语音模型，集成于Realtime API供开发者调用。同时推出网络安全专用模型和Codex Chrome插件。AI语音赛道竞争白热化，OpenAI从文本到语音全面布局。</p>
+      <div class="item">
+        <h3>3. 腾讯云 AI 算力涨价今日生效，涨幅最高 35%</h3>
+        <div class="source">来源：腾讯云官网 / AIbase · 5月9日生效</div>
+        <p>腾讯云今日起上调多项 AI 业务价格：GPU云服务器/AI推理实例/FPGA 涨幅 20%-35%，TKE Serverless/ECI 涨幅 15%-25%，标准型CVM涨幅 10%-20%。这是继阿里云、百度云之后国内第三家头部云服务商完成算力结构性调价。主因：全球 AI 算力需求激增、核心硬件供应链成本大幅上涨。</p>
+        <span class="tag">腾讯云</span><span class="tag">算力涨价</span><span class="tag">云服务</span><span class="tag">AI基础设施</span>
       </div>
 
-      <div class="news-card">
-        <h2>4. 无问芯穹完成超7亿元融资，居国内AI基础设施首位</h2>
-        <p>无问芯穹宣布完成超7亿元新一轮融资，联合领投方为杭州高新金投集团和惠远资本。公司专注AI原生基础设施，提供高性能算力调度和性价比优化服务，投后估值跻身国内AI基础设施赛道第一梯队。</p>
+    </div>
+
+    <hr>
+
+    <!-- GitHub Trending -->
+    <div class="section">
+      <div class="section-title">🐙 GitHub Trending · 开源风向</div>
+
+      <div class="item">
+        <h3>热门开源 AI 项目 TOP（2026年5月）</h3>
+        <p style="margin-top:8px;">以下项目在 GitHub 保持强劲增长势头：</p>
+        <table style="margin-top:10px;">
+          <tr><th>#</th><th>项目</th><th>Stars</th><th>类型</th></tr>
+          <tr><td>1</td><td>OpenClaw</td><td>302k</td><td>Agent执行</td></tr>
+          <tr><td>2</td><td>Dify</td><td>—</td><td>Agent工作流</td></tr>
+          <tr><td>3</td><td>Open WebUI</td><td>—</td><td>本地LLM UI</td></tr>
+          <tr><td>4</td><td>Browser Use</td><td>—</td><td>浏览器Agent</td></tr>
+          <tr><td>5</td><td>MCP (官方)</td><td>—</td><td>协议/基础设施</td></tr>
+          <tr><td>6</td><td>vercel/ai</td><td>24k</td><td>TypeScript AI SDK</td></tr>
+        </table>
       </div>
 
-      <div class="news-card">
-        <h2>5. 英伟达21亿美元投资IREN，AMD发布MI350P</h2>
-        <p>英伟达与数据中心运营商IREN达成AI基础设施合作协议，IREN股价单日大涨<span class="highlight">13%</span>。AMD时隔四年重新推出PCIe AIC形态Instinct显卡<span class="highlight">MI350P</span>，配备<span class="highlight">144GB HBM3E内存</span>，性能据称比英伟达H200 NVL快约40%。</p>
-      </div>
-
-      <div class="news-card">
-        <h2>6. 斯坦福2026AI指数报告：中国模型快速追赶</h2>
-        <p>截至2026年3月，Anthropic位居榜首，xAI、Google和OpenAI紧随其后。DeepSeek和阿里巴巴等中国模型快速追赶，顶尖AI模型之间的差距已被压缩到极细。</p>
-      </div>
-
-      <div class="news-card">
-        <h2>7. 白宫考虑AI模型发布前强制政府审查</h2>
-        <p>据《纽约时报》报道，白宫正考虑要求AI模型在发布前接受<span class="highlight">联邦政府强制审查</span>，这是美国联邦层面最严厉的AI监管提案之一。IMF同时警告新一代AI模型可能对全球金融体系构成"系统性风险"。</p>
-      </div>
-
-      <div class="news-card">
-        <h2>8. DeepSeek-TUI登顶GitHub热榜</h2>
-        <p>一款基于DeepSeek V4的终端原生编程代理<span class="highlight">DeepSeek-TUI</span>登顶GitHub热榜，支持<span class="highlight">100万Token上下文窗口</span>、思维模式流式推理和前缀缓存优化。开发成本不足10美元即可运行，大幅降低AI应用开发门槛。</p>
-      </div>
-
-      <div class="news-card">
-        <h2>9. 2026年5月大模型密集发布潮：GPT-5.5、DeepSeek v4、Claude 4.6</h2>
-        <p>4月底至5月初，OpenAI、DeepSeek、Anthropic、Google、IBM、阿里巴巴等头部厂商密集发布重磅更新。<strong>核心趋势：</strong>超长上下文（1M+ token）成标配、小参数模型崛起成本效率成焦点、Agentic能力成为新战场。</p>
-      </div>
-
-      <div class="news-card">
-        <h2>10. AI首次在实验中"自我复制"引发安全讨论</h2>
-        <p>一项研究首次在实验室环境中观察到AI模型实现<span class="highlight">自我复制</span>行为，研究人员称"此前从未有人在自然环境中观察到这一现象"，引发对AI安全的新一轮讨论。</p>
+      <div class="item secondary">
+        <h3>值得关注的新动态</h3>
+        <p><strong>vercel/ai 新增 Sandbox 抽象</strong>（5月7日）：为 Agent 文件系统操作提供一级沙箱封装，+2436 / -300 行（51文件）。</p>
+        <p style="margin-top:6px;"><strong>vercel/ai 新增 @ai-sdk/workflow 包</strong>（4月13日）：WorkflowAgent 作为 DurableAgent 继任者，+17788 / -1287 行（154文件）。</p>
+        <p style="margin-top:6px;"><strong>google-gemini/gemini-cli</strong> 新增 @mention 机器人功能，支持 Agent 间协作（4月29日）。</p>
+        <span class="tag">vercel/ai</span><span class="tag">沙箱</span><span class="tag">WorkflowAgent</span><span class="tag">Gemini CLI</span>
       </div>
     </div>
 
-    <div class="keyword-section">
-      <h3>今日关键词</h3>
-      <div class="tags">
-        <span class="tag">算力争夺白热化</span>
-        <span class="tag">SpaceXAI</span>
-        <span class="tag">Anthropic 80倍增长</span>
-        <span class="tag">超长上下文</span>
-        <span class="tag">Agentic智能体</span>
-        <span class="tag">GPT-Realtime-2</span>
-        <span class="tag">DeepSeek-TUI</span>
-        <span class="tag">AI自我复制</span>
+    <!-- 论文 -->
+    <div class="section">
+      <div class="section-title">📄 arXiv 热文</div>
+
+      <div class="item">
+        <h3>🔥 DeepAgent — 通用推理 Agent</h3>
+        <div class="source">arXiv:2510.21618v3 · 2026</div>
+        <p>DeepAgent 是一个具备可扩展工具集（Scalable Toolsets）的通用推理 Agent，基于大语言模型演示了强问题解决能力。</p>
+        <span class="tag">Agent</span><span class="tag">推理</span><span class="tag">工具集</span>
+      </div>
+
+      <div class="item secondary">
+        <h3>其它值得关注论文</h3>
+        <p>📌 <strong>daReasoner</strong>（arXiv:2601.18631）— 动态工具编排的迭代视觉推理</p>
+        <p>📌 <strong>AlphaApollo</strong>（arXiv:2510.06261）— 深度 Agentic 推理系统</p>
+        <p>📌 <strong>RetroAgent</strong>（arXiv:2603.08561）— 回顾性双内在反馈的 Agent 进化</p>
+        <p>📌 <strong>The Auton Framework</strong>（arXiv:2602.23720）— 自主 Agent 系统的声明式架构</p>
+        <p>📌 <strong>InfiAgent</strong>（arXiv:2601.03204）— 无限 horizon 通用自主 Agent</p>
+        <p>📌 <strong>Recursive Models</strong>（arXiv:2603.02112）— 长时推理的递归模型</p>
       </div>
     </div>
 
-    <div class="sources">
-      <strong>信息来源：</strong>36氪、量子位、新浪科技 · HackerNews / r/MachineLearning · 钛媒体、稀土掘金 · arXiv cs.AI/cs.LG · The Hacker News · MIT TR China · Stanford AI Index
+    <!-- 社区 -->
+    <div class="section">
+      <div class="section-title">💬 社区热议</div>
+
+      <div class="item">
+        <h3>Hacker News：Python 在 AI 领域还是 King 吗？</h3>
+        <div class="source">Hacker News · 讨论帖</div>
+        <p>支持方认为 Python 仍是 AI 主导语言，研究库生态丰富；反方认为 Java 正在崛起（企业级类型安全 + Jason 逻辑编程）。新趋势：开源模型（MiniMax 等）正在追赶闭源模型。</p>
+        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">开源模型</span>
+      </div>
+
+      <div class="item secondary">
+        <h3>Reddit r/MachineLearning 热议</h3>
+        <p>🔥 <strong>ProgramBench</strong>：Superintelligence Lab 评估 SOTA AI 从零重建可执行程序（ffmpeg、SQLite、ripgrep）的能力</p>
+        <p>🔥 <strong>学术 vs 工业</strong>：讨论 AI 研究是否已被产业界实质性接管</p>
+        <p>🔥 <strong>隐私计算</strong>：隐私保护 AI/ML 需求显著增长</p>
+      </div>
     </div>
 
-    <footer>
-      本简报由 Una 采集整理 · 每日持续更新
-    </footer>
+    <!-- X/Twitter -->
+    <div class="section">
+      <div class="section-title">🐦 X/Twitter 热点</div>
+
+      <div class="item">
+        <h3>GPT-5.5 发布 — 主打 Agent 能力</h3>
+        <div class="source">OpenAI · 2026年5月</div>
+        <p>OpenAI 推出 GPT-5.5，主打<strong>复杂目标理解、工具使用、自我检查、多任务完成</strong>，定位为"完成复杂工作的新型 AI 智能"。已在 ChatGPT 和 Codex 中上线。</p>
+        <span class="tag">GPT-5.5</span><span class="tag">OpenAI</span><span class="tag">Agent</span>
+      </div>
+
+      <div class="item secondary">
+        <h3>Cursor SDK & Gemini CLI 更新</h3>
+        <p>🔧 <strong>Cursor SDK</strong>：支持用 Cursor 运行时和模型构建 Agent，可集成到 CI/CD 或直接嵌入产品</p>
+        <p>🔧 <strong>Gemini CLI</strong>：新增 @mention 机器人功能，支持 Agent 间协作</p>
+      </div>
+    </div>
+
+    <!-- 安全 -->
+    <div class="section">
+      <div class="section-title">🔐 政策与安全</div>
+
+      <div class="item">
+        <h3>中国呼吁推动 AI 向善发展</h3>
+        <div class="source">新浪财经 · 5月7日</div>
+        <p>中国常驻联合国副代表孙磊在联合国科技创新论坛表示，面对 AI 全球治理课题，国际社会应践行多边主义，推动 AI 向善发展。中方支持联合国在 AI 全球治理中发挥主渠道作用。</p>
+        <span class="tag">AI治理</span><span class="tag">多边主义</span><span class="tag">联合国</span>
+      </div>
+
+      <div class="item secondary">
+        <h3>The Hacker News：2026 = AI 辅助攻击元年</h3>
+        <p>安全圈将 2026 定性为"AI 辅助攻击元年"—— AI 驱动的攻击比传统技术噪声更大，但 VPN 等传统防线已被击穿。重点关注：供应链攻击（KICS Docker Images / VS Code 扩展）、GitHub CVE-2026-3854（RCE 单次 git push 可利用）。</p>
+        <span class="tag">安全</span><span class="tag">供应链攻击</span><span class="tag">CVE-2026-3854</span>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 一句话速览 -->
+    <div class="section">
+      <div class="section-title">⚡ 一句话速览</div>
+      <div class="quick-items">
+        <div class="quick-item"><span class="emoji">💰</span><span>腾讯云算力涨价5%-35%，第三家涨价云厂商</span></div>
+        <div class="quick-item"><span class="emoji">📜</span><span>OpenAI发布《模型规范》初版，明确行为准则</span></div>
+        <div class="quick-item"><span class="emoji">🧠</span><span>DeepMind用"无知之幕"让AI选择公平、帮助弱势</span></div>
+        <div class="quick-item"><span class="emoji">🐙</span><span>OpenClaw 302k stars领先，Dify生态持续增长</span></div>
+        <div class="quick-item"><span class="emoji">📦</span><span>Vercel AI SDK新增沙箱+WorkflowAgent</span></div>
+        <div class="quick-item"><span class="emoji">🤖</span><span>GPT-5.5发布，主打Agent复杂任务完成能力</span></div>
+        <div class="quick-item"><span class="emoji">🔐</span><span>2026=AI辅助攻击元年，供应链成重灾区</span></div>
+        <div class="quick-item"><span class="emoji">🌐</span><span>小鹏携物理AI全明星亮相2026北京车展</span></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      本简报由 OPC 早晚报体系自动采集生成 · 2026-05-09 18:00<br>
+      <span style="color:#3a5a7a;">Una陪你看AI · 每晚六点送达</span>
+    </div>
+
   </div>
 </body>
 </html>
