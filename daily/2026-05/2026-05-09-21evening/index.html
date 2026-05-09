@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晚间情报 · 2026-05-09 · Una陪你看AI</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --tag-bg: #1f6feb33;
+      --tag-text: #79c0ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+    header { margin-bottom: 32px; }
+    .badge { display: inline-block; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1px solid var(--border); border-radius: 20px; padding: 4px 14px; font-size: 12px; color: var(--accent); margin-bottom: 12px; }
+    h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .meta { font-size: 13px; color: var(--muted); }
+    .section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+    .section h2 { font-size: 16px; font-weight: 600; margin-bottom: 14px; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+    .section h2::before { content: ''; display: inline-block; width: 3px; height: 16px; background: var(--accent); border-radius: 2px; }
+    .item { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .item h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .item .source { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+    .item p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+    .item ul { font-size: 13px; color: var(--muted); padding-left: 18px; margin-bottom: 8px; }
+    .item ul li { margin-bottom: 3px; }
+    .item .keywords { font-size: 11px; color: var(--tag-text); background: var(--tag-bg); display: inline-block; padding: 2px 8px; border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 10px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--accent); font-weight: 600; }
+    tr:hover { background: #ffffff08; }
+    footer { text-align: center; font-size: 12px; color: var(--muted); margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">🌙 晚间情报</div>
+  <h1>《Una陪你看AI》晚间情报</h1>
+  <div class="meta">采集时段：2026-05-09 21:00 前后 · Powered by Hermes Agent</div>
+</header>
+
+<div class="section">
+  <h2>今日要闻</h2>
+
+  <div class="item">
+    <h3>1. 2026：AI辅助网络攻击元年</h3>
+    <div class="source">来源：The Hacker News · 5月4日</div>
+    <p>2025年被称为"AI辅助攻击元年"，网络犯罪数量和严重程度指标约翻一番。npm恶意包增加75%，云入侵增加35%，AI生成钓鱼邮件已超越人类红队。攻击者门槛大幅降低：三个无编程背景的青少年（14/15/16岁）用ChatGPT构建工具对乐天Mobile发起22万次攻击；一人用Claude Code在一个月内对17个机构发起勒索行动；另有攻击者用Claude Code+ChatGPT入侵墨西哥政府，窃取超1.95亿条纳税人记录。</p>
+    <p><strong>关键数据：</strong></p>
+    <ul>
+      <li><strong>恶意包数量</strong>：2022年5.5万 → 2025年45.46万</li>
+      <li><strong>漏洞利用时间</strong>：从2020年超700天缩短至2025年仅44天</li>
+      <li><strong>24小时内被利用的CVE</strong>：28.3%（M-Trends 2026）</li>
+      <li><strong>SWE-bench得分</strong>：2024年8月33% → 2025年12月81%</li>
+    </ul>
+    <p><strong>Chainguard Libraries</strong> 被验证可阻断99.7%的恶意npm包，从源头重建可信开源库成为防御趋势。</p>
+    <div class="keywords">AI辅助攻击 · 供应链安全 · Claude Code · 恶意包 · 漏洞利用</div>
+  </div>
+
+  <div class="item">
+    <h3>2. Anthropic Mythos争议 + AI基础设施支出浪潮</h3>
+    <div class="source">来源：Software Engineering Daily · 5月7日</div>
+    <p>SED Monthly播客深度解读Anthropic的Mythos安全模式争议——漏洞发现规模化边界问题。美联储副主席已呼吁监管Mythos等新技术。</p>
+    <p><strong>AI基础设施支出海啸</strong>：亚马逊、谷歌、微软、Meta各自投入千亿美元级别capex，模型提供商与基础设施商的绑定关系正在重塑。</p>
+    <p><strong>Hacker News讨论</strong>：MiniMax等开源模型通过蒸馏逼近前沿模型，引发"AI蒸馏是否构成IP侵权"的讨论；开源生态对闭源模型的追赶态势明显。</p>
+    <div class="keywords">Anthropic · Mythos · AI基础设施投资 · 模型蒸馏 · 开源追赶</div>
+  </div>
+
+  <div class="item">
+    <h3>3. AI+Crypto：融合叙事持续火热，Bittensor领跑</h3>
+    <div class="source">来源：Bitrue / Binance / 链新闻 · 5月初</div>
+    <p><strong>IONIX CHAIN</strong>：AI原生Layer-1区块链，第18阶段预售中，$IONX单价$0.025。定位AI算力分发基础设施。</p>
+    <p><strong>5月代币解锁潮</strong>：$HYPE/$ASTER/$KITE/$SUI 合计3.5亿美元代币解锁，HYPE单周解锁9680万美元。</p>
+    <p><strong>核心标的</strong>：Bittensor(TAO)——去中心化AI模型训练；Render——GPU去中心化渲染，服务AI生成式3D环境算力。</p>
+    <p><strong>a16z观点</strong>：AI Agent+公链将催生预测市场新业态，CFTC需明确监管规则。</p>
+    <p><strong>MoonPay</strong>：推出AI智能代理虚拟万事达借记卡，支持稳定币支付自动兑换法币，已在英国/拉美上线。</p>
+    <div class="keywords">IONIX CHAIN · Bittensor · Render · AI算力 · DeFi · AI Agent</div>
+  </div>
+
+  <div class="item">
+    <h3>4. GitHub AI开源风向：Agent工程化进入实践期</h3>
+    <div class="source">来源：CSDN / 博客园 · 4月底</div>
+    <p>2026年GitHub Star最高AI项目格局已从"模型能力"转向"智能执行+流程编排"：</p>
+    <table>
+      <thead>
+        <tr><th>#</th><th>项目</th><th>Stars</th><th>类型</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>OpenClaw</td><td>302k</td><td>Agent执行</td></tr>
+        <tr><td>3</td><td>n8n</td><td>179k</td><td>流程编排</td></tr>
+        <tr><td>4</td><td>Stable Diffusion WebUI</td><td>162k</td><td>多模态生成</td></tr>
+        <tr><td>6</td><td>Dify</td><td>132k</td><td>Agent工作流</td></tr>
+        <tr><td>8</td><td>LangChain</td><td>129k</td><td>编排框架</td></tr>
+        <tr><td>13</td><td>Gemini CLI</td><td>97.2k</td><td>终端Agent</td></tr>
+        <tr><td>20</td><td>RAGFlow</td><td>74.7k</td><td>上下文引擎</td></tr>
+      </tbody>
+    </table>
+    <p><strong>关键趋势</strong>：LangChain+LangFlow高热度 → 企业已在真实业务中落地AI Agent；llama.cpp + Ollama + Open-WebUI → 个人开发者零成本私有ChatGPT；Google Gemini CLI新增@mention功能支持Agent间协作。</p>
+    <div class="keywords">OpenClaw · LangChain · Dify · 多智能体 · vLLM · 本地部署</div>
+  </div>
+
+  <div class="item">
+    <h3>5. 大模型5月榜：Kimi K2.6登顶，推理范式革命</h3>
+    <div class="source">来源：稀土掘金 · 5月</div>
+    <p>旗舰模型综合基准排名：</p>
+    <table>
+      <thead>
+        <tr><th>排名</th><th>模型</th><th>公司</th><th>分数</th><th>特长</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Kimi K2.6</td><td>月之暗面</td><td>94.3</td><td>数学推理、长上下文</td></tr>
+        <tr><td>2</td><td>DeepSeek V4</td><td>DeepSeek</td><td>93.8</td><td>中文、代码、成本</td></tr>
+        <tr><td>3</td><td>GPT-5</td><td>OpenAI</td><td>93.5</td><td>多语言、创意、推理</td></tr>
+        <tr><td>4</td><td>Claude 4 Opus</td><td>Anthropic</td><td>93.1</td><td>代码、分析、安全</td></tr>
+        <tr><td>5</td><td>Gemini Ultra 3.0</td><td>Google</td><td>92.7</td><td>多模态、检索</td></tr>
+        <tr><td>6</td><td>Qwen3-235B</td><td>阿里</td><td>92.4</td><td>中文、工具调用</td></tr>
+      </tbody>
+    </table>
+    <p><strong>推理专项</strong>：Kimi K2.6 在MATH-500达97.8分；OpenAI o4 在GPQA(74.1)和LiveCodeBench(72.6)领先。</p>
+    <p><strong>范式转变</strong>：推理时计算主流化，训练范式从"预训练+微调"转向"通用基座+行业后训练+推理时进化"。推理算力需求1-3年内将达百倍级增长。</p>
+    <div class="keywords">Kimi K2.6 · DeepSeek V4 · GPT-5 · 推理范式 · 算力革命</div>
+  </div>
+</div>
+
+<footer>
+  <div>《Una陪你看AI》晚间情报 · 2026-05-09 21:00</div>
+  <div style="margin-top:4px">Generated by Hermes Agent · OPC采集发布体系 v2.0</div>
+</footer>
+
+</body>
+</html>
