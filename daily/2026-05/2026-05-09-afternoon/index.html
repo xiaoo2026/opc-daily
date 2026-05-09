@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 午后情报 · 2026-05-09 | Una陪你看AI</title>
+  <link rel="alternate" type="application/rss+xml" title="Una陪你看AI" href="https://020755.xyz/daily/index.xml">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0d1117;
+      --sidebar: #161b22;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --tag-bg: #1f6feb26;
+      --tag: #79c0ff;
+      --red: #ff7b72;
+      --orange: #ffa657;
+      --green: #3fb950;
+      --purple: #d2a8ff;
+      --yellow: #e3b341;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .layout { display: flex; max-width: 1200px; margin: 0 auto; min-height: 100vh; }
+    .sidebar {
+      width: 240px;
+      background: var(--sidebar);
+      border-right: 1px solid var(--border);
+      padding: 24px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+    .sidebar-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sidebar-logo span { font-size: 22px; }
+    .sidebar-sub { font-size: 12px; color: var(--text-muted); margin-bottom: 32px; }
+    .sidebar-section { margin-bottom: 24px; }
+    .sidebar-section-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .sidebar-link {
+      display: block;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: all 0.15s;
+      margin-bottom: 2px;
+    }
+    .sidebar-link:hover { color: var(--text); background: var(--border); }
+    .sidebar-link.active { color: var(--accent); background: var(--tag-bg); }
+    .main { flex: 1; padding: 32px 40px; min-width: 0; }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #f0883e26;
+      color: #ffa657;
+      border: 1px solid #f0883e44;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .header-date {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #58a6ff, #d2a8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .hot-section {
+      background: linear-gradient(135deg, #ff7b7226, #f0883e26);
+      border: 1px solid #ff7b7244;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .hot-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffa657;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .hot-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .hot-meta { font-size: 12px; color: var(--text-muted); }
+    section { margin-bottom: 36px; }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title .icon { font-size: 18px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .card-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .card-body { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+    .card-body p { margin-bottom: 8px; }
+    .card-body p:last-child { margin-bottom: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+    th {
+      background: #1f6feb26;
+      color: var(--tag);
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    tr:last-child td { border-bottom: none; }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .highlight-box {
+      background: #1f6feb14;
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-top: 48px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .kw-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .kw {
+      background: #30363d;
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 900px) {
+      .layout { flex-direction: column; }
+      .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border); }
+      .two-col { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) { .main { padding: 20px 16px; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span>🤖</span> Una陪你看AI</div>
+    <div class="sidebar-sub">AI 午后情报 · 2026-05-09</div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">📅 日期索引</div>
+      <a href="https://020755.xyz/daily/2026-05/" class="sidebar-link">← 2026年5月</a>
+      <a href="https://020755.xyz/daily/2026-05/2026-05-09/" class="sidebar-link">晚报 05-09</a>
+      <a href="https://020755.xyz/daily/2026-05/2026-05-08/" class="sidebar-link">晚报 05-08</a>
+      <a href="https://020755.xyz/daily/2026-05/2026-05-08-morning/" class="sidebar-link">早报 05-08</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🏷️ 标签</div>
+      <span class="tag" style="margin-bottom:4px">GPT-Realtime-2</span>
+      <span class="tag" style="margin-bottom:4px">xAI解散</span>
+      <span class="tag" style="margin-bottom:4px">阶跃星辰</span>
+      <span class="tag" style="margin-bottom:4px">DeepSeek</span>
+      <span class="tag" style="margin-bottom:4px">豆包收费</span>
+      <span class="tag" style="margin-bottom:4px">Anthropic</span>
+      <span class="tag" style="margin-bottom:4px">MCP</span>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🔗 资源</div>
+      <a href="https://arxiv.org/" class="sidebar-link" target="_blank">arXiv</a>
+      <a href="https://github.com/" class="sidebar-link" target="_blank">GitHub</a>
+      <a href="https://news.ycombinator.com/" class="sidebar-link" target="_blank">Hacker News</a>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="header">
+      <div class="header-top">
+        <span class="badge">☀️ 午后版</span>
+        <span class="header-date">采集于 2026-05-09 15:00</span>
+      </div>
+      <h1>AI 午后情报 · 2026-05-09</h1>
+      <p class="header-desc">OpenAI 语音模型上线 · xAI 宣告解散 · 中国大模型密集融资 · 豆包开启收费</p>
+    </header>
+
+    <div class="hot-section">
+      <div class="hot-label">🔥 今日最大事件</div>
+      <div class="hot-title">马斯克 xAI 宣告解散！2500亿估值独角兽一夜归零，全球AI格局骤变</div>
+      <div class="hot-meta">来源：36氪 / 看中国 | 2026-05-09</div>
+    </div>
+
+    <!-- OpenAI 语音模型 -->
+    <section>
+      <div class="section-title"><span class="icon">🔊</span> OpenAI 发布三款 Realtime 语音模型</div>
+      <div class="card">
+        <div class="card-title">GPT-5 级推理语音助手上线，语音交互进入新纪元</div>
+        <div class="card-meta">来源：智东西 / 新浪财经 | 2026-05-07/08</div>
+        <div class="card-body">
+          <p>5月7日，OpenAI 在 Realtime API 中一次性推出三款音频模型，标志着语音 AI 赛道进入新阶段。</p>
+          <table>
+            <tr><th>模型</th><th>定位</th><th>核心亮点</th></tr>
+            <tr><td><strong>GPT-Realtime-2</strong></td><td>GPT-5级推理语音模型</td><td>128K上下文，指令保留率 70.8%（前代36.7%），Big Bench Audio 提升 15.2%</td></tr>
+            <tr><td><strong>GPT-Realtime-Translate</strong></td><td>实时翻译</td><td>70+输入语言，13种输出语言，$0.034/分钟</td></tr>
+            <tr><td><strong>GPT-Realtime-Whisper</strong></td><td>流式转录</td><td>实时字幕/会议记录，$0.017/分钟</td></tr>
+          </table>
+          <div class="highlight-box">
+            <strong>性能登顶：</strong>GPT-Realtime-2（xHigh）以 48.45% APR 位居 Scale Labs Audio MultiChallenge 排行榜首，超越 Google Gemini-3.1-flash-live-preview（36.06%）和前代（34.73%）。Sam Altman："人们真的开始大量使用语音与AI交互。"
+          </div>
+          <p>早期测试客户包括 <strong>Zillow</strong>（房产语音助手）、<strong>Priceline</strong>（完整语音旅行规划）、<strong>德国电信</strong>（多语言语音交互）和 <strong>Vimeo</strong>（实时视频配音）。</p>
+          <div class="tag-list">
+            <span class="tag">语音推理</span><span class="tag">实时翻译</span><span class="tag">Agent交互</span><span class="tag">128K上下文</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 资本动态 -->
+    <section>
+      <div class="section-title"><span class="icon">💰</span> 资本动态：中国大模型密集融资潮</div>
+      <div class="card">
+        <div class="card-title">阶跃星辰 25 亿美元 · DeepSeek 洽谈 450 亿美元 · Kimi 估值破 200 亿</div>
+        <div class="card-meta">来源：36氪 / 凤凰网科技 | 2026-05-08</div>
+        <div class="card-body">
+          <p>短短数日内，中国大模型赛道多家公司披露重大融资消息：</p>
+          <table>
+            <tr><th>公司</th><th>融资金额</th><th>估值/进展</th><th>投资方</th></tr>
+            <tr><td><strong>阶跃星辰</strong></td><td>≈25亿美元</td><td>赴港上市加速，已完成股改</td><td>华勤、龙旗、豪威、中兴等产业链资本</td></tr>
+            <tr><td><strong>DeepSeek</strong></td><td>首轮外部融资（洽谈中）</td><td>≈450亿美元</td><td>国家集成电路产业投资基金</td></tr>
+            <tr><td><strong>Kimi（月之暗面）</strong></td><td>20亿美元</td><td>200亿美元+ | 2026年合计39亿美元</td><td>美团龙珠领投，中国移动、CPE源峰</td></tr>
+            <tr><td><strong>智谱 AI</strong></td><td>—</td><td>超200亿元 | IPO辅导中</td><td>中金辅导，豪华VC+国资+互联网巨头</td></tr>
+          </table>
+          <div class="highlight-box">
+            <strong>关键细节：</strong>阶跃星辰红筹架构已拆除，赴港 IPO 前置步骤完成。Kimi K2.6 模型以 1T MoE 架构、32B 激活参数实现连续编码 13 小时，智能体可持续自主运行 5 天，重夺开源模型全球第一。
+          </div>
+          <p><strong>xAI 解散详情：</strong>马斯克发文宣布 xAI 作为独立公司解散，未来只有 SpaceXAI。xAI 估值曾高达 2500 亿美元，累计融资超 400 亿美元。创始团队 11 位联合创始人已在 13 个月内全部离职。SpaceX 将 xAI 的 Colossus 1 超算（22万张 GPU）转租给 Anthropic。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 两栏：豆包收费 + 腾讯云涨价 -->
+    <section>
+      <div class="section-title"><span class="icon">💡</span> 产品速递</div>
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title">☁️ 豆包正式开启收费：免费时代终结</div>
+          <div class="card-meta">来源：新浪财经 | 2026-05-08</div>
+          <div class="card-body">
+            <p>中国月活最高的 AI 应用豆包，"五一"期间悄然更新订阅计划：</p>
+            <table>
+              <tr><td>标准版连续包月</td><td><strong>68元/月</strong></td></tr>
+              <tr><td>加强版</td><td><strong>200元/月</strong></td></tr>
+              <tr><td>专业版</td><td><strong>500元/月</strong></td></tr>
+            </table>
+            <p style="margin-top:10px">豆包日均 Token 使用量三个月翻倍，突破 120 万亿，背后是字节跳动千亿级资本开支。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">☁️ 腾讯云 5 月 9 日起涨价 5%</div>
+          <div class="card-meta">来源：站长之家 | 2026-04-09</div>
+          <div class="card-body">
+            <p>腾讯云今日起正式上调核心 AI 业务价格，覆盖：</p>
+            <ul style="margin:8px 0 8px 16px;font-size:13px;color:var(--text-muted)">
+              <li>AI 算力相关产品</li>
+              <li>容器服务 TKE-原生节点</li>
+              <li>弹性 MapReduce（EMR）</li>
+            </ul>
+            <p>涨幅统一 5%。继阿里云、百度云之后，国内第三家头部云服务商完成算力资源结构性调价。</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <div class="card-title">📡 中国移动发布 MoMA 平台：接入 300+ 款 AI 模型</div>
+        <div class="card-meta">来源：新浪科技 | 2026-05-08</div>
+        <div class="card-body">
+          <p>5月8日，2026 移动云大会主论坛上，中国移动发布<strong>移动模型服务平台 MoMA</strong>。平台首创 Token 集约化运营模式，用户一次接入即可调用平台全部 300+ 款主流 AI 模型。目标：让 AI "随时可得、随处可用"，服务千行百业。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 开源热点 -->
+    <section>
+      <div class="section-title"><span class="icon">🏆</span> GitHub Trending · AI 开源热点</div>
+      <div class="card">
+        <div class="card-title">2026 年 5 月值得关注的项目：Dify、Open WebUI、Browser Use、MCP</div>
+        <div class="card-meta">来源：ByteByteGo / BuildMVPFast / NocoBase</div>
+        <div class="card-body">
+          <table>
+            <tr><th>项目</th><th>类别</th><th>亮点</th></tr>
+            <tr><td><strong>Dify</strong></td><td>Agentic Workflow</td><td>生产级 AI 应用全链路工具链，RAG+工作流+多模型支持</td></tr>
+            <tr><td><strong>Open WebUI</strong></td><td>本地 LLM 运行器</td><td>开源本地大模型 UI，支持多模型</td></tr>
+            <tr><td><strong>Browser Use</strong></td><td>浏览器自动化 Agent</td><td>用 AI 代理控制浏览器</td></tr>
+            <tr><td><strong>MCP</strong></td><td>协议/基础设施</td><td>Anthropic 主导的 Agent 上下文协议，生态快速增长</td></tr>
+            <tr><td><strong>awesome-ai-agents-2026</strong></td><td>资源列表</td><td>340+ 资源，20个类别，623 ⭐</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 安全 -->
+    <section>
+      <div class="section-title"><span class="icon">🔒</span> 安全动态：2026 年 AI 辅助攻击成主流</div>
+      <div class="card">
+        <div class="card-title">The Hacker News：AI 恶意软件激增，供应链攻击活跃</div>
+        <div class="card-meta">来源：The Hacker News | 2026-05</div>
+        <div class="card-body">
+          <p>2026 年 AI 辅助攻击已成为网络安全首要威胁：</p>
+          <ul style="margin:8px 0 8px 16px;font-size:13px;color:var(--text-muted)">
+            <li><strong>GitHub CVE-2026-3854：</strong>可通过单一 Git Push 实现的 RCE 严重漏洞</li>
+            <li><strong>供应链攻击：</strong>恶意 KICS Docker 镜像和 VS Code 扩展攻击软件供应链</li>
+            <li><strong>Vercel 账户泄露：</strong>Context.ai 相关数据泄露，波及多个账户</li>
+            <li><strong>AI 生成恶意软件：</strong>正在瞄准开源生态和软件仓库</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag" style="background:#ff7b7226;color:#ff7b72">CVE-2026-3854</span>
+            <span class="tag" style="background:#ff7b7226;color:#ff7b72">供应链攻击</span>
+            <span class="tag">AI辅助攻击</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 社区 -->
+    <section>
+      <div class="section-title"><span class="icon">💬</span> 社区观察</div>
+      <div class="card">
+        <div class="card-meta">来源：Hacker News</div>
+        <div class="card-body">
+          <ul style="margin:8px 0 8px 16px;font-size:13px;color:var(--text-muted)">
+            <li><strong>AI 碳足迹：</strong>训练成本 72,000 吨碳，但 1 亿用户分摊后人均仅 0.00072 吨；开源模型（MiniMax等）正快速追赶闭源模型</li>
+            <li><strong>2026 设备端 Agent：</strong>本地 AI 记忆层、本地推理成为热点方向</li>
+            <li><strong>Claude Code 限制放宽：</strong>Anthropic 获得 Colossus 1 算力后，立即提高 Claude Code 速率限制</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>📡 AI 午后情报 · Powered by <a href="https://020755.xyz">Una陪你看AI</a></p>
+      <p style="margin-top:4px">覆盖时事 · GitHub Trending · arXiv 论文 · 社区讨论 · 安全动态</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>
