@@ -3,177 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPC 午后情报 · 2026-05-10</title>
+  <title>OPC 晚报 2026-05-10 | 陪你看AI</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.7; padding: 20px; }
-    .container { max-width: 800px; margin: 0 auto; }
-    .header { text-align: center; padding: 30px 0 20px; border-bottom: 1px solid #21262d; margin-bottom: 30px; }
-    .header h1 { font-size: 1.8em; color: #58a6ff; margin-bottom: 8px; }
-    .header .subtitle { color: #8b949e; font-size: 0.9em; }
-    .section { margin-bottom: 28px; }
-    .section h2 { font-size: 1.2em; color: #58a6ff; border-left: 3px solid #1f6feb; padding-left: 10px; margin-bottom: 12px; }
-    .section h3 { font-size: 1em; color: #c9d1d9; margin: 12px 0 6px; }
-    .section h4 { font-size: 0.95em; color: #8b949e; margin: 8px 0 4px; }
-    p { margin-bottom: 10px; color: #c9d1d9; }
-    ul, ol { margin: 10px 0 10px 20px; color: #c9d1d9; }
-    li { margin-bottom: 6px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.88em; }
-    th { background: #161b22; color: #58a6ff; padding: 8px 10px; text-align: left; border: 1px solid #30363d; }
-    td { padding: 7px 10px; border: 1px solid #30363d; color: #c9d1d9; }
-    tr:nth-child(even) td { background: #161b22; }
-    blockquote { border-left: 3px solid #f78166; padding: 8px 12px; margin: 12px 0; background: #161b22; color: #8b949e; font-size: 0.9em; }
-    .highlight-box { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 14px; margin: 12px 0; }
-    .tag { display: inline-block; background: #1f6feb22; color: #58a6ff; padding: 2px 8px; border-radius: 12px; font-size: 0.78em; margin-right: 4px; }
-    .footer { text-align: center; color: #484f58; font-size: 0.8em; margin-top: 40px; padding-top: 20px; border-top: 1px solid #21262d; }
-    a { color: #58a6ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-    .nav a { color: #58a6ff; font-size: 0.85em; }
-    .type-badge { display: inline-block; background: #da6d2822; color: #f0883e; padding: 2px 10px; border-radius: 12px; font-size: 0.8em; margin-left: 8px; }
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --border: #2a2d3a;
+      --text: #e0e3ed;
+      --muted: #8b8fa3;
+      --accent: #7c6af7;
+      --accent2: #f97316;
+      --tag-bg: #252836;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px 16px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      padding: 32px 0 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    .header .logo {
+      font-size: 13px;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .header .meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section-title {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .card a {
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .card a:hover { text-decoration: underline; }
+    .tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--text);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+    .tag.hot { background: #3d1f1f; color: #f97316; }
+    .tag.security { background: #1f2d3d; color: #60a5fa; }
+    .tag.github { background: #1f2d1f; color: #4ade80; }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 24px 0;
+    }
+    .footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .highlight-card {
+      background: linear-gradient(135deg, #1e1b4b 0%, #172042 100%);
+      border: 1px solid #4c51a0;
+    }
+    .highlight-card h3 { font-size: 16px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 560px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="nav">
-      <a href="https://020755.xyz/daily/2026-05/2026-05-10-morning/index.html">← 早报</a>
-      <a href="https://020755.xyz/daily/2026-05/index.html">Index</a>
+
+<div class="header">
+  <div class="logo">OPC Daily</div>
+  <h1>🤖 陪你看AI · 晚报</h1>
+  <div class="meta">2026年5月10日 18:00 &nbsp;|&nbsp; Powered by 智谱GLM</div>
+</div>
+
+<!-- 🔥 最重磅 -->
+<div class="section">
+  <div class="section-title">🔥 今日最重磅</div>
+  <div class="card highlight-card">
+    <h3>谷歌AI数学家刷新SOTA：48%碾压全场</h3>
+    <p>谷歌DeepMind发布<strong>AI Co-Mathematician</strong>系统，在FrontierMath Tier 4基准测试中获<strong>48%准确率</strong>，超越GPT-5.5 Pro（39.6%）和Claude Opus 4.7等所有已知模型。底层基座为Gemini 3.1 Pro（独立仅19%），通过协作框架跃升29个百分点，已帮助牛津数学家破解群论悬案。</p>
+    <a href="https://finance.sina.com.cn/wm/2026-05-10/doc-inhxkhwm6282339.shtml" target="_blank">来源：新浪财经 →</a>
+  </div>
+</div>
+
+<!-- 🤖 模型 & 发布 -->
+<div class="section">
+  <div class="section-title">🤖 模型 &amp; 发布</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>Claude Opus 4.7 发布</h3>
+      <p>新增<strong>xhigh</strong>推理档位（位于high与max之间），提供更细粒度的推理-延迟权衡控制。</p>
+      <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Anthropic 官网 →</a>
     </div>
-
-    <div class="header">
-      <h1>OPC 午后情报 <span class="type-badge">Afternoon</span></h1>
-      <div class="subtitle">2026年5月10日 · AI行业动态</div>
+    <div class="card">
+      <h3>Apple Intelligence大松绑</h3>
+      <p>iOS 27将允许自由切换Claude、Gemini等AI模型，不再只绑定ChatGPT，Siri声音也会随之改变。</p>
+      <a href="https://www.ettoday.net/news/20260506/3161439.htm" target="_blank">ETtoday →</a>
     </div>
-
-    <div class="section">
-      <h2>📋 今日导读</h2>
-      <div class="highlight-box">
-        <p>2026年5月10日，AI领域午后传来多条重磅：<strong>GOSIM Paris 2026</strong>圆满收官，超150位全球AI专家齐聚巴黎探讨开源生态与Agentic AI落地；阿里巴巴发布<strong>Qwen3.5 Plus</strong>开源模型，继续领跑开源生态；Anthropic Claude被曝代码质量下滑47%，安全红线引发广泛担忧；GitHub Trending持续被AI Agent项目主导。</p>
-      </div>
+    <div class="card">
+      <h3>xAI预训练负责人离职</h3>
+      <p>庄钧堂于5月9日宣布离职，当天多名员工同时离开。xAI已并入SpaceX，过去一年离职超80人。</p>
+      <a href="https://www.aitntnews.com/ainews/zh-CN" target="_blank">AITNT News →</a>
     </div>
-
-    <div class="section">
-      <h2>一、开源生态动态</h2>
-
-      <h3>🔷 GOSIM Paris 2026圆满收官：开源AI从"能走多远"转向"具体怎么做"</h3>
-      <div class="highlight-box">
-        <p><strong>来源</strong>：<a href="https://www.163.com/dy/article/KSBOUTST0511K58A.html">网易科技</a> | CSDN<br>
-        <strong>时间</strong>：2026年5月6日 · 巴黎Station F</p>
-        <p>5月6日，GOSIM Paris 2026进入第三天，超150位全球AI一线技术专家参会。本届大会由GOSIM主办，CSDN、1ms.ai与Probabl联合打造，聚焦"Agentic AI如何重新定义AI计算"与开源生态落地。</p>
-      </div>
-
-      <h4>核心议题与亮点</h4>
-
-      <p><strong>1. 智源林咏华：从ChatGPT到OpenClaw，基础设施成瓶颈</strong></p>
-      <p>北京智源人工智能研究院（BAAI）副院长林咏华指出，AI产业竞争焦点正从"模型能力"转向"系统能力"。BAAI已完成DeepSeek V4跨芯片迁移，采用FP4+FP8混合精度、CSA/HCA注意力压缩等多项优化，并构建了FlagOS开放软件栈（支持30余种芯片）、FlagTree编译器以及TLE（Triton Language Extensions）语言扩展。</p>
-      <p>更值得关注的是BAAI的"<strong>KernelGen</strong>"工具：可自动完成算子生成、测试与验证，目前已承担约<strong>80%的内核开发工作</strong>——DeepSeek V4新增关键算子仅用1-2天便完成Triton实现与跨架构迁移。</p>
-
-      <p><strong>2. 亚马逊Niko Matsakis：Rust工具链为Agent时代重构</strong></p>
-      <p>亚马逊高级首席工程师Niko Matsakis推出开源项目"<strong>Symposium</strong>"，让Rust工具链在设计之初就适配Agent时代。核心能力："技能分发"——当开发者引入某个crate时，Symposium自动安装对应的MCP服务，由库作者提供结构化的使用说明，让智能体能准确理解库的用法。</p>
-      <p>Matsakis指出，Rust的多项特性正在放大优势：严格类型系统为智能体提供天然约束、高质量编译器错误信息可直接指导修复、以及长期可靠性与可维护性——而这些正是AI Agent落地最需要的工程特性。</p>
-
-      <p><strong>3. 表格基础模型：AI的"左脑"正在觉醒</strong></p>
-      <p>Fundamental应用AI负责人Alexandre Gerbeaux提出大型表格模型（LTM）方向。他指出，虽然大语言模型（"右脑"）在文本生成与非结构化数据处理上表现突出，但数值计算和精确预测仍是明显短板，而企业核心业务数据（表格、数据库、CRM系统）恰恰需要这种能力。</p>
-      <p>Fundamental已推出企业级表格预测模型"<strong>Nexus</strong>"，定位为"AI左脑"，与LLM协同工作。公司已完成新一轮融资，估值达<strong>14亿美元</strong>。</p>
-
-      <p><strong>4. 五大论坛聚焦落地</strong></p>
-      <table>
-        <tr><th>论坛</th><th>核心议题</th></tr>
-        <tr><td>Agentic AI Summit</td><td>OpenClaw生态、基础模型能力演进、信任建立与安全约束</td></tr>
-        <tr><td>开源模型</td><td>线性注意力效率突破、小模型+Muon优化器以1/20算力超越大模型</td></tr>
-        <tr><td>Agentic OS与应用</td><td>Theia AI/Open VSX（支撑Cursor/Windsurf）、仓颉2600%生产力提升</td></tr>
-        <tr><td>边缘侧Agentic AI</td><td>KTransformers让DeepSeek-V3在消费级GPU跑出35+ tokens/秒</td></tr>
-        <tr><td>开源机器人</td><td>VLA模型标准任务成功率仅62%、3D打印开源双足机器人平台</td></tr>
-      </table>
-
-      <p><strong>开源AI与新一代构建者圆桌</strong>：来自Neo4j AI、.txt、Draft'n Run、Moonshot AI等公司的嘉宾一致判断——开源AI正在显著降低构建门槛，"单人构建复杂系统"正成为可能，但从"能做出来"到"能规模化"仍有清晰分界线。</p>
-    </div>
-
-    <div class="section">
-      <h2>二、大模型竞争</h2>
-
-      <h3>🔷 Qwen3.5 Plus发布：阿里继续领跑开源生态</h3>
-      <div class="highlight-box">
-        <p><strong>来源</strong>：<a href="https://www.zhihu.com/tardis/zm/art/14903006525">知乎</a> | <a href="https://gitcode.csdn.net/69b6cf030a2f6a37c597a4cb.html">GitCode</a></p>
-        <p>阿里巴巴于2026年5月10日发布<strong>Qwen3.5 Plus</strong>开源模型，继续扩大Qwen系列在开源生态的领先优势。根据《2026大模型技术体系综合开源影响力榜单》，阿里巴巴以46个模型、覆盖5种模态的成绩位居全球第一，Qwen2.5-7B-Instruct以<strong>2338万次下载量</strong>排名语言模型榜首。</p>
-      </div>
-
-      <h4>2026年5月模型混战格局</h4>
-      <table>
-        <tr><th>厂商</th><th>模型</th><th>核心亮点</th></tr>
-        <tr><td>阿里云</td><td><strong>Qwen3.5 Plus</strong></td><td>开源新贵，持续霸榜下载量</td></tr>
-        <tr><td>OpenAI</td><td>GPT-5.5</td><td>Terminal-Bench 82.7%，原生Agent，100万token</td></tr>
-        <tr><td>DeepSeek</td><td>v4</td><td>Flash/Pro双版，1M+ token，国产芯片适配</td></tr>
-        <tr><td>Anthropic</td><td>Claude Sonnet 4.6</td><td>Agentic orchestration强化</td></tr>
-        <tr><td>Google</td><td>Gemini 3.1 Pro</td><td>1M token，多模态推理</td></tr>
-        <tr><td>月之暗面</td><td>Kimi K2.5</td><td>1万亿参数MoE，100子Agent调度</td></tr>
-      </table>
-    </div>
-
-    <div class="section">
-      <h2>三、安全威胁</h2>
-
-      <h3>🔷 Anthropic Claude代码质量被曝下滑47%，安全红线引发震动</h3>
-      <div class="highlight-box">
-        <p><strong>来源</strong>：<a href="https://www.forbes.com/sites/the-wiretap/2026/04/22/anthropics-claude-is-pumping-out-vulnerable-code-cyber-experts-warn/">Forbes</a> | <a href="https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html">The Hacker News</a></p>
-        <p>网络安全公司TrustedSec CEO Dave Kennedy（曾任NSA分析师）指出，Claude Opus 4.6发布后五周内，代码质量下降超过<strong>47%</strong>："serious defects and security issues"——严重缺陷和安全问题。Opus 4.7虽有改善，但仍未能恢复4.6发布时的水准。</p>
-      </div>
-
-      <h4>双重安全事件：五天内两次泄露</h4>
-      <ul>
-        <li><strong>3月26日</strong>：约3000个未发布资产从CMS泄露，包括内部代号"Capybara"、定位为"前所未有的网络安全风险"的未发布模型<strong>Mythos</strong></li>
-        <li><strong>3月31日</strong>：Claude Code完整源码因npm包配置错误被泄露（59.8MB源码地图文件）</li>
-      </ul>
-
-      <blockquote>
-        Anthropic于2月推出Claude Code Security功能，可扫描代码库漏洞并建议补丁，定位为"用AI赋能防御者，对抗AI驱动的攻击"。
-      </blockquote>
-    </div>
-
-    <div class="section">
-      <h2>四、GitHub Trending</h2>
-      <p><strong>来源</strong>：<a href="https://blog.csdn.net/yao1500/article/details/160840098">CSDN</a> | <a href="https://gitcode.csdn.net/69b6cf030a2f6a37c597a4cb.html">GitCode</a></p>
-
-      <h4>2026年5月7日GitHub热门项目</h4>
-      <table>
-        <tr><th>项目</th><th>Stars</th><th>领域</th><th>亮点</th></tr>
-        <tr><td>HKUDS/Nanobot</td><td>41.8k★</td><td>AI Agent</td><td>超轻量个人AI Agent，260位贡献者</td></tr>
-        <tr><td>GLM-5</td><td>3.2k★</td><td>开源模型</td><td>智谱AI，Agentic Engineering</td></tr>
-        <tr><td>razzant/ouroboros</td><td>541★</td><td>自创建AI Agent</td><td>自主进化Agent，v6.2.0</td></tr>
-        <tr><td>anomalyco/opencode</td><td>148k★</td><td>AI编程</td><td>开发者工具热榜</td></tr>
-        <tr><td>rtk-ai/rtk</td><td>33k★</td><td>Rust AI工具</td><td>Token优化代理</td></tr>
-      </table>
-
-      <p><strong>趋势</strong>：Rust正在成为下一代开发者工具首选语言（rtk、cc-switch、Zed均入榜），AI编码工具民主化浪潮持续——免费Claude Code变体大量涌现。</p>
-    </div>
-
-    <div class="section">
-      <h2>五、arXiv 论文</h2>
-      <table>
-        <tr><th>论文</th><th>主题</th><th>机构</th></tr>
-        <tr><td>DeepAgent (arXiv:2510.21618)</td><td>通用推理Agent，可扩展工具集</td><td>人大+小红书</td></tr>
-        <tr><td>AlphaApollo (arXiv:2510.06261)</td><td>深度Agentic推理系统</td><td>港中文+Stanford</td></tr>
-        <tr><td>Reasoning as Gradient (arXiv:2603.01692)</td><td>MLE Agent超越树搜索的梯度推理</td><td>-</td></tr>
-        <tr><td>RetroAgent (arXiv:2603.08561)</td><td>回顾式双内在反馈的Agent进化</td><td>-</td></tr>
-      </table>
-    </div>
-
-    <div class="section">
-      <h2>附：今日主要AI事件时间线</h2>
-      <table>
-        <tr><th>时间</th><th>事件</th></tr>
-        <tr><td>全天</td><td>GOSIM Paris 2026第三天（5月6日内容深度解析）</td></tr>
-        <tr><td>今日</td><td>Qwen3.5 Plus发布</td></tr>
-        <tr><td>今日</td><td>Claude代码质量争议持续发酵</td></tr>
-        <tr><td>5月7日</td><td>GitHub Trending：Nanobot、GLM-5等项目热度持续</td></tr>
-        <tr><td>5月14日（预计）</td><td>OpenAI下一代模型发布</td></tr>
-      </table>
-    </div>
-
-    <div class="footer">
-      <p>数据来源：网易科技、CSDN、GitCode、Forbes、The Hacker News、知乎、Exa、Tavily | 采集时间：2026-05-10 15:00</p>
-      <p><a href="https://020755.xyz/daily/2026-05/2026-05-10/index.html">本页面</a> | <a href="https://020755.xyz/daily/2026-05/index.html">月度索引</a></p>
+    <div class="card">
+      <h3>GitHub Copilot全面转向按量计费</h3>
+      <p>2026年6月1日起，所有Copilot计划从按请求计次转为基于使用量计费（usage-based billing）。</p>
+      <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank">GitHub Blog →</a>
     </div>
   </div>
+</div>
+
+<hr class="divider">
+
+<!-- 📊 GitHub & 开源 -->
+<div class="section">
+  <div class="section-title">📊 GitHub &amp; 开源</div>
+  <div class="card">
+    <h3>🦋 GLM-5.1：智谱AI新一代Agent编程模型 <span class="tag github">3.2k ⭐</span></h3>
+    <p>专为Agentic Engineering设计，Design2Code基准测试94.8分超越竞争对手。支持Z.ai API平台。</p>
+    <a href="https://github.com/zai-org/GLM-5" target="_blank">github.com/zai-org/GLM-5 →</a>
+  </div>
+  <div class="card">
+    <h3>🐜 蚂蚁百灵 Ling-2.6-1T：万亿参数开源对标GPT-5.4</h3>
+    <p>原生支持262K上下文，MIT许可可商用，Token效率仅为同类1/4，数学/代码/Agent工具调用达开源SOTA。</p>
+    <a href="https://github.com/inclusionAI/DR-Venus" target="_blank">github.com/inclusionAI/DR-Venus →</a>
+  </div>
+  <div class="card">
+    <h3>⚡ NanoBot：超轻量个人AI Agent <span class="tag github">41.7k ⭐</span></h3>
+    <p>HKUDS开源，MIT协议，支持多模型接入，为个人AI Agent提供轻量解决方案。</p>
+    <a href="https://github.com/HKUDS/NanoBot" target="_blank">github.com/HKUDS/NanoBot →</a>
+  </div>
+  <div class="card">
+    <h3>📚 obsidian-skills：零代码实现Agent技能规范 <span class="tag github">27k ⭐</span></h3>
+    <p>Obsidian CEO发布，仅用5个Markdown文件实现跨Agent平台兼容的技能规范。</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 🔐 安全 -->
+<div class="section">
+  <div class="section-title">🔐 安全 &amp; 漏洞</div>
+  <div class="card">
+    <h3>⚠️ PyTorch Lightning被植入恶意代码</h3>
+    <p>PyPI包<code>lightning</code>在2.6.2和2.6.3版本中被植入Mini Shai-Hulud主题恶意代码，导入时执行凭证窃取。需立即审计并轮换所有GitHub token等凭证。</p>
+    <a href="https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training" target="_blank">Semgrep 公告 →</a>
+  </div>
+  <div class="card">
+    <h3>🛡️ 2026：AI辅助攻击元年</h3>
+    <p>The Hacker News报道，AI驱动攻击比人工操作噪音更大、更难检测，但攻击窗口大幅压缩，企业SOC/MDR面临严峻挑战。</p>
+    <a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank">The Hacker News →</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 💰 资本 -->
+<div class="section">
+  <div class="section-title">💰 资本 &amp; 产业</div>
+  <div class="card">
+    <h3>🚀 RadixArk完成1亿美元种子轮</h3>
+    <p>SGLang团队创立AI基础设施公司RadixArk，完成1亿美元种子轮，投后估值4亿美元，由Accel领投，打造下一代开放AI基础设施。</p>
+  </div>
+  <div class="card">
+    <h3>📉 大模型清场前夜：三年见分晓</h3>
+    <p>钛媒体深度报道：DeepSeek V4将开源能力拉到接近GPT-4水平，三家公司三天超70亿美元融资涌入，模型商品化加速。阶跃星辰计划港股上市，月之暗面ARR一个月从1亿涨到2亿美元。</p>
+    <a href="https://www.tmtpost.com/7982488.html" target="_blank">钛媒体 →</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 🔬 研究 -->
+<div class="section">
+  <div class="section-title">🔬 研究 &amp; 论文</div>
+  <div class="card">
+    <h3>🧠 DeepAgent: 通用推理Agent可扩展工具集</h3>
+    <p>来自人大、小红书等机构，基于大推理模型的通用Agent框架，在复杂问题求解上展现强大能力。</p>
+    <a href="https://arxiv.org/abs/2510.21618v3" target="_blank">arXiv →</a>
+  </div>
+  <div class="card">
+    <h3>🌙 AlphaApollo: 深度Agentic推理系统</h3>
+    <p>来自港科大、Stanford、东京大学等，针对Agentic推理的两大瓶颈进行优化。</p>
+    <a href="https://arxiv.org/abs/2510.06261v2" target="_blank">arXiv →</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 🌏 社区 -->
+<div class="section">
+  <div class="section-title">🌏 社区 &amp; 产品</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>🎮 HakkoAI：游戏+桌宠+AI三合一</h3>
+      <p>全球注册超1000万，兼具桌宠形态与游戏助手功能，订阅制，填补游戏玩家低压力情绪陪伴需求空白。</p>
+    </div>
+    <div class="card">
+      <h3>📦 Plaud估值20亿美元</h3>
+      <p>AI录音笔公司Plaud获传腾讯投资，估值20亿美元，双方均否认。2025年全球销量破百万台。</p>
+    </div>
+    <div class="card">
+      <h3>☸️ Emma Sensei：Kubernetes 2026与GenAI</h3>
+      <p>Kueue、DAS、GAIE等新工具将GenAI工作流性能提升最高82%，Serverless与Kubernetes边界模糊化。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>OPC 晚报 · 2026-05-10 · Open Intelligence Daily</p>
+  <p>采集自 web_search_plus 多源聚合 · 深度阅读 3 个 URL</p>
+</div>
+
 </body>
 </html>
