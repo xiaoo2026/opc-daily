@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 晚报 2026-05-12 | Una陪你看AI</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-evening: #6366f1;
+      --tag-bg: #1f2937;
+      --tag-text: #60a5fa;
+      --success: #3fb950;
+      --warning: #d29922;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .site-title {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--accent-evening);
+      color: #fff;
+    }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 16px;
+      background: var(--accent-evening);
+      border-radius: 2px;
+    }
+    .headline {
+      background: linear-gradient(135deg, #1a2332 0%, #161b22 100%);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-evening);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .headline h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .headline p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .item h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .item p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .item-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .quick-list {
+      list-style: none;
+    }
+    .quick-list li {
+      padding: 8px 0;
+      font-size: 14px;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .quick-list li:last-child {
+      border-bottom: none;
+    }
+    .quick-list li::before {
+      content: "→";
+      color: var(--accent-evening);
+      flex-shrink: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      margin-top: 32px;
+    }
+    @media (max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-title">Una陪你看AI</div>
+      <h1>OPC 晚报 <span class="badge">evening</span></h1>
+      <div class="meta">📅 2026-05-12 &nbsp;|&nbsp; 🕓 18:00 &nbsp;|&nbsp; 覆盖：5月12日全天候</div>
+    </header>
+
+    <div class="headline">
+      <h2>🔐 2026：AI辅助网络攻击爆发元年</h2>
+      <p>The Hacker News 深度报告：2025年LLM驱动的网络攻击从"有用但易错的编码助手"升级为"端到端编码 powerhouse"。多项指标显示攻防天平正在倾斜：漏洞利用时间从2020年的700+天压缩至2025年的44天；28.3%的CVE在披露后24小时内即被利用；恶意包从2022年5.5万激增至2025年45.46万。更值得警惕的是，攻击者画像正在改变——无背景青少年用ChatGPT构建攻击工具，单个攻击者用Claude Code在一个月内对17家机构发起勒索。</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🔥 今日要点</div>
+      <div class="item">
+        <h3>🔌 MCP 协议生态爆发：月SDK下载9700万，服务器12000+</h3>
+        <p>Anthropic创建的MCP（模型上下文协议）已成为AI Agent连接外部工具的主流标准。2025年12月捐赠给Linux基金会，由Anthropic、OpenAI、Block共同治理。核心优势：被比作"AI的USB-C"，任何模型无需自定义代码即可接入任意工具。Google的A2A协议与之互补——MCP解决"模型→工具"，A2A解决"Agent↔Agent"。</p>
+        <div class="tag-row">
+          <span class="tag">MCP</span><span class="tag">A2A</span><span class="tag">Anthropic</span><span class="tag">OpenClaw</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⚛️ 量子计算融资热潮：2026 Q1逼近2025全年总量</h3>
+        <p>2026年Q1（截至3月17日）国内量子计算融资22.04亿元，几乎追平2025年全年（24.73亿元）。光量子（26.1亿/30起）、超导量子（16.3亿/16起）、量子精密测量（21.15亿/25起）三足鼎立。玻色量子10亿元B轮、逻辑比特数亿元Pre-A+轮、图灵量子1月两轮共6亿元。投资逻辑从"看团队"转向"看物理比特数与工程化能力"。</p>
+        <div class="tag-row">
+          <span class="tag">量子计算</span><span class="tag">融资</span><span class="tag">光量子</span><span class="tag">玻色量子</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🤖 多智能体系统从实验室走向现实</h3>
+        <p>IBM判断：如果说2025年是智能体元年，2026年将是多智能体系统全面投入实际应用的一年。IBM Kate Blair指出，这一变革的实现有赖于通信协议的成熟与技术融合的推进。IBM BeeAI和智能体栈计划已捐赠给Linux基金会。</p>
+        <div class="tag-row">
+          <span class="tag">多智能体</span><span class="tag">IBM</span><span class="tag">Agent</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🤖 深圳AI终端展5月14日启幕：400+企业、具身智能专区</h3>
+        <p>2026全球人工智能终端展暨第七届深圳国际人工智能展览会将于5月14日至16日在深圳会展中心举办。荣耀机器人"闪电"、Robot Phone、阿尔法战略新物种集体亮相。展会特设"OPC·一人一展位"计划，诠释"一人即一条产品线"的超级个体模式。</p>
+        <div class="tag-row">
+          <span class="tag">展会</span><span class="tag">人形机器人</span><span class="tag">具身智能</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🛠️ AI工程动态</div>
+      <div class="item">
+        <h3>🔒 AI辅助攻击典型案例</h3>
+        <p>2025年7月：单个攻击者使用Claude Code在一个月内对17家机构发起勒索攻击；2025年12月：攻击者使用Claude Code+ChatGPT入侵墨西哥政府，打击10+机构，窃取1.95亿条纳税人记录；2025年：3名无编码背景青少年（14/15/16岁）用ChatGPT构建工具对乐天移动系统进行了约22万次攻击；2025年：阿尔及利亚业余黑客构建的勒索软件首月击中85个目标。</p>
+      </div>
+      <div class="item">
+        <h3>📦 GitHub Top AI项目（2026）</h3>
+        <p><strong>Dify</strong>：生产级智能体工作流平台，支持工作流构建器、内置RAG管道、多模型支持（OpenAI、Anthropic、开源LLM）；<strong>OpenClaw</strong>（302k★）：让大模型获得本地OS权限的开源Agent框架；<strong>MCP servers</strong>（60k★）：Model Context Protocol服务器集合；<strong>DeepSeek</strong>：国产开源大模型核心项目。</p>
+      </div>
+      <div class="item">
+        <h3>📈 AI编码能力基准持续跃升</h3>
+        <p>SWE-bench（软件工程基准）：2024年8月33% GitHub issues → 2025年12月接近81%。与此同时，AI辅助攻击的门槛也在同步降低，攻防天平引发业界担忧。</p>
+      </div>
+      <div class="item">
+        <h3>🎮 PS3模拟器社区请求停止AI PR干扰</h3>
+        <p>Hacker News热闻：PS3模拟器开发团队礼貌请求人们停止向其提交AI生成的Pull Request。这是开源社区对低质量AI代码批量涌入的典型反应。</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🔬 量子+AI融合</div>
+      <div class="item">
+        <h3>量子计算成AI智能体"核动力"</h3>
+        <p>中信出版集团新书《AI智能体的崛起》揭示：量子计算将推动AI从被动的Chat（对话生成）向主动的Act（自主行动）跃迁。量子叠加原理使量子计算机能同时探索多条路径，大幅缩短复杂问题求解时间。微软Azure Quantum联合AI首次破解化学难题，玻色量子550计算量子比特相干光量子计算机已发布。</p>
+      </div>
+      <div class="item">
+        <h3>量子计算地域格局：合肥领跑，三足鼎立</h3>
+        <p>融资地域分布：合肥（31.9亿）、北京（25.7亿）、上海（24.4亿）三城合计占72.6%。合肥依托中科大，聚集本源量子（估值68.8亿）、国仪量子（估值80亿）；北京清华系/中科院系竞技；上海图灵量子（估值70亿）一枝独秀。</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📄 arXiv论文</div>
+      <div class="item">
+        <h3>DeepAgent — 通用推理Agent，可扩展工具集</h3>
+        <p class="item-meta">人大×小红书×清华 | arXiv 2026</p>
+      </div>
+      <div class="item">
+        <h3>AlphaApollo — 深度Agentic推理系统</h3>
+        <p class="item-meta">港科大×清华×斯坦福×东京大学 | arXiv 2026</p>
+      </div>
+      <div class="item">
+        <h3>daReasoner — 动态工具编排迭代视觉推理</h3>
+        <p class="item-meta">复旦×NUS×华盛顿 | arXiv 2026</p>
+      </div>
+      <div class="item">
+        <h3>The Auton Agentic AI Framework — Snap声明式自主Agent架构</h3>
+        <p class="item-meta">Snap | arXiv 2026</p>
+      </div>
+      <div class="item">
+        <h3>Ares — LLM Agent自适应推理努力选择</h3>
+        <p class="item-meta">高效成本控制 | arXiv 2026</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">💬 社区热话</div>
+      <div class="item">
+        <h3>Hacker News 热议</h3>
+        <p>本地模型在M4（24GB内存）上的运行讨论持续热门；AI辅助网络攻击引发安全社区高度关注；"当每个人都有AI时公司仍然什么都学不到"的讨论引发共鸣；YC Summer 2026申请开放至5月4日。</p>
+      </div>
+      <div class="item">
+        <h3>开源社区对AI PR的抵制</h3>
+        <p>PS3模拟器开发者的请求具有代表性：AI生成的代码虽然语法正确，但缺乏对项目历史和架构的理解，大规模涌入正在稀释开源项目的代码质量。</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🌍 AI政策与行业数据</div>
+      <div class="item">
+        <h3>监管动态</h3>
+        <p>欧盟AI Act大部分规则将于2026年8月生效；美国2025年12月要求联邦层面统一AI监管；中国国务院推进AI立法；马来西亚、沙特、巴西官员均表示期待加强对华AI合作。</p>
+      </div>
+      <div class="item">
+        <h3>行业数据</h3>
+        <p>全球AI活跃用户超10亿，预计未来超50亿；Gartner：2026年40%企业应用将嵌入任务型AI智能体（2025年不足5%）；国家数据局：预计"十五五"末中国AI产业规模突破10万亿元；IDC：2026年40%配备生产调度系统的制造商将升级AI驱动排程。</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>OPC 晚报 | Una陪你看AI | 每日AI资讯精选</p>
+    </footer>
+  </div>
+</body>
+</html>
