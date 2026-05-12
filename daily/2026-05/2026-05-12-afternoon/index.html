@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-05-12</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent2: #a78bfa;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(124, 58, 237, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #ddd6fe; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(99, 102, 241, 0.15); color: #a5b4fc; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(124, 58, 237, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报</h1>
+      <div class="subtitle">2026年5月12日 · AI行业动态日报</div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 class="cn">🇨🇳 国内动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">百度文心大模型5.1发布：预训练成本仅行业6%，剑指Create大会</h3>
+        </div>
+        <p>百度在5月13日Create大会前四天发布文心大模型5.1，核心亮点：</p>
+        <ul>
+          <li>LMArena大模型竞技场排名1223分，位列搜索榜国内第一、全球第四，超越GPT-5.5和DeepSeek-V4-Pro</li>
+          <li>采用"多维弹性预训练"技术，预训练成本仅为业界同规模模型的<strong style="color:#fbbf24">6%</strong></li>
+          <li>τ³-bench和SpreadsheetBench-Agent任务中超越DeepSeek-V4-Pro，官方称Agent能力"接近领先闭源模型"</li>
+          <li>AIME26数学竞赛（使用工具）得分<strong style="color:#fbbf24">99.6分</strong>，仅次于Gemini 3.1 Pro</li>
+          <li>已上线千帆平台和文心一言官网，将接入超10个创意生产Agent平台</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>关键数字：训练成本 = 行业同规模模型的6%</strong></p>
+          <p>解读：百度用技术数据回应"掉队"质疑。但真正难题——春节豆包日活峰值1.45亿，百度AI用户增长平平，技术领先与市场感知之间存在显著落差。在2026年API涨价潮中，训练成本优势或成为云服务定价权的关键。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">阿里AI店小蜜升级：电商客服Agent首次实现"AI+人"超越纯人工</h3>
+        </div>
+        <p>阿里发布全新AI店小蜜，核心数据：</p>
+        <ul>
+          <li>"AI+人"协同模式下，<strong style="color:#fbbf24">询单转化率首次超越纯人工客服</strong>（白天全时段）</li>
+          <li>平均转人工率下降45%，平均询单转化率达10%，服饰商家提升20%</li>
+          <li>日均对话量近千万，接入商家突破百万</li>
+          <li>基于千问最新大模型，针对电商场景垂域微调</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>AI客服从"降低成本"升级为"提升转化"，这是质变。天猫618前夕发布，谌伟业称"客服行业正式进入AI主导时代"。AI主动催付、连带推荐直接介入交易转化环节，是从工具到生产力的跨越。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">首个国家级智能体"说明书"出炉：三部门联合发文，划定19个场景</h3>
+        </div>
+        <p>5月8日，国家网信办、发改委、工信部联合印发《智能体规范应用与创新发展实施意见》：</p>
+        <ul>
+          <li>明确安全可控、规范有序、创新驱动、应用牵引四大原则</li>
+          <li>设定<strong style="color:#fbbf24">2027年智能体普及率超70%</strong>的硬指标</li>
+          <li>划定19个重点应用场景（医疗、制造、政务、消费等）</li>
+          <li>敏感领域实行备案、检测、召回管理；低风险领域通过合规自测和行业自律治理</li>
+          <li>推动智能体与手机、汽车、家居、机器人等终端设备协同</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>这是国内首个智能体国家层面指导意见，标志着AI从"生成内容"迈向"自主行动"。多部门联合发文，智能体已从技术探索上升到国家产业发展战略。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🌍 国际动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">谷歌首次发现黑客借助AI开发"零日"漏洞攻击工具</h3>
+        </div>
+        <p>谷歌威胁情报团队发布报告：</p>
+        <ul>
+          <li>首次发现网络犯罪团伙利用AI开发零日漏洞攻击工具</li>
+          <li>攻击在谷歌向开发商发出警报后被挫败</li>
+          <li>谷歌"高度确信"AI被用于漏洞发现和武器化</li>
+          <li>明确排除Anthropic Claude和Gemini被使用的可能</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>AI辅助网络攻击已进入现实，这是2026年AI安全领域的重大事件。哪个LLM被滥用成谜。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">5</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">谷歌AI路线图曝光：承认Transformer有致命缺陷，下一代架构"必须从头重写"</h3>
+        </div>
+        <p>谷歌产品负责人Logan Kilpatrick在AI工程师世界博览会演讲：</p>
+        <ul>
+          <li>Gemini正在转型<strong style="color:#fbbf24">全模态</strong>，下一步支持原生视频生成</li>
+          <li>默认具备Agent能力，工具调用成为标配</li>
+          <li><strong style="color:#f87171">无限上下文无法通过当前注意力机制实现</strong>，下一代架构必须"从头重写"</li>
+          <li>扩散模型（Diffusion）早期实验进行中</li>
+          <li>更多小模型即将发布</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>Transformer的注意力机制无法实现无限上下文，谷歌路线图承认了核心瓶颈。Diffusion路径正在成为替代研究方向。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">6</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">2026年GitHub AI趋势：OpenClaw领衔，Agentic架构成主流</h3>
+        </div>
+        <p>2026年GitHub AI开源生态五大趋势：</p>
+        <table>
+          <tr><th>趋势</th><th>说明</th></tr>
+          <tr><td>Chatbot已死，Agent已来</td><td>Plan→Act→Observe→Reflect 循环成标配</td></tr>
+          <tr><td>本地化浪潮</td><td>ollama run，无API账单，无数据泄露</td></tr>
+          <tr><td>Core+Skills模式</td><td>社区Skills叠加，OpenClaw ClawHub 5700+</td></tr>
+          <tr><td>黑盒可解释性</td><td>系统Prompt分析 repo 122k stars</td></tr>
+          <tr><td>API成本战争</td><td>Token消耗成为核心产品指标</td></tr>
+        </table>
+        <p style="font-size:0.82rem; color:var(--muted); margin-top:0.75rem;">代表项目：OpenClaw 263k★ | Shannon 31k★ | Ollama 162k★ | Dify 130k★ | n8n 150k★</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="paper">📄 arXiv 论文精选</h2>
+      <table>
+        <tr><th style="width:40%">论文</th><th style="width:30%">机构</th><th>核心贡献</th></tr>
+        <tr><td><strong>DeepAgent</strong></td><td>人大、小红书、清华</td><td>通用推理Agent，可扩展工具集</td></tr>
+        <tr><td><strong>daReasoner</strong></td><td>复旦、佐治亚理工、NUS</td><td>动态工具编排的迭代视觉推理</td></tr>
+        <tr><td><strong>AlphaApollo</strong></td><td>港科大、Stanford、东京大学</td><td>深度Agent推理系统</td></tr>
+        <tr><td><strong>Ares</strong></td><td>UMass</td><td>自适应推理努力选择，提升Agent效率</td></tr>
+        <tr><td><strong>Phi-4-reasoning-vision-15B</strong></td><td>Microsoft Research</td><td>紧凑多模态推理模型（15B参数）</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">💡 一句话观点</h2>
+      <div class="quote">
+        百度用"6%"回应掉队质疑，但中国AI的真正战场不在榜单，在谁能先把用户规模转化成收入。5月13日Create大会，李彦宏需要回答的不只是"文心强不强"，而是"钱怎么挣"。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:0.95rem;">🔗 信源索引</h2>
+      <ul>
+        <li><a href="https://www.163.com/dy/article/KSL8944N0531UMBC.html" target="_blank">百度AI最新进展，新眸</a></li>
+        <li><a href="https://finance.sina.com.cn/wm/2026-05-11/doc-inhxppii9006139.shtml" target="_blank">首个智能体新规，新浪财经</a></li>
+        <li><a href="https://dev.to/ji_ai/what-100-trending-github-projects-tell-us-about-where-ai-is-actually-going-4977" target="_blank">GitHub AI趋势分析，DEV Community</a></li>
+        <li><a href="https://36kr.com/p/3339979450857219" target="_blank">谷歌AI路线图，36氪</a></li>
+        <li><a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank">谷歌零日漏洞攻击，Hacker News</a></li>
+        <li><a href="https://finance.sina.com.cn/wm/2026-05-11/doc-inhxppih2240422.shtml" target="_blank">广州AI产业工作要点，新浪财经</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC午间情报 2026-05-12</p>
+    </footer>
+  </div>
+</body>
+</html>
