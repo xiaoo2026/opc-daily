@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-05-12 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-blue); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-blue);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-blue);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        tr:last-child td { border-bottom: none; }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-05-12 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业三日简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年5月12日 09:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">资本战场</span>
+                <span class="tag tag-product">产品爆发</span>
+                <span class="tag tag-security">安全警报</span>
+                <span class="tag tag-trend">趋势分析</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">500亿</div>
+                <div class="label">DeepSeek 拟募资（人民币）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">2000亿</div>
+                <div class="label">字节跳动 AI 基础设施预算</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">1100人</div>
+                <div class="label">Cloudflare 因 AI 裁员规模</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">44天</div>
+                <div class="label">漏洞从披露到被利用的平均天数</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：AI 正在重塑就业市场</h3>
+            <p>Cloudflare CEO 明确表示：不是因为经营困难，而是 AI 效率已可直接替代客服和支持岗位——即便营收创历史新高。这意味着 AI 替代不是"不得已"，而是战略选择。</p>
+            <p class="last">另一个关键信号：利用时间窗口从 700 天压缩至 44 天，28.3% 的 CVE 在 24 小时内即被利用——AI 辅助攻击的规模化速度远超防御体系进化。</p>
+        </div>
+
+        <!-- 资本战场 -->
+        <section class="section">
+            <div class="section-title">💰 资本战场</div>
+
+            <div class="card">
+                <h3>DeepSeek 拟募资最高 500 亿元，与阿里谈崩？</h3>
+                <div class="source">来源：36氪 | 2026-05-09</div>
+                <div class="desc">DeepSeek（深度求索）在4月展开罕见巨额融资计划，同时吸引腾讯和阿里巴巴两家大厂。市场消息称阿里巴巴和DeepSeek谈崩了，但市场人士透露阿里应该没有进行谈判。融资规模刷新国内 AI 公司纪录。</div>
+            </div>
+
+            <div class="card">
+                <h3>字节跳动 AI 基础设施支出增至 2000 亿元</h3>
+                <div class="source">来源：36氪 | 2026-05-09</div>
+                <div class="desc">随着内存芯片成本上涨及字节跳动加速布局人工智能，该公司已将今年的 AI 基础设施支出计划增加 <span class="highlight">25%</span> 至 2000 亿元人民币。从短视频推荐算法向大模型和 AI 应用全面发力。</div>
+            </div>
+
+            <div class="card">
+                <h3>Nvidia 承诺今年投入 400 亿美元进行 AI 股权交易</h3>
+                <div class="source">来源：TechCrunch | 2026-05-09</div>
+                <div class="desc">作为 AI 芯片领域的绝对霸主，Nvidia 正通过投资布局巩固其生态优势，从硬件供应商向 AI 全产业链投资者转变。</div>
+            </div>
+
+            <div class="card">
+                <h3>Intel 股价一年暴涨 490%</h3>
+                <div class="source">来源：TechCrunch | 2026-05-09</div>
+                <div class="desc">Intel 在 AI 芯片赛道落后于 Nvidia，但股价狂飙显示市场对其战略转型（新任 CEO Lip-Bu Tan 聚焦核心业务、裁减非盈利子公司）的期待。</div>
+            </div>
+        </section>
+
+        <!-- 产品爆发 -->
+        <section class="section">
+            <div class="section-title">🚀 产品爆发</div>
+
+            <div class="card">
+                <h3>光帆带摄像头 AI 耳机 5 月 15 日开售</h3>
+                <div class="source">来源：36氪 | 2026-05-09</div>
+                <div class="desc">光帆科技宣布全球首款具备视觉感知能力的主动式 AI 耳机——光帆全感 AI 耳机将于 <span class="highlight">5月15日正式开售</span>。该产品将摄像头集成到耳机中，实现视觉感知与 AI 结合。耳机市场正从音频设备向多模态 AI 终端演进。</div>
+            </div>
+
+            <div class="card">
+                <h3>Zeroth 人形机器人接入腾讯 OpenClaw</h3>
+                <div class="source">来源：36氪 | 2026-05-09</div>
+                <div class="desc">乐享科技旗下 Zeroth 元点 M1 人形机器人成为 <span class="highlight">全球首款</span>接入腾讯 OpenClaw（小龙虾）的可量产人形机器人。已与腾讯达成万台硬件终端接入意向，计划于5月下旬正式上线。</div>
+            </div>
+
+            <div class="card">
+                <h3>百度文心大模型 5.1 发布：6% 成本达到领先效果</h3>
+                <div class="source">来源：36氪 | 2026-05-09</div>
+                <div class="desc">百度正式发布文心5.1，采用"多维弹性预训练"技术，仅以业界同规模模型约 <span class="highlight">6%</span> 的预训练成本达到基础效果领先水平，登上 LMArena 搜索榜国内第一。</div>
+            </div>
+        </section>
+
+        <!-- GitHub Trending -->
+        <section class="section">
+            <div class="section-title">📦 GitHub Trending · 2026 Top 20 AI 项目</div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>项目</th>
+                            <th>Stars</th>
+                            <th>领域</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>OpenClaw</td><td>302k</td><td>Agent执行</td></tr>
+                        <tr><td>2</td><td>AutoGPT</td><td>182k</td><td>Agent执行</td></tr>
+                        <tr><td>3</td><td>n8n</td><td>179k</td><td>工作流编排</td></tr>
+                        <tr><td>4</td><td>Stable Diffusion WebUI</td><td>162k</td><td>多模态生成</td></tr>
+                        <tr><td>5</td><td>Dify</td><td>132k</td><td>工作流编排</td></tr>
+                        <tr><td>6</td><td>LangChain</td><td>129k</td><td>工作流编排</td></tr>
+                        <tr><td>7</td><td>Open WebUI</td><td>127k</td><td>应用界面</td></tr>
+                        <tr><td>8</td><td>ComfyUI</td><td>106k</td><td>多模态生成</td></tr>
+                        <tr><td>9</td><td>RAGFlow</td><td>74.7k</td><td>数据与上下文</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>核心趋势解读</h3>
+                <div class="desc">2026年开源AI热点从模型能力转向实际应用领域：<span class="highlight">Agent执行</span>（OpenClaw为首）、<span class="highlight">工作流编排</span>（n8n/Dify/LangChain）、<span class="highlight">多模态生成</span>（ComfyUI/Stable Diffusion）三分天下。开源从"追赶模型能力"转向"落地工程实践"。</div>
+            </div>
+        </section>
+
+        <!-- 安全警报 -->
+        <section class="section">
+            <div class="section-title">🔐 安全警报</div>
+
+            <div class="card">
+                <h3>2026：AI 辅助攻击元年</h3>
+                <div class="source">来源：The Hacker News | 2026-05-04</div>
+                <div class="desc">
+                    <strong>关键数据：</strong><br>
+                    · 恶意包数量：2022年5.5万 → 2025年45.46万<br>
+                    · 利用时间窗口：超过700天 → <span class="highlight">仅44天</span><br>
+                    · 28.3%的CVE在披露后<span class="highlight">24小时内</span>即被利用<br>
+                    · SWE-bench解决率：2024年8月33% → 2025年12月<span class="highlight">81%</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>标志性事件</h3>
+                <div class="source">来源：The Hacker News 汇总</div>
+                <div class="desc">
+                    · 3名无编程背景青少年用 ChatGPT 构建攻击工具，Hit Rakuten Mobile 系统约<span class="highlight">22万次</span><br>
+                    · 单个攻击者用 Claude Code 在<span class="highlight">一个月内</span>对17家机构实施勒索攻击<br>
+                    · 17岁少年用 AI 工具窃取<span class="highlight">700万</span>用户数据购买宝可梦卡
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>防御困境</h3>
+                <div class="desc">传统安全工具（静态分析、签名扫描）已无法检测 AI 生成的恶意代码。AI 同时加速了攻击者和防御者，但目前<span class="highlight">攻击者占优</span>——漏洞窗口压缩速度快于补丁发布速度。</div>
+            </div>
+        </section>
+
+        <!-- 学术前沿 -->
+        <section class="section">
+            <div class="section-title">🧪 学术前沿 · arXiv 论文</div>
+
+            <div class="card">
+                <h3>RetroAgent（上海AI Lab + NUS）</h3>
+                <div class="desc">通过回顾性双重内在反馈实现从"解决问题"到"持续进化"的范式转变，解决标准RL范式下Agent收敛到次优策略的问题。</div>
+            </div>
+
+            <div class="card">
+                <h3>AlphaApollo（港科大等）</h3>
+                <div class="desc">面向深度Agentic推理的系统，针对当前Agentic推理系统面临的两大瓶颈提出系统性解决方案。</div>
+            </div>
+
+            <div class="card">
+                <h3>Ares</h3>
+                <div class="desc">自适应推理努力选择机制，动态分配不同复杂度的推理资源，优化Agent推理成本。</div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>资本军备竞赛升级：</strong>DeepSeek 500亿、字节2000亿、Nvidia 400亿美元——大厂AI投资进入千亿级时代，融资规模和速度均刷新纪录</li>
+                    <li><strong>终端多模态化加速：</strong>AI耳机带摄像头、人形机器人接入Agent平台——AI从屏幕走向物理世界，多形态终端新品类正在形成</li>
+                    <li><strong>安全攻防严重失衡：</strong>AI大幅降低攻击门槛（无编程背景也能发起规模化攻击），但防御工具进化速度跟不上，2026将成为AI辅助攻击爆发年</li>
+                    <li><strong>就业替代开始发生：</strong>Cloudflare不是因为经营困难而裁员，而是主动选择用AI替代岗位——这标志AI替代人工从预测变为现实</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · TechCrunch · Ars Technica · The Hacker News · NocoBase</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-05-12 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
