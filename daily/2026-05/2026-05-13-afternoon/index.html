@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-05-13</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent2: #a78bfa;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(124, 58, 237, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #ddd6fe; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(99, 102, 241, 0.15); color: #a5b4fc; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(124, 58, 237, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报</h1>
+      <div class="subtitle">2026年5月13日 · AI行业动态日报</div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 class="cn">🇨🇳 国内动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">斯坦福发布《2026年AI指数报告》：中美技术差距显著收窄</h3>
+        </div>
+        <p>Stanford HAI 于4月13日发布《2026年人工智能指数报告》：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">产业主导：</strong>全球具有重大影响力AI模型中，产业界贡献超过90%，学术界独立产出持续降低</li>
+          <li><strong style="color:#fbbf24">中美格局：</strong>中美两国重要模型发布量占全球绝大部分；中国开发者发布的模型在多项国际排行榜上与美国顶尖系统不相上下</li>
+          <li><strong style="color:#fbbf24">中国数据：</strong>AI企业数量超6000家，AI核心产业规模突破1.2万亿元，同比增长近30%；国产开源大模型全球累计下载量突破100亿次；中国成为AI专利最大拥有国</li>
+          <li><strong style="color:#fbbf24">预测：</strong>"十五五"末中国AI相关产业规模可突破<strong>10万亿元</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>关键数字：国产开源大模型全球累计下载量突破100亿次</strong></p>
+          <p>解读：中美AI竞争从"模型数量"走向"技术质量"，中国开源模型生态正在形成自己的影响力。但值得关注的是，斯坦福报告指出产业界贡献超过90%的具有重大影响力模型——这意味着学术界的独立角色正在弱化，AI创新的主体已全面转向产业。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">智谱AI发布GLM-5：原生多模态基础模型</h3>
+        </div>
+        <p>智谱发布 GLM-5V-Turbo，融合视觉、文本等多模态感知能力，定位对标 GPT-4V 和 Gemini。此举正值国内开源大模型竞争白热化阶段，GLM-5的发布进一步丰富了国产多模态模型矩阵。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">具身智能融资持续火热：维他动力刷新纪录，鹿明累计近10亿</h3>
+        </div>
+        <p>具身智能产业链持续吸引资本：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">维他动力：</strong>完成5亿元融资，刷新消费级机器人融资纪录</li>
+          <li><strong style="color:#fbbf24">鹿明机器人：</strong>累计融资近10亿</li>
+          <li><strong style="color:#fbbf24">韩国三大制造商：</strong>投资机器人数据公司 Config</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>行业判断：</strong>具身智能离"真正进入家庭"仍有距离，余轶南预测2027年才是元年。整个行业仍处于基础设施和能力积累阶段，大额融资频现但落地进程缓慢。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">阿里店小蜜升级：AI客服首次实现"AI+人"超越纯人工</h3>
+        </div>
+        <p>阿里发布全新AI店小蜜：</p>
+        <ul>
+          <li>"AI+人"协同模式下，<strong style="color:#fbbf24">询单转化率首次超越纯人工客服</strong>（白天全时段）</li>
+          <li>转人工率下降45%，询单转化率达10%，服饰商家提升20%</li>
+          <li>日均对话量近千万，接入商家突破百万</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>AI客服从"降低成本"升级为"提升转化"，这是质变。天猫618前夕发布，AI主动催付、连带推荐直接介入交易转化环节，是从工具到生产力的跨越。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🌍 国际动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">5</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Anthropic + SpaceX 达成算力合作：300兆瓦新算力入局</h3>
+        </div>
+        <p>Anthropic 与 SpaceX 签署协议，将利用 Colossus 1 数据中心访问权限：</p>
+        <ul>
+          <li>获得超过 <strong style="color:#fbbf24">300兆瓦</strong> 新算力容量</li>
+          <li>Claude Code 收费调整：5小时限额翻倍，取消 Pro/Max 计划高峰限流</li>
+          <li>马斯克表示：Anthropic需确保Claude对人类有益，否则保留收回算力的权利</li>
+          <li>xAI 仍保留规模更大的 Colossus 2 用于自身AI训练</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>AI竞争的本质是算力竞争。Anthropic与SpaceX的合作标志AI基础设施正从传统数据中心向跨界资源整合方向演进。300兆瓦的算力规模相当于一个小型城市用电，这是AI基础设施探索非传统解决路径的典型案例。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">6</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Google Chrome 静默安装4GB AI模型：隐私争议持续发酵</h3>
+        </div>
+        <p>Google Chrome 被发现<strong style="color:#f87171">在用户未明确同意的情况下</strong>，在设备端静默安装了约4GB的AI模型（Nano Banana）：</p>
+        <ul>
+          <li>在 Hacker News 上引发 <strong style="color:#fbbf24">1100+ 条评论</strong>讨论</li>
+          <li>批评者指出：端侧AI模型的部署应遵循透明原则，用户有权知晓和控制设备上的AI组件</li>
+          <li>这一事件反映了<strong style="color:#f87171">端侧AI部署中的隐私治理空白</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>解读：</strong>AI能力的扩张速度已经远超用户知情权的保障进程。当AI模型可以静默入驻用户设备，传统的隐私框架已无法覆盖这一新现实。这不只是Google的问题，而是整个行业在推进端侧AI时必须面对的治理挑战。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">7</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">OpenAI 语音Agent升级：推理能力填补短板</h3>
+        </div>
+        <p>OpenAI 宣布升级语音Agent的逻辑推理能力：</p>
+        <ul>
+          <li>显著提升实时交互质量和复杂任务处理水平</li>
+          <li>填补了语音AI在对话理解和推理方面的明显差距</li>
+          <li>能更好地处理多轮对话、意图识别和上下文理解</li>
+          <li>推动AI助手从简单问答向复杂任务协作方向演进</li>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">8</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Google I/O 2026定档：Gemini 3.1 引关注</h3>
+        </div>
+        <p>Google I/O 2026 已正式定档。Gemini 系列持续迭代，Google 还在年度云端大会发布了全新AI Agent工具，挑战 OpenAI 和 Anthropic，计划投资<strong style="color:#fbbf24">1850亿美元</strong>用于AI基础设施建设。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="paper">📄 arXiv 论文精选</h2>
+      <table>
+        <tr><th style="width:40%">论文</th><th style="width:30%">机构</th><th>核心贡献</th></tr>
+        <tr><td><strong>DeepAgent</strong></td><td>人大、小红书、清华</td><td>通用推理Agent，可扩展工具集</td></tr>
+        <tr><td><strong>AlphaApollo</strong></td><td>港科大、Stanford、东京大学</td><td>深度Agent推理系统</td></tr>
+        <tr><td><strong>daReasoner</strong></td><td>复旦、NUS、UW</td><td>动态工具编排的迭代视觉推理</td></tr>
+        <tr><td><strong>Ares</strong></td><td>UMass</td><td>自适应推理努力选择，提升Agent效率</td></tr>
+        <tr><td><strong>The Auton Framework</strong></td><td>Snap</td><td>声明式架构，Agent系统规范与执行</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">💡 一句话观点</h2>
+      <div class="quote">
+        Anthropic与SpaceX的算力合作揭示了一个真相：在AI竞争的下半场，<strong>算力即护城河</strong>。谁能解决算力瓶颈，谁就掌握了模型迭代的主动权。与此同时，Chrome静默安装AI模型事件说明，AI能力的扩张速度已经远超用户知情权的保障进程——这是整个行业都需要正视的治理缺口。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:0.95rem;">🔗 信源索引</h2>
+      <ul>
+        <li><a href="https://finance.sina.com.cn/wm/2026-04-21/doc-inhvheyy6154656.shtml" target="_blank">斯坦福HAI《2026年AI指数报告》，新浪财经</a></li>
+        <li><a href="https://juejin.cn/post/7638533972619837466" target="_blank">2026年5月11日AI重要新闻，稀土掘金</a></li>
+        <li><a href="https://www.163.com/dy/article/KSFS0VD605118BEE.html" target="_blank">每日AIGC早报2026.5.9，网易</a></li>
+        <li><a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank">Chrome静默安装AI模型，Hacker News</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC午间情报 2026-05-13</p>
+    </footer>
+  </div>
+</body>
+</html>
