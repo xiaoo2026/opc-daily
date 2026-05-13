@@ -143,5 +143,10 @@
     "date": "2026-05-13",
     "type": "evening",
     "html_url": "https://020755.xyz/daily/2026-05/2026-05-13/index.html"
+  },
+  {
+    "date": "2026-05-13",
+    "type": "21evening",
+    "html_url": "https://020755.xyz/daily/2026-05/2026-05-13-21evening/index.html"
   }
 ]
