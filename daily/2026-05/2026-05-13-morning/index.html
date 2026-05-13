@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-05-13 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        tr:last-child td { border-bottom: none; }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 169, 77, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 169, 77, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-05-13 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年5月13日 09:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">模型爆发</span>
+                <span class="tag tag-product">具身智能</span>
+                <span class="tag tag-security">监管落地</span>
+                <span class="tag tag-trend">开源生态</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-orange">
+                <div class="number">94%</div>
+                <div class="label">百度Ernie5.1预训练成本降幅</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">128K</div>
+                <div class="label">GPT-Realtime-2上下文窗口</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">19.6m/s</div>
+                <div class="label">Ace乒乓球机器人回球速度</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">5家</div>
+                <div class="label">CAISI监管覆盖全球AI实验室数</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：AI 进入"效能深度对垒"新阶段</h3>
+            <p>百度Ernie5.1以6%成本达领先效果、GPT-Realtime-2将GPT-5级推理带入语音交互、索尼Ace机器人在高速物理闭环中击败人类精英选手——三条主线指向同一趋势：大模型竞争从"规模竞赛"转向"效能+垂直能力"深度对垒，开源生态加速整合。</p>
+            <p class="last">同时，美国CAISI监管协议覆盖全球五大实验室、中国智能体监管框架快速落地，监管博弈将成为2026下半年AI竞争的关键变量。</p>
+        </div>
+
+        <!-- 模型爆发 -->
+        <section class="section">
+            <div class="section-title">🧠 模型爆发</div>
+
+            <div class="card">
+                <h3>百度文心大模型5.1正式发布：预训练成本骤降94%</h3>
+                <div class="source">来源：AIBase / 36氪 | 2026-05-11</div>
+                <div class="desc">以2.4万亿参数 Ernie5.0 为底座，通过<span class="highlight">"多维弹性预训练"</span>技术，仅用同规模模型约6%的预训练成本达到领先效果。LMArena搜索榜全球第四（1223分）中国第一；GPQA接近西方顶级闭源模型；Agent能力超越 DeepSeek-V4-Pro。超稀疏MoE架构 + 四阶段后训练（代码/推理/代理专家并行训练 + 策略蒸馏 + RL），解决"跷跷板效应"。已集成至百度AI Studio，权重尚未开源。</div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI三箭齐发：GPT-Realtime-2系列正式上线</h3>
+                <div class="source">来源：新智元 / 凤凰网 | 2026-05-07</div>
+                <div class="desc">
+                    <strong>GPT-Realtime-2：</strong>首款GPT-5级推理语音模型，上下文窗口从32K→<span class="highlight">128K</span>，支持并行工具调用，Big Bench Audio比前代高15.2%；输入 $32/M token，输出 $64/M token。<br>
+                    <strong>GPT-Realtime-Translate：</strong>实时同传，70+→13种语言，跟上说话者节奏；$0.034/分钟。<br>
+                    <strong>GPT-Realtime-Whisper：</strong>流式转录，延迟低于200ms；$0.017/分钟。<br>
+                    落地案例：Zillow语音房产助手（电话任务成功率69%→95%），Priceline全程语音管理旅行预订，德国电信大规模坐席。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>小米自研MiMo + Hermes Agent登顶全球调用量榜首</h3>
+                <div class="source">来源：新浪科技 | 2026-05-12</div>
+                <div class="desc">OpenRouter平台数据：Hermes Agent登顶全球调用量榜首，日Token调用量<span class="highlight">2910亿</span>，周超1.75万亿；小米自研MiMo近一个月累计贡献1.45万亿Token，成为第一大贡献模型。蚂蚁百灵Ling-2.6-1T（4月30日）万亿参数开源，Token效率仅需16M tokens完成全部评估，输出成本约为同类1/4，开源SOTA。</div>
+            </div>
+        </section>
+
+        <!-- 具身智能 -->
+        <section class="section">
+            <div class="section-title">🤖 具身智能 · 物理AI突破</div>
+
+            <div class="card">
+                <h3>索尼AI乒乓球机器人Ace首次战胜高水平人类选手</h3>
+                <div class="source">来源：Sony AI / Nature | 2026-05-12</div>
+                <div class="desc">
+                    Ace与5位10年球龄精英选手比赛赢下3场，与2位职业选手对局获1局，2026年5月12日登上<strong>Nature</strong>。<br><br>
+                    <strong>三层架构：</strong><br>
+                    · <strong>看：</strong>事件相机（像素独立响应亮度变化，时间分辨率远超普通摄像头）+ 多台普通相机三维定位<br>
+                    · <strong>想：</strong>强化学习在仿真环境完全通过试错学习，无需人工规则<br>
+                    · <strong>动：</strong>轨迹优化+安全模块，机械臂8自由度，回球速度<span class="highlight">19.6m/s</span>，全程&lt;0.3秒<br><br>
+                    意义：AI从数字世界走向物理世界高速闭环控制的里程碑，具身智能底层技术验证。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>光轮智能与谷歌、英伟达共同定义物理AI仿真标准</h3>
+                <div class="source">来源：机器之心 | 2026-05-12</div>
+                <div class="desc">物理AI时代核心瓶颈从"算力"转向"数据"——需要可交互、可执行、可验证的物理环境数据。仿真正在成为物理AI时代的<span class="highlight">"CUDA"</span>，成为新的标准层。斯坦福李飞飞指出"把数据带入机器人训练远比收集图片困难得多"；谁掌握仿真标准，谁就掌握机器人数据入口。</div>
+            </div>
+        </section>
+
+        <!-- GitHub Trending -->
+        <section class="section">
+            <div class="section-title">📦 GitHub Trending · 2026 AI 开源热点</div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>项目</th>
+                            <th>Stars</th>
+                            <th>领域</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Hermes Agent</td><td>143k+</td><td>Agent执行</td></tr>
+                        <tr><td>2</td><td>GLM-5</td><td>3.2k</td><td>Agent/系统工程</td></tr>
+                        <tr><td>3</td><td>agent-skills</td><td>37.7k</td><td>AI编程技能库</td></tr>
+                        <tr><td>4</td><td>hello-agents</td><td>46k</td><td>Agent教程</td></tr>
+                        <tr><td>5</td><td>MiniMax-M2.5</td><td>576</td><td>Agent/Tool Use</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>趋势解读</h3>
+                <div class="desc">2026年开源AI热点从"模型能力"转向"工程落地"：<span class="highlight">Agent执行</span>（Hermes/GLM-5）、<span class="highlight">工程技能库</span>（agent-skills）成为新热点；物理AI数据仿真成为新兴赛道。开源从"追赶模型规模"转向"工程实践落地"。</div>
+            </div>
+        </section>
+
+        <!-- 政策监管 -->
+        <section class="section">
+            <div class="section-title">🔐 政策监管</div>
+
+            <div class="card">
+                <h3>美国CAISI协议覆盖全球五大前沿AI实验室</h3>
+                <div class="source">来源：新华网 / 36氪 | 2026-05-05</div>
+                <div class="desc">
+                    美国商务部人工智能标准与创新中心（CAISI）2026年5月5日宣布与谷歌DeepMind、微软、xAI签署新协议——前沿AI模型正式发布前须接受国家安全风险审查。OpenAI和Anthropic已于2024年加入，全球<span class="highlight">五大AI前沿实验室</span>全部纳入自愿性审查框架。<br><br>
+                    审查重点：网络攻击、生物安全威胁等关键领域。协议目前为自愿性质，尚无法律强制约束力。<br><br>
+                    白宫内部信号混乱：国家经济委员会主任提议参照FDA设立强制性事前审查，但白宫办公厅主任随后澄清"不会挑选赢家"，科技界担忧过度监管拖累创新。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国智能体监管框架快速落地</h3>
+                <div class="source">来源：中国银河证券 | 2026-05-12</div>
+                <div class="desc">中国信通院发布云上智能体服务网络和数据安全自律公约、国家网信办出台智能体专项实施意见，围绕技术研发、标准体系、安全治理和场景落地系统部署；明确云服务商责任、身份互验、权限管控和行为审计。</div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>模型军备竞赛转向"效能深度对垒"：</strong>百度Ernie5.1以6%成本达领先效果，蚂蚁Ling-2.6-1T以1/4输出成本达SOTA——大模型竞争从规模竞赛进入效能与垂直能力的深度对垒阶段</li>
+                    <li><strong>语音AI进入GPT-5级推理时代：</strong>GPT-Realtime-2将复杂推理能力带入语音交互，OpenAI已形成完整商业版图（ElevenLabs估值110亿美元是主要竞争对手）</li>
+                    <li><strong>具身智能里程碑：物理AI开始爆发：</strong>索尼Ace机器人登Nature证明AI可在高速物理闭环中达到人类精英水平，仿真标准成为下一个"CUDA"争夺点</li>
+                    <li><strong>全球AI监管格局加速成型：</strong>美国CAISI已覆盖五大实验室，中国智能体监管框架快速落地——监管博弈将成为2026下半年AI竞争的关键变量</li>
+                    <li><strong>开源Agent生态加速整合：</strong>Hermes Agent登顶全球调用量榜首，GLM-5参数量达744B，开源从追赶模型能力转向工程实践落地</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · 新智元 · AIBase · 新浪财经 · TechCrunch · 机器之心 · 新华网 · Sony AI · Nature</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-05-13 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
