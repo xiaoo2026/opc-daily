@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-05-14</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a78bfa;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 5 月 14 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. GPT-5.5 Instant 上线：OpenAI 推出新版默认模型，幻觉率大幅降低</h2>
+  <div class="card">
+    <p><span class="highlight">5月5日</span>，OpenAI 推出 <strong>GPT-5.5 Instant</strong>，取代 GPT-5.3 Instant 成为 ChatGPT 默认模型。该版本核心改进：</p>
+    <ul>
+      <li><span class="highlight">幻觉率显著下降</span>：在法律、医学、金融等敏感领域大幅改善</li>
+      <li><span class="highlight">AIME 2025 数学测试</span>：得分 81.2（GPT-5.3 为 65.4）</li>
+      <li><span class="highlight">MMMU-Pro 多模态推理</span>：得分 76 vs 69.2</li>
+      <li><span class="highlight">上下文记忆</span>：可搜索历史对话、文件和 Gmail，来源可查、可删改</li>
+      <li><span class="highlight">API 上线</span>：以 "chat-latest" 提供，5.3 版本三个月后下架</li>
+    </ul>
+    <p class="source">来源：TechCrunch</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 首例 AI 研发零日漏洞：Google 披露 2FA 绕过攻击</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 里程碑事件</span>：Google 威胁情报团队（GTIG）披露，网络犯罪分子使用 AI 系统（极可能为 LLM）研发出<strong>首个已知的零日 2FA 绕过漏洞</strong>。</p>
+    <p><span class="highlight">AI 生成代码特征</span>：Python 脚本包含大量教育性 docstring、幻觉的 CVSS 评分，代码格式"教科书式"Pythonic，符合典型 LLM 生成特征。</p>
+    <p><span class="highlight">影响范围</span>：需要有效凭证才能利用，本质是硬编码信任逻辑缺陷，已修复。</p>
+    <p><span class="highlight">行业警示</span>："攻击者不会手软，防御者也无法选择退出。AI 加速漏洞发现—发现、武器化、利用时间线已全面压缩。"</p>
+    <p><span class="highlight">其他 AI 滥用案例</span>：</p>
+    <ul>
+      <li><strong>UNC2814</strong>（疑似中国背景）：引导 Gemini 进行网络漏洞研究</li>
+      <li><strong>APT45</strong>（朝鲜）：发送"数千个重复 prompt"递归分析 CVE 和 PoC</li>
+      <li><strong>PromptSpy</strong>：安卓恶意软件滥用 Gemini 分析屏幕并自动点击，捕获生物识别数据</li>
+      <li><strong>APT27</strong>（中国）：用 Gemini 加速开发僵尸网络管理应用</li>
+      <li><strong>灰市 API 中转</strong>：中国开发者通过 relay 平台绕过 Claude/Gemini 访问限制，模型精度从 83.82% 降至约 37%</li>
+    </ul>
+    <p class="source">来源：The Hacker News / Google Threat Intelligence</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. AWS + Coinbase + Stripe：AI Agent 原生支付时代开启</h2>
+  <div class="card">
+    <p><span class="highlight">Amazon Bedrock AgentCore Payments</span>：AWS 携手 Coinbase 和 Stripe 推出 AI Agent 原生支付方案，支持 Agent 使用 USDC 购买网络内容、API 访问、MCP 服务器和跨 Agent 交易。</p>
+    <p><span class="highlight">Binance 入局</span>：宣布为 AI Agent 提供"交易所级大脑"交易智能，OKX 同日推出 OnchainOS AI 升级版，定位为自主加密交易 Agent 基础设施。</p>
+    <p><span class="highlight">机器经济萌芽</span>：AI Agent 钱包数量激增，自主 Agent 之间直接交易的概念正在成为现实。</p>
+    <p class="source">来源：Blockonomi、StockTwits</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. 美国政府获模型提前访问权：Google、Microsoft、xAI 签署协议</h2>
+  <div class="card">
+    <p>美国商务部 AI 标准与创新中心（CAISI）宣布：<strong>Google、Microsoft、xAI</strong> 同意在公开发布前向政府提供模型进行安全评估，此前 OpenAI 和 Anthropic 已签署类似协议。</p>
+    <p><span class="warn">⚠ 政策背景</span>：Trump 政府正考虑为 AI 工具建立政府审查机制，要求企业提前报告可能构成安全风险的 AI 能力。CAISI 已完成 40+ 次评估（含未发布模型）。</p>
+    <p class="source">来源：Bloomberg、CNN</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. Polymarket + AI Agent：预测市场全面渗透</h2>
+  <div class="card">
+    <p><span class="highlight">AI Agent 接管 Polymarket</span>：Valory 的 Polystrat Agent 7×24 小时自主交易——AI 从新闻实时生成预测问题、分析市场情绪、合成多市场信息做复杂预测。</p>
+    <p><span class="highlight">核心洞察</span>："预测市场本质是去中心化新闻编辑部，市场直接告诉你概率而非专家观点。"</p>
+    <p><span class="highlight">AI + 加密项目动态</span>：FET 稳定在 $0.24-$0.30 区间（市值 $6.23 亿），VIRTUAL 价格 $0.93（市值 $6.11 亿），Virtuals 协议代币生态持续扩展。</p>
+    <p class="source">来源：CoinDesk、Polymarket</p>
+  </div>
+</section>
+
+<section>
+  <h2>6. GitHub Trending 热点</h2>
+  <div class="card">
+    <ul>
+      <li><strong>vicode</strong>：Rust TUI coding agent，fuse-overlayfs 实现 tabs/subagents 并行，共享编译缓存</li>
+      <li><strong>Maelstrom</strong>：轻量 Agent 框架，仅 agent/workflow/session/timers 四个概念</li>
+      <li><strong>AI 安全工具爆发</strong>：Quasar Linux RAT、Linux PamDOORa、CopyFail 漏洞被大规模利用</li>
+      <li><strong>SWE-bench</strong>：软件工程解决率 2024 年 8 月 33% → 2025 年 12 月 81%</li>
+    </ul>
+    <p class="source">来源：Hacker News</p>
+  </div>
+</section>
+
+<section>
+  <h2>7. 今日安全漏洞一览</h2>
+  <div class="card">
+    <table>
+      <tr><th>漏洞</th><th>影响</th><th>状态</th></tr>
+      <tr><td>Palo Alto PAN-OS RCE</td><td>root 访问、间谍活动</td><td><span class="warn">已在野利用</span></td></tr>
+      <tr><td>Apache HTTP/2 CVE-2026-23918</td><td>DoS + 潜在 RCE</td><td>补丁中</td></tr>
+      <tr><td>Linux Kernel Dirty Frag LPE</td><td>多发行版 root 提权</td><td><span class="warn">在野 Exploit</span></td></tr>
+      <tr><td>Linux PamDOORa</td><td>PAM 模块窃取 SSH 凭证</td><td>新发现</td></tr>
+      <tr><td>LiteLLM CVE-2026-42208</td><td>SQL 注入</td><td><span class="warn">36小时内已遭利用</span></td></tr>
+    </table>
+    <p class="source">来源：The Hacker News</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-05-14 · 数据来源：TechCrunch / The Hacker News / Bloomberg / CoinDesk / Hacker News
+</div>
+
+</body>
+</html>
