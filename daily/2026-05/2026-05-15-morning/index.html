@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-05-15 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        tr:last-child td { border-bottom: none; }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 169, 77, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 169, 77, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-05-15 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年5月15日 09:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">大厂财报</span>
+                <span class="tag tag-product">人才流动</span>
+                <span class="tag tag-security">安全威胁</span>
+                <span class="tag tag-trend">模型升级</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">0.86亿</div>
+                <div class="label">阿里经调整净利润（史诗级下滑）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">136亿</div>
+                <div class="label">林俊旸新公司估值（人民币）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">370亿</div>
+                <div class="label">腾讯Q1资本开支</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">52.5%</div>
+                <div class="label">GPT-5.5幻觉率降幅</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：AI"中考"大厂集体交出尴尬答卷</h3>
+            <p>阿里腾讯同天发财报——阿里净利润史诗级下滑至0.86亿元，腾讯Q1资本开支370亿，三年商业化道阻且长。林俊旸136亿估值创业、微软布局"后OpenAI时代"、Google确认黑客已用AI发现漏洞——三条主线指向同一趋势：AI竞争进入深水区，大厂\"规模投入\"逻辑正在被证伪，人才和资本开始向更灵活的创业体流动。</p>
+            <p class="last">GPT-5.5发布、幻觉率降52.5%，模型能力继续狂奔，但商业化路径仍不明朗——这是2026年AI行业最核心的矛盾。</p>
+        </div>
+
+        <!-- 大厂财报 -->
+        <section class="section">
+            <div class="section-title">🏢 大厂财报 · AI中考</div>
+
+            <div class="card">
+                <h3>阿里腾讯同天发财报：AI投入百亿、回报十亿</h3>
+                <div class="source">来源：36氪 | 2026-05-14</div>
+                <div class="desc">
+                    5月13日阿里腾讯同天发财报。<strong>阿里</strong>营收2433.8亿元（+3%），经调整净利润暴跌至<span class="highlight">0.86亿元</span>——外卖补贴+AI资本开支近乎掏空当前利润。<strong>腾讯</strong>营收1965亿元（+9%），净利润679亿元（+11%），但Q1资本开支<span class="highlight">370亿元</span>，后续利润下滑是大概率事件。<br><br>
+                    <strong>三家困境：</strong><br>
+                    · <strong>阿里：</strong>通义千问开源生态领先，但AI搜索接入淘宝正在拆掉旧的竞价排名盈利模型，新模式尚未建立<br>
+                    · <strong>字节：</strong>豆包3.45亿月活，AI对话切换成本几乎为零，付费会员刚起步，2000亿年资本开支难以支撑<br>
+                    · <strong>腾讯：</strong>马化腾承认"上了一艘漏船"，Hy3.0 preview刚上榜，微信AI落地仍停留在"配件级"
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>林俊旸创业：20亿美元估值刷新AI纪录</h3>
+                <div class="source">来源：36氪 | 2026-05-13</div>
+                <div class="desc">
+                    前阿里巴巴千问大模型负责人林俊旸（1993年生）正为其新创立AI实验室寻求数亿美元融资，<span class="highlight">融后估值约20亿美元（约136亿人民币）</span>，高榕资本和红杉中国洽谈出资。<br><br>
+                    林俊旸2019年加入阿里达摩院，2022年任通义千问技术负责人，是阿里最年轻P10。任内千问衍生模型突破20万个，下载量超10亿次，稳居全球开源大模型第一。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>微软布局"后OpenAI时代"：收购Cursor告吹、谈判Inception</h3>
+                <div class="source">来源：36氪/财联社 | 2026-05-14</div>
+                <div class="desc">
+                    微软正探索与AI初创公司交易，曾考虑收购Cursor（因反垄断担忧放弃），已与AI初创公司Inception讨论<span class="highlight">至少10亿美元</span>的交易。OpenAI CEO风波、CTO Mira Murati离职创业后，微软对OpenAI单一依赖风险暴露，开始多元化布局。
+                </div>
+            </div>
+        </section>
+
+        <!-- 模型爆发 -->
+        <section class="section">
+            <div class="section-title">🧠 模型爆发</div>
+
+            <div class="card">
+                <h3>GPT-5.5发布：数理"幻觉"率降52.5%，AIME数学81.2分</h3>
+                <div class="source">来源：OpenAI / AIBase | 2026-05-06</div>
+                <div class="desc">
+                    GPT-5.5正式推送并设为ChatGPT默认版本。<span class="highlight">幻觉率大幅下降52.5%</span>（医疗、法律、金融等高门槛领域）；AIME2025数学测试<span class="highlight">81.2分</span>（GPT-5.3为65.4分）；GPQA博士级科学测试、多模态推理、科学图表理解均显著提升。回复更简洁，更接近真人，减少无意义追问。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Google警告：黑客已用AI发现重大软件漏洞</h3>
+                <div class="source">来源：Hacker News / 纽约时报 | 2026-05-11</div>
+                <div class="desc">
+                    Google发布报告，表示"高度确信"攻击者利用AI模型辅助发现了某个重大软件漏洞。这是首次有明确证据表明国家级黑客或犯罪团伙已将LLM用于实际漏洞挖掘。AI不仅能发现漏洞，还能加速<span class="highlight">"漏洞发现→武器化"</span>的攻击链，AI网络安全攻防进入新阶段。
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Trending -->
+        <section class="section">
+            <div class="section-title">📦 GitHub Trending · 2026 AI 开源热点</div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>项目</th>
+                            <th>Stars</th>
+                            <th>领域</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Hermes Agent</td><td>143k+</td><td>Agent执行</td></tr>
+                        <tr><td>2</td><td>GLM-5</td><td>3.2k</td><td>Agent/系统工程</td></tr>
+                        <tr><td>3</td><td>agent-skills</td><td>37.7k</td><td>AI编程技能库</td></tr>
+                        <tr><td>4</td><td>hello-agents</td><td>46k</td><td>Agent教程</td></tr>
+                        <tr><td>5</td><td>MiniMax-M2.5</td><td>576</td><td>Agent/Tool Use</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>趋势解读</h3>
+                <div class="desc">2026年开源AI热点从"模型能力"转向"工程落地"：<span class="highlight">Agent执行</span>（Hermes/GLM-5）、<span class="highlight">工程技能库</span>（agent-skills）成为新热点；微软研究院指出当前Agent无法处理长时运行任务，底层瓶颈尚未突破。</div>
+            </div>
+        </section>
+
+        <!-- 政策监管 -->
+        <section class="section">
+            <div class="section-title">🔐 AI Agent · 研究动态</div>
+
+            <div class="card">
+                <h3>Microsoft Research：当前AI模型无法处理长时运行任务</h3>
+                <div class="source">来源：Hacker News / The Register | 2026-05-11</div>
+                <div class="desc">
+                    Microsoft研究人员发现，当前AI模型和Agent在长时运行任务中表现不佳：上下文累积误差、长期规划能力不足、工具调用可靠性随时间下降。这是构建真正自主Agent系统的<span class="highlight">核心瓶颈</span>，也是Agent商业化道阻且长的根本原因。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>大厂AI"中考"集体尴尬：</strong>阿里净利润史诗级下滑至0.86亿元，腾讯Q1资本开支370亿——"投入百亿、回报十亿"的鸿沟三年不仅没填平，还在扩大</li>
+                    <li><strong>AI人才争夺白热化：</strong>林俊旸创立新公司估值136亿元刷新纪录，OpenAI CTO Mira Murati 离职创业——顶级人才正在从大厂向创业体流动</li>
+                    <li><strong>微软"后OpenAI时代"布局：</strong>收购Cursor告吹、谈判10亿美元Inception交易，对OpenAI单一依赖风险开始被对冲</li>
+                    <li><strong>GPT-5.5发布：</strong>幻觉率降52.5%、AIME数学81.2分，模型能力继续狂奔，但商业化路径仍不明朗</li>
+                    <li><strong>AI已用于实际漏洞挖掘：</strong>Google首次确认国家级黑客用AI发现漏洞，AI网络攻防进入新阶段</li>
+                    <li><strong>Microsoft戳破Agent瓶颈：</strong>当前模型无法处理长时任务，真正自主Agent商业化道阻且长</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · AIBase · Hacker News · 纽约时报 · The Register · OpenAI · 财联社</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-05-15 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
