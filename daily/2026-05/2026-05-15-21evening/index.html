@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-05-15</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a78bfa;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 5 月 15 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. 5月模型发布密集期：百度 ERNIE 5.1 冲入全球前四</h2>
+  <div class="card">
+    <p>5月上旬成为2026年最密集的模型发布窗口，多家厂商集中发布旗舰产品：</p>
+    <table>
+      <tr><th>模型</th><th>厂商</th><th>日期</th><th>亮点</th></tr>
+      <tr><td>GPT-5.5 Instant</td><td>OpenAI</td><td>5月5日</td><td>AIME 81.2，幻觉率大幅降低</td></tr>
+      <tr><td>SubQ 1M-Preview</td><td>Subquadratic</td><td>5月5日</td><td>12M token 上下文</td></tr>
+      <tr><td>Grok 4.3</td><td>xAI</td><td>5月6日</td><td>深度搜索能力</td></tr>
+      <tr><td>ZAYA1-8B</td><td>Zyphra</td><td>5月6-7日</td><td>开源小模型</td></tr>
+      <tr><td>Gemini 3.1 Flash Lite</td><td>Google</td><td>5月8日</td><td>轻量低成本</td></tr>
+      <tr><td><span class="highlight">ERNIE 5.1</span></td><td>百度</td><td>5月8日</td><td>LMArena Search 第4名（1223分），中国模型最高</td></tr>
+    </table>
+    <p class="source">来源：buildfastwithai.com, teqvolt.com, felloai.com</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 基准评测：Kimi K2.6 开源权重反击，Leni 登顶四大榜单</h2>
+  <div class="card">
+    <p><strong>Kimi K2.6</strong>（Moonshot，4月20日）：开源权重模型，SWE-bench Pro 击败 GPT-5.4、Claude Opus 4.6、Gemini 3.1 Pro，长上下文搜索能力突出。</p>
+    <p><strong>Leni</strong>（5月12日）：商业地产AI平台，在4大独立基准测试中全面超越 OpenAI/Anthropic/Google/Perplexity：</p>
+    <ul>
+      <li><span class="highlight">DRACO Benchmark 第1</span>：深度研究 71.6%，超越所有深度研究产品</li>
+      <li><span class="highlight">SpreadsheetBench Verified 前2</span>：365/400 任务正确</li>
+      <li><span class="highlight">BullshitBench 第1</span>：98% 识别虚假前提，超越全部 142 个公共模型</li>
+      <li><span class="highlight">GAIA 第1</span>：77.0%，超越 Genspark、Manus、OpenAI Deep Research</li>
+    </ul>
+    <p class="source">来源：PRNewswire, teqvolt.com</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. 安全动态：首例 AI 研发零日 2FA 绕过漏洞</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 里程碑事件</span>：Google 威胁情报团队（GTIG）5月11日披露，网络犯罪组织使用 AI（极可能为 LLM）研发出<strong>首个已知零日 2FA 绕过漏洞</strong>。</p>
+    <p><span class="highlight">AI 生成代码特征</span>：Python 脚本含大量教育性 docstring、幻觉 CVSS 评分，教科书式 Pythonic 格式——LLM 训练数据的典型特征。</p>
+    <p><span class="highlight">漏洞本质</span>：硬编码信任逻辑缺陷，LLM 擅长发现此类高层语义漏洞，已修复。</p>
+    <p><span class="highlight">APT 组织 AI 滥用地图</span>：</p>
+    <ul>
+      <li><strong>UNC2814</strong>（疑似中国）：引导 Gemini 进行网络漏洞研究，触发 persona-driven jailbreak</li>
+      <li><strong>APT45</strong>（朝鲜）：数千重复 prompt 递归分析 CVE 和 PoC</li>
+      <li><strong>PromptSpy</strong>：安卓恶意软件滥用 Gemini 分析屏幕+自动点击，捕获生物识别数据重放认证手势</li>
+      <li><strong>APT27</strong>（中国）：用 Gemini 加速开发僵尸网络管理应用（ORB网络）</li>
+      <li><strong>Shadow API</strong>：中国17个 relay 平台绕过 Claude/Gemini 限制，MedQA 精度从 83.82% 暴跌至 37%</li>
+    </ul>
+    <p class="source">来源：The Hacker News / Google Threat Intelligence / arxiv.org</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. AI Agent 框架格局：LangGraph 领跑生产级部署</h2>
+  <div class="card">
+    <p><span class="highlight">LangGraph</span> 成为生产级首选：Klarna、Cisco、Vizient 等落地部署最多，MCP 原生支持，100+ LLM。</p>
+    <p>GitHub Trending AI 项目（2026-05-15）：</p>
+    <table>
+      <tr><th>项目</th><th>Star</th><th>类型</th></tr>
+      <tr><td>OpenHands</td><td>60,428</td><td>Coding Agent</td></tr>
+      <tr><td>MetaGPT</td><td>59,594</td><td>AI Agent</td></tr>
+      <tr><td>opencode</td><td>54,700</td><td>Coding Agent</td></tr>
+      <tr><td>AutoGen</td><td>48,178</td><td>AI Agent</td></tr>
+      <tr><td>CrewAI</td><td>37,518</td><td>AI Agent</td></tr>
+    </table>
+    <p class="source">来源：ossinsight.io, aimultiple.com</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. 加密+AI融合：AWS/Coinbase/Stripe 推 Agent 原生支付</h2>
+  <div class="card">
+    <p><span class="highlight">AWS Bedrock AgentCore Payments</span>：联合 Coinbase 和 Stripe，支持 Agent 使用 USDC 购买网络内容、API访问、MCP服务器和跨Agent交易。</p>
+    <p><span class="highlight">Binance</span>：为 AI Agent 提供"交易所级大脑"交易智能；<strong>OKX</strong> 推出 OnchainOS AI 升级版，定位自主加密交易 Agent 基础设施。</p>
+    <p><span class="highlight">Virtuals Protocol 生态</span>：FET $0.24-$0.30（市值 $6.23 亿），VIRTUAL $0.93（市值 $6.11 亿）。AI Agent 自主交易正在成为现实。</p>
+    <p class="source">来源：blockonomi.com, stocktwits.com</p>
+  </div>
+</section>
+
+<section>
+  <h2>6. 2026：AI 辅助攻击元年</h2>
+  <div class="card">
+    <p>The Hacker News 将2026年定义为<span class="warn"> AI 辅助攻击元年</span>：</p>
+    <ul>
+      <li>漏洞发现→武器化→利用时间线已"全面压缩"</li>
+      <li>威胁组织利用 AI 自动化漏洞发现、大规模账户滥用（注册/取消高级LLM账户循环）</li>
+      <li>AI 环境成为新攻击面：TeamPCP/UNC6780 攻击 AI 环境开发者，进行供应链渗透</li>
+      <li>防御方：AI 驱动攻击比传统"living off the land"更嘈杂，EDR/XDR 可检测</li>
+    </ul>
+    <p class="source">来源：The Hacker News "2026: The Year of AI-Assisted Attacks"</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-05-15 · 数据来源：The Hacker News / PRNewswire / buildfastwithai.com / ossinsight.io / blockonomi.com
+</div>
+
+</body>
+</html>
