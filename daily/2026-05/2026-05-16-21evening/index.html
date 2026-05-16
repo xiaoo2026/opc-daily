@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-05-16</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a78bfa;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 5 月 16 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. 模型发布：Gemma 4 开源、Claude Opus 4.7 上市、OpenAI Codex 升级</h2>
+  <div class="card">
+    <p><strong>Google Gemma 4</strong>（5月15日）：DeepMind 发布最强开源 AI 模型系列，基于 Gemini 3 研究，Apache 2.0 商用许可，主打高级推理和 Agent 工作流：</p>
+    <table>
+      <tr><th>型号</th><th>类型</th><th>特点</th></tr>
+      <tr><td>Gemma 4 E2B</td><td>Dense</td><td>2B 参数量</td></tr>
+      <tr><td>Gemma 4 E4B</td><td>Dense</td><td>4B 参数量</td></tr>
+      <tr><td>Gemma 4 26B</td><td>MoE</td><td>混合专家架构</td></tr>
+      <tr><td>Gemma 4 31B</td><td>Dense</td><td>最大密度版本</td></tr>
+    </table>
+    <p><strong>Claude Opus 4.7</strong>（Anthropic，4月16日）：主打高级软件工程，复杂长程任务处理能力大幅改善，已在 Google Cloud Vertex AI 上线。</p>
+    <p><strong>OpenAI Codex</strong>（4月16日）：超过300万开发者的重大升级——可控制电脑协同操作、记忆偏好、PR 审查、多文件查看、SSH 远程连接。</p>
+    <p><strong>Anthropic × Gates Foundation</strong>（5月14日）：2亿美元/4年结构性赠款，覆盖全球健康、生命科学、AI 伦理，面向低收入国家提供 Claude 使用积分。</p>
+    <p class="source">来源：SMBtech / Anthropic 官网 / OpenAI 官网 / GREY Journal</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全动态：首例 AI 研发零日 2FA 绕过 + 供应链攻击</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 里程碑事件</span>：Google 威胁情报团队（GTIG）5月11日披露，网络犯罪组织使用 LLM 生成<strong>首个已知零日 2FA 绕过漏洞</strong>。</p>
+    <p><span class="highlight">AI 生成代码特征</span>：Python 脚本含大量教育性 docstring、幻觉 CVSS 评分——典型 LLM 训练数据格式。硬编码信任逻辑缺陷，LLM 擅长发现的高层语义漏洞。</p>
+    <p><span class="highlight">APT 组织 AI 滥用地图：</span></p>
+    <ul>
+      <li><strong>UNC2814</strong>（中国）：引导 Gemini 做网络漏洞研究，触发 persona-driven jailbreak</li>
+      <li><strong>APT45</strong>（朝鲜）：千次重复 prompt 递归分析 CVE 和 PoC</li>
+      <li><strong>PromptSpy</strong>：安卓恶意软件滥用 Gemini 分析屏幕+自动点击，捕获生物识别数据</li>
+      <li><strong>APT27</strong>（中国）：用 Gemini 加速开发僵尸网络管理应用（ORB 网络）</li>
+      <li><strong>Shadow API</strong>：中国17个 relay 平台绕过 Claude/Gemini 限制，MedQA 精度暴跌至 37%</li>
+    </ul>
+    <p><strong>TanStack 供应链攻击</strong>（5月15日）：Mini Shai-Hulud 攻击击中 OpenAI 两名员工设备，迫发 macOS 更新。</p>
+    <p><strong>Hugging Face LeRobot</strong>：CVE-2026-25874 未修复未认证 RCE，24k GitHub stars。</p>
+    <p><strong>LiteLLM CVE-2026-42208</strong>（4月29日）：SQL 注入漏洞，披露后36小时内即被利用。</p>
+    <p class="source">来源：The Hacker News / Google Threat Intelligence</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. AI×加密融合：AI Agent 交易生态爆发</h2>
+  <div class="card">
+    <p><span class="highlight">Polymarket AI Agent 生态</span>持续快速扩张：</p>
+    <ul>
+      <li><strong>Chance AI</strong>（4月27日）：Polymarket 自主交易 Agent，将市场论点转化为7×24自动执行</li>
+      <li><strong>Fere AI</strong>：完成130万美元融资，自主 Agent 处理超1000万次链上操作，覆盖 Ethereum、Solana、Polymarket</li>
+      <li><strong>CEREBRO</strong>（Solana）：Born 2026-02-04，自主扫描加密/预测市场 alpha</li>
+    </ul>
+    <p><span class="highlight">主流基础设施全面拥抱：</span></p>
+    <ul>
+      <li><strong>AWS Bedrock AgentCore Payments</strong>：联合 Coinbase、Stripe，支持 USDC 购买 API/MCP/跨 Agent 交易</li>
+      <li><strong>Binance</strong>：为 AI Agent 提供"交易所级大脑"</li>
+      <li><strong>OKX OnchainOS</strong>：AI 升级版，定位自主加密 Agent 基础设施</li>
+      <li><strong>1024EX</strong>：主网上线，AgentX 覆盖现货/永续/预测市场</li>
+    </ul>
+    <p><span class="warn">⚠ 风险提示</span>：MEXC（5月12日）指出 AI×Crypto 项目核心风险——计算网络（Render/akash）有实际应用，但 AI Agent 代币投机性极强，警惕"Token 发行"包装的 MLM 骗局。</p>
+    <p class="source">来源：CoinDesk / WEEX / MEXC / EIN Presswire / GlobeNewswire</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. AI Agent 框架：LangGraph 生产部署领先</h2>
+  <div class="card">
+    <p><strong>GitHub Trending（2026-05-16）：</strong></p>
+    <table>
+      <tr><th>项目</th><th>Star</th><th>类型</th></tr>
+      <tr><td>OpenHands</td><td>60,428+</td><td>Coding Agent</td></tr>
+      <tr><td>MetaGPT</td><td>59,594+</td><td>AI Agent</td></tr>
+      <tr><td>opencode</td><td>54,700+</td><td>Coding Agent</td></tr>
+      <tr><td>AutoGen</td><td>48,178+</td><td>AI Agent</td></tr>
+      <tr><td>CrewAI</td><td>37,518+</td><td>AI Agent</td></tr>
+    </table>
+    <p><strong>LangGraph</strong>（LangChain 生态）成为生产级首选：Klarna、Cisco、Vizient 等落地部署最多，原生支持 MCP，兼容 100+ LLM。</p>
+    <p class="source">来源：ossinsight.io / aimultiple.com</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-05-16 · 数据来源：The Hacker News / Anthropic / OpenAI / Google DeepMind / CoinDesk / PRNewswire / MEXC / EIN Presswire
+</div>
+
+</body>
+</html>
