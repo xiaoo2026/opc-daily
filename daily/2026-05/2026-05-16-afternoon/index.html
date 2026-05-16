@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-05-16</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报</h1>
+      <div class="subtitle">2026年5月16日 · AI行业动态日报</div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 class="cn">🇨🇳 国内动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">百度Create 2026：DuMate App发布、秒哒3.0亮相</h3>
+        </div>
+        <p><strong>Create 2026百度AI开发者大会</strong>于5月13日举行，发布多项重要产品：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">DuMate移动端App正式上线</strong>：百度搭子DuMate推出移动端App，内置AI搜索、秒哒等核心能力，只需一句话就能"真干活"，从想法到结果自动执行。在多个国际权威Agent Benchmark评测中达到SOTA水平，已实现与PC端远程实时互通，7×24小时AI助手陪伴。</li>
+          <li><strong style="color:#fbbf24">秒哒3.0发布</strong>：在原有Web应用、小程序应用基础上，新增原生App生成能力，Agent能力围绕应用搭建场景全面扩展。</li>
+          <li><strong style="color:#fbbf24">百度智能云全面开放AI能力</strong>：宣布将"芯、云、模、体"新全栈AI云能力以轻量化形态向个人创作者开放，推出"OPC on DuMate"专项扶持计划，升级秒哒"筑梦计划"。</li>
+          <li><strong style="color:#fbbf24">李彦宏核心观点</strong>：提出DAA（Daily Active Agents，日活智能体数）作为AI价值新标尺；强调"AI的主角不是模型，而是智能体"。</li>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">360安全龙虾"龙虾教练"上线：10分钟自建专家智能体</h3>
+        </div>
+        <p>360公司于5月13日发布<strong>新一代360安全龙虾</strong>，全新功能"龙虾教练"同步上线：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">龙虾教练</strong>：用户用自然语言沟通，10分钟内完成角色设定、技能配置与工作流搭建，极大降低专属AI智能体训练门槛。</li>
+          <li><strong style="color:#fbbf24">Token成本优化</strong>：轻量版与省钱版模式最高可分别削减99%和80%的Token消耗。</li>
+          <li><strong style="color:#fbbf24">安全架构</strong>：每只专家虾在云端完全隔离的"安全屋（沙箱）"里工作，系统随时监测其举动。</li>
+          <li><strong style="color:#fbbf24">周鸿祎观点</strong>：提出"硅基领导力"概念——未来每个人都要学会像带团队一样领导一组智能体分工协作。</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>战略动作</strong>：360此前已向全体员工发放1亿Token，推动全员从"使用AI工具"向"带着AI团队工作"演进。目前"360安全龙虾"已内置逾百个专业智能体，业务覆盖代码开发、办公协作、行业分析及商业决策等垂直领域。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">阿里妈妈"AI万相"超级经营智能体引擎发布</h3>
+        </div>
+        <p>阿里妈妈推出<strong>"AI万相"超级经营智能体引擎</strong>，由四大智能体（万相智识、万相智品、万相智造、万相智投）组成，商家只需发送简单指令，即可快速完成从营销到销售的完整闭环，重构经营链路、降低人力成本、提升市场响应速度。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">科大讯飞"星火党政智盒"发布</h3>
+        </div>
+        <p>讯飞星火党政智盒发布，面向党政核心办公场景，打造<strong>7×24小时全天候响应的"数字公务员"</strong>载体，依托星火大模型赋能系统级耀天智能体。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🌍 国际动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">WhatLLM月报：5月上旬重要模型发布回顾</h3>
+        </div>
+        <p>WhatLLM.org（2026年5月13日）汇总5月上旬重要发布：</p>
+        <table>
+          <tr><th style="width:20%">日期</th><th style="width:30%">模型</th><th>开发商</th><th style="width:25%">类型</th></tr>
+          <tr><td>5月5日</td><td>GPT-5.5 Instant</td><td>OpenAI</td><td>ChatGPT新默认</td></tr>
+          <tr><td>5月5日</td><td>SubQ 1M-Preview</td><td>Subquadratic</td><td>1200万Token上下文</td></tr>
+          <tr><td>5月6日</td><td>ZAYA1-8B</td><td>Zyphra</td><td>AMD训练开源MoE</td></tr>
+          <tr><td>5月6日</td><td>Grok 4.3</td><td>xAI</td><td>文本+推理</td></tr>
+          <tr><td>5月8日</td><td>Gemini 3.1 Flash Lite</td><td>Google</td><td>轻量效率变体</td></tr>
+        </table>
+        <div class="highlight">
+          <p><strong>核心看点</strong>：SubQ首个商业次二次复杂度LLM，声称长上下文成本为前沿模型1/5；ZAYA1-8B全程在AMD上训练，活跃参数约760M，Apache 2.0许可；GPT-5.5 xhigh（60.24分）保持Intelligence Index天花板，5月上旬无新突破。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Anthropic"史上最大一周"：五项宣布震动业界</h3>
+        </div>
+        <p>AI Weekly #490（2026年5月7日）深度报道，Anthropic在5天内完成六项重大宣布：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">收入爆发</strong>：Q1收入同比增长<strong>80倍</strong>，ARR预计达440亿美元</li>
+          <li><strong style="color:#fbbf24">Google Cloud</strong>：签署200亿美元合作协议</li>
+          <li><strong style="color:#fbbf24">SpaceX算力合作</strong>：利用xAI的Colossus 1超级计算机；SpaceX同步宣布Terafab芯片工厂，总投资可能达1190亿美元</li>
+          <li><strong style="color:#fbbf24">Claude Code Auto Mode</strong>：Agent自动选择模型和工具完成编码任务，约90%编码任务可无需人工干预</li>
+          <li><strong style="color:#fbbf24">金融智能体</strong>：与摩根大通CEO Jamie Dimon合作推出10个金融服务业智能体</li>
+        </ul>
+        <p>同周<strong>Google DeepMind英国员工以98%票数</strong>投票赞成加入工会，这是顶级AI研究实验室首次工会化。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">AI辅助网络攻击白皮书：2026成为爆发元年</h3>
+        </div>
+        <p>The Hacker News（2026年5月4日）发布重磅报告：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">恶意软件包</strong>：从2022年5.5万个增长至2025年45.46万个（增长727%）</li>
+          <li><strong style="color:#fbbf24">漏洞利用时间</strong>：从2020年超过700天压缩至2025年仅44天</li>
+          <li><strong style="color:#fbbf24">28.3%的CVE</strong>在披露后24小时内即被利用——"漏洞利用先于补丁到达"已成常态</li>
+          <li><strong style="color:#fbbf24">SWE-bench</strong>：顶级模型解决GitHub问题比例从2024年8月33%跃升至2025年12月81%</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>标志性事件</strong>：2025年7月单人使用Claude Code在一个月内对17个组织发起勒索攻击；2025年12月入侵墨西哥政府，窃取超1.95亿条纳税人记录。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Apple CEO交接：John Ternus将于2026年9月接替Tim Cook</h3>
+        </div>
+        <p>Apple宣布John Ternus将于2026年9月1日接替Tim Cook担任CEO。Cook在15年任期内将Apple打造为4万亿美元巨头。Ternus以其硬件专长被定位为引导Apple进入AI驱动未来的领导者。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="paper">📄 arXiv 论文精选</h2>
+      <table>
+        <tr><th style="width:35%">论文</th><th style="width:30%">机构</th><th>核心贡献</th></tr>
+        <tr><td><strong>DeepAgent</strong></td><td>人大、小红书、清华</td><td>通用推理Agent，可扩展工具集</td></tr>
+        <tr><td><strong>daReasoner</strong></td><td>国内机构</td><td>深度推理系统</td></tr>
+        <tr><td><strong>AlphaApollo</strong></td><td>港科大、Stanford、东京大学</td><td>深度Agent推理系统</td></tr>
+        <tr><td><strong>Auton Framework</strong></td><td>Snap</td><td>声明式架构，Agent系统规范与执行</td></tr>
+        <tr><td><strong>Reasoning as Gradient</strong></td><td>微软亚洲研究院</td><td>将MLE Agent扩展至树搜索之外</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">💡 一句话观点</h2>
+      <div class="quote">
+        架构竞争时代来临：SubQ打破Transformer的O(n²)成本曲线，ZAYA1-8B在AMD上验证开源MoE效率，Anthropic五天内完成从收入爆发到算力合作的全层竞争——AI竞赛正从"模型大小"转向"架构效率+成本密度+落地效能"的新阶段。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:0.95rem;">🔗 信源索引</h2>
+      <ul>
+        <li><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">New AI Models May 2026 - WhatLLM.org</a></li>
+        <li><a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank">2026: The Year of AI-Assisted Attacks - The Hacker News</a></li>
+        <li><a href="https://aiweekly.co/issues/anthropic-just-had-ais-biggest-week-of-2026" target="_blank">Anthropic just had AI's biggest week of 2026 - AI Weekly</a></li>
+        <li><a href="https://news.aibase.com/zh/news/27894" target="_blank">360升级"安全龙虾"平台 - AIbase</a></li>
+        <li><a href="https://finance.sina.com.cn/tech/2026-05-13/doc-inhxtkrn0855680.shtml" target="_blank">百度搭子DuMate移动App发布 - 新浪财经</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC午间情报 2026-05-16</p>
+    </footer>
+  </div>
+</body>
+</html>
