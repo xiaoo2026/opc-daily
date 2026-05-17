@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-05-17 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        tr:last-child td { border-bottom: none; }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 169, 77, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 169, 77, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-05-17 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年5月17日 09:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-security">安全攻防</span>
+                <span class="tag tag-product">模型混战</span>
+                <span class="tag tag-capital">算力扩张</span>
+                <span class="tag tag-trend">人形机器人</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">9500亿</div>
+                <div class="label">Anthropic 洽谈估值（较3月翻2.5倍）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">1220亿</div>
+                <div class="label">OpenAI 新一轮融资金额（美元）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">94.3</div>
+                <div class="label">Kimi K2.6 基准测试分数（国产登顶）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">140万亿</div>
+                <div class="label">我国日均 Token 调用量（年初增长1000+倍）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：Anthropic 安全双响炮 vs Figure AI 直播造假——AI 信任危机东西同步爆发</h3>
+            <p>Anthropic 继 Mythos 模型后推出 Claude Security 公开测试版，用产品化手段应对 AI 驱动的漏洞利用攻击爆发；同日 Figure AI 被指控直播中用人类远程操控伪装成"完全自主"机器人，遭全网质疑。两条新闻看似无关，本质都在回答同一个问题：AI 的能力边界，到底谁在说实话？</p>
+            <p class="last">苹果 2026 年 Siri 重磅升级曝光，iOS 27 将其全面重塑为 AI 智能体；OpenAI DevDay 2026 定档，GPT-5 系列全面登场，1220 亿美元融资到账；苹果探索与英特尔芯片代工合作，英特尔股价单日暴涨 13% 创历史新高。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Anthropic Mythos 模型：AI 安全攻防格局骤变</h3>
+                <div class="source">来源：The Hacker News / 36氪 | 2026-05-15</div>
+                <div class="desc">
+                    Anthropic 发布旗舰推理模型 <strong>Mythos</strong>，在发现软件安全漏洞方面展现出"足以引发网络安全行业清算"的能力。安全研究人员随即用 Mythos 辅助，在 <span class="highlight">5 天内绕过苹果 Mac</span> 数年来精心构建的安全防护。这是继 GPT-5.5 之后，又一个以"真实能力"而非"基准分数"震撼行业的发布。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic Claude Security 公开测试版</h3>
+                <div class="source">来源：36氪 | 2026-05-15</div>
+                <div class="desc">
+                    Anthropic 推出 <strong>Claude Security</strong> 产品（公开测试版），定位为应对 AI 驱动漏洞利用攻击激增，帮助企业和开发者构建更安全的 AI 应用。结合 Mythos 的漏洞发现能力，Anthropic 正将"AI 安全"从研究课题转化为商业产品线。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Figure AI 直播造假：人形机器人"自主上班"实为人类操控</h3>
+                <div class="source">来源：快科技 / The Verge | 2026-05-16</div>
+                <div class="desc">
+                    Figure AI 高调直播三台 Figure 03 人形机器人"连续 8 小时自主分拣包裹"，创始人 Brett Adcock 声称"完全自主、无剪辑、无人工干预"。然而大量观众发现机器人动作存在明显延迟模式和人类判断特征，最终被指控实为<span class="highlight">远程人类操作员实时操控</span>。Figure AI 创始人事后未正面回应。此事件重创人形机器人行业公信力。
+                </div>
+            </div>
+        </section>
+
+        <!-- 大厂动态 -->
+        <section class="section">
+            <div class="section-title">🏛️ 大厂动态</div>
+
+            <div class="card">
+                <h3>OpenAI DevDay 2026：GPT-5 系列全面登场</h3>
+                <div class="source">来源：36氪 / 声鸦云 | 2026-05-15</div>
+                <div class="desc">
+                    OpenAI 正式宣布举办 <strong>DevDay 2026</strong>，同步发布 GPT-5.5、GPT-5.4、GPT-5.3 Instant 及编程专用版 GPT-5.3-Codex，多代际模型密集迭代。同时宣布完成 <span class="highlight">1220 亿美元融资</span>用于加速 AI 下一阶段发展，并成立 <strong>OpenAI Deployment Company</strong>，帮助企业围绕 AI 能力构建业务。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>苹果探索与英特尔合作芯片代工：英特尔股价单日暴涨 13%</h3>
+                <div class="source">来源：Bloomberg / TechCrunch | 2026-05-13</div>
+                <div class="desc">
+                    苹果正在与英特尔及三星电子早期接触，探索将部分芯片生产从台积电向外拓展。消息推动 <span class="highlight">英特尔股价单日暴涨 13%</span>，盘中触及 110.48 美元历史新高，市值达 5437 亿美元。苹果代工订单总价值预估高达 100 亿美元（约 679 亿元人民币）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Google Cloud Next '26：Gemini Enterprise Agent Platform + 第八代 TPU</h3>
+                <div class="source">来源：36氪 | 2026-05-15</div>
+                <div class="desc">
+                    Google 在 Cloud Next '26 大会上发布 <strong>Gemini Enterprise Agent Platform</strong>（企业级 AI 智能体平台）和 <strong>第八代 TPU</strong> 加速器，专注为智能体时代提供云端基础设施支撑。Google DeepMind CEO Demis Hassabis 预测 AI"文艺复兴"即将到来。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 新一轮融资：估值有望达 9500 亿美元</h3>
+                <div class="source">来源：纽约时报 / 新浪财经 | 2026-05-13</div>
+                <div class="desc">
+                    Anthropic 正洽谈新一轮融资，估值有望达到 <span class="highlight">9500 亿美元</span>，较 3 个月前的 3800 亿美元增长 2.5 倍。公司 CEO Dario Amodei 透露年化收入已达 300 亿美元，并有望年内增长 80 倍。七天内链上 Pre-IPO 数据显示估值已达 1.2 万亿美元。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>苹果 2026 年 Siri 重大升级：全面 AI 化</h3>
+                <div class="source">来源：新浪科技 | 2026-05-16</div>
+                <div class="desc">
+                    苹果计划随 iOS 27 系统推出 Siri 迄今最重大升级：全面重塑为具备上下文理解与持续对话能力的 AI 智能体。首次引入独立 Siri 应用，支持文字输入、图片上传及文档解析，深度融入灵动岛设计，支持自然语言多轮交互。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>联合健康追踪员工 ChatGPT 使用频率</h3>
+                <div class="source">来源：智通财经 | 2026-05-15</div>
+                <div class="desc">
+                    美国医疗保险巨头联合健康 (UNH.US) 开始追踪员工使用 AI 工具频率，要求每天至少使用一次 OpenAI ChatGPT 或微软 Copilot。公司已部署超过 <span class="highlight">1000 个 AI 应用场景</span>，年内 AI 投资达 15 亿美元。
+                </div>
+            </div>
+        </section>
+
+        <!-- 模型榜单 -->
+        <section class="section">
+            <div class="section-title">📊 模型榜单</div>
+
+            <div class="card">
+                <h3>2026 年 5 月 AI 大模型排行：Kimi K2.6 登顶</h3>
+                <div class="source">来源：CSDN / 稀土掘金 / 新浪 | 2026-05-16</div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>模型</th>
+                                <th>分数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Kimi K2.6（月之暗面）</td><td>94.3</td></tr>
+                            <tr><td>2</td><td>DeepSeek V4</td><td>93.8</td></tr>
+                            <tr><td>3</td><td>GPT-5（OpenAI）</td><td>93.5</td></tr>
+                            <tr><td>4</td><td>Claude 4 Opus（Anthropic）</td><td>93.1</td></tr>
+                            <tr><td>5</td><td>Gemini Ultra 3.0（Google）</td><td>92.7</td></tr>
+                            <tr><td>6</td><td>Qwen3-235B（阿里）</td><td>92.4</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="desc">
+                    前六名性能差距仅 3 个百分点，竞争极为激烈。中国 AI 日均 Token 调用量突破 <span class="highlight">140 万亿</span>，较年初增长超 40%，规模化落地持续加速。
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>Anthropic 5 天内攻破苹果 5 年 Mac 安全壁垒</h3>
+                <div class="source">来源：财联社 | 2026-05-16</div>
+                <div class="desc">
+                    网安机构 Calif 研究人员使用 Anthropic 的 Mythos 模型辅助，在 5 天内找到绕过苹果 Mac 先进安全技术的新方法——通过将两个漏洞和数种技术串联，突破苹果 Mac 内存防护并访问本应无法触及的区域。这是一次"权限提升"漏洞利用，证明 AI 正在成为网络攻防的核心杠杆。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>谷歌更新垃圾内容政策：将"AI 投毒"纳入打击范围</h3>
+                <div class="source">来源：IT之家 / The Verge | 2026-05-16</div>
+                <div class="desc">
+                    谷歌更新垃圾内容政策，将"AI 投毒"行为正式纳入打击范畴。具体指用户使用 AI 工具制作明显倾向性"最佳榜单"文章，并通过非常规手段向大模型植入提示词，将某网站长期记忆为"权威来源"。这是主流搜索引擎首次对 AI 驱动的内容操控行为建立明确规则。
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术与产品 -->
+        <section class="section">
+            <div class="section-title">📦 技术与产品</div>
+
+            <div class="card">
+                <h3>MWC 2026：AI 拥有"身体"，中国掌握"造物权"</h3>
+                <div class="source">来源：钛媒体 | 2026-05-16</div>
+                <div class="desc">
+                    CES 之后，MWC 2026 延续物理 AI 落地趋势，6G、AI 手机、AI 眼镜、人形机器人成为关键词。超过 350 家中国企业参展（同比增 21.5%）。英伟达 CEO 黄仁勋在 CES 断言："<span class="highlight">物理 AI 的 ChatGPT 时刻已然到来</span>"。中国军团在 AI 下半场掌握"造物权"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Trending：OpenClaw 领跑 AI Agent 开源生态</h3>
+                <div class="source">来源：Medium / ByteByteGo | 2026-05-16</div>
+                <div class="desc">
+                    GitHub AI 项目热度排行：OpenClaw（个人 AI Agent）、Dify（生产级工作流平台）、n8n（自动化）、AutoGPT（自主任务执行）持续领跑。值得关注的是 <strong>vicode</strong>——一款 Rust 编写的 TUI 编程 Agent，支持 tabs/subagents 在 worktrees 上并行运行。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>全球首颗光计算卫星在上海启动研制</h3>
+                <div class="source">来源：上观新闻 / 财联社 | 2026-05-15</div>
+                <div class="desc">
+                    上海东方天算与光本位科技共同成立天基光计算创新中心，启动<strong>全球首颗光计算卫星</strong>联合研制项目，以光子为计算和传输载体，支撑在轨 AI 推理和万亿级硅基智能体协同服务，标志着我国天基计算进入颠覆性技术融合新阶段。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>国内首个开源开放 AI 智能体共性基础设施发布</h3>
+                <div class="source">来源：千龙网 | 2026-05-15</div>
+                <div class="desc">
+                    北京发布"<strong>灵玑OS</strong>"项目，破解智能体产业"连不上、干不成、管不住、控不稳"四大痛点，被视为国内智能体基础设施的重要里程碑。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>AI 安全攻防战升级：</strong>Anthropic Mythos + Claude Security 组合出击，5 天内攻破苹果 Mac 安全壁垒；Figure AI 直播造假重创人形机器人行业公信力</li>
+                    <li><strong>模型竞争白热化：</strong>前六名模型性能差距仅 3 分，Kimi K2.6 以 94.3 分登顶，国产模型在数学推理和中文处理优势明显</li>
+                    <li><strong>OpenAI 全面商业化：</strong>1220 亿美元融资到账，DevDay 2026 定档，Deployment Company 成立，GPT-5 系列全面登场</li>
+                    <li><strong>算力瓶颈持续：</strong>光计算卫星启动研制，140 万亿 Token 日均调用量驱动算力基础设施大干快上</li>
+                    <li><strong>苹果 AI 战略调整：</strong>Siri 重磅升级计划 iOS 27 发布，探索与英特尔芯片代工合作，英特尔股价创历史新高</li>
+                    <li><strong>Anthropic 估值飙升：</strong>9500 亿美元洽谈估值（较3月翻2.5倍），年化收入 300 亿美元，1.2 万亿美元 Pre-IPO</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · 稀土掘金 · The Hacker News · TechCrunch · 新浪科技 · 财联社 · 钛媒体 · IT之家 · Ars Technica</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-05-17 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
