@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-05-17</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 5 月 17 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. 模型发布动态：5月回顾 — SubQ 1M、ZAYA1-8B、GPT-5.5 Instant</h2>
+  <div class="card">
+    <p><span class="highlight">5月前哨战：架构突破而非分数突破</span>截至5月13日，Intelligence Index天花板（GPT-5.5 xhigh @ 60.24）仍未被突破。但新模型的发布焦点从"更高分数"转向了架构、成本效率和落地场景。</p>
+    <table>
+      <tr><th>日期</th><th>模型</th><th>开发商</th><th>许可</th><th>核心亮点</th></tr>
+      <tr><td>5月5日</td><td>GPT-5.5 Instant</td><td>OpenAI</td><td>专有</td><td>ChatGPT新默认模型，低延迟+少幻觉</td></tr>
+      <tr><td>5月5日</td><td>SubQ 1M-Preview</td><td>Subquadratic</td><td>专有(API)</td><td>首个商业化次二次注意力LLM，1200万token上下文</td></tr>
+      <tr><td>5月6日</td><td>Grok 4.3</td><td>xAI</td><td>专有</td><td>更广泛API可用</td></tr>
+      <tr><td>5月6-7日</td><td>ZAYA1-8B</td><td>Zyphra</td><td>Apache 2.0</td><td>AMD训练，8B总参/7.6亿活跃，Apache开源</td></tr>
+      <tr><td>5月8日</td><td>Gemini 3.1 Flash Lite</td><td>Google</td><td>专有(API)</td><td>轻量级低成本版本</td></tr>
+    </table>
+    <p><span class="highlight">SubQ 1M-Preview</span>：$29M种子轮，首个商业化次二次注意力LLM（非Transformer）。标准Transformer注意力O(n²)，SubQ打破此成本曲线，声称长上下文任务成本约1/5前沿模型，推理速度提升52倍。需独立验证。</p>
+    <p><span class="highlight">ZAYA1-8B</span>：AMD Instinct硬件端到端训练，首个在AMD上训练的推理导向开源发布。7.6亿活跃参数，总参数量8B，Apache 2.0许可。</p>
+    <p><span class="highlight">GPT-5.5 Instant</span>：5月5日成为ChatGPT新默认模型（免费+付费）。主打低延迟、高风险领域少幻觉，非更高推理分数。</p>
+    <p><span class="warn">⚠ 5月明显沉默的厂商</span>：Anthropic（Opus 4.7后无新基础模型）、Meta（Muse Spark后无更新）、DeepSeek（V4 Pro后无更新）、Qwen（Qwen Max预期未发布）。Intelligence Index天花板预计在6月前被突破。</p>
+    <p class="source">来源：WhatLLM.org, Artificial Analysis, 2026年5月13日</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全动态：AI辅助零日2FA绕过漏洞 — 史上首次</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 里程碑事件</span>：Google威胁情报团队（GTIG）5月11日披露，网络犯罪组织使用AI辅助开发了<span class="highlight">首个已知零日2FA绕过漏洞</span>——大规模漏洞利用行动。</p>
+    <p>漏洞在一个Python脚本中实现，可绕过某流行开源Web系统管理工具的双因素认证。Google评估：<strong>高度自信</strong>认为AI被武器化以促进漏洞发现和武器化。</p>
+    <p><span class="highlight">AI生成代码特征</span>：含大量教育性docstring、幻觉CVSS评分，典型的LLM训练数据格式（详细帮助菜单、干净的C ANSI颜色类）。漏洞根因是"硬编码信任假设"中的高层语义逻辑缺陷——这正是LLM擅长发现的安全问题类型。</p>
+    <p><span class="highlight">AI在漏洞利用中的加速效应</span>：watchTowr首席威胁情报Ryan Dewhurst表示："AI正在加速漏洞发现，减少了识别、验证和武器化漏洞所需的工作量。发现、武器化和利用的timelines已被压缩。"</p>
+    <p><span class="highlight">APT组织AI滥用地图（2026持续活跃）：</span></p>
+    <ul>
+      <li><strong>UNC2814</strong>（中国关联）：引导Gemini触发角色驱动越狱，支持嵌入式设备（TP-Link固件、OFTP）漏洞研究</li>
+      <li><strong>APT45</strong>（朝鲜）："数千次重复prompt"递归分析不同CVE并验证PoC</li>
+      <li><strong>PromptSpy</strong>：安卓恶意软件滥用Gemini分析屏幕+自主导航，捕获生物识别数据重放认证手势；包含"AppProtectionDetector"模块阻止卸载；C2基础设施（含Gemini API密钥）可动态更新</li>
+      <li><strong>APT27</strong>（中国）：用Gemini加速开发ORB（运营中继盒）网络管理应用</li>
+      <li><strong>Shadow API</strong>：中国17个relay平台绕过Claude/Gemini限制，实测MedQA精度从83.82%暴跌至37%</li>
+    </ul>
+    <p class="source">来源：The Hacker News / Google Threat Intelligence Group, 2026年5月11日</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. AI×预测市场：AI Agent正在重写游戏规则</h2>
+  <div class="card">
+    <p><span class="highlight">Polystrat Agent</span>（Olas/Valory）：Polymarket自治AI交易代理，2月2026年上线。约一个月内执行4200+笔交易，单一交易回报率最高达376%。37%的Polystrat AI代理显示正P&L，而人类交易者仅7-13%为正。</p>
+    <p><span class="highlight">机器优势</span>：人类情绪化、难以坚持一致策略；机器24/7运作、基于数据驱动。"你已经在和机器竞争，无论你是否意识到。"——David Minarsch, Valory CEO</p>
+    <p><span class="highlight">预测市场中的AI长尾价值</span>：人类不愿费力挖掘的小众/本地化问题，AI可同时分析大量小型市场。预测市场可能成为跨行业决策辅助的上游技术。</p>
+    <p><span class="highlight">Polymarket活跃AI相关市场（截至5月17日）：</span></p>
+    <ul>
+      <li>"Which company has the best AI model end of May?"</li>
+      <li>"Which company has the #1 AI model end of May?"</li>
+      <li>"Best AI model on May 16?"</li>
+      <li>"What kind of product will OpenAI announce in 2026?"</li>
+      <li>Anthropic IPO Closing Market Cap</li>
+    </ul>
+    <p>30%以上的Polymarket钱包已使用AI代理（LayerHub数据）。</p>
+    <p class="source">来源：CoinDesk / Polymarket.com, 2026年3月15日</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. 政府监管动态</h2>
+  <div class="card">
+    <p><span class="highlight">美国政府提前访问AI模型</span>：Google、Microsoft、xAI已同意向美国商务部AI标准和创新中心（CAISI）提供新模型提前访问权限，进行"部署前评估和研究"。OpenAI和Anthropic也重新谈判了现有合作协议，以符合特朗普AI行动计划优先级。CAISI已完成40+次评估（含未发布模型）。</p>
+    <p class="source">来源：CNN / Reuters / Yahoo Tech / Bloomberg, 2026年5月5日</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-05-17 21:00 · 聚焦：AI模型发布动态、安全漏洞爆发、加密/预测市场讨论<br>
+  数据来源：WhatLLM.org / Artificial Analysis / The Hacker News / Google GTIG / CoinDesk / Polymarket / CNN / Reuters
+</div>
+
+</body>
+</html>
