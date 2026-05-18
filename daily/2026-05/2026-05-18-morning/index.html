@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-05-18 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 169, 77, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 169, 77, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-05-18 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年5月18日 09:00 发布（采集自5月17日）</p>
+            <div class="meta">
+                <span class="tag tag-security">安全攻防</span>
+                <span class="tag tag-capital">量子融资</span>
+                <span class="tag tag-product">模型迭代</span>
+                <span class="tag tag-trend">递归智能</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">46.5亿美元</div>
+                <div class="label">RSI 公司估值（Recursive Superintelligence）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">200亿</div>
+                <div class="label">Quantinuum 量子计算 IPO 估值（美元）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">1200万</div>
+                <div class="label">SubQ 1M Token 上下文窗口（全球首个亚二次LLM）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">33亿元</div>
+                <div class="label">2026年Q1国内量子融资（已超2025全年）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：递归式超级智能 vs 量子计算 IPO 大年——AI 行业两条路线同时爆发</h3>
+            <p>RSI 由 8 位 Meta/DeepMind/OpenAI 元老组建，拿下 6.5 亿美元融资押注"递归式自我改进"路线，目标是训练具备"50000 名博士"能力的系统，直接自动化 AI 科研本身。另一边，Quantinuum 以 200 亿美元估值冲刺量子计算史上最大 IPO，纠错能力成为估值锚点，2029 年 Apollo 系统交付是关键里程碑。</p>
+            <p class="last">5月模型军备竞赛持续：GPT-5.5 Instant / SubQ 1M / Grok 4.3 / Gemini 3.1 Flash Lite 密集发布，上下文窗口突破 1200 万 Token。美国监管混乱信号持续，中国三部委联合印发首个智能体国家级专项政策。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>RSI：Meta元老组队，6.5亿美元打造"递归式超级智能"</h3>
+                <div class="source">来源：36氪 | 2026-05-17</div>
+                <div class="desc">
+                    <strong>Recursive Superintelligence（RSI）</strong> 从隐身状态走出，由8位联创组成，拿到<strong>6.5亿美元融资（约44亿元）</strong>，估值<strong>46.5亿美元（约316亿元）</strong>。创始团队包括 Meta FAIR 前研究科学家总监<strong>田渊栋</strong>、ImageNet/GloVe 作者<strong>Richard Socher</strong>（Google 学术引用量 24 万次）、清华姚班<strong>施天麟</strong>、UCL AI 教授<strong>Tim Rocktäschel</strong>（开放式安全红队）、Vision Transformer 作者<strong>Alexey Dosovitskiy</strong>、OpenAI 早期成员<strong>Josh Tobin</strong> 等。
+                    <br>核心路线：<span class="highlight">递归式自我改进（recursive self-improvement）</span>——让 AI 发现自身短板，设计新实验，编写新 benchmark，再主动重写自己的代码库，像生物进化一样永远不停。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>量子计算超级独角兽冲刺 IPO：Quantinuum 估值 200 亿美元</h3>
+                <div class="source">来源：TMT Post / 36氪 | 2026-05-17</div>
+                <div class="desc">
+                    <strong>Quantinuum</strong> 正式向 SEC 提交 S-1，目标纳斯达克，估值约<strong>200亿美元</strong>——量子计算领域史上最大 IPO。主打离子阱路线，在 Helios 系统上演示了<strong>48 个完全纠错逻辑比特</strong>（Iceberg 编码方案），保真度 99.99%，编码率接近 2:1（Google 2024 年 Willow 芯片约 100:1）。2029 年 Apollo 系统交付是关键里程碑。
+                    <br>中国镜像：2026 年 Q1 国内量子融资约<strong>33 亿元</strong>，已超 2025 全年。玻色量子 10 亿元 B 轮、量旋科技 6 亿元 C+ 轮密集落地。
+                </div>
+            </div>
+        </section>
+
+        <!-- 大厂动态 -->
+        <section class="section">
+            <div class="section-title">🏛️ 大厂动态</div>
+
+            <div class="card">
+                <h3>OpenAI：Greg Brockman 接管产品战略，ChatGPT + Codex 统一管理</h3>
+                <div class="source">来源：36氪 | 2026-05-17</div>
+                <div class="desc">
+                    OpenAI 重组中，联合创始人兼总裁 <strong>Greg Brockman</strong> 正式接管公司产品战略，计划整合 ChatGPT 和编程产品 Codex，实现统一产品管理。加速商业化、统一 AI 产品线的重要信号。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic Claude Opus 4.6：同日对攻 OpenAI，扩展上下文窗口</h3>
+                <div class="source">来源：Business Insider | 2026-05-17</div>
+                <div class="desc">
+                    Anthropic 发布 <strong>Claude Opus 4.6</strong>，提升办公和编码任务性能，扩展"上下文窗口"支持更长文档和更复杂项目在单会话中完成。同日 OpenAI 也有新动作，两家正面交锋。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenClaw 案例：3人 + 100个 AI Agent，月烧 130 万美元</h3>
+                <div class="source">来源：36氪 | 2026-05-17</div>
+                <div class="desc">
+                    OpenClaw 创始人将软件开发变成"<span class="highlight">AI 流水线</span>"——3 名人类员工管理 100 个 AI Agent，一个月烧掉 <strong>130 万美元</strong>，OpenAI 买单。极端案例展示 AI Agent 在软件工程中的规模化应用潜力，也引发成本和效率边界的讨论。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Video Rebirth：前腾讯AI大牛刘威创业，8000万美元融资</h3>
+                <div class="source">来源：36氪 | 2026-05-17</div>
+                <div class="desc">
+                    AI 视频初创公司 <strong>Video Rebirth</strong> 宣布完成 <strong>8000 万美元</strong>融资，前腾讯杰出科学家刘威（腾讯混元大模型核心技术负责人，Google Scholar 引用量超 5.9 万）创办，Bach 工业级 AI 视频引擎使用物理原生注意力机制（PNA）+ 独创 Dual Diffusion Transformer（DDiT）架构，投资方包括 AMD Ventures、现代汽车等。
+                </div>
+            </div>
+        </section>
+
+        <!-- 模型榜单 -->
+        <section class="section">
+            <div class="section-title">📊 模型与工具</div>
+
+            <div class="card">
+                <h3>5月模型发布动态：GPT-5.5 Instant / SubQ 1M / Grok 4.3 / Gemini 3.1 Flash Lite</h3>
+                <div class="source">来源：WhatLLM.org | 2026-05-17</div>
+                <div class="desc">
+                    截至5月中确认发布：
+                    <br>• <strong>GPT-5.5 Instant</strong>（OpenAI，5月5日）— 新版 ChatGPT 默认模型
+                    <br>• <strong>SubQ 1M-Preview</strong>（Subquadratic，5月5日）— 首个商业化亚二次 LLM，<span class="highlight">1200万 Token 上下文窗口</span>，比前沿模型便宜约 1/5，注意力速度快 52 倍
+                    <br>• <strong>Grok 4.3</strong>（xAI，5月6日）— 继 4月17日 beta 后更大范围推出
+                    <br>• <strong>ZAYA1-8B</strong>（Zyphra，5月6-7日）— Apache 2.0 MoE，AMD 训练
+                    <br>• <strong>Gemini 3.1 Flash Lite</strong>（Google，5月8日）— 轻量级 Gemini 3.1 变体
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Trending AI 项目（2026年5月）</h3>
+                <div class="source">来源：ossinsight.io / AskGlitch | 2026-05-17</div>
+                <div class="desc">
+                    热门项目：<strong>OpenHands</strong>（AI Coding Agent）、<strong>MetaGPT</strong>（多智能体协作）、<strong>opencode</strong>（Coding Agent）、cline、microsoft/autogen、openai/codex、crewAI、cursor、continue
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>arXiv 论文精选</h3>
+                <div class="source">来源：arXiv | 2026-05-17</div>
+                <div class="desc">
+                    • <strong>DeepAgent</strong>：可扩展工具集通用推理智能体
+                    <br>• <strong>AlphaApollo</strong>：深度智能体推理系统
+                    <br>• <strong>RetroAgent</strong>：通过回顾性双重内在反馈从求解到演进
+                    <br>• <strong>Reasoning as Gradient</strong>：将推理视为梯度，扩展 MLE 智能体超越树搜索
+                    <br>• <strong>Recursive Models for Long-Horizon Reasoning</strong>：用递归突破有限上下文约束
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>2026年：AI 辅助攻击元年，多起重大安全事件爆发</h3>
+                <div class="source">来源：The Hacker News | 2026-05-17</div>
+                <div class="desc">
+                    2026 年被定义为"<span class="highlight">AI 辅助攻击元年</span>"，当日重大安全事件：
+                    <br>• <strong>Mini Shai-Hulud 蠕虫</strong>：compromise TanStack、Mistral AI、Guardrails AI 等多个开源包
+                    <br>• <strong>AI Tokenizer 攻击</strong>：新型攻击手法
+                    <br>• <strong>Exim BDAT 漏洞</strong>：暴露 GnuTLS 构建潜在代码执行
+                    <br>• <strong>AI 开发零日 2FA 绕过</strong>：黑客用 AI 开发首个已知零日 2FA 绕过技术，实现大规模利用
+                    <br>• <strong>微软 MDASH AI 系统</strong>：发现 16 个 Windows 漏洞，已在补丁星期二修复
+                    <br>• <strong>PAN-OS RCE</strong>：Palo Alto Networks 防火墙远程代码执行漏洞
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策与监管 -->
+        <section class="section">
+            <div class="section-title">🏺 政策与监管</div>
+
+            <div class="card">
+                <h3>美国 AI 监管：白宫内部路线之争，暂缓设立"AI-FDA"</h3>
+                <div class="source">来源：新浪财经 / 新华网 | 2026-05-17</div>
+                <div class="desc">
+                    白宫内部就 AI 模型发布前是否需接受联邦安全审查释放混乱信号：
+                    <br>• 商务部与谷歌、微软及 xAI 达成新协议，AI 模型发布前需通过 <strong>CAISI</strong>（人工智能标准与创新中心）评估
+                    <br>• 白宫国家经济委员会主任凯文·哈塞特：将此比作 FDA 式上市前检测
+                    <br>• 白宫办公厅主任苏西·威尔斯：明确反对"挑选赢家和输家"，不设庞大审批官僚机构
+                    <br>• 最终结论：<span class="highlight">暂缓推进行政令</span>，现有体系已足够有效
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国首个智能体国家级专项政策落地</h3>
+                <div class="source">来源：网信办 / 飞钉AI | 2026-05-08</div>
+                <div class="desc">
+                    国家网信办、国家发改委、工信部联合印发《智能体规范应用与创新发展实施意见》——国内首个智能体国家级专项政策。核心关键词：<strong>安全可控、规范有序、合规规模化落地</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>递归式超级智能获资本认可：</strong>RSI 6.5 亿美元融资 46.5 亿美元估值，8 位顶级联创押注 AI 自我改进闭环，路线图第一步目标"50000 名博士"能力</li>
+                    <li><strong>量子计算 IPO 大年：</strong>Quantinuum 200 亿美元估值冲刺纳斯达克，纠错能力成为估值锚点，2029 年 Apollo 系统是关键里程碑；中国 Q1 量子融资 33 亿元已超去年全年</li>
+                    <li><strong>5月模型军备竞赛持续：</strong>GPT-5.5 Instant / SubQ 1M（1200万 Token）/ Grok 4.3 / Gemini 3.1 Flash Lite 同台竞技</li>
+                    <li><strong>AI 安全攻防白热化：</strong>2026 年定义"AI 辅助攻击元年"，零日漏洞、供应链攻击、2FA 绕过技术均由 AI 驱动爆发</li>
+                    <li><strong>GitHub AI Agent 生态繁荣：</strong>OpenHands / MetaGPT / opencode / Codex 引领编码 Agent 开源浪潮；OpenClaw 3人+100 Agent 月烧130万美元案例展示规模化潜力</li>
+                    <li><strong>美国监管摇摆：</strong>白宫内部路线之争持续，暂缓设立"AI-FDA"，商务部 CAISI 自愿评估框架成折中方案</li>
+                    <li><strong>中国政策加速：</strong>三部委联合印发首个智能体国家级专项政策，安全可控成行业主基调</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · 量子位 · 新浪财经 · The Hacker News · TMT Post · Business Insider · WhatLLM.org · ossinsight.io · arXiv · 新华网</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-05-18 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
