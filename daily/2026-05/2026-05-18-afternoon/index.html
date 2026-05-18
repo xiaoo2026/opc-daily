@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-05-18</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报</h1>
+      <div class="subtitle">2026年5月18日 · AI行业动态日报</div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 class="global">🌍 国际动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Cerebras 美股 IPO 首日冲击千亿美元市值：AI 推理芯片赛道有了定价锚</h3>
+        </div>
+        <p>5月14日，专注 AI 推理芯片的 <strong>Cerebras</strong> 正式登陆纳斯达克。上市首日股价强势冲高，盘中全稀释市值一度突破 <strong>千亿美元</strong> 关口，最终收盘约 <strong>670 亿美元</strong>，创下近年美股科技圈罕见的 IPO 盛况。</p>
+        <p>这家常年亏损的企业早年因合规问题一度叫停上市，却在此轮资本市场逆袭成功。Cerebras 的核心竞争力在于其晶圆级芯片设计——单芯片包含超过 85 万个 AI 核心，专为大模型推理场景优化。</p>
+        <div class="highlight">
+          <p><strong>核心看点</strong>：Cerebras 的上市标志着 AI 推理芯片从"概念"走向"规模化商业验证"，但高估值背后仍需面对持续亏损的现实考验。</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Figure 03 双机协作无通信铺床：具身智能进入"默契"阶段</h3>
+        </div>
+        <p>5月8日晚，<strong>Figure AI</strong> 发布最新 Demo：两台 <strong>Figure 03</strong> 机器人（搭载全新 <strong>Helix-02</strong> 系统）在没有任何中央控制器、互不通信的情况下，仅凭视觉感知，在不到两分钟内协作完成了整理卧室的任务——甚至包括最难的"共同铺好床单"。</p>
+        <p>这一突破的核心在于：两台机器人展现了类似人类的"默契"能力，无需显式协调即可分工合作，标志着具身智能从"单台精准操作"向"多机自主协作"的关键一跃。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Google I/O 2026 大会议程敲定：5月19日开幕，Gemini 4.0 预期发布</h3>
+        </div>
+        <p>Google I/O 2026 开发者大会将于 <strong>5月19日</strong> 正式开幕。市场预期谷歌将发布 <strong>Gemini 4.0</strong>、<strong>Android XR 智能眼镜</strong>、<strong>Aluminum OS</strong> 操作系统等重磅产品。</p>
+        <p>作为谷歌年度最重量级技术峰会，I/O 2026 将成为观察谷歌 AI 战略走向的关键窗口——Gemini 4.0 能否在多模态和长上下文方面进一步拉开与竞品的差距，将是最大看点。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">AI 开源生态持续壮大：GLM-5.1 与 MiniMax-M2.5 活跃更新</h3>
+        </div>
+        <p><strong>GLM-5.1</strong>（智谱 AI）在 GitHub 保持高频更新，最近一次代码推送为5月15日，Star 数 3254，成为开源 Agent 编程模型的重要玩家。</p>
+        <p><strong>MiniMax-M2.5</strong> 也于近期在 GitHub 亮相，定位为支持 coding、agentic tool use、search 及 office work 的多模态模型，SWE-Pro 测试正确率追平 GPT-5.3-Codex。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">5</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">2026 年成 AI 辅助攻击元年：The Hacker News 警示安全威胁升级</h3>
+        </div>
+        <p>The Hacker News 发布特别报告 <strong>"2026: The Year of AI-Assisted Attacks"</strong>，指出 AI 驱动的网络攻击正在以空前速度进化：</p>
+        <ul>
+          <li>黑客使用 AI 开发出首个已知的<strong>零日 2FA 绕过技术</strong>，实现大规模利用</li>
+          <li>AI 工具被用于自动化漏洞挖掘，攻击效率大幅提升</li>
+          <li>供应链攻击中 AI 参与度持续上升</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>警示</strong>：AI 安全攻防正在进入一个全新阶段，防御侧的 AI 化已刻不容缓。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="cn">🇨🇳 国内动态</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">6</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">绿色算力共创联盟成立：算电协同进入新阶段</h3>
+        </div>
+        <p>5月15日，在"算网筑基 智领未来"2026 辽宁移动人工智能合作发展大会上，<strong>绿色算力共创联盟</strong> 正式成立。中国移动辽宁公司联合华能东北分公司、国家电投东北电力、中核辽宁核电、阿里云、字节跳动、腾讯科技等合作伙伴共同推动算电协同发展新模式。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">7</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">具身智能国家级训练场启用：摩尔线程成为产业共建合伙人</h3>
+        </div>
+        <p>5月16日，<strong>国家人工智能应用中试基地（具身智能）</strong> 在浙江杭州正式揭牌。摩尔线程成为共建合伙人，并担任产业委员会委员，双方成立"<strong>具身智能算力与仿真联合实验室</strong>"。</p>
+        <p>基地旨在打造从实验室到场景应用的"样板间"，推动具身智能规模化落地。</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">8</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">新华网特稿展望 2026 全球 AI 演进新局：Agent 从"反应"走向"主动"</h3>
+        </div>
+        <p>新华网发布深度特稿，梳理 2026 年全球 AI 发展脉络：</p>
+        <ul>
+          <li><strong>40%</strong> 的企业应用将嵌入任务型 AI 智能体（高德纳预测）</li>
+          <li>AI 正从"一问一答"向"目标导向+多步骤规划"进化</li>
+          <li>空间智能成为下一个前沿方向（斯坦福李飞飞教授观点）</li>
+          <li>能源压力持续高企，绿色 AI 数据中心市场 2026 年预计达 <strong>676 亿美元</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="paper">📄 arXiv 论文精选</h2>
+      <table>
+        <tr><th style="width:30%">论文</th><th style="width:35%">机构</th><th>核心贡献</th></tr>
+        <tr><td><strong>daReasoner</strong></td><td>复旦、同济、NUS、UW</td><td>动态工具编排的迭代视觉推理</td></tr>
+        <tr><td><strong>Ares</strong></td><td>—</td><td>LLM Agent 自适应推理努力选择机制</td></tr>
+        <tr><td><strong>Training-Free Agentic AI</strong></td><td>—</td><td>多 Agent LLM 系统的概率协调控制</td></tr>
+        <tr><td><strong>AgentArk</strong></td><td>CMU、William & Mary</td><td>将多 Agent 知识蒸馏至单一 LLM Agent</td></tr>
+        <tr><td><strong>Reasoning as Gradient</strong></td><td>微软亚洲研究院</td><td>将 MLE Agent 扩展至树搜索之外</td></tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">💡 一句话观点</h2>
+      <div class="quote">
+        Cerebras IPO 冲击千亿市值证明 AI 推理芯片赛道已获资本市场定价锚，与此同时 Figure 03 双机协作展现具身智能"默契"时刻——AI 竞争正从"模型能力"向"规模化落地+物理世界渗透"双重纵深演进。5月19日 Google I/O 大会将是下一个关键观察节点。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:0.95rem;">🔗 信源索引</h2>
+      <ul>
+        <li><a href="https://www.tmtpost.com" target="_blank">Cerebras IPO 首日冲击千亿美元 - 钛媒体AGI</a></li>
+        <li><a href="https://robot-global.com" target="_blank">Figure 03 双机协作铺床 Demo - 机器人全球资讯</a></li>
+        <li><a href="https://xinhuanet.com" target="_blank">国家具身智能应用中试基地在浙江杭州挂牌 - 新华社</a></li>
+        <li><a href="https://c114.com.cn" target="_blank">绿色算力共创联盟成立 - C114</a></li>
+        <li><a href="https://thehackernews.com" target="_blank">2026: The Year of AI-Assisted Attacks - The Hacker News</a></li>
+        <li><a href="https://news.cn" target="_blank">展望全球人工智能2026年演进新局 - 新华网</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC午间情报 2026-05-18</p>
+    </footer>
+  </div>
+</body>
+</html>
