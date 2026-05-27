@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-05-27</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 5 月 27 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. 模型发布动态：谷歌 I/O 2026 全 AI 化，Gemini 3.5 即将登场</h2>
+  <div class="card">
+    <p><span class="highlight">谷歌 I/O 2026 全面 AI 化</span>，本次大会核心发布：</p>
+    <ul>
+      <li><strong>Gemini 3.5 Pro</strong> 将于 6 月正式发布，已进入发布前最后阶段</li>
+      <li><strong>Gemini Omni</strong> 被定位为谷歌最先进的多模态 AI 系统，可同时处理文本/音频/视频/图像</li>
+      <li><strong>Gemini 3.5 Flash Lite</strong> 继续作为轻量级低成本选项</li>
+      <li>搜索进入智能体时代，Gemini 3.5 加持的 AI Overview 用户突破 25 亿，AI Mode 用户超 10 亿</li>
+      <li><strong>Spark 智能体</strong>首秀，具备 24 小时后台运行、多模态整合和深度分析能力</li>
+    </ul>
+    <p><span class="highlight">重大变化：OpenAI 可登陆 AWS 和谷歌云</span>。4月27日微软-OpenAI 协议松绑，OpenAI 模型现已可在 AWS Bedrock 和 Google Vertex AI 上调用，开发者可以在三大云平台上调用 OpenAI 模型。</p>
+
+    <p><span class="highlight">5月模型回顾（截至5月27日）：</span></p>
+    <table>
+      <tr><th>日期</th><th>模型</th><th>开发商</th><th>许可</th><th>核心亮点</th></tr>
+      <tr><td>5月5日</td><td>GPT-5.5 Instant</td><td>OpenAI</td><td>专有</td><td>ChatGPT新默认模型，低延迟+少幻觉</td></tr>
+      <tr><td>5月5日</td><td>SubQ 1M-Preview</td><td>Subquadratic</td><td>专有(API)</td><td>首个商业化次二次注意力LLM，1200万token上下文</td></tr>
+      <tr><td>5月6日</td><td>Grok 4.3</td><td>xAI</td><td>专有</td><td>更广泛API可用</td></tr>
+      <tr><td>5月6-7日</td><td>ZAYA1-8B</td><td>Zyphra</td><td>Apache 2.0</td><td>AMD训练，7.6亿活跃参数，Apache开源</td></tr>
+      <tr><td>5月8日</td><td>Gemini 3.1 Flash Lite</td><td>Google</td><td>专有(API)</td><td>轻量级低成本版本</td></tr>
+      <tr><td>5月中旬</td><td>Llama 4</td><td>Meta</td><td>开源(MoE)</td><td>Scout + Maverick，多模态</td></tr>
+      <tr><td>5月20日</td><td>Llama 进入"维护模式"</td><td>Meta</td><td>—</td><td>重心转向闭源 Muse Spark</td></tr>
+    </table>
+
+    <p><span class="highlight">Anthropic 重大里程碑：</span></p>
+    <ul>
+      <li>Claude Opus 4.7 于4月17日发布，每两个月稳定迭代</li>
+      <li>年化营收已从2024年底的10亿美元增至2026年5月的约<strong>450亿美元</strong>（18个月80倍增长）</li>
+      <li><strong>Q2 预计首次盈利</strong>：营收109亿美元（Q1的48亿翻倍），营业利润5.59亿美元</li>
+      <li>IPO 筹备进行中，估值可能超过<strong>3000亿美元</strong></li>
+      <li>发布《Founder's Playbook》（36页 PDF），阐述2026年AI创业方法论</li>
+    </ul>
+    <p class="source">来源：WhatLLM.org, Artificial Analysis, 谷歌I/O 2026, Financial Times, IT之家, 2026年5月</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全动态：PraisonAI CVE-2026-44338 + 微软/Cisco 高危漏洞</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 开源 Agent 框架漏洞</span>：PraisonAI（开源多智能体编排框架）爆 <span class="highlight">CVE-2026-44338</span>，CVSS 7.3，属于"缺少认证"类型。PraisonAI 默认配置下 Flask API 服务器认证被禁用，攻击者可在无需 Token 的情况下调用 API 服务器的受保护功能。<strong>漏洞公开后数小时内即出现野外利用</strong>。</p>
+
+    <p><span class="highlight">同批高危漏洞（5月14日披露）：</span></p>
+    <ul>
+      <li><strong>CVE-2026-20182</strong>：Cisco Catalyst SD-WAN Controller 认证绕过，CVSS <strong>10.0（满分）</strong>，已有野外利用</li>
+      <li><strong>CVE-2026-20822</strong>：微软安全更新（5月24日）</li>
+      <li><strong>CVE-2026-26144</strong>：微软 Excel 信息泄露，CVSS 7.5</li>
+      <li><strong>Windows 零日漏洞</strong>：BitLocker 绕过 + CTFMON 权限提升，由匿名网络安全研究员披露</li>
+    </ul>
+
+    <p><span class="highlight">OpenClaw 安全通告</span>（GitHub Advisory，5月11日）：<code>GHSA-5mh4-3rv3-fpcf</code>——Host exec 环境清理遗漏包、注册表、Docker、编译器、TLS 覆盖变量，已撤回（可能为重复问题）。</p>
+
+    <p><span class="highlight">企业 AI 安全态势</span>：根据世界经济论坛《2026年全球网络安全展望》，64%的企业现在会在部署AI工具前进行安全风险评估（去年仅37%）。AI 正在加速漏洞发现和武器化，发现→武器化→利用的 timelines 已被压缩。</p>
+    <p class="source">来源：The Hacker News, GitHub Advisory Database, Microsoft Security Response Center, 2026年5月</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. AI × 预测市场：Polymarket AI 代理现状</h2>
+  <div class="card">
+    <p><span class="highlight">Polystrat Agent</span>（Olas/Valory）：Polymarket 自治 AI 交易代理，2月2026年上线。约一个月内执行 <strong>4200+ 笔交易</strong>，单一交易最高回报率 <strong>376%</strong>。37%的 Polystrat AI 显示正 P&L，人类交易者仅7-13%。</p>
+    <p><span class="highlight">关键数据</span>：Polymarket 上 <strong>30%以上</strong> 的钱包已使用 AI 代理（LayerHub数据）。David Minarsch（Valory CEO）："你已经在和机器竞争，无论你是否意识到。"</p>
+    <p><span class="highlight">活跃 AI 相关预测市场（截至5月27日）：</span></p>
+    <ul>
+      <li>"Which company has the best AI model end of May?"</li>
+      <li>"Which company has the #1 AI model end of May?"</li>
+      <li>"Best AI model on May 16?"</li>
+      <li>"What kind of product will OpenAI announce in 2026?"</li>
+      <li>Anthropic IPO Closing Market Cap</li>
+    </ul>
+    <p><span class="warn">监管动态</span>：CFTC 对 Polymarket 调查持续推进（2021年10月首次报道，2026年仍在进行）。</p>
+    <p class="source">来源：CoinDesk, Polymarket.com, LayerHub, 2026年3-5月</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. 政府监管：美国 CAISI 提前访问模型</h2>
+  <div class="card">
+    <p><span class="highlight">美国政府提前访问 AI 模型</span>：Google、Microsoft、xAI 已同意向美国商务部 AI 标准和创新中心（CAISI）提供新模型提前访问权限，进行"部署前评估和研究"。OpenAI 和 Anthropic 重新谈判了现有合作协议以符合特朗普 AI 行动计划优先级。<strong>CAISI 已完成40+次评估（含未发布模型）</strong>。</p>
+    <p class="source">来源：CNN / Reuters / Yahoo Tech / Bloomberg, 2026年5月</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. GitHub Trending：2026年5月 AI 开源项目</h2>
+  <div class="card">
+    <p><span class="highlight">本月 AI 开源项目动态：</span></p>
+    <table>
+      <tr><th>项目</th><th>星标</th><th>类型</th><th>备注</th></tr>
+      <tr><td>Superpowers</td><td>199,943</td><td>AI编程框架</td><td>"让你的AI编程助手开挂"</td></tr>
+      <tr><td>Andrej Karpathy Skills</td><td>140,667</td><td>提示词工程</td><td>Karpathy的Claude Code调教经验</td></tr>
+      <tr><td>OpenHuman</td><td>23,534</td><td>桌面AI伙伴</td><td>118+集成，本地SQLite知识图谱</td></tr>
+      <tr><td>OpenClaw</td><td>24.8万+</td><td>个人AI代理</td><td>GitHub最受欢迎开源项目，超越Linux</td></tr>
+      <tr><td>claude-hud / claude-mem</td><td>各近1000</td><td>Claude生态插件</td><td>5月爆发式增长</td></tr>
+      <tr><td>project-nomad</td><td>2,032</td><td>离线AI硬件</td><td>自包含生存计算机，新类别</td></tr>
+    </table>
+    <p><span class="warn">⚠ GitHub 因增长太快频发故障</span>，正在重构，目标是承载能力提升10倍（4月29日）。</p>
+    <p class="source">来源：GitHub Trending, CSDN, 2026年5月</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-05-27 21:00 · 聚焦：AI模型发布动态、安全漏洞爆发、加密/预测市场讨论<br>
+  数据来源：The Hacker News / Google Threat Intelligence / WhatLLM.org / Artificial Analysis / CoinDesk / Polymarket / Financial Times / IT之家 / GitHub Advisory
+</div>
+
+</body>
+</html>
