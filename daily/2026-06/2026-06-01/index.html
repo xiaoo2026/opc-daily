@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 晚报 2026-06-01 | Una陪你看AI</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-evening: #6366f1;
+      --tag-bg: #1f2937;
+      --tag-text: #60a5fa;
+      --success: #3fb950;
+      --warning: #d29922;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .site-title {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--accent-evening);
+      color: #fff;
+    }
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 16px;
+      background: var(--accent-evening);
+      border-radius: 2px;
+    }
+    .headline {
+      background: linear-gradient(135deg, #1a2332 0%, #161b22 100%);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-evening);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .headline h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .headline p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .item:last-child { border-bottom: none; }
+    .item h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .item p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .item-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .quick-list {
+      list-style: none;
+    }
+    .quick-list li {
+      padding: 8px 0;
+      font-size: 14px;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .quick-list li:last-child { border-bottom: none; }
+    .quick-list li::before {
+      content: "→";
+      color: var(--accent-evening);
+      flex-shrink: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      margin-top: 32px;
+    }
+    @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-title">Una陪你看AI</div>
+      <h1>OPC 晚报 <span class="badge">evening</span></h1>
+      <div class="meta">📅 2026-06-01 &nbsp;|&nbsp; 🕓 18:00 &nbsp;|&nbsp; 覆盖：6月1日全天候</div>
+    </header>
+
+    <div class="headline">
+      <h2>🤖 AI生成零日漏洞首获证实 + GitHub Copilot转向Token计费 + Google搜索25年来最大改版</h2>
+      <p>零日漏洞里程碑事件：Google威胁情报团队（GTIG）5月确认，全球首次发现威胁分子利用AI模型发现并生成零日漏洞（2FA绕过），代码特征高度符合LLM生成模式。同期GitHub Copilot正式由订阅制改为Token消耗制，开发者账单暴涨数十倍。Google I/O 2026发布Gemini Spark，搜索框迎25年来最大改造，AI Overviews月活突破25亿。</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🤖 模型动态</div>
+      <div class="item">
+        <h3>🟢 AI生成零日漏洞全球首获证实——Google GTIG报告</h3>
+        <p>Google威胁情报团队（GTIG）发布报告，确认发现威胁分子使用AI模型发现并生成零日漏洞的实战案例。该漏洞针对一款开源Web管理工具，实现了2FA绕过。GTIG高置信度评估：代码具有典型LLM生成特征（Python脚本、结构化漏洞利用链）。这是全球首例AI辅助零日漏洞在野利用记录，标志着AI网络武器化进入实用阶段。</p>
+        <div class="tag-row">
+          <span class="tag">零日漏洞</span><span class="tag">AI武器化</span><span class="tag">Google GTIG</span><span class="tag">2FA绕过</span><span class="tag">网络安全</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🟢 GitHub Copilot今日起转向Token计费，开发者账单暴涨</h3>
+        <p>GitHub Copilot于6月1日起由固定月费订阅改为Token消耗制（GitHub AI Credits，1 Credit = $0.01）。开发者社区报告显示：有人月费从$29跳至$750，更有人从$50飙至$3000。核心原因：Agentic Coding模式下每次复杂重构需AI反复读取代码、生成修改、执行测试，Token消耗量与旧模式有本质区别。</p>
+        <div class="tag-row">
+          <span class="tag">GitHub Copilot</span><span class="tag">Token计费</span><span class="tag">开发者工具</span><span class="tag">AI变成</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🟢 Google I/O 2026：Gemini Spark上线，搜索框25年来最大改版</h3>
+        <p>Google在I/O 2026上宣布搜索框重大更新：固定细长条→动态扩展输入域，支持自然语言/图片/视频/PDF多模态输入，由Gemini 3.5 Flash驱动。同时推出Information Agents（24/7持久监控网络变化的AI Agent）和Mini-apps（自然语言描述即可自动生成工具）。AI Overviews月活已达25亿，AI Mode突破10亿用户。</p>
+        <div class="tag-row">
+          <span class="tag">Google I/O</span><span class="tag">Gemini Spark</span><span class="tag">搜索改版</span><span class="tag">AI Agent</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🟢 SpaceX提交2万亿美元IPO申请，6月12日上市</h3>
+        <p>SpaceX正式向SEC提交IPO申请，计划6月12日登陆纳斯达克，目标估值1.75-2万亿美元，最高筹资750亿美元。这是2026年AI三巨头（SpaceX + OpenAI Sep + Anthropic Oct）上市序幕。三家合计筹资规模有望超越2022-2025年美国所有IPO总和。</p>
+        <div class="tag-row">
+          <span class="tag">SpaceX</span><span class="tag">IPO</span><span class="tag">2万亿美元</span><span class="tag">Elon Musk</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🟢 Anthropic完成H轮融资，估值9650亿美元首超OpenAI</h3>
+        <p>Anthropic在最新一轮融资中估值达9650亿美元，首次在AI公司估值上超越OpenAI（同期约8500亿美元）。同时发布Claude Opus 4.8，主打更强智能体编程、多领域推理和知识工作能力，官方称"判断更敏锐，主动提问、识别自身错误"。</p>
+        <div class="tag-row">
+          <span class="tag">Anthropic</span><span class="tag">Claude Opus 4.8</span><span class="tag">融资</span><span class="tag">估值</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🟢 阶跃星辰开源Step 3.7 Flash：196B+MoE，400 Tokens/s</h3>
+        <p>阶跃星辰发布并开源Step 3.7 Flash，面向Agent生产化阶段，总参数196B+（激活11B），最高生成速度400 Tokens/s。原生多模态理解UI/图表/文档，支持联网与视觉搜索增强，针对Claude Code、OpenClaw、Hermes Agent等主流Agent框架优化。</p>
+        <div class="tag-row">
+          <span class="tag">阶跃星辰</span><span class="tag">Step 3.7 Flash</span><span class="tag">开源模型</span><span class="tag">MoE</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>🔵 美国政府要求AI巨头模型发布前交政府审查</h3>
+        <p>Google、Microsoft、xAI同意将新模型提交美国商务部AI标准与创新中心（CAISI）进行发布前安全审查。OpenAI和Anthropic重新谈判以符合特朗普AI行动计划。Anthropic的Mythos模型被指为催化剂。</p>
+        <div class="tag-row">
+          <span class="tag">CAISI</span><span class="tag">AI监管</span><span class="tag">政府审查</span><span class="tag">政策</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📦 GitHub Trending · AI爆款项目</div>
+      <div class="item">
+        <h3>⭐ OpenWebUI — 开源AI聊天框架</h3>
+        <p>功能完备的Web UI，支持Ollama和OpenAI API，扩展性强，模块化设计。</p>
+        <div class="tag-row">
+          <span class="tag">OpenWebUI</span><span class="tag">开源</span><span class="tag">AI聊天</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⭐ n8n — 工作流自动化平台（AI Agent集成）</h3>
+        <p>开源工作流自动化工具，提供可视化流程编辑，支持AI Agent集成和复杂工作流编排。</p>
+        <div class="tag-row">
+          <span class="tag">n8n</span><span class="tag">自动化</span><span class="tag">AI Agent</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⭐ Browser Use — AI浏览器自动化</h3>
+        <p>让AI Agent控制浏览器执行任务的工具，用于Web自动化和网页交互场景。</p>
+        <div class="tag-row">
+          <span class="tag">Browser Use</span><span class="tag">自动化</span><span class="tag">Web</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⭐ microsoft / markitdown — 132,731 Stars</h3>
+        <p>Python工具：将文件和Office文档转换为Markdown格式，开发者必备文档处理工具。</p>
+        <div class="tag-row">
+          <span class="tag">markitdown</span><span class="tag">微软</span><span class="tag">文档转换</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⭐ anthropics / claude-code — 128,454 Stars</h3>
+        <p>Claude Code：终端中的AI编程助手，理解代码库，通过自然语言命令执行编程任务。</p>
+        <div class="tag-row">
+          <span class="tag">Claude Code</span><span class="tag">Anthropic</span><span class="tag">AI变成</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⭐ Dify — AI应用开发平台</h3>
+        <p>开源LLMOps平台，支持工作流编排、RAG、多种模型集成、本地/云端部署，面向生产环境AI应用开发。</p>
+        <div class="tag-row">
+          <span class="tag">Dify</span><span class="tag">LLMOps</span><span class="tag">AI应用</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🔐 安全警示</div>
+      <div class="item">
+        <h3>⚠️ AI生成零日漏洞确认——网络空间安全里程碑</h3>
+        <p>Google GTIG报告：威胁分子使用AI模型发现并生成零日漏洞，实现2FA绕过。这是全球首例"AI辅助零日"在野利用记录。GTIG已命名多个AI恶意工具：PROMPTFLUX（利用Gemini API生成代码）、HONESTCUE（VBScript混淆）。AI网络武器化已从理论进入实战。</p>
+        <div class="tag-row">
+          <span class="tag">零日漏洞</span><span class="tag">AI武器化</span><span class="tag">PROMPTFLUX</span><span class="tag">网络安全</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⚠️ Megalodon攻击：5561个GitHub仓库被植入恶意CI/CD工作流</h3>
+        <p>大规模供应链攻击"megalodon"利用恶意CI/CD工作流入侵5561个GitHub仓库。攻击者通过修改.github/workflows目录注入恶意Actions脚本。开发者应立即检查仓库CI/CD配置。</p>
+        <div class="tag-row">
+          <span class="tag">Megalodon</span><span class="tag">GitHub</span><span class="tag">供应链攻击</span><span class="tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>⚠️ Claude Code源码泄露：51.2万行TypeScript被意外发布</h3>
+        <p>Anthropic Claude Code因npm打包配置疏忽，意外泄露51.2万行TypeScript源码（含1906个文件、40+工具模块），包含未发布核心功能及安全架构细节。Anthropic已紧急下架。</p>
+        <div class="tag-row">
+          <span class="tag">Claude Code</span><span class="tag">源码泄露</span><span class="tag">Anthropic</span><span class="tag">安全</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📄 arXiv 论文精选</div>
+      <div class="item">
+        <h3>Agentic Reasoning for Large Language Models</h3>
+        <p class="item-meta">cs.AI | 探索LLM在复杂任务中的自主推理与工具调用</p>
+      </div>
+      <div class="item">
+        <h3>Agent Reasoning Reward Model (Agent-RRM)</h3>
+        <p class="item-meta">cs.AI | 多维度奖励模型，为Agentic场景提供结构化反馈</p>
+      </div>
+      <div class="item">
+        <h3>Toward AI Agents That Reason With Us, Not For Us</h3>
+        <p class="item-meta">cs.AI | 论证式人机协同决策框架，可争议可修正的辩证过程</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📊 Polymarket 预测市场</div>
+      <div class="item">
+        <h3>🎯 年底最佳AI模型公司（6月末）</h3>
+        <p>Anthropic 77% | Google 17% | 其他 6%</p>
+      </div>
+      <div class="item">
+        <h3>🎯 SpaceX IPO市值超2万亿美元</h3>
+        <p>是 70% | 否 30%</p>
+      </div>
+      <div class="item">
+        <h3>🎯 年底最大公司</h3>
+        <p>NVIDIA 62% | Alphabet 24% | 其他 14%</p>
+      </div>
+      <div class="item">
+        <h3>🎯 Anthropic估值（实际已完成）</h3>
+        <p>9650亿美元（6月30日前）</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📰 产业要闻</div>
+      <div class="item">
+        <h3>英伟达2027财年Q1</h3>
+        <p>营收816亿美元（+85% YoY），净利润583亿美元（+211%），数据中心业务继续爆发</p>
+      </div>
+      <div class="item">
+        <h3>JPMorgan预测</h3>
+        <p>AI将缩短工作周至3.5天，延长人类寿命至100岁，治愈癌症，预防车祸</p>
+      </div>
+      <div class="item">
+        <h3>苹果PICO</h3>
+        <p>AI引入图像压缩底层基础设施，以1/3体积实现同等画质</p>
+      </div>
+      <div class="item">
+        <h3>腾讯DreamNow</h3>
+        <p>AI创作与展示平台，支持AI视频/图片/互动影游，魏晋国风美学</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>OPC 晚报 | Una陪你看AI | 每日AI资讯精选</p>
+    </footer>
+  </div>
+</body>
+</html>
