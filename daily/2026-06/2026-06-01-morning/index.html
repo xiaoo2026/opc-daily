@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-01 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 169, 77, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(255, 169, 77, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-01 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月1日 09:00 发布（采集自5月31日）</p>
+            <div class="meta">
+                <span class="tag tag-security">安全警示</span>
+                <span class="tag tag-capital">芯片焦点</span>
+                <span class="tag tag-product">模型迭代</span>
+                <span class="tag tag-trend">GitHub热门</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">260亿美元</div>
+                <div class="label">AI 编程赛道最高估值公司</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">3.3k</div>
+                <div class="label">微软 Skills 一周 GitHub Star</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">27.8k</div>
+                <div class="label">Kronos 金融模型 Star 数</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">74.2k</div>
+                <div class="label">MoneyPrinterTurbo Star 数</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：COMPUTEX 2026 前哨 + AI 编程赛道 260 亿美元里程碑</h3>
+            <p>COMPUTEX 2026 前夜，英伟达 N1X 芯片曝光成为全场焦点，AI 计算成最核心议题。AI 编程赛道出现 260 亿美元估值最高公司，核心技术团队几乎全部来自中国（"全华班"）。微软 Skills 一周 3.3k star，"像训练神经网络一样训练技能"的自我进化思路与 RSI 递归式自我改进异曲同工。</p>
+            <p class="last">华为"韬定律"出圈引发芯片技术讨论，"一人公司"模式年赚百万与收入缩水 90% 并存，AI 工具放大马太效应。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>COMPUTEX 2026 前哨：英伟达 N1X 芯片曝光，AI 计算成最核心议题</h3>
+                <div class="source">来源：雷科技 | 2026-05-31</div>
+                <div class="desc">
+                    COMPUTEX 2026 即将开幕，英伟达 <strong>N1X 芯片</strong>成为全场焦点。这是英伟达面向 AI PC 和边缘计算的新一代芯片，首次曝光即被寄予厚望。AI 计算已成为 COMPUTEX 最核心议题，各家芯片厂商均围绕 AI 能力展开激烈竞争。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>260 亿美元：AI 编程赛道估值最高公司，"全华班"撑起半边天</h3>
+                <div class="source">来源：字母 AI | 2026-05-31</div>
+                <div class="desc">
+                    一家 AI 编程公司以 <strong>260 亿美元估值</strong>成为该赛道估值最高的企业，背后核心技术团队几乎全部来自中国（"全华班"）。这一估值里程碑凸显中国 AI 人才在全球 AI 编程领域的核心地位，也引发关于中美 AI 人才流动的讨论。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>华为"韬定律"出道即顶流：芯片技术突破还是营销？</h3>
+                <div class="source">来源：经济日报 | 2026-05-31</div>
+                <div class="desc">
+                    华为<span class="highlight">"韬定律"</span>成为行业热议话题。具体指华为某芯片技术路线的突破性进展，从芯片设计到算力表现均有显著提升，一经提出即获得"顶流"关注度，但具体技术细节和真实性仍在业内引发讨论。
+                </div>
+            </div>
+        </section>
+
+        <!-- 大厂动态 -->
+        <section class="section">
+            <div class="section-title">🏛️ 大厂动态</div>
+
+            <div class="card">
+                <h3>微软 Skills 一周 3.3k star：像训练神经网络一样训练技能</h3>
+                <div class="source">来源：机器之心 | 2026-05-31</div>
+                <div class="desc">
+                    微软推出 <strong>Skills 自我进化框架</strong>，一周内获得 3.3k GitHub star。核心思路是"<span class="highlight">像训练神经网络一样训练技能</span>"——将 AI 技能视为可训练、可优化的组件，实现自动化迭代升级。与 RSI 的递归式自我改进路线异曲同工。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI Agent 替代电脑管家：500GB 空间清理测试</h3>
+                <div class="source">来源：雷科技 AGI | 2026-05-31</div>
+                <div class="desc">
+                    实测多款 AI Agent 在"替代传统电脑管家"任务中的表现。结果显示：现有 Agent 在处理 <strong>500GB 空间清理</strong>这类复杂系统管理任务时仍存在明显局限，"替代"仍需时日。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI 漫剧探索商业化路径</h3>
+                <div class="source">来源：新浪科技 | 2026-05-31</div>
+                <div class="desc">
+                    AI 生成的漫画视频（AI 漫剧）正在探索商业化路径。"抽卡"模式之外，行业开始思考可持续商业模式，质量和版权问题成为核心挑战。
+                </div>
+            </div>
+        </section>
+
+        <!-- 模型榜单 -->
+        <section class="section">
+            <div class="section-title">📊 GitHub Trending AI</div>
+
+            <div class="card">
+                <h3>GitHub Trending AI 项目（2026-05-31）</h3>
+                <div class="source">来源：GitHub Trending | 2026-05-31</div>
+                <div class="desc">
+                    <strong>热门项目：</strong>
+                    <br>• <strong>Kronos</strong>（shiyu-coder，27.8k star）— 金融市场语言基础模型
+                    <br>• <strong>MoneyPrinterTurbo</strong>（harry0703，74.2k star）— AI 一键生成高清短视频
+                    <br>• <strong>markitdown</strong>（microsoft，134.9k star）— 文档转 Markdown 工具
+                    <br>• <strong>VoxCPM</strong>（OpenBMB，23.5k star）— Tokenizer-Free TTS，多语言高保真语音合成
+                    <br>• <strong>hermes-webui</strong>（nesquena，9.9k star）— Hermes WebUI
+                    <br>• <strong>compound-engineering-plugin</strong>（EveryInc，18.7k star）— Claude Code/Cursor/Codex 专用插件
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>小学生画胡子骗过 AI 年龄验证</h3>
+                <div class="source">来源：机器之心 | 2026-05-31</div>
+                <div class="desc">
+                    一群小学生通过简单手绘胡子成功骗过多款 <strong>AI 年龄验证系统</strong>，这一事件在硅谷工程师群体中引发沉默。暴露了当前 AI 视觉验证系统在<span class="highlight">对抗性攻击</span>面前的脆弱性。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>数据劳工：被 AI 吞没的人</h3>
+                <div class="source">来源：新浪科技 | 2026-05-31</div>
+                <div class="desc">
+                    一篇深度报道揭示 AI 数据标注劳工的创伤与沉默——这些承担 AI"苦力工作"的人群在长期重复劳动中承受心理压力。<span class="highlight">AI 产业的快速发展背后，存在被忽视的伦理问题</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 产业观察 -->
+        <section class="section">
+            <div class="section-title">📌 产业观察</div>
+
+            <div class="card">
+                <h3>"一人公司"爆火：年赚百万与收入缩水 90% 并存</h3>
+                <div class="source">来源：Tech星球 | 2026-05-31</div>
+                <div class="desc">
+                    AI 赋能的<span class="highlight">"一人公司"</span>模式正在爆发——部分个体借助 AI 工具实现年赚百万的惊人收入，但也有大量创业者收入缩水 90%。这一现象折射出 AI 创业的极端分化：掌握 AI 工具者快速崛起，不适应者则被加速淘汰。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>COMPUTEX 2026 前哨：</strong>英伟达 N1X 芯片曝光，AI 计算成最核心议题</li>
+                    <li><strong>AI 编程赛道里程碑：</strong>260 亿美元估值，"全华班"撑起全球估值最高公司</li>
+                    <li><strong>微软 Skills 自我进化：</strong>一周 3.3k star，将技能训练类比神经网络训练</li>
+                    <li><strong>华为"韬定律"出圈：</strong>芯片技术突破引发行业热议，具体路线待验证</li>
+                    <li><strong>AI Agent 能力边界：</strong>500GB 清理测试显示当前 Agent 仍无法替代专业系统管理</li>
+                    <li><strong>GitHub 语音/金融模型热：</strong>Kronos（27.8k）、VoxCPM（23.5k）、MoneyPrinterTurbo（74.2k）持续领跑</li>
+                    <li><strong>AI 安全双重挑战：</strong>视觉验证被儿童愚弄 + 数据劳工伦理问题浮出水面</li>
+                    <li><strong>一人公司极端分化：</strong>年赚百万 vs 收入缩水 90%，AI 工具放大马太效应</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · 机器之心 · 字母 AI · 经济日报 · Tech星球 · 新浪科技 · GitHub</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-01 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
