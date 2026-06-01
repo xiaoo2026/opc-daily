@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-06-01</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 6 月 1 日 · AI 行业动态</div>
+</header>
+
+<section>
+  <h2>1. 模型发布动态：Claude Opus 4.8 重磅发布，Anthropic 估值首超 OpenAI</h2>
+  <div class="card">
+    <p><span class="highlight">Anthropic 发布 Claude Opus 4.8</span>，距离4.7仅6周，迭代速度创纪录。核心升级：</p>
+    <ul>
+      <li><strong>1M token 上下文默认开启</strong>，128K 最大输出</li>
+      <li><strong>自适应思考（Adaptive Thinking）</strong> + 对话中系统消息正式GA</li>
+      <li><strong>Workflows 功能（研究预览）</strong>：单一 Session 内可做计划 → 派发数百并行子 Agent → 合并结果</li>
+      <li><strong>Super-Agent 基准</strong>：Opus 4.8 是唯一能端到端完成所有 Case 的模型，超越 GPT-5.5 且成本持平</li>
+      <li><strong>法律 Agent 基准</strong>：首次突破 10% all-pass 标准</li>
+    </ul>
+    <p><span class="highlight">Anthropic 估值 9650 亿美元，首次超越 OpenAI</span>（同期约8500亿美元）。CEO Dario Amodei 表示："AI安全与能力并重不再是妥协，而是竞争差异点。"</p>
+    <p><span class="highlight">GPT-5.5 Instant 成为 ChatGPT 新默认模型</span>：减少法律、医学、金融敏感领域幻觉率，保持低延迟；API 通过"chat-latest"标签访问，GPT-5.3 付费用户有3个月过渡期。</p>
+    <p><span class="highlight">Google I/O 2026：Gemini Spark 发布，搜索框 25 年来最大改版</span>：固定细长条 → 动态扩展输入域，支持自然语言/图片/视频/PDF 多模态；Information Agents 持续监控网络；Mini-apps 自然语言描述即可自动生成工具。AI Overviews 月活 25 亿，AI Mode 突破 10 亿用户。</p>
+    <p><span class="highlight">SpaceX IPO 申请：6月12日上市，估值 1.75-2 万亿美元</span>，最高筹资 750 亿美元。与 OpenAI（9月）、Anthropic（10月）构成 2026 年 AI 三巨头上市序列。</p>
+    <p class="source">来源：Anthropic 官网、TechCrunch、Business Insider、Google I/O 2026、Polymarket | 2026-05-28/29</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全漏洞密集披露：AI 辅助零日获证实，多框架中招</h2>
+  <div class="card">
+    <p><span class="warn">⚠ 全球首例：AI 辅助零日漏洞在野利用获证实</span></p>
+    <p>Google威胁情报团队（GTIG）5月确认，威胁分子使用AI模型发现并生成零日漏洞（2FA绕过），代码特征高度符合LLM生成模式。Python脚本实现了针对开源Web管理工具的2FA绕过漏洞利用链。GTIG高置信度评估：这是<span class="highlight">全球首例AI辅助零日漏洞在野利用记录</span>，标志着AI网络武器化进入实用阶段。</p>
+
+    <p><span class="highlight">Cohere Terrarium 沙箱逃逸</span>：Python沙箱 Terrarium（Cohere AI 开发，用于运行 LLM 生成代码的 Docker 容器）发现严重漏洞。根因：Pyodide WebAssembly 环境中 JavaScript 原型链遍历，可实现任意代码执行，以 root 权限运行主机进程。</p>
+
+    <p><span class="highlight">Claude Code 安全漏洞</span>（2月披露，5月回顾）：</p>
+    <ul>
+      <li><strong>CVE-2026-21851（CVSS 8.7）</strong>：用户同意绕过漏洞，在新目录启动时可通过未信任项目 Hook（.claude/settings.json）注入任意代码执行</li>
+      <li><strong>CVE-2026-21852（CVSS 5.3）</strong>：信息泄露漏洞，恶意代码库可设置 ANTHROPIC_BASE_URL 指向攻击者控制的端点，在显示信任提示前泄露 API 密钥</li>
+    </ul>
+
+    <p><span class="highlight">MCP 设计缺陷</span>（4月）：OX Security 研究发现 Anthropic MCP 架构存在"设计级"弱点，Python/TypeScript/Java/Rust SDK 均受影响，通过 MCP STDIO 的未认证/已认证命令注入可实现 RCE，影响所有运行 MCP 实现的系统。</p>
+
+    <p><span class="highlight">PraisonAI CVE-2026-44338</span>：CVSS 7.3，Flask API 服务器默认认证禁用，漏洞公开后<span class="highlight">4小时内即有在野利用尝试</span>。</p>
+
+    <p class="source">来源：The Hacker News、CVE.org、OX Security | 2026-02/04/05</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. 预测市场动态：Claude vs GPT 六月争霸战白热化</h2>
+  <div class="card">
+    <p><span class="highlight">Polymarket AI 市场热度（2026-06-01）</span></p>
+    <table>
+      <tr><th>事件</th><th>热度</th></tr>
+      <tr><td>Claude 4.8 released by June 30?</td><td>高度活跃</td></tr>
+      <tr><td>OpenAI releases GPT-5.6 by June?</td><td>活跃</td></tr>
+      <tr><td>Which company has the #1 AI model by June 30?</td><td>最活跃</td></tr>
+      <tr><td>SpaceX valuation hit $X by June 30?</td><td>活跃</td></tr>
+      <tr><td>Bitcoin above $68k on June 1</td><td>68%</td></tr>
+      <tr><td>Ethereum $1,900-2,000 on June 1</td><td>79%</td></tr>
+    </table>
+    <p>Claude 4.8 发布后，"Which company has the #1 AI model by June 30?" 市场合约价格剧烈波动，预测市场进入关键博弈期。</p>
+    <p><span class="highlight">AI 代理渗透率</span>：Polymarket 上 30%+ 钱包已使用 AI 代理（LayerHub 数据），AI 交易代理 Polystrat 约一个月执行 4200+ 笔交易，单一交易最高回报率 376%。</p>
+    <p class="source">来源：Polymarket、LayerHub、CoinDesk | 2026-06-01</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. GitHub Trending AI（2026-06-01）</h2>
+  <div class="card">
+    <p><span class="highlight">GitHub Copilot Token 计费转型</span>：6月1日起从固定月费转为消耗制，开发者月账单从 $29 跳至 $750+，有人从 $50 飙至 $3000。Agentic Coding 模式下每次复杂重构需 AI 反复读取代码 → 生成修改 → 执行测试，Token 消耗量暴增。</p>
+    <p><span class="highlight">本周开源热点</span>：</p>
+    <ul>
+      <li><strong>Nvidia Cosmos-3 Nano</strong>：16B Omni World Model，专为 Physical AI 设计</li>
+      <li><strong>Gemini 3.5 Pro/Flash</strong>：Google 发布，定位高效生产级 API</li>
+      <li><strong>Kling 3.0 Omni</strong>：快手多镜头故事板 + 原生音频视频模型</li>
+      <li><strong>Step 3.7 Flash</strong>（阶跃星辰）：196B+ MoE，400 Tokens/s 生成</li>
+    </ul>
+    <p class="source">来源：GitHub Trending、AI 科技媒体 | 2026-06-01</p>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-06-01 21:00 · 聚焦：模型发布动态、安全漏洞爆发、加密/预测市场讨论<br>
+  数据来源：The Hacker News / Google GTIG / Anthropic / OpenAI / Google I/O / Polymarket / Business Insider / TechCrunch / GitHub
+</div>
+
+</body>
+</html>
