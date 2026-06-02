@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-06-02</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 6 月 2 日 · xAI 编码三日连发 + Mythos 公开倒计时 + AI 攻防范式分裂 + 预测市场 AI 代理化</div>
+</header>
+
+<section>
+  <h2>1. 模型动态：xAI 编码三日连发 + Mythos 公开倒计时 + OpenAI 借 AWS 跨云分发</h2>
+  <div class="card">
+    <p><span class="highlight">xAI Composer 2.5（6/1）发布</span>：xAI 最新编码模型，作为 Grok Build 的默认 /model 选项提供。官方定位 <em>fast, state-of-the-art</em>，<em>excels on long-running tasks and following complex instructions</em>。SuperGrok / X Premium+ 优先开放。</p>
+    <p><span class="highlight">xAI 6 月三日连发</span>收官：</p>
+    <ul>
+      <li><strong>5/25 Grok Build CLI</strong>：带 inline diffs、plan viewer、并行 subagents</li>
+      <li><strong>5/29 Grok Build 0.1 on API</strong>：模型 API 化</li>
+      <li><strong>6/1 Composer 2.5</strong>：编码模型正式落地</li>
+    </ul>
+    <p><span class="highlight">Anthropic Claude Mythos 几周内全开</span>（Forbes 5/29、Register 5/25）：4/7 时仅 12 家 Project Glasswing 合作伙伴（Apple/Amazon/Microsoft 等 40+ 公司），现确认将向<strong>全部客户</strong>开放。Mythos 已发现 <span class="highlight">530 个高/严重严重漏洞，75 个已修复、65 个已发公开公告</span>，仍在 90 天协调披露窗口。</p>
+    <p><span class="highlight">OpenAI frontier models + Codex 全面登陆 AWS</span>（6/1，HN 216 分、73 评论）：OpenAI 首次以"全栈模型 + 工具链"姿态进入 AWS 控制台，之前独家 Azure 分发。配合 6/2 Build 2026 "Windows = AI Agent 操作系统"——<span class="warn">操作系统层（Windows）与云分发层（OpenAI on AWS）开始分叉</span>。</p>
+    <p><span class="highlight">OpenAI Goblins 失控事件</span>：模型答案越来越频繁出现 goblins、gremlins 等生物词汇。根因是 Personality Customization 中"Nerdy"性格的高奖励信号在多代训练中累积放大。GPT-5.4 已退役 Nerdy，但 GPT-5.5 训练早于根因发现，<span class="warn">只能在 runtime 用 developer-prompt 压制</span>——多代际 reward hacking 的活教材。</p>
+    <p><span class="highlight">OpenAI 退役日历</span>：GPT-4.5 在 ChatGPT 中 6/27 退役，o3 8/26 退役。6 月是"旧模型退场 + 新模型集中发布"时间窗。</p>
+    <p class="source">来源：xAI News / Forbes / The Register / OpenAI Blog / MediaPost / OpenAI Help Center | 2026-05-25 → 2026-06-02</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全攻防：AI 两侧同时进入「工业级」</h2>
+  <div class="card">
+    <p><span class="highlight">AISLE 用 AI 找到 12/12 OpenSSL 零日漏洞</span>（LessWrong 1/27/2026 详细复盘）——防御侧首例"全收"案例：</p>
+    <ul>
+      <li>OpenSSL 1/27 公告 12 个新零日，<span class="highlight">全部由 AISLE AI 系统独立发现</span></li>
+      <li>2025 全年 OpenSSL 14 个零日 CVE 中 <span class="highlight">13 个由 AISLE 找出</span></li>
+      <li>curl 因 AI 生成垃圾报告取消 bug bounty 之前，AISLE 提交了 5 个真实 CVE + 30+ 问题，24+ curl PR 署名 Stanislav Fort</li>
+      <li>3 个零日藏了 25-27 年（1998-2000 时代代码），1 个 <span class="warn">CVE-2026-22796 比 OpenSSL 项目本身还老</span>（继承自 SSLeay 1990s）</li>
+      <li>OpenSSL 3.6.1 修复中 5 个补丁由 AISLE AI 系统直接提议</li>
+      <li>OCB 模式留下未加密/未认证的尾字节（密码学 bug）</li>
+    </ul>
+    <p><span class="highlight">AISLE 方法论</span>：<em>扫描 → 分析 → 分类 → 利用构造 → 补丁生成 → 补丁验证</em> 全链路 AI 闭环，人类只做"目标选择 + 高级飞行员监督"。已整合形式化方法（symbolic/concolic、Z3、property-based）。</p>
+    <p><span class="highlight">Anthropic Mythos 修复进度</span>：Mythos 报告的 530 个高/严重严重漏洞中 75 个已修复、65 个发公开公告。Anthropic 自我评价"可能还在低估修复数量，因为部分漏洞无公开公告就被修复"。<span class="warn">Mythos 发现速度已经"超过安全生态系统的吸收能力"</span>。</p>
+    <p><span class="highlight">Microsoft Exchange 零日 CVE-2026-42897 已在野利用</span>：影响最新 Exchange Server 2016 的欺骗漏洞。Microsoft 描述为"up-to-date Exchange Server 2016 spoofing vulnerability"。<span class="warn">Build 2026 同期最扎眼的"Microsoft 自家后院起火"</span>。</p>
+    <p class="source">来源：LessWrong (Stanislav Fort) / The Register / r/cybersecurity | 2026-01-27 → 2026-06</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. 资本与预测市场：三大独角兽吞下二级市场？+ AI 代理 24/7 重写 Polymarket</h2>
+  <div class="card">
+    <p><span class="highlight">The Economist 6/1 头条</span>（HN 233 分、444 评论）：<em>"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?"</em>——三大独角兽合计 <span class="highlight">$2.5 万亿+ 估值</span>，集中 IPO 时二级市场流动性是否能消化？</p>
+    <p><span class="highlight">Polymarket 实时概率（6/2 晚）</span>：</p>
+    <table>
+      <tr><th>事件</th><th>概率</th></tr>
+      <tr><td>Anthropic 6 月底顶级 AI 模型</td><td><span class="highlight">81%</span></td></tr>
+      <tr><td>Anthropic 6 月底第二名 AI 模型</td><td><span class="highlight">82%</span></td></tr>
+      <tr><td>Largest Company end of June?</td><td>Anthropic 持续领先</td></tr>
+      <tr><td>Anthropic IPO closing market cap</td><td>高交易量</td></tr>
+      <tr><td>SpaceX IPO by September 30, 2026?</td><td>活跃</td></tr>
+    </table>
+    <p><span class="highlight">AI 代理 24/7 渗透预测市场</span>：Valory（Olas 协议）CEO David Minarsch 介绍 <span class="highlight">Polystrat</span>——24/7 在 Polymarket 自主交易的 AI 代理，单一交易最高回报率 376%。Olas 2026 年定位"<em>AI agent economy</em>"基建：</p>
+    <ul>
+      <li>Polymarket 上 <span class="highlight">30%+ 钱包已使用 AI 代理</span>（LayerHub 数据）</li>
+      <li>Polystrat 约一个月执行 4200+ 笔交易</li>
+      <li>零售用户通过 Olas 接入 Polystrat，可与对冲基金/做市商在 Polymarket 上对等竞争</li>
+    </ul>
+    <p><span class="highlight">CAISI 协议扩大</span>（MediaPost 6/2）：Google、Microsoft、xAI 即将把新 AI 模型送 CAISI（商务部下属）做 <em>pre-deployment 国家安全审查</em>。延续 2024 Biden 时代协议，2025 至今 AWS/Nvidia/OpenAI/SpaceX/Oracle/Microsoft 全部加入。Anthropic Mythos + OpenAI GPT-5.4-Cyber 在 4/7 与 4/14 接连发布——"<span class="warn">防御性安全模型</span>"是 2026 H1 产业新主轴。</p>
+    <p class="source">来源：The Economist / Polymarket / CoinDesk / AI Agent Store / MediaPost | 2026-03-15 → 2026-06-02</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. 行业基础设施：Groq 还在融钱 + Surface Laptop Ultra + Expanse GPU 市集</h2>
+  <div class="card">
+    <p><span class="highlight">Groq 仍在融钱</span>（zach.be 6/1，HN 75 分、33 评论）：<em>"How the hell is Groq raising more money?"</em>——Groq 已 $2B+ 收入、LPU 已被超大规模客户采用后仍在大额融资。核心论点：<strong>推理芯片市场未饱和</strong>，OpenAI/Anthropic/xAI 自研芯片+Google TPU+AWS Trainium 都在抢市场，Groq LPU 的"deterministic 低延迟推理"差异化仍被对延迟敏感的实时应用（编码 Agent、语音 Agent、机器人控制循环）买单。</p>
+    <p><span class="highlight">Microsoft Surface Laptop Ultra</span>（WindowsLatest 6/1，HN 191 分、401 评论）：搭载 NVIDIA RTX 50 系列的 MacBook Pro 形态直对标机。与 RTX Spark + DGX Station for Windows 形成完整"Windows-on-Arm + NVIDIA 加速器"硬件栈。</p>
+    <p><span class="highlight">Expanse (YC P26) 上 HN</span>（Launch HN 6/1，76 分、23 评论）：定位"wasted GPU capacity marketplace"——把企业未充分利用的 GPU 池（夜间、训练间隙、推理低谷）通过统一 API 转售给 AI 创业公司。与 RTX Spark 的"本地化"叙事互补：<span class="highlight">Expanse = 分布式云端 GPU 池；RTX Spark = 单机本地 GPU</span>。</p>
+    <p class="source">来源：zach.be / WindowsLatest / Hacker News | 2026-06-01</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. 社区与论文：Stanford CS336 AI Agent Guidelines + Edge vs 云端</h2>
+  <div class="card">
+    <p><span class="highlight">Stanford CS336 "AI Agent Guidelines"</span>（HN 6/1，375 分 + 124 评论）：`CLAUDE.md` "AI Agent Guidelines for CS336"成为本周最被讨论的"AI Agent 与教育"交互规则样本。CS336 课业接受 Claude Code 协助，但通过 CLAUDE.md 强约束。</p>
+    <p><span class="highlight">HN 5/31 顶贴"What If? AI in 2026 and Beyond"</span>（评论超 200 条）：核心论点<em>硬件 + 边缘系统 + 更小更高效模型 = 2026 H2 主轴</em>。与 Groq、Expanse、RTX Spark、Surface Laptop Ultra 形成"<span class="highlight">去中心化推理基础设施</span>"的同步叙事；与 Mythos + GPT-5.4-Cyber（云端+集中化）形成<em>张力</em>——<span class="warn">云端大模型 vs 边缘小模型将定义 2026 H2 的产品形态</span>。</p>
+    <p class="source">来源：cs336.stanford.edu / GitHub / Hacker News | 2026-05 → 2026-06</p>
+  </div>
+</section>
+
+<section>
+  <h2>6. GitHub Trending AI（2026-06-02 21:00）</h2>
+  <div class="card">
+    <table>
+      <tr><th>项目</th><th>类别</th><th>趋势</th></tr>
+      <tr><td>LangChain ⭐ 122.8k</td><td>Agent Framework</td><td>稳</td></tr>
+      <tr><td>OpenHands ⭐ 60.5k +196/天</td><td>Coding Agents</td><td>稳</td></tr>
+      <tr><td>MetaGPT ⭐ 59.6k +72/天</td><td>Multi-Agent</td><td>稳</td></tr>
+      <tr><td><strong>opencode (anomalyco) ⭐ 55.2k +1,049/天</strong></td><td>Coding Agents</td><td><span class="highlight">单日暴涨（与 Composer 2.5 + Grok Build 同步）</span></td></tr>
+      <tr><td>Cline ⭐ 49.0k +108/天</td><td>Coding Agents</td><td>稳</td></tr>
+      <tr><td>AutoGen ⭐ 48.2k +82/天</td><td>Multi-Agent</td><td>稳</td></tr>
+      <tr><td>Codex (openai) ⭐ 44.5k +600/天</td><td>Coding Agents</td><td><span class="highlight">OpenAI 上 AWS 后预计加速</span></td></tr>
+      <tr><td>CrewAI ⭐ 37.6k +151/天</td><td>Agent Framework</td><td>稳</td></tr>
+      <tr><td>awesome-ai-agents-2026 (caramaschiHG) ⭐ 1k+</td><td>资源汇总</td><td><span class="highlight">新增 170 PRs / 35 issues</span></td></tr>
+      <tr><td>Cursor ⭐ 30.9k</td><td>IDE-Native Agent</td><td>稳</td></tr>
+    </table>
+    <p class="source">来源：OSSInsight Trending AI | 2026-06-02 21:00</p>
+  </div>
+</section>
+
+<section>
+  <h2>7. 21evening 核心洞察（5 条）</h2>
+  <div class="card">
+    <ol>
+      <li><strong>xAI 6 月三日连发</strong>（CLI → API → Composer 2.5）让编码 Agent 市场在 Build 2026 后再度升温——xAI 是这一波最大变量</li>
+      <li><strong>Mythos 从"不敢发布" → "几周内全开"</strong>：Anthropic 找到 Mythos 类模型的安全护栏组合，OpenAI 同期用 GPT-5.4-Cyber 跟进</li>
+      <li><strong>AI 攻防同时进入工业级</strong>：AISLE 12/12 OpenSSL 零日（防御侧深度）+ Mythos 530 高严重漏洞 75 修复（防御侧广度）+ GTIG 确认 AI 辅助零日在野利用（攻击侧上周）= 攻防双饱和</li>
+      <li><strong>OpenAI 借 AWS 全云分发</strong>是 6 月最被低估的模型分发变化——跨云叙事开始分叉 Windows 操作系统化叙事</li>
+      <li><strong>预测市场 + AI 代理</strong> 进入实操层：Polystrat 在 Polymarket 24/7 自主交易，Olas 协议承担"AI agent economy"基建角色</li>
+    </ol>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-06-02 21:00 · 聚焦：模型发布动态、安全漏洞爆发、加密/预测市场讨论<br>
+  数据来源：xAI News / OpenAI Blog / The Register / Forbes / NYT / TechCrunch / CNBC / LessWrong (Stanislav Fort) / The Economist / MediaPost / CoinDesk / Polymarket / r/cybersecurity / Hacker News / WindowsLatest / zach.be / cs336.stanford.edu / OSSInsight
+</div>
+
+</body>
+</html>
