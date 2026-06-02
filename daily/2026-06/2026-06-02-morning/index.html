@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-02 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-02 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月2日 09:00 发布（采集自6月1日）</p>
+            <div class="meta">
+                <span class="tag tag-capital">资本转向</span>
+                <span class="tag tag-policy">国家标准</span>
+                <span class="tag tag-product">模型发布</span>
+                <span class="tag tag-security">安全警示</span>
+                <span class="tag tag-trend">论文前沿</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">5亿美元</div>
+                <div class="label">单月 Claude 账单烧穿</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">880亿美元</div>
+                <div class="label">小米三年 AI 投入</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">9道</div>
+                <div class="label">AlphaProof 一夜破解数学难题</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">万亿元</div>
+                <div class="label">中国具身智能 2026 市场规模</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">3.8%</div>
+                <div class="label">Claude 在 SaaS 办公真实通过率</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">60%</div>
+                <div class="label">AI 浏览器扩展漏洞率增幅</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：Token 经济学翻车 + 中国具身智能标准化 + 56 年数学难题</h3>
+            <p>美国大厂对 AI Token 消耗的态度从"鼓励多用"急转为"算账"——微软 6/30 前取消大部分 Claude Code 授权，亚马逊/DeepSeek/Uber/Duolingo/Meta 集体收缩。同期，中国具身智能首份国家标准 YD/6770—2026 于 6/1 正式生效，万亿市场进入"有标可依"时代。Google DeepMind AlphaProof Nexus 一夜连破 9 道数学难题，最老一道悬而未决 56 年。</p>
+            <p class="last">arXiv cs.AI/cs.MA 6/1 集中发布多 Agent 推理与具身智能新论文；SaaS-Bench 现实检验显示 Claude 在真实办公任务中完全通过率仅 3.8%；AI 浏览器扩展已成企业网络最大盲区，漏洞率比普通扩展高 60%。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>老黄的"Token 经济学"翻车：微软 6/30 前取消大部分 Claude Code 授权</h3>
+                <div class="source">来源：36氪 / 量子位 | 2026-06-01</div>
+                <div class="desc">
+                    微软宣布 <strong>6 月 30 日前</strong>取消 Experiences + Devices 部门（Windows、Microsoft 365、Outlook、Teams、Surface）的<strong>大部分 Claude Code 授权</strong>，工程师被要求迁移到自家 GitHub Copilot CLI。Claude Code 进入微软内部仅 6 个月。导火索是 Axios 报道：一家企业<strong>单月烧掉 5 亿美元 Claude 账单</strong>（约 34 亿元人民币）——因未设用量上限，老板给员工开通企业授权后 token 持续燃烧。Uber CTO 透露：工程师<strong>4 个月烧光全年 Claude Code 预算</strong>。Uber COO 公开表态：<span class="highlight">"AI Token 消耗与最终发布的有价值产品之间，似乎并不存在明显的线性关系。"</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>亚马逊 / Meta / Duolingo 集体收缩：内部 AI 排行榜全线取消</h3>
+                <div class="source">来源：36氪 / 量子位 | 2026-06-01</div>
+                <div class="desc">
+                    <strong>亚马逊</strong>取消内部 AI 使用排行榜——员工为冲榜疯狂刷 Token。<strong>Meta</strong>收紧相关激励，从"多用多刷"转向关注实际产出。<strong>Duolingo</strong>原计划将 AI 使用纳入员工绩效考核，因员工质疑"是否必须为了使用 AI 而使用 AI"而撤回决定。CEO："感觉我们不是在为实际结果负责，而是在试图强推一些并不总是适合的东西。" <span class="highlight">AI 第一次变成了财务问题。</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>具身智能首份国家标准 6/1 实施：万亿市场进入"有标可依"时代</h3>
+                <div class="source">来源：21财经 | 2026-06-01</div>
+                <div class="desc">
+                    工信部批准发布的 <strong>《YD/ 6770—2026 人工智能 关键基础技术 具身智能基准测试方法》</strong>于 <strong>2026 年 6 月 1 日</strong>起实施——这是具身智能领域<strong>首份行业标准</strong>，已同步推进国际标准立项。背景：党的二十届四中全会将具身智能列为"十五五"未来产业；2026 中国具身智能市场规模有望<strong>突破万亿元</strong>；十万台级别量产已在行业预期内。
+                </div>
+            </div>
+        </section>
+
+        <!-- 大厂动态 -->
+        <section class="section">
+            <div class="section-title">🏛️ 大厂动态</div>
+
+            <div class="card">
+                <h3>小米三年 880 亿美元 AI 投入：MiMo 开源代理能力全球第一</h3>
+                <div class="source">来源：36氪 / 量子位 | 2026-06-01</div>
+                <div class="desc">
+                    小米宣布未来三年投入 <strong>880 亿美元</strong>用于 AI 研发，覆盖智能手机和电动汽车两大业务线。基准测试机构 Artificial Analysis 排名显示，小米自研的 <strong>MiMo-V2.5-Pro</strong> 模型在开源代理 AI 能力上<strong>排名全球第一</strong>。小米成为继华为、阿里、字节之后又一家以"自研大模型 + 全栈硬件"打法进入 AI 主战场的中国大厂。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>宇树科技科创板 6/1 上会：天机智能 10 亿融资紧随其后</h3>
+                <div class="source">来源：极客公园 | 2026-06-01</div>
+                <div class="desc">
+                    人形机器人公司<strong>宇树科技于 6 月 1 日接受科创板上市审核</strong>，上会稿显示 2025 年营收约 17 亿元。同期<strong>天机智能</strong>（机器人"双手 + 小脑"，力控操作本体和运动控制系统）完成 <strong>10 亿元融资</strong>，估值接近百亿，由高瓴、美团、腾讯等投资。<strong>具脑磐石</strong>完成亿元级融资，押注少数派路线 JEPA 架构。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Google DeepMind AlphaProof Nexus：一夜连破 9 道数学难题</h3>
+                <div class="source">来源：36氪 | 2026-06-01</div>
+                <div class="desc">
+                    Google DeepMind 发布新的 AI 数学智能体 <strong>AlphaProof Nexus</strong>，一口气解决了 <strong>9 道悬而未决几十年的数学难题</strong>，其中最老的一道已经困扰数学家整整 <strong>56 年</strong>。这是继 AlphaProof、AlphaGeometry 之后 DeepMind 在形式化数学推理上的再次突破，意味着"AI 数学家"从竞赛级（IMO）迈向<strong>研究级</strong>长期未解问题。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>xmem 开源：AGM 信念修正记忆 API，一次 HTTP 调用管长期记忆</h3>
+                <div class="source">来源：AI 周报 | 2026-06-01</div>
+                <div class="desc">
+                    开源 SDK <strong>xmem</strong> 通过一次 HTTP 调用即可为 AI 智能体管理长期记忆，使用 AGM（信念修正）算法处理"智能体长期运行后记忆矛盾"这一老大难问题。配合同日发布的 Sponsio 合约执行层，开源 Agent 工具链在 6/1 集中补齐。
+                </div>
+            </div>
+        </section>
+
+        <!-- 论文与研究 -->
+        <section class="section">
+            <div class="section-title">📊 论文与研究</div>
+
+            <div class="card">
+                <h3>arXiv cs.AI/cs.MA 6/1 集中爆发：多 Agent 推理 + 具身智能</h3>
+                <div class="source">来源：arXiv | 2026-06-01</div>
+                <div class="desc">
+                    arXiv 6 月 1 日批量发布多篇 AI Agent 与具身智能相关论文，重点方向：<strong>多智能体安全（Multi-Agent Security）</strong>——agentic AI 跨主体交互时的级联失败、工具滥用；<strong>TRIP-Bench</strong>——Yuanzhe Shen 等提出，模拟真实世界长链路任务；<strong>RL + LLM 融合架构</strong>；<strong>具身 AI 的因果与反事实推理</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Zenodo 论文：代码库图使 LLM Token 使用量增加 54%</h3>
+                <div class="source">来源：Zenodo / AI 周报 | 2026-06-01</div>
+                <div class="desc">
+                    一项对 3000+ 文件规模编程项目的测试发现：给 AI 编码助手提供<strong>代码库结构图</strong>，反而让它<strong>每完成一个任务多消耗 54% Token</strong>。这与"上下文越丰富越好"的直觉相悖——<span class="highlight">结构图虽然带来全局视野，但 token 放大效应远超收益</span>。对追求 ROI 的工程团队意义重大。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Claude 通过率仅 3.8%：SaaS-Bench 撕碎"全自动办公"幻想</h3>
+                <div class="source">来源：量子位 | 2026-06-01</div>
+                <div class="desc">
+                    机构 UniPat AI 发布 <strong>SaaS-Bench</strong> 评测：Claude 等主流大模型在真实 SaaS 办公任务中<strong>完全通过率最高只有 3.8%</strong>。意味着"AI 全自动办公"在 2026 年仍是幻梦，AI 现阶段更适合做 Copilot 而非 Autopilot。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>arXiv 论文：统一十年 AI 鲁棒性研究——三种主流方法本质同一件事</h3>
+                <div class="source">来源：arXiv / AI 周报 | 2026-06-01</div>
+                <div class="desc">
+                    新论文给出<strong>形式化证明</strong>：对抗训练、认证防御、随机平滑三种主流 AI 鲁棒性方法在数学核心上其实都在计算同一个东西——<strong>Gram 矩阵</strong>。这一结论可能颠覆过去十年 AI 安全研究的认知，提示研究者关注"问题等价性"而非堆叠新方法。
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>AI 浏览器扩展：企业网络最大盲区，漏洞率比普通扩展高 60%</h3>
+                <div class="source">来源：The Hacker News / LayerX 报告 | 2026-06-01</div>
+                <div class="desc">
+                    LayerX 新报告揭示 <strong>AI 浏览器扩展</strong>已成企业网络最危险的 AI 攻击面（且无人在监控）：<span class="highlight">存在漏洞的概率高 60%、访问 Cookie 高 3 倍、执行远程脚本高 2.5 倍、增加权限高 6 倍</span>。99% 企业用户至少安装 1 个浏览器扩展，超过 1/4 用户安装 10+ 个。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI 指令审查员削弱人类安全警觉性：6 个月观察研究</h3>
+                <div class="source">来源：AI 周报 | 2026-06-01</div>
+                <div class="desc">
+                    一项 6 个月的长期观察研究：让 AI 审查员检查每一个生产指令后，团队成员<strong>不再把 AI 的批准当作安全过滤，而是当成了行动许可</strong>。研究人员警告：AI 安全工具若未设计"显式询问"机制，可能反而扩大安全风险。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本与商业 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>量坤科技：数亿元天使轮，AI4S 需要"量子级精度数据"</h3>
+                <div class="source">来源：36氪 | 2026-06-01</div>
+                <div class="desc">
+                    量子计算公司量坤科技完成<strong>数亿元天使轮、天使+轮融资</strong>，英诺天使基金领投，国汽投资、北工投资、BV 百度风投、水木清华校友基金、明势创投等参与。核心判断：<strong>AI for Science 需要量子计算</strong>——量子计算作为高精度求解器，可为 AI4S 模型提供量子级精度的训练数据。创始人吕定顺（清华首批量子计算博士、华为/字节 AI4S Lab 七年）将量子算法、AI 模型和行业 workflow 封装为可调用的"科学智能体"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>教皇利奥发布通谕《伟大的人性》：警告 AI 时代的"非人化"</h3>
+                <div class="source">来源：综合 | 2026-06-01</div>
+                <div class="desc">
+                    教皇利奥发布 <strong>4.3 万字通谕《伟大的人性》</strong>，核心警告：<span class="highlight">技术不能把人简化成数据和绩效</span>。教皇特别担心两件事——就业和战争，呼吁全球 AI 治理需建立"以人为中心"的底线。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Token 经济学翻车：</strong>微软 6/30 前取消大部分 Claude Code 授权，亚马逊/DeepSeek/Uber/Duolingo/Meta 集体收缩</li>
+                    <li><strong>具身智能国家标准 6/1 实施：</strong>YD/6770—2026 首份行业标准生效，万亿市场进入"有标可依"时代</li>
+                    <li><strong>小米 880 亿美元 AI 投入：</strong>MiMo-V2.5-Pro 开源代理能力全球第一</li>
+                    <li><strong>宇树科技科创板 6/1 上会：</strong>具身智能赛道第一股冲刺，2025 营收 17 亿元</li>
+                    <li><strong>AlphaProof Nexus：</strong>Google DeepMind 一夜连破 9 道数学难题，最老一道悬而未决 56 年</li>
+                    <li><strong>AI 浏览器扩展漏洞高 60%：</strong>LayerX 报告揭示企业网络最大盲区</li>
+                    <li><strong>arXiv 6/1 集中爆发：</strong>多 Agent 推理 + 具身智能 + 鲁棒性统一理论</li>
+                    <li><strong>SaaS-Bench 现实检验：</strong>Claude 等主流模型在真实办公任务中完全通过率仅 3.8%</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：36氪 · 量子位 · 21财经 · 极客公园 · 36氪研究院 · arXiv · The Hacker News · AI 周报 · LayerX</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-02 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
