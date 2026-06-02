@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午间情报 2026-06-02 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #10b981;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(105, 219, 124, 0.08));
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-02 午间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业午间快报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月2日 12:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-product">Build 2026</span>
+                <span class="tag tag-trend">RTX Spark</span>
+                <span class="tag tag-capital">资本轮动</span>
+                <span class="tag tag-policy">EU AI Act</span>
+                <span class="tag tag-security">安全警示</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-green">
+                <div class="number">6,144</div>
+                <div class="label">RTX Spark CUDA 核数</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">15种</div>
+                <div class="label">MAI-Voice-2 新增语言</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">$1.5亿</div>
+                <div class="label">Wonderful B 轮</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">$9650亿</div>
+                <div class="label">Anthropic 估值首超 OpenAI</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">$200亿</div>
+                <div class="label">Quantinuum 目标 IPO 估值</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">6/27</div>
+                <div class="label">GPT-4.5 退役日</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：Microsoft Build 2026 开幕 + RTX Spark 量产 + Agent 部署平台成新主战场</h3>
+            <p>Microsoft Build 2026 6/2 在旧金山正式开幕，MAI-Image-2.5 / MAI-Voice-2 / MAI-Transcribe-1.5 三连发，Copilot Wave 3 同步登场并把 Anthropic Claude Cowork 集成进企业工作流。NVIDIA 同期在 Computex 正式发布 RTX Spark——首款 Windows-on-Arm 本地 Agent SoC（6,144 CUDA 核 + 20 核 Grace CPU + 128GB 统一内存），微软/联想/HP/戴尔/华硕今年下半年出货。</p>
+            <p class="last">资本侧出现明确轮动：Wonderful B 轮 €1.298 亿、Anthropic 估值 $9650 亿首超 OpenAI，VC 正从"基础模型"轮动到"企业级 Agent 部署平台"。政策端，EU AI Act 8 月合规节点逼近 + Digital Omnibus 中央集权化，叠加 FLI 最新 AI Safety Index 把 Google DeepMind 排在 OpenAI 之后。</p>
+        </div>
+
+        <!-- 头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Microsoft Build 2026 开幕：MAI 三连发，Copilot Cowork 集成 Anthropic</h3>
+                <div class="source">来源：Microsoft Build 官网 / TestingCatalog / TimesOfAI | 2026-06-02</div>
+                <div class="desc">
+                    Build 2026 于 6/2-3 在旧金山 Fort Mason Center 召开，Satya Nadella 主题演讲聚焦 AI Agents、GitHub Copilot、Azure AI Foundry、Windows 本地 AI。<strong>MAI 模型家族三连发</strong>：<strong>MAI-Image-2.5</strong>（5/26 已在 LM Arena 文生图榜 #3，分数 1254，比 2.0 +72）；<strong>MAI-Voice-2</strong>（多语种 TTS，<span class="highlight">支持 15 种新语言</span>，更广情绪频谱）；<strong>MAI-Transcribe-1.5</strong>（25 种语言 WER 最低模型）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>NVIDIA RTX Spark 量产：本地 Agent 的"Apple Silicon 时刻"</h3>
+                <div class="source">来源：NVIDIA Newsroom / CNBC / IGN | 2026-05-31 → 2026-06-01</div>
+                <div class="desc">
+                    NVIDIA 在 Computex 2026 正式发布 <strong>RTX Spark</strong>——与微软共同开发的首款面向 Windows-on-Arm 笔记本/迷你 PC 的 SoC。<strong>6,144 CUDA cores + 20 核 Grace CPU + 128GB 统一内存</strong>，NVLink-C2C 互联。<strong>首批 OEM</strong>：Microsoft、Lenovo、HP、Dell、ASUS，今年下半年出货。配套硬件 <strong>DGX Station for Windows</strong>——把万亿参数 AI 超级计算机放到每个企业桌面上。NVIDIA 同步发布 <strong>DLSS 4.5 Ray Reconstruction</strong>（8 月上线）、1000Hz G-Sync 显示器。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Copilot Wave 3 + Copilot Cowork：把 Anthropic 装进企业工作流</h3>
+                <div class="source">来源：Microsoft Tech Community | 2026-03-09 / 2026-06-02</div>
+                <div class="desc">
+                    Wave 3 核心是 <strong>Copilot Cowork</strong>——基于 Anthropic Claude Cowork 技术，允许用户<strong>委托多步骤任务，全程留在 loop 中</strong>。同场发布：<strong>Agent 365</strong>（企业级 AI agent 控制平面）、<strong>Edit with Copilot</strong>（在 Word/Excel/PowerPoint 内通过 "Work IQ" 上下文直接创建/编辑/精修内容）、<strong>Microsoft 365 E7 "Frontier Suite"</strong>（Copilot + Agent 365 捆绑包）。<span class="highlight">这是微软第一次把 Anthropic 推理能力作为企业级默认集成进核心套件</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 大厂动态 -->
+        <section class="section">
+            <div class="section-title">🏛️ 大厂动态</div>
+
+            <div class="card">
+                <h3>OpenAI 退役日历：GPT-4.5 6/27、o3 8/26 离开 ChatGPT</h3>
+                <div class="source">来源：OpenAI Help Center | 2026-05-05</div>
+                <div class="desc">
+                    OpenAI 公布模型退役时间表：<strong>GPT-4.5 在 ChatGPT 中 6/27 退役</strong>（90 天 sunset period）；<strong>OpenAI o3 在 ChatGPT 中 8/26 退役</strong>。GPT-5.5 Instant 已成 ChatGPT 新默认模型（5/5 切换），API 通过 <code>chat-latest</code> 标签访问。GPT-3 时代的旧模型正在批量退出历史舞台。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>ASUS COMPUTEX 2026：采用 NVIDIA DSX AI Factory 平台</h3>
+                <div class="source">来源：ASUS Press / PRNewswire | 2026-06-02</div>
+                <div class="desc">
+                    ASUS 6/2 在 Computex 2026 发布全栈 AI 基础设施方案，采用 NVIDIA DSX AI Factory 平台，重点加速企业 AI Factory 部署时间。Lexar 同步推出"AI Storage Core"愿景，专为 AI PC 与边缘计算设计存储能力。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>资本轮动：企业 AI Agent 部署平台从"风投边缘"升级为"主战场"</h3>
+                <div class="source">来源：Angel Investors Network / LinkedIn | 2026-03</div>
+                <div class="desc">
+                    <strong>Wonderful</strong>（阿姆斯特丹企业 AI agent 平台）3 月完成 Insight Partners 领投的 <strong>€1.298 亿 B 轮（$1.5 亿）</strong>，估值 €17 亿——<span class="highlight">机构资本正从基础模型轮动至企业级 Agent 部署平台</span>。Wonderful 的差异化："model-agnostic by design"，为每个 workflow 选最佳模型。VC 视角判断：<strong>企业 AI 真正的赢家不是构建最好 transformer 的人，而是最好的部署平台</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 估值 $9650 亿首超 OpenAI，SME 入口打开</h3>
+                <div class="source">来源：Business Insider / Anthropic | 2026-05-13 → 2026-05-29</div>
+                <div class="desc">
+                    5/29 报道：<strong>Anthropic 最新融资估值 $9650 亿，首次超越 OpenAI 同期 $8500 亿估值</strong>。融资规模 $300 亿+，Bloomberg 称本轮可能在 5 月底前关闭。<strong>Claude for Small Business</strong>（5/13 发布）集成 QuickBooks/PayPal/HubSpot/Canva/Docusign/Google Workspace/Microsoft 365 + 15 个 ready-to-run agentic workflow，打开 SME 入口。
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策 -->
+        <section class="section">
+            <div class="section-title">📜 政策与监管</div>
+
+            <div class="card">
+                <h3>EU AI Act 8/2026 合规截止日逼近 + Digital Omnibus 中央集权化</h3>
+                <div class="source">来源：EU Parliament / Holland & Knight / DLA Piper | 2026-04 → 2026-05</div>
+                <div class="desc">
+                    美国公司在欧盟 AI Act 关键合规节点逼近（<strong>8/2026</strong>），最高罚款 <strong>€3500 万或全球营收 7%</strong>。同期，欧盟 11/2025 推出的 <strong>Digital Omnibus on AI</strong> 修正案<strong>进一步中央集权执法</strong>——不再依赖各成员国分散执行。AI Pact 自愿合规框架仍开放。GPAI Code of Practice（7/10/2025 发布）+ 7/18 通用 AI 模型指南构成合规基础。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>FLI AI Safety Index：Google DeepMind 落后于 OpenAI</h3>
+                <div class="source">来源：Future of Life Institute | 2026-05</div>
+                <div class="desc">
+                    Future of Life Institute 最新 AI Safety Index：<strong>Google DeepMind 在安全框架上得分落后于 OpenAI</strong>。FLI 同步推出 <strong>"Pro-Human AI Declaration"</strong> 运动，呼吁全球 AI 协议。<strong>Florida 州长 DeSantis</strong> 签署行政命令，要求州机构与 FLI 合作保护家庭免受 AI 危害。
+                </div>
+            </div>
+        </section>
+
+        <!-- 中文圈 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 中文圈</div>
+
+            <div class="card">
+                <h3>量子计算 IPO 潮：Quantinuum 200 亿冲刺纳斯达克，中国"悟空-180"开跑</h3>
+                <div class="source">来源：钛媒体 | 2026-05</div>
+                <div class="desc">
+                    钛媒体深度分析：<strong>Quantinuum</strong>（霍尼韦尔 + 剑桥量子合并）5/9 提交 S-1，目标纳斯达克，估值 <strong>约 200 亿美元</strong>——量子计算领域史上最大 IPO。Helios 系统演示 48 个完全纠错逻辑比特（保真度 99.99%，编码率 2:1），2026 年唯一达此指标的商用系统。<strong>中国镜像</strong>：2026 Q1 国内量子融资约 33 亿元（已超 2025 全年），玻色量子 10 亿 B 轮、量旋科技 6 亿 C+ 轮密集落地。本源量子 "悟空-180"（180 物理比特）已上线面向全球开放。<span class="highlight">两种叙事：美国"资本先行" vs 中国"政策驱动 + 全栈自主"</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>量子位观察：复旦×通义 CUA 训练新范式 + 清华系"智能算力电网"</h3>
+                <div class="source">来源：量子位 | 2026-05</div>
+                <div class="desc">
+                    复旦 × 通义联合提出<strong>全新 CUA（Computer-Use Agent）训练范式</strong>，解决"别光给 Agent 加 Tool 了，它根本选不明白"的核心痛点。同期，清华系团队给大模型<strong>织了一张"智能算力电网"</strong>，调度推理算力。比亚迪 4nm 自研 AI 芯片对标英伟达，算力"拉爆"特斯拉。
+                </div>
+            </div>
+        </section>
+
+        <!-- 论文 -->
+        <section class="section">
+            <div class="section-title">📊 论文与研究</div>
+
+            <div class="card">
+                <h3>arXiv cs.AI 5/29-6/1 热门：多 Agent 推理 + 推理缩放</h3>
+                <div class="source">来源：arXiv cs.AI recent | 2026-05-29 → 2026-06-01</div>
+                <div class="desc">
+                    <strong>LinTree</strong> (2605.31492)：用显式结构化搜索历史提升 LLM 推理；<strong>FAM-Bench</strong> (2605.31410)：Food-as-Medicine 多模态推理基准；<strong>HypoAgent</strong> (2605.31370)：基于知识图谱的交互式假设生成 Agent；<strong>Learning to Adapt</strong> (2605.31365)：自改进 Web Agent，认知感知探索；<strong>TraceGraph</strong> (2605.31308)：Agent 轨迹诊断与改进的共享决策图；<strong>UniScale</strong> (2605.30898)：通过模型路由 + 测试时缩放联合优化实现自适应推理缩放；<strong>COMPASS</strong> (2605.30838)：认知 MCTS 引导的 Process Alignment for 安全搜索 Agent。
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>AI 浏览器扩展：企业网络最大盲区（延续早报警示）</h3>
+                <div class="source">来源：LayerX / The Hacker News | 2026-06-01</div>
+                <div class="desc">
+                    LayerX 报告：<strong>AI 浏览器扩展</strong>存在漏洞概率高 60%、访问 Cookie 高 3 倍、执行远程脚本高 2.5 倍、增加权限高 6 倍。99% 企业用户至少安装 1 个扩展，超 1/4 用户装 10+ 个。<span class="highlight">这是 6/2 仍需警惕的企业级 AI 攻击面</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Microsoft Build 2026 开幕：</strong>MAI-Image-2.5 / MAI-Voice-2 / MAI-Transcribe-1.5 三连发 + Copilot Wave 3 + Copilot Cowork（集成 Anthropic）</li>
+                    <li><strong>NVIDIA RTX Spark 量产：</strong>6,144 CUDA 核 + 20 核 Grace CPU，128GB 统一内存，OEM 下半年出货</li>
+                    <li><strong>企业 AI Agent 平台成新主战场：</strong>Wonderful B 轮 €1.298 亿，VC 资本从基础模型轮动到部署平台</li>
+                    <li><strong>Quantinuum 200 亿美元冲刺纳斯达克：</strong>量子计算史上最大 IPO，中国"悟空-180"镜像发力</li>
+                    <li><strong>EU AI Act 8 月合规节点逼近：</strong>Digital Omnibus 中央集权化，最高罚款 €3500 万</li>
+                    <li><strong>OpenAI 退役日历：</strong>GPT-4.5 6/27、o3 8/26 离开 ChatGPT</li>
+                    <li><strong>Anthropic 估值 $9650 亿首超 OpenAI：</strong>Claude for Small Business 打开 SME 入口</li>
+                    <li><strong>arXiv 5/29-6/1 多 Agent 推理集中爆发：</strong>LinTree / HypoAgent / TraceGraph / UniScale / COMPASS</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：Microsoft Build 官网 · NVIDIA Newsroom · TestingCatalog · TimesOfAI · TechCrunch · 36氪 · 量子位 · 钛媒体 · Angel Investors Network · EU Parliament · Future of Life Institute · arXiv cs.AI · LayerX · CNBC · IGN</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-02 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
