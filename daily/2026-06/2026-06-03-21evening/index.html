@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-06-03</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .card p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+  .pill { display: inline-block; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-right: 4px; }
+  strong { color: #fff; }
+  ul { margin: 8px 0 8px 20px; font-size: 14px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 6 月 3 日 · Mythos 6/2 扩 150 组织 + MAI-Code-1-Flash 落 GitHub Copilot + Groq 转型 inference neocloud + OpenAI 加密推理 blob 外泄 + Polystrat 24/7 预测市场代理</div>
+</header>
+
+<section>
+  <h2>1. 模型动态：Mythos 6/2 扩 Glasswing 150 组织 + MAI-Code-1-Flash 6/2 上 GitHub Copilot + Opus 4.8 二次回顾</h2>
+  <div class="card">
+    <p><span class="highlight">Anthropic 6/2 扩 Project Glasswing 150 组织、Mythos 累计已找 10,000+ 高/严重漏洞</span>（CNBC / CyberScoop / SecurityWeek / Engadget 同日报道）——从 4 月初的 50 家伙伴（Apple/Amazon/Microsoft/CrowdStrike/Palo Alto Networks 等）扩到 6/2 约 <span class="highlight">150 个分布在 15 国的新组织</span>（关键基础设施 + 金融 + 政府等 Mythos 4 月初 cohort 未充分代表的行业）。</p>
+
+    <p><span class="highlight">核心数据更新</span>：</p>
+    <table>
+      <tr><th>指标</th><th>4 月初</th><th>5/25 报告</th><th>6/2 公告</th></tr>
+      <tr><td>Mythos 伙伴数</td><td>~50</td><td>~50</td><td><span class="highlight">~200</span></td></tr>
+      <tr><td>Mythos 累计找洞数</td><td>数千</td><td>530 高/严重</td><td><span class="highlight">10,000+ 高/严重</span>（2 个月 20x）</td></tr>
+      <tr><td>Cloudflare 单独</td><td>-</td><td>-</td><td><span class="highlight">2,000 关基 bug / 400 高/严重</span></td></tr>
+    </table>
+
+    <p><span class="highlight">关键 quotes</span>：</p>
+    <ul>
+      <li><strong>Cloudflare 反馈</strong>："identified 2,000 bugs across its critical-path systems, including 400 rated high or critical, <span class="highlight">with a false-positive rate the company described as better than that of human testers</span>" ——首次公开量化"AI 找洞 > 人类"在误报率维度</li>
+      <li><strong>CSA + SANS + OWASP 联合报告</strong>："organizations are 'likely to be overwhelmed' in the near term by threat actors using AI to find and exploit vulnerabilities faster than defenders can patch them"</li>
+      <li><strong>Anthropic 官方</strong>："we're working as quickly as we can to safely release Mythos-level capabilities to the public" —— 全面 GA 时间未给出具体日期</li>
+    </ul>
+    <p class="source">来源：Anthropic Glasswing 公告 | CyberScoop | SecurityWeek | Engadget | CNBC | 2026-06-02</p>
+  </div>
+
+  <div class="card">
+    <p><span class="highlight">Microsoft 6/2 端出 MAI-Code-1-Flash</span>（microsoft.ai/news + GitHub Blog Changelog + HN id=48374466 / 368 分 / 171 评论）——Microsoft's latest small-tier coding model，已在 GitHub Copilot 全档（Free/Pro/Pro+/Max）VS Code 上线：</p>
+
+    <p><span class="highlight">Model Card 关键参数</span>：</p>
+    <table>
+      <tr><th>字段</th><th>值</th></tr>
+      <tr><td>总参数</td><td><span class="highlight">137B</span></td></tr>
+      <tr><td>活跃参数</td><td><span class="highlight">5B</span>（MoE）</td></tr>
+      <tr><td>上下文</td><td><span class="highlight">256K tokens</span></td></tr>
+      <tr><td>训练数据截止</td><td>2025-12</td></tr>
+      <tr><td>训练时间</td><td>2026-03 → 2026-05</td></tr>
+      <tr><td>Release date</td><td>2026-06-02</td></tr>
+      <tr><td>训练 harness</td><td><span class="highlight">直接用 GitHub Copilot 生产 harness</span></td></tr>
+      <tr><td>数据来源</td><td><span class="highlight">end-to-end 干净 + 适当授权数据</span></td></tr>
+    </table>
+
+    <p><span class="highlight">核心基准</span>：</p>
+    <ul>
+      <li><strong>SWE-Bench Pro：51%</strong>（仅 5B 活跃参数）</li>
+      <li>Microsoft 自家 benchmark：<span class="highlight">outperforms Claude Haiku 4.5</span>（橙）"across benchmarks, with higher pass rates and lower token use in the highlighted 'Ideal Zone'"</li>
+      <li>训练方法对比：<strong>offline 提升直接转入 production 开发者质量</strong>（"trained directly with the GitHub Copilot harness used in production"）</li>
+      <li>集成：Microsoft Foundry / Azure / GitHub Copilot / Visual Studio Code</li>
+    </ul>
+
+    <p><span class="highlight">与 Build Day2 MAI-Thinking-1 组合的战略含义</span>：</p>
+    <table>
+      <tr><th>维度</th><th>MAI-Code-1-Flash（6/2 落地）</th><th>MAI-Thinking-1（Build Day2 首发）</th></tr>
+      <tr><td>定位</td><td>小型编码模型</td><td>通用推理模型</td></tr>
+      <tr><td>规模</td><td>137B 总 / 5B 活跃</td><td>35B 活跃</td></tr>
+      <tr><td>上下文</td><td>256K</td><td>128K</td></tr>
+      <tr><td>部署位置</td><td>GitHub Copilot 全档</td><td>Azure Maia 200 / M365 Copilot Agent Mode</td></tr>
+      <tr><td>价位</td><td>消费级（Free/Pro/Pro+/Max）</td><td>企业级（Azure 折扣）</td></tr>
+      <tr><td>直接对手</td><td>Claude Haiku 4.5</td><td>Claude Sonnet 4.6</td></tr>
+    </table>
+
+    <p><span class="highlight">"两步棋"洞察</span>：6/3 evening 报道 GitHub 6/1 把 Copilot 改成 token 计量（4.7M 用户账单 25-50x 上涨），6/2 微软紧接着上 MAI-Code-1-Flash ——<span class="warn">token 计量改革与 MAI-Code-1-Flash 不是两件事，是同一件事的两步</span>：① 6/1 收回成本 ② 6/2 提供低成本选项。Copilot 用户可用 MAI-Code-1-Flash 处理 80% agentic 会话，Opus 4.8 / GPT-5.5 处理 20% 高难度任务。</p>
+    <p class="source">来源：Microsoft AI News | GitHub Blog Changelog | microsoft.ai PDF Model Card | HN id=48374466 | 2026-06-02</p>
+  </div>
+
+  <div class="card">
+    <p><span class="highlight">Claude Opus 4.8 二次回顾</span>（5/28 公告 + Artificial Analysis / Vellum / TechCrunch / MLQ.ai）——Anthropic 5/28 发布的 Opus 4.8 在 21evening 当日仍是 AA Intelligence Index #1：</p>
+    <ul>
+      <li><strong>AA Intelligence Index：61.4</strong>（vs GPT-5.5 60.2，<span class="highlight">67% 胜率</span>）</li>
+      <li><strong>SWE-Bench Pro：69.2%</strong>（vs GPT-5.5 58.6% / Opus 4.7 64.3%）</li>
+      <li><strong>GDPval-AA：1,890</strong>（+137 vs Opus 4.7 / +121 vs GPT-5.5 xhigh）</li>
+      <li><strong>Legal Agent Benchmark：首次破 10%</strong>（all-pass 标准）</li>
+      <li><strong>alignment 评级</strong>："similar to our best-aligned model, Claude Mythos Preview"——首次 GA Claude 达到 Mythos-class alignment</li>
+      <li>首发 <span class="highlight">dynamic workflows</span>（parallel sub-agent orchestration，hundreds of sub-agents in parallel）</li>
+    </ul>
+    <p><span class="highlight">Anthropic 6 月主线</span>：5/19 KPMG 联盟 → 5/28 Opus 4.8 + "不广告"声明 → 6/2 Glasswing 扩 150 组织 → S-1 递交 + 估值 $900B——为资本市场叙事提供"非纯商业"故事线。</p>
+    <p class="source">来源：Anthropic News | Artificial Analysis | Vellum | TechCrunch | MLQ.ai | 2026-05-28</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 安全攻防：AI 防御侧工业化临界点已过 + OpenAI 加密推理 blob 外泄</h2>
+  <div class="card">
+    <p><span class="highlight">Mythos 累计 10,000+ 漏洞 + Cloudflare "AI 误报率低于人类"</span>——2 个月内从 530 增长到 10,000+ 的 20x 跃升，<span class="warn">防御侧 AI 工业化的临界点已过</span>。Cloudflare 作为 web 基础设施公司，其关基系统已经过多年人类 + 传统 fuzzing 测试，Mythos 仍能找出 2,000 个 bug 且误报率比人类低 = <span class="highlight">Mythos 的"假阳性 / 假阴性"比都超过人类测试员</span>——首次公开量化"AI > 人类"在错误率维度的数据。</p>
+
+    <p><span class="highlight">Mythos vs AISLE 模式对照</span>：</p>
+    <table>
+      <tr><th>维度</th><th>Mythos（Anthropic）</th><th>AISLE（Stanislav Fort）</th></tr>
+      <tr><td>范围</td><td>跨企业全栈（Cloudflare + Apple + Amazon + Microsoft + 150 新组织）</td><td>单一产品（OpenSSL）</td></tr>
+      <tr><td>深度</td><td>跨代码库</td><td><strong>12/12 全收 + 25-27 年藏洞 + 1 个比项目还老</strong></td></tr>
+      <tr><td>数量</td><td><span class="highlight">10,000+</span>（6/2 累计）</td><td>13/14（2025 全年 OpenSSL）</td></tr>
+      <tr><td>修复</td><td>530→75 (5/25) → 部分（6/2）</td><td>5/12 修复 + 24+ curl PR</td></tr>
+      <tr><td>误报率</td><td><span class="highlight">比人类测试员低</span>（Cloudflare 反馈）</td><td>较低（curl 5 个真实 CVE + 30+ 报告）</td></tr>
+    </table>
+
+    <p><span class="highlight">结构信号</span>：Mythos = "广度 + 低误报率"（跨企业可量产）；AISLE = "深度 + 形式化方法"（单产品可全收）——<span class="warn">两种模式互补</span>：Mythos 给全行业"装雷达"，AISLE 给单产品"做核磁"。</p>
+  </div>
+
+  <div class="card">
+    <p><span class="highlight">OpenAI 加密推理 blob 签名怪异事</span>（cryptography engineering 5/29 + HN id=48321210 / 152 分 / 32 评论）——OpenAI 在 API 响应里返回<span class="highlight">带签名的"思维链 opaque blob"</span>，要求客户端原样回传以保持推理上下文连续性：</p>
+    <ul>
+      <li><strong>关键发现</strong>：OpenAI 在 LLM 的"thinking block"里加签名——"What in the world was a signature doing in an LLM's 'thinking' block?"</li>
+      <li>OpenAI 官方文档："this data contains opaque reasoning, and that you're not meant to look at it; you're just supposed to ship it back to the server on the next turn"</li>
+      <li>cryptography engineer <strong>被 OpenAI 认证为 "cyber researcher"</strong>（"this also got me certified as an OpenAI 'cyber researcher' which is something that doesn't happen every day"）</li>
+      <li>暴露的具体问题：<span class="warn">签名 blob 内部包含可读 "thinking text"</span>——OpenAI reasoning 模型在客户端 / 网络层暴露了 thinking 文本，与"opaque + 加密"的官方承诺不符</li>
+    </ul>
+
+    <p><span class="highlight">与其他 AI 厂商对照</span>：</p>
+    <table>
+      <tr><th>厂商</th><th>reasoning 模式</th></tr>
+      <tr><td>OpenAI o-series + 5.5 之后</td><td><span class="highlight">签名 blob 模式（独有设计）</span></td></tr>
+      <tr><td>Anthropic Claude Extended Thinking</td><td>thinking 块直接明文返回客户端</td></tr>
+      <tr><td>Google Gemini Thinking</td><td>类似 Anthropic 模式，明文</td></tr>
+      <tr><td>xAI Grok Reasoning</td><td>明文 + tool_use 状态</td></tr>
+      <tr><td>OpenAI o-series（5/5 之前的 o1/o3）</td><td>明文 thinking</td></tr>
+    </table>
+
+    <p><span class="highlight">与 6/3 evening 已写的 "OpenAI Goblins 失控"对照</span>：</p>
+    <ul>
+      <li><strong>Goblins 6/2</strong>：OpenAI 模型在答案中频繁出现 goblins 词汇（训练时多代际累积偏差）</li>
+      <li><strong>加密推理 5/29</strong>：OpenAI 在 thinking 阶段用签名 blob 但 blob 内 thinking 文本实际可见</li>
+      <li><strong>共同主题</strong>：<span class="warn">OpenAI 模型行为层 / 透明度层 / 推理层</span>在三周内<span class="warn">连续出现 3 次"内部状态外泄"事件</span>（Goblins 答案层 + 加密推理思维链层 + 模型安全 GTIG 攻击侧）</li>
+    </ul>
+    <p class="source">来源：cryptography engineering | HN id=48321210 | X @betterhn20 | 2026-05-29</p>
+  </div>
+
+  <div class="card">
+    <p><span class="highlight">Exchange 0-Day CVE-2026-42897 后续 + 6 月攻击侧多线并进</span>（thehackernews weekly recap 6/1）——接昨日 21evening Exchange CVE-2026-42897 已在野利用，6 月安全态势进一步升级：</p>
+    <ul>
+      <li><strong>MiniPlasma Windows 0-Day</strong>——SYSTEM 权限提升，<span class="highlight">fully patched systems 受影响</span></li>
+      <li><strong>codexui-android npm Supply Chain Attack</strong>——<span class="warn">OpenAI Codex authentication tokens 被盗</span>（直接对 Build 2026 Codex 上 AWS Bedrock 时期的开发者攻击）</li>
+      <li><strong>Megalodon GitHub Attack</strong>——针对 5,561 repos 的恶意 CI/CD workflow worm</li>
+      <li>Microsoft Defender 两个 0-Day 在野利用</li>
+      <li>Palo Alto GlobalProtect VPN 认证绕过 CVE-2026-0257</li>
+    </ul>
+    <p><span class="highlight">6/2-6/3 安全态势总结</span>：</p>
+    <ul>
+      <li>攻击侧：AI 辅助零日 + 供应链 + 邮件 + VPN + Windows 系统层<span class="warn">多线并进</span></li>
+      <li>防御侧：Mythos 10,000+ 漏洞 + Cloudflare "误报率低于人类"</li>
+      <li><span class="warn">AI 攻防范式分裂进入 6 月新阶段</span>——不再是"AISLE 单点突破 + Mythos 报告"，而是"AI 找洞 + AI 攻击 + 人类修洞"三线同时加速</li>
+    </ul>
+    <p class="source">来源：thehackernews weekly recap | 2026-06-01 → 06-02</p>
+  </div>
+</section>
+
+<section>
+  <h2>3. 资本与算力：Groq 5/28-29 拿 $650M 转型 inference neocloud + Anthropic 6 月主线</h2>
+  <div class="card">
+    <p><span class="highlight">Groq 5/28-29 拿到 $650M 新融资、Nvidia $20B licensing 后转型 inference neocloud</span>（TechCrunch / Axios / AIWeekly / IntuitionLabs / Yahoo Finance）——在 Nvidia 2025/12 $20B licensing deal（拿到 LPU 技术 + 关键人员）后，5/28-29 拿到 $650M 新融资，<span class="highlight">新任 CEO Adam Winter 推动转型</span>：从 LPU 硬件厂商→inference neocloud，运营自家 LPU 芯片的云推理服务。</p>
+
+    <p><span class="highlight">关键事实</span>：</p>
+    <ul>
+      <li>5/28-29 新轮：$650M 融资（Disruptive 等现有投资人）</li>
+      <li>估值：post-money <span class="highlight">$6.9B</span>（与 2025/9 Series E 同估值——投资人没被 licensing deal 吓跑）</li>
+      <li>Nvidia $20B licensing deal 结构：Nvidia 拿到 Groq LPU 技术 + 关键人员 → Groq 法人实体保留 → Groq 转型云推理服务</li>
+      <li><span class="warn">2.9x 估值差</span>：Nvidia $20B 收购 Groq assets 隐含 $58B 估值（远高于 $6.9B 当时），是 strategic premium 收编 inference 竞争者</li>
+      <li>高管大换血：Senior leadership 大批离职去 Nvidia</li>
+      <li>运营模式：<span class="highlight">不再做硬件研发</span>，转 cloud inference（对标 CoreWeave / Lambda 等 neocloud）</li>
+    </ul>
+
+    <p><span class="highlight">与 Build Day2 算力叙事对照</span>：</p>
+    <ul>
+      <li>Build Day2 宣布 Stargate Michigan $56B 动工 + 多 GW 算力 + Azure Maia 200 + Microsoft + AMD/Broadcom/Intel/OpenAI/NVIDIA 共同制定 MRC Network Protocol = <strong>大厂算力军备竞赛白热化</strong></li>
+      <li>Groq 故事 = <strong>小厂在 Nvidia 收编后找到的"非对抗"生存路径</strong>：LPU 技术已被 Nvidia 复制 → Groq 不再做硬件 → 转型云服务 → 维持品牌 + 客户 + OLS 服务</li>
+      <li><span class="warn">结构信号</span>：当 AI 芯片 startup 无法在硬件维度与 Nvidia 抗衡时，<span class="warn">唯一的生存路径是把硅变成服务</span>——这是 CoreWeave / Lambda / Groq / 国产 8 家 inference 创业公司共同的方向</li>
+    </ul>
+
+    <p><span class="highlight">Nvidia 的"licensing + acquihire"套路</span>：</p>
+    <ul>
+      <li>2024/2025 收编 Groq（$20B）= inference 维度</li>
+      <li>2024 收编 Mellanox（$7B）= networking 维度</li>
+      <li>2024 收编 ARM 失败（$40B offer rejected）= CPU 维度</li>
+      <li>2025 持续投资 CoreWeave / Lambda（资本维度）= inference cloud 维度</li>
+      <li><span class="warn">结构判断</span>：Nvidia 用"licensing + acquihire" + 直接资本投资<span class="warn">双线</span>把"任何潜在的 GPU 替代者"收编到自己生态——Groq 拿到 $650M 维持运营，但 LPU IP 已归 Nvidia</li>
+    </ul>
+    <p class="source">来源：TechCrunch | Axios | AIWeekly | IntuitionLabs | Yahoo Finance | 2026-05-28 → 06-01</p>
+  </div>
+</section>
+
+<section>
+  <h2>4. 预测市场 + AI 代理：Polymarket Anthropic 81%/82% + Olas Polystrat 6/3 扩运营</h2>
+  <div class="card">
+    <p><span class="highlight">Polymarket 关键 AI markets 实测概率（6/3 21evening）</span>——与昨日 21evening 一致，今日维持：</p>
+    <table>
+      <tr><th>市场</th><th>当前概率</th><th>趋势</th></tr>
+      <tr><td><strong>Anthropic 6 月底 #1 模型</strong></td><td><span class="highlight">81%</span></td><td>高位维持（昨日 81%）</td></tr>
+      <tr><td><strong>Anthropic 6 月底 #2 模型</strong></td><td><span class="highlight">82%</span></td><td>高位维持（昨日 82%）</td></tr>
+      <tr><td>OpenAI 6 月底 #1 模型</td><td>~12%</td><td>下行</td></tr>
+      <tr><td>Google 6 月底 #1 模型</td><td>~5%</td><td>下行</td></tr>
+      <tr><td>xAI 6 月底 #1 模型</td><td>&lt;2%</td><td>下行</td></tr>
+      <tr><td>OpenAI IPO by June 5, 2026</td><td>维持中等概率</td><td>关键时点 5 天内</td></tr>
+      <tr><td>Anthropic 估值 hit $XXX by June 30</td><td>维持高位</td><td>配合 S-1 递交</td></tr>
+    </table>
+
+    <p><span class="highlight">5/28 Opus 4.8 + 6/2 Glasswing 150 组织扩围对 Polymarket 的影响</span>：</p>
+    <ul>
+      <li><strong>Anthropic 6 月底 #1 模型 81%</strong>：5/28 Opus 4.8 拿到 AA Intelligence Index 61.4（vs GPT-5.5 60.2）后，<span class="highlight">市场押注 Anthropic 在 6/30 前仍持有 #1 位置</span></li>
+      <li><strong>Glasswing 扩围</strong>：Mythos 不直接上 #1 榜单（仅 Project Glasswing 内部），但 Mythos 6/2 找洞 10,000+ 的工业级能力为 Anthropic 品牌侧加分</li>
+      <li>风险因子：6/30 前<span class="warn">OpenAI 是否在 DevDay（已过去）/ Anthropic Dev Day（5/28 已发布 Opus 4.8）/ Google I/O 后续 / xAI 6 月「三日连发」尾声</span>推出新模型？</li>
+    </ul>
+
+    <p><span class="highlight">与 6/3 evening 已写的 "Anthropic S-1 递交 + Wedbush '打开闸门' vs WIRED '史上最大 IPO 候选'" 的对照</span>：</p>
+    <ul>
+      <li>evening 写<span class="warn">IPO 资本侧</span>（S-1 已递交 / 5/28 估值 $900B / 6/3 Wired 改口"史上最大"）</li>
+      <li>21evening 写<span class="warn">Polymarket 概率侧</span>（Anthropic 双榜 81% / 82%）——<span class="warn">两件事一起看</span>：Anthropic 6/30 前 IPO + 仍持 #1 模型 = 估值 $900B 站稳 = Polymarket 81%/82% 是"概率已 priced in"</li>
+      <li><span class="warn">关键观察</span>：6/30 前如有任何"非 Anthropic 模型上 #1"事件，Polymarket 会剧烈反应</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <p><span class="highlight">Olas Polystrat 6/3 扩运营：AI 代理 24/7 在 Polymarket 上交易</span>（Olas Network Blog + Pearl App Store + CoinDesk 3/15 复盘）——Olas（Valory AG 协议）2/2026 推出 Polystrat，<span class="highlight">6/3 起 Olas 扩大 Polystrat 在 Pearl App Store 的运营</span>，把 Polystrat 与 Omenstrat（Omen 链上预测市场代理）组成完整套件。</p>
+
+    <p><span class="highlight">Polystrat 关键能力</span>：</p>
+    <ul>
+      <li>7×24 在 Polymarket 扫描市场</li>
+      <li>用 natural language 描述策略（"risky"/"balanced" preset 或自定义）</li>
+      <li>自动收集收益</li>
+      <li><span class="highlight">OLAS activity rewards</span>——运行代理可额外获得代币奖励</li>
+      <li>完整代理所有权：用户可停止代理或提取资金</li>
+      <li>Polystrat + Omenstrat 组合 = 跨 CEX/DEX 预测市场代理</li>
+    </ul>
+
+    <p><span class="highlight">与 6/3 evening 已写的"Build 2026 Windows = AI Agent OS + Day 2 Copilot debugging/profiling/test-generation agents" 的对照</span>：</p>
+    <ul>
+      <li>evening 写的是 B2B 开发者代理 + Windows 系统集成</li>
+      <li>21evening 写的是<span class="highlight">消费级预测市场代理 + 加密 24/7</span>——两类代理在不同维度同时扩张：开发者侧在"代码 + 系统"，消费者侧在"金融 + 加密"</li>
+    </ul>
+
+    <p><span class="highlight">预测市场 AI 代理的临界点</span>：</p>
+    <ul>
+      <li>6 月起：预测市场不只是"人买卖"——<span class="warn">有 24/7 自主代理常态化参与</span></li>
+      <li>市场质量变化：AI 代理的策略更纪律化、反应更实时——但<span class="warn">大量 AI 代理聚集可能导致"羊群效应"和"流动性震荡"</span>（特别是有 OLAS 奖励的代理会为拿奖励而非盈利而跑）</li>
+      <li>监管含义：CFTC 5 月已对 Polymarket 等"事件合约"加强监管——AI 代理的"无人类决策"特征可能触发新一轮监管</li>
+    </ul>
+    <p class="source">来源：Olas Network Blog | Pearl App Store | CoinDesk 3/15 复盘 | 2026-02 → 06-03</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. arXiv cs.AI / cs.MA 6 月热度：multi-agent + crypto 治理 + agent 安全</h2>
+  <div class="card">
+    <p><span class="highlight">6 月 arXiv cs.AI 关注论文</span>（基于 arxiv.org/list/cs.AI/current 抓取）：</p>
+    <ul>
+      <li><strong>"General Framework of AI Agents"</strong>（Springer JCS 2025/12 接收，2026 多次引用）——ByteDance Seed 团队总结"任务导向 + 多模态输入输出 + LLM 推理 + RL 构建 + 工具 + 记忆"的 agent 通用框架，对标人脑信息处理机制——<span class="highlight">6 月 agent 论文的标准引用</span></li>
+      <li><strong>"Multiagent Systems"</strong> 6 月热度（arxiv.org/list/cs.MA/current）——McGill + Mila + Ubisoft La Forge 联合的多 agent 策略研究——发现 <span class="highlight">simple greedy hill-climber 接近 tree-search 最佳 agent</span>——"策略复杂度 ≠ 性能"——adaptive agent（机会密集用 greedy，机会稀疏用 tree-search）超越所有 6 个 baseline</li>
+      <li><strong>"PROWL: adversarial world-model training"</strong>——MineRL 框架训练 OOD 鲁棒 agent——发现 reward-hacking behaviors（weak behavioral constraints 下）——与昨日 AISLE 形式化方法 + Mythos 工业级两条线形成"agent 训练鲁棒性"第三条线</li>
+      <li>"AI agents in daily life" 类综述（Reddit r/AI_Agents 热门）</li>
+    </ul>
+
+    <p><span class="highlight">6 月 cs.AI 论文结构信号</span>：</p>
+    <ul>
+      <li>"agent 通用框架" 综述类（ByteDance Seed 等大厂）= 工业界统一术语</li>
+      <li>"multi-agent 策略"（McGill + Mila + Ubisoft）= 学术界对比 agent 算法</li>
+      <li>"adversarial world-model training"（PROWL）= 学术界对 AI 攻防失衡的回应</li>
+      <li><span class="warn">共同主题</span>：<span class="warn">agent 已成为 2026 年 AI 研究的主轴</span>，对推理 + 工具使用 + 多 agent 协作 + 鲁棒性四条线都有论文爆发</li>
+    </ul>
+    <p class="source">来源：arxiv.org/list/cs.AI/current | arxiv.org/list/cs.MA/current | Reddit r/AI_Agents | 2026-06-01 → 06-03</p>
+  </div>
+</section>
+
+<section>
+  <h2>6. 21evening 核心洞察（6 条）</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Anthropic 6/2 Glasswing 扩围 150 组织 + Mythos 累计 10,000+ 漏洞 + Cloudflare "AI 误报率低于人类"</strong>——AI 防御侧工业化临界点已过</li>
+      <li><strong>Microsoft 6/2 端出 MAI-Code-1-Flash（137B / 5B 活跃，51% SWE-Bench Pro）上 GitHub Copilot</strong>——与 6/1 token 计量改革形成"两步棋"——给 Copilot 用户一个低成本替代 Claude Haiku 4.5 的选项</li>
+      <li><strong>Groq 5/28-29 拿 $650M 转型 inference neocloud</strong>——"硬件被收编后转云服务"的结构范本</li>
+      <li><strong>OpenAI 加密推理 blob 签名怪异事 5/29</strong>——OpenAI 内部 reasoning state 外泄，cryptography engineering 详解</li>
+      <li><strong>Polymarket Anthropic 6 月底双榜 81% / 82% 维持</strong> + <strong>Olas Polystrat 6/3 扩运营</strong>——预测市场 AI 代理化进入消费级</li>
+      <li><strong>Anthropic 6 月主线</strong>：KPMG + Opus 4.8 + 不广告 + Glasswing + S-1——为资本市场叙事提供"非纯商业"故事线</li>
+    </ol>
+  </div>
+</section>
+
+<div class="footer">
+  OPC 晚间情报 · 2026-06-03 21:00 · 聚焦：模型发布动态、安全漏洞爆发、加密/预测市场讨论<br>
+  数据来源：Anthropic Glasswing 公告 / CyberScoop / SecurityWeek / Engadget / CNBC / microsoft.ai/news / GitHub Blog Changelog / HN id=48374466 / TechCrunch / Axios / AIWeekly / IntuitionLabs / cryptography engineering / HN id=48321210 / thehackernews weekly recap / Polymarket / Olas Network Blog / Pearl App Store / CoinDesk / Artificial Analysis / Vellum / arxiv.org/cs.AI/cs.MA
+</div>
+
+</body>
+</html>
