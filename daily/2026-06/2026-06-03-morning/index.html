@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-03 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-03 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月3日 09:00 发布（采集自6月2日）</p>
+            <div class="meta">
+                <span class="tag tag-capital">资本转向</span>
+                <span class="tag tag-policy">政策落地</span>
+                <span class="tag tag-trend">行业趋势</span>
+                <span class="tag tag-product">国家标准</span>
+                <span class="tag tag-security">出口管制</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">$965B</div>
+                <div class="label">Anthropic 估值 反超 OpenAI</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">$65B</div>
+                <div class="label">Anthropic Series H 单轮融资</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">$1.75T</div>
+                <div class="label">SpaceX 6/4 路演目标估值</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">120+</div>
+                <div class="label">具身智能国标参编院所/企业</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">$47B</div>
+                <div class="label">Anthropic 年化 run-rate 收入</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">11项</div>
+                <div class="label">TC28 具身智能配套国标立项</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：Anthropic $965B 估值反超 + 三大独角兽 IPO 冲刺 + 美对华芯片周末突击堵漏 + 中国具身智能国标落地</h3>
+            <p>过去 48 小时 AI 行业在资本侧和政策侧同时放出压倒性信号。Anthropic 5/28 完成 $65B Series H、估值 $965B（首次超过 OpenAI $730B），6/1 秘密递交 S-1；OpenAI 紧随其后目标秋季 IPO；SpaceX 6/4 启动路演目标 $1.75T。Economist 6/1 头条《Can the stockmarket swallow Anthropic, SpaceX and OpenAI?》——三大独角兽 IPO 三重奏已成 2026 资本市场最大事件。</p>
+            <p>美国商务部 5/31 周末突击更新指南，堵住 NVIDIA Blackwell/Rubin、AMD MI350x 经中国母公司海外子公司绕道进入中国的漏洞——罕见周末发布指南显示对华算力封锁零容忍。中国反向推动标准化：工信部 2/28 发布《人形机器人与具身智能标准体系（2026版）》，6 大模块覆盖全产业链；TC28 同期立项 11 项配套国标。<span class="highlight">资本与监管的"双向加速"信号已经无法掩盖。</span></p>
+            <p class="last">本早报主动差异化昨夜 21evening 角度（xAI Composer 2.5 / Mythos / OpenAI 上 AWS / Polymarket），聚焦<strong>资本转向 + 政策落地 + 跨厂商大趋势</strong>——行业级信号。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Anthropic $965B 估值反超 OpenAI：$65B Series H 创 AI 史上最大单笔融资</h3>
+                <div class="source">来源：CNBC | NYT | WSJ | Axios | Reuters | Crunchbase | 2026-05-28</div>
+                <div class="desc">
+                    Anthropic 5/28 官方宣布完成 <strong>$65B Series H</strong>，post-money 估值 <strong>$965B</strong>——比三个月前的 $380B 翻 2.5 倍以上，<span class="highlight">首次超过 OpenAI（最近估值 $730B）</span>。本轮由 <strong>Greenoaks Capital、Sequoia Capital、Altimeter Capital、Dragoneer Investment Group</strong> 领投。Anthropic 同时披露其 <strong>run-rate revenue 已突破 $47B</strong>（年内冲 $50B）。CNBC Disruptor 50 把 Anthropic 列为 2026 年度第一。WSJ 评价 Anthropic 为"AI 热潮的新领军者"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 6/1 秘密递交 S-1：IPO 倒计时启动，目标击败 OpenAI</h3>
+                <div class="source">来源：The Information | Fortune | Fox Business | MLex | 2026-06-01</div>
+                <div class="desc">
+                    Anthropic 6/1（周一）发布简短声明：<strong>已向 SEC 秘密递交 draft S-1 注册声明</strong>——IPO 关键步骤。The Information / Fox Business / MLex 同步确认，<strong>目标在 IPO 赛道击败 OpenAI</strong>。声明强调"发行的股份数量和价格尚未确定"。<strong>三大独角兽 IPO 排位</strong>：① SpaceX 6/4 启动路演目标 $1.75T；② Anthropic 6/1 已递交秘密 S-1；③ OpenAI 据 Bloomberg 5 月报道"未来几周内"递交，目标<strong>秋季公开亮相</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Economist 6/1 头条：Can the stockmarket swallow Anthropic, SpaceX and OpenAI?</h3>
+                <div class="source">来源：The Economist | NYT | 2026-05-29 → 2026-06-01</div>
+                <div class="desc">
+                    Economist 6/1 头条核心问题：<span class="highlight">三大独角兽同期上市将造成公开市场流动性挤压——三家合计 IPO 规模可能超过 $200B</span>，是历史最大单年 AI IPO 规模。NYT 5/29 跟进《Sky-High I.P.O. Pricing Isn't Great for Real People》，担忧"高位定价透支散户回报"。<strong>算账三角</strong>：Anthropic（$965B / $47B run-rate）、OpenAI（$730B / 2026 预计亏损 $14B）、SpaceX（$1.75T 路演目标 / 收入稳定）。
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策与监管 -->
+        <section class="section">
+            <div class="section-title">🛡️ 政策与监管</div>
+
+            <div class="card">
+                <h3>美国商务部 5/31 周末突击：堵 NVIDIA/AMD 海外子公司漏洞</h3>
+                <div class="source">来源：CNBC | Reuters | NTD News | 2026-05-31</div>
+                <div class="desc">
+                    美国商务部 5/31（周日）发布<strong>非预期、突发性</strong>出口管制更新指南：对受 EAR 管辖的先进 AI 芯片（NVIDIA 最先进 <strong>Blackwell、Rubin</strong>，AMD <strong>MI350x</strong>）<strong>流向中国母公司海外子公司时也强制许可要求</strong>——无论该子公司是否在中国境内。过去一年中国 AI 公司通过<strong>马来西亚等第三地子公司</strong>绕道获取顶级芯片的"漏洞"被明确堵上。商务部罕见在周末发布指南，<span class="highlight">显示华盛顿对华算力封锁的零容忍</span>。分析师警告 NVIDIA/AMD Q2-Q3 财报可能看到海外订单显著下滑。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国《人形机器人与具身智能标准体系（2026版）》2/28 正式发布：首个国家级顶层设计</h3>
+                <div class="source">来源：人民网 | 福建省工信厅 | 雪球 | 2026-02-28</div>
+                <div class="desc">
+                    工信部人形机器人与具身智能标准化技术委员会（2025/12 成立）2/28 在北京召开首届年会，正式发布 <strong>《人形机器人与具身智能标准体系（2026版）》</strong>——<span class="highlight">我国首个</span>覆盖人形机器人与具身智能<strong>全产业链、全生命周期</strong>的国家级标准顶层设计。<strong>6 大模块</strong>：基础共性 / 类脑与智算 / 肢体与部组件 / 整机与系统 / 应用 / 安全伦理。<strong>120+ 院所/企业参编</strong>（优必选、小米、蚂蚁灵波、海信、中兴、京东方、浪潮、大华、BOE、美的等）。<strong>数据底色</strong>（工信部 2025）：国内人形机器人整机企业 140+ 家、发布产品 330+ 款。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>TC28 11 项具身智能配套国标立项：仿真平台 / 评测指南 / 伦理治理全布局</h3>
+                <div class="source">来源：全国标准信息公共服务平台 | 2026 立项</div>
+                <div class="desc">
+                    全国标准信息公共服务平台显示，<strong>TC28（全国信息技术标准化技术委员会）</strong>已立项 11 项具身智能配套国标指导性技术文件：①《人工智能 具身智能系统技术规范》②仿真平台技术规范 ③评测指南 ④云协议要求 ⑤灵巧操作要求 ⑥伦理治理指南 ⑦智能化分级 ⑧可信赖通用要求 ⑨数据生成技术要求 ⑩大模型系统技术要求 ⑪体应用框架及接口。<strong>牵头起草单位</strong>：中国电子技术标准化研究院、北京人形机器人创新中心、优必选、智源、蚂蚁灵波等。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>White House EO 14365 + 国家政策框架：联邦对州 AI 法的全面挑战</h3>
+                <div class="source">来源：White & Case | DLA Piper | Holland & Knight | 2025-12 → 2026-03</div>
+                <div class="desc">
+                    12/11/2025 Trump 签 <strong>EO 14365</strong>《Ensuring a National Policy Framework for AI》：建立 AI Litigation Task Force，专门挑战州级 AI 法。3/20/2026 White House 发布 <strong>《A National Policy Framework for AI》</strong>立法建议文件。<strong>目标州</strong>：Colorado、Texas、California（这些州要求开发者执行 NIST AI RMF / ISO 42001、定期安全测试、风险缓解）。<strong>配套立法</strong>：Marsha Blackburn 参议员更新版 TRUMP AMERICA AI Act。
+                </div>
+            </div>
+        </section>
+
+        <!-- 行业趋势 -->
+        <section class="section">
+            <div class="section-title">🌍 跨厂商大趋势</div>
+
+            <div class="card">
+                <h3>趋势 1：AI 创业估值超越传统巨头常态化</h3>
+                <div class="source">来源：CNBC | WSJ | 2026-05-28</div>
+                <div class="desc">
+                    <strong>估值对比</strong>：SpaceX（路演目标 $1.75T）> TSMC（$1.5T）；Anthropic（$965B）> 伯克希尔（$900B）、接近 Meta（$1.4T）；OpenAI（$730B）> 摩根大通（$680B）。<span class="highlight">AI 创业公司已经不只是"科技股"——它们在估值口径上已经和全球最大金融机构/制造企业并驾齐驱。</span>2026 H2 三大独角兽 IPO 之后，"AI 巨兽"将从私募叙事转入公开市场叙事。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>趋势 2：算力封锁与标准争夺同步加速</h3>
+                <div class="source">来源：CNBC | 人民网 | 2026-02 → 2026-05</div>
+                <div class="desc">
+                    <strong>美国</strong>：堵——5/31 突击指南堵 NVIDIA/AMD 海外漏洞。<strong>中国</strong>：建——2/28 国标 + 11 项配套指导性技术文件立项。<span class="highlight">AI 产业进入"技术民族主义 2.0"——算力侧禁运、标准化侧抢话语权同时推进。</span>下半年关注 EU AI Act 配套机器人标准是否跟进。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>趋势 3：IPO 时点选择与"高位定价"博弈</h3>
+                <div class="source">来源：The Economist | 2026-06-01</div>
+                <div class="desc">
+                    三大独角兽选择 2026 同期上市，背后是<span class="highlight">"在 AI 泡沫顶部锁定估值"与"流动性窗口一旦关闭就难以再现"</span>的博弈。Economist 头条直接问"市场能吞下吗"——可能预示 2026 H2 出现 IPO 后股价回调，从而触发 2027 估值修正周期。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本与商业 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>三大独角兽算账：估值 / 收入 / 现金消耗三角对比</h3>
+                <div class="source">来源：CNBC | WSJ | Instagram 业内数据 | 2026-05-28</div>
+                <div class="desc">
+                    <strong>Anthropic</strong>：估值 $965B / 年化收入 $47B / 现金消耗未公开，Series H 算力扩展明确。<strong>OpenAI</strong>：估值 $730B（最近轮）/ 2026 预计亏损 $14B / 收入引擎多元化（API+ChatGPT+企业）。<strong>SpaceX</strong>：估值 $1.75T（路演目标）/ 收入稳定（Starlink+发射）/ Musk 个人可能成"首位万亿富翁"。市场观点：Economist 把 2026 称为 <strong>"Giga-IPOs year"</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Anthropic $965B 估值反超：</strong>$65B Series H，AI 创业首次压过 OpenAI</li>
+                    <li><strong>Anthropic 6/1 秘密递交 S-1：</strong>IPO 倒计时启动，目标击败 OpenAI</li>
+                    <li><strong>三大独角兽 IPO 三重奏：</strong>SpaceX 6/4 路演目标 $1.75T，Anthropic 6/1 递交，OpenAI 秋季</li>
+                    <li><strong>Economist 6/1 头条：</strong>"Can the stockmarket swallow" 三大独角兽同期上市</li>
+                    <li><strong>美 5/31 周末突击：</strong>堵 NVIDIA Blackwell/Rubin + AMD MI350x 海外子公司漏洞</li>
+                    <li><strong>中国具身智能国标 2/28 落地：</strong>首个国家级顶层设计，120+ 院所/企业参编，6 大模块</li>
+                    <li><strong>TC28 11 项配套国标立项：</strong>仿真/评测/伦理治理全布局</li>
+                    <li><strong>White House EO 14365：</strong>联邦对加州/科罗拉多/得州 AI 法的全面挑战</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：CNBC · NYT · WSJ · Axios · Reuters · Fortune · The Information · Fox Business · MLex · The Economist · 全国标准信息公共服务平台 · 人民网 · 福建省工信厅</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-03 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
