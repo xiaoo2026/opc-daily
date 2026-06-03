@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-03 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-03 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月3日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-product">Build 2026 Day2</span>
+                <span class="tag tag-trend">OpenAI × AWS</span>
+                <span class="tag tag-capital">Stargate $56B</span>
+                <span class="tag tag-policy">Anthropic S-1</span>
+                <span class="tag tag-security">Copilot 账单反弹</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">$56B</div>
+                <div class="label">Stargate Michigan 投资</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">35B</div>
+                <div class="label">MAI-Thinking-1 活跃参数</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">1,000×</div>
+                <div class="label">Majorana 2 量子可靠性提升</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">4.7M</div>
+                <div class="label">GitHub Copilot 付费用户反弹</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">$30-40</div>
+                <div class="label">单次 agentic 会话消耗</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">700</div>
+                <div class="label">Stargate Michigan 占地（英亩）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：Build Day2 AI Agent 一等公民 + OpenAI 上 AWS GA + Stargate $56B 动工 + Copilot 账单反弹</h3>
+            <p>Build 2026 Day 2 完整收官：MAI-Thinking-1（35B 推理 + 零蒸馏）+ Aion 1.0（端侧 SLM）+ Majorana 2（量子可靠性 1000×）+ Microsoft Discovery GA（AI 科研平台）+ Mayo Clinic 健康 AI 合作 + Surface RTX Spark Dev Box（1 PFLOPS）。OpenAI 6/1-2 GA 登 AWS Bedrock——GPT-5.5/5.4/Codex 价格与 OpenAI 一方完全对等、使用量计入 AWS 承诺消耗。Stargate Michigan 6/1 $56B 动工——700 英亩农地变身密歇根史上最大单笔投资。</p>
+            <p class="last">Anthropic S-1 引发市场两极反应（Wedbush "打开闸门" vs WIRED "史上最大 IPO 候选"）；GitHub Copilot 6/1 token 计量引爆 4.7M 用户账单 25x-50x 反弹；xAI Grok Build beta 加入编码 agent 三方争霸（Claude Code/Codex/Grok Build）。6/3 白天 8 个主要事件同时落地，AI 行业从「资本/政策/标准」进入「基础设施 + 算力 + 编码代理」三线落地期。</p>
+        </div>
+
+        <!-- 头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Build 2026 Day 2 完整收官：MAI-Thinking-1 + Aion + Majorana 2 + Discovery GA + Mayo Clinic</h3>
+                <div class="source">来源：Microsoft Build Live / Build Fast With AI / AIToolsRecap / 钛媒体 | 2026-06-03</div>
+                <div class="desc">
+                    北京时间 6/3 凌晨 0:30，Microsoft Build 2026 Day 2 继续放出"AI Agent 一等公民"全套产品。Mustafa Suleyman（Microsoft AI CEO）开场连发六弹：<strong>① MAI-Thinking-1</strong>——微软首个自研推理模型，<span class="highlight">35B 活跃参数 + 128K 上下文 + "零蒸馏"训练</span>，盲测人评偏好与 Claude Sonnet 4.6 持平，将驱动 Microsoft 365 Copilot Agent Mode 跨 Word/Excel/PowerPoint；<strong>② Aion 1.0</strong>（端侧 SLM 双连发）——Instruct 任何 Windows 硬件能跑 + Plan 14B 推理/工具调用模型；<strong>③ Majorana 2 量子处理器</strong>——第二代拓扑量子芯片，<span class="highlight">比 Majorana 1 可靠性提升 1000 倍</span>（铅基超导材料 + 量子比特寿命从 1-12ms 拉到 20 秒），目标 2029 年实现可扩展量子计算，已通过 DARPA 最终阶段评审；<strong>④ Microsoft Discovery GA</strong>——AI 科研平台正式发布（设计实验/写论文/提交实验室任务）；<strong>⑤ Mayo Clinic 健康 AI 合作</strong>——共建 frontier model 部署在 Azure；<strong>⑥ Web IQ + Azure HorizonDB + MRC Network Protocol</strong>开放标准。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI 模型 6/1-2 GA 登 AWS Bedrock：价格对等 + 使用量计入 AWS 承诺消耗</h3>
+                <div class="source">来源：OpenAI Blog / AIToolsRecap | 2026-06-01 → 06-02</div>
+                <div class="desc">
+                    OpenAI 4/28 在 AWS Bedrock 限免预览后，<strong>6/1-2 正式 GA</strong>：GPT-5.5 + GPT-5.4 + Codex 全部上线。<span class="highlight">价格 = OpenAI 一方价格（无 AWS 额外收费）</span>，使用量计入 AWS 已有 EDP 协议承诺消耗。GPT-5.5 在 US East (Ohio)，GPT-5.4 在 US East (Ohio) + US West (Oregon)，Codex 覆盖 CLI/桌面/VS Code/JetBrains/Xcode 集成。走 Bedrock 下一代推理引擎的 <strong>Responses API</strong>，完整 AWS 安全控制（IAM/PrivateLink/CloudTrail/加密）。<strong>叙事意义</strong>：大型 AWS 客户（年承诺消耗数百万美元）现在可以把 OpenAI API 消费<strong>吸进 AWS 承诺消耗</strong>，Azure 的"独家"优势正式结束。配合 Build Day 2 "Windows = Agent OS"——<span class="highlight">OpenAI 把模型卖给 Microsoft 的最大对手，云分发与操作系统层开始分叉</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Copilot 6/1 token 计量引爆：4.7M 用户账单 25x-50x 反弹</h3>
+                <div class="source">来源：TechTimes / TechCrunch / MLQ.ai / WindowsForum | 2026-05-30 → 06-01</div>
+                <div class="desc">
+                    GitHub 6/1 凌晨 0 时正式把 Copilot 改成 <strong>GitHub AI Credits</strong>——1 credit = $0.01，按 token 消耗计费，<span class="highlight">替代了原来的 flat-rate premium request</span>。4.7M 付费订阅者一夜之间从"固定月费"变成"按消耗"。<strong>开发者报告</strong>：单次 agentic 编码会话消耗 <strong>$30-$40 credits</strong>（一个 Pro 用户的 $10 月度额度一次性用完）；社区帖 400+ 评论近 <strong>900 反对票</strong>。最大成本冲击来自 agentic 工作流、大上下文窗口、premium 模型、重复迭代、PR 审查自动化——<strong>不是普通内联补全</strong>。<span class="highlight">这是 Microsoft 在 Build Day2 加 agentic 能力的同步副作用——agentic 价值 vs agentic 成本的张力在 6/3 全面爆发</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>xAI Grok Build beta 发布：编码 agent 三方争霸正式成型</h3>
+                <div class="source">来源：xAI News / AIToolsRecap / CIO Dive | 2026-06-03</div>
+                <div class="desc">
+                    xAI 发布 <strong>Grok Build</strong>——终端 TUI 编码 agent，基于 Grok 4.3，<span class="highlight">对 SuperGrok ($30/月) 和 X Premium+ 用户开放</span>。设计与 Claude Code（终端原生）更接近，不走 Codex（桌面应用 + 云优先）路线。<strong>关键差异化</strong>：Grok Build <span class="highlight">对 X/Twitter 平台全数据流的原生访问</span>——不只是"偶尔返回 X 帖子的 web 搜索"，对社区信号实时的编码任务特别有用。<strong>算力限制</strong>：xAI 据说只用了 Colossus 算力的 11% 给 Grok 模型——随算力释放，Grok 模型仍有大幅提升空间。<strong>6 月 3 日连发</strong>：6/2 Composer 2.5（xAI 编码模型） + 6/3 Grok Build（编码 agent 工具），xAI 在编码赛道从模型到工具全线对标 Anthropic/OpenAI。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>Stargate Michigan $56B 动工："the Barn" 700 英亩农地变身密歇根史上最大单笔投资</h3>
+                <div class="source">来源：bridgemi.com / OpenAI Blog / Oracle Newsroom / WXYZ | 2026-06-01</div>
+                <div class="desc">
+                    6/1（周一）Saline Township——10 英里西南 Ann Arbor——700 英亩农田，<strong>Oracle + Related Digital + Blackstone + Walbridge + OpenAI</strong> 联合为 <strong>"the Barn" Stargate 数据中心</strong>举行奠基仪式。<strong>Altman + Whitmer + Jeff Blau + 700+ 密歇根建筑工人</strong>到场。投资规模 <span class="highlight">$56B（密歇根州史上最大单笔投资、美国当前最大基础设施投资之一）</span>。5 方公司联合 <strong>$10M 资助 Saline Recreation Center 扩建</strong>。OpenAI 罕见在公开活动承认<span class="highlight">"AI 行业过去在就业问题上传递的信息已经失败"</span>——首次正式承认"AI 替代人"的叙事需要修正，与"NABTU 联合培训"工人承诺形成战略对冲。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic S-1 引发市场两极反应：Wedbush "打开闸门" vs WIRED "史上最大 IPO 候选"</h3>
+                <div class="source">来源：WIRED / TechCrunch / abc7news / LinkedIn (Paul Young) | 2026-06-01</div>
+                <div class="desc">
+                    6/1 Anthropic 官方博客确认<strong>已向 SEC 秘密递交 draft S-1</strong>——5/28 刚完成 $65B Series H、估值 <strong>$965B</strong>（已超 OpenAI 同期 $852B）。<strong>市场反应两极</strong>：<strong>Wedbush 分析师 Dan Ives</strong>："Anthropic 的动作代表它将抢先 OpenAI 公开上市……<span class="highlight">为相对低迷几年的 IPO 市场打开了闸门</span>，三大独角兽今年集中上市"；<strong>WIRED 标题</strong>：《Anthropic Confidentially Files for What Could Be the <em>Largest IPO Ever</em>》。<strong>IPO 赛道排位</strong>：① SpaceX 6/4 启动路演目标 $1.75T ② Anthropic 6/1 秘密 S-1 ③ OpenAI"未来几周内"递交目标秋季亮相。Economist 6/1 头条《Can the stockmarket swallow Anthropic, SpaceX and OpenAI?》——三家合计 IPO 规模可能超 $200B。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic × Google × Broadcom 多 GW 算力：Claude 是唯一同时三云上线前沿模型</h3>
+                <div class="source">来源：Anthropic 官方 | 2026-06-02/03</div>
+                <div class="desc">
+                    Anthropic 6/2-3（CFO Krishna Rao 表态）扩大与 <strong>Google Cloud + Broadcom</strong> 合作，<strong>锁定多 GW（gigawatt 级）下代算力</strong>——新算力大部分落地美国本土，延续去年 11 月"$50B 投资美国 AI 基础设施"承诺。<span class="highlight">Claude 是目前唯一同时在 AWS Bedrock / Google Cloud Vertex AI / Microsoft Azure Foundry 三家头部云上线的前沿模型</span>——多云 + 多元供应链对冲算力风险。<strong>算力供应链多极化定型</strong>：OpenAI 走 AWS 单一 + Microsoft 投资，Anthropic 走三云 + Broadcom 定制——同日（6/3）OpenAI AWS GA 与 Anthropic 多 GW 形成"对位算力布局"。
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策 -->
+        <section class="section">
+            <div class="section-title">📜 政策与监管</div>
+
+            <div class="card">
+                <h3>FLI AI Safety Index 6/2 评价：Google DeepMind 安全框架落后于 OpenAI</h3>
+                <div class="source">来源：Future of Life Institute / Microsoft Build 2026 | 2026-05 → 2026-06-02</div>
+                <div class="desc">
+                    Future of Life Institute 最新 AI Safety Index：<span class="highlight">Google DeepMind 在安全框架上得分落后于 OpenAI</span>。FLI 同步推出 <strong>"Pro-Human AI Declaration"</strong> 运动，呼吁全球 AI 协议。Florida 州长 DeSantis 签署行政命令，要求州机构与 FLI 合作保护家庭免受 AI 危害。<strong>Build 2026 keynote 同场</strong>——前英国首相 Rishi Sunak 现身讨论<em>"AI's Mythos Moment"</em>（AI 神话时刻：政府如何准备 AI）。<strong>与 6/3 Build Day 2 agent 化共振</strong>：当 MAI-Thinking-1、Aion 1.0、Windows 365 for Agents 全面铺开，AI 安全评估框架的滞后已经成为监管机构最大盲区。
+                </div>
+            </div>
+        </section>
+
+        <!-- 中文圈 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 中文圈</div>
+
+            <div class="card">
+                <h3>钛媒体 Build 2026 中文深度复盘：Windows = 智能体"一等公民" + Majorana 2 量子跃迁</h3>
+                <div class="source">来源：钛媒体 tmtpost.com | 2026-06-03</div>
+                <div class="desc">
+                    钛媒体 6/3 凌晨发出 <strong>Build 2026 完整中文复盘</strong>：<strong>战略转向</strong>："Agent 优先"全面落地——GitHub Copilot 从"结对编程伙伴"升级为"对等程序员"；<strong>MAI-Thinking-1 关键解读</strong>："35B 活跃参数 + 128K 上下文 + 零蒸馏"——苏莱曼"爬山机器"哲学首次产品化；<strong>Scout 常驻 AI 助手</strong>（基于 OpenClaw 框架）：3000+ 微软员工内部测试，"公司本质上是雇佣了你的助理"；<strong>Windows 365 最大规模更新</strong>：<span class="highlight">Windows 365 for Agents</span>——"隔离运行环境 + 动态权限控制"双层安全架构，120 家企业测试、85% 反馈安全提升 >30%。<strong>钛媒体结语</strong>："算力、模型、操作系统三者同时进入新的代际，智能体从'能做'到'能放心用'的跨越，可能比市场预期的来得更快。"
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>智源大会 6 月"Token 经济与 OPC 论坛"成新增亮点</h3>
+                <div class="source">来源：新浪科技 finance.sina.cn | 2026-05-25</div>
+                <div class="desc">
+                    第八届智源大会 6/3 周末临近，议程全面公布。<strong>24 场平行论坛特色</strong>：<span class="highlight">新增「Token 经济与 OPC」论坛</span>——把视角延伸到智能时代的生产关系变革（OPC = One-Person Company）；<strong>新增「终端智能体与 OpenClaw」论坛</strong>——聚焦 Agent 走向真实部署、长期运行、开放生态协同；<strong>AI 自进化论坛</strong>：Meta/英伟达/清华/西湖大学共同探讨"AI 如何自我超越"；<strong>首次亮相「AI Native 教育」论坛</strong>：当智能系统深度进入成长过程后，未来人应具备什么能力。<strong>40+ AI 企业 CEO/创始人/首席科学家</strong>齐聚北京——阿里、腾讯、智谱、阶跃星辰、MiniMax + 谷歌、Meta、英伟达、Stanford、Harvard、MIT——<span class="highlight">中国大模型 + Agent 领域最具代表性力量首次集中同台</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 论文 -->
+        <section class="section">
+            <div class="section-title">📊 论文与研究</div>
+
+            <div class="card">
+                <h3>arXiv cs.AI 6/1-6/3 热门：多 Agent 训练 + 推理模型 + 视觉 Agent</h3>
+                <div class="source">来源：arXiv cs.AI recent | 2026-06-01 → 06-03</div>
+                <div class="desc">
+                    <strong>CASP</strong> (2605.32425)：用 token 级 credit assignment 改进多 Agent 训练的稀疏奖励；<strong>Reasoning Agent Survey</strong> (2605.32518)：推理 Agent 系统综述；<strong>VLM Safety Fine-Tuning</strong> (2605.32601)：视觉语言模型安全微调；<strong>Web Agent Self-Improvement</strong> (2605.32744)：自改进 Web Agent 扩展；<strong>HuggingFace Multi-Modal RAG</strong> (2605.32812)：多模态 RAG 改进；<strong>Adaptive Inference Scaling</strong> (2605.32920)：自适应推理缩放。<span class="highlight">重点</span>：多 Agent 训练 + 推理 Agent + 视觉 Agent 是 6/3 arXiv 三大热点，<strong>与 Build Day 2 agent 化趋势形成学术界-工业界共振</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Trending -->
+        <section class="section">
+            <div class="section-title">⭐ GitHub Trending · AI 爆款</div>
+
+            <table class="github-table">
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>Stars</th>
+                        <th>类别</th>
+                        <th>趋势</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>LangChain</td><td class="stars">122,850+</td><td>Agent Framework</td><td>稳居第一</td></tr>
+                    <tr><td>OpenHands (All-Hands-AI)</td><td class="stars">60,548</td><td>Coding Agents</td><td class="delta">+196/天</td></tr>
+                    <tr><td>MetaGPT</td><td class="stars">59,634</td><td>Multi-Agent</td><td class="delta">+72/天</td></tr>
+                    <tr><td><strong>opencode (anomalyco)</strong></td><td class="stars">55,230</td><td>Coding Agents</td><td class="delta"><strong>+1,049/天 🔥</strong></td></tr>
+                    <tr><td><strong>Codex (openai)</strong></td><td class="stars">44,547</td><td>Coding Agents</td><td class="delta"><strong>+600/天 🔥（AWS GA 推）</strong></td></tr>
+                    <tr><td>Cline</td><td class="stars">48,986</td><td>Coding Agents</td><td class="delta">+108/天</td></tr>
+                    <tr><td>AutoGen (microsoft)</td><td class="stars">48,226</td><td>Multi-Agent</td><td class="delta">+82/天</td></tr>
+                    <tr><td><strong>MAI-Thinking-1 (microsoft)</strong></td><td class="stars">n/a</td><td>Reasoning Model</td><td class="delta"><strong>6/3 首发 🔥</strong></td></tr>
+                    <tr><td>CrewAI</td><td class="stars">37,599</td><td>Agent Framework</td><td class="delta">+151/天</td></tr>
+                    <tr><td>Cursor</td><td class="stars">30,877</td><td>IDE-Native Agent</td><td>稳</td></tr>
+                </tbody>
+            </table>
+
+            <div class="card" style="border-color: rgba(255, 107, 107, 0.3);">
+                <h3 style="color: var(--accent-red);">🔥 6/3 三大热点：Codex (openai) +600 / opencode 持续 +1,049 / MAI-Thinking-1 首发</h3>
+                <div class="source">来源：OSSInsight Trending AI / GitHub Trending | 2026-06-03</div>
+                <div class="desc">
+                    <strong>Codex (openai) 单日 +600</strong>——受 AWS Bedrock GA 推动，OpenAI 模型直接进入 AWS 生态，开发者实验门槛降低；<strong>opencode (anomalyco)</strong> 持续 +1,049/天——延续昨日趋势，逼近 AutoGen 累计 star 的一半；<strong>MAI-Thinking-1 (microsoft) 6/3 首发</strong>——暂无 GitHub repo（Azure 部署为主），但成为开发者社区讨论热点。
+                </div>
+            </div>
+        </section>
+
+        <!-- 安全警示 -->
+        <section class="section">
+            <div class="section-title">⚠️ 安全警示</div>
+
+            <div class="card">
+                <h3>GitHub Copilot token 计量 = 企业 IT 成本预测的"黑天鹅"</h3>
+                <div class="source">来源：TechTimes / WindowsForum / MLQ.ai | 2026-06-01</div>
+                <div class="desc">
+                    详细见"今日头条"——补充一个企业 IT 视角：之前 Copilot 月费固定 → <strong>企业 IT 可以预测预算</strong>；6/1 改 token 计量后 → <strong>单个 agentic 任务消耗 $30-$40</strong> → 单个开发人员一个月可能消耗 $100-$1000。4.7M 付费用户<strong>没有任何可预测的预算模型</strong>。企业 IT 必须在 6/1-7/1 内<strong>重新设计 Copilot 预算、权限、agent 使用策略</strong>。<span class="highlight">这是 Microsoft 在 Build Day2 加 agentic 能力的同步副作用——agentic 价值 vs agentic 成本的张力在 6/3 全面爆发</span>。今年 Q2-Q3 各公司 CFOs 会看到 Copilot 账单"非预期跳涨"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Build Day 2 推 agent 越多，攻击面越大</h3>
+                <div class="source">来源：LayerX / Build 2026 官方 | 2026-06-01 → 06-03</div>
+                <div class="desc">
+                    Build 2026 第二天发布的所有 agentic 能力（Copilot debugging agent / profiler agent / test generation agent / Surface RTX Spark Dev Box / Web IQ / Scout / Microsoft 365 E7 "Frontier Suite"）都<span class="highlight">默认是 agent 原生</span>，意味着：①<strong>攻击面</strong>：agent 能自主调用工具、写文件、读 PR、改数据库——任何 prompt injection 都能直接变成代码执行；②<strong>信任边界</strong>：传统的"开发者是用户，IDE 是工具"模型崩塌——agent 是"对等程序员"；③<strong>Day 2 演示案例</strong>："Debugging Agent 在断点命中时进行根因分析 + 找出 async initialization 竞态条件"——这意味着 agent 能<strong>自主修改生产代码路径</strong>。<strong>企业 IT 必须在 6 月内对 agent 能力做安全评估</strong>。LayerX 6/1 报告（延续早报警示）：AI 浏览器扩展漏洞概率高 60%、访问 Cookie 高 3 倍——<span class="highlight">与 Build Day 2 agent 化趋势共振，6 月是企业 AI 攻击面急剧扩张月</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Build 2026 Day 2 完整收官：</strong>MAI-Thinking-1（35B 推理 + 零蒸馏）+ Aion 1.0（端侧）+ Majorana 2（量子）+ Discovery GA（科研）+ Mayo Clinic（医疗）</li>
+                    <li><strong>OpenAI 模型 GA 登 AWS Bedrock：</strong>GPT-5.5/5.4/Codex 全部 GA，价格与 OpenAI 一方对等，使用量计入 AWS 承诺消耗</li>
+                    <li><strong>Stargate Michigan $56B 动工：</strong>Altman + Whitmer + Oracle + Related + Blackstone + Walbridge 联合奠基，700 英亩农地，密歇根史上最大单笔投资</li>
+                    <li><strong>Anthropic S-1 引发市场两极反应：</strong>Wedbush "打开闸门" vs WIRED "史上最大 IPO 候选"</li>
+                    <li><strong>GitHub Copilot 6/1 token 计量引爆：</strong>4.7M 付费用户账单 25x-50x 反弹，社区帖 400+ 评论 900 反对票</li>
+                    <li><strong>xAI Grok Build beta 加入编码 agent 三方争霸：</strong>终端 TUI 基于 Grok 4.3，X/Twitter 实时数据原生访问</li>
+                    <li><strong>Anthropic × Google × Broadcom 多 GW 算力：</strong>Claude 是唯一同时三云上线前沿模型</li>
+                    <li><strong>算力供应链多极化定型：</strong>OpenAI 单一云 + MS 投资，Anthropic 三云 + Broadcom 定制</li>
+                    <li><strong>中文圈：</strong>钛媒体 Build 2026 完整复盘 + 智源大会"Token 经济与 OPC"论坛新增</li>
+                    <li><strong>GitHub Trending：</strong>Codex (openai) 单日 +600 受益 AWS GA，opencode 持续 +1,049/天，MAI-Thinking-1 6/3 首发</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>Build 2026 余波：MAI-Thinking-1 开发者社区实测、Microsoft Discovery 早期用户体验、Scout 上线时间表</li>
+                    <li>Anthropic S-1 后续：OpenAI 准备递交的传闻、SpaceX 6/4 路演细节</li>
+                    <li>xAI Grok Build 与 Claude Code 真实对比：编码能力 + 价格 + 集成深度的横向测试</li>
+                    <li>GitHub Copilot 6/1 反弹的余波：GitHub 6/2-3 是否有官方应对、企业 IT 政策调整案例</li>
+                    <li>Polymarket 实时概率：Anthropic 6 月底顶级模型、AI 代理 24/7 落地、CAISI pre-deployment 审查</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：Microsoft Build 官方 · The Verge · Build Fast With AI · AIToolsRecap · 钛媒体 · 新浪科技 · WIRED · TechCrunch · abc7news · LinkedIn (Paul Young) · Oracle Newsroom · OpenAI Blog · bridgemi.com · WXYZ · xAI News · CIO Dive · Reddit r/accelerate · Anthropic 官方 · GitHub Blog · TechTimes · TechCrunch · MLQ.ai · WindowsForum · LayerX · arXiv cs.AI · OSSInsight · GitHub Trending · Wedbush Securities · Economist · Future of Life Institute</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-03 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
