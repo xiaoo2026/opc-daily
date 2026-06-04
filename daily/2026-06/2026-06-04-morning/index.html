@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-04 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-04 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月4日 09:00 发布（采集自6月3日）</p>
+            <div class="meta">
+                <span class="tag tag-capital">资本转向</span>
+                <span class="tag tag-policy">政策落地</span>
+                <span class="tag tag-trend">跨厂商趋势</span>
+                <span class="tag tag-product">具身国标</span>
+                <span class="tag tag-security">泡沫警告</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">$1.75T</div>
+                <div class="label">SpaceX 6/3 路演定档估值</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">$75B</div>
+                <div class="label">SpaceX 拟募资</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">+89%</div>
+                <div class="label">Cerebras 上市 1 个月涨幅</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">$5.7B</div>
+                <div class="label">Anthropic Q1 营收反超 OpenAI</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">5家</div>
+                <div class="label">国内具身 IPO 排队</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">5/5</div>
+                <div class="label">CAISI 5 大厂商全部签约</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：Anthropic S-1 6/2 启动二阶反应 + SpaceX 6/3 路演 $135 / $1.75T + Cerebras 1 个月 +89% 算力暗线 + Dalio 6/3 喊 AI 泡沫 + CAISI 5 大厂商 pre-deployment 全签约 + 中国具身国标 6/1 实施 + 5 家国内具身 IPO 排队</h3>
+            <p>过去 24 小时 6 个跨厂商资本/政策/产业节点同时落地。Wedbush Dan Ives 6/2 公开喊 Anthropic $965B 估值"just the tip of the spear"，预测 2027 Nasdaq 30,000 点；同期 Fortune 6/2 Law 律师喊"打开 IPO 市场闸门"——市场两极反应同步登场。SpaceX 6/3 早间 Bloomberg Podcasts + CNBC 确认路演定价 $135 / 估值 $1.75T / 拟募资 $75B，比 NYT 5/21 爆料的 $1.5T 上调 17%。Cerebras 5/14 上市 1 个月 +89% 估值兑现，OpenAI warrants 锁定 10% 股权——"算力公司被收编 + IPO" 范本完整跑通。</p>
+            <p>Ray Dalio 6/3 Bloomberg 公开升级"AI 泡沫"警告，与 Wedbush 6/2 "tip of the spear" 形成年内最大观点对峙。CAISI 5/5 起 5 大前沿实验室全部纳入 pre-deployment 审查（Google DeepMind / Microsoft / xAI + 既有 Anthropic / OpenAI），NYT 6/1 爆料白宫正考虑 EO 升级为强制准入——Anthropic Mythos 是触发 EO 的最直接证据。中国反向推动：工信部 YD/T 6770-2026 6/1 正式实施 + 宇树科技 6/1 科创板过会（73 天最快）+ 乐聚/云深处/越疆/仙工 4 家排队，<span class="highlight">全球 AI 治理进入"美国 CAISI 审查能力 + 中国国标统一测试"两极分立阶段。</span></p>
+            <p class="last">本早报主动差异化昨日 6/3 三个时段角度（Build Day2 三件套 / Stargate $56B / Copilot token 反弹 / Mythos 10,000+ 漏洞 / MAI-Code-1-Flash / Groq $650M 转型 neocloud / Polymarket 81%-82%），聚焦<strong>资本二阶反应 + 政策触发 + 跨厂商估值对照</strong>。</p>
+        </div>
+
+        <!-- 今日头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Wedbush Dan Ives 6/2："Anthropic $965B 是 tip of the spear" + 投资者应转向 data layer</h3>
+                <div class="source">来源：CNBC | Fortune | bvwd.ca.gov | 2026-05-29 → 2026-06-02</div>
+                <div class="desc">
+                    Wedbush 分析师 <strong>Dan Ives 6/2</strong> 公开表示 Anthropic $965B 估值"just the tip of the spear"，<span class="highlight">预测 2027 年 Nasdaq 突破 30,000 点</span>——投资者应将注意力转向 <strong>Snowflake / Datadog / InnoData</strong> 等"data layer"标的（这些公司直接受益于 AI 应用层爆发，尚未被算力基础设施涨价透支）。Ives 同步预期"未来 12-18 个月历史性 IPO 浪潮"。<strong>反方观点同步登场</strong>：Fortune 6/2 Law 律师（VerticalNet 早期互联网 IPO 操盘手）喊"打开闸门"；Where's Your Ed At 6/2 标题"Anthropic's Profitability Swindle"——5/6 估值 $380B → 6/1 估值 $965B <strong>3 周内 +154%</strong>，是上市前最后一次拉估值。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>SpaceX 6/3 路演定档 $135 / 估值 $1.75T / 拟募 $75B——三大独角兽 IPO 跑出第二棒</h3>
+                <div class="source">来源：Bloomberg Podcasts | CNBC | Reuters Morning Bid | 2026-06-03</div>
+                <div class="desc">
+                    <strong>Bloomberg Podcasts 6/3 早 1 小时 + CNBC 6/3 报道</strong>：SpaceX 6/3 早间正式宣布路演定价 <strong>$135 / 估值 $1.75T / 拟募资 $75B</strong>——比 NYT 5/21 爆料的 $1.5T 估值上调 17%，比 5/19 业内传闻直接定档高 1 步。<strong>三大独角兽路演时间表</strong>：① SpaceX 6/3 路演 → 7 月定价 → 7 月末上市（先发 1-2 个月）；② Anthropic 6/1 S-1 confidential → 预计 10-11 月正式路演；③ OpenAI 预计 2027。<strong>Economist 6/1 头条担忧</strong>：三家合计拟募资 >$200B，"二级市场是否吞得下"——"may absorb capital that might otherwise flow into existing technology stocks or smaller IPOs"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Cerebras 5/14 上市 1 个月 +89% + OpenAI warrants 锁定 10%——"算力公司被收编 + IPO" 范本完整跑通</h3>
+                <div class="source">来源：NYT | Morningstar | CNBC 5/14 视频 | SEMIVISION 6/1</div>
+                <div class="desc">
+                    Cerebras 5/14 上市 1 个月，<strong>开盘 $185 / 收盘 $350 / +89%</strong>（5/14 单日 +70%），成为 2026 年迄今最大 IPO——<strong>OpenAI 用 warrants 拿下最多 10% 股权</strong>（CNBC 5/14 视频独家披露 Cerebras CFO Bob Komin 确认）。<strong>算力公司"被收编 + IPO" 三阶段范本</strong>：① 2024 早期 SambaNova / Cerebras / Groq 独立做硬件；② 2025/12 Groq 被 Nvidia $20B licensing 拿下；③ 2026 Groq 5/28-29 转型 neocloud + Cerebras 5/14 上市 $70B 估值 + Marvell 6/2 +32%。<strong>Wedbush 推荐的"下一阶段 data layer"标的（Snowflake / Datadog / InnoData）</strong> 正在起跑。
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策与监管 -->
+        <section class="section">
+            <div class="section-title">🛡️ 政策与监管</div>
+
+            <div class="card">
+                <h3>CAISI 5/5 起 5 大厂商 pre-deployment 审查全签约——从自愿升级为强制准入前夜</h3>
+                <div class="source">来源：The Hill | CIO.com | Forbes 5/6 Paulo Carvao | SecureWorld 6/2 | NYT 6/1</div>
+                <div class="desc">
+                    CAISI（商务部 NIST 下属）5/5 与 <strong>Google DeepMind + Microsoft + xAI</strong> 首批签约，叠加既有 <strong>Anthropic + OpenAI</strong>（5/1 续签）——<span class="highlight">至此 5 大前沿 AI 实验室全部纳入 pre-deployment 审查</span>，已完成 40+ 次评估。<strong>6/2 升级触发点</strong>：NYT 6/1 爆料白宫正考虑 executive order 把自愿升级为强制——Anthropic Mythos 是 EO 触发最直接证据（Glasswing 邀请制 + 10,000+ 漏洞 + 6/2 扩 150 组织）。<strong>Forbes 5/6 Paulo Carvao 标题</strong>："<strong>Pre-Deployment AI Evaluation Moves From China's Model To Washington</strong>"——美国从 2024-2025 拆解 Biden 安全架构，2026 重新引入"中国模式"。中国厂商进美国市场必须过 CAISI 审查，5 大厂商签约清单没有中国厂商——<span class="highlight">CAISI 审查是中美 AI 实质技术壁垒</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Ray Dalio 6/3 Bloomberg 公开喊"AI 泡沫"——与 Wedbush Ives 6/2 "tip of the spear" 形成对峙</h3>
+                <div class="source">来源：Bloomberg Open Interest 6/3 早 | Bridgewater 11/20 备忘 | Ed Zitron 6/2 | Fortune 1/6</div>
+                <div class="desc">
+                    <strong>Ray Dalio 6/3 Bloomberg 早间公开升级"AI 泡沫"警告</strong>：继 11/20 "市场 80% 走到历史泡沫峰值" 之后，6/3 二次升级——认为"AI 投机"是 1929 / 2000 之后第三个泡沫候选，<strong>"最终必破但不是今天"</strong>。<strong>与 Wedbush 6/2 "tip of the spear" 形成年内最大观点对峙</strong>：Wedbush 看 12-18 个月 Nasdaq 30,000 点；Dalio 看"AI 泡沫最终必破"。<strong>Ed Zitron 6/2 评论</strong>：Anthropic 5/6 → 6/1 估值 3 周内 +154%，"the actual revenue base is far smaller than the $30B ARR headline suggests"——IPO 后真实市场检验会拉回。<strong>NYT 5/29 Jeff Sommer 提示</strong>："of the five largest IPOs in modern history, only Visa significantly outperformed markets"——Visa 是 2008 上市唯一跑赢。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国具身国标 6/1 正式实施 + 5 家具身 IPO 排队：宇树 73 天最快过会</h3>
+                <div class="source">来源：数字中国 6/1 | 新华网 3/31 | 新浪财经 6/1 | 21 财经 5/25</div>
+                <div class="desc">
+                    工信部 <strong>YD/T 6770-2026《人工智能 关键基础技术 具身智能基准测试方法》6/1 正式实施</strong>——具身智能首份行业标准，已同步推进国际标准立项（<span class="highlight">中国首次在具身智能领域主导国际标准</span>）。统一基准测试框架覆盖仿真 + 真实环境，含环境设置 + 任务库构建 + 测试过程 + 指标计算方法"四个统一"。<strong>5 家具身 IPO 全景</strong>：① 宇树科技 6/1 科创板过会（73 天最快，A 股人形机器人第一股，拟募 42.02 亿，发行市值 ≥ 420 亿）；② 乐聚智能 5/底创业板受理；③ 云深处 5/底科创板申报；④ 越疆科技 5/底创业板受理；⑤ 仙工智能 5/底港股提交。<strong>宇树 2025 营收 17.08 亿 / 净利 2.88 亿（3 年 10x 增长），2026 H1 预期营收 10.52-11.28 亿 / 扣非净利 -21.97%~-6.43%</strong>——研发投入大幅增加 + 行业增速从 +332% 放缓到 +68%。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Token 经济学重写：Anthropic Q1 $5.7B 反超 OpenAI $4.8B，估值 $965B vs $850B</h3>
+                <div class="source">来源：Investing.com 6/2 | CNBC 4/17 | WSJ 5/底 | The Information 5/底 | VentureBeat 4/7</div>
+                <div class="desc">
+                    <strong>The Information 5 月底披露 Q1 2026 营收</strong>：Anthropic Q1 <strong>$5.7B 反超 OpenAI $4.8B</strong>（OpenAI 自 2024 年来首次被反超）；WSJ 报道 Anthropic Q2 预期翻倍至 $10.9B——Anthropic Series H 估值 $965B 反超 OpenAI $850B。<strong>Token 经济学重写</strong>：Anthropic 2025/3 全面转向 per-token 计费，CNBC 4/17 标题"AI demand is inflated, and only Anthropic is being realistic"——收入与实际使用挂钩，反观 OpenAI 维持订阅折扣 + ChatGPT 免费层。<strong>OpenAI 财务反差</strong>：Q1 $4.8B / 2026 预期亏损 $14B（Instagram 5/底 + Sybrid 6/2）；<strong>Anthropic 健康增长</strong>：ARR 轨迹 $87M (2024/1) → $9B (2025 末) → $30B (2026/4) —— 12 个月 80x 增长。Claude Code 6 个月达 $1B ARR（Anthropic 史上最快）。
+                </div>
+            </div>
+        </section>
+
+        <!-- 行业趋势 -->
+        <section class="section">
+            <div class="section-title">🌍 跨厂商大趋势</div>
+
+            <div class="card">
+                <h3>趋势 1：Musk-AI 三角联盟——Anthropic + OpenAI 双方付 Musk 算力费</h3>
+                <div class="source">来源：Fortune 5/8 | Reuters 5/6 | CNBC 5/14 | Digital Applied 5/底</div>
+                <div class="desc">
+                    <strong>Musk 个人身家</strong>：4,500 亿（IPO 后将成人类史上第一个 trillionaire）；<strong>xAI 估值 $200B</strong>（2025/9 Series E）；<strong>SpaceX 估值 $1.75T</strong> 路演。<strong>三角关系</strong>：① Anthropic 必须付 $1.25B/月给 Musk（Colossus 1 整租 5/6）；② OpenAI 必须付 Musk 算力费（与 Anthropic 同用 Colossus 1）；③ xAI 自身用 Colossus 1 训练 Grok。<span class="highlight">Musk 收 Anthropic + OpenAI 双方算力费，支撑 SpaceX 估值 $1.75T</span>——Musk 在 AI 算力供应链上是"双向收费"。5 月算力合同 >$45B，超过 5 月所有 AI 股权融资总和。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>趋势 2：5 月算力合同 > 5 月 AI 股权融资总和——"算力供给端资本化"双轨制</h3>
+                <div class="source">来源：Digital Applied 5/底 | Fortune 5/8 | CNBC 5/14 视频 | Substack SEMIVISION 6/1</div>
+                <div class="desc">
+                    <strong>5 月 AI 算力合同总额 >$45B</strong>（Anthropic-xAI 一笔即 $45B/3 年 + Anthropic-SpaceX $1.25B/月 持续到 2029），超过 5 月所有 AI 股权融资总和。<strong>Anthropic 选择"主动锁算力"</strong>：5/4 Blackstone-H&F $1.5B 服务 JV + 5/6 xAI $45B/3 年 + 5/6 SpaceX $1.25B/月 Colossus 1 整租。<strong>OpenAI 选择"主动投芯片厂"</strong>：5/11 Deployment Company $4B+ + 5/14 Cerebras warrants 最多 10% 股权 + 5/底 SambaNova 签约 + 5/底 Nebius $2B 投资。<span class="highlight">两种模式实质相同："算力供给端资本化"——5 月底 AI 算力市场进入"长期合同 + 股权投资"双轨制</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>趋势 3：全球 AI 治理两极分立——CAISI 审查能力 vs 中国国标统一测试</h3>
+                <div class="source">来源：Forbes 5/6 Paulo Carvao | 数字中国 6/1 | 新华网 3/31 | The Hill 6/3</div>
+                <div class="desc">
+                    <strong>美国 CAISI pre-deployment</strong>：5/5 启动，审查 frontier AI 模型能力（5/5 Google DeepMind / Microsoft / xAI + 既有 Anthropic / OpenAI），针对"能力安全性"——"不能发太危险的"。<strong>中国具身国标 YD/T 6770-2026</strong>：6/1 实施，统一基准测试方法（仿真 + 真实环境），针对"测试标准化"——"测试要统一"。<span class="highlight">两侧切入点不同：CAISI 关注模型发布前的"能力安全"，中国国标关注测试时的"统一方法"</span>——实质目标相同，建立 AI 治理框架。中国厂商进美国市场必须过 CAISI 审查（5 大厂商签约清单没有中国厂商），美国厂商进中国市场必须符合算法备案 + 模型登记 + 国标。<strong>全球 AI 治理进入"两极分立"阶段</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本与商业 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>三大独角兽算账：估值 / 收入 / 现金消耗三角对比 + 数据层标的推荐</h3>
+                <div class="source">来源：CNBC | WSJ | Fortune 6/2 | bvwd.ca.gov 6/2 | Economist 6/1 | Indmoney 6/2</div>
+                <div class="desc">
+                    <strong>Anthropic</strong>：估值 $965B / Q1 $5.7B（反超 OpenAI）/ 4 月 ARR $30B / 12 个月 80x 增长 / 6/1 S-1 递交，目标 10-11 月路演。<strong>OpenAI</strong>：估值 $850B / Q1 $4.8B / 2026 预期亏损 $14B / 计划 7 月起 ChatGPT 插入广告 / 拟从海湾主权基金融 $50B+。<strong>SpaceX</strong>：估值 $1.75T（路演定档）/ 拟募 $75B / 收入稳定（Starlink+发射）/ 6/3 路演定价 $135。<strong>Wedbush Dan Ives 推荐 data layer 标的</strong>：<strong>Snowflake / Datadog / InnoData</strong>——这些公司直接受益于 AI 应用层爆发，尚未被算力基础设施涨价透支。<strong>市场观点</strong>：Economist 把 2026 称为"Giga-IPOs year"；Yahoo Finance 6/2 "$3 Trillion Reckoning" 头条担忧 IPO 吸走现有科技股资金。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>腾讯云 5/27 转商用 + 6/3 降价 97.5%——"先收费再降价"两步棋</h3>
+                <div class="source">来源：OpenAI-Hub 5/19 | Shanghai Daily 6/2 | X 公告 6/2 8:41 AM | DeepInfra 6/底</div>
+                <div class="desc">
+                    腾讯云 ADP 平台 <strong>5/27 10:00 结束 Hy3 preview + DeepSeek-V4-Pro 免费公测</strong>，转为按量计费商用服务；<strong>6/3 0:00 起 DeepSeek-V4 系列降价最多 97.5%</strong>。<strong>"先收费再降价"两步棋</strong>：通过 5/27 转商用建立"按量付费"心智，再 6/3 大幅降价吸引企业 Agent 部署。<strong>市场影响</strong>：DeepSeek V4 Pro 各厂商价格（按 1M blended tokens）DeepInfra / Fireworks / Novita $2.17，Together.ai $2.67，OpenRouter $0.435 input / $0.87 output——<span class="highlight">腾讯云降价 97.5% 后可能击穿底价</span>，企业 Agent 部署成本可能从 $100-500/月 降到 $5-25/月。<strong>与 GitHub 6/1 token 计量改革 + 6/2 MAI-Code-1-Flash 上 Copilot 同构</strong>——"两步棋"模式识别：先收回成本/收紧控制 + 紧接着提供低成本选项。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Wedbush 6/2 喊"tip of the spear"：</strong>Anthropic $965B 估值是起点，推荐 Snowflake / Datadog / InnoData data layer 标的</li>
+                    <li><strong>反方同步登场：</strong>Ed Zitron "Profitability Swindle" + Dalio 6/3 Bloomberg 喊 AI 泡沫，3 周 +154% 估值不可持续</li>
+                    <li><strong>SpaceX 6/3 路演定档 $135：</strong>估值 $1.75T / 拟募 $75B，三大独角兽 IPO 跑出第二棒</li>
+                    <li><strong>Cerebras 1 个月 +89% 兑现：</strong>"算力公司被收编 + IPO" 范本完整跑通，OpenAI warrants 锁定 10% 股权</li>
+                    <li><strong>CAISI 5/5 起 5 大厂商全签约：</strong>pre-deployment 审查覆盖所有 frontier 实验室，NYT 6/1 爆料 EO 升级前夜</li>
+                    <li><strong>中国具身国标 6/1 实施：</strong>YD/T 6770-2026 + 宇树 6/1 科创板过会（73 天最快）+ 5 家具身 IPO 排队</li>
+                    <li><strong>Token 经济学重写：</strong>Anthropic Q1 $5.7B 反超 OpenAI $4.8B，估值 $965B vs $850B</li>
+                    <li><strong>Musk-AI 三角联盟：</strong>Anthropic + OpenAI 双方付 Musk $1.25B/月算力费，支撑 SpaceX $1.75T 估值</li>
+                    <li><strong>腾讯云 5/27 收费 + 6/3 降价 97.5%：</strong>"先收费再降价"两步棋，与 GitHub 6/1 + 6/2 MAI-Code-1-Flash 同构</li>
+                    <li><strong>全球 AI 治理两极分立：</strong>CAISI 审查能力 vs 中国国标统一测试，中国厂商进美必须过 CAISI</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：CNBC · NYT · WSJ · Bloomberg · Reuters · Fortune · The Information · The Economist · Forbes · The Hill · CIO.com · SecureWorld · Investing.com · bvwd.ca.gov · 数字中国 · 新华网 · 新浪财经 · 21 财经 · Shanghai Daily · OpenAI-Hub · DeepInfra · Where's Your Ed At · Yahoo Finance</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-04 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
