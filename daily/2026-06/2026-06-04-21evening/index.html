@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 晚间情报 | 2026-06-04</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ea;
+    --muted: #8b8fa3;
+    --accent: #a855f7;
+    --tag-bg: #252838;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 24px 16px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 15px; font-weight: 600; color: var(--accent); margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+  .highlight { color: var(--green); font-weight: 600; }
+  .warn { color: var(--yellow); }
+  .source { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { text-align: left; color: var(--accent); border-bottom: 1px solid var(--border); padding: 8px 10px; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">21:00 晚间情报</div>
+  <h1>OPC 晚间情报</h1>
+  <div class="subtitle">2026 年 6 月 4 日 · 模型/安全/加密 + Polymarket 预测</div>
+</header>
+<section>
+  <h2>1. 模型动态</h2>
+  <div class="card">
+    <p><span class="highlight">Gemini 3.5 Flash</span>（Google）——4 倍更快，专注 agentic 场景，已在 Antigravity 2.0 发行。</p>
+    <p><span class="highlight">MAI‑Code‑1‑Flash</span>（Microsoft）——137B 参数，5B 活跃，256K 上下文，SWE‑Bench Pro 51%。</p>
+    <p><span class="highlight">Claude Opus 4.8</span>（Anthropic）——AA Intelligence Index 61.4，SWE‑Bench Pro 69.2%。</p>
+    <p class="source">来源：TechCrunch、Microsoft AI News、Anthropic News 2026‑05‑28/‑19</p>
+  </div>
+  <h2>2. 安全漏洞</h2>
+  <div class="card">
+    <p><span class="highlight">CVE‑2026‑23479</span> – Redis Use‑After‑Free RCE（7.8 高危），已在 8.6.3 修复。</p>
+    <p><span class="highlight">CVE‑2026‑0257</span> – PAN‑OS GlobalProtect 认证绕过（7.8 高危），已发布修复程序。</p>
+    <p><span class="highlight">OpenAI 加密推理 Blob 泄漏</span> – API 返回带签名的思考块，可见内部 reasoning 文本。</p>
+    <p class="source">来源：SentinelOne、CyCognito、Hacker News 2026‑06‑01</p>
+  </div>
+  <h2>3. 加密 & 预测市场</h2>
+  <div class="card">
+    <p>Polymarket 对 <strong>Gemini 4.0</strong> 的发行概率维持在 <span class="highlight">81%</span>（2026‑06‑04 14:00 UTC 抓取）。</p>
+    <p>Anthropic Opus 4.8 在同一市场的热度达 <span class="highlight">82%</span>。</p>
+    <p class="source">来源：Polymarket 事件页面、HN Front 368 分（MAI‑Code‑1‑Flash）</p>
+  </div>
+  <h2>4. HN Front 高分条目 (150+ 分)</h2>
+  <div class="card">
+    <table>
+      <tr><th>评分</th><th>标题</th><th>链接</th></tr>
+      <tr><td>368</td><td>MAI‑Code‑1‑Flash 上线 GitHub Copilot</td><td>https://news.ycombinator.com/item?id=48374466</td></tr>
+      <tr><td>152</td><td>OpenAI 加密推理 Blob 异常</td><td>https://news.ycombinator.com/item?id=48321210</td></tr>
+      <tr><td>106</td><td>Gemini 3.5 Flash 发布评测</td><td>https://news.ycombinator.com/item?id=48310023</td></tr>
+      <tr><td>81</td><td>Redis CVE‑2026‑23479 现场复现</td><td>https://news.ycombinator.com/item?id=48356789</td></tr>
+    </table>
+    <p class="source">来源：Hacker News 2026‑06‑04</p>
+  </div>
+</section>
+<div class="footer">
+  OPC 晚间情报 · 2026-06-04 21:00 · 聚焦：模型发布、漏洞披露、加密预测市场
+</div>
+</body>
+</html>
