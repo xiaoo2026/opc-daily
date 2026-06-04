@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-06-04</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报</h1>
+      <div class="subtitle">2026年6月4日 · AI行业动态日报</div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>🔥 今日核心警报</h2>
+      <p><strong>DeepSeek 6/3 晚"中国 AI 最大规模融资"突发落地 + 阿里张凯夫离职创业 + 观察者网长文揭"硅谷左脚踩右脚" + Quantinuum 6/4 量子 IPO + 微软 2029 商业量子计算机路线图 + 算电协同 + 国产光互连近 5 亿融资</strong>——AI 行业在 6/4 中午同时打出 6 张主题不同的明牌：<strong>资本</strong>（中国国家队入局 + 产业方集中）/ <strong>结构</strong>（云厂商才是赢家）/ <strong>人才</strong>（大厂副总裁下场做世界模型）/ <strong>赛道</strong>（量子计算从实验室到 IPO）/ <strong>电力</strong>（算电协同成为资本入场券）/ <strong>硬件</strong>（光互连/光模块突破）。</p>
+      <p>过去 18 小时，<strong>资本</strong>端 6/3 晚间路透社爆出<strong>DeepSeek 启动首轮外部融资 500 亿元人民币（约 $74 亿美元）/ 投后估值 3500-4000 亿元（$520-590 亿）</strong>——<strong>梁文锋个人承诺出资 200 亿元（占 40%）锁定表决权</strong>，<strong>腾讯 100 亿元 + 宁德时代 50 亿元 + 国家 AI 产业基金 + 网易 + 京东 + IDG 资本 + Monolith Capital 等 &lt;10 家</strong>进入最后谈判，预计数周内完成。<strong>模型层</strong>阿里副总裁兼搜推智能产品事业部总裁<strong>张凯夫 6/3 离职创业</strong>（今年 1 月已离职、3 月公开宣布），新公司方向<strong>"构建面向市场的世界模型"——预测集体人类行为尤其是市场行为</strong>——与 World Labs（李飞飞，$1B 新轮/$5B 估值）/ AMI Labs（杨立昆，$1.03B 种子）形成"世界模型三连发"。<strong>结构层</strong>观察者网 6/3 头条<strong>"硅谷 AI 融资的钱，最后流到谁手里"</strong>——长文用 2 个底层机制解释 Anthropic $965B 估值的"水分"：① <strong>云厂商是真正赢家</strong>（亚马逊 $330 亿 + 谷歌 $400 亿 + 微软 $50 亿 + 英伟达 $100 亿 投入 Anthropic，<strong>反向</strong> Anthropic 10 年承诺向 AWS 采购 $1000 亿算力 + 向谷歌云锁定 $2000 亿 + 向 Azure 至少投资 $300 亿——<strong>钱在几家之间转圈</strong>）② <strong>独立身份 = 27 倍收入倍数</strong>（并购 = 成本中心 / 独立 = 高增长独角兽倍数）；<strong>OpenAI 4 月内部备忘录还透露 Anthropic 300 亿 ARR 虚增 80 亿</strong>——把消费全额打营收、不扣云商分成。</p>
+    </section>
+
+    <section class="card">
+      <h2 class="cn">🇨🇳 国内动态 ｜ 资本 + 人才 + 算电协同</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">DeepSeek 启动首轮 500 亿元融资，估值 3500-4000 亿</h3>
+        </div>
+        <p><strong>路透社 6/3 晚 + 财联社 + 科创板日报 6/3 同步确认</strong>：DeepSeek 启动成立以来<strong>首轮对外融资</strong>——<strong>拟募资约 500 亿元人民币（约 $74 亿美元），投后估值 3500-4000 亿元（$520-590 亿）</strong>。</p>
+        <table>
+          <tr><th style="width:25%">投资方</th><th style="width:25%">出资金额</th><th>角色</th></tr>
+          <tr><td><strong style="color:#fbbf24">梁文锋（个人）</strong></td><td><strong style="color:#f87171">200 亿元（40%）</strong></td><td>锁定表决权，创始人个人出资创国内 AI 最高纪录</td></tr>
+          <tr><td><strong style="color:#fbbf24">腾讯</strong></td><td><strong style="color:#fbbf24">100 亿元</strong></td><td>战略投资方，首次进入 AI 大模型一级市场</td></tr>
+          <tr><td><strong style="color:#fbbf24">宁德时代</strong></td><td>50 亿元</td><td>算电协同布局</td></tr>
+          <tr><td>国家 AI 产业投资基金</td><td>待定</td><td>国家队入场</td></tr>
+          <tr><td>网易 / 京东 / IDG / Monolith</td><td>待定（&lt;10 家）</td><td>内容 / 电商 / 财务</td></tr>
+        </table>
+        <div class="highlight">
+          <p><strong>关键看点 1：估值跳涨</strong>——5 月初大基金洽谈领投时估值锁定 $450 亿（约 3065 亿人民币），<strong>1 个月跳到最高 $590 亿（4000 亿人民币），涨幅 ~31%</strong>——对应 V4 4/24 发布 + SWE-bench Pro 80.6% 首超 Claude Sonnet 4.5 + 5/22 V4-Pro 永久降价 + 5/30 多模态 "Thinking with Visual Primitives"——商业化能力兑现。</p>
+          <p><strong>关键看点 2：投资方异质性</strong>——<strong>互联网大厂（腾讯）+ 动力电池龙头（宁德时代）+ 国家级基金（国家 AI 基金）+ 电商（京东/网易）+ 创始人个人出资 + 财务资本</strong>——<strong>"五虎"</strong>中唯一未公开融资的 DeepSeek，<strong>是 2026 中国大模型一级市场定价博弈收官之作</strong>。</p>
+          <p><strong>关键看点 3：梁文锋"自我锁定"</strong>——梁文锋 200 亿个人出资锁定表决权，<strong>"我宁愿拥有最高的收入，而不是最大的数据中心"</strong>——延续之前<strong>"不融资、不商业化、不路演"</strong>的极简哲学，<strong>DeepSeek 从研究型公司正式进入资本扩张阶段</strong>。</p>
+          <p><strong>关键看点 4：腾讯的算账</strong>——Q1 资本开支 319 亿，自研混元 Hy3 preview 4 月上线后被豆包/千问/DeepSeek 压制，100 亿元入局 DeepSeek 是腾讯"AI 入口战"追赶字节、阿里的关键一步。</p>
+        </div>
+        <p>来源：路透社 6/3 晚 | 财联社（科创板日报）6/3 | 东方财富 6/3 | 网易 6/3</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">阿里副总裁张凯夫离职创业，做"市场行为世界模型"</h3>
+        </div>
+        <p><strong>科创板日报 6/3 独家 + 阿里官方</strong>：<strong>阿里集团副总裁兼搜推智能产品事业部总裁张凯夫已于今年 1 月离职</strong>，6/3 正式公开新创业方向——<strong>构建面向市场的世界模型</strong>。</p>
+        <p><strong>关键时间线</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">2017</strong>：加入阿里，担任淘宝行业负责人，与汤兴、杨光、刘博并称"大淘宝四大金刚"</li>
+          <li><strong style="color:#fbbf24">2021</strong>：调任阿里海外数字商业板块，曾任 AliExpress 全球跨境业务中心总经理</li>
+          <li><strong style="color:#fbbf24">2022/1</strong>：升任阿里巴巴副总裁（M6）</li>
+          <li><strong style="color:#fbbf24">2024/底</strong>：调回淘天集团，主导搭建"搜推智能产品事业部"</li>
+          <li><strong style="color:#fbbf24">2026/1</strong>：离职 → <strong>2026/4</strong>：搜推事业部被拆分，核心多模态团队并入新成立的 ATH 事业群</li>
+          <li><strong style="color:#fbbf24">2026/6/3</strong>：正式公开创业方向，社媒发文：<strong>"预测集体人类行为，尤其是市场行为，是人工智能尚未征服的终极超能力挑战之一。我相信目前正是启程之时"</strong></li>
+        </ul>
+        <p><strong>赛道格局</strong>：</p>
+        <table>
+          <tr><th>公司</th><th>创始人</th><th>估值</th><th>方向</th></tr>
+          <tr><td><strong style="color:#fbbf24">World Labs</strong></td><td>李飞飞</td><td>$5B（$1B 新轮）</td><td>3D 世界模型 / 空间智能</td></tr>
+          <tr><td><strong style="color:#fbbf24">AMI Labs</strong></td><td>杨立昆</td><td>$1.03B 种子</td><td>世界模型 / JEPA 架构</td></tr>
+          <tr><td><strong style="color:#f87171">张凯夫新公司</strong></td><td>张凯夫（前阿里）</td><td>未披露</td><td>市场行为世界模型</td></tr>
+          <tr><td>智元 GE 2.0</td><td>智元（国内）</td><td>未披露</td><td>具身世界模型</td></tr>
+          <tr><td>VAST</td><td>贾佳亚</td><td>近 $2 亿</td><td>3D 视觉 + 世界模型</td></tr>
+        </table>
+        <div class="highlight">
+          <p><strong>"世界模型"成为 2026 年 AI 顶级人才与资本的最大公约数赛道</strong>——从李飞飞（3D 空间）到杨立昆（认知架构）到张凯夫（市场行为），<strong>3 个完全不同背景的顶级人才全部押注同一个范式</strong>。</p>
+          <p><strong>意义</strong>：继 3 月千问核心负责人林俊旸"bye my beloved qwen"之后，<strong>又一位阿里 AI 核心操盘手下场</strong>——<strong>国内大厂 AI 人才"向外溢出"在 2026 上半年进入高峰期</strong>。</p>
+        </div>
+        <p>来源：科创板日报 6/3 | 财联社 6/3 | 新浪财经 6/3 | 荔枝新闻 6/3</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">观察者网 6/3 长文定性"硅谷 AI 融资 = 左脚踩右脚"</h3>
+        </div>
+        <p><strong>观察者网 6/3 头条</strong>（"左脚踩右脚，硅谷 AI 融资的钱，最后流到谁手里？"）——<strong>一篇长文用 2 个机制解构 Anthropic $965B 估值的"水分"</strong>：</p>
+        <p><strong>机制 1：钱在几家之间转圈</strong></p>
+        <table>
+          <tr><th>投入 Anthropic 的公司</th><th>投入金额</th><th>反向 Anthropic 承诺算力采购</th></tr>
+          <tr><td>亚马逊 AWS</td><td>$330 亿</td><td><strong style="color:#f87171">10 年 $1000 亿</strong></td></tr>
+          <tr><td>谷歌</td><td>$400 亿</td><td><strong style="color:#f87171">锁定 $2000 亿</strong></td></tr>
+          <tr><td>微软 Azure</td><td>$50 亿</td><td>至少 $300 亿</td></tr>
+          <tr><td>英伟达</td><td>$100 亿</td><td>（未披露）</td></tr>
+          <tr><td>三星 / SK 海力士 / 美光</td><td>战略入股</td><td>（未披露）</td></tr>
+        </table>
+        <p>钱从 AWS / Google / Microsoft 流到 Anthropic，再从 Anthropic 流回 AWS / Google / Microsoft——<strong>"左脚踩右脚"式上升</strong>。<strong>2025 年 Anthropic 全年支出 $97 亿（仅计算方面 $68 亿）= 全年实际营收 $97 亿</strong>——赚的钱全部烧在算力上。</p>
+        <p><strong>机制 2：独立身份 = 27 倍收入倍数</strong></p>
+        <p>如果亚马逊并购 Anthropic，<strong>进入财报就是成本中心，市场按亚马逊整体倍数定价，Anthropic 的亏损会拉低合并利润</strong>。<strong>只要 Anthropic 保持独立身份，就能按高增长 AI 独角兽逻辑定价，27 倍收入倍数甚至更高</strong>——<strong>同一块资产，独立身份的账面价值远高于并入大厂报表</strong>。</p>
+        <p><strong>OpenAI 4 月内部备忘录（观察者网转引）</strong>：OpenAI 首席营收官告诉员工——<strong>Anthropic 对外披露的 300 亿年化营收，虚增了大约 80 亿</strong>。原因：企业客户通过 AWS / Azure / 谷歌云调用 Claude，<strong>Anthropic 把消费全额打进营收，不扣云服务商拿走的分成</strong>。</p>
+        <div class="quote">
+          <strong>"硅谷 AI 融资"真正确定性最高的赢家不是模型公司，是云厂商和芯片厂商</strong>。当鼓声停下，亚马逊和谷歌已经带着算力费离场了。<strong>留在场里的，是最后接到花的人。</strong>
+        </div>
+        <p>来源：观察者网 6/3 头条</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">4</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">算电协同 + 光互连 + 国产算力 6/3 多线齐发</h3>
+        </div>
+        <p><strong>6/3-6/4 产业资本 + 算电协同 + 国产硬件 三线齐发</strong>：</p>
+        <table>
+          <tr><th>领域</th><th>事件</th><th>金额</th><th>战略意义</th></tr>
+          <tr><td><strong style="color:#fbbf24">AI 数据安全</strong></td><td>某独角兽 6/3 传 20 亿新轮</td><td><strong style="color:#f87171">估值冲 800 亿</strong></td><td>"算电协同"配套</td></tr>
+          <tr><td><strong style="color:#fbbf24">光互连</strong></td><td>光联芯科 6/3 斩获近 5 亿融资</td><td>5 亿元</td><td>国产光模块突破</td></tr>
+          <tr><td><strong style="color:#fbbf24">国产算力</strong></td><td>寒武纪 6/3 成交 150 亿</td><td>收盘 1238 元</td><td>全天主力净流出 18.31 亿，5 日累跌 11.98%</td></tr>
+          <tr><td>鸿海 / 苹果</td><td>6/3 对中国大基金 / 智元表态</td><td>—</td><td>供应链东移</td></tr>
+          <tr><td>孙正义</td><td>6/2 重登亚洲首富</td><td>—</td><td>软银 AI 投资回报</td></tr>
+        </table>
+        <p><strong>算电协同底层逻辑（DeepSeek + 宁德时代同台印证）</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">宁德时代</strong> 4-5 月<strong>连续收购 HVDC 龙头中恒电气 + IDC 世纪互联</strong>——<strong>全链条卡位</strong></li>
+          <li><strong style="color:#fbbf24">DeepSeek 5/22 V4 永久降价 + 6/3 引入宁德时代</strong>——<strong>数据中心电力储能配套</strong></li>
+          <li>国产模型公司"商业化必走算电协同"——<strong>AI 算力的下一个战场是"电"</strong></li>
+        </ul>
+        <p>来源：21 世纪经济报道 6/3 | 证券时报 6/3 | 钛媒体 6/3 | 网易 6/3</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🌍 国际动态 ｜ 量子 + 资本市场 重构</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Quantinuum 6/4 上市：2026 年首个量子计算 IPO，募资 $16.8 亿</h3>
+        </div>
+        <p><strong>MoneyDJ 6/4 早 8:09 报道</strong>：<strong>美国量子计算公司 Quantinuum（QNT.US）6/4 正式在纽交所挂牌</strong>，<strong>IPO 定价每股 $60</strong>、<strong>募资 $16.8 亿美元</strong>——<strong>2026 年首个纯量子计算 IPO</strong>，量子运算热持续升温。</p>
+        <p><strong>公司背景</strong>：</p>
+        <ul>
+          <li>由 <strong>Honeywell 量子解决方案部门 + Cambridge Quantum</strong> 合并而成</li>
+          <li><strong>离子阱</strong>（trapped ion）路线，与 IBM（超导）/ Google（超导）/ IonQ（离子阱）/ Rigetti（超导）形成<strong>主流量子硬件四路线</strong></li>
+          <li>旗舰产品 <strong>H2 离子阱量子计算机</strong> + <strong>Quantum Origin</strong> 量子安全产品</li>
+          <li>主要客户：<strong>BMW / 摩根大通 / 韩国 SK / 德国默克</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>意义</strong>：<strong>量子计算从实验室走向资本市场的标志性事件</strong>——<strong>与 Build 2026 Majorana 2 + 微软 2029 商业量子计算机时间表配套</strong>，<strong>形成 2026 量子计算"三连击"</strong>。</p>
+        </div>
+        <p>来源：MoneyDJ 6/4 8:09 | Yahoo 股市 6/4</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">微软 Majorana 2 配套：2029 商业量子计算机，3 年目标</h3>
+        </div>
+        <p><strong>新浪财经 6/4 转载 + 微软 Build 2026 公告</strong>：<strong>微软加快量子计算发展计划，到 2029 年推出有商业价值、可扩展的量子计算机——较原 2033 年目标提前 4 年</strong>。</p>
+        <p><strong>Majorana 2 关键数据</strong>（微软 6/2 Build 发布）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">量子比特寿命 20 秒</strong>，某些情况长达 <strong style="color:#f87171">1 分钟</strong>（vs 早期商用超导机的 ~100 微秒）</li>
+          <li>用<strong>铅</strong>取代"马约拉纳 1"中铝基超导叠层——<strong>铅有助于保护量子态、增强电子对结合力</strong></li>
+          <li>加速发展得益于"<strong>微软发现</strong>"（Microsoft Discovery）——<strong>AI 代理帮助研究人员分析数据、识别关系、自动化实验和检测缺陷</strong></li>
+        </ul>
+        <p><strong>学界质疑</strong>：</p>
+        <ul>
+          <li>批评者认为<strong>微软未公开展示功能完备的拓扑量子比特和能实现商业化目标的原型</strong></li>
+          <li>质疑是否观察到马约拉纳态，<strong>部分人认为公布的数据有更常规解释</strong></li>
+          <li>弗罗洛夫认为<strong>"微软依赖未公布数据及过去说法损害项目信心，3 年内推出商业产品不太可能"</strong></li>
+        </ul>
+        <div class="quote">
+          <strong>"3 年内商业化"是微软首次给出具体时间表</strong>——与 <strong>Quantinuum 6/4 上市</strong> 同期公告，<strong>形成"资本市场 + 产业承诺"双锁定</strong>——但 3 年是否落地仍待 2027 验证。
+        </div>
+        <p>来源：新浪财经 6/4 | Microsoft Build 2026 6/2</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">3</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">6/3 港股 + 美股科技股延续升势</h3>
+        </div>
+        <ul>
+          <li><strong style="color:#fbbf24">恒生科技指数 6/3</strong> 涨 3%（与早报"腾讯涨 10%"延续）</li>
+          <li><strong style="color:#fbbf24">标普 500 6/3 收盘</strong> 首次站上 <strong style="color:#f87171">7600 点</strong>——Marvell 涨 32% 贡献最大</li>
+          <li><strong style="color:#fbbf24">比特币</strong> 一度跌破 6.7 万美元</li>
+          <li><strong style="color:#fbbf24">英伟达</strong> Vera CPU 对联想集团影响正面（花旗），<strong>Vera Rubin 届全面商业生产阶段</strong></li>
+          <li><strong style="color:#fbbf24">大摩升美光目标价</strong>至 $1050、上调 SanDisk 目标价至 $1750——<strong>"记忆体供应紧张料最少持续两至三年"</strong></li>
+          <li><strong style="color:#fbbf24">腾讯</strong>：目前无法确定微信 AI 智能体何时推出（财报会议）</li>
+        </ul>
+        <p>来源：智通财经 6/3 | AASTOCKS 6/3</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">🔭 差异化小结 + 风险信号</h2>
+      <p><strong>本午报 4 个独特角度</strong>——<strong>早报、6/3 三个时段都未涉及</strong>：</p>
+      <ul>
+        <li><strong style="color:#fbbf24">DeepSeek 500 亿融资 6/3 晚落地</strong>——<strong>中国 AI 一级市场定价博弈收官</strong>——梁文锋个人 200 亿锁定表决权 + 腾讯 100 亿 + 宁德时代 50 亿 + 国家 AI 基金，<strong>"五虎"中唯一未公开融资的 DeepSeek 关门</strong></li>
+        <li><strong style="color:#fbbf24">观察者网 6/3 长文"左脚踩右脚"</strong>——<strong>Anthropic $965B 估值的水分解构</strong>——钱在 AWS/Google/Microsoft 之间转圈，<strong>真正赢家是云厂商和芯片厂商</strong>——与早报"AI 泡沫"形成方法论对接</li>
+        <li><strong style="color:#fbbf24">阿里张凯夫离职做"市场行为世界模型"</strong>——<strong>继 3 月林俊旸之后又一位阿里 AI 核心操盘手下场</strong>——世界模型成为 2026 AI 顶级人才与资本的最大公约数赛道</li>
+        <li><strong style="color:#fbbf24">Quantinuum 6/4 量子 IPO + 微软 2029 商业量子</strong>——<strong>量子计算从实验室到 IPO 首次出现具体时间表</strong></li>
+      </ul>
+      <p><strong>🧠 风险信号（与早报呼应）</strong>：</p>
+      <ul>
+        <li><strong style="color:#f87171">Anthropic S-1 递交流程性 + Mythos 仅 150 组织预览</strong> + <strong>CAISI 自愿签约升级为强制准入</strong>——<strong>Anthropic 的"故事"正在被监管 + 资本 + 安全三层同时审视</strong></li>
+        <li><strong style="color:#f87171">OpenAI 4 月内部备忘录曝光"营收虚增"</strong> + <strong>观察者网长文"左脚踩右脚"</strong>——<strong>美国 AI 公司的财务真实性 + 估值合理性将成 6 月 21evening / evening 重点</strong></li>
+        <li><strong style="color:#f87171">马约拉纳 2 学界质疑</strong>——<strong>量子计算 3 年商业化时间表不被学界认可</strong>——<strong>真正的量子优越性验证可能在 2027-2028 才能落定</strong></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>OPC 午间情报 · 2026-06-04 12:00 · Hermes Agent 采集发布</p>
+    </footer>
+  </div>
+</body>
+</html>
