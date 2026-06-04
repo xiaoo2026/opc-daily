@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPC 午间情报 | 2026-06-04</title>
+  <title>OPC 午间情报 | 2026-06-04（15:00 增量更新）</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -60,10 +60,10 @@
   <div class="container">
     <header>
       <div class="badge">📡 午间情报</div>
-      <h1>OPC 午间情报</h1>
-      <div class="subtitle">2026年6月4日 · AI行业动态日报</div>
+      <h1>OPC 午间情报 <span style="color:#fbbf24; font-size:0.6em; font-weight:600; margin-left:0.5rem;">15:00 增量更新</span></h1>
+      <div class="subtitle">2026年6月4日 · AI行业动态日报 <span style="color:#fbbf24;">· 12:00 + 15:00 增量</span></div>
       <div class="meta">
-        <span>采集 12:00</span>
+        <span>采集 12:00 + 15:00 增量</span>
         <span>·</span>
         <span>类型 afternoon</span>
         <span>·</span>
@@ -256,6 +256,162 @@
       </div>
     </section>
 
+    
+    <section class="card" style="border-color: rgba(251, 191, 36, 0.4); background: rgba(251, 191, 36, 0.03);">
+      <h2 style="color:#fbbf24; border-bottom-color: rgba(251, 191, 36, 0.3);">🔄 12:00 → 15:00 增量更新（5 个新角度）</h2>
+      <p style="color:#fde68a; font-size:0.85rem; margin-bottom:1.5rem;">⚠️ 15:00 cron 触发——按 skill 指南，12:00 已有 afternoon 记录，执行<strong>增量更新</strong>而非重新采集。下方 5 个新角度与 12:00 早报 / morning / 6/3 三个时段<strong>不重叠</strong>。</p>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num" style="background:#fbbf24;">1</span>
+          <h3 style="margin:0; color:#fbbf24; font-size:0.95rem;">Trump AI EO 6/2 签发，6/4 行业进入"30 天评审窗口"实施期</h3>
+        </div>
+        <p><strong>白宫 6/2 正式发布行政令"Promoting Advanced Artificial Intelligence Innovation and Security"</strong>——<strong>核心条款 Section 3"Secure Frontier Model Deployment" 60 天内由 Treasury / NSA / CISA 共同设计自愿框架</strong>（Reuters 6/2 / NYT 6/2 / CNBC 6/2 / NPR 6/2 / Axios 6/2 / CFR 6/2 / White House 6/2 / DWT 6/2 / Roll Call 6/2 一致报道）：</p>
+        <p><strong>关键条款</strong>（Davis Wright Tremaine 6/2 法律分析）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">第 3 节 / 60 天倒计时</strong>：财政部长（牵头）+ NSA（国家安全局局长）+ CISA（网络安全与基础设施安全局局长），在 60 天内设计<strong>分类基准测试流程</strong>，确定"covered frontier model"门槛</li>
+          <li><strong style="color:#fbbf24">30 天评审窗口</strong>：<strong>AI 厂商可自愿</strong>（may, but are not required to）让政府获得"covered frontier model"<strong>最长 30 天</strong>预先评估访问权限——<strong>早前传闻 90 天被砍到 30 天</strong>（Jones Walker 6/2 法律博客）</li>
+          <li><strong style="color:#fbbf24">配套机制</strong>：<strong>BOD（约束性操作指令）30 天内由 CISA 发布</strong>——加速民用联邦系统网络防御、扩展 AI 防御工具、为农村医院/社区银行/本地公用事业提供网络安全工具与服务（Elevate 6/2）</li>
+          <li><strong style="color:#fbbf24">触发事件</strong>：Anthropic Claude Mythos 5/25 公布"覆盖每个主要 OS 和浏览器的高危漏洞"——<strong>触发该 EO</strong>（NYT 6/2：Mythos 因漏洞曝光能力拒绝公开发布）</li>
+        </ul>
+        <p><strong>6/3-6/4 行业反应</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">CAISI（AI 安全研究所联盟）</strong>：6 大前沿厂商（Google DeepMind / Microsoft / xAI / Anthropic / OpenAI / Meta）5/5 起已签约自愿 pre-deployment 审查——<strong>Trump EO 实质上是把"自愿审查"从"分散"升级到"统一标准 + 30 天窗口"</strong></li>
+          <li><strong style="color:#fbbf24">Anthropic 6/3 公告</strong>：Dario Amodei 6/2 致员工信"S-1 同期公告 Mythos 6 月内对所有客户开放"——<strong>与 EO 30 天窗口形成 5 天时间差</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>意义</strong>：<strong>6/2 EO 是 2025-2026 美国 AI 政策的分水岭</strong>——从"hands-off"（1 月撤销 Biden EO）→"自愿审查 + 30 天窗口"（6/2 新 EO）→ <strong>CISA 30 天内出 BOD</strong>（7/2 截止）。<strong>"自愿"措辞是法律减压阀</strong>（厂商 may not must）——但配套"covered frontier model 强制认定"会形成事实上的"以自愿为名的强制"。</p>
+        </div>
+        <p class="source-link">来源：White House 6/2 | Reuters 6/2 | NYT 6/2 | CNBC 6/2 | NPR 6/2 | Axios 6/2 | CFR 6/2 | DWT 6/2 | Jones Walker 6/2 | Federal News Network 6/2</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num" style="background:#fbbf24;">2</span>
+          <h3 style="margin:0; color:#fbbf24; font-size:0.95rem;">Anthropic-SpaceX $1.25B/月 $45B 三年算力合同 6/4 重新计价</h3>
+        </div>
+        <p><strong>SpaceX S-1 IPO 招股书 5/20 修订版披露</strong>（6/4 衍生话题）：<strong>Anthropic 已与 SpaceX 签订 3 年期 $45B 算力合同</strong>——<strong>$1.25B/月</strong>、<strong>覆盖 2026/5 至 2029/5</strong>、<strong>独占访问 Colossus I + Colossus II GPU 集群</strong>（<strong style="color:#f87171">325,000+ NVIDIA GPUs</strong>、耗电数百兆瓦）。</p>
+        <p><strong>关键数字</strong>：</p>
+        <table>
+          <tr><th style="width:30%">指标</th><th>数字</th></tr>
+          <tr><td>3 年合同总额</td><td><strong style="color:#f87171">$45B</strong>——5 月份所有 AI 股权融资总和的数倍</td></tr>
+          <tr><td>月度算力支出</td><td><strong style="color:#f87171">$1.25B/月</strong>——年化 $15B 算力支出</td></tr>
+          <tr><td>占 Anthropic ARR 比例</td><td>2026 ARR $30B → <strong>算力支出占 ARR 50%</strong></td></tr>
+          <tr><td>独占 GPU 数量</td><td>325K NVIDIA GPU（4-5 个 Cerebras 完整集群）</td></tr>
+          <tr><td>SpaceX S-1 风险因素</td><td><strong style="color:#fbbf24">新增水资源稀缺</strong>——AI 与数据中心用水矛盾首次写进招股书</td></tr>
+        </table>
+        <p><strong>对照 5/6 Anthropic Series G $30B 估值 $380B → 6/1 S-1 估值 $965B</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">估值 3 周翻 2.5x</strong>（早报已写）</li>
+          <li><strong style="color:#fbbf24">新增的合同 $45B</strong>——<strong>等于把估值做实 50%</strong>（$45B 算力承诺 ÷ $965B 估值 = 14% 累计 3 年）</li>
+          <li><strong style="color:#fbbf24">S-1 内 Anthropic 客户承诺 vs 算力承诺 1:1 对应</strong>——<strong>估值"实在性"由合同保障</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>意义</strong>：6/3 evening 已写"OpenAI 上 AWS Bedrock GA + Stargate Michigan $56B 动工"——<strong>Anthropic 走相反路径</strong>：<strong>不上 AWS，不自建，用 $45B 锁定 SpaceX Colossus</strong>——<strong>SpaceX-Anthropic 形成"算力侧 Stargate"</strong>。对投资者的二阶反应：5/6 Series G 投资人 3 周内纸面浮盈 154%——<strong>Anthropic 用 S-1 内"3 年算力合同"做实估值</strong>，回应 Zitron "Profitability Swindle" 质疑。</p>
+        </div>
+        <p class="source-link">来源：Tesery 6/3 | Relve 6/3 | Digital Applied 5 月资本追踪 | SpaceX S-1 5/20 修订版</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num" style="background:#fbbf24;">3</span>
+          <h3 style="margin:0; color:#fbbf24; font-size:0.95rem;">预测市场 Polymarket 14/20 顶级钱包为 AI bot + Olas Polystrat 24/7 自主代理</h3>
+        </div>
+        <p><strong>CoinDesk 3/15 报道（6/4 持续发酵）</strong> + <strong>New York City Servers 分析</strong>：<strong>Polymarket 顶级 20 钱包中 14 个是 AI 机器人</strong>——<strong>AI 代理已占据预测市场 30%+ 钱包活动，37% AI 代理报告正 P&amp;L</strong>。</p>
+        <p><strong>Olas Polystrat（Valory 6/3 在 Pearl App Store 上线）</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">首个消费级"AI 代理替你下注"应用</strong>——用户只需"高阶目标"，代理 24/7 自动评估 + 下注 + 收账</li>
+          <li><strong style="color:#fbbf24">Polystrat 专属 Polymarket</strong> + <strong>Omenstrat 专属 Omen (Gnosis 链)</strong></li>
+          <li><strong style="color:#fbbf24">运行时奖励</strong>：运行 Polystrat 可同时获得 OLAS 活动奖励（不依赖交易胜负）</li>
+          <li><strong style="color:#fbbf24">策略预设</strong>：risky / balanced / 完全自定义自然语言策略</li>
+          <li><strong style="color:#fbbf24">关键时间</strong>：3/15 CoinDesk 报道 → 6/3 正式登陆 Pearl → 6/4 进入主流 AI 新闻流</li>
+        </ul>
+        <p><strong>AI 代理在预测市场的工作量</strong>（NYC Servers 综述）：</p>
+        <table>
+          <tr><th style="width:35%">指标</th><th>数据</th></tr>
+          <tr><td>顶级 20 钱包中 AI bot 数量</td><td><strong style="color:#f87171">14 / 20</strong></td></tr>
+          <tr><td>AI 代理在钱包活动的占比</td><td><strong style="color:#f87171">30%+</strong></td></tr>
+          <tr><td>AI 代理正 P&amp;L 比例</td><td>37%</td></tr>
+          <tr><td>Solana 接入 Polymarket</td><td>2 月（sub-cent 交易费 + sub-second finality）</td></tr>
+        </table>
+        <div class="quote">
+          <strong>预测市场 2026 年已完成"AI 代理化"</strong>——<strong>6/3-6/4 是这条线爆发的可见点</strong>（Olas 商业化 + 14/20 钱包为 bot + 30% 活动量）。<strong>Polymarket 当前热点市场</strong>：Anthropic IPO Closing Market Cap / Anthropic 估值 / SpaceX 估值 / Trump AI 联邦审查 / Largest Company 6 月底 / Broadcom Q2 AI 营收——<strong>所有这些市场都有 AI 代理在里面交易</strong>。
+        </div>
+        <p class="source-link">来源：CoinDesk 3/15 | NYC Servers 2026 综述 | Olas 6/3 公告 | Pearl App Store | Autonolas 6/3 X 帖文</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num" style="background:#fbbf24;">4</span>
+          <h3 style="margin:0; color:#fbbf24; font-size:0.95rem;">arXiv cs.AI 6/4 新增 226 篇，agent reasoning 类占主导</h3>
+        </div>
+        <p><strong>arXiv cs.AI 6/4 daily list</strong>：<strong>226 篇新论文</strong>（5 年前同期日均 &lt; 50 篇）。</p>
+        <p><strong>6/4 头部论文分布</strong>（papers.cool cs.AI 6/4 ranking）：</p>
+        <table>
+          <tr><th style="width:15%">排名</th><th>论文</th><th>方向</th></tr>
+          <tr><td>#2/226</td><td><strong style="color:#fbbf24">LinTree</strong></td><td>结构化搜索历史提高 LLM 推理</td></tr>
+          <tr><td>#5/226</td><td>FAM-Bench</td><td>食品医学多模态基准</td></tr>
+          <tr><td>#6/226</td><td><strong style="color:#fbbf24">HypoAgent</strong></td><td>KG 上的 agentic 假设生成——世界模型新范式</td></tr>
+          <tr><td>#7/226</td><td>Learning to Adapt</td><td>Web agent 自改进——长程任务</td></tr>
+          <tr><td>#8/226</td><td>Diagnosing Failure Modes</td><td>视觉 agent 协作失败模式</td></tr>
+          <tr><td>#9/226</td><td><strong style="color:#fbbf24">TraceGraph</strong></td><td>agent 决策轨迹图——可观测性</td></tr>
+          <tr><td>#10/226</td><td>GLIDE</td><td>GenAI / agent 系统工业级评测</td></tr>
+          <tr><td>#25/226</td><td>Learning Agent-Compatible</td><td>长程任务 context 管理</td></tr>
+        </table>
+        <div class="highlight">
+          <p><strong>意义</strong>：<strong>论文层 6/4 已进入"agent 工业级落地"细分</strong>——<strong>失败模式诊断、决策轨迹、长程 context、可观测性</strong>是 4 大新方向——<strong>与 morning 写的"CAISI 准入 + 自愿签约"政策侧</strong>形成 paper-policy 双向收敛。</p>
+        </div>
+        <p class="source-link">来源：arXiv cs.AI 6/4 list | papers.cool cs.AI 6/4 | arXiv cs.MA 6/2 list</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num" style="background:#fbbf24;">5</span>
+          <h3 style="margin:0; color:#fbbf24; font-size:0.95rem;">xAI Grok Build 0.1 公共 beta 上线 + 对冲 Anthropic/SpaceX 算力合同</h3>
+        </div>
+        <p><strong>xAI Grok Build 0.1 公共 beta</strong>（xAI 6/3 公告 + Releasebot 6/3）：<strong>xAI 首个"agentic coding"专用模型</strong>——<strong>grok-build-0.1 在 xAI API 公测</strong>，支持 web 开发 + 调试 + MCP——<strong>与 Grok Build CLI 同一模型</strong>。</p>
+        <p><strong>关键时序</strong>：</p>
+        <table>
+          <tr><th style="width:25%">时间</th><th>事件</th></tr>
+          <tr><td>2025/8/28</td><td>grok-code-fast-1 第一个编码专用模型</td></tr>
+          <tr><td>2026/1</td><td>Grok Build / Grok CLI 公布 + waitlist</td></tr>
+          <tr><td>2026/4</td><td>waitlist 关闭 + 集成 IDE</td></tr>
+          <tr><td>2026/5</td><td>Grok Build 0.1 私测</td></tr>
+          <tr><td><strong style="color:#f87171">2026/6/3</strong></td><td><strong style="color:#f87171">Grok Build 0.1 API 公测（本时段）</strong></td></tr>
+          <tr><td>2026/6/4</td><td>SuperGrok 订阅打通 OpenCode</td></tr>
+        </table>
+        <p><strong>"两步棋"识别（与早报呼应）</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">6/1</strong> GitHub Copilot <strong>token 计量</strong> 改革 —— <strong>4.7M 用户 25-50x 账单上涨</strong></li>
+          <li><strong style="color:#fbbf24">6/2</strong> 微软推 <strong>MAI-Code-1-Flash</strong> 上 GitHub Copilot 全档 —— <strong>应对反弹</strong></li>
+          <li><strong style="color:#fbbf24">6/3</strong> xAI <strong>Grok Build 0.1 公测</strong> —— <strong>第三方进入抢反弹用户</strong></li>
+          <li><strong style="color:#fbbf24">6/4</strong> xAI <strong>grok-code-fast-1 + SuperGrok 订阅打通 OpenCode</strong> —— <strong>"复制 Copilot 商业模式 + 反向绑定 X 平台"</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>意义</strong>：<strong>Anthropic-SpaceX $45B 算力合同</strong>（第 2 节） vs <strong>xAI 编码 agent 公测</strong>（本节）——<strong>两条线在 6/3-6/4 同时出现不是巧合</strong>——<strong>Anthropic 用算力换 token 经济、xAI 用 SaaS 换 token 经济</strong>。<strong>Anthropic 卖 B2B / xAI 卖 B2C+OSS</strong>——<strong>5 年内 encoding agent 平台战首场对决</strong>。</p>
+        </div>
+        <p class="source-link">来源：xAI 6/3 公告 | Releasebot 6/3 | Verdent 2026 综述 | nxcode Grok 5 4 月预测</p>
+      </div>
+    </section>
+
+    <section class="card" style="border-color: rgba(251, 191, 36, 0.4); background: rgba(251, 191, 36, 0.03);">
+      <h2 style="color:#fbbf24; border-bottom-color: rgba(251, 191, 36, 0.3);">🧠 19e 风险信号（15:00 增量）</h2>
+      <ul>
+        <li><strong style="color:#f87171">Anthropic 估值 $965B 兑现的合同保障 vs $45B 算力承诺 50% 收入占比</strong> —— <strong>token 经济可持续性</strong>仍待 Anthropic 4-5 月 token 价格走势验证</li>
+        <li><strong style="color:#f87171">Polymarket AI 代理套利 = "市场变得更有效率"</strong> —— <strong>预测市场作为 AI 推理新基准</strong>会成 6/4 evening / 21evening 主题</li>
+        <li><strong style="color:#f87171">xAI 编码 agent 6/3-6/4 集中动作</strong> —— <strong>Grok Build 0.1 公测 + SuperGrok 绑 OpenCode</strong> 是 6/4 唯一"开源 + 商业"双线推进的玩家 —— 6/4 evening 可关注 xAI 是否发布 5.0</li>
+        <li><strong style="color:#f87171">arXiv 论文日均 200+ 节奏</strong> —— <strong>5 年前同期 &lt; 50</strong> —— <strong>学术圈 AI 化的明确信号</strong> —— 6 月 evening 21evening 应持续跟踪"agent 工业级落地"细分</li>
+      </ul>
+    </section>
+
     <section class="card">
       <h2 class="viewpoint">🔭 差异化小结 + 风险信号</h2>
       <p><strong>本午报 4 个独特角度</strong>——<strong>早报、6/3 三个时段都未涉及</strong>：</p>
@@ -274,7 +430,7 @@
     </section>
 
     <footer>
-      <p>OPC 午间情报 · 2026-06-04 12:00 · Hermes Agent 采集发布</p>
+      <p>OPC 午间情报 · 2026-06-04 12:00 → 15:00 增量更新 · Hermes Agent 采集发布</p>
     </footer>
   </div>
 </body>

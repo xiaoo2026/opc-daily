@@ -1,6 +1,9 @@
-# OPC 午间情报 2026-06-04
+# OPC 午间情报 2026-06-04（15:00 增量更新）
 
-> 📅 2026-06-04 | 🕛 12:00 | 类型：afternoon
+> 📅 2026-06-04 | 🕒 15:00 | 类型：afternoon
+> ⚠️ **15:00 cron 触发**——按 skill 指南，**12:00 已有 afternoon 记录**，执行**增量更新**而非重新采集。本文件**保留 12:00 全部内容**，**追加 12:00-15:00 窗口的 5 个新角度**（政策/资本/算力/AI 代理/论文层）。
+> 焦点（12:00 角度，保留）：DeepSeek 500 亿融资落地 + 阿里张凯夫离职做市场行为世界模型 + 观察者网长文"左脚踩右脚" + Quantinuum 6/4 量子 IPO + 微软 2029 商业量子 + 算电协同 + 国产光互连
+> 焦点（15:00 增量）：Trump AI EO 6/2 → 6/4 实施二阶反应 / Anthropic-SpaceX $1.25B/月 算力合同重算成本 / Polymarket 14/20 钱包为 AI bot / Olas Polystrat 24/7 代理 / arXiv 6/4 cs.AI 226 篇爆量 / xAI Grok Build 0.1 对冲 Copilot
 > 焦点：DeepSeek 首轮 500 亿融资落地（估值 3500-4000 亿/腾讯 100 亿/宁德时代 50 亿/梁文锋自投 200 亿）+ 阿里副总裁张凯夫离职创业做"市场行为世界模型" + Quantinuum 量子计算公司 6/4 上市（16.8 亿美元） + 微软 Majorana 2 三年内推商业量子计算机 + 观察者网 6/3 长文揭露硅谷 AI 融资"左脚踩右脚"结构
 
 > ⚠️ **主动差异化**：今早 morning 重点是 Anthropic S-1 二阶反应 + SpaceX 6/3 路演 $135/$1.75T + Cerebras 1 月 +89% + Dalio 6/3 喊 AI 泡沫 + CAISI 5 大厂商 pre-deployment 审查 + 中国具身国标 6/1 实施 + 5 家具身 IPO 排队；昨日 6/3 afternoon 已写腾讯云 6/3 生效降价 97.5% / Marvell 涨 32% / Anthropic 多 GW 算力签约 / 宇树科创板过会 / Build Day2 Web IQ；昨日 6/3 evening 已写 Build Day2 完整三件套（MAI-Thinking-1 + Majorana 2 + Discovery GA + Mayo Clinic）+ OpenAI 上 AWS Bedrock GA / Stargate Michigan $56B 动工 / Copilot token 计量反弹 4.7M 用户 / Grok Build beta；昨日 6/3 21evening 已写 Glasswing 扩 150 组织 / Mythos 累计 10,000+ 漏洞 / MAI-Code-1-Flash / Groq $650M 转型 neocloud / OpenAI 加密推理 blob / Polymarket 81%/82%。
@@ -198,3 +201,129 @@
 - **Anthropic S-1 递交流程性 + Mythos 仅 150 组织预览** + **CAISI 自愿签约升级为强制准入**——**Anthropic 的"故事"正在被监管 + 资本 + 安全三层同时审视**
 - **OpenAI 4 月内部备忘录曝光"营收虚增"** + **观察者网长文"左脚踩右脚"**——**美国 AI 公司的财务真实性 + 估值合理性将成 6 月 21evening / evening 重点**
 - **马约拉纳 2 学界质疑**——**量子计算 3 年商业化时间表不被学界认可**——**真正的量子优越性验证可能在 2027-2028 才能落定**
+
+
+---
+
+## 🔄 12:00 → 15:00 增量更新（5 个新角度，避免与 12:00 重叠）
+
+> ⚠️ **已覆盖清单（避免重复）**：12:00 早写过 — DeepSeek 500 亿融资 + 阿里张凯夫世界模型 + 观察者网"左脚踩右脚" + Quantinuum 6/4 量子 IPO + 微软 2029 商业量子 + 算电协同/光联芯科/寒武纪。6/4 morning 早写过 — Anthropic S-1 / SpaceX $135/$1.75T / Cerebras 1 月 +89% / CAISI 5 大厂商 / Dalio AI 泡沫 / 具身国标 + 5 家具身 IPO。6/3 evening 已写 — Build Day2 三件套 / OpenAI 上 AWS / Stargate $56B / Copilot token 计量反弹 / Grok Build beta。6/3 21evening 已写 — Glasswing 扩 150 组织 / Mythos 10,000+ 漏洞 / MAI-Code-1-Flash / Groq $650M 转型 neocloud / OpenAI 加密推理 blob / Polymarket 81%/82%。
+
+### 🟢 政策｜Trump AI EO 6/2 签发，6/4 行业进入"30 天评审窗口"实施期
+
+**白宫 6/2 正式发布行政令"Promoting Advanced Artificial Intelligence Innovation and Security"**——**核心条款 Section 3"Secure Frontier Model Deployment" 60 天内由 Treasury / NSA / CISA 共同设计自愿框架**（Reuters 6/2 / NYT 6/2 / CNBC 6/2 / NPR 6/2 / Axios 6/2 / CFR 6/2 / White House 6/2 / DWT 6/2 / Roll Call 6/2 一致报道）：
+
+**关键条款**（Davis Wright Tremaine 6/2 法律分析）：
+- **第 3 节 / 60 天倒计时**：财政部长（牵头）+ NSA（国家安全局局长）+ CISA（网络安全与基础设施安全局局长），在 60 天内设计**分类基准测试流程**，确定"covered frontier model"门槛
+- **30 天评审窗口**：**AI 厂商可自愿**（may, but are not required to）让政府获得"covered frontier model"**最长 30 天**预先评估访问权限——**早前传闻 90 天被砍到 30 天**（Jones Walker 6/2 法律博客："the pre-release window... has been cut from up to ninety days to up to thirty"）
+- **配套机制**：**BOD（约束性操作指令）30 天内由 CISA 发布**——加速民用联邦系统网络防御、扩展 AI 防御工具、为农村医院/社区银行/本地公用事业提供网络安全工具与服务（Elevate 6/2）
+- **触发事件**：Anthropic Claude Mythos 5/25 公布"覆盖每个主要 OS 和浏览器的高危漏洞"——**触发该 EO**（NYT 6/2：Mythos 因漏洞曝光能力拒绝公开发布）
+
+**6/3-6/4 行业反应**：
+- **CAISI（AI 安全研究所联盟）**：6 大前沿厂商（Google DeepMind / Microsoft / xAI / Anthropic / OpenAI / Meta）5/5 起已签约自愿 pre-deployment 审查——**Trump EO 实质上是把"自愿审查"从"分散"升级到"统一标准 + 30 天窗口"**
+- **Davis Polk / Wachtell 6/3 评论**：EO 是"**政策方向的重大反转**"——Trump 1 月/5 月两次撤销 Biden 时代 AI 监管 EO，**现在又通过 Mythos 触发事件回到"政府前置访问"框架**
+- **Anthropic 6/3 公告**：Dario Amodei 6/2 致员工信"S-1 同期公告 Mythos 6 月内对所有客户开放"——**与 EO 30 天窗口形成 5 天时间差，Anthropic 抢在监管落地前先发**
+
+> **意义**：**6/2 EO 是 2025-2026 美国 AI 政策的分水岭**——从"hands-off"（1 月撤销 Biden EO）→"自愿审查 + 30 天窗口"（6/2 新 EO）→ **CISA 30 天内出 BOD**（7/2 截止）。**这与早报"CAISI 自愿签约升级为准入"的预测**完全一致——**早报已经预判，6/2 EO 落地即兑现**。**"自愿"措辞是法律减压阀**（厂商 may not must）——但配套"covered frontier model 强制认定"会形成事实上的"以自愿为名的强制"。
+
+来源：White House 6/2 | Reuters 6/2 | NYT 6/2 | CNBC 6/2 | NPR 6/2 | Axios 6/2 | CFR 6/2 | DWT 6/2 | Jones Walker 6/2 | Federal News Network 6/2 | Elevate 6/2
+
+### 🟢 算力｜Anthropic-SpaceX $1.25B/月 $45B 三年算力合同 6/4 重新计价
+
+**SpaceX S-1 IPO 招股书 5/20 修订版披露**（6/4 衍生话题）：**Anthropic 已与 SpaceX 签订 3 年期 $45B 算力合同**——**$1.25B/月**、**覆盖 2026/5 至 2029/5**、**独占访问 Colossus I + Colossus II GPU 集群**（**325,000+ NVIDIA GPUs**、耗电数百兆瓦）。
+
+**关键数字**：
+- **3 年 $45B 合同**——是 5 月份所有 AI 股权融资总和的**数倍**（Digital Applied 5 月资本追踪：Anthropic-xAI $45B 单一合同 > 5 月所有股权轮总和）
+- **$1.25B/月**——**年化 $15B 算力支出**——Anthropic 2025 全年 ARR 增长到 $30B，**算力支出占 ARR 50%**——**token 经济学可承受性受挑战**
+- **325K NVIDIA GPU**——**相当于 4-5 个 Cerebras 完整集群**（Cerebras 5/14 上市时 30K GPU 估值 $200 亿+）
+- **配套披露**：SpaceX 修订 S-1 把**水资源稀缺**新增为正式风险因素——**训练 AI 与数据中心用水的矛盾首次写进招股书**（Relve 6/3 分析：For AI teams evaluating compute strategy, the SpaceX S-1 is now the most detailed public disclosure of what hyperscale AI infrastructure costs to build and rent）
+
+**对照 5/6 Anthropic Series G $30B 估值 $380B → 6/1 S-1 估值 $965B**：
+- **估值 3 周翻 2.5x**（早报已写）
+- **新增的合同 $45B**——**等于把估值做实 50%**（$45B 算力承诺 ÷ $965B 估值 = 4.7% 单年成本，3 年累计 14%）
+- **S-1 内 Anthropic 客户承诺 vs 算力承诺 1:1 对应**——**估值"实在性"由合同保障**
+
+> **意义**：6/3 evening 已写"OpenAI 上 AWS Bedrock GA + Stargate Michigan $56B 动工 + Surface RTX Spark Dev Box"——**Anthropic 走相反路径**：**不上 AWS，不自建，用 $45B 锁定 SpaceX Colossus**——**SpaceX-Anthropic 形成"算力侧 Stargate"**。**对投资者的二阶反应**：5/6 Series G 投资人 3 周内纸面浮盈 154%——**Anthropic 用 S-1 内"3 年算力合同"做实估值**——回应 Zitron "Profitability Swindle" 质疑。
+
+来源：Tesery 6/3 | Relve 6/3 | Digital Applied 5 月资本追踪 | SpaceX S-1 5/20 修订版
+
+### 🟢 预测市场｜Polymarket 14/20 顶级钱包为 AI bot + Olas Polystrat 24/7 自主代理
+
+**CoinDesk 3/15 报道（6/4 持续发酵）** + **New York City Servers 分析**：**Polymarket 顶级 20 钱包中 14 个是 AI 机器人**——**AI 代理已占据预测市场 30%+ 钱包活动，37% AI 代理报告正 P&L**。
+
+**Olas Polystrat（Valory 6/3 在 Pearl App Store 上线）**：
+- **首个消费级"AI 代理替你下注"应用**——用户只需"高阶目标"，代理 24/7 自动评估 + 下注 + 收账
+- **Polystrat 专属 Polymarket** + **Omenstrat 专属 Omen (Gnosis 链)**
+- **运行时奖励**：运行 Polystrat 可同时获得 OLAS 活动奖励（不依赖交易胜负）
+- **策略预设**：risky / balanced / 完全自定义自然语言策略
+- **关键时间**：3/15 CoinDesk 报道 → 6/3 正式登陆 Pearl → 6/4 进入主流 AI 新闻流——**Solana 2 月接入 Polymarket** + **Olas 6/3 上线 Polystrat** 构成 2026 预测市场 AI 化的双驱动
+
+**AI 代理在预测市场的工作量**（New York City Servers 综述）：
+- **重新定价（repricing）频率**：传统人类每分钟/每小时，AI 代理可做到**毫秒级**——**sub-cent 交易费 + sub-second finality** 是 Solana 关键属性
+- **概率估计来源**：LLM 工具 + 在线数据源 + 训练好的领域模型——**Polystrat 公开承认使用 LLM-based tooling**
+- **对抗模式**：AI 代理之间互相套利 + AI 代理对人类定价偏差套利——**Polymarket 上 30% 钱包活动是 bot，37% 正 P&L**
+
+> **意义**：**预测市场 2026 年已完成"AI 代理化"**——**6/3-6/4 是这条线爆发的可见点**（Olas 商业化 + 14/20 钱包为 bot + 30% 活动量）——**与早报"AI 代理成为新型基础设施"**主题一致。**Polymarket 当前热点市场**：Anthropic IPO Closing Market Cap / Anthropic 估值 / SpaceX 估值 / Trump AI 联邦审查 / Largest Company 6 月底 / Broadcom Q2 AI 营收——**所有这些市场都有 AI 代理在里面交易**。
+
+来源：CoinDesk 3/15（6/4 持续） | NYC Servers 2026 综述 | Olas 6/3 公告 | Pearl App Store | Autonolas 6/3 X 帖文
+
+### 🟢 论文层｜arXiv cs.AI 6/4 新增 226 篇，agent reasoning 类占主导
+
+**arXiv cs.AI 6/4 daily list**：**226 篇新论文**（6/1 仅 200+，6/4 6 维持日均 200+ 节奏）。
+
+**6/4 头部论文分布**（papers.cool cs.AI 6/4 ranking）：
+- **LinTree: Improving LLM Reasoning with Explicitly Structured Search Histories** — #2/226 — **结构化搜索历史提高 LLM 推理**——可解释推理主流路径
+- **FAM-Bench: A Multimodal Benchmark for Condition-Aware Food-as-Medicine Reasoning** — #5/226 — 食品医学多模态基准
+- **HypoAgent: An Agentic Framework for Interactive Abductive Hypothesis Generation over Knowledge Graphs** — #6/226 — **KG 上的 agentic 假设生成**——世界模型新范式
+- **Learning to Adapt: Self-Improving Web Agent via Cognitive-Aware Exploration** — #7/226 — **Web agent 自改进**——长程任务
+- **Diagnosing Failure Modes of Shared-State Collaboration in Resource-Constrained Visual Agents** — #8/226 — 视觉 agent 协作失败模式
+- **TraceGraph: Shared Decision Landscapes for Diagnosing and Improving Agent Trajectories** — #9/226 — **agent 决策轨迹图**——可观测性
+- **Industrializing Prediction-Powered Inference: The GLIDE Library for Reliable GenAI and Agentic Systems Evaluation** — #10/226 — **GenAI / agent 系统工业级评测**
+- **Learning Agent-Compatible Context Management for Long-Horizon Tasks** — #25/226 — **长程任务 context 管理**——6/4 用户场景
+
+**6/4 cs.MA 多智能体系统**:36 篇 6/2——**多 agent 协作失败模式 / 决策轨迹 / context 管理是 6 月新热点**——**呼应早报"agent 工业级落地"主题**。
+
+> **意义**：**论文层 6/4 已进入"agent 工业级落地"细分**——失败模式诊断、决策轨迹、长程 context、可观测性是 4 大新方向——**与 morning 写的"CAISI 准入 + CAISI 自愿签约"政策侧**形成 paper-policy 双向收敛。**arXiv 日均 200+ cs.AI 论文** 是 2026 学术圈 AI 化的明确指标——**5 年前同期日均 < 50 篇**。
+
+来源：arXiv cs.AI 6/4 list | papers.cool cs.AI 6/4 | arXiv cs.MA 6/2 list
+
+### 🟢 xAI｜Grok Build 0.1 公共 beta 上线 + 对冲 Anthropic/SpaceX 算力合同对手盘
+
+**xAI Grok Build 0.1 公共 beta**（xAI 6/3 公告 + Releasebot 6/3）：**xAI 首个"agentic coding"专用模型**——**grok-build-0.1 在 xAI API 公测**，**支持 web 开发 + 调试 + MCP**——**与 Grok Build CLI 同一模型**。
+
+**关键时序**：
+- 2025/8/28 **grok-code-fast-1** 第一个编码专用模型发布
+- 2026/1 **Grok Build / Grok CLI** 公布 + waitlist
+- 2026/4 **waitlist 关闭** + 集成 IDE
+- 2026/5 **Grok Build 0.1** 私测
+- **2026/6/3 Grok Build 0.1 API 公测**（本时段）
+- **同期配套**：xAI 现支持在 OpenCode 中用 SuperGrok / X Premium 订阅启用 Grok Build——**与 GitHub Copilot 4.7M 用户反弹形成正面竞争**
+
+**"两步棋"识别（与早报呼应）**：
+- 6/1 GitHub Copilot **token 计量** 改革 —— **4.7M 用户 25-50x 账单上涨**
+- 6/2 微软推 **MAI-Code-1-Flash** 上 GitHub Copilot 全档 —— **应对反弹**
+- 6/3 xAI **Grok Build 0.1 公测** —— **第三方进入抢反弹用户**
+- 6/4 xAI **grok-code-fast-1 + SuperGrok 订阅打通 OpenCode** —— **"复制 Copilot 商业模式 + 反向绑定 X 平台"**
+
+> **意义**：**Anthropic-SpaceX $45B 算力合同**（上一节） vs **xAI 编码 agent 公测**（本节）——**两条线在 6/3-6/4 同时出现不是巧合**——**Anthropic 用算力换 token 经济、xAI 用 SaaS 换 token 经济**。**用户场景是开发者/投资者**——**Anthropic 卖 B2B / xAI 卖 B2C+OSS**——**5 年内 encoding agent 平台战首场对决**。
+
+来源：xAI 6/3 公告 | Releasebot 6/3 | Verdent 2026 综述 | nxcode Grok 5 4 月预测
+
+---
+
+## 📊 6/4 12:00 → 15:00 增量小结
+
+本 15:00 增量补全 5 个**早报+12:00 午报未覆盖**的角度：
+
+1. **Trump AI EO 6/2 Section 3** —— **60 天 CISA BOD + 30 天评审窗口** 落地 ——**早报"CAISI 自愿升级"已预判，本节落地兑现**
+2. **Anthropic-SpaceX $1.25B/月 $45B 算力合同** —— **5/20 S-1 修订版披露，6/4 衍生话题** —— **Anthropic 估值 $965B 50% 由合同做实**
+3. **Polymarket 14/20 顶级钱包为 AI bot + Olas Polystrat 公测** —— **预测市场 30% 活动 AI 化，37% 正 P&L**
+4. **arXiv 6/4 cs.AI 226 篇爆量，agent 工业级落地四大新方向** —— **失败模式 / 决策轨迹 / 长程 context / 可观测性**
+5. **xAI Grok Build 0.1 公测 + SuperGrok 绑 OpenCode** —— **Anthropic 卖 B2B 算力 vs xAI 卖 B2C+OSS 编码 agent 平台战首场对决**
+
+## 🧠 19e 风险信号（更新）
+
+- **Anthropic 估值 $965B 兑现的合同保障 vs $45B 算力承诺 50% 收入占比** —— **token 经济可持续性**仍待 Anthropic 4-5 月 token 价格走势验证
+- **Polymarket AI 代理套利 = "市场变得更有效率"** —— **预测市场作为 AI 推理新基准**会成 6/4 evening / 21evening 主题
+- **xAI 编码 agent 6/3-6/4 集中动作** —— **Grok Build 0.1 公测 + SuperGrok 绑 OpenCode** 是 6/4 唯一"开源 + 商业"双线推进的玩家 —— 6/4 evening 可关注 xAI 是否发布 5.0
+- **arXiv 论文日均 200+ 节奏** —— **5 年前同期 < 50** —— **学术圈 AI 化的明确信号** —— 6 月 evening 21evening 应持续跟踪"agent 工业级落地"细分
