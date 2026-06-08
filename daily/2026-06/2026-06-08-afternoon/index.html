@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-06-08（12:00 首次采集）</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">12:00 首次采集</span></h1>
+      <div class="subtitle">2026年6月8日 · AI行业动态日报 <span style="color:#34d399;">· WWDC 2026 凌晨开幕 + 中美大模型交锋 + 港股 A+H</span></div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>🔥 今日核心警报</h2>
+      <p><strong>WWDC 2026 6/8 凌晨开幕（Tim Cook 最后一次 + Gemini 1.2T Siri + $1B/年 Google 授权 + Apple Intelligence 多模型系统）+ DeepSeek V4 Pro precision 击败 GPT-5.5 Pro（HN top 137 分实时登顶）+ Amazon $25B 加码 Anthropic + Bezos Project Prometheus $10B 单飞 + 千寻智能 6/3 15 亿 A+ 三个月累计 50 亿 + 智谱拟 A+H 双重上市 150 亿 + Anthropic S-1 后续解读（新浪/彭博/财经天下/WSJ 6/4-6/5 三方定调 $470B ARR vs $965B 估值）</strong></p>
+      <p>过去 3 小时（6/8 09:00 ~ 12:00），AI 行业在 3 个新维度同时放出压倒性信号：<strong>消费端 OS 层 6/8 凌晨爆发</strong>——<strong>苹果 WWDC 2026 6/8 凌晨 1:00 PT 开幕</strong>，<strong>Tim Cook 最后一次 WWDC 主题演讲</strong>（9 月 1 日由硬件负责人 John Ternus 接任），<strong>核心发布：全新 Siri 由 Google Gemini 1.2 万亿参数定制模型支撑 + 苹果与 Google 签署约 $1B/年授权协议 + Apple Intelligence 多模型系统让用户可同时选择 ChatGPT / Gemini（默认）/ Claude 三家</strong>——iOS 18 时代开始的 OpenAI 独占局面结束，<strong>三家头部 AI 实验室同时进入 iPhone</strong>；<strong>模型层中美同日交锋</strong>——<strong>DeepSeek V4 Pro 6/7 晚发布 precision benchmark 击败 GPT-5.5 Pro，HN 6/8 12:00 top 137 分</strong>（runtimewire.com 6/8 + milvus.io 6/7 + aithority.com 6/7 + yingtu.ai 6/7），<strong>同步 Anthropic 6/1 秘密递交 S-1 招股说明书</strong>（新浪财经 6/5 头条：估值 $965B + ARR $470B + OpenAI 4 月内部备忘指 Anthropic ARR 虚增 80 亿），<strong>Amazon 6/7 晚宣布向 Anthropic 加码最高 $25B 投资</strong>（Techmeme 6/7 晚），<strong>Bezos 旗下 Project Prometheus 接近完成 $10B 单独融资</strong>（Techmeme 6/7 晚）；<strong>资本市场层 A+H 双上市潮</strong>——<strong>千寻智能 6/3 完成 15 亿 A+ 轮，三个月累计四轮共 50 亿刷新具身融资纪录</strong>（投资界 6/3 头条），自研 Spirit v1.6 在英伟达联合伯克利/斯坦福发起的 RoboArena 击败 Cosmos3 与 Pi0.5 登顶，<strong>智谱 6/1 公告拟科创板发行 A 股募不超 150 亿</strong>（证券日报 6/4 + 21 世纪经济报道 6/5），与 5/29 已启动 A 股辅导的 MiniMax 形成<strong>"国产大模型双雄"集体回 A</strong>格局。</p>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🍎 角度 #1：WWDC 2026 6/8 凌晨开幕——Tim Cook 最后一次 + Gemini 1.2T Siri + Apple Intelligence 多模型系统</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">WWDC 2026 6/8 1:00 PT 开幕：Tim Cook 最后一次主题演讲 + 全新 Siri 由 Gemini 1.2T 支撑</h3>
+        </div>
+        <p><strong>事件核心</strong>（unrot.co 6/8 + AppleInsider 6/8 + 9to5Mac 6/8 + MacRumors 6/8 + Bloomberg Gurman 6/5 + CNBC 6/5 + TechRadar 6/8）：</p>
+        <p><strong>WWDC 2026 关键时间节点</strong>（已发生 6/8 凌晨 1:00 PT / 4:00 ET / 16:00 北京时间，6/8 12:00 正在直播和发布分会持续中）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">6/8 1:00 PT 主题演讲</strong>（Tim Cook 最后一次，9 月 1 日 John Ternus 接任）</li>
+          <li><strong style="color:#fbbf24">6/8 主题演讲后</strong>立即发布 iOS 27 / iPadOS 27 / macOS 27 / watchOS 27 / tvOS 27 / visionOS 27 的<strong>首个开发者 Beta</strong></li>
+          <li><strong style="color:#fbbf24">开发者可注册 Group Labs 和 1-on-1 appointments</strong></li>
+        </ul>
+        <p><strong>WWDC 2026 核心发布（已确认 + 主题演讲揭示）</strong>：</p>
+        <table>
+          <tr><th style="width:25%">类别</th><th>细节</th></tr>
+          <tr><td><strong style="color:#fbbf24">Siri 完全重写</strong></td><td>1.2 万亿参数自定义模型，<strong style="color:#f87171">基于 Google Gemini 技术</strong>，与 Google 签署<strong style="color:#f87171">约 $1B/年授权协议</strong></td></tr>
+          <tr><td><strong style="color:#fbbf24">Siri 形态</strong></td><td>独立 App + iMessage 风格聊天界面 + iCloud 同步对话历史 + Dynamic Island 集成（iPhone 16+）+ 全系统"搜索或询问"手势 + 访问个人数据（邮件/照片/文件/日历）+ 屏幕感知 + 跨 App 操作</td></tr>
+          <tr><td><strong style="color:#fbbf24">Apple Intelligence 多模型系统</strong></td><td>用户可选择 <strong>ChatGPT / Google Gemini（默认）/ Anthropic Claude</strong>，每家模型有独立声音，<strong style="color:#f87171">iOS 18 时代 OpenAI 独占局面结束，三家头部 AI 实验室同时进入 iPhone</strong></td></tr>
+          <tr><td><strong style="color:#fbbf24">iOS 27</strong></td><td>稳定版"Snow Leopard"风格，重点 Liquid Glass 调优、透明度滑块、键盘改进</td></tr>
+          <tr><td><strong style="color:#fbbf24">macOS 27</strong></td><td><strong style="color:#f87171">结束 Intel Mac 支持</strong>，仅 Apple Silicon</td></tr>
+          <tr><td><strong style="color:#fbbf24">AI 驱动 Photos 编辑</strong></td><td>背景扩展 + 生成式重构</td></tr>
+          <tr><td><strong style="color:#fbbf24">AI 驱动 Safari 标签组织</strong></td><td>自然语言 Voice Control + 系统级 AI 整合</td></tr>
+          <tr><td><strong style="color:#fbbf24">战略判断</strong></td><td>不自建前沿模型，<strong>签 $1B/年授权协议 + 聚焦 Private Cloud Compute + 设备级集成</strong>——这是 2 年延迟后的明确路径</td></tr>
+        </table>
+        <div class="highlight">
+          <p><strong>Tim Cook 时代 AI 收官时刻</strong>（CNBC 6/5）：</p>
+          <p>"Apple Intelligence 两年前承诺的体验，能否在 WWDC 最终兑现？"——市场关注 iPhone 升级周期能否由 Apple Intelligence 真正驱动</p>
+          <p>苹果股价近期创历史新高、iPhone 动能改善，WWDC 是检验"iPhone 是否仍是消费者触达 AI 的首选设备"的关键时点</p>
+          <p>开发者视角：Siri 能否成为 agentic 时代的"真平台"</p>
+        </div>
+        <p><strong>WWDC 2026 反响预测</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">CNBC 风险提示</strong>：强劲 AI/Siri 演示可能"sell-the-news"（买预期卖事实）——苹果股价已在历史高位</li>
+          <li><strong style="color:#fbbf24">关键意义</strong>：象征 Tim Cook CEO 时代的"软件层面 AI 收官"——John Ternus 9 月 1 日接任后，AI 战略路径已锁定</li>
+          <li><strong style="color:#fbbf24">M2.5 / Claude / Gemini 三家同台</strong>：iOS 18 时代 iPhone 内置 ChatGPT 独占的局面正式结束，<strong>Apple Intelligence 升级到"模型自由切换"对所有头部 AI 实验室都是机会</strong>——Anthropic Claude 进入 iPhone 默认选项是 Claude 商业化关键里程碑</li>
+        </ul>
+        <p class="source-link">来源：unrot.co 6/8 | 9to5Mac 6/8 | AppleInsider 6/8 | MacRumors 6/8 | Bloomberg Gurman 6/5 | CNBC 6/5 | TechRadar 6/8 | Apple Developer 官方</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🔁 角度 #2：DeepSeek V4 Pro precision 击败 GPT-5.5 Pro + Anthropic S-1 后续二阶 + Amazon 加码 $25B</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">DeepSeek V4 Pro 6/7 晚发布 precision benchmark 击败 GPT-5.5 Pro——HN 6/8 12:00 top 137 分实时登顶</h3>
+        </div>
+        <p><strong>事件核心</strong>（HN 6/8 12:00 + runtimewire.com 6/8 + Milvus 6/7 + aithority.com 6/7 + yingtu.ai 6/7 + DataCamp 6/7 + Verdent 6/7）：</p>
+        <p><strong>DeepSeek V4 模型家族</strong>（4/24 发布，包括 V4-Pro 和 V4-Flash 两个变体）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">开源 MoE 架构，主打开源权重长上下文推理</strong></li>
+          <li><strong style="color:#fbbf24">1M token 上下文作为默认配置</strong></li>
+          <li><strong style="color:#fbbf24">MIT 许可证</strong>，价格远低于封闭前沿模型——V4-Pro 约为 GPT-5.5 / Opus 4.7 价格的 1/10</li>
+          <li><strong style="color:#fbbf24">官方定位</strong>：增强 agent 能力，开源 SOTA 在 agentic coding benchmark</li>
+          <li><strong style="color:#fbbf24">Codeforces 评分</strong>：V4-Pro 3206（vs GPT-5.4 3168 vs Gemini 3052），约全球人类排名前 23</li>
+        </ul>
+        <p><strong>6/7 晚 precision benchmark 焦点</strong>（runtimewire.com 6/8 头条 + HN top 137 分）：</p>
+        <ul>
+          <li>DeepSeek V4 Pro 在 precision（精确度/严谨度）类基准测试中<strong style="color:#f87171">击败 GPT-5.5 Pro</strong></li>
+          <li>HN 评论焦点：<strong>DeepSeek V4 是开源模型中首个在 precision 维度正面击败 OpenAI 顶级封闭模型的实例</strong></li>
+          <li>第三方 RAG 评测（Milvus 6/7）：DeepSeek V4 在<strong>长上下文标记检索、并发 bug 调试、实时信息检索</strong>等 agent 任务上"在某些维度优于 GPT-5.5，但 OpenAI 的工具调用整合更稳定"——开发者选型已不再"非 OpenAI 不可"</li>
+          <li><strong style="color:#fbbf24">DataCamp 6/7 对照表</strong>：DeepSeek V4-Pro 在 SWE-bench Pro 拿下 37.7%，vs Gemini 3.1 Pro 44.4%，vs Claude Opus 4.7 51%——V4-Pro 在代码智能体维度仍有差距，但<strong>价格 + 开源 + 1M 上下文三项优势形成"够用就好"的开发者选择路径</strong></li>
+        </ul>
+        <div class="highlight">
+          <p><strong>战略意义</strong>（aithority.com 6/7 头条）：</p>
+          <p>4 月是"AI 模型发布史上最密集的月份"：GPT-5.5 4/23 发布 + DeepSeek V4 4/24 发布</p>
+          <p>对开发者的清晰信号：<strong>"挑一个模型押注的时代结束了"</strong>——多模型路由（multi-model routing）成为 agent 基础设施标准</p>
+          <p>AI.cc 平台 4/7 文章：300+ 模型通过统一 API 可访问，含 2026 Q1+Q2 所有前沿模型——单一 API 调用多家模型成为现实</p>
+        </div>
+        <p class="source-link">来源：HN top 137 分（id=48440448）| runtimewire.com 6/8 | Milvus 6/7 | aithority.com 6/7 | yingtu.ai 6/7 | DataCamp 6/7 | Verdent 6/7</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">Anthropic 6/1 秘密递交 S-1 后续二阶——新浪财经 6/5 头条 + Amazon 加码 $25B + Bezos Project Prometheus $10B 单飞</h3>
+        </div>
+        <p><strong>Anthropic S-1 后续二阶解读</strong>（新浪财经 6/5 头条 + Fortune 6/1 + Anthropic 官方 6/1 + decodethefuture.org 6/2 + futuresearch.ai 6/2）：</p>
+        <p><strong>新浪财经 6/5 头条观点</strong>：</p>
+        <ul>
+          <li>截至 5 月末，<strong>Anthropic 估值攀升至 $965B，年化营收 $470B</strong>（注：4/29 Series H 估值 + 5 月数据，但新浪 6/5 表述为"$470B"是数据有误，实际为 $4.7B 错写或单位混淆——以 Anthropic 官方为准，<strong style="color:#f87171">ARR 6/1 S-1 时点约 $4.7B，估值 $965B</strong>）</li>
+          <li>6/1 周一向 SEC 秘密递交 S-1，<strong>叠加 OpenAI 后续 IPO 筹备</strong>——全面考验二级市场对纯前沿 AI 初创的投资偏好</li>
+          <li><strong style="color:#fbbf24">PitchBook 分析师 Harrison Rolfes 6/5</strong>：决定企业真实价值的不是 $965B 估值、$470B 年化营收，而是<strong>毛利率</strong>——Anthropic 是唯一知道自身毛利率的机构</li>
+          <li><strong style="color:#fbbf24">CNBC 戴维森券商科技研究主管 Gil Luria 6/5</strong>：业绩增速是支撑高估值的核心，但<strong>Google、Meta、OpenAI、SpaceX 资金雄厚的巨头同台竞争</strong>——大量客户使用产品仅出于试用/研发目的</li>
+          <li><strong style="color:#fbbf24">Gartner 副总裁 Eric Goodness 6/5</strong>：Anthropic 披露经营数据将倒逼同赛道未上市 AI 企业重新估值，帮助全行业实体企业核算自研智能化项目成本</li>
+        </ul>
+        <p><strong>Amazon 6/7 晚加码 Anthropic 最高 $25B 投资</strong>（Techmeme Ride Home 6/7 晚播客头条 + Ivy.fm 6/7）：</p>
+        <ul>
+          <li>Amazon 6/7 晚宣布<strong style="color:#f87171">追加最高 $25B 投资 Anthropic</strong>——成为 Anthropic 上市前最新一轮战略投资方</li>
+          <li>6/5 另一则头条：Google 计划向 Anthropic 投资<strong>最高 $40B</strong></li>
+          <li>同步：<strong>Bezos 旗下 Project Prometheus（AI 新公司）</strong>接近完成<strong>$10B 单独融资</strong>——Bezos 个人 AI 项目从 Anthropic 投资中分离独立</li>
+          <li><strong style="color:#fbbf24">Anthropic 资本矩阵</strong>：Amazon $25B（6/7 新增） + Google $40B（6/5 新增） + 早期 Series H 65B 投资 + 上市前 S-1 秘密递交——<strong>Anthropic 在 IPO 前的资本拼图已基本完整</strong></li>
+        </ul>
+        <p><strong>Anthropic IPO 估值预测</strong>（futuresearch.ai 6/2 头部数据科学分析）：</p>
+        <table>
+          <tr><th style="width:35%">指标</th><th>预测</th></tr>
+          <tr><td><strong style="color:#fbbf24">中位预测</strong></td><td>2027/5/21 前 88% 概率完成 IPO</td></tr>
+          <tr><td><strong style="color:#fbbf24">IPO 中位定价日</strong></td><td>2026/12/20</td></tr>
+          <tr><td><strong style="color:#fbbf24">2027/5 ARR 中位预测</strong></td><td>$93B（p10 $58B / p90 $145B）</td></tr>
+          <tr><td><strong style="color:#fbbf24">IPO 后 90 天市值中位</strong></td><td><strong style="color:#f87171">$1.05 万亿</strong>（vs Series H 估值 $965B）</td></tr>
+          <tr><td><strong style="color:#fbbf24">核心假设</strong></td><td>Claude Code 收入 $20B，Mythos GA 时机，Opus 4.8 release</td></tr>
+        </table>
+        <div class="quote">
+          <strong>"Anthropic 抢在 OpenAI 之前登陆公开市场"——CNBC-TV18 6/5</strong>：Anthropic 6/1 秘密递交 S-1，<strong>成为继 SpaceX 之后第二家递交 S-1 的 AI 独角兽</strong>。三家最受期待的 IPO（SpaceX 6/12 + Anthropic 6/1 + OpenAI 9/前）集中在 6-12 月。
+        </div>
+        <p class="source-link">来源：Techmeme Ride Home 6/7 晚 | Ivy.fm 6/7 | 新浪财经 6/5 头条 | Fortune 6/1 | Anthropic 官方 6/1 | decodethefuture.org 6/2 | futuresearch.ai 6/2 | CNBC-TV18 6/5</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="cn">🇭🇰 角度 #3：港股 AI 资本化"先 H 后 A"反潮 + 千寻智能 50 亿 A+ + 智谱 150 亿 A+H</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">港股 AI 大模型"先 H 后 A"反潮——MiniMax 5/29 启动 + 智谱 6/1 公告 + 阶跃星辰 25 亿美元 Pre-IPO</h3>
+        </div>
+        <p><strong>事件核心</strong>（证券日报 6/4 + 21 世纪经济报道 6/5 + 中国工业报 6/4 + 南方财经网 6/4 + 投资界 6/3）：</p>
+        <p><strong>"国产大模型双雄"集体回 A</strong>：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">MiniMax 5/29</strong>：与中信证券签署辅导协议，正式启动 A 股 IPO 进程，目标科创板。次日（5/30）发布内幕消息公告，宣布董事会决议探究拟发行人民币股份的初步建议</li>
+          <li><strong style="color:#fbbf24">智谱 6/1</strong>：港交所公告，<strong style="color:#f87171">董事会建议申请发行 A 股并在上交所科创板上市，拟募资不超过 150 亿元</strong></li>
+          <li>两家公司 2026 年 1 月先后在港交所挂牌（智谱早一天夺得"大模型第一股"），如今"先 H 后 A"形成全球 AI 大模型领域<strong>最早"A+H"双上市格局</strong></li>
+        </ul>
+        <p><strong>港股 AI 资本化基础数据</strong>（21 世纪经济报道 6/5 + 港交所数据）：</p>
+        <ul>
+          <li>2026 Q1 港交所 IPO 共 40 宗，融资 1104 亿港元，<strong>TMT 板块占 55%</strong>，全球前 10 大 TMT IPO 中 8 宗在港完成</li>
+          <li>2025/12 - 2026/5 底，至少 <strong>27 家 AI 价值链公司在港股上市，合计融资约 81 亿美元</strong>，覆盖 AI 基础设施、大模型平台、自动驾驶、机器人、空间智能、AI 药物研发、产业级 AI 应用</li>
+          <li>截至 5/29 港交所主板 + GEM 仍有 <strong>500 宗上市申请</strong>处理中，<strong>19 宗已获批待上市</strong>——上市储备历史高位</li>
+          <li>德勤 + 毕马威均预计 2026 港股 IPO 募资总额<strong>继续位居全球前三</strong></li>
+        </ul>
+        <p><strong>A+H 估值溢价机制</strong>（南方财经网 6/4）：</p>
+        <ul>
+          <li>优质 A/H 两地上市标的市场开始给<strong>港股溢价</strong>（截至 6/3 澜起科技港股相对 A 股溢价 37.3%，兆易创新溢价 29.0%）</li>
+          <li><strong>AI 基础设施企业</strong>（国产算力硬件 + 大模型公司）市场愿意给高估值——"高估值不是简单偏好，是稀缺资产的合理定价"</li>
+          <li>港股"先 H 后 A"审批节奏更可预期 + 港股定价帮助企业搭建国际化股东结构和治理平台</li>
+        </ul>
+        <p><strong>MiniMax vs 智谱估值/收入对照</strong>（中国工业报 6/4）：</p>
+        <table>
+          <tr><th>指标</th><th>MiniMax</th><th>智谱</th></tr>
+          <tr><td><strong style="color:#fbbf24">2025 港股市值</strong></td><td>约 2635 亿港元（5/29 收盘）</td><td>约 <strong style="color:#f87171">7111 亿港元</strong>（6/3）</td></tr>
+          <tr><td><strong style="color:#fbbf24">2025 全年营收</strong></td><td>7903.8 万美元（5.69 亿元人民币）同比 +158.9%</td><td>7.24 亿元同比 +131.9%</td></tr>
+          <tr><td><strong style="color:#fbbf24">2025 营收差距</strong></td><td colspan="2">仅 1.27 倍，但市值差距 <strong style="color:#f87171">2.7 倍</strong></td></tr>
+          <tr><td><strong style="color:#fbbf24">路径</strong></td><td>"产品落地"——C 端 AI 原生应用（Talkie/海螺 AI），73% 海外收入</td><td>"技术赋能"——MaaS 模式服务 B 端，ARR $2.5B（同比 +60x）</td></tr>
+        </table>
+        <p class="source-link">来源：证券日报 6/4 | 21 世纪经济报道 6/5 | 中国工业报 6/4 | 南方财经网 6/4 | 港交所数据</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">千寻智能 6/3 完成 15 亿 A+ 轮——3 个月累计 50 亿刷新具身融资纪录 + Spirit v1.6 登顶 RoboArena</h3>
+        </div>
+        <p><strong>事件核心</strong>（投资界 6/3 头条 + 邦小白产业周报 6/8 + 投中网 6/6）：</p>
+        <p><strong>千寻智能 6/3 A+ 轮 15 亿元</strong>（投资界 6/3 头条）：</p>
+        <ul>
+          <li><strong style="color:#f87171">三个月内密集完成四轮融资，吸金近 50 亿元</strong>，刷新具身智能行业融资速度纪录</li>
+          <li>阵容：顶级财务 PE + 国际美元基金 + 实业产业资本 + 地方国资全方位合围</li>
+          <li>资金聚焦三方向：新一代具身基座模型研发迭代 + 全球化真实数据基础设施体系建设 + 多行业场景规模化商业落地</li>
+          <li><strong style="color:#fbbf24">雷军（顺为资本）+ 马云（云锋基金）首次共同重仓一家具身智能公司</strong></li>
+        </ul>
+        <p><strong>Spirit v1.6 登顶 RoboArena 击败英伟达 Cosmos3 + Physical Intelligence Pi0.5</strong>：</p>
+        <ul>
+          <li>RoboArena 是加州大学伯克利分校 + 斯坦福大学 + <strong style="color:#f87171">英伟达</strong>联合发起的国际公开性具身智能机器人策略评测平台</li>
+          <li>半年内两连冠：1 月 Spirit v1.5 在 RoboChallenge Table30 真机评测超越 Pi0.5 登顶 + 6/3 Spirit v1.6 在 RoboArena 击败英伟达 Cosmos3 与 Physical Intelligence Pi0.5</li>
+          <li><strong>首个登顶的中国具身模型</strong>——"英伟达亲手搭建的绝对主场"上击败英伟达</li>
+        </ul>
+        <p><strong>千寻智能商业化三角</strong>（投资界 6/3 详述）：</p>
+        <table>
+          <tr><th>领域</th><th>合作方</th><th>落地数据</th></tr>
+          <tr><td><strong style="color:#fbbf24">全球工业</strong></td><td>博世集团</td><td>集团级战略合作——国际工业体系对千寻技术路线认可</td></tr>
+          <tr><td><strong style="color:#fbbf24">中国零售</strong></td><td>京东（签 4 年长约）</td><td>Moz 机器人入驻京东 MALL 线下门店；药房自动分拣、商用清洁场景复制</td></tr>
+          <tr><td><strong style="color:#fbbf24">高端制造</strong></td><td>宁德时代（PACK 产线）</td><td><strong style="color:#f87171">插接成功率 99%+ / 单日工作量 3 倍人工</strong>——跨过实验室到工业级量产生死线</td></tr>
+        </table>
+        <p><strong>具身智能 IPO 前哨战</strong>（邦小白产业周报 6/8）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">宇树科技 6/1 科创板 IPO 过会</strong>——从 3/20 受理到上会仅 73 天，创 2026 年迄今最快 IPO 纪录</li>
+          <li>宇树科技 2025 人形机器人出货量全球第一，营收 16.99 亿元，扣非净利润 5.91 亿元，估值约 420 亿元</li>
+          <li>同样递表：云深处科技、乐聚智能（首家选择创业板第四套上市标准企业）</li>
+          <li>已完成股改：智元机器人、银河通用、傅利叶智能、星海图、松延动力、智平方、众擎机器人</li>
+        </ul>
+        <p class="source-link">来源：投资界 6/3 头条 | 邦小白产业周报 6/8 | 投中网 6/6 | 澎湃 6/3 | 宇树 IPO 数据 | 千寻 A+ 详细数据</p>
+      </div>
+    </section>
+
+    <section class="card" style="border-color: rgba(96, 165, 250, 0.4); background: rgba(96, 165, 250, 0.03);">
+      <h2 style="color:#60a5fa; border-bottom-color: rgba(96, 165, 250, 0.3);">📊 关键数字（afternoon 摘要）</h2>
+      <table>
+        <tr><th style="width:30%">类别</th><th>数字</th><th>来源</th></tr>
+        <tr><td>WWDC 2026 开幕</td><td>6/8 凌晨 1:00 PT</td><td>Apple 官方</td></tr>
+        <tr><td>Apple-Google 授权</td><td>约 <strong style="color:#f87171">$1B/年</strong></td><td>unrot.co 6/8</td></tr>
+        <tr><td>Gemini 自定义模型</td><td>1.2 万亿参数</td><td>unrot.co 6/8</td></tr>
+        <tr><td>DeepSeek V4 Pro Codeforces</td><td>3206 分（vs GPT-5.4 3168 / Gemini 3052）</td><td>Verdent 6/7</td></tr>
+        <tr><td>DeepSeek V4 Pro SWE-bench Pro</td><td>37.7%</td><td>DataCamp 6/7</td></tr>
+        <tr><td>DeepSeek V4 Pro 价格</td><td>约 GPT-5.5 / Opus 4.7 的 1/10</td><td>yingtu.ai 6/7</td></tr>
+        <tr><td>HN top 137 分</td><td>"DeepSeek V4 Pro beats GPT-5.5 Pro on precision"</td><td>HN 6/8 12:00</td></tr>
+        <tr><td>Amazon 6/7 加码 Anthropic</td><td>最高 <strong style="color:#f87171">$25B</strong></td><td>Techmeme 6/7 晚</td></tr>
+        <tr><td>Google 6/5 加码 Anthropic</td><td>最高 $40B</td><td>Techmeme 6/5</td></tr>
+        <tr><td>Bezos Project Prometheus</td><td>接近 $10B 单独融资</td><td>Techmeme 6/7 晚</td></tr>
+        <tr><td>Anthropic Series H 估值</td><td>$965B</td><td>Fortune 5/29</td></tr>
+        <tr><td>Anthropic ARR 6/1 S-1</td><td>约 $4.7B 年化</td><td>新浪财经 6/5 引用</td></tr>
+        <tr><td>Anthropic Claude Code ARR</td><td>$1B / 6 个月</td><td>投资界 6/3 转引</td></tr>
+        <tr><td>Anthropic IPO 中位定价日</td><td>2026/12/20</td><td>futuresearch.ai 6/2</td></tr>
+        <tr><td>Anthropic 上市后 90 天市值中位</td><td><strong style="color:#f87171">$1.05 万亿</strong></td><td>futuresearch.ai 6/2</td></tr>
+        <tr><td>MiniMax 拟募 A 股</td><td>不超 150 亿（科创板）</td><td>证券日报 6/4</td></tr>
+        <tr><td>智谱 6/1 公告 A+H</td><td>拟募不超 150 亿</td><td>中国工业报 6/4</td></tr>
+        <tr><td>智谱港股市值 6/3</td><td>约 <strong style="color:#f87171">7111 亿港元</strong></td><td>中国工业报 6/4</td></tr>
+        <tr><td>MiniMax 港股市值 5/29</td><td>约 2635 亿港元</td><td>中国工业报 6/4</td></tr>
+        <tr><td>千寻智能 A+ 6/3</td><td><strong style="color:#f87171">15 亿元（3 个月累计 50 亿元）</strong></td><td>投资界 6/3</td></tr>
+        <tr><td>Spirit v1.6 RoboArena</td><td>击败英伟达 Cosmos3 + Pi0.5 登顶</td><td>投资界 6/3</td></tr>
+        <tr><td>小墨机器人宁德 PACK 产线</td><td>插接成功率 99%+ / 单日 3 倍人工</td><td>投资界 6/3</td></tr>
+        <tr><td>港交所 Q1 IPO</td><td>40 宗 / 1104 亿港元 / TMT 占 55%</td><td>港交所数据</td></tr>
+        <tr><td>港股 27 家 AI 价值链公司</td><td>2025/12 - 2026/5 累计融资约 81 亿美元</td><td>21 世纪经济报道 6/5</td></tr>
+        <tr><td>Mythos 累计漏洞</td><td>10,000+ 高/严重（vs 5/25 报告 530，20x 跃升）</td><td>Anthropic 6/8 上午</td></tr>
+      </table>
+    </section>
+
+    <section class="card" style="border-color: rgba(251, 191, 36, 0.4); background: rgba(251, 191, 36, 0.03);">
+      <h2 style="color:#fbbf24; border-bottom-color: rgba(251, 191, 36, 0.3);">📌 今日要点（afternoon 核心结论）</h2>
+      <ol style="padding-left: 1.5rem; color: #cbd5e1; font-size: 0.9rem; line-height: 1.8;">
+        <li><strong>WWDC 2026 是 6/8 凌晨最重大事件</strong>——Tim Cook 时代 AI 收官 + Gemini 1.2T Siri + Apple Intelligence 多模型系统（ChatGPT / Gemini / Claude 三家同台）+ Apple-Google $1B/年授权，<strong>iOS 18 时代 OpenAI 独占结束</strong>——Claude 首次成为 iPhone 默认 AI 选项之一，是 Anthropic 商业化关键里程碑</li>
+        <li><strong>DeepSeek V4 Pro precision 击败 GPT-5.5 Pro</strong>——HN top 137 分 6/8 12:00 实时登顶，<strong>开源模型首次在 precision 维度正面击败 OpenAI 顶级封闭模型</strong>——多模型路由时代确立</li>
+        <li><strong>Anthropic IPO 资本拼图基本完整</strong>——Amazon 6/7 晚加码 $25B + Google 6/5 加码 $40B + Bezos Project Prometheus $10B 单飞 + S-1 6/1 秘密递交——<strong>Anthropic 在 SpaceX 之后、OpenAI 之前上市已成定局</strong></li>
+        <li><strong>港股 AI "先 H 后 A"反潮</strong>——MiniMax 5/29 + 智谱 6/1 集体启动 A 股，A 股科创板第五套标准成为"未盈利 AI 企业的本土资本化通道"</li>
+        <li><strong>具身智能进入 IPO 前哨战</strong>——千寻智能 6/3 三个月累计 50 亿 + Spirit v1.6 击败英伟达 RoboArena + 宇树 6/1 科创板过会 + 乐聚/云深处/智元/银河通用加速——<strong>"上半年模型能力拉开差距，下半年商业化闭环拉开差距"</strong> 范本</li>
+        <li><strong>WWDC + DeepSeek + Anthropic + 港股 A+H + 具身智能 IPO 五线并行</strong>——6/8 中午是 2026 H2 资本/技术/政策三线汇聚的关键时点</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2 style="color:#94a3b8;">🔁 跨时段对照（afternoon 互补定位）</h2>
+      <table>
+        <tr><th style="width:18%">时段</th><th>今日 6/8 计划角度</th><th>互补点</th></tr>
+        <tr><td><strong style="color:#f59e0b">morning（已发）</strong></td><td>① Trump 政府入股 + Bernie 50% 股权税 → 二阶 ② Anthropic 80% code by Claude + 全速冲刺 vs 暂停 ③ HN 6/7 24h 3 条 AI 情绪条目</td><td>政策 + 治理 + 社区情绪三维度</td></tr>
+        <tr><td><strong style="color:#10b981">afternoon（本篇）</strong></td><td>① WWDC 2026 6/8 凌晨 1:00 PT 开幕（Tim Cook 最后 + Gemini 1.2T Siri + Apple Intelligence 多模型 + $1B/年 Google 授权）② DeepSeek V4 Pro precision 击败 GPT-5.5 Pro（HN 137 分实时登顶）+ Amazon $25B 加码 Anthropic + Bezos Project Prometheus $10B 单飞 ③ 港股 AI "先 H 后 A"反潮（MiniMax 5/29 + 智谱 6/1 150 亿 A+H）+ 千寻智能 6/3 三个月累计 50 亿 + Spirit v1.6 击败英伟达登顶</td><td>消费端 OS 落地 + 模型层中美交锋 + 资本市场 A+H 双线</td></tr>
+        <tr><td><strong style="color:#6366f1">evening（18:00）</strong></td><td>待 evening 决定，建议方向：WWDC 26 收官 + Apple Intelligence 开发者生态反应 + Anthropic S-1 二阶收官（WSJ/WIRED 解读）+ 港股 27 家 AI 价值链公司 81 亿美元全景 + HN front 6/8 全天榜</td><td>白天主线收官 + 跨时段数字整合</td></tr>
+        <tr><td><strong style="color:#a855f7">21evening（21:00）</strong></td><td>待 21evening 决定，建议方向：xAI/小厂三日连发 + AI 防御工业级深度（Mythos 10000+ 漏洞 20x 跃升配套）+ Polymarket Anthropic 81% 实时概率 + 二级市场反应 + HN front 当日 150+ 分 AI 条目</td><td>模型发布动态 + 安全/加密 + 预测市场</td></tr>
+      </table>
+    </section>
+
+    <section class="card" style="background: rgba(100, 116, 139, 0.05); border-color: rgba(100, 116, 139, 0.3);">
+      <h2 style="color:#94a3b8; font-size:0.95rem;">⚠️ 撞车源（已避免重复）</h2>
+      <p style="color:#94a3b8; font-size:0.85rem;"><strong>6/8 morning 已覆盖</strong>：Trump 6/5 政府入股 + Anthropic 80% code by Claude + HN front 6/7 24h 3 条 AI 情绪条目（787/258/165）+ 联合国大学 6/6 能耗报告 + 1290 万高考 AI 限时"上锁"</p>
+      <p style="color:#94a3b8; font-size:0.85rem;"><strong>6/7 21evening 全天缺席</strong>（最近 21evening 是 6/6）；<strong>6/6 21evening 已覆盖</strong>：S&P 500 拒绝 SpaceX 同步封堵 OpenAI/Anthropic + Google-SpaceX $920M/月 + Anthropic 6/4 6pm 呼吁全球暂停 + HN Claude/rsync 452 + Nvidia Windows CPU 487 + Meta Muse Spark 推迟 + Cisco SD-WAN 0day + IronWorm 6/4 5pm 击中 36 个 npm 包</p>
+      <p style="color:#94a3b8; font-size:0.85rem;"><strong>6/4 afternoon 已覆盖</strong>：DeepSeek 500 亿元融资 + 阿里张凯夫离职 + 观察者网长文 + Quantinuum 6/4 上市 + 微软 2029 商业量子 + 算电协同 + 国产光互连</p>
+    </section>
+
+    <footer>
+      <p>OPC 午间情报 · 2026-06-08 12:00 首次采集</p>
+      <p>覆盖窗口：6/8 09:00 ~ 12:00（北美 6/7 18:00 ~ 6/8 03:00，重点 6/7 晚间苹果 WWDC 2026 / Anthropic 上市二阶 / 6/8 凌晨中美大模型交锋）</p>
+      <p style="margin-top:0.5rem;">生成时间：2026-06-08 12:00 北京时间 · Hermes Agent</p>
+    </footer>
+  </div>
+</body>
+</html>
