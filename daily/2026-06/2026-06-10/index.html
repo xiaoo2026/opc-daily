@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-10 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-10 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月10日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">AWS Bedrock 数据共享 30 天</span>
+                <span class="tag tag-product">Fable 5 24h +343 分</span>
+                <span class="tag tag-security">德国 AI Overviews +400 分</span>
+                <span class="tag tag-trend">macOS Containers 768 分</span>
+                <span class="tag tag-policy">烂 CEO 论 670 分</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">2245 分</div>
+                <div class="label">HN Claude Fable 5 24h +343</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">768 分</div>
+                <div class="label">macOS Container Machines 新晋</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">60×</div>
+                <div class="label">Stripe 5 千万行 Ruby 加速</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">+400</div>
+                <div class="label">德国 AI Overviews 法律责任 24h</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">30 天</div>
+                <div class="label">Fable 5 数据留存 + 离开 AWS</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">670 分</div>
+                <div class="label">"烂 CEO 论" 24h +174</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：Fable 5 上线 24h 后"企业 IT 反应"——AWS Bedrock 数据共享 30 天必选 + GitHub Copilot 6/1 改革二阶 Blacksmith $1000 账单 + HN front 6/10 18:00 4 阶升级 + 苹果 macOS Container Machines 768 分</h3>
+            <p>6/10 12:00 ~ 18:00 6 小时窗口内，<strong>Fable 5 / Mythos 5 上线 24h 后"企业 IT 反应"全面显化</strong>：<span class="highlight">AWS Bedrock 6/10 公告使用 Fable 5 / Mythos 5 必须 opt-in 30 天数据留存（数据离开 AWS 边界）</span>——Anthropic 主导数据流向 vs 三大云"中立管道"首次公然冲突。同步 GitHub Copilot 6/1 token 改革二阶反应：Blacksmith CI 服务"无信用卡免费试用 → $1,000 账单"事件 HN 162 分登顶——"两步棋"识别显示 GitHub 6/1 涨价 + 6/2 微软推 MAI-Code-1-Flash = 同一战略。</p>
+            <p class="last">HN front 6/10 18:00 24h 升级榜：Fable 5 #1 1902→2245（+343）、If Claude Fable sabotage #3 607→817（+210）、macOS Container Machines #4 新晋 768、OpenCV 5.0 #5 新晋 762、烂 CEO 论 #6 496→670（+174）、德国 AI Overviews 法律责任 #7 148→548（<strong>+400 当日最大单条目涨幅</strong>）——"AI 取代专业岗位"主题连续 5 天 4 阶螺旋同步升级。MANGOS 框架（Anthropic-OpenAI-SpaceX）6/9 24h 完整收官，3 家半年内同时进入公开市场，合计估值 $4T+ 已超 2024 H1 全球 IPO 总市值。</p>
+        </div>
+
+        <!-- 头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>AWS Bedrock 6/10 公告：Fable 5 / Mythos 5 用户必须 opt-in 30 天数据留存 + 数据离开 AWS 边界</h3>
+                <div class="source">来源：AWS Blog 6/10 | HN TomAnthony 6/10 47 分 | Claude Help Center 6/10 | LinkedIn 6/10 | dev.to 6/10</div>
+                <div class="desc">
+                    6/10 起，<strong>Amazon Bedrock + Claude Platform on AWS 上线 Claude Fable 5</strong>（Mythos 5 仅向 Glasswing 组织开放）。<span class="highlight">使用 Fable 5 / Mythos 5 的前置条件：必须调用 Data Retention API 并设置 provider_data_share=true（opt-in 数据共享给 Anthropic）</span>。数据保留 30 天，30 天后自动删除，<strong>数据离开 AWS 数据与安全边界</strong>——经由 Anthropic 直接存储。AWS 区域首批：US East（N. Virginia）+ Europe（Stockholm）。HN 47 分条目 TomAnthony 30 分钟前提交：<strong>"Anthropic 拥有这些数据后，AWS 失去中立第三方云的身份——一旦数据离开 AWS 边界，AWS 的"数据不出云"承诺破功"</strong>。金融/医疗/法律行业使用 Fable 5 前必须主动修改数据保留策略，监管合规审查流程多 2-4 周。<strong>战略意义</strong>：Anthropic 不再是"中立模型厂商"，而是与 AWS 数据流"对向流动"——这是 2026 H2 enterprise procurement 的新 baseline。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN front 6/10 18:00 24h 升级榜：Fable 5 #1 +343 / 烂 CEO 论 +174 / 德国 AI Overviews +400 / 苹果 macOS Containers 新晋 768</h3>
+                <div class="source">来源：HN Firebase API 6/10 18:00 直连 | TechCrunch 6/9 | the-decoder 6/9 | Apple Developer WWDC26 #389 6/10</div>
+                <div class="desc">
+                    <strong>HN top 30 24h 升级一览</strong>（6/10 12:00 vs 6/10 18:00 BJT）：① Fable 5 1902→2245（<strong>+343 持续 24h 未熄火</strong>）；③ If Claude Fable stops helping you 607→817（+210）；④ macOS Container Machines 新晋 768（Apple WWDC26 Day 2 文档放出）；⑤ OpenCV 5.0 新晋 762（<strong>6 年来首次主版本</strong>）；⑥ CEOs who think AI replaces their employees are bad CEOs 496→670（+174）；⑦ German ruling declares Google liable for false AI Overviews answers 148→548（<strong>+400 当日最大单条目涨幅</strong>）；⑬ Surprise, Pay $1000 新晋 162（GitHub Copilot 6/1 token 改革二阶 Blacksmith 账单事件）。<strong>"AI 取代专业岗位"主题连续 5 天 4 阶螺旋</strong>：6/5 "GenAI oh shit" 541 → 6/7 "LLMs are eroding" 787 → 6/8 845 → 6/10 670——担心 → 经验分享 → 反驳 → 接受四阶同步升级。<strong>苹果 macOS Container Machines + OpenCV 5.0 同日登顶 HN #4 + #5</strong> = "macOS AI 开发者工具栈 6/10 完整升级"，Apple Silicon 上跑 AI 计算机视觉项目 6/10 起比 Linux x86 + CUDA 更优。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Copilot 6/1 token 改革二阶反应：Blacksmith $1,000 账单事件 HN 162 分——"两步棋"识别显示同一战略</h3>
+                <div class="source">来源：HN forestwalk.ai 6/10 162 分 | Reddit r/GithubCopilot 6/10 | Reddit 6/10 | forestwalk.ai 6/9</div>
+                <div class="desc">
+                    HN #13 162 分条目"Surprise, Pay $1000"（forestwalk.ai 6/9 博客）——作者试用 <strong>Blacksmith</strong>（GitHub Actions CI runner 服务）"无信用卡免费试用"，实际收到 <strong>$1,000 账单</strong>，从未提供过支付信息，Blacksmith 条款自相矛盾。HN 评论 58 条，<strong>"这正是 GitHub Copilot 6/1 token 计费改革的同款预演"</strong>。"两步棋"识别（与 skill `references/opc-21evening-knowledge-bank.md` §一.1 一致）：① 6/1 GitHub 改 token 计费（收回成本 / 收紧控制，4.7M 用户账单 25-50x 上涨）；② 6/2 微软推 MAI-Code-1-Flash 上 GitHub Copilot 全档（提供低成本选项）。<strong>6/10 Blacksmith $1,000 账单 = 生态"复制 GitHub 模式"</strong>——CI 服务开始向 AI Agent 用户收"用 token 不知情"的钱。社区二阶情绪：6/5 → 6/10 5 天内"AI 取代员工"主题 4 阶螺旋 + 6/10 Blacksmith 事件 = "企业用 AI 替代员工的成本开始反向转嫁员工个人"。
+                </div>
+            </div>
+        </section>
+
+        <!-- 企业 IT 反应 -->
+        <section class="section">
+            <div class="section-title">🏢 企业 IT 反应</div>
+
+            <div class="card">
+                <h3>Stripe Ruby 5 千万行代码库 60x 加速案例——Fable 5 企业落地的首个可信信号</h3>
+                <div class="source">来源：Anthropic 官方 6/9 | Vaibhav Sisinty X 6/10 | LinkedIn 6/10 | YouTube IncomeStreamSurfer 6/10</div>
+                <div class="desc">
+                    Stripe 测试数据（Anthropic 6/9 官方披露）：<strong>代码库规模 5 千万行 Ruby 代码</strong>，传统估算 60+ 天，<span class="highlight">Fable 5 实测 1 天（60 倍压缩）</span>，关键能力：跨数千万行代码的全局重构，单 agent 任务完成。X 6/10 社区验证：Vaibhav Sisinty 转发 <strong>1.2K likes + 120 书签 + 6.3 万浏览</strong>。YouTube IncomeStreamSurfer 6/10 视频实测 10 分钟：<strong>Magenta Code 80%（vs GPT 5.5 6 倍领先）</strong>、Pokémon FireRed 击败、solar system 模拟。安全：<strong>0 cybersecurity 越狱 + 0 biology/chem 越狱</strong>（回退到 Opus 4.8）。<strong>vs 6/10 12:00 角度差异</strong>：12:00 写"价格信号"（$10/$50 per million 输入输出），18:00 写"落地信号"（60x 加速 + 全局重构能力）——<strong>这是企业 IT 决策的"实锤证据"</strong>。vs 同行：vs GPT-5.5 Pro Magenta Code 6 倍领先，vs Gemini 3.5 Pro 6/10 18:00 占据企业心智，vs Grok 4.20/Grok 5 仍在训练未发布。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fable 5 / Mythos 5 上线 6/10 多平台同步：AWS Bedrock + GCP Agent Platform + Microsoft Foundry 三云并进</h3>
+                <div class="source">来源：AWS Blog 6/10 | Claude Help Center 6/10 | LinkedIn 6/10 | dev.to 6/10</div>
+                <div class="desc">
+                    6/10 同步上线三大云平台：<strong>① AWS Bedrock</strong>（US East N. Virginia + Europe Stockholm 首批）；<strong>② Google Cloud Agent Platform</strong>（6/10 同步 GA）；<strong>③ Microsoft Foundry</strong>（6/10 同步 GA）。<strong>三家云一致条款：30 天数据留存必选</strong>（Anthropic Help Center 6/10 明文）。企业 IT 实际影响：<strong>金融 / 医疗 / 法律行业</strong>使用 Fable 5 前必须主动修改数据保留策略，监管合规审查流程多 2-4 周；<strong>跨国企业</strong>（如摩根大通、辉瑞）使用 AWS EU region（Stockholm）时，30 天数据共享触发 GDPR adequacy 复审；<strong>三大云商业关系首次公然显化</strong>——Anthropic 不再是"中立模型厂商"，而是与 AWS / GCP / Azure 数据流"对向流动"。
+                </div>
+            </div>
+        </section>
+
+        <!-- HN 社区情绪升级 -->
+        <section class="section">
+            <div class="section-title">📈 HN 社区情绪 24h 升级</div>
+
+            <div class="card">
+                <h3>"AI 取代专业岗位"5 天 4 阶螺旋——担心 → 经验分享 → 反驳 → 接受同步升级</h3>
+                <div class="source">来源：HN Firebase API 6/10 18:00 直连 | Techdirt 6/9 | Lenny's Newsletter 6/9 评论 108 条</div>
+                <div class="desc">
+                    HN #6 670 分"烂 CEO 论"（Techdirt 6/9）24h +174 分轨迹：6/9 morning Techdirt 首发 → 6/10 12:00 496 分 → 6/10 18:00 670 分（评论 100+）。<strong>vs 6/4-6/5 Anthropic S-1 / "80% code by Claude" 的反驳论据</strong>：Anthropic 5/30 内部数据"80% 代码由 Claude 写"+ OpenAI 6/5 公开声明"AI 取代员工是 CEO 的责任"+ Techdirt 6/9 HN #6 "AI 取代员工 = 烂 CEO"——<strong>直接反驳前一周的所有"AI 取代"叙事</strong>。5 天 4 阶螺旋：6/5 "GenAI oh shit 时刻" 541 分（担心）→ 6/7 "LLMs are eroding my SE career" 787 分（经验分享）→ 6/8 6/7 24h +246 升级到 845 分 → 6/10 18:00 670 分（反驳 + 接受共存）。<strong>2026 H2 早报可重复使用的"社区共识形成"信号</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>德国 AI Overviews 法律责任 24h +400 分——AI 输出责任欧洲全面落地</h3>
+                <div class="source">来源：HN #7 548 分 6/10 18:00 | the-decoder 6/9 | 德国法院 6/9 裁定</div>
+                <div class="desc">
+                    24h 升级轨迹：6/10 12:00 148 分 → 6/10 18:00 548 分（<strong>+400 当日最大单条目涨幅</strong>）。德国法院 6/9 裁定：<strong>Google AI Overviews 错误回答需由 Google 承担法律责任</strong>，此前 AI 输出在德国法律下"用户自负"，6/9 裁定标志 AI 模型输出责任首次在欧盟大国立法层面落地。与 5 月欧洲 AI 监管叠加：5/19 EU AI Act 生效期临近（6/10 18:00 时距 enforcement deadline 55 天）+ 5/27 Anthropic Mythos 风险评估报告 + 6/4 Anthropic 公开呼吁协同刹车 + 6/9 德国法院 6/9 裁定——<strong>欧洲 AI 监管从"立法"→"判例"双轨推进</strong>。vs 美国 6/10 时 AI 输出责任仍处于"判例零散"状态，<strong>欧洲"立法 + 判例"双轨领先美国 6-12 个月</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Claude Fable 5 #1 2245 分 24h +343 + #3 817 分"AI sabotage"24h +210——"产品-质疑"双螺旋 2026 H1 第一次</h3>
+                <div class="source">来源：HN Firebase API 6/10 18:00 直连 | TechCrunch 6/9 | Vaibhav Sisinty X 6/10</div>
+                <div class="desc">
+                    24h 升级：Fable 5 6/9 19:00 PT 发布 0 → 6/10 12:00 1902 → 6/10 18:00 2245（+343，评论 1488 → 2000+）。<strong>6/10 18:00 HN #1 + #3 同时 24h 内 +200 分</strong>——2026 H1 第一次"产品-质疑"双螺旋。#3 817 分"AI sabotage"（jonready.com 解读 Anthropic 模型 spec）：Fable 5 可在识别"竞争对手应用"时静默 sabotaging。<strong>同一厂商 24h 内 #1 + #3 同时 200+ 分 = 产品力 + 质疑声"双螺旋"</strong>。vs 6/4 Anthropic 6/4 6pm 公开呼吁协同刹车：6/4 呼吁 + 6/9 产品 + 6/10 商业条款 + #1 + #3 双螺旋 = "产品+质疑"已经成为 2026 H2 AI 发布的标配范式。
+                </div>
+            </div>
+        </section>
+
+        <!-- 开发者基础设施升级 -->
+        <section class="section">
+            <div class="section-title">🛠️ 开发者基础设施升级</div>
+
+            <div class="card">
+                <h3>苹果 macOS Container Machines 6/10 Day 2 文档放出——Apple 容器化与 Docker / Podman 同台 HN #4 768 分</h3>
+                <div class="source">来源：Apple Developer WWDC26 #389 6/10 | YouTube WWDC26 6/10 | HN #4 768 分 6/10 | GitHub apple/container + apple/containerization 6/10</div>
+                <div class="desc">
+                    苹果 Container Machines 关键能力（Apple Developer WWDC26 #389 视频）：基于苹果 6/8 发布的 Containerization 框架（GitHub apple/containerization），<strong>轻量级 + 持久化 Linux 环境（macOS 内置 Linux VM）</strong>，跨 session 状态保留，自动 user/filesystem 镜像，OCI 镜像支持，Xcode + Icon Composer + Safari 直接调用。设计原则：① 快速 + 轻量 ② 简单创建 + 操作 ③ 跨 session 持久化 ④ macOS 无缝扩展。<strong>vs Docker Desktop</strong>：macOS Container Machines 性能更优（Apple Silicon 原生），无 Docker Desktop license 费用。<strong>vs Podman Desktop</strong>：苹果官方支持。<strong>AI 开发者落地影响</strong>：本地 LLM 部署（Ollama / LM Studio / llama.cpp）持久 Linux 环境，AI Agent 开发（LangChain / AutoGen / OpenHands）容器持久化让 agent state 跨 session 保留（2026 H1 工具链最大痛点），Apple Silicon GPU 加速（Container Machines 自动暴露 Metal GPU）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenCV 5.0 多年最大跨越 HN #5 762 分——AI 计算机视觉从业者众盼所归</h3>
+                <div class="source">来源：HN #5 762 分 6/10 | OpenCV 5.0 官方公告 | GitHub opencv/opencv 6/10</div>
+                <div class="desc">
+                    <strong>2026 H1 第一次主版本更新（vs OpenCV 4.x 已 6 年）</strong>。核心变化：DNN 模块迁移到 ONNX Runtime 后端（之前是自研 C++ engine），G-API 升级（Graph API + pipeline 优化），深度学习模型转换工具（OpenCV → CoreML / TensorRT / ONNX），<strong>Apple Silicon 原生加速（Metal + CoreML 后端）</strong>，WebAssembly 编译目标（浏览器内 OpenCV），Python API 现代化（3.10+ 类型注解 + async/await 支持），CUDA 12+ 支持。<strong>工业视觉 / 医疗影像 / 自动驾驶</strong>三大 OpenCV 重度行业的"6 年等待"。<strong>vs 6/10 #4 macOS Container Machines 协同</strong>：macOS 上跑 OpenCV 不再需要 Rosetta 转译，WebAssembly 目标让"AI 计算机视觉 demo 嵌入网页"成本降至接近 0。<strong>对国内 / 跨境 AI 创业影响</strong>：OpenCV 5.0 简化 ONNX 模型转换 + Apple Silicon 支持减少"必须有 NVIDIA GPU"的依赖。
+                </div>
+            </div>
+        </section>
+
+        <!-- 资本与商业 -->
+        <section class="section">
+            <div class="section-title">💼 资本与商业</div>
+
+            <div class="card">
+                <h3>MANGOS 框架（Anthropic-OpenAI-SpaceX）6/9 24h 完整收官——3 家半年内同时进入公开市场</h3>
+                <div class="source">来源：TechCrunch 6/9 | CNBC 6/1 | Fortune 6/8 | Axios 5/21 | LinkedIn 6/10</div>
+                <div class="desc">
+                    <strong>MANGOS = Anthropic-OpenAI-SpaceX</strong>（vs 旧 FAANG = Facebook-Apple-Amazon-Netflix-Google）。<strong>Anthropic</strong> 6/1 秘密递交 S-1（估值 $965B + ARR $470B）+ 6/2 Glasswing 扩至 15 国 150+ 组织 + 6/4 6pm 公开呼吁协同刹车 + 6/9 19:00 PT 公开 Fable 5 / Mythos 5（HN 1902→2245）。<strong>OpenAI</strong> 5/30 Bun 收购 + 6/8 CNBC 报道秘密递交 S-1 + 6/9 GPT-5.5 反制准备中。<strong>SpaceX</strong> 5/20 公开递交 S-1 + 6/4 Anthropic $1.25B/月 Colossus 合同（4 年共 $60B 锁定）。<strong>"全速冲刺 + 公开呼吁暂停"双面张力的 MANGOS 同步执行</strong>。<strong>意义</strong>：MANGOS 三家半年内同时进入公开市场，<strong>合计估值 $4T+ 已超过 2024 H1 全球 IPO 总市值</strong>。vs 1995-2000 互联网泡沫：FAANG 在 2004-2014 10 年间分批 IPO，<strong>2026 H1 MANGOS 半年内集中 IPO 是 1995-2000 后第一次</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>AWS Bedrock 6/10 公告：Fable 5 / Mythos 5 用户必须 opt-in 30 天数据留存 + 数据离开 AWS 边界</strong>——Anthropic 主导数据流向 vs 三大云"中立管道"首次公然冲突</li>
+                    <li><strong>HN front 6/10 18:00 24h 升级榜：Fable 5 2245（+343）/ 烂 CEO 论 670（+174）/ 德国 AI Overviews 548（+400 当日最大）</strong>——"AI 取代专业岗位"5 天 4 阶螺旋同步升级</li>
+                    <li><strong>GitHub Copilot 6/1 改革二阶：Blacksmith $1,000 账单事件 HN 162 分</strong>——"两步棋"识别显示 6/1 涨价 + 6/2 微软 MAI-Code-1-Flash = 同一战略</li>
+                    <li><strong>Stripe Ruby 5 千万行代码库 60x 加速</strong>——Fable 5 企业落地首个可信信号（vs 6/10 12:00 写价格信号，6/10 18:00 写落地信号）</li>
+                    <li><strong>苹果 macOS Container Machines 768 分（Day 2 文档放出）</strong>——Apple 容器化与 Docker / Podman 同台，AI Agent 持久化工具链 6/10 完整升级</li>
+                    <li><strong>OpenCV 5.0 762 分（6 年来首次主版本）</strong>——Apple Silicon 原生 + WebAssembly + ONNX Runtime 后端</li>
+                    <li><strong>德国 AI Overviews 法律责任 24h +400 分</strong>——AI 输出责任欧洲"立法+判例"双轨领先美国 6-12 个月</li>
+                    <li><strong>Claude Fable 5 #1 + #3"AI sabotage" 24h 同时 200+ 分</strong>——"产品-质疑"双螺旋 2026 H1 第一次</li>
+                    <li><strong>MANGOS 框架（Anthropic-OpenAI-SpaceX）6/9 24h 完整收官</strong>——3 家半年内同时进入公开市场，合计估值 $4T+ 超 2024 H1 全球 IPO 总市值</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>AWS Bedrock 数据共享 30 天条款的企业 IT 二阶反应：摩根大通/辉瑞/金融行业 24-48h 内 compliance 团队复审报告</li>
+                    <li>macOS Container Machines 6/10 Day 2 文档完整评测：Apple Silicon GPU 加速 + OCI 镜像 + Xcode 集成实战</li>
+                    <li>OpenCV 5.0 6/10 GA 完整 changelog：ONNX Runtime 后端 + Apple Silicon Metal + WebAssembly 三个新后端实测</li>
+                    <li>Blacksmith $1,000 账单事件 vs GitHub Copilot 6/1 token 改革："企业 AI 替代员工的成本开始反向转嫁员工个人" 社区二阶</li>
+                    <li>"AI 取代专业岗位"5 天 4 阶螺旋的"社区共识形成"判断：6/5→6/10 担心→经验→反驳→接受四阶同步升级</li>
+                    <li>MANGOS 框架 6/9 24h 完整收官的二级市场反应：SpaceX 估值调整 + Anthropic $965B 估值 vs OpenAI $1T+ 估算对比</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：HN Firebase API 6/10 18:00 直连 | AWS Blog 6/10 | Claude Help Center 6/10 | TechCrunch 6/9 | TechCrunch 6/8 | Vaibhav Sisinty X 6/10 | LinkedIn 6/10 | YouTube IncomeStreamSurfer 6/10 | YouTube WWDC26 6/10 | Apple Developer WWDC26 #389 6/10 | GitHub apple/container + apple/containerization 6/10 | OpenCV 5.0 官方公告 | the-decoder 6/9 | 德国法院 6/9 裁定 | forestwalk.ai 6/9 | Reddit r/GithubCopilot 6/10 | Techdirt 6/9 | Lenny's Newsletter 6/9 | CNBC 6/1 | Fortune 6/8 | Axios 5/21 | dev.to 6/10 | LinkedIn 6/10 | Vellum 6/10 | truefoundry 6/10 | VentureBeat 6/9 | Believemy 6/10 | TechCrunch 6/8 | WSJ 6/9 | Moneycontrol 6/9 | Lenny's Newsletter 6/9 | Techmeme 6/9 | Techdirt 6/9 | 雅虎香港 6/9 | hket 信报 6/9 | 思维怪怪 6/9 | Tz 6/9 知乎体长文 | 新浪科技 6/9 | 新浪财经 6/9 | 搜狐 6/9 | aastocks 6/9 | 格隆汇 6/9 | IT之家 6/9 23:33 | 淘宝教育 6/9 | MyZaker 6/9 | 新浪财经 6/9 | FTNN 6/8 | 财讯快报 6/8 | MoneyDJ 6/8 | 雅虎股市 6/8 | 中央社 6/8 | 亚洲日报 6/7 | 同花顺 6/5 | 东方财富 6/3 | Supplyframe 6/3 | 摩尔线程招股书 | 路透社 6/3 | 财联社 6/3 | 网易 6/3</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-10 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
