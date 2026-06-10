@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚间情报 2026-06-10 | 21:00 攻防 + 数字主权 + 一手体验</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #a855f7;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #d0a8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-10 21:00 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业 21:00 晚间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月10日 21:00 发布 · Miasma 蠕虫 542 分 + Anthropic 91% + Mythos 开发者体验</p>
+            <div class="meta">
+                <span class="tag tag-security">Miasma 蠕虫攻 Microsoft 542</span>
+                <span class="tag tag-product">xAI 6 月连发</span>
+                <span class="tag tag-policy">Anthropic 91% Polymarket</span>
+                <span class="tag tag-trend">Let's Encrypt 制裁国禁签</span>
+                <span class="tag tag-capital">Mythos 5 开发者体验</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">542 分</div>
+                <div class="label">Miasma 蠕虫攻 Microsoft 73 仓库 3h 涨 +495</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">91%</div>
+                <div class="label">Polymarket Best AI model end of June</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">71.0%</div>
+                <div class="label">OpenAI EVMbench exploit 得分 (vs GPT-5 33.3%)</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">+563</div>
+                <div class="label">德国 AI Overviews 责任 24h 涨幅 (148→711)</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">421 分</div>
+                <div class="label">Let's Encrypt 制裁国禁签 (351 评论)</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">309 分</div>
+                <div class="label">Mythos 5 开发者 24h 一手体验 (oneusefulthing)</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 21:00 核心警报：Miasma 蠕虫二次攻 Microsoft 73 GitHub 仓库 HN #9 542 分（3h 单条最大涨幅 +495）+ Anthropic Polymarket 91% 赔率刷新 2026 H1 峰值 + Let's Encrypt 6/4 制裁国禁签进入 HN top 10</h3>
+            <p>6/10 18:00 → 21:00 3 小时窗口内，<strong>AI 攻防双线 + 数字主权 + 开发者一手体验三线并发</strong>。攻击侧：<span class="highlight">Miasma 蠕虫 6/5 → 6/8 攻 Microsoft 73 个 GitHub 仓库 21:00 HN #9 542 分（3h 涨幅 +495 是当日最大单条涨幅）</span>——AI coding agent 成为全新攻击面。防御侧同步：OpenAI 6/4 EVMbench 71% exploit 得分（vs 6 个月前 GPT-5 33.3%，翻倍）+ 1000 万美元 API credits 防御投入——AI 攻防"双线 24h 升级"形成 2026 H1 首个统一信号。</p>
+            <p>数字主权侧：<strong>Let's Encrypt 6/4 修订 LE-SA v1.7 全面禁签制裁国（HN #10 421 / 351c）</strong>——全球 50%+ HTTPS 网站的 CA 信任根首次与美国 OFAC 制裁名单直接绑定，<strong>制裁国普通公民 + NGO + 大学 + 独立媒体均无法获得证书</strong>（自签证书 MITM 风险翻倍）。<strong>Apple Siri EU 拒绝豁免余震（HN #12 405 / 652c，6/10 当日非 AI 头条最热）</strong>——Apple 选择 EU 不上线 Siri AI 保护封闭生态完整，与 EU DMA 互操作规则正面冲突。</p>
+            <p>预测市场 + 一手体验：<strong>Polymarket "Best AI model end of June" Anthropic 91%（4,140 评论）= 2026 H1 最高赔率</strong>；<strong>oneusefulthing.org 6/10 长文 "What it feels like to work with Mythos"（HN #13 309 / 270c）</strong>——Ethan Mollick 一手体验："Mythos 5 不是替代 SE，是 1.5x 杠杆工作流级转变"，与 evening 6/10 已写"烂 CEO 论 744 分"形成"4 阶螺旋：担心 → 经验 → 反驳 → 接受"完整收官。</p>
+            <p class="last">xAI 6 月小厂连发节奏：<strong>Grok Build 0.1（编码 agent beta，对标 GitHub Copilot 6/1 改革后市场真空）+ Grok Imagine Video 1.5 Preview（图生视频，抢占 Sora 3/24 退场后赛道）+ Grok Imagine Quality Mode（高真实度 + 强文本渲染）</strong>——避开 OpenAI / Anthropic 头条，专注编码 + 视频生成两个细分赛道快速迭代。</p>
+        </div>
+
+        <!-- 头条 -->
+        <section class="section">
+            <div class="section-title">🔥 今日头条</div>
+
+            <div class="card">
+                <h3>Miasma 蠕虫 6/5 → 6/8 二次攻 Microsoft 73 个 GitHub 仓库——HN #9 542 分 3h 涨幅 +495 当日最大单条</h3>
+                <div class="source">来源：HN #9 542 分 6/10 21:00 | TechCrunch 6/8 | Ars Technica 6/8 | The Hacker News 6/8 | Microsoft Security Blog 6/2 | StepSecurity 6/5 | Cloudsmith 6/5 | OpenSourceMalware 6/5 | ThreatLocker 6/5 | connorboyle HN 评论 6/10</div>
+                <div class="desc">
+                    <strong>6/8 二次攻事件关键数据</strong>：73 个 Microsoft GitHub 仓库被攻陷——涵盖 4 个 GitHub 组织（<span class="highlight">Azure / Azure-Samples / Microsoft / MicrosoftDocs</span>）。GitHub staff 6/8 主动 disabled 全部 73 仓库访问。攻击者：TeamPCP（已追踪威胁行为者，5 月首次作案同一组织）。<strong>攻击路径：durabletask 仓库（5/19 已遭毒化的 Microsoft PyPI 包对应的 GitHub 仓库）→ 6/8 重新被同一受感染账户 push 恶意 commit</strong>。载荷：<code>setup.js</code>（重度混淆）+ <code>settings.json</code>（含 Claude / Gemini LLM hooks）+ VS Code workspace tasks（自动用 node 执行 setup.js）。<strong>触发条件 = 开发者用 AI agent（Claude Code / Gemini CLI / Cursor / VS Code）打开这些仓库</strong>。后果：扫 /proc 找 GitHub Actions Runner Worker PID → 提取运行时 secrets → OIDC token 盗窃 + 90+ 开发者工具配置外泄。<strong>如果验证失败</strong>：执行 <code>rm -rf ~/ ~/Documents</code>（home / Documents 全删）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI 6/4 EVMbench 智能合约攻防基准 + 1000 万美元 API credits 防御投入——AI 防御工业级深度</h3>
+                <div class="source">来源：OpenAI 官方 6/4 | Paradigm 联合发布 | 中文版 OpenAI 新闻中心 6/4 | Microsoft Security Blog 6/2</div>
+                <div class="desc">
+                    <span class="highlight">EVMbench 关键数据</span>：合作 Paradigm；40 次审计整理 117 个漏洞实例（Code4rena 公开审计竞赛）；3 种评估模式（detect 漏洞检测 / patch 漏洞修补 / exploit 漏洞利用）；GPT-5.3-Codex via Codex CLI <strong>exploit 模式得分 71.0%（vs 6 个月前 GPT-5 仅 33.3%，翻倍提升）</strong>；detect / patch 模式仍不完整（漏洞召回率 / 修补成功率未达完全覆盖）。测试环境：本地 Anvil（隔离，不连主网）。<strong>战略意义</strong>：OpenAI 主动公开"AI 攻防能力" = Anthropic Mythos 5 受控发布的镜像操作——Anthropic 4/7 公布 Mythos Preview 找到 500+ 0-day + 4/7 起步 Glasswing 50 家；OpenAI 6/4 公布 EVMbench 71% exploit 得分 = "我们也能找漏洞，但我们用 benchmark 公开透明"。<strong>同一天 6/4</strong> Anthropic 公开呼吁全球实验室协同刹车 + OpenAI 公开 EVMbench = 同一战略"安全 + 治理"双面张力的另一面。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Polymarket "Best AI model end of June" Anthropic 91%——2026 H1 最高赔率 4,140 评论共识形成</h3>
+                <div class="source">来源：polymarket.com 6/10 21:00 | coindesk 6/2 Polymarket 首笔机构大宗交易 | cnbc 6/2</div>
+                <div class="desc">
+                    <strong>Polymarket 6/10 21:00 AI 模型相关市场实时赔率</strong>：<span class="highlight">Best AI model end of June? = Anthropic 91%（4,140 评论）</span>、Which company has second best AI model end of June?（动态）、Best AI model on June 13?（短窗口，动态）、Which companies will have a #1 AI model by June 30?（11 候选，118 评论）、Best AI Agent end of June?（21evening 重点市场）、Anthropic IPO Closing Market Cap（6/10 S-1 推进）、Will SpaceX's valuation hit __ by June 30?（6/4 Colossus 节点）、Will OpenAI's valuation hit __ by December 31?（6/8 秘密 IPO）。<strong>Anthropic 91% 第一 = 21:00 21evening 必写信号</strong>：6/9 19:00 PT Fable 5 / Mythos 5 双城发布 = 91% 赔率的事后定调；6/10 18:00 AWS Bedrock 数据共享 + Stripe Ruby 60x 加速 + Hex 分析首次突破 90% = 91% 赔率的事后加固；6/10 21:00 HN #1 仍 2248 分 = 91% 赔率的市场共识形成。<strong>vs 6/4 19:00 PT Fable 5 / Mythos 5 第一次预约时段</strong>：Anthropic 赔率 70% → 91% 24h +21 百分点 = <strong>6/9-6/10 24h 是 Anthropic 2026 H1 最高赔率窗口</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 数字主权 -->
+        <section class="section">
+            <div class="section-title">🌐 数字主权侧</div>
+
+            <div class="card">
+                <h3>Let's Encrypt 6/4 制裁国禁签（HN #10 421 / 351c）——全球 TLS 信任根首次与美国 OFAC 制裁名单直接绑定</h3>
+                <div class="source">来源：Let's Encrypt 官方 6/4 | HN #10 421 分 6/10 | OFAC 制裁名单 6/2 | sanctionslawyers.net 6 月</div>
+                <div class="desc">
+                    <span class="highlight">LE-SA v1.7 6/4 修订版关键条款</span>：不允许向位于 / 在 / 居住于任何"被美国全面制裁国家或地区"的人或实体，或受制裁 / 出口管制法规限制的方，或由上述方拥有 / 控制 / 代理的人或实体，签发或使用证书。<strong>OFAC 6/2 全面制裁国名单</strong>（2026-06-02 更新）：全面禁运（comprehensive embargoes）：Cuba / Iran / North Korea / Syria + 俄控乌区 Crimea / Donetsk / Luhansk；定向/部门制裁：Russia / Venezuela / Belarus / Myanmar / 20+ 其他。<strong>21evening 关键判断</strong>：Let's Encrypt 是全球最广泛使用的免费 TLS CA（3 亿+ 活跃证书，覆盖 50%+ 全球 HTTPS 网站），6/4 全面禁签 = 全球 TLS 信任根首次与美国 OFAC 制裁名单直接绑定。<strong>实际影响</strong>：制裁国开发者无法获得 Let's Encrypt 证书 → 强制回退到自签证书（用户必须安装 root CA）→ MITM 风险翻倍；制裁国<strong>普通公民</strong>（非政府、非受制裁实体）也被迫使用自签证书——这正是评论员 CobrastanJorji 的批评核心："Let's Encrypt 的使命是创造一个更安全、隐私友好的网络，除了那些最需要它的国家的居民"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Apple Siri EU 拒绝豁免余震（HN #12 405 / 652c 当日非 AI 头条最热）——DMA 第 6/7 条 6/10 仍未解决</h3>
+                <div class="source">来源：Reuters 6/10 | pcmag 6/10 | HN #12 405 分 6/10 21:00 | Apple 官方声明 6/10 | EU Commission 回应 6/10</div>
+                <div class="desc">
+                    <strong>Apple 6/10 官方声明</strong>（SVP Craig Federighi）："<span class="highlight">Our hope is to eventually bring Siri AI to the EU</span>, and we will continue to engage with EU regulators on a path forward. However, their refusal to engage constructively on solutions that preserve privacy and security means we do not currently have a timeline for Siri AI's availability on iOS and iPadOS in the EU."<strong>EU Commission 6/10 回应</strong>（发言人 Thomas Regnier）："So first, <span class="highlight">the decision not to roll out Siri AI in the EU is Apple's and Apple's only.</span>"<strong>核心冲突</strong>：Apple 立场 — EU 的"互操作规则"要求 Siri AI 开放给第三方访问，Apple 申请豁免被拒，Apple 选择不在 EU 上线 Siri AI；EU 立场 — Apple 主动决定不上线，EU 没有拒绝任何豁免申请，EU 的互操作规则是 DMA 第 6/7 条标准要求。<strong>核心争议</strong>：互操作规则要求 Apple 允许第三方使用 "the same OS hardware and software features" ——Apple 称这会破坏隐私和安全。<strong>21evening 关键判断</strong>：EU DMA 互操作规则 = 数字主权侧"看门人"约束；Apple 选择退出 EU = 接受"失去 EU Siri AI 市场"以保护"封闭生态完整性"；6/10 21:00 数据点：Apple Intelligence 在 EU 0 用户；EU 5 亿 iPhone / iPad 用户无法使用 Siri AI；652 条评论多数支持 EU 立场——HN 社区反对 Apple 的"生态封闭"论点。
+                </div>
+            </div>
+        </section>
+
+        <!-- 小厂快攻 -->
+        <section class="section">
+            <div class="section-title">⚡ xAI 6 月小厂连发</div>
+
+            <div class="card">
+                <h3>xAI 6 月连发：Grok Build 0.1（编码 agent beta）+ Grok Imagine Video 1.5 Preview + Quality Mode</h3>
+                <div class="source">来源：x.ai/news 6 月 | releasebot.io/updates/xai 6 月 | x.ai/cli Grok Build 0.1 公告 | digitalapplied.com 4 月</div>
+                <div class="desc">
+                    <strong>6 月连发 3 个 SKU</strong>：<span class="highlight">Grok Build 0.1（公开 beta，6 月初）</span>——xAI 首个编码 agent 模型，主打 agentic coding / web dev / debugging / <strong>MCP 支持</strong>，对标 GitHub Copilot 6/1 token 改革后市场真空；<span class="highlight">Grok Imagine Video 1.5 Preview（6 月）</span>——图生视频模型（xAI API preview），抢占 Sora 3/24 退场后赛道；<span class="highlight">Grok Imagine Quality Mode（6 月）</span>——更高真实度 + 强文本渲染 + 创意控制，对标 Midjourney v8 + Stable Diffusion 3.5 + DALL-E 4。<strong>6 月连发节奏</strong>：5 月 Grok 4.3 Beta（4/17 软发布 → 5/15 退休旧 slug）；6 月初 Grok Build 0.1（编码 agent beta）；6 月中 Grok Imagine Video 1.5 Preview + Quality Mode；6 月内（规划）Grok 4.20 Full Release 已 3/10 发布（2M 上下文 / 78% hallucination / 60% 降价）。<strong>实战范本</strong>：避开 OpenAI / Anthropic 头条——xAI 在 6 月选择<strong>编码 agent + 视频生成</strong>两个细分赛道做快速迭代；Grok Build 0.1 直接对标 GitHub Copilot token 计量改革（6/1）后的市场真空——CI 工具栈正在"成本爆发"，xAI 用"我们最快"打入；Grok Imagine Video 1.5 = Sora 3/24 退场后 xAI 接管 AI 视频生成赛道（OpenAI 关停 Sora = xAI 抢占）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Coinbase x402 协议 + Polymarket 6/2 首笔机构大宗交易——AI agent 支付栈三层架构</h3>
+                <div class="source">来源：coindesk 3/15 | paymentsjournal 3 月 | cnbc 6/2 Polymarket 首笔机构大宗交易 | rebelfi 3/7 | fluxapay 2026</div>
+                <div class="desc">
+                    <strong>x402 协议 3/15 → 6/10 进展</strong>：x402 = Coinbase 的 HTTP 402 Payment Required 状态码商业化协议；6/10 21:00 x402 协议日成交量 $28,000（coindesk 3/15 数据，注意 3/15 后未见更新日均数据）；<strong>Artemis 标记 x402 约一半流量为虚假活动 vs 真实商业</strong>——x402 真实日活可能仅 ~$14,000；6/2 里程碑：Polymarket 完成首笔"机构大宗交易"——x402 是合约标的之一（FalconX ↔ AneraLabs）；6/2 同一日：Polymarket 推进"机构大宗交易上链"——是 6/2 AI compute 算力价格合约的链上结算实验。<strong>AI agent 支付栈 21:00 三层架构</strong>：钱包创建层（Coinbase Agentic Wallets / Stripe machine payments / MoonPay Agents）；支付协议层（Coinbase x402 / Stripe machine payments / MoonPay Agents）；结算层（Base / USDC / ETH L1 / L2）。<strong>21evening 数字主权侧配套</strong>：x402 走 Base + USDC = 稳定币支付 + AI agent 自动化 = 不依赖传统银行——为"AI agent 24/7 自主交易"奠定基础。
+                </div>
+            </div>
+        </section>
+
+        <!-- 开发者一手体验 -->
+        <section class="section">
+            <div class="section-title">👨‍💻 开发者一手体验</div>
+
+            <div class="card">
+                <h3>What it feels like to work with Mythos（HN #13 309 / 270c）——Ethan Mollick 6/10 长文：1.5x 杠杆工作流级转变</h3>
+                <div class="source">来源：oneusefulthing.org 6/10 | HN #13 309 分 6/10 21:00 30 分钟前 | Ethan Mollick 6/10</div>
+                <div class="desc">
+                    <strong>Ethan Mollick 6/10 长文关键观点</strong>（"What it feels like to work with Mythos"）：<span class="highlight">Mythos 5 不是"另一个 LLM"——是"工作流级别的转变"</span>（6/10 21:00 30 分钟前发布即获 4 分，270 评论）。<strong>关键体验 1</strong>：对话持续性——"Mythos 5 能记 24+ 小时前对话的细微差异"（vs 现有 Claude / GPT 几小时遗忘）。<strong>关键体验 2</strong>：跨工具调用稳定——Mythos 5 在多步 agent 任务中不丢失上下文（vs Sonnet 4.8 多步掉链）。<strong>关键体验 3</strong>：编码与文档同步——用 Mythos 5 改一段代码后，文档自动跟随更新（vs Sonnet 4.8 需手动重生成）。<strong>关键体验 4</strong>："配合"vs"替代"工作流——"Mythos 5 不是替代 SE，是给 SE 加了 <span class="highlight">1.5 倍杠杆</span>"（<strong>关键反驳 evening 6/10 HN #6 烂 CEO 论 744 分</strong>）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"AI 取代专业岗位"4 阶螺旋 6/10 21:00 完整收官——担心 → 经验 → 反驳 → 接受同步升级</h3>
+                <div class="source">来源：HN Firebase API 6/10 21:00 直连 | oneusefulthing.org 6/10 | Techdirt 6/9 烂 CEO 论 | Lenny's Newsletter 6/9</div>
+                <div class="desc">
+                    <strong>5 天 4 阶螺旋完整数据</strong>（6/4 → 6/5 → 6/7 → 6/8 → 6/10 5 个时点）：<span class="highlight">6/5 "GenAI oh shit 时刻" 541 分（首阶：担心）→ 6/7 "LLMs are eroding my SE career" 787 分（二阶：经验）→ 6/8 845 分（三阶：反驳——烂 CEO 论起势）→ 6/10 21:00 "What it feels like to work with Mythos" 309 分 + "烂 CEO 论" 744 分 = 四阶：接受（工作流转变）</span>。<strong>21evening 角度 #3 把 evening 已写"烂 CEO 论 744 分"与"开发者体验 309 分" 一起写</strong>——呈现完整的"4 阶螺旋：担心 → 经验 → 反驳 → 接受"。<strong>vs Anthropic 公关叙事的张力</strong>：Anthropic 6/9 官方 — Mythos 5 = 找到 0-day 漏洞的工具 + 主动受控 + 安全护栏；oneusefulthing.org 6/10 — Mythos 5 = 1.5 倍杠杆 + 工作流级 + 持续性 + 不替代 SE。<strong>两个叙事并存</strong> = "Anthropic 强调'能力 + 危险'，开发者体验强调'能力 + 杠杆'"。
+                </div>
+            </div>
+        </section>
+
+        <!-- HN front 24h 升级榜 -->
+        <section class="section">
+            <div class="section-title">📈 HN front 6/10 21:00 top 30 24h 完整榜</div>
+
+            <div class="card">
+                <h3>6/10 21:00 vs 18:00 3h 升级榜 + 24h 完整榜——单条最大涨幅 #9 Microsoft Miasma 542（+495）</h3>
+                <div class="source">来源：HN Firebase API 6/10 21:00 直连 | 6/10 18:00 evening 抓取对照</div>
+                <div class="desc">
+                    <strong>21evening 角度 #4 关键观察</strong>：① HN top 30 整体降温——3 小时窗口（18:00 → 21:00）内大多数条目无变化或缓慢上行，符合"24h 滚动榜单 18:00 后趋于稳定"特征；② <span class="highlight">单条目最大涨幅 #9 Microsoft Miasma 蠕虫（47 → 542 = +495 分，3h 涨幅最大）</span>——6/10 18:00 evening 抓取时 #24（47 分），6/10 21:00 21evening 抓取时 #9（542 分），3 小时从 24 → 9 = 进入 top 10，直接证据：6/8 TechCrunch + Ars Technica 报道持续发酵；③ <span class="highlight">当日最大单条目涨幅 #7 德国 Google AI Overviews 责任（148 → 711 = +563 分）</span>——6/10 12:00 afternoon 抓取时 #5（148 分），6/10 18:00 evening 抓取时 #7（548 分），6/10 21:00 21evening 抓取时 #7（711 分），24h +563 分 = 当日最大单条目涨幅；④ 烂 CEO 论 4 阶螺旋 6/10 21:00 744 分（3h +74 分）= 接受阶段再次升级；⑤ HN top 30 中 evening 未写但 21evening 补的 4 条 = 21evening 角度的"fresh 视角"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN top 30 6/10 21:00 完整榜 + 24h 涨幅（vs 6/10 18:00 evening 抓取）</h3>
+                <div class="source">来源：HN Firebase API 6/10 21:00 抓取 top 30</div>
+                <div class="desc">
+                    <table class="github-table">
+                        <tr><th>HN 排名</th><th>6/10 18:00</th><th>6/10 21:00</th><th>3h 涨幅</th><th>主题</th><th>21evening 角度</th></tr>
+                        <tr><td>#1</td><td>2245</td><td>2248</td><td>+3</td><td>Claude Fable 5</td><td>evening 已写</td></tr>
+                        <tr><td>#2</td><td>902</td><td>902</td><td>0</td><td>macOS Container Machines</td><td>evening 已写</td></tr>
+                        <tr><td>#3</td><td>817</td><td>892</td><td><span class="delta">+75</span></td><td>"If Claude Fable stops helping you"</td><td>evening 已写</td></tr>
+                        <tr><td>#5</td><td>762</td><td>784</td><td>+22</td><td>OpenCV 5 Is Here</td><td>evening 已写</td></tr>
+                        <tr><td>#6</td><td>670</td><td>744</td><td><span class="delta">+74</span></td><td>"CEOs who think AI replaces their employees"</td><td>evening 已写</td></tr>
+                        <tr><td>#7</td><td>548</td><td>711</td><td><span class="delta">+163</span></td><td>German ruling declares Google liable</td><td>evening 已写</td></tr>
+                        <tr><td><strong>#9</strong></td><td>47</td><td><strong>542</strong></td><td><strong class="delta">+495（最大单条涨幅）</strong></td><td><strong>Microsoft's open source tools were hacked</strong></td><td><strong>21evening 角度 #1 主</strong></td></tr>
+                        <tr><td><strong>#10</strong></td><td>421</td><td>421</td><td>0</td><td><strong>Let's Encrypt bans certificate in US sanctioned territory</strong></td><td><strong>21evening 角度 #2 主</strong></td></tr>
+                        <tr><td><strong>#12</strong></td><td>405</td><td>405</td><td>0</td><td><strong>Apple decided not to roll out Siri in EU</strong></td><td><strong>21evening 角度 #3 主</strong></td></tr>
+                        <tr><td><strong>#13</strong></td><td>309</td><td>309</td><td>0</td><td><strong>What it feels like to work with Mythos</strong></td><td><strong>21evening 角度 #3 主</strong></td></tr>
+                        <tr><td>#23</td><td>177</td><td>177</td><td>0</td><td>AWS Bedrock to require sharing data with Anthropic</td><td>evening 已写</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Miasma 蠕虫 6/5 → 6/8 二次攻 Microsoft 73 个 GitHub 仓库（HN #9 542 / 3h 涨 +495 当日最大单条）</strong>——AI coding agent 是 2026 H1 全新攻击面，TeamPCP 5 月首次 + 6 月二次 = 同源伤口持续</li>
+                    <li><strong>OpenAI 6/4 EVMbench 71% exploit 得分（vs GPT-5 33.3%，翻倍）+ 1000 万美元 API credits 防御投入</strong>——AI 攻防"双线 24h 升级"形成 2026 H1 首个统一信号</li>
+                    <li><strong>Polymarket "Best AI model end of June" Anthropic 91%（4,140 评论）= 2026 H1 最高赔率</strong>——vs 6/4 预约时段 70% → 91% 24h +21 百分点</li>
+                    <li><strong>Let's Encrypt 6/4 制裁国禁签（HN #10 421 / 351c）</strong>——全球 50%+ HTTPS 网站的 CA 信任根首次与美国 OFAC 制裁名单直接绑定</li>
+                    <li><strong>Apple Siri EU 拒绝豁免余震（HN #12 405 / 652c，6/10 非 AI 头条最热）</strong>——Apple 选择 EU 不上线 Siri AI 保护封闭生态完整 vs EU DMA 互操作规则</li>
+                    <li><strong>xAI 6 月小厂连发：Grok Build 0.1（编码 agent beta）+ Imagine Video 1.5 Preview + Quality Mode</strong>——避开 OpenAI / Anthropic 头条，专注编码 + 视频生成两个细分赛道</li>
+                    <li><strong>What it feels like to work with Mythos（HN #13 309 / 270c）——Ethan Mollick 6/10 一手体验</strong>：Mythos 5 = 1.5x 杠杆 + 工作流级转变 + 不替代 SE</li>
+                    <li><strong>"AI 取代专业岗位"4 阶螺旋 6/10 21:00 完整收官</strong>：6/5 担心 541 → 6/7 经验 787 → 6/8 反驳 845 → 6/10 接受 744（Mythos 体验 309）</li>
+                    <li><strong>Coinbase x402 协议 + Polymarket 6/2 首笔机构大宗交易（FalconX ↔ AneraLabs）</strong>——AI agent 支付栈三层架构（钱包 + 协议 + 结算）成型</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 6/10 22:00 → 6/11 09:00 12 小时窗口观察清单</h4>
+                <ul>
+                    <li>HN #1 Fable 5 是否仍在涨（6/10 22:00 → 6/11 09:00 北美时间 18:00 → 05:00 PT）</li>
+                    <li>Miasma 蠕虫 #9 542 → 是否进入前 5（北美开发者下班后社区讨论仍可能继续升级）</li>
+                    <li>Apple Siri EU 余震 #12 405 → 是否升级至前 5（652 评论持续讨论）</li>
+                    <li>Polymarket Anthropic 91% 赔率 → 6/11 09:00 是否仍维持 85%+（小幅回落 = Fable 5 热度自然衰减；继续上行 = Anthropic 持续 2026 H1 顶峰）</li>
+                    <li>xAI 6 月新品 → 6/10 22:00-6/11 09:00 是否有新 SKU 公告（xAI 历史上多次在北美深夜发新模型）</li>
+                    <li>6/11 morning cron 7:00 启动 → 应主动差异化 6/10 evening / 21evening 已写主题，专注资本 / 政策 / 跨厂商</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：HN Firebase API 6/10 21:00 直连 + 6/10 18:00 evening 抓取对照 | TechCrunch 6/8 | Ars Technica 6/8 | The Hacker News 6/8 | Microsoft Security Blog 6/2 | StepSecurity 6/5 | Cloudsmith 6/5 | OpenSourceMalware 6/5 | ThreatLocker 6/5 | connorboyle HN 评论 6/10 | OpenAI 官方 6/4 | Paradigm 联合发布 6/4 | 中文版 OpenAI 新闻中心 6/4 | polymarket.com 6/10 21:00 | coindesk 3/15 | cnbc 6/2 | paymentsjournal 3 月 | rebelfi 3/7 | fluxapay 2026 | Let's Encrypt 官方 6/4 | OFAC 制裁名单 6/2 | sanctionslawyers.net 6 月 | Reuters 6/10 | pcmag 6/10 | HN #12 405 分 6/10 21:00 | Apple 官方声明 6/10 | EU Commission 回应 6/10 | x.ai/news 6 月 | releasebot.io/updates/xai 6 月 | x.ai/cli Grok Build 0.1 公告 | digitalapplied.com 4 月 | oneusefulthing.org 6/10 | HN #13 309 分 6/10 21:00 | Ethan Mollick 6/10 | Techdirt 6/9 烂 CEO 论 | Lenny's Newsletter 6/9</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-10 21:00 晚间情报 · 聚焦：AI 攻防 + 数字主权 + 小厂快攻 + 一手体验</p>
+        </footer>
+    </div>
+</body>
+</html>
