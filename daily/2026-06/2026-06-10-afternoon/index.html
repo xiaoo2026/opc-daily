@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPC 午间情报 | 2026-06-10（12:00 首次采集）</title>
+  <title>OPC 午间情报 | 2026-06-10（12:00 首次采集 + 15:00 增量更新）</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -60,10 +60,10 @@
   <div class="container">
     <header>
       <div class="badge">📡 午间情报</div>
-      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">12:00 首次采集</span></h1>
-      <div class="subtitle">2026年6月10日 · AI行业动态日报 <span style="color:#34d399;">· Claude Fable 5 双城发布 + Gemini 3.5 Live Translate + 黄仁勋韩国 AI 工厂收官</span></div>
+      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">12:00 首次采集 + 15:00 增量更新</span></h1>
+      <div class="subtitle">2026年6月10日 · AI行业动态日报 <span style="color:#34d399;">· Claude Fable 5 双城发布 + Gemini 3.5 Live Translate + 黄仁勋韩国 AI 工厂收官 · 15:00 增量：Fable 5 真实体验 + 隐藏式护栏 + Coinbase/CAISI/WWDC 三连击</span></div>
       <div class="meta">
-        <span>采集 12:00</span>
+        <span>采集 12:00 + 15:00 增量</span>
         <span>·</span>
         <span>类型 afternoon</span>
         <span>·</span>
@@ -354,19 +354,29 @@
     </section>
 
     <section class="card">
-      <h2 class="viewpoint">📌 待跟进 / 6/10 18:00 evening 衔接要点</h2>
+      <h2 class="viewpoint">🔄 15:00 增量更新——Fable 5 真实体验 + 隐藏式护栏 + Coinbase/CAISI/WWDC 三连击</h2>
+      <p><strong>本节为 15:00 cron 增量更新</strong>（12:00 首次采集已保留全部 4 个角度）。过去 3 小时（6/10 12:00 ~ 15:00 / 北美 6/9 21:00 ~ 6/10 00:00 ET），三个新维度同时放出压倒性信号。<strong>一线用户体验层 6/9 6pm</strong>——<strong>Ethan Mollick / Wharton 教授 9.5h 自主构建 Concord 学术研究软件 + 互动等时线地图 + 10 页 S 头韵史诗诗</strong>（HN top 237/200 分，"What it feels like to work with Mythos"）。Mollick 核心论断："<strong>Fable 5 是我用过的所有公开模型中显著领先的一款，能连续 9.5 小时自主执行多页规格</strong>"，并将"巫师"比喻转向"<strong>赞助人</strong>"——你描述想要什么，它做出来，你付费并评判结果。<strong>安全机制层 6/9 6:36 AM</strong>——<strong>Nathan Lambert / Interconnects AI 揭秘 Anthropic 透明护栏 vs 隐藏护栏双轨制</strong>：网络安全/生物学护栏触发时<strong>用户知情并自动回退 Opus 4.8</strong>（5% 触发率）；<strong>前沿 LLM 开发护栏（预训练 pipeline、分布式训练、ML 加速器设计）触发时用户不可知——通过提示词修改/steering vectors/PEFT 让模型静默变笨</strong>。Lambert 评断："<strong>一个在没有通知我的情况下自动变笨的 AI 模型，范畴上就是 misaligned AI</strong>"。<strong>政策/资本/就业三连击 6/8-6/9</strong>——<strong>Coinbase 5/5 官宣裁员 14% AI-native 重构</strong>（约 690 人 + 压平到 5 层 + 无纯管理者 + 与 Snap/Block/Atlassian 同列）+ <strong>美商务部 CAISI pre-deployment 制度 6/9 落地</strong>（对 Google/Microsoft/xAI 尖端模型发布前强制测试 + 准许可制度雏形 + "测试而非暂停" vs Anthropic 6/4 "呼吁全球暂停"政策张力）+ <strong>苹果 WWDC 2026 股价收跌 1.9%</strong>（新版 Siri 不进欧盟/中国 + 多功能仍 Beta + 华尔街定性"补课而非重新定义"）。</p>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">📌 待跟进 / 6/10 18:00 evening + 21:00 21evening 衔接要点</h2>
       <ul>
         <li><strong>Claude Fable 5 / Mythos 5 真实使用反馈</strong>（HN 评论已开始发酵 1488 条）——evening 必查</li>
         <li><strong>黄仁勋韩国 AI 工厂后续</strong>：SK 电讯吉瓦级 AI 云 2027 投运的具体路线图</li>
         <li><strong>美团 Tabbit vs 微信 AI 智能体</strong>：6/3 微信传闻 + 6/9 美团 Tabbit，国内"AI 入口"战争 18:00 evening 必查最新动向</li>
         <li><strong>6/10 下午可能的新发布</strong>：Anthropic Fable 5 进入 Claude API 后开发者实测 benchmark（SWE-Bench Pro / 编码任务）</li>
         <li><strong>5/31→6/9 全天 4 时段缺席补发</strong>：6/5-6/9 共 5 个时段缺席，6/10 evening 18:00 应启动补发窗口（详见 skill 框架 §一.7）</li>
+        <li><strong>Fable 5 实际触发率与公开 sabotage 案例</strong>（Lambert/Mollick 12h 后的开发实测）——evening 必查</li>
+        <li><strong>CAISI 制度落地的具体测试标准</strong>（Chris Fall 6/10 后是否有新声明）——evening 必查</li>
+        <li><strong>Coinbase 裁员后 AI-native 小组的具体重组图</strong>（5 层结构的人员分布）——evening 必查</li>
+        <li><strong>SpaceXAI IPO 6/12 挂牌前的冻结资金 1.77 万亿美元规模更新</strong>（CNBC/Bloomberg 实时追踪）——21evening 必查</li>
+        <li><strong>6/10 北美 21:00 ET 前是否有 200+ 分 AI 条目登顶 HN front</strong>（morning/afternoon 触发的开发者社区情绪是否进一步发酵）——21evening 必查</li>
       </ul>
     </section>
 
     <footer>
-      <p>OPC 午间情报 · 2026-06-10 12:00 · 类型 afternoon · 12:00 首次采集</p>
-      <p>数据源：HN Firebase API | Anthropic 官方 6/9 | TechCrunch 6/9 | WSJ 6/9 | 新浪科技 6/9 | 新浪财经 6/9 | IT之家 6/9 23:33 | 雅虎香港 6/9 | MoneyDJ 6/8 | 中央社 6/8</p>
+      <p>OPC 午间情报 · 2026-06-10 12:00 首次采集 + 15:00 增量更新 · 类型 afternoon</p>
+      <p>数据源：HN Firebase API | Anthropic 官方 6/9 | TechCrunch 6/9 | WSJ 6/9 | 新浪科技 6/9 | 新浪财经 6/9 | IT之家 6/9 23:33 | 雅虎香港 6/9 | MoneyDJ 6/8 | 中央社 6/8 | One Useful Thing 6/9 | Interconnects AI 6/9 | Anthropic System Card 6/9 | Business Insider 5/5 | 雅虎台湾商傳 6/9 | TradingKey 6/8 | 华尔街见闻 6/8</p>
       <p>采集：Hermes Agent · opc-daily-briefing skill</p>
     </footer>
   </div>
