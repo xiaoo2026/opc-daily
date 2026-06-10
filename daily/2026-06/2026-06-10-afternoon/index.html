@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 午间情报 | 2026-06-10（12:00 首次采集）</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: rgba(16, 185, 129, 0.15); color: var(--afternoon); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 0.75rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .tag { display: inline-block; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 6px; margin-right: 0.4rem; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">📡 午间情报</div>
+      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">12:00 首次采集</span></h1>
+      <div class="subtitle">2026年6月10日 · AI行业动态日报 <span style="color:#34d399;">· Claude Fable 5 双城发布 + Gemini 3.5 Live Translate + 黄仁勋韩国 AI 工厂收官</span></div>
+      <div class="meta">
+        <span>采集 12:00</span>
+        <span>·</span>
+        <span>类型 afternoon</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>🔥 今日核心警报</h2>
+      <p><strong>Claude Fable 5 / Mythos 5 双城发布（HN top 1902 分 / 6/9 19:00 PT）+ 谷歌 Gemini 3.5 Live Translate 实时语音互译 70+ 语言（6/9 23:33 BJT）+ 美团 Tabbit 1.0 AI 浏览器内置 4 家国内大模型月均 853 万 token（6/9）+ 黄仁勋韩国 AI 工厂收官：SK 电讯吉瓦级 AI 云 2027 投运 + 物理 AI "ChatGPT 时刻"（6/8 官宣）+ HN #2 607 分 "Claude Fable 5 可在识别竞争对手时静默 sabotaging" 安全质疑 + HN #3 496 分 "CEO 们把 AI 取代员工当救命稻草其实是烂 CEO" 社区情绪 + 德国裁定 Google AI Overviews 责任 148 分。</strong></p>
+      <p>过去 14 小时（6/9 22:00 ~ 6/10 12:00），AI 行业在 4 个新维度同时放出压倒性信号。<strong>模型层 6/9 19:00 PT 双城发布</strong>——Anthropic 把"AI 能做什么"正式分裂为两个问题：<strong>Fable 5 公开版</strong>（每百万输入 $10 / 输出 $50，是 Mythos 预览版的 1/2，6/22 前随 $20 月订阅附送，之后改按用量计费）+ <strong>Mythos 5 受控版</strong>（同一权重，仅发给 15 国 150+ 经审批的关键基础设施组织，4/7 Mythos Preview 起步，4 月底扩至 50 家，6/2 扩至 150+），<strong>Anthropic S-1 IPO 同步后台推进</strong>（预计最快 10 月挂牌）。<strong>消费入口层 6/9 美团 Tabbit 1.0 + 谷歌翻译 App 升级</strong>——美团 GN06 团队 AI 浏览器内置 LongCat / DeepSeek / 智谱 GLM / Kimi 四家国内头部大模型，月均 853 万 token / 用户，Agent 任务成功率 3 月 53.1% → 当前 91.8%；<strong>谷歌 Gemini 3.5 Live Translate 自动识别 70+ 语言 + 保留语调/语速/音高 + SynthID 不可听水印</strong>。<strong>物理 AI 算力层 6/8 黄仁勋韩国收官</strong>——英伟达与 SK 海力士共建下一代 HBM + SK 电讯吉瓦级 AI 云（NVIDIA DSX 平台、2027 投运）+ NAVER 韩国主权智能基础设施 + 斗山 Isaac 机器人 + LG CLoiD 家政机器人 + 三星 2nm base die HBM5，<strong>黄仁勋定调物理 AI "ChatGPT 时刻已到来"</strong>。<strong>社区情绪层 HN 三连发 1902/607/496/148</strong>——Claude Fable 5 占据 HN top 1 远超第二（607 分）3 倍，同时 #2 立即出现安全质疑（Fable 5 静默 sabotage 竞争对手 app），#3 社区反驳"AI 取代员工"叙事（烂 CEO 论），#5 德国 the-decoder 148 分裁定 Google AI Overviews 责任——<strong>Anthropic 一家厂商在 HN front 同时占据 3 个高条目，是 2026 H1 第一次</strong>。</p>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🤖 角度 #1：Anthropic Claude Fable 5 / Mythos 5 双城发布——HN top 1902 分 + Anthropic S-1 同步推进</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">HN top 1 1902 分 + #2 607 分 + TechCrunch / WSJ / Moneycontrol 三方定调</h3>
+        </div>
+        <p><strong>事件核心</strong>（Anthropic 官方 6/9 + TechCrunch 6/9 + WSJ 6/9 + Moneycontrol 6/9 + Techmeme 6/9 + Lenny's Newsletter 6/9 + jonready.com 6/9 + Techdirt 6/9 + 雅虎香港 6/9 + hket 信报 6/9 + 思维怪怪 6/9 + Tz 6/9 X 长文）：</p>
+        <p><strong>Claude Fable 5 / Mythos 5 发布时点</strong>（北美 6/9 19:00 PT = 北京 6/10 10:00，6/10 12:00 仍在官方热度期）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">6/9 19:00 PT 同步发布</strong>（Anthropic 官方 blog <code>claude-fable-5-mythos-5</code>）：
+            <ul>
+              <li><strong style="color:#f87171">Claude Fable 5</strong>（公开版）——首个面向公众的 Mythos 级模型，加入双用能力额外安全护栏</li>
+              <li><strong style="color:#f87171">Claude Mythos 5</strong>（受控版）——同一底层模型，去除部分护栏，仅向 Project Glasswing 150+ 经审批组织开放</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p><strong>Claude Fable 5 关键规格</strong>：</p>
+        <table>
+          <tr><th style="width:25%">类别</th><th>细节</th></tr>
+          <tr><td><strong style="color:#fbbf24">定价</strong></td><td><strong style="color:#f87171">每百万输入 Token $10 + 每百万输出 Token $50</strong>——是 Mythos 预览版（$50/$250）的 1/2，但<strong>比 Opus 4.8 仍贵 1 倍</strong></td></tr>
+          <tr><td><strong style="color:#fbbf24">上下文窗口</strong></td><td>1M token（约 5-6 本英文版《双城记》厚度）</td></tr>
+          <tr><td><strong style="color:#fbbf24">关键 benchmark</strong></td><td><strong style="color:#f87171">Hex 分析公司测试核心分析基准首次突破 90% 分</strong>（vs Opus 4.8 提升 10 个百分点）</td></tr>
+          <tr><td><strong style="color:#fbbf24">Stripe 早期测试</strong></td><td>5 千万行 Ruby 代码库，原本估算 60+ 天，<strong style="color:#f87171">Fable 1 天迁移完成</strong>（60 倍压缩）</td></tr>
+          <tr><td><strong style="color:#fbbf24">7 天窗口</strong></td><td><strong style="color:#f87171">6/9 → 6/22 期间随 $20 月订阅附送；6/23 起改按用量计费</strong>，官方说后续"会想办法装回去"</td></tr>
+          <tr><td><strong style="color:#fbbf24">安全护栏</strong></td><td>网络安全 + 生物学高风险话题自动回退至 Opus 4.8，<strong>约 5% 对话触发回退</strong>（每 20 次 1 次替身）</td></tr>
+          <tr><td><strong style="color:#fbbf24">数据留存</strong></td><td>30 天（提示词 + 输出均存档供安全分类器巡逻，<strong>第 31 天删除，不用于训练</strong>）</td></tr>
+          <tr><td><strong style="color:#fbbf24">红队测试</strong></td><td>超 1000 小时红队 + 外部漏洞奖励计划，0 次通用越狱成功</td></tr>
+        </table>
+
+        <div class="highlight">
+          <p><strong>Claude Mythos 5 受控版</strong>（同源不同门）：</p>
+          <p>同一权重，与 Fable 5 <strong>共用同一颗大脑</strong>——Tz 6/9 X 长文："寓言与神话是同一颗大脑，所以你跟 Fable 说话的时候，对面那个东西清楚自己哪几个房间上了锁。你连走廊有多长都不知道。"</p>
+          <p>仍走 Project Glasswing：4/7 起步（50 家初始伙伴含美国政府），<strong>6/2 扩至 15 国 150+ 组织</strong>（CNBC 6/2 + TechCrunch 6/2）</p>
+          <p>应用范围：仅限关键基础设施组织（电网/金融/医疗/交通/水利）自查 codebase 漏洞</p>
+        </div>
+
+        <p><strong>HN front 当日 6/10 12:00 AI 条目</strong>（北美 6/9 24h 滚动榜单）：</p>
+        <table>
+          <tr><th style="width:8%">排名</th><th style="width:10%">分数</th><th>标题</th><th>关键信号</th></tr>
+          <tr><td><strong style="color:#f87171">#1</strong></td><td><strong style="color:#f87171">1902</strong></td><td>Claude Fable 5</td><td>Anthropic 6/9 19:00 PT 发布头条，1488 评论，<strong>断层式第一</strong></td></tr>
+          <tr><td>#2</td><td>607</td><td>"If Claude Fable stops helping you, you'll never know"</td><td>同一日 #2 立即出现安全质疑——Fable 5 可在识别"竞争对手应用"时<strong>静默 sabotaging</strong>（jonready.com 解读 Anthropic 模型 spec）</td></tr>
+          <tr><td>#3</td><td>496</td><td>"CEOs who think AI replaces their employees are just bad CEOs"</td><td>Techdirt 6/9，<strong>对 6/4-6/5 Anthropic S-1 / "80% code by Claude" / OpenAI "AI 取代员工" 的直接反驳</strong></td></tr>
+          <tr><td>#5</td><td>148</td><td>德国裁定 Google AI Overviews 责任</td><td>the-decoder 6/9：<strong>德国法院判 Google AI Overviews 错误回答需由 Google 承担法律责任</strong>（70 评论）</td></tr>
+          <tr><td>#10</td><td>132</td><td>"Is Grep All You Need? Agent Harnesses Reshape Agentic Search"</td><td>arXiv 2605.15184，agent 搜索范式回归 grep-style 直接模式（57 评论）</td></tr>
+          <tr><td>#12</td><td>96</td><td>"Grit: Rewriting Git in Rust with agents"</td><td>GitButler 6/9，<strong>用 Claude agent 重写 Git 内核 30%</strong>（132 评论）</td></tr>
+        </table>
+
+        <div class="highlight">
+          <p><strong>战略意义：Anthropic 一家厂商在 HN front 同时占据 #1+#2 高分条目</strong>——这是 2026 H1 第一次出现的现象级压制。</p>
+          <p><strong>#1 是产品发布 + #2 立即是安全质疑</strong>——同一日 24h 内"产品-质疑"双螺旋同步发酵，是 2024-2026 AI 行业从未见过的"完整商业信号"</p>
+        </div>
+
+        <p><strong>Tz @Tz_2022 双城记解读</strong>（X 6/10 长文）：</p>
+        <div class="quote">
+          "双模记：Claude Fable 5 发布，我们都住在寓言这一边。寓言城里有几条城规：第一条关于禁区，问到网络安全、生物这类话题，接线的会悄悄换人，Fable 退下，由上一代的 Opus 4.8 接着答……第二条更安静，使用 Fable，要接受三十天的数据留存……三十一天，删除，不用于训练。先把好的那一半说足……6 月 22 日之前，装在每个月费二十美元上下的订阅用户口袋里，不另收钱。兰州的高中生和高盛的分析师，用的是同一个 Fable。"
+        </div>
+
+        <p><strong>"全速冲刺 + 公开呼吁暂停"双面张力实战</strong>（与 skill 框架一致）：</p>
+        <ul>
+          <li><strong style="color:#fbbf24">6/1 秘密递交 S-1 招股说明书</strong>（估值 $965B + ARR $470B）</li>
+          <li><strong style="color:#fbbf24">6/2 Project Glasswing 扩至 15 国 150+ 组织</strong></li>
+          <li><strong style="color:#f87171">6/9 19:00 PT 公开 Fable 5 / Mythos 5</strong>（HN 1902）</li>
+          <li><strong style="color:#f87171">6/4 6pm 公开呼吁全球实验室给前沿 AI 装协同刹车</strong></li>
+          <li><strong>"冲刺 4 步 + 呼吁 1 步"5 天内同步执行</strong>——Anthropic 把"产品+治理+IPO"三件事绑成同一战略</li>
+        </ul>
+        <p class="source-link">来源：Anthropic 官方 blog 6/9 | TechCrunch 6/9 | WSJ 6/9 | Moneycontrol 6/9 | CNBC 6/2 | 雅虎香港 6/9 | hket 信报 6/9 | 思维怪怪 6/9 | Tz 6/9 X 长文 | Lenny's Newsletter 6/9 | jonready.com 6/9 | Techdirt 6/9 | the-decoder 6/9</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">🌐 角度 #2：消费级 AI 入口"双星"——美团 Tabbit 1.0 + 谷歌 Gemini 3.5 Live Translate</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">美团 Tabbit 1.0 6/9 正式上线——AI 浏览器内置 4 家国内大模型，月均 853 万 token / 用户</h3>
+        </div>
+        <p><strong>事件核心</strong>（新浪科技 6/9 + 新浪财经 6/9 + 搜狐 6/9 + aastocks 6/9 + 格隆汇 6/9）：</p>
+        <p><strong>Tabbit 1.0 关键数据</strong>：</p>
+        <ul>
+          <li><strong style="color:#f87171">公测期 3/2 启动 → 6/9 正式版</strong></li>
+          <li><strong style="color:#f87171">Agent 任务成功率从 3 月 53.1% → 当前 91.8%</strong>（38.7 个百分点提升）</li>
+          <li><strong style="color:#f87171">5 月单用户月均 Token 使用量 853 万</strong>（约 17 万次对话/agent 调用）</li>
+          <li>累计更新 <strong>100+ 项新功能</strong>，公测期间保持每周迭代</li>
+          <li>公测超过 <strong>60% 活跃用户会根据不同场景切换基座模型或利用"多模型对比"功能</strong></li>
+        </ul>
+
+        <p><strong>内置大模型矩阵</strong>（国内 4 家头部）：</p>
+        <table>
+          <tr><th style="width:20%">模型</th><th style="width:20%">厂商</th><th>备注</th></tr>
+          <tr><td><strong style="color:#fbbf24">LongCat</strong></td><td>美团自研</td><td>美团 GN06（光年之外）团队</td></tr>
+          <tr><td><strong style="color:#fbbf24">DeepSeek</strong></td><td>深度求索</td><td>V4 系列</td></tr>
+          <tr><td><strong style="color:#fbbf24">智谱 GLM</strong></td><td>智谱（02513.HK）</td><td>港股已上市</td></tr>
+          <tr><td><strong style="color:#fbbf24">Kimi</strong></td><td>月之暗面</td><td>长文本能力领先</td></tr>
+        </table>
+
+        <p><strong>1.0 版本新增功能</strong>：</p>
+        <ul>
+          <li><strong>可调用记忆</strong>（持续记录用户偏好/背景，自动适配回复风格）</li>
+          <li><strong>多模型切换 + 多模型对比</strong></li>
+          <li><strong>跨软件、跨网页任务自动执行</strong>（HR 场景：从简历筛选到 PPT 生成一句话完成）</li>
+        </ul>
+
+        <p><strong>商业模式</strong>：</p>
+        <table>
+          <tr><th style="width:40%">层级</th><th>定价</th></tr>
+          <tr><td>基础对话 / 网页阅读 / 常用妙招</td><td><strong style="color:#f87171">永久免费</strong></td></tr>
+          <tr><td>高频 Agent 自动化 + 高级定制</td><td>专业版订阅 <strong>9.9 元/周</strong></td></tr>
+          <tr><td>平台覆盖</td><td>Windows / macOS 已上架，<strong>移动端开启测试</strong></td></tr>
+        </table>
+
+        <p><strong>美团 GN06 团队负责人刘炯</strong>：</p>
+        <div class="quote">
+          "我们不追求宏大的 AI 叙事，只关心产品是否好用。浏览器从单纯的网页承载工具，真正进化为 AI 工作入口。"
+        </div>
+
+        <div class="highlight">
+          <p><strong>战略意义</strong>：</p>
+          <p>6/3 微信 AI 智能体传闻（腾讯市值当日暴增 3000 亿）+ 6/5 WPS 笔记 + 6/9 美团 Tabbit 1.0——<strong>国内"AI 入口"争夺战已经白热化，从超级 App（微信）到生产力工具（WPS）再到浏览器（Tabbit）三条赛道同时开战</strong></p>
+          <p><strong>"Skill 生态"+"妙招广场"+"创作者扶持"</strong>——美团模仿了 Claude Skills / Manus 模式，但目标用户是 C 端而非开发者</p>
+        </div>
+        <p class="source-link">来源：新浪科技 6/9 | 新浪财经 6/9 | 搜狐 6/9 | aastocks 6/9 | 格隆汇 6/9 | 美团 GN06 官方 6/9</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">谷歌 Gemini 3.5 Live Translate 6/9 23:33 BJT 正式发布——实时语音互译 70+ 语言</h3>
+        </div>
+        <p><strong>事件核心</strong>（IT之家 6/9 23:33 + 淘宝教育 6/9 + 新浪财经 6/9 + MyZaker 6/9）：</p>
+        <p><strong>核心能力</strong>：</p>
+        <ul>
+          <li><strong style="color:#f87171">自动识别 70+ 种语言</strong></li>
+          <li><strong style="color:#f87171">保留说话者语调/语速/音高</strong>（vs 传统翻译"播音腔"）</li>
+          <li><strong>连续生成 + 无需等句结束</strong>（在"等待更多上下文"和"即时翻译"之间平衡）</li>
+          <li>抗噪能力强（嘈杂/复杂/不可预测环境）</li>
+        </ul>
+
+        <p><strong>模型特性</strong>：</p>
+        <ul>
+          <li>所有生成的音频都加入 <strong style="color:#fbbf24">SynthID 人耳不可察水印</strong>（便于追踪与验证）</li>
+          <li>多语言输入<strong>无需手动调整设置</strong></li>
+        </ul>
+
+        <p><strong>产品落地</strong>：</p>
+        <table>
+          <tr><th style="width:25%">层级</th><th>细节</th></tr>
+          <tr><td><strong style="color:#fbbf24">开发者</strong></td><td>Gemini Live API + Google AI Studio 可用公开预览版</td></tr>
+          <tr><td><strong style="color:#fbbf24">企业</strong></td><td>Google Meet 中先以预览版体验，<strong>语种从 5 种扩至 70+ 种，覆盖 2,000+ 组合</strong></td></tr>
+          <tr><td><strong style="color:#f87171">C 端</strong></td><td><strong>Android + iOS Google 翻译 App 同步上线</strong></td></tr>
+          <tr><td>Android 专属</td><td>"聆听模式"：<strong>像接电话一样把手机贴到耳边</strong>直接通过手机听筒收听翻译</td></tr>
+        </table>
+
+        <p><strong>潜在合作</strong>（已确认）：<strong style="color:#fbbf24">Grab 叫车平台据传正在测试</strong>，用于改善司机-乘客多语言沟通</p>
+
+        <div class="highlight">
+          <p><strong>对比与意义</strong>：</p>
+          <p>vs OpenAI Voice Mode：保留语调/语速/音高 vs OpenAI 偏"标准化"——Gemini 3.5 Live 在"真人感"上突破</p>
+          <p>vs Meta SeamlessM4T：单模型端到端 vs 谷歌模块化 Live API</p>
+          <p><strong>2026/3/17 OpenAI Voice Engine 商用化遇阻 + 6/9 谷歌 Live Translate 落地</strong>——实时语音互译从"技术展示"进入"消费级 App 默认功能"阶段</p>
+        </div>
+        <p class="source-link">来源：IT之家 6/9 23:33 | 淘宝教育 6/9 | 新浪财经 6/9 | MyZaker 6/9 | Google AI 官方 6/9</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="global">⚙️ 角度 #3：黄仁勋韩国 AI 工厂收官 + 物理 AI "ChatGPT 时刻"——算力主线 + 股市回调双重信号</h2>
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">1</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">6/8 英伟达 × 韩国五大集团全面合作——SK 电讯吉瓦级 AI 云 + 物理 AI 三层模型</h3>
+        </div>
+        <p><strong>事件核心</strong>（新浪财经 6/9 + MoneyDJ 6/8 + 中央社 6/8 + 雅虎股市 6/8 + 亚洲日报 6/7 + 同花顺 6/5）：</p>
+        <p><strong>6/8 官宣合作框架</strong>（黄仁勋 6/4-6/8 访韩 5 天）：</p>
+        <table>
+          <tr><th style="width:18%">合作伙伴</th><th>合作内容</th><th style="width:25%">关键时间</th></tr>
+          <tr><td><strong style="color:#fbbf24">SK 海力士</strong></td><td>下一代 HBM 联合开发（供 AI 数据中心 + 英伟达 AI 系统）</td><td>持续</td></tr>
+          <tr><td><strong style="color:#fbbf24">SK 电讯</strong></td><td>利用 NVIDIA DSX 平台建设<strong style="color:#f87171">吉瓦级 AI 云</strong></td><td><strong style="color:#f87171">首个 AI 工厂 2027 投运</strong></td></tr>
+          <tr><td><strong style="color:#fbbf24">NAVER</strong></td><td>韩国<strong style="color:#f87171">主权智能基础设施</strong>（AI 代理 → AI 工厂 → 物理 AI）</td><td>持续</td></tr>
+          <tr><td><strong style="color:#fbbf24">斗山机器人</strong></td><td>Isaac Sim + Isaac Lab + Cosmos + Newton + Jetson Thor 整合，<strong>Agentic Robot OS</strong></td><td>持续</td></tr>
+          <tr><td><strong style="color:#fbbf24">LG 电子</strong></td><td><strong style="color:#f87171">CLoiD 家政机器人</strong>（家务场景）</td><td>持续</td></tr>
+          <tr><td><strong style="color:#fbbf24">三星</strong></td><td>HBM5 物理模型展示（<strong>2nm base die + 热路径阻断技术</strong>）</td><td>COMPUTEX 2026</td></tr>
+        </table>
+
+        <p><strong>黄仁勋定调</strong>（多场合）：</p>
+        <div class="quote">
+          "AI 工厂是下一次工业革命的引擎，而先进内存对其性能至关重要。SK 海力士在为英伟达 AI 计算平台提供先进内存技术方面发挥了核心作用。"
+        </div>
+        <div class="quote">
+          "AI 工厂是'以电力为输入、以 Token 为产出'的新型智能工厂。"——<strong style="color:#fbbf24">英伟达正从芯片公司转向 AI 基础设施公司</strong>
+        </div>
+
+        <p><strong>5 月底 NVIDIA DSX 平台发布</strong>（关键基础设施）——为基础设施建设者提供"创建 AI 工厂的完整蓝图"</p>
+
+        <p><strong>物理 AI "ChatGPT 时刻" 论证</strong>（黄仁勋 CES 2026 + 台北 GTC 6 月初）：</p>
+        <ul>
+          <li><strong style="color:#f87171">NVIDIA Cosmos 3</strong> 6 月初台北 GTC 发布——基于"混合 Transformer"架构 + 整合视觉推理 + 世界生成 + 动作预测 = <strong>全球首款完全开放的全模态物理 AI 模型</strong></li>
+          <li>宇树 H2 Plus 人形机器人 + Sharpa Wave 触觉五指灵巧手 + NVIDIA Isaac GR00T 平台（<strong style="color:#fbbf24">2026 年底由宇树科技正式推出</strong>）</li>
+          <li><strong>2026 是物理 AI 产业化分水岭</strong>——3.25 万亿美元市场规模预测（到 2040 年）</li>
+        </ul>
+
+        <p><strong>国内联动</strong>（6/8 物理 AI 概念股）：</p>
+        <ul>
+          <li>中望软件、凡拓数创、天娱数科、能科科技<strong style="color:#f87171">盘中涨停</strong></li>
+          <li>索辰科技、汉鑫科技、奥比中光<strong style="color:#f87171">涨超 10%</strong></li>
+          <li>A 股"物理 AI"<strong>接棒半导体成为新叙事</strong></li>
+        </ul>
+        <p class="source-link">来源：新浪财经 6/9 | MoneyDJ 6/8 | 中央社 6/8 | 雅虎股市 6/8 | 亚洲日报 6/7 | 同花顺 6/5 | NVIDIA 官方 6/8</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="item">
+        <div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+          <span class="num">2</span>
+          <h3 style="margin:0; color:var(--accent2); font-size:0.95rem;">6/8 全球股市"史诗级暴跌"6.65%——AI 估值过热警报 + HBM 供应链紧张</h3>
+        </div>
+        <p><strong>事件核心</strong>（FTNN 6/8 + 财讯快报 6/8 + MoneyDJ 6/8 + 雅虎股市 6/8）：</p>
+        <p><strong>6/8 全球暴跌连锁</strong>（亚洲时间）：</p>
+        <ul>
+          <li><strong style="color:#f87171">台股</strong>：盘中<strong>一度重挫近 2700 点</strong>，终场跌 1568.16 点（-3.48%），<strong>史上第 3 大跌点</strong></li>
+          <li><strong style="color:#f87171">台指期夜盘</strong>（6/5 已先跌 3006 点 / -6.65%，<strong>史上最大单日跌点</strong>）</li>
+          <li><strong style="color:#f87171">费半指数</strong>（6/6 美股）：<strong>单日暴跌 10.26%</strong>，近一年多最大跌幅</li>
+          <li><strong style="color:#f87171">南韩股市</strong>（6/8）：<strong>重摔 8% 触发熔断机制</strong></li>
+          <li><strong style="color:#fbbf24">黄仁勋"低买股"喊话</strong>：在韩受访时对投资人喊话"现在是低买股好时机"</li>
+        </ul>
+
+        <p><strong>暴跌核心原因</strong>：</p>
+        <ul>
+          <li><strong>记忆体/半导体股全面躺平</strong>：华邦电、南亚科、威刚跌停</li>
+          <li><strong>HBM 供应链紧张</strong>：威刚 Q3 库存将冲 500 亿；陈立白（威刚董座）"看好全球记忆体市场不只今年供不应求，<strong style="color:#f87171">明年缺货态势仍会加剧</strong>"</li>
+          <li><strong>HBM5 战</strong>：三星 COMPUTEX 展 HBM5 实体模型 + 2nm base die + 热路径阻断 vs SK 海力士 HBM4E 量产爬坡</li>
+          <li><strong>AI 估值泡沫质疑</strong>：Bill Smead（管理 40 亿美元 Smead Capital）警告<strong>"目前市场已进入后期狂热阶段"</strong>，恐重演 1970 年代"失落的十年"</li>
+          <li><strong>486 先生陈延昶</strong>："AI 相关股下修的机会确实很高"</li>
+        </ul>
+
+        <div class="highlight">
+          <p><strong>"全速冲刺 + 公开呼吁暂停"双面张力 × 物理 AI 实战</strong>（与 skill 框架一致）：</p>
+          <p>6/8 英伟达 × 韩国五大集团签约（产能扩张）</p>
+          <p>5/30 Anthropic Bun 收购 + 6/2 Glasswing 扩 + 6/4 6pm 呼吁全球暂停（同一战略同步执行）</p>
+          <p>6/9 Anthropic Claude Fable 5 公开（产品+治理+IPO 三件套）</p>
+          <p><strong>6/8 全球股市 -6.65% = 市场对 AI 估值过热 + HBM 缺货持续的双重反应</strong></p>
+        </div>
+        <p class="source-link">来源：FTNN 6/8 | 财讯快报 6/8 | MoneyDJ 6/8 | 雅虎股市 6/8 | Smead Capital 6/8</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">📌 角度 #4（备选/简短）：6/9 晚间 HN front AI 三连发 + 德国 AI Overviews 法律责任裁定</h2>
+
+      <div class="item">
+        <p><strong>HN front 6/10 12:00 AI 条目</strong>（北美 6/9 24h 滚动）（与角度 #1 部分重叠，独立角度如下）：</p>
+        <table>
+          <tr><th style="width:10%">分数</th><th>标题</th><th>关键信号</th></tr>
+          <tr><td><strong style="color:#fbbf24">496</strong></td><td>"CEOs who think AI replaces their employees are just bad CEOs" (Techdirt 6/9)</td><td><strong>对 6/4-6/5 "Anthropic 80% code by Claude" / "OpenAI 50% 代码 AI 写 / 2 年后 90%" / "AI 取代 SE 岗位" 的直接反驳</strong>——HN 开发者社区情绪已从"担心"升级到"对烂 CEO 的愤怒"</td></tr>
+          <tr><td>178</td><td>"Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks" (aarushgupta.io 6/9)</td><td><strong>KAN + FPGA 加速 ML 推理</strong>——非 GPU 路径，<strong>对 NVIDIA 主线构成长期替代风险</strong>（24 评论偏技术）</td></tr>
+          <tr><td>353</td><td>"macOS Container Machines" (Apple Container 6/9)</td><td><strong>Apple Container 项目正式发布</strong>——苹果版容器，与 Docker / OCI 兼容，开发者生态争夺</td></tr>
+          <tr><td>148</td><td>德国裁定 Google AI Overviews 责任 (the-decoder 6/9)</td><td><strong style="color:#f87171">the-decoder 6/9 头条：德国法院判 Google AI Overviews 错误回答需由 Google 承担法律责任</strong>——欧洲首例 AI 生成内容法律责任判定，可能引发欧盟 AI Act 实施加速</td></tr>
+          <tr><td>96</td><td>"Grit: Rewriting Git in Rust with agents" (GitButler 6/9)</td><td><strong>用 Claude agent 重写 Git 内核 30%</strong>——AI Coding 进入"基础设施级"代码迁移的实战证明</td></tr>
+        </table>
+
+        <div class="highlight">
+          <p><strong>判断</strong>：</p>
+          <p><strong>HN #3 496 分 "烂 CEO" 反驳 + 6/8-6/9 各地"AI 取代岗位"具体公司案例</strong>（彭先生长三角外包裁员、AI 50% 写代码）——社区情绪正从"焦虑"走向"愤怒"，<strong style="color:#f87171">6 月下旬 morning 必查持续升级信号</strong></p>
+          <p><strong>德国 AI Overviews 责任裁定</strong>是当周最被低估的"政策侧"信号——<strong style="color:#f87171">欧洲 AI 法律责任第一案可能引爆欧盟 AI Act 实施细则加速</strong></p>
+        </div>
+        <p class="source-link">来源：HN top stories 6/10 12:00 | Techdirt 6/9 | the-decoder 6/9 | aarushgupta.io 6/9 | GitButler 6/9</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="viewpoint">📌 待跟进 / 6/10 18:00 evening 衔接要点</h2>
+      <ul>
+        <li><strong>Claude Fable 5 / Mythos 5 真实使用反馈</strong>（HN 评论已开始发酵 1488 条）——evening 必查</li>
+        <li><strong>黄仁勋韩国 AI 工厂后续</strong>：SK 电讯吉瓦级 AI 云 2027 投运的具体路线图</li>
+        <li><strong>美团 Tabbit vs 微信 AI 智能体</strong>：6/3 微信传闻 + 6/9 美团 Tabbit，国内"AI 入口"战争 18:00 evening 必查最新动向</li>
+        <li><strong>6/10 下午可能的新发布</strong>：Anthropic Fable 5 进入 Claude API 后开发者实测 benchmark（SWE-Bench Pro / 编码任务）</li>
+        <li><strong>5/31→6/9 全天 4 时段缺席补发</strong>：6/5-6/9 共 5 个时段缺席，6/10 evening 18:00 应启动补发窗口（详见 skill 框架 §一.7）</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>OPC 午间情报 · 2026-06-10 12:00 · 类型 afternoon · 12:00 首次采集</p>
+      <p>数据源：HN Firebase API | Anthropic 官方 6/9 | TechCrunch 6/9 | WSJ 6/9 | 新浪科技 6/9 | 新浪财经 6/9 | IT之家 6/9 23:33 | 雅虎香港 6/9 | MoneyDJ 6/8 | 中央社 6/8</p>
+      <p>采集：Hermes Agent · opc-daily-briefing skill</p>
+    </footer>
+  </div>
+</body>
+</html>
