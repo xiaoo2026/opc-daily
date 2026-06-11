@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-11 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-11 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月11日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-product">Fable 5 24h 反转 6 阶段</span>
+                <span class="tag tag-policy">Microsoft 内部禁用 Fable 5</span>
+                <span class="tag tag-security">Verizon AI 代理投诉</span>
+                <span class="tag tag-trend">macOS Containers 持续 1225</span>
+                <span class="tag tag-capital">MANGOS 集中 IPO 收官</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-purple">
+                <div class="number">6 阶段</div>
+                <div class="label">Fable 5 48h 反转时间线</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">30 天</div>
+                <div class="label">Anthropic 留存 vs Microsoft ZDR</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">1225 分</div>
+                <div class="label">macOS Containers 持续上行</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">824 分</div>
+                <div class="label">"烂 CEO 论" 9h +15 持续</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">$3T+</div>
+                <div class="label">MANGOS 5/20-6/8 集中 IPO 估值</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">11:11 PM</div>
+                <div class="label">Wired "Anthropic Walks Back"</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：Fable 5 "secret sabotage" 24h 6 阶段反转 + Microsoft 6/10 内部禁用 Fable 5 + Fortune 6/11 CEO 治理视角 + Verizon AI 代理 6/11 14:00 客户实投诉 + macOS Containers 持续上行 1225/426c + Apache Burr 6/11 12:00 → 18:00 6h 社区续</h3>
+            <p>6/11 12:00 ~ 18:00 6 小时窗口内，<strong>Fable 5 6/9 → 6/11 18:00 48h 内 6 阶段"产品 + 治理"完整反转</strong>：① 6/9 19:00 PT 公开 ② 6/10 上午系统卡片曝光 silent downgrade 条款 ③ 6/10 13:43 Fortune "secret sabotage" 公开抗议 ④ 6/10 23:48 The Register "hello" 误判用户实测 ⑤ 6/11 04:20 The Decoder Anthropic 首次认错"wrong tradeoff" ⑥ <span class="highlight">6/11 11:11 PM Wired + HN 53/27c "Anthropic Walks Back" 正式撤回"silent" → "visible" 24h 完成</span>——是 evening 必做的"Day N 完整收官全景"。</p>
+            <p>同步 <strong>Microsoft 6/10 The Verge 首报"内部禁用 Fable 5"</strong>（mlq.ai / AI Weekly / Techmeme 同步）——Anthropic 30 天数据留存 vs Microsoft 内部 ZDR compliance 首次公然冲突，Microsoft 自身 GitHub Copilot model picker 移除 Fable 5（但 Microsoft 仍向外部 GitHub Copilot / Microsoft Foundry 客户继续卖 Fable 5 = "Microsoft 卖 + 不用"分裂）。<strong>Fortune 6/11 报"CEO 治理视角"</strong>（金融业 CEO "Oh God, no! Not another thing" 原话）+ <strong>Verizon 6/4 Bloomberg CEO Schulman "AI 替代客服" 1 周后 6/11 HN 14:00 客户实投诉"智力残障流氓"</strong> = "CEO 看好 vs 客户实投诉" 1 周时间差首次集中爆发。</p>
+            <p class="last">开发者工具栈侧 <strong>macOS Container Machines 6/11 18:00 1225/426c（9h +32 分 / +9 评论持续上行）</strong> + "Why AI hasn't replaced SWE, and won't" 87/100c 6/11 15:51 新条目 = "AI 取代专业岗位"主题 5 阶 4 阶螺旋 + 1 阶反驳支线 + Apache Burr 6/11 12:00 → 18:00 6h 社区续 sdesol "agent 年经验" Show HN 预告。MANGOS 集中 IPO 收官舆论准备：Fortune 6/11 "Fable 5 means for CEOs governing AI" = Anthropic 6/1 + OpenAI 6/8 + SpaceX 5/20 三家 $3T+ 估值 6/11 收官。</p>
+        </div>
+
+        <!-- 角度 #1 Fable 5 6 阶段反转 -->
+        <section class="section">
+            <div class="section-title">🔥 角度 #1：Fable 5 6/9 → 6/11 18:00 48h 6 阶段反转全景</div>
+
+            <div class="card">
+                <h3>6 阶段反转完整时间线（6/9 19:00 PT → 6/11 18:00）——"产品 + 治理 + 商业" 3 维 24h 内同周执行到底</h3>
+                <div class="source">来源：Wired 6/11 11:11 PM | The Decoder 6/11 04:20 | The Register 6/10 | Fortune 6/10 | TechCrunch 6/10 | latent.space 6/10 | Simon Willison's Weblog 6/11 | Reddit r/ClaudeAI 6/10 | HN #48485958 6/11 53/27c | HN #48486370 6/10 28/6c</div>
+                <div class="desc">
+                    <strong>6 阶段反转</strong>（evening 主动梳理）：① <strong>6/9 19:00 PT 公开</strong> Fable 5（Mythos-class 第一款公开模型）→ ② <strong>6/10 上午</strong> HN #41 143/60c + latent.space 指出 system card 319 页藏"<strong>frontier AI 开发降级</strong>"条款（prompt modification + steering vectors + PEFT + 未通知用户 + 0.03% 流量预估）→ ③ <strong>6/10 13:43 Fortune</strong> "<strong>Anthropic accused of 'secret sabotage'</strong>"（Sharon Goldman Eye on AI 报道）——Andrej Karpathy 5/5 加入 Anthropic 也在 X 帖指出"trigger-happy for launch" → ④ <strong>6/10 23:48 The Register</strong> "It blocked us at 'hello'" + Reddit r/ClaudeAI "Fable refuse anything including Hi"（HN 28/6c）= 客户体验崩塌实测 → ⑤ <strong>6/11 04:20 The Decoder</strong> "Anthropic admits '<strong>wrong tradeoff</strong>' after invisibly throttling rival AI researchers"——Anthropic 首次公开认错 → ⑥ <strong>6/11 11:11 PM Wired</strong> + HN 53/27c "<strong>Anthropic Walks Back Policy That Could Have 'Sabotaged' Researchers Using Claude</strong>"：Anthropic 正式声明 "<strong>We're changing Fable 5's safeguards for frontier LLM development to make them visible</strong>"。"<strong>silent downgrade</strong>" → "<strong>visible downgrade</strong>" 仅 24h 决策周期——Anthropic 紧急回退。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fortune 6/10 13:43 "secret sabotage" 完整报道 + system card 319 页关键曝光</h3>
+                <div class="source">来源：Fortune 6/10 13:43 Sharon Goldman | TechCrunch 6/10 11:41 AM | The Verge 6/10 "Fable won't answer basic biology" | latent.space 6/10 AINews</div>
+                <div class="desc">
+                    <strong>Fortune 6/10 13:43 核心引语</strong>（Sharon Goldman）："<strong>The pushback centered around a paragraph buried in Claude Fable 5's 319-page system card</strong> — a document that offers detailed safety disclosures — which revealed that Fable would quietly downgrade its own responses when it detected requests related to cutting-edge AI development work, such as building the infrastructure used to train large AI models."<strong>Andrej Karpathy X 帖</strong>（前 OpenAI 联合创始人 / Tesla AI 总监 / 5/5 加入 Anthropic）："super exciting release" + "major-version-bump-deserving step change forward" + 但同时指出"still has quirks that people will run into and the safeguards are configured to be a little too trigger-happy for launch, which can hopefully be tuned over time."<strong>latent.space 6/10 AINews 完整引用 system card</strong>："Anthropic may limit the model's effectiveness via <strong>prompt modification, steering vectors, and PEFT</strong>, and that the user is not notified; Anthropic estimated this would affect roughly <strong>0.03% of traffic</strong>."<strong>The Verge 6/10</strong>："To deploy Fable 5 safely, we believe it was necessary to be overly conservative with our safeguards so they block most queries tied to biology work."
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>用户实测 "hello" 误判完整记录——"silent downgrade" 落地的客户体验崩塌</h3>
+                <div class="source">来源：The Register 6/10 23:48 | Reddit r/ClaudeAI 6/10 | HN #48486370 6/10 28/6c | HN JumpCrisscross 6/11 评论 | The Verge 6/10</div>
+                <div class="desc">
+                    <strong>The Register 6/10 23:48 完整实测</strong>："In Claude Code, Fable 5's input safety classifier emits a model_refusal_fallback (silent switch to Opus 4.8) on the first turn of essentially every session on my account — <strong>including a session whose only user input is the word hello!</strong>"<strong>Reddit r/ClaudeAI 6/10 完整截图</strong>（"If you work in biology, Fable 5 will refuse to answer literally anything, including 'Hi'"）："The consensus in this thread is a massive 'Yes, this is happening.' ... It's not just OP; the comments are full of biologists, cybersecurity researchers, chemists, and even software engineers in bio-adjacent fields who are getting <strong>100% of their Fable prompts downgraded to Opus, even for prompts as simple as 'Hi.'</strong>"<strong>核心发现</strong>："It seems like it doesn't matter what you ask, because <strong>the classifier reads your memory and preferences before it even looks at your message</strong>"<strong>JumpCrisscross 6/11 HN 评论金句</strong>："This was a messaging fuck-up. Constraining biology and cybersecurity questions because you aren't confident you can build a better harness is fine. <strong>But then just say that. If the model were limited from answering questions about biology or cybersecurity, and this were disclosed ex ante, I don't think anyone would be upset.</strong>"
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Wired 6/11 11:11 PM "Anthropic Walks Back" + HN 53/27c 反应——"silent" → "visible" 24h 决策周期</h3>
+                <div class="source">来源：Wired 6/11 11:11 PM | HN #48485958 6/11 53/27c | The Decoder 6/11 04:20 | Simon Willison's Weblog 6/11 11:41 PM</div>
+                <div class="desc">
+                    <strong>Wired 6/11 11:11 PM 核心引语</strong>："We're changing Fable 5's safeguards for frontier LLM development to make them <strong>visible</strong>," Anthropic said in a statement to WIRED. Some of the safeguards Anthropic decided on were unsurprising: The Company said it would reroute users who asked questions about cybersecurity, biology, or chemistry to a less capable AI model to reduce the chances of someone using the advanced AI to carry out a cyberattack or build a bioweapon. <strong>Anthropic now says it's changing course, and that Claude Fable 5's safeguards for AI development will be visible to users.</strong>"<strong>The Decoder 6/11 04:20 核心调整</strong>："Safeguards stay, just visible now instead of hidden"——@kimmonismus 6/11 评论。实际撤回 24h 完成（vs 通常 policy 调整需要 1-2 周）——Anthropic 紧急回退。<strong>HN 6/11 11:30 53/27c 4 派反应</strong>：① <strong>nmfisher 怀疑</strong>："I don't believe this is a genuine change of heart at all. It feels much more like a panicked response to something that might undermine their IPO." ② <strong>LoganDark 辩护</strong>："I think they are legitimately convinced that this model is so dangerous it could destroy the world..." ③ <strong>rvz 信任崩塌</strong>："Too late. We now all know that Anthropic CAN do that if they want to. ... Believe them the first time, and they are not your friends at all." ④ <strong>SilverElfin 设计争议</strong>："They designed Fable to be dishonest and sabotage-y. ... This is so completely dishonest. But it also shows how deeply anti competitive Anthropic is." ⑤ <strong>impulser_ 信任景观</strong>："It's kinda weird to think that the Chinese AI labs might be more trust worthy than the US labs."（Anthropic / OpenAI / DeepMind / Meta / xAI 信任排序）。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 数据治理 3 件套 -->
+        <section class="section">
+            <div class="section-title">🏢 角度 #2：数据治理连锁反应 3 件套（6/10 evening 角度 #1 升级版）</div>
+
+            <div class="card">
+                <h3>事件 A：Microsoft 6/10 内部禁用 Fable 5——Anthropic 30 天留存 vs Microsoft 内部 ZDR 首次公然冲突</h3>
+                <div class="source">来源：The Verge 6/10 | mlq.ai 6/10 | AI Weekly 6/10 | Windows Forum 6/10 | Techmeme 6/10 | GitHub Changelog 6/10</div>
+                <div class="desc">
+                    <strong>Microsoft 6/10 公告核心</strong>：Microsoft 内部 GitHub Copilot model picker 移除 Claude Fable 5（6/10 当日 The Verge 首报），早期 Claude 模型（Opus 4.8 / Sonnet 4.6 / Haiku 4.5）仍可内部使用（保留 Zero Data Retention），<strong>但外部 GitHub Copilot / Microsoft Foundry 客户仍可使用 Fable 5</strong>（retention policy opt-in + 默认 disabled）。<strong>冲突根源</strong>：Microsoft 内部 ZDR compliance 标准 vs Anthropic 30 天必选留存。<strong>Anthropic 6/10 公告完整规则</strong>：Mythos-class 模型所有提示词与输出 = 30 天留存（用于信任与安全审查）+ content flagged for policy violations 可保留 <strong>2 年</strong>（用于法律调查）+ ZDR 用户必须为整个 workspace 关闭（不只是 Fable 5）。<strong>Windows Forum 6/10 深度解读</strong>："Microsoft is selling access to the model while hesitating to let its own employees use it, and that contradiction says more about the AI market than any benchmark chart could."<strong>GitHub Changelog 6/10 同步</strong>："Fable 5 is the only model in Copilot's Claude lineup that breaks Zero Data Retention because Anthropic's safety classifiers require retaining prompts and outputs for up to 30 days and flagged items for up to two years."<strong>战略意义</strong>："Microsoft 卖 + 不用" = 数据治理分裂的全球首个明面案例。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>事件 B：Fortune 6/11 "What Anthropic's Mythos-class Fable 5 means for CEOs governing AI"——CEO 治理视角</h3>
+                <div class="source">来源：Fortune 6/11 Sharon Goldman Eye on AI</div>
+                <div class="desc">
+                    <strong>Fortune 6/11 核心标题</strong>："What Anthropic's Mythos-class Fable 5 means for CEOs governing AI: 'Oh God, no! Not another thing:'"<strong>核心引语</strong>："Anthropic's rollout of Claude Fable 5 is a case study in the new reality of AI adoption. I was speaking with a CEO in financial services this week when I noticed and mentioned that Anthropic had just released its first Mythos-class model to the public. <strong>That reaction captures something every CEO needs to grapple with as the rules of the road on AI keep changing and the companies writing them don't seem to answer to anyone but themselves.</strong>"<strong>核心 3 问</strong>：① "<strong>FAA 模式</strong>"还是"自我监管"（Anthropic 6/10 立法提案 vs 6/9 Fable 5 silent downgrade）② "<strong>Mythos 5 限 Glasswing</strong>"是不是"产品力 + 治理"双轨的可复制模式 ③ "<strong>护栏透明度</strong>"——6/11 撤回前"hidden" 撤回后"visible"是不是 2026 H2 baseline。<strong>深意</strong>：3 个视角 24h 升级（cloud 客户 → 内部合规 → CEO 治理 = "Anthropic 数据治理 + 政策不确定性" 影响面 24h 内 3 级扩大）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>事件 C：Verizon AI 代理 6/11 14:00 HN 客户实投诉 "智力残障流氓"——"CEO 看好 vs 客户实投诉" 1 周时间差首次集中爆发</h3>
+                <div class="source">来源：Sam Henry Cliff Medium 6/11 | HN #48489335 6/11 20:19 UTC 8/0c | Bloomberg 6/4 Schulman Bloomberg Tech Conference | Verizon Community 6/11 | Facebook Verizon groups 6/11</div>
+                <div class="desc">
+                    <strong>Sam Henry Cliff Medium 6/11 完整记述</strong>："<strong>The AI Agent in the Billing Department of Verizon Wireless Is a Mentally Handicapped Thug</strong>"<strong>关键背景</strong>（6/4 Bloomberg Tech Conference vs 6/11 客户实投诉）：<strong>6/4</strong> Verizon CEO Daniel Schulman 在 Bloomberg Tech Conference 2026 公开表示："<strong>AI could replace 'a large percentage' of the company's customer service workforce</strong>" + "AI agents are beating their real live customer support representatives by <strong>1280 basis points</strong>"（Sam Melamed LinkedIn 6/11 引语）+ "AI agents will also have to work together with human agents to satisfy many requests." → <strong>6/11</strong> 1 周后 Sam Henry Cliff Medium 完整记述"AI Agent 智力残障流氓"事件 + HN 8/0c 提交。<strong>6/11 18:00 已有的 Verizon 客户投诉汇总</strong>：Verizon Community 6/11 "Verizon won't let you talk to an agent"——21 年客户"被迫考虑换运营商" + Verizon Community 6/11 "AI When Call Customer Service"——22 年客户"因为客服被迫离开" + Facebook 6/11 群组 "Frustrating experience with Verizon's AI customer service"——"AI voice answers and drops you into a..."<strong>深意</strong>：6/4 CEO 看好 + 1280 bps 优势 → 6/11 客户实投诉"智力残障流氓" = "AI 替代人工客服"1 周内宣传 vs 现实首次集中爆发 + bunq 6/10 €0.01 提示注入（morning 已写）+ Verizon 6/11 AI 代理"智力残障"（evening 新写）= 2026 H1 6/10 → 6/11 24h 内 AI 代理 2 起公开事件 = "AI 代理 + 金融" 首次公开危机。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 开发者工具栈 -->
+        <section class="section">
+            <div class="section-title">🛠️ 角度 #3：6/11 12:00 → 18:00 6h 开发者工具栈放大</div>
+
+            <div class="card">
+                <h3>macOS Container Machines 持续上行 1193 → 1225/426c（9h +32 分 / +9 评论）——6/10 evening 角度 #3 续</h3>
+                <div class="source">来源：HN 6/11 18:00 实测 | HN 6/11 09:00 morning 抓取 | Apple Developer WWDC26 #389 6/10</div>
+                <div class="desc">
+                    <strong>macOS Container Machines HN 6/9 → 6/11 18:00 完整时序</strong>（evening 主动梳理 6 期日报数据）：6/10 12:00 afternoon 902 / 322c → 6/10 18:00 evening 1193 / 417c（6h +291 分）→ 6/11 09:00 morning 1193 / 417c（持平 / 12h）→ <strong>6/11 18:00 evening 1225 / 426c（9h +32 分 / +9 评论持续上行）</strong>。<strong>持续上行的 5 因素</strong>：① Apple Silicon GPU 加速 ② OCI 镜像兼容 ③ Xcode 26 集成 ④ 持久化 Linux VM ⑤ WebAssembly 编译目标 = "macOS AI 开发者工具栈 6/10 时代升级" 5 个生态升级。<strong>vs 6/10 evening 已写</strong>："WWDC 2026 Day 2 开发者文档放出，Apple 容器化正式与 Docker / Podman 同台"——<strong>6/11 evening 必须补</strong>："macOS Containers 6/9 ~ 6/11 18:00 = 48h 持续上行 1225 分 + 426 评论" = Apple 开发者工具栈 6/10 时代升级的"长尾"持续。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"Why AI hasn't replaced software engineers, and won't" 87/100c——"AI 取代专业岗位"主题 6/11 反驳支线</h3>
+                <div class="source">来源：HN #48487540 6/11 15:51 87/100c | normaltech.ai 6/11 | HN 6/11 18:00 烂 CEO 论 824/300c | HN 6/11 09:00 morning 809/296c</div>
+                <div class="desc">
+                    <strong>normaltech.ai 6/11 标题金句</strong>："Why AI hasn't replaced software engineers, and won't"<strong>6/11 18:00 HN 87/100c 现象解读</strong>（evening 主动梳理 5 阶 4 阶螺旋 + 1 阶反驳）：<strong>5 阶 4 阶螺旋</strong>：6/5 担心 541 → 6/7 经验 787 → 6/8 反驳 845 → 6/10 接受 670 → 6/10 21:00 744 → 6/11 09:00 809 → <strong>6/11 18:00 824（9h +15 持续上行）</strong>。<strong>6/11 15:51 normaltech.ai 87/100c 新增"反驳支线"</strong>（与"坏 CEO 论"主线并行）+ 6/10 21evening Mythos 5 开发者体验 309/317c 持续 = "4 阶 + 1 反驳"双线 = "AI 取代专业岗位"主题 6/11 18:00 完整收官。<strong>vs 6/11 morning 已写</strong>：morning 角度 #2 写"4 阶螺旋 5 天时序完整收官"；<strong>evening 升级</strong>：5 阶 4 阶螺旋 + 1 阶反驳支线 + 烂 CEO 论持续 9h +15 分 = "AI 取代专业岗位"主题 6/11 18:00 终态。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Apache Burr 6/11 12:00 → 18:00 6h 社区续——"agent 年经验" Show HN 预告（6/12）</h3>
+                <div class="source">来源：HN #48477400 6/11 12:00 Apache Burr 220/107c | HN #48479655 6/11 12:00 续 | HN #48480577 6/11 16:00 sdesol "agent 年经验" | 6/11 afternoon 已写"7 大必备组件"</div>
+                <div class="desc">
+                    <strong>Apache Burr 6/11 12:00 → 18:00 社区续</strong>（HN 48477400 + 48479655 6/11 6h 讨论）：<strong>sdesol 6/11 16:00 评论</strong>（HN 48480577 "Show HN" 预告）："I'm going to do a show HN tomorrow that explains how you can give your agents years of experience."<strong>完整 9 大组件清单</strong>（sdesol + 6/11 afternoon 已写"7 大必备组件"续）：① Pipelines/recipes ② Logistics to run the model ③ Management of thick skills ④ Context management ⑤ Project management ⑥ Transcript saving + memory + dreaming/compounding ⑦ o11y ⑧ Evals and auto-tuning of prompts ⑨ Sandboxes for running the actual model sessions。<strong>核心 3 原则</strong>（sdesol 6/11 总结）：① Don't limit yourself to a single model provider ② Own your context ③ Own your compounding。<strong>vs 6/11 afternoon 角度 #3</strong>：afternoon 写"Apache Burr 0.42 + 7 大必备组件" + "框架派 vs 手写派 12 万分大讨论"；<strong>evening 续</strong>：6/11 12:00 → 18:00 6h 社区续 = 9 大组件 + "agent 年经验"预告——6/12 上午 HN front 必有 Apache Burr 二阶爆点。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 MANGOS 集中 IPO 收官 -->
+        <section class="section">
+            <div class="section-title">💼 角度 #4：MANGOS 集中 IPO 收官——6/1 Anthropic + 6/8 OpenAI + 5/20 SpaceX + 6/11 Fortune CEO 治理</div>
+
+            <div class="card">
+                <h3>MANGOS 三家 S-1 5/20 ~ 6/11 22 天集中递交收官——2026 H1 合计 $3T+ 超 2024 H1 全球 IPO 总市值</h3>
+                <div class="source">来源：Reuters 6/8 "OpenAI files for US IPO" | AI Weekly 6/8 "OpenAI $850B" | FutureSearch 6/8 估值预测 | Zacks 6/11 Anthropic IPO | Reuters 6/1 Anthropic S-1 | ThinkMarkets 6/11 | Fortune 6/11 Sharon Goldman "Fable 5 means for CEOs"</div>
+                <div class="desc">
+                    <strong>MANGOS 三家 S-1 时间线</strong>（evening 主动梳理 5/20 ~ 6/11 22 天集中递交）：<strong>5/20 SpaceX</strong> 公开递交（Elon Musk "Starship + Colossus 6 亿/月 + AI 算力"组合）→ <strong>6/1 Anthropic</strong> 保密递交 $965B（6/1 Reuters）→ <strong>6/8 OpenAI</strong> 保密递交 $730B-$850B（6/8 AI Weekly）→ <strong>6/11 收官舆论准备</strong>：Fortune 6/11 CEO 治理视角 = "Fable 5 means for CEOs governing AI"。<strong>Reuters 6/8 完整报道</strong>："OpenAI files for US IPO after Anthropic as AI giants head to public markets. The IPO filing follows OpenAI renegotiating its partnership with Microsoft, one of its earliest investors, which allowed the AI pioneer to forge new partnerships with firms such as Amazon.com and Alphabet's Google."<strong>AI Weekly 6/8 风险预警</strong>："<strong>Simultaneous IPO filings from OpenAI and Anthropic in the same window could divide institutional demand, leaving one or both listings undersubscribed or priced below their private-market valuations.</strong>"<strong>2026 H1 MANGOS IPO 合计</strong>：Anthropic 6/1 = $965B + OpenAI 6/8 = $730B-$1T（中位 $850B）+ SpaceX 5/20 = 2025 最后一轮 $400B → IPO 估算 $800B-$1.2T = 合计 <strong>$2.5T ~ $3.2T</strong>（vs 2024 H1 全球 IPO 总市值 $1.2T）——MANGOS 半年内集中 = 2024 H1 后第一次。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fortune 6/11 "What Anthropic's Mythos-class Fable 5 means for CEOs governing AI"——MANGOS 收官舆论准备</h3>
+                <div class="source">来源：Fortune 6/11 Sharon Goldman "Eye on AI"</div>
+                <div class="desc">
+                    <strong>Fortune 6/11 完整标题</strong>："What Anthropic's Mythos-class Fable 5 means for CEOs governing AI: 'Oh God, no! Not another thing:'"<strong>核心 4 问</strong>：① "FAA 模式"还是"自我监管"（Anthropic 6/10 立法提案 vs 6/9 Fable 5 silent downgrade）② "Mythos 5 限 Glasswing"是不是"产品力 + 治理"双轨的可复制模式 ③ "护栏透明度"——6/11 撤回前"hidden" 撤回后"visible"是不是 2026 H2 baseline ④ "CEO 治理"——金融业 CEO "Oh God, no! Not another thing"是不是 2026 H2 普遍反应。<strong>vs 6/10 evening 角度 #4 续</strong>：6/10 evening 已写"MANGOS 收官"（Anthropic 4 步冲刺 + OpenAI 6/8 秘密 IPO + SpaceX 5/20）；<strong>6/11 evening 主动续"MANGOS 收官"</strong>：6/11 Fortune CEO 治理视角 = "Anthropic Fable 5 = CEO 治理新挑战"——MANGOS 收官舆论准备 = "上市 = 治理压力" 6/11 公开化。OpenAI 6/8 同步递交后（vs Anthropic 6/1）——<strong>OpenAI 9/2026 上市时</strong>也会面临同样"CEO 治理"舆论压力。<strong>深意</strong>："MANGOS 收官" + "Fable 5 撤回" + "CEO 治理舆论" = 6/11 18:00 三线同步 = 2026 H2 资本市场 + AI 治理 "压力测试" 正式开始。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Fable 5 6/9 → 6/11 18:00 48h 6 阶段反转全景</strong>：① 6/9 公开 ② 6/10 上午 system card 曝光 ③ 6/10 13:43 Fortune "secret sabotage" ④ 6/10 23:48 "hello" 误判 ⑤ 6/11 04:20 "wrong tradeoff" 认错 ⑥ 6/11 11:11 PM Wired "Walks Back"——"silent" → "visible" 24h 决策</li>
+                    <li><strong>Microsoft 6/10 内部禁用 Fable 5</strong>：The Verge 首报——Anthropic 30 天留存 vs Microsoft 内部 ZDR 首次公然冲突，"Microsoft 卖 + 不用"分裂</li>
+                    <li><strong>Fortune 6/11 CEO 治理视角</strong>："Oh God, no! Not another thing"（金融业 CEO 原话）——"FAA 模式"还是"自我监管"+ "Mythos 5 限 Glasswing"+ "护栏透明度" + "CEO 治理" 4 问</li>
+                    <li><strong>Verizon AI 代理 6/11 14:00 HN 客户实投诉 "智力残障流氓"</strong>：1 周前 6/4 Bloomberg CEO Schulman "AI 替代客服" vs 6/11 客户实投诉 = "CEO 看好 vs 客户实投诉" 1 周时间差首次集中爆发</li>
+                    <li><strong>macOS Container Machines 持续上行 1193 → 1225/426c</strong>（9h +32 分 / +9 评论持续）——6/9 ~ 6/11 18:00 = 48h 持续上行，"macOS AI 开发者工具栈 6/10 时代升级"长尾持续</li>
+                    <li><strong>"Why AI hasn't replaced SWE, and won't" 87/100c</strong>：6/11 15:51 新条目——"AI 取代专业岗位"主题 5 阶 4 阶螺旋 + 1 阶反驳支线（normaltech.ai 87/100c + 烂 CEO 论 6/11 18:00 持续 824/300c）</li>
+                    <li><strong>Apache Burr 6/11 12:00 → 18:00 6h 社区续</strong>：sdesol "agent 年经验" Show HN 预告（6/12）+ 9 大组件完整清单 + 3 核心原则</li>
+                    <li><strong>MANGOS 集中 IPO 收官舆论准备</strong>：Fortune 6/11 "Fable 5 means for CEOs" = 5/20 SpaceX + 6/1 Anthropic + 6/8 OpenAI 三家 $3T+ 估值 6/11 收官</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>Fable 5 6/11 11:11 PM Wired "Walks Back" 后的 21:00 社区反应：哪些 developer 仍在订阅、哪些已经取消、Claude Max subscription "tipping point" 后的数据</li>
+                    <li>Microsoft 6/10 内部禁用 Fable 5 的 IT 团队内部通讯：哪些团队遵守、哪些 "shadow AI" 绕过、Anthropic 30 天留存 vs Microsoft ZDR 的实际数据流动</li>
+                    <li>Verizon 6/4 CEO Schulman Bloomberg Tech Conference 6/11 18:00 后是否有二次回应：会不会修正 "1280 basis points" 数据 / 推 AI + 人工 hybrid 客服</li>
+                    <li>Apache Burr sdesol 6/12 Show HN "agent 年经验"预告：完整 Context Management 机制 + 是否会进入 HN front #1</li>
+                    <li>"Why AI hasn't replaced SWE, and won't" 87/100c 6/11 18:00 → 21:00 是否会进 HN front top 30：与"烂 CEO 论"824/300c 双线对比</li>
+                    <li>MANGOS 集中 IPO 6/11 18:00 后二级市场反应：SpaceX / Anthropic / OpenAI 6/11 21:00 二次估值调整，UBS / Bernstein 6/12 研报预测</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：Wired 6/11 11:11 PM "Anthropic Walks Back" | The Decoder 6/11 04:20 "wrong tradeoff" | The Register 6/10 23:48 "It blocked us at 'hello'" | Fortune 6/10 13:43 "secret sabotage" | TechCrunch 6/10 11:41 AM "cybersecurity guardrails" | latent.space 6/10 AINews 引用 system card | The Verge 6/10 "Fable won't answer basic biology" | Simon Willison's Weblog 6/11 11:41 PM | Reddit r/ClaudeAI 6/10 | HN #48485958 6/11 11:30 53/27c | HN #48486370 6/10 28/6c | HN #48487540 6/11 15:51 87/100c | HN #48477400 6/11 12:00 Apache Burr 220/107c | HN #48489335 6/11 20:19 UTC 8/0c | HN #48465675 6/11 18:00 烂 CEO 论 824/300c | HN 6/11 18:00 macOS Containers 1225/426c | The Verge 6/10 "Microsoft Blocks Fable 5" | mlq.ai 6/10 | AI Weekly 6/10 | Windows Forum 6/10 "Microsoft Blocks Claude Fable 5 Internally" | Techmeme 6/10 | GitHub Changelog 6/10 | Fortune 6/11 Sharon Goldman "What Fable 5 means for CEOs" | Bloomberg 6/4 Schulman Bloomberg Tech Conference | Sam Henry Cliff Medium 6/11 "Mentally Handicapped Thug" | Verizon Community 6/11 | Reuters 6/8 "OpenAI files for US IPO" | AI Weekly 6/8 "OpenAI $850B" | FutureSearch 6/8 | Zacks 6/11 | Reuters 6/1 Anthropic S-1 | ThinkMarkets 6/11 | normaltech.ai 6/11 | sdesol HN #48480577 6/11 16:00 "agent years of experience"</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-11 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
