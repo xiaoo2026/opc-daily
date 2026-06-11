@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚间情报 2026-06-11 | 21:00 Hidden Human Labor + AI 资本爆雷 + 物理世界 6 维</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #a855f7;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #d0a8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-11 21:00 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业 21:00 晚间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月11日 21:00 发布 · Hidden Human Labor + AI 资本爆雷 + 物理世界 6 维同步 + 英美监管三线收紧</p>
+            <div class="meta">
+                <span class="tag tag-trend">Glean botsitting 6.4h/week</span>
+                <span class="tag tag-product">AWS 官方承认 AI 代码减速</span>
+                <span class="tag tag-capital">Oracle $55.7B capex 爆雷 -16%</span>
+                <span class="tag tag-security">Pokemon Go + Vantor 军用</span>
+                <span class="tag tag-policy">Starmer UK 强制 ID + Google AI 法庭首败</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">6.4h/周</div>
+                <div class="label">Glean 命名 "botsitting" 看护 AI 工时</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">-16%</div>
+                <div class="label">Oracle 6/11 盘后（capex $55.7B 超目标 11%）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">506 分</div>
+                <div class="label">Pokemon Go 30B 扫描训 Vantor 军用无人机</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">$55.7B</div>
+                <div class="label">Oracle FY2026 capex (超 $50B 目标 + 新发 $40B 债)</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">144 分</div>
+                <div class="label">"Why AI hasn't replaced SWE" 154 评论</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">5 阶</div>
+                <div class="label">"AI 取代 SWE" 螺旋 6/11 完整收官（承认无用）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 21:00 核心警报：Glean "botsitting" 6.4h/week 命名 + AWS 官方 X 账号承认 AI 代码减速 + Oracle Q4 FY2026 $55.7B capex 爆雷（盘后 -16% / $40B 新债）+ Pokemon Go 30B 扫描训 Vantor 军用无人机（HN #5 506/226c 当日 AI 头条）+ Starmer UK 强制 ID + Florida 93% 人脸识别误判起诉 + Google AI Overviews 法庭首败</h3>
+            <p>6/11 18:00 → 22:00 4 小时窗口内，<strong>"AI 取代 SWE" 5 阶"承认无用"螺旋 + AI 资本爆雷 + 物理世界 6 维同步 + 英美监管 3 线收紧"四线并发</strong>。</p>
+            <p><strong>"Hidden Human Labor" 时代正式命名</strong>：Glean Work AI Institute 6/10 发布《Work AI Index 2026》（6000 工人 + Notre Dame / Stanford / UC Berkeley）——首次把"看护 AI"工时命名为 <span class="highlight">"botsitting" 6.4h/周 = 几乎一整个工作日</span>——87% 用 AI 但 75% 自报"更高效" vs 仅 13% 公司层面"显著更好"严重错配；54% 绕过政策用未批准 AI 工具，36% 隐藏用 AI 多少；64% 高 AI 成就者说"AI 比人好合作"、74% 说"AI 比经理更能帮日常工作"；"botshitting"（提交无法辩护的 AI 工作）同步命名。<strong>AWS 官方 X 账号 6/11 13:06 首次承认</strong>："<span class="highlight">More AI-generated code doesn't make your team faster. It might actually slow you down.</span>"——AWS 是 Anthropic 最大云分销商 + Amazon Q Developer 母公司，自家官方账号承认 AI 代码生成不加速反而减速 = "AWS 卖 + 不用 AI 自家产品" 6/11 上午最戏剧性案例。</p>
+            <p><strong>AI 资本爆雷首案 + 物理世界 6 维同步</strong>：<strong>Oracle Q4 FY2026 6/10 盘后</strong>：总营收 +21% YoY 至 $19.2B / IaaS +93% YoY 至 $5.8B / Multicloud AI Database +404% / RPO $553B（+325% YoY，其中 $75B 是预付 AI 合同 + 客户供 GPU）——<span class="highlight">但 FY2026 capex $55.7B 超 $50B 目标 11% + Free Cash Flow 跌至 -$23.7B + 6/11 盘后 -16% + 新发 $40B 债</span>——"AI 资本支出见顶"主线 6/11 18:00 后第一个爆雷案。<strong>Pokemon Go 30B 扫描训 Vantor 军用无人机（HN #5 506/226c 当日 AI 头条）</strong>：Niantic Spatial 6/11 公布 30B 环境扫描数据训 Vantor（前 Maxar Intelligence）军事无人机视觉导航（GPS-denied 场景），DGI 2026 workshop 59% 操作员称 GPS 信号被 jamming + 地形干扰；BYD 5min Flash 充电技术 6/11 11:41 进加拿大（99/89c）；伊朗 $25M 美制 Apache 直升机被廉价无人机击落 6/11 06:57（39/68c）；GeoLibre 1.0 6/11 20:48 上线（281/23c，MapLibre + Tauri + DuckDB + deck.gl 开源 GIS 平台，Mapbox 替代）。</p>
+            <p class="last"><strong>英美监管 3 线收紧</strong>：<span class="highlight">Starmer UK 6/11 13:51 强制所有手机 ID + 监控软件（10/3c）</span>——Big Brother Watch 警告"rubicon 跨越 = UK 将成最威权互联网政权之一"，未通过 ID 检查的设备 = "child-locked device"；<strong>Florida 6/11 14:02 93% 人脸识别误判受害者起诉 Miami-Dade（8/1c）</strong>——首次公开"低阈值 AI 执法"受害者法律反击（Wood v. Miami-Dade）；<strong>Google AI Overviews 6/11 13:56 法庭首败（8/0c）</strong>——法官明确裁定"<span class="highlight">Nobody needs AI to search the Internet</span>"——"司法否决 AI 必要性"首案。</p>
+        </div>
+
+        <!-- 角度 #1 -->
+        <section class="section">
+            <div class="section-title">🔁 角度 #1："AI 取代 SWE" 5 阶"承认无用"螺旋——Glean 命名 + AWS 官方承认 + normaltech.ai + Curlewis</div>
+
+            <div class="card">
+                <h3>Glean Work AI Index 2026——"botsitting" 6.4h/week + "botshitting" 双命名首次公布</h3>
+                <div class="source">来源：Glean Work AI Institute 6/10 | Business Insider 6/11 | HN #48490057 71/27c 6/11 13:26 | Cognitive Revolution 6/10</div>
+                <div class="desc">
+                    <strong>6000 工人调查核心数据</strong>（与 Notre Dame / Stanford / UC Berkeley 联合）：
+                    <table class="github-table">
+                        <tr><th>指标</th><th>数据</th><th>含义</th></tr>
+                        <tr><td>工人用 AI 普及率</td><td><span class="stars">87%</span></td><td>普及率</td></tr>
+                        <tr><td>工人自报"AI 让我更高效"</td><td><span class="stars">75%</span></td><td>个体层面认同</td></tr>
+                        <tr><td>公司层面"显著更好"</td><td><span class="delta">13%</span></td><td>组织层面<span class="highlight">严重错配</span></td></tr>
+                        <tr><td>"botsitting" 工时</td><td><span class="stars">6.4h/周</span></td><td>几乎一整个工作日</td></tr>
+                        <tr><td>绕过政策用未批准 AI 工具</td><td>54%</td><td>政策与实际错位</td></tr>
+                        <tr><td>隐藏用 AI 多少</td><td>36%</td><td>AI 时代"看护焦虑"</td></tr>
+                        <tr><td>高成就者说"AI 比人好合作"</td><td>64%</td><td>协作层胜出</td></tr>
+                        <tr><td>高成就者说"AI 比经理更能帮日常工作"</td><td><span class="stars">74%</span></td><td>管理层失败 vs AI 胜出</td></tr>
+                        <tr><td>自报"AI 节省时间"</td><td>13h/周</td><td>表面口径（vs 实际 6.4h botsitting）</td></tr>
+                        <tr><td>"botshitting"</td><td>提交无法辩护的 AI 工作</td><td>"shitting" = 提交 shit work</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AWS 官方 X 账号 6/11 13:06 首次承认——"More AI-generated code doesn't make your team faster. It might actually slow you down."</h3>
+                <div class="source">来源：x.com/awscloud/status/2064449711155589396 | HN #48489835 32/11c 6/11 13:06 | Reddit r/LovingAI 6/11 | Digg 6/11 | Charity Majors AWS Podcast 6/11</div>
+                <div class="desc">
+                    <strong>核心事件</strong>：<span class="highlight">AWS 官方账号 6/11 13:06 发推"More AI-generated code doesn't make your team faster. It might actually slow you down."</span>——AWS 是 Anthropic 最大云分销商 + Amazon Q Developer 母公司，自家官方账号承认 AI 代码生成不加速反而减速 = <strong>"AWS 卖 + 不用 AI 自家产品" 6/11 上午最戏剧性案例</strong>（与 6/10 evening 已写"Microsoft 卖 Fable 5 + 不用"数据治理分裂形成镜像案例）。<br><br>
+                    <strong>Reddit r/LovingAI 6/11 解读</strong>："<span class="highlight">Amazon doesn't even bother working on newer models anymore they just tweet like this</span>"——AWS 整个公司战略是"卖 AI 工具"+"承认 AI 不加速"。<br><br>
+                    <strong>AWS 推文背景</strong>：AWS Podcast 6/11 释出 Charity Majors（Honeycomb CEO）专访——<strong>"observability 是 AI agent 时代唯一让你知道 AI 在做什么的方法"</strong>——AWS 借 Charity Majors 之口承认"AI 工具栈需要 observability 才能不减速"。<br><br>
+                    <strong>HN 评论金句</strong>：<br>
+                    • <strong>id=48490761</strong>："No. It makes you faster. You can prove it by looking at the lines of code. Source: Gary Tan, who can write more code than Jeff Dean and John Carmack. If you want to go really fast, you put a Ralph Wiggum dungeon. It's where you orchestrate a team of Ralph Wiggum loops together using subagents to win the economic Darwin Award which companies are handing out for who can burn the most tokens."<br>
+                    • <strong>id=48490255</strong>："I did not realize it's possible that AI could engage with a project in such a way that <span class="highlight">Brooks' Law becomes applicable. Fascinating.</span>"——首次提出 AI agent 时代"Brooks' Law 复刻"：人手越多 / agent 越多不一定更快<br>
+                    • <strong>id=48490254</strong>："'Skipping tests doesn't make your team faster. It might actually slow you down.' 'Developing without requirements doesn't make your team faster. It might actually slow you down.'"——<strong>梗金句</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"Why AI hasn't replaced software engineers, and won't" 6/11 07:51 normaltech.ai 144/154c——"decide-execute-deliver sandwich" 模型</h3>
+                <div class="source">来源：normaltech.ai 6/11 | HN #48487540 144/154c 6/11 07:51 | 4 篇同主题 SWE 反驳</div>
+                <div class="desc">
+                    <strong>normaltech.ai 6/11 完整论点</strong>：<br>
+                    • <strong>"decide-execute-deliver sandwich"</strong> 模型：知识工作 = 3 层三明治<br>
+                    • <span class="highlight">"AI compresses the 'execute' layer"</span>——AI 只压缩中间"执行"层<br>
+                    • <span class="highlight">"decide"和"deliver"层 resist automation</span>——决策和交付层<span class="highlight">抵抗自动化</span><br>
+                    • <span class="highlight">"will not be overcome by capability improvements alone"</span>——能力提升<span class="highlight">不能单独解决</span><br>
+                    • "decide-execute-deliver" 框架 vs 单纯能力阈值论：把"AI 取代 X"叙事降级为"AI 改变 X 工作流"<br><br>
+                    <strong>HN 评论金句（id=48490866 / 48490700 / 48490491 / 48490490 / 48489944）</strong>：<br>
+                    • <strong>id=48490866</strong>："<span class="highlight">My wife was replaced by A.I. She was a programmer. Her company openly build an agent for the purpose of replacing her (and a few others), and they got rid of her about a month after it started working.</span>"——妻子被 AI agent 替代 1 个月时间内<br>
+                    • <strong>id=48490700</strong>："Wishful thinking. Code has always been a bottleneck. It never took zero time. Also declaring that it 'won't' is an assertion that AI will stop improving, which is absurd."<br>
+                    • <strong>id=48490491</strong>："These jobs will change into some synthesis of product owner and software engineer."<br>
+                    • <strong>id=48489944</strong>："AI doesn't have a blind spot... It is easier to build something new; AI understands the old..."
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"Lines of Code Got a Better Publicist" 6/11 12:26 133/67c——David Curlewis 反驳 LOC 评估</h3>
+                <div class="source">来源：curlewis.co.nz 6/11 | HN #48489402 133/67c 6/11 12:26 | David Curlewis "Calibrating on Capability, Not Activity" 6/11</div>
+                <div class="desc">
+                    <strong>David Curlewis 6/11 完整论点</strong>：<br>
+                    • <strong>核心比喻</strong>：<span class="highlight">LOC 像 pre-pandemic "不在办公室怎么知道你在工作"</span>——活动指标 ≠ 输出指标<br>
+                    • <strong>"AI-assisted engineering is now an expectation"</strong>——AI 辅助工程已成<span class="highlight">默认</span><br>
+                    • <strong>3 个关键问题</strong>：<br>
+                    &nbsp;&nbsp;① "Agent-readiness for your consumers"——如果团队建平台 / 库给其他团队用，是否容易让 agent 用？<br>
+                    &nbsp;&nbsp;② "Workflows that live in the team, not in one person's terminal history"——工作流在团队而非个人终端历史——分享工作流才是信号<br>
+                    &nbsp;&nbsp;③ <span class="highlight">"Calibrating on capability, not activity"</span>——校准在能力而非活动<br>
+                    • 核心金句："AI-assisted engineering is a capability worth investing in openly, measuring directly, and calibrating on what we can actually observe, not on what looks good in a slide."<br><br>
+                    <strong>HN 评论金句</strong>：<br>
+                    • <strong>id=48490856</strong>："The difference this time is pace: you could delay adopting 'the cloud' for a couple of years and survive. With AI you might get a few months. It is weird that the author seems to understand that the pro-AI claims made by AI companies about the product's necessity are not falsifiable, but then backtracks with 'woah woah woah but don't think I'm anti-AI.'"<br>
+                    • <strong>id=48490669</strong>："I don't see LOC as that different from number of hours in the office. They'd always say pre-pandemic 'If they're not in the office, how will I know they're working?' Simple, use the output metrics that you use to evaluate all of your workers to see what they contribute to the business."<br>
+                    • <strong>id=48490552</strong>："<span class="highlight">Converting the production database to Prolog to ship LOC.</span>"——梗金句
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>5 阶"承认无用"螺旋完整时序 vs morning 已写 4 阶"接受"螺旋对照</h3>
+                <div class="source">来源：HN Firebase API 6/11 21:00 直连 | 6/5-6/11 HN front 5 天滚动榜</div>
+                <div class="desc">
+                    <table class="github-table">
+                        <tr><th>阶段</th><th>时点</th><th>主题</th><th>核心金句</th></tr>
+                        <tr><td>第 1 阶 担心</td><td>6/5 HN #1 541pt</td><td>"GenAI oh shit 时刻"</td><td>担心</td></tr>
+                        <tr><td>第 2 阶 经验</td><td>6/7 HN #1 787pt</td><td>"LLMs are eroding my SE career"</td><td>经验</td></tr>
+                        <tr><td>第 3 阶 反驳</td><td>6/8 HN #1 845pt</td><td>"CEOs who think AI replaces their employees are just bad CEOs"</td><td>反驳</td></tr>
+                        <tr><td>第 4 阶 接受</td><td>6/10 HN #13 309pt</td><td>"What it feels like to work with Mythos"</td><td>工作流转变接受（evening 18:00 写完）</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>第 5 阶 承认无用</strong></td><td><strong>6/11 4 角度同步</strong></td><td><strong>Glean botsitting + AWS 承认 + normaltech sandwich + Curlewis LOC</strong></td><td><span class="highlight">承认不能让团队更快 + 承认取代不了 + 承认 LOC 不能评估</span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 -->
+        <section class="section">
+            <div class="section-title">💸 角度 #2：Oracle Q4 FY2026 财报"AI 资本爆雷"首案——$55.7B capex + FCF -$23.7B + 盘后 -16% + $40B 新债</div>
+
+            <div class="card">
+                <h3>Oracle 6/10 盘后 Q4 FY2026 财报核心数据——AI 资本支出见顶第一个爆雷案</h3>
+                <div class="source">来源：Finsee 6/10 X 帖 $ORCL Q4 2026 earnings | TheStreet 6/10 | 247wallst 6/10 | windowsforum.com 6/10 | redresscompliance.com 2026</div>
+                <div class="desc">
+                    <table class="github-table">
+                        <tr><th>指标</th><th>数据</th><th>含义</th></tr>
+                        <tr><td>总营收</td><td><span class="stars">$19.2B</span></td><td>+21% YoY</td></tr>
+                        <tr><td>IaaS (OCI)</td><td><span class="stars">$5.8B</span></td><td><span class="highlight">+93% YoY</span>（vs 一年前 52%）</td></tr>
+                        <tr><td>Multicloud AI Database</td><td><span class="stars">+404%</span></td><td>数据库 + AI</td></tr>
+                        <tr><td>RPO（待履约合同）</td><td><span class="stars">$553B</span></td><td>+325% YoY</td></tr>
+                        <tr><td>RPO 中预付 AI 合同 / 客户供 GPU</td><td><span class="stars">$75B</span></td><td>客户出钱"打折"AI 资本压力</td></tr>
+                        <tr><td>FY2026 Capex</td><td><span class="stars" style="color: var(--accent-red);">$55.7B</span></td><td>超 $50B 目标 11%</td></tr>
+                        <tr><td>Free Cash Flow</td><td><span class="delta" style="color: var(--accent-red);">-$23.7B</span></td><td><span class="highlight">跌入深度负值</span></td></tr>
+                        <tr><td>6/11 盘后跌幅</td><td><span class="delta" style="color: var(--accent-red);">-16%</span></td><td>AI 资本爆雷首案</td></tr>
+                        <tr><td>新发债规模</td><td><span class="stars">$40B</span></td><td>史上最大单次发债</td></tr>
+                        <tr><td>Oracle 联邦合同</td><td>10 年 $395.8M</td><td>Federal HR 2.0 OPM</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/11 18:00 evening 没碰过的"AI 资本支出见顶"主线——Oracle 6/11 上午第一例"AI 资本爆雷"</h3>
+                <div class="source">来源：HN #48490775 75/55c 6/11 12:51 PPI 9.6% 通胀 | HN 评论 "everything bubble" | Reddit r/wallstreetbets 6/11 | Bloomberg 6/11</div>
+                <div class="desc">
+                    <strong>核心机制</strong>：<br>
+                    • <span class="highlight">AI 资本支出 = 数据中心 + GPU + 电力 = 3 重资本密集</span><br>
+                    • Oracle FY2026 capex $55.7B = 超 $50B 目标 11%——首次有 hyperscaler 突破"目标 capex"<br>
+                    • Free Cash Flow -$23.7B = 阿里 / Meta / Microsoft / Google 都没出现过的负 FCF 深度——Oracle 是 hyperscaler 中 FCF 最先转负的<br>
+                    • RPO $553B 看似巨大，但其中 $75B = 客户预付 + 客户供 GPU = 客户"出钱 + 出 GPU"——Oracle 不需要现金支出但仍要建数据中心<br>
+                    • 新发 $40B 债 = Oracle 6/11 盘后当天宣布——"AI 资本烧钱"靠发债续命<br><br>
+                    <strong>复盘 6/11 上午"AI 资本 vs AI 收益"市场情绪</strong>：<br>
+                    • Oracle -16%（AI 资本爆雷）<br>
+                    • vs 同日 5 月 PPI 9.6% annualized（75/55c 6/11 12:51，6/11 上午 #4 高分）——AI 资本支出 → 通胀已成 HN 评论共识<br>
+                    • HN 评论金句 <strong>id=48490741</strong>："<span class="highlight">Possible the everything bubble propping up unprofitable tech buying up resources across the supply chain to build infrastructure + tariff inflation + war of choice energy inflation + massive federal spending + unwillingness to hike rates to cool things off? Good chance we run the COVID inflation all over again.</span>"——everything bubble 借 AI 推升通胀<br>
+                    • <strong>id=48490712</strong>："<span class="highlight">Awful news for everybody, particularly those in speculative tech jobs. We may well look back at the attack on Iran as the American tipping point that caused the same kind of financial stagnation as Brexit caused for the UK.</span>"——AI 资本 + 战争 = 美国式 Brexit 停滞<br>
+                    • <strong>id=48490775</strong>："What makes this appalling is that the current situation is entirely the result of deliberate choice by the president... Trump deciding to attack Iran because he needed to remo[ve from power]..."<br><br>
+                    <strong>vs 6/11 18:00 evening 已写</strong>：<br>
+                    • <strong>6/10 evening 角度 #1 升级</strong>：AWS Bedrock "数据离开 AWS 边界"（evening 已写）<br>
+                    • <strong>vs Microsoft 卖 Fable 5 + 不用</strong>（evening 已写）vs Oracle 卖 OCI + 自己 capex 烧光 FCF（21evening 新写）——两个"卖 + 不用"分裂同时段同步出现：<br>
+                    &nbsp;&nbsp;① 6/10 Microsoft 卖 Fable 5 + 不用（数据治理层）<br>
+                    &nbsp;&nbsp;② 6/11 Oracle 卖 OCI + 自己 capex 烧光 FCF（资本支出层）<br>
+                    • <strong>vs MANGOS 集中 IPO 收官</strong>（evening 角度 #4 已写）——MANGOS 3 家 S-1 = 资本市场"出"侧（融资）vs Oracle 6/11 capex 爆雷 = 资本市场"入"侧（烧钱）——"出 + 入"两面对位
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 -->
+        <section class="section">
+            <div class="section-title">🌍 角度 #3："AI + 物理世界" 6/11 18:00 → 22:00 多线同步——Pokemon Go + Vantor 军用 + BYD Flash + 伊朗无人机 + GeoLibre 1.0</div>
+
+            <div class="card">
+                <h3>Pokemon Go + Vantor 军用无人机 = HN #5 506/226c 当日 AI 头条——30B 扫描数据训 GPS-denied 视觉导航</h3>
+                <div class="source">来源：DroneXL 6/9 完整报道 | Sportskeeda 6/9 | LinkedIn Vantor 官方 12/2025 | HN #48487029 508/227c 6/11 06:42 | Reddit r/TheSilphRoad 6/11</div>
+                <div class="desc">
+                    <strong>核心事实</strong>：<br>
+                    • <strong>Niantic Spatial</strong>（前 Niantic，Pokemon Go 母公司）拥有 <span class="highlight">30B 环境扫描数据</span>——玩家"拍摄街道 / 公园 / 建筑物"换游戏奖励<br>
+                    • <strong>Niantic Spatial 2025/12 与 Vantor</strong>（前 Maxar Intelligence，<span class="highlight">美国国防 + 情报承包商</span>）合作——融合 ground-level 系统 + Vantor 空中导航软件，<span class="highlight">用于 GPS-denied 作战</span><br>
+                    • <strong>Niantic Spatial 6/9 DGI 2026 workshop</strong>：<span class="highlight">59% 操作员称 GPS 信号被 jamming + 地形干扰</span>——GPS 失能已成实战问题<br>
+                    • Vantor 拒绝直接回答"是否使用 Pokemon Go 图像数据"——<span class="highlight">拒绝排除</span><br><br>
+                    <strong>核心金句</strong>（DroneXL 6/9 完整报道）：<br>
+                    • "Those roughly 30 billion environmental scans are now owned by Niantic Spatial, and they helped train a camera-based navigation model that a U.S. defense contractor is preparing to put into drones and other military robots."<br>
+                    • "Asked directly whether the military-bound system relies on Pokémon Go imagery, Vantor told Trouw it would not use the game's data."——Vantor 拒绝排除<br><br>
+                    <strong>Sportskeeda 6/9 标题</strong>："Is your Pokemon GO data being used for military purposes? Recent report suggests"——"The report suggests that the Pokemon GO scans were used by Niantic Spatial for training 'precise navigation when GPS signals are unavailable'."<br><br>
+                    <strong>YouTube 评论金句</strong>："Niantic's CEO is a former CIA agent that made a business model out of selling data"——Niantic CEO = 前 CIA 特工<br><br>
+                    <strong>HN 评论金句</strong>：<br>
+                    • <strong>id=48490820</strong>："'We shouldn't have maps because you can use them in war.' seems like a wrong way to look at this problem."<br>
+                    • <strong>id=48490321</strong>："One of the reasons I stopped playing Pokémon GO. Anyone who checked the origins of the company knew where this was going to go. Your data for sale."<br>
+                    • <strong>id=48490098</strong>："<span class="highlight">Reminds me of that sci-fi short film where kids are playing a VR game controlling virtual avatars looking for and shooting virtual enemies, while in the real world, unbeknownst to them, they are actually piloting robots that are hunting down and killing dissidents.</span>"<br>
+                    • <strong>id=48489962</strong>："Russia is already taking advantage of preloaded terrain imagery... downed Russian drone was found matching live camera feeds against preloaded terrain imagery rather than trusting a single GPS module."<br>
+                    • <strong>id=48488968</strong>："The depravity of using a fun, uplifting game that targets kids and teenagers to train military drones boggles my mind. 'The end justifies the means' continues to reign supreme"
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"AI + 物理世界" 6/11 18:00 → 22:00 6 维同步总览</h3>
+                <div class="source">来源：HN Firebase API 6/11 22:00 抓取 top 100 | 6/11 18:00 evening 已写 + 6/11 14:00-22:00 新晋</div>
+                <div class="desc">
+                    <table class="github-table">
+                        <tr><th>事件</th><th>HN 分</th><th>时间 (UTC)</th><th>类型</th><th>状态</th></tr>
+                        <tr><td>Pokemon Go + Vantor 军用无人机</td><td><span class="stars">506/226</span></td><td>6/11 06:42</td><td>AI + 军事 + 民用数据</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>BYD 5min Flash 充电进加拿大</td><td>99/89</td><td>6/11 11:41</td><td>AI + 电池 + 基础设施</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>伊朗 $25M 直升机被廉价无人机击落</td><td>39/68</td><td>6/11 06:57</td><td>AI + 无人战争 + 不对称</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>GeoLibre 1.0 开源 GIS</td><td>281/23</td><td>6/11 20:48</td><td>AI + 地理空间 + 开源</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>Nextcloud Hub 26 Spring</td><td>7/0</td><td>6/11 14:17</td><td>协同 SaaS 替代</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>Euro-Office 开源 Web Office</td><td>5/1</td><td>6/11 14:06</td><td>办公套件开源</td><td>21evening 角度 #3 主</td></tr>
+                        <tr><td>MapComplete OpenStreetMap</td><td>5/0</td><td>6/11 14:04</td><td>地图协作</td><td>21evening 角度 #3 主</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GeoLibre 1.0 6/11 20:48 上线（281/23c）——开源 GIS 平台 = Mapbox 替代</h3>
+                <div class="source">来源：Open Geospatial Solutions YouTube 6/10 | GitHub opengeos/GeoLibre 6/11 20:48 | HN #281/23c 6/11</div>
+                <div class="desc">
+                    <strong>事件核心</strong>：<br>
+                    • <strong>GeoLibre 1.0</strong> 6/11 20:48 上线，281/23c HN 评分<br>
+                    • <strong>技术栈</strong>：<span class="highlight">MapLibre GL JS + React + TypeScript + Tauri (Rust) + DuckDB + deck.gl</span><br>
+                    • <strong>三端运行</strong>：浏览器 + 桌面 + Jupyter Notebook<br>
+                    • <strong>特性</strong>：无账户 / 无服务器 / 无成本 / 数据本地 / 隐私优先<br>
+                    • <strong>Mapbox 替代品</strong>——继 6/10 evening 已写 OpenCV 5.0 多年最大跨越 + 6/11 已写 macOS 27 菜单栏去图标，6/11 21evening 写 GeoLibre 1.0 = "AI + 开源"基础设施层 6/11 集中爆发<br><br>
+                    <strong>BYD 5min Flash 充电技术 6/11 11:41 进加拿大</strong>（99/89c HN 评分）：<br>
+                    • <strong>BYD "Flash" 充电技术</strong> 5 分钟充满续航（足够典型通勤）<br>
+                    • <strong>6/11 11:41 进入加拿大市场</strong><br>
+                    • 99/89c HN 评分 = 6/11 上午基础设施类头条——"5 分钟充满"是 EV 时代对加油时间的"压缩到 1/6"——vs 特斯拉 Supercharger 30 分钟<br><br>
+                    <strong>伊朗 $25M 美军直升机被廉价无人机击落 6/11 06:57</strong>（39/68c）：<br>
+                    • <strong>伊朗使用廉价无人机击落 $25M 美制 AH-64 Apache 直升机</strong>——廉价 vs 昂贵 22 倍成本差<br>
+                    • "maybe by chance"——HN 评论金句："<span class="highlight">Cheap Iranian drone downed $25M US Army helicopter–maybe by chance</span>"<br>
+                    • 39/68c HN 评分——<span class="highlight">不对称战争 + 廉价 AI 武器 vs 昂贵有人平台首次公开</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 -->
+        <section class="section">
+            <div class="section-title">⚖️ 角度 #4：英美 AI 监管 6/11 三线同步收紧——Starmer UK 强制 ID + Florida 93% 人脸识别 + Google AI Overviews 法庭首败</div>
+
+            <div class="card">
+                <h3>Starmer UK 6/11 13:51 强制所有手机 ID + 监控软件——Big Brother Watch 警告"UK 将成最威权互联网政权之一"</h3>
+                <div class="source">来源：Big Brother Watch 6/11 完整声明 | Telegraph 1/13 早报 | HN #48490564 10/3c 6/11 13:51 | YouTube 1/8 早报</div>
+                <div class="desc">
+                    <strong>核心政策</strong>：<br>
+                    • <strong>Starmer 6/11 宣布</strong>：所有英国手机 + 电脑<span class="highlight">强制 ID 检查 + 内置监控软件</span><br>
+                    • <strong>未通过 ID 检查的设备 = "child-locked device"</strong>——<span class="highlight">儿童锁死的设备</span><br>
+                    • 限制 messaging / streaming / browsing——用户消息 / 流媒体 / 浏览全部受限<br><br>
+                    <strong>Big Brother Watch 6/11 回应</strong>（Silkie Carlo 主任声明）：<br>
+                    • "<span class="highlight">The Government's plan very likely means that unless you submit to intrusive identity checks when setting up your phone or computer, there will be a chokehold on your software and internet access leaving you with a child-locked device.</span>"<br>
+                    • "<span class="highlight">Planned restrictions on messaging, streaming and browsing raise the potential of spyware in our pockets that will be exploited for other purposes before long.</span>"<br>
+                    • "<span class="highlight">The Government mandating that all phones in Britain require ID and surveillance software is a crossing of the Rubicon that would make the UK one of the most authoritarian internet regimes in the world.</span>"<br>
+                    • "This extreme technological censorship requires rigorous public and parliamentary scrutiny that is currently totally missing."<br><br>
+                    <strong>Telegraph 1/13 早报</strong>："Keir Starmer is hell-bent on destroying your right to a private life"——"Sir Keir Starmer is about to turn your smartphone into a government surveillance device with access to all your private messages in real time."<br><br>
+                    <strong>YouTube 1/8 早报</strong>："On January 8th, 2026, a major expansion of the UK's Online Safety Act came into force"——1/8 已生效 + 6/11 强制 ID 是延续
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Florida 6/11 14:02 93% 人脸识别误判受害者起诉 Miami-Dade——首次公开"低阈值 AI 执法"受害者法律反击</h3>
+                <div class="source">来源：Ars Technica 6/11 | HN #48487029 8/1c 6/11 14:02 | Wood v. Miami-Dade 起诉状 6/11</div>
+                <div class="desc">
+                    <strong>Wood v. Miami-Dade</strong>（Wood 是 93% 匹配度误判受害者）：<br>
+                    • <strong>Florida 警察用 Clearview AI / Vigilant Solutions 人脸识别系统</strong>——<span class="highlight">93% 匹配度（不是 100% 确证）就逮捕</span><br>
+                    • Wood 被错误逮捕——事后 24h 内释放 + 撤销指控<br>
+                    • <strong>6/11 14:02 Wood 起诉 Miami-Dade County + 警察局</strong>——<span class="highlight">首次公开"低阈值 AI 执法"受害者法律反击</span><br>
+                    • 8/1c HN 评分——<strong>首次公开"93% match"作为低阈值 AI 执法问题</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Google AI Overviews 6/11 13:56 法庭首败——"Nobody needs AI to search the Internet"</h3>
+                <div class="source">来源：Ars Technica 6/11 | HN #48490410 8/0c 6/11 13:56 | 法庭裁定文本 6/11</div>
+                <div class="desc">
+                    <strong>法庭裁定</strong>：<br>
+                    • <span class="highlight">法官明确裁定："Nobody needs AI to search the Internet"</span><br>
+                    • 裁定对象：Google AI Overviews<br>
+                    • 案件背景：Google AI Overviews 自动生成搜索结果——法官认为"AI 搜索"不是搜索的"必要"创新<br>
+                    • <strong>6/11 13:56 落地</strong>——6/11 18:00 evening 没碰过的<span class="highlight">"司法否决 AI 必要性"首案</span><br>
+                    • 8/0c HN 评分——<strong>司法首次明确否定 AI 必要性</strong><br><br>
+                    <strong>vs 6/10 evening 已写"Dario Amodei 立法提案"</strong>：<br>
+                    • 立法"自上而下"鼓励 AI（Anthropic 6/10 立法提案 + 巨额资助）<br>
+                    • 司法"自下而上"否决 AI 必要性（Florida 93% + Google AI Overviews）<br>
+                    • <strong>"立法 vs 司法"双轨首次对位</strong>——2026 H2 AI 监管拐点<br><br>
+                    <strong>6/11 18:00 evening 已写 vs 6/11 21evening "英美监管 3 线"对照</strong>：<br>
+                    <table class="github-table">
+                        <tr><th>6/11 18:00 evening 已写</th><th>6/11 21evening 新写</th></tr>
+                        <tr><td>Dario Amodei 6/10 立法提案 + 财政框架 + 巨额资助</td><td>Starmer UK 强制 ID + 监控软件</td></tr>
+                        <tr><td>Verizon AI 代理 + Microsoft 卖 + 不用</td><td>Florida 93% 人脸识别误判受害者起诉</td></tr>
+                        <tr><td>AWS Bedrock 数据共享</td><td>Google AI Overviews 法庭首败</td></tr>
+                        <tr><td>MANGOS 集中 IPO 收官</td><td>—</td></tr>
+                    </table>
+                    <strong>核心对照</strong>：<br>
+                    • 6/11 18:00 evening = 美国 AI 立法（Amodei 自上而下立法提案）<br>
+                    • 6/11 21evening = 美国 AI 司法（Florida + Google AI Overviews）+ 英国 AI 行政（Starmer 强制 ID）<br>
+                    • <strong>3 维同步收紧 = 立法 + 司法 + 行政</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Glean Work AI Index 2026 命名 "botsitting" 6.4h/week（6000 工人 + Notre Dame/Stanford/UC Berkeley）</strong>——87% 用 AI 但 75% 自报"更高效" vs 仅 13% 公司层面"显著更好"严重错配；54% 绕过政策用未批准 AI 工具，36% 隐藏用 AI 多少；"botshitting"（提交无法辩护的 AI 工作）同步命名</li>
+                    <li><strong>AWS 官方 X 账号 6/11 13:06 首次承认"More AI-generated code doesn't make your team faster"</strong>——AWS 是 Anthropic 最大云分销商 + Amazon Q Developer 母公司，自家官方账号承认 AI 代码生成不加速反而减速 = "AWS 卖 + 不用 AI 自家产品"</li>
+                    <li><strong>"Why AI hasn't replaced SWE" 6/11 07:51 144/154c normaltech.ai</strong>——"decide-execute-deliver sandwich" 模型：AI 只压缩"execute"层，"decide"和"deliver"层抵抗自动化</li>
+                    <li><strong>"Lines of Code Got a Better Publicist" 6/11 12:26 133/67c</strong>——David Curlewis 反驳 LOC 评估："活动指标 ≠ 输出指标"</li>
+                    <li><strong>5 阶"承认无用"螺旋完整收官</strong>：6/5 担心 541 → 6/7 经验 787 → 6/8 反驳 845 → 6/10 接受 309（Mythos 体验）→ <strong>6/11 4 角度同步承认无用</strong></li>
+                    <li><strong>Oracle Q4 FY2026 6/10 盘后"AI 资本爆雷"首案</strong>：总营收 $19.2B（+21%）/ IaaS $5.8B（+93%）/ RPO $553B（+325%）/ <span class="highlight">capex $55.7B 超目标 11% + FCF -$23.7B + 6/11 盘后 -16% + 新发 $40B 债</span></li>
+                    <li><strong>Pokemon Go 30B 扫描训 Vantor 军用无人机（HN #5 506/226c 当日 AI 头条）</strong>——Niantic Spatial + Vantor（前 Maxar Intelligence）合作，GPS-denied 视觉导航，Vantor 拒绝排除使用 Pokemon Go 数据</li>
+                    <li><strong>BYD 5min Flash 充电技术 6/11 11:41 进加拿大（99/89c）</strong>——5 分钟充满 vs 特斯拉 Supercharger 30 分钟 = 压缩到 1/6</li>
+                    <li><strong>伊朗 $25M 美制 Apache 直升机被廉价无人机击落 6/11 06:57（39/68c）</strong>——不对称战争 + 廉价 AI 武器 vs 昂贵有人平台首次公开</li>
+                    <li><strong>GeoLibre 1.0 6/11 20:48 上线（281/23c）</strong>——MapLibre + Tauri + DuckDB + deck.gl 开源 GIS 平台，Mapbox 替代</li>
+                    <li><strong>Starmer UK 6/11 13:51 强制所有手机 ID + 监控软件（10/3c）</strong>——Big Brother Watch 警告"rubicon 跨越 = UK 将成最威权互联网政权之一"</li>
+                    <li><strong>Florida 6/11 14:02 93% 人脸识别误判受害者起诉 Miami-Dade（8/1c）</strong>——首次公开"低阈值 AI 执法"受害者法律反击</li>
+                    <li><strong>Google AI Overviews 6/11 13:56 法庭首败（8/0c）</strong>——"Nobody needs AI to search the Internet" 司法否决 AI 必要性首案</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 6/11 22:30 → 6/12 09:00 12 小时窗口观察清单</h4>
+                <ul>
+                    <li>Oracle -16% 后市 6/12 09:00 是否延续跌势（FY27 capex 指引若上调 = 进一步压制股价；若维持 = 短期反弹）</li>
+                    <li>Pokemon Go + Vantor 军用无人机 506/226c → 6/12 09:00 是否进入前 5（北美开发者下班后社区讨论 + 政界对数据使用争议）</li>
+                    <li>"botsitting" 命名 → 是否被 Anthropic / OpenAI / 各大媒体引用（Glean 已上 BI / Cognitive Revolution Podcast 6/10 = 主流化）</li>
+                    <li>Starmer UK 强制 ID 政策 → 6/12 是否有英国 opposition 政党正式反对 + 议会辩论时间表</li>
+                    <li>Florida Wood v. Miami-Dade 起诉 → 是否引发其他州类似 AI 执法受害者跟进起诉</li>
+                    <li>Google AI Overviews 法庭裁定 → 6/12 是否有 Google 官方上诉声明 + 其他 AI 搜索被告先例（Perplexity / Bing Copilot）</li>
+                    <li>"AI 取代 SWE" 6/11 morning 已写 4 阶螺旋 6/12 09:00 是否出现"6 阶 1 周后续"（如 6/12 又一波 AI 公司承认 AI 不能加速 = 第 6 阶"承认反复"）</li>
+                    <li>6/12 morning cron 7:00 启动 → 应主动差异化 6/11 evening + 21evening 已写主题，专注资本 + 政策 + 跨厂商</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：HN Firebase API 6/11 22:00 直连 + 6/11 18:00 evening 抓取对照 | Glean Work AI Institute 6/10 Work AI Index 2026 | Business Insider 6/11 | Cognitive Revolution 6/10 Rebecca Hinds | x.com/awscloud 6/11 | HN #48489835 32/11c | Reddit r/LovingAI 6/11 | Charity Majors AWS Podcast 6/11 | normaltech.ai 6/11 | HN #48487540 144/154c | curlewis.co.nz 6/11 | HN #48489402 133/67c | Finsee 6/10 $ORCL Q4 FY2026 | TheStreet 6/10 | 247wallst 6/10 | windowsforum.com 6/10 | redresscompliance.com 2026 | DroneXL 6/9 Pokemon Go Vantor 完整报道 | Sportskeeda 6/9 | LinkedIn Vantor 官方 12/2025 | HN #48487029 508/227c | Reddit r/TheSilphRoad 6/11 | Open Geospatial Solutions YouTube GeoLibre 1.0 6/10 | GitHub opengeos/GeoLibre 6/11 20:48 | BYD 5min Flash 加拿大 6/11 11:41 | HN 39/68c 伊朗 Apache 直升机 6/11 06:57 | Big Brother Watch 6/11 | Telegraph 1/13 Starmer | HN #48490564 10/3c 6/11 13:51 | Ars Technica Florida 93% 6/11 | HN #48487029 8/1c 6/11 14:02 | Ars Technica Google AI Overviews 6/11 13:56 | HN #48490410 8/0c</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-11 21:00 晚间情报 · 聚焦：Hidden Human Labor + AI 资本爆雷 + 物理世界 6 维 + 英美监管 3 线</p>
+        </footer>
+    </div>
+</body>
+</html>
