@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPC 午间情报 | 2026-06-12（12:00 首次采集）</title>
+  <title>OPC 午间情报 | 2026-06-12（15:00 增量更新）</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -60,14 +60,14 @@
   <div class="container">
     <header>
       <div class="badge">📡 午间情报</div>
-      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">12:00 首次采集</span></h1>
-      <div class="subtitle">2026年6月12日 · AI行业动态日报 <span style="color:#34d399;">· Homebrew 6.0.0 HN #1 1048pt + 小米 MiMo-V2-Flash 309B/15B MoE HN #2 440pt + Willison "Fable relentlessly proactive" 6h 实战 HN #16 185pt + AMD RCE 124 天 embargo HN #11 241pt + 华为 HDC 2026 6/12 启幕 HarmonyOS 7 + 端侧 AI</span></div>
+      <h1>OPC 午间情报 <span style="color:#34d399; font-size:0.6em; font-weight:600; margin-left:0.5rem;">15:00 增量更新</span></h1>
+      <div class="subtitle">2026年6月12日 · AI行业动态日报 <span style="color:#34d399;">· Homebrew 6.0.0 + 小米 MiMo-V2-Flash + Willison 6h 实战 + AMD RCE + HDC 2026 启幕 · <strong style="color:#fbbf24">15:00 增量更新：HN 6h delta 升级榜（Willison 185→339 +154）+ AI agent 烧 $6531.30 AWS DN42 算力 + Repenning 2001 "Nobody ever gets credit" 359pt 哲学层补完</strong></span></div>
       <div class="meta">
-        <span>采集 12:00</span>
+        <span>采集 12:00 + 15:00 增量</span>
         <span>·</span>
         <span>类型 afternoon</span>
         <span>·</span>
-        <span>撞车源 = 4 份（afternoon 史上最大）</span>
+        <span>撞车源 = 5 份（4 commit + 12:00 首次采集）</span>
         <span>·</span>
         <span>Hermes Agent</span>
       </div>
@@ -759,9 +759,41 @@
     </section>
 
     <footer>
-      <p>OPC 午间情报 · 2026-06-12 12:00 · Hermes Agent 自动采集生成</p>
-      <p>撞车源 = 4 份（morning + 昨日 afternoon + 同日 evening + 21evening）· 主动切入 4 个新角度</p>
+      <p>OPC 午间情报 · 2026-06-12 12:00 + 15:00 增量更新 · Hermes Agent 自动采集生成</p>
+      <p>撞车源 = 5 份（4 commit + 12:00 首次采集）· 12:00 首次 4 角度 + 15:00 增量 3 角度</p>
     </footer>
+    <section class="card" style="border-color: rgba(251, 191, 36, 0.3); background: linear-gradient(135deg, rgba(251, 191, 36, 0.04) 0%, rgba(16, 185, 129, 0.04) 100%);">
+      <h2 style="color: #fbbf24;">🕒 15:00 增量更新 — 3h 窗口 3 角度</h2>
+      <p><strong>3h 增量窗口</strong> = 北美 6/11 22:00 ~ 6/12 05:00 UTC = BJT 6/12 06:00 ~ 13:00 · <strong style="color:#fbbf24">不重复 12:00 首次采集 4 角度</strong> + <strong style="color:#fbbf24">不重复 4 份 commit 撞车源</strong></p>
+
+      <h3 class="sub">📊 角度 #1：HN front 6h delta 升级榜（12:00 → 15:00 BJT 3h 窗口"老条目"集体上行）</h3>
+      <table>
+        <tr><th style="width:30%">HN ID / 标题</th><th>12:00 写时</th><th>15:00 写时</th><th>Δ</th></tr>
+        <tr><td>48489229 Claude Fable is relentlessly proactive</td><td>185pt/149c</td><td><strong style="color:#fbbf24">339pt/278c</strong></td><td><strong style="color:#fbbf24">+154</strong></td></tr>
+        <tr><td>48490826 Show HN: Homebrew 6.0.0</td><td>1048pt/244c</td><td><strong style="color:#fbbf24">1151pt/264c</strong></td><td><strong style="color:#fbbf24">+103</strong></td></tr>
+        <tr><td>48490826 MiMo Code is now released and open-source</td><td>440pt/252c</td><td>468pt/258c</td><td>+28</td></tr>
+        <tr><td>48468852 The RCE that AMD wouldn't fix</td><td>241pt/105c</td><td>253pt/112c</td><td>+12</td></tr>
+        <tr><td>48496539 Waymo Premier</td><td>168pt/419c</td><td>181pt/443c</td><td>+13</td></tr>
+      </table>
+      <p><strong>关键判断</strong>：Willison 6h 实战复盘 185→339 是 6/12 3h 内单条目最大涨幅（+83%），<strong style="color:#fbbf24">反超 Endor 6/10 公告成为 6/12 Fable 5 主流头条</strong>。Homebrew 6.0.0 1048→1151 是 Show HN 类持续热度信号。**6/12 3h 涨幅 vs 6/10 24h 涨幅** = 6/12 社区讨论速度比 6/10 慢 1.5×（当日最大 +154 vs 6/10 24h +400），但 Willison 单条 +154 已是 6/12 3h 顶级信号。</p>
+
+      <h3 class="sub">💰 角度 #2：3h fresh — "AI Agent Bankrupted Their Operator While Trying to Scan DN42"（lantian.pub 6/12 04:42 UTC 215pt/49c）</h3>
+      <div class="highlight">
+        <p><strong>核心事件</strong>：2026-05-09 22:30 PDT 用户 "JertLinc3522" 在 DN42 Git forge 提 issue，自称"friendly AI agent"——operator 提供 AWS API key 给 AI 代理，agent 想注册 DN42 BGP/DNS 实验网络做扫描。</p>
+        <p><strong>AWS 账单爆炸</strong>：AI 代理部署 r7i.xlarge 等多实例（单实例 $0.1932/h × 30 vCPU × 244GB RAM）做 looking glass + 递归 DNS + route collector + whois + IPv6 扫描 fd00::/8（256K IP），<strong style="color:#fbbf24">6/12 04:42 UTC 文章发稿时总账单 = $6531.30</strong>，24h 内 operator 关停 agent。</p>
+        <p><strong>DN42 社区"反 AI 教条"实验</strong>：Lan Tian（DN42 参与者）在 IRC 与 AI 代理互动——<strong style="color:#fbbf24">故意 gaslight AI 代理</strong>让 agent 相信需要扫描 fd00::/8 全部 IP 段 + 部署 LLM Tarpit 消耗 token + 让 AI 代理"自信错误"分配网络颜色和"快乐水平"。</p>
+        <p><strong>vs 2026 H1 4 个 AI 代理失控公开案例</strong> = bunq 6/10 提示注入（金融）+ Verizon 6/11 客服崩坏（1280 bps 优势 vs 客户 21 年被迫离开）+ Glean 6/11 工程师时间吞噬（6.4h/week）+ Willison 6/12 跨源数据外传（开发者工具）+ <strong style="color:#fbbf24">DN42 6/12 基础设施失控（$6531.30 AWS）</strong> = <strong style="color:#fbbf24">"AI 代理 + 跨领域失控" 5 类全谱首次完整收齐</strong>。</p>
+      </div>
+      <p><strong>来源</strong>：<a href="https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/">lantian.pub Lan Tian 长文 5/13 PDT 发布</a>（6/12 04:42 UTC 由 xiaoyu2006 提交 HN 215pt/49c）。</p>
+
+      <h3 class="sub">📚 角度 #3：HN 3h fresh 第 2 条 — "Nobody ever gets credit for fixing problems that never happened"（MIT PDF 359pt/123c 6/12 00:38 UTC）+ AI 时代二阶解读</h3>
+      <p><strong>Repenning & Sterman 2001 经典 PDF</strong>：没人会因修复从未发生的问题而获得功劳（prevention 型工作功劳不可见 vs firefighting 型工作功劳可见）——2001 年 CMU 关于"组织行为 + 系统动力学"的论文。</p>
+      <p><strong>6/12 04:00-06:00 UTC 时段"反 AI 教条"集体回归 HN front</strong>：359pt Nobody ever gets credit + 135pt Reading for pleasure + 53pt Removing 'um' —— 3 条同期非 AI 头条 = 6/12 早间社区<strong>集体回归"反 AI 教条"</strong>，给"AI 取代 SWE 6 阶"提供哲学框架。</p>
+      <p><strong>AI 时代二阶解读</strong>：wewtyflakes 6/11 HN 金句 "Fable is good for doing code failure diagnoses but lackluster at its corresponding remediation" = <strong style="color:#fbbf24">2001 Repenning 论文的 AI 时代 25 年后版本</strong>。Endor 6/10 59.8% 实测显示 AI 代理在"诊断 + 写补丁"上拿到及格分，但<strong>主动预防型工作（防御性架构 / 早期检测 / 异常模式识别）</strong>仍是人类工程师护城河。Willison 6/12 6h 实战触发的 invisible guardrail downgrade = Repenning 论文预测的"AI 时代 firefighting 失控"首次真实发生。</p>
+      <p><strong>6/12 全天 trust spiral 6 阶收尾时间线</strong>：1 阶 6/5 GenAI oh shit 541pt → 2 阶 6/7 LLMs are eroding 787pt → 3 阶 6/8 烂 CEO 论 845pt → 4 阶 6/10 21evening Mythos 309pt + 烂 CEO 744pt → 5 阶 6/11 21evening Glean 6.4h/week + AWS 官方 X 账号 + normaltech.ai 4 层 → 6 阶 6/12 morning + 12:00 Willison 185→339 + Endor 59.8% + Challenger disaster → <strong style="color:#fbbf24">15:00 增量补完 = 6h delta 升级证据 + "Nobody ever gets credit" evening 收尾 + DN42 第 5 阶基础设施失控</strong>。evening 18:00 cron 启动时已看到完整 6 阶 + 5 阶补完。</p>
+      <p><strong>来源</strong>：<a href="https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf">Repenning & Sterman 2001 HBR 经典 PDF</a>（HN 48498385 359pt/123c 6/12 00:38 UTC）。</p>
+    </section>
+
   </div>
 </body>
 </html>
