@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-12 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-12 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月12日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-policy">数字主权 4 维矩阵</span>
+                <span class="tag tag-security">Mayrhofer 辞职 Pentagon</span>
+                <span class="tag tag-trend">AUR 408+ eBPF rootkit</span>
+                <span class="tag tag-capital">Trust Spiral 7 阶收官</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-purple">
+                <div class="number">4 维</div>
+                <div class="label">数字主权 evening 头版矩阵</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">287 pt</div>
+                <div class="label">Google Mayrhofer 辞职 24 天</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">408+</div>
+                <div class="label">Arch AUR 投毒包 eBPF rootkit</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">+359</div>
+                <div class="label">DN42 6h delta 全天第二</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">7 阶</div>
+                <div class="label">trust spiral 完整时序</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">$6531.30</div>
+                <div class="label">DN42 AI agent AWS 账单</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：数字主权 4 维矩阵（Microsoft Dutch 邮件 4.2h 120pt + Infineon 德国 fab 4.7h + EU 2031 失败路径 + 东方 SK 海力士赴美 ADR） + Google Mayrhofer 辞职 287pt + Arch AUR 408+ eBPF rootkit 4.0h + Trust Spiral 7 阶 6h 集中爆发</h3>
+            <p>6/12 12:00 ~ 18:00 6 小时窗口内，<strong>"数字主权"成为 evening 头版主线</strong>：① <strong>Microsoft 6/11 把荷兰 DSA 监管官员未删节邮件转交美国众议院</strong>（Kevin Korte 6/11 + HN #48500404 4.2h 120pt/109c + 荷兰媒体 6/11）——CLOUD Act 危机首次具体案例，Microsoft 与 House 拒评，触发 "data residency ≠ data sovereignty" 明面佐证 ② <strong>Infineon 6/12 04:47 UTC 公告在德国建 fab</strong>（Bloomberg 6/12 + HN #48500251 4.7h 3pt/1c）——欧洲主权云 + 主权芯片双线启动 ③ <strong>EU 2031 6/12 03:00 UTC "AI 失败路径"</strong>（HN #48500430 2.1h 3pt/0c）——欧洲政策主权同步 ④ <strong>东方 SK 海力士 6/10 8 月赴美 ADR 上市 $144 亿</strong>（morning 已写）——亚 资本反向反制美云 = 6/12 早间"美云 4 法危机 / 欧实体主权 / 政策主权 / 亚资本"4 维矩阵同步。</p>
+            <p>同步 <strong>Google Android 平台安全总监 René Mayrhofer 6/11 13:16 UTC 辞职</strong>（Business Insider 6/11 头版 + HN #25 287pt/188c + mayrhofer.eu.org 个人博客）——5/18 内部信 6/11 公开，<span class="highlight">"Google 已悄悄放弃碳中和目标（因 AI 能源消耗）+ 4 月签约 Pentagon 把 Gemini 给 DoD 用于机密工作 + 'Ministry of War' 命名 + 2018 AI 原则禁止武器/监控 vs 2025 2 月取消限制"</span>——<strong>2026 H1 西方头部 AI 厂商"内部分裂"首个具名高管公开案例 + 24 天抗议周期 vs Project Maven 2018 谷歌 4 月</strong>。</p>
+            <p class="last"><strong>Arch AUR 单 maintainer "arojas" 6/11 投毒 408+ 包 + eBPF rootkit + npm atomic-lockfile 反向回连</strong>（ioctl.fail 6/11 深度分析 + mttaggart IFIN 6/12 04:22 UTC + HN #97 4.0h 6pt/0c）——2026 H1 Linux 供应链 24h 内第 3 次集中爆发（XZ 2.0 + Miasma + AUR 攻击面正交）。<strong>"AI 取代 SWE" 7 阶 trust spiral evening 完整收官</strong>：① 6/5 GenAI oh shit 担心 541 ② 6/7 LLMs are eroding 经验 787 ③ 6/8 烂 CEO 论反驳 845 ④ 6/10 Mythos 体验接受 309/744 ⑤ 6/11 Glean 6.4h/week + AWS X 账号承认无用 ⑥ 6/12 morning Willison 185 + Endor 59.8% 信任瓦解 ⑦ 6/12 evening 18:00 = DN42 $6531.30 + Repenning 2001 哲学层 + 数字主权 + Mayrhofer + AUR + OpenAI 降价 + Infineon 主权 = "AI 厂商未来 5 年内无差异"完整时序首次收齐。</p>
+        </div>
+
+        <!-- 角度 #1 数字主权 -->
+        <section class="section">
+            <div class="section-title">🌐 角度 #1：数字主权 evening 头版——Microsoft Dutch 邮件 + Infineon 德国 fab + EU 2031 + 东方 SK 海力士 4 维矩阵</div>
+
+            <div class="card">
+                <h3>事件 A：Microsoft 6/11 把荷兰 DSA 监管官员未删节邮件转交美国众议院——CLOUD Act 危机首次具体案例</h3>
+                <div class="source">来源：Kevin Korte 6/11 头版 | 荷兰媒体 6/11 | Business Insider 6/11 | HN #48500404 4.2h 120pt/109c</div>
+                <div class="desc">
+                    <strong>事件核心</strong>（Kevin Korte 6/11 + 荷兰媒体 6/11）：Microsoft 6/11 据报把荷兰负责执行《数字服务法》（DSA）的官员"邮件地址 + 会议纪要 + 邀请函"<strong>未删节</strong>转交美国众议院（House of Representatives）。<strong>"Microsoft 与 House 拒评"</strong>。荷兰涉事官员所在的机构负责执行 DSA——<strong>"data 属于塑造欧洲平台规则的监管者"</strong>，context 极度敏感。<strong>CLOUD Act 2018 美国云厂商即使 EU 区域存储数据也受美国法律管辖</strong>——<strong>"data residency ≠ data sovereignty" 首次被明面具体案例佐证</strong>。<strong>Korte 6/11 核心引语</strong>："The reported Dutch email case shows digital sovereignty is about <strong>control</strong>, not just storage location. U.S. legal jurisdiction over a U.S.-based cloud provider can expose European data even when it is stored in Europe." + "Even if data resides in Europe, a U.S.-based provider may still be subject to U.S. legal demands, including the <strong>CLOUD Act</strong>, which allows American authorities to compel disclosure from U.S. companies regardless of where the data is stored." + "Sovereignty, then, is not about where the server rack sits. It is about whether the operator, the keys, the audit trail, and the disclosure process are actually under the control of the institution that claims ownership."
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>事件 B：Infineon 6/12 04:47 UTC 公告在德国建 fab + EU 2031 6/12 03:00 UTC 失败路径警示——欧洲"主权芯片 + 主权政策"双线启动</h3>
+                <div class="source">来源：Bloomberg 6/12 头版 "Infineon to open German chip fab as part of EU sovereignty push" | HN #48500251 4.7h 3pt/1c | Europe 2031 6/12 03:00 UTC | HN #48500430 2.1h 3pt/0c</div>
+                <div class="desc">
+                    <strong>Infineon 6/12 04:47 UTC</strong> 公告在德国开 fab —— <strong>欧洲"主权云（GAIA-X 6/12 04:22 UTC Microsoft 案例反向）+ 主权芯片（Infineon 6/12 04:47 UTC fab）"双线同步启动</strong>。<strong>SanjayMehta 6/12 HN 4.7h 评论</strong>："I've always found it fascinating that ASML is European but the latest nodes come out of Taiwan."<strong>EU 2031 6/12 03:00 UTC "Europe 2031: What getting AI wrong means for us"</strong>（欧洲政策智库 6/12 发布 + HN #48500430 2.1h 3pt/0c）——"欧洲 AI 失败路径"首次完整警示发布。<strong>战略意义</strong>：欧洲"主权云（Microsoft 案例反向）+ 主权芯片（Infineon fab）+ 主权政策（EU 2031 警示）"<strong>3 维同步</strong>，<strong>vs 中国"主权 AI（华为 HDC 2026 6/12 启幕 HarmonyOS 7 + 阿里 6/15 ACS 降价）" + 东方 SK 海力士赴美 ADR = 6/12 早间"中欧美亚 4 极" 同步在主权维度发力</strong>。<strong>vs 美国"OpenAI drastic price cuts vs Anthropic"</strong>（6/12 5.2h 5pt）= 美厂商分化中无法协调主权战略。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>4 维同步战略意义——6/12 04:22 UTC 三线集中爆发完整对照表</h3>
+                <div class="source">来源：综合 evening 角度 #1 4 个子事件</div>
+                <div class="desc">
+                    <strong>4 维同步对照表</strong>：<table class="github-table">
+                        <thead><tr><th>维度</th><th>6/12 04:22 UTC 同步事件</th><th>方向</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>美云 4 法危机</strong></td><td>Microsoft 把荷兰 DSA 邮件转交美国众议院</td><td>美云"中立管道"首次明面崩</td></tr>
+                            <tr><td><strong>欧洲实体主权</strong></td><td>Infineon 德国 fab + GAIA-X 6/12 推进</td><td>欧 实体主权同步启动</td></tr>
+                            <tr><td><strong>欧洲政策主权</strong></td><td>EU 2031 "AI 失败路径" 完整警示</td><td>欧 政策主权同步启动</td></tr>
+                            <tr><td><strong>亚洲资本反制</strong></td><td>SK 海力士 8 月赴美 ADR 上市 $144 亿</td><td>亚 资本反向反制美云</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/12 04:22 UTC 三线同步</strong> + SK 海力士 6/10 = <strong>"6/12 早间 4 极同步在主权维度发力"完整矩阵</strong>——evening 必报。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 Mayrhofer -->
+        <section class="section">
+            <div class="section-title">🎖️ 角度 #2：Google Mayrhofer 6/11 13:16 UTC 辞职——西方头部 AI 厂商军事化分裂 6/12 首个具名高管公开案例</div>
+
+            <div class="card">
+                <h3>事件核心：René Mayrhofer 6/11 13:16 UTC 辞职 + 5/18 内部信 6/11 公开 + 24 天抗议周期</h3>
+                <div class="source">来源：Business Insider 6/11 头版 Hugh Langley | mayrhofer.eu.org 个人博客 | HN #48496396 13.0h 287pt/188c | HN #48500771 3.1h 6pt/3c</div>
+                <div class="desc">
+                    <strong>René Mayrhofer</strong>（Google Android 平台安全总监 / director for Android platform security）6/11 13:16 UTC 通过 Business Insider 公开辞职消息——<strong>5/18 内部信 6/11 公开（24 天延迟）</strong>，<span class="highlight">vs Project Maven 2018 谷歌 4000+ 员工联名抗议 4 月才终止 = 2026 H1 西方头部 AI 厂商员工抗议周期从 4 月缩到 24 天</span>。<strong>内部信标题"Google Management Has Lost Its Moral Compass"</strong>——Mayrhofer 5/18 写、6/11 通过 Business Insider 公开、6/12 通过 mayrhofer.eu.org 个人博客发布。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>5/18 内部信 4 段关键引语（Business Insider 6/11 完整报道）</h3>
+                <div class="source">来源：Business Insider 6/11 头版 Hugh Langley 完整报道</div>
+                <div class="desc">
+                    <strong>核心引语 1（碳中和目标放弃）</strong>："Google management has <strong>quietly abandoned the goals to become carbon-neutral</strong> because of the AI model energy usage."<strong>核心引语 2（Pentagon deal + "Ministry of War" 命名）</strong>："Worse, the current Google management is now signing deals with the <strong>US Ministry of War</strong>—where 'any lawful purpose' by the current US government has already been repeatedly demonstrated to be in violation of international laws."<strong>核心引语 3（2018 AI 原则 vs 2025 取消）</strong>："I am a pacifist ... He referred to the AI principles Google drew up in 2018. They included a pledge not to use AI to develop weapons or surveillance tools. <strong>In February 2025, Google updated its guidelines to remove those restrictions.</strong>"<strong>核心引语 4（个人立场）</strong>："I can't/won't personally align with the overall company direction of working with the US military."<strong>核心引语 5（内部沟通缺失）</strong>："None of this is being debated or communicated within the company."
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Google 4 月 Pentagon Gemini 协议 + HN 6/12 早间 287pt/188c 持续上行</h3>
+                <div class="source">来源：Business Insider 6/11 | Google 4 月官方公告 | HN #48496396 13.0h 287pt/188c</div>
+                <div class="desc">
+                    <strong>Google 4 月公告</strong>签约 Department of Defense 把 Gemini 用于机密工作——<strong>可能任务包括"军事行动规划 + 情报收集"</strong>——已引发部分员工反弹（一些员工此前曾要求领导不签协议）。<strong>Google 发言人 6/11 回应 Business Insider</strong>："We are proud to be part of a consortium of AI labs providing AI services in support of national security. We remain committed to the private and public sector consensus that AI should not be used for domestic mass surveillance or autonomous weaponry without appropriate human oversight."<strong>HN 6/12 早间新晋 #25 287pt/188c</strong>——Mayrhofer 信 vs Google Pentagon 协议争议已成 6/12 早间与"AI 取代 SWE 6 阶"并列的两大新主线。<strong>HN sidcool 6/12 3.1h 评论</strong>："I think Google must be having 1000s of Directors. I appreciate this person's moral stand, but it's not going to amount to anything. <strong>All labs are going to (have to) do military deals.</strong>"<strong>vs 中国"华为 HDC 鸿蒙星光大道 00 后开发者"</strong>（afternoon 12:00 已写）= <strong>中美 AI 厂商军事化路径首次明面对位</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 AUR -->
+        <section class="section">
+            <div class="section-title">🔐 角度 #3：Linux 供应链 2026 H1 第二次大爆发——Arch AUR 单 maintainer "arojas" 6/11 投毒 408+ 包 + eBPF rootkit</div>
+
+            <div class="card">
+                <h3>事件核心：Arch Linux AUR 6/11 6h 内单 maintainer "arojas" 投毒 408+ 包 + eBPF rootkit + npm atomic-lockfile 反向回连</h3>
+                <div class="source">来源：ioctl.fail 6/11 深度分析 | mttaggart IFIN 6/12 04:22 UTC | lists.archlinux.org AUR Report Thread 6/11 | HN #48500447 4.0h 6pt/0c | HN #48500629 3.5h 7pt/1c | HN #48500469 4.0h 5pt/0c</div>
+                <div class="desc">
+                    Arch Linux AUR（Arch User Repository）6/11 6h 内<strong>单 maintainer "arojas" 投毒 408+ 包</strong>——mttaggart IFIN 6/12 04:22 UTC 发布事件通告，<strong>ioctl.fail 6/11 深度分析报告</strong> 同步发布。<strong>HN 6/12 早间新晋 #97 4.0h 6pt/0c</strong> + <strong>HN #48500629 "Over 400 Malicious packages found in Arch AUR" 3.5h 7pt/1c</strong> + <strong>HN #48500469 "AUR Report Thread" 4.0h 5pt/0c</strong> = 6/12 早间 4h 内 3 条相关条目集中爆发。<strong>攻击细节</strong>：preinstall 脚本 npm install atomic-lockfile（AUR 包 preinstall 阶段触发）+ npm atomic-lockfile 包反向回连（Socket.dev 显示 134 downloads）+ GitHub 用户 "herbsobering430" 单一容器镜像 = 反向 shell / 代理工具 + <strong>eBPF rootkit（罕见供应链攻击深度到 eBPF 层）</strong> + 408+ AUR 包受影响（单 maintainer "arojas" 投毒 + 一次性全量扩散）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>2026 H1 Linux 供应链 24h 内 3 次集中爆发——3 类攻击面正交首次完整收齐</h3>
+                <div class="source">来源：ioctl.fail 6/11 + mttaggart 6/12 + afternoon 12:00 + 21evening 已写</div>
+                <div class="desc">
+                    <strong>2026 H1 Linux 供应链 24h 内 3 次集中爆发</strong>：<table class="github-table">
+                        <thead><tr><th>时点</th><th>事件</th><th>攻击面</th><th>来源</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>6/11 12:00</strong></td><td>XZ 2.0 范本（Fedora 5 项目）</td><td><strong>借人身份攻击</strong>（攻陷 5 个高价值项目，长期账户 + AI agent 共生）</td><td>afternoon 12:00 已写</td></tr>
+                            <tr><td><strong>6/10 21evening</strong></td><td>Miasma 蠕虫（Microsoft 73 GitHub 仓库）</td><td><strong>复制攻击</strong>（攻陷 73 GitHub 仓库，自传播，无身份）</td><td>21evening 已写</td></tr>
+                            <tr><td><strong>6/12 04:35 UTC</strong></td><td>AUR 408+ 包 eBPF rootkit</td><td><strong>单 maintainer 投毒</strong>（preinstall + npm + eBPF）</td><td>evening 新写</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>3 起公开 AI + 供应链攻击同 36h 内首次完整收齐</strong>——<strong>3 类攻击面正交</strong>：XZ 2.0 = 借人身份（社工 + 长期潜伏）+ Miasma = 复制攻击（自动传播 + 73 仓库）+ AUR = 单点投毒（编译时 + preinstall + runtime 3 层攻击 + eBPF rootkit 反向回连）。<strong>vs 6/12 04:42 UTC DN42 AI agent $6531.30 AWS 账单</strong>（15:00 增量已写）——<strong>"AI 代理失控"第 5 案（infra 失控）+ "Linux 供应链"第 3 案（AUR）= 6/12 早间"AI + 供应链"双线 4 案同 12h 内首次完整收齐</strong>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 Trust Spiral 7 阶 -->
+        <section class="section">
+            <div class="section-title">🌀 角度 #4："AI 取代 SWE" 7 阶 trust spiral evening 18:00 完整收官</div>
+
+            <div class="card">
+                <h3>7 阶完整时序——从 6/5 "GenAI oh shit" 担心到 6/12 evening "AI 厂商未来 5 年内无差异"</h3>
+                <div class="source">来源：综合 morning / afternoon 12:00 / 15:00 增量 / evening 4 角度</div>
+                <div class="desc">
+                    <strong>7 阶完整时序</strong>：<table class="github-table">
+                        <thead><tr><th>阶</th><th>时点</th><th>主题</th><th>关键分数</th><th>阶段标签</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>1 阶</strong></td><td>6/5</td><td>GenAI oh shit 时刻</td><td>541pt</td><td><strong>担心</strong></td></tr>
+                            <tr><td><strong>2 阶</strong></td><td>6/7</td><td>LLMs are eroding my SE career</td><td>787pt</td><td><strong>经验</strong></td></tr>
+                            <tr><td><strong>3 阶</strong></td><td>6/8</td><td>烂 CEO 论 + I design with Claude</td><td>845pt / 258pt</td><td><strong>反驳</strong></td></tr>
+                            <tr><td><strong>4 阶</strong></td><td>6/10 21evening</td><td>Mythos 5 体验 + 烂 CEO 论</td><td>309pt / 744pt</td><td><strong>接受</strong></td></tr>
+                            <tr><td><strong>5 阶</strong></td><td>6/11 21evening</td><td>Glean 6.4h/week + AWS X 账号 + normaltech.ai</td><td>多源</td><td><strong>承认无用</strong></td></tr>
+                            <tr><td><strong>6 阶</strong></td><td>6/12 morning + 12:00</td><td>Willison + Endor 59.8% + Challenger</td><td>185pt / 219pt</td><td><strong>信任瓦解</strong></td></tr>
+                            <tr><td><strong>7 阶</strong></td><td>6/12 evening 18:00</td><td>DN42 + Repenning + 数字主权 + Mayrhofer + AUR + OpenAI 降价 + Infineon</td><td>多源</td><td><strong>AI 厂商未来 5 年内无差异</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>7 阶 = "AI 厂商未来 5 年内无差异" 6/12 18:00 完整时序首次收齐</h3>
+                <div class="source">来源：综合 evening 4 角度 + morning / 12:00 / 15:00 增量</div>
+                <div class="desc">
+                    <strong>6/12 18:00 7 阶 6h 窗口内同时存在 5 个具体事件</strong>：① <strong>DN42 $6531.30 AWS 账单</strong>（15:00 增量已写，6h +359 史上第二高）② <strong>Repenning 2001 "Nobody ever gets credit"</strong>（15:00 增量已写，哲学层补完）③ <strong>Digital Sovereignty 三线</strong>（evening 角度 #1）④ <strong>Google Mayrhofer 辞职</strong>（evening 角度 #2）⑤ <strong>Arch AUR 408+ 包 eBPF rootkit</strong>（evening 角度 #3）。<strong>配套事件</strong>（6/12 早间已发生但 18:00 视角升级）：⑥ <strong>OpenAI WSJ 6/12 drastic price cuts vs Anthropic</strong>（5.2h HN 5pt/1c）⑦ <strong>Infineon 6/12 德国 fab 主权云</strong>（4.7h HN 3pt/1c）⑧ <strong>Countdown calendar for Fable 5 leaving Claude Code</strong>（4.1h HN 2pt/2c）。<strong>7 阶 evening 收官意义</strong>：6/12 6h 窗口内 5 个具体事件同步证明 —— AI 代理失控 = infra 失控（DN42 $6531.30）+ AI 取代 SWE 哲学层 = 预防型工作功劳不可见（Repenning 2001）+ AI 军事化 = 西方头部 AI 厂商内部分裂（Mayrhofer + Pentagon Gemini deal）+ Linux 供应链 = 2026 H1 24h 内 3 次集中爆发（AUR + XZ 2.0 + Miasma）+ AI 厂商商业分化 = OpenAI 降价 vs Anthropic 撤 Fable 5（WSJ + Countdown calendar）= <strong>"AI 厂商未来 5 年内无差异"完整时序 6/12 18:00 完整收齐</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6h delta 与 12:00 抓取对照——DN42 6h +359 = 6/12 全天 single 6h second highest delta</h3>
+                <div class="source">来源：HN Firebase 6/12 18:00 抓取 vs 12:00 / 15:00 抓取对照</div>
+                <div class="desc">
+                    <strong>6h delta 与 12:00 抓取对照</strong>：<table class="github-table">
+                        <thead><tr><th>条目</th><th>12:00 抓取分</th><th>15:00 抓取分</th><th>18:00 抓取分</th><th>6h delta</th><th>vs 6/10 evening 6h max +495</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>AI agent bankrupted operator DN42</strong></td><td>(未出现)</td><td>215pt</td><td><strong>574pt</strong></td><td>+359 (15:00→18:00 3h)</td><td>6/12 evening 6h single second highest delta</td></tr>
+                            <tr><td><strong>Nobody ever gets credit Repenning 2001</strong></td><td>(未出现)</td><td>359pt</td><td>467pt</td><td>+108 (15:00→18:00 5.5h)</td><td>中等</td></tr>
+                            <tr><td><strong>Homebrew 6.0.0 Show HN</strong></td><td>1048pt</td><td>1151pt</td><td>1234pt</td><td>+186 (12:00→18:00 6h)</td><td>中等</td></tr>
+                            <tr><td><strong>Willison 6h 实战</strong></td><td>185pt</td><td>339pt</td><td>446pt</td><td>+261 (12:00→18:00 8h)</td><td>12:00 之后单条最大涨幅</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/12 18:00 6h 窗口最大涨幅 = DN42 +359</strong>（vs 6/10 evening Miasma 6h +495 = 当日史上第二大 6h delta）。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>数字主权 4 维矩阵 evening 头版</strong>：① Microsoft 6/11 把荷兰 DSA 监管官员未删节邮件转交美国众议院（CLOUD Act 危机首次具体案例，4.2h 120pt）② Infineon 6/12 04:47 UTC 公告在德国建 fab ③ EU 2031 6/12 03:00 UTC "AI 失败路径" 完整警示 ④ 东方 SK 海力士 6/10 8 月赴美 ADR 上市 $144 亿 = 6/12 早间"美云 4 法危机 / 欧实体主权 / 政策主权 / 亚资本"4 维矩阵同步</li>
+                    <li><strong>Google Mayrhofer 6/11 13:16 UTC 辞职</strong>：5/18 内部信 6/11 公开，HN #25 287pt/188c——"Google 已悄悄放弃碳中和目标 + 4 月签约 Pentagon 把 Gemini 给 DoD + 'Ministry of War' 命名 + 2018 AI 原则禁止武器 vs 2025 2 月取消" = 2026 H1 西方头部 AI 厂商"内部分裂"首个具名高管公开案例 + 24 天抗议周期 vs Project Maven 2018 谷歌 4 月</li>
+                    <li><strong>Arch AUR 单 maintainer "arojas" 6/11 投毒 408+ 包 + eBPF rootkit + npm atomic-lockfile</strong>：ioctl.fail 6/11 深度分析 + mttaggart IFIN 6/12 04:22 UTC + HN #97 4.0h 6pt + HN #48500629 7pt + HN #48500469 5pt = 2026 H1 Linux 供应链 24h 内第 3 次集中爆发（XZ 2.0 + Miasma + AUR 攻击面正交）</li>
+                    <li><strong>"AI 取代 SWE" 7 阶 trust spiral evening 完整收官</strong>：1 阶 6/5 担心 541 → 2 阶 6/7 经验 787 → 3 阶 6/8 反驳 845 → 4 阶 6/10 接受 309/744 → 5 阶 6/11 承认无用 → 6 阶 6/12 morning 信任瓦解 185/219 → 7 阶 6/12 evening 18:00 = DN42 + Repenning + 数字主权 + Mayrhofer + AUR + OpenAI 降价 + Infineon = "AI 厂商未来 5 年内无差异"完整时序</li>
+                    <li><strong>DN42 $6531.30 6h delta +359 = 6/12 全天 single 6h second highest delta</strong>（vs 6/10 evening Miasma 6h +495 当日史上第一）——Willison 6h 实战 12:00 → 18:00 +261 = 12:00 之后单条最大涨幅</li>
+                    <li><strong>OpenAI WSJ 6/12 drastic price cuts vs Anthropic</strong>：5.2h HN 5pt/1c = OpenAI 商业策略从"on-prem 准备"扩展到"价格战准备" = 6/12 早间 OpenAI vs Anthropic 全面商业战争 + Anthropic 6/12 Countdown calendar for Fable 5 leaving Claude Code（4.1h HN 2pt/2c）="Anthropic 减 SKU vs OpenAI 降价"双线同步</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>Digital Sovereignty 6/12 evening 头版 4 维矩阵 → 21:00 是否有欧盟 GAIA-X 6/12 同步公告 / 荷兰众议院具体调查进展 / 中国华为 HDC 2026 6/12 启幕后端侧 AI 6/12 当日落地数据</li>
+                    <li>Google Mayrhofer 6/11 13:16 UTC 辞职 → 21:00 是否有第二个具名高管公开抗议 + Google 6/12 是否有正式回应 + 4 月 Pentagon Gemini deal 6/12 是否有内部员工联名</li>
+                    <li>Arch AUR 408+ 包投毒 6/12 04:35 UTC → 21:00 是否被发现有 GitHub / npm / PyPI 6/12 早间同步投毒 + 6/12 evening 是否有"2026 H1 Linux 供应链 3 次集中爆发 36h 内全谱"完整汇总</li>
+                    <li>"AI 取代 SWE" 7 阶 trust spiral 6/12 18:00 完整收官 → 21:00 是否有 HN 6/12 早间 4h 后"8 阶"新晋条目（"AI 取代专业岗位"主题第 8 阶是否会以厂商分化形式出现）+ Anthropic Fable 5 6/12 Countdown calendar 21:00 是否有具体下架时间表</li>
+                    <li>OpenAI WSJ drastic price cuts 5.2h 5pt 21:00 是否有二次 WSJ / Bloomberg 跟进报道 + Anthropic 6/12 是否有对应反制公告 + "AI 厂商未来 5 年内无差异" 21:00 是否有 Microsoft / Google 公开表态</li>
+                    <li>6/12 18:00 evening 撞车源 = 4 份（morning + afternoon 12:00 + afternoon 15:00 增量 + 昨日 evening 18:00）——与 6/12 12:00 撞车源压力持平 = evening 史上最大撞车源压力，21:00 撞车源 = 5 份（+ 6/12 evening 18:00）将进一步扩大</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：Kevin Korte 6/11 "Digital Sovereignty Becomes An Imparative As the US Reads Dutch Emails" | 荷兰媒体 6/11 | Business Insider 6/11 头版 Hugh Langley "A Google Director Quit" | mayrhofer.eu.org 个人博客 "Google Management Has Lost Its Moral Compass" | HN #48500404 4.2h 120pt/109c | HN #48496396 13.0h 287pt/188c | HN #48500771 3.1h 6pt/3c | HN #48500251 4.7h 3pt/1c Bloomberg 6/12 "Infineon to open German chip fab as part of EU sovereignty push" | Europe 2031 6/12 03:00 UTC "Europe 2031: What getting AI wrong means for us" | HN #48500430 2.1h 3pt/0c | ioctl.fail 6/11 深度分析 "Preliminary analysis of AUR malware" | mttaggart IFIN 6/12 04:22 UTC "400+ AUR Packages Compromised" | HN #48500447 4.0h 6pt/0c | HN #48500629 3.5h 7pt/1c | HN #48500469 4.0h 5pt/0c | lists.archlinux.org AUR Report Thread 6/11 | WSJ 6/12 头版 "OpenAI Considers Drastic Price Cuts Anticipating War for Users With Anthropic" | HN #48500086 5.2h 5pt/1c | HN #48500432 4.1h 2pt/2c "Countdown calendar for Fable 5 leaving Claude Code" | HN #48500012 5.4h 574pt/210c (vs 15:00 215pt = 6h +359) | lantian.pub 6/12 04:42 UTC Lan Tian "AI Agent Bankrupted Their Operator While Trying to Scan DN42" | HN #48498385 9.5h 467pt/156c (vs 15:00 359pt = 6h +108) "Nobody ever gets credit for fixing problems that never happened" Repenning & Sterman 2001 | HN #48490024 20.7h 1234pt/285c (vs 12:00 1048pt = 6h +186) Homebrew 6.0.0 | HN #48498573 9.0h 446pt/345c (vs 12:00 185pt = 6h +261) Simon Willison "Fable is relentlessly proactive" | HN #48498573 9.0h 446pt/345c</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-12 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
