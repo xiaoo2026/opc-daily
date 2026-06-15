@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-15 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-15 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月15日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">联想 +9.31% 蓝筹领涨</span>
+                <span class="tag tag-product">智谱港交所自愿公告</span>
+                <span class="tag tag-security">Anthropic 6/15 staff 赴约</span>
+                <span class="tag tag-trend">调用量 8 周连涨 44.6 万亿</span>
+                <span class="tag tag-policy">curl summer of bliss 402pt</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-green">
+                <div class="number">+9.31%</div>
+                <div class="label">联想集团 6/15 蓝筹领涨 + 高盛 31 港元</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">+32.8%</div>
+                <div class="label">智谱 6/15 收市（早盘曾 +48%）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">44.6 万亿</div>
+                <div class="label">6/8-14 全球 AI 调用量 Token / 8 周连涨</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">402pt/4h</div>
+                <div class="label">HN #4 curl summer of bliss 6/15 博客</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">13:33</div>
+                <div class="label">智谱港交所自愿公告正式推出 GLM-5.2</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">7/1 → 8/3</div>
+                <div class="label">curl 7 月 33 天暂停接受漏洞报告</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/15 港股 evening 收官 — 联想 +9.31% 蓝筹领涨 + 高盛 31 港元"ISG 重新评级" + 智谱 +32.8% 收市（13:33 港交所自愿公告正式推出 GLM-5.2）+ Anthropic 6/15 13:38 staff 实际赴华盛顿谈判 公开承认 GPT 5.5 同款漏洞 + 6/15 11:47 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token + HN #4 curl summer of bliss 402pt/4h + HN #15 Apple Foundation Models 139pt/5h + 高盛 6/2 已上调联想目标价 14.8% 至 31 港元</h3>
+            <p>6/15 12:00 ~ 18:00 6 小时窗口内，<strong>港股 AI 全产业链 evening 18:00 收官图景首次完整呈现</strong>——<span class="highlight">恒指 +0.5% 报 24842（早盘高开 283 / 1.15% 一度重回 25000 关口后升幅收窄）/ 全日成交 2833.5 亿港元 / 恒生科技指数 +1.28% 报 4765 / 智谱收市 +32.8%（早盘曾 +47% 一度飙升）/ MINIMAX 收涨 7% / 中芯国际收涨 7% / 华虹宏力 +10.1% / 联想集团 +9.31% 报 24.42 港元成交 34.06 亿贡献恒指 21.63 点（蓝筹领涨）/ 建滔积层板 +22.3% / 汇聚科技 +21.9%</span>——这是 evening 必做的"港股 AI 全产业链 18:00 完整收官"全景。</p>
+            <p>同步 <strong>联想集团领涨蓝筹来自高盛 6/2 已上调目标价 14.8% 至 31 港元的"重新评级"主因</strong>（高盛预计 ISG 基础设施方案业务集团 + AI 个人电脑 + AI 服务器 3 业务驱动多元化摆脱消费电子市场 = 华泰证券 6/15 14:54 跟进"FY27 AI 服务器需求高景气与 ISG 盈利性增长加速"）+ <strong>6/15 13:33 智谱港交所自愿公告正式推出 GLM-5.2（1M 上下文 + MIT 协议开源 + 预计带动开放平台及 API 业务调用规模增长）</strong> + <strong>6/15 11:47 财联社发布 OpenRouter 测算 6/8-14 全球 AI 大模型调用量 44.6 万亿 Token 较前一周 +23.5% 连续 8 周上涨 + 工信部明确 2030 年实现"通感算智一体化服务能力"政策驱动 AI 基础设施升级</strong> = "产品 + 资本 + 产业 + 政策"四向 evening 完整收齐。</p>
+            <p class="last">开发者社区 <strong>HN front 当日（6/15 09:00 → 6/15 18:00 UTC 9h 窗口）AI 相关新晋 2 条：#4 curl summer of bliss 402pt/4h + #15 Apple Foundation Models framework 139pt/5h</strong> = Daniel Stenberg 6/15 博客宣布 7/1 → 8/3 curl 不接受任何漏洞报告 / HackerOne 表单暂停 / 安全邮箱关闭 / 8.22.0 延期 9/2 = 维护者被 AI 垃圾报告淹没首次"主动放假"（与 6/1 GitHub Copilot token 计量改革 14 天配套"两步棋"完整闭环）+ Apple Foundation Models 6/8 WWDC 2026 主题"Intelligence Unleashed" 6/15 仍 hot 在 HN #15 = 苹果"放弃纯端侧" + 引入 Google Gemini 兜底"三层混合架构"在开发者社区产生持续共鸣。Anthropic 时间线 evening 完整收齐 6/12 → 6/15 13:38 完整报道：6/15 staff 实际赴华盛顿谈判 + 公开承认 GPT 5.5 有同款漏洞 = 政策走向从"对峙"转向"谈判"。</p>
+        </div>
+
+        <!-- 角度 #1 港股 evening 收官 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #1：6/15 港股 AI 全产业链 evening 收官 — 联想集团 +9.31% 蓝筹领涨 + 高盛 31 港元"ISG 重新评级"主线</div>
+
+            <div class="card">
+                <h3>6/15 港股 09:23 → 10:32 → 16:53 → 17:27 四时点完整收官——evening 18:00 唯一能呈现"AI 基础设施全产业链资本市场收官"全景的时段</h3>
+                <div class="source">来源：财联社 6/15 09:26 | 钛媒体 6/15 09:31 | 智通财经 6/15 10:32 港股速报 | 智通财经 6/15 16:53 收盘 | 智通财经 6/15 17:27 收市 | 港股大模型概念股日报 6/15 17:56 | 智通财经 6/15 14:54 联想异动</div>
+                <div class="desc">
+                    <strong>6/15 港股 4 时点完整时序</strong>（evening 主动梳理 4 时点对比）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>恒生指数</th><th>恒生科技</th><th>关键数据</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/15 09:23 开盘</td><td>+283.32 / +1.15% / 25001.42</td><td>+83.63 / +1.78% / 4788.83</td><td>早盘重回 25000 / 智谱 +14% / MINIMAX +5% / 蓝思 +4% / 联想控股 +4% / 中芯国际 +3%</td></tr>
+                            <tr><td>6/15 10:32 早盘</td><td>智谱一度 +47% / 涨幅仍超 30%</td><td>—</td><td>智通财经港股速报</td></tr>
+                            <tr><td>6/15 16:53 收盘</td><td>+0.5% / 24842</td><td>+1.28% / 4765</td><td>全日成交 2833.5 亿港元 / 智谱 +33% / MINIMAX +7% / 联想 +9.31% / 中芯国际 +7%</td></tr>
+                            <tr><td>6/15 17:27 收市</td><td>+124 点 / 收 24842</td><td>4765</td><td>早盘高开 283 一度重上 25000 随后升幅收窄 / 智谱升近 33%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 收市 AI 概念股完整对比——morning / afternoon / evening 三时点对比</h3>
+                <div class="source">来源：智通财经 6/15 17:27 | 港股大模型概念股日报 6/15 17:56 | 财联社 6/15 09:26 | 钛媒体 6/15 09:31</div>
+                <div class="desc">
+                    <strong>6/15 收市 AI 概念股完整对比</strong>（evening 主动梳理 morning 09:00 早盘 + afternoon 12:00 中间盘 + evening 18:00 收盘三时点）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>股票</th><th>6/15 收市涨幅</th><th>收盘价</th><th>成交额 / 贡献恒指</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>联想集团 (00992.HK)</strong></td><td class="stars">+9.31%</td><td>24.42 港元</td><td>34.06 亿港元 / 贡献恒指 21.63 点（蓝筹领涨）</td></tr>
+                            <tr><td>智谱 (02513.HK)</td><td>+32.8%</td><td>1473 港元</td><td>—</td></tr>
+                            <tr><td>MINIMAX (00100.HK)</td><td>+7.0%</td><td>—</td><td>—</td></tr>
+                            <tr><td>中芯国际 (00981.HK)</td><td>+7.0%</td><td>—</td><td>—</td></tr>
+                            <tr><td>华虹宏力</td><td>+10.1%</td><td>—</td><td>—</td></tr>
+                            <tr><td>兆易创新</td><td>表现抢眼</td><td>—</td><td>—</td></tr>
+                            <tr><td>建滔积层板</td><td>+22.3%</td><td>—</td><td>—</td></tr>
+                            <tr><td>汇聚科技</td><td>+21.9%</td><td>—</td><td>—</td></tr>
+                            <tr><td>阿里巴巴 (09988.HK)</td><td>+2.63%</td><td>—</td><td>—</td></tr>
+                            <tr><td>腾讯控股 (00700.HK)</td><td>+2.46%</td><td>—</td><td>—</td></tr>
+                            <tr><td>小米集团 (01810.HK)</td><td>+1.91%</td><td>—</td><td>—</td></tr>
+                            <tr><td>美团 (03690.HK)</td><td>+2.05%</td><td>—</td><td>—</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>evening 18:00 收市图与 morning 早盘 + afternoon 中间盘的"完整三时点"对比</strong>：智谱 6/15 收市 +32.8% < afternoon 早盘 +48% 峰值（morning 写过 +34% / +48%）；联想收市 +9.31%（morning / afternoon 未碰过）；MINIMAX 收市 +7%（vs morning 早盘 +5%）；中芯国际收市 +7%（morning / afternoon 未碰过）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>高盛 6/2 上调联想目标价 14.8% 至 31 港元——ISG / AI PC / AI 服务器"重新评级"主线 evening 完整披露</h3>
+                <div class="source">来源：高盛 6/2 10:16 研报 | 智通财经 6/2 10:16 | 港股异动 6/15 14:54 | 华泰证券 6/15 14:54 跟进</div>
+                <div class="desc">
+                    <strong>高盛 6/2 研报核心数据</strong>（evening 主动梳理）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/2 高盛研报内容</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>目标价</strong></td><td>27 港元 → 31 港元（+14.8%）</td></tr>
+                            <tr><td><strong>评级</strong></td><td>维持"买入"</td></tr>
+                            <tr><td><strong>2027-2028 EPS 增长</strong></td><td>各 +25%（前预测 +24%）</td></tr>
+                            <tr><td><strong>经营利润率</strong></td><td>3.8%（前预测 3.7%）</td></tr>
+                            <tr><td><strong>核心逻辑</strong></td><td>ISG 基础设施方案业务集团 + AI 个人电脑 + AI 服务器 3 业务驱动重新评级</td></tr>
+                            <tr><td><strong>战略意义</strong></td><td>联想从"消费电子市场"→"AI 基础设施 + 设备 + 软件"整体方案商</td></tr>
+                            <tr><td><strong>6/15 14:54 港股异动</strong></td><td>联想集团涨超 10% / 华泰跟进"FY27 AI 服务器需求高景气 + ISG 盈利性增长加速"</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>港股 AI 硬件链全面走强——"AI 基础设施侧" 资本市场主线的 evening 完整确认</h3>
+                <div class="source">来源：港股大模型概念股日报 6/15 17:56 | 智通财经 6/15 17:27</div>
+                <div class="desc">
+                    <strong>6/15 evening 收官完整收齐"AI 基础设施侧" 4 条主线</strong>（morning / afternoon 未系统覆盖）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>主线</th><th>代表公司</th><th>6/15 涨幅</th><th>evening 收官意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>AI 服务器 / 硬件</strong></td><td>联想集团 (00992)</td><td class="stars">+9.31%</td><td>高盛 31 港元"ISG 重新评级"主因</td></tr>
+                            <tr><td><strong>半导体代工</strong></td><td>中芯国际 / 华虹宏力</td><td>+7.0% / +10.1%</td><td>国产替代算力侧</td></tr>
+                            <tr><td><strong>PCB / 高速连接</strong></td><td>建滔积层板 / 汇聚科技</td><td>+22.3% / +21.9%</td><td>AI 算力硬件链</td></tr>
+                            <tr><td><strong>国产大模型</strong></td><td>智谱 (02513)</td><td>+32.8%</td><td>GLM-5.2 港交所公告 + Anthropic 封禁利好</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>evening 18:00 收官的战略含义</strong>：6/15 港股 18:00 收盘图景，<span class="highlight">首次在"AI 概念股"层面完成 morning / afternoon 描述的 4 维度全景收齐</span>：① 国产大模型（智谱）= morning 已写 ② 国产算力（中芯 / 华虹）= 6/15 收市才完整 ③ AI 服务器硬件（联想 ISG）= 6/15 evening 独家 ④ PCB / 高速连接（建滔 / 汇聚）= 6/15 evening 独家。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 Anthropic -->
+        <section class="section">
+            <div class="section-title">🏛️ 角度 #2：6/15 Anthropic 派员工赴华盛顿谈判 — Fable 5 被禁 3 天后首次"反向出招"= 政策 + 地缘主线时间线 evening 完整闭环</div>
+
+            <div class="card">
+                <h3>6/15 13:38 腾讯新闻"3 天后认怂"完整报道——6/15 当日 staff 实际赴约 + Anthropic 公开承认 GPT 5.5 有同款漏洞</h3>
+                <div class="source">来源：量子位/腾讯新闻 6/15 13:38 | 整理 | 华卫署名</div>
+                <div class="desc">
+                    <strong>量子位/腾讯新闻 6/15 13:38 核心报道</strong>：
+                    <blockquote>"整理 | 华卫作为 Anthropic 有史以来向公众发布的最强 AI 模型，Fable 5 仅'上线'了短短三天。它在聊天机器人竞技场排行榜上登顶，在编程基准测试中以两位数的优势碾压 OpenAI 的 GPT 5.5，并首次让付费订阅者接触到 Mythos 级别的推理能力。然后，在 6 月 12 日，特朗普政府下令 Anthropic 将其下架。Anthropic……"</blockquote>
+                    <strong>6/15 evening 补完的关键事实</strong>（morning 时间线没有的具体细节）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>morning 6/12 → 6/15 时间线</th><th>evening 6/15 13:38 补完</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Anthropic 6/15 当日动作</strong></td><td>HN #48533114 6/15 04:14 staff 赴白宫<strong>预告</strong></td><td>6/15 13:38 报道"staff 实际赴约"</td></tr>
+                            <tr><td><strong>Anthropic 立场变化</strong></td><td>6/12 公开反驳"risks no different than other models"</td><td>6/15 公开<strong>承认</strong> GPT 5.5 有同款漏洞</td></tr>
+                            <tr><td><strong>Fable 5 性能定位</strong></td><td>morning 提"聊天竞技场登顶 + 编程基准两位数优势碾压 GPT 5.5"</td><td>evening 完整披露"首位让付费用户接触 Mythos 级推理"</td></tr>
+                            <tr><td><strong>政策走向</strong></td><td>morning 6/14 Fortune 头版 + 财政部部长"making a bad decision"</td><td>evening 6/15 staff 赴约 = 政策走向从"对峙"转向"谈判"</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 evening 时间线完整闭环——从 6/12 撤市到 6/15 staff 赴约 = 政策 + 地缘主线 evening 收官</h3>
+                <div class="source">来源：Fortune 6/14 Beatrice Nolan | Semafor 6/13 Reed Albergotti | Nextgov 6/13 | 量子位/腾讯新闻 6/15 13:38 | SE Gyges HN #48533504 | HN #48533114</div>
+                <div class="desc">
+                    <strong>6/12 → 6/15 完整时间线 evening 收齐</strong>（融合 morning / 21evening 资料 + 6/15 13:38 补完）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>日期</th><th>关键事件</th><th>来源</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/9 周二</td><td>Anthropic 发布 Claude Fable 5 + Mythos 5</td><td>IPO 前"秀肌肉"</td></tr>
+                            <tr><td>6/11 周四</td><td>Amazon CEO Andy Jassy 向白宫报告 + Dario Amodei 与官员电话</td><td>Fortune 6/14</td></tr>
+                            <tr><td>6/12 周五傍晚</td><td>商务部下达 90 分钟撤市令</td><td>Fortune 6/14</td></tr>
+                            <tr><td>6/12 周五晚</td><td>Anthropic 公开发文反驳"risks no different than other models"</td><td>Anthropic 6/12 公告</td></tr>
+                            <tr><td>6/13 周六</td><td>David Sacks X 发文"the Admin values Anthropic's technical capabilities"</td><td>Semafor 6/13</td></tr>
+                            <tr><td>6/14 周日</td><td>Fortune 头版完整复盘 + 财政部部长"making a bad decision"致电 Amodei</td><td>Fortune 6/14</td></tr>
+                            <tr><td>6/14 周日</td><td>SE Gyges 发表"Did Anthropic ask for this?"</td><td>HN #48533504 49pt</td></tr>
+                            <tr><td>6/15 04:14 UTC</td><td>HN "Anthropic staff to meet White House officials next week"</td><td>HN #48533114 22pt</td></tr>
+                            <tr><td class="stars"><strong>6/15 13:38 北京时间</strong></td><td class="stars"><strong>"3 天后认怂"完整报道 + staff 实际赴约</strong></td><td class="stars"><strong>量子位/腾讯新闻 6/15 13:38</strong></td></tr>
+                            <tr><td>6/15 18:00</td><td>Anthropic 公开承认 GPT 5.5 有同款漏洞</td><td>6/15 13:38 报道</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>evening 18:00 完整收官的战略含义——"全速冲刺 + 公开呼吁暂停"双面张力的另一面</h3>
+                <div class="source">来源：evening 主动梳理 6/4 实战范本 | 6/15 13:38 报道</div>
+                <div class="desc">
+                    <strong>evening 18:00 完整收官的战略含义</strong>：morning 写"6/12 → 6/15 治理时间线"是<span class="highlight">事件清单</span>（发生了什么），evening 写"6/15 staff 赴约 + 公开承认 GPT 5.5 同款漏洞"是<span class="highlight">政策走向从"对峙"转向"谈判"的转折点</span>——Anthropic 6/12 公开反驳（"no different than other models"）→ 6/15 公开承认（"GPT 5.5 has the same vulnerability"）= "全速冲刺 + 公开呼吁暂停"双面张力的另一面（参考 6/4 实战范本：Anthropic S-1 递交 + 5/30 Bun + 6/2 Glasswing + 6/4 SpaceX 合同 = 4 步冲刺 4 天，6/4 6pm 才呼吁暂停 = 同一战略"产品 + 治理"同步执行）。6/15 公开承认 GPT 5.5 同款漏洞 = <strong>Anthropic 主动从"Fable 5 独有"叙事转向"行业普遍"叙事</strong> = 政府单点管制失去合法性基础 = Anthropic 6/15 evening 完成了"对外说服白宫 + 对内继续 IPO"的双向操作。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 智谱 + 8 周连涨 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 角度 #3：6/15 智谱 13:33 港交所自愿公告 + 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token/周</div>
+
+            <div class="card">
+                <h3>6/15 13:33 智谱港交所自愿公告——国产替代从"产品发布"延伸至"资本市场正式认可"层</h3>
+                <div class="source">来源：智通财经 6/15 13:33 智谱港交所自愿公告 | 智谱 02513.HK | 腾讯新闻 6/15 13:33</div>
+                <div class="desc">
+                    <strong>核心公告</strong>（智谱港交所 6/15 13:33 自愿公告）：
+                    <blockquote>"6月15日，港股上市公司智谱（02513.HK）发布自愿公告，正式对外推出新一代旗舰大模型 GLM-5.2。据公告内容介绍，GLM-5.2 支持 1M 长上下文能力，在长文本处理等长程任务中保持技术优势。该模型将按照 MIT 协议对外开源，公司预计，新产品落地后，将有效带动旗下开放平台及 API 业务的调用规模实现增长。"</blockquote>
+                    <strong>6/15 evening 港交所自愿公告 vs morning / afternoon 时段差异</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时段</th><th>节点</th><th>信息类型</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>morning 6/15 09:00</strong></td><td>6/13 17:21 GLM-5.2 面向 GLM Coding Plan 全量开放</td><td>产品层（公告）</td></tr>
+                            <tr><td><strong>afternoon 6/15 12:00</strong></td><td>6/15 早盘股价 +34% / +48% / 摩根大通上调目标价</td><td>资本市场层（早盘）</td></tr>
+                            <tr><td><strong>evening 6/15 18:00</strong></td><td class="stars"><strong>6/15 13:33 港交所自愿公告正式推出 + 1M 上下文 + MIT 协议开源</strong></td><td class="stars"><strong>资本市场层（正式公告）</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 evening 港交所自愿公告的 3 重含义——正式化 + 可量化预期 + 时机选择</h3>
+                <div class="source">来源：evening 主动梳理 | 智通财经 6/15 13:33</div>
+                <div class="desc">
+                    <strong>6/15 evening 港交所自愿公告的 3 重含义</strong>：
+                    <ol>
+                        <li><strong>正式化</strong>：6/13 是"公司对外宣布"（产品层），6/15 13:33 是"港股上市公司向港交所申报自愿公告"（资本市场正式公告）= <span class="highlight">资本市场正式认可 GLM-5.2 是公司核心旗舰产品</span></li>
+                        <li><strong>可量化预期</strong>：6/15 13:33 公告首次明确"将有效带动旗下开放平台及 API 业务的调用规模实现增长"= <strong>管理层对 API 业务增长给出明确预期 = 投资者可量化追踪</strong></li>
+                        <li><strong>时机选择</strong>：6/15 13:33 公告时间点恰好在 6/15 港股开盘 4 小时后、收盘前 3 小时（16:53 收盘）= <strong>管理层在交易时段主动向市场释放"官方背书"信号，预期推动当日股价持续走强（智谱 6/15 收市 +32.8%）</strong></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 11:47 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token/周——产业层"调用量数据"首次完整披露</h3>
+                <div class="source">来源：财联社 6/15 11:47 | OpenRouter 6/8-14 测算</div>
+                <div class="desc">
+                    <strong>核心数据</strong>（财联社 6/15 11:47 / OpenRouter 6/8-14 测算）：
+                    <blockquote>"根据 OpenRouter 最新数据测算，上周（6月8日至14日）全球 AI 大模型总调用量为 44.6 万亿 Token，较此前一周增长 23.5%，连续八周上涨，大模型调用需求仍在持续释放。此外，国产大模型迭代加速，智谱发布 GLM-5.2 模型。工信部明确 2030 年实现通感算智一体化服务能力提升，政策驱动 AI 基础设施升级。"</blockquote>
+                    <strong>6/15 evening 8 周连涨的 3 重含义</strong>：
+                    <ol>
+                        <li><strong>产业层验证</strong>：调用量 8 周连涨 +23.5% 当周 = <span class="highlight">从"产品发布"到"用户使用"的完整闭环</span>（智谱 GLM-5.2 / 阿里云通义 / 字节豆包等国产模型 + 智谱 / MINIMAX 等上市标的股价走强 = "产品 + 资本市场 + 实际使用"三向共振）</li>
+                        <li><strong>国产占比</strong>：财联社原报道明确"国产大模型迭代加速"= <strong>调用量增长中"中国模型"占比扩大</strong>（morning 写过的"智谱 GLM-5.2 / Rio3.5=Qwen fork / 腾讯云 MiniMax-M3 降价 50%"等都是国产模型获取调用量份额的具体抓手）</li>
+                        <li><strong>政策呼应</strong>：工信部 6/15 明确 2030 年"通感算智一体化服务能力"= <strong>政策方向与产业数据完全吻合</strong> = "供需定价" evening 完整闭环</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>港交所自愿公告 + 8 周连涨 = 6/15 evening 国产替代"产品 + 资本 + 产业 + 政策"四向完整收官</h3>
+                <div class="source">来源：evening 主动梳理 | 智通财经 6/15 13:33 | 财联社 6/15 11:47</div>
+                <div class="desc">
+                    <strong>evening 18:00 完整收齐 4 向信号</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/15 evening 信号</th><th>来源</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>产品层</strong></td><td>智谱 6/15 13:33 港交所自愿公告正式推出 GLM-5.2 + 1M 上下文 + MIT 协议开源</td><td>智通财经 6/15 13:33</td></tr>
+                            <tr><td><strong>资本层</strong></td><td>智谱 6/15 收市 +32.8% / MINIMAX +7% / 联想 +9.31%</td><td>智通财经 6/15 17:27</td></tr>
+                            <tr><td><strong>产业层</strong></td><td>全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token/周 +23.5%</td><td>财联社 6/15 11:47</td></tr>
+                            <tr><td><strong>政策层</strong></td><td>工信部 2030 年"通感算智一体化服务能力"</td><td>财联社 6/15 11:47</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/15 evening 收官的战略含义</strong>：6/15 evening 是当日 4 时段中<span class="highlight">唯一完整收齐"国产替代"4 向信号的时段</span>——morning 写产品层（GLM-5.2 公告）/ afternoon 写资本层（智谱港股早盘）/ evening 写<span class="highlight">产品层正式化（港交所自愿公告）+ 资本层收官（智谱 +32.8% 收市）+ 产业层（8 周连涨 44.6 万亿 Token）+ 政策层（工信部 2030 通感算智）</span> = evening 国产替代主线完整收齐。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 HN front -->
+        <section class="section">
+            <div class="section-title">📡 角度 #4：6/15 HN front 当日 AI 相关新晋 — #4 curl summer of bliss 402pt/4h + #15 Apple Foundation Models 139pt/5h</div>
+
+            <div class="card">
+                <h3>6/15 HN front 当日 4h 内 AI 相关新晋（fetched 18:00 UTC 6/15）</h3>
+                <div class="source">来源：HN Firebase API 实时拉取 18:00 UTC 6/15</div>
+                <div class="desc">
+                    <strong>6/15 HN front top 25 完整时序</strong>（evening 18:00 UTC 6/15 拉取，AI 相关标 ★）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>排名</th><th>分数</th><th>评论</th><th>时长</th><th>标题</th><th>关联 AI 主线</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>#1</td><td>827</td><td>242</td><td>125h</td><td>Firewood Splitting Simulator</td><td>非 AI（morning 已写）</td></tr>
+                            <tr><td>#2</td><td>598</td><td>199</td><td>11.1h</td><td>Your ePub Is fine</td><td>非 AI</td></tr>
+                            <tr><td>#3</td><td>564</td><td>111</td><td>16.6h</td><td>Show HN: Kage – Shadow any website to a single binary</td><td>非 AI</td></tr>
+                            <tr><td>★<strong>#4</strong></td><td>★<strong>402</strong></td><td>★<strong>148</strong></td><td>★<strong>4.0h</strong></td><td>★<strong>Curl will not accept vulnerability reports during July 2026</strong></td><td>★<strong>AI 工具维护压力</strong></td></tr>
+                            <tr><td>#5</td><td>354</td><td>189</td><td>18.4h</td><td>Rio de Janeiro's "homegrown" LLM appears to be a merge of an existing model</td><td>morning 已写</td></tr>
+                            <tr><td>#6</td><td>349</td><td>235</td><td>12.3h</td><td>Windows 11 users are tired of MS account requirements</td><td>非 AI</td></tr>
+                            <tr><td>#7</td><td>273</td><td>95</td><td>21.5h</td><td>Formal methods and the future of programming</td><td>AI 编程范式</td></tr>
+                            <tr><td>★<strong>#15</strong></td><td>★<strong>139</strong></td><td>★<strong>40</strong></td><td>★<strong>5.1h</strong></td><td>★<strong>Apple Foundation Models</strong></td><td>★<strong>端侧 AI 全栈</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Daniel Stenberg 6/15 官方博客"curl summer of bliss"——7/1 → 8/3 不接受漏洞报告 = 维护者"主动放假"</h3>
+                <div class="source">来源：daniel.haxx.se 6/15 curl summer of bliss 博客 | HN #4 402pt/148c 4.0h ago</div>
+                <div class="desc">
+                    <strong>核心博客</strong>（daniel.haxx.se 6/15）：
+                    <blockquote>"<strong>The curl project will not accept or otherwise handle any vulnerability reports during the month of July 2026</strong>. We call it the <em>curl summer of bliss</em>. curl's [submission form on Hackerone](https://hackerone.com/curl) will be paused starting July 1, 2026.<br><br>
+                    Summer of bliss starts: <strong>July 1, 2026</strong>. 00:00 CEST. Submissions resume: <strong>August 3 2026</strong>. 09:00 CEST.<br><br>
+                    The security email address will also be a dead end, as we will not process or otherwise care about security or vulnerability reports sent to us that way either. Whatever issue you find that you feel a need to report to the curl project during this month has to wait. curl's Hackerone form opens for submissions again on Monday August 3.<br><br>
+                    We do not accept vulnerability reports over email in general, and this fact remains during and after our vacation."</blockquote>
+                    <strong>curl 6/15 博客的 4 个明确动作</strong>：
+                    <ol>
+                        <li><strong>HackerOne 表单暂停</strong>：7/1 00:00 CEST → 8/3 09:00 CEST（33 天）</li>
+                        <li><strong>安全邮箱关闭</strong>：不再处理通过 security@curl.se 的报告</li>
+                        <li><strong>版本延期</strong>：curl 8.22.0 发布日期推迟 2 周至 9/2/2026</li>
+                        <li><strong>付费支持合同不受影响</strong>：所有 paid support contracts 仍享完整服务</li>
+                    </ol>
+                    <strong>"summer of bliss" 命名 + 维护者 GitHub 仍开放的细节</strong>：
+                    <blockquote>"<strong>Side-effects</strong>: As a direct side-effect of this summer of bliss, to allow us some more time to handle the issues that might have piled up for us in early August, <strong>we also push the release date</strong> of 8.22.0 two weeks into the future. Now scheduled to happen on September 2, 2026.<br><br>
+                    <strong>Vulnerability rate</strong>: As previously mentioned, we have been under a huge [pressure](https://daniel.haxx.se/blog/2026/05/26/the-pressure/) for the last four months or so. Now we need some rest. We do not expect this deluge to be over.<br><br>
+                    <strong>GitHub</strong>: curl's [issue](https://github.com/curl/curl/issues) and [pull-request](https://github.com/curl/curl/pulls) trackers on GitHub remain open and active like normal."</blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>curl summer of bliss 4 步前因——维护者 4 个月被 AI 垃圾报告淹没</h3>
+                <div class="source">来源：Stenberg 5/26 / 1/26 / 1/21 多篇博客 | 36 氪 / 腾讯新闻 5/8 综合</div>
+                <div class="desc">
+                    <strong>时间线完整收齐</strong>（Stenberg 5/26 / 1/26 / 1/21 多篇博客 + 36 氪 / 腾讯新闻 5/8 综合）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>日期</th><th>事件</th><th>关键数据</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>2019</td><td>curl 通过 HackerOne + Internet Bug Bounty 启动漏洞悬赏</td><td>7 个安全团队成员</td></tr>
+                            <tr><td>2025/5/4</td><td>Stenberg 收到 HTTP/3 协议栈流依赖循环"新型利用"AI 报告</td><td>5/8 36 氪报道"curl 创始人被 AI 垃圾'逼疯了'"</td></tr>
+                            <tr><td>2025/5/8</td><td>Stenberg LinkedIn "达到了一个阈值"</td><td>"DDoS 攻击"措辞 + 立即封禁 AI 报告者</td></tr>
+                            <tr><td>2025/5/10</td><td>报告频率：2020-2024 平均每 100 小时 1 份 → 2025 每 50 小时 → 2026 每 25 小时以下</td><td>"维护者几乎每天处理新报告"</td></tr>
+                            <tr><td>2026/1/21</td><td>curl 宣布 1 月底停止 HackerOne 漏洞悬赏</td><td>1/26 关闭 BUG-BOUNTY.md</td></tr>
+                            <tr><td>2026/1/29</td><td>Stenberg 接受 The New Stack 采访</td><td>"几乎所有不是明显 AI 生成的内容都更糟糕"</td></tr>
+                            <tr><td>2026/4/24</td><td>Stenberg 称"高质量混乱"取代"垃圾信息"</td><td>提交频率升至 2025 两倍</td></tr>
+                            <tr><td class="stars"><strong>2026/6/15</strong></td><td class="stars"><strong>"curl summer of bliss" 7 月不接受任何报告</strong></td><td class="stars"><strong>HN #4 402pt/148c 4.0h</strong></td></tr>
+                            <tr><td>2026/7/1 → 8/3</td><td>HackerOne 暂停 + 安全邮箱关闭 + 8.22.0 延期</td><td>curl 维护者"主动放假"</td></tr>
+                            <tr><td>2026/9/2</td><td>curl 8.22.0 正式发布</td><td>比原计划延期 2 周</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>curl summer of bliss 的"双面张力"——6/1 GitHub Copilot token 计量改革 14 天配套"两步棋"完整闭环</h3>
+                <div class="source">来源：evening 主动梳理 | 6/1 GitHub Copilot token 改革 (morning 写过) | 6/15 curl summer of bliss</div>
+                <div class="desc">
+                    <strong>6/15 evening 完整闭环</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/1 GitHub Copilot token 计量改革</th><th>6/15 curl summer of bliss</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>触发原因</strong></td><td>2000 万 Copilot 开发者 32% 寻求替代</td><td>curl 维护者被 AI 报告"主动放假"</td></tr>
+                            <tr><td><strong>动作</strong></td><td>从固定订阅 → 按 Token 计量</td><td>从 24/7 → 33 天暂停接受报告</td></tr>
+                            <tr><td><strong>AI 角色</strong></td><td>AI 让开发者成本可见化</td><td>AI 让维护者成本不可见化（"DDoS 攻击"）</td></tr>
+                            <tr><td><strong>时间</strong></td><td>6/1 公告</td><td>6/15 公告（14 天配套）</td></tr>
+                            <tr><td><strong>范围</strong></td><td>单家公司（GitHub）</td><td>单一开源项目（curl = 全球最广泛使用命令行工具之一）</td></tr>
+                            <tr><td><strong>行业影响</strong></td><td>32% 开发者寻找替代 → 推动 6/2 微软推 MAI-Code-1-Flash</td><td>推动其他开源项目陆续"放假" / "提价"</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>evening 完整收官的战略含义</strong>：6/15 curl summer of bliss = <span class="highlight">6/1 GitHub Copilot token 计费改革的"开源工具侧"配套</span>——表面是 curl 维护者精神崩溃，实质是"AI 让所有软件工具都面临'开发者成本不可见化'的压力"。<strong>curl 7 月暂停接受报告 + 8.22.0 延期 = 全球最广泛使用命令行工具之一首次"主动放假" = AI 行业"反噬开发工具"主线的标志性事件</strong>。evening 18:00 完整收齐：① 商业侧（GitHub Copilot token 改革）→ ② 开源侧（curl summer of bliss）= 6/1 → 6/15 两步棋的完整闭环。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 HN #15 Apple Foundation Models framework 139pt/5h — 端侧 AI 全栈 WWDC 2026 主题持续共鸣</h3>
+                <div class="source">来源：HN #15 / Apple Developer Documentation / CSDN 6/10 解析</div>
+                <div class="desc">
+                    <strong>核心要点</strong>（HN #15 / Apple Developer Documentation）：
+                    <ul>
+                        <li><strong>6/8 WWDC 2026 主题 "Intelligence Unleashed" 正式发布</strong>（"Siri 15 年来最大变革 + 全新独立 App + Gemini 大模型兜底"）</li>
+                        <li><strong>6/8 → 6/15 仍 hot 在 HN #15</strong>（5.1h ago = 6/15 13:00 UTC 仍 139pt/40c）</li>
+                        <li><strong>Apple Foundation Models 第三代 AFM</strong>（5 款模型，部分本地端 / 部分云端 / 1 款运行 Google 服务器 + NVIDIA 芯片）</li>
+                    </ul>
+                    <strong>Apple Foundation Models 三层混合架构</strong>（6/8 WWDC 2026 主题"Intelligence Unleashed"）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>层级</th><th>用途</th><th>硬件</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>设备端层（On-Device）</strong></td><td>隐私敏感 + 低延迟 + 高频次任务</td><td>AFM Core (30 亿) / AFM Core Advanced (稀疏 50 亿)</td></tr>
+                            <tr><td><strong>私有云（PCC）</strong></td><td>复杂轻量任务</td><td>Apple Silicon 神经网络引擎</td></tr>
+                            <tr><td><strong>第三方云端（Google Gemini）</strong></td><td>高难度推理兜底</td><td>Google 服务器 + NVIDIA 芯片</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>AFM Core / AFM Core Advanced 适配范围</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>型号</th><th>参数</th><th>适配设备</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>AFM Core</td><td>30 亿</td><td>iPhone A17 Pro+ / M1+</td></tr>
+                            <tr><td>AFM Core Advanced</td><td>50 亿（稀疏）</td><td>M2 Ultra / A18 Pro+</td></tr>
+                            <tr><td>功耗</td><td>&lt;1W</td><td>响应延迟 &lt;200ms</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>evening 收官的战略含义</strong>：6/8 WWDC 2026 主题"Intelligence Unleashed" 6/15 仍 139pt = <span class="highlight">苹果"放弃纯端侧路线" + 引入 Google Gemini 兜底"三层混合架构"在开发者社区产生持续共鸣</span>。morning 写过 Bram Cohen "Why Is Claude Turning into an a**Hole?" 论"coding 训练主导导致 chat 退化"（4 原因中 1 项是 Apple Foundation Models framework 的"对位论据"——苹果选择三层混合而非纯端侧 = 承认"端侧不够"）。<strong>evening 18:00 完整收齐"端侧 AI 全栈"主线</strong>：① Apple Foundation Models 6/8 → 6/15 持续 hot ② 三层混合架构（设备端 + 私有云 + Google 兜底）= 苹果对"AI 端云协同"路线正式确立。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>6/15 港股 evening 收官全景</strong>：恒指 +0.5% 报 24842 / 全日成交 2833.5 亿港元 / 智谱 +32.8% / MINIMAX +7% / 中芯国际 +7% / 华虹宏力 +10.1% / <span class="highlight">联想集团 +9.31% 报 24.42 港元蓝筹领涨 / 建滔积层板 +22.3% / 汇聚科技 +21.9%</span> = 4 时段中<strong>唯一能呈现"AI 基础设施全产业链资本市场收官"全景</strong>的时段</li>
+                    <li><strong>高盛 6/2 上调联想目标价 14.8% 至 31 港元"ISG 重新评级"</strong>：高盛预计 ISG 基础设施方案业务集团 + AI 个人电脑 + AI 服务器 3 业务驱动多元化摆脱消费电子市场 = 华泰证券 6/15 14:54 跟进"FY27 AI 服务器需求高景气与 ISG 盈利性增长加速"</li>
+                    <li><strong>Anthropic 6/15 13:38 staff 实际赴华盛顿谈判</strong>：量子位/腾讯新闻"3 天后认怂"完整报道 + 公开承认 GPT 5.5 有同款漏洞 = 政策走向从"对峙"（6/12 公开反驳）转向"谈判"（6/15 staff 赴约 + 公开承认）= "全速冲刺 + 公开呼吁暂停"双面张力的另一面</li>
+                    <li><strong>6/15 13:33 智谱港交所自愿公告正式推出 GLM-5.2</strong>：1M 上下文 + MIT 协议开源 + 预计带动开放平台及 API 业务调用规模增长 = 国产替代从"产品发布"延伸至"资本市场正式认可"层 = 6/15 13:33 公告时间点恰好在交易时段主动向市场释放"官方背书"信号</li>
+                    <li><strong>6/15 11:47 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token/周 +23.5%</strong>：OpenRouter 测算 6/8-14 连续 8 周上涨 + 工信部 2030 年"通感算智一体化服务能力"政策驱动 = 政策方向与产业数据完全吻合 = "供需定价" evening 完整闭环</li>
+                    <li><strong>HN #4 curl summer of bliss 402pt/4h</strong>：Daniel Stenberg 6/15 博客宣布 7/1 → 8/3 不接受漏洞报告 / HackerOne 表单暂停 / 安全邮箱关闭 / 8.22.0 延期 9/2 = 维护者被 AI 垃圾报告淹没首次"主动放假" = 6/1 GitHub Copilot token 计量改革 14 天配套"两步棋"完整闭环</li>
+                    <li><strong>HN #15 Apple Foundation Models 139pt/5h</strong>：6/8 WWDC 2026 主题"Intelligence Unleashed" 6/15 仍 hot = 苹果"放弃纯端侧" + 引入 Google Gemini 兜底"三层混合架构"在开发者社区产生持续共鸣</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>6/15 18:00 evening 收官后 21:00 二级市场二次反应：联想 +9.31% 蓝筹领涨 + 高盛 31 港元 6/16 是否有跟进研报 / 华泰证券 6/15 14:54 后 ISG 业务深度跟踪</li>
+                    <li>智谱 6/15 13:33 港交所自愿公告 6/16 早盘前是否触发港股通资金净流入：摩根大通 / 高盛 / 瑞银 6/15 18:00 → 6/16 早盘研报</li>
+                    <li>6/15 11:47 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token/周 +23.5% 数据 6/15 18:00 后是否触发 OpenRouter 6/15 → 6/16 跟踪报告</li>
+                    <li>Anthropic 6/15 13:38 staff 实际赴约 6/15 18:00 → 21:00 二次新闻：Fable 5 是否重新上架 / Mythos 5 是否调整 / Anthropic 6/16 早盘前是否追加正式声明</li>
+                    <li>curl summer of bliss 6/15 HN #4 402pt/4h 21:00 是否仍 hot：维护者 Reddit / Hacker News / Twitter 二阶反应 + 6/1 GitHub Copilot token 计量改革 + 6/15 curl summer of bliss 14 天配套"两步棋"是否有第三步（开源项目陆续"放假" / "提价"）</li>
+                    <li>Apple Foundation Models 6/8 → 6/15 仍 HN #15 21:00 持续 hot：开发者社区对"三层混合架构"的二级反应 / iOS 26 6/16 GM seed 是否有 Foundation Models 集成演示</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：智通财经 6/15 17:27 港股收市 | 港股大模型概念股日报 6/15 17:56 | 智通财经 6/2 10:16 高盛上调联想目标价 14.8% 至 31 港元 | 港股异动 6/15 14:54 联想集团涨超 10% | 量子位/腾讯新闻 6/15 13:38 Anthropic "3 天后认怂"完整报道 | 智通财经 6/15 13:33 智谱港交所自愿公告正式推出 GLM-5.2 | 财联社 6/15 11:47 全球 AI 大模型调用量 8 周连涨 44.6 万亿 Token | daniel.haxx.se 6/15 curl summer of bliss 博客 | HN #4 402pt/148c 4.0h | HN #15 Apple Foundation Models 139pt/40c 5.1h | HN Firebase API top stories 实时拉取 18:00 UTC 6/15 | Apple Developer Documentation FoundationModels | CSDN 6/10 苹果 AI 全栈技术架构与落地实现路径 | Fortune 6/14 Beatrice Nolan Anthropic 完整复盘 | Semafor 6/13 Reed Albergotti | Nextgov 6/13 David DiMolfetta | 智谱 02513.HK 港交所自愿公告 6/15 13:33 | 腾讯新闻 6/15 13:33 | HN #48533114 6/15 04:14 staff 赴白宫预告 | HN #48533504 6/14 SE Gyges "Did Anthropic ask for this?" 49pt</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-15 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
