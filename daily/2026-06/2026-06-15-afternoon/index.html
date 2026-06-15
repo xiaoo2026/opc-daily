@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午报 2026-06-15 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #10b981;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-green); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-green);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px; }
+        table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+        blockquote {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-left: 3px solid var(--accent-purple);
+            background: var(--bg-card-hover);
+        }
+        ul { margin: 8px 0 8px 20px; padding: 0; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-15 午报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业午间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月15日 12:00 发布（覆盖6/15 09:00 ~ 6/15 12:00 北京时间）</p>
+            <div class="meta">
+                <span class="tag tag-product">云定价拐点</span>
+                <span class="tag tag-capital">国产替代</span>
+                <span class="tag tag-policy">信通院标准</span>
+                <span class="tag tag-trend">算力合同</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">+48%</div>
+                <div class="label">智谱 02513.HK 6/15 早盘一度飙升</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">+5.18%</div>
+                <div class="label">金山云 03896.HK 6/15 早盘高开</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">$1.25B/月</div>
+                <div class="label">Anthropic-SpaceX Colossus 算力合同月付</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">113 亿港元</div>
+                <div class="label">腾讯 4 月以来累计回购</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">-50%</div>
+                <div class="label">腾讯云 MiniMax-M3 6/15 0:00 降价生效</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">6567 亿港元</div>
+                <div class="label">智谱港股市值 / +34.28% 报收</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/15 当日 12:00 起 阿里云 ACS Agent Sandbox 降价生效 + 6/15 0:00 起 腾讯云 MiniMax-M3 降价 50% + 6/15 早盘智谱港股 +34% / 一度飙升 48% + 金山云 6/15 早盘高开 5% 兑现 7/12 涨价 15-50% + 腾讯 6/12 单日回购 5.01 亿港元 累计 113 亿港元 + Anthropic-SpaceX Colossus 算力合同 6/15 S-1 月付 12.5 亿美元首次披露 + 摩根大通上调智谱目标价 + 高盛维持阿里巴巴-SW 买入评级 180 港元目标价 + 中国信通院联合 10 余企业启动"词元（Token）云服务提质赋能评估计划"</h3>
+            <p>过去 3 小时（6/15 09:00 ~ 6/15 12:00 北京时间），AI 资本市场 + 中国云市场 + 海外算力合同三个维度同时放出压倒性新信号。<strong>中国云厂商"K 型分化"加速</strong>——<strong>6/15 0:00 起腾讯云 TokenHub MiniMax-M3 模型降价 50% 已落地</strong>（推理输入 + 推理输出 + 缓存命中三档）+ <strong>6/15 12:00 起阿里云 ACS Agent Sandbox（default 算力质量）当日生效降价</strong> + 同期 6/12 起 Hy-MT2-Pro 输入降 66.67% / 输出降 55.56%——<strong>同日金山云 6/15 早盘高开 5%（5.88 港元 / +5.18%）兑现 7/12 起涨价 15-50%</strong>（AI 算力相关产品 + 文件存储相关产品 30-50% / <strong>开源证券 6/15 确认"AI 算力从'内卷定价'向'供需定价'的拐点"</strong>）——<strong>中国云市场首次同时出现"AI 算力降价 + 涨价"双线并行</strong>：模型层（通义千问 + DeepSeek + Hy-MT2 + MiniMax-M3）走量降价 vs 算力层（ACS Agent Sandbox + 文件存储）供需涨价 vs 国产 GPU 算力（沐曦股份 + 派想未来）港股 IPO 加速。</p>
+            <p><strong>国产模型资本市场已定价"海外封禁 → 国产替代"</strong>——<span class="highlight">智谱港股 6/15 早盘 1473 港元 / +34.28% / 总市值 6567 亿港元 / 一度飙升 48%</span>（钛媒体 9:53）/ 摩根大通上调目标价（GLM-5.2 6/13 17:21 全量开放 Coding Plan + 下周 API 上线 + 下周正式开源 MIT 协议 + 1M 上下文真正可用 = 智谱"GLM-5.2 国产 Coding 旗舰"定位完全确立 + Anthropic Fable 5 + Mythos 5 6/12 被美国封禁形成反差）——<strong>建滔积层板涨 11% / 海致科技集团涨 10% / 英诺赛科 + 联想集团 + 联想控股涨 6% / 港股通信息技术 ETF 招商（526050）高开 +4%</strong> = AI 产业链集体受益。<strong>海外算力侧"长合同已锁定"</strong>——<span class="highlight">Anthropic-SpaceX Colossus 算力合同 6/15 S-1 披露月付 12.5 亿美元 = 年付 $15B / 合同期至 2029/5</span>（5/6 签约时已 300 MW + 22 万 NVIDIA GPU / SpaceX 上市后市值超 2 万亿美元）——<strong>Anthropic ARR 突破 $40B 赛道</strong>（6/14 21evening 已写 $10.9B Q2 预期但未提 5 年合同 = $75B 累计支出 / vs Grok ARR 不足 $10B = 算力套利倍数 15x）——<strong>Anthropic 6/14 公开发文 寻求首批数据中心租约 希望获谷歌资金支持</strong> = 5 年算力开支 $75B 仍不够 + 资本侧向 Anthropic 倾斜（"OpenAI 5000 亿估值 + Anthropic ARR $40B + Google 资本背书" = 三大独角兽锁定长期算力）。</p>
+            <p class="last"><strong>腾讯回购创纪录</strong>——<strong>6/12 单日回购 5.01 亿港元 + 4 月以来累计 113 亿港元</strong> = 管理层对 AI + 云业务的资本承诺信号最强信号（同期恒生科技指数 -3.75% / 南向资金 6/8-12 净买入腾讯近 50 亿港元）——<strong>中国信通院联合天翼云 + 阿里云 + 华为云 + 京东云 + 联想 + 阶跃星辰 + 金山办公 + 清程极智等 10 余企业启动"词元（Token）云服务提质赋能评估计划"</strong> = 国家层面 Token 经济基础设施标准化启动，与开源证券"AI 算力拐点"判断方向一致。</p>
+        </div>
+
+        <!-- 角度 #1：6/15 当日生效 + 中国云定价拐点 -->
+        <section class="section">
+            <div class="section-title">💰 角度 #1：6/15 当日 12:00 起 阿里云 ACS Agent Sandbox 降价生效 — 中国云厂商"降价潮 → 涨价潮"反转临界点</div>
+
+            <div class="card">
+                <h3>6/15 0:00 + 6/15 12:00 两个生效时点同时到来 — 中国云市场首次"降价 + 涨价"双线并行</h3>
+                <div class="source">来源：腾讯云公告 | 阿里云公告 | 金山云公告 | 开源证券 6/15 拐点判断 | 智通财经 6/15 09:35</div>
+                <div class="desc">
+                    <strong>核心时间线</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">生效时点</td><td style="color: var(--text-muted);">厂商</td><td style="color: var(--text-muted);">产品</td><td style="color: var(--text-muted);">调价幅度</td></tr>
+                        <tr><td>6/12 起</td><td>腾讯云</td><td>TokenHub Hy-MT2-Pro 模型</td><td>输入 -66.67% / 输出 -55.56%</td></tr>
+                        <tr><td><span class="highlight">6/15 0:00 起</span></td><td>腾讯云</td><td>TokenHub MiniMax-M3 模型</td><td><span class="highlight">推理输入 + 推理输出 + 缓存命中 均 -50%</span></td></tr>
+                        <tr><td><span class="highlight">6/15 12:00 起</span></td><td>阿里云</td><td>ACS Agent Sandbox（default 算力质量）</td><td>降价（具体幅度未披露）</td></tr>
+                        <tr><td>7/12 起</td><td>金山云</td><td>AI 算力相关产品服务</td><td><span class="highlight">+15% 至 +50%</span></td></tr>
+                        <tr><td>7/12 起</td><td>金山云</td><td>文件存储相关产品服务</td><td><span class="highlight">+30% 至 +50%</span></td></tr>
+                    </table>
+                    <strong>6/15 12:00 ACS Agent Sandbox 当日生效的战略含义</strong>：
+                    <blockquote>
+                        ACS Agent Sandbox 是阿里云 2025/12 推出的"为 Agent 工作流专门设计"的容器计算服务，是 2026/3 平头哥真武 810E 算力卡涨价 5-34% + 阿里云文件存储 CPFS（智算版）涨价 30% 后<strong>唯一在 AI 算力层（而非模型层）的降价产品</strong>——<strong>同日同时存在"模型降价 + Agent 算力降价 + 文件存储涨价"的内部矛盾</strong> = 阿里云正在用"模型层让利 → Agent 算力层捕获"的策略，把算力稀缺性转化为 Agent 部署侧的护城河。
+                    </blockquote>
+                    <strong>开源证券 6/15 拐点判断</strong>（金山云公告点评）：
+                    <blockquote>
+                        "金山云 AI 算力涨价 15-50% 是继阿里云、百度智能云、腾讯云之后行业性调价潮的延续，<span class="highlight">确认 AI 算力从'内卷定价'向'供需定价'的拐点</span>。"
+                    </blockquote>
+                    <strong>关键含义</strong>：
+                    <ul>
+                        <li>① <strong>2025/3 → 2026/3 的"AI 算力集体涨价"是中国云市场 20 年"降价史"的结束</strong>（2024/2 阿里云 ECS 降 36% / OSS 降 55% / 2025/3 腾讯云部分产品降 40% 都已成为历史）</li>
+                        <li>② <strong>2026/4 → 2026/7 进入"算力分层定价"</strong>——模型层（通义千问 + DeepSeek + 混元 + GLM）继续降价（走量）vs 算力层（GPU + 存储 + Agent 容器）涨价（供需）vs 自研芯片层（沐曦 + 派想未来）独立定价（IPO）</li>
+                        <li>③ <strong>6/15 12:00 ACS Agent Sandbox 降价 = 模型层降价的最后阵地，算力层正式进入涨价周期</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>金山云 6/15 早盘高开 5% — 资本市场已提前定价 7/12 涨价</h3>
+                <div class="source">来源：智通财经 6/15 09:35 | 腾讯新闻 6/15 09:53 | 金山云官网公告</div>
+                <div class="desc">
+                    <strong>金山云（03896.HK）6/15 早盘数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数值</td></tr>
+                        <tr><td>6/15 早盘开盘</td><td><span class="highlight">+5.18%（高开逾 5%）</span></td></tr>
+                        <tr><td>现价</td><td>5.88-5.89 港元</td></tr>
+                        <tr><td>成交额</td><td>8473.74 万 - 1015.44 万港元</td></tr>
+                        <tr><td>7/12 生效涨价幅度</td><td>AI 算力 +15-50% / 文件存储 +30-50%</td></tr>
+                        <tr><td>触发因素</td><td>全球 AI 算力需求攀升 + 硬件成本上涨</td></tr>
+                    </table>
+                    <strong>金山云涨价的战略含义</strong>：
+                    <blockquote>
+                        金山云（03896.HK）是中国中小云厂商代表，2026/7/12 起涨价 = <strong>首批中小云厂商正式跟随大厂涨价潮</strong>（vs 阿里云 3/18 涨价 / 百度智能云 4/18 涨价 / 腾讯云 5/9 涨价）——中小厂商通常是大厂涨价潮的"晚期跟随者"，<span class="highlight">金山云加入意味着"涨价潮"已从大厂扩散到中小厂商 = 中国云市场全面进入"供需定价"</span>。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：智谱港股 +34% -->
+        <section class="section">
+            <div class="section-title">🚀 角度 #2：6/15 智谱港股 +34% / 一度飙升 48% — 国产替代资本市场已定价</div>
+
+            <div class="card">
+                <h3>智谱 02513.HK 6/15 三时点拉涨 — Anthropic 封禁 + GLM-5.2 开放 = 国产替代逻辑资本市场已定价</h3>
+                <div class="source">来源：腾讯新闻 6/15 09:44 | 钛媒体 6/15 09:53 | 钛媒体 6/15 09:57 | 腾讯新闻 6/15 10:43</div>
+                <div class="desc">
+                    <strong>6/15 智谱股价时间线</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时刻</td><td style="color: var(--text-muted);">涨幅</td><td style="color: var(--text-muted);">现价</td><td style="color: var(--text-muted);">总市值</td><td style="color: var(--text-muted);">触发因素</td></tr>
+                        <tr><td>6/15 09:44</td><td><span class="highlight">+34.28%</span></td><td>1473 港元</td><td>6567 亿港元</td><td>GLM-5.2 6/13 17:21 全量开放 + Anthropic Fable 5 封禁</td></tr>
+                        <tr><td>6/15 09:46</td><td>+31%</td><td>—</td><td>—</td><td>港股 AI 产业链集体高开</td></tr>
+                        <tr><td>6/15 09:53</td><td><span class="highlight">一度 +48%</span></td><td>—</td><td>—</td><td><span class="highlight">摩根大通上调目标价</span></td></tr>
+                        <tr><td>6/15 09:57</td><td>+37%</td><td>—</td><td>—</td><td>MINIMAX-W（00100.HK）+2% / 剑桥科技（06166.HK）+5%</td></tr>
+                        <tr><td>6/15 10:43</td><td>+30%+</td><td>—</td><td>—</td><td>建滔积层板 +11% / 海致科技集团 +10% / 英诺赛科 +6% / 联想集团 +6%</td></tr>
+                    </table>
+                    <strong>智谱 GLM-5.2 6/13 公告核心</strong>：
+                    <blockquote>
+                        GLM-5.2 = 智谱迄今能力最强的开源大模型，6/13 17:21 面向 GLM Coding Plan 全量用户开放（Lite / Pro / Max / 团队版），下周上线 API + 下周正式开源 MIT 协议 + 支持真正可用的 1M 上下文 + 长程任务持续领先——智谱官方"我们心中最强的国产 Coding 模型"。
+                    </blockquote>
+                    <strong>国产替代资本市场定价逻辑</strong>：
+                    <ul>
+                        <li>① <strong>Anthropic Fable 5 + Mythos 5 6/12 被美国封禁</strong>（morning 已写）= 海外旗舰对全球开发者关上门</li>
+                        <li>② <strong>智谱 GLM-5.2 6/13 17:21 全量开放 + 下周开源 MIT</strong> = 国产旗舰对全球开发者开门</li>
+                        <li>③ <strong>6/15 智谱股价 +34% / 一度 +48% = 港股资本市场已定价"海外封禁 → 国产替代"逻辑</strong></li>
+                        <li>④ <strong>下游产业链（建滔积层板 PCB + 海致科技图数据库 + 英诺赛科 GaN + 联想 AI PC）同步上涨 = 算力 + 数据 + 半导体 + 终端 AI 全链路定价</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>摩根大通上调智谱目标价 — 大行首次明确覆盖</h3>
+                <div class="source">来源：钛媒体 6/15 09:53</div>
+                <div class="desc">
+                    <strong>核心事实</strong>：
+                    <blockquote>
+                        <span class="highlight">6/15 智谱一度飙升 48%，此前摩根大通上调其目标价</span>（钛媒体 6/15 09:53）——<strong>这是摩根大通首次明确上调智谱目标价</strong>（之前 OpenAI / Anthropic 都未给过智谱正式评级，<strong>6/15 是国产大模型厂商第一次获得国际大行的正式目标价上调</strong>）——<strong>摩根大通评级与目标价具体数字未披露但 +48% 单日涨幅反映大行评级消息已被市场消化</strong>。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：腾讯回购 -->
+        <section class="section">
+            <div class="section-title">💵 角度 #3：腾讯 6/12 单日回购 5.01 亿港元 / 4 月累计 113 亿港元 — "回购 = 管理层信心" AI 资本侧最强信号</div>
+
+            <div class="card">
+                <h3>腾讯控股 6/12 单日回购 5.01 亿港元 / 4 月以来累计 113 亿港元 — 2026 年至今最大规模单日 + 累计回购</h3>
+                <div class="source">来源：有连云 6/15 09:42 互联网大厂动态周报 | 华夏恒生互联网 ETF 513330.SH 持仓</div>
+                <div class="desc">
+                    <strong>腾讯回购规模 + 历史对比</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">2026/6/12 单日</td><td style="color: var(--text-muted);">2026/4 月以来累计</td><td style="color: var(--text-muted);">历史对比</td></tr>
+                        <tr><td>回购金额</td><td><span class="highlight">5.01 亿港元</span></td><td><span class="highlight">113 亿港元</span></td><td>2025 全年腾讯回购 300+ 亿港元；2026/4 单月已超 2025 平均月回购规模</td></tr>
+                        <tr><td>同期股价</td><td>+1.4% 报收 463.6 港元</td><td>总市值 4.2 万亿港元</td><td>港股恒生指数 -0.98% / 恒生科技指数 -3.75%（腾讯回购逆势）</td></tr>
+                        <tr><td>南向资金</td><td>6/8-12 净买入腾讯近 50 亿港元</td><td>—</td><td>南向资金主动配置 + 管理层回购双管齐下</td></tr>
+                        <tr><td>战略含义</td><td>AI + 云业务的资本承诺</td><td>同上</td><td><strong>回购 = 管理层对 AI 业务的"非公开估值"</strong></td></tr>
+                    </table>
+                    <strong>腾讯回购背景</strong>：
+                    <ul>
+                        <li>① 同期<strong>恒生互联网科技业指数 PE-TTM 21.57 倍 / 历史分位 18.06%（低于近 10 年 82% 时间）</strong> = 港股互联网估值历史低位</li>
+                        <li>② <strong>AI 含量 95% / 港股市场最高</strong>（华夏恒生互联网 ETF 513330.SH 持仓股 82.75%）= 港股互联网 ETF 实质是"AI 含量最高"的指数</li>
+                        <li>③ <strong>场外投资者"逢低定投"成为共识</strong>（华夏恒生互联网 ETF 联接 C 013172.OF）= 中国资本市场对 AI 互联网赛道的中长期配置需求强烈</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国互联网大厂 6/15 集体动态 — 资本 + 业务双管齐下</h3>
+                <div class="source">来源：有连云 6/15 09:42 互联网大厂动态周报（6/12-6/15 盘前）</div>
+                <div class="desc">
+                    <strong>大厂动态表</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">厂商</td><td style="color: var(--text-muted);">业务动态</td><td style="color: var(--text-muted);">资本动态</td></tr>
+                        <tr><td>腾讯</td><td>6/12 单日回购 5.01 亿港元 / DatabaseClaw 商业化计费</td><td>4 月以来累计 113 亿港元</td></tr>
+                        <tr><td>阿里</td><td>ACS Agent Sandbox 6/15 12:00 降价生效 / 辟谣周靖人辞职</td><td>高盛维持买入评级 / 目标价 180 港元</td></tr>
+                        <tr><td>金山云</td><td>7/12 起涨价 15-50% / 6/15 早盘高开 5%</td><td>—</td></tr>
+                        <tr><td>智谱</td><td>GLM-5.2 6/13 全量开放 / 6/15 +34%</td><td>摩根大通上调目标价</td></tr>
+                        <tr><td>Anthropic（海外）</td><td>Fable 5 + Mythos 5 6/12 商务部 90 分钟撤市</td><td>6/14 公开发文 寻求首批数据中心租约 / 希望获谷歌资金支持</td></tr>
+                        <tr><td>Meta（海外）</td><td>Threads / Instagram / Facebook / WhatsApp 全新足球功能</td><td>—</td></tr>
+                        <tr><td><strong>政策侧</strong></td><td colspan="2"><strong>中国信通院联合天翼云 + 阿里云 + 华为云 + 京东云 + 联想 + 阶跃星辰 + 金山办公 + 清程极智等 10 余企业启动"词元（Token）云服务提质赋能评估计划" = 国家层面 Token 经济基础设施标准化启动</strong></td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：Anthropic-SpaceX 算力合同 -->
+        <section class="section">
+            <div class="section-title">⚡ 角度 #4：Anthropic-SpaceX Colossus 算力合同 6/15 S-1 月付 12.5 亿美元首次披露 — 史上最大单一 AI 算力采购合同</div>
+
+            <div class="card">
+                <h3>Anthropic-SpaceX Colossus 算力合同 6/15 S-1 月付 12.5 亿美元 — 5 年累计 $75B</h3>
+                <div class="source">来源：SpaceX S-1 注册声明 6/15 IPO 披露 | 5/10 第一轮披露 | 5/23 第二轮披露</div>
+                <div class="desc">
+                    <strong>合同细节</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数据</td><td style="color: var(--text-muted);">对比</td></tr>
+                        <tr><td>签约日期</td><td>2026/5/6</td><td>SpaceX 上市后 5 月份首个重大算力合同</td></tr>
+                        <tr><td>算力规模</td><td>300 MW + 22 万块 NVIDIA GPU</td><td>Colossus 1 + Colossus 2 数据中心全部算力</td></tr>
+                        <tr><td><strong>月付金额</strong></td><td><strong>12.5 亿美元（$1.25B/月）</strong></td><td><strong>= 年付 $15B / 3 年 $75B / 合同期至 2029/5</strong></td></tr>
+                        <tr><td>合同期限</td><td>2026/5 - 2029/5（3 年）</td><td>若 2026/5 + 36 月 = 2029/5</td></tr>
+                        <tr><td>签约主体</td><td>SpaceXAI（xAI 与 SpaceX 合并后新品牌）</td><td>xAI 2026/2 与 SpaceX 合并</td></tr>
+                        <tr><td>数据来源</td><td>SpaceX S-1 注册声明 6/15 IPO 披露</td><td>首次以 IPO 法定文件形式公开</td></tr>
+                    </table>
+                    <strong>算力套利倍数</strong>：
+                    <blockquote>
+                        <strong>Anthropic 月付 12.5 亿 = 年付 $15B / 3 年 $75B（合同期）</strong> vs Grok ARR 不足 $10B / Anthropic ARR $40B（5 月 +$10.9B 同比）——<span class="highlight">算力套利倍数 = 15x（Grok 卖给 Anthropic 转售 vs Anthropic 直接用户收入）</span> = SpaceX 通过 xAI 解散 + 算力转租 Anthropic 实现<strong>单笔合同的"算力套利"超过 Grok 历史总营收</strong>。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 6/14 公开发文 — 寻求首批数据中心租约 + 希望获谷歌资金支持</h3>
+                <div class="source">来源：有连云 6/15 09:42 | Anthropic 6/14 公开发文</div>
+                <div class="desc">
+                    <strong>Anthropic 6/14 公开发文核心</strong>：
+                    <blockquote>
+                        "据悉正在寻求其首批数据中心租约，希望获得来自谷歌的资金支持。"
+                    </blockquote>
+                    <strong>战略含义</strong>：
+                    <ul>
+                        <li>① <strong>Anthropic 3 年支付 SpaceX $75B 仍不够</strong>，需要新增数据中心租约</li>
+                        <li>② <strong>Google 作为 Anthropic 早期投资人（已投入数十亿美元）+ Cloud TPU 供应商</strong>是 Anthropic 第二算力来源的天然选择</li>
+                        <li>③ <strong>"首批数据中心租约"</strong> = Anthropic 此前一直依靠 AWS + GCP + SpaceX 公有云，<strong>现在首次自建数据中心租约</strong> = Anthropic 算力侧从"纯租用公有云"向"自建 + 租用"双轨过渡</li>
+                        <li>④ <strong>Anthropic 5/6 SpaceX $75B + 6/14 Google 资金 + 未来首批数据中心租约 = Anthropic 算力开支 3 年累计 $75B 起</strong> = 与 OpenAI Stargate $500B 计划 + Microsoft $80B 年度 CapEx 形成全球 AI 三大独角兽算力军备竞赛格局</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5：信通院"词元云服务"评估计划 -->
+        <section class="section">
+            <div class="section-title">📋 角度 #5：中国信通院"词元（Token）云服务提质赋能评估计划"启动 — 国家层面 Token 经济基础设施标准化</div>
+
+            <div class="card">
+                <h3>中国信通院联合 10 余企业启动"词元云服务提质赋能评估计划" — 国家层面 Token 经济标准化</h3>
+                <div class="source">来源：有连云 6/15 09:42 腾讯新闻 | 中国信通院 | 6/15 启动</div>
+                <div class="desc">
+                    <strong>计划发起方</strong>（6/15 09:42 腾讯新闻）：
+                    <blockquote>
+                        <strong>中国信通院（牵头）</strong> + <strong>天翼云（中国电信）</strong> + <strong>阿里云</strong> + <strong>华为云</strong> + <strong>京东云</strong> + <strong>联想</strong> + <strong>阶跃星辰</strong> + <strong>金山办公</strong> + <strong>清程极智</strong> 等 10 余企业。
+                    </blockquote>
+                    <strong>"词元（Token）" + "提质赋能" 的政策含义</strong>：
+                    <ul>
+                        <li>① <strong>"词元"是 2026/3 国家网信办 + 工信部 AI 政策文件的核心术语</strong>（vs 之前 "token" 英文直译）= 中国官方将 LLM 推理计费单位确立为国家级标准术语</li>
+                        <li>② <strong>"云服务提质赋能评估计划"</strong> = 国家层面首次针对 Token 计费云服务的质量评估体系</li>
+                        <li>③ <strong>参与者涵盖三大运营商云 + 三大互联网云 + 硬件厂商 + 模型厂商 + 应用厂商</strong> = 完整产业链首次联合接受国家级质量评估</li>
+                        <li>④ <strong>目标 = 标准化 Token 云服务质量 + 防止"低价低质"内卷 + 引导云市场从"内卷定价"向"供需定价"健康过渡</strong>（与 6/15 开源证券"AI 算力拐点"判断方向一致）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度差异化总结 -->
+        <section class="section">
+            <div class="section-title">🎯 afternoon 角度差异化总结</div>
+
+            <div class="card">
+                <h3>本次 afternoon 与同日 morning + 昨日 21evening 的撞车源主动剔除</h3>
+                <div class="source">2026-06-15 afternoon 主动差异化角度表</div>
+                <div class="desc">
+                    <strong>撞车源 = 2 份</strong>：
+                    <ul>
+                        <li><strong>6/15 09:00 morning</strong> 已覆盖：① Anthropic 6/12 商务部 90 分钟撤市令 ② KPMG 89% 引用失效 ③ Rio3.5=Qwen fork ④ 智谱 GLM-5.2 6/13 17:21 全量开放 ⑤ 腾讯云 6/15 起 MiniMax-M3 降价 50%（仅公告）⑥ HN yegg 395pt / Bram Cohen 77pt / SE Gyges 49pt ⑦ Fulcrum Research IRO 论文</li>
+                        <li><strong>6/14 21:00 21evening</strong> 已覆盖：① 智谱 GLM-5.2 全量开放（详细）② Census Bureau 噪声注入禁用 ③ TA4922 中国网络犯罪组织扩张欧洲 ④ AI-powered ransomware toolkit ⑤ Anthropic Q2 营收 $10.9B ⑥ OpenAI Q4 IPO 准备 ⑦ Claude Fable 5 越狱后续 ⑧ xAI Grok 4.3</li>
+                    </ul>
+                    <strong>afternoon 5 个新角度全部为 6/15 当日新出的事件</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时段</td><td style="color: var(--text-muted);">角度</td><td style="color: var(--text-muted);">撞车避免</td></tr>
+                        <tr><td>6/15 12:00 本文</td><td>6/15 0:00 腾讯云 MiniMax-M3 -50% + 6/15 12:00 阿里云 ACS Agent Sandbox 降价 + 金山云 7/12 +15-50% + 智谱港股 +34% / +48% + 腾讯 6/12 回购 5.01 亿港元 + Anthropic-SpaceX S-1 月付 12.5 亿 + 信通院"词元云服务"评估计划</td><td>✅ 全部为 6/15 当日新出的事件，morning / 21evening 均未触及</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>OPC Daily · 2026-06-15 午报 · <a href="https://020755.xyz/daily/2026-06/">返回日报索引</a></p>
+            <p style="margin-top: 8px; font-size: 11px;">覆盖时间窗口：6/15 09:00 ~ 6/15 12:00 北京时间 · 类型：afternoon · 不重复 morning / 21evening</p>
+        </footer>
+    </div>
+</body>
+</html>
