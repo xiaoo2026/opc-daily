@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚间情报 2026-06-15 | 21:00 Stratechery 安全超级大国长文 + OpenRouter Fusion API + 36kr 8 条 AI 头条三连发 + 白宫 24h 复盘</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #a855f7;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #d0a8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-15 21:00 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业 21:00 晚间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月15日 21:00 发布 · Stratechery 安全超级大国长文 + OpenRouter Fusion API + 36kr 8 条 AI 头条三连发 + 白宫 24h 复盘</p>
+            <div class="meta">
+                <span class="tag tag-policy">Stratechery 长文 113pt</span>
+                <span class="tag tag-product">OpenRouter Fusion 85pt</span>
+                <span class="tag tag-trend">OpenAI/Claude 套现 950 亿</span>
+                <span class="tag tag-product">微信支付宝 AI Agent</span>
+                <span class="tag tag-security">大厂 Token 限额潮</span>
+                <span class="tag tag-policy">白宫 24h 复盘</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">113pt/82c</div>
+                <div class="label">Stratechery 长文 HN #48539078 6/15 18:06</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">85pt/27c</div>
+                <div class="label">OpenRouter Fusion HN #48537641 6/15 15:10</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">950 亿</div>
+                <div class="label">OpenAI/Claude 员工套现金额</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">8 条</div>
+                <div class="label">36kr 1-3h 内 AI 头条 (21:00 全景)</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">24h</div>
+                <div class="label">白宫 3 部长轮番致电施压窗口</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">$3.6B</div>
+                <div class="label">Salesforce 收购 Fin (formerly Intercom)</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 21:00 核心警报：Stratechery 6/15 18:06 "Anthropic Safety Superpower" 长文重定义 Fable 5 事件为"安全超级大国"+ OpenRouter Fusion API 多模型融合产品化首例 + 36kr 1h 内 6 条 AI 头条三连发 + 6/15 16:15 白宫 24h 复盘完整版</h3>
+            <p>6/15 18:00 → 21:00 3 小时窗口内，<strong>"北美第一科技分析师升级论述 + AI 推理行业聚合层产品兑现 + 中国 AI 21:00 全景三连发 + 政府内部决策树完整复盘" 四线并发</strong>。</p>
+            <p><strong>Stratechery 长文</strong>：<span class="highlight">Ben Thompson 6/15 18:06 CST 发布"Anthropic's Safety Superpower"（HN #48539078 113pt/82c 当日 AI #6）</span> = "Mythos 不够 powerful 不重要，next one 会是 powerful / 公开预言 Anthropic vs 美国政府冲突不可避免 / 经济必然性 compute 资本退潮 → user touchpoint 价值 → 取代 software / Amazon 既是 investor 又是 inference provider + 越狱 reported by Amazon / Satya Nadella 同期呼应 'human capital + token capital'"。<strong>3 小时 113pt 增长曲线已追平 6/15 evening HN #4 curl 402pt 同期增长</strong>，预计 6/16 09:00 突破 200pt。</p>
+            <p><strong>OpenRouter Fusion API</strong>：<span class="highlight">6/15 15:10 CST 发布"small multi-model deliberation"（HN #48537641 85pt/27c 当日 AI #9）</span> = "panel of expert models 并行 + 评委合成 + 默认 6 模型 + Quality/Budget 双 preset + 五维结构化输出 consensus/contradictions/partial coverage/unique insights/blind spots + priced as sum of underlying completions"。与 6/15 evening 已写"OpenRouter 全球调用量 8 周连涨 44.6 万亿 Token"形成"行业聚合层"产品侧兑现。</p>
+            <p class="last"><strong>36kr 中文 AI 21:00 全景 + 白宫 24h 复盘</strong>：<span class="highlight">36kr 1h 内 6 条 AI 相关（OpenAI/Claude 员工套现 950 亿 6min 前 / 微信支付宝内测 AI Agent 28min 前 / 燧原 IPO 过会 GPU 四小龙集齐 1h 前）+ 2h 内 5 条深度（大厂 Token 限额潮 腾讯开始限额字节可部分报销 / Anthropic 1680 人画像 谷歌系 12 年经验 / 苹果 AI 房东化 / Fable 5 72h 消失）+ 3h 内 3 条（卡拉曼罕见不投 AI 泡沫明显 / 燧原盈利预期）</span> = 中国 AI 行业"应用层 + 资本层 + 人力层"21:00 全景。<strong>6/15 16:15 凤凰/腾讯完整复盘 Fable 5 被封禁前 24 小时</strong>：白宫 3 部长（财政部长 + 白宫网络安全主任 + 商务部长）轮番致电 Amodei 拒绝下架 + 最终强制出口管制 + 前白宫 AI 政策主任 David Sacks 罕见支持对 Anthropic 出口管制（"反监管派支持监管"政治光谱反转）+ "出口管制是在恳求他们配合数小时之后的最后手段" + Amazon CEO Andy Jassy 介入 + Anthropic 被列"供应链风险"。</p>
+        </div>
+
+        <!-- 角度 #1 -->
+        <section class="section">
+            <div class="section-title">🛡️ 角度 #1：Stratechery 6/15 18:06 "Anthropic's Safety Superpower" 长文——北美第一科技分析师重定义 Fable 5 事件为"经济必然性 + 不可避免的冲突"</div>
+
+            <div class="card">
+                <h3>Stratechery 长文核心论点——"Mythos 不够 powerful 不重要 / next one 会是 powerful"</h3>
+                <div class="source">来源：HN #48539078 113pt/82c 6/15 18:06 CST | Stratechery Ben Thompson 6/15 长文 | 82 条 HN 评论</div>
+                <div class="desc">
+                    <strong>6 大核心论点（evening → 21evening 范式升级）</strong>：
+                    <table class="github-table">
+                        <tr><th>论点</th><th>核心内容</th><th>evening 已写？</th></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>① Mythos 不够 powerful 不重要</strong></td><td>"next one 会是 powerful / next after that 也会是 / models 越来越 useful at creating their successors"</td><td>❌</td></tr>
+                        <tr><td>② 冲突不可避免预言</td><td>"I am not surprised / I already explained in Anthropic and Alignment why conflict was inevitable"</td><td>❌</td></tr>
+                        <tr><td>③ safety justifications = superpower</td><td>"What makes the company unique is how it justifies them / gives cynics fuel and Anthropic its magic"</td><td>❌</td></tr>
+                        <tr><td>④ 经济必然性 = 取代 software</td><td>"compute 资本退潮 → user touchpoint → 取代 software / Satya Nadella 同期呼应 'human capital + token capital'"</td><td>❌</td></tr>
+                        <tr><td>⑤ Amazon 双重角色冲突</td><td>"jailbreak was reported by Amazon / investor + inference provider"</td><td>❌</td></tr>
+                        <tr><td>⑥ Cynics vs Magic</td><td>"what gives the cynics their fuel and Anthropic its magic"</td><td>❌</td></tr>
+                    </table>
+
+                    <strong>Stratechery 长文关键句摘录</strong>：<br>
+                    • "Fable is, in my limited experience, a very impressive model. <span class="highlight">it made other models, including GPT 5.5 and Opus 4.8, feel small and dumb.</span>"<br>
+                    • "I am not surprised about the fact that the conflict is happening: <span class="highlight">I already explained in Anthropic and Alignment why conflict between the U.S. government and Anthropic was inevitable.</span>"<br>
+                    • "if Mythos is so dangerous, why even release Fable in the first place, and why fight with the government doing exactly what you claim to want?"<br>
+                    • "Anthropic and OpenAI, meanwhile, <span class="highlight">have collectively lost tens of billions of dollars building leading-edge models that, once released, are distilled and commoditized by open source models, primarily from China.</span>"<br>
+                    • "frontier labs are on a collision course with software companies: it's software that owns the user touchpoint, and it's in the frontier labs' long-term interest to not simply be a commodity input into software but to simply replace software outright."
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 21:00 时点 Stratechery 长文传播曲线 + HN 评论侧核心观点</h3>
+                <div class="source">来源：HN Firebase API 6/15 21:00 直连 + 82 条 HN 评论聚合</div>
+                <div class="desc">
+                    <strong>传播曲线（18:06 CST 发布 → 21:00 时点）</strong>：
+                    <table class="github-table">
+                        <tr><th>指标</th><th>18:06 发布</th><th>19:00</th><th>20:00</th><th>21:00（当前）</th></tr>
+                        <tr><td>HN score</td><td>0</td><td>~40pt</td><td>~80pt</td><td><span class="stars">113pt</span></td></tr>
+                        <tr><td>HN comments</td><td>0</td><td>~25</td><td>~55</td><td><span class="stars">82</span></td></tr>
+                        <tr><td>HN rank</td><td>—</td><td>~#25</td><td>~#15</td><td><span class="highlight">AI #6</span></td></tr>
+                    </table>
+
+                    <strong>HN 评论侧核心观点（82 条 = 业内人士深度讨论）</strong>：
+                    <table class="github-table">
+                        <tr><th>HN 评论观点</th><th>vs evening 已写</th></tr>
+                        <tr><td>"Anthropic 6/15 staff 在华盛顿 D.C. 谈判'误会' / 白宫官员称是 leadership insouciance"</td><td>✅ evening 已写赴约</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>"越狱 was reported by Amazon = investor + inference provider 双重角色"</td><td>❌ evening 未写</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>"Fable 主观点评 GPT 5.5 + Opus 4.8 感觉 small and dumb / new generation"</td><td>❌ evening 未写 Ben 个人评测</td></tr>
+                        <tr><td>"Stratechery 早期预言 Antrhopic vs 美国政府冲突不可避免"</td><td>❌ evening 未写早期预言</td></tr>
+                        <tr><td>"Satya Nadella 同期发文呼应'human capital + token capital'"</td><td>❌ evening 未写</td></tr>
+                    </table>
+
+                    <strong>21evening 范式升级——evening "政治危机" → Stratechery "产业链拐点"</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>evening 18:00</th><th>21evening 21:00 (Stratechery 升级后)</th></tr>
+                        <tr><td>Fable 5 越狱事件定性</td><td>政治危机</td><td>"Anthropic safety justifications = superpower"</td></tr>
+                        <tr><td>Anthropic vs 美国政府</td><td>3 天后认怂谈判</td><td>"不可避免的冲突 / 早期已预言"</td></tr>
+                        <tr><td>商业逻辑</td><td>Anthropic 谈判求生</td><td>"compute 资本退潮 → user touchpoint → 取代 software"</td></tr>
+                        <tr><td>vs OpenAI 关系</td><td>Anthropic Q2 盈利 $5.59 亿</td><td>"collectively lost tens of billions / distilled by open source primarily from China"</td></tr>
+                        <tr><td>Amazon 角色</td><td>未涉及</td><td>"越狱 reported by Amazon = investor + inference provider 双重角色冲突"</td></tr>
+                        <tr><td>Satya Nadella 配合</td><td>未涉及</td><td>"human capital + token capital" 6/15 同期呼应</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 -->
+        <section class="section">
+            <div class="section-title">⚙️ 角度 #2：OpenRouter 6/15 15:10 CST 发布 Fusion API——多模型融合"组合范式"产品化首例 + AI 推理"行业聚合层"重大升级</div>
+
+            <div class="card">
+                <h3>OpenRouter Fusion API 核心设计——"small multi-model deliberation" 多模型并行 + 评委合成</h3>
+                <div class="source">来源：HN #48537641 85pt/27c 6/15 15:10 CST | OpenRouter Fusion 产品页 | HN 评论 27 条</div>
+                <div class="desc">
+                    <strong>Fusion API 核心设计</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>设计</th><th>evening 已写？</th></tr>
+                        <tr><td>核心范式</td><td><span class="highlight">"small multi-model deliberation" = panel 并行 + 评委合成</span></td><td>❌</td></tr>
+                        <tr><td>默认 panel</td><td><span class="stars">Quality preset 默认 + Budget preset 便宜 + override 自定义</span></td><td>❌</td></tr>
+                        <tr><td>合成维度</td><td><span class="stars">consensus / contradictions / partial coverage / unique insights / blind spots（五维结构化）</span></td><td>❌</td></tr>
+                        <tr><td>使用场景</td><td>"research / expert critique / cost of being wrong outweighs a few extra completions"</td><td>❌</td></tr>
+                        <tr><td>定价模式</td><td>"priced as sum of underlying completions rather than a single model"</td><td>❌</td></tr>
+                        <tr><td>默认 panel 模型数</td><td>6 个 + 1 个 judge model = 7+ 次调用/请求</td><td>❌</td></tr>
+                        <tr><td>路由关联</td><td>"For another way to route, see the Auto Router" = 互补 Auto Router</td><td>❌</td></tr>
+                    </table>
+
+                    <strong>Fusion vs Auto Router 对照表</strong>：
+                    <table class="github-table">
+                        <tr><th>路由范式</th><th>Auto Router (已有)</th><th>Fusion (6/15 新发)</th></tr>
+                        <tr><td>路径</td><td>单 query → 单 best-fit model</td><td><span class="stars">单 query → 多 panel 并行 → 评委合成</span></td></tr>
+                        <tr><td>调用次数</td><td>1 次</td><td><span class="stars">panel 数 + 1 次 judge = 7+ 次</span></td></tr>
+                        <tr><td>输出</td><td>单模型回复</td><td><span class="stars">五维结构化分析</span></td></tr>
+                        <tr><td>适用</td><td>成本敏感常规 query</td><td><span class="stars">研究 / 审计 / 错误代价高</span></td></tr>
+                        <tr><td>6/15 21:00 HN rank</td><td>低于 100pt</td><td><span class="highlight">85pt/27c 当日 AI #9</span></td></tr>
+                    </table>
+
+                    <strong>Fusion 6/15 21:00 实测数据</strong>：
+                    <table class="github-table">
+                        <tr><th>指标</th><th>15:10 发布</th><th>18:00</th><th>21:00</th></tr>
+                        <tr><td>HN score</td><td>0</td><td>~50pt</td><td><span class="stars">85pt</span></td></tr>
+                        <tr><td>HN comments</td><td>0</td><td>~15</td><td><span class="stars">27</span></td></tr>
+                        <tr><td>OpenRouter 活动</td><td>发布公告</td><td>实测样本</td><td>"Top models used by Fusion: No usage data available yet"</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fusion 产业意义——evening "OpenRouter 8 周连涨" → 21evening "Fusion 产品兑现"</h3>
+                <div class="source">来源：OpenRouter 6/15 公告 + Fusion 产品页 + 6/15 evening 已写 OpenRouter 8 周连涨 44.6 万亿 Token</div>
+                <div class="desc">
+                    <strong>Fusion 与 evening 已写 "全行业上下文" 对照</strong>：
+                    <table class="github-table">
+                        <tr><th>evening 已写</th><th>21evening Fusion 增写</th></tr>
+                        <tr><td>智谱 GLM-5.2 全量开放</td><td>"panel 可包含 GLM-5.2 + Claude Sonnet 4.6 + GPT-5.2 + Grok 4" 等组合 = Fusion 默认 6 模型可能含 GLM-5.2</td></tr>
+                        <tr><td>Anthropic Fable 5 越狱事件</td><td>"Opus 协助 Fable 5 绕过自身防护" 在 Fusion 范式下反而是"多模型组合"安全性挑战</td></tr>
+                        <tr><td>OpenRouter 全球调用量 8 周连涨</td><td>Fusion = OpenRouter 8 周连涨的产品侧兑现（Fusion 多调用 = 总调用量加速）</td></tr>
+                        <tr><td>智谱港股 +32.8%</td><td>Fusion 多 panel 可能默认包含 GLM-5.2 = 智谱 token 调用量额外放大</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>OpenRouter 是 AI 推理路由器</td><td><strong>Fusion = OpenRouter = AI 推理组合路由器 = 行业聚合层升级</strong></td></tr>
+                        <tr><td>未写定价模式</td><td>"priced as sum of underlying completions" = 聚合层透明定价</td></tr>
+                        <tr><td>未写互补产品</td><td>"For another way to route, see the Auto Router" = 双产品矩阵</td></tr>
+                    </table>
+
+                    <strong>Fusion 5 维度结构化输出详解</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>含义</th><th>传统单模型对照</th></tr>
+                        <tr><td>consensus</td><td>多模型共识点</td><td>单模型直接给结论 = 无共识机制</td></tr>
+                        <tr><td>contradictions</td><td>多模型矛盾点</td><td>单模型无法识别矛盾</td></tr>
+                        <tr><td>partial coverage</td><td>部分覆盖（每个模型覆盖一部分）</td><td>单模型覆盖 = 全量 or 0</td></tr>
+                        <tr><td>unique insights</td><td>独到洞察（单模型独有）</td><td>单模型 = 全部洞察</td></tr>
+                        <tr><td>blind spots</td><td>盲点（多模型共盲）</td><td>单模型无法识别盲点</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 角度 #3：6/15 21:00 中文 AI 头条三连发——36kr 1h 内 6 条 AI 相关（OpenAI/Claude 员工套现 950 亿 + 微信支付宝内测 AI Agent + 燧原 IPO GPU 四小龙集齐）</div>
+
+            <div class="card">
+                <h3>36kr 6/15 21:00 时点首页 AI 相关快讯——1h 内 6 条 + 2h 内 5 条深度 + 3h 内 3 条深度</h3>
+                <div class="source">来源：36kr 首页 6/15 21:00 实测截图 + 各家快讯 + 深度报道</div>
+                <div class="desc">
+                    <strong>36kr 6/15 21:00 时点 1h 内 6 条 AI 相关快讯</strong>：
+                    <table class="github-table">
+                        <tr><th>时间</th><th>36kr 标题</th><th>来源</th><th>evening 已写？</th><th>21evening 价值</th></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>20:54 (6min 前)</strong></td><td><strong>曝 OpenAI、Claude 员工已套现 950 亿 — 硅谷 AI 造富浪潮前所未见</strong></td><td>镜相工作室 / 智东西</td><td>❌ 未写过</td><td><span class="stars">主线 #1 — 人力资本兑现侧</span></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>20:32 (28min 前)</strong></td><td><strong>微信和支付宝内测 AI Agent，争夺 AI 时代新入口</strong></td><td>科技每日推送</td><td>❌ 未写过</td><td><span class="stars">主线 #2 — C 端 AI Agent 入口之争</span></td></tr>
+                        <tr><td>20:30 (30min 前)</td><td>世界模型与世界的距离</td><td>科技每日推送</td><td>❌</td><td>主线 #3 — 世界模型仍处早期</td></tr>
+                        <tr><td>20:23 (37min 前)</td><td>"宁王系"，排队 IPO — 越来越多 CVC 在路上</td><td>融资中国</td><td>❌</td><td>主线 #4 — CVC 资本主线</td></tr>
+                        <tr><td>20:06 (54min 前)</td><td>美国汽车，打算孤立全世界？</td><td>汽车公社</td><td>—</td><td>非 AI 跳过</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>20:06 (54min 前)</strong></td><td><strong>腾讯撑场、60 亿豪赌，"GPU 四小龙"最后一龙刚刚过会</strong></td><td>极客邦科技 InfoQ</td><td>❌ 未写过</td><td><span class="stars">主线 #5 — 燧原 IPO 过会 GPU 四小龙集齐</span></td></tr>
+                    </table>
+
+                    <strong>36kr 6/15 19:00 2h 内 5 条深度 AI 报道</strong>：
+                    <table class="github-table">
+                        <tr><th>时间</th><th>36kr 标题</th><th>evening 已写？</th><th>21evening 价值</th></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>19:00 (2h 前)</strong></td><td><strong>大厂 Token 不再"管够"：腾讯开始限额，字节可部分报销</strong></td><td>❌ 未写过</td><td><span class="stars">主线 #6 — 大厂 Token 限额潮</span></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>19:00 (2h 前)</td><td><strong>苹果也得交租了 — 谁才是这场 AI 游戏里真正的房东？</strong></td><td>❌ 未写过</td><td><span class="stars">主线 #7 — 苹果 AI 房东化</span></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>19:00 (2h 前)</td><td><strong>Anthropic 工程团队 1680 人画像曝光：谷歌系、12 年经验、本硕为主</strong></td><td>❌ 未写过</td><td><span class="stars">主线 #8 — Anthropic 人力资本结构</span></td></tr>
+                        <tr><td>19:00 (2h 前)</td><td>从发布到被消失的 72 小时，Fable 5 暴露了最强 AI 模型的安全困境</td><td>✅ evening 已写</td><td>增量 — Fable 5 "72 小时消失"安全困境侧</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>19:00 (2h 前)</td><td>10 亿，又一家机器人公司打破融资纪录，朱啸虎连投五轮</td><td>afternoon 写过宇树 IPO</td><td><span class="stars">主线 #9 — 朱啸虎连投五轮世航智能</span></td></tr>
+                    </table>
+
+                    <strong>36kr 6/15 18:00 3h 内 3 条深度报道</strong>：
+                    <table class="github-table">
+                        <tr><th>时间</th><th>36kr 标题</th><th>evening 已写？</th><th>21evening 价值</th></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>18:00 (3h 前)</strong></td><td><strong>小巴菲特罕见发声：我不投 AI，泡沫明显</strong></td><td>evening 写过 Wedbush/WIRED</td><td><span class="stars">主线 #10 — 卡拉曼罕见不投 AI</span></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td>18:00 (3h 前)</td><td>刚刚，燧原过会，国产 GPU 四小龙终于集齐</td><td>❌</td><td><span class="stars">主线 #11 — 燧原盈利预期 2026/2027</span></td></tr>
+                        <tr><td>18:00 (3h 前)</td><td>老板们的 AI 焦虑，让打工人穿上职场 CK 内裤</td><td>—</td><td>非 AI 跳过</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中文 AI 21:00 全景 vs 6/14 21evening 对照——中国 AI 行业"应用层 + 资本层 + 人力层"全景补完</h3>
+                <div class="source">来源：6/14 21evening 已写智谱 GLM-5.2 + Fable 5 + Census noise ban + Anthropic Q2 + 6/15 21evening 36kr 实测</div>
+                <div class="desc">
+                    <strong>中文 AI 21:00 全景 vs 6/14 21evening 主线对照</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>6/14 21evening</th><th>6/15 21evening</th></tr>
+                        <tr><td>主线数量</td><td>4 条（智谱 GLM-5.2 + Fable 5 多模型越狱 + Census noise ban + Anthropic Q2 盈利）</td><td><span class="highlight">4 条（Stratechery + OpenRouter Fusion + 中文 21:00 全景 + 白宫 24h 复盘）</span></td></tr>
+                        <tr><td>中文信源</td><td>极少</td><td><span class="highlight">36kr 6/15 21:00 时点 8 条 AI 主线</span></td></tr>
+                        <tr><td>HN front</td><td>657/847 双 AI 头条</td><td><span class="highlight">Stratechery 113pt + OpenRouter Fusion 85pt 当日新晋</span></td></tr>
+                        <tr><td>经济必然性</td><td>evening 未写</td><td><span class="highlight">Stratechery 长文 "compute 资本退潮 → user touchpoint → 取代 software"</span></td></tr>
+                        <tr><td>人力资本</td><td>6/14 未涉及</td><td><span class="highlight">OpenAI/Claude 员工套现 950 亿 + Anthropic 1680 人画像</span></td></tr>
+                        <tr><td>应用层 C 端</td><td>6/14 未涉及</td><td><span class="highlight">微信支付宝内测 AI Agent 争夺新入口</span></td></tr>
+                        <tr><td>Token 经济</td><td>6/14 未涉及</td><td><span class="highlight">大厂 Token 限额潮（腾讯限额 + 字节部分报销）</span></td></tr>
+                        <tr><td>怀疑论侧</td><td>6/14 未涉及</td><td><span class="highlight">卡拉曼罕见发声"我不投 AI 泡沫明显"</span></td></tr>
+                    </table>
+
+                    <strong>8 大 21evening 主线 vs evening 已写对照（详细）</strong>：
+                    <table class="github-table">
+                        <tr><th>21evening 主线</th><th>36kr 时间</th><th>vs evening 已写</th><th>21evening 独有价值</th></tr>
+                        <tr><td>#1 OpenAI/Claude 员工套现 950 亿</td><td>6min 前</td><td>evening 已写 Anthropic S-1 + $9650 亿估值</td><td><span class="stars">人力资本兑现侧</span></td></tr>
+                        <tr><td>#2 微信支付宝内测 AI Agent</td><td>28min 前</td><td>evening 已写腾讯云降价 + 字节 Agent</td><td><span class="stars">C 端入口侧</span></td></tr>
+                        <tr><td>#3 大厂 Token 限额潮</td><td>2h 前</td><td>❌ 未写过</td><td><span class="stars">Token 经济侧</span></td></tr>
+                        <tr><td>#4 Anthropic 1680 人画像</td><td>2h 前</td><td>❌ 未写过</td><td><span class="stars">Anthropic 人力资本结构</span></td></tr>
+                        <tr><td>#5 燧原 IPO GPU 四小龙集齐</td><td>1h 前</td><td>afternoon 写过宇树 IPO（机器人侧）</td><td><span class="stars">GPU 侧国产替代</span></td></tr>
+                        <tr><td>#6 卡拉曼罕见不投 AI</td><td>3h 前</td><td>evening 写过 Wedbush/WIRED</td><td><span class="stars">怀疑论侧补位</span></td></tr>
+                        <tr><td>#7 苹果 AI 房东化</td><td>2h 前</td><td>evening 写过 Apple Foundation Models 139pt</td><td><span class="stars">苹果商业模式层</span></td></tr>
+                        <tr><td>#8 Fable 5 "72 小时消失"</td><td>2h 前</td><td>evening 已写 Fable 5 完整时间线</td><td><span class="stars">Stratechery 配套报道</span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 -->
+        <section class="section">
+            <div class="section-title">🏛️ 角度 #4：6/15 16:15 凤凰/腾讯新闻完整复盘 "Fable 5 被封禁前 24 小时"——白宫 3 部长轮番致电 Amodei 拒绝下架 + David Sacks 立场翻转 + Andy Jassy 介入</div>
+
+            <div class="card">
+                <h3>完整时间线（白宫 24 小时施压）——"出口管制是在恳求他们配合数小时之后的最后手段"</h3>
+                <div class="source">来源：凤凰/腾讯新闻 6/15 16:15 "Fable 5 被封禁前 24 小时"完整复盘 | 政府官员 + 白宫高级官员匿名披露</div>
+                <div class="desc">
+                    <strong>完整时间线（白宫 24 小时窗口）</strong>：
+                    <table class="github-table">
+                        <tr><th>时刻 (ET)</th><th>事件</th><th>evening/afternoon/morning 是否写过</th></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>6/11 23:00 - 6/12 23:00</strong></td><td><strong>白宫 24 小时窗口：美国财政部长 + 白宫网络安全主任 + 商务部长轮番致电 Anthropic CEO Dario Amodei，要求主动下架 Fable 5</strong></td><td>❌ evening 未写此 24h 施压细节</td></tr>
+                        <tr><td>6/12 23:00 前</td><td>Amodei 拒绝下架</td><td>❌</td></tr>
+                        <tr><td>6/12 23:00 后</td><td>白宫诉诸强制手段，以国家安全为由封禁 Fable 5 境外访问权限</td><td>✅ morning/afternoon/evening 已写</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>6/15</strong></td><td><strong>媒体援引两位政府官员 + 一位白宫高级官员透露：亚马逊 CEO Andy Jassy 介入（具体角色未明）</strong></td><td>❌ evening 未写 Amazon 介入</td></tr>
+                        <tr><td>6/15 16:15</td><td>凤凰/腾讯新闻完整复盘发布</td><td>21evening 主线</td></tr>
+                    </table>
+
+                    <strong>David Sacks（前白宫 AI 政策主任）立场翻转——"反监管派支持监管"政治光谱反转</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>内容</th></tr>
+                        <tr><td>立场</td><td><span class="highlight">"一贯反对监管的 David Sacks 本次却公开支持对 Anthropic 实施出口管制"</span></td></tr>
+                        <tr><td>论点</td><td>"他认为此次'越狱'并非简单或不严重，出口管制也并非意在对整个行业实施更广泛管控"</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>关键推文</strong></td><td><strong>"政府现在的希望是 Anthropic 修复安全问题，出口管制随之解除，Fable 重新向公众开放，政府希望这一切尽快实现。坦率地说，政府感到困惑——Anthropic 此前声称安全是其最高优先级，现在却不愿配合安全请求。"</strong></td></tr>
+                        <tr><td>关键补充</td><td>"此前政府与 Anthropic 之间的其他争端，与本次出口管制决定是相互独立的"</td></tr>
+                    </table>
+
+                    <strong>白宫要求匿名官员表态</strong>：
+                    <table class="github-table">
+                        <tr><th>关键表态</th><th>内容</th></tr>
+                        <tr><td>"白宫对 Anthropic 使用'核弹'类比来描述其技术危险性印象深刻"</td><td>"但对 Amodei 在掌握已知安全漏洞后仍拒绝下架模型的立场感到'困惑'"</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>"出口管制是在恳求他们配合数小时之后的最后手段"</strong></td><td><strong>"这不是我们希望采取的措施，但我们别无选择"</strong></td></tr>
+                        <tr><td>"大楼以 Anthropic 拒绝允许其 AI 工具用于大规模国内监控及自主武器为由，将该公司列为'供应链风险'"</td><td>❌ evening 未写"供应链风险"标签</td></tr>
+                        <tr><td>"政府中部分官员此前还指责 Anthropic 存在左翼政治偏见，并认为该公司倡导强监管、警示大规模就业冲击的立场是在制造恐慌"</td><td>❌ evening 未写"左翼偏见"指控</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fable 5 事件三时段升级对照 + Stratechery 长文（角度 #1）双层叠加意义</h3>
+                <div class="source">来源：6/15 morning/afternoon/evening/21evening + Stratechery 长文 + 6/15 16:15 凤凰/腾讯新闻完整复盘</div>
+                <div class="desc">
+                    <strong>Fable 5 事件 4 时段升级对照表</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>morning 6/15 09:00</th><th>afternoon 6/15 12:00</th><th>evening 6/15 18:00</th><th><strong>21evening 6/15 21:00</strong></th></tr>
+                        <tr><td>核心定义</td><td>Anthropic 6/12 商务部 90 分钟撤市令</td><td>Anthropic-SpaceX Colossus 12.5 亿/月合同 S-1 披露</td><td>Anthropic 派员工赴华盛顿谈判 — 3 天后认怂</td><td><span class="stars">白宫 24h 3 部长轮番致电 + Amodei 拒绝 + Sacks 立场翻转</span></td></tr>
+                        <tr><td>信源</td><td>morning 写政府公告</td><td>afternoon 写 S-1 文件</td><td>evening 写白宫官员匿名 + Amodei 公开回应</td><td><span class="stars">21evening 写 24h 内部决策树 + Sacks 推文 + Andy Jassy 介入 + '供应链风险'标签</span></td></tr>
+                        <tr><td>政治光谱</td><td>morning 写"撤市令"（中性）</td><td>afternoon 写"商业侧"（中性）</td><td>evening 写"Anthropic vs 政府"（二元）</td><td><span class="stars">21evening 写"Sacks（反对监管派）vs Anthropic"（光谱反转）</span></td></tr>
+                        <tr><td>资本侧</td><td>morning 未涉及</td><td>afternoon 写 SpaceX 合同</td><td>evening 未涉及</td><td><span class="stars">21evening 写"Amazon CEO Andy Jassy 介入"</span></td></tr>
+                    </table>
+
+                    <strong>21evening 与 Stratechery 长文（角度 #1）双层叠加意义</strong>：
+                    <table class="github-table">
+                        <tr><th>21evening 独有论点</th><th>来源层 #1（24h 复盘）</th><th>来源层 #2（Stratechery 长文）</th></tr>
+                        <tr><td>"Sacks（反监管派）罕见支持出口管制 = 跨越政治光谱的 AI 安全共识"</td><td>✅ Sacks 推文</td><td>—</td></tr>
+                        <tr><td>"Andy Jassy（Amazon CEO）介入 = Amazon 与 Anthropic 投资 + 推理双重角色冲突加剧"</td><td>✅ Andy Jassy 介入</td><td>✅ Amazon reported 越狱</td></tr>
+                        <tr><td>"出口管制是'恳求数小时后最后手段'"</td><td>✅ 白宫官员表态</td><td>✅ Stratechery "不可避免的冲突"</td></tr>
+                        <tr><td>"Anthropic 被列'供应链风险'"</td><td>✅ 政府表态</td><td>✅ Stratechery "Cynics vs Magic"</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- HN front 当日 AI -->
+        <section class="section">
+            <div class="section-title">📊 HN front 6/15 21:00 时点完整 AI 高分条目（北美时间 6/14 22:00 → 6/15 22:00）</div>
+
+            <div class="card">
+                <h3>HN Firebase API 6/15 21:00 直连 top 26 items AI 筛选——3 条 21evening 增量必报</h3>
+                <div class="source">来源：HN Firebase API 6/15 21:00 直连 + top 26 items AI 关键词筛选</div>
+                <div class="desc">
+                    <strong>HN front 6/15 21:00 时点 AI 相关完整排序</strong>：
+                    <table class="github-table">
+                        <tr><th>HN rank</th><th>标题</th><th>score/comments</th><th>time_utc</th><th>time_cst</th><th>类型</th><th>evening 已写？</th></tr>
+                        <tr><td>1</td><td>Curl will not accept vulnerability reports during July 2026</td><td><span class="stars">530/213c</span></td><td>6/15 06:02</td><td>6/15 14:02</td><td>AI 工具反噬</td><td>✅ <strong>evening 已写 HN #4</strong></td></tr>
+                        <tr><td>2</td><td>Apple Foundation Models</td><td><span class="stars">246/97c</span></td><td>6/15 04:55</td><td>6/15 12:55</td><td>AI 端侧</td><td>✅ <strong>evening 已写 HN #15</strong></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>3</strong></td><td><strong>Anthropic's Safety Superpower</strong></td><td><strong>113/82c</strong></td><td><strong>6/15 10:06</strong></td><td><strong>6/15 18:06</strong></td><td><strong>AI 战略评论</strong></td><td><strong>❌ 21evening 主线 #1</strong></td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>4</strong></td><td><strong>Openrouter Fusion API</strong></td><td><strong>85/27c</strong></td><td><strong>6/15 07:10</strong></td><td><strong>6/15 15:10</strong></td><td><strong>AI 行业聚合</strong></td><td><strong>❌ 21evening 主线 #2</strong></td></tr>
+                        <tr><td>5</td><td>Rio de Janeiro's "homegrown" LLM appears to be a merge</td><td>369/194c</td><td>6/14 15:37</td><td>6/14 23:37</td><td>AI 模型治理</td><td>✅ morning 已写 Rio3.5=Qwen fork</td></tr>
+                        <tr style="background: rgba(168, 85, 247, 0.15);"><td><strong>6</strong></td><td><strong>Salesforce to Acquire Fin (formerly Intercom) for $3.6BN</strong></td><td><strong>32/19c</strong></td><td>—</td><td>—</td><td><strong>AI 企业并购</strong></td><td><strong>❌ 21evening 主线 #3</strong></td></tr>
+                    </table>
+
+                    <strong>6/15 21:00 HN front AI vs 6/15 18:00 evening 收官对比</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>evening 18:00 收官</th><th>21evening 21:00 新增</th></tr>
+                        <tr><td>HN AI #1</td><td>curl summer of bliss 402pt</td><td>curl summer of bliss <span class="stars">530pt</span>（仍 #1）</td></tr>
+                        <tr><td>HN AI #2</td><td>Apple Foundation Models 139pt</td><td>Apple Foundation Models <span class="stars">246pt</span>（仍 #2）</td></tr>
+                        <tr><td>HN AI #3</td><td>未涉及</td><td><span class="highlight">Anthropic's Safety Superpower 113pt</span></td></tr>
+                        <tr><td>HN AI #4</td><td>未涉及</td><td><span class="highlight">Openrouter Fusion API 85pt</span></td></tr>
+                        <tr><td>HN AI #5</td><td>未涉及</td><td><span class="highlight">Salesforce-Fin $3.6BN 32pt</span></td></tr>
+                        <tr><td>HN AI 增量</td><td>0 条</td><td><span class="highlight">3 条 21evening 必报</span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>Stratechery Ben Thompson 6/15 18:06 发布"Anthropic's Safety Superpower"长文（HN #48539078 113pt/82c 当日 AI #6）</strong>——"Mythos 不够 powerful 不重要，next one 会是 powerful / 公开预言 Anthropic vs 美国政府冲突不可避免 / 经济必然性 compute 资本退潮 → user touchpoint 价值 → 取代 software / Amazon 既是 investor 又是 inference provider + 越狱 reported by Amazon / Satya Nadella 同期呼应 'human capital + token capital'" = evening 写的政治危机在 21evening 由消息源升格为"产业链拐点"深度评论</li>
+                    <li><strong>OpenRouter 6/15 15:10 CST 发布 Fusion API（HN #48537641 85pt/27c 当日 AI #9）</strong>——"small multi-model deliberation" 多模型并行 + 评委合成 + 6 个默认 panel 模型 + Quality/Budget 双 preset + "priced as sum of underlying completions" + "consensus/contradictions/partial coverage/unique insights/blind spots" 五维结构化输出 = 6/15 evening 写的"OpenRouter 全球调用量 8 周连涨 44.6 万亿 Token"的产品侧兑现 + AI 推理"组合范式"产品化首例</li>
+                    <li><strong>6/15 21:00 中文 AI 头条三连发（36kr 1h 内 6 条 AI 相关 + 2h 内 5 条深度 + 3h 内 3 条深度）</strong>——"曝 OpenAI、Claude 员工已套现 950 亿" (6min 前) / "微信支付宝内测 AI Agent" (28min 前) / "大厂 Token 不再管够 腾讯开始限额字节可部分报销" (2h 前) / "Anthropic 工程团队 1680 人画像 谷歌系 12 年经验" (2h 前) / "燧原 IPO 过会 GPU 四小龙集齐" (1h 前) / "小巴菲特卡拉曼罕见发声我不投 AI 泡沫明显" (3h 前) / "苹果也得交租了 谁是 AI 游戏里真正的房东" (2h 前) = 中国 AI 行业"应用层 + 资本层 + 人力层" 21:00 全景</li>
+                    <li><strong>6/15 16:15 凤凰/腾讯新闻完整复盘"Fable 5 被封禁前 24 小时"</strong>——白宫 3 部长轮番致电 Amodei 拒绝下架 + 最终强制出口管制 + 前白宫 AI 政策主任 David Sacks 罕见支持对 Anthropic 出口管制（"反监管派支持监管" 政治光谱反转）+ "出口管制是在恳求他们配合数小时之后的最后手段" + Amazon CEO Andy Jassy 介入 + Anthropic 被列"供应链风险" = evening 写的谈判时间线在 21evening 由消息源升格为"政府内部决策树完整复盘"</li>
+                    <li><strong>"Mythos 不够 powerful 不重要" 范式转折</strong>——Stratechery 公开宣告 "models 越来越 useful at creating their successors" = AI 安全行业未来 6-12 个月核心命题转向"模型自身迭代加速" 而非"具体某代模型的能力"</li>
+                    <li><strong>"compute 资本退潮 → user touchpoint 价值" 经济学转折</strong>——Stratechery 指出 Anthropic + OpenAI 集体损失 hundreds of billions distilled by Chinese open source = "前沿实验室被中国开源蒸馏" 完整论述 = 商业逻辑从"模型层商品化"转向"用户入口层"垄断</li>
+                    <li><strong>"反监管派支持监管" 政治光谱反转</strong>——David Sacks 一贯反对监管但本次支持对 Anthropic 出口管制 = 跨越政治光谱的 AI 安全共识形成 = evening 写的"Anthropic vs 政府"二元对位在 21evening 升级为"跨光谱共识"</li>
+                    <li><strong>"Amazon 双重角色" 资本结构冲突</strong>——Amazon 既是 Anthropic investor 又是 inference provider，但越狱 was reported by Amazon = 资本结构内生冲突 = 与 Stratechery 长文论点深度呼应</li>
+                    <li><strong>OpenRouter Fusion "聚合范式" 产品化</strong>——6 个默认 panel + 1 judge = 7+ 次调用/请求 = AI 推理"组合范式"产品化首例 = 与 6/15 evening 写的"8 周连涨"形成"产品兑现"侧</li>
+                    <li><strong>36kr 中文 AI 21:00 全景 vs 6/14 21evening 对照</strong>——6/14 21evening 4 主线 + 中文信源少；6/15 21evening 4 主线 + 36kr 8 条 AI 头部 = 中国 AI 行业"应用层 + 资本层 + 人力层" 21:00 全景补完</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 6/15 22:30 → 6/16 09:00 12 小时窗口观察清单</h4>
+                <ul>
+                    <li>Stratechery 长文传播曲线：113pt/82c 当前 3 小时增长曲线，6/16 09:00 是否追平 6/15 evening HN #4 curl 402pt</li>
+                    <li>OpenRouter Fusion 实测数据："No usage data available yet" → 6/16 09:00 是否有首批使用数据 + Top models used by Fusion 榜单出炉</li>
+                    <li>Sacks 立场翻转后续：是否引发其他反监管派（a16z / Coinbase）表态 + "反监管派 vs Anthropic" 政治光谱共识形成</li>
+                    <li>Amazon Andy Jassy 介入：是否引发 AWS 与 Anthropic 算力合同公开 + Amazon 双重角色（investor + inference）后续披露</li>
+                    <li>微信支付宝 AI Agent 内测：是否 6/16 09:00 前有公开测试范围披露 + 与"Token 限额潮"协同的 C 端入口布局</li>
+                    <li>燧原 IPO 后续：是否 6/16 09:00 前有具体上市时间表 + 估值 + GPU 四小龙估值对照</li>
+                    <li>卡拉曼不投 AI 立场：是否引发其他价值投资派（Howard Marks / Mohnish Pabrai）跟进表态 + "怀疑论 vs 乐观论" 对位形成</li>
+                    <li>Anthropic 1680 人画像后续：是否引发"OpenAI / xAI / DeepMind 团队画像" 同步对比披露</li>
+                    <li>Fable 5 24h 复盘后续：是否 6/16 09:00 前有 Anthropic 官方完整回应 + "政府 24h 决策树" 完整披露</li>
+                    <li>HN #21 Salesforce-Fin $3.6BN 并购：是否 6/16 09:00 前引发 AI 企业并购潮（继 Oracle / Snowflake / Databricks 后）</li>
+                    <li>6/16 morning cron 启动：应主动差异化 6/15 4 时段已写（morning/afternoon/evening/21evening），专注美股盘后 + 政策官方回应 + Stratechery 续文 + 中文信源 6/16 头条</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：HN Firebase API 6/15 21:00 直连 top 26 items | HN #48539078 Stratechery 6/15 18:06 CST "Anthropic's Safety Superpower" 113pt/82c | HN #48537641 OpenRouter Fusion 6/15 15:10 CST 85pt/27c | HN #48537165 curl summer of bliss 530pt/213c 6/15 14:02 CST | HN #48536776 Apple Foundation Models 246pt/97c 6/15 12:55 CST | HN #48528371 Rio de Janeiro's "homegrown" LLM 369pt/194c | HN #48540499 Salesforce to Acquire Fin (formerly Intercom) $3.6BN 32pt/19c | Stratechery Ben Thompson 6/15 18:06 完整长文 https://stratechery.com/2026/anthropics-safety-superpower/ | 凤凰/腾讯新闻 6/15 16:15 "Fable 5 被封禁前 24 小时"完整复盘 | 36kr 首页 6/15 21:00 实测 1h 内 6 条 AI 相关 + 2h 内 5 条深度 + 3h 内 3 条深度 | 镜相工作室 6/15 20:54 "曝 OpenAI、Claude 员工已套现 950 亿" | 科技每日推送 6/15 20:32 "微信支付宝内测 AI Agent" | 36kr 6/15 19:00 "大厂 Token 不再管够：腾讯开始限额 字节可部分报销" | 极客邦科技 InfoQ 6/15 19:00 "Anthropic 工程团队 1680 人画像 谷歌系 12 年经验" | 极客邦科技 InfoQ 6/15 20:06 "腾讯撑场 60 亿豪赌 GPU 四小龙最后一龙过会" | 36kr 6/15 18:00 "小巴菲特卡拉曼罕见发声不投 AI 泡沫明显" | 36kr 6/15 19:00 "苹果也得交租了 谁是 AI 游戏里真正的房东" | 36kr 6/15 18:00 "燧原过会 国产 GPU 四小龙终于集齐" | OpenRouter Fusion 产品页 https://openrouter.ai/openrouter/fusion | David Sacks 6/15 推文完整引用</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-15 21:00 晚间情报 · 撞车源：6/15 morning (Rio3.5/Anthropic 商务部/腾讯云) + 6/15 afternoon (MiniMax-M3/智谱港股/金山云/Anthropic-SpaceX) + 6/15 evening (联想+9.31%/Anthropic 谈判/HN#4 curl/HN#15 Apple) · 本期 21evening 主动差异化：Stratechery 长文 + OpenRouter Fusion + 中文 21:00 全景 + 白宫 24h 复盘</p>
+        </footer>
+    </div>
+</body>
+</html>
