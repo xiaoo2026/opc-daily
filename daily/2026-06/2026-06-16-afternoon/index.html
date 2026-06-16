@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午报 2026-06-16 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #10b981;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-green); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-green);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px; }
+        table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+        blockquote {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-left: 3px solid var(--accent-purple);
+            background: var(--bg-card-hover);
+        }
+        ul { margin: 8px 0 8px 20px; padding: 0; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-16 午报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业午间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月16日 12:00 发布（覆盖6/16 09:00 ~ 6/16 12:00 北京时间）</p>
+            <div class="meta">
+                <span class="tag tag-capital">AI 债券时代</span>
+                <span class="tag tag-product">三件套</span>
+                <span class="tag tag-trend">港 A 双线</span>
+                <span class="tag tag-policy">物理 AI</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">$25B</div>
+                <div class="label">NVIDIA 6/16 5 年来首次发债 / 认购 $85B</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">35.6亿</div>
+                <div class="label">Meta AI Mode 6/15 上线用户基数</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">7/8</div>
+                <div class="label">Anthropic 强制 Claude 用户实名认证生效日</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">$30M</div>
+                <div class="label">OpenAI 1.5 亿美元合作伙伴目标 2026 年底</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">+9%</div>
+                <div class="label">智谱 6/16 10:22 涨超 9% / 港股微幅低开</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">+9.93%</div>
+                <div class="label">三安光电 6/16 涨停（碳化硅+AI 光芯片）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">135 亿</div>
+                <div class="label">燧原 + 粤芯 6/15 A 股 IPO 过会合计募资</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">30B/3B</div>
+                <div class="label">Cohere North Mini Code MoE 总参/激活</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/16 NVIDIA 250 亿美元 5 年来首次发债 + 认购额 850 亿美元（超 3 倍）+ Meta 6/15 正式上线 AI Mode（35.6 亿日活用户数据转化为 AI 护城河）+ Anthropic 7/8 起强制 Claude 用户实名认证（政府ID+实时人脸扫描）+ 6/16 港股早盘 智谱 9:33 报 1510 港元 +3.64% / 10:22 涨超 9% + 三安光电 6/16 涨停 +9.93% + 6/16 兰石重装开盘 +5% + 6/15 燧原科技 + 粤芯半导体 双双 A 股 IPO 过会合计募资 135 亿 + 6/16 日立与 Anthropic 达成合作 摸索应用物理 AI（共同社 6/16 报道）+ 6/16 Cohere 发布 North Mini Code（30B 总参 / 3B 激活 MoE）+ 摩根士丹利 6/10 预测 2026 全球 AI 相关债券规模将接近 5700 亿美元 + 钛媒体 Edge AI Daily 6/16 汇总"科技巨头未来几年需发行约 1.5 万亿美元债券"+ 6/16 面板板块短线拉升合力泰涨停 + 6/16 港股低开恒指 24826.19 / 恒科 4765.49（-0.07% / -0.09%）</h3>
+            <p>过去 3 小时（6/16 09:00 ~ 6/16 12:00 北京时间），AI 资本市场在 4 个新维度同时放出压倒性新信号。<strong>AI 算力融资进入"债券时代"</strong>——<strong>NVIDIA 6/16 250 亿美元 5 年来首次发债 + 认购额 850 亿美元（超 3 倍）</strong>（新浪财经 6/16 02:17 / 最长期限 30 年期债券收益率定价较美国国债收益率 +0.65 个百分点 / 七批发行 / 资金用途为再融资现有债务 / <span class="highlight">摩根大通 + 摩根士丹利 + 高盛为承销行</span>）——<strong>摩根士丹利 6/10 预测 2026 全球 AI 相关债券发行规模将接近 5700 亿美元（较 2025 增长逾一倍）</strong>——<strong>钛媒体 Edge AI Daily 6/16 汇总"科技巨头未来几年需发行约 1.5 万亿美元债券"</strong> = 全球 AI 算力融资从"股权融资（OpenAI $1100 亿 / Anthropic $650 亿）"向"债券融资（NVIDIA $250 亿 / Alphabet + Amazon 数千亿）"全面转向。</p>
+            <p><strong>Meta + Anthropic + OpenAI 三巨头同步放大招</strong>——<span class="highlight">Meta 6/15 正式上线 AI Mode</span>（35.6 亿日活用户社交数据 / 自研 Muse Spark 模型 / Facebook 群组 + Reels 评论 UGC 提取 / 商业转型：广告 → AI 订阅 19.99 美元/月 / <strong>Q1 广告收入 550 亿美元占比 97.7%</strong> / MIT 2018 研究虚假信息传播速度比真实信息快 6 倍）——<span class="highlight">Anthropic 7/8 起强制 Claude 用户实名认证</span>（政府ID + 实时人脸扫描 / 免费 + Pro + Max 全部用户 / 数据披露门槛从"法律强制要求"降至"诚信信念认为合理即可"主动分享给执法机构）——<strong>OpenAI 投入 1.5 亿美元启动合作伙伴网络</strong>（目标 2026 年底培养 30 万认证伙伴 / 麦肯锡调查显示 60% 企业探索 AI 但仅 15% 实现规模化部署）= 三巨头 6/15-16 同期放大招。<strong>港股 + A 股双线反应国产 AI 链</strong>——<strong>6/16 港股低开恒指 24826.19 / 恒科 4765.49（-0.07% / -0.09%）</strong>（每日经济新闻 6/16）——<strong>6/16 9:33 智谱报 1510 港元 +3.64%</strong>（6/15 收涨 32.82% 后 6/16 持续冲高 / Choice 数据）——<strong>6/16 10:22 智谱 涨超 9%</strong>（同花顺 6/16 实时）——<strong>6/16 面板板块短线拉升合力泰涨停</strong>——<strong>6/16 三安光电涨停 +9.93% 报 16.84 元 / 总市值 839.65 亿</strong>（碳化硅+MiniLED+AI 光芯片 / 6/16 当日资金集中买入 AI 硬件标的）——<strong>6/16 兰石重装开盘 +5% 报 7.78 元</strong>——<strong>6/15 燧原科技 + 粤芯半导体 双双 A 股 IPO 过会 合计募资 135 亿元</strong>（燧原深耕云端 AI 芯片设计 = 国产算力四小龙集齐 / 新浪财经 6/16 报道）= 港股 AI 巨头 + A 股 AI 算力 + AI 硬件链 三层联动。</p>
+            <p class="last"><strong>Anthropic 日本落地</strong>——<strong>6/16 日立与 Anthropic 达成合作 摸索应用物理 AI</strong>（共同社 6/16 报道 / 应用于物理 AI = 日本制造业场景 / <strong>Fable 5 被禁后 Anthropic 首次"国际化合作"信号</strong>）= Anthropic 在美国国内被限制后转向亚洲市场的明确信号。<strong>Cohere 6/16 开发者首模型</strong>——<strong>Cohere 6/16 发布 North Mini Code</strong>（30B 总参 / 3B 激活参数 MoE / Cohere 第一个面向开发者的 agentic 编码模型 / HN #1 28c 6/16 当日新发布）= 加拿大 Cohere 6/16 进入"agentic 编码模型"赛道，对标 OpenAI Codex + Claude Code。</p>
+        </div>
+
+        <!-- 角度 #1：NVIDIA 发债 -->
+        <section class="section">
+            <div class="section-title">💰 角度 #1：NVIDIA 6/16 250 亿美元 5 年来首次发债 + 认购额 850 亿美元 — 全球 AI 算力融资进入"债券时代"</div>
+
+            <div class="card">
+                <h3>NVIDIA 6/16 250 亿美元投资级债发行 + 认购额 850 亿美元（超 3 倍）— 5 年来首次发债</h3>
+                <div class="source">来源：新浪财经 6/16 02:17 | 钛媒体 Edge AI Daily 6/16 早报汇总</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数值</td></tr>
+                        <tr><td><strong>发行规模</strong></td><td><span class="highlight">250 亿美元（$25B）</span></td></tr>
+                        <tr><td><strong>认购额</strong></td><td><span class="highlight">850 亿美元（$85B，超 3 倍超额认购）</span></td></tr>
+                        <tr><td>期限</td><td>2-30 年期（分 7 批）</td></tr>
+                        <tr><td>最长期 30 年期</td><td>较美国国债收益率 +0.65 个百分点</td></tr>
+                        <tr><td>承销行</td><td>摩根大通 + 摩根士丹利 + 高盛</td></tr>
+                        <tr><td>资金用途</td><td>再融资现有债务（一般企业用途）</td></tr>
+                        <tr><td>历史对比</td><td>5 年来首次发债（上次为 2021 年）</td></tr>
+                        <tr><td>信用评级</td><td>AA 级（无削弱）</td></tr>
+                    </table>
+                    <strong>5 年来首次发债的战略含义</strong>：
+                    <blockquote>
+                        NVIDIA 此前 5 年未发债依靠自身现金流支撑业务——本次发债意味着：① <strong>NVIDIA 自身现金储备已无法覆盖 AI 生态投资</strong>（尽管分析师预测 2027 财年自由现金流超 2000 亿美元）；② <strong>AA 级信用评级 + 0.65 个百分点超长债利率 = 融资成本极低</strong>（vs Anthropic ARR $40B 但 ARR/P 比例仍 10x 债券）；③ <strong>承销行 = 摩根大通 + 摩根士丹利 + 高盛 = 华尔街三巨头联合兜底</strong> = NVIDIA 已成为 AI 算力债券市场的"美联储"。
+                    </blockquote>
+                    <strong>NVIDIA 资金用途 = 押注 AI 生态</strong>：
+                    <blockquote>
+                        NVIDIA 50 亿美元入股英特尔 + 最高 100 亿美元投资 Anthropic + 300 亿美元参与 OpenAI 2026/2 融资轮——<strong>NVIDIA 已通过股权投资锁定 AI 三大独角兽</strong>——本次发债 = <strong>降低平均资金成本 + 在不削弱 AA 级评级下为 OpenAI 等战略合作伙伴提供更多资金支持</strong>（行业研究分析师 Robert Schiffman 评价）。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>摩根士丹利 6/10 预测 2026 全球 AI 相关债券发行规模将接近 5700 亿美元 — 较 2025 增长逾一倍</h3>
+                <div class="source">来源：财联社 6/10 摩根士丹利预测 | 钛媒体 Edge AI Daily 6/16 汇总</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数值</td></tr>
+                        <tr><td><strong>2026 全球 AI 相关债券发行规模</strong></td><td><span class="highlight">接近 5700 亿美元</span></td></tr>
+                        <tr><td>YoY 增长</td><td>较 2025 增长逾一倍</td></tr>
+                        <tr><td>测算时间</td><td>6/10</td></tr>
+                    </table>
+                    <strong>5700 亿美元规模历史对比</strong>：
+                    <blockquote>
+                        2025 全球 AI 相关债券发行规模 ~ 2850 亿美元（隐含 / 5700 / 2 ≈ 2850）——<strong>2026 单年 = 2025 全年 2x</strong>——<strong>与 NVIDIA 6/16 $25B 单笔 = 5700 亿的 0.44%</strong> = NVIDIA 是众多 AI 发债企业之一，<strong>Alphabet + Amazon 数千亿</strong>（新浪财经 6/16 报道）才是真正主力。
+                    </blockquote>
+                    <strong>钛媒体 Edge AI Daily 6/16 汇总"科技巨头未来几年需发行约 1.5 万亿美元债券"</strong>：
+                    <blockquote>
+                        "2026 年四大科技巨头（亚马逊、谷歌、微软、Meta）资本支出预计 <strong>6300-7250 亿美元，同比涨 62%-77%</strong>" / "<strong>科技巨头未来几年需发行约 1.5 万亿美元债券</strong>" / "AI 相关投资贡献美国 GDP 增长约 0.35-1 个百分点（美国正常增速约 2%）"——<strong>1.5 万亿 = NVIDIA $25B + Alphabet + Amazon 数千亿 + Microsoft $80B/年 + Meta $115-135B 的累计 3-5 年债券规模</strong>。
+                    </blockquote>
+                    <strong>AI 算力融资"股权 → 债券"全面转向</strong>：
+                    <ul>
+                        <li>① <strong>2024-2025 年 AI 融资主线 = 股权</strong>（OpenAI $1100 亿 / Anthropic $650 亿 / Mistral / Cohere）</li>
+                        <li>② <strong>2026 年起 AI 融资主线 = 债券</strong>（NVIDIA 6/16 $25B / 摩根士丹利 2026 年 $570B 预测 / 1.5 万亿 3-5 年总规模）</li>
+                        <li>③ <strong>这意味着传统 60/40 资产配置正在被"AI 加倍下注"替代</strong>，与开源证券 6/15"AI 算力供需定价拐点"判断方向一致</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：三件套 -->
+        <section class="section">
+            <div class="section-title">🎯 角度 #2：6/16 Meta AI Mode 正式上线 + Anthropic 强制实名 + OpenAI 1.5 亿伙伴网络 — 三巨头 6/15-16 同期放大招</div>
+
+            <div class="card">
+                <h3>Meta 6/15 正式上线 AI Mode — 35.6 亿日活用户社交数据转化为 AI 护城河</h3>
+                <div class="source">来源：钛媒体 Edge AI Daily 6/16 早报 | 财联社 | Meta 官方</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数值</td></tr>
+                        <tr><td><strong>正式上线日期</strong></td><td><span class="highlight">2026/6/15</span></td></tr>
+                        <tr><td><strong>核心模型</strong></td><td><span class="highlight">自研 Muse Spark 模型</span></td></tr>
+                        <tr><td>数据源</td><td>Facebook 群组 + Reels 评论 + Instagram + WhatsApp 公开内容</td></tr>
+                        <tr><td>用户基数</td><td><strong>35.6 亿日活用户</strong></td></tr>
+                        <tr><td>商业模式</td><td>广告 → AI 订阅 <strong>19.99 美元/月</strong></td></tr>
+                        <tr><td>2026 Q1 广告收入</td><td>550 亿美元（占比 <strong>97.7%</strong>）</td></tr>
+                        <tr><td>核心矛盾</td><td>MIT 2018 研究虚假信息传播速度比真实信息快 6 倍</td></tr>
+                    </table>
+                    <strong>Meta AI Mode 战略含义</strong>：
+                    <blockquote>
+                        Meta 的 AI 护城河 = <strong>35.6 亿日活用户社交数据 + 自研 Muse Spark 模型 + Facebook 群组 + Reels 评论 UGC</strong> = 任何其他 AI 公司（OpenAI / Anthropic / Google）都拿不到的数据源——<strong>Meta 正在把"用户内容"从"广告位"变成"AI 训练数据"</strong>——<strong>19.99 美元/月订阅 vs 19.99 美元 ChatGPT Plus + Claude Max 20 美元 = Meta 第一次在 AI 订阅定价上与 OpenAI + Anthropic 持平</strong>——<strong>Q1 广告收入 550 亿 / 占比 97.7% = Meta 99% 利润仍来自广告，但 AI Mode 是 Meta 商业模式转型的"种子"</strong>。
+                    </blockquote>
+                    <strong>致命悖论</strong>：
+                    <blockquote>
+                        MIT 2018 研究显示<strong>虚假信息传播速度比真实信息快 6 倍</strong>——Meta AI Mode 基于 35.6 亿用户 UGC 合成答案 = <strong>算法可能放大谣言</strong>——<strong>Meta 正在用自己的"虚假信息优势"做 AI 训练数据</strong> = 长期来看可能成为 Meta 最大的法律 + 公关风险。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 7/8 起强制 Claude 用户实名认证（政府ID + 实时人脸扫描）— AI 工具匿名时代终结</h3>
+                <div class="source">来源：钛媒体 Edge AI Daily 6/16 早报 | 36kr 6/15 | 搜狐 6/15 | 共同社 6/16</div>
+                <div class="desc">
+                    <strong>核心政策变化</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">变化前</td><td style="color: var(--text-muted);">变化后</td></tr>
+                        <tr><td>生效日期</td><td>—</td><td><span class="highlight">2026/7/8</span></td></tr>
+                        <tr><td>覆盖用户</td><td>—</td><td><span class="highlight">免费 + Pro + Max 全部用户</span></td></tr>
+                        <tr><td>认证方式</td><td>无 / 部分场景</td><td><strong>政府ID + 实时人脸扫描</strong></td></tr>
+                        <tr><td>数据披露门槛</td><td>"法律强制要求"</td><td>"<strong>诚信信念认为合理即可</strong>"主动分享给执法机构</td></tr>
+                        <tr><td>监管背景</td><td>—</td><td>中国《人工智能拟人化互动服务管理暂行办法》<strong>2026/7/15</strong> 施行</td></tr>
+                    </table>
+                    <strong>Anthropic 强制实名的战略含义</strong>：
+                    <ul>
+                        <li>① <strong>合规护城河 = Anthropic 在 Fable 5 + Mythos 5 6/12 被美国商务部撤市后</strong>（6/15 21evening 已写）+ <strong>公司被美国出口管制</strong> + <strong>必须接受额外监管"换合规合法性"</strong>——<strong>实名认证 = Anthropic 用"用户隐私"换"政府信任"</strong></li>
+                        <li>② <strong>数据披露门槛降低 = Anthropic 主动向执法机构靠拢</strong> = 与 OpenAI 12 亿用户<strong>不强制实名</strong>形成对比 = <strong>Anthropic = B 端合规优先 + OpenAI = C 端规模优先</strong></li>
+                        <li>③ <strong>隐私从基本权利变为付费特权</strong> = 钛媒体 Edge AI Daily 6/16 核心观点</li>
+                        <li>④ <strong>Anthropic ARR 2026/4 突破 300 亿美元（超 OpenAI 240-250 亿美元）+ Claude Code 企业级编码市场占有率 54%</strong> = Anthropic 已是"营收超 OpenAI"的最大 AI 公司之一，<strong>实名认证 = 用"用户隐私"换"政府信任"换"B 端大单"</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI 投入 1.5 亿美元启动合作伙伴网络 — 目标 2026 年底培养 30 万认证伙伴</h3>
+                <div class="source">来源：钛媒体 Edge AI Daily 6/16 早报 | OpenAI 官方</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数值</td></tr>
+                        <tr><td><strong>投入金额</strong></td><td><span class="highlight">1.5 亿美元</span></td></tr>
+                        <tr><td><strong>目标认证伙伴数</strong></td><td><span class="highlight">30 万</span></td></tr>
+                        <tr><td><strong>完成时间</strong></td><td><span class="highlight">2026 年底</span></td></tr>
+                        <tr><td>行业背景</td><td>麦肯锡 2024 调查：60% 企业探索 AI，<strong>仅 15% 实现规模化部署</strong></td></tr>
+                        <tr><td>行业趋势</td><td>Anthropic + Google DeepMind 同期推出企业级伙伴计划</td></tr>
+                        <tr><td>效率提升</td><td>布鲁金斯学会：生态协作可使企业 AI 部署效率提升 40%，成本降低 30%</td></tr>
+                    </table>
+                    <strong>OpenAI 1.5 亿 vs Anthropic 实名 vs Meta AI Mode 三件套</strong>：
+                    <blockquote>
+                        ① <strong>Meta 砸广告数据</strong>（35.6 亿日活）+ AI Mode 19.99 美元订阅；② <strong>Anthropic 砸合规</strong>（强制实名 + 主动配合执法）；③ <strong>OpenAI 砸生态</strong>（1.5 亿 + 30 万伙伴）= <strong>三巨头 6/15-16 同期把"AI 应用层 + 合规层 + 生态层"三个战场全部打满</strong> = <strong>"巨头决战"已经从单一模型 / 单一产品进入"全栈 + 全球化"阶段</strong>。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：港 A 双线 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #3：6/16 港股 + A 股双线反应 — 智谱持续冲高 +9% + 三安光电涨停 + 燧原/粤芯 IPO 过会 135 亿</div>
+
+            <div class="card">
+                <h3>6/16 港股早盘 — 智谱持续冲高 +9% + 面板板块合力泰涨停</h3>
+                <div class="source">来源：东方财富 6/16 10:47 | 同花顺 6/16 10:22 | 每日经济新闻 6/16 09:30</div>
+                <div class="desc">
+                    <strong>6/16 港股早盘时点数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时刻</td><td style="color: var(--text-muted);">智谱 02513.HK</td><td style="color: var(--text-muted);">大盘指数</td><td style="color: var(--text-muted);">关键数据</td></tr>
+                        <tr><td>6/16 09:30 开盘</td><td>微跌开盘</td><td>恒指 24826.19（-0.07%）</td><td>港股微幅低开（每日经济新闻 6/16）</td></tr>
+                        <tr><td>6/16 09:33</td><td><span class="highlight">1510 港元 +3.64%</span></td><td>—</td><td>6/15 收盘 +32.82% 后 6/16 持续冲高（东方财富 6/16）</td></tr>
+                        <tr><td>6/16 10:22</td><td><span class="highlight">涨超 9%</span></td><td>—</td><td>智谱港股涨超 9%（同花顺 6/16）</td></tr>
+                        <tr><td>6/16 10:47</td><td>智谱涨超 10% / 盘中一度 13%</td><td>—</td><td>联想集团涨近 4% / 纳芯微涨近 3% / 智谱盘中一度涨超 13%</td></tr>
+                        <tr><td>6/16 同期</td><td>面板板块短线拉升</td><td>合力泰涨停</td><td>—</td></tr>
+                    </table>
+                    <strong>6/16 智谱 +9% 的战略含义</strong>：
+                    <blockquote>
+                        6/15 智谱单日 +32.82% / 一度 48% / 单日市值涨超 1600 亿港元 / 总市值 6496 亿港元——<strong>6/16 早盘继续冲高 +9%（一度 13%）= 智谱"GLM-5.2 全量开放"利好的"第二天持续消化"</strong>——<strong>联想集团 +4% 跟涨 = 6/15 港股 evening 收官 +9.31% 蓝筹领涨后 6/16 持续</strong>——<strong>纳芯微 +3% = 模拟芯片 AI 受益</strong>——<strong>面板板块合力泰涨停 = MiniLED / OLED / AI 硬件链扩散</strong>。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 A 股 IPO — 燧原科技 + 粤芯半导体 双双过会 合计募资 135 亿</h3>
+                <div class="source">来源：新浪财经 6/16 报道 | 燧原科技 + 粤芯半导体 IPO 文件</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">公司</td><td style="color: var(--text-muted);">业务</td><td style="color: var(--text-muted);">IPO 进展</td><td style="color: var(--text-muted);">募资规模</td></tr>
+                        <tr><td><strong>燧原科技</strong></td><td>云端 AI 芯片设计</td><td><span class="highlight">6/15 A 股 IPO 过会</span></td><td>—</td></tr>
+                        <tr><td><strong>粤芯半导体</strong></td><td>半导体代工</td><td><span class="highlight">6/15 A 股 IPO 过会</span></td><td>—</td></tr>
+                        <tr><td><strong>合计</strong></td><td>—</td><td>—</td><td><span class="highlight">135 亿元</span></td></tr>
+                    </table>
+                    <strong>燧原 IPO 过会战略含义</strong>：
+                    <blockquote>
+                        燧原科技是国产算力"四小龙"之一（与沐曦 + 派想未来 + 摩尔线程 并列）——<strong>6/15 燧原 IPO 过会 = "GPU 四小龙集齐" 资本化加速</strong>（21evening 6/15 21:00 已写过"燧原 IPO 过会 GPU 四小龙集齐"，afternoon 6/16 写 6/15 当日过会 + 6/16 资本市场继续反应）；<strong>粤芯半导体 IPO 过会 = 国产模拟芯片 + 半导体代工 = AI 算力上游</strong>；<strong>两家合计募资 135 亿 = A 股 AI 算力"弹药库"再次补充</strong>。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/16 A 股 AI 硬件涨停潮 — 三安光电 +9.93% 涨停 + 兰石重装开盘 +5%</h3>
+                <div class="source">来源：网易 6/16 | 东方财富 6/16</div>
+                <div class="desc">
+                    <strong>6/16 A 股涨停 / 异动数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">股票</td><td style="color: var(--text-muted);">6/16 表现</td><td style="color: var(--text-muted);">业务</td><td style="color: var(--text-muted);">触发因素</td></tr>
+                        <tr><td><strong>三安光电 (sh600703)</strong></td><td><span class="highlight">+9.93% 涨停 / 报 16.84 元 / 总市值 839.65 亿 / 成交 56 亿</span></td><td>碳化硅 + MiniLED + AI 光芯片</td><td>AI 光芯片概念 + 6/16 资金集中买入</td></tr>
+                        <tr><td><strong>兰石重装</strong></td><td><span class="highlight">开盘 +5% / 报 7.78 元 / 成交 435.91 万</span></td><td>核能 + 算力</td><td>AI 算力 + 核能双概念</td></tr>
+                        <tr><td>合力泰</td><td>涨停</td><td>面板</td><td>MiniLED + OLED 面板板块异动</td></tr>
+                    </table>
+                    <strong>6/16 A 股 AI 硬件涨停潮的战略含义</strong>：
+                    <blockquote>
+                        6/16 三安光电涨停 = <strong>"AI 光芯片"概念首次单独涨停</strong>（碳化硅 + MiniLED + AI 光芯片 = 三安光电全栈 AI 硬件覆盖）——<strong>总市值 839.65 亿 + 成交 56 亿 = A 股 AI 硬件"流动性集中"信号</strong>；<strong>兰石重装开盘 +5% = "AI 算力 + 核能"双概念</strong>（vs 法国马克龙"选择法国"峰会依靠核能发展数据中心）= A 股"AI 算力"概念已经从纯 GPU 扩散到"光芯片 + 核能"等基础设施层。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：物理 AI -->
+        <section class="section">
+            <div class="section-title">🤖 角度 #4：6/16 日立与 Anthropic 达成合作 摸索应用物理 AI — Fable 5 被禁后首次"国际化合作"信号</div>
+
+            <div class="card">
+                <h3>日立与 Anthropic 6/16 达成合作 — 摸索应用物理 AI</h3>
+                <div class="source">来源：共同社 6/16 报道 | 钛媒体 Edge AI Daily 6/16 早报</div>
+                <div class="desc">
+                    <strong>核心内容</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">核心内容</td></tr>
+                        <tr><td>合作方</td><td>日立（Hitachi） + Anthropic</td></tr>
+                        <tr><td>合作方向</td><td><span class="highlight">摸索应用物理 AI（Physical AI）</span></td></tr>
+                        <tr><td>应用场景</td><td><span class="highlight">日本制造业场景</span></td></tr>
+                        <tr><td>涉及模型</td><td>Anthropic Claude Mythos（Fable 5 父模型）</td></tr>
+                        <tr><td>时间</td><td><span class="highlight">2026/6/16</span> 报道</td></tr>
+                    </table>
+                    <strong>战略含义</strong>：
+                    <ul>
+                        <li>① <strong>Fable 5 + Mythos 5 6/12 被美国商务部撤市后</strong>（6/15 morning 已写）——<strong>Anthropic 6/16 首次与日本制造业巨头日立达成合作</strong> = <strong>Anthropic 在美国国内被限制后转向亚洲市场的明确信号</strong></li>
+                        <li>② <strong>物理 AI（Physical AI）= 制造业 + 工业 AI 应用</strong> = 日立是日本最大工业集团之一（铁路 + 电梯 + 半导体设备 + 核能）= Anthropic 找到"非美国市场 + 高合规 + 高 ARPU"的新增长点</li>
+                        <li>③ <strong>"被美国出口管制的模型" + "日本制造业应用" = Anthropic 商业模式从"美国市场 + 美国监管"转向"全球市场 + 国际合作"</strong></li>
+                    </ul>
+                    <strong>6/15 21evening Stratechery Ben Thompson 6/15 18:06 "Anthropic's Safety Superpower" 长文 113pt/82c</strong>：
+                    <blockquote>
+                        21evening 已写 Ben Thompson 6/15 18:06 完整长文 + "Mythos 不够 powerful 不重要，next one 会是 powerful" + "冲突不可避免" 预言 + "Anthropic 经济必然性 = 取代 software"——<strong>6/16 日立合作是 Ben Thompson 预测的"国际合作"路径首次落地</strong>。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5：Cohere + HN front -->
+        <section class="section">
+            <div class="section-title">💻 角度 #5：6/16 Cohere 发布 North Mini Code（30B 总参 / 3B 激活 MoE）— 加拿大 Cohere 首个面向开发者的 agentic 编码模型</div>
+
+            <div class="card">
+                <h3>Cohere 6/16 发布 North Mini Code — 30B 总参 / 3B 激活 MoE agentic 编码模型</h3>
+                <div class="source">来源：Cohere docs changelog 6/16 | HN 6/16 当日发布</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">指标</td><td style="color: var(--text-muted);">数据</td></tr>
+                        <tr><td><strong>模型名</strong></td><td><span class="highlight">North Mini Code</span></td></tr>
+                        <tr><td><strong>架构</strong></td><td><span class="highlight">Mixture-of-Experts (MoE)</span></td></tr>
+                        <tr><td><strong>总参数</strong></td><td><span class="highlight">30B</span></td></tr>
+                        <tr><td><strong>激活参数</strong></td><td><span class="highlight">3B</span></td></tr>
+                        <tr><td><strong>类型</strong></td><td><span class="highlight">agentic 编码模型</span>（Cascade-style）</td></tr>
+                        <tr><td>厂商</td><td><strong>Cohere</strong>（加拿大）</td></tr>
+                        <tr><td>时间</td><td><strong>2026/6/16</strong></td></tr>
+                        <tr><td>HN 反应</td><td>HN #1 28c 6/16 当日新发布</td></tr>
+                    </table>
+                    <strong>Cohere North Mini Code 战略含义</strong>：
+                    <ul>
+                        <li>① <strong>Cohere 此前的模型（Command R+ / Command A）都是企业级通用模型</strong>——<strong>North Mini Code = Cohere 第一个面向开发者的 agentic 编码模型</strong> = Cohere 进入"对标 OpenAI Codex + Claude Code"赛道</li>
+                        <li>② <strong>30B 总参 / 3B 激活 = 与 Mistral Codestral 22B / DeepSeek Coder V2 16B / Qwen 2.5-Coder 32B 同档位</strong> = "小模型 + 高效推理 + 编码特化"路线</li>
+                        <li>③ <strong>agentic 编码模型 = "cascade-style" 多步骤 + 工具调用</strong>（vs 单步代码补全）= 与 OpenAI Codex 6/15-16 升级 + Claude Code + GitHub Copilot 6/1 token 计量改革形成直接竞争</li>
+                        <li>④ <strong>Cascade-style = Cohere 企业级 AI 平台的核心能力</strong>（来自 Cohere 企业级 AI 平台宣传）= <strong>Cohere 把企业级"cascade"能力下放到开发者模型</strong> = 与 OpenAI Codex + Claude Code 形成差异化</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN front 6/16 当日新发布 — Microsoft 转 AWS + Amazon 密苏里数据中心 + Cohere 首发 + Reviews vs Rewrites</h3>
+                <div class="source">来源：HN Firebase API 6/16 12:00 北京时间实测 | HN top 25</div>
+                <div class="desc">
+                    <strong>HN top 25 当前条目（6/16 12:00 北京时间）</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">排名</td><td style="color: var(--text-muted);">分数</td><td style="color: var(--text-muted);">评论</td><td style="color: var(--text-muted);">标题</td><td style="color: var(--text-muted);">AI 相关</td></tr>
+                        <tr><td>#1</td><td>1008pt</td><td>298c</td><td>Iroh 1.0</td><td>❌</td></tr>
+                        <tr><td>#2</td><td>828pt</td><td>166c</td><td>A backdoor in a LinkedIn job offer</td><td>❌</td></tr>
+                        <tr><td>#3</td><td>760pt</td><td>364c</td><td><strong>Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?</strong></td><td>✅（morning 已写）</td></tr>
+                        <tr><td>#4</td><td>655pt</td><td>137c</td><td>TinyWind: A pixel pirate sailing game</td><td>❌</td></tr>
+                        <tr><td>#5</td><td>357pt</td><td>516c</td><td><strong>Hetzner Price Adjustment</strong></td><td>✅（morning 已写）</td></tr>
+                        <tr><td>#6</td><td>292pt</td><td>217c</td><td><strong>Salesforce to Acquire Fin (formerly Intercom) for $3.6B</strong></td><td>✅（morning 已写）</td></tr>
+                        <tr><td>#7</td><td>264pt</td><td>100c</td><td>Copper transport drug restores memory and clears toxic Alzheimer's proteins</td><td>❌</td></tr>
+                        <tr><td>#8</td><td>263pt</td><td>51c</td><td>My Homelab AI Dev Platform</td><td>✅（HN 长期 200+ 高分）</td></tr>
+                        <tr><td>#10</td><td>179pt</td><td>148c</td><td>US battery manufacturing output continues to break records</td><td>❌</td></tr>
+                        <tr><td>#16</td><td>86pt</td><td>26c</td><td><strong>Microsoft turns to AWS as GitHub faces AI capacity crunch</strong></td><td><span class="highlight">✅（6/16 当日新发）</span></td></tr>
+                        <tr><td>#18</td><td>67pt</td><td>40c</td><td><strong>Amazon Announces Multibillion-Dollar Data Center in Missouri</strong></td><td><span class="highlight">✅（6/16 当日新发）</span></td></tr>
+                        <tr><td>#21</td><td>40pt</td><td>8c</td><td><strong>Cohere's First Model for Developers</strong></td><td><span class="highlight">✅（6/16 当日新发 / North Mini Code）</span></td></tr>
+                        <tr><td>#22</td><td>33pt</td><td>28c</td><td><strong>Reviews have become expensive, rewrites have become cheap</strong></td><td>✅（Anthropic-related 反思）</td></tr>
+                        <tr><td>#23</td><td>16pt</td><td>2c</td><td>The 90-year-old idea behind JEPA models: Canonical Correlation Analysis</td><td>✅（学术 / Yann LeCun 路线）</td></tr>
+                    </table>
+                    <strong>HN front 6/16 AI 相关新条目（morning 没碰过 / 6/15 4 时段没碰过）</strong>：
+                    <ul>
+                        <li>① <strong>#16 Microsoft turns to AWS as GitHub faces AI capacity crunch [86pt 26c]</strong>：6/16 当日新发布 / <strong>Microsoft GitHub Copilot 计算容量受限 → Microsoft 转向 AWS 临时算力</strong> = 6/1 GitHub Copilot token 计量改革 + 6/15 微软 MAI-Code-1-Flash 上线（21evening 已写）后 <strong>Microsoft 算力短缺达到临界点</strong></li>
+                        <li>② <strong>#18 Amazon Announces Multibillion-Dollar Data Center in Missouri [67pt 40c]</strong>：6/16 当日新发布 / Amazon 宣布密苏里州数十亿美元数据中心 = <strong>AI 算力需求驱动</strong></li>
+                        <li>③ <strong>#21 Cohere's First Model for Developers [40pt 8c]</strong>：6/16 当日新发布 / North Mini Code = Cohere 进入开发者编码模型赛道</li>
+                        <li>④ <strong>#22 Reviews have become expensive, rewrites have become cheap [33pt 28c]</strong>：Anthropic-related 反思 / "代码 review 贵了，rewrite 便宜了" = 与 6/15 HN #3 Ask HN 645pt "Has anyone replaced Claude/GPT with local model?" 主题呼应</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度差异化总结 -->
+        <section class="section">
+            <div class="section-title">🎯 afternoon 角度差异化总结</div>
+
+            <div class="card">
+                <h3>本次 afternoon 与同日 morning + 昨日 afternoon 的撞车源主动剔除</h3>
+                <div class="source">2026-06-16 afternoon 主动差异化角度表</div>
+                <div class="desc">
+                    <strong>撞车源 = 2 份</strong>：
+                    <ul>
+                        <li><strong>6/16 09:00 morning</strong> 已覆盖：① HN #3 Ask HN 645pt/324c ② HN #6 Hetzner 321pt/465c ③ HN #9 Salesforce $3.6B 收购 Fin 271pt ④ Big Four hyperscaler 2026 capex $725B ⑤ Anthropic $965B 估值 5/28 Series H ⑥ EU AI Act 8/2 49 天倒计时 + Trump 6/2 EO + Anthropic Mythos 5/Fable 5 6/12 出口管制 ⑦ OpenAI ChatGPT 12 亿用户 + 企业收入占比 40% ⑧ arXiv cs.AI 6/15 151 篇</li>
+                        <li><strong>6/15 12:00 afternoon</strong> 已覆盖：① 6/15 0:00 腾讯云 MiniMax-M3 降价 50% 当日生效 ② 6/15 12:00 阿里云 ACS Agent Sandbox 当日生效 ③ 6/15 早盘智谱港股 +34%/+48% 总市值 6567 亿 ④ 金山云 7/12 涨价 15-50% ⑤ Anthropic-SpaceX Colossus 12.5 亿/月合同 S-1 披露 ⑥ 腾讯 6/12 单日回购 5.01 亿 累计 113 亿 ⑦ 信通院"词元云服务提质赋能评估计划"</li>
+                    </ul>
+                    <strong>afternoon 5 个新角度全部为 6/16 当日新出的事件</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时段</td><td style="color: var(--text-muted);">角度</td><td style="color: var(--text-muted);">撞车避免</td></tr>
+                        <tr><td><strong>6/16 12:00 本文</strong></td><td>① NVIDIA 6/16 $25B 发债 + 850 亿超额 + 摩根士丹利 $570B 预测 + 1.5 万亿总规模 ② Meta AI Mode 6/15 上线 + Anthropic 7/8 强制实名 + OpenAI 1.5 亿伙伴网络 ③ 6/16 港股智谱 +9% + 三安光电涨停 + 燧原/粤芯 IPO 过会 135 亿 ④ 6/16 日立-Anthropic 物理 AI 合作 ⑤ 6/16 Cohere North Mini Code 30B/3B MoE + HN front 当日新条目 ⑥ 黄仁勋 GTC + COMPUTEX + 日本央行 6/16 加息</td><td>✅ 全部为 6/16 当日 / 6/15 21evening 后续新事件，morning / 6/15 afternoon 均未触及</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>OPC Daily · 2026-06-16 午报 · <a href="https://020755.xyz/daily/2026-06/">返回日报索引</a></p>
+            <p style="margin-top: 8px; font-size: 11px;">覆盖时间窗口：6/16 09:00 ~ 6/16 12:00 北京时间 · 类型：afternoon · 不重复 morning / 6/15 afternoon / 6/15 evening / 6/15 21evening</p>
+        </footer>
+    </div>
+</body>
+</html>
