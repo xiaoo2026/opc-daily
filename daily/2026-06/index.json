@@ -173,5 +173,10 @@
     "date": "2026-06-16",
     "type": "afternoon",
     "html_url": "https://020755.xyz/daily/2026-06/2026-06-16-afternoon/index.html"
+  },
+  {
+    "date": "2026-06-16",
+    "type": "evening",
+    "html_url": "https://020755.xyz/daily/2026-06/2026-06-16/index.html"
   }
 ]

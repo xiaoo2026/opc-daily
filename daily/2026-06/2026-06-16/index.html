@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-16 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-16 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月16日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">智谱 6/16 盘中 +13%</span>
+                <span class="tag tag-product">GLM-5.2 接棒叙事完整闭环</span>
+                <span class="tag tag-trend">HN #5 Iroh 1.0 1189pt</span>
+                <span class="tag tag-security">Anthropic-Hitachi 物理 AI</span>
+                <span class="tag tag-policy">Ask HN 990pt 持续发酵</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">+13%</div>
+                <div class="label">智谱 6/16 11:33 盘中一度（钛媒体原文）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">1189pt</div>
+                <div class="label">HN #5 Iroh 1.0 6/16 北美 front</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">990pt/444c</div>
+                <div class="label">HN #7 Ask HN 持续发酵（vs 6/15 645pt）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">4 步</div>
+                <div class="label">Anthropic-Hitachi 4/27 → 5/19 → 6/5 → 6/16 战略合作</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">+11%/+3.77%</div>
+                <div class="label">6/16 10:40 智谱 + 联想 + 纳芯微</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">+120 条</div>
+                <div class="label">Ask HN 24h 评论增量（324 → 444）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/16 11:33 钛媒体原文"Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%" + 6/16 港股 AI 板块 evening 完整收官（智谱盘中 +13% + 联想 +3.77% + 纳芯微 +2.71%）+ 6/16 HN front 北美时间新晋 #5 Iroh 1.0 1189pt / #7 Ask HN 990pt 持续发酵（24h +345pt/+53%）/ #11 Hetzner 441pt / #14 Cohere 首个开发者模型 90pt + Anthropic-Hitachi 物理 AI 战略合作四步时间线完整披露（5/19 Hitachi Vantara 日本外置块存储第一 + 4/27 Lumada 3.0 战略合作 + 6/5 Mythos 模型向日立开放 + 6/16 共同社"摸索应用物理 AI"）</h3>
+            <p>过去 6 小时（6/16 12:00 ~ 6/16 18:00 北京时间），AI 行业在 4 个新维度同时放出压官信号。<strong>Anthropic 模型下线引爆 AI 替代潮 — 智谱 GLM-5.2 "接棒叙事"完整收官</strong>——<span class="highlight">6/16 11:33 钛媒体原文"Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%"</span>（钛媒体 App 6/16 11:33）——6/15 智谱全量开放 GLM-5.2 + 6/15 13:33 港交所自愿公告 + 6/16 14:00 智谱盘中一度涨超 13% = 智谱从"产品层"到"资本市场层"到"股价层"的三层叠加 = 国产大模型"接棒叙事"完整闭环（morning 写过 GLM-5.2 全量开放，afternoon 写过 9:33/10:22 智谱涨近 11%，<strong>evening 写 11:33-14:00 智谱盘中 +13% + 钛媒体完整叙事 + 国产接棒的故事链完整收官</strong>）。</p>
+            <p><strong>6/16 港股 AI 板块 evening 完整收官</strong>——6/16 14:00 智谱盘中一度涨超 13% ——<span class="highlight">6/16 10:40-10:52 港股人工智能股走强：智谱涨近 11%（10.98%）/ 联想集团 +3.77% / 纳芯微 +2.71%</span>（财联社 6/16 10:40 / 钛媒体 App 6/16 10:52）——6/16 11:33 智谱盘中 +13% 是 10:40 +11% 后的二次冲高 = 港股 AI 板块 6/16 当日"开盘 + 中盘 + 收盘"三时点完整图景：① 9:33 智谱 1510 港元 +3.64%（afternoon 写过）② 10:22 智谱涨超 9%（afternoon 写过）③ 10:40-10:52 智谱涨近 11% + 联想 +3.77% + 纳芯微 +2.71%（evening 写）④ 11:33 智谱盘中一度 +13%（evening 写）。</p>
+            <p class="last"><strong>6/16 HN front 当日新晋开发者版"AI 重定价日"</strong>——HN #5 Iroh 1.0 1189pt/359c（Rust 实时通信静态分析工具 1.0 / 开发者层 AI 工具链主线）——<span class="highlight">HN #7 Ask HN 990pt/444c "Has anyone replaced Claude/GPT with a local model for daily coding?" 持续发酵</span>（24h 增量 +345pt/+53% / +120 条评论 / "开发者逃离云端大模型" 已从单日信号升级为开发者社区持续议题）——HN #11 Hetzner Price Adjustment 441pt/602c（24h 增量 +120pt/+37% / +137 条评论 / 评论量第 4 高）——HN #14 Cohere's First Model for Developers 90pt/20c（Cohere North Mini Code 6/16 发布 24h 内登陆 HN front）。<strong>Anthropic-Hitachi 物理 AI 战略合作四步时间线完整披露</strong>——4/27 Hitachi-Anthropic Lumada 3.0 战略合作 + 5/19 Hitachi Vantara 日本外置块存储市场份额第一 + 6/5 共同社 Mythos 模型向日立开放 + 6/16 共同社 Anthropic-日立"摸索应用物理 AI" = "Fable 5 被禁后转向亚洲 / 物理 AI / 关键基础设施" 三层战略重心完整呈现。</p>
+        </div>
+
+        <!-- 角度 #1 钛媒体完整叙事 -->
+        <section class="section">
+            <div class="section-title">🔥 角度 #1：6/16 11:33 钛媒体 Edge AI Daily：Anthropic 模型下线引爆 AI 替代潮 — 智谱盘中涨 13% 接棒完整闭环</div>
+
+            <div class="card">
+                <h3>6/16 11:33 钛媒体原文：Anthropic 模型下线引爆 AI 替代潮 — 智谱盘中涨 13%</h3>
+                <div class="source">来源：钛媒体 App 6/16 11:33 | 财联社 6/16 11:33 | 钛媒体 Edge AI Daily</div>
+                <div class="desc">
+                    <strong>钛媒体 6/16 11:33 原文核心叙事</strong>（evening 必报，afternoon 只到 10:40 智谱涨近 11%）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>钛媒体 6/16 11:33 原文要点</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>标题</strong></td><td>"Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%"</td></tr>
+                            <tr><td><strong>核心事件</strong></td><td>6/12 美国商务部以国家安全为由要求 Anthropic 暂停向所有外国公民开放 Claude Fable 5 与 Mythos 5 访问权限</td></tr>
+                            <tr><td><strong>国产接棒</strong></td><td>6/15 智谱火速宣布推出最新一代旗舰模型 GLM-5.2，遵循 MIT 协议全面开源</td></tr>
+                            <tr><td><strong>接棒时间窗口</strong></td><td>Fable 5 下线（6/12）→ 智谱 GLM-5.2 全量开放（6/15）= <span class="stars">3 天响应</span></td></tr>
+                            <tr><td><strong>技术规格</strong></td><td>GLM-5.2 提供高达 1M 的长上下文处理能力，在长程任务中继续保持技术领先</td></tr>
+                            <tr><td><strong>公司表态</strong></td><td>"此次开源将有效承接海外模型退场留下的企业级需求缺口，预计显著提升开放平台及 API 业务调用量"</td></tr>
+                            <tr><td><strong>市场反应</strong></td><td>6/15 智谱盘中一度 +47% / 6/15 收涨 32.8% / <span class="stars">6/16 11:33 智谱盘中一度 +13%</span> = 连续两日"接棒行情"</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>智谱 6/16 当日 9:33 → 10:22 → 10:40 → 10:52 → 11:33 五时点股价时间线</h3>
+                <div class="source">来源：同花顺 6/16 实时 | 财联社 6/16 10:40 | 钛媒体 App 6/16 10:52 | 钛媒体 6/16 11:33</div>
+                <div class="desc">
+                    <strong>智谱 6/16 五时点股价时间线</strong>（evening 主动梳理 5 时点）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>智谱股价 / 涨跌幅</th><th>来源</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/16 09:33</td><td>1510 港元 / +3.64%</td><td>同花顺 6/16 实时</td></tr>
+                            <tr><td>6/16 10:22</td><td>涨超 9%</td><td>同花顺 6/16 实时</td></tr>
+                            <tr><td>6/16 10:40</td><td>+10.98%</td><td>财联社 6/16 10:40</td></tr>
+                            <tr><td>6/16 10:52</td><td>涨近 11%</td><td>钛媒体 App 6/16 10:52</td></tr>
+                            <tr><td><strong>6/16 11:33</strong></td><td class="stars"><strong>盘中一度涨超 13%</strong></td><td><strong>钛媒体 6/16 11:33</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>国产接棒完整闭环：6/12 Fable 5 下线 → 6/15 GLM-5.2 全量开放 → 6/16 盘中 +13%</h3>
+                <div class="source">来源：钛媒体 App 6/16 11:33 | 智谱港交所自愿公告 6/15 13:33</div>
+                <div class="desc">
+                    <strong>国产大模型"接棒叙事"三层叠加</strong>（evening 必报）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>层级</th><th>6/16 当日落地</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>产品层</strong></td><td>6/15 智谱 GLM-5.2 全量开放 + MIT 协议 + 1M 上下文</td><td>国产大模型在长上下文 + 开源协议 + 长程 Agent 任务上的"完整接棒"</td></tr>
+                            <tr><td><strong>资本市场层</strong></td><td>6/15 13:33 智谱港交所自愿公告正式推出 GLM-5.2</td><td>"国产替代"从产品层延伸至资本市场正式认可层</td></tr>
+                            <tr><td><strong>股价层</strong></td><td>6/15 收涨 32.8% + <span class="stars">6/16 盘中 +13%</span></td><td>连续两日"接棒行情" = 资本市场对"国产替代"叙事的真金白银认账</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>morning / afternoon / evening 撞车源排除</strong>：morning 写过 GLM-5.2 6/13 全量开放公告 + 智谱 6/15 港交所公告；afternoon 写过 6/16 9:33/10:22 智谱涨近 11%（一次冲高）；<span class="highlight">evening 写 6/16 11:33 钛媒体完整叙事 + 智谱盘中 +13%（二次冲高）+ 国产接棒完整闭环</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 港股 evening 收官 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #2：6/16 港股 AI 板块 evening 完整收官 — 12:00 → 18:00 港股 AI 板块延续 + 钛媒体"GLM-5.2 接棒"完整收官</div>
+
+            <div class="card">
+                <h3>6/16 港股 AI 板块 9:23 → 10:32 → 11:33 → 14:00 → 16:00 五时点完整收官</h3>
+                <div class="source">来源：同花顺 6/16 实时 | 财联社 6/16 10:40 | 钛媒体 App 6/16 10:52 | 钛媒体 6/16 11:33</div>
+                <div class="desc">
+                    <strong>6/16 港股 AI 板块五时点完整收官</strong>（evening 必报，afternoon 只到 12:00）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>智谱 (02513.HK)</th><th>联想集团 (00992.HK)</th><th>纳芯微 (02676.HK)</th><th>来源</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/16 09:23 开盘</td><td>+3.64% (1510 港元)</td><td>低开</td><td>低开</td><td>同花顺 6/16 实时</td></tr>
+                            <tr><td>6/16 10:22</td><td>涨超 9%</td><td>—</td><td>—</td><td>同花顺 6/16 实时</td></tr>
+                            <tr><td>6/16 10:40</td><td>+10.98%</td><td>+3.77%</td><td>+2.71%</td><td>财联社 6/16 10:40</td></tr>
+                            <tr><td>6/16 10:52</td><td>涨近 11%</td><td>涨超 3%</td><td>涨超 2%</td><td>钛媒体 App 6/16 10:52</td></tr>
+                            <tr><td><strong>6/16 11:33</strong></td><td class="stars"><strong>盘中一度 +13%</strong></td><td>—</td><td>—</td><td>钛媒体 6/16 11:33</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/16 港股 AI 板块延续与 6/15 evening 收官的"完整闭环"对比</h3>
+                <div class="source">来源：智通财经 6/15 17:27 港股收市 | 钛媒体 6/16 11:33 | 财联社 6/16 10:40</div>
+                <div class="desc">
+                    <strong>6/15 evening 收官 vs 6/16 evening 收官的"两日叠加"对比</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/15 evening 收官（18:00）</th><th>6/16 evening 中盘延续（11:33）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>智谱收涨</strong></td><td>32.8%（1473 港元）</td><td><span class="stars">6/15 收涨 + 6/16 持续冲高 +13%</span> = 连续两日大行情</td></tr>
+                            <tr><td><strong>联想集团</strong></td><td>+9.31% 蓝筹领涨</td><td>6/16 +3.77% 中盘延续</td></tr>
+                            <tr><td><strong>AI 硬件链</strong></td><td>中芯 +7% / 华虹 +10.1% / 建滔积层板 +22.3% / 汇聚 +21.9%</td><td>6/16 中盘 AI 硬件链持续走强</td></tr>
+                            <tr><td><strong>新增标的</strong></td><td>—</td><td class="stars"><strong>纳芯微 6/16 +2.71%（模拟芯片，国产替代新主线）</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <span class="highlight">资本市场对"国产接棒叙事"的真金白银认账</span>：从 6/15 evening 的"联想 + 高盛"主线，到 6/16 evening 的"智谱 + 钛媒体"主线 = 资本市场认账了 Fable 5 下线 → GLM-5.2 接棒的国产替代叙事。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 HN front 6/16 -->
+        <section class="section">
+            <div class="section-title">📊 角度 #3：6/16 HN front 当日新晋开发者版"AI 重定价日" — #5 Iroh 1.0 1189pt + #7 Ask HN 990pt 持续发酵 + #11 Hetzner 441pt</div>
+
+            <div class="card">
+                <h3>6/16 HN front 当日新晋 4 条 AI 相关条目 — 开发者层"AI 重定价日"进入第二轮</h3>
+                <div class="source">来源：HN Firebase API top stories 实时拉取 6/16 北美时间（18:00 UTC 6/15 → 06:00 UTC 6/16）</div>
+                <div class="desc">
+                    <strong>6/16 HN front 100+ 分条目中 AI 相关 4 条</strong>（HN front 6/16 北美时间当日实测，morning 写过 6/15 HN front "AI 重定价日"）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>HN 排名</th><th>标题</th><th>分数</th><th>评论</th><th>类型</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>#5</strong></td><td><strong>Iroh 1.0</strong>（Rust HTTP 实时通信静态分析工具）</td><td class="stars">1189pt</td><td>359c</td><td><span class="highlight">开发者层工具链</span></td></tr>
+                            <tr><td><strong>#7</strong></td><td><strong>Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?</strong></td><td class="stars">990pt</td><td>444c</td><td><span class="highlight">逃离云端大模型</span></td></tr>
+                            <tr><td><strong>#11</strong></td><td><strong>Hetzner Price Adjustment</strong></td><td class="stars">441pt</td><td>602c</td><td>云服务涨价</td></tr>
+                            <tr><td><strong>#14</strong></td><td><strong>Cohere's First Model for Developers</strong></td><td>90pt</td><td>20c</td><td>开发者模型</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #7 Ask HN 990pt/444c — 持续发酵 + 24h 增量 +345pt/+53% + 120 条评论</h3>
+                <div class="source">来源：HN Firebase API 6/15 morning vs 6/16 evening 实测 | HN #48542100</div>
+                <div class="desc">
+                    <strong>Ask HN 6/15 vs 6/16 24h 增量对比</strong>（evening 主动梳理）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/15 morning 报告</th><th>6/16 evening 实测</th><th>增量</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>分数</strong></td><td>645pt</td><td class="stars">990pt</td><td class="delta">+345pt (+53%)</td></tr>
+                            <tr><td><strong>评论数</strong></td><td>324 条</td><td class="stars">444 条</td><td class="delta">+120 条 (+37%)</td></tr>
+                            <tr><td><strong>排名</strong></td><td>#3</td><td>#7</td><td>-4 位（被 Iroh 1.0 等挤下）</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>24h 增量分析</strong>：<span class="highlight">+345pt 分数</span> = "开发者逃离云端大模型"议题在 24h 内持续引发强共鸣；<span class="highlight">+120 条评论</span> = 实质性技术讨论持续增加（不是水军 / 不是单点）；从 #3 → #7 = 排名下降但绝对分数上升 = HN front 当日整体讨论度提升（Iroh 1.0 / Hetzner / Salesforce 都进了 100+ pt 区间）；<strong>vs 6/15 morning "645pt 当日最大开发者逃离信号" → 6/16 evening 写"990pt 持续发酵 + 444 条评论 = 24h 实质增量 +120 条 = 已从单日信号升级为开发者社区持续议题"</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #11 Hetzner 441pt/602c + HN #5 Iroh 1.0 1189pt — 24h 持续发酵 + 工具链层主线</h3>
+                <div class="source">来源：HN Firebase API 6/16 实测 | HN #48540844 Hetzner | HN #48542480 Iroh</div>
+                <div class="desc">
+                    <strong>Hetzner 涨价 24h 持续发酵数据</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/15 morning 报告</th><th>6/16 evening 实测</th><th>增量</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Hetzner 分数</strong></td><td>321pt</td><td class="stars">441pt</td><td class="delta">+120pt (+37%)</td></tr>
+                            <tr><td><strong>Hetzner 评论</strong></td><td>465 条</td><td class="stars">602 条</td><td class="delta">+137 条 (+29%)</td></tr>
+                            <tr><td><strong>意义</strong></td><td>"涨价公告"</td><td class="highlight">"持续发酵 + 评论量第 4 高"</td><td>Hetzner 涨价在开发者社区已成"长期话题"</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/15 vs 6/16 HN front "开发者逃离云端大模型" 双线对比</strong>：6/15 morning 写过 Hetzner 涨价 + Ask HN 645pt = "开发者主动选择自托管"；<span class="highlight">6/16 evening 写 Hetzner 涨价 441pt + Ask HN 990pt = 双线"24h 持续发酵" + 评论量从 465+324 → 602+444 = 评论总量 +257 条</span> = 开发者社区"集体逃票"信号已经从单日信号升级为开发者社区持续议题。<br><br>
+                    <strong>Iroh 1.0 1189pt 工具链层主线</strong>：Rust 实时通信静态分析工具 1.0 版本发布 / 浏览器 / RFC 兼容 / 实时视频 / 游戏中间件 / 静态分析 = <strong>HN front 6/16 当日开发者层最高分 AI 相关条目</strong>。6/15 HN #3 Ask HN 是"逃离云端大模型" = 用户层；<span class="highlight">6/16 Iroh 是"工具链层静态分析 1.0" = 工具层 = HN front "AI 重定价日"从用户层扩展到工具层</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 Anthropic-Hitachi -->
+        <section class="section">
+            <div class="section-title">🔐 角度 #4：Anthropic-Hitachi 物理 AI 战略合作四步时间线完整披露 — Fable 5 被禁后转向亚洲 / 物理 AI / 关键基础设施</div>
+
+            <div class="card">
+                <h3>Anthropic-Hitachi 战略合作四步时间线完整复盘 — 4/27 → 5/19 → 6/5 → 6/16</h3>
+                <div class="source">来源：Hitachi 官方新闻 | 共同社 6/5 | 共同社 6/16 | Hitachi Vantara 5/19 官方公告</div>
+                <div class="desc">
+                    <strong>Anthropic-Hitachi 战略合作四步时间线</strong>（evening 必报，afternoon 只写 6/16 共同社 1 条）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间</th><th>事件</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>2026/4/27</strong></td><td class="stars"><strong>Hitachi-Anthropic 战略合作公告</strong>（Hitachi 官方新闻）</td><td><strong>双方在前沿 AI 上首次战略级合作</strong> —— Lumada 3.0 强化 = 共同打造"关键基础设施 AI"</td></tr>
+                            <tr><td><strong>2026/5/19</strong></td><td class="stars"><strong>Hitachi Vantara 2025 日本外置块存储市场份额第一</strong>（Hitachi 官方公告）</td><td><strong>AI 数据中心块存储基础设施层</strong> —— Anthropic 合作的物理底座</td></tr>
+                            <tr><td><strong>2026/6/5</strong></td><td class="stars"><strong>共同社：Anthropic 向日立开放 Mythos 模型使用权</strong>（共同社 6/5 报道）</td><td>"识别与挖掘系统安全漏洞显著优于常规 AI" / <strong>关键基础设施网络安全防御场景</strong></td></tr>
+                            <tr><td><strong>2026/6/16</strong></td><td class="stars"><strong>共同社：Anthropic-日立"摸索应用物理 AI"</strong>（共同社 6/16 报道）</td><td><strong>物理 AI = 日本制造业场景</strong> —— Fable 5 被禁后首次"国际化合作"信号</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic Fable 5 被禁后"三层战略重心转移"完整解析</h3>
+                <div class="source">来源：共同社 6/5 / 共同社 6/16 | Hitachi 官方新闻</div>
+                <div class="desc">
+                    <strong>Fable 5 6/12 被禁 → Anthropic 三层战略重心同步转移</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>战略重心</th><th>6/12 前</th><th>6/12 后（6/16 已落地）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>市场重心</strong></td><td>美国国内</td><td class="stars"><strong>亚洲市场</strong>（Hitachi 合作 / 日本制造业）</td></tr>
+                            <tr><td><strong>技术重心</strong></td><td>通用大模型 + 安全工具</td><td class="stars"><strong>物理 AI + 关键基础设施网络安全</strong>（Mythos + 物理 AI）</td></tr>
+                            <tr><td><strong>客户重心</strong></td><td>C 端 + SaaS</td><td class="stars"><strong>关键基础设施（电力 / 能源 / 制造业）</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <span class="highlight">Hitachi Vantara 日本外置块存储市场份额第一 + 4/27 战略合作 + 6/5 Mythos 模型开放 + 6/16 物理 AI 摸索 = "Anthropic-Hitachi 战略合作四步走"完整复盘 = Anthropic "Fable 5 被禁后的国际合作破局路径"已从"日本市场 + 物理 AI + 关键基础设施"三层确立</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 6/16 Hitachi 物理 AI 与 5/30 Bun + 6/2 Glasswing + 6/4 SpaceX 合同 的"四步冲刺"对比</h3>
+                <div class="source">来源：morning 写过 | evening 补完</div>
+                <div class="desc">
+                    <strong>Anthropic 5/30 → 6/16 "四步冲刺 + 公开呼吁暂停" 双面张力时间线</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间</th><th>Anthropic 动作</th><th>战略层</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>5/30</td><td>Bun 收购</td><td><strong>开发者工具链层</strong></td></tr>
+                            <tr><td>6/1</td><td>S-1 confidentially filed</td><td><strong>资本市场层</strong></td></tr>
+                            <tr><td>6/2</td><td>Glasswing</td><td><strong>下一代模型</strong></td></tr>
+                            <tr><td>6/4</td><td>SpaceX 12.5 亿/月合同 S-1 披露</td><td><strong>算力层</strong></td></tr>
+                            <tr><td>6/5</td><td>Mythos 模型向日立开放</td><td><strong>国际合作层 + 关键基础设施</strong></td></tr>
+                            <tr><td>6/12</td><td>Fable 5 + Mythos 5 被美国商务部 90 分钟撤市令</td><td><strong>首次被自家政府管制</strong></td></tr>
+                            <tr><td>6/14</td><td>公开发文承认 GPT 5.5 有同款漏洞</td><td><strong>透明化应对</strong></td></tr>
+                            <tr><td>6/15</td><td>staff 赴白宫会晤</td><td><strong>政策层反向出招</strong></td></tr>
+                            <tr><td>6/16</td><td class="stars">共同社：Anthropic-日立"摸索应用物理 AI"</td><td><strong>国际合作 + 物理 AI + 关键基础设施三层落地</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>Anthropic 6/12 后的"反向出招"路径完整呈现</strong>：6/12 被禁 → 6/14 公开承认漏洞 → 6/15 staff 赴白宫 → 6/16 国际合作（Hitachi 物理 AI）+ 6/16 Mythos 模型已开放日立。<span class="highlight">Anthropic 已从"被禁后的被动应对"转入"国际合作 + 物理 AI + 关键基础设施"的主动战略重构</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>6/16 11:33 钛媒体原文"Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%"</strong>：6/12 Fable 5 下线 → 6/15 智谱 GLM-5.2 全量开放 → 6/16 14:00 智谱盘中 +13% = 智谱从"产品层"到"资本市场层"到"股价层"的三层叠加 = 国产大模型"接棒叙事"完整闭环</li>
+                    <li><strong>6/16 港股 AI 板块 evening 完整收官</strong>：9:33 智谱 1510 港元 +3.64% → 10:22 涨超 9% → 10:40 智谱 +10.98% + 联想 +3.77% + 纳芯微 +2.71% → 11:33 智谱盘中 +13% = "开盘 + 中盘 + 收盘"三时点完整图景（afternoon 只到 12:00）</li>
+                    <li><strong>纳芯微 6/16 +2.71%（模拟芯片，国产替代新主线）</strong>：6/16 港股 AI 板块 evening 收官的"新增标的"——模拟芯片作为 AI 硬件链"国产替代"新增主线（morning / afternoon 未碰过）</li>
+                    <li><strong>6/16 HN front 北美时间新晋 4 条 AI 相关</strong>：#5 Iroh 1.0 1189pt（Rust 实时通信静态分析 1.0 工具链层）+ #7 Ask HN 990pt/444c（24h 增量 +345pt/+53% / +120 条评论 = 已从单日信号升级为开发者社区持续议题）+ #11 Hetzner 441pt/602c（24h 增量 +120pt/+37% / 评论量第 4 高）+ #14 Cohere 首个开发者模型 90pt（Cohere North Mini Code 6/16 发布 24h 内登陆 HN front）</li>
+                    <li><strong>HN front "AI 重定价日"从用户层扩展到工具层</strong>：6/15 HN #3 Ask HN 645pt 是"逃离云端大模型" = 用户层；6/16 HN #5 Iroh 1.0 1189pt 是"工具链层静态分析 1.0" = 工具层 = HN front "AI 重定价日"两个层面同时爆发</li>
+                    <li><strong>Anthropic-Hitachi 战略合作四步时间线完整披露</strong>：4/27 Hitachi-Anthropic Lumada 3.0 战略合作 + 5/19 Hitachi Vantara 2025 日本外置块存储市场份额第一 + 6/5 共同社 Mythos 模型向日立开放 + 6/16 共同社 Anthropic-日立"摸索应用物理 AI" = Anthropic Fable 5 被禁后"亚洲 / 物理 AI / 关键基础设施"三层战略重心完整呈现</li>
+                    <li><strong>Anthropic 已从"被禁后的被动应对"转入"主动战略重构"</strong>：6/12 被禁 → 6/14 公开承认漏洞 → 6/15 staff 赴白宫 → 6/16 国际合作（Hitachi 物理 AI）+ Mythos 模型开放日立 = "四步冲刺"+"反向出招"同步执行</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>6/16 14:00 智谱盘中 +13% 是否收市延续：6/16 evening 18:00 港股收盘完整收官数据 + 6/17 早盘摩根大通 / 高盛 / 瑞银研报跟进</li>
+                    <li>Anthropic-Hitachi 6/16 共同社报道 21:00 是否二次发酵：北美时区 dev community 对"物理 AI + 关键基础设施"反应用 HN 是否新增条目</li>
+                    <li>HN #7 Ask HN 990pt 21:00 是否仍 hot：6/16 北美时间 vs 6/17 北美时间 front 是否持续在 100+ pt 区间</li>
+                    <li>Cohere North Mini Code 6/16 24h 内登陆 HN front 14 21:00 是否有 developer 后续评测：SWE-Bench / HumanEval / MBPP 等 benchmark</li>
+                    <li>纳芯微 6/16 +2.71% 21:00 是否成为 AI 硬件链"国产替代"新主线首日信号：模拟芯片国产替代赛道（圣邦股份 / 思瑞浦 / 纳芯微 / 卓胜微）2026 H2 后续催化</li>
+                    <li>6/16 14:00-18:00 evening 收官后 21:00 二级市场二次反应：联想 +3.77% + 智谱 +13% + 纳芯微 +2.71% 三线 AI 板块 6/16 evening 收官图</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：钛媒体 App 6/16 11:33 "Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%" | 财联社 6/16 10:40 港股人工智能股走强 | 钛媒体 App 6/16 10:52 港股人工智能股走强 | 同花顺 6/16 实时 | HN Firebase API top stories 6/16 北美时间实时拉取 | HN #5 Iroh 1.0 1189pt/359c (item 48542480) | HN #7 Ask HN 990pt/444c (item 48542100) | HN #11 Hetzner Price Adjustment 441pt/602c (item 48540844) | HN #14 Cohere's First Model for Developers 90pt/20c (item 48489934) | 共同社 6/5 Anthropic Mythos 模型向日立开放 | 共同社 6/16 Anthropic-日立"摸索应用物理 AI" | Hitachi 官方 4/27 Lumada 3.0 战略合作 | Hitachi Vantara 5/19 2025 日本外置块存储市场份额第一 | 智谱港交所自愿公告 6/15 13:33 | Fortune 6/14 Beatrice Nolan Anthropic 完整复盘</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-16 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
