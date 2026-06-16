@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-16 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-16 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月16日 09:00 发布（采集自6月15日 22:00 ~ 6/16 09:00 北美时间）</p>
+            <div class="meta">
+                <span class="tag tag-product">HN 重定价日</span>
+                <span class="tag tag-capital">资本涌入</span>
+                <span class="tag tag-policy">美中欧三轨</span>
+                <span class="tag tag-trend">B 端集中</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-orange">
+                <div class="number">645pt</div>
+                <div class="label">Ask HN "replaced Claude/GPT with local model" HN #3 当日 AI 头条</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">$725B</div>
+                <div class="label">Big Four hyperscaler 2026 capex +77% YoY（史上最大）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">$965B</div>
+                <div class="label">Anthropic 5/28 Series H 估值（超越 OpenAI）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">12 亿</div>
+                <div class="label">ChatGPT 6/12 Forbes 里程碑（=Anthropic+Gemini+Grok 总和）</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">$3.6B</div>
+                <div class="label">Salesforce 6/15 现金收购 Fin 史上最大 AI 客服代理并购</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">49 天</div>
+                <div class="label">EU AI Act 2026/8/2 全面适用倒计时</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/15 HN front "AI 重定价日" — Ask HN 645pt/324c "逃离云端大模型" + Hetzner 321pt/465c 涨价 + Salesforce 271pt/207c $3.6B 收购 Fin + Big Four hyperscaler 2026 capex 指引升级至 $725B（+77% YoY）+ Anthropic $965B 估值 5/28 Series H + Mythos 5/Fable 5 6/12 出口管制 + EU AI Act 8/2 全面适用 49 天倒计时 + Trump 6/2 行政令 "Promoting Advanced AI Innovation and Security" + 智谱 6/15 港股 +32.8% 收盘 + ChatGPT 12 亿用户 6/12 Forbes 里程碑 + Salesforce $3.6B 收购 Fin 6/15 HN #9 + arXiv cs.AI 6/15 151 篇新论文</h3>
+            <p>过去 11 小时（6/15 22:00 ~ 6/16 09:00 北美时间），AI 行业在 4 个新维度同时放出压倒性信号：<strong>开发者社区"逃离云端大模型"集体行动（HN #3 Ask HN 645pt + Hetzner #6 321pt）</strong>——<span class="highlight">6/15 HN front 12 条 100+ 分条目中 3 条 AI 相关 = #3 Ask HN 645pt/324c "Has anyone replaced Claude/GPT with a local model for daily coding?" + #6 Hetzner 321pt/465c 涨价 + #9 Salesforce $3.6B 收购 Fin 271pt/207c = 6/15 是 HN front "AI 重定价日"</span>。HN #3 评论 324 条 = 开发者社区对"云端大模型订阅 + token 计量"模式的集体反思节点。核心评论："Been using Qwen 3.7 Plus 32B on a M3 Ultra for 3 months now. Code completion is 80% of GPT-4o quality. Token cost is literally $0."<strong>AI 资本市场"算力 + 模型"双线资本涌入（Big Four $725B + Anthropic $965B）</strong>——Big Four hyperscaler 2026 资本开支指引升级至 $725B（+77% YoY / Amazon $200B + Alphabet $175-185B + Meta $115-135B + Microsoft $200B+ / 4 家合计 = 较 2024 $200B 涨 2.6x = 史上最大单一年度基础设施投资）+ Anthropic $965B 估值 5/28 Series H 已确认（5/28 公告 $65B / run-rate 营收 $47B mid-May 2026 / Q2 2026 预计 $10.9B 营收 / 6/1 confidential S-1 / 6/12 Mythos 5 + Fable 5 出口管制 / 6/15 staff 赴白宫）。</p>
+            <p><strong>"美中欧三轨"AI 监管 6/15 同步加速</strong>——<span class="highlight">EU AI Act 2026/8/2 全面适用 49 天倒计时</span>（Article 57 要求各成员国 8/2 前建立至少 1 个 AI 监管沙盒 / prohibited AI practices 6/2 已生效）+ Trump 6/2 行政令 "Promoting Advanced Artificial Intelligence Innovation and Security" 6/5 实施（CAISI 商务部 Center for AI Standards and Innovation 预先评估机制 = 6/12 Mythos 5 出口管制首次实际应用）+ 中国 AI 监管 6/15 工信部 2030 年"通感算智一体化"+ 6/15 港股 evening 收官联想 +9.31% / 智谱 +32.8% = 全球 AI 监管已从"原则宣言"进入"细则落地"阶段。<strong>"AI 商业化向 B 端集中"三连击</strong>——<span class="highlight">Forbes 6/12 报道 ChatGPT 12 亿用户里程碑</span>（OpenAI 2025 报告 1M 企业客户 + 8 亿个人周活用户 / 企业收入占比 40%+ / 9M 付费 business users / 7M ChatGPT workplace seats / 12 亿用户 = Anthropic + Google Gemini + xAI 全部用户总和）+ Salesforce 6/15 官宣 $3.6B 现金收购 Fin（前 Intercom / 史上最大 AI 客户支持代理公司并购 / Fin 已为 6000+ 企业客户提供 AI Agent 服务）+ Anthropic 6/12 出口管制 = "AI 用户已到天花板 + 商业化向 B 端集中" 的 6/15 三连击。</p>
+            <p class="last">本早报主动差异化 6/15 4 时段（morning 写过 Anthropic 90 分钟撤市令 + KPMG 89% 幻觉 + Rio3.5=Qwen fork + 智谱 GLM-5.2 6/13 公告 + 腾讯云 6/15 起 MiniMax-M3 降价 50% + HN yegg 395pt + Bram Cohen 77pt + SE Gyges 49pt + Fulcrum IRO / afternoon 写过 6/15 0:00 腾讯云 MiniMax-M3 生效 + 6/15 12:00 阿里云 ACS 生效 + 智谱港股 +34%/+48% + 金山云 7/12 涨价 + Anthropic-SpaceX 12.5亿/月合同 + 腾讯 113 亿回购 / evening 写过 6/15 港股 evening 收官联想 +9.31% + 高盛 31 港元 ISG 重新评级 + 6/15 Anthropic staff 赴白宫 + 智谱 13:33 港交所公告 + HN #4 curl 402pt + HN #15 Apple 139pt / 21evening 写过 Stratechery "Anthropic Safety Superpower" 113pt + OpenRouter Fusion API 85pt + 36kr 21:00 中文 AI 头条三连发 + 6/15 16:15 凤凰/腾讯"白宫 24h 复盘" + David Sacks 立场翻转），聚焦<strong>开发者"逃离云端大模型"信号（Ask HN 645pt + Hetzner 321pt + Salesforce 271pt "HN 重定价日"）+ Big Four hyperscaler capex $725B + Anthropic $965B "AI 资本市场双线涌入"+ EU AI Act 49 天 + Trump 6/2 EO + 中国 2030 "美中欧三轨"监管 6/15 同步加速 + ChatGPT 12 亿 + Salesforce $3.6B + Anthropic 出口管制"AI 商业化向 B 端集中"三连击</strong>四维度。</p>
+        </div>
+
+        <!-- 角度 #1：HN 重定价日 -->
+        <section class="section">
+            <div class="section-title">🚀 角度 #1：6/15 HN front "AI 重定价日" — Ask HN 645pt/324c "逃离云端大模型" + Hetzner 321pt/465c 涨价 + Salesforce 271pt/207c 收购 Fin</div>
+
+            <div class="card">
+                <h3>HN #3 Ask HN 645pt/324c "Has anyone replaced Claude/GPT with a local model for daily coding?" — 6/15 HN front 当日最大开发者"逃离"信号</h3>
+                <div class="source">来源：HN #3 645pt/324c | 6/15 22:00 UTC 之前 | news.ycombinator.com/item?id=48542100</div>
+                <div class="desc">
+                    <strong>核心问题</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        "Has anyone replaced Claude/GPT with a local model for daily coding? / Anyone done it? What was the workflow? Quality vs GPT-4o/Claude 3.5-Sonnet 差距大吗？硬件门槛？" / <span class="highlight">324 条评论 = HN front 6/15 当日评论量第 6 高</span>
+                    </blockquote>
+                    <strong>HN 高赞评论（精选 4 条）</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li>"Been using Qwen 3.7 Plus 32B on a M3 Ultra for 3 months now. / Code completion is 80% of GPT-4o quality. / Token cost is literally $0."</li>
+                        <li>"I'm running DeepSeek V4 22B locally on a 3090. / Claude Code is great, but the cost adds up. / At some point the math doesn't math anymore."</li>
+                        <li>"The real question isn't whether local models match Claude/GPT quality. / It's whether the 80% quality at 0% cost is good enough for daily coding."</li>
+                        <li>"Anthropic Fable 5 + GitHub Copilot token metering + Hetzner 涨价 = I'm officially done with cloud models for daily work."</li>
+                    </ul>
+                    <strong>与 6/15 已发生事件的相关性</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">事件</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/15 时间</td>
+                            <td style="padding: 6px; color: var(--text-muted);">Ask HN 645pt 回声</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">Anthropic Fable 5 + Mythos 5 出口管制</td><td style="padding: 6px;">6/12 21:00</td><td style="padding: 6px;">"Anthropic 已经开始对自家模型搞出口管制了，谁知道下周会发生什么"</td></tr>
+                        <tr><td style="padding: 6px;">GitHub Copilot token 计量改革</td><td style="padding: 6px;">6/1</td><td style="padding: 6px;">"GitHub Copilot 4.7M 用户账单涨 25-50x"</td></tr>
+                        <tr><td style="padding: 6px;">Hetzner 6/15 涨价 8-23%</td><td style="padding: 6px;">6/15 公告</td><td style="padding: 6px;">"云服务也开始涨了，本地自托管才是出路"</td></tr>
+                        <tr><td style="padding: 6px;">OpenAI ChatGPT 12 亿用户</td><td style="padding: 6px;">6/12 Forbes</td><td style="padding: 6px;">"12 亿用户都在用云端，开发者主动逃离 = 蓝海机会"</td></tr>
+                        <tr><td style="padding: 6px;">智谱 GLM-5.2 6/13 全量开放 MIT 协议</td><td style="padding: 6px;">6/13 17:21</td><td style="padding: 6px;">"GLM-5.2 MIT 协议 = 开源本地运行的可能性"</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #6 Hetzner 321pt/465c 涨价公告 — 6/15 HN front "AI 重定价"基础设施侧信号</h3>
+                <div class="source">来源：HN #6 321pt/465c | Hetzner 6/15 公布 / 7/1 生效 | hetzner.com</div>
+                <div class="desc">
+                    <strong>核心内容</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心内容</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">公司</td><td style="padding: 6px;">Hetzner Online（德国云服务商）</td></tr>
+                        <tr><td style="padding: 6px;">公告日期</td><td style="padding: 6px;">6/15 公布，7/1 生效</td></tr>
+                        <tr><td style="padding: 6px;">涨价幅度</td><td style="padding: 6px;">Cloud Server 8-23% / Storage Box / Load Balancer 同步涨价</td></tr>
+                        <tr><td style="padding: 6px;">代表实例</td><td style="padding: 6px;">CX22 4 vCPU 8GB $4 → $4.5（+12.5%）/ CCX63 48 vCPU 192GB $63 → $73（+15.9%）</td></tr>
+                        <tr><td style="padding: 6px;">意义</td><td style="padding: 6px;"><span class="highlight">欧洲主流云服务商 6/15 集体涨价 = 基础设施成本通胀已传导至终端</span></td></tr>
+                    </table>
+                    <strong>Hetzner 465 条评论核心观点</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li>"Hetzner has been the 'cheap but reliable' option for 20+ years. / This is the first time I see them raise prices. / The math of running AI models locally just got better."</li>
+                        <li>"Switching from Hetzner to my own homelab. / A 4090 + EPYC = 5 year cost / 2 year cloud cost."</li>
+                        <li>"If you're running a self-hosted Qwen 3.7 / DeepSeek V4 / GLM-5.2 stack, the Hetzner price increase doesn't matter. / But for everyone else, the cloud AI bill just got more expensive."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #9 Salesforce $3.6B 收购 Fin 271pt/207c — 6/15 HN front 当日 AI 商业落地最大并购</h3>
+                <div class="source">来源：HN #9 271pt/207c | Salesforce 6/15 官宣 | news.ycombinator.com/item?id=48540126</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心数据</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">收购方</td><td style="padding: 6px;">Salesforce (CRM)</td></tr>
+                        <tr><td style="padding: 6px;">被收购方</td><td style="padding: 6px;">Fin（前 Intercom AI 客户支持部门）</td></tr>
+                        <tr><td style="padding: 6px;">金额</td><td style="padding: 6px;"><span class="highlight">$3.6B 现金</span></td></tr>
+                        <tr><td style="padding: 6px;">宣布日期</td><td style="padding: 6px;">6/15</td></tr>
+                        <tr><td style="padding: 6px;">业务规模</td><td style="padding: 6px;">Fin 已为 6000+ 企业客户提供 AI Agent 服务</td></tr>
+                        <tr><td style="padding: 6px;">整合路径</td><td style="padding: 6px;">Salesforce Service Cloud</td></tr>
+                        <tr><td style="padding: 6px;">估值倍数</td><td style="padding: 6px;">$3.6B / 6000+ 企业客户 = $600K/企业 = 8-10x ARR 倍数</td></tr>
+                    </table>
+                    <strong>6/15 HN front 三连击 "AI 重定价日"全景</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        6/15 HN front 12 条 100+ 分条目中 3 条 AI 相关 + 1 条 AI 间接相关（"I Love the Computer" 127pt/81c）= <span class="highlight">6/15 HN front 当日"AI 重定价日"</span>。Ask HN 645pt = 开发者"逃离云端"信号 + Hetzner 321pt = 基础设施涨价 + Salesforce 271pt = 商业落地并购。4 个维度在同一天集中爆发 = AI 行业从"概念验证"进入"商业落地"的关键节点。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：Big Four hyperscaler + Anthropic $965B -->
+        <section class="section">
+            <div class="section-title">💰 角度 #2：Big Four hyperscaler 2026 capex 升级至 $725B（+77% YoY）+ Anthropic $965B 估值 — 6/15 港股 evening 收官"AI 基础设施侧"主线的资本源头解析</div>
+
+            <div class="card">
+                <h3>Big Four hyperscaler 2026 capex 指引升级至 $725B（+77% YoY）— 史上最大单一年度基础设施投资</h3>
+                <div class="source">来源：Goldman Sachs 6/15 | Futurum Research | Yahoo Finance | CNBC 6/15</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">厂商</td>
+                            <td style="padding: 6px; color: var(--text-muted);">2026 capex 指引</td>
+                            <td style="padding: 6px; color: var(--text-muted);">YoY 涨幅</td>
+                            <td style="padding: 6px; color: var(--text-muted);">关键驱动</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">Amazon</td><td style="padding: 6px;">$200B</td><td style="padding: 6px;">+50%+</td><td style="padding: 6px;">AWS AI 推理 + Anthropic 算力 + Trainium 2/3</td></tr>
+                        <tr><td style="padding: 6px;">Alphabet</td><td style="padding: 6px;">$175-185B</td><td style="padding: 6px;">+60%+</td><td style="padding: 6px;">Google Cloud + Gemini + TPU v5/v6</td></tr>
+                        <tr><td style="padding: 6px;">Meta</td><td style="padding: 6px;">$115-135B</td><td style="padding: 6px;">+80%+</td><td style="padding: 6px;">Llama 4/5 + AI 广告 + 超级集群</td></tr>
+                        <tr><td style="padding: 6px;">Microsoft</td><td style="padding: 6px;">$200B+</td><td style="padding: 6px;">+60%+</td><td style="padding: 6px;">Azure + OpenAI 算力 + Copilot 集成</td></tr>
+                        <tr><td style="padding: 6px;"><strong>合计</strong></td><td style="padding: 6px;"><strong>$725B</strong></td><td style="padding: 6px;"><strong>+77% YoY</strong></td><td style="padding: 6px;"><strong>2024 $200B → 2026 $725B = 2.6x</strong></td></tr>
+                    </table>
+                    <strong>对比历史峰值</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>1990 年代末电信投资</strong>：$700B（通胀调整后）1999-2000 → <span class="highlight">2026 AI 资本开支 $725B 已超越</span></li>
+                        <li><strong>2024 hyperscaler 合计</strong>：$200B → 当前 3.6x</li>
+                        <li><strong>2008-2010 油气页岩革命</strong>：$400-500B/年峰值 → 当前 1.5-1.8x</li>
+                        <li><strong>2022 半导体行业</strong>：$200B → 当前 3.6x</li>
+                    </ul>
+                    <strong>Goldman Sachs 6/15 关键判断</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        "AI hyperscaler capex would need to reach $700 billion in 2026 to be in line with the peak of spending during the late 1990s telecom investment boom. / We are now above that line."
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic $965B 估值 5/28 Series H — 单一 AI 独角兽史上最大融资</h3>
+                <div class="source">来源：Anthropic 5/28 官方公告 | CNBC 5/28 | futuresearch.ai</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心数据</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">融资金额</td><td style="padding: 6px;">$65B Series H</td></tr>
+                        <tr><td style="padding: 6px;">投后估值</td><td style="padding: 6px;"><span class="highlight">$965B（5/28 时点）</span></td></tr>
+                        <tr><td style="padding: 6px;">领投方</td><td style="padding: 6px;">Altimeter Capital + Dragoneer + Greenoaks + Sequoia</td></tr>
+                        <tr><td style="padding: 6px;">2026 mid-May 营收 run-rate</td><td style="padding: 6px;">$47B</td></tr>
+                        <tr><td style="padding: 6px;">Q2 2026 营收预期</td><td style="padding: 6px;">$10.9B（+130% QoQ）</td></tr>
+                        <tr><td style="padding: 6px;">Q2 2026 利润预期</td><td style="padding: 6px;">$559M（首次转盈）</td></tr>
+                        <tr><td style="padding: 6px;">6/1 confidential S-1</td><td style="padding: 6px;">已递交</td></tr>
+                        <tr><td style="padding: 6px;">6/12 Mythos 5 + Fable 5 出口管制</td><td style="padding: 6px;">美国首次对自家商业 AI 模型动用出口管制</td></tr>
+                    </table>
+                    <strong>Anthropic vs OpenAI 估值对比</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">厂商</td>
+                            <td style="padding: 6px; color: var(--text-muted);">估值</td>
+                            <td style="padding: 6px; color: var(--text-muted);">营收 run-rate</td>
+                            <td style="padding: 6px; color: var(--text-muted);">营收 / 估值</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>Anthropic</strong></td><td style="padding: 6px;">$965B (5/28)</td><td style="padding: 6px;">$47B (mid-May 2026)</td><td style="padding: 6px;">4.9%</td></tr>
+                        <tr><td style="padding: 6px;">OpenAI</td><td style="padding: 6px;">$852B (5/28)</td><td style="padding: 6px;">$25B (early 2026)</td><td style="padding: 6px;">2.9%</td></tr>
+                        <tr><td style="padding: 6px;">xAI</td><td style="padding: 6px;">$200B+</td><td style="padding: 6px;"><$10B (Grok)</td><td style="padding: 6px;"><5%</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/15 港股 evening 收官 4 主线 = 全球 hyperscaler 资本涌入"产业链上游映射"</h3>
+                <div class="source">来源：港股大模型概念股日报 6/15 | 智通财经 6/15 17:27 | 中国基金报 6/15</div>
+                <div class="desc">
+                    <strong>6/15 港股 evening 收官的"AI 基础设施侧"4 主线 morning 解析</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">港股主线</td>
+                            <td style="padding: 6px; color: var(--text-muted);">代表公司</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/15 evening 收市涨幅</td>
+                            <td style="padding: 6px; color: var(--text-muted);">morning 端映射的 Big Four hyperscaler 资本涌入</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">AI 服务器 / 硬件</td><td style="padding: 6px;">联想集团 (00992)</td><td style="padding: 6px;">+9.31%</td><td style="padding: 6px;">Meta $115-135B capex / Microsoft $200B+ capex = AI 服务器需求</td></tr>
+                        <tr><td style="padding: 6px;">半导体代工</td><td style="padding: 6px;">中芯国际 (00981) / 华虹宏力</td><td style="padding: 6px;">+7.0% / +10.1%</td><td style="padding: 6px;">国产替代算力侧 + Big Four 资本涌入向国产链传导</td></tr>
+                        <tr><td style="padding: 6px;">PCB / 高速连接</td><td style="padding: 6px;">建滔积层板 / 汇聚科技</td><td style="padding: 6px;">+22.3% / +21.9%</td><td style="padding: 6px;">NVLink Fusion / 多 GW 算力 / 800G / 1.6T 光模块需求</td></tr>
+                        <tr><td style="padding: 6px;">国产大模型</td><td style="padding: 6px;">智谱 (02513)</td><td style="padding: 6px;">+32.8%</td><td style="padding: 6px;">GLM-5.2 MIT 协议开源 + Anthropic 出口管制形成反差</td></tr>
+                    </table>
+                    <strong>6/15 港股 evening 收官的战略含义（morning 端解析）</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        6/15 港股 18:00 收盘图景，<span class="highlight">是 Big Four hyperscaler 2026 capex $725B + Anthropic $965B 估值 + 国产替代加速 + Anthropic 出口管制形成反差 这 4 个产业因子在 1 个交易日的资本市场映射</span>。morning 必须把这个映射写清楚：6/15 港股收市不是孤立事件，是 6/15 全球 AI 产业链资本流入的"信号灯"。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：美中欧三轨监管 -->
+        <section class="section">
+            <div class="section-title">⚖ 角度 #3：EU AI Act 2026/8/2 全面适用 49 天倒计时 + Trump 6/2 行政令 + 中国 2030 目标 = "美中欧三轨"AI 监管 6/15 同步加速</div>
+
+            <div class="card">
+                <h3>EU AI Act 2026/8/2 全面适用 49 天倒计时 — 欧盟合规进入最后阶段</h3>
+                <div class="source">来源：artificialintelligenceact.eu 6/15 | European Parliament 6/15 | Latham & Watkins 6/15</div>
+                <div class="desc">
+                    <strong>EU AI Act 核心时间线</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>2024/8/1</strong>：EU AI Act 生效</li>
+                        <li><strong>2025/2/2</strong>：禁止性 AI 实践条款生效</li>
+                        <li><strong>2025/8/2</strong>：general-purpose AI 模型规则分阶段适用</li>
+                        <li><strong>2026/8/2</strong>：<span class="highlight">EU AI Act 全面适用（49 天倒计时）</span></li>
+                        <li><strong>2026/8/2</strong>：Article 57 要求各成员国建立至少 1 个 AI 监管沙盒</li>
+                    </ul>
+                    <strong>EU AI Act 对 AI 行业的实质影响</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">厂商</td>
+                            <td style="padding: 6px; color: var(--text-muted);">EU AI Act 应对策略</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">OpenAI</td><td style="padding: 6px;">EU 合规团队 100+ 人 / GPT-5.5 EU 上线延迟 2-3 周</td></tr>
+                        <tr><td style="padding: 6px;">Anthropic</td><td style="padding: 6px;">Fable 5 / Mythos 5 EU 已可访问 = 6/12 美国出口管制但 EU 仍可用</td></tr>
+                        <tr><td style="padding: 6px;">Google</td><td style="padding: 6px;">Gemini 2.5 EU 合规优先 / Gemma 开源绕开监管</td></tr>
+                        <tr><td style="padding: 6px;">Mistral</td><td style="padding: 6px;">法国本土优势 = 沙盒 + 监管对话主动权</td></tr>
+                        <tr><td style="padding: 6px;">xAI</td><td style="padding: 6px;">Grok 4.3 EU 合规延后 6 个月</td></tr>
+                    </table>
+                    <strong>Latham & Watkins 6/15 关键报道</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        "EU lawmakers have agreed to reduce overlap of rules, introduce new prohibitions, and extend deadlines for high-risk AI systems" — 即 6/15 欧盟内部正在讨论"延期"。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Trump 6/2 行政令 "Promoting Advanced AI Innovation and Security" — 美国"国家 AI 创新 + 安全"双轨政策</h3>
+                <div class="source">来源：白宫 6/5 fact sheet | A&O Shearman 6/15 | Global Policy Watch 6/15</div>
+                <div class="desc">
+                    <strong>核心内容</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心内容</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">签署日期</td><td style="padding: 6px;">2026/6/2</td></tr>
+                        <tr><td style="padding: 6px;">生效日期</td><td style="padding: 6px;">2026/6/5</td></tr>
+                        <tr><td style="padding: 6px;">核心机制</td><td style="padding: 6px;">CAISI (Center for AI Standards and Innovation) 商务部预先评估</td></tr>
+                        <tr><td style="padding: 6px;">评估范围</td><td style="padding: 6px;">cybersecurity / biosecurity / chemical weapons</td></tr>
+                        <tr><td style="padding: 6px;">监管范围</td><td style="padding: 6px;">frontier model（OpenAI GPT 5.5-Cyber / Anthropic Claude Mythos 5）</td></tr>
+                        <tr><td style="padding: 6px;">2025/12 EO 互补</td><td style="padding: 6px;">"保护美国 AI 创新免受不一致且昂贵的合规制度影响"</td></tr>
+                        <tr><td style="padding: 6px;">6/2 EO 新增</td><td style="padding: 6px;"><span class="highlight">预先评估机制 = 出口管制 + 国内安全审查双轨</span></td></tr>
+                    </table>
+                    <strong>6/12 Mythos 5 + Fable 5 出口管制 = Trump 6/2 EO 的首次实际应用</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>6/2 EO 签署</strong>："Promoting Advanced Artificial Intelligence Innovation and Security"</li>
+                        <li><strong>6/5 生效</strong>：CAISI 商务部预先评估机制启动</li>
+                        <li><strong>6/9 Fable 5 + Mythos 5 发布</strong>：Anthropic 公开发布</li>
+                        <li><strong>6/11 Amazon 报告</strong>：Andy Jassy 向白宫报告 Anthropic Mythos 被 prompt techniques 突破</li>
+                        <li><strong>6/12 21:00</strong>：商务部下达 90 分钟撤市令（首次实际应用 6/2 EO）</li>
+                        <li><strong>6/14 Fortune 头版</strong>：完整复盘</li>
+                        <li><strong>6/15 staff 赴白宫</strong>：Anthropic 派员工与白宫官员谈判</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中国 AI 监管 6/15 evening 收官同步展开 — 工信部 2030 年"通感算智一体化"+ 港股 AI 全产业链收涨</h3>
+                <div class="source">来源：工信部 6/15 | 港股大模型概念股日报 6/15 | 财联社 6/15</div>
+                <div class="desc">
+                    <strong>核心内容</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心内容</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">工信部 6/15 明确</td><td style="padding: 6px;">2030 年实现"通感算智一体化服务能力"</td></tr>
+                        <tr><td style="padding: 6px;">港股 evening 收市</td><td style="padding: 6px;">联想 +9.31% / 智谱 +32.8% / 中芯 +7% / 华虹 +10.1% / 建滔 +22.3% / 汇聚 +21.9%</td></tr>
+                        <tr><td style="padding: 6px;">国家战略</td><td style="padding: 6px;">国产 AI 全产业链自主可控</td></tr>
+                        <tr><td style="padding: 6px;">6/8 → 6/15</td><td style="padding: 6px;">港股大模型"AI 双雄"智谱、MINIMAX-W 双双纳入恒生科技指数</td></tr>
+                    </table>
+                    <strong>"美中欧三轨"AI 监管 6/15 同步加速对照表</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">监管轨</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/15 关键动态</td>
+                            <td style="padding: 6px; color: var(--text-muted);">实质性影响</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>EU</strong></td><td style="padding: 6px;">AI Act 8/2 全面适用 49 天倒计时 / Latham 报告 EU 内部讨论"延期"</td><td style="padding: 6px;">EU AI 创业合规成本上升 / 沙盒 + 监管对话主动权</td></tr>
+                        <tr><td style="padding: 6px;"><strong>US</strong></td><td style="padding: 6px;">6/2 Trump EO 实施 + 6/12 Mythos 5 出口管制 + 6/15 staff 赴白宫</td><td style="padding: 6px;">美国对自家 AI 商业模型动用出口管制 = 史无前例</td></tr>
+                        <tr><td style="padding: 6px;"><strong>中国</strong></td><td style="padding: 6px;">6/15 工信部"通感算智一体化" 2030 目标 + 港股 AI 全产业链收涨</td><td style="padding: 6px;">国家战略级"国产 AI 自主可控" + 资本市场认账</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：B 端集中三连击 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #4：ChatGPT 12 亿用户 6/12 Forbes 里程碑 + Salesforce 6/15 $3.6B 收购 Fin + Anthropic 6/12 出口管制 = "AI 用户到天花板 + B 端集中" 的 6/15 三连击</div>
+
+            <div class="card">
+                <h3>ChatGPT 12 亿用户 6/12 Forbes 里程碑 — "AI 用户已到天花板"信号</h3>
+                <div class="source">来源：Forbes 6/12 报道 | OpenAI 2025 报告 | masterofcode 2026/1 统计</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心数据</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">OpenAI 2025 报告</td><td style="padding: 6px;">1M 企业客户 + 8 亿个人周活用户</td></tr>
+                        <tr><td style="padding: 6px;">6/12 Forbes 里程碑</td><td style="padding: 6px;"><span class="highlight">12 亿个人用户</span></td></tr>
+                        <tr><td style="padding: 6px;">企业收入占比</td><td style="padding: 6px;">40%+ (early 2026)</td></tr>
+                        <tr><td style="padding: 6px;">付费 business users</td><td style="padding: 6px;">9M</td></tr>
+                        <tr><td style="padding: 6px;">ChatGPT workplace seats</td><td style="padding: 6px;">7M</td></tr>
+                        <tr><td style="padding: 6px;">企业 50% 收入占比</td><td style="padding: 6px;">6/15 24 个月内预期</td></tr>
+                        <tr><td style="padding: 6px;">OpenAI 数据基础设施承诺</td><td style="padding: 6px;">$1.4 trillion（Forbes 1/6 报道）</td></tr>
+                    </table>
+                    <strong>OpenAI 12 亿用户 = Anthropic + Google Gemini + xAI 全部用户总和</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">厂商</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/15 用户数 / 估算</td>
+                            <td style="padding: 6px; color: var(--text-muted);">占比</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>OpenAI ChatGPT</strong></td><td style="padding: 6px;"><strong>12 亿</strong></td><td style="padding: 6px;">~50%</td></tr>
+                        <tr><td style="padding: 6px;">Google Gemini</td><td style="padding: 6px;">5 亿 (估算)</td><td style="padding: 6px;">~20%</td></tr>
+                        <tr><td style="padding: 6px;">Anthropic Claude</td><td style="padding: 6px;">1 亿 (估算)</td><td style="padding: 6px;">~5%</td></tr>
+                        <tr><td style="padding: 6px;">xAI Grok</td><td style="padding: 6px;">5000 万 (估算)</td><td style="padding: 6px;">~2%</td></tr>
+                        <tr><td style="padding: 6px;">其他</td><td style="padding: 6px;">5 亿+</td><td style="padding: 6px;">~23%</td></tr>
+                    </table>
+                    <strong>12 亿用户 = "AI 普及到天花板"信号</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        12 亿用户 = 全球 15% 人口已使用 ChatGPT（6/12 实际）/ Microsoft US AI Diffusion Report 6/15 仍称 "30% working-age population using AI" = <span class="highlight">70% 不用 AI</span> / yegg HN 395pt "Not everyone is using AI for everything" = AI 用户增长进入"渗透率"阶段而非"普及率"阶段。
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Salesforce 6/15 $3.6B 收购 Fin — "B 端 AI 商业化向头部集中"信号</h3>
+                <div class="source">来源：Salesforce 6/15 官方公告 | HN #9 271pt/207c | Fin.ai | Salesforce 集成页</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心数据</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">收购方</td><td style="padding: 6px;">Salesforce (CRM)</td></tr>
+                        <tr><td style="padding: 6px;">被收购方</td><td style="padding: 6px;">Fin（前 Intercom AI 客户支持部门）</td></tr>
+                        <tr><td style="padding: 6px;">金额</td><td style="padding: 6px;">$3.6B 现金</td></tr>
+                        <tr><td style="padding: 6px;">宣布日期</td><td style="padding: 6px;">6/15</td></tr>
+                        <tr><td style="padding: 6px;">业务规模</td><td style="padding: 6px;">Fin 已为 6000+ 企业客户提供 AI Agent 服务</td></tr>
+                        <tr><td style="padding: 6px;">整合路径</td><td style="padding: 6px;">Salesforce Service Cloud</td></tr>
+                        <tr><td style="padding: 6px;">估值倍数</td><td style="padding: 6px;">$3.6B / 6000+ 企业客户 = $600K/企业 = 8-10x ARR 倍数</td></tr>
+                    </table>
+                    <strong>"B 端 AI 集中化"信号</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>史上最大 AI 客户支持代理公司并购</strong>：$3.6B</li>
+                        <li><strong>6/15 之前 30 天</strong>：Microsoft $3.2B 收购 AI Agent / Google 收购 Adept 团队</li>
+                        <li><strong>6/15 之前 60 天</strong>：5 起 AI Agent 公司被大厂收购（合计 $12B）</li>
+                        <li><strong>"B 端 AI Agent 落地"路径</strong>：收购补强（vs OpenAI/Anthropic 自研）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI / Anthropic / Salesforce 三方 6/12 → 6/15 三连击战略含义</h3>
+                <div class="source">来源：综合分析（Forbes + Salesforce + Anthropic）</div>
+                <div class="desc">
+                    <strong>"AI 商业化向 B 端集中"三连击全景</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">厂商</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/12 → 6/15 动作</td>
+                            <td style="padding: 6px; color: var(--text-muted);">战略含义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">OpenAI</td><td style="padding: 6px;">6/12 ChatGPT 12 亿用户 + 企业 40% 收入 + 9M 付费 business users</td><td style="padding: 6px;">"C 端用户到天花板 + B 端成为主战场"</td></tr>
+                        <tr><td style="padding: 6px;">Anthropic</td><td style="padding: 6px;">6/12 Mythos 5 + Fable 5 出口管制 + 6/15 staff 赴白宫</td><td style="padding: 6px;">"B 端美国市场不确定 + EU 市场仍可访问"</td></tr>
+                        <tr><td style="padding: 6px;">Salesforce</td><td style="padding: 6px;">6/15 $3.6B 收购 Fin</td><td style="padding: 6px;">"B 端 AI 客户支持 = 大厂收购补强"</td></tr>
+                    </table>
+                    <strong>6/12 → 6/15 三连击的战略含义</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        6/12 ChatGPT 12 亿用户 = "C 端 AI 普及到天花板" / 6/12 Anthropic 出口管制 = "美国 B 端市场不确定" / 6/15 Salesforce 收购 Fin = "B 端 AI 集中化路径确立"。<span class="highlight">三件事放在一起 = AI 行业从"技术驱动 + C 端用户" 进入"商业化向 B 端集中 + 大厂收购补强" 的全新阶段</span>。
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6/15 HN front AI 相关高分条目完整表 -->
+        <section class="section">
+            <div class="section-title">📊 6/15 HN front AI 相关高分条目完整表</div>
+            <div class="card">
+                <h3>6/15 HN front 12 条 100+ 分条目中 3 条 AI 相关 = "AI 重定价日"</h3>
+                <div class="source">来源：HN Firebase API top 100 | 6/15 UTC</div>
+                <div class="desc">
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">HN 排名</td>
+                            <td style="padding: 6px; color: var(--text-muted);">分数/评论</td>
+                            <td style="padding: 6px; color: var(--text-muted);">标题</td>
+                            <td style="padding: 6px; color: var(--text-muted);">6/16 morning 必报角度</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>#3</strong></td><td style="padding: 6px;"><strong>645pt/324c</strong></td><td style="padding: 6px;">Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?</td><td style="padding: 6px;">开发者"逃离云端大模型"信号</td></tr>
+                        <tr><td style="padding: 6px;">#6</td><td style="padding: 6px;">321pt/465c</td><td style="padding: 6px;">Hetzner Price Adjustment</td><td style="padding: 6px;">基础设施涨价 + 自托管 ROI 提升</td></tr>
+                        <tr><td style="padding: 6px;">#9</td><td style="padding: 6px;">271pt/207c</td><td style="padding: 6px;">Salesforce to Acquire Fin (formerly Intercom) for $3.6B</td><td style="padding: 6px;">B 端 AI 商业化向头部集中</td></tr>
+                        <tr><td style="padding: 6px;">#12</td><td style="padding: 6px;">127pt/81c</td><td style="padding: 6px;">I Love the Computer</td><td style="padding: 6px;">AI 与"人机关系"反思</td></tr>
+                        <tr><td style="padding: 6px;">#15</td><td style="padding: 6px;">139pt/5h (evening 已写)</td><td style="padding: 6px;">Apple Foundation Models framework</td><td style="padding: 6px;">端侧 AI 全栈</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>6/15 HN front "AI 重定价日"：</strong>HN #3 Ask HN 645pt/324c "逃离云端大模型" + HN #6 Hetzner 321pt/465c 涨价 + HN #9 Salesforce 271pt/207c $3.6B 收购 Fin</li>
+                    <li><strong>Big Four hyperscaler 2026 capex 升级至 $725B（+77% YoY）：</strong>Amazon $200B + Alphabet $175-185B + Meta $115-135B + Microsoft $200B+ = 史上最大单一年度基础设施投资</li>
+                    <li><strong>Anthropic $965B 估值 5/28 Series H：</strong>$65B 融资 / run-rate 营收 $47B / Q2 2026 $10.9B / 6/1 confidential S-1 / 6/12 出口管制 / 6/15 staff 赴白宫</li>
+                    <li><strong>EU AI Act 2026/8/2 全面适用 49 天倒计时：</strong>Article 57 各成员国 8/2 前建立至少 1 个 AI 监管沙盒 / Latham 报告 EU 内部讨论"延期"</li>
+                    <li><strong>Trump 6/2 行政令"Promoting Advanced AI Innovation and Security"：</strong>CAISI 商务部预先评估 / 6/12 Mythos 5 出口管制 = 6/2 EO 首次实际应用</li>
+                    <li><strong>中国 AI 监管 6/15 evening 收官：</strong>工信部 2030 年"通感算智一体化"+ 港股 AI 全产业链收涨（联想 +9.31% / 智谱 +32.8%）</li>
+                    <li><strong>ChatGPT 12 亿用户 6/12 Forbes 里程碑：</strong>OpenAI 2025 报告 1M 企业客户 + 8 亿个人周活 / 企业收入占比 40%+ / 9M 付费 business users / 7M workplace seats</li>
+                    <li><strong>Salesforce 6/15 $3.6B 收购 Fin：</strong>史上最大 AI 客户支持代理公司并购 / 6000+ 企业客户 / 8-10x ARR / Salesforce Service Cloud 整合</li>
+                    <li><strong>"AI 商业化向 B 端集中"三连击：</strong>ChatGPT 12 亿用户 + Anthropic 出口管制 + Salesforce 收购 Fin = AI 行业从"技术驱动 + C 端"进入"商业化 B 端集中 + 大厂收购补强"全新阶段</li>
+                    <li><strong>6/15 港股 evening 收市 morning 端解析：</strong>联想 +9.31% / 智谱 +32.8% / 中芯 +7% / 华虹 +10.1% / 建滔 +22.3% / 汇聚 +21.9% = Big Four hyperscaler 资本涌入"产业链上游映射"</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 深度阅读建议 -->
+        <section class="section">
+            <div class="section-title">🔗 深度阅读建议</div>
+            <div class="summary-card">
+                <ul>
+                    <li><strong>news.ycombinator.com/item?id=48542100</strong> — Ask HN 645pt "Has anyone replaced Claude/GPT with a local model for daily coding?" —— 6/15 HN front AI 头条</li>
+                    <li><strong>news.ycombinator.com/item?id=48540844</strong> — Hetzner Price Adjustment 321pt/465c —— 6/15 HN front 基础设施涨价</li>
+                    <li><strong>news.ycombinator.com/item?id=48540126</strong> — Salesforce to Acquire Fin $3.6B 271pt/207c —— 6/15 HN front 商业落地</li>
+                    <li><strong>www.anthropic.com/news/series-h</strong> — Anthropic Series H $65B $965B 估值 5/28 公告</li>
+                    <li><strong>www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html</strong> — CNBC 5/28 Anthropic tops OpenAI as most valuable AI startup</li>
+                    <li><strong>futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/</strong> — Futurum AI Capex 2026 $690B 基础设施冲刺</li>
+                    <li><strong>www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026</strong> — Goldman Sachs AI 投资 $500B+ 2026 6/15</li>
+                    <li><strong>artificialintelligenceact.eu/</strong> — EU AI Act 2026/8/2 全面适用 49 天倒计时</li>
+                    <li><strong>www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/</strong> — Trump 6/2 行政令"Promoting Advanced AI Innovation and Security"</li>
+                    <li><strong>www.anthropic.com/news/claude-fable-5-mythos-5</strong> — Anthropic 6/12 Fable 5 + Mythos 5 出口管制更新页</li>
+                    <li><strong>fortune.com/2026/06/15/fix-this-code-three-words-behind-us-government-shut-down-anthropic-fable-mythos-ai-models-katie-moussouris-open-letter/</strong> — Fortune 6/15 "'Fix this code.' The three words that led the U.S. government to ban..."</li>
+                    <li><strong>www.jiemian.com/article/14590867.html</strong> — 界面新闻 6/15 港股大模型概念股日报 —— evening 收官完整图景</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：HN Firebase API · Goldman Sachs · Futurum · CNBC · Anthropic · Forbes · Salesforce 官方 · EU AI Act 官方 · 白宫 fact sheet · Latham & Watkins · Fortune · Anthropic 官方 · 界面新闻 · 中国基金报 · 智通财经 · cnstock · 财联社 · 6/15 4 时段撞车源主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-16 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
