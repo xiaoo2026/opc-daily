@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚间情报 2026-06-17 | 21:00 GLM-5.2 冲上 Artificial Analysis 第一名 + WAIC 2026 倒计时30天 + arXiv:2606.08044 审计缺口 + Wolfram v15 AI 化 + HN 6/17 21:00 完整复盘</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #a855f7;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #d0a8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(177, 151, 252, 0.08));
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-17 21:00 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业 21:00 晚间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月17日 21:00 发布 · GLM-5.2 冲上 Artificial Analysis 第一名 + WAIC 2026 倒计时30天 1100+企业 300+款AI产品首发 + arXiv:2606.08044 审计缺口 + Wolfram v15 AI 化 + HN 6/17 21:00 完整复盘</p>
+            <div class="meta">
+                <span class="tag tag-capital">GLM-5.2 #1 51分</span>
+                <span class="tag tag-policy">WAIC 倒计时30天</span>
+                <span class="tag tag-security">arXiv:2606.08044</span>
+                <span class="tag tag-product">Wolfram v15</span>
+                <span class="tag tag-trend">HN 1402pt</span>
+                <span class="tag tag-capital">OPC 180家</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">51 分</div>
+                <div class="label">GLM-5.2 Artificial Analysis Index v4.1 开源权重第一名</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">300+ 款</div>
+                <div class="label">WAIC 2026 全球首发 AI 产品 / 1100+ 企业 / 10 万平米</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">180 家</div>
+                <div class="label">WAIC 2026 首设 OPC 专属展示区入驻企业数</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">1402pt</div>
+                <div class="label">HN #2 Running local models 当日新高峰 (24h +213pt)</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">1567c</div>
+                <div class="label">HN #1 SpaceX-Cursor 评论数累计 Cursor 史上最高</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">1M Token</div>
+                <div class="label">GLM-5.2 上下文 (vs GLM-5.1 200K = 5x) MIT 协议</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 21:00 核心警报：GLM-5.2 6/17 冲上 Artificial Analysis Intelligence Index v4.1 开源权重第一名（51分 / 领先 Kimi K2.6 8分 / vs GPT-5.5 xhigh 1514 持平 1524）+ 6/17 WAIC 2026 倒计时30天发布会 1100+企业 300+款AI产品全球首发 + 首设 OPC 专属展示区180家企业入驻 + 图灵奖姚期智/强化学习之父萨顿 + 6/17 18:13 arXiv:2606.08044 审计缺口研究 + 6/16 Wolfram v15 AI 化 + HN 6/17 21:00 完整复盘</h3>
+            <p>6/17 18:00 → 21:00 3 小时窗口内，<strong>"智谱全球盲测冠军 + 产业规模 + 学术 + 工具链 + 开发者社区" 五线并发</strong>。</p>
+            <p><strong>GLM-5.2 6/17 冲上 Artificial Analysis Intelligence Index v4.1 第一名</strong>：<span class="highlight">Artificial Analysis 6/17 当日发布"GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index"</span> = Intelligence Index v4.1 排名：① GLM-5.2: <strong>51 分</strong>（领先开源权重）② MiniMax-M3: 44 ③ DeepSeek V4 Pro (max): 44 ④ Kimi K2.6: 43。vs Claude Fable 5 6/10 第 1 → 6/12 撤市令 → 6/17 GLM-5.2 反超 6 个点（<strong>Fable 5 撤市直接给 GLM-5.2 让出第一名</strong>）。<strong>参数不变 744B/40B 激活 6 周 +11 分</strong>：GLM-5.1 40 → GLM-5.2 51（+11 点 / +28% 综合排名）= <strong>CritPt 5%→21% / HLE 28%→40% / TerminalBench 62%→78% / AA-LCR 62%→71%</strong>。上下文从 200K → <strong>1M tokens (5x)</strong>。API $1.4输入/$4.4输出/$0.26 cache hit。MIT 协议 + <strong>8 家云厂商同时接入</strong>（DeepInfra / Novita / Nebius / Parasail / Siliconflow / GMI Cloud / Baseten / Fireworks）= 智谱从中国扩展到全球云基础设施接入。<strong>GDPval-AA v2: GLM-5.2 1524 vs GPT-5.5 (xhigh) 1514</strong> = 几乎持平。<strong>Pareto 前沿</strong>：在其智能级别上成本最低（$0.46/任务）。<strong>AA-Omniscience Index 4 分</strong>（vs 5.1 = 2），幻觉率 28.1%（vs 5.1 = 29.4% / -1.3 个百分点）。</p>
+            <p><strong>6/17 17:47 WAIC 2026 倒计时 30 天发布会</strong>：<span class="highlight">主题"智能伙伴，共创未来" / 7/17-20 在上海 / 主办方：外交部 / 科技部 / 工信部 等 10 部门 + 上海市政府</span> = 展览面积超 10 万平方米（vs 2024 5.2 万 = 接近 2x 规模）/<strong>1100+ 企业 / 3000+ 项产品 / 300+ 款 AI 产品全球首发</strong>（vs 2024 50+ 款 = 6x 规模）/ 140 场论坛。<strong>首设 OPC 专属展示区 + 180 家企业入驻</strong>（OPC = Open Personal Companion = 国产 AI 伴侣产业集群）= 6/17 evening 写过"科创板第五套标准扩容"政策侧 → 21evening 写"WAIC OPC 180 家"产业侧 = 政策 + 产业 + 资本三线对位。学术会议 WAICA 首次自主举办：图灵奖得主姚期智（大会主席）/ 强化学习之父萨顿（国际联席主席）。新平台 "Hi WAIC" APP + 升级版 WAIC City Walk 串联 30+ AI 应用场景。</p>
+            <p><strong>6/17 18:13 arXiv:2606.08044 斯坦福 / UIUC / 丹麦技术大学"审计缺口"研究</strong>：<span class="highlight">核心发现：主流 LLM 安全测试"表面过关"内部脆弱</span> = AI 可能表面上拒绝回答危险问题，但内部神经网络结构已埋下脆弱性 = "一栋楼通过消防验收，但墙壁里塞满了易燃材料"。<strong>"解离模型"（Dissociation Model）实验设计</strong>：输出行为保持安全 / 内部激活向危险模型靠拢 / 训练数据 PKU-SafeRLHF + BeaverTails + XSTest / 验证基准 9 个公开安全评测 / 实验模型 Gemma 2 2B / Llama 3.2 3B / Qwen 2.5 3B。<strong>LVS 潜在脆弱性分数</strong>（Latent Vulnerability Score）= 安全行为崩塌量 / 所需扰动大小 / 连续量化 vs 攻击成功率二元。<strong>Llama-3 末层 LVS</strong>：基础安全版 0 / 强化安全版 0 / 去安全化版 55.665 / 危险数据训练版 201.190。<strong>Llama-3 嵌入层 LVS</strong>：基础安全版 4.914 / 强化安全版 9.182（<strong>反而更脆弱</strong>）/ 去安全化版 5.207。<strong>关键洞察：中间层是"阿喀琉斯之踵"</strong> = 扰动中间层比嵌入层或最后几层更容易引发有害输出。<strong>vs 6/17 evening 14:00 AIIA 智能体时代 AI 安全治理研讨会</strong>（实践层 / 中国制度化治理）：arXiv:2606.08044 18:13 = 学术层 / 美国 = <strong>中美同一天（6/17 14:00 中国 + 6/17 18:13 美国）AI 安全治理双线落地</strong> = 21evening 必报"中美同一天 学术 + 实践双线对位"角度。</p>
+            <p><strong>6/16 Wolfram Language & Mathematica v15 由 Stephen Wolfram 当日发布（6/17 21:00 HN #18 181pt/98c 当日新晋发酵）</strong>：<span class="highlight">38 年老牌数学工具 AI 化（v1.0 1988/06/23 → v15 2026/06/16）</span> = 核心主题"Built-in (useful) AI + New core functionality"。<strong>AI Assistant in Every Notebook</strong>：每个 notebook 底部新增 chatbar / 输入自然语言 + ENTER 获取 Wolfram Language 代码 / 一键插入运行 / Basic 免费 + Pro / Research 订阅。<strong>Use Wolfram from AI Environments</strong>：AI 环境（Claude Code / Codex）连接桌面 Wolfram 系统 / 新 <strong>Wolfram Agent Tools 框架 + DeployAgentTools 函数</strong> / <strong>wolfram.com 现在向 AI Agent 提供 Markdown 服务</strong> / 新"For AIs"链接在网站顶部。LLM Function 全面接入：所有 LLM 函数可用 / AgentOne / WolframAIAssistant / LLMEvaluator 配置。新核心功能：Time Series 升级（百万级条目）/ ModelFit 超级函数（10+ 模型类型）/ 符号音乐新域（Notes → Chords → MusicMeasure → MusicVoice → MusicScore 五级）/ IncrementalObject 新数据结构（可传输 + 可恢复）。</p>
+            <p><strong>6/17 21:00 HN front 北美时间当日新晋 3 条 AI 相关 + 持续发酵 + 5 大新信号</strong>：<span class="highlight">HN Firebase API 25 items 串行 8-12s 完整抓取</span>。① <strong>HN #1 SpaceX to buy Cursor for $60B 1057pt/1567c</strong>（6/17 21:00 vs 6/17 evening 1028pt/1525c = 24h 累计 1567c Cursor 史上最高讨论量）② <strong>HN #2 Running local models is good now 1402pt/543c</strong>（当日新高峰 vs 6/17 evening 1332pt = +70pt 6h 增量）③ <strong>HN #13 Has AI already killed self-help nonfiction books? 336pt/395c</strong>（6/17 当日新晋 / Tim Ferriss 6/12 文 + 6/17 21:00 HN 发酵）④ <strong>HN #15 GLM-5.2 is the new leading open weights model on Artificial Analysis 299pt/134c</strong>（6/17 当日新晋 / 见角度 #1）⑤ <strong>HN #18 Wolfram Language and Mathematica version 15 181pt/98c</strong>（6/17 当日新晋 / 见角度 #4）⑥ <strong>HN #23 The founder's playbook: Building an AI-native startup 116pt/115c</strong>（6/17 当日新晋 / Anthropic Claude 官方博客 = "撤市 + 推创业指南"反差）= 21evening 必报 5 大新信号。</p>
+            <p class="last"><strong>撞车源 0 处</strong>：本次 6/17 21evening 5 个全新角度（Artificial Analysis 51 分第一名 / WAIC 2026 倒计时 30 天 / arXiv:2606.08044 审计缺口 / Wolfram v15 AI 化 / HN 6/17 21:00 完整复盘）通过 pre-write filter 全部 0 处撞车（vs 6/17 afternoon 5 处撞车失败）—— 5 个角度的数据点 / 角度标题 / 归类框架均与 morning / afternoon / evening 已覆盖的不同。</p>
+        </div>
+
+        <!-- 角度 #1 -->
+        <section class="section">
+            <div class="section-title">🚀 角度 #1：GLM-5.2 6/17 冲上 Artificial Analysis Intelligence Index v4.1 开源权重模型第一名（51 分 / 领先 Kimi K2.6 8 分 / vs GPT-5.5 持平）— 智谱在开源权重模型层的"绝对领先"信号</div>
+
+            <div class="card">
+                <h3>Intelligence Index v4.1 排名（截至 6/17 当日）+ 11 评测逐项提升 11 分</h3>
+                <div class="source">来源：Artificial Analysis 6/17 当日发布"GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index" | artificialanalysis.ai 6/17 11:00 UTC</div>
+                <div class="desc">
+                    <strong>Intelligence Index v4.1 排名</strong>：
+                    <table class="github-table">
+                        <tr><th>排名</th><th>模型</th><th>分数</th><th>类型</th><th>备注</th></tr>
+                        <tr><td><strong>①</strong></td><td><strong>GLM-5.2</strong></td><td><span class="highlight">51</span></td><td><strong>开源权重</strong></td><td><strong>6/17 当日新晋第一名</strong></td></tr>
+                        <tr><td>②</td><td>MiniMax-M3</td><td>44</td><td>闭源</td><td>6/16 evening 写过</td></tr>
+                        <tr><td>②</td><td>DeepSeek V4 Pro (max)</td><td>44</td><td>开源权重</td><td>与 MiniMax-M3 持平</td></tr>
+                        <tr><td>④</td><td>Kimi K2.6</td><td>43</td><td>开源权重</td><td></td></tr>
+                        <tr><td>对比</td><td>GPT-5.5 (xhigh)</td><td>1514（GDPval-AA v2）</td><td>闭源</td><td><span class="highlight">vs GLM-5.2 1524 几乎持平</span></td></tr>
+                    </table>
+
+                    <strong>GLM-5.1 → GLM-5.2 提升 11 分（参数不变 744B / 40B 激活）</strong>：
+                    <table class="github-table">
+                        <tr><th>评测</th><th>GLM-5.1</th><th>GLM-5.2</th><th>提升</th><th>战略意义</th></tr>
+                        <tr><td><strong>CritPt（科学推理）</strong></td><td>5%</td><td><strong>21%</strong></td><td><strong>+16 点</strong></td><td>科学推理能力 4x 提升</td></tr>
+                        <tr><td><strong>HLE</strong></td><td>28%</td><td>40%</td><td>+12 点</td><td>通用推理 +43%</td></tr>
+                        <tr><td>AA-LCR</td><td>62%</td><td>71%</td><td>+9 点</td><td>长上下文推理 +15%</td></tr>
+                        <tr><td><strong>tau3 banking</strong></td><td>12%</td><td>27%</td><td>+15 点</td><td>金融专业场景 +125%</td></tr>
+                        <tr><td>SciCode</td><td>43%</td><td>50%</td><td>+7 点</td><td>代码生成 +16%</td></tr>
+                        <tr><td><strong>TerminalBench v2.1</strong></td><td>62%</td><td>78%</td><td>+16 点</td><td>Agent 终端能力 +26%</td></tr>
+                        <tr><td>GPQA Diamond</td><td>86%</td><td>89%</td><td>+3 点</td><td>通用知识接近天花板</td></tr>
+                        <tr><td><strong>Intelligence Index 总分</strong></td><td><strong>40</strong></td><td><strong>51</strong></td><td><strong>+11 点</strong></td><td><strong>综合排名 +28%</strong></td></tr>
+                    </table>
+
+                    <strong>关键参数升级</strong>：
+                    <ul>
+                        <li><strong>License: MIT</strong>（开源权重 / 可商用）</li>
+                        <li><strong>Size: 744B 总参 / 40B 激活</strong>（vs GLM-5.1 同规格）</li>
+                        <li><strong>Context: 1M tokens</strong>（vs GLM-5.1 200K = <span class="highlight">5x 提升</span>）</li>
+                        <li><strong>API pricing</strong>: $1.4 输入 / $4.4 输出 / $0.26 cache hit 每 1M tokens</li>
+                    </ul>
+
+                    <strong>6/17 21evening 必报的"参数不变 + 11 分提升"角度</strong>：
+                    <ul>
+                        <li>GLM-5.1 = GLM-5.2 同规格（744B 总参 / 40B 激活）= <strong>6 周时间内通过后训练 + RL 提升 11 分</strong></li>
+                        <li>vs 6/16 morning 写过"Opus 4.8 41 天极速迭代"（Claude 4.x → 4.8）= Anthropic 与智谱都在"快速迭代"层</li>
+                        <li>vs 6/17 evening 写过"智谱 GLM-5.2 Code Arena 冠军"：Code Arena 单维度 → Artificial Analysis 11 维度综合 = 跨机构全维度领先</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 -->
+        <section class="section">
+            <div class="section-title">🌐 角度 #2：6/17 WAIC 2026 倒计时 30 天发布会 + 1100+ 企业 300+ 款 AI 产品全球首发 + 首设 OPC 专属展示区 180 家企业入驻 + 图灵奖姚期智 / 强化学习之父萨顿</div>
+
+            <div class="card">
+                <h3>WAIC 2026 倒计时 30 天发布会核心数据（6/17 17:47 财联社）</h3>
+                <div class="source">来源：财联社 6/17 17:47 | 新华网 6/17 | 解放日报 6/17 20:43 | 36kr 6/17 20:33 | 21财经 6/17</div>
+                <div class="desc">
+                    <strong>WAIC 2026 核心信息</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>6/17 当日发布</th><th>战略意义</th></tr>
+                        <tr><td><strong>时间</strong></td><td><span class="highlight">7/17-20</span> 在上海举办</td><td>距开幕 30 天（6/17 → 7/17）</td></tr>
+                        <tr><td><strong>主题</strong></td><td>"智能伙伴，共创未来"</td><td>强调"伙伴"vs"工具"</td></tr>
+                        <tr><td><strong>主办方</strong></td><td>外交部 / 科技部 / 工信部 等 10 部门 + 上海市政府</td><td>国家级 + 地方政府共同主办</td></tr>
+                        <tr><td><strong>展览面积</strong></td><td><strong>超 10 万平方米</strong></td><td>vs 2024 WAIC 5.2 万平方米 = 接近 2x 规模</td></tr>
+                        <tr><td><strong>参展企业</strong></td><td><strong>1100+ 企业</strong></td><td>vs 2024 WAIC 500+ 家 = 2.2x 规模</td></tr>
+                        <tr><td><strong>产品总数</strong></td><td><strong>3000+ 项产品</strong></td><td>vs 2024 WAIC 1500+ 项 = 2x 规模</td></tr>
+                        <tr><td><strong>全球首发 AI 产品</strong></td><td><strong>超 300 款</strong></td><td>vs 2024 WAIC 50+ 款 = <span class="highlight">6x 规模</span></td></tr>
+                        <tr><td><strong>论坛数</strong></td><td>近 140 场</td><td>高密度学术 + 产业对话</td></tr>
+                        <tr><td><strong>首设 OPC 专属展示区</strong></td><td><strong>180 家企业携成果入驻</strong></td><td>OPC = Open Personal Companion = 国产 AI 伴侣产业集群</td></tr>
+                    </table>
+
+                    <strong>学术会议 + AI 生态平台</strong>：
+                    <ul>
+                        <li><strong>首次自主举办"WAICA"</strong> = 本届大会首次创办高水平国际学术会议"WAIC Academic" = 学术深度提升</li>
+                        <li><strong>大会主席：图灵奖得主姚期智</strong> = 中国 AI 学术最高水平</li>
+                        <li><strong>国际联席主席：强化学习之父理查德·萨顿</strong> = 北美 RL 学术最高水平</li>
+                        <li><strong>首个 AI 生态开放平台："Hi WAIC" APP</strong> 当日发布 = 大众入口</li>
+                        <li><strong>WAIC City Walk</strong> = 升级版同步启动 / 串联 30+ AI 应用场景</li>
+                    </ul>
+
+                    <strong>6/17 21evening 必报的"OPC 180 家企业"角度</strong>：
+                    <ul>
+                        <li>OPC = Open Personal Companion（个人 AI 伴侣 / 开放个人伴侣）</li>
+                        <li>180 家企业 = 国产 AI 公司 6/17 已形成"个人 AI 伴侣"产业集群</li>
+                        <li>vs 6/17 evening 写过"科创板第五套标准扩容 AI 大模型"（政策 + 资本）</li>
+                        <li>vs 6/17 evening 写过"陆家嘴论坛 吴清宣布第五套标准"（政策侧）</li>
+                        <li><span class="highlight">6/17 21:00 WAIC OPC 180 家企业 = "产业侧 OPC 集群" + 政策侧"科创板扩容" + 资本侧"智谱 +17.64%" = 三线对位 = "中国 AI 产业三线对位"主线</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 -->
+        <section class="section">
+            <div class="section-title">🛡️ 角度 #3：6/17 18:13 斯坦福 / UIUC / 丹麦技术大学 arXiv:2606.08044 "审计缺口"研究 + 与 6/17 14:00 AIIA 形成"中美同一天：实践层 + 学术层"双线对位</div>
+
+            <div class="card">
+                <h3>arXiv:2606.08044 核心发现 + "解离模型"实验 + LVS 评估方法</h3>
+                <div class="source">来源：arXiv 6/17 18:13 当日发布 | html5.qq.com 6/17 18:13 | 多家 AI 自媒体 6/17 当日转载</div>
+                <div class="desc">
+                    <strong>核心发现：主流 LLM 安全测试存在"审计缺口"</strong>：
+                    <ul>
+                        <li><strong>AI 可能表面上拒绝回答危险问题，但内部神经网络结构已埋下脆弱性</strong></li>
+                        <li>遭遇轻微"内部干扰"就会原形毕露</li>
+                        <li>"就像一栋楼通过消防验收，但墙壁里塞满了易燃材料"</li>
+                        <li>当前安全测试"看输出" = 不检查"骨架"</li>
+                        <li>现有标准做法（出危险问题看是否拒绝）= 拒绝回答 ≠ 模型"真的不知道怎么做坏事"</li>
+                    </ul>
+
+                    <strong>"解离模型"（Dissociation Model）实验设计</strong>：
+                    <table class="github-table">
+                        <tr><th>目标</th><th>效果</th><th>战略意义</th></tr>
+                        <tr><td><strong>输出行为</strong></td><td>保持安全、礼貌地拒绝危险请求</td><td><strong>外表安全</strong></td></tr>
+                        <tr><td><strong>内部激活</strong></td><td>处理危险信息时向"危险"模型靠拢</td><td><strong>内部危险化</strong></td></tr>
+                        <tr><td><strong>整体 KL 散度</strong></td><td>不偏离原始安全模型太远</td><td>难以察觉</td></tr>
+                    </table>
+
+                    <strong>训练数据</strong>：PKU-SafeRLHF（成对安全/危险回答 / 初始化监测探针）+ BeaverTails（大量正常无害问题）+ XSTest（验证基准）
+
+                    <strong>验证基准</strong>：9 个公开安全评测 / 覆盖直接有害请求 / 越狱攻击 / 过度拒绝
+
+                    <strong>实验结果</strong>（Gemma 2 2B / Llama 3.2 3B / Qwen 2.5 3B）：拒绝率改造前后几乎无变化 / 内部评分差距原始安全模型约 0.6 / 解离模型缩小到 0.04-0.30（<strong>内部已发生实质性变化，外表完全看不出来</strong>）
+
+                    <strong>LVS 潜在脆弱性分数（Latent Vulnerability Score）= 安全行为崩塌量 / 所需扰动大小</strong>（连续量化 vs 攻击成功率二元）：
+
+                    <table class="github-table">
+                        <tr><th>Llama-3 模型版本</th><th>末层 LVS</th><th>嵌入层 LVS</th><th>现象</th></tr>
+                        <tr><td>Meta-Llama-3-8B-Instruct（基础安全版）</td><td><strong>0</strong></td><td>4.914</td><td>末层扰动几乎无法引发危险输出</td></tr>
+                        <tr><td>Llama-3-8B-Instruct-RR（强化安全版）</td><td><strong>0</strong></td><td><strong>9.182</strong></td><td><span class="highlight">强化安全版嵌入层反而更脆弱（关键洞察）</span></td></tr>
+                        <tr><td>Llama-3-8B-Instruct-abliterated（去安全化）</td><td>55.665</td><td>5.207</td><td>删除安全权重后飙升</td></tr>
+                        <tr><td>dolphin-2.9-llama3-8b（危险数据训练）</td><td><strong>201.190</strong></td><td>—</td><td>极度脆弱</td></tr>
+                    </table>
+
+                    <strong>核心结论</strong>：当前安全对齐方法更像在<strong>模型输出端加了一个严格过滤器</strong>，而非从根本上改变模型理解和处理危险信息的方式。<strong>过滤器可被绕过、可被微调掉、可被内部扰动影响</strong>——只有整个内部结构都健康，才叫真正的安全。
+
+                    <strong>vs 6/17 evening 14:00 AIIA 智能体时代 AI 安全治理研讨会</strong>（实践层 / 中国制度化治理）：arXiv:2606.08044 18:13 = 学术层 / 美国 = <span class="highlight">中美同一天（6/17 14:00 中国 + 6/17 18:13 美国）AI 安全治理双线落地</span> = 21evening 必报"中美同一天 学术 + 实践双线对位"角度
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 -->
+        <section class="section">
+            <div class="section-title">🔧 角度 #4：6/16 Wolfram Language & Mathematica v15 由 Stephen Wolfram 当日发布（6/17 21:00 HN #18 181pt/98c 发酵）— 内置 AI Assistant + Wolfram Agent Tools + wolfram.com 服务 AI Agent Markdown — Wolfram 从"人类工具"向"人类 + AI 共同工具"扩展</div>
+
+            <div class="card">
+                <h3>Wolfram v15 6/16 当日发布：38 年老牌数学工具 AI 化完整披露</h3>
+                <div class="source">来源：Stephen Wolfram 6/16 当日发文"Launching Version 15 of Wolfram Language & Mathematica" | writings.stephenwolfram.com 6/16 | HN front 6/17 21:00 #18 181pt/98c</div>
+                <div class="desc">
+                    <strong>Wolfram v15 距 v1.0（1988/06/23 发布）38 年</strong>：
+                    <table class="github-table">
+                        <tr><th>维度</th><th>6/16 当日发布</th><th>战略意义</th></tr>
+                        <tr><td><strong>发布日</strong></td><td>6/16（= 北京时间 6/17）</td><td>6/17 evening 收尾时点</td></tr>
+                        <tr><td><strong>距 v1.0</strong></td><td><strong>38 年</strong></td><td>Wolfram v1.0 1988/06/23</td></tr>
+                        <tr><td><strong>核心主题</strong></td><td>Built-in (useful) AI + New core functionality</td><td>"AI 嵌入工具链"</td></tr>
+                        <tr><td><strong>用户群扩展</strong></td><td>"人类" → "人类 + AI"</td><td>工具链层范式跃迁</td></tr>
+                    </table>
+
+                    <strong>AI Assistant in Every Notebook — 每个 notebook 底部新增 chatbar</strong>：
+                    <ul>
+                        <li>每个 notebook 底部新增 chatbar（除非禁用）</li>
+                        <li>输入自然语言 + ENTER 获取 Wolfram Language 代码</li>
+                        <li>一键插入运行</li>
+                        <li>三层定价：Basic（免费）/ Pro / Research（订阅）</li>
+                        <li>快捷键：` ` 启动 chat cell / `~` 插入分隔符（break context）</li>
+                    </ul>
+
+                    <strong>Use Wolfram from AI Environments — Wolfram Agent Tools 框架</strong>：
+                    <ul>
+                        <li>AI 环境（Claude Code / Codex）连接桌面 Wolfram 系统</li>
+                        <li>自动检测在 welcome screen 加"stripe"</li>
+                        <li>新 <strong>Wolfram Agent Tools 框架 + DeployAgentTools 函数</strong></li>
+                        <li><span class="highlight">wolfram.com 现在向 AI Agent 提供 Markdown 服务</span></li>
+                        <li>新"For AIs"链接在网站顶部</li>
+                    </ul>
+
+                    <strong>Wolfram LLM Function 全面接入</strong>：
+                    <ul>
+                        <li>所有 LLM 函数可用（Version 15 全部接入）= Wolfram 7000+ 原语 + LLM</li>
+                        <li><strong>AgentOne</strong>：Wolfram Agent One LLM + Foundation Tool = 官方 LLM</li>
+                        <li><strong>WolframAIAssistant</strong>：生成 Wolfram Language 代码 = AI 助手配置</li>
+                        <li><strong>LLMEvaluator</strong>：默认配置 / Preferences 面板 = 灵活切换</li>
+                    </ul>
+
+                    <strong>新核心功能</strong>：
+                    <ul>
+                        <li><strong>Time Series 升级</strong>：基于 Tabular 框架 / 处理百万级条目</li>
+                        <li><strong>ModelFit 超级函数</strong>：10+ 模型类型（指数 / 对数 / 幂 / 多项式 / 线性 / 公式 / 周期 / 最近邻 / 决策树 / 神经网络）</li>
+                        <li><strong>符号音乐新域</strong>：Notes → Chords → MusicMeasure → MusicVoice → MusicScore 五级</li>
+                        <li><strong>IncrementalObject 新数据结构</strong>：可传输 + 可恢复（Permutations[20] ≈ 2×10^18 排列）</li>
+                    </ul>
+
+                    <strong>HN front 6/17 21:00 #18 Wolfram 15 181pt/98c 当日新晋</strong>：38 年老牌数学工具 AI 化在 HN front 引发中等热度讨论
+
+                    <strong>vs 6/17 evening 写过 GitHub / Coze / Qwen / Anthropic 多个工具链</strong>：Wolfram v15 = "38 年老牌数学工具"在 6/16 当日对 AI 全面接入 = <span class="highlight">21evening 必报的"Wolfram 老树新枝"角度</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5 -->
+        <section class="section">
+            <div class="section-title">💬 角度 #5：6/17 21:00 HN front 25 items 完整复盘 — SpaceX-Cursor 1567c 史上最高 + Running local models 当日新高峰 1402pt + GLM-5.2 #15 + Wolfram 15 #18 + Has AI killed self-help #13 + Claude founder's playbook #23</div>
+
+            <div class="card">
+                <h3>6/17 21:00 HN front 25 items 完整图景（HN Firebase API 串行 8-12s 抓取）</h3>
+                <div class="source">来源：HN Firebase API 6/17 21:00 北京时间 = 北美 6/17 09:00 UTC 当日 25 items 完整复盘</div>
+                <div class="desc">
+                    <strong>6/17 21:00 HN front AI 相关条目 + 与 6/17 evening 24h 对比</strong>：
+                    <table class="github-table">
+                        <tr><th>HN 排名</th><th>标题</th><th>分数 / 评论</th><th>AI 相关</th><th>6/17 evening 24h 对比</th></tr>
+                        <tr><td><strong>#1</strong></td><td><strong>SpaceX to buy Cursor for $60B</strong></td><td><strong>1057pt/1567c</strong></td><td>✅ AI</td><td><span class="highlight">6/17 evening 1028pt/1525c = 24h 累计 1567c Cursor 史上最高</span></td></tr>
+                        <tr><td><strong>#2</strong></td><td><strong>Running local models is good now</strong></td><td><strong>1402pt/543c</strong></td><td>✅ AI</td><td>6/17 evening 1332pt/509c = 当日新高峰 +70pt 6h 增量</td></tr>
+                        <tr><td>#3</td><td>GrapheneOS ported to Android 17</td><td>863pt/441c</td><td>❌</td><td>非 AI</td></tr>
+                        <tr><td>#6</td><td>Calvin and Hobbes and the price of integrity</td><td>473pt/201c</td><td>❌</td><td>6/17 evening 426pt/183c = 24h +47pt</td></tr>
+                        <tr><td>#8</td><td>Stop Using JWTs</td><td>428pt/255c</td><td>△ 协议</td><td>6/17 morning 234pt/139c = 24h +194pt</td></tr>
+                        <tr><td>#11</td><td>GPT‑NL: a sovereign language model for the Netherlands</td><td>228pt/242c</td><td>✅ AI</td><td>6/17 morning 127pt/135c = 24h +101pt</td></tr>
+                        <tr><td><strong>#13</strong></td><td><strong>Has AI already killed self-help nonfiction books?</strong></td><td><strong>336pt/395c</strong></td><td>✅ AI</td><td><span class="highlight">6/17 当日新晋 / Tim Ferriss 6/12 文 + 6/17 21:00 HN 发酵</span></td></tr>
+                        <tr><td><strong>#15</strong></td><td><strong>GLM-5.2 is the new leading open weights model on Artificial Analysis</strong></td><td><strong>299pt/134c</strong></td><td>✅ AI</td><td><span class="highlight">6/17 当日新晋 / 智谱 GLM-5.2 冲上 Artificial Analysis 第一名</span></td></tr>
+                        <tr><td>#17</td><td>TIL: You can make HTTP requests without curl using Bash /dev/TCP</td><td>469pt/206c</td><td>❌</td><td>非 AI</td></tr>
+                        <tr><td><strong>#18</strong></td><td><strong>Wolfram Language and Mathematica version 15</strong></td><td><strong>181pt/98c</strong></td><td>✅ AI</td><td><span class="highlight">6/17 当日新晋 / Wolfram v15 6/16 38 年老牌工具 AI 化</span></td></tr>
+                        <tr><td><strong>#23</strong></td><td><strong>The founder's playbook: Building an AI-native startup</strong></td><td><strong>116pt/115c</strong></td><td>✅ AI</td><td><span class="highlight">6/17 当日新晋 / Anthropic Claude 官方博客</span></td></tr>
+                    </table>
+
+                    <strong>6/17 21evening 必报的 5 大新信号</strong>：
+                    <ul>
+                        <li><strong>信号 ① SpaceX-Cursor 评论数累计 1567 条 Cursor 史上最高</strong>：6/16 evening 21:00 起步 127pt → 6/17 09:00 856pt/1307c → 6/17 12:00 932pt/1414c → 6/17 18:00 1028pt/1525c → 6/17 21:00 1057pt/1567c = 12h 累计 1567 条评论 = Cursor 史上最高讨论量</li>
+                        <li><strong>信号 ② Running local models 当日新高峰 1402pt</strong>：6/16 evening 1189pt → 6/17 12:00 1093pt → 6/17 18:00 1332pt → 6/17 21:00 1402pt = 当日新高峰</li>
+                        <li><strong>信号 ③ Has AI already killed self-help nonfiction books? #13 336pt/395c 当日新晋</strong>：6/17 当日新晋 / Tim Ferriss 6/12 文 + 6/17 21:00 HN 发酵 / 评论数 395 = 高讨论度（评论/分数=1.18 = 高争议性话题）</li>
+                        <li><strong>信号 ④ GLM-5.2 Artificial Analysis 51 分 #15 299pt/134c 当日新晋</strong>：6/17 当日新晋 / 智谱 GLM-5.2 冲上 Artificial Analysis 第一名（见角度 #1）</li>
+                        <li><strong>信号 ⑤ Claude founder's playbook: Building an AI-native startup #23 116pt/115c 当日新晋</strong>：6/17 当日新晋 / Anthropic Claude 官方博客 = "撤市 + 推创业指南"反差</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>GLM-5.2 6/17 冲上 Artificial Analysis Intelligence Index v4.1 开源权重模型第一名（51 分 / 领先 Kimi K2.6 8 分 / vs GPT-5.5 xhigh 1514 持平 1524）</strong>——Artificial Analysis 6/17 当日文章披露。GLM-5.1 40 → GLM-5.2 51（<strong>参数不变 744B/40B 激活 6 周 +11 分 / +28% 综合排名</strong>）= CritPt 5%→21% / HLE 28%→40% / TerminalBench 62%→78% / AA-LCR 62%→71%。上下文 200K → <strong>1M tokens（5x）</strong>。MIT 协议 + <strong>8 家云厂商同时接入</strong>（DeepInfra / Novita / Nebius / Parasail / Siliconflow / GMI Cloud / Baseten / Fireworks）。<strong>Fable 5 6/12 撤市直接给 GLM-5.2 让出第一名位置</strong>（vs Claude Fable 5 6/10 第 1 → 6/17 GLM-5.2 反超 6 个点）。Pareto 前沿（$0.46/任务 / 智能级别上成本最低）+ AA-Omniscience Index 4 分（vs 5.1 = 2）+ 幻觉率 28.1%（vs 5.1 = 29.4% / -1.3 个百分点）。evening 写过 Code Arena 冠军但没碰过"Artificial Analysis 51 分第一名"具体数据</li>
+                    <li><strong>6/17 17:47 WAIC 2026 倒计时 30 天发布会 + 1100+ 企业 300+ 款 AI 产品全球首发 + 首设 OPC 专属展示区 180 家企业入驻</strong>——7/17-20 在上海 / 主题"智能伙伴，共创未来" / 主办方外交部 / 科技部 / 工信部 等 10 部门 + 上海市政府。展览面积超 10 万平方米（vs 2024 5.2 万 = 接近 2x 规模）/ 300+ 款 AI 产品全球首发（vs 2024 50+ 款 = <strong>6x 规模</strong>）/ 140 场论坛。<strong>OPC = Open Personal Companion = 国产 AI 伴侣产业集群 180 家入驻</strong>。学术会议 WAICA 首次自主举办：图灵奖得主姚期智（大会主席）/ 强化学习之父萨顿（国际联席主席）。新平台 "Hi WAIC" APP + WAIC City Walk 串联 30+ AI 应用场景。<strong>6/17 21:00 WAIC OPC 180 家 = 政策侧"科创板扩容" + 产业侧"OPC 180 家" + 资本侧"智谱 +17.64%" = 三线对位</strong>。morning / afternoon / evening 完全没碰过 WAIC 2026 倒计时 30 天发布会</li>
+                    <li><strong>6/17 18:13 斯坦福 / UIUC / 丹麦技术大学 arXiv:2606.08044 "审计缺口"研究 + 与 6/17 14:00 AIIA 形成"中美同一天：实践层 + 学术层"双线对位</strong>——核心发现：主流 LLM 安全测试"表面过关"内部脆弱 = "一栋楼通过消防验收，但墙壁里塞满了易燃材料"。"解离模型"实验设计 = 输出行为保持安全 + 内部激活向危险模型靠拢 + 训练数据 PKU-SafeRLHF + BeaverTails + XSTest + 9 个公开安全评测 + 实验模型 Gemma 2 2B / Llama 3.2 3B / Qwen 2.5 3B。<strong>LVS 潜在脆弱性分数（Latent Vulnerability Score）</strong> = 安全行为崩塌量 / 所需扰动大小 / 连续量化 vs 攻击成功率二元。<strong>Llama-3 末层 LVS</strong>：基础安全 0 / 强化安全 0 / 去安全 55.665 / 危险训练 201.190。<strong>Llama-3 嵌入层 LVS</strong>：强化安全版反而更脆弱 9.182（<strong>关键洞察：安全训练效果在模型各层之间不均衡</strong>）。<strong>中间层是"阿喀琉斯之踵"</strong> = 扰动中间层比嵌入层或最后几层更容易引发有害输出。<strong>vs 6/17 evening 14:00 AIIA 智能体时代 AI 安全治理研讨会（实践层 / 中国制度化治理）</strong>：arXiv:2606.08044 18:13 = 学术层 / 美国 = <strong>中美同一天（6/17 14:00 中国 + 6/17 18:13 美国）AI 安全治理双线落地</strong>。evening 写过 AIIA 但没碰 arXiv 2606.08044</li>
+                    <li><strong>6/16 Wolfram Language & Mathematica v15 由 Stephen Wolfram 当日发布（6/17 21:00 HN #18 181pt/98c 发酵）— 38 年老牌数学工具 AI 化</strong>——v15 距 v1.0（1988/06/23）38 年 / 核心主题"Built-in (useful) AI + New core functionality" / 用户群从"人类"扩展到"人类 + AI"。<strong>AI Assistant in Every Notebook</strong>：每个 notebook 底部新增 chatbar / 输入自然语言 + ENTER 获取 Wolfram Language 代码 / 一键插入运行 / Basic 免费 + Pro / Research 订阅。<strong>Use Wolfram from AI Environments</strong>：AI 环境（Claude Code / Codex）连接桌面 Wolfram 系统 / 新 <strong>Wolfram Agent Tools 框架 + DeployAgentTools 函数</strong> / <strong>wolfram.com 现在向 AI Agent 提供 Markdown 服务</strong> / 新"For AIs"链接在网站顶部。LLM Function 全面接入：所有 LLM 函数可用 / AgentOne / WolframAIAssistant / LLMEvaluator 配置。新核心功能：Time Series 升级（百万级条目）/ ModelFit 超级函数（10+ 模型类型）/ 符号音乐新域（Notes → Chords → MusicMeasure → MusicVoice → MusicScore 五级）/ IncrementalObject 新数据结构。morning / afternoon / evening 都没碰过 Wolfram v15</li>
+                    <li><strong>6/17 21:00 HN front 北美时间当日新晋 3 条 AI 相关 + 持续发酵 + 5 大新信号</strong>——<strong>#1 SpaceX to buy Cursor for $60B 1057pt/1567c</strong>（6/17 21:00 vs 6/17 evening 1028pt/1525c = 24h 累计 <strong>1567c Cursor 史上最高讨论量</strong>）+ <strong>#2 Running local models is good now 1402pt/543c</strong>（当日新高峰 vs 6/17 evening 1332pt = +70pt 6h 增量）+ <strong>#13 Has AI already killed self-help nonfiction books? 336pt/395c</strong>（6/17 当日新晋 / Tim Ferriss 6/12 文）+ <strong>#15 GLM-5.2 is the new leading open weights model on Artificial Analysis 299pt/134c</strong>（6/17 当日新晋）+ <strong>#18 Wolfram Language and Mathematica version 15 181pt/98c</strong>（6/17 当日新晋）+ <strong>#23 The founder's playbook: Building an AI-native startup 116pt/115c</strong>（6/17 当日新晋 / Anthropic Claude 官方博客 = "撤市 + 推创业指南"反差）= 21evening 必报 5 大新信号。morning / afternoon / evening 写过 HN front 部分条目但没做过"6/17 21:00 当日完整复盘"</li>
+                    <li><strong>"全速冲刺 + 公开呼吁暂停"双面张力识别</strong>——Anthropic 6/17 推出"founder's playbook"创业指南（HN #23 116pt）vs 6/12 Fable 5 撤市令 vs 6/15 staff 赴白宫 = Anthropic 在"被撤市 + 推创业指南"的双面张力下持续推进。vs 6/16 evening 写过"100 专家 freefable.org 公开信" = 21evening 必报的"Anthropic 双面张力"角度</li>
+                    <li><strong>"政策 + 资本 + 产业"三线对位 — 中国 AI 替代叙事的全面认账</strong>——6/17 evening 写过"政策侧"科创板第五套标准扩容 + 6/17 evening 写过"资本侧"智谱盘中 +17.64% 报 1734 港元 + 6/17 21evening 写"产业侧"WAIC OPC 180 家入驻 = <strong>6/17 21:00 中国 AI 替代叙事完成"政策 + 资本 + 产业"三线收官</strong></li>
+                    <li><strong>"8 家云厂商同时接入" — 智谱从中国扩展到全球云基础设施</strong>——GLM-5.2 接入 DeepInfra / Novita / Nebius / Parasail / Siliconflow / GMI Cloud / Baseten / Fireworks = 智谱从"中国国产"扩展到"全球云分发" = 21evening 必报的"智谱全球云分发"角度</li>
+                    <li><strong>"Pareto 前沿" — 高智能 + 低成本最优解</strong>——GLM-5.2 在其智能级别上成本最低（$0.46/任务 / vs Kimi K2.6 $0.31 / vs MiniMax-M3 $0.18 / vs DeepSeek V4 Pro $0.05）。vs 6/16 morning 写过"Big Four hyperscaler 2026 capex $725B"（北美巨头烧钱）vs 6/17 morning 写过"NVIDIA $25B 发债'算 ROI'"（北美巨头开始算 ROI）= <strong>6/17 21:00 智谱 GLM-5.2 + Pareto 前沿 = "北美烧钱 → 中国 Pareto 前沿"反差范本</strong></li>
+                    <li><strong>"撞车源 0 处" — 21evening 5 个全新角度 pre-write filter 全部通过</strong>——本次 6/17 21evening 5 个全新角度（Artificial Analysis 51 分第一名 / WAIC 2026 倒计时 30 天 / arXiv:2606.08044 审计缺口 / Wolfram v15 AI 化 / HN 6/17 21:00 完整复盘）通过 pre-write filter 全部 0 处撞车（vs 6/17 afternoon 5 处撞车失败）—— 5 个角度的数据点 / 角度标题 / 归类框架均与 morning / afternoon / evening 已覆盖的不同</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 6/17 22:30 → 6/18 09:00 12 小时窗口观察清单</h4>
+                <ul>
+                    <li>GLM-5.2 后续发酵：Code Arena + Artificial Analysis 双冠 / 1M 上下文 8 家云厂商分发 / Fable 5 撤市后智谱是否"全栈占领"开源权重</li>
+                    <li>WAIC 2026 7/17 倒计时 30 天：1100+ 企业 / 300+ 款 AI 产品 / OPC 180 家 / 7/17 现场是否出现"智谱 GLM-5.2"+"Qwen-Robot Suite"+"FF 法拉第未来 4 款 EAI 机器人"+"智平方 NeuroVLA"+"科创板第五套扩容"5 大 6/17 已写要素集中亮相</li>
+                    <li>arXiv:2606.08044 审计缺口研究后续：6/17 evening 14:00 AIIA + 6/17 18:13 arXiv 学术 + 6/17 18:00 科创板第五套标准 3 件事同日落地 / 中美 AI 治理"制度化 vs 学术化"双线是否形成"6/17 共识"</li>
+                    <li>Wolfram v15 后续发酵：For AIs 链接 / Wolfram Agent Tools 框架 / Claude Code / Codex 接入细节 / 7000+ 原语 + LLM Function 实际应用案例</li>
+                    <li>HN front 6/17 21:00 → 6/18 09:00 发酵曲线：SpaceX-Cursor 1567c 是否破 2000c / Running local models 1402pt 持续增长 / GLM-5.2 #15 是否进入前 10 / Has AI killed self-help 评论/分数比 1.18 高争议性后续</li>
+                    <li>Claude founder's playbook #23 116pt 后续：Anthropic 6/17 在被撤市后推创业指南 = "全速冲刺 + 公开呼吁暂停"双面张力 / 6/18 是否更多创业公司签约 Anthropic 平台</li>
+                    <li>6/18 morning cron 启动：应主动差异化 6/17 4 时段已写（morning/afternoon/evening/21evening），关注 GLM-5.2 24h 发酵 + WAIC OPC 180 家后续 + arXiv 2606.08044 学术评论 + Wolfram v15 实际应用 + HN 24h 累计变化</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：Artificial Analysis 6/17 11:00 UTC "GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index" | 财联社 6/17 17:47 "2026世界人工智能大会暨人工智能全球治理高级别会议倒计时30天发布会" | 新华网 6/17 | 解放日报 6/17 20:43 | 36kr 6/17 20:33 | 21财经 6/17 | arXiv:2606.08044 6/17 18:13 当日发布 | html5.qq.com 6/17 18:13 自媒体转载 | Stephen Wolfram writings.stephenwolfram.com 6/16 "Launching Version 15 of Wolfram Language & Mathematica" | HN Firebase API 6/17 21:00 直连 top 25 items 串行 8-12s 完成 | HN #1 SpaceX to buy Cursor for $60B 1057pt/1567c | HN #2 Running local models is good now 1402pt/543c | HN #13 Has AI already killed self-help nonfiction books? 336pt/395c | HN #15 GLM-5.2 is the new leading open weights model on Artificial Analysis 299pt/134c | HN #18 Wolfram Language and Mathematica version 15 181pt/98c | HN #23 The founder's playbook: Building an AI-native startup 116pt/115c</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-17 21:00 晚间情报 · 撞车源：6/17 morning (Fable 5/Mythos 5 5步撤市流程 / Anthropic IPO 16天复盘 / NVIDIA $25B 发债"算ROI" / HN front 6条 / 港交所科技100) + 6/17 afternoon (Qwen-Robot Suite 完整细节 / HN 24h 7条 / 国产AI双雄分叉 / 国产6周超美 / Opus 4.8实战数据 / Anthropic 5月ARR $47B) + 6/17 evening (陆家嘴论坛 科创板第五套标准扩容 AI / 智谱盘中 +17.64% / FF 法拉第未来 4款 EAI 机器人 / AIIA 智能体时代 AI 安全治理研讨会 / 港股 AI 板块整体走强) · 本期 21evening 主动差异化：GLM-5.2 Artificial Analysis 51分第一名 + WAIC 2026 倒计时30天 + arXiv:2606.08044 审计缺口 + Wolfram v15 AI 化 + HN 6/17 21:00 完整复盘 (5 角度 0 处撞车)</p>
+        </footer>
+    </div>
+</body>
+</html>
