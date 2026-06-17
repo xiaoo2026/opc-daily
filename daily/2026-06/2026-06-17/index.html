@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-17 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-17 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月17日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-policy">陆家嘴论坛 科创板第五套标准扩容 AI</span>
+                <span class="tag tag-capital">智谱盘中 +17.64% 报 1734 港元</span>
+                <span class="tag tag-product">GLM-5.2 Code Arena 冠军 + 国产算力适配</span>
+                <span class="tag tag-trend">FF 法拉第未来 4 款 EAI 机器人</span>
+                <span class="tag tag-security">AIIA 智能体安全治理研讨会</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">+17.64%</div>
+                <div class="label">智谱 6/17 盘中一度（报 1734 港元 / 观点网原文）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">8.24 亿</div>
+                <div class="label">港股通南向资金 6/16 净买入智谱（AASTOCKS）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">1332pt</div>
+                <div class="label">HN #1 Running local models 6/17 evening（+339pt 24h）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">1525c</div>
+                <div class="label">HN #2 SpaceX-Cursor 评论数 Cursor 史上最高</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">4 款</div>
+                <div class="label">FF 法拉第未来 6/17 早 8:30 发布 EAI 机器人 + 教育生态</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">+60%</div>
+                <div class="label">智谱 6/15~6/17 三个交易日累计涨幅（接棒 3.0）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/17 上午 陆家嘴论坛 证监会主席吴清 宣布"扩大科创板第五套标准适用范围至人工智能领域" + 当日上交所发布配套审核指引"梁文锋们要来了" + 6/17 智谱港股盘中 +17.64% 报 1734 港元（GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 全球百万用户盲测前端开发评估冠军）+ 6/17 早 8:30 FF 法拉第未来发布 4 款 EAI 机器人 + 全球首个 EAI 教育生态 + 6/17 智平方 NeuroVLA 二次发酵 + 机器人 ETF 华夏 3 连涨 + 6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会 + 6/17 港股通南向资金 6/16 净买入智谱 8.24 亿港元 + 6/17 HN front 5 条 AI 跃迁（Running local models 1332pt/509c / SpaceX-Cursor 1028pt/1525c / Stop Using JWTs 420pt / GPT-NL 211pt / Qwen-Robot Suite 179pt）</h3>
+            <p>过去 6 小时（6/17 12:00 ~ 6/17 18:00 北京时间），AI 行业在 5 个新维度同时放出压倒性信号。<strong>6/17 上午 陆家嘴论坛 证监会主席吴清 宣布"扩大科创板第五套标准适用范围至人工智能领域"</strong>——<span class="highlight">6/17 上午 2026 陆家嘴论坛开幕</span>（新华网 6/17 / 证券时报 6/17 / 同花顺 6/17）——<strong>吴清当日宣布两大改革措施</strong>："① 扩大第五套标准适用范围至人工智能领域，积极支持优质人工智能大模型企业上市 ② 落实发展未来产业战略部署，支持量子科技、生物制造、具身智能等领域" —— <strong>当日下午上交所发布配套审核指引《科创板第五套上市标准适用指引》</strong>（证券时报 6/17 14:36）—— <span class="highlight">"梁文锋们要来了"</span>（东方财富 6/17 14:36 财联社标题）= evening 必报的"政策 + 资本"主线（morning / afternoon 未碰过）。</p>
+            <p><strong>6/17 智谱港股盘中 +17.64% 报 1734 港元 + GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 全球百万用户盲测前端开发评估冠军</strong>——6/17 智谱港股盘中一度涨 17.64% 报 1734 港元（观点网 6/17）——6/17 智谱当日宣布"GLM-5.2 上线并开源 + 国产算力全面适配 + 全球百万用户参与盲测的 Code Arena 前端开发评估系统 GLM-5.2 夺冠"（新浪财经 6/17 inicsvws5758605）——<span class="highlight">智谱 6/15~6/17 三个交易日"接棒 3.0"完整时间线</span>：6/15 收涨 32.82%（"接棒 1.0"资本市场层）→ 6/16 盘中 +13%（"接棒 2.0"产品叙事层）→ 6/17 盘中 +17.64% 报 1734 港元（"接棒 3.0"技术自主层）= evening 必报的"接棒 3.0 完整收官"主线。</p>
+            <p class="last"><strong>6/17 早 8:30 FF 法拉第未来发布 4 款 EAI 机器人 + 全球首个 EAI 教育生态 + 6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会 + 6/17 HN front 5 条 AI 跃迁</strong>——FF 法拉第未来 6/17 早 8:30 召开"FF EAI 机器人教育生态战略及产品线暨 EAI 终端新品发布会"（AASTOCKS 6/17 / 凤凰网 6/15 预热）——发布 4 款 EAI 机器人产品：① Futurist 2（全美第一款支持 NVIDIA 运控系统的全尺寸人形机器人）② FX Navi（教育启蒙型四足机器人）等 —— "全球首个 EAI 教育生态" —— 6/17 15:00 机器人 ETF 华夏 3 连涨（FX168 6/17）—— 6/17 14:00 AIIA 安全治理委员会"智能体时代 AI 安全治理研讨会"北京举行（人民财讯 6/16 预告 / 证券时报 6/17 / 钛媒体 6/17）—— 6/17 HN front 5 条 AI 跃迁（Running local models 1332pt/509c / SpaceX-Cursor 1028pt/1525c / Stop Using JWTs 420pt / GPT-NL 211pt / Qwen-Robot Suite 179pt）。</p>
+        </div>
+
+        <!-- 角度 #1 陆家嘴论坛 科创板第五套标准扩容 -->
+        <section class="section">
+            <div class="section-title">🔥 角度 #1：6/17 上午 陆家嘴论坛 证监会主席吴清 宣布"扩大科创板第五套标准适用范围至人工智能领域" — 国产 AI 大模型企业科创板上市破冰 + 当日上交所发布配套审核指引</div>
+
+            <div class="card">
+                <h3>6/17 上午 2026 陆家嘴论坛开幕 证监会主席吴清 宣布两大改革措施</h3>
+                <div class="source">来源：新华网 6/17 | 证券时报 6/17 | 同花顺 6/17 | 澎湃新闻 6/17（陆家嘴论坛演讲全文）</div>
+                <div class="desc">
+                    <strong>吴清 6/17 在 2026 陆家嘴论坛开幕式上发表主题演讲要点</strong>（evening 必报，morning / afternoon 未碰过）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>改革措施</th><th>核心内容</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>① 扩大第五套标准适用范围至人工智能领域</strong></td><td>积极支持优质人工智能大模型企业上市</td><td><span class="stars">国产 AI 大模型企业科创板上市破冰</span> —— 此前科创板第五套标准主要面向未盈利的生物医药企业；6/17 当日首次扩至 AI 大模型企业</td></tr>
+                            <tr><td><strong>② 落实发展未来产业战略部署</strong></td><td>支持量子科技、生物制造、具身智能等领域</td><td><span class="stars">未来产业资本制度安排</span> —— 与 AI 形成"AI + 量子 + 生物制造 + 具身智能"组合布局</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>吴清原文要点</strong>："主动拥抱新一轮科技革命和产业变革，持续增强资本市场制度包容性、适应性。持续深化'两创板'改革"（新华网 6/17）—— "在科创板方面，扩大科创板第五套标准适用范围至人工智能领域，积极支持优质人工智能大模型企业上市"（澎湃新闻 6/17 演讲全文）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>当日上交所发布配套审核指引《科创板第五套上市标准适用指引》— "梁文锋们要来了"</h3>
+                <div class="source">来源：证券时报 6/17 14:36 | 东方财富 6/17 14:36 | 上交所</div>
+                <div class="desc">
+                    <strong>上交所 6/17 14:36 当日发布配套审核指引</strong>（证券时报 6/17 14:36）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/17 14:36 落地</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>指引名称</strong></td><td>《科创板第五套上市标准适用指引》</td></tr>
+                            <tr><td><strong>适用范围</strong></td><td>人工智能大模型企业</td></tr>
+                            <tr><td><strong>核心定位</strong></td><td>明确科创板第五套标准对 AI 大模型企业的具体适用条件</td></tr>
+                            <tr><td><strong>财联社标题</strong></td><td><span class="stars">"科创板第五套标准拟扩容 AI 大模型'梁文锋们'要来了"</span></td></tr>
+                            <tr><td><strong>"梁文锋们"指向</strong></td><td>DeepSeek 梁文锋、智谱张鹏、月之暗面杨植麟、阶跃星辰姜大昕、MiniMax 闫俊杰等</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>A+H 双重通道完整打开 — 6/17 morning 写过"港交所科技 100" + 6/17 evening 写"科创板第五套标准扩容 AI 大模型"</h3>
+                <div class="source">来源：新华网 6/17 | 证券时报 6/17 14:36 | 同花顺 6/17 | 解放日报 6/17</div>
+                <div class="desc">
+                    <strong>A+H 双重通道完整打开的产业意义</strong>（evening 必报）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>通道</th><th>6/17 当日落地</th><th>6/17 evening 写</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>A 股科创板</strong></td><td>第五套标准扩容至 AI 大模型企业</td><td><span class="stars">6/17 evening 必报</span></td></tr>
+                            <tr><td><strong>港交所科技 100</strong></td><td>6/8 公告 6/15 生效，智谱 / 壁仞 / 天数智芯 3 只 AI 硬科技快速纳入</td><td>6/17 morning 已写</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>此前国产 AI 大模型企业上市路径</strong>：① 港股（智谱 / MiniMax / 阶跃星辰 / 月之暗面已上市）② 美股（无明确路径）③ A 股科创板（5 套标准不适用）—— <span class="highlight">6/17 改革后：A 股科创板正式对 AI 大模型企业打开 = 国产大模型企业上市路径从"港股独大"升级为"港股 + A 股科创板"双通道</span>。<br><br>
+                    <strong>"全速冲刺 + 政策开放"双面张力</strong>：6/17 智谱盘中 +17.64% + 科创板第五套标准扩容至 AI 大模型 = <span class="highlight">"资本市场 + 政策制度"双线对"国产 AI 替代"叙事的全面认账 = "Anthropic Fable 5 / Mythos 5 6/12 撤市令"事件触发的"国产 AI 替代"在 6/15 智谱盘中 +47% / 6/16 智谱盘中 +13% / 6/17 智谱盘中 +17.64% 三个时点形成"接棒 3.0"</span>，而 6/17 政策制度层面同步给"国产 AI 大模型企业"打开科创板上市通道 = evening 必报的"政策 + 资本双线并进"完整收官。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 智谱接棒 3.0 完整收官 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #2：6/17 智谱港股盘中 +17.64% 报 1734 港元 + GLM-5.2 Code Arena 冠军 + 国产算力全面适配 — 智谱"接棒叙事 3.0"完整收官</div>
+
+            <div class="card">
+                <h3>6/17 智谱港股盘中 +17.64% 报 1734 港元 — 6/15~6/17 三个交易日"接棒 3.0"完整时间线</h3>
+                <div class="source">来源：观点网 6/17 | 新浪财经 6/17 inicsvws5758605 | 同花顺 6/17 实时</div>
+                <div class="desc">
+                    <strong>6/17 智谱股价五时点对比 + 6/17 evening 收官完整复盘</strong>（evening 必报，morning / afternoon 未做"三个交易日"完整复盘）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>智谱股价 / 涨跌幅</th><th>来源</th><th>"接棒"层级</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/15 收市</td><td>1457 港元 / <span class="stars">+32.82%</span></td><td>财经号 6/15</td><td>"接棒 1.0" 资本市场层</td></tr>
+                            <tr><td>6/16 11:33 盘中</td><td>+13%</td><td>钛媒体 6/16 11:33</td><td>"接棒 2.0" 产品叙事层</td></tr>
+                            <tr><td>6/16 收市</td><td>+3.64%（自 +13% 回落）</td><td>同花顺 6/16 实时</td><td>evening 收市</td></tr>
+                            <tr><td><strong>6/17 盘中</strong></td><td><span class="stars"><strong>+17.64% 报 1734 港元</strong></span></td><td><strong>观点网 6/17</strong></td><td><strong>"接棒 3.0" 技术自主层</strong></td></tr>
+                            <tr><td><strong>6/17 14:00 累计</strong></td><td><strong>三个交易日累计涨幅超 60%</strong></td><td><strong>自行测算</strong></td><td><strong>6/17 evening 必报</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 智谱当日宣布"GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 冠军"</h3>
+                <div class="source">来源：新浪财经 6/17 inicsvws5758605 | 智通财经 6/17</div>
+                <div class="desc">
+                    <strong>新浪财经 6/17 原文</strong>（evening 必报，afternoon 未做"GLM-5.2 6/17 上线 + 开源 + 国产算力全面适配"具体复盘）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/17 当日落地</th><th>vs 6/15 6/16 已写</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>GLM-5.2 状态</strong></td><td><span class="stars">6/17 当日"上线并开源"</span></td><td>vs 6/15 evening 写过"全量开放"未明确"上线"</td></tr>
+                            <tr><td><strong>国产算力</strong></td><td><span class="stars">6/17 当日"国产算力全面适配"</span>（华为昇腾 / 寒武纪 / 海光信息）</td><td>6/15 evening / afternoon 未碰</td></tr>
+                            <tr><td><strong>Code Arena</strong></td><td><span class="stars">全球百万用户参与盲测的"前端开发评估系统"GLM-5.2 夺冠</span></td><td>6/15 evening / afternoon 未碰</td></tr>
+                            <tr><td><strong>资本市场反应</strong></td><td>6/17 智谱盘中 +17.64% 报 1734 港元</td><td>6/16 evening 已写 6/16 盘中 +13%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>智谱"接棒 3.0"完整收官 — 6/15 → 6/16 → 6/17 三时点四层叠加</h3>
+                <div class="source">来源：观点网 6/17 | 钛媒体 6/16 11:33 | 财经号 6/15 | 新浪财经 6/17 inicsvws5758605</div>
+                <div class="desc">
+                    <strong>智谱 6/15 ~ 6/17 三个交易日"接棒 3.0"完整时间线</strong>（evening 必报，morning / afternoon 未做"三个交易日"完整复盘）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>日期</th><th>智谱股价 / 涨跌幅</th><th>触发事件</th><th>"接棒"层级</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>6/15</strong></td><td><span class="stars">盘中 +47.6% / 收涨 32.82%</span></td><td>GLM-5.2 港交所公告全量开放 + MIT 协议开源</td><td>"接棒 1.0" 资本市场层</td></tr>
+                            <tr><td><strong>6/16</strong></td><td><span class="stars">盘中 +13%</span></td><td>钛媒体"AI 替代潮"完整叙事 + Fable 5 撤市令 1M 上下文对接</td><td>"接棒 2.0" 产品叙事层</td></tr>
+                            <tr><td><strong>6/17</strong></td><td><span class="stars">盘中 +17.64% 报 1734 港元</span></td><td>GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 冠军</td><td><span class="stars">"接棒 3.0" 技术自主层</span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>"接棒 3.0"完整收官意义</strong>：<span class="highlight">6/15 "接棒 1.0"（资本市场层）：GLM-5.2 港交所公告全量开放 → 6/16 "接棒 2.0"（产品叙事层）：钛媒体"AI 替代潮"完整叙事 → 6/17 "接棒 3.0"（技术自主层）：GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 冠军 = 智谱从"产品层"到"资本市场层"到"技术自主层"到"全球盲测冠军层"四层叠加</span> = evening 必报。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 FF 法拉第未来 4 款 EAI 机器人 + 机器人 ETF 3 连涨 -->
+        <section class="section">
+            <div class="section-title">🤖 角度 #3：6/17 早 8:30 FF 法拉第未来 4 款 EAI 机器人 + 6/17 智平方 NeuroVLA 二次发酵 + 机器人 ETF 华夏 3 连涨 — 国产机器人 4 线并立</div>
+
+            <div class="card">
+                <h3>6/17 早 8:30 FF 法拉第未来发布 4 款 EAI 机器人 + 全球首个 EAI 教育生态</h3>
+                <div class="source">来源：AASTOCKS 6/17 | 格隆汇 6/16 倒计时预告 | 凤凰网 6/15 | 新浪 6/15 预热</div>
+                <div class="desc">
+                    <strong>FF 法拉第未来 6/17 早 8:30 发布会要点</strong>（evening 必报，morning / afternoon 未碰过 FF 法拉第未来）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>EAI 机器人</th><th>定位</th><th>核心特点</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Futurist 2</strong></td><td>全尺寸人形机器人</td><td><span class="stars">全美第一款支持 NVIDIA 运控系统的全尺寸人形机器人</span></td></tr>
+                            <tr><td><strong>FX Navi</strong></td><td>教育启蒙型四足机器人</td><td>4 足机器人教育启蒙</td></tr>
+                            <tr><td><strong>其他 2 款</strong></td><td>具身智能终端产品</td><td>发布会现场公布</td></tr>
+                            <tr><td><strong>"全球首个 EAI 教育生态"</strong></td><td>FF 全球首个机器人教育生态</td><td>同步公布售价及启动时间</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>AASTOCKS 6/17 原文</strong>："6月17日｜法拉第未来举办六大系列'全形态 FFEAI 机器人世界'上半场——六大系列全形态 FFEAI 机器人世界 & EAI 教育生态及产品线发布会，正式发布 [4 款 EAI 机器人产品]"（AASTOCKS 6/17）—— <strong>凤凰网 6/15 原文</strong>："贾跃亭：FF 将一口气发布 4 款机器人 / 这次发布会定在美西时间 6 月 16 日 17 点，换算成北京时间就是 17 日早上 8:30"（凤凰网 6/15）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 智平方 NeuroVLA 类脑式具身智能二次发酵 + 6/17 15:00 机器人 ETF 华夏 3 连涨</h3>
+                <div class="source">来源：投资界 6/15 | 第一电动网 6/15 | 每日经济新闻 6/15 | FX168 6/17 15:00</div>
+                <div class="desc">
+                    <strong>6/17 智平方 NeuroVLA 二次发酵 + 6/17 15:00 机器人 ETF 华夏 3 连涨</strong>（FX168 6/17 15:00）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/17 15:00 数据</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>中证机器人指数 H30590</strong></td><td><span class="stars">+0.14%</span></td></tr>
+                            <tr><td><strong>中控技术</strong></td><td><span class="stars">+7.08%</span></td></tr>
+                            <tr><td><strong>矩子科技</strong></td><td><span class="stars">+6.42%</span></td></tr>
+                            <tr><td><strong>天准科技</strong></td><td><span class="stars">+6.25%</span></td></tr>
+                            <tr><td><strong>快克智能</strong></td><td><span class="stars">+5.87%</span></td></tr>
+                            <tr><td><strong>雷赛智能</strong></td><td><span class="stars">+5%</span></td></tr>
+                            <tr><td><strong>机器人 ETF 华夏（562500）</strong></td><td><span class="stars">3 连涨</span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>机器人 ETF 华夏 3 连涨的产业意义</strong>：6/15 NeuroVLA 6/15 北京智源大会发布 → 6/15 机器人 ETF 华夏 +1.01%（每经 6/15）→ 6/16 Qwen-Robot Suite 发布 → 6/16 A 股机器人 ETF 华夏 +14% / 科大智能 +14%（观点财经 6/16）→ 6/17 FF 法拉第未来 4 款 EAI 机器人 + 智平方 NeuroVLA 二次发酵 → 6/17 机器人 ETF 华夏 3 连涨。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>国产机器人 6/17 完成"四线并立" — 互联网新势力 + 具身智能创业公司 + 互联网巨头 + 国产大模型龙头</h3>
+                <div class="source">来源：AASTOCKS 6/17 | 投资界 6/15 | 第一电动网 6/15 | 凤凰网 6/15 | 新浪财经 6/17</div>
+                <div class="desc">
+                    <strong>6/17 evening 必报的"国产机器人四线并立"角度</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>类型</th><th>6/17 落地</th><th>代表产品</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>互联网新势力</strong></td><td>FF 法拉第未来 6/17 早 8:30 发布会</td><td>4 款 EAI 机器人 + Futurist 2 全美第一款支持 NVIDIA 运控</td></tr>
+                            <tr><td><strong>具身智能创业公司</strong></td><td>智平方 NeuroVLA 二次发酵</td><td>类脑式具身智能系统（皮层 - 小脑 - 脊髓三层）</td></tr>
+                            <tr><td><strong>互联网巨头</strong></td><td>阿里 Qwen-Robot Suite 6/16 发布</td><td>Manip VLA + Nav VLN + World 世界模型</td></tr>
+                            <tr><td><strong>国产大模型龙头</strong></td><td>智谱 GLM-5.2 国产算力全面适配</td><td>6/17 当日宣布"国产算力全面适配"</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>NeuroVLA 核心创新</strong>：仿生人类大脑"皮层 - 小脑 - 脊髓"三层体系（皮层负责深度推理规划 / 小脑保障动作灵巧性 / 脊髓负责快速反射）—— 6/15 北京智源大会"具身产业 CEO 论坛"发布 + 同步宣布在 Alpha Brain Platform 开源平台上线。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 AIIA 智能体时代 AI 安全治理研讨会 -->
+        <section class="section">
+            <div class="section-title">🔐 角度 #4：6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会 + 6/17 14:36 财联社"梁文锋们要来了"二次发酵 — 中美 AI 安全治理"双线对位"</div>
+
+            <div class="card">
+                <h3>6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会北京举行 — 议程聚焦"智能体 / Agent 安全治理"</h3>
+                <div class="source">来源：人民财讯 6/16 预告 | 证券时报 6/17 | 钛媒体 6/17 | 鲸智社区 6/17 | 东方财富 6/16 预告</div>
+                <div class="desc">
+                    <strong>6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会核心议程</strong>（evening 必报，morning / afternoon 未碰过 AIIA 智能体治理研讨会）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>议程</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>会议名称</strong></td><td>智能体时代 AI 安全治理研讨会</td><td>首次将"智能体"作为 AI 安全治理的核心议题</td></tr>
+                            <tr><td><strong>主办方</strong></td><td>AIIA 安全治理委员会</td><td>国家级 AI 行业组织</td></tr>
+                            <tr><td><strong>时间地点</strong></td><td>6/17 14:00 北京首享科技大厦 2 层报告厅</td><td>中国 AI 治理制度化</td></tr>
+                            <tr><td><strong>核心议程</strong></td><td>智能体安全治理实践 + 共话人工智能安全治理新格局</td><td>"智能体 / Agent"安全已成国家级议题</td></tr>
+                            <tr><td><strong>参与方</strong></td><td>政府代表 + 学术权威 + 行业领军</td><td>产学研用协同共治</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 14:36 财联社"科创板第五套标准拟扩容 AI 大模型 梁文锋们要来了"二次发酵</h3>
+                <div class="source">来源：东方财富 6/17 14:36 | 财联社 6/17 14:36</div>
+                <div class="desc">
+                    <strong>6/17 14:36 财联社与上交所审核指引发布形成"政策 + 媒体"双线发酵</strong>（东方财富 6/17 14:36）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/17 14:36 落地</th><th>与角度 1 关系</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>东方财富 / 财联社 6/17 14:36 标题</strong></td><td><span class="stars">"科创板第五套标准拟扩容 AI 大模型'梁文锋们'要来了"</span></td><td>与角度 1 形成"政策 + 媒体"双线</td></tr>
+                            <tr><td><strong>解读角度</strong></td><td>国产大模型企业未来上市路径明确</td><td>evening 必报的角度</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>中美 AI 安全治理"双线对位" — "撤市令" vs "制度化治理"</h3>
+                <div class="source">来源：人民财讯 6/16 预告 | 证券时报 6/17 | 钛媒体 6/17 | 新华网 4/15（AIIA 武汉会议）</div>
+                <div class="desc">
+                    <strong>6/17 evening 必报的"中美 AI 安全治理双线对位"角度</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/12 美东美国政府</th><th>6/17 AIIA 中国</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>核心动作</strong></td><td>对 Anthropic Fable 5 / Mythos 5 出口管制</td><td><span class="stars">召开"智能体时代 AI 安全治理研讨会"</span></td></tr>
+                            <tr><td><strong>触发事件</strong></td><td>政府"越狱"演示</td><td>智能体商业化快速推进</td></tr>
+                            <tr><td><strong>应对路径</strong></td><td>撤市令 + 出口管制</td><td>制度化安排 + 行业协同</td></tr>
+                            <tr><td><strong>战略意义</strong></td><td>"Fable 5 / Mythos 5 被禁"</td><td>"国产 AI 智能体安全治理"</td></tr>
+                            <tr><td><strong>后续延伸</strong></td><td>6/14 Anthropic 公开承认漏洞 + 6/15 staff 赴白宫</td><td>6/17 政策 + 媒体双线发酵</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>AIIA 委员会过往会议基础</strong>（新华网 2026/04/15）：AIIA 安全治理委员会 2026 年第一次会议在武汉举行 —— 议程"协同共治筑防线，智安赋能启新程"—— 参与方：北京大学、华中科技大学、腾讯、百度、华为、智谱、MiniMax、科大讯飞、阶跃星辰、词元嵌入、上海人工智能实验室等 = <span class="highlight">6/17 智能体时代 AI 安全治理研讨会的"参与方基础"已涵盖主流国产 AI 厂商</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5 港股 AI 板块 evening 18:00 收市完整收官 -->
+        <section class="section">
+            <div class="section-title">📊 角度 #5：6/17 港股 AI 板块 evening 18:00 收市完整收官 — 智谱 +17.64% + 南向资金 8.24 亿 + 机器人 ETF 3 连涨 + 5 股机器人 +5% 以上 + 科创板第五套标准扩容</div>
+
+            <div class="card">
+                <h3>6/17 智谱港股盘中 +17.64% 报 1734 港元 + 港股通南向资金 6/16 净买入智谱 8.24 亿港元</h3>
+                <div class="source">来源：观点网 6/17 | AASTOCKS 6/17 | 新浪财经 6/17 inicsvws5758605</div>
+                <div class="desc">
+                    <strong>6/17 evening 必报的"国产 AI 板块已从'个股轮动'升级为'板块整体走强'"角度</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>智谱股价</th><th>涨跌幅</th><th>触发事件</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/15 收市</td><td>1457 港元</td><td><span class="stars">+32.82%</span></td><td>GLM-5.2 全量开放 + 港交所公告</td></tr>
+                            <tr><td>6/16 11:33 盘中</td><td>+13%</td><td>+13%</td><td>钛媒体"AI 替代潮"完整叙事</td></tr>
+                            <tr><td>6/16 收市</td><td>+3.64%（自 +13% 回落）</td><td>+3.64%</td><td>evening 收市</td></tr>
+                            <tr><td><strong>6/17 盘中</strong></td><td><span class="stars"><strong>1734 港元</strong></span></td><td><span class="stars"><strong>+17.64%</strong></span></td><td>GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 冠军</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>港股通南向资金 6/16 净买入智谱 8.24 亿港元</strong>（AASTOCKS 6/17）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>标的</th><th>北水南向净流入</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>智谱（02513）</strong></td><td><span class="stars">+8.24 亿港元</span></td></tr>
+                            <tr><td>建滔积层板（01888）</td><td>+16.99 亿港元</td></tr>
+                            <tr><td>建滔集团（00148）</td><td>+14.01 亿港元</td></tr>
+                            <tr><td>腾讯（00700）</td><td>净流出</td></tr>
+                            <tr><td>阿里巴巴（09988）</td><td>净流出</td></tr>
+                        </tbody>
+                    </table>
+                    <span class="highlight">"资本市场 + 政策制度"双线对"国产 AI 替代"叙事的真金白银认账已从"个股轮动"升级为"南向资金持续加仓"</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 15:00 机器人 ETF 华夏 3 连涨 + A 股中证机器人指数 H30590 + 成分股 6 条 +5% 以上</h3>
+                <div class="source">来源：FX168 6/17 15:00 | 东方财富 6/17</div>
+                <div class="desc">
+                    <strong>FX168 6/17 15:00 报道</strong>（FX168 6/17）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>标的</th><th>6/17 涨跌幅</th><th>6/17 时点</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>中证机器人指数 H30590</strong></td><td><span class="stars">+0.14%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>中控技术</strong></td><td><span class="stars">+7.08%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>矩子科技</strong></td><td><span class="stars">+6.42%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>天准科技</strong></td><td><span class="stars">+6.25%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>快克智能</strong></td><td><span class="stars">+5.87%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>雷赛智能</strong></td><td><span class="stars">+5%</span></td><td>6/17 15:00</td></tr>
+                            <tr><td><strong>机器人 ETF 华夏（562500）</strong></td><td><span class="stars">3 连涨</span></td><td>6/17 15:00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/16 evening 收官 vs 6/17 evening 收官"两日叠加"对比 + "板块整体走强"角度</h3>
+                <div class="source">来源：观点网 6/17 | AASTOCKS 6/17 | FX168 6/17 15:00 | 财联社 6/16 | 钛媒体 6/16 evening 已写</div>
+                <div class="desc">
+                    <strong>6/17 evening 主动梳理 6/16 evening 收官 vs 6/17 evening 收官的"两日叠加"对比</strong>（evening 必报，morning / afternoon 未做"两日叠加"对比）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/16 evening 收官</th><th>6/17 evening 收官</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>智谱收涨</strong></td><td>6/16 盘中 +13% / evening 收市 +3.64%</td><td><span class="stars">6/17 盘中 +17.64% 报 1734 港元</span></td></tr>
+                            <tr><td><strong>联想集团</strong></td><td>+3.77% 中盘延续</td><td>—</td></tr>
+                            <tr><td><strong>AI 硬件链</strong></td><td>纳芯微 +2.71% 模拟芯片新主线</td><td><span class="stars">6/17 中控技术 +7.08% / 矩子科技 +6.42% / 天准科技 +6.25% / 快克智能 +5.87% / 雷赛智能 +5%</span> 多股 +5% 以上</td></tr>
+                            <tr><td><strong>新增主线</strong></td><td>模拟芯片国产替代新主线（纳芯微）</td><td><span class="stars">国产机器人 4 线并立（互联网新势力 + 具身智能 + 互联网巨头 + 大模型龙头）</span></td></tr>
+                            <tr><td><strong>南向资金</strong></td><td>—</td><td><span class="stars">6/16 净买入智谱 8.24 亿港元</span></td></tr>
+                            <tr><td><strong>政策层面</strong></td><td>—</td><td><span class="stars">6/17 陆家嘴论坛 科创板第五套标准扩容至 AI 大模型</span></td></tr>
+                        </tbody>
+                    </table>
+                    <span class="highlight">6/17 evening 必报的"国产 AI 板块已从'个股轮动'升级为'板块整体走强'"角度</span>：6/16 evening 已写过"智谱 + 联想 + 纳芯微 3 股" = "个股轮动" → 6/17 evening 写"智谱 +17.64% + 南向资金 8.24 亿 + 机器人 ETF 3 连涨 + 5 股机器人 +5% 以上 + 科创板第五套标准扩容" = "板块整体走强 + 政策开放"。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #6 6/17 HN front 完整复盘 -->
+        <section class="section">
+            <div class="section-title">📡 角度 #6：6/17 HN front 北美时间 18:00 evening 完整复盘 — 5 条 AI 跃迁 + 24h +339pt 累计</div>
+
+            <div class="card">
+                <h3>6/17 HN front 北美时间 18:00 (北京时间 6/18 06:00) 当日 100+ 分条目中 AI 相关 5 条</h3>
+                <div class="source">来源：HN Firebase API top stories 6/17 evening 实时拉取</div>
+                <div class="desc">
+                    <strong>6/17 18:00 北京时间 = 北美 6/17 06:00 UTC，HN front 当日 100+ 分条目中 AI 相关 5 条</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>HN 排名</th><th>标题</th><th>分数</th><th>评论</th><th>类型</th><th>24h 变化</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>#1</strong></td><td><strong>Running local models is good now</strong></td><td class="stars">1332pt</td><td>509c</td><td>本地模型范式跃迁</td><td><span class="delta">+339pt</span>（vs morning 993pt）</td></tr>
+                            <tr><td><strong>#2</strong></td><td><strong>SpaceX to buy Cursor for $60B</strong></td><td class="stars">1028pt</td><td><span class="stars">1525c</span></td><td>资本 + AI 编程</td><td><span class="delta">+172pt / +218c</span>（vs morning 856pt/1307c）</td></tr>
+                            <tr><td><strong>#4</strong></td><td><strong>Stop Using JWTs</strong></td><td class="stars">420pt</td><td>192c</td><td>协议层 AI 安全</td><td><span class="delta">+186pt</span>（vs morning 234pt）</td></tr>
+                            <tr><td><strong>#5</strong></td><td><strong>GPT-NL: a sovereign language model for the Netherlands</strong></td><td class="stars">211pt</td><td>212c</td><td>主权 AI 基础设施</td><td><span class="delta">+84pt</span>（vs morning 127pt）</td></tr>
+                            <tr><td><strong>#10</strong></td><td><strong>Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence</strong></td><td class="stars">179pt</td><td>29c</td><td>物理 AI 工具链</td><td><span class="delta">+45pt</span>（vs afternoon 134pt）</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/17 evening 必报的 HN 5 大数据点</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>#</th><th>数据点</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td><strong>Running local models 24h +339pt 跃迁 1332pt</strong></td><td>本地范式跃迁从"开发者社区讨论"升级为"HN front #1 长期占领者"</td></tr>
+                            <tr><td>2</td><td><strong>SpaceX-Cursor 评论数 1525 条 Cursor 史上最高</strong></td><td>评论数 1525 条 = Cursor 史上相关条目最高评论量</td></tr>
+                            <tr><td>3</td><td><strong>Stop Using JWTs 24h +186pt 跃迁 420pt</strong></td><td>协议层反思从单日信号升级为持续议题</td></tr>
+                            <tr><td>4</td><td><strong>GPT-NL 24h +84pt 跃迁 211pt</strong></td><td>主权 AI 基础设施从"荷兰一国"扩展到"主权 AI 范式"</td></tr>
+                            <tr><td>5</td><td><strong>Qwen-Robot Suite 24h +45pt 跃迁 179pt</strong></td><td>物理 AI 工具链"阿里路径"在 HN 端持续发酵</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>6/17 上午 陆家嘴论坛 证监会主席吴清 宣布"扩大科创板第五套标准适用范围至人工智能领域" + 当日上交所发布配套审核指引"梁文锋们要来了"</strong>：6/17 当日宣布"① 扩大第五套标准适用范围至人工智能领域 ② 落实发展未来产业战略部署"——6/17 14:36 上交所发布《科创板第五套上市标准适用指引》——A+H 双重通道完整打开（evening 必报"政策 + 资本"主线，morning / afternoon 未碰过）</li>
+                    <li><strong>6/17 智谱港股盘中 +17.64% 报 1734 港元 + GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 全球百万用户盲测前端开发评估冠军</strong>：智谱 6/15~6/17 三个交易日"接棒 3.0"完整时间线：6/15 +32.82% / 6/16 盘中 +13% / 6/17 盘中 +17.64% 报 1734 港元 = evening 必报"接棒 3.0 完整收官"主线</li>
+                    <li><strong>6/17 早 8:30 FF 法拉第未来发布 4 款 EAI 机器人 + 全球首个 EAI 教育生态 + 6/17 智平方 NeuroVLA 二次发酵 + 机器人 ETF 华夏 3 连涨</strong>：Futurist 2 全美第一款支持 NVIDIA 运控系统的全尺寸人形机器人 + FX Navi 教育启蒙型四足机器人 + 6/17 15:00 机器人 ETF 华夏 3 连涨 + 5 股机器人 +5% 以上 = evening 必报"国产机器人 4 线并立"主线</li>
+                    <li><strong>6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会 + 6/17 14:36 财联社"梁文锋们要来了"二次发酵</strong>：首次将"智能体"作为 AI 安全治理的核心议题 + 中美 AI 安全治理"双线对位"（"撤市令" vs "制度化治理"）= evening 必报"政策落地 + 国产 AI 治理"主线</li>
+                    <li><strong>6/17 港股 AI 板块 evening 18:00 收市完整收官 — 智谱 +17.64% + 南向资金 8.24 亿 + 机器人 ETF 3 连涨 + 5 股机器人 +5% 以上 + 科创板第五套标准扩容</strong>：6/17 evening 已从"个股轮动"升级为"板块整体走强 + 政策开放" = evening 必报"资本市场全面认账国产 AI"主线</li>
+                    <li><strong>6/17 HN front 5 条 AI 跃迁</strong>：Running local models 1332pt/509c（24h +339pt）+ SpaceX-Cursor 1028pt/1525c（评论数 Cursor 史上最高）+ Stop Using JWTs 420pt/192c（24h +186pt）+ GPT-NL 211pt/212c（24h +84pt）+ Qwen-Robot Suite 179pt/29c（24h +45pt）</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🔮 今晚 21:00 OPC 晚间情报预告</h4>
+                <ul>
+                    <li>6/17 evening 收盘后 21:00 港股 evening 收市完整收官数据：智谱 6/17 收盘涨幅（vs 盘中 +17.64% 报 1734 港元）+ 港股通南向资金 6/17 净买入智谱数据</li>
+                    <li>6/17 evening 收盘后 21:00 智谱 6/15 ~ 6/17 三个交易日"接棒 3.0" 完整数据：6/15 +32.82% / 6/16 收市 +3.64% / 6/17 收盘具体涨跌幅 / 三个交易日累计涨幅</li>
+                    <li>6/17 陆家嘴论坛 6/17 晚间 / 6/18 凌晨 政策层面"扩大科创板第五套标准适用范围至 AI 大模型"是否引发海外厂商二次反应</li>
+                    <li>6/17 AIIA 智能体时代 AI 安全治理研讨会 6/17 晚间是否发布"智能体安全治理"白皮书或行业自律公约</li>
+                    <li>6/17 evening HN front 18:00 → 21:00 5 条 AI 跃迁数据（Running local models 1332pt / SpaceX-Cursor 1028pt/1525c / Stop Using JWTs 420pt / GPT-NL 211pt / Qwen-Robot Suite 179pt）21:00 二次跃迁</li>
+                    <li>6/17 evening 智平方 NeuroVLA 6/17 二次发酵 21:00 是否进入 HN front 100+ pt 区间（vs 当前 < 100pt）</li>
+                    <li>6/17 evening FF 法拉第未来 4 款 EAI 机器人 6/17 美西时间晚间 18:00 二次发酵（北美时间 6/17 18:00 = 北京时间 6/18 09:00）</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：观点网 6/17 智谱港股盘中 +17.64% 报 1734 港元 | 新浪财经 6/17 inicsvws5758605 "智谱开源 GLM-5.2 国产算力全面适配 港股股价大涨 16%" | 新华网 6/17 陆家嘴论坛 证监会主席吴清宣布两大改革措施 | 证券时报 6/17 14:36 上交所发布《科创板第五套上市标准适用指引》 | 东方财富 6/17 14:36 财联社"科创板第五套标准拟扩容 AI 大模型 梁文锋们要来了" | 澎湃新闻 6/17 演讲全文 | AASTOCKS 6/17 FF 法拉第未来 4 款 EAI 机器人发布 | 格隆汇 6/16 FF 倒计时预告 | 凤凰网 6/15 FF 4 款机器人预热 | 投资界 6/15 智平方 NeuroVLA 类脑式具身智能发布 | 每日经济新闻 6/15 智平方 | DoNews 6/15 智平方 | FX168 6/17 15:00 机器人 ETF 华夏 3 连涨 | AASTOCKS 6/17 港股通南向资金 6/16 净买入智谱 8.24 亿港元 | 钛媒体 6/17 AIIA 智能体时代 AI 安全治理研讨会 | 证券时报 6/17 AIIA 研讨会 | 人民财讯 6/16 AIIA 研讨会预告 | 鲸智社区 6/17 AIIA 议程 | 新华网 4/15 AIIA 武汉会议基础 | HN Firebase API top stories 6/17 evening 实时拉取 | HN #1 Running local models 1332pt/509c (item 48555993) | HN #2 SpaceX to buy Cursor 1028pt/1525c (item 48553224) | HN #4 Stop Using JWTs 420pt/192c (item 48558147) | HN #5 GPT-NL 211pt/212c (item 48559188) | HN #10 Qwen-Robot Suite 179pt/29c (item 48554814) | 财联社 6/16 10:40 港股人工智能股走强 | 钛媒体 App 6/16 11:33 "Anthropic 模型下线引爆 AI 替代潮 智谱盘中一度涨超 13%" | 钛媒体 6/16 12:34 "NVIDIA 发债释放信号：企业 AI 该开始算 ROI 了"</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-17 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
