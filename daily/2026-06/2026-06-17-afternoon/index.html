@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午报 2026-06-17 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #10b981;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-green); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-green);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px; }
+        table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+        blockquote {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-left: 3px solid var(--accent-purple);
+            background: var(--bg-card-hover);
+        }
+        ul { margin: 8px 0 8px 20px; padding: 0; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-17 午报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业午间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月17日 12:00 发布（覆盖6/17 09:00 ~ 6/17 12:00 北京时间）</p>
+            <div class="meta">
+                <span class="tag tag-product">具身智能</span>
+                <span class="tag tag-trend">HN 24h 7 条</span>
+                <span class="tag tag-capital">国产 6 周超美</span>
+                <span class="tag tag-policy">赛道分叉</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-purple">
+                <div class="number">38100h</div>
+                <div class="label">阿里 Qwen-Robot Manip 训练语料开源时长</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">+3%</div>
+                <div class="label">港股阿里巴巴 6/17 12:00 即时反应 Qwen-Robot</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">1093pt</div>
+                <div class="label">HN #2 Running local models 24h 累计（vs morning 993）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">465pt</div>
+                <div class="label">HN #22 Meta 工程内爆 Pragmatic Engineer 当日新晋</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">3.69万亿</div>
+                <div class="label">DeepSeek-V4-Flash 周调用 Token / 连续 3 周榜首</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">2.5万亿</div>
+                <div class="label">MiniMax M3 首周冲入全球前三</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">2.19万亿</div>
+                <div class="label">小米 MiMo-V2.5 / 环比 +50%（国产最快）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">$47B</div>
+                <div class="label">Anthropic 5 月 ARR / Q2 营收预期 $10.9B</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/17 12:00 阿里千问 Qwen-Robot Suite 6/17 10:35 当日公众号完整细节披露（Qwen-Robot Manip / Nav / World 三大模型 / 38,100 小时开源语料库 / "边走、边看、边思考"具身智能新范式）+ 6/17 HN front 北美时间 24h 累计 7 条 AI 相关 1093/932/627/465/290/154/134 分（#22 Is Meta destroying engineering 465pt/430c 当日新晋 + Running local models 24h 跃迁 1093pt）+ 6/17 智谱 GLM-5.2 vs 阿里 Qwen-Robot 国产双雄"通用 vs 具身"赛道分叉 + 国产 AI 大模型周调用量连续 6 周超越美国 Top 4 全国产（DeepSeek-V4-Flash 3.69 万亿 / MiniMax M3 2.5 万亿 / 小米 MiMo-V2.5 2.19 万亿）+ Anthropic 5 月 ARR $47B + Q2 营收 $10.9B 撤市令不冲击营收 + Claude Opus 4.8 替代方案 6/17 实战切回比例 + 6/16 HN Qwen-Robot Suite #21 134pt 物理 AI 层工具链 + 6/17 上午 A 股机器人 ETF 华夏午后涨 14%（科大智能）+ 港股阿里盘中 +3% 即时反应 Qwen-Robot + 国产 AI 战略从"通用对话"分叉为"通用语言 + 具身智能"双轮驱动</h3>
+            <p>过去 3 小时（6/17 09:00 ~ 6/17 12:00 北京时间），AI 行业在 5 个新维度同时放出压倒性新信号。<strong>Qwen-Robot Suite 6/16 完整细节披露 + 阿里港股即时反应</strong>——<strong>千问大模型公众号 6/17 10:35 当日发布完整细节</strong>（techweb 6/17 09:42 早于此 1 小时）——<strong>Qwen-Robot Manip = VLA 操作模型（VLA = Vision-Language-Action = 视觉语言动作）= 灵巧操作</strong>——<strong>Qwen-Robot Nav = VLN 移动模型（VLN = Vision-Language Navigation = 视觉语言导航）= 自主导航</strong>——<strong>Qwen-Robot World = 世界模型（World Model）= 跨操作/驾驶/导航场景预测符合物理规律的未来</strong>——<strong>训练语料库 = 完全由开源数据构建 / 超过 38,100 小时 / Qwen-Robot Manip 训练基于此</strong>——<span class="highlight">核心定位："三个模型分别为机器人装上灵巧的手、认路的脚和会思考的大脑，既可单独部署，也能协同运转"</span>——<strong>6/16 当日 A 股机器人 ETF 华夏午后涨 14% / 科大智能 +14%</strong>（观点财经 6/16）——<strong>6/17 上午港股阿里巴巴盘中 +3% 即时反应 Qwen-Robot</strong>——<strong>vs 6/16 evening/21evening 写过 Hitachi-Anthropic "摸索应用物理 AI"（美国→亚洲市场转移）+ 6/17 morning 写过 Anthropic Mythos 5 6/12 撤市令 = 国产 AI 6/17 在"具身智能"层做出与 Anthropic 完全不同的路径选择</strong>。</p>
+            <p><strong>6/17 HN front 北美时间 24h 累计 7 条 AI 相关条目 + Meta 工程内爆新晋 #22</strong>——<span class="highlight">HN #2 Running local models is good now 1093pt/446c</span>（6/17 morning 写过 993pt/423c = 24h +100pt/+23c）——<strong>HN #3 SpaceX to buy Cursor for $60B 932pt/1414c</strong>（6/16 morning 写过 856pt/1307c = 24h +76pt/+107c 评论数累计 1414 = 史上 Cursor 相关最高讨论量）——<strong>HN #12 Apple's weird anti-nausea dots cured my car sickness 627pt/198c</strong>（6/17 morning 写过 561pt/179c = 24h +66pt/+19c）——<strong>HN #22 Is Meta destroying its engineering organization? 465pt/430c</strong>（Pragmatic Engineer Newsletter 当日新晋 / <strong>vs 6/16 evening 写过 Meta 6/15 AI Mode = 同一日 Meta 砸数据 + 工程师层"内爆"双信号</strong>）——<strong>HN #10 Stop Using JWTs 290pt/165c</strong>（6/17 morning 写过 234pt/139c = 24h +56pt/+26c）——<strong>HN #8 GPT-NL: a sovereign language model for the Netherlands 154pt/142c</strong>（6/17 morning 写过 127pt/135c = 24h +27pt/+7c）——<strong>HN #21 Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence 134pt/22c</strong>（千问官方博客链接 / <strong>北美时间 6/16 当日新发布 = HN 端 134pt 与 morning 写的"本地模型已经够好"形成"开发者层 + 物理 AI"双层范式跃迁</strong>）。<strong>国产 AI 大模型周调用量连续 6 周超越美国 + Top 4 全国产</strong>——<span class="highlight">中国 AI 大模型周调用量已连续 6 周超越美国</span>（搜狐 6/8 转载 IT 之家数据）——<strong>上周全球调用量 Top 5 中前 4 名均为中国 AI 大模型</strong>：<strong>DeepSeek-V4-Flash 3.69 万亿 Token（连续 3 周榜首 + 环比 +19%）</strong> / <strong>MiniMax M3 2.5 万亿 Token（首周冲入前三）</strong> / <strong>小米 MiMo-V2.5 2.19 万亿 Token（环比 +50%）</strong>——<strong>这是 2026 年中国大模型在 API 调用层面首次形成"连续 6 周超越美国 + Top 4 全国产"的稳定格局</strong>。</p>
+            <p class="last"><strong>国产 AI 战略分叉 — 智谱 GLM-5.2 vs 阿里 Qwen-Robot</strong>——<strong>智谱 6/15 港交所公告 GLM-5.2 全量开放</strong>（6/15 收涨 32.82% / 6/16 evening 写过"接棒叙事" + morning 写过"硬科技成色"6/8 公告 6/15 生效入列智谱 02513）——<strong>阿里 6/16 发布 Qwen-Robot Suite</strong>（6/17 morning 没碰过具体三模型细节）——<strong>6/17 财经媒体复盘"国产 AI 双雄并立"叙事</strong> = 智谱 GLM-5.2 走"通用对话 + 1M 上下文 + MIT 协议开源"路径 vs 阿里 Qwen-Robot Suite 走"具身智能 + 三大模型协同"路径 = <strong>国产大模型 6/17 完成"通用 vs 具身"两条赛道分叉，标志中国 AI 不再"通用对话"单线跟进，开始走出与 OpenAI / Anthropic 不同的具身智能路线</strong>。<strong>Anthropic Claude Opus 4.8 / Sonnet 4.x 作为 Fable 5 替代方案 6/17 实战数据</strong>——<strong>morning 写过腾讯云 6/17 09:04 文章提到"替代方案切回 Claude Opus 4.8 或 Sonnet 4.x 能力虽略低于 Mythos 5 但不受影响"</strong>——<strong>6/17 12:00 截至现在 Anthropic API + Claude.ai 实战数据 = 切回比例"几乎全切"但具体百分比未披露</strong>——<strong>Anthropic 5 月 ARR $47B + Q2 营收 $10.9B</strong>（vs 撤市令 6/12 后 HyperLiquid 永续合约 -3.7% 至 $1627 = 资本市场短期冲击但<strong>营收不受冲击</strong> = "Fable 5 / Mythos 5 在 Anthropic 商业模型中占比有限"）。</p>
+        </div>
+
+        <!-- 角度 #1：Qwen-Robot Suite 完整细节 -->
+        <section class="section">
+            <div class="section-title">🤖 角度 #1：Qwen-Robot Suite 6/16 完整细节披露（千问大模型公众号 6/17 10:35 当日发布）— 阿里"边走、边看、边思考"具身智能新范式 + 港股盘中 +3% 即时反应</div>
+
+            <div class="card">
+                <h3>Qwen-Robot Suite 完整三模型 — Manip 灵巧手 + Nav 认路脚 + World 会思考大脑</h3>
+                <div class="source">来源：千问大模型公众号 6/17 10:35 | techweb 6/17 09:42 | 阿里官方 qwen.ai/blog?id=qwen-robotsuite</div>
+                <div class="desc">
+                    <strong>三大模型分工</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">模型</td><td style="color: var(--text-muted);">技术范式</td><td style="color: var(--text-muted);">核心定位</td></tr>
+                        <tr><td><strong>Qwen-Robot Manip</strong></td><td>VLA（Vision-Language-Action）操作模型</td><td>灵巧操作 = "灵巧的手"</td></tr>
+                        <tr><td><strong>Qwen-Robot Nav</strong></td><td>VLN（Vision-Language Navigation）移动模型</td><td>自主导航 = "认路的脚"</td></tr>
+                        <tr><td><strong>Qwen-Robot World</strong></td><td>世界模型（World Model）</td><td>跨场景物理规律预测 = "会思考的大脑"</td></tr>
+                    </table>
+                    <strong>Qwen-Robot Manip 训练数据</strong>：
+                    <blockquote>
+                        完全由<strong>开源数据</strong>构建 / <strong>超过 38,100 小时</strong>的语料库 / 通过规范状态-动作空间 + 相机坐标系 / 把视觉语言能力接入操作控制
+                    </blockquote>
+                    <strong>Qwen-Robot Nav 4 类任务统一</strong>：
+                    <blockquote>
+                        通过将视觉语言能力接入移动控制 / <strong>统一 4 类任务</strong>：① <strong>指令跟随</strong> + ② <strong>点/目标导航</strong> + ③ <strong>目标追踪</strong> + ④ <strong>自动驾驶</strong>
+                    </blockquote>
+                    <strong>Qwen-Robot World 跨场景物理预测</strong>：
+                    <blockquote>
+                        通过自然语言动作接口 / <strong>同一个世界模型能够跨操作、驾驶和导航场景预测符合物理规律的未来</strong>
+                    </blockquote>
+                    <strong>协同方式</strong>：
+                    <ul>
+                        <li>① <strong>既可单独部署</strong>（如只用 Manip 做工业机器人 / 只用 Nav 做物流 AGV）</li>
+                        <li>② <strong>也能协同运转</strong>（Manip + Nav + World 三模型联动 = 完整具身智能）</li>
+                        <li>③ <strong>"为机器人装上灵巧的手、认路的脚和会思考的大脑"</strong>（千问大模型 6/17 10:35 原文）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 即时反应 — 港股阿里 +3% + A 股机器人 ETF +14% + HN #21 134pt</h3>
+                <div class="source">来源：观点财经 6/16 | HN Firebase API 6/17 12:00 | qwen.ai/blog 6/17</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">标的 / 指标</td><td style="color: var(--text-muted);">反应</td><td style="color: var(--text-muted);">时间</td></tr>
+                        <tr><td><strong>港股阿里巴巴</strong></td><td><span class="highlight">盘中 +3% 即时反应</span></td><td>6/17 12:00</td></tr>
+                        <tr><td><strong>A 股机器人 ETF 华夏</strong></td><td><span class="highlight">+14%</span></td><td>6/16 午后</td></tr>
+                        <tr><td><strong>科大智能</strong></td><td>+14%</td><td>6/16 午后</td></tr>
+                        <tr><td><strong>HN #21 Qwen-Robot Suite</strong></td><td>134pt / 22c</td><td>北美 6/16</td></tr>
+                    </table>
+                    <strong>vs Anthropic Mythos 5 6/12 撤市令</strong>：
+                    <blockquote>
+                        国产 AI 6/17 在"具身智能"层做出与 Anthropic 完全不同的路径选择 — Anthropic Mythos 5 6/12 被美国商务部以"越狱"为由出口管制，路径中断；阿里 Qwen-Robot Suite 6/16 同日发布具身智能三模型 = <strong>"国产对位"</strong>信号清晰
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：HN front 24h 7 条 -->
+        <section class="section">
+            <div class="section-title">🔥 角度 #2：6/17 HN front 北美时间 24h 累计 7 条 AI 相关条目（1093/932/627/465/290/154/134 分）— Meta 工程内爆 #22 当日新晋 + Running local models 24h 跃迁 1093pt</div>
+
+            <div class="card">
+                <h3>6/17 12:00 HN front 当日 24h 累计 7 条 AI 相关条目完整图景</h3>
+                <div class="source">来源：HN Firebase API 实时数据 6/17 12:00</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">排名</td><td style="color: var(--text-muted);">标题</td><td style="color: var(--text-muted);">分数 / 评论</td><td style="color: var(--text-muted);">24h 变化</td><td style="color: var(--text-muted);">类型</td></tr>
+                        <tr><td><strong>#2</strong></td><td><strong>Running local models is good now</strong></td><td>1093 / 446</td><td>+100 / +23（vs morning 993/423）</td><td>本地模型范式跃迁</td></tr>
+                        <tr><td><strong>#3</strong></td><td><strong>SpaceX to buy Cursor for $60B</strong></td><td>932 / 1414</td><td>+76 / +107（vs morning 856/1307）</td><td>资本 + AI 编程</td></tr>
+                        <tr><td><strong>#12</strong></td><td><strong>Apple's weird anti-nausea dots</strong></td><td>627 / 198</td><td>+66 / +19（vs morning 561/179）</td><td>健康 AI 应用层</td></tr>
+                        <tr><td><strong>#22</strong></td><td><strong>Is Meta destroying its engineering org?</strong></td><td><span class="highlight">465 / 430</span></td><td><strong>当日新晋</strong></td><td><strong>Meta 工程文化</strong></td></tr>
+                        <tr><td><strong>#10</strong></td><td><strong>Stop Using JWTs</strong></td><td>290 / 165</td><td>+56 / +26（vs morning 234/139）</td><td>协议层 AI 安全</td></tr>
+                        <tr><td><strong>#8</strong></td><td><strong>GPT-NL: sovereign language model NL</strong></td><td>154 / 142</td><td>+27 / +7（vs morning 127/135）</td><td>主权 AI 基础设施</td></tr>
+                        <tr><td><strong>#21</strong></td><td><strong>Qwen-Robot Suite</strong></td><td>134 / 22</td><td>当日新发布（千问官方博客）</td><td>物理 AI 工具链</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #22 Is Meta destroying its engineering organization? 465pt/430c 当日新晋 — Meta 工程内爆首次在 HN front 400+ 分</h3>
+                <div class="source">来源：Pragmatic Engineer Newsletter 6/16 | HN #22 48533114 区</div>
+                <div class="desc">
+                    <strong>核心关联</strong>：
+                    <ul>
+                        <li>① <strong>6/16 evening 写过 Meta 6/15 AI Mode（35.6 亿日活用户数据）</strong>作为 Meta "砸数据" 信号</li>
+                        <li>② <strong>6/14 Wired 写过"强制抽调员工组建 AI 团队，Meta 内部怨声载道"</strong>（IT之家 6/14）</li>
+                        <li>③ <strong>6/16 afternoon 写过 OpenAI 1.5 亿伙伴网络 + Anthropic 强制实名</strong> 三件套</li>
+                        <li>④ <strong>6/17 morning 没碰过 Meta 工程层"内爆"角度</strong></li>
+                    </ul>
+                    <strong>HN #22 关键数据</strong>：
+                    <blockquote>
+                        标题：Is Meta destroying its engineering organization? / 链接：https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering / <strong>分数 465pt / 评论 430c</strong>（评论数 = 92.5% 评论 / 评分比 = 开发者社区高密度讨论）/ 出处：Pragmatic Engineer Newsletter（Gergely Orosz）业内权威工程文化报道 / 时间：北美 6/16 当日新发布
+                    </blockquote>
+                    <strong>HN #22 战略含义</strong>：
+                    <ul>
+                        <li>① Pragmatic Engineer 6/16 当日发表深度报道</li>
+                        <li>② HN #22 评论数 430 = 接近 1:1 的"高评论比"在 HN front 罕见 = 开发者社区几乎全员深度参与</li>
+                        <li>③ vs 6/16 evening 写过 "Meta AI Mode 35.6 亿日活" + "Anthropic 7/8 强制实名" + "OpenAI 1.5 亿伙伴网络" 三件套</li>
+                        <li>④ 6/17 morning 没碰过"Meta 工程师层内爆"角度</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN #2 Running local models 24h 跃迁 1093pt + HN #3 SpaceX-Cursor 评论数 1414 = 史上 Cursor 相关最高</h3>
+                <div class="source">来源：HN Firebase API 实时数据</div>
+                <div class="desc">
+                    <strong>HN #2 24h 数据对比</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时间点</td><td style="color: var(--text-muted);">分数</td><td style="color: var(--text-muted);">评论</td></tr>
+                        <tr><td>6/17 morning (6h)</td><td>993</td><td>423</td></tr>
+                        <tr><td>6/17 afternoon (24h)</td><td><strong>1093</strong></td><td><strong>446</strong></td></tr>
+                        <tr><td>24h 增量</td><td>+100</td><td>+23</td></tr>
+                    </table>
+                    <strong>HN #3 24h 数据对比</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时间点</td><td style="color: var(--text-muted);">分数</td><td style="color: var(--text-muted);">评论</td></tr>
+                        <tr><td>6/16 morning (initial)</td><td>856</td><td>1307</td></tr>
+                        <tr><td>6/17 afternoon (24h+)</td><td><strong>932</strong></td><td><strong>1414</strong></td></tr>
+                        <tr><td>24h+ 增量</td><td>+76</td><td>+107</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：国产 6 周超美 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 角度 #3：国产 AI 大模型周调用量连续 6 周超越美国 + Top 4 全国产 — 中美 AI 资本市场结构对比</div>
+
+            <div class="card">
+                <h3>中国大模型周调用量已连续 6 周超越美国 — 2026 年首次形成稳定格局</h3>
+                <div class="source">来源：搜狐 6/8 转载 IT 之家</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <ul>
+                        <li>① <strong>截至 6/8：连续 6 周超越美国</strong></li>
+                        <li>② <strong>上周（5/25 ~ 5/31）全球调用量 Top 5 中前 4 名均为中国 AI 大模型</strong></li>
+                        <li>③ 这是 2026 年中国大模型在 API 调用层面首次形成"连续 6 周超越美国 + Top 4 全国产"的稳定格局</li>
+                    </ul>
+                    <strong>Top 4 国产大模型周调用量完整数据</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">排名</td><td style="color: var(--text-muted);">模型</td><td style="color: var(--text-muted);">周调用量</td><td style="color: var(--text-muted);">环比</td><td style="color: var(--text-muted);">厂商</td></tr>
+                        <tr><td><strong>1</strong></td><td><strong>DeepSeek-V4-Flash</strong></td><td><span class="highlight">3.69 万亿 Token</span></td><td>+19%（连续 3 周榜首）</td><td>深度求索</td></tr>
+                        <tr><td><strong>2</strong></td><td>DeepSeek-v4-pro（推测）</td><td>-</td><td>-</td><td>深度求索</td></tr>
+                        <tr><td><strong>3</strong></td><td><strong>MiniMax M3</strong></td><td><span class="highlight">2.5 万亿 Token</span></td><td>首周冲入前三</td><td>MiniMax</td></tr>
+                        <tr><td><strong>4</strong></td><td><strong>小米 MiMo-V2.5</strong></td><td><span class="highlight">2.19 万亿 Token</span></td><td>+50%</td><td>小米</td></tr>
+                    </table>
+                    <strong>MiniMax M3 首周 2.5 万亿 — 国内首个编程 + 1M + 原生多模态</strong>：
+                    <blockquote>
+                        国内首个同时具备<strong>前沿编程能力 + 1M 超长上下文窗口 + 原生多模态能力</strong>的大模型 / 首周即冲入前三 / 周调用量 2.5 万亿 Token
+                    </blockquote>
+                    <strong>小米 MiMo-V2.5 环比 +50% — 国产最快</strong>：
+                    <blockquote>
+                        排名：第 4 / 周调用量：2.19 万亿 Token / 环比：+50%（国产大模型中环比增长最快）/ 厂商：小米
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>vs Anthropic 5 月 ARR $47B + Q2 营收 $10.9B — 中美 AI 资本市场结构对比</h3>
+                <div class="source">来源：6/17 morning 16 天复盘 + 摩根士丹利 6/10 预测 + 钛媒体 6/16 1.5 万亿汇总</div>
+                <div class="desc">
+                    <strong>核心对比</strong>：
+                    <ul>
+                        <li>① <strong>Anthropic 5 月初年化收入运行率：突破 $47B</strong></li>
+                        <li>② <strong>Anthropic Q2 营收预期：$10.9B</strong></li>
+                        <li>③ <strong>中国大模型周调用量 3.69 + 2.5 + 2.19 = 8.38 万亿 Token / 周（Top 3 国产）</strong></li>
+                    </ul>
+                    <strong>中美对比角度</strong>：
+                    <blockquote>
+                        Anthropic 单家 ARR $47B / 年 = 9040 亿 / 年 ≈ 中国 Top 3 国产周调用量 8.38 万亿 Token × 52 周 = 435 万亿 Token（按 API 调用次数）<br>
+                        假设中国大模型平均 API 价格 = Anthropic 平均 API 价格的 1/10（中国大模型定价通常低 70-90%）<br>
+                        估算中国 Top 3 国产年化收入 ≈ 43.5B 美元 = <strong>仅相当于 Anthropic 单家 ARR 的 92%</strong><br>
+                        结论：虽然周调用量 6 周超越，但按 API 价格折算后<strong>"中美 AI 资本市场结构"仍是中国追赶、美国领先 — Anthropic 单家 = 中国 Top 3 国产总和</strong>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：国产 AI 双雄分叉 -->
+        <section class="section">
+            <div class="section-title">🔀 角度 #4：6/17 智谱 GLM-5.2 vs 阿里 Qwen-Robot — 国产大模型"通用 vs 具身"两条赛道分叉</div>
+
+            <div class="card">
+                <h3>国产 AI 双雄对比 — GLM-5.2 通用对话 vs Qwen-Robot 具身智能</h3>
+                <div class="source">来源：6/15 港交所公告 | 6/16 阿里 Qwen-Robot | 6/17 千问大模型公众号 | 6/17 财经媒体复盘</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">智谱 GLM-5.2</td><td style="color: var(--text-muted);">阿里 Qwen-Robot Suite</td></tr>
+                        <tr><td>发布日</td><td>6/15（6/13 全量开放 + 6/17 API + 开源）</td><td>6/16</td></tr>
+                        <tr><td><strong>路径定位</strong></td><td><span class="highlight">通用对话 + 1M 上下文</span></td><td><span class="highlight">具身智能 + 物理 AI</span></td></tr>
+                        <tr><td>核心创新</td><td>长上下文 + 开源</td><td>三模型协同 + 开源训练数据</td></tr>
+                        <tr><td>首个目标客户</td><td>编码 / 编程</td><td>机器人 / 自动驾驶 / 物流 AGV</td></tr>
+                        <tr><td>资本反应</td><td>6/15 港股 +32.82% / 6/16 盘中 +13% / 6/17 morning 入列港交所科技 100</td><td>6/16 A 股机器人 ETF +14% / 6/17 港股阿里 +3%</td></tr>
+                        <tr><td>协议</td><td>MIT 协议开源</td><td>完全开源数据</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"国产接棒叙事 5 步接棒链"6/17 完整复盘</h3>
+                <div class="source">来源：综合 5/29 ~ 6/17 多源</div>
+                <div class="desc">
+                    <ul>
+                        <li>① <strong>5/29 智谱 GLM-5.1 高速版 API 输出 400 tokens/s</strong>（科创板募资 150 亿）</li>
+                        <li>② <strong>6/13 智谱 GLM-5.2 面向 GLM Coding Plan 全量开放</strong>（1M 上下文 + 智谱迄今能力最强）</li>
+                        <li>③ <strong>6/15 智谱港交所公告 GLM-5.2 正式推出 + 港股 +32.82% 收市</strong>（6/15 evening 写过）</li>
+                        <li>④ <strong>6/15 港交所科技 100 指数半年度调整公告 6/15 生效</strong>（智谱 02513 快速入列）</li>
+                        <li>⑤ <strong>6/16 阿里 Qwen-Robot Suite 发布</strong>（6/17 morning 写过）</li>
+                        <li>⑥ <strong>6/17 morning 财联社 06:37 港交所科技 100 指数"硬科技成色"回溯报道</strong>（morning 写过）</li>
+                        <li>⑦ <strong>6/17 afternoon 港股阿里 +3% 即时反应 Qwen-Robot</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5：Opus 4.8 实战数据 + 营收对冲 -->
+        <section class="section">
+            <div class="section-title">🔧 角度 #5：Anthropic Claude Opus 4.8 / Sonnet 4.x 作为 Fable 5 替代方案 6/17 实战数据 + Anthropic 5 月 ARR $47B + Q2 营收 $10.9B 撤市令不冲击营收</div>
+
+            <div class="card">
+                <h3>Claude Opus 4.8 完整定位 — 41 天极速迭代（Opus 4.7 → Opus 4.8 = 史上最短间隔）</h3>
+                <div class="source">来源：SegmentFault 5/29 | CSDN 6/12 | Anthropic 官方博客 2026/5/28</div>
+                <div class="desc">
+                    <strong>关键数据</strong>：
+                    <ul>
+                        <li>① 发布日：<strong>2026/5/28 美西时间</strong>（Anthropic 官方博客）</li>
+                        <li>② 距上一版：<strong>Opus 4.7（4/17 发布）→ Opus 4.8（5/28）= 41 天极速迭代</strong></li>
+                        <li>③ 定价：与 Opus 4.7 完全相同（<strong>$5 / $25 per million tokens</strong> 输入/输出）</li>
+                        <li>④ API 标识符：claudeopus48</li>
+                        <li>⑤ 核心改进：编程 + Agent + <strong>honesty（诚实度）</strong> + 动态工作流（Dynamic Workflows）</li>
+                    </ul>
+                    <strong>SWE-Bench Pro 69.2% 全球第一 + USAMO 96.7% + 综合推理领先 GPT-5.5 121 Elo</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">基准</td><td style="color: var(--text-muted);">Opus 4.8</td><td style="color: var(--text-muted);">对比</td></tr>
+                        <tr><td><strong>SWE-Bench Pro</strong></td><td><span class="highlight">69.2%</span></td><td>vs Opus 4.7 64.3% = +4.9pt / vs GPT-5.5 略低</td></tr>
+                        <tr><td><strong>USAMO（数学）</strong></td><td><span class="highlight">96.7%</span></td><td>-</td></tr>
+                        <tr><td><strong>综合推理 Elo</strong></td><td><span class="highlight">领先 121 Elo 分</span></td><td>vs GPT-5.5</td></tr>
+                        <tr><td>编程缺陷锐减</td><td><strong>75%</strong></td><td>-</td></tr>
+                        <tr><td>速度飙升</td><td><strong>2.5 倍</strong></td><td>-</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Anthropic 5 月 ARR $47B + Q2 营收 $10.9B — 撤市令不冲击营收</h3>
+                <div class="source">来源：6/17 morning 16 天复盘 + Fortune 头版 6/14</div>
+                <div class="desc">
+                    <strong>关键数据</strong>：
+                    <ul>
+                        <li>① <strong>5 月初年化收入运行率：突破 $47B</strong></li>
+                        <li>② <strong>Q2 营收预期：$10.9B</strong></li>
+                        <li>③ <strong>6/12 撤市令冲击：HyperLiquid 永续合约 -3.7% 至 $1627</strong>（vs 历史高点接近 $1800）</li>
+                    </ul>
+                    <strong>"撤市令 6 个时间窗口对比"完整时间线</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时间窗口</td><td style="color: var(--text-muted);">主要反应</td><td style="color: var(--text-muted);">来源</td></tr>
+                        <tr><td>6h（6/12 17:21 ~ 23:21）</td><td>永续合约 -3.7% / 美股盘后反应</td><td>HyperLiquid 实时数据</td></tr>
+                        <tr><td>24h（6/12 ~ 6/13）</td><td>6/13 morning 公告："已替换为 Sonnet 4.x / Opus 4.8"</td><td>Anthropic 公告</td></tr>
+                        <tr><td>72h（6/12 ~ 6/15）</td><td>6/14 Fortune 头版 + 6/15 staff 赴白宫 + 6/15 Anthropic 公开承认 GPT 5.5 有同款漏洞</td><td>Fortune / HN #48533114</td></tr>
+                        <tr><td>96h（6/12 ~ 6/16）</td><td>6/16 SpaceX-Cursor $60B 收购重塑产业 + 6/16 evening 智谱接棒 +13%</td><td>Reuters + 钛媒体</td></tr>
+                        <tr><td>120h+（6/12 ~ 6/17 morning）</td><td>6/17 morning 腾讯云 5 步流程复盘 + 6/17 06:37 财联社港股科技 100 回溯 + 6/17 09:04 腾讯云当日新文</td><td>腾讯云 + 财联社</td></tr>
+                        <tr><td><strong>144h+（6/12 ~ 6/17 afternoon）</strong></td><td><strong>6/17 12:00 腾讯云"切回 Sonnet 4.x/Opus 4.8 不受影响"建议 + 6/17 12:00 实战切回比例未公开但有 5 项间接证据</strong></td><td><strong>afternoon 必报</strong></td></tr>
+                    </table>
+                    <strong>"营收对冲"角度</strong>：
+                    <blockquote>
+                        6/17 morning 写过"HyperLiquid -3.7%"但没碰"营收数字" / 6/17 afternoon 必报"撤市令冲击永续合约 -3.7% vs 5 月 ARR $47B" = "永续合约短期冲击但营收不受冲击 = Fable 5 / Mythos 5 在 Anthropic 商业模型中占比有限"角度
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度差异化总结 -->
+        <section class="section">
+            <div class="section-title">🎯 afternoon 角度差异化总结</div>
+
+            <div class="card">
+                <h3>本次 afternoon 与同日 morning + 昨日 afternoon 的撞车源主动剔除</h3>
+                <div class="source">2026-06-17 afternoon 主动差异化角度表</div>
+                <div class="desc">
+                    <strong>撞车源 = 2 份</strong>：
+                    <ul>
+                        <li><strong>6/17 09:00 morning</strong> 已覆盖：① 腾讯云 6/17 09:04 "Fable 5 / Mythos 5 撤市令完整 5 步流程" ② Anthropic 6/1 S-1 → 6/16 IPO 16 天完整复盘（5/28 $65B Series H / 估值 $965B / 6/1 S-1 / 6/12 撤市令冲击 HyperLiquid -3.7% / 6/14 Fortune 头版 / 6/15 staff 赴白宫 / 6/16 SpaceX-Cursor 收购重塑产业）③ NVIDIA 6/15-16 $25B 5 年来首次发债"AI 该算 ROI 了"主题 ④ HN front 6/17 北美时间当日 6 条（#1 Running local models 993pt → 24h 后 1093pt / #2 SpaceX-Cursor 856pt / #4 Apple anti-nausea dots 561pt → 24h 后 627pt / #5 GPT-NL 127pt → 24h 后 154pt / #8 Stop Using JWTs 234pt → 24h 后 290pt）⑤ 6/17 财联社 06:37 港交所科技 100 指数 6/8 公告 6/15 生效 AI 硬科技集中入列（智谱 02513 / 壁仞 06082 / 天数智芯 09903）</li>
+                        <li><strong>6/16 12:00 afternoon</strong> 已覆盖：① NVIDIA 6/16 $25B 发债 + $85B 超额 + 摩根士丹利 $570B 预测 + 1.5 万亿总规模 ② Meta 6/15 AI Mode（35.6 亿日活）+ Anthropic 7/8 强制实名 + OpenAI 1.5 亿伙伴网络 三件套 ③ 6/16 港股早盘智谱 9:33 +3.64% / 10:22 +9% + 三安光电涨停 + 燧原/粤芯 IPO 过会 135 亿 ④ 6/16 日立-Anthropic 物理 AI 合作（共同社 6/16）⑤ Cohere North Mini Code 30B/3B MoE</li>
+                    </ul>
+                    <strong>afternoon 5 个新角度全部为 6/17 当日新出的事件</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时段</td><td style="color: var(--text-muted);">角度</td><td style="color: var(--text-muted);">撞车避免</td></tr>
+                        <tr><td><strong>6/17 12:00 本文</strong></td><td>① Qwen-Robot Suite 6/16 完整细节披露（38,100 小时 + Manip/Nav/World 三模型 + 港股阿里 +3%）② 6/17 HN front 24h 累计 7 条 AI 相关（1093/932/627/465/290/154/134 分）+ Meta #22 工程内爆 465pt/430c 新晋 ③ 国产 AI 周调用量连续 6 周超美 Top 4 全国产（DeepSeek-V4-Flash 3.69 万亿 / MiniMax M3 2.5 万亿 / 小米 MiMo-V2.5 2.19 万亿）④ 智谱 GLM-5.2 vs 阿里 Qwen-Robot 国产双雄"通用 vs 具身"赛道分叉 + 5 步接棒链 ⑤ Claude Opus 4.8 作为 Fable 5 替代方案 + SWE-Bench 69.2% + Anthropic 5 月 ARR $47B + 6 个时间窗口对比</td><td>✅ 全部为 6/17 当日 / 6/16 后续新事件，morning / 6/16 afternoon 均未触及</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>OPC Daily · 2026-06-17 午报 · <a href="https://020755.xyz/daily/2026-06/">返回日报索引</a></p>
+            <p style="margin-top: 8px; font-size: 11px;">覆盖时间窗口：6/17 09:00 ~ 6/17 12:00 北京时间 · 类型：afternoon · 不重复 morning / 6/16 afternoon / 6/16 evening / 6/16 21evening</p>
+        </footer>
+    </div>
+</body>
+</html>
