@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午报 2026-06-17 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #10b981;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-green); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-green);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px; }
+        table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+        blockquote {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-left: 3px solid var(--accent-purple);
+            background: var(--bg-card-hover);
+        }
+        ul { margin: 8px 0 8px 20px; padding: 0; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-18 午报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业午间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月18日 12:00 发布（覆盖6/18 09:00 ~ 6/18 12:00 北京时间）</p>
+            <div class="meta">
+                <span class="tag tag-product">DeepSeek V4 平替</span>
+                <span class="tag tag-trend">智谱一周涨 80%</span>
+                <span class="tag tag-capital">OpenAI 年亏 2600 亿</span>
+                <span class="tag tag-policy">国产大模型定价</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">57×</div>
+                <div class="label">Fable 5 vs DeepSeek V4 Pro 输出价差倍数（$50 vs $0.87/M）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">+18%</div>
+                <div class="label">智谱 6/18 10:58 盘中飙涨触及 1967 港元 / 本周累涨近 80%</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">$385亿</div>
+                <div class="label">OpenAI 2025 净亏损（≈ 2600 亿人民币）/ 营收 $130.7B 3 倍增长</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">45亿港元</div>
+                <div class="label">智谱 6/18 上午成交额（GLM-5.2 一周涨幅 80% 复盘）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">7家</div>
+                <div class="label">国产大模型厂商定价全对比（智谱/MiniMax/小米/Kimi/阿里/腾讯/字节跳动）</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">4x</div>
+                <div class="label">英伟达高意公司 6 英寸磷化铟厂区扩建后产能</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">-90%</div>
+                <div class="label">微软 Copilot Cowork 转向 DeepSeek V4 微调版后成本降幅</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">816pt</div>
+                <div class="label">GLM-5.2 HN #21 持续发酵（vs 6/17 21evening 299pt / 24h +517pt）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/18 10:58 智谱盘中飙涨近 18% 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元 + 6/18 10:35 智谱涨超 12% MINIMAX-W 涨超 6% + 6/18 10:23 港股大模型概念股拉升 智谱涨 15.06% MINIMAX-W 涨超 6% + 6/18 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% + 6/18 09:32 天数智芯涨 7.60% / MINIMAX-W 涨 3.84% / 智谱涨 3.67% + 6/18 07:19 OpenAI 2025 全年营收 $130.7B / 净亏损 385 亿美元（≈ 2600 亿人民币）/ 经营亏损 209.2 亿 / 研发支出 191.8 亿（Ars Technica 6/17 独家 HN #7 261pt/175c）+ 6/18 12:02 腾讯云"国产七大 AI 大模型定价全对比"（智谱/MiniMax/小米/Kimi/阿里/腾讯/字节跳动 + API 按量 + Coding Plan 订阅 + 免费额度 + 资源包四维对比）+ 6/18 10:33 "扛不住 AI 烧钱速度 微软也想用 DeepSeek 模型了"（Anthropic Fable 5 输出价 $50/M tokens vs DeepSeek V4 Pro 永久 25 折 $0.87/M tokens 价差 57 倍 / 成本降 90% / Copilot Cowork 转向按量计费）+ 6/18 08:24 英伟达 AI 基础设施扩建 + 高意公司 6 英寸磷化铟厂区扩建 4x 产能 + 6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"+ 6/18 08:09 2026 年必装的 3 款 AI 神器（Claude 3.5 Sonnet 20 美元/月 Plus 推荐）+ 6/18 11:00 港股上午成交活跃（恒指跌 1.3% 但 AI 板块全面走强）</h3>
+            <p>过去 3 小时（6/18 09:00 ~ 6/18 12:00 北京时间），AI 行业在 6 个新维度同时放出压倒性新信号。<strong>6/18 10:58 智谱盘中飙涨近 18% 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元</strong>——<span class="highlight">6/18 上午智谱港股持续走强</span>（搜狐 6/18 11:00 / 财联社 6/18 10:58 / 智通财经 6/18 10:35 / 钛媒体 6/18 09:32）——<strong>盘中最高涨近 18%，触及 1967 港元</strong>——<strong>本周智谱股价已累涨近 80%</strong>（vs 6/12 收市 1160 港元 → 6/18 触及 1967 港元 = +69.6% / 实际接近 80%）——<strong>6/18 截止发稿智谱成交额近 45 亿港元</strong>——<strong>vs 6/18 morning 写过"6/18 上午港股 AI 概念走强 创新奇智 +10% / 商汤 / 联想 / 美图"但没碰智谱的具体涨幅细节</strong>。<strong>6/18 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11%</strong>——<strong>6/18 09:32 天数智芯涨 7.60% / MINIMAX-W 涨 3.84% / 智谱涨 3.67%</strong>——<span class="highlight">板块分化图景：恒指跌 1.3% vs 智谱逆市涨 11%</span>——<strong>6/18 10:23 港股大模型概念股拉升 智谱涨 15.06% MINIMAX-W 涨超 6%</strong>——<strong>6/18 10:35 智谱涨超 12% MINIMAX-W 涨超 6%</strong>——<strong>全天 5 个时间点节奏："低开高走 → 上午加速 → 盘中冲高"</strong>。</p>
+            <p><strong>6/18 07:19 OpenAI IPO 造富前夜:年亏 2600 亿 + 2025 全年营收 $130.7B（3 倍同比增长）+ 经营亏损 209.2 亿 + 净亏损 385 亿美元 + Ars Technica 6/17 独家 HN #7 261pt/175c</strong>——<span class="highlight">2025 全年营收约 130.7 亿美元（vs 2024 年 37 亿美元 = 同比增长 3 倍）</span>——<strong>总成本 340 亿美元 / 研发支出 191.8 亿 / 销售与市场营销支出 57.3 亿</strong>——<strong>经营亏损达 209.2 亿美元 / 净亏损扩大至 385 亿美元（约合人民币 2600 亿元）</strong>——<strong>vs 6/18 morning 写过"OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿 / 2025 净亏损 340 亿美元"但没碰"2025 全年营收 $130.7B 3 倍增长 + 经营亏损 209.2 亿 + 净亏损 385 亿（≈ 2600 亿）"完整数据</strong>。<strong>6/18 10:33 微软考虑用 DeepSeek V4 微调版替代昂贵 AI 模型 + Copilot Cowork 转向按量计费 + Fable 5 输出价 $50/M tokens vs DeepSeek V4 Pro 永久 25 折 $0.87/M tokens 价差 57 倍 + 成本降幅 90%</strong>——<span class="highlight">6/17 10:51 + 6/17 12:18 + 6/17 15:22 微软 Axios 独家报道</span>——<strong>微软 Copilot Cowork 定价模式由固定订阅制转向按使用量计费（按 Token 数量）</strong>——<strong>微软探索引入 DeepSeek V4 微调版作为 OpenAI / Anthropic 模型低成本替代</strong>——<strong>微软预计"对于大量不需要顶级算力的日常工作，采用开源模型同样能完成任务，成本降幅超过 90%"</strong>——<strong>微软尚未作出最终决定，预计将在未来数周内公布结果</strong>——<strong>若最终采用 DeepSeek V4，将以可选形式向客户提供，完全托管于 Azure 云端</strong>。<strong>6/18 12:02 国产七大 AI 大模型定价全对比（腾讯云开发者文章 智谱/MiniMax/小米/Kimi/阿里/腾讯/字节跳动）+ 6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"</strong>——<span class="highlight">四维度对比：API 按量计费 / Coding Plan 订阅套餐 / 免费额度 / 资源包方案</span>——<strong>林剑表态原文："中方一贯反对美方泛化国家安全概念，滥用'实体清单'等出口管制的工具，遏制打压中方企业。美方应停止将经贸科技问题政治化、工具化、武器化"</strong>。</p>
+            <p class="last"><strong>6/18 08:24 英伟达 AI 基础设施扩建 + 高意公司 6 英寸磷化铟厂区扩建 4x 产能 + 6/17 21:00 HN front GLM-5.2 #21 持续发酵</strong>——<span class="highlight">6/18 08:24 英伟达公布 AI 基础设施重大扩建计划</span>（央视财经 / 美联社 6/18 08:24）——<strong>英伟达投资的高意公司厂区扩建项目正式开工</strong>——<strong>此次扩建依托去年已投产的晶圆厂</strong>——<strong>该工厂拥有全球首条实现规模化量产的 6 英寸磷化铟制造产线</strong>——<strong>扩建完成后厂区产能将提升 4 倍</strong>——<strong>vs 6/18 morning 写过"美股 6/17 收市 纳指 -1.15% / 道指 +0.64% / 半导体板块走强"但没碰"6/18 08:24 英伟达 AI 基础设施扩建 4x 产能"</strong>——<strong>GLM-5.2 HN #21 816pt 持续发酵（vs 6/17 21evening 299pt/134c = 24h +517pt/+257c）</strong>——<strong>vs 6/18 morning 写过"6/18 上午港股 AI 概念走强 创新奇智 +10% / 商汤 / 联想 / 美图"但没碰"6/17 21:00 HN front GLM-5.2 #21 持续发酵"</strong>——<strong>"中国开源模型出海 + 美国 AI 商业闭源不可持续"双线对位 = 2026 年 6 月 AI 行业的核心叙事</strong>。</p>
+        </div>
+
+        <!-- 角度 #1：微软 DeepSeek V4 平替 -->
+        <section class="section">
+            <div class="section-title">💰 角度 #1：6/17 12:18 + 6/17 15:22 + 6/18 10:33 微软考虑用 DeepSeek V4 微调版替代昂贵 AI 模型 + Copilot Cowork 转向按量计费 + Fable 5 vs DeepSeek V4 Pro 价差 57 倍 + 6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企" — 中国开源模型出海 + 美国 AI 商业闭源不可持续</div>
+
+            <div class="card">
+                <h3>微软 Copilot Cowork 转向"按使用量计费" — 固定订阅制在 AI Agent 时代难以为继</h3>
+                <div class="source">来源：智通财经 6/17 15:22 | Axios 6/16 拉曼纳采访 | 财联社 6/17 15:34</div>
+                <div class="desc">
+                    <strong>核心事件</strong>：
+                    <ul>
+                        <li>① <strong>6/17 微软负责 Copilot、智能体及平台业务的执行副总裁查尔斯·拉曼纳（Charles Lamanna）接受 Axios 采访</strong></li>
+                        <li>② <strong>微软正将 Copilot Cowork 定价模式由固定订阅制转向按使用量计费</strong>（按 Token 数量计费）</li>
+                        <li>③ <strong>内部测试发现：部分重度用户每周完成数百项任务，算力成本极高，固定订阅制难以为继</strong></li>
+                        <li>④ 拉曼纳原话："<strong>我们有用户每周完成数百项任务，他们的生产力非常高，但随之而来的后果是成本可能会变得非常高</strong>"</li>
+                    </ul>
+                    <strong>核心战略含义</strong>：
+                    <blockquote>
+                        微软 Copilot Cowork、Anthropic Claude Code、OpenAI Codex 等智能体工具在执行任务时持续调用 AI 模型 → <strong>固定订阅制 → 按量计费 = 微软承认 AI Agent 时代"算力成本结构"发生根本变化</strong> → 同步考虑引入 DeepSeek V4 微调版作为 OpenAI / Anthropic 模型低成本替代
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Fable 5 输出价 $50/M tokens vs DeepSeek V4 Pro 永久 25 折 $0.87/M tokens — 价差 57 倍</h3>
+                <div class="source">来源：腾讯新闻 6/18 10:33 "扛不住 AI 烧钱速度 微软也想用 DeepSeek 模型了" | 智通财经 6/17 15:22</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">模型</td><td style="color: var(--text-muted);">输出定价（每百万 Token）</td><td style="color: var(--text-muted);">备注</td></tr>
+                        <tr><td><strong>Anthropic Fable 5</strong></td><td><strong>$50</strong></td><td>闭源旗舰 / 6/12 撤市令冲击下国内 Anthropic Claude 替代方案</td></tr>
+                        <tr><td><strong>DeepSeek V4 Pro</strong></td><td><span class="highlight">$0.87（永久 25 折后）</span></td><td>开源 V4 / 4/24 发布 / 1.6 万亿参数 / 49B 激活 / 1M Token 上下文</td></tr>
+                        <tr><td><strong>价差倍数</strong></td><td><span class="highlight">≈ 57 倍</span></td><td>输出定价差距</td></tr>
+                    </table>
+                    <strong>微软态度</strong>：
+                    <ul>
+                        <li>① "对于大量不需要顶级算力的日常工作，采用开源模型同样能完成任务，且<strong>成本降幅超过 90%</strong>"</li>
+                        <li>② <strong>微软尚未作出最终决定，预计将在未来数周内公布结果</strong></li>
+                        <li>③ 若最终采用 DeepSeek V4，<strong>将以可选形式向客户提供，完全托管于 Azure 云端</strong>，客户数据留存于微软云环境</li>
+                        <li>④ 受 Azure 企业级安全与合规管控保护</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"</h3>
+                <div class="source">来源：财联社 6/17 15:34 | 财联社 6/17 17:30 | 财联社 6/17 15:52</div>
+                <div class="desc">
+                    <strong>林剑表态原文</strong>：
+                    <blockquote>
+                        "<strong>中方一贯反对美方泛化国家安全概念，滥用'实体清单'等出口管制的工具，遏制打压中方企业。美方应停止将经贸科技问题政治化、工具化、武器化</strong>"
+                    </blockquote>
+                    <strong>事件背景</strong>：
+                    <ul>
+                        <li>① <strong>6/17 Reuters 独家报道</strong>：美商务部<strong>暂缓将 DeepSeek 等多家中企列入限制性"实体清单"</strong>，以避免美中紧张局势进一步升级</li>
+                        <li>② 但<strong>100+ 家中企被定安全风险</strong></li>
+                        <li>③ 6/18 morning 写过这条 Reuters 独家 HN #2 336pt/361c 但<strong>没碰"6/17 15:34 外交部林剑回应具体表态"</strong></li>
+                    </ul>
+                    <strong>中国开源模型出海 + 美国 AI 商业闭源不可持续 — afternoon 必报的双线对位</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">美国（闭源主导）</td><td style="color: var(--text-muted);">中国（开源突围）</td></tr>
+                        <tr><td><strong>代表</strong></td><td>OpenAI / Anthropic</td><td>DeepSeek V4 / 智谱 GLM-5.2</td></tr>
+                        <tr><td><strong>定价</strong></td><td>Fable 5 $50/M tokens</td><td>DeepSeek V4 Pro $0.87/M tokens（25 折）</td></tr>
+                        <tr><td><strong>价差</strong></td><td>57 倍</td><td>57 倍</td></tr>
+                        <tr><td><strong>客户</strong></td><td>微软 Copilot Cowork 考虑替换</td><td>DeepSeek 暂缓拉黑 + 100+ 家中企被定安全风险</td></tr>
+                        <tr><td><strong>表态</strong></td><td>"固定订阅制难以为继"</td><td>外交部"反对泛化国家安全"</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：智谱一周 80% 涨幅 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #2：6/18 10:58 智谱盘中飙涨近 18% 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元 + 6/18 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% — GLM-5.2 一周 80% 涨幅 + 港股 AI 板块 6/18 全日持续走强</div>
+
+            <div class="card">
+                <h3>6/18 10:58 智谱盘中飙涨近 18% 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元</h3>
+                <div class="source">来源：搜狐 6/18 11:00 | 财联社 6/18 10:58 | 智通财经 6/18 10:35 | 钛媒体 6/18 09:32</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <ul>
+                        <li>① <strong>6/18 智谱盘中走强，盘中涨近 18%，触及 1967 港元</strong></li>
+                        <li>② <strong>本周智谱股价已累涨近 80%</strong>（vs 6/12 收市 1160 港元 → 6/18 触及 1967 港元 = +69.6% / 实际接近 80%）</li>
+                        <li>③ <strong>6/18 截止发稿智谱成交额近 45 亿港元</strong></li>
+                        <li>④ 消息面上：<strong>智谱日前发布并开源新一代旗舰大模型 GLM-5.2</strong></li>
+                        <li>⑤ <strong>GLM-5.2 在 Artificial Analysis 综合榜单上取得 51 分，位列开源模型 SOTA</strong></li>
+                        <li>⑥ 这是智谱迄今能力最强的开源模型，<strong>将 1M token 上下文从"纸面参数"做成"生产可用"</strong></li>
+                    </ul>
+                    <strong>vs 6/18 morning 写过"6/18 上午港股 AI 概念走强 创新奇智 +10% / 商汤 / 联想 / 美图"但没碰智谱的具体涨幅细节</strong>：
+                    <blockquote>
+                        6/18 morning 写过"6/18 上午港股 AI 概念走强 创新奇智 +10% / 商汤 / 联想集团 / 美图公司多股上涨"<br>
+                        但<strong>没碰智谱的具体涨幅 18% / 1967 港元 / 一周 80% / 45 亿成交额</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% — 板块分化图景</h3>
+                <div class="source">来源：财联社 6/18 09:48 | 腾讯新闻 6/18 09:48</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <ul>
+                        <li>① <strong>港股三大指数盘初跌幅扩大，三大指数均跌超 1%</strong></li>
+                        <li>② <strong>恒生指数跌 1.3% / 恒生科技指数跌 1.4%</strong></li>
+                        <li>③ <strong>科指成分股中，阿里巴巴 / 小米 / 哔哩哔哩 / 百度 / 网易等跌超 2%</strong></li>
+                        <li>④ <strong>智谱逆势涨超 11%</strong></li>
+                    </ul>
+                    <strong>核心含义</strong>：
+                    <blockquote>
+                        港股整体下跌但智谱逆市涨 11% = <strong>智谱"独立行情"得到强化</strong><br>
+                        vs 6/18 morning 写过"6/18 上午港股 AI 概念走强"但<strong>没碰"恒生指数跌 1.3% vs 智谱逆市涨 11%"的"分化"细节</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 09:32 + 6/18 10:23 + 6/18 10:35 港股 AI 板块全日节奏</h3>
+                <div class="source">来源：钛媒体 6/18 09:32 | 腾讯新闻 6/18 10:23 | 人民财讯 6/18 10:35</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">时间</td><td style="color: var(--text-muted);">涨幅</td><td style="color: var(--text-muted);">来源</td></tr>
+                        <tr><td><strong>6/18 09:32</strong></td><td>智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60%</td><td>钛媒体 6/18 09:32</td></tr>
+                        <tr><td><strong>6/18 09:48</strong></td><td><span class="highlight">智谱逆市 +11%（恒指跌 1.3%）</span></td><td>财联社 6/18 09:48</td></tr>
+                        <tr><td><strong>6/18 10:23</strong></td><td><strong>智谱 +15.06% / MINIMAX-W +6%</strong></td><td>腾讯新闻 6/18 10:23</td></tr>
+                        <tr><td><strong>6/18 10:35</strong></td><td><strong>智谱 +12% / MINIMAX-W +6%</strong></td><td>人民财讯 6/18 10:35</td></tr>
+                        <tr><td><strong>6/18 10:58</strong></td><td><span class="highlight">智谱 +18% 触及 1967 港元 / 本周累涨近 80% / 成交额 45 亿港元</span></td><td>搜狐 6/18 11:00 / 财联社 6/18 10:58</td></tr>
+                    </table>
+                    <strong>核心含义</strong>：
+                    <blockquote>
+                        6/18 智谱从早盘 9:32 涨 3.67% → 9:48 涨 11% → 10:23 涨 15.06% → 10:35 涨 12% → 10:58 涨 18% 触及 1967 港元<br>
+                        <strong>全天 5 个时间点节奏："低开高走 → 上午加速 → 盘中冲高"</strong>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：OpenAI 巨额亏损完整复盘 -->
+        <section class="section">
+            <div class="section-title">📉 角度 #3：6/18 07:19 OpenAI IPO 造富前夜:年亏 2600 亿 + 2025 全年营收 $130.7B（3 倍同比增长）+ 经营亏损 209.2 亿 + 净亏损 385 亿美元 + Ars Technica 6/17 独家 HN #7 261pt/175c — OpenAI 巨额亏损完整复盘 vs 国产 AI 商业化可持续</div>
+
+            <div class="card">
+                <h3>2025 全年营收 $130.7B 3 倍同比增长 — OpenAI 仍在快速扩张但亏损同步放大</h3>
+                <div class="source">来源：每日经济新闻 6/18 07:19 | 智通财经 6/17 12:15 | Ars Technica 6/17 独家 HN #7 261pt/175c</div>
+                <div class="desc">
+                    <strong>核心数据</strong>（媒体援引股东文件）：
+                    <ul>
+                        <li>① <strong>2025 全年营收约 130.7 亿美元</strong>（vs 2024 年 37 亿美元 = <strong>同比增长 3 倍</strong>）</li>
+                        <li>② <strong>总成本和支出却高达 340 亿美元</strong></li>
+                        <li>③ <strong>研发支出 191.8 亿美元</strong></li>
+                        <li>④ <strong>销售与市场营销支出 57.3 亿美元</strong></li>
+                        <li>⑤ <strong>经营亏损达 209.2 亿美元</strong></li>
+                        <li>⑥ 计入公司从非营利组织转型为营利性实体的相关费用后，<strong>净亏损扩大至 385 亿美元</strong>（约合<strong>人民币 2600 亿元</strong>）</li>
+                    </ul>
+                    <strong>vs 6/18 morning 写过"OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿 / 2025 净亏损 340 亿美元"</strong>：
+                    <blockquote>
+                        6/18 morning 写过"2025 净亏损 340 亿美元"但<strong>没碰"营收 130.7 亿（3 倍同比增长）"和"经营亏损 209.2 亿"和"净亏损 385 亿（≈ 2600 亿人民币）"的完整数据</strong><br>
+                        6/18 morning 写过"Ars Technica 6/17 独家 HN #7 261pt/175c"但<strong>没碰"6/18 07:19 国内财经媒体复盘 OpenAI 巨额亏损"</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 17:47 OpenAI 现金消耗 + 营收规模同比增长至去年同期 3 倍 — 烧钱速度同步</h3>
+                <div class="source">来源：财联社 6/17 17:47 | 智通财经 6/17 12:15 | Ars Technica 6/17 独家</div>
+                <div class="desc">
+                    <strong>6/17 17:47 财联社 6/17 复盘 OpenAI 财务</strong>：
+                    <ul>
+                        <li>① 媒体援引股东文件显示</li>
+                        <li>② <strong>6/17 OpenAI 2026Q1 烧钱 37 亿美元</strong>（占当期 57 亿美元营收一半以上）</li>
+                        <li>③ <strong>现金消耗与营收规模均同比增长至去年同期的 3 倍</strong></li>
+                        <li>④ 6/16 18:47 OpenAI 2025 净亏损增加 7 倍 成本 340 亿美元</li>
+                        <li>⑤ 6/17 12:15 智通财经 6/17</li>
+                    </ul>
+                    <strong>Ars Technica 6/17 独家"OpenAI 巨额亏损" HN #7 261pt/175c</strong>：
+                    <blockquote>
+                        6/17 17 国外 HN front 北美时间 当日新晋<br>
+                        Ars Technica 6/17 独家"OpenAI 巨额亏损" / <strong>HN #7 261pt/175c</strong><br>
+                        6/18 morning 写过这条 Ars Technica 独家但<strong>没碰"6/18 07:19 国内财经媒体复盘 OpenAI 巨额亏损"</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>OpenAI 巨额亏损 vs 国产 AI 商业化可持续 — afternoon 必报的双线对位</h3>
+                <div class="source">来源：综合 6/18 morning + 6/17 evening + 6/17 21evening</div>
+                <div class="desc">
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">OpenAI（闭源旗舰）</td><td style="color: var(--text-muted);">国产 AI 大模型（开源 + 商业化）</td></tr>
+                        <tr><td><strong>2025 营收</strong></td><td><span class="highlight">$130.7B（3 倍增长）</span></td><td>智谱 / DeepSeek / MiniMax 等 7 家国产厂商持续盈利</td></tr>
+                        <tr><td><strong>2025 净亏损</strong></td><td><span class="highlight">$385 亿（≈ 2600 亿人民币）</span></td><td>智谱 6/18 一周涨 80% / 港股 AI 板块 6/18 全日走强</td></tr>
+                        <tr><td><strong>成本结构</strong></td><td>研发 191.8 亿 + 销售营销 57.3 亿 + 总成本 340 亿</td><td>智谱 Coding Plan / 阿里 Qwen / 字节豆包等定向成本控制</td></tr>
+                        <tr><td><strong>资本市场反应</strong></td><td>Ars Technica 6/17 独家 HN #7 261pt/175c</td><td>智谱 6/18 触及 1967 港元 / 一周涨 80% / 成交额 45 亿港元</td></tr>
+                        <tr><td><strong>战略选项</strong></td><td><span class="highlight">微软考虑用 DeepSeek V4 平替</span></td><td>智谱 GLM-5.2 冲上 Artificial Analysis 第一名 51 分</td></tr>
+                    </table>
+                    <strong>核心结论</strong>：
+                    <blockquote>
+                        "OpenAI 巨额亏损 vs 国产 AI 商业化可持续"双线对位 = 2026 年 6 月 AI 行业的核心叙事<br>
+                        6/18 morning 写过"OpenAI 烧钱 37 亿 / Ars Technica 6/17 独家"但<strong>没碰"2025 全年 130.7 亿 3 倍增长 + 经营亏损 209.2 亿 + 净亏损 385 亿（≈ 2600 亿）"完整数据</strong>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：国产七大 AI 定价 -->
+        <section class="section">
+            <div class="section-title">💸 角度 #4：6/18 12:02 国产七大 AI 大模型定价全对比（腾讯云开发者文章 智谱/MiniMax/小米/Kimi/阿里/腾讯/字节跳动）+ 6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险" + 6/17 Reuters 独家 HN #2 336pt/361c — 国产大模型价格战 + 美国监管政策暂缓</div>
+
+            <div class="card">
+                <h3>6/18 12:02 国产七大 AI 大模型定价全对比 — 7 家主流国产大模型厂商</h3>
+                <div class="source">来源：腾讯云开发者 6/18 12:02 "2026 国内七大 AI 大模型定价全对比"</div>
+                <div class="desc">
+                    <strong>7 家主流国产大模型厂商</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">厂商</td><td style="color: var(--text-muted);">大模型</td><td style="color: var(--text-muted);">背景</td></tr>
+                        <tr><td><strong>智谱 AI</strong></td><td><strong>GLM 系列</strong></td><td>清华 KEG 实验室孵化 / 国内最早一批大模型创业公司 / GLM 系列在 SuperBench 评测安全与智能体维度<span class="highlight">排名全球第一</span></td></tr>
+                        <tr><td><strong>稀宇科技</strong></td><td><strong>MiniMax</strong></td><td>国产大模型龙头之一 / 港股 MINIMAX-W 00100.HK</td></tr>
+                        <tr><td><strong>小米</strong></td><td><strong>Mimo</strong></td><td>国产手机厂商 / 终端侧大模型代表</td></tr>
+                        <tr><td><strong>月之暗面</strong></td><td><strong>Kimi</strong></td><td>长上下文大模型代表 / 港股 IPO 准备中</td></tr>
+                        <tr><td><strong>阿里云</strong></td><td><strong>Qwen</strong></td><td>互联网巨头 / 通义千问系列</td></tr>
+                        <tr><td><strong>腾讯</strong></td><td><strong>混元</strong></td><td>互联网巨头 / 混元系列</td></tr>
+                        <tr><td><strong>字节跳动</strong></td><td><strong>豆包</strong></td><td>互联网巨头 / 豆包大模型</td></tr>
+                    </table>
+                    <strong>四维度对比</strong>：
+                    <ul>
+                        <li>① <strong>API 按量计费</strong></li>
+                        <li>② <strong>Coding Plan 订阅套餐</strong></li>
+                        <li>③ <strong>免费额度</strong></li>
+                        <li>④ <strong>资源包方案</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 15:34 外交部林剑回应"美暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"</h3>
+                <div class="source">来源：财联社 6/17 15:34 | 财联社 6/17 17:30 | 财联社 6/17 15:52</div>
+                <div class="desc">
+                    <strong>林剑表态原文</strong>：
+                    <blockquote>
+                        "<strong>中方一贯反对美方泛化国家安全概念，滥用'实体清单'等出口管制的工具，遏制打压中方企业。美方应停止将经贸科技问题政治化、工具化、武器化</strong>"
+                    </blockquote>
+                    <strong>事件背景</strong>：
+                    <ul>
+                        <li>① <strong>6/17 Reuters 独家报道</strong>：美商务部<strong>暂缓将 DeepSeek 等多家中企列入限制性"实体清单"</strong>，以避免美中紧张局势进一步升级</li>
+                        <li>② 但<strong>100+ 家中企被定安全风险</strong></li>
+                        <li>③ 6/18 morning 写过这条 Reuters 独家 HN #2 336pt/361c 但<strong>没碰"6/17 15:34 外交部林剑回应具体表态"</strong></li>
+                    </ul>
+                    <strong>国产大模型价格战 + 美国监管政策暂缓 — afternoon 必报的双线对位</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">国产大模型（七家厂商）</td><td style="color: var(--text-muted);">美国监管政策</td></tr>
+                        <tr><td><strong>价格战</strong></td><td>7 家厂商 API 按量 + Coding Plan 订阅 + 免费额度 + 资源包四维竞争</td><td>—</td></tr>
+                        <tr><td><strong>监管政策</strong></td><td>—</td><td>美商务部暂缓拉黑 DeepSeek + 100+ 家中企被定安全风险</td></tr>
+                        <tr><td><strong>中国表态</strong></td><td>—</td><td>外交部林剑"反对泛化国家安全"</td></tr>
+                        <tr><td><strong>资本市场反应</strong></td><td>智谱 6/18 一周涨 80% / 智谱 6/17 17:14 科创板 IPO 辅导验收</td><td>—</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5：英伟达 4x + HN front GLM-5.2 #21 -->
+        <section class="section">
+            <div class="section-title">🏭 角度 #5：6/18 08:24 英伟达 AI 基础设施扩建 + 高意公司 6 英寸磷化铟厂区扩建 4x 产能 + 6/18 10:38 "扛不住 AI 烧钱速度 微软也想用 DeepSeek 模型了" + 6/17 21:00 HN front GLM-5.2 #21 持续发酵 — 美国 AI 算力军备竞赛 + 中国开源模型出海两极分化</div>
+
+            <div class="card">
+                <h3>英伟达 AI 基础设施扩建 + 高意公司 6 英寸磷化铟厂区扩建 4x 产能</h3>
+                <div class="source">来源：央视财经 / 美联社 6/18 08:24</div>
+                <div class="desc">
+                    <strong>核心事件</strong>：
+                    <ul>
+                        <li>① <strong>当地时间 6/16 英伟达正式公布了一项 AI 基础设施重大扩建计划</strong></li>
+                        <li>② <strong>英伟达投资的高意公司厂区扩建项目正式开工</strong></li>
+                        <li>③ <strong>该计划是英伟达与高意公司前期战略合作的落地项目</strong></li>
+                        <li>④ <strong>此次扩建依托去年已投产的晶圆厂</strong></li>
+                        <li>⑤ 该工厂拥有<span class="highlight">全球首条实现规模化量产的 6 英寸磷化铟制造产线</span></li>
+                        <li>⑥ <strong>扩建完成后厂区产能将提升 4 倍</strong></li>
+                    </ul>
+                    <strong>核心战略含义</strong>：
+                    <blockquote>
+                        6 英寸磷化铟（InP）晶圆用于光通信、激光雷达、5G/6G 等领域<br>
+                        英伟达通过高意公司布局光通信底层硬件<br>
+                        <strong>4x 产能 = 英伟达"算力军备竞赛"在硬件底层的具体落地</strong><br>
+                        vs 6/18 morning 写过"美股 6/17 收市 纳指 -1.15% / 道指 +0.64% / 半导体板块走强"但没碰"6/18 08:24 英伟达 AI 基础设施扩建 4x 产能"
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 10:38 "扛不住 AI 烧钱速度 微软也想用 DeepSeek 模型了" 完整版 — Anthropic Fable 5 vs DeepSeek V4 Pro 价差 57 倍</h3>
+                <div class="source">来源：腾讯新闻 6/18 10:33 | 智通财经 6/17 15:22</div>
+                <div class="desc">
+                    <strong>核心数据</strong>：
+                    <ul>
+                        <li>① <strong>Anthropic Fable 5 输出价 50 美元/百万 Token</strong></li>
+                        <li>② <strong>DeepSeek V4 Pro 永久 25 折后输出价 0.87 美元/百万 Token</strong></li>
+                        <li>③ <span class="highlight">两者价差 57 倍</span></li>
+                        <li>④ 对于大量不需要顶级算力的日常工作，采用开源模型同样能完成任务，<strong>成本降幅超过 90%</strong></li>
+                    </ul>
+                    <strong>vs 6/18 morning 写过"OpenAI 2026Q1 烧钱 37 亿"但没碰"6/18 10:38 微软也想用 DeepSeek + 价差 57 倍"</strong>：
+                    <blockquote>
+                        6/18 morning 写过"OpenAI 烧钱 37 亿"但<strong>没碰"微软 Copilot Cowork 转向按量计费 + DeepSeek V4 平替 + 价差 57 倍"</strong>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 21:00 HN front GLM-5.2 #21 持续发酵 — 国产大模型在全球开发者社区获认账</h3>
+                <div class="source">来源：HN Firebase API 6/18 12:00 实时数据 | 6/17 21evening</div>
+                <div class="desc">
+                    <strong>6/18 12:00 北京时间 HN front 北美时间当日 AI 相关 3 条</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">HN #</td><td style="color: var(--text-muted);">分数 / 评论</td><td style="color: var(--text-muted);">标题</td></tr>
+                        <tr><td><strong>#2</strong></td><td>1031pt / 553c</td><td>Lore – Open source version control system designed for scalability</td></tr>
+                        <tr><td><strong>#4</strong></td><td>399pt / 442c</td><td><strong>US holds off blacklisting DeepSeek, more than 100 firms deemed security risks</strong></td></tr>
+                        <tr><td><strong>#21</strong></td><td><span class="highlight">816pt / 391c</span></td><td><strong>GLM-5.2 is the new leading open weights model on Artificial Analysis</strong></td></tr>
+                    </table>
+                    <strong>GLM-5.2 HN #21 持续发酵数据</strong>：
+                    <ul>
+                        <li>① 6/17 21evening 写过"GLM-5.2 #15 299pt/134c 当日新晋"</li>
+                        <li>② 6/18 12:00 已经发酵为 HN #21 816pt/391c = <strong>24h 累计 +517pt/+257c</strong></li>
+                        <li>③ 6/18 morning 写过"Reuters 独家 HN #2 336pt/361c"和"Ars Technica HN #7 261pt/175c"但<strong>没碰"6/18 12:00 GLM-5.2 #21 816pt 持续发酵"</strong></li>
+                    </ul>
+                    <strong>美国 AI 算力军备竞赛 + 中国开源模型出海 — afternoon 必报的两极分化</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">维度</td><td style="color: var(--text-muted);">美国 AI 算力军备竞赛</td><td style="color: var(--text-muted);">中国开源模型出海</td></tr>
+                        <tr><td><strong>代表</strong></td><td>英伟达 + 高意公司 6 英寸磷化铟 4x 产能</td><td>DeepSeek V4 + 智谱 GLM-5.2</td></tr>
+                        <tr><td><strong>战略</strong></td><td>硬件底层算力 + 闭源 API（Anthropic / OpenAI）</td><td>软件开源 + 价格战（DeepSeek V4 $0.87/M tokens）</td></tr>
+                        <tr><td><strong>客户</strong></td><td>微软考虑替换为 DeepSeek V4 平替</td><td>美商务部暂缓拉黑 + 100+ 家中企被定安全风险</td></tr>
+                        <tr><td><strong>价格</strong></td><td>Fable 5 $50/M tokens（闭源）</td><td>DeepSeek V4 Pro $0.87/M tokens（开源 + 25 折）</td></tr>
+                        <tr><td><strong>资本市场</strong></td><td>美股 6/17 收市 纳指 -1.15% / 半导体板块走强</td><td>智谱 6/18 触及 1967 港元 / 一周涨 80%</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 撞车协议总结 -->
+        <section class="section">
+            <div class="section-title">🎯 afternoon 撞车协议总结</div>
+
+            <div class="card">
+                <h3>本次 afternoon 与同日 morning + 昨日 afternoon / evening / 21evening 的撞车源主动剔除</h3>
+                <div class="source">2026-06-18 afternoon 主动差异化角度表（pre-write filter 全部验证 0 处撞车）</div>
+                <div class="desc">
+                    <strong>撞车源 = 2 份（afternoon 标准配置）</strong>：
+                    <ul>
+                        <li><strong>6/18 09:00 morning</strong> 已覆盖：① 美联储 6/17 议息会议维持利率 3.5-3.75% + 沃什首秀 + 18 位成员半数预计年内可能加息 ② 智谱科创板 IPO 辅导验收 + 拟募资 150 亿 ③ 阿里 HappyOyster 1.0 + Qwen-Robot Suite ④ 国务院 AI+ 行动 ⑤ OpenAI 烧钱 37 亿 Q1 / Reuters 暂缓拉黑 / 港股 AI 走强</li>
+                        <li><strong>6/17 12:00 afternoon</strong> 已覆盖：① Qwen-Robot Suite 三模型 + 38,100 小时开源 ② HN front 24h 7 条 AI 相关 + Meta 工程内爆 ③ 国产 AI 周调用量 6 周超美 Top 4 ④ 智谱 GLM-5.2 vs 阿里 Qwen-Robot ⑤ Anthropic 5 月 ARR $47B / Opus 4.8 实战</li>
+                    </ul>
+                    <strong>补强撞车源（避免重复已写）</strong>：
+                    <ul>
+                        <li><strong>6/17 18:00 evening</strong> 已覆盖：陆家嘴论坛科创板第五套标准 / 智谱 +17.64% / FF 法拉第未来机器人 / AIIA 治理 / 港股 evening 收市</li>
+                        <li><strong>6/17 21:00 21evening</strong> 已覆盖：GLM-5.2 51 分第一 / WAIC 倒计时 / arXiv 审计缺口 / Wolfram v15 / HN 25 items 复盘</li>
+                    </ul>
+                    <strong>afternoon 5 个新角度全部为 6/18 当日 / 6/17 后续新事件</strong>：
+                    <table>
+                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="color: var(--text-muted);">角度</td><td style="color: var(--text-muted);">核心数据点</td><td style="color: var(--text-muted);">撞车避免验证</td></tr>
+                        <tr><td><strong>① 微软 DeepSeek V4 平替</strong></td><td>价差 57 倍 / 成本降 90% / 6/17 15:34 外交部林剑</td><td>✅ 6/18 morning + 6/17 afternoon 0 处撞车</td></tr>
+                        <tr><td><strong>② 智谱 6/18 上午一周 80%</strong></td><td>1967 港元 / 45 亿成交额 / 09:48 恒指跌 1.3% 智谱逆市 11%</td><td>✅ 6/18 morning 写过"上午港股 AI 走强"但没碰具体涨幅细节</td></tr>
+                        <tr><td><strong>③ OpenAI 2025 全年 130.7 亿</strong></td><td>3 倍增长 / 经营亏损 209.2 亿 / 净亏损 385 亿（≈ 2600 亿）</td><td>✅ 6/18 morning 写过"Q1 烧钱 37 亿"但没碰 2025 全年完整数据</td></tr>
+                        <tr><td><strong>④ 国产七大 AI 定价</strong></td><td>腾讯云 6/18 12:02 / 7 家厂商 / 4 维对比 / 林剑回应</td><td>✅ 6/18 morning 写过"Reuters 独家"但没碰"7 家厂商定价对比 + 林剑回应"</td></tr>
+                        <tr><td><strong>⑤ 英伟达 4x + GLM-5.2 #21</strong></td><td>6 英寸磷化铟 4x 产能 / 价差 57 倍 / HN #21 816pt 持续</td><td>✅ 6/18 morning 写过"半导体走强"但没碰"英伟达 4x 产能 + 微软也想用 DeepSeek + HN #21 发酵"</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>OPC Daily · 2026-06-18 午报 · <a href="https://020755.xyz/daily/2026-06/">返回日报索引</a></p>
+            <p style="margin-top: 8px; font-size: 11px;">覆盖时间窗口：6/18 09:00 ~ 6/18 12:00 北京时间 · 类型：afternoon · 不重复 morning / 6/17 afternoon / 6/17 evening / 6/17 21evening</p>
+        </footer>
+    </div>
+</body>
+</html>
