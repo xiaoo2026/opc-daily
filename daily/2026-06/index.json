@@ -213,5 +213,10 @@
     "date": "2026-06-18",
     "type": "afternoon",
     "html_url": "https://020755.xyz/daily/2026-06/2026-06-18-afternoon/index.html"
+  },
+  {
+    "date": "2026-06-18",
+    "type": "evening",
+    "html_url": "https://020755.xyz/daily/2026-06/2026-06-18/index.html"
   }
 ]
