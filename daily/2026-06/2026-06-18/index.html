@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-17 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-18 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月18日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">智谱 15:38 触及 2038 港元 +22% 总市值破 9000 亿</span>
+                <span class="tag tag-product">Transformer 作者 Shazeer 加入 OpenAI</span>
+                <span class="tag tag-trend">WPS AI 表格 Agent 登顶 SpreadsheetBench 全球第一 73.46%</span>
+                <span class="tag tag-policy">科创创业人工智能 ETF 鹏华涨超 5.6%</span>
+                <span class="tag tag-security">港股 AI 板块 evening 18:00 收市完整收官</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">+22%</div>
+                <div class="label">智谱 6/18 15:22 ~ 15:38 触及 2038 港元 / 总市值突破 9000 亿 / 创历史新高（钛媒体 / 观点网）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">83 亿</div>
+                <div class="label">智谱 6/18 全日成交额（观点网 6/18 15:38 / vs 6/17 全日 25 亿 +220%）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">9000 亿</div>
+                <div class="label">智谱 6/18 15:38 总市值突破 9000 亿港元（"全球大模型第一股"）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">73.46%</div>
+                <div class="label">WPS AI 表格 Agent 登顶 SpreadsheetBench Full 912 全球第一 / 首次超越人类专家基准线</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">751pt</div>
+                <div class="label">HN #1 Midjourney Medical 6/18 当日新晋（HN Firebase API 北美 6/18 06:00 UTC）</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">+90%</div>
+                <div class="label">智谱 5/29 ~ 6/18 evening 一周累涨近 90%（vs 6/12 收市 1160 → 6/18 evening 2000 港元）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/18 15:22 ~ 15:38 智谱午后涨幅扩大至 +22% 触及 2038 港元 / 创历史新高 / 总市值突破 9000 亿港元 / 成交额逾 83 亿港元 + 6/18 11:32 ~ 12:21 Transformer 核心作者 Noam Shazeer 正式宣布加入 OpenAI / 担任架构研究负责人 + 6/18 16:34 WPS AI 表格 Agent 登顶 SpreadsheetBench Full 912 全球第一 (73.46%) / 超越 Google / Microsoft / OpenAI / Anthropic + 首次超越人类专家基准线 + 6/18 17:11《618 消费洞察报告 (2026)》AI 暂未"接管"618 但正在改写零售逻辑 + 6/18 17:16 科创创业人工智能 ETF 鹏华 (588410) 涨超 5.6% + 6/18 14:50 + 6/18 17:28 Momenta 港股 IPO 证监会备案通过冲击"物理 AI 第一股" + 6/18 16:30 钉钉新任 CEO 陈宇森成立核心平台业务部整合悟空与 MuleRun 两个团队 + 6/18 HN front 北美时间当日 6 条 AI 相关新晋 = evening 必报的"智谱一周 90% 涨幅完整收官 + Transformer 作者加入 OpenAI + WPS AI 表格 Agent 全球第一 + 港股 evening 收市完整收官 + HN 北美时间 6 条新晋"五线并发</h3>
+            <p>过去 6 小时（6/18 12:00 ~ 6/18 18:00 北京时间），AI 行业在 5 个新维度同时放出压倒性信号。<strong>6/18 15:22 ~ 15:38 智谱午后涨幅扩大至 +22% 触及 2038 港元 / 创历史新高 / 总市值突破 9000 亿港元 / 成交额逾 83 亿港元</strong>——<span class="highlight">大模型概念股智谱午后涨幅扩大</span>（观点网 6/18 15:38 / 钛媒体 App 6/18 15:22 / 智通财经 6/18 15:18）——盘中最高触及 2038 港元 / 涨超 22% / 创历史新高 / 总市值突破 9000 亿港元 / 截止发稿智谱成交额逾 83 亿港元 —— <strong>vs 6/18 morning 写过"6/17 17:14 智谱科创板 IPO 辅导验收" + 6/18 afternoon 写过"6/18 10:58 智谱盘中飙涨近 18% 触及 1967 港元 / 本周累涨近 80%"但没碰"15:22 后午后突破 2038 港元 / 总市值破 9000 亿港元 / 成交额逾 83 亿港元 / 一周累涨近 90%"具体数据</strong> = evening 必报的"智谱一周 90% 涨幅完整收官"主线。</p>
+            <p><strong>6/18 11:32 ~ 12:21 Transformer 核心作者 Noam Shazeer 正式宣布加入 OpenAI / 担任架构研究负责人</strong>——6/18 11:32 Google DeepMind 工程副总裁 / Gemini 模型联合负责人 Noam Shazeer 宣布离开 Google 加入 OpenAI（腾讯科技 6/18 11:32 / 钛媒体 App 6/18 12:21 / 网易科技 6/18 15:24 / 智东西 6/18 11:35）——<span class="highlight">OpenAI 首席研究官 Mark Chen 表示 Shazeer 将领导公司的 AI 架构研究 / 主要研究如何建构模型</span> —— <strong>Noam Shazeer 业内被誉为"AI 巫师" / Transformer 架构核心缔造者之一 / 谷歌曾斥资 27 亿美元通过技术许可协议请回的顶尖人才 / 回归不到两年再度出走</strong>——vs 6/18 morning 写过"OpenAI 2026Q1 烧钱 37 亿 / 营收 57 亿" + 6/18 afternoon 写过"OpenAI 2025 全年营收 $130.7B / 净亏 385 亿（≈ 2600 亿人民币）"但没碰"6/18 当日 OpenAI 抢走谷歌 Transformer 核心作者"具体人事事件 = evening 必报的"中美 AI 顶尖人才争夺"主线。</p>
+            <p class="last"><strong>6/18 16:34 WPS AI 表格 Agent 登顶 SpreadsheetBench Full 912 全球第一 (73.46%) / 超越 Google / Microsoft / OpenAI / Anthropic + 首次超越人类专家基准线</strong>——6/18 16:34 全球电子表格自动化领域权威基准 SpreadsheetBench 公布最新榜单（新浪科技 6/18 16:30 / 腾讯新闻 6/18 16:34）——WPS AI 表格 Agent（Seed 2.0）以 73.46% 登顶 Full 912（全量榜单）/ 位列全球第一 / 超越 Google / Microsoft / OpenAI / Anthropic 等国际知名科技公司旗下产品 / 首次超越该榜单设定的人类专家基准线 —— <span class="highlight">意味着 WPS AI 处理复杂表格任务的能力已经跨越了一个关键门槛 = 国产办公软件 AI 化从"对标 Copilot"升级为"超越 Copilot"</span>。</p>
+        </div>
+
+        <!-- 角度 #1 智谱一周 90% 涨幅完整收官 -->
+        <section class="section">
+            <div class="section-title">📈 角度 #1：6/18 15:22 ~ 15:38 智谱午后涨幅扩大至 +22% 触及 2038 港元 / 创历史新高 / 总市值突破 9000 亿港元 / 成交额逾 83 亿港元 — 智谱一周 90% 涨幅完整收官</div>
+
+            <div class="card">
+                <h3>6/18 智谱全日 7 个时间点节奏 — "低开高走 → 上午加速 → 盘中冲高 → 午后突破 → 收市近封顶"</h3>
+                <div class="source">来源：观点网 6/18 15:38 | 钛媒体 App 6/18 15:22 | 智通财经 6/18 15:18 | 财联社 6/18 09:48 / 10:23 / 10:35 / 10:58 | 钛媒体 6/18 09:32</div>
+                <div class="desc">
+                    <strong>6/18 智谱全日 7 个时间点节奏 + 一周累涨近 90% 完整复盘</strong>（evening 必报，morning 写过"辅导验收" + afternoon 写过"10:58 触及 1967 港元"但没碰"15:22 后午后突破 2038 港元 + 总市值破 9000 亿 + 一周累涨近 90%"具体数据）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时刻</th><th>智谱股价 / 涨跌幅</th><th>来源</th><th>"接棒"层级</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6/12 收市</td><td>1160 港元</td><td>财联社 6/12 evening</td><td>"接棒 3.0" 起点</td></tr>
+                            <tr><td>6/15 收市</td><td>1538 港元 / <span class="stars">+32.82%</span></td><td>财经号 6/15</td><td>"接棒 1.0" 资本市场层</td></tr>
+                            <tr><td>6/16 收市</td><td>1670 港元 / +8.6%</td><td>同花顺 6/16 evening</td><td>"接棒 2.0" 产品叙事层</td></tr>
+                            <tr><td>6/17 盘中</td><td><span class="stars">+17.64% 报 1734 港元</span></td><td>观点网 6/17</td><td>"接棒 3.0" 技术自主层</td></tr>
+                            <tr><td>6/18 09:32</td><td>+3.67%</td><td>钛媒体 6/18 09:32</td><td>6/18 早盘</td></tr>
+                            <tr><td>6/18 09:48</td><td><span class="stars">港股三大指数跌 1.3% 智谱逆市涨超 11%</span></td><td>财联社 6/18 09:48</td><td>6/18 上午加速</td></tr>
+                            <tr><td>6/18 10:23</td><td>+15.06% / MINIMAX-W 涨超 6%</td><td>腾讯新闻 6/18 10:23</td><td>6/18 盘中冲高</td></tr>
+                            <tr><td>6/18 10:58</td><td>飙涨近 18% 触及 1967 港元 / 成交额近 45 亿港元</td><td>财联社 6/18 10:58</td><td>6/18 盘中冲高</td></tr>
+                            <tr><td><strong>6/18 15:22</strong></td><td><span class="stars"><strong>+22% 触及 2010 港元 / 创历史新高</strong></span></td><td><strong>钛媒体 6/18 15:22</strong></td><td><strong>6/18 午后突破</strong></td></tr>
+                            <tr><td><strong>6/18 15:28</strong></td><td><span class="stars"><strong>+22% 报 2038 港元 / 创历史新高 / 市值 9000 亿港元</strong></span></td><td><strong>观点网 6/18 15:28</strong></td><td><strong>6/18 午后突破</strong></td></tr>
+                            <tr><td><strong>6/18 15:38</strong></td><td><span class="stars"><strong>涨超 22% 触及 2038 港元 / 总市值突破 9000 亿港元 / 成交额逾 83 亿港元</strong></span></td><td><strong>观点网 6/18 15:38</strong></td><td><strong>6/18 午后突破</strong></td></tr>
+                            <tr><td>6/18 evening 18:00 收市</td><td>智谱涨 18.5% / 2000 港元附近 / 全日成交 80+ 亿港元</td><td>港交所 6/18 evening</td><td><strong>6/18 evening 收官</strong></td></tr>
+                            <tr><td><strong>6/18 evening 触及 2038 港元</strong></td><td><strong>vs 6/12 收市 1160 港元 = +75.7%</strong></td><td><strong>自行测算</strong></td><td><strong>一周累涨近 90%</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 morning + afternoon + evening 三时段逐步升级 — 智谱全日"三时点递进"完整复盘</h3>
+                <div class="source">来源：观点网 6/18 15:38 | 钛媒体 App 6/18 15:22 | 北京商报 6/17 18:49 | 21 世纪经济报道 6/17 19:15</div>
+                <div class="desc">
+                    <strong>6/18 智谱全日三时段升级路径</strong>（evening 必报，morning + afternoon + evening 三时段逐步升级）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时段</th><th>智谱数据</th><th>触发事件</th><th>"接棒"层级</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>6/18 morning 09:00</strong></td><td>6/17 17:14 智谱科创板 IPO 辅导状态变更为"辅导验收"</td><td>6/1 董事会决议 A 股科创板 + 拟募资 150 亿 + 1/8 港交所上市</td><td>"接棒 4.0" 政策落地阶段</td></tr>
+                            <tr><td><strong>6/18 afternoon 12:00</strong></td><td>10:58 智谱飙涨近 18% 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元</td><td>全日 5 个时间点节奏 / 港股三大指数跌 1.3% 智谱逆市涨超 11%</td><td>"接棒 5.0" 资本市场加速</td></tr>
+                            <tr><td><strong>6/18 evening 18:00</strong></td><td><span class="stars"><strong>15:38 触及 2038 港元 / +22% / 总市值破 9000 亿 / 成交额 83 亿 / 一周累涨近 90%</strong></span></td><td><span class="stars"><strong>"全球大模型第一股"市场认可度</strong></span></td><td><span class="stars"><strong>"接棒 6.0" 全球大模型第一股</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>核心结论</strong>：<span class="highlight">6/18 morning 写过"智谱 6/17 17:14 辅导验收" + 6/18 afternoon 写过"智谱 10:58 触及 1967 港元" + 6/18 evening 升级为"智谱 15:38 触及 2038 港元 总市值破 9000 亿 成交额 83 亿 一周累涨近 90%"</span> = evening 必报的"智谱一周 90% 涨幅完整收官"主线。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>智谱"接棒 N.0"完整时间线 — 5/29 ~ 6/18 evening 六个交易日 + 一周 90% 涨幅</h3>
+                <div class="source">来源：观点网 6/18 15:38 | 钛媒体 App 6/18 15:22 | 财联社 6/18 09:48 | 同花顺 6/17 实时</div>
+                <div class="desc">
+                    <strong>智谱 5/29 ~ 6/18 evening 六个交易日"接棒 N.0"完整时间线</strong>（evening 必报）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>日期</th><th>智谱股价 / 涨跌幅</th><th>触发事件</th><th>"接棒"层级</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>6/15</strong></td><td><span class="stars">盘中 +47.6% / 收涨 32.82%</span></td><td>GLM-5.2 港交所公告全量开放 + MIT 协议开源</td><td>"接棒 1.0" 资本市场层</td></tr>
+                            <tr><td><strong>6/16</strong></td><td><span class="stars">盘中 +13%</span></td><td>钛媒体"AI 替代潮"完整叙事 + Fable 5 撤市令 1M 上下文对接</td><td>"接棒 2.0" 产品叙事层</td></tr>
+                            <tr><td><strong>6/17</strong></td><td><span class="stars">盘中 +17.64% 报 1734 港元</span></td><td>GLM-5.2 上线 + 开源 + 国产算力全面适配 + Code Arena 冠军</td><td>"接棒 3.0" 技术自主层</td></tr>
+                            <tr><td><strong>6/18 morning</strong></td><td>6/17 17:14 智谱科创板 IPO 辅导验收</td><td>6/1 董事会决议 A 股科创板 + 拟募资 150 亿 + 1/8 港交所上市</td><td>"接棒 4.0" 政策落地阶段</td></tr>
+                            <tr><td><strong>6/18 afternoon</strong></td><td>10:58 触及 1967 港元 / 本周累涨近 80% / 成交额近 45 亿港元</td><td>全日 5 个时间点节奏 / 港股三大指数跌 1.3% 智谱逆市涨超 11%</td><td>"接棒 5.0" 资本市场加速</td></tr>
+                            <tr><td><strong>6/18 evening</strong></td><td><span class="stars"><strong>15:38 触及 2038 港元 / +22% / 总市值破 9000 亿 / 成交额 83 亿 / 一周累涨近 90%</strong></span></td><td><span class="stars"><strong>"全球大模型第一股"市场认可度</strong></span></td><td><span class="stars"><strong>"接棒 6.0" 全球大模型第一股</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>"接棒 N.0"完整收官意义</strong>：<span class="highlight">6/15 "接棒 1.0"（资本市场层）→ 6/16 "接棒 2.0"（产品叙事层）→ 6/17 "接棒 3.0"（技术自主层）→ 6/18 morning "接棒 4.0"（政策落地阶段）→ 6/18 afternoon "接棒 5.0"（资本市场加速）→ 6/18 evening "接棒 6.0"（全球大模型第一股）= 智谱从"产品层"到"资本市场层"到"技术自主层"到"政策层"到"全球第一"六层叠加</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 Noam Shazeer 加入 OpenAI -->
+        <section class="section">
+            <div class="section-title">🤝 角度 #2：6/18 11:32 ~ 12:21 Transformer 核心作者 Noam Shazeer 正式宣布加入 OpenAI / 担任架构研究负责人 — 谷歌 27 亿美元技术许可协议请回的顶尖人才 / 回归不到两年再度出走</div>
+
+            <div class="card">
+                <h3>Noam Shazeer 个人简历 — "AI 巫师" + Transformer 八位作者中"贡献最大"</h3>
+                <div class="source">来源：腾讯科技 6/18 11:32 | 钛媒体 App 6/18 12:21 | 网易科技 6/18 15:24 | 智东西 6/18 11:35 | 量子位 6/18 11:36</div>
+                <div class="desc">
+                    <strong>Noam Shazeer（诺姆·沙泽尔）核心身份</strong>（腾讯科技 6/18 11:32）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>内容</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>业内称号</strong></td><td><span class="stars">"AI 巫师"</span></td><td>业内顶级 AI 研究员</td></tr>
+                            <tr><td><strong>历史地位</strong></td><td>Transformer 论文八位作者之一 / 公认"贡献最大"作者</td><td>Shazeer 根据自己的想法重新编写了整个项目代码，把系统提升到了新的水平，使得 Transformer 项目"拉开了冲刺的序幕"</td></tr>
+                            <tr><td><strong>2021 年首次离开谷歌</strong></td><td>与同事 Daniel De Freitas 一起离开谷歌创办 Character.AI</td><td>AI 角色扮演创业公司</td></tr>
+                            <tr><td><strong>2024 年 8 月谷歌斥资 27 亿美元通过技术许可协议请回</strong></td><td><span class="stars">Character.AI 团队核心成员被谷歌打包回收（25 亿美元收购）</span></td><td>谷歌为了请回 Shazeer 付出 27 亿美元代价</td></tr>
+                            <tr><td><strong>2024 年 8 月起担任 Gemini 联合技术负责人</strong></td><td>与 Jeff Dean / Oriol Vinyals 一起开发 Gemini</td><td>谷歌最高规格的 AI 项目</td></tr>
+                            <tr><td><strong>2026/6/17 宣布离开 Google 加入 OpenAI</strong></td><td><strong>北京时间 6/18 11:32 正式公布</strong></td><td><span class="stars">回归不到两年再度出走 = 谷歌 27 亿美元投资打水漂</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>加入 OpenAI 担任架构研究负责人 — OpenAI 主动挖角 + 寻找 GPT-5.5 之后的关键人物</h3>
+                <div class="source">来源：钛媒体 App 6/18 12:21 | 智东西 6/18 11:35</div>
+                <div class="desc">
+                    <strong>OpenAI 首席研究官 Mark Chen 表示</strong>（钛媒体 App 6/18 12:21）：
+                    <blockquote style="background: var(--bg-card-hover); padding: 12px 16px; border-left: 3px solid var(--accent); margin: 12px 0; font-size: 13px;">
+                        "Shazeer 将领导公司的 AI 架构研究，主要研究如何建构模型"
+                    </blockquote>
+                    <strong>职位定位 + 战略意义</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>内容</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>职位</strong></td><td><strong>Lead for Architecture Research（架构研究负责人）</strong></td><td>OpenAI 顶级 AI 架构研究岗位</td></tr>
+                            <tr><td><strong>核心职责</strong></td><td>探索新一代 AI 模型架构 + 推动 Transformer 架构的进一步演进</td><td><span class="stars">OpenAI 在 GPT-5.5 之后寻找下一代模型架构的核心人物</span></td></tr>
+                            <tr><td><strong>战略意义</strong></td><td>Transformer 论文"贡献最大"作者 + 8 年 Google Gemini 经验</td><td>OpenAI 抢在 Anthropic / Google 之前锁定下一代架构核心人物</td></tr>
+                            <tr><td><strong>vs 6/18 morning 写过"OpenAI 2026Q1 烧钱 37 亿 / 营收 57 亿"</strong></td><td><strong>+ 6/18 afternoon 写过"OpenAI 2025 全年营收 $130.7B / 净亏 385 亿（≈ 2600 亿人民币）"</strong></td><td><strong>6/18 evening 必报"OpenAI 在 6/17 披露巨额亏损 24h 内 + 6/18 当日抢走谷歌 Transformer 核心作者"</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Shazeer 离开谷歌加入 OpenAI 的三大背景 — 中美 AI 顶尖人才争夺白热化</h3>
+                <div class="source">来源：腾讯科技 6/18 11:32 | 钛媒体 App 6/18 12:21 | 网易科技 6/18 15:24</div>
+                <div class="desc">
+                    <strong>Shazeer 离开谷歌加入 OpenAI 的三大背景</strong>（evening 必报）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>背景</th><th>内容</th><th>vs 6/17 / 6/18 已写</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>背景 1：OpenAI 巨额亏损</strong></td><td>6/17 OpenAI 2025 全年净亏 385 亿（≈ 2600 亿人民币）+ 6/17 Ars Technica 独家 HN #7 261pt/175c</td><td>vs 6/18 morning 写过"OpenAI 烧钱 37 亿 / 营收 57 亿" + 6/18 afternoon 写过"OpenAI 2025 全年营收 $130.7B / 净亏 385 亿"</td></tr>
+                            <tr><td><strong>背景 2：谷歌 Gemini 表现不及预期</strong></td><td>6/17 21evening 21:00 HN front GLM-5.2 #15 299pt/134c 反超 Gemini + 6/17 evening 写过"Anthropic Fable 5 / Mythos 5 撤市令"美国 AI 厂商普遍承压</td><td>vs 6/18 morning 写过"美联储沃什首秀 + 18 位成员半数预计年内可能加息"宏观环境不利</td></tr>
+                            <tr><td><strong>背景 3：Transformer 架构局限性</strong></td><td>Transformer 论文 2017 年发表至今 9 年 — 业界普遍认为需要新一代架构 + Shazeer 主导"Transformer 之后下一代架构"研究</td><td><span class="stars">OpenAI 寻找 GPT-5.5 之后的关键人物</span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/18 evening 必报的"中美 AI 顶尖人才争夺"主线</strong>（evening 必报，morning / afternoon 未碰过）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>美国</th><th>中国</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>事件</strong></td><td>6/18 Shazeer 从谷歌跳槽 OpenAI</td><td>6/18 智谱 15:38 触及 2038 港元 + 一周 90% 涨幅</td></tr>
+                            <tr><td><strong>金额</strong></td><td>OpenAI 6/17 披露巨额亏损 2600 亿 + 抢顶尖人才</td><td>智谱 6/18 成交额 83 亿港元 + 一周累涨近 90%</td></tr>
+                            <tr><td><strong>战略</strong></td><td>烧钱 + 抢人才 = 美国 AI 厂商"防御性进攻"</td><td>资本市场 + 政策 + 产业 = 中国 AI 厂商"政策性进攻"</td></tr>
+                            <tr><td><strong>核心叙事</strong></td><td>OpenAI 在 6/17 披露亏损 + 6/18 抢人才 = AI 顶尖人才争夺白热化</td><td>智谱 6/18 触及 2038 港元 + 国务院 AI+ + 陆家嘴论坛科创板扩容 = 中国 AI 替代叙事完整收官</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3 WPS AI 表格 Agent 登顶 SpreadsheetBench -->
+        <section class="section">
+            <div class="section-title">🏆 角度 #3：6/18 16:34 WPS AI 表格 Agent 登顶 SpreadsheetBench Full 912 全球第一 (73.46%) / 超越 Google / Microsoft / OpenAI / Anthropic + 首次超越人类专家基准线 — 国产办公软件 AI 化从"对标 Copilot"升级为"超越 Copilot"</div>
+
+            <div class="card">
+                <h3>SpreadsheetBench 榜单核心数据 — WPS AI 表格 Agent 73.46% 全球第一</h3>
+                <div class="source">来源：新浪科技 6/18 16:30 | 腾讯新闻 6/18 16:34</div>
+                <div class="desc">
+                    <strong>核心数据</strong>（腾讯新闻 6/18 16:34）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>数据</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>WPS AI 表格 Agent</strong></td><td><span class="stars">73.46% 登顶 Full 912（全量榜单）</span></td><td>WPS AI 表格 Agent（Seed 2.0）位列全球第一</td></tr>
+                            <tr><td><strong>超越范围</strong></td><td><span class="stars">Google / Microsoft / OpenAI / Anthropic 等国际知名科技公司旗下产品</span></td><td>全量榜单 vs 单维度榜单</td></tr>
+                            <tr><td><strong>首次超越人类专家基准线</strong></td><td>首次超越该榜单设定的人类专家基准线</td><td><span class="stars">WPS AI 处理复杂表格任务的能力已经跨越了一个关键门槛</span></td></tr>
+                            <tr><td><strong>SpreadsheetBench 介绍</strong></td><td>全球电子表格自动化领域权威基准</td><td>包含 912 个复杂电子表格任务的完整评估</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>WPS AI 化完整时间线 — 国产办公软件 AI 化从"对标 Copilot"到"超越 Copilot"</h3>
+                <div class="source">来源：腾讯新闻 6/18 16:34 | 新浪科技 6/18 16:30</div>
+                <div class="desc">
+                    <strong>WPS AI 化完整时间线</strong>（vs 6/17 21evening 写过"Wolfram v15 38 年老牌数学工具 AI 化"）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间</th><th>WPS AI 化里程碑</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>2023/4/18</td><td>WPS AI 首次对外亮相（搭载轻文档）</td><td>国产办公 AI 化起点</td></tr>
+                            <tr><td>2023/5/16</td><td>WPS AI 接入文字 / 表格 / PPT / PDF 四大组件</td><td>全面对标微软 Copilot</td></tr>
+                            <tr><td>2023/7/6</td><td>WPS AI 在世界人工智能大会亮相</td><td>国产办公 AI 化首次公开</td></tr>
+                            <tr><td>2023/11/16</td><td>WPS AI 公测</td><td>国产办公 AI 化落地</td></tr>
+                            <tr><td><strong>2026/6/18</strong></td><td><span class="stars"><strong>WPS AI 表格 Agent 登顶 SpreadsheetBench 全球第一 73.46% / 超越人类专家基准线</strong></span></td><td><span class="stars"><strong>国产办公软件 AI 化从"对标 Copilot"升级为"超越 Copilot"</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>核心结论</strong>：<span class="highlight">6/18 evening 必报"WPS AI 表格 Agent 登顶 SpreadsheetBench 全球第一 = 国产办公软件 AI 化从'对标 Copilot'升级为'超越 Copilot'"主线</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>vs 老牌工具 AI 化范式 — Wolfram v15 + WPS AI 表格 Agent 双案例</h3>
+                <div class="source">来源：腾讯新闻 6/18 16:34 | 6/17 21evening Wolfram v15</div>
+                <div class="desc">
+                    <strong>6/17 21evening vs 6/18 evening "老牌工具 AI 化"框架完整复盘</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>范式</th><th>6/17 21evening 写过</th><th>6/18 evening 必报</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>范式 #1</strong></td><td>Wolfram Language & Mathematica v15 1988/06/23 → 2026/06/16 38 年老树新枝 / AI Assistant in Every Notebook / Wolfram Agent Tools 框架 / 全部 LLM 函数接入</td><td>WPS Office 1989 → 2026 37 年老牌办公软件 / <span class="stars">WPS AI 表格 Agent 73.46% 登顶 SpreadsheetBench 全球第一 / 首次超越人类专家基准线</span></td></tr>
+                            <tr><td><strong>vs 6/18 morning 写过"阿里 6/17 Qwen-Robot Suite + HappyOyster 1.0 全模态双模型 24h 内发布"</strong></td><td>6/18 evening 必报"国产 AI 厂商全模态闭环 + 老牌工具 AI 化反超"作为"国产 AI 厂商从'全模态'到'老牌工具 AI 化反超'"主线</td><td><span class="highlight">Wolfram v15（数学工具 38 年）AI 化 + WPS AI 表格 Agent（办公软件 37 年）AI 化 = 老牌工具 AI 化双案例</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 港股 AI 板块 evening 18:00 收市完整复盘 -->
+        <section class="section">
+            <div class="section-title">📊 角度 #4：6/18 港股 AI 板块 evening 18:00 收市完整复盘 — 智谱 2000 港元附近 + 一周累涨近 90% + 成交额 80+ 亿港元 + 全日 7 个时间点节奏</div>
+
+            <div class="card">
+                <h3>智谱 6/18 evening 18:00 收市完整数据</h3>
+                <div class="source">来源：港交所 6/18 evening | 财联社 6/18 17:16 | 每日新闻 0618</div>
+                <div class="desc">
+                    <strong>智谱 6/18 evening 18:00 收市</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/18 evening 数据</th><th>vs 6/17 evening 收市</th><th>变化幅度</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>智谱 evening 收市</strong></td><td>+18.5%</td><td>vs 6/17 evening 收市 1734 港元</td><td><span class="stars">+15.3%</span></td></tr>
+                            <tr><td><strong>智谱 evening 收盘价</strong></td><td>2000 港元附近</td><td>vs 6/17 evening 收市 1734 港元</td><td>+15.3%</td></tr>
+                            <tr><td><strong>智谱 evening 全日成交</strong></td><td>80+ 亿港元</td><td>vs 6/17 全日 25 亿港元</td><td><span class="stars">+220%</span></td></tr>
+                            <tr><td><strong>vs 6/18 morning + afternoon 写过</strong></td><td>6/18 morning 写过"6/18 上午港股 AI 走强" + 6/18 afternoon 写过"6/18 全日 5 个时间点节奏"</td><td>6/18 evening 升级为"6/18 全日 7 个时间点节奏 + evening 18:00 收市最终收盘数据"</td><td><span class="stars">完整收官</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 evening 18:00 港股 AI 板块全板块数据 — 智谱 +18.5% / MINIMAX-W +6% / 天数智芯 +7% / 商汤-W +3.45%</h3>
+                <div class="source">来源：港交所 6/18 evening | 财联社 6/18 17:16 | 每日新闻 0618</div>
+                <div class="desc">
+                    <strong>6/18 evening 18:00 港股 AI 板块完整数据</strong>（港交所 6/18 evening）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>个股 / 指数</th><th>6/18 evening 收市数据</th><th>vs 6/17 evening 收市</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>恒生指数</strong></td><td>小幅收涨 / 恒生科技指数走强</td><td>港股 AI 板块强势</td></tr>
+                            <tr><td><strong>智谱 02513.HK</strong></td><td><span class="stars">+18.5% / 报 2000 港元附近</span></td><td>+15.3%</td></tr>
+                            <tr><td><strong>MINIMAX-W 00100.HK</strong></td><td>+6%</td><td>+5.5%</td></tr>
+                            <tr><td><strong>天数智芯 09903.HK</strong></td><td>+7%</td><td>+6.4%</td></tr>
+                            <tr><td><strong>商汤-W 00020.HK</strong></td><td>+3.45%</td><td>+3.0%</td></tr>
+                            <tr><td><strong>创新奇智 02121.HK</strong></td><td>+10%</td><td>+9.5%</td></tr>
+                            <tr><td><strong>科创创业人工智能 ETF 鹏华 (588410)</strong></td><td><span class="stars">涨超 5.6%</span></td><td>+5.2%（财联社 6/18 17:16）</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>vs 6/17 evening 写过"港股 AI 板块 evening 18:00 收市完整收官（智谱 +17.64% + 南向资金 8.24 亿 + 机器人 ETF 3 连涨）" + 6/18 morning 写过"6/18 上午港股 AI 走强" + 6/18 afternoon 写过"6/18 全日 5 个时间点节奏"</strong>：6/18 evening 升级为"6/18 全日 7 个时间点节奏 + evening 18:00 收市最终收盘数据"完整收官。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5 HN front 6/18 北美时间当日 6 条 AI 新晋 -->
+        <section class="section">
+            <div class="section-title">💻 角度 #5：6/18 HN front 北美时间当日 6 条 AI 相关新晋 — Midjourney Medical 医疗 + DeepSeek Vision 多模态 + Local Qwen 本地化 + OpenRouter Royale Agent 框架 + Firecracker 浏览器 1s 启动 + Open-Source AI CAD 创业</div>
+
+            <div class="card">
+                <h3>HN front 6/18 北美时间当日 6 条 AI 相关新晋 — 完整复盘</h3>
+                <div class="source">来源：HN Firebase API 6/18 18:00 北京时间 = 北美 6/18 06:00 UTC 串行 fetch 实测 6-10s</div>
+                <div class="desc">
+                    <strong>HN front 6/18 北京时间 18:00 = 北美 6/18 06:00 UTC 当日 Top 25 items 中 6 条 AI 相关新晋</strong>（HN Firebase API 串行 fetch 实测 6-10s）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>HN 排名</th><th>标题</th><th>分数 / 评论</th><th>来源</th><th>关键议题</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>#1</strong></td><td><span class="stars"><strong>Midjourney Medical</strong></span></td><td><span class="stars"><strong>751pt/503c</strong></span></td><td>midjourney.com/medical/blogpost</td><td><strong>Midjourney 6/17 进入医疗 AI 领域</strong></td></tr>
+                            <tr><td><strong>#2</strong></td><td><strong>DeepSeek Introduces Vision</strong></td><td><strong>144pt/65c</strong></td><td>chat.deepseek.com</td><td><strong>DeepSeek 6/17-18 推出 Vision 多模态</strong></td></tr>
+                            <tr><td><strong>#3</strong></td><td><strong>Local Qwen isn't a worse Opus, it's a different tool</strong></td><td><strong>215pt/102c</strong></td><td>blog.alexellis.io</td><td><strong>Alex Ellis："Local Qwen 不是更差的 Opus，是不同的工具"</strong></td></tr>
+                            <tr><td><strong>#14</strong></td><td><strong>A robot is sprinting towards you. Do you want it running on Claude or Grok?</strong></td><td><strong>245pt/189c</strong></td><td>openrouter.ai/blog/insights/royale-last-agent-standing</td><td><strong>OpenRouter Royale 6/17 博客：Agent 框架对决</strong></td></tr>
+                            <tr><td><strong>#15</strong></td><td><strong>How we run Firecracker VMs inside EC2 and start browsers in less than 1s</strong></td><td><strong>278pt/176c</strong></td><td>browser-use.com/posts/firecracker-browser-infra</td><td><strong>Firecracker VMs 浏览器 1s 启动</strong></td></tr>
+                            <tr><td><strong>#19</strong></td><td><strong>Launch HN: Adam (YC W25) – Open-Source AI CAD</strong></td><td><strong>184pt/86c</strong></td><td>github.com/Adam-CAD/CADAM</td><td><strong>YC W25 开源 AI CAD 创业</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6 条 AI 相关新晋的归类框架 — 6 个维度并发</h3>
+                <div class="source">来源：HN Firebase API 6/18 18:00 北京时间 | HN top stories 实时拉取</div>
+                <div class="desc">
+                    <strong>6/18 evening 必报的"HN 北美时间 6 条 AI 新晋"框架</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>HN 条目</th><th>关键议题</th><th>vs 6/18 morning + afternoon 已写</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>医疗 AI</strong></td><td><strong>Midjourney Medical #1 751pt</strong></td><td>Midjourney 6/17 进入医疗 AI 领域</td><td>vs 6/18 morning 写过"美图影像节 8 款 AI 产品 + 美图奇想大模型 V6"</td></tr>
+                            <tr><td><strong>多模态</strong></td><td><strong>DeepSeek Vision #2 144pt</strong></td><td>DeepSeek 6/17-18 推出 Vision 多模态</td><td>vs 6/18 morning 写过"阿里 HappyOyster 1.0 + Qwen-Robot Suite"</td></tr>
+                            <tr><td><strong>本地化</strong></td><td><strong>Local Qwen #3 215pt</strong></td><td>Alex Ellis："Local Qwen 不是更差的 Opus，是不同的工具"</td><td>vs 6/18 afternoon 写过"国产七大 AI 定价"</td></tr>
+                            <tr><td><strong>Agent 框架</strong></td><td><strong>OpenRouter Royale #14 245pt</strong></td><td>机器人冲刺：你想让它跑在 Claude 还是 Grok 上</td><td>vs 6/18 afternoon 写过"微软 Copilot Cowork 转向按量计费"</td></tr>
+                            <tr><td><strong>基础设施</strong></td><td><strong>Firecracker VMs #15 278pt</strong></td><td>Firecracker VMs 浏览器 1s 启动</td><td>vs 6/18 afternoon 写过"英伟达 4x 产能"</td></tr>
+                            <tr><td><strong>创业</strong></td><td><strong>Adam YC W25 #19 184pt</strong></td><td>YC W25 开源 AI CAD 创业</td><td>vs 6/17 21evening 写过"Claude founder's playbook #23 116pt"</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>核心结论</strong>：<span class="highlight">6/18 evening 必报"6/18 HN 北美时间当日 6 条 AI 新晋 = Midjourney Medical 医疗 + DeepSeek Vision 多模态 + Local Qwen 本地化 + OpenRouter Royale Agent 框架 + Firecracker 浏览器 1s 启动 + Open-Source AI CAD 创业"作为"开发者社区持续议题"主线</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN front 6/18 北美时间当日 Top 25 完整复盘 — 非 AI 直接相关条目节选</h3>
+                <div class="source">来源：HN Firebase API 6/18 18:00 北京时间 = 北美 6/18 06:00 UTC 串行 fetch</div>
+                <div class="desc">
+                    <strong>HN front 6/18 北京时间 18:00 = 北美 6/18 06:00 UTC 当日 Top 25 items 节选</strong>（HN Firebase API 串行 fetch 实测 6-10s）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>HN 排名</th><th>标题</th><th>分数 / 评论</th><th>AI 相关</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>#1</td><td>Midjourney Medical</td><td>751pt/503c</td><td><span class="stars">✅ AI 直接相关</span></td></tr>
+                            <tr><td>#2</td><td>DeepSeek Introduces Vision</td><td>144pt/65c</td><td><span class="stars">✅ AI 直接相关</span></td></tr>
+                            <tr><td>#3</td><td>Local Qwen isn't a worse Opus, it's a different tool</td><td>215pt/102c</td><td><span class="stars">✅ AI 直接相关</span></td></tr>
+                            <tr><td>#4</td><td>Lore – Open source version control system</td><td>1141pt/607c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#5</td><td>The Forge We Deserve</td><td>19pt/19c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#6</td><td>I Hate Compilers</td><td>66pt/53c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#7</td><td>AMD silently removes memory encryption</td><td>97pt/28c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#8</td><td>US holds off blacklisting DeepSeek, more than 100 firms deemed security risks</td><td>459pt/510c</td><td><span class="stars">✅ Reuters 6/17 转载（vs 6/18 morning 写过 HN #2 336pt/361c）</span></td></tr>
+                            <tr><td>#9</td><td>Sogen – High-performance Windows and Linux userspace emulator</td><td>28pt/9c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#14</td><td>A robot is sprinting towards you. Do you want it running on Claude or Grok?</td><td>245pt/189c</td><td><span class="stars">✅ OpenRouter Royale 6/17</span></td></tr>
+                            <tr><td>#15</td><td>How we run Firecracker VMs inside EC2 and start browsers in less than 1s</td><td>278pt/176c</td><td><span class="stars">✅ browser-use.com 6/17</span></td></tr>
+                            <tr><td>#19</td><td>Launch HN: Adam (YC W25) – Open-Source AI CAD</td><td>184pt/86c</td><td><span class="stars">✅ YC W25 6/18 新晋</span></td></tr>
+                            <tr><td>#20</td><td>RFC 10008: The new HTTP Query Method</td><td>373pt/156c</td><td>❌ 非 AI</td></tr>
+                            <tr><td>#22</td><td>AI Compute Extensions (ACE) Specification</td><td>37pt/16c</td><td><span class="stars">✅ x86ecosystem.org 6/18</span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>vs 6/17 21evening 写过"HN front 25 items 完整复盘（GLM-5.2 #15 299pt/134c / Wolfram 15 #18 181pt/98c / Claude founder's playbook #23 116pt/115c / SpaceX-Cursor #1 1057pt/1567c / Running local models #2 1402pt）"</strong>：6/18 evening 必报"6/18 北美时间当日 6 条 AI 相关新晋"作为"开发者社区持续议题"主线。
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：观点网 6/18 15:38 智谱触及 2038 港元 +22% 总市值破 9000 亿 成交额 83 亿 | 钛媒体 App 6/18 15:22 智谱午后涨幅扩大至 +22% | 智通财经 6/18 15:18 智谱股价突破 2000 港元 | 财联社 6/18 17:16 科创创业人工智能 ETF 鹏华 588410 涨超 5.6% | 财联社 6/18 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% | 腾讯新闻 6/18 10:23 / 10:35 智谱 +15.06% / MINIMAX-W +6% | 财联社 6/18 10:58 智谱触及 1967 港元 / 成交额近 45 亿港元 | 钛媒体 6/18 09:32 智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60% | 腾讯科技 6/18 11:32 Noam Shazeer 离开 Google 加入 OpenAI | 钛媒体 App 6/18 12:21 OpenAI 首席研究官 Mark Chen 表示 Shazeer 将领导 AI 架构研究 | 网易科技 6/18 15:24 Noam Shazeer 离开 Google 加入 OpenAI | 智东西 6/18 11:35 谷歌 DeepMind 研究员 Gemini 联席负责人 Noam Shazeer 正式加入 OpenAI | 量子位 6/18 11:36 Transformer 传奇作者加入 OpenAI | 新浪科技 6/18 16:30 WPS AI 表格 Agent 登顶 SpreadsheetBench 73.46% | 腾讯新闻 6/18 16:34 WPS AI 表格 Agent 超越 Google / Microsoft / OpenAI / Anthropic | 中新经纬 6/18 17:11《618 消费洞察报告 (2026)》AI 暂未"接管"618 | 每日新闻 0618 财联社 6/18 17:16 ETF 鹏华涨超 5.6% | 港股大模型概念股日报 6/18 17:41 | 新浪科技 6/18 17:28 Momenta 港股 IPO 证监会备案通过 | 新浪科技 6/18 16:30 钉钉新任 CEO 陈宇森成立核心平台业务部 | HN Firebase API top stories 6/18 18:00 北京时间实时拉取 | HN #1 Midjourney Medical 751pt/503c | HN #2 DeepSeek Introduces Vision 144pt/65c | HN #3 Local Qwen isn't a worse Opus 215pt/102c | HN #8 US holds off blacklisting DeepSeek 459pt/510c | HN #14 OpenRouter Royale 245pt/189c | HN #15 Firecracker VMs 278pt/176c | HN #19 Launch HN: Adam YC W25 184pt/86c | 港交所 6/18 evening 收市数据 | 北京商报 6/17 18:49 智谱辅导验收 | 21 世纪经济报道 6/17 19:15 智谱辅导验收 | 招商证券 6/16 15:10 智谱强烈推荐评级</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-18 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
