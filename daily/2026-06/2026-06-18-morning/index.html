@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-18 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-18 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月18日 09:00 发布（采集自6月17日 22:00 ~ 6/18 09:00 北京时间，北美 6/17 上午 ~ 6/17 下午）</p>
+            <div class="meta">
+                <span class="tag tag-policy">沃什首秀加息</span>
+                <span class="tag tag-capital">智谱 IPO 辅导</span>
+                <span class="tag tag-product">阿里全模态双发</span>
+                <span class="tag tag-trend">国务院 AI+ 行动</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">3.5-3.75%</div>
+                <div class="label">美联储 6/17 议息会议维持利率 + 沃什首秀 + 18 位半数预计年内可能加息</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">150 亿</div>
+                <div class="label">智谱科创板 IPO 辅导状态变更为"辅导验收" + 拟募资 150 亿 + A+H 双重通道</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">2 模型</div>
+                <div class="label">阿里 24h 内连发 Qwen-Robot Suite + HappyOyster 1.0 世界模型</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">AI+ 行动</div>
+                <div class="label">国务院 6/17 印发"十五五"规划"AI+ 行动"+ 强化人机协同</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">$37 亿</div>
+                <div class="label">OpenAI 2026Q1 烧钱 37 亿 / 营收 57 亿 / Ars Technica 6/17 独家披露</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">100+ 家</div>
+                <div class="label">Reuters 6/17 独家：美国暂缓拉黑 DeepSeek / 100+ 家中企进安全清单</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">+10%</div>
+                <div class="label">6/18 上午港股 AI 概念走强（创新奇智 +10% / 商汤 / 联想 / 美图）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">8 款</div>
+                <div class="label">2026 美图影像节 8 款 AI 新品 + 奇想大模型 V6 发布（6/17 厦门）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚠ 今日核心警报：6/18 02:15 美联储 6/17 议息会议维持利率 3.5-3.75% 不变 + 沃什（Kevin Warsh）就任主席首秀 + 18 位成员半数预计年内可能加息 + 鹰派超预期 + 6/17 17:14 智谱科创板 IPO 辅导状态变更为"辅导验收"（拟募资 150 亿 / 1/8 港股已上市 / 国泰海通证券辅导）+ 6/17 22:02 阿里发布世界模型 HappyOyster 1.0（ATH 创新事业部 / 一句话生成可互动 3D 数字世界 / 漫游+导演+剧情回溯四大功能 / 6/16 Qwen-Robot Suite Manip/Nav/World 三模型 6/17 上午发布后 24h 内阿里连发"具身智能 + 世界模型"双模型 = 国产 AI 厂商全模态闭环）+ 6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+"行动 + 6/17 OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿（Ars Technica 6/17 独家 HN #7 261pt/175c）+ 6/17 18:44 2026 美图影像节 8 款 AI 产品 + 美图奇想大模型 V6 发布（Picchi/Artflo/MVLAND/MeituHub + 站酷/美图设计室/开拍/RoboNeo 升级）+ 6/17 Reuters 独家"美国暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"（HN #2 336pt/361c）+ 6/18 上午港股 AI 概念走强（创新奇智 +10% / 商汤 / 联想集团 / 美图公司多股上涨）</h3>
+            <p>过去 11 小时（6/17 22:00 ~ 6/18 09:00 北京时间），AI 行业在 6 个新维度同时放出压倒性信号：<strong>6/18 02:15 美联储 6/17 议息会议维持利率 3.5-3.75% 不变 + 沃什就任主席首秀 + 鹰派超预期</strong> —— <span class="highlight">美联储 6/17 议息会议结束 6/18 凌晨 02:00 美联储宣布维持利率不变（证券时报 6/18 02:15 / 财联社 6/18 02:15）</span>：① <strong>联邦基金利率目标区间维持在 3.5-3.75%</strong> ② <strong>今年连续第四次维持利率不变</strong> ③ <strong>沃什（Kevin Warsh）就任美联储主席以来首次议息会议</strong> ④ <strong>12 票赞成 / 0 票反对</strong> ⑤ <strong>鹰派超预期</strong>：沃什没提交点阵图预测 / 18 位成员中一半预计年内可能加息 / SEP 上调今年通胀预测 / 下调经济增速预测和失业率预测 / 5 个工作组改革计划（通胀/就业/金融稳定/国际协调/监管改革）= <span class="highlight">"加息 + 通胀"双压 vs 钛媒体 6/16 12:34"AI 该算 ROI 了"主题宏观印证</span>。<strong>6/17 17:14 智谱科创板 IPO 辅导状态变更为"辅导验收"</strong> —— 6/17 17:14 证监会网站披露（北京商报 6/17 18:49 / 南都 N 视频 6/17 18:33 / 21 世纪经济报道 6/17 19:15 / 金融界 6/17 17:30）—— 辅导券商为国泰海通证券 —— 6/1 智谱董事会决议建议向中国相关监管机构申请配发及发行 A 股 —— <strong>6/1 公告拟募资 150 亿元</strong>（21 财经）—— <strong>6/1 公告拟发行 909.88 万股至 3876.9 万股</strong>（占发行完成后总股本 2% 至 8% / 若超额配股权获悉数行使，发行数量将在 1046.36 万股至 4458.43 万股之间）—— <strong>1/8 港交所上市招股价 116.2 港元</strong> —— 6/17 evening 写过"陆家嘴论坛 6/17 上午 证监会主席吴清宣布扩大科创板第五套标准适用范围至人工智能领域" + "上交所 6/17 14:36 发布配套审核指引《科创板第五套上市标准适用指引》" = <span class="highlight">6/18 morning 必报"智谱 6/17 17:14 辅导验收 = 6/17 evening 科创板第五套标准扩容政策落地的第一个具体案例"</span>。</p>
+            <p><strong>6/17 22:02 阿里发布世界模型 HappyOyster 1.0（快乐生蚝 1.0）+ ATH 创新事业部 + 6/16 Qwen-Robot Suite 三模型</strong> —— 6/17 22:02 阿里云正式发布交互式开放式世界模型 HappyOyster 1.0（观点网 6/17 23:23 / 上海证券报 6/17 21:23 / 雷锋网 6/17 21:17 / 太平洋科技 6/17 23:02）—— 由阿里 ATH 创新事业部研发（与 HappyHorse 同团队）—— <strong>核心四大功能</strong>：① 世界探索（Adventure / 漫游）② 实时导演（Directing）③ 剧情回溯 ④ 剧情分支操控 —— <strong>基于原生多模态架构</strong> —— 支持文本 / 图片 / 音视频多模态输入与联合生成 —— 应用场景：交互式游戏 / 虚拟陪伴 / 互动短剧 / 文旅体验 / 直播 —— 官网已开放用户注册 https://www.happyoyster.cn —— vs 6/17 afternoon 写过"Qwen-Robot Suite Manip VLA + Nav VLN + World 世界模型 + 38,100 小时开源语料库"6/16 发布 6/17 10:35 公众号详细披露 = <span class="highlight">6/16-6/17 阿里 24h 内世界模型双发 = 国产 AI 厂商全模态闭环（具身智能 + 虚拟世界）</span>。<strong>6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+" 行动 + 6/18 03:08 未来 5 年拓宽新兴领域 AI 就业新空间</strong> —— 6/17 17:07 财联社电"国务院印发《实施就业优先战略'十五五'规划》"（财联社 6/17 17:07 / 财联社 6/17 17:08 / 国务院 6/17 18:53 全文发布 / 新华社 6/17 21:13 新闻联播 / 6/18 03:08 未来 5 年就业优先）—— <strong>国发〔2026〕16 号文件</strong> —— <strong>9 方面重点任务</strong> —— <strong>"AI+" 行动原文</strong>："深入实施'人工智能+'行动，推动形成更多人工智能应用场景创新、技术成果转化等创业项目，探索人机协同的新型工作形态，强化人工智能的就业创造效应" = <span class="highlight">6/18 morning 必报"国家 AI 战略 + 就业协同"主线</span>。</p>
+            <p class="last">本早报主动差异化 6/17 4 时段（morning 写过腾讯云 6/17 09:04 Fable 5/Mythos 5 5 步撤市流程 + Anthropic 6/1 S-1 IPO 16 天复盘（5/28 $65B Series H / 估值 $965B / Q2 营收 $10.9B / 5 月 ARR $47B / 6/12 撤市令 + 6/15 staff 赴白宫）/ NVIDIA 6/15-16 $25B 发债"算 ROI"主题 / HN front 6/17 6 条 / 港交所科技 100 指数 6/8 公告 6/15 生效 / afternoon 写过 Qwen-Robot Suite 三模型 / HN 24h 7 条 / 国产 AI 双雄分叉 / 国产 6 周超美 / Opus 4.8 实战数据 / evening 写过陆家嘴论坛科创板第五套标准扩容 + 智谱接棒 3.0 + FF 机器人 + AIIA 智能体治理 + 港股 AI 板块 evening 收市 + 21evening 写过 GLM-5.2 Artificial Analysis 第一名 51 分 + WAIC 2026 倒计时 30 天发布会 + 6/17 18:13 arXiv 审计缺口 + Wolfram v15 + 6/17 21:00 HN front 25 items 完整复盘），聚焦<strong>5 大新角度</strong>：① 6/18 02:15 美联储 6/17 议息会议维持利率 3.5-3.75% + 沃什就任主席首秀 + 18 位成员半数预计年内可能加息 ② 6/17 17:14 智谱科创板 IPO 辅导验收（拟募资 150 亿）+ 6/1 董事会决议 A 股科创板 + 1/8 港交所已上市 ③ 6/17 22:02 阿里发布世界模型 HappyOyster 1.0 + ATH 创新事业部 + 6/16 Qwen-Robot Suite 三模型 24h 内世界模型双发 ④ 6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+" 行动 + 9 方面重点任务 + 国发〔2026〕16 号 ⑤ 6/17 OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿（Ars Technica 6/17 独家 HN #7 261pt/175c）+ 6/17 Reuters 独家"美国暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"（HN #2 336pt/361c）+ 6/18 上午港股 AI 概念走强（创新奇智 +10% / 商汤 / 联想 / 美图）。</p>
+        </div>
+
+        <!-- 角度 #1：沃什首秀 -->
+        <section class="section">
+            <div class="section-title">🏛 角度 #1：6/18 02:15 美联储 6/17 议息会议维持利率 3.5-3.75% 不变 + 沃什就任主席首秀 + 鹰派超预期 + 5 个工作组改革计划 — 美国宏观政策与 AI 资本环境对位</div>
+
+            <div class="card">
+                <h3>沃什就任美联储主席以来首次议息会议 — 12 票赞成 0 票反对</h3>
+                <div class="source">来源：证券时报 6/18 02:15 | 财联社 6/18 02:15 | 沃什首秀 6/18 07:12 | 中信证券 6/18 08:29</div>
+                <div class="desc">
+                    <strong>6/17 议息会议核心结果</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>联邦基金利率目标区间维持在 3.5% 至 3.75%</strong></li>
+                        <li><strong>今年连续第四次维持利率不变</strong>（2026/1 / 2026/3 / 2026/4 / 6/17）</li>
+                        <li><strong>12 票赞成 / 0 票反对</strong></li>
+                        <li><strong>符合市场预期</strong></li>
+                    </ul>
+                    <strong>沃什（Kevin Warsh）就任美联储主席</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li>特朗普提名 2026 年 4 月就任</li>
+                        <li><span class="highlight">本次议息会议是其就任主席以来首次</span></li>
+                        <li><strong>政策声明篇幅明显缩短</strong>（市场观察）</li>
+                    </ul>
+                    <strong>6/18 morning 必报</strong>：沃什首秀"维持不变"基本符合市场预期，但<strong>鹰派超出市场预期</strong>是必报的"超预期"信号。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>鹰派超出市场预期 — 18 位成员中一半预计年内可能加息 + SEP 上调通胀预测</h3>
+                <div class="source">来源：中信证券 6/18 08:29 研报 | 证券之星 6/18 08:46</div>
+                <div class="desc">
+                    <strong>中信证券 6/18 08:29 研报要点</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">关键点</td>
+                            <td style="padding: 6px; color: var(--text-muted);">内容</td>
+                            <td style="padding: 6px; color: var(--text-muted);">市场含义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>沃什没提交点阵图预测</strong></td><td style="padding: 6px;">强调"带橡皮擦"的情景判断</td><td style="padding: 6px;">弱化点阵图对政策路径承诺的硬约束</td></tr>
+                        <tr><td style="padding: 6px;"><strong>18 位成员半数预计年内可能加息</strong></td><td style="padding: 6px;">SEP 上调今年通胀预测</td><td style="padding: 6px;"><span class="highlight">鹰派超出市场预期</span></td></tr>
+                        <tr><td style="padding: 6px;">下调经济增速预测</td><td style="padding: 6px;">增长放缓但通胀上行</td><td style="padding: 6px;">"滞胀"信号</td></tr>
+                        <tr><td style="padding: 6px;">下调失业率预测</td><td style="padding: 6px;">劳动力市场仍强</td><td style="padding: 6px;">暂缓降息</td></tr>
+                        <tr><td style="padding: 6px;"><strong>5 个工作组改革计划</strong></td><td style="padding: 6px;">沃什宣布设立</td><td style="padding: 6px;">通胀/就业/金融稳定/国际协调/监管改革</td></tr>
+                    </table>
+                    <strong>美联储官员对 2026 年联邦基金利率预测的中值从 3 月的 3.4% 提高至 3.8%</strong>（证券之星 6/18 08:46）—— <span class="highlight">意味着美联储官员预期今年会实施加息操作</span>（vs 6/14 之前市场普遍预期"年内降息一次"）。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI 资本环境含义 — "加息 + 通胀"双压 vs 6/16 afternoon 钛媒体"AI 该算 ROI 了"主题宏观印证</h3>
+                <div class="source">来源：综合 6/16 钛媒体 6/16 12:34 + 6/17 evening 国产 AI 替代 + 6/18 morning 沃什首秀</div>
+                <div class="desc">
+                    <strong>6/18 morning 必报的"美国宏观政策 + AI 资本"对位</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>AI 算力资本支出</strong>：Anthropic 5 月 ARR $47B / 5/28 Series H $65B / OpenAI 2026 计算支出 500 亿美元 / NVIDIA 6/15-16 $25B 发债 / Meta 35.6 亿日活 / Microsoft 4/2 一次性</li>
+                        <li>在 <strong>"加息" + "通胀"</strong> 双压下必须更<strong>"算 ROI"</strong></li>
+                        <li><span class="highlight">6/16 12:34 钛媒体"AI 该算 ROI 了"主题在 6/18 早上沃什首秀后获得"宏观政策印证"</span> = 算力 + 资本 主线新角度</li>
+                    </ul>
+                    <strong>6/18 morning 必报</strong>：沃什鹰派 = AI 头部公司必须用长期资本工具（发债）+ 提高商业化效率（Anthropic 5 月 ARR $47B）+ 上市（Anthropic 6/1 S-1 智谱 6/17 辅导验收）来对冲宏观收紧。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>美股 6/17 收市 — 纳指 -1.15% / 道指 +0.64% / 半导体板块走强</h3>
+                <div class="source">来源：搜狐 6/17 23:02 财经汇总 | 6/18 上午港股 AI 概念走强</div>
+                <div class="desc">
+                    <strong>6/17 美股 6/17 22:00 收市</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>纳指 -1.15%</strong>（前期高位回调 / 沃什鹰派超预期）</li>
+                        <li><strong>道指 +0.64%</strong>（传统板块防御性走强）</li>
+                        <li><strong>半导体板块走强</strong>（受 AI 财报预期提振 / 受 6/17 OpenAI 烧钱 37 亿但仍加码算力消息提振）</li>
+                    </ul>
+                    <strong>vs 6/16 evening 写过"NVIDIA $25B 发债 + 摩根士丹利 $570B 预测"</strong> + <strong>6/17 afternoon 写过"国产 AI 大模型周调用量 6 周超美"</strong>：6/18 morning 必报"美国 AI 算力资本市场在 6/17 沃什鹰派后从'成长'切换到'防御'，但中国 AI 算力（智谱 6/17 17:14 辅导验收 + 阿里 6/17 22:02 HappyOyster 1.0）继续走强" = <span class="highlight">"中美 AI 资本市场在 6/17 沃什首秀后首次出现明显分化"</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2：智谱 IPO -->
+        <section class="section">
+            <div class="section-title">💰 角度 #2：6/17 17:14 智谱科创板 IPO 辅导验收 + 6/1 董事会决议 A 股科创板 + 拟募资 150 亿 + 1/8 港交所上市 — 国产大模型龙头 A+H 双重通道</div>
+
+            <div class="card">
+                <h3>智谱 IPO 辅导验收核心时间线（1/8 港股上市 → 4/15 启动 A 股辅导 → 6/1 董事会决议 → 6/17 辅导验收）</h3>
+                <div class="source">来源：北京商报 6/17 18:49 | 南都 N 视频 6/17 18:33 | 21 世纪经济报道 6/17 19:15 | 金融界 6/17 17:30</div>
+                <div class="desc">
+                    <strong>智谱 IPO 关键时间线</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">时间</td>
+                            <td style="padding: 6px; color: var(--text-muted);">事件</td>
+                            <td style="padding: 6px; color: var(--text-muted);">战略意义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>2025/1/8</strong></td><td style="padding: 6px;">智谱在港交所上市，招股价 116.2 港元</td><td style="padding: 6px;"><strong>H 股先上市</strong></td></tr>
+                        <tr><td style="padding: 6px;">2025/1</td><td style="padding: 6px;">北京证监局完成上市辅导备案</td><td style="padding: 6px;"><strong>启动 A 股 IPO 辅导</strong></td></tr>
+                        <tr><td style="padding: 6px;">2025/4/15</td><td style="padding: 6px;">智谱 AI 启动上市辅导</td><td style="padding: 6px;">预计最快 2026 登陆 A 股</td></tr>
+                        <tr><td style="padding: 6px;"><strong>2026/6/1</strong></td><td style="padding: 6px;">智谱董事会决议向中国相关监管机构申请配发及发行 A 股</td><td style="padding: 6px;"><strong>A 股科创板上市正式决议</strong></td></tr>
+                        <tr><td style="padding: 6px;">2026/6/17 上午</td><td style="padding: 6px;">陆家嘴论坛 证监会主席吴清宣布扩大科创板第五套标准适用范围至人工智能领域</td><td style="padding: 6px;"><strong>政策窗口打开</strong></td></tr>
+                        <tr><td style="padding: 6px;">2026/6/17 14:36</td><td style="padding: 6px;">上交所发布配套审核指引《科创板第五套上市标准适用指引》</td><td style="padding: 6px;"><strong>配套审核指引落地</strong></td></tr>
+                        <tr><td style="padding: 6px;"><strong>2026/6/17 17:14</strong></td><td style="padding: 6px;">智谱科创板 IPO 辅导状态变更为"辅导验收"</td><td style="padding: 6px;"><span class="highlight">辅导工作完成报告正式发布</span></td></tr>
+                        <tr><td style="padding: 6px;">拟募资金额</td><td style="padding: 6px;"><strong>150 亿元</strong></td><td style="padding: 6px;">21 财经数据</td></tr>
+                        <tr><td style="padding: 6px;">拟发行规模</td><td style="padding: 6px;">909.88 万股至 3876.9 万股（占发行完成后总股本 2% 至 8%）</td><td style="padding: 6px;">21 财经数据</td></tr>
+                        <tr><td style="padding: 6px;">若超额配股权获悉数行使</td><td style="padding: 6px;">1046.36 万股至 4458.43 万股</td><td style="padding: 6px;">21 财经数据</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>辅导验收核心内容 — 智谱成为"科创板第五套标准扩容 AI 大模型"政策第一个具体落地案例</h3>
+                <div class="source">来源：北京商报 6/17 18:49 | 6/17 evening 写过科创板第五套标准扩容</div>
+                <div class="desc">
+                    <strong>辅导券商国泰海通证券发布关于北京智谱华章科技股份有限公司首次公开发行股票并上市辅导工作完成报告</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        辅导对象的相关人员已<strong>"全面掌握发行上市、规范运作等方面的法律法规和规则、知悉信息披露和履行承诺等方面的责任和义务"</strong>
+                    </blockquote>
+                    <strong>6/17 evening 写过</strong>"陆家嘴论坛 6/17 上午 证监会主席吴清 6/17 宣布扩大科创板第五套标准适用范围至人工智能领域" + "上交所 6/17 14:36 发布配套审核指引《科创板第五套上市标准适用指引》" + "梁文锋们要来了"<br>
+                    <span class="highlight">6/18 morning 必报"智谱 6/17 17:14 辅导验收 = 6/17 evening 科创板第五套标准扩容政策落地的第一个具体案例" = 政策 + 资本双线对"国产大模型龙头 A+H 双重通道"的全面认账</span>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li>6/17 evening 写过"政策（科创板第五套标准扩容）"</li>
+                        <li>6/17 evening 写过"资本（智谱 +17.64% / 南向资金 8.24 亿）"</li>
+                        <li>6/18 morning 必报"具体落地（智谱 6/17 17:14 辅导验收 = 政策落地的第一个具体案例）"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>智谱 GLM-5.2 + 6/17 收盘 1660 港元 / 市值 7401 亿港元 — "接棒 4.0" 政策落地阶段</h3>
+                <div class="source">来源：南都 N 视频 6/17 18:33 | 观点网 6/17 15:53 | 6/17 evening 写过</div>
+                <div class="desc">
+                    <strong>智谱 6/17 收盘数据</strong>（南都 N 视频 6/17 18:33）：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>智谱（02513.HK）6/17 收盘报 1660.00 港元 / 股</strong></li>
+                        <li><strong>市值 7401.00 亿港元</strong></li>
+                        <li>vs 6/17 盘中一度 +17.64% 报 1734 港元（观点网 6/17 15:53 evening 已写）</li>
+                    </ul>
+                    <strong>vs 6/17 evening 写过"接棒 3.0 完整收官" + 21evening 写过"GLM-5.2 冲上 Artificial Analysis 第一名 51 分"</strong>：6/18 morning 必报<strong>"接棒 4.0 政策落地阶段"</strong>：
+                    <ol style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li>6/15 资本市场层接棒 1.0</li>
+                        <li>6/16 媒体叙事层接棒 2.0</li>
+                        <li>6/17 技术自主层接棒 3.0</li>
+                        <li><strong>6/17 17:14 政策落地层接棒 4.0</strong></li>
+                    </ol>
+                    = <span class="highlight">"智谱接棒 4.0" = morning 必报"国产大模型龙头政策落地阶段"主线</span>。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #3：阿里全模态 -->
+        <section class="section">
+            <div class="section-title">🤖 角度 #3：6/17 22:02 阿里发布世界模型 HappyOyster 1.0 + ATH 创新事业部 + 6/16 Qwen-Robot Suite 三模型 — 阿里 24h 内"具身智能 + 世界模型"双模型发布</div>
+
+            <div class="card">
+                <h3>HappyOyster 1.0 核心能力 — 四大功能 + 原生多模态架构</h3>
+                <div class="source">来源：观点网 6/17 23:23 | 上海证券报 6/17 21:23 | 雷锋网 6/17 21:17 | 太平洋科技 6/17 23:02</div>
+                <div class="desc">
+                    <strong>核心能力四大功能</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">功能</td>
+                            <td style="padding: 6px; color: var(--text-muted);">描述</td>
+                            <td style="padding: 6px; color: var(--text-muted);">战略意义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>世界探索（Adventure / 漫游）</strong></td><td style="padding: 6px;">一句话生成完整可演可探索的 3D 数字世界</td><td style="padding: 6px;">用户可主动探索世界</td></tr>
+                        <tr><td style="padding: 6px;"><strong>实时导演（Directing）</strong></td><td style="padding: 6px;">持续输入指令（让天空变暗 / 在左边增加森林）模型即时响应</td><td style="padding: 6px;">动态调整世界</td></tr>
+                        <tr><td style="padding: 6px;"><strong>剧情回溯</strong></td><td style="padding: 6px;">可"回溯"剧情</td><td style="padding: 6px;">时间线操控</td></tr>
+                        <tr><td style="padding: 6px;"><strong>剧情分支</strong></td><td style="padding: 6px;">"攻击" / "跳跃" / 剧情分支操控</td><td style="padding: 6px;">用户可影响剧情</td></tr>
+                    </table>
+                    <strong>技术架构</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>基于原生多模态架构</strong></li>
+                        <li><strong>支持文本 / 图片 / 音视频多模态输入与联合生成</strong></li>
+                        <li><strong>深度学习物理世界状态转移规律</strong></li>
+                        <li><strong>主动推演从动作到反馈的因果链</strong></li>
+                        <li><strong>保持人物和环境的长程一致性</strong></li>
+                    </ul>
+                    <strong>应用场景</strong>：交互式游戏 / 虚拟陪伴 / 互动短剧 / 文旅体验 / 直播（<strong>vs Qwen-Robot Suite Manip VLA + Nav VLN = 具身智能 / 物理世界</strong>）<br>
+                    <strong>官网</strong> https://www.happyoyster.cn （已开放用户注册体验）
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>阿里 ATH 创新事业部 — 6/16-6/17 24h 内连发两个"世界模型"层产品</h3>
+                <div class="source">来源：观点网 6/17 23:23 | 太平洋科技 6/17 23:02 | 6/17 afternoon 写过 Qwen-Robot Suite 三模型</div>
+                <div class="desc">
+                    <strong>阿里 ATH 创新事业部</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>HappyOyster 1.0 = 世界模型方向</strong>（ATH 创新事业部）</li>
+                        <li><strong>HappyHorse 1.0 = 视频生成模型方向</strong>（ATH 创新事业部）</li>
+                        <li><strong>Qwen-Robot Suite = 具身智能 / 物理世界</strong>（阿里 Qwen 团队，6/16 发布 6/17 10:35 公众号详细披露）</li>
+                    </ul>
+                    <strong>vs 6/17 afternoon 写过"Qwen-Robot Suite Manip VLA + Nav VLN + World 世界模型 + 38,100 小时开源语料库"</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">模型</td>
+                            <td style="padding: 6px; color: var(--text-muted);">团队</td>
+                            <td style="padding: 6px; color: var(--text-muted);">方向</td>
+                            <td style="padding: 6px; color: var(--text-muted);">发布时间</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>Qwen-Robot World</strong></td><td style="padding: 6px;">Qwen 团队</td><td style="padding: 6px;">具身智能 + 物理世界</td><td style="padding: 6px;">6/16 发布 / 6/17 10:35 公众号详细</td></tr>
+                        <tr><td style="padding: 6px;"><strong>HappyOyster 1.0</strong></td><td style="padding: 6px;">ATH 创新事业部</td><td style="padding: 6px;">虚拟世界 / 游戏 / 短剧 / 文旅 / 直播</td><td style="padding: 6px;">6/17 22:02</td></tr>
+                    </table>
+                    <strong>6/16-6/17 24h 内阿里在"世界模型"层连发两个产品</strong>（Qwen-Robot World 6/16 + HappyOyster 1.0 6/17 22:02）= <span class="highlight">"阿里 24h 内世界模型双发" = 国产 AI 厂商全模态闭环（具身智能 + 虚拟世界）"主线</span>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 上午港股阿里股价反应 — vs 6/17 evening 写过"阿里港股盘中 +3% 即时反应 Qwen-Robot"</h3>
+                <div class="source">来源：界面快讯 6/18 上午 | 6/17 evening 写过阿里港股反应 | 6/17 evening 智谱接棒 3.0</div>
+                <div class="desc">
+                    <strong>6/18 上午港股 AI 概念走强</strong>（界面快讯 6/18 / 6/18 上午）：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>创新奇智涨近 10%</strong></li>
+                        <li><strong>商汤、联想集团、美图公司等多股上涨</strong></li>
+                        <li>阿里具体涨幅待 morning 时段确认（vs 6/17 evening 写过"阿里港股盘中 +3% 即时反应 Qwen-Robot" + 6/17 22:02 HappyOyster 1.0 后港股反应待 morning 时段确认）</li>
+                    </ul>
+                    <strong>vs 6/17 evening 写过"智谱接棒 3.0 完整收官 + 港股通南向资金 6/16 净买入 8.24 亿" + 6/17 21evening 写过"GLM-5.2 Artificial Analysis 第一名 51 分"</strong>：6/18 morning 必报"智谱（科创板 IPO 辅导验收）+ 阿里（HappyOyster 1.0）= 国产大模型龙头 + 互联网巨头在 6/17 当日同步发模型"角度。
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4：国务院 AI+ 行动 -->
+        <section class="section">
+            <div class="section-title">🇨🇳 角度 #4：6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+" 行动 + 6/18 03:08 未来 5 年拓宽新兴领域 AI 就业新空间 — 国家 AI 战略 + 就业协同</div>
+
+            <div class="card">
+                <h3>国务院 6/17 印发《实施就业优先战略"十五五"规划》核心内容</h3>
+                <div class="source">来源：财联社 6/17 17:07 | 财联社 6/17 17:08 | 国务院 6/17 18:53 全文 | 新华社 6/17 21:13 新闻联播 | 6/18 03:08 未来 5 年就业优先</div>
+                <div class="desc">
+                    <strong>国发〔2026〕16 号文件</strong>
+                    <strong>9 方面重点任务</strong>：
+                    <ol style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>强化宏观调控就业优先导向</strong>（实施稳岗扩容提质行动）</li>
+                        <li><strong>加强产业和就业协同</strong></li>
+                        <li><strong>促进各类重点群体就业</strong></li>
+                        <li><strong>完善劳动者权益保障制度</strong></li>
+                        <li><strong>加强就业公共服务体系建设</strong></li>
+                        <li><strong>加强职业教育和培训</strong></li>
+                        <li><strong>加强国际合作</strong></li>
+                        <li><strong>加强组织实施</strong></li>
+                        <li><strong>加强党的领导</strong></li>
+                    </ol>
+                    <strong>核心内容 — 适应 AI 发展促进就业创业</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        "强化宏观调控就业优先导向，增强宏观政策就业协同性，<strong>实施稳岗扩容提质行动，适应人工智能发展促进就业创业</strong>"
+                    </blockquote>
+                    <strong>"AI+" 行动原文</strong>：
+                    <blockquote style="margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent-orange); background: var(--bg-card-hover);">
+                        "深入实施'<strong>人工智能+</strong>'行动，推动形成更多人工智能应用场景创新、技术成果转化等创业项目，<strong>探索人机协同的新型工作形态，强化人工智能的就业创造效应</strong>" / "推动人工智能赋能就业政策和就业服务" / "积极用好人工智能发展红利，更好保障就业和改善民生"
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>vs 6/17 evening 写过"陆家嘴论坛 证监会主席吴清 扩大科创板第五套标准适用范围至人工智能领域" — 国务院 + 证监会 + 上交所"三级联动"</h3>
+                <div class="source">来源：财联社 6/17 17:07 + 6/17 evening 陆家嘴论坛 | 上交所 6/17 14:36 | 6/18 morning 智谱 6/17 17:14 辅导验收</div>
+                <div class="desc">
+                    <strong>6/17 morning / afternoon / evening / 21evening 完全没碰过"国务院 AI+ 行动"</strong>（morning 写过"美方 Anthropic 撤市令 / 国产 AI 替代" / afternoon 写过"国产双雄分叉" / evening 写过"陆家嘴论坛 + 智谱接棒 3.0 + FF 机器人" / 21evening 写过"GLM-5.2 全球冠军 + WAIC 倒计时"）<br><br>
+                    <strong>6/18 morning 必报的"国家 AI 战略 + 就业协同"主线</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>国务院层面</strong>：6/17 17:07 印发《实施就业优先战略"十五五"规划》"AI+"行动</li>
+                        <li><strong>证监会层面</strong>：6/17 上午 陆家嘴论坛 证监会主席吴清宣布扩大科创板第五套标准适用范围至人工智能领域</li>
+                        <li><strong>上交所层面</strong>：6/17 14:36 发布配套审核指引《科创板第五套上市标准适用指引》</li>
+                    </ul>
+                    = <span class="highlight">6/17 当日"国务院 + 证监会 + 上交所"三级联动 = "AI 大模型国家战略"完整收官</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"AI+ 行动" + 6/17 14:36 上交所"梁文锋们要来了" + 6/17 17:14 智谱辅导验收 = "梁文锋们" 政策 + 资本双线"来了"</h3>
+                <div class="source">来源：财联社 6/17 17:07 + 6/17 14:36 上交所 | 北京商报 6/17 18:49 智谱</div>
+                <div class="desc">
+                    <strong>"梁文锋们要来了"标题延伸</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>政策线</strong>：6/17 上午 证监会主席吴清宣布扩大科创板第五套标准 / 6/17 17:07 国务院"AI+"行动 / 6/17 14:36 上交所审核指引 = "梁文锋们"政策来了</li>
+                        <li><strong>资本线</strong>：6/17 17:14 智谱科创板 IPO 辅导验收 = 第一个"梁文锋"（智谱）资本端来了</li>
+                        <li><strong>6/18 morning 必报"政策 + 资本双线对'梁文锋们'的全面认账"主线</strong> —— <strong>6/17 evening 已写"政策"部分 + 6/18 morning 必报"资本落地"部分</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #5：OpenAI/Reuters/港股 -->
+        <section class="section">
+            <div class="section-title">💸 角度 #5：6/17 OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿 + Ars Technica 6/17 独家 + 6/17 Reuters"美国暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险" + 6/18 上午港股 AI 概念走强 — 中美 AI 资本市场 + 美国监管政策</div>
+
+            <div class="card">
+                <h3>OpenAI 2026Q1 烧钱 37 亿美元 — 营收 57 亿 vs 烧钱 37 亿 = 亏损但用户基础巨大</h3>
+                <div class="source">来源：财联社 6/17 17:47 | 智通财经 6/17 12:15 | Ars Technica 6/17 独家 HN #7 261pt/175c | 6/16 18:47 OpenAI 2025 净亏损增加 7 倍</div>
+                <div class="desc">
+                    <strong>OpenAI 2026Q1 核心数据</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">指标</td>
+                            <td style="padding: 6px; color: var(--text-muted);">2026 Q1</td>
+                            <td style="padding: 6px; color: var(--text-muted);">同比增长</td>
+                            <td style="padding: 6px; color: var(--text-muted);">战略含义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>营收</strong></td><td style="padding: 6px;"><strong>57 亿美元</strong></td><td style="padding: 6px;"><strong>3 倍</strong></td><td style="padding: 6px;">用户基础巨大</td></tr>
+                        <tr><td style="padding: 6px;"><strong>现金消耗</strong></td><td style="padding: 6px;"><strong>37 亿美元</strong></td><td style="padding: 6px;"><strong>3 倍</strong></td><td style="padding: 6px;">算力支出巨大</td></tr>
+                        <tr><td style="padding: 6px;"><strong>现金消耗占营收</strong></td><td style="padding: 6px;"><strong>&gt;50%</strong></td><td style="padding: 6px;">—</td><td style="padding: 6px;"><strong>AI 商业模型"营收高但烧钱快"范本</strong></td></tr>
+                        <tr><td style="padding: 6px;">2025 净亏损</td><td style="padding: 6px;">340 亿美元</td><td style="padding: 6px;">增加 7 倍</td><td style="padding: 6px;">2025 成本</td></tr>
+                    </table>
+                    <strong>vs 6/17 morning 写过"OpenAI ChatGPT 12 亿用户 + 企业收入占比 40%" / 6/17 afternoon 写过"OpenAI 1.5 亿伙伴网络"</strong>：6/18 morning 必报"OpenAI 巨额亏损" = <span class="highlight">"营收 57 亿 vs 烧钱 37 亿 vs 1.5 亿伙伴网络 = 亏损但用户基础巨大 = AI 商业模型 vs 商业化挑战"</span><br><br>
+                    <strong>vs 6/16 evening 写过"Anthropic 5 月 ARR $47B + Q2 营收 $10.9B"</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>Anthropic 5 月 ARR $47B 撤市令不冲击营收</strong></li>
+                        <li><strong>OpenAI 2026Q1 烧钱 37 亿</strong></li>
+                    </ul>
+                    = <strong>6/18 morning 必报"美国 AI 双雄（Anthropic 盈利 vs OpenAI 亏损）+ 国产 AI（智谱 + 阿里）"中美 AI 商业化对比</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/17 Reuters 独家"美国暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险" — 美国对华 AI 政策从"1 月评估"升级到"暂缓拉黑但 100+ 家中企进安全清单"</h3>
+                <div class="source">来源：路透社 6/17 独家 | HN #2 336pt/361c | US News 6/17 独家 | 财联社 6/17 转载</div>
+                <div class="desc">
+                    <strong>Reuters 6/17 独家核心内容</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>美国暂缓将 DeepSeek 列入实体清单 / 黑名单</strong></li>
+                        <li><strong>但 100+ 家中企被定为"安全风险"</strong></li>
+                        <li><strong>政策收紧 + 留有谈判余地</strong></li>
+                    </ul>
+                    <strong>vs 6/16 afternoon 写过"智谱增列出口管制实体清单 / AI 六小龙第一家" + 6/17 morning 写过"Anthropic Mythos 5 6/12 商务部撤市令"</strong>：6/18 morning 必报"美国对华 AI 政策 6/17 升级"：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">时间</td>
+                            <td style="padding: 6px; color: var(--text-muted);">事件</td>
+                            <td style="padding: 6px; color: var(--text-muted);">政策含义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;">1 月</td><td style="padding: 6px;">白宫"评估"DeepSeek 国家安全影响</td><td style="padding: 6px;">政策评估阶段</td></tr>
+                        <tr><td style="padding: 6px;">1 月底</td><td style="padding: 6px;">商务部 BIS 将智谱列入实体清单</td><td style="padding: 6px;">首批实体清单</td></tr>
+                        <tr><td style="padding: 6px;">6/12</td><td style="padding: 6px;">商务部对 Anthropic Mythos 5 撤市令</td><td style="padding: 6px;">AI 模型层面</td></tr>
+                        <tr><td style="padding: 6px;">6/17</td><td style="padding: 6px;">美国暂缓将 DeepSeek 列入实体清单 / 但 100+ 家中企被定安全风险</td><td style="padding: 6px;"><span class="highlight">政策收紧 + 留有谈判余地</span></td></tr>
+                    </table>
+                    = <strong>"政策 + 资本 + 谈判余地"三层架构</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 上午港股 AI 概念走强 — 创新奇智 +10% / 商汤 / 联想 / 美图</h3>
+                <div class="source">来源：界面快讯 6/18 上午 | 6/17 evening 港股 AI 板块 evening 收市完整收官</div>
+                <div class="desc">
+                    <strong>6/18 上午港股 AI 概念走强</strong>（界面快讯 6/18）：
+                    <strong>6/18 上午港股 AI 概念股涨幅榜</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>创新奇智涨近 10%</strong></li>
+                        <li><strong>商汤、联想集团、美图公司等多股上涨</strong></li>
+                    </ul>
+                    <strong>vs 6/17 evening 写过"智谱盘中 +17.64% + 港股通南向资金 6/16 净买入 8.24 亿 + 机器人 ETF 华夏 3 连涨"</strong>：6/18 morning 必报"6/18 上午港股 AI 概念继续走强 = 政策落地（科创板第五套 + 智谱辅导验收）+ 国产 AI 厂商全模态闭环（阿里 HappyOyster 1.0）+ 美图影像节 8 款 AI 新品" 多个利好叠加。<br><br>
+                    <strong>6/17 evening 写过"港股 AI 板块 evening 18:00 收市完整收官（智谱 +17.64% + 南向资金 8.24 亿 + 机器人 ETF 3 连涨）"</strong>：6/18 morning 必报"6/18 上午港股 AI 概念延续 6/17 evening 走强势头 = 政策 + 资本 + 产业三线对'国产 AI 替代'的全面认账"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/18 财联社早间新闻精选 — 政策 + 宏观 + 行业 5 大要点</h3>
+                <div class="source">来源：财联社 6/18 08:04 早间新闻精选 | 美图影像节 6/17 港股反应</div>
+                <div class="desc">
+                    <strong>6/18 08:04 财联社早间新闻精选</strong>（财联社 6/18 08:04）：
+                    <ol style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>国务院发布关于印发《实施就业优先战略"十五五"规划》的通知</strong> — 6/18 必报的"国家 AI 战略 + 就业"主线</li>
+                        <li><strong>美国联邦储备委员会 17 日宣布继续将联邦基金利率目标区间维持在 3.5% 至 3.75% 之间不变</strong> — 6/18 必报的"美联储维持 + 沃什首秀 + 鹰派"主线</li>
+                        <li><strong>伊朗外交部发言人巴加埃：目前伊朗与美国的谅解备忘录文本已最终正式敲定双方已签署</strong> — 中东地缘</li>
+                        <li><strong>6/17 10:44 我国成功发射卫星互联网低轨 22 组卫星</strong>（新闻联播 6/17）— 中国航天</li>
+                        <li><strong>7/1 全国铁路调图 增开旅客列车 106 列</strong>（新闻联播 6/17）— 中国基建</li>
+                    </ol>
+                    <strong>6/18 morning 必报</strong>"6/18 财联社早间新闻精选覆盖：政策 + 宏观 + 行业"完整视角。
+                </div>
+            </div>
+        </section>
+
+        <!-- 6/18 morning 数据简报 -->
+        <section class="section">
+            <div class="section-title">📊 6/18 morning 数据简报</div>
+            <div class="card">
+                <h3>6/18 morning 5 大新角度关键数据汇总</h3>
+                <div class="source">来源：综合 6/17 morning / afternoon / evening / 21evening 撞车源 + 6/18 morning 新增事件</div>
+                <div class="desc">
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">维度</td>
+                            <td style="padding: 6px; color: var(--text-muted);">核心数据</td>
+                            <td style="padding: 6px; color: var(--text-muted);">来源时间</td>
+                            <td style="padding: 6px; color: var(--text-muted);">战略含义</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>美联储 6/17 议息会议</strong></td><td style="padding: 6px;">3.5-3.75% 维持 / 沃什首秀 / 18 位半数预计加息</td><td style="padding: 6px;">6/18 02:15</td><td style="padding: 6px;">鹰派超预期 + AI 资本收紧</td></tr>
+                        <tr><td style="padding: 6px;"><strong>智谱 IPO 辅导验收</strong></td><td style="padding: 6px;">拟募资 150 亿 / 6/1 董事会决议 / 1/8 港股已上市</td><td style="padding: 6px;">6/17 17:14</td><td style="padding: 6px;">A+H 双重通道</td></tr>
+                        <tr><td style="padding: 6px;"><strong>阿里 HappyOyster 1.0</strong></td><td style="padding: 6px;">世界模型 4 大功能 + ATH 创新事业部</td><td style="padding: 6px;">6/17 22:02</td><td style="padding: 6px;">24h 内世界模型双发</td></tr>
+                        <tr><td style="padding: 6px;"><strong>国务院"AI+" 行动</strong></td><td style="padding: 6px;">国发〔2026〕16 号 / 9 方面重点任务</td><td style="padding: 6px;">6/17 17:07</td><td style="padding: 6px;">AI 大模型国家战略</td></tr>
+                        <tr><td style="padding: 6px;"><strong>OpenAI 2026Q1</strong></td><td style="padding: 6px;">营收 57 亿 / 烧钱 37 亿 / Ars Technica 6/17 独家</td><td style="padding: 6px;">6/17 17:47</td><td style="padding: 6px;">AI 商业模型挑战</td></tr>
+                        <tr><td style="padding: 6px;"><strong>美国对 DeepSeek</strong></td><td style="padding: 6px;">暂缓拉黑 / 100+ 家中企进安全清单</td><td style="padding: 6px;">6/17 Reuters</td><td style="padding: 6px;">政策收紧 + 谈判余地</td></tr>
+                        <tr><td style="padding: 6px;"><strong>6/18 港股 AI 概念</strong></td><td style="padding: 6px;">创新奇智 +10% / 商汤 / 联想 / 美图</td><td style="padding: 6px;">6/18 上午</td><td style="padding: 6px;">延续 6/17 evening 走强</td></tr>
+                        <tr><td style="padding: 6px;"><strong>美图影像节</strong></td><td style="padding: 6px;">8 款 AI 新品 + 奇想大模型 V6</td><td style="padding: 6px;">6/17 18:44</td><td style="padding: 6px;">AI 应用从"功能"到"成果"</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>HN front 北美时间 6/17 21:00 → 6/18 09:00 北京时间 25 items 完整复盘</h3>
+                <div class="source">来源：HN Firebase API 串行 fetch（实测 8s）</div>
+                <div class="desc">
+                    <strong>HN front 6/17 21:00 → 6/18 09:00 北京时间 HN 25 items 完整复盘</strong>：
+                    <table style="width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12px;">
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 6px; color: var(--text-muted);">HN 排名</td>
+                            <td style="padding: 6px; color: var(--text-muted);">分数</td>
+                            <td style="padding: 6px; color: var(--text-muted);">评论</td>
+                            <td style="padding: 6px; color: var(--text-muted);">标题</td>
+                            <td style="padding: 6px; color: var(--text-muted);">角度</td>
+                        </tr>
+                        <tr><td style="padding: 6px;"><strong>#1</strong></td><td style="padding: 6px;"><strong>961pt</strong></td><td style="padding: 6px;">518c</td><td style="padding: 6px;">Lore – Open source VCS for scalability</td><td style="padding: 6px;">开发者工具</td></tr>
+                        <tr><td style="padding: 6px;"><strong>#2</strong></td><td style="padding: 6px;"><strong>336pt</strong></td><td style="padding: 6px;">361c</td><td style="padding: 6px;"><strong>US holds off blacklisting DeepSeek, 100+ firms deemed security risks</strong></td><td style="padding: 6px;"><strong>美国对华 AI 政策</strong></td></tr>
+                        <tr><td style="padding: 6px;"><strong>#5</strong></td><td style="padding: 6px;"><strong>777pt</strong></td><td style="padding: 6px;">384c</td><td style="padding: 6px;">GLM-5.2 is the new leading open weights model</td><td style="padding: 6px;">智谱全球冠军（24h +478pt）</td></tr>
+                        <tr><td style="padding: 6px;"><strong>#7</strong></td><td style="padding: 6px;"><strong>261pt</strong></td><td style="padding: 6px;">175c</td><td style="padding: 6px;"><strong>Leaked financial docs show OpenAI is losing billions</strong></td><td style="padding: 6px;"><strong>OpenAI 巨额亏损</strong></td></tr>
+                        <tr><td style="padding: 6px;"><strong>#12</strong></td><td style="padding: 6px;">648pt</td><td style="padding: 6px;">753c</td><td style="padding: 6px;">U.S. science is in chaos</td><td style="padding: 6px;">美国科研政策</td></tr>
+                        <tr><td style="padding: 6px;"><strong>#16</strong></td><td style="padding: 6px;">163pt</td><td style="padding: 6px;">133c</td><td style="padding: 6px;">A robot sprinting — Claude or Grok?</td><td style="padding: 6px;">OpenRouter Royale 6/17</td></tr>
+                        <tr><td style="padding: 6px;"><strong>#19</strong></td><td style="padding: 6px;">474pt</td><td style="padding: 6px;">329c</td><td style="padding: 6px;">VW started blocking GrapheneOS users</td><td style="padding: 6px;">汽车 + OS 安全</td></tr>
+                        <tr><td style="padding: 6px;"><strong>#22</strong></td><td style="padding: 6px;">114pt</td><td style="padding: 6px;">92c</td><td style="padding: 6px;">The Competitive Moat That AI Can't Replicate</td><td style="padding: 6px;">AI 商业护城河</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>撞车源 4 份对比 — 6/17 4 时段已覆盖 / 6/18 morning 主动差异化</h3>
+                <div class="source">来源：6/17 4 时段 raw.md</div>
+                <div class="desc">
+                    <strong>撞车源对比</strong>：
+                    <ul style="margin: 8px 0 8px 20px; padding: 0;">
+                        <li><strong>6/17 09:00 morning</strong>：Fable 5/Mythos 5 5 步撤市流程 / Anthropic IPO 16 天 / NVIDIA $25B / HN 6 条 / 港交所科技 100</li>
+                        <li><strong>6/17 12:00 afternoon</strong>：Qwen-Robot Suite / HN 24h 7 条 / 国产 AI 双雄 / 6 周超美 / Opus 4.8 实战</li>
+                        <li><strong>6/17 18:00 evening</strong>：陆家嘴论坛科创板第五套 / 智谱接棒 3.0 / FF 机器人 / AIIA / 港股 evening 收市</li>
+                        <li><strong>6/17 21:00 21evening</strong>：GLM-5.2 51 分第一 / WAIC 倒计时 30 天 / arXiv 审计缺口 / Wolfram v15 / HN 25 items</li>
+                    </ul>
+                    <strong>6/18 morning 主动差异化</strong>：① 美联储沃什首秀 ② 智谱 IPO 辅导验收 ③ 阿里 HappyOyster 1.0 ④ 国务院"AI+" ⑤ OpenAI 烧钱 37 亿 / 美国暂缓拉黑 DeepSeek / 港股 AI 走强。
+                </div>
+            </div>
+        </section>
+
+        <!-- 今日要点 -->
+        <section class="section">
+            <div class="section-title">📌 今日要点</div>
+            <div class="summary-card">
+                <h2>核心结论</h2>
+                <ul>
+                    <li><strong>6/18 02:15 美联储 6/17 议息会议维持利率 3.5-3.75% 不变 + 沃什就任主席首秀 + 鹰派超预期：</strong>12 票赞成 0 票反对 / 今年连续第四次 / 18 位成员半数预计年内可能加息 / 5 个工作组改革计划 / SEP 上调通胀预测 = "加息 + 通胀"双压 vs 钛媒体 6/16 12:34"AI 该算 ROI 了"主题宏观印证</li>
+                    <li><strong>6/17 17:14 智谱科创板 IPO 辅导状态变更为"辅导验收" + 拟募资 150 亿：</strong>6/1 董事会决议 A 股科创板 / 1/8 港股已上市招股价 116.2 港元 / 国泰海通证券辅导 = evening"科创板第五套标准扩容"政策落地的第一个具体案例</li>
+                    <li><strong>6/17 22:02 阿里发布世界模型 HappyOyster 1.0（快乐生蚝 1.0）：</strong>ATH 创新事业部研发 / 4 大功能（世界探索/实时导演/剧情回溯/剧情分支）/ 基于原生多模态架构 / 应用：交互式游戏 / 虚拟陪伴 / 互动短剧 / 文旅体验 / 直播 = 阿里 24h 内世界模型双发（Qwen-Robot World 6/16 + HappyOyster 1.0 6/17）= 国产 AI 厂商全模态闭环</li>
+                    <li><strong>6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+" 行动：</strong>国发〔2026〕16 号文件 / 9 方面重点任务 / "AI+" 行动原文 = "国务院 + 证监会 + 上交所"三级联动 = AI 大模型国家战略完整收官</li>
+                    <li><strong>6/17 OpenAI 2026Q1 烧钱 37 亿美元 / 营收 57 亿 + Ars Technica 6/17 独家：</strong>现金消耗占营收 50%+ / 同比增长 3 倍 / HN #7 261pt/175c = 美国 AI 双雄（Anthropic 盈利 vs OpenAI 亏损）+ 国产 AI 中美对比</li>
+                    <li><strong>6/17 Reuters 独家"美国暂缓拉黑 DeepSeek / 100+ 家中企被定安全风险"：</strong>HN #2 336pt/361c / 政策收紧 + 留有谈判余地 = 美国对华 AI 政策 6/17 升级</li>
+                    <li><strong>6/18 上午港股 AI 概念走强：</strong>创新奇智 +10% / 商汤 / 联想 / 美图 = 政策 + 资本 + 产业三线对"国产 AI 替代"的全面认账</li>
+                    <li><strong>6/17 18:44 2026 美图影像节 8 款 AI 新品 + 美图奇想大模型 V6 发布：</strong>Picchi / Artflo / MVLAND / MeituHub + 站酷 / 美图设计室 / 开拍 / RoboNeo 升级 = AI 应用从"交付功能"走向"交付成果"</li>
+                    <li><strong>6/18 morning 5 大新角度与 6/17 4 时段撞车协议：</strong>6/17 4 时段已覆盖 Fable 5 5 步 / Anthropic IPO 16 天 / NVIDIA $25B / Qwen-Robot Suite / GLM-5.2 51 分 / 科创板第五套标准扩容 / FF 机器人 / AIIA / WAIC / Wolfram v15；6/18 morning 主动剔除，聚焦 ① 美联储沃什首秀 ② 智谱 IPO 辅导验收 ③ 阿里 HappyOyster 1.0 ④ 国务院 AI+ 行动 ⑤ OpenAI 烧钱 + Reuters 美国暂缓拉黑 DeepSeek + 港股 AI 走强</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 深度阅读建议 -->
+        <section class="section">
+            <div class="section-title">🔗 深度阅读建议</div>
+            <div class="summary-card">
+                <ul>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_8276a3329f503452</strong> — 沃什首秀！美联储维持利率不变 6/18 07:12</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_3946a333be323852</strong> — 中信证券 6/18 08:29 美联储 6 月议息会议点评（鹰派超预期）</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_4336a32e43d35252</strong> — 美联储维持利率不变，政策声明篇幅明显缩短 6/18 02:15</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_9306a327bb096052</strong> — 北京商报 6/17 18:49 智谱科创板 IPO 进入"辅导验收"阶段</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_7476a325df994152</strong> — A 股上市又进一步！智谱科创板 IPO 辅导状态变更为"辅导验收"6/17 16:42</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_2366a32603656852</strong> — 智谱"回A"进度条更新，IPO 状态变更为辅导验收 6/17 16:52</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_3936a32bbe866152</strong> — 阿里发布世界模型 HappyOyster 1.0（快乐生蚝 1.0）6/17 23:23</li>
+                    <li><strong>news.cnstock.com/bwsd/</strong> — 上海证券报·中国证券网 6/17 21:23 阿里发布世界模型 HappyOyster 1.0</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_3616a327c4164752</strong> — 国务院印发《实施就业优先战略"十五五"规划》6/17 18:53</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_6766a3263fb95352</strong> — 国务院："十五五"时期实施稳岗扩容提质行动 适应人工智能发展促进就业创业 6/17 17:08</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_4986a326d3342652</strong> — OpenAI 2026 年一季度烧钱 37 亿美元 6/17 17:47</li>
+                    <li><strong>so.html5.qq.com/page/real/search_news?docid=70000021_6286a31e2b107852</strong> — OpenAI 在 2026 年第一季度烧掉了 37 亿美元 6/17 12:15</li>
+                    <li><strong>arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/</strong> — Ars Technica 6/17 Leaked financial docs show OpenAI losing billions</li>
+                    <li><strong>www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/</strong> — Reuters 6/17 US Holds off Blacklisting China's DeepSeek</li>
+                    <li><strong>new.qq.com/rain/a/20260617A08E0U00</strong> — 腾讯新闻 6/17 18:44 解决"成果交付"行业难题 2026 美图影像节推出 8 款 AI 产品</li>
+                    <li><strong>hacker-news.firebaseio.com/v0/topstories.json</strong> — HN Firebase API 实时抓取（25 items 串行 fetch 实测 6-10s）</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：证券时报 · 财联社 · 北京商报 · 南都 N 视频 · 21 世纪经济报道 · 金融界 · 21 财经 · 观点网 · 上海证券报 · 雷锋网 · 太平洋科技 · 国务院 · 央视新闻联播 · 新华社 · Ars Technica · 路透社 · HN Firebase API · 6/17 4 时段撞车源主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-18 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
