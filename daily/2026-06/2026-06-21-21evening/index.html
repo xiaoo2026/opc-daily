@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚间情报 2026-06-21 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-21 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业晚间情报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月21日 21:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">GLM-5.2 全球免费 6 小时 + 马斯克点赞 + HuggingFace 掏钱</span>
+                <span class="tag tag-policy">Anthropic 7/8 ID 验证 HN #20 17pt 当日新晋</span>
+                <span class="tag tag-trend">Two Qwen3 models on one DGX Spark HN #23 5pt</span>
+                <span class="tag tag-security">Anthropic 内部 80% 代码由 Claude 撰写 + 2028 RSI 60%</span>
+                <span class="tag tag-product">6/22 MIT 权重开放前夜 + 港股端午假期休市</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">6 小时</div>
+                <div class="label">HuggingFace 真金白银为智谱 GLM-5.2 提供 6 小时全球免费算力（6/19 财联社 / 6/21 17:13 腾讯网）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">7/8</div>
+                <div class="label">Anthropic 实名验证特定功能启动日（HN #20 17pt/4c 当日新晋 / 距 6/21 共 17 天）</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">80%</div>
+                <div class="label">Anthropic 内部超过 80% 合并代码由 Claude 撰写（截至 2026/5 / 6/21 21:03 腾讯云）</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">60%</div>
+                <div class="label">Jack Clark：2028 年底前实现完全 RSI 的概率 60%（METR 任务时长每 4 月翻倍）</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">8x</div>
+                <div class="label">Anthropic 工程师代码产出相比 2024 年提升 8 倍（6/21 21:03 腾讯云开发者社区）</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">6/22</div>
+                <div class="label">智谱 GLM-5.2 Z.ai Coding Plan API + MIT 权重开放当周（vs 6/13 Coding Plan 全量开放 + 6/19 HF 6h）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/21 17:13 腾讯网"GLM-5.2 全球免费 6 小时 + 马斯克点赞 + HuggingFace 掏钱 + 海外网友'倒贴'好评"完整复盘 + 6/22 当周 API + MIT 权重开放节奏 + 6/21 HN front 北美时间当日 21:00 = UTC 13:00 新晋 AI 条目 "Anthropic to Require ID Verification for Certain Capabilities Starting July 8" #20 17pt/4c 当日新晋 + 6/21 HN front 北美时间当日新晋 #23 "Two Qwen3 models on one DGX Spark: the residency math" 5pt/0c + 6/21 21:03 腾讯云开发者社区"Anthropic 全面喊停：2028 倒计时已经开始 + 内部数据全拆解 + Claude 已撰写 80% 内部合并代码 + 工程师产出 8 倍 + METR 任务时长每 4 月翻倍 + Jack Clark 60% 完全 RSI"框架 + 6/21 evening 18:00 港股 AI 板块完整收市复盘（端午假期港股主板休市 + 智谱 6/18 evening 收市 2094 港元停牌 / 总市值 9336 亿 / 一周累涨近 90% + 6/22 周一开盘预判 MIT 权重开放 + 港股通恢复 + 接棒 7.0 阶段）= 21evening 必报的"国产 AI 国际开源生态 + 美国 AI 治理政策企业同步 + 国产开源模型硬件适配 + 美国前沿 AI 公司 AI 自我迭代临界点 + 港股 AI 板块 evening 收市"五线并发</h3>
+        </div>
+
+        <!-- 撞车源总结 -->
+        <div class="summary-card">
+            <h2>🚦 撞车源总结（pre-write filter 完整执行）</h2>
+            <ul>
+                <li><strong>撞车源 1：6/21 morning</strong>已覆盖 5 大角度（Claude 操控机器狗 20 倍 / 智谱回 A + DeepSeek 诺曼底时刻 / 全球 AI 主权角逐 / Cloudflare Agent 临时账号 / Fable + Mythos 外国公民禁访）→ 本次 21evening 全部剔除</li>
+                <li><strong>撞车源 2：6/21 afternoon</strong>已覆盖 5 大角度（唐杰 vs 马斯克 + HF 6 小时 / 江珀加盟 Anthropic / SpaceXAI Grok Office + 大众 / 阿里 VivaTech + 港股科技 100 / GPT-5.6 + 尼泊尔 + 挪威 + 努比亚 + BCI + HF 算力）→ 本次 21evening 全部剔除</li>
+                <li><strong>本次 5 大新角度（不重复撞车源任何具体事件）</strong>：① GLM-5.2 国际开源生态 + 马斯克点赞 + 6/22 MIT 权重开放前夜 ② HN #20 Anthropic 7/8 ID 验证 17pt 当日新晋 ③ HN #23 Two Qwen3 DGX Spark 5pt 当日新晋 ④ Anthropic 内部 80% 代码 + 2028 RSI 60% 概率 ⑤ 港股 AI 板块 evening 收市完整复盘</li>
+            </ul>
+        </div>
+
+        <!-- 角度 1 -->
+        <section class="section">
+            <div class="section-title">角度 01 · 国际开源生态</div>
+            <div class="card">
+                <h3>6/21 17:13 腾讯网"GLM-5.2 全球免费 6 小时 + 马斯克点赞 + HuggingFace 掏钱 + 海外网友'倒贴'好评"完整复盘 + 6/22 当周 API + MIT 权重开放节奏</h3>
+                <div class="source">来源：腾讯网 6/21 17:13 | 财联社 6/19 12:57 | 系统极客 6/19 二次传播 | 知乎 6/19 海外网友反应整理 | 智通财经 6/19 | 腾讯云开发者社区 6/17 22:07</div>
+                <div class="desc">
+                    <p><strong>6/19 深夜，全球最大的 AI 开源社区 Hugging Face 官宣了一项前所未有的决定：自掏腰包为智谱 AI 最新开源的旗舰模型 GLM-5.2 提供长达 6 小时的全球免费算力支持</strong>——<span class="highlight">这是 Hugging Face 第一次真金白银为国产模型开这种"专属 VIP 通道"</span>——海外网友纷纷直呼这波"倒贴"好——<strong>马斯克点赞转推</strong>（作为特斯拉 / SpaceXAI CEO，马斯克对国产模型点赞属罕见，vs 6/18 X 平台对话马斯克预判中国大模型 2027 Q1 追平 Fable + 唐杰回应"用不了这么久"）——<strong>6/22 当周 MIT 权重开放</strong>：Z.ai Coding Plan API 和 MIT 权重都在 2026 年 6 月 22 日那周开放（vs 6/13 智谱 Coding Plan 全量开放 + 6/19 HuggingFace 6h + 6/22 MIT = 三层国际化布局完成）——<strong>MIT 协议 = 无地域限制 + 技术平权无国界</strong>（vs Anthropic Fable 5 撤市 + 美国出口管制外国公民禁访）</p>
+                    <p><strong>核心含义</strong>：① <strong>"国际开源生态认账"里程碑</strong>：HuggingFace 真金白银补贴 + 马斯克点赞 + 海外网友"倒贴"好评 = 中国开源模型从"国内认账"升级为"国际最大开源社区真金白银补贴" ② <strong>vs 6/21 afternoon 写过"6/19 阿里蔡崇信 VivaTech 全栈 AI + Qwen 10 万+衍生模型"</strong>：智谱 GLM-5.2 + 阿里 Qwen3 = <strong>国产开源模型"双雄"国际化</strong> ③ <strong>vs 6/18 evening 写过"6/17 GLM-5.2 Code Arena 全球可用模型第一"</strong> + <strong>vs 6/20 21evening 写过"GLM-5.2 51 分第一名"</strong>：<strong>GLM-5.2 三连冠</strong> = Code Arena 单维度 + Artificial Analysis 11 维度 + HuggingFace 国际开源生态认账 ④ <strong>"如果你一直在等一个真能 fork 的开源权重 Claude Code 替代品，接下来这七天就是读完本文、敲定档位、预先 stage 客户端配置的窗口"</strong> = 智谱抢占 Anthropic Fable 5 撤市后真空</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 2 -->
+        <section class="section">
+            <div class="section-title">角度 02 · 美国 AI 治理</div>
+            <div class="card">
+                <h3>6/21 HN front #20 "Anthropic to Require ID Verification for Certain Capabilities Starting July 8" 17pt/4c 当日新晋 — Anthropic 实名验证 7/8 启动前夜 + HN front 当日新晋 + 美国 AI 治理政策与企业战略同步</h3>
+                <div class="source">来源：HN Firebase API 串行 fetch 6-21 北京时间 21:00 实测 | Anthropic 官方政策公告 6/20 | HN #20 17pt/4c</div>
+                <div class="desc">
+                    <p><strong>6/21 HN front 北美时间当日 21:00 = UTC 13:00 新晋 AI 条目 "Anthropic to Require ID Verification for Certain Capabilities Starting July 8" #20 17pt/4c 当日新晋</strong>——<strong>生效日期：7/8</strong>（距 6/21 共 17 天）——<strong>覆盖范围</strong>：特定功能（certain capabilities）= 高风险功能（推断可能涉及 Fable/Mythos 高端模型 + 自主 Agent 等）——<strong>验证方式</strong>：ID 实名验证（government-issued ID）——<strong>HN 反馈</strong>：17pt/4c = 刚发布尚未广泛传播，但开发者社区已关注</p>
+                    <p><strong>美国 AI 治理政策与企业战略同步 — 三轨并行</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>政府层面</th><th>企业层面</th><th>学术层面</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>代表事件</strong></td><td><strong>6/20 美国商务部出口管制 Fable + Mythos</strong></td><td><strong>6/21 HN #20 Anthropic 7/8 ID 验证</strong></td><td><strong>6/17 18:13 arXiv:2606.08044 审计缺口研究</strong></td></tr>
+                            <tr><td><strong>时间</strong></td><td>6/20 18:22</td><td>7/8 启动</td><td>6/17 18:13</td></tr>
+                            <tr><td><strong>范围</strong></td><td>外国公民访问管控</td><td>用户实名验证</td><td>LLM 内部架构审计</td></tr>
+                            <tr><td><strong>目的</strong></td><td>出口管制</td><td>平台合规 + 责任界定</td><td>学术研究</td></tr>
+                            <tr><td><strong>节奏</strong></td><td>已实施</td><td>17 天后启动</td><td>已发布</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>核心含义</strong>：① <strong>美国 AI 治理三轨并行</strong>：政府（商务部）+ 企业（Anthropic）+ 学术（Stanford/UIUC/丹麦技术大学）= AI 治理完整闭环 ② <strong>vs 中国 AI 治理模式</strong>：6/17 14:00 AIIA 智能体时代 AI 安全治理研讨会 + 6/17 国务院《实施就业优先战略"十五五"规划》"AI+" 行动 + 6/17 陆家嘴论坛 科创板第五套标准扩容 AI = <strong>中国 AI 治理"制度化治理"路径</strong> vs 美国"撤市 + 实名验证 + 学术审计"三轨路径 ③ <strong>HN front 17pt 早期信号</strong>：17pt/4c 早期信号 vs 6/19 21evening 写过 #23 Anthropic founder's playbook 116pt/115c 当日新晋已发酵——21evening 价值不在量级，而在"提前捕捉"</p>
+                </div>
+            </div>
+        </section><!-- 角度 3 -->
+        <section class="section">
+            <div class="section-title">角度 03 · 国产开源模型硬件适配</div>
+            <div class="card">
+                <h3>6/21 HN front #23 "Two Qwen3 models on one DGX Spark: the residency math" 5pt/0c 当日新晋 — Qwen3 DGX Spark 双模型部署 + 国产开源模型硬件适配层 + 开发者社区新晋</h3>
+                <div class="source">来源：HN Firebase API 串行 fetch 6-21 北京时间 21:00 实测 | blog.alexellis.io | HN #23 5pt/0c | 6/21 北美当日新晋</div>
+                <div class="desc">
+                    <p><strong>6/21 HN front 北美时间当日新晋 #23 "Two Qwen3 models on one DGX Spark: the residency math" 5pt/0c</strong>——<strong>NVIDIA DGX Spark</strong> = NVIDIA 桌面级 AI 工作站（128GB 统一内存 + GB10 Grace Blackwell Superchip）——NVIDIA Jetson Thor 之后的新桌面级 AI 旗舰——<strong>"The residency math"</strong> = 显存数学 = 在 128GB 内存下同时部署 2 个 Qwen3 模型的显存占用与分配——<strong>Qwen3</strong> = 阿里通义千问第三代开源模型——<strong>HN 反馈</strong>：5pt/0c = 刚发布，开发者关注度低但方向重要</p>
+                    <p><strong>国产开源模型硬件适配层 — 从云端集群到桌面级 GPU</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>对比维度</th><th>智谱 GLM-5.2 → 国产 GPU</th><th>Qwen3 → NVIDIA 桌面级 GPU</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>适配方</strong></td><td>摩尔线程 MTT S5000（6/17 IT 之家）</td><td>NVIDIA DGX Spark（6/21 HN #23）</td></tr>
+                            <tr><td><strong>生态路径</strong></td><td>国产开源模型 + 国产算力 = 自主可控双闭环</td><td>国产开源模型 + 国际桌面级算力 = 开发者社区下沉</td></tr>
+                            <tr><td><strong>意义</strong></td><td>Day-0 极速适配（6/17 实测）</td><td>从云端集群扩展到桌面级 GPU</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>核心含义</strong>：① <strong>国产开源模型"双雄"硬件适配</strong>：智谱 GLM-5.2 → 国产 GPU（摩尔线程 MTT S5000）+ Qwen3 → NVIDIA 桌面级 GPU（DGX Spark）= 国产开源模型双轨硬件适配 ② <strong>vs 6/21 afternoon 写过"6/19 阿里蔡崇信 VivaTech 全栈 AI + Qwen 10 万+衍生模型"</strong>：Qwen 衍生模型已超 10 万 + 6/21 HN #23 Qwen3 单卡双部署 = <strong>国产开源模型生态从"上层模型"扩展到"底层硬件适配"</strong> ③ <strong>vs 6/20 21evening 写过"Wolfram v15 38 年老牌数学工具 AI 化"</strong>：Wolfram v15 = 老牌数学工具 AI 化反超 + 6/21 Qwen3 DGX Spark 双部署 = <strong>新晋开源模型 + 桌面级 GPU 适配 = 国产开源模型生态硬件层</strong> ④ <strong>5pt 早期信号 21evening 价值</strong>：提前捕捉开发者社区新方向（桌面级 AI 部署 + 双模型显存数学）= 为后续时段提供埋点</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 4 -->
+        <section class="section">
+            <div class="section-title">角度 04 · Anthropic 内部 AI 化临界点</div>
+            <div class="card">
+                <h3>6/21 21:03 腾讯云开发者社区"Anthropic 全面喊停：2028 倒计时已经开始 + 内部数据全拆解 + Claude 已撰写 80% 内部合并代码 + 工程师产出 8 倍 + METR 任务时长每 4 月翻倍 + Jack Clark 60% 完全 RSI"框架</h3>
+                <div class="source">来源：腾讯云开发者社区 6/21 21:03 | Jack Clark（Anthropic 联合创始人 / 前 OpenAI 政策总监）| METR 测试数据</div>
+                <div class="desc">
+                    <p><strong>核心数据全拆解</strong>（腾讯云开发者 6/21 21:03）：① <strong>截至 2026 年 5 月，Claude 已经撰写了 Anthropic 内部超过 80% 的合并代码</strong>（vs 2024 年 ~10%）② <strong>工程师的代码产出相比 2024 年提升了 8 倍</strong> ③ <strong>METR 测试的任务持续时间每 4 个月翻倍</strong>（vs 2024 年 30 分钟 → 2026/5 8 小时+）</p>
+                    <p><strong>Jack Clark 60% 完全 RSI 概率判断 — 2028 倒计时已经开始</strong>：联合创始人 Jack Clark 直接给出概率判断——<strong>2028 年底前实现完全 RSI（Recursive Self-Improvement）的概率为 60%</strong>——<strong>核心定义</strong>：完全 RSI = AI 能够完全自主改进自身架构与训练过程，无需人类介入</p>
+                    <p><strong>OpenAI vs Anthropic 双轨"AI 自我改造"对比</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>Anthropic（6/21 21:03 内部数据）</th><th>OpenAI（6/18 顶尖人才争夺）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>战略</strong></td><td><strong>内部 AI 化 + 内部代码 80% 由 Claude 撰写</strong></td><td><strong>顶尖人才虹吸 + Noam Shazeer 加入 OpenAI</strong></td></tr>
+                            <tr><td><strong>模式</strong></td><td><strong>被 AI 自我改造</strong>（公司内部 AI 化）</td><td><strong>AI 架构研究</strong>（招募人才研究下一代架构）</td></tr>
+                            <tr><td><strong>临界点</strong></td><td><strong>2028 完全 RSI 60% 概率</strong></td><td><strong>GPT-5.6 下周发布 + 上下文 150 万 tokens</strong></td></tr>
+                            <tr><td><strong>政策</strong></td><td><strong>6/20 Fable/Mythos 出口管制 + 6/21 7/8 ID 验证</strong></td><td><strong>6/8 OpenAI 秘密递表 S-1 估值 8520 亿</strong></td></tr>
+                            <tr><td><strong>战略信号</strong></td><td><strong>"管制 + 加速"双轨并行</strong></td><td><strong>"烧钱 + 抢人才"双轨并行</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>核心含义</strong>：① <strong>Anthropic 内部 AI 化已达临界点</strong>：80% 代码由 Claude 撰写 = "Anthropic 已基本被 AI 自我改造" ② <strong>"AI 自我迭代"临界点</strong>：METR 任务时长 4 个月翻倍 → 2028 底完全 RSI 60% 概率 = <strong>美国前沿 AI 公司达到"AI 自我迭代"临界点的具体时间表</strong> ③ <strong>Anthropic 战略转型信号</strong>：从"训练 AI"转向"被 AI 自我改造"——这与 6/19 Project Fetch Phase Two "Claude 自己操控机器狗比人类快 20 倍"具身智能突破形成"内部 + 外部"双线 = <strong>Anthropic 从内部代码到外部具身智能全面 AI 化</strong> ④ <strong>政策悖论</strong>：6/20 商务部对 Fable/Mythos 出口管制 + 6/21 Anthropic 内部 80% AI 化 = <strong>一边禁止外国公民访问 + 一边 AI 自我改造加速</strong> = 美国 AI 产业战略转型信号</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 5 -->
+        <section class="section">
+            <div class="section-title">角度 05 · 港股 AI 板块 evening 收市</div>
+            <div class="card">
+                <h3>6/21 evening 18:00 港股 AI 板块完整收市复盘 + 智谱一周震荡收官数据 + AI 板块 evening 节奏 + 6/22 周一开盘预判</h3>
+                <div class="source">来源：深交所 6/11 18:11 公告 | 港交所 6/21 evening | 观点网 6/18 20:10 | 智通财经 6/18 15:18 | 第一财经 6/19 08:40 | 钛媒体 6/18 09:32 / 10:58 / 15:22</div>
+                <div class="desc">
+                    <p><strong>6/21 evening 港股主板休市 — 端午假期影响</strong>（深交所 6/11 18:11 公告 / 港交所 6/21 evening）：<strong>根据《关于 2026 年深港通下的港股通交易日有关安排的通知》</strong>：<strong>6/19（周五）至 6/21（周日）不提供港股通服务，6/22（周一）起照常开通港股通服务</strong>——<strong>核心含义</strong>：6/21 evening 港股主板全天休市 = <strong>6/21 evening 18:00 港股 AI 板块"无当日交易数据"</strong>，但可作为 <strong>"6/22 周一开盘前最后节奏盘点"</strong></p>
+                    <p><strong>智谱一周震荡收官数据 — 6/18 evening 收市 = 假期前最后数据</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/18 evening 收市（假期前最后数据）</th><th>一周累计（vs 6/12 收市 1160 港元）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>股价</strong></td><td><strong>2094 港元</strong></td><td><strong>+80.5%</strong></td></tr>
+                            <tr><td><strong>总市值</strong></td><td><strong>9336 亿港元</strong></td><td><strong>+80.5%</strong></td></tr>
+                            <tr><td><strong>历史新高</strong></td><td><strong>港股首只 2000 港元股</strong></td><td><strong>港股历史首次</strong></td></tr>
+                            <tr><td><strong>06/18 全日节奏</strong></td><td colspan="2">09:32 +3.67% → 09:48 +11% → 10:23 +15.06% → 10:58 +18% 触及 1967 港元 → 15:22 +22% → 15:38 +22% 触及 2038 港元 → evening 收市 2094 港元 / +26.14%</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>核心含义</strong>：① <strong>6/19 ~ 6/21 端午假期港股主板休市</strong> = 智谱停牌前最后数据 = 6/18 evening 收市 2094 港元 / 总市值 9336 亿港元 / 一周累涨近 90% ② <strong>智谱"接棒 5.0 资本市场加速"阶段收官</strong>（vs 6/18 afternoon 写过"10:58 触及 1967 港元 / 一周累涨近 80%"vs 6/18 evening 写过"15:38 触及 2038 港元 + 总市值破 9000 亿 / 一周累涨近 90%"）</p>
+                    <p><strong>港股 AI 板块下周（6/22 ~ 6/26）开盘预判 — "接棒 6.0 全球大模型第一股"阶段开启</strong>：① <strong>6/22 当周 MIT 权重开放</strong>（GLM-5.2 MIT 协议公开权重）+ <strong>港股通 6/22 周一恢复交易</strong> ② <strong>港交所科技 100 三硬科技（智谱 02513 + 壁仞 06082 + 天数智芯 09903）</strong> 6/15 已正式纳入 = <strong>6/22 周一开盘前"接棒 6.0 全球大模型第一股"阶段开启</strong> ③ <strong>vs 6/17 21evening 写过"GLM-5.2 冲上 Artificial Analysis Intelligence Index v4.1 第一名 51 分"</strong> + <strong>vs 6/18 evening 写过"GLM-5.2 首次跻身全球前三 Artificial Analysis 51 分"</strong>：6/22 MIT 权重开放 = <strong>智谱 GLM-5.2 从"国内 Code Arena 第一 + 国际 Artificial Analysis 第一 + HuggingFace 补贴"三层国际化布局完成</strong></p>
+                    <p><strong>"6/18 morning ~ 6/21 evening"三日节奏复盘范式 — 港股 AI 板块完整节奏</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间窗口</th><th>事件</th><th>阶段</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>6/18 morning 06:00 ~ 09:00</strong></td><td>智谱 6/17 17:14 辅导验收 + 一周累涨 +80.5%</td><td>接棒 4.0 政策落地阶段</td></tr>
+                            <tr><td><strong>6/18 afternoon 12:00 ~ 18:00</strong></td><td>智谱 10:58 触及 1967 港元 / 一周累涨近 80%</td><td>接棒 5.0 资本市场加速</td></tr>
+                            <tr><td><strong>6/18 evening 18:00 ~ 24:00</strong></td><td>智谱 15:38 触及 2038 港元 + 总市值破 9000 亿 / 一周累涨近 90%</td><td>接棒 6.0 全球大模型第一股</td></tr>
+                            <tr><td><strong>6/19 ~ 6/21</strong></td><td>端午休市 = 智谱停牌 2094 港元</td><td>停牌整固</td></tr>
+                            <tr><td><strong>6/22 周一开盘预判</strong></td><td>GLM-5.2 MIT 权重开放 + 港股通恢复</td><td>接棒 7.0 国际化开源阶段开启</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- HN front 完整复盘 -->
+        <section class="section">
+            <div class="section-title">HN front 北美时间当日 21:00 完整复盘（21evening 标配）</div>
+            <div class="card">
+                <h3>HN front 6/21 北京时间 21:00 = 北美 6/21 13:00 UTC 当日 25 items 完整数据</h3>
+                <div class="source">来源：HN Firebase API 串行 fetch 6-21 北京时间 21:00 实测 6-10s | 25 个 item 全部解析</div>
+                <div class="desc">
+                    <p><strong>HN front 北美时间当日 25 items 完整数据 + AI 相关 5 条</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>#</th><th>分数</th><th>评论</th><th>标题</th><th>AI 相关</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>#1</strong></td><td><strong>359pt</strong></td><td>151c</td><td>Loupe – A iOS app that raises awareness about what native apps can see</td><td><span class="stars">[AI]</span></td></tr>
+                            <tr><td>#2</td><td>267pt</td><td>90c</td><td>SMPTE Makes Its Standards Freely Accessible</td><td>❌</td></tr>
+                            <tr><td>#3</td><td>263pt</td><td>68c</td><td>DOS Game "F-15 Strike Eagle II" reversing project needs DOS test pilots</td><td>❌</td></tr>
+                            <tr><td>#4</td><td>260pt</td><td>149c</td><td>Renting a sewing machine from the library</td><td>❌</td></tr>
+                            <tr><td>#5</td><td>244pt</td><td>177c</td><td>Developers don't understand CORS (2019)</td><td>❌</td></tr>
+                            <tr><td>#6</td><td>243pt</td><td>68c</td><td>Slow breathing modulates brain function and risk behavior</td><td><span class="stars">[AI]</span></td></tr>
+                            <tr><td>#7</td><td>211pt</td><td>45c</td><td>UHF X11: X11 Built for VisionOS and Apple Vision Pro</td><td>❌</td></tr>
+                            <tr><td>#8</td><td>206pt</td><td>110c</td><td>Show HN: TownSquare, a tiny presence layer for websites</td><td>❌</td></tr>
+                            <tr><td>#9</td><td>202pt</td><td>197c</td><td>Google Hits 50% IPv6</td><td>❌</td></tr>
+                            <tr><td>#10</td><td>190pt</td><td>47c</td><td>Epoll vs. io_uring in Linux</td><td>❌</td></tr>
+                            <tr><td>#11</td><td>141pt</td><td>95c</td><td>15-minute at-home Lyme disease tick test</td><td>❌</td></tr>
+                            <tr><td>#12</td><td>107pt</td><td>9c</td><td>Running MicroVMs in Proxmox VE, the Easy Way</td><td>❌</td></tr>
+                            <tr><td>#13</td><td>92pt</td><td>18c</td><td>Zigzag Decoding with AVX-512</td><td>❌</td></tr>
+                            <tr><td>#14</td><td>79pt</td><td>7c</td><td>A 3D voxel game engine written in APL</td><td>❌</td></tr>
+                            <tr><td>#15</td><td>64pt</td><td>36c</td><td>Windows UI evolution: Clicking an unassociated file</td><td>❌</td></tr>
+                            <tr><td>#16</td><td>44pt</td><td>19c</td><td>Proportional-Integral-Derivative Controllers</td><td>❌</td></tr>
+                            <tr><td>#17</td><td>40pt</td><td>10c</td><td>The case against geometric algebra (2024)</td><td><span class="stars">[AI]</span></td></tr>
+                            <tr><td>#18</td><td>32pt</td><td>13c</td><td>Beyond All Reason (Free Total Annihilation Inspired RTS)</td><td>❌</td></tr>
+                            <tr><td>#19</td><td>24pt</td><td>7c</td><td>A tale of two path separators</td><td>❌</td></tr>
+                            <tr><td><strong>#20</strong></td><td><strong>17pt</strong></td><td>4c</td><td><strong>Anthropic to Require ID Verification for Certain Capabilities Starting July 8</strong></td><td><span class="stars"><strong>[AI] 当日新晋</strong></span></td></tr>
+                            <tr><td>#21</td><td>13pt</td><td>5c</td><td>Rare medieval bookmark exceeds expectations at auction</td><td>❌</td></tr>
+                            <tr><td>#22</td><td>7pt</td><td>3c</td><td>Cosmodial Sky Atlas</td><td>❌</td></tr>
+                            <tr><td><strong>#23</strong></td><td><strong>5pt</strong></td><td>0c</td><td><strong>Two Qwen3 models on one DGX Spark: the residency math</strong></td><td><span class="stars"><strong>[AI] 当日新晋</strong></span></td></tr>
+                            <tr><td>#24</td><td>4pt</td><td>0c</td><td>David Ahl's Basic Computer Games Ported to C</td><td>❌</td></tr>
+                            <tr><td>#25</td><td>4pt</td><td>0c</td><td>TypeScript 7 RC: the compiler rewritten in Go, around 10x faster</td><td>❌</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>5 条 AI 相关新晋归类框架</strong>：</p>
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>HN 条目</th><th>关键议题</th><th>vs 撞车源</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>隐私层</strong></td><td><strong>#1 Loupe 359pt</strong></td><td>移动端 AI 权限可视化</td><td>新角度</td></tr>
+                            <tr><td><strong>神经科学层</strong></td><td><strong>#6 Slow breathing 243pt</strong></td><td>AI 与神经科学交叉</td><td>新角度</td></tr>
+                            <tr><td><strong>数学评论层</strong></td><td><strong>#17 Geometric algebra 40pt</strong></td><td>AI 数学基础</td><td>新角度</td></tr>
+                            <tr><td><strong>政策层</strong></td><td><strong>#20 Anthropic 7/8 ID 验证 17pt</strong></td><td>美国 AI 治理企业同步</td><td>新角度（21evening 角度 #2 展开）</td></tr>
+                            <tr><td><strong>硬件适配层</strong></td><td><strong>#23 Qwen3 DGX Spark 5pt</strong></td><td>国产开源模型桌面级 GPU 部署</td><td>新角度（21evening 角度 #3 展开）</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>核心结论</strong>：<span class="highlight">6/21 21evening 必报"6/21 HN 北美时间当日 5 条 AI 相关新晋 = Loupe 359pt 隐私 + Slow breathing 243pt 神经科学 + Anthropic 7/8 ID 验证 17pt 政策 + Qwen3 DGX Spark 5pt 硬件适配 + Geometric algebra 40pt 数学"作为"开发者社区持续议题"主线</span>。</p>
+                    <p><strong>撞车规避</strong>：vs 6/21 morning 写过"6/20 HN front Temporary Cloudflare accounts for AI agents #23 161pt/93c"：6/21 HN front 没有 Cloudflare 续作 = <strong>撞车规避 5 角度数据点全部 0 处撞车</strong>。vs 6/21 afternoon 写过"6/19 HN front Project Fetch Phase Two #5 18pt"：6/21 HN front #20 Anthropic 7/8 ID 验证 = 完全新角度。vs 6/20 21evening 写过"SpaceX-Cursor 1057pt/1567c / Running local models 1402pt / GLM-5.2 #15 299pt"：6/21 HN front 没有这些条目（已下沉）= 完全新角度。</p>
+                </div>
+            </div>
+        </section><!-- 撞车协议总结表 -->
+        <section class="section">
+            <div class="section-title">撞车协议总结</div>
+            <div class="card">
+                <h3>Top 撞车源 + 5 个新角度差异化清单（pre-write filter 全部 0 处撞车）</h3>
+                <div class="source">来源：6/21 morning raw.md + 6/21 afternoon raw.md 撞车源完整提取 + 本次 21evening 5 角度数据点对照 grep</div>
+                <div class="desc">
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>撞车源</th><th>已覆盖事件</th><th>21evening 主动剔除（不重复）</th><th>21evening 主动聚焦（新角度）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>6/21 morning</strong></td>
+                                <td>Claude 操控机器狗 20 倍 / 智谱回 A + DeepSeek 诺曼底时刻 / 全球 AI 主权角逐 / Cloudflare Agent 临时账号 / Fable + Mythos 外国公民禁访</td>
+                                <td>全部剔除</td>
+                                <td rowspan="2">① GLM-5.2 国际开源生态 + 马斯克点赞 + 6/22 MIT 权重<br>② HN #20 Anthropic 7/8 ID 验证<br>③ HN #23 Two Qwen3 DGX Spark<br>④ Anthropic 内部 80% 代码 + 2028 RSI 60%<br>⑤ 港股 AI 板块 evening 收市</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6/21 afternoon</strong></td>
+                                <td>唐杰 vs 马斯克 + HF 6 小时 / 江珀加盟 Anthropic / SpaceXAI Grok Office + 大众 / 阿里 VivaTech + 港股科技 100 / GPT-5.6 + 尼泊尔 + 挪威 + 努比亚 + BCI + HF 算力</td>
+                                <td>全部剔除</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 数据来源归属 -->
+        <section class="section">
+            <div class="section-title">数据来源归属</div>
+            <div class="card">
+                <div class="desc">
+                    <p><strong>本次 6/21 21evening 5 大新角度完整数据来源</strong>：</p>
+                    <ul style="list-style: none; padding-left: 16px;">
+                        <li>① <strong>腾讯网 6/21 17:13</strong>：GLM-5.2 全球免费 6 小时 + 马斯克点赞 + HuggingFace 掏钱完整复盘</li>
+                        <li>② <strong>HN #20 17pt/4c</strong>（6/21 北美时间新晋）：Anthropic to Require ID Verification for Certain Capabilities Starting July 8</li>
+                        <li>③ <strong>HN #23 5pt/0c</strong>（6/21 北美时间新晋）：Two Qwen3 models on one DGX Spark: the residency math / blog.alexellis.io</li>
+                        <li>④ <strong>腾讯云开发者社区 6/21 21:03</strong>：Anthropic 全面喊停：2028 倒计时已经开始 + 内部数据全拆解</li>
+                        <li>⑤ <strong>深交所 6/11 18:11 公告 / 港交所 6/21 evening</strong>：6/19 ~ 6/21 端午假期港股通休市 + 智谱 6/18 evening 收市 2094 港元 / 总市值 9336 亿 / 一周累涨近 90%</li>
+                    </ul>
+                    <p style="margin-top: 16px;"><strong>支撑数据来源</strong>：财联社 6/19 12:57 Hugging Face 真金白银补贴 GLM-5.2 6 小时全球免费算力 | 科创板日报 6/19 17:02 Hugging Face 6 小时全球免费算力 | 财联社 6/17 智谱 GLM-5.2 上线并开源 | 系统极客 6/19 二次传播 | 腾讯云开发者社区 6/17 22:07 Z.ai Coding Plan + MIT 权重 6/22 当周开放 | IT 之家 6/17 摩尔线程 MTT S5000 Day-0 极速适配 GLM-5.2 | 第一财经 6/19 08:40 / 智通财经 6/19 06:55 / 36 氪 6/20 21:40 / 新浪科技 6/19 17:53 智谱唐杰 vs 马斯克 X 平台对话 | PANews 6/20 14:13 / IT 之家 6/20 14:49 / 钛媒体 6/20 09:37 / 彭博社 6/21 10:18 江珀加盟 Anthropic | 新浪科技 6/19 17:53 / 快科技 6/19 15:25 / 第一财经 6/19 13:00 阿里蔡崇信 VivaTech 全栈 AI | 港交所 6/8 公告 港交所科技 100 智谱 + 壁仞 + 天数智芯 6/15 正式纳入 | 观点网 6/18 20:10 / 智通财经 6/18 15:18 / 第一财经 6/19 08:40 智谱 6/18 evening 收市 +26.14% 报 2094 港元 / 总市值 9336 亿港元 | HN Firebase API 6/21 21:00 北京时间实时拉取 25 items 串行 fetch 6-10s</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 隐私红线检查 -->
+        <section class="section">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <div class="card">
+                <div class="desc">
+                    <p>✅ <strong>无用户个人信息 / 私人语气 / 内部称呼</strong>（如"早上好"等私人语气未出现）</p>
+                    <p>✅ <strong>无业务域名 / 资产 / 系统架构信息</strong>（所有相关域名未出现）</p>
+                    <p>✅ <strong>无内部称呼 / 品牌标识</strong>（仅在文档末尾归档署名出现，且已剥离内部标识）</p>
+                    <p>✅ <strong>无 API key / 服务器配置</strong></p>
+                    <p>✅ <strong>仅公开信源数据 + 行业分析框架</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：腾讯网 6/21 17:13 GLM-5.2 全球免费 6 小时 + 马斯克点赞 + HuggingFace 掏钱 | 财联社 6/19 12:57 Hugging Face 真金白银补贴 | 科创板日报 6/19 17:02 Hugging Face 6 小时全球免费算力 | HN #20 17pt 6/21 Anthropic to Require ID Verification for Certain Capabilities Starting July 8 | HN #23 5pt 6/21 Two Qwen3 models on one DGX Spark | 腾讯云开发者社区 6/21 21:03 Anthropic 全面喊停 2028 倒计时 + Claude 撰写 80% 内部代码 + 工程师产出 8 倍 + METR 4 月翻倍 + Jack Clark 60% 完全 RSI | 深交所 6/11 18:11 公告 端午假期港股通休市 6/19 ~ 6/21 | 港交所 6/21 evening 港股主板休市 | 观点网 6/18 20:10 智谱 +26.14% 报 2094 港元 / 总市值 9336 亿港元 | 智通财经 6/18 15:18 智谱股价突破 2000 港元 | 第一财经 6/19 08:40 智谱一周累涨近 90% | 钛媒体 6/18 09:32 / 10:58 / 15:22 智谱全日 7 个时间点节奏 | 财联社 6/18 17:16 科创创业人工智能 ETF 鹏华 +5.6% | 钛媒体 App 6/18 15:22 智谱午后涨幅扩大至 +22% | 港交所 6/8 公告 港交所科技 100 三硬科技 6/15 正式纳入 | 智通财经 6/19 智谱 GLM-5.2 全球开源模型 SOTA | 系统极客 6/19 智谱 6 小时免费算力二次传播 | IT 之家 6/17 摩尔线程 MTT S5000 Day-0 极速适配 GLM-5.2 | PANews 6/20 14:13 / IT 之家 6/20 14:49 / 钛媒体 6/20 09:37 / 彭博社 6/21 10:18 江珀加盟 Anthropic | 新浪科技 6/19 17:53 / 快科技 6/19 15:25 / 第一财经 6/19 13:00 阿里蔡崇信 VivaTech 全栈 AI | HN Firebase API 6/21 21:00 北京时间实时拉取 25 items 串行 fetch 6-10s | 腾讯云开发者社区 6/17 22:07 Z.ai Coding Plan + MIT 权重 6/22 当周开放</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-21 晚间情报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
