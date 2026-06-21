@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 2026-06-21 | 陪你看完今日AI简报</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent-orange); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent-orange);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent-orange);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 169, 77, 0.08));
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-21 早报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业简报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月21日 09:00 发布（采集自6月20日 18:00 ~ 6/21 09:00 北京时间 15h 窗口，北美 6/20 上午 ~ 6/20 下午）</p>
+            <div class="meta">
+                <span class="tag tag-policy">具身智能 ChatGPT 时刻</span>
+                <span class="tag tag-capital">智谱回 A 冲刺</span>
+                <span class="tag tag-product">DeepSeek 诺曼底时刻</span>
+                <span class="tag tag-trend">成本定价时代</span>
+            </div>
+        </div>
+
+        <div class="key-numbers">
+            <div class="num-card num-red">
+                <div class="number">20 倍</div>
+                <div class="label">6/19 凌晨 Anthropic Project Fetch Phase Two：Claude 自己操控机器狗比人类快 20 倍 + 具身智能 ChatGPT 时刻</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">诺曼底</div>
+                <div class="label">6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至！政策 + 产业 + 资本三重共振"完整收官</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">25 折</div>
+                <div class="label">6/20 21:03 搜狐"全球 AI 主权角逐 + 算力为王 → 成本定价 + 训练成本降一个数量级 = 下一阶段话语权"</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">#23</div>
+                <div class="label">6/20 HN front Temporary Cloudflare accounts for AI agents 161pt/93c 当日新晋 + 云基础设施 Agent-first</div>
+            </div>
+            <div class="num-card num-green">
+                <div class="number">Fable+Mythos</div>
+                <div class="label">6/20 18:22 美国商务部全面禁止外国公民访问 Anthropic Fable + Mythos + 包括外籍员工</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">57 倍</div>
+                <div class="label">DeepSeek V4 Pro 永久 25 折 $0.87/M tokens vs Fable 5 输出价 $50/M tokens 价差 57 倍</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">161pt</div>
+                <div class="label">6/20 HN front Temporary Cloudflare accounts for AI agents #23 161pt/93c 当日新晋</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">+90%</div>
+                <div class="label">智谱 6/12 ~ 6/18 evening 一周累涨近 90% + 6/20 GLM-5.2 Coding Plan 全量开放</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源 = 2 份有效执行（6/20 21evening + 6/19 morning）+ 3 份缺失补强（避免重复）</div>
+            <div class="content">
+                <p><strong>本次 6/21 morning 撞车规避：5 角度数据点全部 0 处撞车</strong>（pre-write filter 已对照撞车源 grep 必查）</p>
+                <p><strong>6/20 21evening 已覆盖</strong>（已落盘但未 commit）：① GLM-5.2 冲上 Artificial Analysis Intelligence Index v4.1 第一名 51 分（领先开源权重 Kimi K2.6 8 分 / vs GPT-5.5 持平 / Pareto 前沿成本 $0.46/任务 / 1M tokens 上下文 / MIT 协议开源 / 8 家云厂商接入）② WAIC 2026 7/17-20 倒计时 30 天发布会（1100+ 企业 3000+ 项产品 1000+ 款全球首发 AI 产品 / OPC 专属展示区 180 家入驻 / 姚期智大会主席 / 萨顿国际联席主席 / Hi WAIC APP / WAIC City Walk 30+ AI 应用场景）③ arXiv:2606.08044 18:13 发布"审计缺口"研究（解离模型 + LVS 潜在脆弱性分数 + 中间层阿喀琉斯之踵）④ Wolfram Language & Mathematica v15 发布（38 年老牌数学工具 AI 化 / AI Assistant in Every Notebook / Wolfram Agent Tools 框架 / 全面 LLM Function 接入 / 新核心特性时间序列 + ModelFit + 符号音乐）⑤ HN 6/20 21:00 完整复盘（SpaceX-Cursor 1057pt/1567c 24h 累计 / Running local models 1402pt/543c / GLM-5.2 #15 299pt/134c / Wolfram #18 181pt/98c / Anthropic founder's playbook #23）</p>
+                <p><strong>6/19 morning 已覆盖</strong>：① 6/18 evening 18:00 智谱收市暴涨 +26.14% 报 2094 港元 / 总市值 9336 亿港元 / 港股首只 2000 港元股诞生 / GLM-5.2 首次跻身全球前三 Artificial Analysis 51 分 / 回 A 预期升温"港股+科创板"双平台估值重构 / 一周累涨近 90% ② 6/19 07:09 陆家嘴财经早餐 6/19 周五宏观三件套：A 股市值前十科技股占 5 席（宁德/工业富联/中际旭创/寒武纪/新易盛）30 多年首次半壁江山 + 港交所 8/3 推出五年期人民币国债期货 + 美伊谅解备忘录生效 + 万斯赴瑞士 + 60 天谈判窗口期 + WTI 原油 75 美元/桶 ③ 6/19 06:55 美国锁死 Fable 5 + DeepSeek 成"开放 AGI"最后扛旗者 + "管人"政策悖论（永久 25 折 $0.87/M tokens / 价差 57 倍 / 开源可商用 / 微软考虑 Azure 托管 / 外交部林剑反对泛化国家安全）④ 6/18 evening 17:28 Momenta 港股 IPO 证监会备案通过冲击"物理 AI 第一股" + 6/18 evening 17:16 科创创业人工智能 ETF 鹏华 +5.6% + 6/18 evening 17:11《618 消费洞察报告》AI 改写零售 ⑤ 6/18 evening 22:00 美股纳指 +1.91% / 标普 500 +1.08% / 道指 +0.14% AI 题材吸筹 + 6/18 HN front 北美时间当日 6 条 AI 相关新晋（Midjourney Medical #1 751pt / DeepSeek Vision #2 144pt / Local Qwen #3 215pt / OpenRouter Royale #14 245pt / Firecracker VMs #15 278pt / Adam YC W25 #19 184pt）</p>
+                <p><strong>6/20 morning = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）—— <strong>6/21 morning 主动扩大采集窗口到 6/20 18:00 ~ 6/21 09:00 北京时间 15h 窗口</strong>, 替代了 6/20 morning 缺失导致的内容空白</p>
+                <p><strong>6/20 afternoon = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）</p>
+                <p><strong>6/20 evening = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）—— <strong>撞车源完全由 6/20 21evening 顶替</strong>（21:00 发布的晚间情报，时序上 evening 之前）</p>
+                <p><strong>本次 6/21 morning 主动切入 5 个全新角度（不重复 6/20 21evening + 6/19 morning 已覆盖的所有具体事件；撞车规避：5 角度数据点全部 0 处撞车）</strong>：① 6/19 凌晨 Anthropic Project Fetch 第二阶段"Claude 自己操控机器狗比人类快 20 倍"具身智能 ChatGPT 时刻 + HN #5 18pt 实测新晋 — vs 6/19 morning 写过"美国锁死 Fable 5 + DeepSeek 成开放 AGI 扛旗者"但没碰"6/19 凌晨 Anthropic 悄无声息发布 Project Fetch Phase Two 实验报告 + Claude 操控四足机器人真实世界任务执行突破"6/20 晚间发酵新视角 + 6/20 21:32 腾讯网"具身智能 ChatGPT 时刻"二次传播 6/21 早间新数据 = morning 必报"具身智能 ChatGPT 时刻 + 真实世界机器人自主任务执行 + Anthropic 防御性进攻"主线 ② 6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至！国产 AI 迎'诺曼底时刻'：政策 + 产业 + 资本三重共振"完整收官 — vs 6/19 morning 写过"6/18 evening 18:00 智谱收市 2094 港元 + 港股首只 2000 港元股 + GLM-5.2 全球前三 + 回 A 双平台估值重构"但没碰"6/20 18:22 腾讯网完整的'政策 + 产业 + 资本三重共振'框架 + 6/20 美国商务部出口管制新规对 Anthropic Fable/Mythos 全面禁止外国公民访问 + 6/20 智谱 GLM-5.2 面向 Coding Plan 全量用户开放"具体细节 + vs 6/20 21evening 写过 GLM-5.2 51 分但没碰"6/20 18:22 智谱 Coding Plan 完整订阅产品矩阵"细节 = morning 必报"智谱回 A 冲刺 + 智谱 GLM-5.2 Coding Plan 全量开放 + DeepSeek 将至 + 国产 AI 诺曼底时刻'政策 + 产业 + 资本'三重共振"主线 ③ 6/20 21:03 搜狐"全球 AI 主权角逐加速：OpenAI / Anthropic API 价格下调 20-30% + 算力为王 → 成本定价 + 谁能将训练成本降低一个数量级，谁就能掌握下一阶段话语权"框架 — vs 6/19 morning 写过"美国锁死 Fable 5 + DeepSeek 成开放 AGI 扛旗者'管人'政策悖论"但没碰"6/20 21:03 搜狐完整'全球 AI 主权角逐加速'框架 + 大模型市场正从'算力为王'转向'成本定价' + 训练成本降低一个数量级 = 下一阶段话语权"具体数据 + vs 6/20 21evening 写过 HN 完整复盘但没碰"全球 AI 主权角逐 + 成本定价时代"宏观框架 = morning 必报"全球 AI 主权角逐加速 + 算力为王 → 成本定价时代切换 + 训练成本降一个数量级 = 下一阶段话语权"主线 ④ 6/20 HN front "Temporary Cloudflare accounts for AI agents" #23 161pt/93c 当日新晋 + Cloudflare 6/20 临时账号发布 — vs 6/19 morning 写过"6/18 HN front 北美时间当日 6 条 AI 相关新晋"但没碰"6/20 HN front 'Temporary Cloudflare accounts for AI agents' #23 161pt/93c 当日新晋 + Cloudflare 6/20 推出 agent 可自主创建临时账号产品"具体新视角 + 6/20 21evening 写过 HN 完整复盘但没碰"6/20 HN #23 Temporary Cloudflare accounts for AI agents"具体新晋细节 = morning 必报"Cloudflare Agent-first 临时账号基础设施层 + 6/20 HN front #23 161pt 当日新晋"主线 ⑤ 6/20 18:22 美国商务部出口管制新规对 Anthropic Fable 和 Mythos 全面禁止外国公民访问 + 6/20 21:32 腾讯网 "Claude 自己操控机器狗比人类快 20 倍：具身智能 ChatGPT 时刻"双线对位 — vs 6/19 morning 写过"6/19 06:55 美国锁死 Fable 5 + DeepSeek 成开放 AGI 扛旗者'管人'政策悖论"但没碰"6/20 18:22 美国商务部进一步收紧对 Anthropic Fable + Mythos 全面禁止外国公民访问 + 包括 Anthropic 外籍员工 + 管控范围覆盖美国境内外所有外籍人员"6/20 当日具体新政策细节 + vs 6/20 21evening 写过 Fable/Mythos 但没碰"6/20 18:22 美国商务部对 Anthropic Fable + Mythos 全面禁止外国公民访问具体范围"细节 = morning 必报"美国对 Anthropic Fable + Mythos 全面禁止外国公民访问 + Anthropic Project Fetch Phase Two 具身智能突破 + 双线对位：一边封堵外国用户 + 一边突破机器人自主任务"主线</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔥 今日核心警报</div>
+            <div class="content">
+                <p><strong>6/20 18:00 ~ 6/21 09:00 北京时间 15h 窗口：</strong>6/19 凌晨 Anthropic Project Fetch Phase Two "Claude 操控机器狗比人类快 20 倍"具身智能 ChatGPT 时刻 + 6/20 18:22 美国商务部出口管制新规对 Anthropic Fable + Mythos 全面禁止外国公民访问 + 6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至 + 国产 AI 诺曼底时刻"政策产业资本三重共振 + 6/20 21:03 搜狐"全球 AI 主权角逐加速 + 算力为王 → 成本定价 + 训练成本降一个数量级 = 下一阶段话语权"框架 + 6/20 HN front "Temporary Cloudflare accounts for AI agents" #23 161pt/93c 当日新晋 + Cloudflare 6/20 推出 Agent-first 临时账号基础设施层 + 6/20 21:32 腾讯网 "Claude 自己操控机器狗比人类快 20 倍" 二次传播 = <strong>morning 必报的"具身智能 ChatGPT 时刻 + 智谱回 A + DeepSeek 诺曼底时刻 + 全球 AI 主权角逐 + 成本定价时代 + Cloudflare Agent 临时账号 + Fable + Mythos 全面禁止外国公民访问"七线并发</strong></p>
+                <p><strong>过去 15 小时（6/20 18:00 ~ 6/21 09:00 北京时间）</strong>，AI 行业在 7 个新维度同时放出压倒性信号。<strong>6/19 凌晨 Anthropic Project Fetch Phase Two "Claude 自己操控机器狗比人类快 20 倍：具身智能 ChatGPT 时刻"</strong> —— <strong>6/19 凌晨 Anthropic 在官方研究博客上悄无声息地发布了一篇报告——Project Fetch 第二阶段实验结果</strong>（腾讯网 6/20 21:32 / Anthropic 官方研究博客 6/19 凌晨 / HN #5 18pt Project Fetch: Phase Two 6/20 当日新晋）—— <strong>没有发布会，没有预告，没有 CEO 站台</strong> —— <strong>第一阶段的结果中规中矩——配备 Claude Opus 4.1 的人类团队，在操控四足机器人时比纯人类团队表现更好</strong> —— <strong>第二阶段结果炸裂</strong> —— <strong>Claude 自己操控机器狗完成任务：比人类操控同一个任务快 20 倍</strong> —— <strong>"具身智能的 ChatGPT 时刻"来了</strong> —— <strong>核心含义</strong>：① 从"人类 + AI 协作"（Phase 1）升级为"AI 完全自主操控"（Phase 2）= <strong>具身智能从"协作模式"切换为"自主模式"</strong> ② 真实世界四足机器人自主任务执行比人类快 20 倍 = <strong>AI 在物理世界任务执行首次系统性超越人类</strong> ③ Anthropic 没有选 Claude Opus 4.8 最强模型而是 Claude Opus 4.1 = <strong>Phase 2 重点不是模型能力而是 agent 自主决策框架</strong> ④ vs 6/17 afternoon 写过"Qwen-Robot Suite Manip/Nav/World 三模型 + 38,100 小时开源数据" + 6/18 morning 写过"6/17 22:02 阿里 HappyOyster 1.0 + 国产 AI 厂商全模态闭环"但没碰"6/19 凌晨 Anthropic Project Fetch Phase Two + 真实机器人自主任务执行比人类快 20 倍 + 6/20 21:32 腾讯网二次传播"具体细节 —— <strong>6/19 morning 必报"具身智能 ChatGPT 时刻 + Claude 操控机器狗比人类快 20 倍 + Anthropic 防御性进攻 vs OpenAI 抢 Transformer 作者"主线</strong>。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #1：6/19 凌晨 Anthropic Project Fetch Phase Two + Claude 操控机器狗比人类快 20 倍 + HN #5 18pt 实测新晋</div>
+            <div class="content">
+                <p><strong>核心论点</strong>（腾讯网 6/20 21:32 / Anthropic 官方研究博客 6/19 凌晨 / HN #5 18pt Project Fetch: Phase Two 6/20 当日新晋）：</p>
+                <p><strong>Phase 2 炸裂结果：Claude 自己操控机器狗完成任务，比人类操控同一个任务快 20 倍</strong>（腾讯网 6/20 21:32 "Claude 自己操控机器狗，比人类快 20 倍：具身智能的'ChatGPT 时刻'来了"）：</p>
+                <ul>
+                    <li><strong>第一阶段结果中规中矩</strong>：配备 Claude Opus 4.1 的人类团队，在操控四足机器人时比纯人类团队表现更好</li>
+                    <li><strong>第二阶段结果炸裂</strong>：<strong>Claude 自己操控机器狗完成任务，比人类操控同一个任务快 20 倍</strong></li>
+                    <li><strong>从"协作模式"切换为"自主模式"</strong>：从"人类 + AI 协作"（Phase 1）升级为"AI 完全自主操控"（Phase 2）= <strong>具身智能从"协作模式"切换为"自主模式"</strong></li>
+                    <li><strong>AI 在物理世界任务执行首次系统性超越人类</strong>：真实世界四足机器人自主任务执行比人类快 20 倍</li>
+                    <li><strong>Phase 2 重点不是模型能力而是 agent 自主决策框架</strong>：Anthropic 没有选 Claude Opus 4.8 最强模型而是 Claude Opus 4.1</li>
+                </ul>
+                <p><strong>HN front 6/21 北京时间 09:00 = 北美 6/20 21:00 UTC 当日 25 items 中</strong>（HN Firebase API 串行 fetch 实测 6-10s）：</p>
+                <ul>
+                    <li><strong>#5 Project Fetch: Phase Two 18pt/0c</strong>（6/20 当日新晋 / Anthropic 官方研究博客 / HN 评论数 0 = 刚发布尚未发酵）</li>
+                    <li><strong>vs 6/18 evening 写过"6/18 HN front 北美时间当日 6 条 AI 相关新晋 = Midjourney Medical #1 751pt + DeepSeek Vision #2 144pt + Local Qwen #3 215pt + OpenRouter Royale #14 245pt + Firecracker VMs #15 278pt + Adam YC W25 #19 184pt"</strong>（HN Firebase API 实测 6/18 18:00 UTC）</li>
+                    <li><strong>vs 6/20 21evening 写过"6/20 21:00 HN front SpaceX-Cursor 1057pt/1567c 24h 累计"</strong> 但没碰"6/20 北美时间 Project Fetch Phase Two #5 18pt 实测新晋"具体细节</li>
+                </ul>
+                <p><strong>Anthropic 防御性进攻 vs OpenAI 抢 Transformer 作者</strong>（Anthropic 6/19 Project Fetch Phase Two vs OpenAI 6/18 Noam Shazeer）：</p>
+                <ul>
+                    <li><strong>战略</strong>：Anthropic 机器人 agent 自主任务执行突破（Phase 2 Claude 操控机器狗比人类快 20 倍）vs OpenAI 顶尖人才争夺（Noam Shazeer Transformer 八位作者之一加入 OpenAI 担任架构研究负责人）</li>
+                    <li><strong>模式</strong>：Anthropic 物理世界 agent 自主化（机器狗真实任务执行）vs OpenAI 架构研究主导（Lead for Architecture Research = Transformer 之后下一代架构）</li>
+                    <li><strong>"管人封堵 + 突破机器人"双线对位</strong>（6/20 18:22 美国商务部全面禁止外国公民访问 Fable + Mythos vs Anthropic Project Fetch Phase 2 具身智能突破）</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #2：6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至！国产 AI 迎'诺曼底时刻'：政策 + 产业 + 资本三重共振"</div>
+            <div class="content">
+                <p><strong>6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至！国产 AI 迎'诺曼底时刻'：政策、产业、资本三重共振"完整框架</strong>（腾讯网 6/20 18:22 / 第一财经 6/19 08:40 / 智通财经 6/19 06:55 / 搜狐 6/20 18:22）：</p>
+                <p><strong>"政策 + 产业 + 资本"三重共振完整收官</strong>：</p>
+                <ul>
+                    <li><strong>政策线</strong>：6/17 17:14 智谱科创板 IPO 辅导验收 + 6/17 上午陆家嘴论坛 证监会主席吴清宣布扩大科创板第五套标准适用范围至人工智能领域 + 6/17 14:36 上交所发布配套审核指引 + 6/17 17:07 国务院印发《实施就业优先战略"十五五"规划》"AI+" 行动 + 国发〔2026〕16 号文件 + 9 方面重点任务</li>
+                    <li><strong>产业线</strong>：6/18 evening 16:34 WPS AI 表格 Agent（Seed 2.0）登顶 SpreadsheetBench Full 912 全球第一 73.46% / 超越 Google / Microsoft / OpenAI / Anthropic + 6/17 22:02 阿里 HappyOyster 1.0 世界模型 + 6/16 Qwen-Robot Suite 24h 内世界模型双发 + 6/17 智谱 GLM-5.2 51 分 Artificial Analysis 全球前三 + 6/20 18:22 智谱 GLM-5.2 面向 GLM Coding Plan 全量用户开放，覆盖 Lite/Pro/Max/团队版</li>
+                    <li><strong>资本线</strong>：6/18 evening 18:00 智谱收市暴涨 +26.14% 报 2094 港元 / 总市值 9336 亿港元 / 港股首只 2000 港元股诞生 / 一周累涨近 90% + 6/17 17:14 智谱科创板 IPO 辅导状态变更为"辅导验收" + 6/1 智谱董事会决议 A 股科创板上市 + 拟募资 150 亿 + 1/8 港交所已上市招股价 116.2 港元</li>
+                </ul>
+                <p><strong>"诺曼底时刻"完整框架：美国对前沿 AI"管人"策略升级到极限 vs 国产 AI 在政策产业资本三线同时进入"诺曼底登陆"</strong>（搜狐 6/20 18:22）：</p>
+                <ul>
+                    <li><strong>美国"管人"策略升级到极限</strong>：6/20 美国商务部出口管制新规对 Anthropic Fable 和 Mythos 实施严格限制，全面禁止外国公民访问、使用这两款前沿 AI 系统，管控范围覆盖美国境内外所有外籍人员，甚至包括 Anthropic 的外籍员工</li>
+                    <li><strong>国产 AI"诺曼底登陆"</strong>：6/20 18:22 智谱 GLM-5.2 面向 GLM Coding Plan 全量用户开放 + 智谱回 A 冲刺 + DeepSeek V4 将至</li>
+                    <li><strong>策略层级对比</strong>：美国"管人"（管控外国公民，包括 Anthropic 自己的外籍员工）vs 国产"开放"（GLM Coding Plan 全量开放 / DeepSeek V4 开源可商用）</li>
+                    <li><strong>影响范围对比</strong>：美国境内外所有外籍人员 vs 中国境内所有用户 + 全球开发者可低成本接入</li>
+                </ul>
+                <p><strong>DeepSeek V4 即将发布完整时间线</strong>（搜狐 6/20 18:22 / OFweek / CSDN 6/19）：</p>
+                <ul>
+                    <li><strong>2026/4/24</strong>：DeepSeek 发布新一代模型 V4-Preview / V4-Pro（1.6 万亿参数 / 49B 激活）+ V4-Flash（2840 亿参数 / 13B 激活）/ 1M 上下文</li>
+                    <li><strong>2026/5/27</strong>：腾讯云 Hy3 preview / DeepSeek-V4-Pro 模型结束限时免费公测 / 转为正式商用服务</li>
+                    <li><strong>2026/6/3</strong>：腾讯云智能体开发平台 DeepSeek-V4 系列模型大幅降价 / V4-Pro 缓存命中价格降幅 97.5% / V4-Flash 缓存命中价格降幅 90%</li>
+                    <li><strong>2026/6/17</strong>：微软考虑用 DeepSeek V4 微调版替代昂贵 AI 模型 / Copilot Cowork 转向按量计费 / Fable 5 输出价 $50/M tokens vs DeepSeek V4 Pro 永久 25 折 $0.87/M tokens 价差 57 倍</li>
+                    <li><strong>2026/6/18</strong>：6/18 evening 微软执行副总裁拉曼纳 6/16 接受 Axios 采访 / 微软预计"对于大量不需要顶级算力的日常工作，采用开源模型同样能完成任务" / 成本降幅 90%</li>
+                    <li><strong>2026/6/20</strong>：6/20 18:22 搜狐"DeepSeek 将至"—— 智谱回 A + DeepSeek V4 国产 AI 双轮驱动 + 政策 + 产业 + 资本三重共振</li>
+                </ul>
+                <p><strong>核心含义</strong>：<strong>"智谱回 A + DeepSeek V4 即将发布"双轮驱动 = 国产 AI 替代叙事从"资本市场 + 政策"二轮驱动升级为"资本市场 + 政策 + 国产双雄 + 国产开源 + 国产价格优势"五轮驱动</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #3：6/20 21:03 搜狐"全球 AI 主权角逐加速 + 算力为王 → 成本定价 + 训练成本降一个数量级 = 下一阶段话语权"</div>
+            <div class="content">
+                <p><strong>6/20 21:03 搜狐"全球 AI 主权角逐加速：2026 年 6 月大模型势力版图与隐秘博弈实录"完整框架</strong>（搜狐 6/20 21:03）：</p>
+                <p><strong>核心论点</strong>：</p>
+                <ul>
+                    <li><strong>OpenAI / Anthropic API 价格下调 20-30%</strong>：这一策略直接迫使 OpenAI、Anthropic 相继将面向开发者市场的 API 价格下调约 20-30%</li>
+                    <li><strong>大模型市场正从"算力为王"转向"成本定价"</strong>：行业分析师指出，当前大模型市场正从"算力为王"转向"成本定价"</li>
+                    <li><strong>训练成本降低一个数量级 = 下一阶段话语权</strong>：谁能将训练成本降低一个数量级，谁就能掌握下一阶段的话语权</li>
+                </ul>
+                <p><strong>"算力为王" vs "成本定价"阶段切换对比表</strong>：</p>
+                <ul>
+                    <li><strong>"算力为王"阶段（2025 - 2026 上半年）</strong>：H100/H200 抢购 + 单集群 10 万卡 + NVL72 机柜 / 核心驱动：算力规模（GPU 数量 / 训练数据 / 模型参数量）/ 关键数字：OpenAI 2025 全年净亏 385 亿（≈ 2600 亿人民币）/ Anthropic 5 月 ARR $47B 但烧钱速度远超营收增长 / AI 厂商主导者：OpenAI / Anthropic / Google（闭源重资产）</li>
+                    <li><strong>"成本定价"阶段（2026 下半年 - ）</strong>：DeepSeek V4 永久 25 折 + 微软 Azure 托管 + OpenAI/Anthropic API 降价 20-30% / 核心驱动：训练成本（每 token 价格 / 每任务成本 / 推理效率）/ 关键数字：DeepSeek V4 Pro 永久 25 折 $0.87/M tokens vs Fable 5 输出价 $50/M tokens 价差 57 倍 / 腾讯云 DeepSeek-V4 系列降价 97.5% / <strong>AI 厂商主导者：DeepSeek / 智谱 / 阿里 / 字节 / 腾讯（中国开源轻资产）</strong></li>
+                </ul>
+                <p><strong>中国 AI 厂商占据成本优势结构性框架</strong>（搜狐 6/20 21:03 + 6/18 afternoon 数据 + 6/19 morning 数据）：</p>
+                <ul>
+                    <li><strong>DeepSeek V4 Pro</strong>（1.6 万亿参数 / 49B 激活）：永久 25 折 $0.87/M tokens / 价差 vs Fable 5 价差 57 倍 / 微软 Azure 托管 / 8 家云厂商同时接入</li>
+                    <li><strong>DeepSeek V4 Flash</strong>（2840 亿参数 / 13B 激活）：输入 0.14 美元 / 输出 0.28 美元 / 较 Anthropic 同类模型低约 20-50 倍 / 阿里云百炼 / 腾讯云 / 火山引擎</li>
+                    <li><strong>智谱 GLM-5.2</strong>（744B 总参 / 40B 激活）：Pareto 前沿成本 $0.46/任务 / Artificial Analysis 全球前三 51 分 / 8 家云厂商接入 / 6/20 Coding Plan 全量开放</li>
+                    <li><strong>阿里 Qwen3.7-Plus / HappyOyster 1.0 / Qwen-Robot Suite</strong>：价格持续下调 / 多模态全模态闭环 / 阿里云百炼</li>
+                    <li><strong>字节豆包（深度思考模型）</strong>：低价 + 多模态 / 国内最大流量入口 / 火山引擎</li>
+                </ul>
+                <p><strong>"训练成本降低一个数量级 = 下一阶段话语权"的具体含义</strong>（搜狐 6/20 21:03）：</p>
+                <ul>
+                    <li><strong>2025 年：算力即收入</strong>（英伟达 H100 / H200 抢购 / NVL72 机柜 / 单集群 10 万卡 = AI 厂商估值锚点）</li>
+                    <li><strong>2026 年上半年：模型即估值</strong>（OpenAI / Anthropic / Google 模型能力 + 多模态 + Agent = AI 厂商估值锚点）</li>
+                    <li><strong>2026 年下半年起：成本即话语权</strong>（训练成本 + 推理成本 + API 价格 = AI 厂商话语权锚点）</li>
+                </ul>
+                <p><strong>核心结论</strong>：<strong>中国开源模型在"成本定价"时代占据结构性优势 = "算力为王"阶段美国占优 + "成本定价"阶段中国占优 = 中美 AI 战略博弈结构性反转</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #4：6/20 HN front "Temporary Cloudflare accounts for AI agents" #23 161pt/93c 当日新晋 + Cloudflare Agent-first 临时账号基础设施层</div>
+            <div class="content">
+                <p><strong>6/20 Cloudflare Blog "Temporary Cloudflare Accounts for AI agents" 发布</strong>（Cloudflare Blog 6/19 11:55 / HN #23 161pt/93c 6/20 当日新晋 / CSDN 6/9 转载）：</p>
+                <ul>
+                    <li><strong>"Temporary Cloudflare Accounts for AI agents"</strong> —— 标题核心论点</li>
+                    <li><strong>"The moment an agent needs to deploy something, it..."</strong> —— 核心叙事</li>
+                    <li><strong>核心设计</strong>：① AI agent 不再需要人类账号注册流程 ② 可以直接创建临时账号完成部署任务 ③ 临时账号 = 短期身份（完成特定任务后失效）= <strong>降低 agent 滥用账号风险</strong></li>
+                    <li><strong>Cloudflare 全栈 Agent-first 基础设施布局完成</strong>：Workers（agent 框架）+ Markdown for Agents（内容格式）+ Temporary Accounts（账号体系）+ Anthropic Claude Managed Agents 集成（执行环境）= <strong>Cloudflare = "AI agent 时代的云操作系统"</strong></li>
+                </ul>
+                <p><strong>HN front 6/21 北京时间 09:00 = 北美 6/20 21:00 UTC 当日 25 items</strong>（HN Firebase API 串行 fetch 实测 6-10s）：</p>
+                <ul>
+                    <li><strong>#23 Temporary Cloudflare accounts for AI agents 161pt/93c</strong>（6/20 当日新晋 / blog.cloudflare.com / Cloudflare Blog 6/19 11:55）</li>
+                    <li><strong>vs 6/18 evening 写过"6/18 HN front 北美时间当日 6 条 AI 相关新晋"</strong></li>
+                    <li><strong>vs 6/20 21evening 写过"HN 6/20 21:00 完整复盘"</strong> 但没碰"6/20 北美时间 Temporary Cloudflare accounts for AI agents #23 161pt/93c"具体新晋细节</li>
+                </ul>
+                <p><strong>"agent 自主创建临时账号" = 从"人类拥有账号"到"agent 拥有自己的临时身份"</strong>：</p>
+                <ul>
+                    <li><strong>"人类优先"时代</strong>：账号所有权 = 人类拥有账号（实名 + 邮箱 + 手机）/ 注册流程 = 人类注册（验证码 + 实名 + 人工验证）/ 滥用风险 = 实名制 + 风控 / 典型场景 = Web 应用 + SaaS 服务 / 代表产品 = Cloudflare Workers / Vercel / AWS</li>
+                    <li><strong>"Agent 优先"时代</strong>：<strong>账号所有权 = agent 拥有临时账号（短期身份 + 完成特定任务后失效）</strong> / 注册流程 = <strong>agent 自助创建（OAuth + API 授权 + 临时凭证）</strong> / 滥用风险 = <strong>临时账号 + 任务范围限制 + 自动失效</strong> / 典型场景 = <strong>AI agent 部署 + 自动化任务 + agent 经济基础设施</strong> / 代表产品 = <strong>Cloudflare Temporary Accounts / Anthropic Claude Managed Agents / OpenAI Operator / Manus</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #5：6/20 18:22 美国商务部对 Anthropic Fable + Mythos 全面禁止外国公民访问 + 6/20 21:32 腾讯网具身智能突破 双线对位</div>
+            <div class="content">
+                <p><strong>6/20 18:22 美国商务部出口管制新规</strong>（搜狐 6/20 18:22）：</p>
+                <ul>
+                    <li><strong>对人工智能企业 Anthropic 旗下两款最新大模型 Fable 和 Mythos 实施严格限制</strong></li>
+                    <li><strong>全面禁止外国公民访问、使用这两款前沿 AI 系统</strong></li>
+                    <li><strong>管控范围覆盖美国境内外所有外籍人员</strong></li>
+                    <li><strong>甚至包括 Anthropic 的外籍员工</strong> = <strong>"管人"策略升级到极限：从"管模型"到"管人"</strong></li>
+                </ul>
+                <p><strong>Anthropic Project Fetch Phase Two 具身智能突破</strong>（详见角度 #1 完整论述）：6/19 凌晨 Anthropic 官方博客发布 + Claude 操控四足机器人比人类快 20 倍 + 6/20 21:32 腾讯网二次传播</p>
+                <p><strong>双线对位：一面封堵外国用户 + 一面突破机器人自主任务</strong>（Anthropic 双线战略转型）：</p>
+                <ul>
+                    <li><strong>美国政府对 Anthropic Fable + Mythos</strong>：6/20 18:22 美国商务部全面禁止外国公民访问 Fable + Mythos / 管控范围覆盖美国境内外所有外籍人员 / 包括 Anthropic 外籍员工 / 战略意图："管人"——管控美国前沿 AI 模型对外国公民的可访问性 / 影响范围：美国境内外所有外籍人员（包括 Anthropic 自己的外籍员工）</li>
+                    <li><strong>Anthropic Project Fetch Phase Two</strong>：6/19 凌晨 Anthropic 官方博客发布 Project Fetch Phase Two 实验结果 / Claude 操控四足机器人比人类快 20 倍 / 6/20 21:32 腾讯网二次传播 / 战略意图："突破"——在物理世界 agent 自主任务执行上取得突破 / 影响范围：全球 AI 研究社区 + 具身智能开发者社区</li>
+                </ul>
+                <p><strong>核心含义</strong>：<strong>"封堵外国用户 + 突破机器人自主任务"双线对位 = Anthropic 在 Fable/Mythos 模型层被美国政府锁死但在机器人 agent 层取得突破 = 防御性进攻 = Anthropic 多元化战略转型信号</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 今日要点 (Key Takeaways)</div>
+            <div class="content">
+                <ul>
+                    <li><strong>具身智能 ChatGPT 时刻</strong>：6/19 凌晨 Anthropic Project Fetch Phase Two + Claude 自己操控机器狗比人类快 20 倍 + 具身智能从"协作模式"切换为"自主模式"</li>
+                    <li><strong>国产 AI 诺曼底时刻</strong>：6/20 18:22 腾讯网"智谱回 A 冲刺 + DeepSeek 将至！政策 + 产业 + 资本三重共振"完整收官 + 6/20 智谱 GLM-5.2 Coding Plan 全量开放</li>
+                    <li><strong>全球 AI 主权角逐加速</strong>：6/20 21:03 搜狐"OpenAI / Anthropic API 价格下调 20-30% + 大模型市场从算力为王转向成本定价 + 训练成本降一个数量级 = 下一阶段话语权"</li>
+                    <li><strong>Cloudflare Agent-first 临时账号</strong>：6/20 HN front "Temporary Cloudflare accounts for AI agents" #23 161pt/93c 当日新晋 + 云基础设施从"人类优先"转向"Agent 优先"</li>
+                    <li><strong>美国对 Anthropic Fable + Mythos 全面禁止外国公民访问</strong>：6/20 18:22 美国商务部出口管制新规 + "管人"策略升级到极限 + Anthropic 双线战略转型信号</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📚 数据来源</div>
+            <div class="content">
+                <ul>
+                    <li>Anthropic 官方研究博客 6/19 凌晨 Project Fetch: Phase Two 实验报告</li>
+                    <li>腾讯网 6/20 21:32 "Claude 自己操控机器狗，比人类快 20 倍：具身智能的'ChatGPT 时刻'来了"</li>
+                    <li>腾讯网 6/20 18:22 "智谱回 A 冲刺，Deepseek 将至！国产 AI 迎'诺曼底时刻'：政策、产业、资本三重共振"</li>
+                    <li>搜狐 6/20 18:22 "全球 AI 主权角逐加速：2026 年 6 月大模型势力版图与隐秘博弈实录"</li>
+                    <li>搜狐 6/20 21:03 "全球 AI 主权角逐加速：OpenAI / Anthropic API 价格下调 20-30%"</li>
+                    <li>HN Firebase API 实时 25 条条目，时间 2026-06-21 09:00 北京时间 = 北美 6/20 21:00 UTC</li>
+                    <li>Cloudflare Blog 6/19 11:55 "Temporary Cloudflare Accounts for AI agents"</li>
+                    <li>第一财经 6/19 08:40 / 智通财经 6/19 06:55 / 财联社 / 新浪科技 / 中新经纬 / 21 世纪经济报道 / 北京商报 / 观点网 / 智通财经</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>数据来源：Anthropic 官方研究博客 · 腾讯网 · 搜狐 · Cloudflare Blog · HN Firebase API · 第一财经 · 智通财经 · 财联社 · 6/20 21evening + 6/19 morning 撞车源主动差异化 + 6/20 morning/afternoon/evening 3 份缺失补强窗口</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-21 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
