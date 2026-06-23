@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 午间情报 2026-06-23 · 港股 AI 跳水 + 美股 AI 信仰拷问 + 中国模型 8 周领跑</title>
+    <meta name="description" content="OPC 午间情报 · 2026-06-23 · 港股 AI 一天内'冲高 → 跳水 → 板块分化'完整复盘 · 美股 6/22 隔夜 AI 信仰拷问 + SpaceX 4000 亿美元蒸发 + 谷歌 AI 负责人离职三连击 · SpaceX 200 亿债券融资 + Reflection AI 63 亿算力 · 中国大模型连续 8 周领跑 + 前 4 全中国 · 腾讯微信 AI 小微灰度 + 贝莱德增仓阿里 + 智谱回 A 港股 A 股双平台估值">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
+            color: #1a1a1a;
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            padding: 36px 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 28px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid #10b981;
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-size: 26px;
+            color: #064e3b;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        .meta {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+        .tag {
+            display: inline-block;
+            background: #ecfdf5;
+            color: #047857;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin: 2px;
+            font-weight: 500;
+        }
+        .alert-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 5px solid #10b981;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .alert-box .alert-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #064e3b;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin: 28px 0;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #047857;
+            margin-bottom: 14px;
+            padding-left: 12px;
+            border-left: 4px solid #10b981;
+        }
+        .subsection-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #374151;
+            margin: 14px 0 8px;
+            padding-left: 8px;
+            border-left: 2px solid #d1d5db;
+        }
+        .content {
+            font-size: 14px;
+            color: #374151;
+            line-height: 1.85;
+        }
+        .content p {
+            margin: 8px 0;
+        }
+        .num-card {
+            display: inline-block;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            border-radius: 8px;
+            padding: 8px 14px;
+            margin: 4px;
+            font-size: 13px;
+            color: #064e3b;
+        }
+        .num-card strong {
+            color: #047857;
+            font-weight: 700;
+        }
+        .rhythm-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 13px;
+        }
+        .rhythm-table th {
+            background: #10b981;
+            color: white;
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .rhythm-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .rhythm-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        .highlight-green {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border-left: 3px solid #10b981;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .highlight-yellow {
+            background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+            border-left: 3px solid #f59e0b;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .highlight-red {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border-left: 3px solid #ef4444;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .highlight-blue {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 3px solid #3b82f6;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .data-list {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        }
+        .data-list li {
+            list-style: none;
+            padding: 4px 0;
+            font-size: 13px;
+            color: #374151;
+        }
+        .data-list li strong {
+            color: #047857;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .footer {
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+        strong {
+            color: #047857;
+            font-weight: 600;
+        }
+        em {
+            color: #4b5563;
+            font-style: normal;
+            font-weight: 500;
+        }
+        .collision-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 12px;
+        }
+        .collision-table th {
+            background: #10b981;
+            color: white;
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .collision-table td {
+            padding: 8px 10px;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+        .collision-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        .emoji {
+            font-size: 18px;
+            margin-right: 6px;
+        }
+        .version-mark {
+            display: inline-block;
+            background: #047857;
+            color: white;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="badge">OPC 午间情报 · AFTERNOON BRIEFING <span class="version-mark">6/22 4 份缺失补救</span></div>
+            <h1>港股 AI 一天内'冲高 → 跳水 → 板块分化'完整复盘</h1>
+            <p class="subtitle">美股 6/22 隔夜 AI 信仰拷问 + SpaceX 4000 亿美元蒸发 + 谷歌 AI 负责人离职三连击</p>
+            <p class="subtitle">SpaceX 200 亿债券融资 + Reflection AI 63 亿算力 · 中国大模型连续 8 周领跑 + 前 4 全中国</p>
+            <p class="subtitle">腾讯微信 AI"小微"灰度 + 贝莱德增仓阿里 + 智谱回 A 港股 A 股双平台估值重构</p>
+            <div class="meta">
+                <span>📅 2026-06-23</span>
+                <span>🕛 12:00 北京时间</span>
+                <span>🌏 覆盖 6/22 18:00 ~ 6/23 12:00 (18h)</span>
+            </div>
+            <div style="margin-top: 14px;">
+                <span class="tag">港股 AI 跳水</span>
+                <span class="tag">美股 AI 信仰拷问</span>
+                <span class="tag">SpaceX -16.43%</span>
+                <span class="tag">Reflection AI 63 亿</span>
+                <span class="tag">中国模型 8 周领跑</span>
+                <span class="tag">前 4 全中国</span>
+                <span class="tag">微信 AI 小微</span>
+                <span class="tag">贝莱德 5.26%</span>
+                <span class="tag">智谱回 A 双平台</span>
+            </div>
+        </div>        <div class="alert-box">
+            <div class="alert-title">🔥 6/22 18:00 ~ 6/23 12:00 核心警报</div>
+            <p><strong>18h 窗口全球 AI 行业 6 维度并发</strong>：</p>
+            <p><strong>① 港股 AI"冲高后跳水"</strong>：智谱 6/22 evening 2410 港元 → 6/23 上午 -7% → -15% → -16% → -12% 持续跳水，市值 1.07 万亿 → 9398 亿港元（蒸发 1302 亿），MINIMAX-W -12%；海清智元 +8.99% 二次走强板块分化</p>
+            <p><strong>② 6/22 隔夜美股"AI 信仰集体拷问"</strong>：道指 +0.29% / 纳指 -1.32% / 标普 -0.37% / SpaceX -16.43% / 谷歌 -5% / 亚马逊 -4.8% / 微软 -3% / 美光 +7% / 英特尔 +5%；SpaceX 单日蒸发近 4000 亿美元，谷歌 AI 负责人 Jumper 离职</p>
+            <p><strong>③ SpaceX 上市以来首次 200 亿美元债券融资</strong> + Reflection AI 63 亿美元算力协议（每月 1.5 亿 / 7/1 起 / 至 2029）= 美国 AI 基础设施融资潮标志</p>
+            <p><strong>④ 中国大模型 6/15-21 周调用量 18.81 万亿 Token</strong> / 连续 8 周领跑 + 前 4 全中国（DeepSeek V4 Flash / MiMo-V2.5 / MiniMax M3 / Hy3 preview）+ 中国是美国的 3.27 倍</p>
+            <p><strong>⑤ 6/23 上午腾讯微信 AI"小微"灰度</strong> + 6/12 贝莱德增仓阿里 4.99% → 5.26% + 智谱回 A 港股 A 股双平台估值重构（港股 1 万亿 + A 股科创板 150 亿募资）</p>
+            <p><strong>⑥ 6/22 evening 美股 AI 信仰拷问 vs 中国大模型 8 周领跑</strong> = "美国 AI 资本市场恐慌 vs 中国 AI 实际调用持续放量"双线对位</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源协议（4 份 - 3 份缺失 + 1 份补强）</div>
+            <div class="content">
+                <p><strong>撞车源 = 1 份有效 + 3 份缺失（避免重复）</strong>：</p>
+                <ul>
+                    <li><strong>6/23 morning ✅</strong>：智谱 6/22 evening +17.48% 报 2410 港元 / 总市值 1.07 万亿 / 年内累涨 1900% / 海清智元 +302.78% 首日 / 总市值 224.52 亿港元 / 7181.21 倍超额认购 / Coinbase ANTHROPIC-PERP + OPENAI-PERP pre-IPO 永续合约 / GLM-5.2 OpenRouter 全球前十 + HN #2 本地部署 + 摩尔线程 Day-0 适配 / 美股 6/22 道指 +0.25% / 标普 -0.31% / 纳指 -1% + 英伟达 Vera Rubin 45℃液冷 + 标普 500/纳指 100 AI 权重调整 / 6/23 智通财经早醒三件套</li>
+                    <li><strong>6/22 afternoon = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）</li>
+                    <li><strong>6/22 evening = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）</li>
+                    <li><strong>6/22 21evening = ❌ 缺失</strong>（cron 失败, 目录为空, index.json 无此条目）</li>
+                    <li><strong>6/21 21evening</strong>（最近成功 cron, commit 93904cc）：GLM-5.2 国际开源生态 + 马斯克点赞 + 6/22 MIT 权重开放 / Anthropic 7/8 ID 验证 HN #20 / Two Qwen3 DGX Spark HN #23 / Anthropic 内部 80% 代码 + 2028 RSI 60% / 港股端午假期</li>
+                </ul>
+                <p><strong>本次 6/23 afternoon 撞车规避 = 1 份有效 + 3 份缺失补救 playbook 范本</strong>（afternoon 类型第二次双缺失补救场景）：</p>
+                <ul>
+                    <li>raw.md 撞车源章节顶部显式标注"6/22 afternoon + evening + 21evening = ❌ 3 份缺失"</li>
+                    <li>主动扩大采集窗口到 18h（6/22 18:00 evening 收市 ~ 6/23 12:00 afternoon）</li>
+                    <li>重点抓 6/22 evening 美股收盘（SpaceX -16.43% / 谷歌 -5% / 亚马逊 -4.8% / 微软 -3%）+ 6/23 上午港股 AI 跳水</li>
+                    <li>末尾"撞车协议总结表"对应行标注"1 份 + 3 份缺失 + 6/21 21evening 补强 1 份"</li>
+                </ul>
+                <table class="collision-table">
+                    <thead>
+                        <tr>
+                            <th>撞车源</th>
+                            <th>已覆盖事件</th>
+                            <th>6/23 afternoon 主动剔除（不重复）</th>
+                            <th>6/23 afternoon 主动聚焦（新角度）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6/23 morning</td>
+                            <td>智谱 6/22 收盘 2410 / 市值 1.07 万亿 / 年内累涨 1900% / 海清智元首日 224.52 亿 / 7181 倍超额认购 / Coinbase pre-IPO / GLM-5.2 OpenRouter + HN #2 + 摩尔线程 Day-0 / 美股 Vera Rubin + 标普 500/纳指 100 调整</td>
+                            <td>6/22 evening 智谱收盘价 + 总市值 + 年内累涨 / 海清智元首日开盘 + 总市值 / 7181.21 倍超额认购 / GLM-5.2 OpenRouter 全球前十 / HN #2 本地部署 / 摩尔线程 Day-0 适配 / 美股 6/22 收盘初步数据 / 英伟达 Vera Rubin 45℃液冷 / 标普 500/纳指 100 调整 / Coinbase ANTHROPIC-PERP + OPENAI-PERP / 6/23 智通财经早醒三件套</td>
+                            <td>6/23 上午智谱 -7% → -15% → -16% → -12% 跳水 + 市值跌破万亿 / 6/23 上午 MINIMAX-W -12% / 6/23 上午海清智元 +8.99% 二次走强板块分化 / 6/22 隔夜美股 SpaceX -16.43% + 谷歌 -5% + 亚马逊 -4.8% + 微软 -3% + 美光 +7% / 谷歌 AI 负责人 Jumper 离职 / SpaceX 200 亿美元债券融资 + Reflection AI 63 亿算力 / 中国大模型 18.81 万亿 Token 连续 8 周领跑 + 前 4 全中国 / 腾讯微信 AI"小微"灰度 + 贝莱德 5.26% 增仓阿里 / 智谱回 A 港股 A 股双平台估值重构</td>
+                        </tr>
+                        <tr>
+                            <td>6/22 afternoon = ❌ 缺失</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>6/22 evening = ❌ 缺失</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>6/22 21evening = ❌ 缺失</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>6/21 21evening</td>
+                            <td>GLM-5.2 国际开源生态 / Anthropic 7/8 ID 验证 / Two Qwen3 DGX Spark / Anthropic 内部 80% 代码 + 2028 RSI / 港股端午休市</td>
+                            <td>GLM-5.2 6/21 17:13 完整复盘 / HuggingFace 6h / 马斯克点赞 / Anthropic 7/8 ID 验证 HN #20 / Two Qwen3 HN #23 / Anthropic 内部 80% 代码 / 2028 底 RSI 60% / 港股 6/19~6/21 端午假期</td>
+                            <td>(无新增 6/21 21evening 内容的覆盖)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #1：6/23 上午港股 AI"冲高后跳水"完整复盘</div>
+            <div class="subsection-title">6/23 morning 写过"6/22 evening 智谱 +17.48% 报 2410 港元 + 总市值 1.07 万亿 + 年内累涨 1900% + 海清智元 +302.78% 首日"但没碰"6/23 上午智谱 -16% 跳水 + 市值跌破万亿 + MINIMAX-W -12% + 海清智元 +8.99% 板块分化"具体新视角；afternoon 必报</div>
+            <div class="content">
+                <p><strong>6/23 上午港股 AI 板块"冲高后跳水"</strong>（人民财讯 6/23 09:50 / 智通财经 6/23 10:08 / 第一财经 6/23 11:28 / 腾讯新闻 6/23 10:53 / 经 AI 快讯 6/23 09:32）：</p>
+
+                <p class="subsection-title">1️⃣ 6/23 上午全日时间点节奏（7 个时间点）</p>
+                <p><strong>港股大盘 6/23 上午</strong>（第一财经 6/23 10:53）：</p>
+                <ul>
+                    <li>恒生指数 -0.33%</li>
+                    <li>恒生科技指数 -1%</li>
+                    <li>港股人工智能板块走低</li>
+                    <li>科网股跌多涨少：京东集团 / 哔哩哔哩 / 小米集团 -3% / 快手 / 比亚迪 -2%</li>
+                </ul>
+                <p><strong>6/23 上午 AI 大模型双雄跳水时间点节奏</strong>（人民财讯 + 智通财经 + 第一财经 + 腾讯新闻）：</p>
+                <table class="rhythm-table">
+                    <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>关键事件</th>
+                            <th>数据点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6/23 09:32</td>
+                            <td>海清智元二次走强 / MINIMAX-W 小涨</td>
+                            <td>海清智元 +8.99% / MINIMAX-W +3.81% / 剑桥科技 +2.53% / 兆易创新 +2.49%</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 09:50</td>
+                            <td>智谱盘初下挫</td>
+                            <td>智谱 -7% / MINIMAX-W -3%</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 10:08</td>
+                            <td>智谱跳水加剧</td>
+                            <td>智谱 -15% / MINIMAX-W -8%</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 10:53</td>
+                            <td>智谱市值跌破万亿 / 大盘跳水</td>
+                            <td>智谱 -16% / 市值跌破万亿港元 / MINIMAX-W -12%</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 11:24</td>
+                            <td>AI 大模型双雄"领跌"</td>
+                            <td>智谱 -9% / MINIMAX-W -13%</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 11:28</td>
+                            <td>智谱 2102 港元</td>
+                            <td>智谱 -12% / 总市值 9398 亿港元</td>
+                        </tr>
+                        <tr>
+                            <td>6/23 11:35</td>
+                            <td>智谱市值跌破万亿港元</td>
+                            <td>确认市值跌破万亿</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>节奏总结："低开 → 跳水 → 持续走低 → 市值跌破万亿"7 个时间点节奏</p>
+
+                <p class="subsection-title">2️⃣ 智谱侧：6/22 evening 报 2410 港元 → 6/23 上午跌至 2102 港元</p>
+                <p><strong>关键数据点</strong>（观点网 6/22 18:50 / 智通财经 6/23 10:08 / 第一财经 6/23 11:28）：</p>
+                <ul>
+                    <li>6/22 evening 收盘报 2410 港元 / 总市值 1.07 万亿港元</li>
+                    <li>6/23 上午跌至 2102 港元（最低跌至 -16% 约 2025 港元附近）</li>
+                    <li>总市值从 1.07 万亿 → 9398 亿港元（蒸发 1302 亿港元）</li>
+                    <li>单日回撤 12.8%（开盘 -7% → 盘中 -16% → 收盘前 -12%）</li>
+                    <li>年内累涨仍超 1800%（vs 6/23 morning 写过"突破 1900%"）</li>
+                </ul>
+
+                <p class="subsection-title">3️⃣ 板块分化：海清智元 +8.99% 二次走强 vs 智谱 -16% 跳水</p>
+                <div class="highlight-green">
+                    <p><strong>海清智元 6/23 上午 +8.99%</strong>（经 AI 快讯 6/23 09:32）：</p>
+                    <ul>
+                        <li>6/23 09:32 海清智元 +8.99%（二次走强）</li>
+                        <li>6/23 上午领涨港股人工智能板块</li>
+                        <li>vs 智谱 6/22 首日 6/22 09:49 开盘 +302.78% → 6/23 上午 +8.99%</li>
+                        <li><strong>"物理 AI 第一股"溢价效应持续</strong></li>
+                    </ul>
+                </div>
+                <div class="highlight-red">
+                    <p><strong>MINIMAX-W 6/23 上午 -12%</strong>（第一财经 6/23 10:53）：</p>
+                    <ul>
+                        <li>MINIMAX-W 与智谱同步跳水</li>
+                        <li>vs 6/22 evening 收盘 +20% / 总市值 1876 亿港元</li>
+                        <li>6/23 上午 -12% = 涨幅完全回吐</li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">4️⃣ vs 6/18 evening / 6/19 morning 写过的跳水案例</p>
+                <p><strong>vs 6/18 evening 写过"智谱 +22% 报 2038 港元 / 总市值 9000 亿"</strong>：</p>
+                <ul>
+                    <li>6/18 evening 跳涨 +22% → 6/19 morning 走弱</li>
+                    <li>6/23 morning 跳涨 +17.48% → 6/23 上午跳水 -16%</li>
+                    <li><strong>模式：单日跳涨 → 次日开盘跳水</strong>（市场获利了结）</li>
+                </ul>
+                <p><strong>vs 6/19 morning 写过"6/18 evening 智谱收市 2094 港元 / 总市值 9336 亿港元"</strong>：</p>
+                <ul>
+                    <li>6/19 morning 写的是 6/18 evening 收市数据</li>
+                    <li>6/23 morning 写的是 6/22 evening 收市 2410 港元（vs 6/18 evening 2094 港元 = +15.1%）</li>
+                    <li>6/23 上午跳水至 2102 港元 = <strong>跌回 6/18 evening 收市 2094 港元附近</strong></li>
+                </ul>
+
+                <p class="subsection-title">5️⃣ "港股 AI 一天内'冲高 → 跳水 → 板块分化'完整复盘"主线</p>
+                <div class="highlight-green">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>6/22 evening 智谱跳涨 +17.48% → 6/23 上午跳水 -16% = <strong>24h 内波动 33.5%</strong></li>
+                        <li>海清智元 +8.99% vs MINIMAX-W -12% = <strong>板块"新股继续涨 + 老股跳水"格局</strong></li>
+                        <li>智谱市值 1.07 万亿 → 9398 亿港元 = 单日蒸发 1302 亿港元</li>
+                    </ul>
+                    <p><strong>afternoon 必报"港股 AI 一天内'冲高 → 跳水 → 板块分化'完整复盘"主线</strong></p>
+                </div>
+            </div>
+        </div>        <div class="section">
+            <div class="section-title">🔁 角度 #2：6/22 隔夜美股"AI 信仰集体拷问"+ SpaceX 单日 -16.43% / 蒸发近 4000 亿美元 + 谷歌 AI 负责人 Jumper 离职</div>
+            <div class="subsection-title">6/23 morning 写过"6/22 美股道指 +0.25% / 标普 -0.31% / 纳指 -1% + 英伟达 Vera Rubin 45℃液冷 + 标普 500/纳指 100 调整"但没碰"6/22 隔夜 SpaceX 单日 -16.43% / 谷歌 AI 负责人 Jumper 离职 / 亚马逊 -4.8% / 微软 -3% / 美光 +7%"具体数据；afternoon 必报</div>
+            <div class="content">
+                <p><strong>6/22 隔夜美股"AI 信仰集体拷问"</strong>（每日经济新闻 6/23 05:08 / 美股盘前要闻 6/23 09:23 / 财联社 6/23 10:54 / 腾讯新闻 6/23 05:08 / 国际金融要情 6/23 08:07）：</p>
+
+                <p class="subsection-title">1️⃣ 6/22 隔夜美股三大指数收盘</p>
+                <p><strong>6/22 收盘数据</strong>（每日经济新闻 6/23 05:08 / 美股盘前要闻 6/23 09:23）：</p>
+                <ul>
+                    <li><strong>道指 +0.29%</strong>（微涨）</li>
+                    <li><strong>纳指 -1.32% 报 26166.60 点</strong></li>
+                    <li><strong>标普 500 -0.37% 报 7472.79 点</strong></li>
+                </ul>
+
+                <p class="subsection-title">2️⃣ 大型科技股全面跳水（5 大科技股）</p>
+                <p><strong>大型科技股 6/22 收盘</strong>（腾讯新闻 6/23 05:08 / 国际金融要情 6/23 08:07）：</p>
+                <ul>
+                    <li><strong>SpaceX -16.43%</strong>（单日市值损失第二大的全球企业记录 / 蒸发近 4000 亿美元 / 跌破 IPO 首日收盘价）</li>
+                    <li><strong>谷歌 -5%</strong>（AI 负责人 Jumper 离职）</li>
+                    <li><strong>亚马逊 -4.8%</strong>（2 月初以来最大单日跌幅）</li>
+                    <li><strong>微软 -3%</strong></li>
+                    <li><strong>Meta 微跌</strong></li>
+                </ul>
+
+                <p class="subsection-title">3️⃣ SpaceX 单日 -16.43% 蒸发近 4000 亿美元完整复盘</p>
+                <div class="highlight-red">
+                    <p><strong>SpaceX 6/22 收盘数据</strong>（IT 之家 6/23 08:21 / 财联社 6/23 09:14）：</p>
+                    <ul>
+                        <li><strong>单日 -16.43%</strong></li>
+                        <li><strong>市值单日蒸发近 4000 亿美元</strong></li>
+                        <li><strong>创下有史以来全球企业单日市值损失第二大的纪录</strong></li>
+                        <li><strong>SpaceX 上市后连续三个交易日下跌</strong></li>
+                        <li><strong>累计跌逾 23%</strong></li>
+                        <li><strong>市值蒸发超 6000 亿美元</strong></li>
+                        <li>截至 23 日收盘，SpaceX 股价仍较 135 美元的 IPO 发行价高出 14.5%</li>
+                        <li>市值 2.03 万亿美元</li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">4️⃣ 谷歌 AI 负责人 Jumper 离职</p>
+                <div class="highlight-yellow">
+                    <p><strong>谷歌 AI 负责人 Jumper 离职</strong>（腾讯新闻 6/23 05:08）：</p>
+                    <ul>
+                        <li>谷歌母公司 Alphabet AI 负责人 Jumper 离职</li>
+                        <li>谷歌收跌 5%</li>
+                        <li>vs 6/18 evening 写过"Noam Shazeer（Transformer 八位作者之一 / 'AI 巫师'）从 Google 加入 OpenAI / 担任架构研究负责人"</li>
+                        <li><strong>AI 顶尖人才争夺持续白热化</strong>：6/18 evening Shazeer 出走 + 6/22 Jumper 离职 = <strong>Google 顶尖 AI 人才持续流失</strong></li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">5️⃣ 存储芯片股逆势走强</p>
+                <p><strong>存储芯片股 6/22 收盘</strong>（腾讯新闻 6/23 10:48）：</p>
+                <ul>
+                    <li><strong>美光科技 +7%</strong></li>
+                    <li><strong>英特尔 +5%</strong></li>
+                    <li><strong>AI 软件 / AI 智能体相关个股跌幅较深</strong></li>
+                    <li>vs 6/23 morning 写过"6/22 美光续刷记录新高"</li>
+                    <li><strong>市场对 AI 算力军备竞赛的"上游 vs 下游"重新定价</strong></li>
+                </ul>
+
+                <p class="subsection-title">6️⃣ "美股 6/22 隔夜 AI 信仰拷问 + SpaceX 4000 亿美元蒸发 + 谷歌 AI 负责人离职三连击"主线</p>
+                <div class="highlight-red">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>6/22 隔夜美股 = <strong>针对"AI 信仰"的深度拷问</strong></li>
+                        <li>SpaceX -16.43% + 谷歌 -5% + 亚马逊 -4.8% + 微软 -3% = <strong>AI 题材全面回落</strong></li>
+                        <li>美光 +7% / 英特尔 +5% = <strong>存储芯片股逆势走强</strong></li>
+                        <li>谷歌 AI 负责人 Jumper 离职 + 6/18 evening Shazeer 出走 = <strong>Google AI 顶尖人才持续流失</strong></li>
+                    </ul>
+                    <p><strong>vs 6/23 morning 写过"6/22 美股道指 +0.25% / 标普 -0.31% / 纳指 -1%"</strong>：</p>
+                    <ul>
+                        <li>6/23 morning 写的是初步数据（道指 +0.25% 误，应为 +0.29%）</li>
+                        <li>6/23 afternoon 升级为"6/22 隔夜 SpaceX -16.43% / 谷歌 -5% / 亚马逊 -4.8% / 微软 -3% / 美光 +7%"完整数据</li>
+                    </ul>
+                    <p><strong>afternoon 必报"美股 6/22 隔夜 AI 信仰拷问 + SpaceX 4000 亿美元蒸发 + 谷歌 AI 负责人离职三连击"主线</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #3：SpaceX 上市以来首次 200 亿美元债券融资 + Reflection AI 63 亿美元算力协议</div>
+            <div class="subsection-title">6/23 morning 写过"英伟达 Vera Rubin 45℃液冷 + 标普 500 / 纳指 100 AI 权重调整"但没碰"6/22 SpaceX + Reflection AI 63 亿美元算力协议 + SpaceX 200 亿美元债券融资"具体新视角；afternoon 必报</div>
+            <div class="content">
+                <p><strong>SpaceX 上市以来首次 200 亿美元债券融资 + Reflection AI 63 亿美元算力协议</strong>（美股盘前要闻 6/23 / IT 之家 6/23 08:21 / 财联社 6/23 09:14 / 腾讯新闻 6/23 09:14 / 腾讯科技 6/23 09:14）：</p>
+
+                <p class="subsection-title">1️⃣ SpaceX 200 亿美元债券融资</p>
+                <p><strong>SpaceX 6/22 公告</strong>（腾讯科技 6/23 09:14）：</p>
+                <ul>
+                    <li><strong>SpaceX 上市以来首次发行债券融资至少 200 亿美元</strong> 支持 AI 基础设施扩张</li>
+                    <li><strong>消息拖累周一收市股价收跌 -16.43%</strong></li>
+                    <li>报 154.6 美元</li>
+                    <li>连续第三个交易日下跌</li>
+                    <li>期间累计下挫逾 23%</li>
+                    <li>并跌穿首日收市价格</li>
+                    <li>市值单日蒸发 4000 亿美元</li>
+                </ul>
+                <div class="highlight-blue">
+                    <p><strong>核心含义</strong>：SpaceX 200 亿美元债券融资 = <strong>美国 AI 基础设施融资潮标志事件</strong>（vs 6/19 morning 写过"美国锁死 Fable 5 + DeepSeek 成开放 AGI 扛旗者"后，<strong>美国 AI 厂商转向'融资 + 算力'军备竞赛</strong>）</p>
+                </div>
+
+                <p class="subsection-title">2️⃣ SpaceX + Reflection AI 63 亿美元算力协议</p>
+                <p><strong>SpaceX 与开源 AI 初创公司 Reflection AI 签署大型算力协议</strong>（IT 之家 6/23 08:21）：</p>
+                <ul>
+                    <li><strong>协议时间</strong>：6/22</li>
+                    <li><strong>Reflection AI 将立即获得英伟达 GB300 芯片算力</strong></li>
+                    <li><strong>自 2026 年 7 月 1 日起每月向 SpaceX 支付 1.5 亿美元</strong></li>
+                    <li><strong>合同期至 2029 年</strong></li>
+                    <li><strong>若协议执行至期满，付款总额将达到约 63 亿美元</strong></li>
+                </ul>
+                <div class="highlight-blue">
+                    <p><strong>核心含义</strong>：Reflection AI 63 亿 / 月 1.5 亿 = <strong>AI 初创公司最大单笔算力协议</strong>（= 英伟达 GB300 需求持续强劲）</p>
+                </div>
+
+                <p class="subsection-title">3️⃣ vs 6/22 美股 AI 融资潮</p>
+                <p><strong>vs 6/22 evening 写过"NVIDIA $25B 发债'算 ROI'"</strong>：</p>
+                <ul>
+                    <li>6/22 evening 写过 NVIDIA 6/15-16 $25B 发债</li>
+                    <li>6/22 evening 写过"AI 该算 ROI 了"主题</li>
+                    <li>6/23 afternoon 升级为"SpaceX 200 亿美元债券 + Reflection AI 63 亿算力 = 美国 AI 融资潮完整收官"</li>
+                </ul>
+                <p><strong>vs 6/18 afternoon 写过"微软考虑用 DeepSeek V4 微调版替代昂贵 AI 模型"</strong>：</p>
+                <ul>
+                    <li>6/18 afternoon 写过"微软考虑用 DeepSeek V4 平替"</li>
+                    <li>6/23 afternoon 升级为"SpaceX 200 亿 + Reflection AI 63 亿 = 美国 AI 融资潮完整收官"</li>
+                </ul>
+
+                <p class="subsection-title">4️⃣ "美国 AI 基础设施融资潮：SpaceX 200 亿债券 + Reflection AI 63 亿算力"主线</p>
+                <div class="highlight-blue">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>SpaceX 200 亿债券融资 = <strong>美国 AI 基础设施融资潮标志事件</strong></li>
+                        <li>Reflection AI 63 亿算力 = <strong>AI 初创公司最大单笔算力协议</strong></li>
+                        <li>SpaceX -16.43% 但 Reflection AI 算力协议 = <strong>"卖方算力 vs 买方融资"双线博弈</strong></li>
+                        <li>美联储 9 月加息概率飙升 + AI 板块估值过热预警 + 避险情绪升温 = <strong>融资潮 = 应对市场重新定价</strong></li>
+                    </ul>
+                    <p><strong>afternoon 必报"美国 AI 基础设施融资潮：SpaceX 200 亿债券 + Reflection AI 63 亿算力"主线</strong></p>
+                </div>
+            </div>
+        </div>        <div class="section">
+            <div class="section-title">🔁 角度 #4：6/22 中国大模型 6/15-21 周调用量 18.81 万亿 Token / 连续 8 周领跑 + 前 4 全中国 + 6/23 美股 AI 信仰拷问双线对位</div>
+            <div class="subsection-title">6/23 morning 写过"6/22 GLM-5.2 OpenRouter 全球前十 + HN #2 本地部署 + 摩尔线程 Day-0 适配"但没碰"6/15-21 中国大模型 18.81 万亿 Token 连续 8 周领跑 + 前 4 全中国"具体完整周榜数据；afternoon 必报</div>
+            <div class="content">
+                <p><strong>6/22 中国大模型 6/15-21 周调用量 18.81 万亿 Token / 连续 8 周领跑 + 前 4 全中国</strong>（数据宝 6/22 14:18 / IT 之家 6/22 16:54 / 数据宝 6/22 20:37 / OpenRouter 数据）：</p>
+
+                <p class="subsection-title">1️⃣ OpenRouter 6/15-21 周榜完整数据</p>
+                <p><strong>6/22 数据宝发布的 OpenRouter 最新数据测算 6/15-21 周</strong>（数据宝 6/22 14:18）：</p>
+                <ul>
+                    <li><strong>全球 AI 大模型总调用量 46.7 万亿 Token</strong></li>
+                    <li>较此前一周增长 4.7%</li>
+                    <li><strong>连续九周上涨</strong></li>
+                    <li><strong>中国 AI 大模型周调用量达 18.81 万亿 Token</strong></li>
+                    <li>环比微增 2.12%</li>
+                    <li><strong>连续四周实现增长</strong></li>
+                    <li><strong>美国 AI 大模型周调用量 5.76 万亿 Token</strong></li>
+                    <li>环比微增 0.70%</li>
+                    <li><strong>中国大模型周调用量连续八周超过美国并稳居全球首位</strong></li>
+                </ul>
+
+                <p class="subsection-title">2️⃣ OpenRouter 上榜 AI 大模型前 4 全为中国</p>
+                <div class="highlight-green">
+                    <p><strong>OpenRouter 6/15-21 周榜前 4 全中国</strong>（IT 之家 6/22 16:54）：</p>
+                    <ol>
+                        <li><strong>DeepSeek V4 Flash</strong>（蝉联榜首）</li>
+                        <li><strong>小米 MiMo-V2.5</strong>（升至第二）</li>
+                        <li><strong>MiniMax M3</strong>（首周即冲入前三）</li>
+                        <li><strong>Hy3 preview</strong></li>
+                    </ol>
+                </div>
+
+                <p class="subsection-title">3️⃣ 中国调用量是美国 3.27 倍</p>
+                <p><strong>中国 vs 美国 AI 大模型周调用量对比</strong>：</p>
+                <ul>
+                    <li>中国：18.81 万亿 Token</li>
+                    <li>美国：5.76 万亿 Token</li>
+                    <li><strong>中国是美国的 3.27 倍</strong>（vs 6/17 afternoon 写过"6/8 周中国 14.19 万亿 vs 美国 3.2 万亿 = 4.43 倍"）</li>
+                    <li><strong>连续八周超过美国并稳居全球首位</strong></li>
+                </ul>
+
+                <p class="subsection-title">4️⃣ vs 6/22 隔夜美股 AI 信仰拷问双线对位</p>
+                <div class="highlight-red">
+                    <p><strong>6/22 隔夜美股"AI 信仰集体拷问"</strong>：</p>
+                    <ul>
+                        <li>SpaceX -16.43% / 谷歌 -5% / 亚马逊 -4.8% / 微软 -3%</li>
+                        <li>美光 +7% / 英特尔 +5%</li>
+                        <li><strong>市场对 AI 资本开支可持续性遭重新评估</strong></li>
+                        <li><strong>AI 信仰的深度拷问</strong></li>
+                    </ul>
+                </div>
+                <div class="highlight-green">
+                    <p><strong>vs 6/22 中国大模型 18.81 万亿 Token 连续 8 周领跑</strong>：</p>
+                    <ul>
+                        <li><strong>"美国 AI 资本市场恐慌 vs 中国 AI 实际调用持续放量"双线对位</strong></li>
+                        <li>资本市场 vs 实际调用两条曲线完全分化</li>
+                        <li>DeepSeek V4 Flash + MiMo-V2.5 + MiniMax M3 + Hy3 preview = <strong>国产模型完整阵容首次"全部登顶全球调用榜前 4"</strong></li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">5️⃣ vs 6/17 afternoon + 6/19 morning 写过的对比</p>
+                <p><strong>vs 6/17 afternoon 写过"国产 AI 周调用量 6 周超美"</strong>：</p>
+                <ul>
+                    <li>6/17 afternoon 写的是 6/8 周数据：14.19 万亿 / 6 周超美</li>
+                    <li>6/23 afternoon 升级为：18.81 万亿 / 8 周领跑 / <strong>前 4 全中国</strong></li>
+                </ul>
+                <p><strong>vs 6/19 morning 写过"美国锁死 Fable 5 + DeepSeek 成开放 AGI 扛旗者"</strong>：</p>
+                <ul>
+                    <li>6/19 morning 写的是模型层（"DeepSeek 成开放 AGI 扛旗者"）</li>
+                    <li>6/23 afternoon 升级为调用层（"中国大模型 18.81 万亿 Token 连续 8 周领跑 + 前 4 全中国"）</li>
+                </ul>
+
+                <p class="subsection-title">6️⃣ "中国大模型连续 8 周领跑 + 前 4 全中国 + 美股 AI 信仰拷问双线对位"主线</p>
+                <div class="highlight-green">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>中国调用量 18.81 万亿 Token = 美国 5.76 万亿的 3.27 倍</li>
+                        <li><strong>前 4 全中国 = OpenRouter 全球调用榜首次"清一色中国 AI 模型"占据前 4 名</strong></li>
+                        <li><strong>从 6 周超美 → 8 周领跑 → 实际调用清一色中国</strong></li>
+                        <li><strong>"美国 AI 资本市场恐慌 vs 中国 AI 实际调用持续放量"双线对位</strong></li>
+                    </ul>
+                    <p><strong>afternoon 必报"中国大模型连续 8 周领跑 + 前 4 全中国 + 美股 AI 信仰拷问双线对位"主线</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔁 角度 #5：6/23 上午腾讯微信 AI"小微"灰度 + 贝莱德增仓阿里 5.26% + 智谱回 A 港股 A 股双平台估值重构</div>
+            <div class="subsection-title">6/23 morning 写过"智谱 6/17 17:14 辅导验收 + 港股已上市招股价 116.2 港元 + 总市值 1.07 万亿港元"但没碰"6/23 腾讯微信 AI'小微'灰度 + 贝莱德 6/12 增仓阿里 4.99% → 5.26%"具体新视角；afternoon 必报</div>
+            <div class="content">
+                <p><strong>6/23 上午腾讯微信 AI"小微"灰度 + 贝莱德 6/12 增仓阿里 4.99% → 5.26% + 智谱回 A 港股 A 股双平台估值重构</strong>（界面新闻 6/21 12:57 / 港交所信息 6/22 / 格隆汇 6/22 11:26 / 微信 AI 助手 6/21 / 21 财经 6/22）：</p>
+
+                <p class="subsection-title">1️⃣ 腾讯微信 AI"小微"灰度</p>
+                <p><strong>6/21 微信 AI 已小范围灰度上线</strong>（界面新闻 6/21 12:57）：</p>
+                <ul>
+                    <li>6/21 微信 AI 已小范围灰度上线</li>
+                    <li>部分网友微信主界面左上角已出现小眼睛式样图标</li>
+                    <li>该图标即为 AI 助手"小微"测试版入口</li>
+                    <li>小微支持通过文字或语音对话操作微信原生功能</li>
+                    <li>调起小程序等（帮助好友发送消息 / 查询朋友圈 / 预约服务等）</li>
+                </ul>
+                <div class="highlight-blue">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>微信 AI"小微"灰度 = <strong>国产大厂 AI Agent 落地最强信号</strong></li>
+                        <li>微信 13 亿月活 = 任何 AI Agent 接入都将带来指数级用户增长</li>
+                        <li>vs 6/23 morning 写过"6/17 evening 国务院 AI+ 行动" + 6/23 morning 写过"阿里 6/17 Qwen-Robot Suite + HappyOyster 1.0"</li>
+                        <li>6/23 afternoon 升级为"6/21 微信 AI'小微'灰度 + 13 亿月活 + 国产大厂 AI Agent 落地"</li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">2️⃣ 贝莱德 6/12 增仓阿里 4.99% → 5.26%</p>
+                <p><strong>港交所信息显示</strong>（港交所信息 6/22 / 格隆汇 6/22 11:26）：</p>
+                <ul>
+                    <li><strong>全球最大的资产管理公司贝莱德（BlackRock）在阿里巴巴-W H 股的持股比例于 06/12 从 4.99% 升至 5.26%</strong></li>
+                    <li>增持比例 0.27 个百分点</li>
+                </ul>
+                <div class="highlight-blue">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>贝莱德管理 10 万亿美元资产 = <strong>全球最大资管</strong></li>
+                        <li>贝莱德 6/12 增仓阿里 = <strong>国际资本对港股 AI 龙头认账</strong></li>
+                        <li>vs 6/23 morning 写过"6/17 evening 国务院 AI+ 行动"</li>
+                        <li>6/23 afternoon 升级为"贝莱德 5.26% 增仓阿里 + 国际资本认账港股 AI 龙头"</li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">3️⃣ 智谱回 A 港股 A 股双平台估值重构</p>
+                <p><strong>智谱港股市值 + 回 A 估值</strong>（格隆汇 6/22 11:26 / 21 财经 6/22）：</p>
+                <ul>
+                    <li><strong>6/22 evening 收盘 2410 港元 / 总市值 1.07 万亿港元</strong></li>
+                    <li><strong>6/23 上午跌至 2102 港元 / 总市值 9398 亿港元</strong></li>
+                    <li><strong>6/22 盘中 2980 港元 / 总市值 1.27 万亿港元（年内累涨 2467%）</strong></li>
+                    <li><strong>智谱 6/17 17:14 科创板 IPO 辅导验收完成</strong></li>
+                    <li><strong>6/1 董事会决议 A 股发行 + 拟募资 150 亿</strong>（120 亿基座大模型 + 20 亿 MaaS 平台 + 10 亿补流）</li>
+                    <li><strong>稀缺性溢价</strong>：根据多家券商分析，稀缺性是 2026 年大模型估值的底层逻辑</li>
+                </ul>
+                <div class="highlight-green">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>智谱回 A 港股 A 股双平台估值重构 = <strong>港股 1 万亿 + A 股科创板 150 亿募资</strong></li>
+                        <li><strong>全球大模型公司估值第一股</strong></li>
+                    </ul>
+                </div>
+
+                <p class="subsection-title">4️⃣ vs 6/23 morning 写过的事件升级</p>
+                <p><strong>vs 6/23 morning 写过"智谱 6/17 17:14 辅导验收 + 港股已上市招股价 116.2 港元 + 总市值 1.07 万亿港元"</strong>：</p>
+                <ul>
+                    <li>6/23 morning 写的是港股估值（招股价 116.2 → 总市值 1.07 万亿 = +97x）</li>
+                    <li>6/23 afternoon 升级为"港股 + A 股双平台估值重构 + 150 亿募资 + 稀缺性溢价"</li>
+                </ul>
+                <p><strong>vs 6/21 morning 写过"智谱 GLM-5.2 Coding Plan 全量开放 + 唐杰 vs 马斯克 X 隔空对话"</strong>：</p>
+                <ul>
+                    <li>6/21 morning 写的是模型层</li>
+                    <li>6/23 afternoon 升级为资本层（港股 + A 股双平台估值）</li>
+                </ul>
+
+                <p class="subsection-title">5️⃣ "国产大厂 AI Agent 落地 + 国际资本认账 + 智谱回 A 港股 A 股双平台估值重构"主线</p>
+                <div class="highlight-green">
+                    <p><strong>核心含义</strong>：</p>
+                    <ul>
+                        <li>微信 AI"小微"灰度 = <strong>国产大厂 AI Agent 落地最强信号</strong></li>
+                        <li>贝莱德 5.26% 增仓阿里 = <strong>国际资本对港股 AI 龙头认账</strong></li>
+                        <li>智谱回 A 港股 A 股双平台估值重构 = <strong>全球大模型公司估值第一股</strong></li>
+                        <li><strong>三个事件 6/21 ~ 6/23 三日并发 = 国产 AI 资本 + 产业 + 战略完整收官</strong></li>
+                    </ul>
+                    <p><strong>afternoon 必报"国产大厂 AI Agent 落地 + 国际资本认账 + 智谱回 A 港股 A 股双平台估值重构"主线</strong></p>
+                </div>
+            </div>
+        </div>        <div class="section">
+            <div class="section-title">📊 数据汇总</div>
+            <div class="content">
+                <div class="data-list">
+                    <ul>
+                        <li><strong>9398 亿港元</strong>：6/23 上午 11:28 智谱总市值（跌破万亿港元）</li>
+                        <li><strong>2102 港元</strong>：6/23 上午 11:28 智谱股价</li>
+                        <li><strong>-16%</strong>：6/23 上午 10:53 智谱盘中最大跌幅</li>
+                        <li><strong>-12%</strong>：6/23 上午 MINIMAX-W 最大跌幅</li>
+                        <li><strong>+8.99%</strong>：6/23 09:32 海清智元涨幅（二次走强）</li>
+                        <li><strong>-1.32%</strong>：6/22 隔夜纳指跌幅</li>
+                        <li><strong>-0.37%</strong>：6/22 隔夜标普 500 跌幅</li>
+                        <li><strong>+0.29%</strong>：6/22 隔夜道指涨幅</li>
+                        <li><strong>-16.43%</strong>：6/22 SpaceX 单日跌幅</li>
+                        <li><strong>4000 亿美元</strong>：6/22 SpaceX 单日蒸发市值</li>
+                        <li><strong>2.03 万亿美元</strong>：6/22 SpaceX 总市值</li>
+                        <li><strong>-5%</strong>：6/22 谷歌跌幅（AI 负责人 Jumper 离职）</li>
+                        <li><strong>-4.8%</strong>：6/22 亚马逊跌幅</li>
+                        <li><strong>-3%</strong>：6/22 微软跌幅</li>
+                        <li><strong>+7%</strong>：6/22 美光涨幅</li>
+                        <li><strong>+5%</strong>：6/22 英特尔涨幅</li>
+                        <li><strong>200 亿美元</strong>：SpaceX 上市以来首次债券融资规模</li>
+                        <li><strong>63 亿美元</strong>：SpaceX + Reflection AI 算力协议总额</li>
+                        <li><strong>1.5 亿美元/月</strong>：Reflection AI 月付 SpaceX 算力费用</li>
+                        <li><strong>2029</strong>：Reflection AI 算力合同截止年</li>
+                        <li><strong>18.81 万亿 Token</strong>：6/15-21 中国大模型周调用量</li>
+                        <li><strong>5.76 万亿 Token</strong>：6/15-21 美国大模型周调用量</li>
+                        <li><strong>3.27 倍</strong>：中国调用量是美国倍数</li>
+                        <li><strong>8 周</strong>：中国大模型连续领跑周数</li>
+                        <li><strong>前 4 全中国</strong>：DeepSeek V4 Flash / MiMo-V2.5 / MiniMax M3 / Hy3 preview</li>
+                        <li><strong>5.26%</strong>：贝莱德 6/12 增仓阿里 H 股比例</li>
+                        <li><strong>150 亿</strong>：智谱 A 股科创板拟募资额</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <div class="content">
+                <p>✅ 无用户个人信息 / 私人语气 / 内部称呼</p>
+                <p>✅ 无业务域名 / 资产 / 系统架构信息</p>
+                <p>✅ 无内部称呼 / 品牌标识</p>
+                <p>✅ 无 API key / 服务器配置</p>
+                <p>✅ 所有数据点均为公开报道（人民财讯 / 智通财经 / 第一财经 / 腾讯新闻 / 经 AI 快讯 / 每日经济新闻 / 美股盘前要闻 / 财联社 / 腾讯科技 / IT 之家 / 国际金融要情 / 数据宝 / OpenRouter / 港交所信息 / 格隆汇 / 21 财经 / 界面新闻 / Reflection AI）</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>数据来源：人民财讯 · 智通财经 · 第一财经 · 腾讯新闻 · 经 AI 快讯 · 每日经济新闻 · 美股盘前要闻 · 财联社 · 腾讯科技 · IT 之家 · 国际金融要情 · 数据宝 · OpenRouter · 港交所信息 · 格隆汇 · 21 财经 · 界面新闻 · Reflection AI · 6/22 afternoon/evening/21evening 3 份缺失主动差异化 · 撞车源 1 份 + 3 份缺失 + 6/21 21evening 补强 1 份</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-23 · AI 陪你看完今日简报 · 1 份有效撞车源 + 3 份缺失补救</p>
+        </footer>
+    </div>
+</body>
+</html>
