@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-24 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+        .github-table .stars { color: var(--accent-orange); font-weight: 600; }
+        .github-table .delta { color: var(--accent-green); font-size: 12px; }
+        .preview-card {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(177, 151, 252, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+        .preview-card h4 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+        .preview-card ul { list-style: none; }
+        .preview-card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .preview-card li::before {
+            content: '◆';
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-size: 8px;
+            top: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer a { color: var(--accent-blue); text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 24px; }
+            .key-numbers { grid-template-columns: repeat(2, 1fr); }
+            .github-table { font-size: 12px; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC <span>Daily</span></div>
+            <div class="report-time">2026-06-24 晚报</div>
+        </header>
+
+        <div class="hero">
+            <h1>AI 行业每日晚报</h1>
+            <p class="subtitle">陪你看完今日 AI 简报 · 2026年6月24日 18:00 发布</p>
+            <div class="meta">
+                <span class="tag tag-capital">港股 evening 恒生科技 +1.81% 反弹 / 智谱 0.18% / MINIMAX-W -7%</span>
+                <span class="tag tag-product">阿里千问 Qwen-AgentWorld 首个原生语言世界模型 LWM</span>
+                <span class="tag tag-security">美联社 Mythos 模型检出政府机密系统漏洞</span>
+                <span class="tag tag-trend">美光 -13.18% 成交 628.52 亿美元 / SpaceX 200 亿债券 900 亿超额</span>
+                <span class="tag tag-policy">半导体板块全日 5.4% 主导 / 华虹 +15.5% 创新高</span>
+            </div>
+        </div>
+
+        <!-- 关键数字 -->
+        <div class="key-numbers">
+            <div class="num-card num-green">
+                <div class="number">+1.81%</div>
+                <div class="label">恒生科技指数 evening 收涨 1.81% 报 4479.02（vs 6/23 evening 4399.22 阶段新低 +79.80 点大反弹）</div>
+            </div>
+            <div class="num-card num-orange">
+                <div class="number">15.5%</div>
+                <div class="label">华虹宏力暴涨 15.5% 创历史新高（收购华力微相关事项获上交所审核通过）</div>
+            </div>
+            <div class="num-card num-red">
+                <div class="number">-13.18%</div>
+                <div class="label">美光科技 6/23 evening 收跌 13.18% 成交 628.52 亿美元（第 1 名）/ vs 6/22 evening +6.82% 单日波动 20pp</div>
+            </div>
+            <div class="num-card num-blue">
+                <div class="number">7 大领域</div>
+                <div class="label">阿里 Qwen-AgentWorld 首个原生语言世界模型 LWM 覆盖 MCP/Search/Terminal/SWE + Web/OS/Android 7 大智能体交互领域</div>
+            </div>
+            <div class="num-card num-purple">
+                <div class="number">19pp</div>
+                <div class="label">智谱 6/24 单日最大波动 19pp（早盘 +16% / 午后 -3% / 收盘 0.18%）/ 早盘冲高午后跳水模式</div>
+            </div>
+            <div class="num-card" style="color: var(--accent);">
+                <div class="number">数小时</div>
+                <div class="label">Mythos 模型在测试演练中数小时内定位美国高度机密政府计算机系统多处漏洞（美联社 6/24 13:14 独家）</div>
+            </div>
+        </div>
+
+        <!-- 趋势警报 -->
+        <div class="trend-alert">
+            <h3>⚡ 今日核心警报：6/24 evening 18:00 港股 AI 板块收市完整复盘 - 恒生科技 +1.81% 大反弹（vs 6/23 evening 4399.22 阶段新低 +79.80 点）+ 半导体板块全日 5.4% 主导（华虹 +15.5% 创历史新高 / 中芯国际 +8.9% 报 84.8 港元贡献恒指 44.58 点）+ 智谱 / MINIMAX-W 14:58 午后跳水单日波动 19pp / 板块分化 + 6/24 12:33 阿里千问发布 Qwen-AgentWorld 首个原生语言世界模型 LWM（覆盖 7 大智能体交互领域 MCP/Search/Terminal/SWE + Web/OS/Android）+ 6/24 13:14 美联社独家 - Mythos 模型检出美国高度机密 / 高安全等级政府计算机系统多处漏洞 + 6/24 04:38 美股 6/23 evening 收市三连跌（道指 -0.09% / 纳指 -2.21% / 标普 -1.44%）+ 6/24 13:18 美光 -13.18% 成交 628.52 亿（第 1 名）+ SpaceX 200 亿债券 900 亿超额认购 + 6/24 16:03 美股芯片股盘前小幅反弹美光涨超 3% — 五线并发"港股 evening 收市 + 港股大模型午后跳水 + 阿里 Qwen-AgentWorld + Mythos 检出政府漏洞 + 美股 evening 三连跌 + 美光成交 628.52 亿"主线</h3>
+            <p>过去 6 小时（6/24 12:00 ~ 6/24 18:00 北京时间），AI 行业在 5 个新维度同时放出压倒性信号。<strong>6/24 14:58 港股大模型午后震荡走弱 + 智谱 14:58 一度跌 3% 早盘涨 16% 单日最大波动 19pp + MINIMAX-W 14:58 跌 6% 早盘涨近 3% 单日最大波动 9pp</strong>（腾讯新闻 6/24 14:58 / 港股大模型概念股日报 6/24 17:34）—— <span class="highlight">"早盘冲高 → 午后跳水 → 单日波动 19pp" 模式识别</span> = 智谱 09:40 涨 8.66% → 10:21 涨 13% → 10:42 涨超 13% → 13:53 涨幅收窄至 0.2% → 14:58 一度跌超 3%（早盘涨超 16% = 单日最大波动 19pp）→ evening 收盘 0.18%；MINIMAX-W 14:58 跌超 6%（早盘涨近 3% = 单日波动 9pp）→ evening 收盘跌 7% —— vs 6/23 morning 写过"智谱 -7% → -15% → -16% → -12% 持续跳水 7 个时间点节奏" = 6/24 evening 升级为"早盘冲高 + 午后跳水 单日双向波动 19pp"作为"早盘 + 午后双向波动"扩展范式 —— <strong>MINIMAX-W 7/9 解禁压力 + 早盘反弹 +3% / 午后跳水 -6% = 单日波动 9pp</strong>（vs 6/23 evening 写过"MINIMAX-W -16.5% 7/9 首批股份解禁" = 6/24 evening 升级为"解禁后第二日 早盘反弹 +3% / 午后跳水 -6% = 持股结构压力持续"）—— <strong>大模型股 板块分化"智谱相对抗跌 / MINIMAX-W 持续承压"格局</strong>（vs 6/24 morning 写过"6/23 evening 智谱 -10% / MINIMAX-W -16.5% / 海清智元 +14% 板块分化" = 6/24 evening 升级为"6/24 大模型股 板块分化延续 智谱相对抗跌 / MINIMAX-W 持续承压"）。</p>
+            <p class="last"><strong>6/24 evening 18:00 港股 AI 板块收市完整复盘 - 恒指 23412.18 涨 0.33% 反弹 / 恒生科技 4479.02 涨 1.81% 大反弹（vs 6/23 evening 4399.22 阶段新低 +79.80 点）/ 国企 7764.97 微涨 0.07% / 全日成交额 3229.18 亿港元（量能放大）/ 南向资金 157.51 亿港元净买入 + 半导体板块全日 5.4% 主导（华虹宏力暴涨 15.5% 创历史新高 / 中芯国际 8.9% 报 84.8 港元贡献恒指 44.58 点 / 兆易创新 5%+ / 澜起科技 1.91% / 宏光半导体 5%+）+ 医药板块走强（凯莱英 +13% / 药明康德 +8.33% 报 141.7 港元 / 药明生物 4%+）+ AI 应用（明略科技 2718.HK 涨 7.89% 报 240.60 港元）</strong>（财联社 6/24 16:17 / 港股大模型概念股日报 6/24 17:34）—— <span class="highlight">半导体板块全日 5.4% 主导 evening 收市</span> = 华虹宏力暴涨 15.5%（收购华力微相关事项获上交所审核通过 / 股价创历史新高）/ 中芯国际 8.9% 报 84.8 港元（受台积电先进制程代工涨价带动 / 市场预计今年全球晶圆代工收入有望增超两成）/ 兆易创新 5%+ —— 恒生科技 +1.81% 大反弹 = 半导体 + 医药 + AI 应用 三线驱动反弹（vs 6/23 evening 写过"恒生科技 -3.30% 报 4399.22 阶段新低" = 6/24 evening 升级为"恒生科技 +1.81% 大反弹 + 半导体板块全日 5.4% 主导 + AI 应用明略科技 +7.89%"）—— 南向资金 157.51 亿港元净买入 = AI 板块承接力度强 —— <strong>6/24 12:33 阿里千问发布 Qwen-AgentWorld 首个原生语言世界模型 LWM + 覆盖七大智能体交互领域（MCP / Search / Terminal / SWE + Web / OS / Android）+ 同步发布 AgentWorld 开源</strong>（港股大模型概念股日报 6/24 17:34 / AI 编程工具选型指南 6/24 12:33）—— <span class="highlight">"原生语言世界模型 LWM" = 国产大模型从"对话 + 工具调用"升级为"环境交互 + 智能体训练场"</span> = 阿里 6/24 12:33 正式发布 Qwen-AgentWorld 首个原生语言世界模型 LWM（Large World Model）/ 覆盖七大智能体交互领域（文本类 MCP / Search / Terminal / SWE + GUI 类 Web / OS / Android）/ 环境建模作为从继续预训练 CPT 阶段起的核心训练目标贯穿 CPT / SFT / RL 全流程（vs 通用大语言模型的事后适配）/ 同步发布 AgentWorld 开源 —— vs 2024 年 OpenAI Sora 视频模型 / Anthropic Fable 5 闭源路线 = 阿里走开源 LWM 路线 —— 国产模型 + 国产算力 + 智能体 RL 全流程训练 = 国产大模型"环境智能"完整布局 —— 6/24 13:14 美联社独家 - Anthropic Mythos 模型在测试演练中成功检出美国高度机密 / 高安全等级政府计算机系统多处漏洞 + 模型在数小时内定位到若干漏洞 + Anthropic 与美国多家情报机构合作 —— <span class="highlight">"数小时内定位政府机密系统漏洞" = AI 治理 + AI 安全的核心矛盾</span> = 政府官员匿名表态 / 模型在数小时内定位到若干漏洞 / 但这不代表它能在同等时间内利用这些漏洞实施攻击 —— vs 6/24 afternoon 写过"6/24 11:48 Legion LegalTech Corp 起诉美政府" = 6/24 evening 升级为"同日 13:14 美联社 Mythos 检出政府机密系统漏洞 = AI 治理政策 + AI 安全技术双线对 AI 治理全面认账" —— 6/24 04:38 美股 6/23 evening 收市完整数据 - 道指 51666.84 跌 0.09% / 纳指 25587.03 跌 2.21% / 标普 7365.46 跌 1.44% = 三连跌 + 6/24 13:18 美光科技收跌 13.18% 成交 628.52 亿美元（第 1 名）+ SpaceX 涨 0.98% 成交 242.25 亿美元（第 6 名）+ 特斯拉跌 5.79% 成交 191.04 亿美元（第 7 名）+ 6/24 16:03 美股芯片股盘前小幅反弹 + 美光科技涨超 3% —— "美光单日 -13.18% 成交 628.52 亿" = 6/24 美光 -13.18% 单日大跳水（vs 6/23 evening 写过"美光 +6.82% 成交 611.81 亿 + Anthropic 内存战略协议" = 6/24 13:18 升级为"美光 -13.18% 成交 628.52 亿 单日波动 20pp" = AI 内存 + 存储"token 经济性"新指标的"市场对 AI 内存需求可持续性"重新定价）。</p>
+        </div>
+<!-- 角度 #1 6/24 14:58 港股大模型午后震荡走弱 + 智谱 / MINIMAX-W 单日剧烈波动 19pp -->
+        <section class="section">
+            <div class="section-title">📊 角度 #1：6/24 14:58 港股大模型午后震荡走弱 + 智谱单日最大波动 19pp（早盘 +16% → 午后 -3%）/ MINIMAX-W 跌 7% 7/9 解禁后第二日持股结构压力持续</div>
+
+            <div class="card">
+                <h3>6/24 港股大模型概念股 14:58 午后震荡走弱 - 智谱 / MINIMAX-W 双向波动完整节奏</h3>
+                <div class="source">来源：腾讯新闻 6/24 14:58 | 港股大模型概念股日报 6/24 17:34 | 财联社 6/24 13:53</div>
+                <div class="desc">
+                    <strong>6/24 港股大模型概念股 5 个时间点节奏</strong>（"低开高走 → 上午冲高 → 午后跳水 → evening 收盘"）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间点</th><th>智谱 02513.HK</th><th>MINIMAX-W 00100.HK</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>6/24 09:40</strong></td><td><span class="stars">+8.66%</span></td><td>—</td><td>早盘冲高启动</td></tr>
+                            <tr><td><strong>6/24 10:21</strong></td><td><span class="stars">+13%</span>（总市值重回 1 万亿港元）</td><td>早盘涨近 3%</td><td>上午加速</td></tr>
+                            <tr><td><strong>6/24 10:42</strong></td><td>涨超 13%</td><td>—</td><td>上午冲顶</td></tr>
+                            <tr><td><strong>6/24 12:07</strong></td><td>恒生科技午间 +1.34%</td><td>—</td><td>午间回落</td></tr>
+                            <tr><td><strong>6/24 13:53</strong></td><td>涨幅收窄至 0.2%</td><td>跌超 5%</td><td>午后跳水</td></tr>
+                            <tr><td><strong>6/24 14:58</strong></td><td><span class="stars"><strong>一度跌超 3%</strong></span>（早盘涨超 16% = <strong>单日最大波动 19pp</strong>）</td><td><span class="stars"><strong>跌超 6%</strong></span>（早盘涨近 3% = <strong>单日最大波动 9pp</strong>）</td><td><span class="stars"><strong>跳水窗口</strong></span></td></tr>
+                            <tr><td><strong>6/24 evening 收盘</strong></td><td>0.18%</td><td>-7%</td><td>收盘回稳</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"早盘冲高 → 午后跳水 → 单日波动 19pp" 模式识别 vs 6/23 morning 单向跳水</h3>
+                <div class="source">来源：腾讯新闻 6/24 14:58 | 港股大模型日报 6/24 17:34</div>
+                <div class="desc">
+                    <strong>6/24 大模型股双向波动 vs 6/23 morning 单向跳水</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/23 morning 单向跳水</th><th>6/24 双向波动</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>智谱模式</td><td>6/23 morning -7% → -15% → -16% → -12% 持续跳水 7 个时间点</td><td><span class="stars"><strong>6/24 早盘 +16% → 午后 -3% 单日双向波动 19pp</strong></span></td></tr>
+                            <tr><td>MINIMAX-W 模式</td><td>6/23 morning -12%</td><td><span class="stars"><strong>6/24 早盘 +3% → 午后 -6% 单日双向波动 9pp</strong></span></td></tr>
+                            <tr><td>波动性质</td><td>单向（持续下跌）</td><td><span class="stars"><strong>双向（早盘冲高 + 午后跳水）</strong></span></td></tr>
+                            <tr><td>触发因素</td><td>板块整体走弱</td><td><span class="stars"><strong>早盘情绪修复 + 午后获利了结</strong></span></td></tr>
+                            <tr><td>战略意义</td><td>持续承压</td><td><span class="stars"><strong>持股结构压力测试</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>"早盘冲高 + 午后跳水" 双向波动范式 = 港股 AI 板块的"波动率扩张"</strong>：
+                    <ul>
+                        <li>6/23 evening 写过"6/23 evening 18:00 MINIMAX-W -16.5% 7/9 首批股份解禁" + 6/23 morning 写过"智谱 -7% → -15% → -16% → -12% 持续跳水 7 个时间点节奏" = 单向持续承压</li>
+                        <li><strong>6/24 双向波动</strong>：早盘 +16% / 午后 -3% = 单日波动 19pp = 早盘情绪修复 + 午后获利了结</li>
+                        <li>6/24 智谱相对抗跌（收盘 0.18% vs 早盘 +16%）+ MINIMAX-W 持续承压（收盘 -7% vs 早盘 +3%）= 板块分化"智谱相对抗跌 / MINIMAX-W 持续承压"格局</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>MINIMAX-W 7/9 解禁后第二日 + 大模型股板块分化结构 - "新股 + 老股"格局持续</h3>
+                <div class="source">来源：腾讯新闻 6/24 14:58 | 港股大模型日报 6/24 17:34</div>
+                <div class="desc">
+                    <strong>MINIMAX-W 7/9 解禁后第二日（6/24）持股结构压力持续</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/23 evening</th><th>6/24 evening</th><th>变化</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>MINIMAX-W 收盘</td><td>-16.5%（7/9 解禁首日）</td><td><span class="stars"><strong>-7%</strong></span>（7/9 解禁第二日）</td><td>压力延续但跌幅收窄 9.5pp</td></tr>
+                            <tr><td>MINIMAX-W 单日波动</td><td>6/22 evening +13% / 6/23 evening -16.5% = 29.5pp</td><td>6/24 早盘 +3% / evening -7% = 10pp</td><td>波动率收窄</td></tr>
+                            <tr><td>智谱收盘</td><td>-10%</td><td>0.18%</td><td>智谱相对抗跌</td></tr>
+                            <tr><td>海清智元收盘</td><td>+14%</td><td>—</td><td>新股持续溢价</td></tr>
+                            <tr><td>板块结构</td><td>剧烈分化（"新股 + 老股"）</td><td><span class="stars"><strong>剧烈分化延续</strong></span></td><td>分化格局未变</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>大模型股板块分化"智谱相对抗跌 / MINIMAX-W 持续承压"格局</strong>（vs 6/24 morning 写过"6/23 evening 智谱 -10% / MINIMAX-W -16.5% / 海清智元 +14% 板块分化"）：
+                    <ul>
+                        <li><strong>智谱</strong>：港股 AI 龙头 / 6/24 早盘 +16% 冲高回补 6/23 evening -10% 部分失地 / 午后跳水 -3% / 收盘 0.18% = <strong>相对抗跌</strong></li>
+                        <li><strong>MINIMAX-W</strong>：6/24 早盘 +3% 反弹 / 午后跳水 -6% / 收盘 -7% = <strong>持续承压</strong>（7/9 解禁 + 持股结构压力）</li>
+                        <li><strong>海清智元</strong>：6/22 首日 +302.78% / 6/23 evening +14% = 新股持续溢价（板块分化中独立走势）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #2 6/24 evening 18:00 港股 AI 板块收市完整复盘 -->
+        <section class="section">
+            <div class="section-title">💰 角度 #2：6/24 evening 18:00 港股 AI 板块收市完整复盘 - 恒生科技 +1.81% 大反弹（vs 6/23 evening 4399.22 阶段新低 +79.80 点）/ 半导体板块全日 5.4% 主导（华虹 +15.5% 创历史新高 / 中芯国际 +8.9% 报 84.8 港元贡献恒指 44.58 点）+ 医药 + AI 应用三线驱动</div>
+
+            <div class="card">
+                <h3>6/24 evening 18:00 港股指数 + 板块 + 资金面完整复盘 - 恒生科技 +1.81% 大反弹</h3>
+                <div class="source">来源：财联社 6/24 16:17 | 港股大模型概念股日报 6/24 17:34</div>
+                <div class="desc">
+                    <strong>6/24 evening 18:00 港股指数完整数据</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>指数</th><th>6/24 evening 收盘</th><th>涨跌幅</th><th>vs 6/23 evening 阶段新低</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>恒生指数</strong></td><td><span class="stars"><strong>23412.18</strong></span></td><td><span class="stars">+0.33%</span></td><td>vs 6/23 evening 23336.28 阶段新低 = +75.90 点反弹</td><td>大盘探底回升</td></tr>
+                            <tr><td><strong>恒生科技指数</strong></td><td><span class="stars"><strong>4479.02</strong></span></td><td><span class="stars"><strong>+1.81%</strong></span></td><td>vs 6/23 evening 4399.22 阶段新低 = <strong>+79.80 点大反弹</strong></td><td><strong>科技板块强势反弹</strong></td></tr>
+                            <tr><td>国企指数</td><td>7764.97</td><td>+0.07%</td><td>vs 6/23 evening 7759.36 阶段新低 +5.61 点</td><td>国企企稳</td></tr>
+                            <tr><td>全日成交额</td><td><span class="stars">3229.18 亿港元</span></td><td>量能放大</td><td>vs 6/23 evening 阶段新低后量能放大</td><td>AI 板块承接力度</td></tr>
+                            <tr><td>南向资金</td><td>净买入 157.51 亿港元</td><td>资金净流入</td><td>—</td><td><strong>AI 板块承接力度强</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/24 evening 半导体板块全日 5.4% 主导 - 华虹 +15.5% 创历史新高 / 中芯国际 +8.9% 报 84.8 港元</h3>
+                <div class="source">来源：财联社 6/24 16:17 | 港股大模型日报 6/24 17:34</div>
+                <div class="desc">
+                    <strong>半导体板块 evening 收市完整数据（5.4% 主导）</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>个股</th><th>6/24 evening 收盘</th><th>涨跌幅</th><th>关键驱动 / 备注</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>华虹宏力</strong></td><td>—</td><td><span class="stars"><strong>暴涨 15.5%</strong></span></td><td><strong>收购华力微相关事项获上交所审核通过 / 股价创历史新高</strong></td></tr>
+                            <tr><td><strong>中芯国际 00981</strong></td><td><span class="stars">84.8 港元</span></td><td><span class="stars">+8.9%</span></td><td><strong>贡献恒指 44.58 点 / 受台积电先进制程代工涨价带动 / 市场预计今年全球晶圆代工收入有望增超两成</strong></td></tr>
+                            <tr><td>兆易创新</td><td>—</td><td>涨超 5%</td><td>半导体板块联动</td></tr>
+                            <tr><td>澜起科技 06809</td><td>—</td><td>早盘涨 1.91%</td><td>大基金持股</td></tr>
+                            <tr><td>宏光半导体</td><td>—</td><td>涨超 5%</td><td>半导体板块联动</td></tr>
+                            <tr><td>板块整体</td><td>—</td><td><span class="stars"><strong>+5.4%</strong></span></td><td><span class="stars"><strong>全日主导 evening 收市</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>vs 6/24 morning 写过"6/23 evening 18:00 港股 AI 收盘复盘 智谱 -10% / MINIMAX-W -16.5% / 海清智元 +14% 板块分化"</strong> + 6/24 afternoon 写过"6/24 上午港股硬科技反攻 华虹暴涨 15% / 中芯国际涨超 8% / 港股通信息技术 ETF 涨 4.47%" = 6/24 evening 升级为"半导体板块全日 5.4% 主导 evening 收市 + 华虹 +15.5% 创历史新高 + 中芯国际 +8.9% 报 84.8 港元"。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>医药板块走强 + AI 应用 - 凯莱英 +13% / 药明康德 +8.33% / 明略科技 2718.HK +7.89%</h3>
+                <div class="source">来源：财联社 6/24 16:17 | 港股大模型日报 6/24 17:34 | 6/24 11:43 明略科技消息</div>
+                <div class="desc">
+                    <strong>6/24 evening 18:00 医药板块 + AI 应用完整数据</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>板块</th><th>个股</th><th>6/24 evening 收盘</th><th>涨跌幅</th><th>关键驱动</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>医药</strong></td><td>凯莱英 06821</td><td>—</td><td><span class="stars"><strong>+13%</strong></span></td><td>港股医药板块走强</td></tr>
+                            <tr><td><strong>医药</strong></td><td>药明康德 02359</td><td>141.7 港元</td><td><span class="stars"><strong>+8.33%</strong></span></td><td><strong>贡献恒指 8.17 点</strong></td></tr>
+                            <tr><td>医药</td><td>药明生物</td><td>—</td><td>涨超 4%</td><td>港股医药板块走强</td></tr>
+                            <tr><td><strong>AI 应用</strong></td><td><strong>明略科技 02718</strong></td><td><span class="stars">240.60 港元</span></td><td><span class="stars"><strong>+7.89%</strong></span></td><td><strong>11:43 微信 AI 助手"小微"开启小范围内测 + 微信 AI 生态基础设施在两周内初步成型 + 已启动与微信、通义千问等 AI 平台对接实践</strong></td></tr>
+                            <tr><td>指数</td><td>港股通信息技术 ETF 华宝 159131</td><td>—</td><td>+4.47%</td><td>实时成交额超 9 亿元 / 指数最新纳入智谱、壁仞科技等多只千亿港股硬科技新秀</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>恒生科技 +1.81% 大反弹 = 半导体 + 医药 + AI 应用 三线驱动反弹</strong>（vs 6/23 evening 写过"恒生科技 -3.30% 报 4399.22 阶段新低" = 6/24 evening 升级为"恒生科技 +1.81% 大反弹 + 半导体板块全日 5.4% 主导 + AI 应用明略科技 +7.89%"）—— <strong>南向资金 157.51 亿港元净买入 = AI 板块承接力度强</strong>（vs 6/24 morning 写过"6/23 evening 18:00 港股 AI 收盘复盘" = 6/24 evening 升级为"6/24 南向资金 157.51 亿港元净买入 + AI 板块承接力度"）。
+                </div>
+            </div>
+        </section>
+<!-- 角度 #3 阿里千问 Qwen-AgentWorld 首个原生语言世界模型 LWM -->
+        <section class="section">
+            <div class="section-title">🔥 角度 #3：6/24 12:33 阿里千问发布 Qwen-AgentWorld 首个原生语言世界模型 LWM + 覆盖七大智能体交互领域（MCP/Search/Terminal/SWE + Web/OS/Android）+ 同步发布 AgentWorld 开源</div>
+
+            <div class="card">
+                <h3>Qwen-AgentWorld 完整数据 - 首个原生语言世界模型 LWM + 7 大智能体交互领域</h3>
+                <div class="source">来源：港股大模型概念股日报 6/24 17:34 | AI 编程工具选型指南 6/24 12:33</div>
+                <div class="desc">
+                    <strong>6/24 阿里千问正式发布 Qwen-AgentWorld - 首个原生语言世界模型 LWM（Large World Model）</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>内容</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>发布时间</strong></td><td><span class="stars"><strong>6/24 12:33</strong></span></td><td>阿里正式发布</td></tr>
+                            <tr><td><strong>模型定位</strong></td><td>首个原生语言世界模型 LWM（Large World Model）</td><td>国产大模型"环境智能"完整布局</td></tr>
+                            <tr><td><strong>覆盖领域</strong></td><td><span class="stars"><strong>七大智能体交互领域</strong></span>：文本类环境（MCP / Search / Terminal / SWE）+ GUI 类环境（Web / OS / Android）</td><td><strong>7 大 agent 训练场</strong></td></tr>
+                            <tr><td><strong>核心创新</strong></td><td>环境建模作为从继续预训练 CPT 阶段起的核心训练目标，<span class="stars">贯穿 CPT / SFT / RL 全流程</span></td><td><strong>从"为聊天而训练"升级为"为环境交互而训练"</strong></td></tr>
+                            <tr><td><strong>开源同步</strong></td><td>同步发布 <span class="stars">AgentWorld 开源</span></td><td>国产大模型"开源生态 + 智能体训练场"完整闭环</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>"原生语言世界模型 LWM" = 国产大模型从"对话 + 工具调用"升级为"环境交互 + 智能体训练场"</h3>
+                <div class="source">来源：港股大模型日报 6/24 17:34 | AI 编程工具选型指南 6/24 12:33</div>
+                <div class="desc">
+                    <strong>"原生语言世界模型 LWM" vs 传统大语言模型 LLM</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>范式</th><th>传统 LLM</th><th>原生 LWM（Qwen-AgentWorld）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>训练目标</td><td>对话生成 / 文本理解</td><td><span class="stars"><strong>环境建模（从 CPT 阶段起）</strong></span></td></tr>
+                            <tr><td>训练流程</td><td>通用大语言模型 + 事后适配</td><td><span class="stars"><strong>CPT / SFT / RL 全流程环境建模</strong></span></td></tr>
+                            <tr><td>覆盖场景</td><td>对话 + 工具调用</td><td><span class="stars"><strong>7 大智能体交互领域（文本 + GUI）</strong></span></td></tr>
+                            <tr><td>战略意义</td><td>"为聊天而训练"</td><td><span class="stars"><strong>"为环境交互而训练"</strong></span></td></tr>
+                            <tr><td>开源路线</td><td>闭源为主（OpenAI / Anthropic）</td><td><span class="stars"><strong>开源 LWM（阿里）</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>vs 2024 年 OpenAI Sora 视频模型 / Anthropic Fable 5 闭源路线 = 阿里走开源 LWM 路线</strong>：
+                    <ul>
+                        <li><strong>OpenAI Sora</strong>：视频生成 / 闭源 / "为视频生成而训练"</li>
+                        <li><strong>Anthropic Fable 5</strong>：通用对话 / 闭源 / "为对话而训练"</li>
+                        <li><span class="stars"><strong>阿里 Qwen-AgentWorld</strong></span>：环境交互 / <span class="stars"><strong>开源</strong></span> / "为环境交互而训练"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>7 大智能体交互领域 MCP/Search/Terminal/SWE + Web/OS/Android = 国产大模型"环境智能"完整布局</h3>
+                <div class="source">来源：港股大模型日报 6/24 17:34 | AI 编程工具选型指南 6/24 12:33</div>
+                <div class="desc">
+                    <strong>7 大智能体交互领域分类</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>类别</th><th>领域</th><th>应用场景</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>文本类环境</strong></td><td>MCP（Model Context Protocol）</td><td>模型上下文协议</td></tr>
+                            <tr><td><strong>文本类环境</strong></td><td>Search</td><td>搜索</td></tr>
+                            <tr><td><strong>文本类环境</strong></td><td>Terminal</td><td>命令行</td></tr>
+                            <tr><td><strong>文本类环境</strong></td><td>SWE（Software Engineering）</td><td>软件工程</td></tr>
+                            <tr><td><strong>GUI 类环境</strong></td><td>Web</td><td>网页浏览器</td></tr>
+                            <tr><td><strong>GUI 类环境</strong></td><td>OS</td><td>操作系统</td></tr>
+                            <tr><td><strong>GUI 类环境</strong></td><td>Android</td><td>安卓系统</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>国产模型 + 国产算力 + 智能体 RL 全流程训练 = 国产大模型"环境智能"完整布局</strong>：
+                    <ul>
+                        <li><strong>vs 6/24 afternoon 写过"6/24 04:00-07:00 UTC HN front 6 条 AI 新晋"</strong>中包含"Qwen-AgentWorld 80pt/45c"但没碰"6/24 12:33 阿里千问正式发布 Qwen-AgentWorld 首个原生语言世界模型 LWM 完整解读" = <strong>6/24 evening 升级</strong></li>
+                        <li><strong>vs 6/17 21evening 写过"GLM-5.2 八家云厂商同时接入"</strong> = 6/24 evening 升级为"Qwen-AgentWorld 七大智能体交互领域 = 国产大模型环境智能"</li>
+                        <li><strong>vs 6/24 morning 写过"智谱 GLM-5.2 全量免费开放 + 代码即主权"</strong> = 6/24 evening 升级为"Qwen-AgentWorld 同步开源 + AgentWorld = 国产大模型'开源生态 + 智能体训练场'完整闭环"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角度 #4 Mythos 检出政府机密系统漏洞 -->
+        <section class="section">
+            <div class="section-title">🛡️ 角度 #4：6/24 13:14 美联社独家 - Anthropic Mythos 模型在测试演练中数小时内检出美国高度机密 / 高安全等级政府计算机系统多处漏洞 + Anthropic 与美国多家情报机构合作（白宫顶着禁令部署 Mythos 修改版 = 政策 + 技术双线对 AI 治理全面认账）</div>
+
+            <div class="card">
+                <h3>Mythos 政府机密系统漏洞完整数据 - 数小时内定位 + 政策 + 技术双线</h3>
+                <div class="source">来源：美联社 6/24 13:14 | IT之家 6/24 13:14 | 财联社 6/24 13:14</div>
+                <div class="desc">
+                    <strong>6/24 13:14 美联社独家 - Mythos 模型检出政府机密系统漏洞</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>内容</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>发布时间</strong></td><td><span class="stars"><strong>6/24 13:14</strong></span></td><td>美联社独家报道</td></tr>
+                            <tr><td><strong>信息来源</strong></td><td>一名美国政府官员 <span class="stars">周二向美联社透露</span></td><td>美联社独家</td></tr>
+                            <tr><td><strong>测试场景</strong></td><td>Anthropic 与<span class="stars">美国多家情报机构</span>合作，使用自家 Mythos 模型开展测试</td><td>情报机构合作</td></tr>
+                            <tr><td><strong>核心发现</strong></td><td><span class="stars"><strong>Anthropic 一款 AI 模型在数小时内成功找出多处美国高度机密 / 高安全等级政府计算机系统存在的安全漏洞</strong></span></td><td><span class="stars"><strong>"数小时内定位政府机密系统漏洞"</strong></span></td></tr>
+                            <tr><td><strong>政府官员表态</strong></td><td>模型在数小时内定位到若干漏洞，但这<span class="stars">不代表它能在同等时间内利用这些漏洞实施攻击</span></td><td>"找出 vs 利用"双维度</td></tr>
+                            <tr><td><strong>该官员</strong></td><td>因讨论相关涉密事宜要求匿名</td><td>匿名</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>关联背景 - 5 维度时间线 - 6/12 商务部管控 + 6/14 白宫部署 + 5/22 Firefox 271 漏洞 + 6/24 11:48 Legion 起诉 + 6/24 13:14 Mythos 检出</h3>
+                <div class="source">来源：美联社 6/24 13:14 | 6/24 11:48 Legion LegalTech Corp 起诉</div>
+                <div class="desc">
+                    <strong>Mythos 5 维度时间线</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>时间</th><th>事件</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>5/22</td><td>Mythos 在 Firefox 150 中发现 271 个漏洞</td><td>Mozilla CTO 称其"与顶级安全研究员同等水平"</td></tr>
+                            <tr><td>6/12</td><td>美国商务部工业和安全局发布管控命令：要求 Anthropic 禁止"任何外国国民"使用 Mythos 5 / Fable 5</td><td>出口管制</td></tr>
+                            <tr><td>6/12 当日</td><td>Anthropic 关闭全球所有客户的访问权限</td><td>关停模型</td></tr>
+                            <tr><td>6/14</td><td>白宫顶着禁令部署 Anthropic 新模型 Mythos 修改版</td><td>政策松绑</td></tr>
+                            <tr><td>6/24 11:48</td><td>Legion LegalTech Corp 起诉美政府 + 要求撤销 Mythos 5 / Fable 5 禁访限制</td><td>司法挑战</td></tr>
+                            <tr><td><span class="stars"><strong>6/24 13:14</strong></span></td><td><span class="stars"><strong>美联社独家 - Mythos 模型在测试演练中数小时内检出美国高度机密 / 高安全等级政府计算机系统多处漏洞</strong></span></td><td><span class="stars"><strong>技术认账</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>6/24 11:48 + 6/24 13:14 同日双线 = 政策 + 司法 + 技术 三轨并行</strong>（vs 6/24 afternoon 写过"6/24 11:48 Legion LegalTech Corp 起诉美政府" = 6/24 evening 升级为"同日 11:48 司法挑战 + 13:14 美联社 Mythos 检出政府漏洞 = AI 治理政策 + AI 安全技术双线对 AI 治理全面认账"）：
+                    <ul>
+                        <li><strong>政策线</strong>：6/12 商务部管控命令 + 6/14 白宫顶着禁令部署 Mythos 修改版</li>
+                        <li><strong>司法线</strong>：6/24 11:48 Legion LegalTech Corp 起诉美政府 + 要求撤销 Mythos 5 / Fable 5 禁访限制</li>
+                        <li><strong>技术线</strong>：6/24 13:14 美联社 Mythos 检出政府机密系统漏洞（数小时内）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI 模型从"管控对象"升级为"政府工具" - 美国 AI 治理完整闭环</h3>
+                <div class="source">来源：美联社 6/24 13:14 | IT之家 6/24 13:14</div>
+                <div class="desc">
+                    <strong>美国 AI 治理政策与企业战略同步三轨并行</strong>（vs 6/21 21evening 写过"美国 AI 治理政策与企业战略同步三轨并行"框架 = 6/24 evening 升级为"6/24 同日 政策 + 司法 + 技术三轨并行 = AI 模型从'管控对象'升级为'政府工具'"）：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/24 之前</th><th>6/24 13:14 之后</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>政府层面</td><td>商务部出口管制（6/12 Mythos 5 / Fable 5）</td><td>情报机构合作（Anthropic + 美国多家情报机构）</td></tr>
+                            <tr><td>企业层面</td><td>Anthropic 关闭全球访问</td><td>Mythos 数小时内定位政府机密漏洞</td></tr>
+                            <tr><td>学术层面</td><td>arXiv 论文审计缺口研究</td><td>实际政府系统漏洞检出</td></tr>
+                            <tr><td>司法层面</td><td>—</td><td><span class="stars"><strong>Legion LegalTech 起诉美政府（6/24 11:48）</strong></span></td></tr>
+                            <tr><td><strong>战略意义</strong></td><td>AI 模型被"管控"</td><td><span class="stars"><strong>AI 模型成为"政府认可的网络安全工具"</strong></span></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>"AI 模型从'管控对象'升级为'政府工具'" = 美国 AI 治理完整闭环</strong>：
+                    <ul>
+                        <li><strong>vs 6/21 21evening 写过"美国 AI 治理政策与企业战略同步三轨并行"</strong> = 6/24 evening 升级为"6/24 同日 政策 + 司法 + 技术三轨并行 = AI 模型从'管控对象'升级为'政府工具'"</li>
+                        <li><strong>vs 6/17 21evening 写过"美国 AI 治理'撤市 + 实名验证 + 学术审计'三范式同日落地"</strong> = 6/24 evening 升级为"政策 + 司法 + 技术 三轨并行 = AI 模型从'管控对象'升级为'政府工具'"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- 角度 #5 美股 6/23 evening 收市三连跌 + 6/24 13:18 美光成交 628.52 亿 + SpaceX 200 亿债券 900 亿超额 -->
+        <section class="section">
+            <div class="section-title">💻 角度 #5：6/24 04:38 美股 6/23 evening 收市三连跌 - 道指 -0.09% / 纳指 -2.21% / 标普 -1.44% + 6/24 13:18 美光 -13.18% 成交 628.52 亿美元（第 1 名）+ SpaceX 200 亿债券 900 亿超额认购 + 6/24 16:03 美股芯片股盘前小幅反弹美光涨超 3%</div>
+
+            <div class="card">
+                <h3>6/24 04:38 美股 6/23 evening 收市完整数据 - 三连跌 + 防御股 vs AI 题材板块轮动</h3>
+                <div class="source">来源：财联社 6/24 16:17 | 6/24 04:38 美股 evening 收市数据</div>
+                <div class="desc">
+                    <strong>6/24 04:38 美股 6/23 evening 收市完整数据</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>指数</th><th>收盘点位</th><th>涨跌幅</th><th>跌涨点数</th><th>战略意义</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>道指</strong></td><td>51666.84</td><td><span class="stars"><strong>-0.09%</strong></span></td><td>跌 45.87 点</td><td>道指微跌</td></tr>
+                            <tr><td><strong>纳指</strong></td><td>25587.03</td><td><span class="stars"><strong>-2.21%</strong></span></td><td>跌 579.56 点</td><td><strong>纳指大跌</strong></td></tr>
+                            <tr><td><strong>标普 500</strong></td><td>7365.46</td><td><span class="stars"><strong>-1.44%</strong></span></td><td>跌 107.33 点</td><td><strong>标普大跌</strong></td></tr>
+                            <tr><td>整体</td><td>三连跌</td><td>—</td><td>—</td><td><strong>AI 题材 vs 防御股 板块轮动明显</strong></td></tr>
+                        </tbody>
+                    </table>
+                    <strong>主要股指均脱离盘中低点</strong>：因为除芯片制造商以外的科技股（如微软和亚马逊）以及防御性股票（如沃尔玛、宝洁和强生）上涨 —— <strong>AI 题材 vs 防御股 板块轮动明显</strong>。
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/24 13:18 美股成交额前 20 - 美光 -13.18% 成交 628.52 亿美元（第 1 名）+ SpaceX 200 亿债券 900 亿超额</h3>
+                <div class="source">来源：美股成交额前 20 6/24 13:18 | 财联社 6/24 16:03</div>
+                <div class="desc">
+                    <strong>6/24 13:18 美股成交额前 20 关键数据</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>排名</th><th>个股</th><th>涨跌幅</th><th>成交额</th><th>AI 相关</th><th>关键驱动</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>第 1</strong></td><td><strong>美光科技</strong></td><td><span class="stars"><strong>-13.18%</strong></span></td><td><span class="stars"><strong>628.52 亿美元</strong></span></td><td>✅</td><td><span class="stars"><strong>vs 6/22 evening +6.82% 成交 611.81 亿 = 单日波动 20pp</strong></span></td></tr>
+                            <tr><td><strong>第 6</strong></td><td><strong>SpaceX</strong></td><td><strong>+0.98%</strong></td><td><strong>242.25 亿美元</strong></td><td>✅</td><td><strong>200 亿债券 + 900 亿超额认购 + 发行规模扩大 50 亿</strong></td></tr>
+                            <tr><td><strong>第 7</strong></td><td><strong>特斯拉</strong></td><td><strong>-5.79%</strong></td><td><strong>191.04 亿美元</strong></td><td>✅</td><td>美股 AI 题材全面回落</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>SpaceX 200 亿美元债券完整数据</strong>：
+                    <ul>
+                        <li><strong>宣布时间</strong>：周一（6/23）</li>
+                        <li><strong>原计划</strong>：筹资 200 亿美元</li>
+                        <li><strong>实际认购</strong>：截至周二 SpaceX 已收到近 <span class="stars"><strong>900 亿美元</strong></span>的认购订单</li>
+                        <li><strong>发行规模</strong>：扩大 50 亿美元</li>
+                        <li><strong>战略意义</strong>：美国 AI 基础设施融资潮持续 + 市场对 SpaceX AI 业务的高度认可</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>6/24 16:03 美股芯片股盘前小幅反弹 + 美光科技涨超 3% + AI 资金流向"上游 vs 下游"重新定价</h3>
+                <div class="source">来源：财联社 6/24 16:03 | 美股成交额前 20 6/24 13:18</div>
+                <div class="desc">
+                    <strong>6/24 16:03 美股芯片股盘前小幅反弹 + 美光科技涨超 3%</strong>：
+                    <table class="github-table">
+                        <thead>
+                            <tr><th>维度</th><th>6/22 evening</th><th>6/23 evening</th><th>6/24 16:03 盘前</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>美光收盘</td><td>+6.82%</td><td><span class="stars"><strong>-13.18%</strong></span></td><td>盘前 +3% 反弹</td></tr>
+                            <tr><td>美光成交</td><td>611.81 亿（第 1 名）</td><td>628.52 亿（第 1 名）</td><td>—</td></tr>
+                            <tr><td>SpaceX</td><td>-16.43% 成交 271.61 亿</td><td>+0.98% 成交 242.25 亿</td><td>—</td></tr>
+                            <tr><td>特斯拉</td><td>—</td><td>-5.79% 成交 191.04 亿</td><td>—</td></tr>
+                            <tr><td>AI 资金流向</td><td>上游受益（美光）</td><td>上游承压（美光 -13.18%）</td><td>上游反弹（盘前 +3%）</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>AI 资金流向"上游 vs 下游"重新定价</strong>（vs 6/23 evening 写过"美光 +6.82% 成交 611.81 亿 + Anthropic 内存战略协议" = 6/24 evening 升级为"美光 单日 -13.18% 成交 628.52 亿 + Anthropic 内存战略协议后单日大跳水 = AI 内存 + 存储'token 经济性'新指标的'市场对 AI 内存需求可持续性'重新定价"）：
+                    <ul>
+                        <li><strong>SpaceX 200 亿美元债券 + 900 亿美元超额认购</strong> = 美国 AI 基础设施融资潮持续（vs 6/23 afternoon 写过"SpaceX 200 亿债券 + Reflection AI 63 亿算力" = 6/24 evening 升级为"SpaceX 200 亿美元债券 + 900 亿美元超额认购 + 发行规模扩大 50 亿美元" = 6/24 evening"900 亿超额认购"是 6/23 evening"900 亿"传闻的官方确认）</li>
+                        <li><strong>特斯拉 -5.79% 成交 191.04 亿</strong> = 美股 AI 题材全面回落（vs 6/24 afternoon 写过"6/24 06:11 亚太早盘美股期指集体上涨" = 6/24 evening 升级为"6/24 04:38 美股 evening 收市 三连跌 + 美光 -13.18% + SpaceX 涨 0.98% + 特斯拉 -5.79% + 6/24 16:03 美股盘前反弹"完整复盘）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 总结预览 -->
+        <section class="section">
+            <div class="section-title">📋 6/24 evening 5 大新角度 + 撞车规避总结</div>
+            <div class="preview-card">
+                <h4>6/24 evening 5 大新角度撞车规避清单</h4>
+                <ul>
+                    <li><strong>角度 #1</strong>：6/24 14:58 港股大模型午后震荡走弱 + 智谱 / MINIMAX-W 单日剧烈波动 19pp（vs 6/24 afternoon 写过 6/24 上午港股硬科技反攻 但没碰午后跳水 / 单日双向波动 / 板块分化延续 = 0 处撞车）</li>
+                    <li><strong>角度 #2</strong>：6/24 evening 18:00 港股 AI 板块收市完整复盘 - 恒生科技 +1.81% 大反弹（vs 6/24 morning 写过 6/23 evening 阶段新低 但没碰 6/24 evening 收市完整数据 + 半导体板块全日 5.4% 主导 + 医药 + AI 应用三线驱动 = 0 处撞车）</li>
+                    <li><strong>角度 #3</strong>：6/24 12:33 阿里千问 Qwen-AgentWorld 首个原生语言世界模型 LWM + 7 大智能体交互领域（vs 6/24 afternoon 写过 6/24 04:00-07:00 UTC HN front 中含 Qwen-AgentWorld 80pt/45c 但没碰 6/24 12:33 正式发布完整解读 = 0 处撞车）</li>
+                    <li><strong>角度 #4</strong>：6/24 13:14 美联社 Mythos 模型检出政府机密系统漏洞（vs 6/24 afternoon 写过 6/24 11:48 Legion 起诉美政府 但没碰 6/24 13:14 美联社 Mythos 检出政府漏洞 + 政策 + 司法 + 技术三轨并行 = 0 处撞车）</li>
+                    <li><strong>角度 #5</strong>：6/24 04:38 美股 6/23 evening 收市三连跌 + 6/24 13:18 美光 -13.18% 成交 628.52 亿 + SpaceX 200 亿债券 900 亿超额认购（vs 6/24 afternoon 写过 6/24 06:11 亚太早盘美股期指 但没碰 6/24 04:38 美股 evening 收市三连跌完整数据 + 美光 -13.18% 单日大跳水 + 6/24 16:03 美股盘前反弹 = 0 处撞车）</li>
+                </ul>
+            </div>
+
+            <div class="preview-card">
+                <h4>🛡️ 隐私红线检查</h4>
+                <ul>
+                    <li>无用户个人信息 / 私人语气 / 内部称呼</li>
+                    <li>无业务域名 / 资产 / 系统架构信息</li>
+                    <li>无内部称呼 / 品牌标识</li>
+                    <li>无 API key / 服务器配置</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>数据来源：港股大模型概念股日报 6/24 17:34 智谱 0.18% / MINIMAX-W -7% / 半导体板块全日 5.4% 主导 | 财联社 6/24 16:17 港股 evening 收评 恒指 23412.18 +0.33% / 恒生科技 4479.02 +1.81% / 半导体板块 +5.4% / 凯莱英 +13% / 药明康德 +8.33% 报 141.7 港元 / 中芯国际 +8.9% 报 84.8 港元贡献恒指 44.58 点 | 财联社 6/24 16:03 美股芯片股盘前小幅反弹美光涨超 3% | 港股大模型日报 6/24 11:43 明略科技 02718.HK 涨 7.89% 报 240.60 港元 + 微信 AI 小微灰度 | 腾讯新闻 6/24 14:58 港股大模型午后震荡走弱 智谱一度跌 3% 早盘涨 16% 单日波动 19pp / MINIMAX-W 跌 6% | 美联社 6/24 13:14 Mythos 模型检出美国高度机密政府计算机系统多处漏洞 + 数小时内定位 + Anthropic 与美国多家情报机构合作 | 财联社 6/24 12:33 阿里千问 Qwen-AgentWorld 首个原生语言世界模型 LWM + 7 大智能体交互领域 | 美股成交额前 20 6/24 13:18 美光 -13.18% 成交 628.52 亿美元（第 1 名）/ SpaceX +0.98% 成交 242.25 亿（第 6 名）/ 特斯拉 -5.79% 成交 191.04 亿（第 7 名）| 财联社 6/24 04:38 美股 evening 收市 道指 51666.84 -0.09% / 纳指 25587.03 -2.21% / 标普 7365.46 -1.44% 三连跌 | 财联社 6/24 11:48 Legion LegalTech Corp 起诉美政府撤销 Mythos 5 / Fable 5 禁访令</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-24 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
