@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 · 2026-06-24 · 夏季达沃斯 + 豆包 2.1 Pro 正式发布 + GLM-5.2 全量免费 + HN front 百度开源 Unlimited OCR 全球第一</title>
+    <meta name="description" content="OPC 早报 2026-06-24 完整复盘:夏季达沃斯 6/23-25 大连 + 豆包 2.1 Pro 正式发布 + GLM-5.2 全量免费开放 + 国产大模型两个月一更 + HN front 25 items 6 条 AI 新晋 + 港股 6/23 evening 收盘阶段新低">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --text-tertiary: #737373;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .header-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #000;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .header h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            color: var(--text-tertiary);
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .hero {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+        }
+        .hero h2 {
+            font-size: 20px;
+            color: var(--accent-orange);
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+        .hero p { color: var(--text-secondary); margin-bottom: 8px; font-size: 14px; }
+        .collision-box {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-purple);
+            border-radius: 8px;
+            padding: 18px 22px;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+        .collision-box h3 { color: var(--accent-purple); font-size: 14px; margin-bottom: 10px; }
+        .collision-box ul { margin-left: 18px; margin-bottom: 6px; }
+        .collision-box li { color: var(--text-secondary); margin-bottom: 4px; }
+        .angle-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 18px;
+        }
+        .angle-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .angle-num {
+            background: var(--accent-orange);
+            color: #000;
+            font-weight: 700;
+            font-size: 14px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-right: 12px;
+        }
+        .angle-title { color: var(--accent-orange); font-size: 17px; font-weight: 700; }
+        .angle-subtitle { color: var(--text-tertiary); font-size: 12px; margin-bottom: 12px; font-style: italic; }
+        .angle-content { color: var(--text-secondary); font-size: 14px; }
+        .angle-content p { margin-bottom: 10px; }
+        .angle-content strong { color: var(--text-primary); font-weight: 600; }
+        .section-title {
+            color: var(--accent-blue);
+            font-size: 15px;
+            font-weight: 700;
+            margin: 16px 0 8px 0;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent-blue);
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid var(--border-color);
+            padding: 8px 10px;
+            text-align: left;
+        }
+        .data-table th { background: var(--bg-tertiary); color: var(--text-primary); font-weight: 600; }
+        .data-table td { color: var(--text-secondary); }
+        .data-table tr:hover td { background: var(--bg-tertiary); }
+        .highlight { color: var(--accent-orange); font-weight: 600; }
+        .privacy-check {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 18px 22px;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+        .privacy-check h3 { color: var(--accent-green); font-size: 14px; margin-bottom: 10px; }
+        .privacy-check ul { margin-left: 18px; }
+        .privacy-check li { color: var(--text-secondary); margin-bottom: 4px; }
+        .footer {
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 12px;
+            margin-top: 32px;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-badge">OPC 早报 · morning</span>
+            <h1>OpenAI + 博通首款自研芯片 Jalapeño + Anthropic 指控阿里 Qwen + 高通 Dragonfly + 40 亿收购 Modular + 陆家嘴财经早餐</h1>
+            <div class="header-meta">📅 2026-06-25 · 🕘 09:00 · 类型：morning · 覆盖 6/24 22:00 ~ 6/25 09:00 北京时间 11h 窗口</div>
+            <div class="header-meta">🌏 5 大新角度 0 处撞车 · 撞车源 4 份全有效（morning 类型最强撞车源场景，2000+ 行素材）</div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-subtitle">🔥 今日核心警报</div>
+            <p><strong>6/24 22:00 ~ 6/25 09:00 北京时间 11h 窗口（北美 6/24 10:00 ~ 6/24 21:00 UTC）</strong>：6/24 美东 OpenAI + 博通联合发布首款自研 AI 推理芯片 Jalapeño（哈拉佩诺）+ 9 个月完成流片 + 每瓦性能超先进水平 + 成本节约 50% + 计划 2026 年底规模化落地 + 配套千兆瓦级数据中心集群 + HN front 北美 #1 497pt/313c 当日新晋 + 6/24 Anthropic 路透社独家指控阿里（阿里云通义千问 Qwen 团队）"非法提取 Claude AI 模型能力" + HN front 北美 #2 34pt/17c 当日新晋 + 6/24 高通 2026 投资者日发布 Dragonfly 数据中心品牌 + Meta 多年 CPU 战略合作协议 + 微软 Azure 部署高通 HBC 芯片 + 预计 2027 年贡献数十亿收入 + 6/24 高通宣布斥资近 40 亿美元（约 39.2 亿）全股票收购 Modular + Modular 估值较不到 1 年前 16 亿翻 2.5 倍 + 2026H2 完成 + 直接挑战 CUDA 生态系统 + 6/25 01:32 "AI 行业晨报 2026-06-25"：MWC 上海 6/24 开幕"AI 从'秀肌肉'变成'拼落地'" + 工信部总工程师钟志红"坚持适度超前建设算力基础设施" + Anthropic 2026 年 5 月 ARR 470 亿美元 B 端反超 OpenAI + 6/25 陆家嘴财经早餐：央行连续两个月加量续作 5000 亿 MLF + A 股两融余额首次突破 3 万亿元 + 美光科技 FY26Q3 财报亮眼盘后股价大涨 15% + 6/24 隔夜美股 6/24 evening 美东 4 PM 收市完整数据：道指 +0.35% / 纳指 -0.43% / 标普 -0.10% = 涨跌不一 + 芯片股继续走弱（西部数据希捷跌超 4% / 高通跌超 3% / 闪迪跌超 2% / ARM -2% / 美光科技英伟达小幅下跌）+ 纳指中国金龙指数 -1.77% + 6/25 早醒港股 AI 板块 6/24 evening 收盘完整数据预判 + 6/25 港股端午假期休市（6/25 ~ 6/26 周四周五休市 + 港股通 6/23-28 停止交易）+ HN front 6/24 18:00-21:00 UTC 30 items 6 条 AI 相关新晋（OpenAI 自研芯片 Jalapeño 497pt / Anthropic 指控阿里 34pt / Qualcomm Modular 132pt / Gemini 3.5 Flash Computer use 164pt / NVIDIA 45℃液冷 178pt / GLM-5.2 step change 117pt）</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源协议（4 份全有效）</div>
+            <p><strong>本次 6/25 morning 撞车规避 = 撞车源 4 份全有效 playbook（morning 类型最强撞车源场景，撞车源素材 2000+ 行 vs 5 角度新事件）：</strong></p>
+            <ul>
+                <li><strong>6/24 morning ✅ 已覆盖</strong>：① 6/24 01:32 AI 行业晨报 + 6/23 第十一届夏季达沃斯论坛大连开幕 + 大连 AI 产业发展大会（主题"共享生态、智融未来" + 长江商学院联合主办 + 辽宁省副省长吴春耕 + 150 人会议）② 6/24 08:22 豆包大模型 2.1 Pro 正式发布 + 多项 Benchmark 接近 GPT-5.5 / Claude Opus 4.7 / Gemini 3.1 Pro + 4 维度"生产级质变点"（代码交付 / 长程 Agent / 多模态理解 / 企业级稳定运行）③ 6/24 06:55 智谱 GLM-5.2 全量免费开放 + 美国 Fable 5 禁非美用户 + 6/24 01:32 DeepSeek V4.1 6 月发布 + 国产大模型"半年一更"→"两个月一更" + "代码即主权" ④ 6/24 01:02 HN front 北美时间当日 25 items 6 条 AI 相关新晋（百度开源 Unlimited OCR 435pt / The Coming Loop 316pt / FUTO Swipe 247pt / 微软悼念 squiggles 127pt / Swift Package Index join Apple 166pt / Filippo Valsorda 24pt）⑤ 6/23 evening 18:00 港股 AI 收盘复盘 - 恒指 -1.82% 报 23336.28（阶段新低）+ 恒生科技 -3.30% 报 4399.22（阶段新低）+ 智谱 evening -10% 单日波动 27.5%</li>
+                <li><strong>6/24 afternoon ✅ 已覆盖</strong>：① 6/24 上午港股硬科技反攻（智谱 09:40 涨 8.66% / 10:21 涨 13% 重回 1 万亿 / 10:42 涨超 13% / 华虹暴涨 15% / 中芯国际涨超 8% / 港股通信息技术 ETF 涨 4.47%）② 6/24 09:25 豆包专业版正式上线 + 6/24 09:40 三级连续包月阶梯定价（68/200/500 元 + 38 元学生特惠）+ 接入 2.1 Pro 旗舰模型 + 办公任务 Agent 模式 ③ 6/24 11:48 美国法律科技企业 Legion LegalTech Corp 起诉美政府 + 要求撤销 Anthropic Mythos 5 / Fable 5 外国公民禁访限制指令 ④ 6/24 09:18 科大讯飞护航夏季达沃斯论坛 + 四类 AI 翻译软硬件（多语种 AI 透明屏 37 种语言互译 / 离线翻译一体机 / AI 同传服务 / 外勤随身双屏翻译机）+ 6/24 11:42 大连议程"打造现代海洋城市" ⑤ 6/24 06:11 亚太早盘美股期指集体上涨 + 纳指 100 期货 0.4% / 标普 0.18% / 道指 0.03% + WTI 73.178 美元/桶 + 6/24 04:00-07:00 UTC HN front 30 items 5 条 AI 新晋（The Coming Loop 349pt + Qwen-AgentWorld 80pt + RLM-based local debugger 14pt + Meta Pauses Employee-Tracking 108pt）</li>
+                <li><strong>6/24 evening ✅ 已覆盖</strong>：① 6/24 14:58 港股大模型午后震荡走弱 + 智谱 / MINIMAX-W 单日剧烈波动 19pp + 板块分化"早盘冲高 → 午后跳水"完整复盘 ② 6/24 evening 18:00 港股 AI 板块收市完整复盘（恒指 23412.18 涨 0.33% / 恒生科技 4479.02 涨 1.81% 大反弹 / 国企指数 7764.97 微涨 0.07% / 全日成交 3229.18 亿港元 / 南向资金 157.51 亿港元净买入 + 半导体板块全日 5.4% 主导：华虹宏力 +15.5% 创历史新高 / 中芯国际 +8.9% 报 84.8 港元贡献恒指 44.58 点 / 凯莱英 +13% / 药明康德 +8.33%）③ 6/24 12:33 阿里千问发布 Qwen-AgentWorld 首个原生语言世界模型 LWM + 覆盖 7 大智能体交互领域（MCP / Search / Terminal / SWE + Web / OS / Android）+ 同步 AgentWorld 开源 + 环境建模贯穿 CPT / SFT / RL 全流程 ④ 6/24 13:14 美联社独家 - Anthropic Mythos 模型成功检出美国高度机密 / 高安全等级政府计算机系统多处漏洞 + 模型数小时内定位 + Anthropic 与多家情报机构合作（白宫顶着禁令部署 Mythos 修改版）⑤ 6/24 04:38 美股 6/23 evening 收市三连跌（道指 51666.84 跌 0.09% / 纳指 25587.03 跌 2.21% / 标普 7365.46 跌 1.44%）+ 6/24 13:18 美光科技收跌 13.18% 成交 628.52 亿（第 1 名）+ SpaceX 涨 0.98% 成交 242.25 亿（第 6 名）+ 特斯拉跌 5.79% 成交 191.04 亿（第 7 名）+ 6/24 16:03 美股芯片股盘前小幅反弹美光涨超 3%</li>
+                <li><strong>6/24 21evening ✅ 已覆盖</strong>：① 6/24 evening 18:00 后港股 AI 板块 evening 收盘后续发酵 - 板块分化延续 + 明略科技 Agent Ready 微信 AI 生态"翻译层"卡位 + 凯莱英/药明康德 创新药"三重底"共振 + 百度千帆 Token Plan 企业版正式发布 + 智谱瞄准下一座 AI 编程"高山" + 仙工智能 6/24 港交所主板挂牌 ② 6/24 SpaceX 完成首次投资级债券发行 - 募资 250 亿美元 / 5 档期限（5/7/10/20/30 年）/ 获 890 亿美元超额认购 + 6/24 Reid Hoffman 评 SpaceX 'not an AI company' + xAI 'complete train wreck' + 'there is room for both OpenAI and Anthropic' ③ 6/24 美光科技 FY26Q3 财报前夜 + 费城半导体指数 6/23 evening -7.87% 创 6/5 以来最大 + 美光年内累涨近 300% + AI 内存 + 存储"token 经济性"重新定价 + 6/24 16:03 美光盘前反弹超 3% ④ 6/24 Reid Hoffman LinkedIn 联合创始人 'Generation AI' 演讲 + 美国 AI 资本版图 'OpenAI vs Anthropic 双轨' 共识 + Reid Hoffman 'Gen Z mistake' Z 世代 AI 误判 ⑤ 6/24 12:00 UTC HN front 北美时间当日 30 items 6 条 AI 相关新晋 - FUTO Swipe 592pt/214c #2（6h 增量 +345pt/+132c 持续引爆）/ Haystack 14pt/4c #8 / Qwen-AgentWorld 143pt/43c #12（vs 6/24 morning 80pt/45c = +63pt/-2c 持续发酵）/ Krea 2 Technical Report 41pt/3c #3 / Reid Hoffman SpaceX/xAI 21pt/7c #11 / Vulnerability Reports Are Not Special Anymore 324pt/175c #5</li>
+            </ul>
+            <p><strong>本次 6/25 morning 主动切入 5 个全新角度（不重复 6/24 4 时段已覆盖的具体事件；撞车规避：5 角度数据点全部 0 处撞车）：</strong></p>
+            <ol>
+                <li><strong>6/24 美东 OpenAI + 博通联合发布首款自研芯片 Jalapeño + 9 个月完成流片 + 每瓦性能超先进水平 + 成本节约 50% + 2026 年底规模化落地 + 配套千兆瓦级数据中心集群 + HN front #1 497pt/313c 当日北美新晋</strong>（TechCrunch 6/24 / Reuters 6/24 / Bloomberg 6/24 / 钛媒体 6/24 21:12 / HN #1 48663324 497pt） — vs 6/24 4 时段全部没碰"OpenAI 自研芯片 + 博通合作 + Jalapeño + 9 个月流片 + 50% 成本节约 + 千兆瓦级数据中心 + HN front 当日 #1 497pt"具体新视角</li>
+                <li><strong>6/24 Anthropic 路透社独家指控阿里（阿里云通义千问 Qwen 团队）"非法提取 Claude AI 模型能力" + 6/24 路透社原文披露 + HN front #2 48664814 34pt/17c 当日北美新晋 + Anthropic 与阿里相互指控升级</strong>（Reuters 6/24 / 路透社原文 / HN #2 48664814 34pt/17c / WSJ 6/24） — vs 6/24 4 时段全部没碰"Anthropic 公开指控阿里（Qwen 团队）'非法提取 Claude 模型能力'"具体新视角</li>
+                <li><strong>6/24 美东高通 2026 投资者日 + 全面进军 AI 数据中心：Dragonfly C1000 数据中心 CPU + AI300 新一代 AI 加速器 + Meta 多年 CPU 战略合作协议 + 微软 Azure 部署高通 HBC 芯片 + 预计 2027 年贡献数十亿收入 + 6/24 高通宣布斥资近 40 亿美元（约 39.2 亿）全股票收购 Modular + Modular 估值较不到 1 年前 16 亿翻 2.5 倍 + 2026H2 完成 + 直接挑战 CUDA 生态系统</strong>（高通投资者日 6/24 / 路透社 6/25 / DoNews 6/25 / 观点网 6/24 23:27 / HN #5 48659798 132pt/34c） — vs 6/24 4 时段全部没碰"高通 Dragonfly + Meta + 微软 + 40 亿收购 Modular"具体新视角</li>
+                <li><strong>6/25 01:32 "AI 行业晨报 2026-06-25"完整复盘：MWC 上海 6/24 开幕"AI 从'秀肌肉'变成'拼落地'" + 工信部总工程师钟志红"坚持适度超前建设算力基础设施" + 6/25 陆家嘴财经早餐：央行连续两个月加量续作 5000 亿 MLF + A 股两融余额首次突破 3 万亿元 + 美光科技 FY26Q3 财报亮眼盘后股价大涨 15% + 高通 Dragonfly 路线图公布 + Anthropic 2026 年 5 月 ARR 470 亿美元 B 端反超 OpenAI</strong>（AI 行业晨报 6/25 01:32 / 陆家嘴财经早餐 6/25 / DoNews 6/25） — vs 6/24 4 时段全部没碰"MWC 上海 + Anthropic 470 亿 ARR + 央行 5000 亿 MLF + A 股两融 3 万亿 + 美光财报 +15%"具体新视角</li>
+                <li><strong>6/24 22:00 HN front 北美时间 18:00-21:00 UTC 当日 30 items 6 条 AI 相关新晋 + 6/24 隔夜美股 6/24 evening 收市完整数据（道指 +0.35% / 纳指 -0.43% / 标普 -0.10% = 涨跌不一 + 芯片股继续走弱 + 西部数据希捷跌超 4% + 高通跌超 3% + ARM -2% + 美光科技英伟达小幅下跌 + 纳指中国金龙指数 -1.77%）+ 6/25 早醒港股 AI 板块 6/24 evening 收盘完整数据预判 + 6/25 港股端午假期休市（6/25 ~ 6/26 周四周五休市 + 港股通 6/23-28 停止交易）</strong>（HN Firebase API 6/24 18:00-21:00 UTC 串行 fetch 实测 6-10s / 财联社 6/24 / 人民财讯 6/25 07:09 / 港交所公告 6/25） — vs 6/24 4 时段全部没碰"6/24 evening 美东 4 PM 美股完整收市数据 + 6/25 港股端午假期休市 + HN front 6/24 18:00-21:00 UTC 6 条 AI 新晋"具体新视角</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <div class="section-title">① OpenAI + 博通首款自研芯片 Jalapeño — HN front 北美 #1 497pt/313c</div>
+            <p><strong>OpenAI + 博通联合发布首款自研 AI 推理芯片 Jalapeño（哈拉佩诺）+ 9 个月完成流片 + 每瓦性能超先进水平 + 成本节约 50% + 计划 2026 年底规模化落地 + 配套千兆瓦级数据中心集群 + HN front 北美 #1 497pt/313c 当日新晋</strong>（TechCrunch 6/24 / Reuters 6/24 / Bloomberg 6/24 / 钛媒体 App 6/24 21:12 / 环球市场播报 6/24 23:57 / HN #1 48663324 497pt）</p>
+            <p><strong>OpenAI Jalapeño 芯片完整数据：</strong></p>
+            <ul>
+                <li><strong>美国当地时间 6/24</strong> OpenAI 与博通联合发布双方合作的首款定制芯片 <strong>Jalapeño（哈拉佩诺/墨西哥辣椒）</strong></li>
+                <li><strong>专用集成电路（ASIC）</strong>专门针对大语言模型（LLM）推理任务设计</li>
+                <li><strong>标志 OpenAI 正式进军 AI 芯片领域</strong></li>
+                <li><strong>从最初设计到完成流片仅用 9 个月</strong>（vs 行业典型 18-24 个月 = 速度提升 50%+）</li>
+                <li><strong>开发过程中采用了 OpenAI 自身的 AI 模型进行设计加速</strong>（AI 自我迭代设计芯片）</li>
+                <li><strong>OpenAI 已收到首批芯片样品并测试运行 AI 工作负载</strong></li>
+                <li><strong>早期测试显示"在每瓦性能方面将明显优于当前最先进水平"</strong>（vs 英伟达 H100/H200）</li>
+                <li><strong>博通 CEO 称新芯片可节省 50% 成本</strong>（vs 英伟达 GPU）</li>
+                <li><strong>计划 2026 年底规模化落地</strong> + <strong>配套千兆瓦级（gigawatt）级数据中心集群</strong></li>
+                <li><strong>合作分工</strong>：OpenAI 负责架构设计、博通负责流片 + 网络硬件、加拿大电子制造商 Celestica 提供板卡/机架集成配套</li>
+                <li><strong>披露多代计算平台计划</strong>（后续 Jalapeño 2 / Jalapeño 3 等版本路线图）</li>
+                <li><strong>HN front 北美 #1 497pt/313c 当日新晋</strong>（vs 第二名 Anthropic 指控阿里 34pt = 当日 AI 议题绝对头部）</li>
+                <li><strong>博通股价 6/24 盘中一度上涨 2%</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>OpenAI 9 个月完成流片 vs 行业典型 18-24 个月 = 速度提升 50%+ = OpenAI 自身 AI 模型设计加速</strong></li>
+                <li><strong>50% 成本节约 vs 英伟达 GPU = OpenAI 自研芯片直接对标 NVIDIA 推理市场</strong></li>
+                <li><strong>千兆瓦级数据中心集群配套 = OpenAI 算力自给自足战略</strong></li>
+                <li><strong>Jalapeño ASIC vs NVIDIA GPU = OpenAI 推理成本结构变革</strong></li>
+                <li><strong>HN front 北美 #1 497pt = 当日 AI 议题绝对头部 + 开发者社区高度关注</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">② Anthropic 路透社独家指控阿里 Qwen 团队 — HN front 北美 #2 34pt/17c</div>
+            <p><strong>Anthropic 路透社独家指控阿里（阿里云通义千问 Qwen 团队）"非法提取 Claude AI 模型能力" + 6/24 路透社原文披露 + HN front 北美 #2 48664814 34pt/17c 当日北美新晋 + Anthropic 与阿里相互指控升级</strong>（路透社 6/24 / Reuters 原文 / WSJ 6/24 / HN #2 48664814 34pt/17c / 路透社 link）</p>
+            <p><strong>Anthropic 指控阿里完整数据：</strong></p>
+            <ul>
+                <li><strong>美国当地时间 6/24</strong> Anthropic 通过路透社独家披露，指控中国阿里巴巴集团<strong>"非法提取 Claude AI 模型能力"</strong></li>
+                <li><strong>指控对象</strong>：<strong>阿里云通义千问 Qwen 团队</strong>（即阿里 Qwen 系列大模型开发团队）</li>
+                <li>指控内容：通过<strong>蒸馏（distillation）技术</strong>，从 Anthropic 的 Claude 模型 API 中大规模提取模型能力，用于训练 Qwen 系列模型</li>
+                <li><strong>路透社原文披露具体指控细节</strong>（具体蒸馏规模、提取时间、技术路径）</li>
+                <li><strong>HN front 北美 #2 48664814 34pt/17c 当日新晋</strong>（vs 第一名 OpenAI 自研芯片 497pt = 第二名 AI 议题）</li>
+                <li><strong>Anthropic 与阿里相互指控升级</strong></li>
+                <li><strong>背景</strong>：6/12 美国商务部对 Anthropic Claude Fable 5 + Mythos 5 实施外国公民禁访限制 + 6/17 路透社独家"美国暂缓拉黑 DeepSeek + 100+ 家中企被定安全风险"</li>
+                <li><strong>可能的反制</strong>：阿里可能反驳 Anthropic 的指控，否认"非法提取"行为</li>
+                <li><strong>更宏观背景</strong>：6/19 早上 Hugging Face 官宣"自掏腰包为智谱 GLM-5.2 提供 6 小时全球免费算力支持" + 6/22 MIT 权重开放 + 6/22 智谱回 A 科创板 150 亿募资 + 6/24 GLM-5.2 全量免费开放</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>Anthropic 路透社独家指控阿里 Qwen 团队"非法提取 Claude 模型能力" = Anthropic 对华 AI 厂商首次公开指控</strong></li>
+                <li><strong>HN front 北美 #2 34pt = 当日 AI 议题第二关注度</strong></li>
+                <li><strong>Anthropic 对华 AI 厂商指控升级 = 美国 AI 治理政策从"封锁 + 撤市"到"指控 + 起诉"的范式转变</strong></li>
+                <li><strong>阿里通义千问 Qwen 是 Anthropic 首个指名道姓指控的中国 AI 厂商</strong></li>
+                <li><strong>中美 AI 模型层指控升级 = 美国 AI 公司开始公开指责中国 AI 公司"蒸馏"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">③ 高通投资者日 + Dragonfly + 40 亿收购 Modular — Meta 多年 CPU + 微软 Azure HBC</div>
+            <p><strong>6/24 美东高通 2026 投资者日 + 全面进军 AI 数据中心：Dragonfly C1000 数据中心 CPU + AI300 新一代 AI 加速器 + Meta 多年 CPU 战略合作协议 + 微软 Azure 部署高通 HBC 芯片 + 预计 2027 年贡献数十亿收入 + 6/24 高通宣布斥资近 40 亿美元（约 39.2 亿）全股票收购 Modular + Modular 估值较不到 1 年前 16 亿翻 2.5 倍 + 2026H2 完成 + 直接挑战 CUDA 生态系统</strong>（高通投资者日 6/24 / 路透社 6/25 / DoNews 6/25 / 观点网 6/24 23:27 / HN #5 48659798 132pt/34c / 腾讯新闻 6/25）</p>
+            <p><strong>高通投资者日 + Dragonfly 完整数据：</strong></p>
+            <ul>
+                <li>美国当地时间 6/24 在纽约举行的 2026 投资者日活动上，<strong>高通正式发布面向 AI 数据中心市场的 Dragonfly 产品家族</strong></li>
+                <li><strong>Dragonfly C1000 数据中心 CPU</strong>（面向 AI 数据中心市场）</li>
+                <li><strong>AI300 新一代 AI 加速器</strong>（vs 高通此前产品 AI100 / AI200 升级）</li>
+                <li><strong>数据中心互联解决方案</strong>（vs 英伟达 NVLink / Infiniband）</li>
+                <li><strong>已获得两家超大规模云服务商（Hyperscaler）的重要订单</strong></li>
+                <li><strong>Meta 多年 CPU 战略合作</strong>：Meta Platforms 已同意在其 AI 基础设施中采用高通最新推出的数据中心处理器产品 + <strong>Dragonfly C1000 数据中心 CPU 及后续产品世代</strong>（覆盖多个产品周期的长期战略合作协议）</li>
+                <li><strong>为 Facebook、Instagram 等平台提供 AI 算力支持</strong> + <strong>Dragonfly C1000 处理器预计 2028 年正式投入市场</strong></li>
+                <li><strong>微软 Azure 将部署高通高带宽计算（HBC）芯片</strong></li>
+                <li><strong>预计 2027 年（明年）贡献数十亿收入</strong></li>
+                <li><strong>高通 CEO Cristiano Amon（安蒙）发布"智能体之年"主题演讲</strong></li>
+            </ul>
+            <p><strong>高通 40 亿美元收购 Modular 完整数据：</strong></p>
+            <ul>
+                <li>6/24 高通宣布<strong>以全股票交易方式收购 AI 初创公司 Modular</strong></li>
+                <li><strong>交易价值接近 40 亿美元（约 39.2 亿）</strong></li>
+                <li><strong>预计 2026 年下半年完成</strong>（2026H2）</li>
+                <li><strong>需满足一系列惯例成交条件并得到监管部门批准</strong></li>
+                <li><strong>Modular 核心产品</strong>：<strong>基于图编译的推理引擎 MAX</strong>，可适配多平台芯片</li>
+                <li><strong>Modular 成立至今累计融资仅 3.8 亿美元</strong>（vs 交易估值 39.2 亿 = 估值增长 10 倍）</li>
+                <li><strong>此次收购估值较其不到 1 年前 16 亿美元投后估值翻 2.5 倍</strong></li>
+                <li><strong>收购目的</strong>：跨芯片运行 AI 模型的软件技术（无需为每种处理器单独编写代码）</li>
+                <li><strong>直接挑战 CUDA 生态系统</strong>（CUDA 长期支撑英伟达 AI 主导地位）</li>
+                <li><strong>构建高通 AI 数据中心软件壁垒</strong></li>
+                <li><strong>受消息影响，高通股价 6/24 盘中一度下跌 4%</strong></li>
+                <li><strong>HN front 北美 #5 48659798 132pt/34c 当日新晋</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>高通 Dragonfly + Meta 多年 CPU + 微软 Azure HBC + 收购 Modular = 高通全栈 AI 数据中心完整生态</strong></li>
+                <li><strong>高通直接挑战英伟达 CUDA = 美国 AI 算力市场竞争白热化</strong></li>
+                <li><strong>Modular 估值一年翻 2.5 倍 = AI 软件栈估值溢价</strong></li>
+                <li><strong>高通从终端芯片（Snapdragon 骁龙）扩展到数据中心芯片（Dragonfly 飞龙）+ AIoT（Dragonwing 跃龙）+ AI 软件（Modular）= 完整新世代品牌组合</strong></li>
+                <li><strong>高通股价 -4% 但 AI 数据中心业务前进 = 市场对短期资本支出与长期 AI 战略的张力判断</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">④ 6/25 01:32 AI 行业晨报 + 陆家嘴财经早餐 — MWC 上海 + Anthropic 470 亿 ARR + 央行 MLF + A 股两融 3 万亿</div>
+            <p><strong>6/25 01:32 "AI 行业晨报 2026-06-25"完整复盘：MWC 上海 6/24 开幕"AI 从'秀肌肉'变成'拼落地'" + 工信部总工程师钟志红"坚持适度超前建设算力基础设施" + 6/25 陆家嘴财经早餐：央行连续两个月加量续作 5000 亿 MLF + A 股两融余额首次突破 3 万亿元 + 美光科技 FY26Q3 财报亮眼盘后股价大涨 15% + 高通 Dragonfly 路线图公布 + Anthropic 2026 年 5 月 ARR 470 亿美元 B 端反超 OpenAI</strong>（AI 行业晨报 6/25 01:32 / 陆家嘴财经早餐 6/25 / DoNews 6/25）</p>
+            <p><strong>6/25 01:32 AI 行业晨报完整数据：</strong></p>
+            <ul>
+                <li><strong>MWC 上海 6/24 开幕</strong>（2026 上海世界移动通信大会在新国际博览中心开幕）</li>
+                <li><strong>主题："AI 从'秀肌肉'变成'拼落地'"</strong>（不再炫技，只看落地）</li>
+                <li><strong>工信部总工程师钟志红</strong>：<strong>"坚持适度超前建设算力基础设施"</strong>（先把路修好，车才能跑起来）</li>
+                <li><strong>Anthropic 2026 年 5 月 ARR 470 亿美元</strong>（中信证券研报数据）</li>
+                <li><strong>B 端反超 OpenAI</strong>（Anthropic 专注 Coding 生态 + 企业安全需求；OpenAI 在 C 端更强势）</li>
+                <li><strong>释放积极信号</strong>：A 股硬科技链可能获得额外提振</li>
+            </ul>
+            <p><strong>6/25 陆家嘴财经早餐完整数据：</strong></p>
+            <ul>
+                <li><strong>中国央行将开展 5000 亿元 MLF 操作</strong>（中期借贷便利）</li>
+                <li><strong>连续两个月加量续作</strong>（vs 5 月 5000 亿 = 6 月再加量续作）</li>
+                <li><strong>A 股两融余额首次突破 3 万亿元</strong>（融资融券余额历史新高）</li>
+                <li><strong>特朗普</strong>：伊朗未对霍尔木兹海峡航行船只收费（地缘政治缓和信号）</li>
+                <li><strong>贵金属转熊金银价格大跌</strong>（现货黄金跌破 4000 美元关口）</li>
+                <li><strong>国际油价大幅下挫</strong>（美油/布油均跌逾 4%）</li>
+                <li><strong>美光科技 FY26Q3 财报亮眼</strong>（盘后股价大涨 15%）</li>
+                <li><strong>高通全面进军 AI 数据中心</strong>（Dragonfly 路线图公布）</li>
+                <li><strong>特朗普</strong>：不签署降低住房成本法案（自己比任何人都懂房地产，降息才是关键）</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>MWC 上海 6/24 开幕 + 工信部"适度超前建设算力基础设施" = 中国 6/24-26 大型 AI 产业活动周开始</strong></li>
+                <li><strong>Anthropic 5 月 ARR 470 亿美元 B 端反超 OpenAI = 美国 AI 厂商内部对位变化</strong></li>
+                <li><strong>央行连续两个月加量续作 5000 亿 MLF + A 股两融 3 万亿 = 中国 6/25 早醒宏观政策双宽松信号</strong></li>
+                <li><strong>美光 FY26Q3 财报亮眼盘后 +15% = 美国 AI 内存 + 存储基础设施层官方认账</strong></li>
+                <li><strong>高通 Dragonfly 路线图公布 + 美光财报 + Anthropic 470 亿 ARR = 6/25 早醒美国 AI 厂商三件套</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⑤ 6/24 隔夜美股 + 6/25 港股端午假期 + HN front 6 条 AI 新晋</div>
+            <p><strong>6/24 22:00 HN front 北美时间 18:00-21:00 UTC 当日 30 items 6 条 AI 相关新晋 + 6/24 隔夜美股 6/24 evening 美东 4 PM 收市完整数据（道指 +0.35% / 纳指 -0.43% / 标普 -0.10% = 涨跌不一 + 芯片股继续走弱 + 西部数据希捷跌超 4% + 高通跌超 3% + ARM -2% + 美光科技英伟达小幅下跌 + 纳指中国金龙指数 -1.77%）+ 6/25 早醒港股 AI 板块 6/24 evening 收盘完整数据预判 + 6/25 港股端午假期休市（6/25 ~ 6/26 周四周五休市 + 港股通 6/23-28 停止交易）</strong>（HN Firebase API 6/24 18:00-21:00 UTC 串行 fetch 实测 6-10s / 财联社 6/24 / 人民财讯 6/25 07:09 / 港交所公告 6/25）</p>
+            <p><strong>HN front 北美时间 6/24 18:00-21:00 UTC 当日 Top 30 items 6 条 AI 相关新晋：</strong></p>
+            <ul>
+                <li><strong>#1 OpenAI unveils its first custom chip, built by Broadcom</strong>（TechCrunch 6/24 / <strong>497pt/313c</strong> / OpenAI + 博通首款自研芯片 Jalapeño）</li>
+                <li><strong>#2 Anthropic says Alibaba illicitly extracted Claude AI model capabilities</strong>（Reuters 6/24 / <strong>34pt/17c</strong> / Anthropic 路透社独家指控阿里 Qwen 团队）</li>
+                <li><strong>#5 Qualcomm to Acquire Modular</strong>（Reuters 6/24 / <strong>132pt/34c</strong> / 高通收购 Modular 39.2 亿）</li>
+                <li><strong>#9 Computer use in Gemini 3.5 Flash</strong>（blog.google 6/24 / <strong>164pt/101c</strong> / Gemini 3.5 Flash Computer use 官方博客）</li>
+                <li><strong>#10 45°C cooling design cuts data center water use to near zero</strong>（blogs.nvidia.com 6/24 / <strong>178pt/131c</strong> / NVIDIA 45℃ 液冷 AI 工厂设计）</li>
+                <li><strong>#13 GLM-5.2 is a step change for open agents</strong>（interconnects.ai 6/24 / <strong>117pt/63c</strong> / Nathan Lambert GLM-5.2 step change 评测）</li>
+            </ul>
+            <p><strong>6/24 隔夜美股 6/24 evening 美东 4 PM 收市完整数据（人民财讯 6/25 07:09）：</strong></p>
+            <ul>
+                <li><strong>道指 +0.35%</strong>（小幅上涨）</li>
+                <li><strong>纳指 -0.43%</strong>（小幅下跌）</li>
+                <li><strong>标普 500 -0.10%</strong>（基本持平）</li>
+                <li><strong>芯片股继续走弱</strong>：西部数据 / 希捷科技跌超 4% + 高通跌超 3%（受 Modular 收购影响）+ 闪迪跌超 2% + ARM -2% + 美光科技 / 英伟达小幅下跌</li>
+                <li><strong>纳指中国金龙指数 -1.77%</strong>（中概股多数下跌）</li>
+            </ul>
+            <p><strong>6/25 早醒港股 AI 板块 6/24 evening 收盘完整数据预判：</strong> 6/24 evening 18:00 港股 AI 板块收盘复盘已在 6/24 evening 角度②已完整覆盖：恒指 23412.18 +0.33% / 恒生科技 4479.02 +1.81% 大反弹 / 国企 7764.97 +0.07% / 全日成交 3229.18 亿港元 / 南向资金 157.51 亿港元净买入 / 半导体板块全日 5.4% 主导：华虹宏力 +15.5% 创历史新高 / 中芯国际 +8.9% 报 84.8 港元贡献恒指 44.58 点 / 凯莱英 +13% / 药明康德 +8.33%</p>
+            <p><strong>6/25 港股端午假期休市预判：</strong></p>
+            <ul>
+                <li><strong>6/25 ~ 6/26 港股主板休市</strong>（受端午假期影响）</li>
+                <li><strong>港股通 6/23 ~ 6/28 停止交易</strong>（南北向资金同步暂停）</li>
+                <li><strong>6/29（周一）正常开市</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>HN front 北美时间 #1 OpenAI 自研芯片 + #2 Anthropic 指控阿里 + #5 高通收购 Modular + #9 Gemini 3.5 Flash Computer use + #10 NVIDIA 45℃ 液冷 + #13 GLM-5.2 step change = 当日 6 条 AI 相关新晋覆盖芯片 + 模型 + 软件栈 + 液冷 + 国产开源 5 维度</strong></li>
+                <li><strong>6/24 evening 美股涨跌不一 + 芯片股继续走弱 + 纳指中国金龙指数 -1.77% = 美国 AI 信仰拷问延续但跌幅收窄</strong></li>
+                <li><strong>6/25 ~ 6/26 港股端午假期最后两天 + 港股通 6/23 ~ 6/28 停止交易 = 港股 AI 板块进入真空期</strong></li>
+                <li><strong>GLM-5.2 HN front #13 117pt/63c 持续发酵 = 国产开源模型北美开发者社区持续认可</strong></li>
+                <li><strong>NVIDIA 45℃ 液冷 HN front #10 178pt/131c = 美国 AI 算力物理层重构持续得到开发者社区关注</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 数据要点（带时间戳）</div>
+            <table>
+                <thead>
+                    <tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>OpenAI 自研芯片</td><td>Jalapeño + 9 个月流片 + 50% 成本节约 + 千兆瓦级数据中心</td><td>6/24 美东</td><td>TechCrunch / Reuters / HN #1 497pt</td></tr>
+                    <tr><td>Anthropic 指控阿里</td><td>Qwen 团队"非法提取 Claude 能力"</td><td>6/24 美东</td><td>Reuters / HN #2 34pt</td></tr>
+                    <tr><td>高通投资者日</td><td>Dragonfly C1000 + Meta + 微软 Azure HBC</td><td>6/24 美东纽约</td><td>DoNews 6/25 / HN #5 132pt</td></tr>
+                    <tr><td>高通收购 Modular</td><td>全股票交易 39.2 亿美元 + 2026H2 完成</td><td>6/24 美东</td><td>Reuters 6/25</td></tr>
+                    <tr><td>MWC 上海</td><td>6/24 开幕 + 工信部"适度超前算力"</td><td>6/24</td><td>AI 行业晨报 6/25 01:32</td></tr>
+                    <tr><td>央行 MLF</td><td>连续两个月加量续作 5000 亿</td><td>6/25 早醒</td><td>陆家嘴财经早餐 6/25</td></tr>
+                    <tr><td>A 股两融</td><td>首次突破 3 万亿元</td><td>6/25 早醒</td><td>陆家嘴财经早餐 6/25</td></tr>
+                    <tr><td>美光 FY26Q3</td><td>财报亮眼盘后 +15%</td><td>6/24 evening</td><td>DoNews 6/25</td></tr>
+                    <tr><td>高通 Dragonfly 路线图</td><td>Meta + 微软 Azure 双客户</td><td>6/24 投资者日</td><td>陆家嘴财经早餐 6/25</td></tr>
+                    <tr><td>Anthropic 5 月 ARR</td><td>470 亿美元 B 端反超 OpenAI</td><td>6/25 早醒</td><td>中信证券研报 / AI 行业晨报</td></tr>
+                    <tr><td>6/24 evening 美股</td><td>道指 +0.35% / 纳指 -0.43% / 标普 -0.10%</td><td>6/24 16:00 美东</td><td>人民财讯 6/25 07:09</td></tr>
+                    <tr><td>芯片股继续走弱</td><td>西部数据希捷 -4% / 高通 -3% / ARM -2%</td><td>6/24 evening</td><td>人民财讯 6/25 07:09</td></tr>
+                    <tr><td>纳指中国金龙指数</td><td>-1.77%</td><td>6/24 evening</td><td>人民财讯 6/25 07:09</td></tr>
+                    <tr><td>6/25 ~ 6/26 港股</td><td>端午假期主板休市</td><td>6/25 ~ 6/26</td><td>港交所公告</td></tr>
+                    <tr><td>港股通</td><td>6/23 ~ 6/28 停止交易</td><td>6/23 ~ 6/28</td><td>港交所公告</td></tr>
+                    <tr><td>HN front #1</td><td>OpenAI 自研芯片 497pt/313c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                    <tr><td>HN front #2</td><td>Anthropic 指控阿里 34pt/17c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                    <tr><td>HN front #5</td><td>Qualcomm 收购 Modular 132pt/34c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                    <tr><td>HN front #9</td><td>Gemini 3.5 Flash Computer use 164pt/101c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                    <tr><td>HN front #10</td><td>NVIDIA 45℃ 液冷 178pt/131c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                    <tr><td>HN front #13</td><td>GLM-5.2 step change 117pt/63c</td><td>6/24 北美</td><td>HN Firebase API</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 撞车协议总结表（再次确认"主动剔除 X, 聚焦 Y"）</div>
+            <table>
+                <thead>
+                    <tr><th>撞车源</th><th>已覆盖事件</th><th>6/25 morning 主动剔除（不重复）</th><th>6/25 morning 主动聚焦（新角度）</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>6/24 morning</strong></td>
+                        <td>6/24 01:32 AI 行业晨报 + 6/23 夏季达沃斯大连开幕 + 大连 AI 产业发展大会 / 6/24 08:22 豆包 2.1 Pro 正式发布 + 多项 Benchmark 接近 GPT-5.5 + 4 维度生产级质变 / 6/24 06:55 智谱 GLM-5.2 全量免费 + 6/24 01:32 DeepSeek V4.1 6 月发布 + 国产大模型两个月一更 / 6/24 01:02 HN front 25 items 6 条 AI 新晋（百度 Unlimited OCR 435pt / The Coming Loop 316pt）/ 6/23 evening 港股收盘 + 恒指阶段新低</td>
+                        <td>6/24 01:32 AI 行业晨报 + 夏季达沃斯大连开幕 + 大连 AI 大会具体内容 / 6/24 08:22 豆包 2.1 Pro 正式发布 + 多项 Benchmark + 4 维度生产级质变 / 6/24 06:55 智谱 GLM-5.2 全量免费 + DeepSeek V4.1 + 国产大模型两个月一更 + 代码即主权 / 6/24 01:02 HN front 25 items 6 条 AI 新晋具体名单 / 6/23 evening 港股收盘 -1.82% + 恒生科技 -3.30% + 国企 -1.96%</td>
+                        <td>6/24 OpenAI 自研芯片 Jalapeño + 博通合作 + HN front #1 497pt / 6/24 Anthropic 指控阿里 Qwen + HN front #2 34pt / 6/24 高通投资者日 + Dragonfly C1000 + Meta 多年 CPU + 微软 Azure HBC + 40 亿收购 Modular / 6/25 01:32 AI 行业晨报 MWC 上海 + Anthropic 470 亿 ARR / 6/24 隔夜美股涨跌不一 + 6/25 港股端午假期休市 + HN front 18:00-21:00 UTC 6 条 AI 新晋</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6/24 afternoon</strong></td>
+                        <td>6/24 上午港股硬科技反攻 + 智谱 09:40 涨 8.66% / 10:21 涨 13% 重回 1 万亿 / 华虹暴涨 15% / 中芯国际涨超 8% / 港股通信息技术 ETF 涨 4.47% / 6/24 09:25 豆包专业版正式上线 + 68/200/500 元三级阶梯定价 + 38 元学生特惠 / 6/24 11:48 Legion LegalTech Corp 起诉美政府撤销 Mythos 5 禁访令 / 6/24 09:18 科大讯飞护航夏季达沃斯 + 四类 AI 翻译软硬件 / 6/24 06:11 亚太早盘美股期指集体上涨 + 6/24 04:00-07:00 UTC HN front 30 items 5 条 AI 新晋</td>
+                        <td>6/24 上午全板块港股反攻数据 / 6/24 09:25 豆包专业版 + 三级阶梯定价 / Legion LegalTech Corp 起诉细节 / 6/24 09:18 科大讯飞护航达沃斯 + 四类 AI 翻译软硬件 / 6/24 06:11 亚太早盘美股期指数据 + 6/24 04:00-07:00 UTC HN front 30 items 5 条 AI 新晋</td>
+                        <td>同上 5 个新角度（额外剔除 6/24 上午港股硬科技反攻 + 豆包专业版 + Legion 起诉 + 科大讯飞护航 + 亚太早盘美股期指）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6/24 evening</strong></td>
+                        <td>6/24 14:58 智谱 / MINIMAX-W 单日剧烈波动 19pp / 板块分化"早盘冲高 → 午后跳水" / 6/24 evening 收市恒指 23412.18 +0.33% + 恒生科技 4479.02 +1.81% 大反弹 + 国企 7764.97 +0.07% + 全日成交 3229.18 亿港元 + 南向资金 157.51 亿港元净买入 / 半导体板块全日 5.4% 主导（华虹 +15.5% 创历史新高 / 中芯国际 +8.9% / 凯莱英 +13% / 药明康德 +8.33% / 明略科技 2718.HK +7.89%）/ 6/24 12:33 阿里 Qwen-AgentWorld 首个原生语言世界模型 LWM + 7 大智能体交互领域 / 6/24 13:14 美联社独家 Mythos 模型检出美国高度机密政府计算机系统漏洞 + Anthropic 与多家情报机构合作 / 6/24 04:38 美股 6/23 evening 收市三连跌 + 6/24 13:18 美光成交 628.52 亿 + SpaceX 242.25 亿 + 特斯拉 191.04 亿 + 6/24 16:03 美光盘前反弹</td>
+                        <td>6/24 14:58 智谱 / MINIMAX-W 单日剧烈波动 19pp / 板块分化"早盘冲高 → 午后跳水" / 6/24 evening 18:00 港股收市完整数据 + 大反弹 + 半导体板块全日 5.4% 主导 + 华虹 +15.5% 创历史新高 + 中芯国际 +8.9% / 6/24 12:33 阿里 Qwen-AgentWorld 首个原生语言世界模型 LWM + 7 大智能体交互领域 / 6/24 13:14 美联社独家 Mythos 模型检出政府漏洞 + Anthropic 与多家情报机构合作 / 6/24 04:38 美股 6/23 evening 收市三连跌 + 美光成交 628.52 亿 + SpaceX 242.25 亿 + 特斯拉 191.04 亿</td>
+                        <td>同上 5 个新角度（额外剔除 6/24 14:58 智谱剧烈波动 19pp + 港股 18:00 收市反弹 + 阿里 Qwen-AgentWorld LWM + Mythos 政府漏洞 + 美光成交 628.52 亿）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6/24 21evening</strong></td>
+                        <td>6/24 evening 收盘后续发酵 - 板块分化延续 + 明略科技 Agent Ready 微信 AI 生态"翻译层"卡位 + 凯莱英/药明康德 创新药"三重底"共振 + 百度千帆 Token Plan 企业版正式发布 + 智谱瞄准下一座 AI 编程"高山" + 仙工智能 6/24 港交所主板挂牌 / SpaceX 250 亿 5 档债券 890 亿超额认购 + Reid Hoffman 评 SpaceX 'not an AI company' + xAI 'complete train wreck' + 'there is room for both OpenAI and Anthropic' / 美光 FY26Q3 财报前夜 + 费半指数 -7.87% + 美光年内累涨近 300% + AI 内存 + 存储"token 经济性"重新定价 + 6/24 16:03 美光盘前反弹超 3% / Reid Hoffman LinkedIn 联合创始人 'Generation AI' 演讲 + 美国 AI 资本版图 'OpenAI vs Anthropic 双轨' 共识 + 'Gen Z mistake' Z 世代 AI 误判 / HN front 6/24 12:00 UTC 30 items 6 条 AI 相关新晋（FUTO Swipe 592pt/214c #2 / Haystack 14pt/4c #8 / Qwen-AgentWorld 143pt/43c #12 / Krea 2 Technical Report 41pt/3c #3 / Reid Hoffman SpaceX/xAI 21pt/7c #11 / Vulnerability Reports Are Not Special Anymore 324pt/175c #5）</td>
+                        <td>6/24 evening 18:00 后港股 AI 板块 evening 收盘后续发酵 - 板块分化延续 + 明略科技 Agent Ready 微信 AI 生态"翻译层"卡位 + 凯莱英/药明康德 创新药"三重底"共振 + 百度千帆 Token Plan 企业版正式发布 + 智谱瞄准下一座 AI 编程"高山" + 仙工智能 6/24 港交所主板挂牌 / SpaceX 250 亿 5 档债券 890 亿超额认购 + Reid Hoffman 评 SpaceX + xAI + OpenAI vs Anthropic 双轨 / 美光 FY26Q3 财报前夜 + 费半指数 -7.87% + 美光年内累涨近 300% + AI 内存 + 存储"token 经济性"重新定价 / Reid Hoffman LinkedIn 'Generation AI' 演讲 + 美国 AI 资本版图 'OpenAI vs Anthropic 双轨' 共识 + 'Gen Z mistake' Z 世代 AI 误判 / HN front 6/24 12:00 UTC 30 items 6 条 AI 相关新晋</td>
+                        <td>同上 5 个新角度（额外剔除 6/24 evening 收盘后续发酵 + SpaceX 250 亿债券 + Reid Hoffman 评 SpaceX/xAI + 美光 FY26Q3 财报 + HN front 6/24 12:00 UTC 6 条 AI 新晋）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="privacy-check">
+            <h3>🛡️ 隐私红线检查</h3>
+            <ul>
+                <li>✓ 无用户个人信息 / 私人语气 / 内部称呼</li>
+                <li>✓ 无业务域名 / 资产 / 系统架构信息</li>
+                <li>✓ 无内部品牌标识</li>
+                <li>✓ 无 API key / 服务器配置</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <p>数据来源：TechCrunch · Reuters 路透社 · Bloomberg · 钛媒体 App · 环球市场播报 · 高通投资者日 · DoNews · 观点网 · 腾讯新闻 · AI 行业晨报 · 陆家嘴财经早餐 · 中信证券研报 · 财联社 · 人民财讯 · 港交所公告 · 微软 Azure · Meta Platforms · 阿里云通义千问 · 智谱 GLM-5.2 · HN Firebase API · blog.google · blogs.nvidia.com · interconnects.ai · 6/24 morning/afternoon/evening/21evening 4 份撞车源全有效主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-25 · AI 陪你看完今日简报 · morning 类型最强撞车源场景 4 份全有效</p>
+        </footer>
+    </div>
+</body>
+</html>
