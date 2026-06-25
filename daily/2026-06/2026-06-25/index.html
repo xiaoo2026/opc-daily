@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-25 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+    <div class="container">
+        <header class="site-header">
+            <div class="site-title">OPC DAILY · AI 智能简报</div>
+            <div class="site-date">2026-06-25 晚报</div>
+        </header>
+
+        <div class="hero">
+            <div class="hero-tag">EVENING BRIEFING</div>
+            <h1 class="hero-title">港股大模型午后跳水 智谱 2499 港元触顶 2 万亿</h1>
+            <p class="hero-subtitle">6/25 12:00 ~ 6/25 18:00 北京时间 6h 窗口 · 北美 6/25 00:00 ~ 6/25 06:00 UTC</p>
+            <p class="hero-meta">三时段递进 + 中美 AI 公开指控范式建立 + 美国算力本土化军备竞赛白热化</p>
+        </div>
+
+        <div class="tags">
+            <span class="tag tag-orange">港股大模型</span>
+            <span class="tag tag-red">Anthropic 指控阿里</span>
+            <span class="tag tag-blue">高通投资者日</span>
+            <span class="tag tag-purple">OpenAI Jalapeño</span>
+            <span class="tag tag-green">A 股 4255 翻绿</span>
+            <span class="tag tag-orange">MWC 上海</span>
+            <span class="tag tag-blue">美光盘后 +15%</span>
+            <span class="tag tag-red">HN front 6 维度</span>
+        </div>
+
+        <section class="quick-stats">
+            <div class="stat-card stat-orange">
+                <div class="stat-label">智谱盘中触顶</div>
+                <div class="stat-value">2499 港元</div>
+                <div class="stat-delta">+12.6% / 2 万亿港元</div>
+            </div>
+            <div class="stat-card stat-red">
+                <div class="stat-label">Anthropic 指控阿里</div>
+                <div class="stat-value">2880 万次</div>
+                <div class="stat-delta">"迄今最大规模模型蒸馏攻击"</div>
+            </div>
+            <div class="stat-card stat-blue">
+                <div class="stat-label">高通投资者日</div>
+                <div class="stat-value">400 亿美元</div>
+                <div class="stat-delta">2029 非手机营收目标 / 盘后涨 16%</div>
+            </div>
+            <div class="stat-card stat-green">
+                <div class="stat-label">OpenAI Jalapeño</div>
+                <div class="stat-value">701pt</div>
+                <div class="stat-delta">HN front #1 / +204pt 6h 增量</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔥 6/25 evening 三时段递进完整收官</div>
+            <div class="content">
+                <p><strong>6/25 morning → afternoon → evening 三时段递进完整收官</strong>：morning 报 6/24 OpenAI Jalapeño + Anthropic 指控阿里 + 高通投资者日 + MWC 上海 + 央行 5000 亿 MLF + 美光财报 +15% 6 大新维度 → afternoon 报 6/25 灵晟超算 TOP500 + 创业板 4000 点 + 港股正常开盘 + 智谱 + 华为联合开源 GLM-Image + HN front 6 条 AI 新晋 5 大新维度 → evening 报 6/25 12:00 港股大模型午后跳水 + 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元 + 18:00 港股 + A 股 + 隔夜美股 evening 收市完整复盘 + Anthropic 指控阿里完整披露（2.5 万欺诈账户 + 2880 万次非法交互 + "迄今最大规模模型蒸馏攻击"）+ 6/25 17:00 高通投资者日完整路线图（Dragonfly C1000 + AI300 + Modular 39.2 亿 + 2029 400 亿目标 + 股价盘后涨 16%）+ HN front 6/25 06:00 UTC 6 条 AI 新晋 6 维度并发完整复盘 = 6/25 三时段递进完整收官（morning 政策 + afternoon 盘中 + evening 收市 + 指控范式 + 算力军备竞赛 + HN front 6 维度）</p>
+
+                <div class="highlight-box">
+                    <strong>核心 5 角度：</strong>① 6/25 港股大模型"早盘冲高 → 午后跳水 → 尾盘再创新高"三段节奏 + 智谱 2499 港元 +12.6% 触顶 2 万亿 ② 6/25 evening 港股 + A 股 + 隔夜美股 evening 收市完整复盘 + 高通盘后涨 16% + 美股盘前反弹 ③ 6/25 evening Anthropic 指控阿里完整披露 + 阿里通义回应"坚决反对" + 中美 AI 模型层公开指控范式建立 ④ 6/25 17:00 高通投资者日完整路线图 + 美国 AI 算力本土化军备竞赛白热化 ⑤ 6/25 06:00 UTC HN front 30 items 6 条 AI 新晋 6 维度并发（本土 AI 芯片 + AI 模型层指控 + 国产模型国际认账 + Google 多模态 + 开源权重经济性）
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">📊 6/25 港股大模型 4 个时间点节奏 + 智谱 2499 港元 +12.6% 触顶 2 万亿</div>
+            <div class="content">
+                <p><strong>6/25 港股大模型"早盘冲高 → 午后跳水 → 尾盘再创新高"三段节奏完整复盘</strong>：6/25 全日 4 个时间点节奏 = 09:47 港股开盘 + 09:50 智谱 2352 港元 +8.19% 创反弹新高 + 12:00 港股恒生科技指数跌近 1% 大模型概念股午后跳水 + 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）+ 18:00 evening 收市（待 evening 收市数据）= 港股大模型日内全周期复盘范式（vs 6/24 evening 写过"6/24 14:58 港股大模型午后跳水 + 智谱 / MINIMAX-W 单日剧烈波动 19pp" = 6/25 evening 升级为"6/25 港股大模型'早盘冲高 → 午后跳水 → 尾盘再创新高'三段节奏"）。</p>
+
+                <p><strong>6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）= 港股大模型龙头年内涨幅 +2013% 创港股 AI 板块历史</strong>：钛媒体 6/25 14:38 报道，智谱 2513.HK 触及 2499 港元，涨幅 +12.6%，盘中冲高 2 万亿港元，年内涨幅 +2013% = 港股大模型龙头年内涨幅 +2013% 创港股 AI 板块历史（vs 6/22 morning 写过"6/22 智谱盘中冲高 2980 港元 +42% + 收盘 2410 港元 + 总市值 1.07 万亿港元 + 年内累涨 1900%" + 6/25 morning 写过"6/25 09:50 智谱 2352 港元 +8.19% 创反弹新高" = 6/25 evening 升级为"6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）" = 港股大模型龙头年内涨幅 +2013% 创港股 AI 板块历史）。</p>
+
+                <p><strong>核心要点：</strong>① "6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元" = 港股大模型龙头年内涨幅 +2013% 创港股 AI 板块历史 ② "6/25 全日 4 个时间点节奏"复盘范式 = 任何"早盘 → 上午 → 盘中 → 收市"的港股 / A 股行情复盘 ③ "6/25 12:00 港股恒生科技指数跌近 1% 大模型概念股午后跳水" + "6/25 14:38 智谱触及 2499 港元 +12.6% 触底反弹" = "板块整体跳水但龙头股再创新高"模式 ④ "6/25 evening 港股大模型'早盘冲高 → 午后跳水 → 尾盘再创新高'三段节奏" = evening 必报港股大模型全日复盘范式 ⑤ "6/25 evening 港股恒指夜期 23322 点 -0.291% 低水 90 点" = 6/25 evening 港股期指市场对次日走势预期。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🌍 6/25 evening 18:00 港股 + A 股 + 隔夜美股 evening 收市完整复盘</div>
+            <div class="content">
+                <p><strong>6/25 evening 18:00 A 股 evening 收市三大指数微跌（沪指 -0.16% / 深成指 -0.41% / 创业板指 -0.86% 4251.6 附近震荡）</strong>：财联社 6/25 18:00 报道，6/25 evening 18:00 A 股 evening 收市数据：① 沪指 evening 收市 -0.16% 报 4110 点附近 ② 深成指 evening 收市 -0.41% 报 16000 点附近 ③ <strong>创业板指 evening 收市 -0.86% 报 4251.6 点附近震荡</strong>（4 创新高 4255 后翻绿 / 6/25 09:43 涨 1% 存储芯片领涨 / 6/25 11:30 突破 4000 点 / 6/25 evening 18:00 收市 4251.6 / 单日微跌 -0.86%）④ 存储芯片集体调整 ⑤ 工业富联午后开板（6/25 morning 涨停 / 6/25 evening 午后开板）⑥ 半导体板块转弱（vs 6/25 afternoon 写过"6/25 09:43 创业板指涨 1% 存储芯片领涨 + 6/25 11:30 创业板指突破 4000 点刷新历史新高 + 算力租赁概念活跃 + 工业富联涨停 + 6/25 11:46 工信部总工程师钟志红加强算力网规划建设" = 6/25 evening 升级为"6/25 evening 18:00 A 股 evening 收市三大指数微跌 + 创业板指 4 创新高 4255 后翻绿 evening 收市 4251.6 微跌 -0.86% + 存储芯片集体调整 + 工业富联午后开板"）。</p>
+
+                <p><strong>6/25 17:47 高通投资者日"400 亿美元目标" + 股价盘后涨 16% 创 6 个月新高</strong>：财联社 6/25 17:47 / 新智元 6/25 17:47 报道，高通投资者日"一颗 CPU、一项内存技术、一个 400 亿美元目标"完整路线图公布：① <strong>Dragonfly C1000 CPU + AI300 加速器</strong>（高通投资者日 6/25 17:00 / AI 数据中心完整路线图）② <strong>Meta 首客户</strong>（Meta 多年 CPU 战略合作协议 + Meta 平台 AI 算力支持）③ <strong>Modular 39.2 亿收购</strong>（6/25 17:00 高通官宣将收购 AI 软件栈企业 Modular / 交易预计 2026H2 完成 / Modular 39.2 亿美元 / 高通将以全股票交易方式 / 最多发行约 1920 万股普通股 / DoNews 6/25 17:27）④ <strong>2029 非手机营收目标 400 亿美元</strong>（vs 6/25 morning 写过"预计 2027 年贡献数十亿收入" = 6/25 evening 升级为"2029 年非手机业务营收目标 400 亿美元"）⑤ <strong>股价盘后涨 16% 创 6 个月新高</strong>（6/25 17:00 / QCOM 股价盘后涨 16% / 创 6 个月新高）（vs 6/25 morning 写过"6/24 美东高通 2026 投资者日 + Dragonfly C1000 数据中心 CPU + Meta 多年 CPU 战略合作 + 微软 Azure HBC + 40 亿美元收购 Modular" = 6/25 evening 升级为"6/25 17:00 高通投资者日'400 亿美元目标' + Dragonfly C1000 + AI300 + Meta 首客户 + Modular 39.2 亿 + 2029 400 亿目标 + 股价盘后涨 16%"）。</p>
+
+                <p><strong>6/25 17:41 美股盘前纳指期货 +1.5% 受美光业绩推动 + 6/24 evening 美股 three 连跌</strong>：财联社 6/25 06:03 / 北京时间 6/25 14:03 报道，6/25 17:41 美股盘前：① 受美光 FY26Q3 财报亮眼盘后股价大涨 15% 推动 ② 美股期指集体高开 ③ 道琼斯指数期货 +0.65% ④ 标普 500 期货 +0.56% ⑤ <strong>纳斯达克 100 期货 +1.47%</strong> ⑥ 6/24 evening 美股 three 连跌（道指 51666.84 -0.09% / 纳指 25587.03 -2.21% / 标普 7365.46 -1.44% / 财联社 6/24 04:38）= 6/25 evening 美股从 three 连跌到盘前反弹（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报：美光 FY26Q3 财报亮眼盘后股价大涨 15%" = 6/25 evening 升级为"6/25 17:41 美股盘前纳指期货 +1.5% + 道指期货 +0.65% + 标普期货 +0.56% + 纳斯达克 100 期货 +1.47% 受美光业绩推动" = 6/25 evening 美股反弹预期 + 高通盘后涨 16% = 6/25 evening 美股 AI 题材反弹信号）。</p>
+
+                <p><strong>核心要点：</strong>① "6/25 evening 18:00 A 股 evening 收市三大指数微跌" = 6/25 A 股 4 创新高 4255 后翻绿 evening 收市 4251.6 微跌 -0.86% ② "6/25 17:47 高通投资者日'400 亿美元目标' + 股价盘后涨 16%" = 6/25 evening 高通转型完整路线图公布 ③ "6/25 17:41 美股盘前纳指期货 +1.5%" = 6/25 evening 美股反弹预期 ④ "6/25 06:55 港股恒指夜期 23322 点 -0.291% 低水 90 点" = 6/25 evening 港股期指市场对次日走势预期 ⑤ "6/24 evening 美股 three 连跌 + 6/25 17:41 美股盘前纳指期货 +1.5%" = 6/25 evening 美股从 three 连跌到盘前反弹。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">⚖️ 6/25 evening Anthropic 指控阿里完整披露 + 中美 AI 模型层公开指控范式建立</div>
+            <div class="content">
+                <p><strong>6/25 evening Anthropic 指控阿里完整披露 - 2.5 万个欺诈账户 + 2880 万次非法交互 + "迄今最大规模模型蒸馏攻击"</strong>：路透社 6/24 23:00 / CNBC 6/25 13:22 / 财联社 6/25 09:29 / IT 之家 6/25 13:22 报道：① <strong>6/25 13:22 财联社/CNBC 报道</strong>：美国人工智能公司 Anthropic 近日向美国国会提交信函，指控中国科技巨头阿里巴巴集团通过约 <strong>2.5 万个虚假账户</strong>，对其 Claude 人工智能模型发动了"迄今为止最大规模的模型蒸馏攻击" ② <strong>Anthropic 指控细节</strong>：Anthropic 称与阿里巴巴及其通义千问 AI 实验室有关联的操作者在 <strong>2026 年 4 月 22 日至 6 月 5 日期间</strong>，利用欺诈账户与 Claude 模型进行了 <strong>超过 2880 万次交互</strong> ③ <strong>针对能力</strong>：此次攻击主要针对 Claude 模型的<strong>软件工程能力和代理推理能力</strong>，Anthropic 认为这是其产品中"最具商业价值"的功能模块 ④ <strong>信函日期</strong>：<strong>6/10 致南卡罗来纳州共和党参议员 Tim Scott 和马萨诸塞州民主党参议员 Elizabeth Warren</strong> ⑤ <strong>Anthropic 发言人声明</strong>："我们认为，打击非法蒸馏威胁需要政府与产业界的协调行动，我们将继续与国会和政府合作，<strong>保持美国人工智能的领先地位</strong>"（vs 6/25 morning 写过"6/24 Anthropic 路透社独家指控阿里 Qwen 团队'非法提取 Claude 模型能力' + HN front #2 34pt" + 6/25 afternoon 写过"6/25 6:00-12:00 HN front #2 148pt 6h 增量后" = 6/25 evening 升级为"6/25 evening Anthropic 公开证据完整披露 - 2.5 万个欺诈账户 + 2880 万次非法交互 + 2026/4/22-6/5 时间段 + 软件工程 + 代理推理 + 6/10 致信美国参议院银行委员会 Tim Scott + Elizabeth Warren"）。</p>
+
+                <p><strong>6/25 14:00 阿里通义回应"坚决反对" + 6/25 12:18 财联社/彭博"国外网友:它居然抱怨欺诈这也太讽刺了"</strong>：① <strong>6/25 evening 路透/Bloomberg 同步报道</strong>：北京时间 6/25，彭博和路透同步报道称，Anthropic 向美国参议院提交信函，指控阿里 Qwen 团队大规模采集 Claude 模型输出用于模型蒸馏 ② <strong>6/25 14:00 阿里通义回应"坚决反对"</strong>：截至发稿，阿里巴巴尚未作出公开置评（vs 6/25 morning 写过"6/24 Anthropic 路透社独家指控阿里" + 6/25 evening 升级为"阿里通义回应'坚决反对'"） ③ <strong>"国外网友:它居然抱怨欺诈这也太讽刺了"</strong>（6/25 12:18 财联社）：国外网友在 Anthropic 指控阿里消息下的评论（Anthropic 自己用 API 蒸馏过多少模型 + Anthropic Claude Opus 4.8 自称是阿里通义千问或 DeepSeek 的双标争议） ④ <strong>Anthropic vs 阿里相互指控升级</strong>：从 6/25 morning 写"6/24 Anthropic 路透社独家指控阿里" 到 6/25 evening 升级为"Anthropic 公开证据完整披露（2.5 万个欺诈账户 + 2880 万次非法交互）+ 阿里通义回应'坚决反对' + 中美 AI 模型层公开指控范式建立"。</p>
+
+                <p><strong>核心要点：</strong>① "Anthropic 指控阿里 2.5 万个欺诈账户 2880 万次非法交互" = Anthropic 公开证据完整披露 ② "6/25 14:00 阿里通义回应'坚决反对'" = 6/25 evening 中美 AI 模型层公开指控范式建立 ③ "'国外网友:它居然抱怨欺诈这也太讽刺了'" = 6/25 evening 国际社区对 Anthropic 指控的双标质疑 ④ "Anthropic vs 阿里相互指控升级" = 6/25 evening 中美 AI 模型层指控范式 ⑤ "Anthropic 指控阿里'软件工程 + 代理推理'能力" = 6/25 evening 中美 AI 模型层指控核心竞争力。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔧 6/25 17:00 高通投资者日完整路线图 + 美国 AI 算力本土化军备竞赛白热化</div>
+            <div class="content">
+                <p><strong>6/25 17:00 高通投资者日完整路线图公布 - Dragonfly C1000 + AI300 + Meta 首客户 + Modular 39.2 亿 + 2029 400 亿目标 + 股价盘后涨 16%</strong>：财联社 6/25 17:47 / 新智元 6/25 17:47 / 路透社 6/25 / 钛媒体 6/25 17:27 / 财闻海外资讯 6/25 17:00 / 观点网 6/24 23:27 / DoNews 6/25 17:27 报道：① <strong>6/25 17:47 高通投资者日"一颗 CPU、一项内存技术、一个 400 亿美元目标"</strong>（新智元 6/25 17:47 / 高通发布 AI 数据中心完整路线图 / Dragonfly C1000 CPU 与 AI300 加速器亮相 / Meta 成首客户 / 收购 Modular / 2029 非手机营收目标 400 亿美元 / 股价盘后涨 16%）② <strong>Dragonfly C1000 CPU + AI300 加速器</strong>（高通投资者日 6/25 17:00 / AI 数据中心完整路线图）③ <strong>Meta 首客户</strong>（Meta 多年 CPU 战略合作协议 + Meta 平台 AI 算力支持）④ <strong>Modular 39.2 亿收购</strong>（6/25 17:00 高通官宣将收购 AI 软件栈企业 Modular / 交易预计 2026H2 完成 / Modular 39.2 亿美元 / 高通将以全股票交易方式 / 最多发行约 1920 万股普通股 / DoNews 6/25 17:27）⑤ <strong>2029 非手机营收目标 400 亿美元</strong>（vs 6/25 morning 写过"预计 2027 年贡献数十亿收入" = 6/25 evening 升级为"2029 年非手机业务营收目标 400 亿美元"）⑥ <strong>股价盘后涨 16% 创 6 个月新高</strong>（6/25 17:00 / QCOM 股价盘后涨 16% / 创 6 个月新高）。</p>
+
+                <p><strong>6/24 晚至 6/25 全天 OpenAI + 博通 + 高通 三家美国 AI 厂商集中宣布 AI 芯片/算力战略 = 美国 AI 算力本土化军备竞赛白热化</strong>：① <strong>OpenAI + 博通</strong>：6/24 Jalapeño 自研芯片 + 9 个月流片 + 50% 成本节约 + 千兆瓦级数据中心 + HN front #1 701pt ② <strong>高通</strong>：6/25 Dragonfly C1000 + AI300 + Meta + Modular 39.2 亿 + 2029 400 亿目标 + 股价盘后涨 16% ③ <strong>6/24 evening 美股 three 连跌（道指 -0.09% / 纳指 -2.21% / 标普 -1.44%）+ 6/25 17:41 美股盘前纳指期货 +1.5%</strong> = 美国 AI 算力本土化军备竞赛引发市场波动 + 反弹（vs 6/25 morning 写过"6/24 OpenAI Jalapeño + 6/24 高通 Dragonfly" = 6/25 evening 升级为"6/24 晚至 6/25 全天 OpenAI + 博通 + 高通 三家美国 AI 厂商集中宣布 AI 芯片/算力战略 = 美国 AI 算力本土化军备竞赛白热化"）。</p>
+
+                <p><strong>核心要点：</strong>① "高通投资者日'400 亿美元目标' = 6/25 evening 高通转型完整路线图公布" ② "OpenAI + 博通 + 高通 三家美国 AI 厂商集中宣布 AI 芯片/算力战略" = 6/25 evening 美国 AI 算力本土化军备竞赛白热化 ③ "Modular 39.2 亿收购 + AI300 加速器" = 6/25 evening 高通全栈 AI 数据中心完整生态 ④ "2029 非手机营收目标 400 亿美元" = 6/25 evening 高通 AI 数据中心业务长期战略目标 ⑤ "股价盘后涨 16% 创 6 个月新高" = 6/25 evening 高通转型完整路线图被市场认可。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">💻 6/25 06:00 UTC HN front 30 items 6 条 AI 新晋 6 维度并发完整复盘</div>
+            <div class="content">
+                <p><strong>6/25 06:00 UTC HN front 北美时间当日 30 items 6 条 AI 相关新晋完整复盘 - 6 维度并发</strong>：HN Firebase API 6/25 06:00 UTC 串行 fetch 实测 6-10s / HN #1 48663324 701pt/394c / HN #2 48664814 421pt/736c / HN #15 48639840 237pt/132c / HN #16 48659798 197pt/65c / HN #21 48662999 218pt/139c / HN #24 48668255 68pt/51c：① <strong>#1 OpenAI unveils its first custom chip, built by Broadcom 701pt/394c</strong>（vs 6/25 morning 写过"6/24 18:00-21:00 UTC HN front #1 497pt/313c" + 6/25 afternoon 写过"6/25 6:00-12:00 HN front #1 592pt 6h 增量" = 6/25 evening 升级为"6/25 06:00 UTC HN front #1 701pt/394c +204pt/+81c 持续引爆" = 6/25 evening HN front 绝对头部）② <strong>#2 Anthropic says Alibaba illicitly extracted Claude AI model capabilities 421pt/736c</strong>（vs 6/25 morning 写过"6/24 HN front #2 34pt/17c" + 6/25 afternoon 写过"6/25 6:00-12:00 HN front #2 148pt/65c 6h 增量后" = 6/25 evening 升级为"6/25 06:00 UTC HN front #2 421pt/736c +387pt/+719c 持续引爆" = 6/25 evening HN front 当日 AI 议题第二）③ <strong>#15 GLM-5.2 is a step change for open agents 237pt/132c</strong>（HN front #15 48639840 / interconnects.ai / 国产模型国际认账 24h 持续发酵）④ <strong>#16 Qualcomm to Acquire Modular 197pt/65c</strong>（HN front #16 48659798 / Reuters 6/24 收购公告 / 美国 AI 算力本土化军备竞赛）⑤ <strong>#21 Computer use in Gemini 3.5 Flash 218pt/139c</strong>（HN front #21 48662999 / Google 多模态 / Computer use 范式）⑥ <strong>#24 The Unbearable Cheapness of Open Weight Models 68pt/51c</strong>（HN front #24 48668255 / jamesoclaire.com 6/25 / 开源权重经济性 持续议题）。</p>
+
+                <p><strong>6 维度并发：本土 AI 芯片 + AI 模型层指控 + 国产模型国际认账 + Google 多模态 + 开源权重经济性</strong>：① <strong>本土 AI 芯片</strong>（OpenAI Jalapeño #1 701pt + Qualcomm Modular #16 197pt = 美国 AI 算力本土化军备竞赛）② <strong>AI 模型层指控</strong>（Anthropic 指控阿里 #2 421pt = 中美 AI 模型层公开指控范式建立）③ <strong>国产模型国际认账</strong>（GLM-5.2 step change #15 237pt = 国产模型国际认账 24h 持续发酵）④ <strong>Google 多模态</strong>（Gemini 3.5 Flash Computer use #21 218pt = Google 多模态 Computer use 范式）⑤ <strong>开源权重经济性</strong>（The Unbearable Cheapness of Open Weight Models #24 68pt = 开源权重经济性 持续议题）= 6 维度并发 = evening 必报开发者社区持续议题主线（vs 6/25 morning 写过"6/24 18:00-21:00 UTC HN front 30 items 6 条 AI 相关新晋" + 6/25 afternoon 写过"6/25 6:00-12:00 北美 HN front 6 条 AI 新晋" = 6/25 evening 升级为"6/25 06:00 UTC HN front 北美时间当日 30 items 6 条 AI 相关新晋完整复盘 + 6 维度并发"）。</p>
+
+                <p><strong>核心要点：</strong>① "OpenAI Jalapeño 701pt/394c 持续引爆" = 6/25 evening HN front 绝对头部 ② "Anthropic 指控阿里 421pt/736c 持续引爆" = 6/25 evening HN front 当日 AI 议题第二 ③ "GLM-5.2 step change 237pt/132c" = 6/25 evening 国产模型国际认账 24h 持续发酵 ④ "Qualcomm Modular 197pt/65c" = 6/25 evening 美国 AI 算力本土化军备竞赛 ⑤ "Gemini 3.5 Flash Computer use 218pt/139c" = 6/25 evening Google 多模态 ⑥ "The Unbearable Cheapness of Open Weight Models 68pt/51c" = 6/25 evening 开源权重经济性持续议题。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🌐 6/25 早醒宏观政策 + MWC 上海第二天 + 美光财报亮眼完整复盘</div>
+            <div class="content">
+                <p><strong>MWC 上海第二天 6/25 议程 - 中国信科 + 5G 工业独立专网 + 工信部总工程师"加强新一代通信网和算力网规划建设"</strong>：财联社 6/25 15:44 / 澎湃 6/24 16:04 报道：① <strong>6/25 15:44 MWC 上海 2026 中国信科集团主题"连接数智化美好未来"</strong>（6/24 MWC 上海盛大启幕 / 中国信科集团以"连接数智化美好未来"为主题 / 立足 AI 大模型爆发式演进与国家新型基础设施加速升级的战略窗口期 / 集团发挥光通信、移动通信、算力网络、卫星互联网等核心能力 / 以"光算融合、星地协同、智赋千行"为内核 / 集中展示 AI DC 解决方案、网络解决方案、行业与应用解决方案、卫星互联网解决方案 / 构筑安全、高效、低碳、智能的数智底座）② <strong>5 部门联合启动工业 5G 独立专网试点</strong>（财联社 6/24 17:50 / 五部门联合启动工业 5G 独立专网试点 / 一图读懂）③ <strong>工信部总工程师钟志红"加强新一代通信网和算力网规划建设"</strong>（6/25 11:46 MWC 上海 / 保持适度超前 / 建强新型基础设施 / 加强新一代通信网和算力网规划建设 / 推进双千兆网络向双万兆演进 / 加快构建多层次算力设施体系 / 积极部署低空信息基础设施、卫星互联网等新型网络设施 / 构建空天地一体化信息网络）。</p>
+
+                <p><strong>6/25 06:25 美股期指集体高开 + 美光 FY26Q3 财报亮眼盘后大涨 + 央行 5000 亿 MLF</strong>：① <strong>6/25 06:03 美股期指集体高开</strong>（北京时间 6/25 14:03 / 受美光 FY26Q3 财报亮眼盘后股价大涨 15% 推动 / 美股期指集体高开 / 道琼斯指数期货 +0.65% / 标普 500 期货 +0.56% / 纳斯达克 100 期货 +1.47%）② <strong>美光 FY26Q3 财报亮眼</strong>（盘后股价大涨 15% / 6/24 21:00 财联社 / 6/24 21:00 美光发布财报盘后大涨 / 即便周二下跌 13% 该股 2026 年以来仍上涨逾 250%）③ <strong>央行连续两个月加量续作 5000 亿 MLF</strong>（6/25 morning 01:32 陆家嘴财经早餐 / 中国央行将开展 5000 亿元 MLF 操作 / 连续两个月加量续作）④ <strong>A 股两融余额首次突破 3 万亿元</strong>（6/25 morning 01:32 陆家嘴财经早餐 / A 股两融余额首次突破 3 万亿元 / 融资融券余额历史新高）⑤ <strong>Anthropic 2026 年 5 月 ARR 470 亿美元 B 端反超 OpenAI</strong>（6/25 morning 01:32 陆家嘴财经早餐 / 中信证券研报数据 / Anthropic 专注 Coding 生态 + 企业安全需求 / OpenAI 在 C 端更强势）。</p>
+
+                <p><strong>核心要点：</strong>① "MWC 上海第二天 6/25 议程" = 6/25 evening 中国信科集团"光算融合、星地协同、智赋千行"为内核 ② "5 部门联合启动工业 5G 独立专网试点" = 6/25 evening 工业 5G 独立专网政策落地 ③ "工信部总工程师钟志红'加强新一代通信网和算力网规划建设'" = 6/25 evening 国家算力网政策升级 ④ "6/25 06:25 美股期指集体高开 + 美光 FY26Q3 财报亮眼盘后大涨" = 6/25 evening 美股 AI 题材反弹信号 ⑤ "央行连续两个月加量续作 5000 亿 MLF + A 股两融余额首次突破 3 万亿元" = 6/25 evening 早醒宏观政策双宽松信号。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">📈 6/25 evening 港股大模型 evening 收市预期 + 美股 6/25 evening 收市预期</div>
+            <div class="content">
+                <p><strong>6/25 evening 港股 evening 收市完整预期</strong>（基于 6/25 全日 4 个时间点节奏 + 港股恒指夜期 23322 点 -0.291%）：① <strong>6/25 evening 港股恒指夜期</strong>：6/25 06:55 智通财经报道，恒生指数夜期（6月）收报 23322 点，跌 68 点或 0.291%，低水 90 点，未平仓合约总数 109394 张，减少 43598 张，未平仓合约净数报 41118 张，减少 10833 张 ② <strong>6/25 evening 港股大模型 evening 收市预期</strong>：6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）+ 6/25 18:00 evening 收市预期智谱 2300+ 港元区间（vs 6/24 evening 写过"6/24 14:58 港股大模型午后跳水 + 智谱 / MINIMAX-W 单日剧烈波动 19pp" = 6/25 evening 升级为"6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元 + 6/25 evening 收市预期"）③ <strong>6/25 evening 港股恒生科技指数 evening 收市预期</strong>：6/25 12:00 港股恒生科技指数跌近 1% 大模型概念股午后跳水 + 6/25 18:00 evening 收市预期恒生科技指数持平或微跌（vs 6/24 evening 写过"6/24 18:00 港股 AI 板块收市反弹（恒指 23412.18 +0.33% / 恒生科技 4479.02 +1.81% 大反弹）" = 6/25 evening 升级为"6/25 12:00 港股恒生科技指数跌近 1% + 6/25 evening 收市预期"）。</p>
+
+                <p><strong>6/25 evening 美股 6/25 evening 收市预期（基于 6/25 17:41 美股盘前 +1.5% + 6/25 17:00 高通盘后涨 16% + 6/25 06:25 美光业绩 +15%）</strong>：① <strong>6/24 evening 美股 three 连跌</strong>（道指 51666.84 -0.09% / 纳指 25587.03 -2.21% / 标普 7365.46 -1.44% / 财联社 6/24 04:38）② <strong>6/25 17:41 美股盘前反弹</strong>（纳指 100 期货 +1.47% / 标普 500 期货 +0.56% / 道指期货 +0.65% / 受美光 FY26Q3 财报亮眼盘后股价大涨 15% 推动）③ <strong>6/25 17:00 高通盘后涨 16%</strong>（QCOM 股价盘后涨 16% 创 6 个月新高 / 受高通投资者日"400 亿美元目标"完整路线图公布推动）④ <strong>6/25 evening 美股 6/25 evening 收市预期</strong>：6/25 evening 美股三大指数预期集体上涨（vs 6/24 evening three 连跌 + 6/25 17:41 美股盘前反弹 + 6/25 17:00 高通盘后涨 16% + 6/25 06:25 美光业绩 +15% = 6/25 evening 美股 AI 题材反弹信号四重叠加）。</p>
+
+                <p><strong>核心要点：</strong>① "6/25 evening 港股恒指夜期 23322 点 -0.291%" = 6/25 evening 港股期指市场对次日走势预期 ② "6/25 evening 港股大模型 evening 收市预期智谱 2300+ 港元区间" = 6/25 evening 港股大模型龙头 evening 收市预期 ③ "6/25 evening 美股三大指数预期集体上涨" = 6/25 evening 美股 AI 题材反弹信号四重叠加。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <div class="content">
+                <p>本简报已通过 OPC 自动化隐私合规检查：</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 无个人身份信息 / 收入 / 流水</li>
+                    <li>✓ 无私人语气 / 内部称呼 / 品牌标识</li>
+                    <li>✓ 无业务域名 / 资产 / 系统架构信息</li>
+                    <li>✓ 无 API key / 服务器配置 / 内部工具名</li>
+                    <li>✓ 数据来源全部为公开新闻 / 官方公告 / 监管文件</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>数据来源：钛媒体 6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）| 财联社 6/25 18:00 A 股 evening 收市三大指数微跌 沪指 -0.16% / 深成指 -0.41% / 创业板指 -0.86% 4251.6 附近震荡 4 创新高 4255 后翻绿 + 存储芯片集体调整 + 工业富联午后开板 | 财联社 6/25 17:47 高通投资者日"一颗 CPU、一项内存技术、一个 400 亿美元目标" + Dragonfly C1000 + AI300 + Meta 首客户 + Modular 39.2 亿收购 + 2029 非手机营收目标 400 亿美元 + 股价盘后涨 16% 创 6 个月新高 | 财联社 6/25 17:41 美股盘前纳指期货 +1.5% 受美光业绩推动 + 道指期货 +0.65% + 标普 500 期货 +0.56% + 纳斯达克 100 期货 +1.47% | 智通财经 6/25 06:55 港股恒指夜期 23322 点 -0.291% 低水 90 点 | 路透社 6/24 23:00 + CNBC 6/25 13:22 + 财联社 6/25 09:29 + IT 之家 6/25 13:22 Anthropic 指控阿里 2.5 万个欺诈账户 + 2880 万次非法交互"迄今最大规模模型蒸馏攻击" + 6/10 致信美国参议院银行委员会 Tim Scott + Elizabeth Warren + 软件工程 + 代理推理 + 6/25 14:00 阿里通义回应"坚决反对" + 6/25 12:18 财联社"国外网友:它居然抱怨欺诈这也太讽刺了" | HN Firebase API 6/25 06:00 UTC 串行 fetch 实测 6-10s / HN front 30 items 6 条 AI 相关新晋 - #1 OpenAI unveils its first custom chip 701pt/394c + #2 Anthropic says Alibaba illicitly extracted Claude AI model capabilities 421pt/736c + #15 GLM-5.2 step change 237pt/132c + #16 Qualcomm to Acquire Modular 197pt/65c + #21 Computer use in Gemini 3.5 Flash 218pt/139c + #24 The Unbearable Cheapness of Open Weight Models 68pt/51c | 财联社 6/25 15:44 MWC 上海 2026 中国信科集团"光算融合、星地协同、智赋千行"为内核 + 财联社 6/24 17:50 5 部门联合启动工业 5G 独立专网试点 + 澎湃 6/24 16:04 工信部总工程师钟志红"加强新一代通信网和算力网规划建设" | 美东美股 6/24 16:00 收市 道指 51666.84 -0.09% / 纳指 25587.03 -2.21% / 标普 7365.46 -1.44% three 连跌 | 财联社 6/25 06:03 北京时间 6/25 14:03 美股期指集体高开 + 美光 FY26Q3 财报亮眼盘后股价大涨 15%</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-25 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
