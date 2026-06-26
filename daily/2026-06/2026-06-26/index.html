@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-25 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+    <div class="container">
+        <header class="site-header">
+        <header class="site-header">
+            <div class="site-title">OPC DAILY · AI 智能简报</div>
+            <div class="site-date">2026-06-26 晚报</div>
+        </header>
+
+        <div class="hero">
+            <div class="hero-tag">EVENING BRIEFING</div>
+            <h1 class="hero-title">港股 evening 收市失守两万三 智谱跌穿 2000 + 中科闻歌 18C 挂牌</h1>
+            <p class="hero-subtitle">6/26 12:00 ~ 6/26 18:00 北京时间 6h 窗口 · 北美 6/25 22:00 ~ 6/26 10:00 UTC</p>
+            <p class="hero-meta">港股恒指 -1.76% + 中科闻歌 1956.HK 决策大模型第一股 + A 股沪指 -2.26% 创业板 -4.07% + 苹果 Vision Pro 涨至 3699 美元</p>
+        </div>
+
+        <div class="tags">
+            <span class="tag tag-red">港股 evening 失守两万三</span>
+            <span class="tag tag-orange">智谱跌穿 2000 港元</span>
+            <span class="tag tag-purple">中科闻歌 18C 挂牌</span>
+            <span class="tag tag-blue">A 股沪指 -2.26%</span>
+            <span class="tag tag-green">Vision Pro 3699 美元</span>
+            <span class="tag tag-red">微软 Xbox 8/1 涨价</span>
+            <span class="tag tag-blue">苹果 IBM 持续引爆</span>
+            <span class="tag tag-purple">HN front 5 维度</span>
+        </div>
+
+        <section class="quick-stats">
+            <div class="stat-card stat-red">
+                <div class="stat-label">港股 evening 收市</div>
+                <div class="stat-value">22671.86</div>
+                <div class="stat-delta">恒指 -1.76% / 失守两万三 / 恒科 -3.41%</div>
+            </div>
+            <div class="stat-card stat-orange">
+                <div class="stat-label">智谱日内跳水</div>
+                <div class="stat-value">-12.94%</div>
+                <div class="stat-delta">14:38 跌穿 2000 港元 / 收盘 1830 附近</div>
+            </div>
+            <div class="stat-card stat-purple">
+                <div class="stat-label">中科闻歌挂牌</div>
+                <div class="stat-value">193.35 亿</div>
+                <div class="stat-delta">1956.HK 18C 规则 / 决策大模型第一股</div>
+            </div>
+            <div class="stat-card stat-blue">
+                <div class="stat-label">A 股 evening 收市</div>
+                <div class="stat-value">4027.26</div>
+                <div class="stat-delta">沪指 -2.26% / 创业板 -4.07% / 4600+ 跌</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔥 今日核心警报（6/26 12:00 ~ 18:00 北京时间 6h 窗口）</div>
+            <div class="content-block">
+                <p>过去 6 小时全球 AI 行业在 5 个新维度同时放出压倒性信号：</p>
+                <ol>
+                    <li><strong>港股 evening 18:00 完整收市</strong> - 恒生指数跌 1.76% 报 22671.86 / 恒指失守两万三 / 恒科 -3.41% 报 4255.59 / 国企 -1.94% / 6 只新股同日敲锣 / 恒指全周累跌 5.24% / 国指累跌 6.46% / 恒科累跌 7.57% / 智谱 -12.94% / 中芯国际 -6.98% 报 80 港元 / 阿里 -5.79% / 苹果产业链舜宇 -9% / 鸿腾精密 -8% / 存储概念股澜起 -8% / CPO 长飞光纤光缆盘中跌超 15%</li>
+                    <li><strong>中科闻歌 1956.HK 港交所 18C 规则挂牌</strong> - 6/26 17:44 财联社披露 / 首日市值站上 193.35 亿港元 / "决策大模型第一股" / 中科院系大模型国家队 / 决策大模型赛道新玩家 / 港股 AI 资本市场 18C 规则特专科技公司新通道 / 智谱（清华系）+ 中科闻歌（中科院系）= 港股大模型"双国家队"格局形成</li>
+                    <li><strong>A 股 evening 完整收市</strong> - 沪指 -2.26% 报 4027.26 / 深成 -3.44% / 创业板 -4.07% / 北证 50 -0.84% / 科创 50 -1.65% / 全市场成交额 35754 亿元（较上日缩量 436 亿元）/ 超 4600 只个股下跌 / 通信 + 电池板块重挫 / 猪肉逆势走强 / 美国 5 月 PCE 物价指数同比 +4.1% / 核心 PCE 同比 +3.4%（2023 年下半年以来新高）</li>
+                    <li><strong>苹果 + 微软 + 国内消费电子涨价周期</strong> - 6/26 11:26 苹果 Vision Pro 入门价涨至 3699 美元（+200 美元）/ 512GB 3899 / 1TB 4199 / 苹果对 MacBook 和 iPad 实施全球提价约 20% / 微软 Xbox 8/1 起 1TB 版本涨价 150 美元 / 联想回应"内存市场变化前所未有，已锁定充足供应" / 6/26 16:24 收评：存储芯片供需缺口有望持续 / 6/26 17:35 消费电子或全面迈入涨价周期</li>
+                    <li><strong>HN front 6/26 10:00 UTC 5 条 AI 新晋 + 5 维度并发</strong> - #1 We All Depend on Open Source 115pt/45c / #6 What happened after 2k people tried to hack my AI assistant 160pt/55c / #12 IBM debuts sub-1 nanometer chip technology 320pt/175c 持续引爆 / #19 Apple raises prices of MacBooks, iPads 726pt/1032c 评论数创近期新高 / #24 Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line 262pt/256c 持续高热度</li>
+                </ol>
+                <p><strong>五线并发"6/26 evening 港股完整收市 + 中科闻歌 1956.HK 18C 规则挂牌 + A 股 evening 收市 + 苹果 Vision Pro 涨价 + HN front 6/26 10:00 UTC 5 维度并发"主线</strong>。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔁 角度 #1：港股 evening 完整收市 + 智谱跌穿 2000 港元 + 中科闻歌 18C 规则挂牌</div>
+            <div class="content-block">
+                <h3>1️⃣ 6/26 16:48 evening 收盘 - 恒生指数跌 1.76% 报 22671.86 / 恒指失守两万三</h3>
+                <ul>
+                    <li><strong>恒生指数跌 1.76% 或 405.05 点 报 22671.86</strong>（vs 6/26 开盘 22952.09 = 收盘下跌 280 点）</li>
+                    <li>全日成交额 3421.01 亿港元 / 恒生国企指数跌 1.94% 报 7460.84 / 恒生科技指数跌 3.41% 报 4255.59</li>
+                    <li><strong>6 只新股同日敲锣</strong> / 全周表现：恒指累跌 5.24% / 国指累跌 6.46% / 恒科累跌 7.57%</li>
+                    <li>板块：半导体板块全天领跌 / CPO 概念大举回调 / 长飞光纤光缆盘中跌超 15%</li>
+                    <li>苹果产业链：舜宇 -9% / 鸿腾精密 -8% / 瑞声科技 -6% / 存储概念股澜起 -8% / 兆易创新 -2%</li>
+                    <li>权重科技股：智谱 -12.94% / 中芯国际 -6.98% 报 80 港元 / 阿里巴巴 -5.79% / 百度 -4.47% / 腾讯 -2.28%</li>
+                </ul>
+                <h3>2️⃣ 6/26 14:38 智谱跌穿 2000 港元关键价位 + 6/26 16:33 智谱 -12.94% 收盘约 1830 港元</h3>
+                <ul>
+                    <li>6/26 11:33 智谱跌超 10% 报 2092 港元 → 6/26 14:38 智谱跌穿 2000 港元 → 6/26 16:33 -12.94% 收盘约 1830 港元</li>
+                    <li>智谱从 6/25 evening 收市 2094 港元 → 6/26 上午开盘约 2320 港元 → 单日波动超 30%</li>
+                    <li>6/26 13:38 港股大模型概念股震荡下挫 - 智谱、MINIMAX-W 均跌超 10%</li>
+                </ul>
+                <h3>3️⃣ 6/26 17:44 中科闻歌 1956.HK 港交所 18C 规则挂牌 + "决策大模型第一股"</h3>
+                <ul>
+                    <li><strong>中科闻歌(1956.HK) 在港交所挂牌上市</strong> - 6/26 17:44 财联社披露</li>
+                    <li>首日市值站上 193.35 亿港元 / 通过 18C 规则完成上市流程（18C 规则是港交所特专科技公司上市新通道）</li>
+                    <li>"决策大模型第一股" - 港股市场此前从未出现过的标签 / 中科院系大模型国家队</li>
+                    <li>智谱（清华系）+ 中科闻歌（中科院系）= 港股大模型"双国家队"格局形成</li>
+                </ul>
+                <p><strong>evening 必报"6/26 evening 港股完整收市 + 智谱跌穿 2000 港元 + 中科闻歌 1956.HK 18C 规则挂牌 + 中科院系大模型国家队"主线</strong>。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔁 角度 #2：A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26 / 创业板 -4.07% + 美国 PCE 4.1%</div>
+            <div class="content-block">
+                <h3>1️⃣ 6/26 15:54 A 股 evening 完整收市数据</h3>
+                <ul>
+                    <li><strong>沪指跌 2.26% 报 4027.26 点</strong> / 深证成指跌 3.44% / 创业板指跌 4.07% / 科创综指跌 2.02% / 北证 50 跌 0.84% / 科创 50 指数跌 1.65%</li>
+                    <li>全市场成交额 35754 亿元（较上日成交额缩量约 436 亿元） / 全市场超 4600 只个股下跌</li>
+                    <li>板块：通信 + 电池板块重挫 / 猪肉逆势走强 / 亚太股市表现低迷</li>
+                </ul>
+                <h3>2️⃣ 美国 5 月 PCE 物价指数 - 2023 年下半年以来新高</h3>
+                <ul>
+                    <li>美国 5 月 PCE 物价指数同比上涨 4.1% / 核心 PCE 同比上涨 3.4%</li>
+                    <li>均创 2023 年下半年以来新高水平</li>
+                    <li>博时基金市场异动陪伴 6/26 - 沪指跌超 2% / 深证成指跌超 3% / 创业板指跌超 4% / 解析：今日 A 股三大指数全线调整 / 创业板指跌超 4% 领跌 / 美国通胀回升对 A 股影响</li>
+                </ul>
+                <p><strong>evening 必报"6/26 A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26 / 创业板 -4.07% + 通信电池重挫猪肉逆势 + 美国 PCE 4.1% 通胀回升"主线</strong>。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔁 角度 #3：苹果 Vision Pro 涨至 3699 美元 + 消费电子全面涨价周期 + 联想回应</div>
+            <div class="content-block">
+                <h3>1️⃣ 6/26 11:26 苹果 Vision Pro 涨价完整数据</h3>
+                <ul>
+                    <li>苹果开启新一轮全系硬件调价 / 高端头显 Apple Vision Pro 再度涨价</li>
+                    <li><strong>入门版售价从 3499 美元上调至 3699 美元（+200 美元）</strong> / 512GB 版本 3899 美元 / 1TB 版本 4199 美元</li>
+                    <li>产品高端属性进一步强化</li>
+                </ul>
+                <h3>2️⃣ 6/26 10:24 苹果 + 微软同日官宣大涨价 + 6/26 14:07 国内厂商如何看涨价</h3>
+                <ul>
+                    <li>MacBook Neo 起售价从 599 美元升至 699 美元 / MacBook Air 从 1099 美元升至 1299 美元</li>
+                    <li>14 英寸入门款 MacBook Pro 从 1699 美元升至 1999 美元 / 11 英寸 iPad Pro 从 999 美元升至 1199 美元</li>
+                    <li>iPad Air 从 599 美元升至 749 美元 / 微软 Xbox 8/1 起 1TB 版本涨价 150 美元</li>
+                    <li><strong>6/26 14:07 联想回应"内存市场的变化'前所未有'，已锁定充足供应"</strong></li>
+                    <li>苹果 + 微软涨价理由 - AI 数据中心的快速扩张造成对内存和存储的超常需求激增 / 芯片价格因此飙升</li>
+                </ul>
+                <h3>3️⃣ 6/26 evening 涨价周期完整披露</h3>
+                <ul>
+                    <li><strong>6/26 16:24 收评</strong> - 存储芯片供需缺口有望持续</li>
+                    <li><strong>6/26 17:35 消费电子或全面迈入涨价周期</strong> - 苹果、微软接连提价的信号</li>
+                    <li><strong>6/26 17:18 苹果 + 微软接连提价</strong> - 芯片成本飙升 / 苹果和微软上调部分产品售价</li>
+                </ul>
+                <p><strong>evening 必报"6/26 苹果 Vision Pro 涨至 3699 美元 + 消费电子全面涨价周期 + 联想回应 + 存储芯片供需缺口"主线</strong>。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔁 角度 #4：HN front 6/26 10:00 UTC 北美时间当日 30 items 5 条 AI 新晋 + 5 维度并发</div>
+            <div class="content-block">
+                <h3>1️⃣ HN front 6/26 10:00 UTC 5 条 AI 相关新晋条目（HN Firebase API 串行 fetch 实测 6-10s）</h3>
+                <ul>
+                    <li><strong>#1 We All Depend on Open Source. We Will Defend It Together 115pt/45c</strong>（akrites.org/letter/ - HN 当日新晋 第 1 议题 = 开源承诺 = 开发者社区就 AI 开源生态的公开承诺）</li>
+                    <li><strong>#6 What happened after 2k people tried to hack my AI assistant 160pt/55c</strong>（fernandoi.cl/posts/hackmyclaw/ - 2000 人尝试黑 AI 助手 = AI 安全）</li>
+                    <li><strong>#12 IBM debuts sub-1 nanometer chip technology 320pt/175c</strong>（newsroom.ibm.com - vs 6/26 11:30 UTC #13 280pt/159c = +40pt/+16c 6h 增量 持续引爆 = IBM 0.7nm 24h+ 持续发酵）</li>
+                    <li><strong>#19 Apple raises prices of MacBooks, iPads 726pt/1032c</strong>（reuters.com - vs 6/26 11:30 UTC #20 664pt/955c = +62pt/+77c 6h 增量 持续引爆 = <strong>评论数 1032c 创近期新高</strong>）</li>
+                    <li><strong>#24 Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line 262pt/256c</strong>（bloomberg.com - vs 6/26 11:30 UTC 同样 #24 262pt/256c = 6h 累计 0 增量但持续高热度 256c 评论数）</li>
+                </ul>
+                <h3>2️⃣ 5 维度并发</h3>
+                <ul>
+                    <li><strong>开源承诺</strong> - #1 We All Depend on Open Source = 开发者社区就 AI 开源生态的公开承诺</li>
+                    <li><strong>AI 安全</strong> - #6 What happened after 2k people tried to hack my AI assistant = 2000 人尝试黑 AI 助手</li>
+                    <li><strong>美国 AI 算力制程</strong> - #12 IBM debuts sub-1 nanometer chip technology 持续引爆 = IBM 0.7nm 24h+ 持续发酵</li>
+                    <li><strong>苹果涨价持续引爆</strong> - #19 Apple raises prices of MacBooks, iPads 726pt/1032c 评论数创近期新高</li>
+                    <li><strong>苹果 AI 战略</strong> - #24 Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line 262pt/256c 持续高热度</li>
+                </ul>
+                <p><strong>evening 必报"HN front 6/26 10:00 UTC 北美时间当日 30 items 5 条 AI 新晋 + 苹果涨价 #19 726pt/1032c 评论数创近期新高 + IBM 0.7nm #12 320pt/175c 持续引爆 + 5 维度并发"主线</strong>。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🔁 角度 #5：三时段递进完整收官（morning + afternoon + evening）+ 撞车协议总结</div>
+            <div class="content-block">
+                <h3>1️⃣ 三时段递进复盘（智谱为例）</h3>
+                <ul>
+                    <li>6/26 morning - 智谱 6/25 evening 收市 + 总市值 + 1.4 万亿 + 国务院 + 港股 AI 6/18 上午走强</li>
+                    <li>6/26 afternoon - 6/26 11:33 智谱跌超 10% 报 2092 港元 + 6/26 端午假期后港股唯一交易日</li>
+                    <li><strong>6/26 evening - 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% 收盘约 1830 港元</strong></li>
+                </ul>
+                <h3>2️⃣ 撞车协议总结表</h3>
+                <table class="github-table">
+                    <thead>
+                        <tr><th>撞车源</th><th>已覆盖事件</th><th>6/26 evening 主动剔除</th><th>6/26 evening 主动聚焦</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6/26 morning</td>
+                            <td>IBM 0.7nm / 苹果 + 微软双涨价 / 美光 FY26Q3 / 谷歌 4 AI 顶尖人才 / 陆家嘴早餐</td>
+                            <td>IBM 0.7nm 完整 13 项 / 苹果 + 微软双涨价 12 项 / 美光 FY26Q3 11 项 / 谷歌 4 AI 顶尖人才 5 项 / 陆家嘴早餐 5 大模块</td>
+                            <td>港股 evening 完整收市 + 智谱跌穿 2000 / 中科闻歌 18C 挂牌 / A 股 evening 收市 / Vision Pro 3699 美元 / HN front 5 维度</td>
+                        </tr>
+                        <tr>
+                            <td>6/26 afternoon</td>
+                            <td>智谱跌超 10% 报 2092 港元 / 领益智造上市首日 / 联合国 ADS GTR / 英伟达 AI 工厂 / A 股午评 / HN front 11:30 UTC 3 条 AI 新晋</td>
+                            <td>智谱跌超 10% 报 2092 港元 / 领益智造上市首日高开 6.1% / 联合国 ADS GTR + 鸿蒙智行 L3+ / 英伟达 AI 工厂 / A 股午评 -2.14% / HN front 11:30 UTC 3 条</td>
+                            <td>同上 5 个新角度（额外剔除 6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 / 领益智造上市首日 / 联合国 ADS GTR / 英伟达 AI 工厂 / A 股午评 -2.14% / HN front 11:30 UTC 3 条 AI 新晋）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <div class="content-block">
+                <p>无用户个人信息 / 私人语气 / 内部称呼。无业务域名 / 资产 / 系统架构信息。无内部称呼 / 品牌标识。无 API key / 服务器配置。</p>
+            </div>
+        </section>
+        </section>
+
+        <footer class="site-footer">
+            <p>数据来源：智通财经 6/26 16:48 evening 收盘 恒生指数跌 1.76% 报 22671.86 失守两万三 / 恒科 -3.41% 报 4255.59 / 国企 -1.94% 报 7460.84 / 6 只新股同日敲锣 / 全周累跌 5.24% / 6/26 16:24 港股收评苹果产业链领跌舜宇 -9% 鸿腾 -8% 瑞声 -6% 存储概念股澜起 -8% CPO 长飞光纤光缆盘中跌超 15% | 腾讯网 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% 收盘约 1830 港元 | 财联社 6/26 17:44 中科闻歌(1956.HK) 港交所 18C 规则挂牌 + 首日市值 193.35 亿港元 + "决策大模型第一股" + 中科院系大模型国家队 | 财联社 6/26 15:54 A 股 evening 收评 沪指 -2.26% 报 4027.26 / 深成 -3.44% / 创业板 -4.07% / 北证 50 -0.84% / 科创 50 -1.65% / 全市场成交额 35754 亿元（较上日缩量 436 亿元）/ 超 4600 只个股下跌 / 通信 + 电池板块重挫 / 猪肉逆势走强 | 博时基金 6/26 15:58 美国 5 月 PCE 物价指数同比上涨 4.1% / 核心 PCE 同比上涨 3.4%（均创 2023 年下半年以来新高水平）| MacRumors 6/26 11:26 苹果 Vision Pro 入门价涨至 3699 美元（+200 美元）/ 512GB 3899 美元 / 1TB 4199 美元 | 财联社 6/26 10:24 苹果 + 微软同日官宣大涨价 MacBook Neo 599→699 美元 / MacBook Air 1099→1299 美元 / 14" MacBook Pro 1699→1999 美元 / 11" iPad Pro 999→1199 美元 / iPad Air 599→749 美元 / 微软 Xbox 8/1 起 1TB 版本涨价 150 美元 | 财联社 6/26 14:07 国内厂商如何看涨价 + 联想回应"内存市场变化前所未有，已锁定充足供应" | 财联社 6/26 16:24 收评：存储芯片供需缺口有望持续 | 财联社 6/26 17:35 消费电子或全面迈入涨价周期 | 财联社 6/26 17:18 苹果 + 微软接连提价 | HN Firebase API 6/26 10:00 UTC 串行 fetch 实测 6-10s / HN front 30 items 5 条 AI 相关新晋 - #1 We All Depend on Open Source 115pt/45c + #6 What happened after 2k people tried to hack my AI assistant 160pt/55c + #12 IBM debuts sub-1 nanometer chip technology 320pt/175c 持续引爆 + #19 Apple raises prices of MacBooks, iPads 726pt/1032c 评论数创近期新高 + #24 Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line 262pt/256c 持续高热度</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-26 晚报 · AI 陪你看完今日简报</p>
+        </footer>
+    </div>
+</body>
+</html>
