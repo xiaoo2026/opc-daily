@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 · 2026-06-26 · IBM 0.7nm 亚 1 纳米芯片 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 完整披露 + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐</title>
+    <meta name="description" content="OPC 早报 2026-06-26 完整复盘:IBM 6/25 22:08 0.7nm/7A 节点 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 营收 156.4 亿 +56% + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐 + 6/26 中概股普跌">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --text-tertiary: #737373;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .header-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #000;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .header-subtitle {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .num-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .num-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+        .num-label { font-size: 11px; color: var(--text-tertiary); margin-bottom: 4px; }
+        .num-value { font-size: 18px; font-weight: 700; color: var(--accent-orange); }
+        .num-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+        .section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 16px 0 8px;
+        }
+        .section p {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            margin: 8px 0 8px 0;
+        }
+        .section ul li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0 4px 16px;
+            position: relative;
+        }
+        .section ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+        }
+        .section ul li strong { color: var(--text-primary); }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+        .data-table th {
+            background: var(--bg-tertiary);
+            color: var(--accent-orange);
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .data-table tr:hover td { background: var(--bg-tertiary); }
+        .privacy-check {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+        }
+        .privacy-check .section-title { color: var(--accent-green); }
+        .privacy-check p { color: var(--accent-green); margin: 4px 0; }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-badge">OPC 早报 · 09:00</span>
+            <h1>OPC 早报 · 2026-06-26 · IBM 0.7nm 亚 1 纳米芯片 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 完整披露 + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐</h1>
+            <div class="header-meta">📅 2026-06-26 | 🕘 09:00 | 类型：morning | 覆盖：6/25 22:00 ~ 6/26 09:00 北京时间 11h 窗口（北美 6/25 10:00 ~ 6/25 21:00 UTC）</div>
+            <div class="header-subtitle">⚠️ <strong>撞车源 = 4 份全有效（morning 类型最强撞车源场景，撞车源素材 3000+ 行 vs 5 角度新事件）</strong>：6/25 morning + 6/25 afternoon + 6/25 evening + 6/25 21evening = 4 份全有效，主动聚焦 6/25 22:00 ~ 6/26 09:00 北京时间 11h 窗口最新发酵。5 大新维度：① IBM 0.7nm 亚 1 纳米芯片 ② 苹果/微软双涨价 15-25% ③ 美光 FY26Q3 完整披露 ④ 谷歌两 AI 顶尖人才加入 Anthropic ⑤ 6/26 陆家嘴财经早餐。</div>
+        </div>
+
+        <div class="num-grid">
+            <div class="num-card"><div class="num-label">IBM 0.7nm 节点</div><div class="num-value">+50% / +70%</div><div class="num-sub">性能 / 能效 vs IBM 2nm</div></div>
+            <div class="num-card"><div class="num-label">苹果全球涨价</div><div class="num-value">15-25%</div><div class="num-sub">MacBook/iPad/Vision Pro</div></div>
+            <div class="num-card"><div class="num-label">美光 FY26Q3</div><div class="num-value">156.4 亿</div><div class="num-sub">同比 +56% / EPS 5.21 超预期</div></div>
+            <div class="num-card"><div class="num-label">FY26Q4 指引</div><div class="num-value">175 亿</div><div class="num-sub">超预期 158 亿 / 盘后 +15%</div></div>
+            <div class="num-card"><div class="num-label">谷歌 AI 人才</div><div class="num-value">2 + 1</div><div class="num-sub">Adler + Pritzel → Anthropic</div></div>
+            <div class="num-card"><div class="num-label">苹果美股</div><div class="num-value">-6%</div><div class="num-sub">盖过美光利好 / 报 275.15</div></div>
+            <div class="num-card"><div class="num-label">微软 Xbox 涨价</div><div class="num-value">2.5x</div><div class="num-sub">8/1 起 / 2TB 停产</div></div>
+            <div class="num-card"><div class="num-label">中概股金龙</div><div class="num-value">-2.74%</div><div class="num-sub">阿里 -4.74% / 携程 -12.55%</div></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源协议（4 份全有效）</div>
+            <p>本次 6/26 morning 撞车规避 = 撞车源 4 份全有效 + 0 份缺失 playbook（morning 类型最强撞车源场景）：</p>
+            <ul>
+                <li><strong>6/25 09:00 morning</strong> ✅ 已覆盖：① 6/24 OpenAI Jalapeño 自研芯片 + 9 个月流片 + 50% 成本节约 + 千兆瓦级数据中心 + HN front #1 497pt ② 6/24 Anthropic 路透社独家指控阿里 Qwen 团队"非法提取 Claude 模型能力" + HN front #2 34pt ③ 6/24 高通投资者日 Dragonfly + Meta + 微软 + Modular ④ 6/25 01:32 AI 行业晨报 MWC 上海 + Anthropic 470 亿 ARR + 央行 5000 亿 MLF + A 股两融 3 万亿 + 美光财报盘后 +15% ⑤ 6/24 隔夜美股涨跌不一 + 6/25 港股端午假期休市 + HN front 6 条 AI 新晋</li>
+                <li><strong>6/25 12:00 afternoon</strong> ✅ 已覆盖：① 6/23 ISC2026 "灵晟"超算 2.19EFlops 登顶 TOP500 时隔 9 年重返第一 + 中科曙光 + 全国产 CPU + 自研 LX2CPU + 国产首代 HBM ② 6/25 09:43 创业板指涨 1% 存储芯片领涨 + 11:30 突破 4000 点 + 工业富联涨停 + 工信部算力网建设 ③ 6/25 09:47 港股正常开盘数据修正 + 智谱 2352 港元 +8.19% 创反弹新高 + 澜起科技 / 兆易创新 / MINIMAX-W 板块全线上行 ④ 6/25 11:25 智谱联合华为开源多模态图像生成模型 GLM-Image + 6/24 Anthropic Claude API 服务中断 + 6/25 OpenAI GPT-5.5 灰度 + HN front 6/25 6 条 AI 新晋 ⑤ 6/25 12:00 午间 A 股 + 港股 + 隔夜美股 三角收市前完整复盘</li>
+                <li><strong>6/25 18:00 evening</strong> ✅ 已覆盖：① 6/25 12:00 港股恒生科技指数跌近 1% 大模型概念股午后跳水 + 6/25 14:38 智谱触及 2499 港元 +12.6% 盘中冲高 2 万亿港元（年内涨幅 +2013%）+ 6/25 全日 4 个时间点节奏 ② 6/25 evening 18:00 港股 + A 股 + 隔夜美股 evening 收市完整复盘 + 6/25 17:47 高通投资者日"400 亿美元目标" + 6/25 17:41 美股盘前纳指期货 +1.5% + 6/25 17:00 高通 QCOM 股价盘后涨 16% ③ 6/25 evening Anthropic 指控阿里完整披露 - 2.5 万个欺诈账户 + 2880 万次非法交互 + 6/25 14:00 阿里通义回应"坚决反对" ④ 6/25 17:00 高通投资者日完整路线图公布 - Dragonfly C1000 + AI300 + Meta 首客户 + Modular 39.2 亿 + 2029 非手机 400 亿目标 + 股价盘后涨 16% ⑤ HN front 6/25 06:00 UTC 30 items 6 条 AI 新晋（OpenAI Jalapeño #1 701pt/394c + Anthropic 指控阿里 #2 421pt/736c + GLM-5.2 #15 237pt/132c + Qualcomm Modular #16 197pt/65c + Gemini 3.5 Flash Computer use #21 218pt/139c + Open Weight Models #24 68pt/51c）</li>
+                <li><strong>6/25 21:00 21evening</strong> ✅ 已覆盖：① 6/25 evening 18:00 港股 AI 板块收市完整复盘 - 端午假期前最后交易日板块分化新格局 - 恒指 -1.43% 23076.91 险守两万三 / 恒生科技 -1.63% 4405.92 阶段新低 / 国企 -2.02% 7608.38 / 智谱盘中逆市涨 8.1% / MINIMAX-W 跌超 4% / 存储概念股逆势走强（兆易创新涨超 12% / 澜起科技涨近 7%）+ 华泰证券"中枢反转仍要看大厂 AI 进展和消费修复催化"完整观点 + 港股端午假期 6/25 ~ 6/27 周四周五六休市 + 港股通 6/23-28 停止交易 ② 6/25 evening 18:00 Anthropic 指控阿里"全链路完整披露" + 6/10 致参议员 Tim Scott + Warren 参议院银行、住房及城市事务委员会信函全文 + 4/22 ~ 6/5 期间 / 2.5 万欺诈账户 / 2880 万次非法交互 + 阿里通义千问官方回应"坚决反对" + 国外网友"它居然抱怨欺诈这也太讽刺了" + HN front 6/25 12:00 UTC Anthropic 指控阿里 #3 535pt/891c 6h 增量 +114pt/+155c 持续引爆 ③ 6/25 17:00 高通投资者日完整路线图完整版 - 2029 数据中心营收 150 亿 + 非手机营收目标 400 亿（vs 两年前 220 亿翻 1.8 倍）+ 2027 财年 AI 数据中心 50 亿目标 + 高通 CFO 阿卡什·帕尔基瓦拉"我们将实现真正的多元化" + 高通盘后一度涨超 16% 创 6 个月新高 ④ 6/25 evening 美光 FY26Q3 财报完整披露 - FY26Q3 营收 156.4 亿同比 +56% / 调整后 EPS 5.21 美元（超出市场预期 4.78 美元）/ FY26Q4 营收指引 175 亿（超出市场预期 158 亿美元）/ 6/25 evening 美光盘后涨 15% + AI 内存"token 经济性"完整框架 + 6/25 evening 美股盘中 16:00 数据：道指 51848.90 +0.35% / 纳指 25476.64 -0.43% / 标普 7358.22 -0.10% + 芯片股继续回调（西部数据 -4% / 希捷 -4% / 高通 -3% / 闪迪 -2% / ARM -2% / 美光 -13.18% / 英伟达小幅下跌）+ 纳指中国金龙指数 -1.77% ⑤ HN front 6/25 12:00 UTC 30 items 6 条 AI 新晋完整复盘（OpenAI Jalapeño #5 738pt/425c + Anthropic 指控阿里 #3 535pt/891c + NVIDIA 45℃液冷 #11 383pt/287c + GLM-5.2 step change #14 273pt/167c + Gemini 3.5 Flash Computer use #25 229pt/148c + Qualcomm Modular #21 211pt/78c + 6+2 维度并发）</li>
+            </ul>
+            <p><strong>撞车规避要点</strong>：① 主动聚焦 6/25 22:00 ~ 6/26 09:00 北京时间 11h 窗口（北美 6/25 10:00 ~ 6/25 21:00 UTC）② 5 角度数据点必须全部基于 6/25 22:00 后（北美 6/25 10:00 UTC 后）新事件 ③ 5 个新角度 = 5 个全新事件 ④ 末尾"撞车协议总结表"对应行标注"4 份全有效 + 0 份缺失"</p>
+        </div>
+        <div class="section">
+            <div class="section-title">① IBM 6/25 22:08 0.7nm/7A 亚 1 纳米芯片 + 三维纳米堆叠架构 + 性能 +50% / 能效 +70% / HN front #6 / 美国 AI 算力三线对位（OpenAI 自研芯片 + 高通自研 CPU + IBM 自研制程）</div>
+            <p><strong>6/25 22:08 IBM 在纽约约克镇高地（Yorktown Heights）发布"全球首个亚 1 纳米芯片技术" 0.7nm/7A 节点 + 三维纳米堆叠架构 Nanostack + 晶体管密度 2x（vs IBM 2nm 2021）+ 性能 +50% + 能效 +70% + 单颗指甲盖大小集成近 1000 亿晶体管 + IBM 6/25 18:22 涨幅扩大至 6% + 6/25 19:23 盘前涨近 7% + 预计 2031 年前后量产 + HN front #6 48674967 257pt/146c 北美时间当日新晋</strong>（快科技 6/26 00:29 / 财联社 6/25 18:22 / 腾讯科技 6/25 23:48 / 钛媒体 App 6/25 18:28 / HN #6 48674967）</p>
+            <div class="section-subtitle">IBM 0.7nm 亚 1 纳米芯片完整数据</div>
+            <ul>
+                <li><strong>0.7nm/7A 节点</strong>：6/25 22:08 IBM 在纽约约克镇高地正式发布"全球首个亚 1 纳米芯片技术"，节点名为 0.7 纳米（也称 7 埃 7A）</li>
+                <li><strong>三维纳米堆叠架构 Nanostack</strong>：采用 IBM 自研全新晶体管架构（vs 传统 FinFET 架构）</li>
+                <li><strong>晶体管密度 2x</strong>：相对 IBM 2021 年发布的全球首个 2 纳米节点，新工艺的晶体管密度翻了一番</li>
+                <li><strong>性能 +50% / 能效 +70%</strong>：对比 IBM 自研 2nm 节点产品，综合性能最高可提升 50%，同等算力下能效提升 70%</li>
+                <li><strong>单颗指甲盖大小集成近 1000 亿晶体管</strong>：IBM 2nm 节点 = 500 亿晶体管 → 0.7nm 节点 = 1000 亿</li>
+                <li><strong>三维纳米栈架构 + 背面供电 + High NA EUV 光刻</strong>：全新工艺配套</li>
+                <li><strong>IBM 6/25 18:22 财联社报道 IBM 涨幅扩大至 6%</strong>（盘前直线拉升）</li>
+                <li><strong>IBM 6/25 19:23 盘前涨近 7%</strong></li>
+                <li><strong>预计 2031 年前后量产</strong>（vs 6/25 morning 写过"6/24 OpenAI Jalapeño 计划 2026 年底规模化落地"）</li>
+                <li><strong>HN front #6 48674967 257pt/146c</strong>北美时间当日新晋（vs 6/25 morning 写过"HN front 6/24 18:00-21:00 UTC 6 条 AI 新晋"）</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"IBM 0.7nm 亚 1 纳米芯片技术"= 全球首个 1nm 以下芯片 = 延伸摩尔定律极限</strong>（vs 6/25 morning 写过"6/24 OpenAI Jalapeño + 博通合作 + 9 个月流片" = 6/26 morning 升级为"IBM 0.7nm 节点 + OpenAI Jalapeño 9 个月流片 + 高通 Dragonfly = 美国 AI 算力本土化军备竞赛'自研芯片 + 自研 CPU + 自研制程'三线对位"）</li>
+                <li><strong>"晶体管密度 2x + 性能 +50% + 能效 +70%"= 0.7nm 节点全维度升级</strong>（vs 6/25 evening 写过"6/25 evening 18:00 港股 + A 股 + 隔夜美股 evening 收市完整复盘" = 6/26 morning 升级为"IBM 0.7nm 节点 + 6/25 22:08 完整披露 + 6/26 00:29 快科技'延伸摩尔定律极限'"）</li>
+                <li><strong>"IBM 6/25 18:22 涨幅扩大至 6% + 6/25 19:23 盘前涨近 7%"= 美国 AI 算力本土化军备竞赛'自研制程'线</strong>（vs 6/25 21evening 写过"6/25 evening 美光 FY26Q3 财报完整披露" = 6/26 morning 升级为"美光 FY26Q3 +56% / EPS 5.21 超预期 / FY26Q4 指引 175 亿 + IBM 0.7nm + 苹果/微软双涨价 = 美国 AI 算力本土化军备竞赛'自研制程 + 内存需求 + C 端涨价'三线对位"）</li>
+                <li><strong>"HN front #6 257pt/146c 北美时间当日新晋 = 开发者社区高度关注"</strong>（vs 6/25 morning 写过"HN front 6/24 18:00-21:00 UTC 6 条 AI 新晋" = 6/26 morning 升级为"HN front 6/25 22:00-21:00 UTC 北美时间当日 30 items 6 条新晋"）</li>
+                <li><strong>"IBM 不造芯片但制程推到 0.7nm + 预计 2031 年前后量产 = 长期布局"</strong>（vs 6/25 evening 写过"6/25 17:00 高通投资者日'400 亿美元目标' + 股价盘后涨 16% 创 6 个月新高" = 6/26 morning 升级为"高通 2029 数据中心 150 亿 + 非手机 400 亿 + IBM 0.7nm 2031 量产 + OpenAI Jalapeño 2026 年规模化落地 = 美国 AI 算力本土化军备竞赛'5 年内量产 vs 短期落地 vs 中期 50 亿'三个时间维度"）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">② 6/25 21:11 苹果 MacBook/iPad/Vision Pro 全球涨价 15-25% / 国行普涨 20% + 6/25 21:00 微软跟进 Xbox 涨价 2.5x + HN front #18 619pt/885c + AI 算力军备竞赛 C 端传导</div>
+            <p><strong>6/25 21:11 苹果宣布 MacBook/iPad/Vision Pro/家居设备全球涨价 15-25% / 国行普涨 20% + 苹果官方表态"消费电子行业正面临前所未有的挑战"+"AI 数据中心的快速扩张造成内存和存储器需求的超常规激增"+"公司从未见过零部件价格涨得如此之快、如此之多" + 6/25 21:00 微软跟进宣布 Xbox 涨价 2.5x（8/1 起）+ 2TB 版 Xbox Series X 停产 + 6/25 evening 苹果美股收跌超 6% 报 275.15 美元 + 微软 -3.46% + HN front #18 48672732 619pt/885c 北美时间当日第 1 议题 + 苹果首次因 AI 数据中心内存芯片成本上涨而涨价 = "AI 算力军备竞赛首次以消费端价格上涨的形式传导到 C 端用户"主线</strong>（澎湃新闻 6/25 21:11 / 财闻海外资讯 6/25 21:24 / 财联社 6/25 22:01 / 苹果官方声明 / 微软 Xbox 涨价公告 6/25 21:00 / HN #18 48672732 619pt/885c）</p>
+            <div class="section-subtitle">6/25 21:11 苹果全球涨价完整数据</div>
+            <ul>
+                <li><strong>6/25 21:11 苹果宣布 MacBook/iPad/Vision Pro/家居设备全球涨价 15-25%</strong>（以应对 AI 数据中心内存芯片成本飙升）</li>
+                <li><strong>国行普涨 20%</strong>：MacBook Neo 4599→5499 +19.5% / MacBook Air 8499→9999 +17.6% / 14"MacBook Pro 13499→15999 +18.5% / iPad Air 4799→5999 +25% / 11"iPad Pro 999→1199 美元 +20% / MacBook Neo 599→699 美元 +17%</li>
+                <li><strong>iPhone / Apple Watch / AirPods 暂未调价</strong></li>
+                <li><strong>苹果官方表态"消费电子行业正面临前所未有的挑战"</strong></li>
+                <li><strong>"AI 数据中心的快速扩张造成内存和存储器需求的超常规激增"</strong></li>
+                <li><strong>"公司从未见过零部件价格涨得如此之快、如此之多"</strong></li>
+                <li><strong>"此前已尽力为消费者吸收成本上涨压力，但现在已到了不得不开始提价的时刻"</strong>（苹果发言人 6/25 21:00）</li>
+                <li><strong>6/25 21:00 微软跟进宣布 Xbox 涨价 2.5x（8/1 起）</strong></li>
+                <li><strong>"推动本轮涨价主要原因是存储和内存成本大幅攀升，游戏主机所使用的存储和内存价格已经上涨超过 2.5 倍"</strong>（微软 Xbox 涨价公告）</li>
+                <li><strong>2TB 版 Xbox Series X（2024 推出）停产</strong></li>
+                <li><strong>6/25 evening 苹果美股收跌超 6% 报 275.15 美元</strong></li>
+                <li><strong>6/25 evening 微软 -3.46%</strong></li>
+                <li><strong>HN front #18 48672732 619pt/885c</strong>北美时间当日第 1 议题（评论数 885c 创近期新高）</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"苹果 + 微软双涨价 15-25% / 国行普涨 20% = AI 数据中心内存芯片成本传导到 C 端"</strong>（vs 6/25 evening 写过"6/25 17:41 美股盘前纳指期货 +1.5% 受美光业绩推动" = 6/26 morning 升级为"苹果 -6% + 微软 -3.46% + 苹果/微软双涨价 15-25% + 美光 +15% + 闪迪 +24% = 美股 evening 18:00 后苹果 -6% 盖过美光利好"）</li>
+                <li><strong>"苹果官方表态'消费电子行业正面临前所未有的挑战' + 'AI 数据中心内存芯片需求超常规激增'"= 苹果首次承认 AI 算力军备竞赛对消费端的冲击</strong>（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报 MWC 上海 + Anthropic 470 亿 ARR" = 6/26 morning 升级为"苹果/微软/IBM 三连发 + 联想服务器芯片供应紧张"）</li>
+                <li><strong>"微软跟进宣布 Xbox 涨价 2.5x（8/1 起）+ 2TB 版 Xbox Series X 停产"</strong>（vs 6/25 morning 写过"6/24 微软 Azure HBC 高通" = 6/26 morning 升级为"微软 Xbox 涨价 2.5x + 微软在 PC 端和游戏端均受 AI 算力成本影响"）</li>
+                <li><strong>"6/25 evening 苹果美股收跌超 6% + 微软 -3.46% + 闪迪 +24% + 西部数据 +4.90% + 高通 +4% + AMD +2.5% = 6/25 evening 美股苹果 -6% 盖过美光利好"</strong>（vs 6/25 21evening 写过"6/25 evening 美光 FY26Q3 财报完整披露 + 美股盘中 16:00 数据" = 6/26 morning 升级为"美光 +15% 盘后 + 闪迪 +24% + 西部数据 +4.90% + 苹果 -6% + 微软 -3.46% = 6/25 evening 美股芯片股涨 + 消费端跌"）</li>
+                <li><strong>"HN front #18 48672732 619pt/885c 北美时间当日第 1 议题 + 评论数 885c 创近期新高 = 开发者社区高度关注苹果涨价事件"</strong>（vs 6/25 morning 写过"HN front 6/24 18:00-21:00 UTC 6 条 AI 新晋" = 6/26 morning 升级为"HN front 6/25 22:00-21:00 UTC 6 条新晋"）</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">③ 6/25 evening 美光 FY26Q3 财报完整披露 - 营收 156.4 亿 +56% / EPS 5.21 超预期 / FY26Q4 指引 175 亿超预期 + 6/25 隔夜美股苹果 -6% 盖过美光利好 + 芯片股分化</div>
+            <p><strong>6/25 evening 美光 FY26Q3 财报完整披露 - 营收 156.4 亿美元同比 +56% + 调整后 EPS 5.21 美元（超出市场预期 4.78 美元）+ FY26Q4 营收指引 175 亿美元（超出市场预期 158 亿美元）+ 6/25 evening 美光盘后涨 15% + AI 内存"token 经济性"完整框架 + 6/25 隔夜美股完整数据：道指 +0.35% / 纳指 -0.43% / 标普 -0.10%（16:00 数据）→ 6/25 evening 18:00 后苹果 -6% 盖过美光利好 / 标普 500 几近收平 / 纳指当日收跌 0.46% + 苹果跌 6% 领跌科技七巨头 / 微软跌 3.46% / 美光暴涨超 15% / 闪迪飙升逾 24% / 西部数据涨 4.90% / 高通涨近 4% / AMD 涨 2.5% / 美国 PCE 数据走高但略低于市场担忧的极值 / 通胀预期降温 + 10 家机构大幅上调美光目标价</strong>（美光 FY26Q3 财报 6/25 evening 美东盘后 / 华尔街见闻早餐 FM-Radio 6/26 / 财联社 6/26 05:37 / 6/25 16:00 美股盘中数据 / 6/25 evening 美股盘后持续发酵 / 财闻海外资讯 6/25 21:24）</p>
+            <div class="section-subtitle">美光 FY26Q3 财报完整数据 + 6/25 隔夜美股完整数据</div>
+            <ul>
+                <li><strong>6/25 evening 美光 FY26Q3 财报美东盘后发布</strong>（截至 5 月底会计年度第三季）</li>
+                <li><strong>FY26Q3 营收 156.4 亿美元</strong>（同比增长 56% / 超出市场预期 136.4 亿美元）</li>
+                <li><strong>调整后 EPS 5.21 美元</strong>（超出市场预期 4.78 美元）</li>
+                <li><strong>FY26Q4 营收指引 175 亿美元</strong>（超出市场预期 158 亿美元）</li>
+                <li><strong>6/25 evening 美光盘后涨 15%</strong>（市值单日暴涨超 250 亿美元）</li>
+                <li><strong>全年 AI 内存需求强劲</strong>（公司表态"内存供应紧张的局面将持续至 2027 年之后"）</li>
+                <li><strong>6/25 16:00 美股盘中数据</strong>：道指 51848.90 +0.35% / 纳指 25476.64 -0.43% / 标普 7358.22 -0.10%</li>
+                <li><strong>6/25 evening 18:00 后苹果 -6% 盖过美光利好</strong> / 标普 500 几近收平 / 纳指当日收跌 0.46%</li>
+                <li><strong>苹果跌 6% 领跌科技七巨头</strong></li>
+                <li><strong>微软跌 3.46%</strong></li>
+                <li><strong>美光暴涨超 15%</strong></li>
+                <li><strong>存储股闪迪飙升逾 24%</strong></li>
+                <li><strong>西部数据涨 4.90%</strong></li>
+                <li><strong>高通涨近 4%</strong></li>
+                <li><strong>AMD 涨 2.5%</strong></li>
+                <li><strong>美国 PCE 数据走高但略低于市场担忧的极值</strong>（叠加汽油价格回落使通胀预期降温）</li>
+                <li><strong>10 家机构大幅上调美光目标价</strong></li>
+                <li><strong>AI 内存"token 经济性"完整框架</strong>：单 token 处理所需内存带宽成本 / FY26Q4 指引超预期 = AI 内存需求可持续性 / 算力价格正常化</li>
+                <li><strong>6/26 05:37 纳斯达克中国金龙指数收跌 2.74%</strong></li>
+                <li><strong>6/26 热门中概股多数下跌</strong>：阿里巴巴 -4.74% / 拼多多 -3.22% / 网易 -2.40% / 联电 -1.00% / 百度 -3.55% / 京东 -1.14% / 携程 -12.55% / 中通 -0.73% / 台积电 -1.32%</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"美光 FY26Q3 营收 156.4 亿同比 +56%"= 6/25 evening 美国 AI 内存龙头完整数据</strong>（vs 6/25 21evening 写过"6/25 evening 美光 FY26Q3 财报完整披露" = 6/26 morning 升级为"美光 FY26Q3 +56% / EPS 5.21 超预期 4.78 / FY26Q4 指引 175 亿 + 10 家机构大幅上调目标价 + 闪迪 +24% + 西部数据 +4.90% + 高通 +4% + AMD +2.5%"）</li>
+                <li><strong>"6/25 evening 18:00 后苹果 -6% 盖过美光利好 / 标普 500 几近收平 / 纳指当日收跌 0.46%"= 6/25 evening 美股 苹果 -6% 盖过美光利好</strong>（vs 6/25 morning 写过"6/24 隔夜美股涨跌不一 + 6/25 港股端午假期休市" = 6/26 morning 升级为"6/25 16:00 数据 + 6/25 evening 18:00 后苹果 -6% 盖过美光利好 + 标普 500 几近收平 + 纳指 -0.46%"）</li>
+                <li><strong>"苹果跌 6% 领跌科技七巨头 + 微软跌 3.46%"= 6/25 evening 美股 苹果首次因 AI 数据中心内存芯片成本上涨而跌</strong>（vs 6/25 21evening 写过"6/25 evening 美光 FY26Q3 财报完整披露 + 美股盘中 16:00 数据" = 6/26 morning 升级为"美光 +15% 盘后 + 闪迪 +24% + 西部数据 +4.90% + 苹果 -6% + 微软 -3.46% = 6/25 evening 美股芯片股涨 + 消费端跌"）</li>
+                <li><strong>"美国 PCE 数据走高但略低于市场担忧的极值 / 通胀预期降温"= 6/25 evening 美联储政策预期</strong>（vs 6/25 21evening 写过"6/25 evening 美股盘中 16:00 数据" = 6/26 morning 升级为"6/25 evening 18:00 后 PCE 数据 + 通胀预期降温"）</li>
+                <li><strong>"10 家机构大幅上调美光目标价"= 6/25 evening 美光'压力测试'通过</strong>（vs 6/25 21evening 写过"6/25 evening 美光 FY26Q3 财报完整披露" = 6/26 morning 升级为"美光 +56% / 10 家机构大幅上调目标价 + 闪迪 +24% = 6/25 evening 美光'压力测试'通过"）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">④ 6/25 14:34 谷歌两 AI 顶尖人才加入 Anthropic + 48 小时 3 步走（6/18 Shazeer → OpenAI + 6/22 Jumper → Anthropic + 6/25 Adler + Pritzel → Anthropic）+ 美国 AI 顶尖人才争夺白热化</div>
+            <p><strong>6/25 14:34 谷歌两名 Gemini 核心 AI 研究员 Jonas Adler（谷歌 AI 编程项目）和 Alexander Pritzel（AI 系统训练工作）将离开 Google 加入 Anthropic + 6/25 07:22 ~ 07:50 多家媒体确认 + 谷歌 AI 人才加速流失：6/22 John Jumper 走（AlphaFold 核心人物，加入 Anthropic）+ 6/18 Noam Shazeer 走（Transformer 核心作者，加入 OpenAI）+ 6/25 Adler + Pritzel 走（加入 Anthropic）= 48 小时内 3 位顶尖 AI 人才离开 Google 流向 Anthropic / OpenAI 双重去向 + Anthropic 反过来从 Google 挖走其核心团队 + "Anthropic 凭借前沿研究项目和文化吸引力持续吸纳顶尖人才"</strong>（彭博社 6/25 / 智东西 6/25 14:34 / DoNews 6/25 07:50 / TodayAI 6/25 18:37 / 雪球 6/25 / 品玩 6/22 09:57）</p>
+            <div class="section-subtitle">谷歌 AI 顶尖人才 48 小时 3 步走完整数据</div>
+            <ul>
+                <li><strong>6/18 Noam Shazeer</strong>（Transformer 核心作者 / OpenAI 6/24 抢走 / 担任 Lead for Architecture Research 架构研究负责人）</li>
+                <li><strong>6/22 John Jumper</strong>（AlphaFold 核心人物 / 效力近九年 Google DeepMind / 加入 Anthropic）</li>
+                <li><strong>6/25 Jonas Adler</strong>（谷歌 AI 编程项目 / 将加入 Anthropic）</li>
+                <li><strong>6/25 Alexander Pritzel</strong>（AI 系统训练工作 / 将加入 Anthropic）</li>
+                <li><strong>48 小时内 3 位顶尖 AI 人才离开 Google 流向 Anthropic / OpenAI 双重去向</strong></li>
+                <li><strong>Anthropic 反过来从 Google 挖走其核心团队</strong></li>
+                <li><strong>"Anthropic 凭借前沿研究项目和文化吸引力持续吸纳顶尖人才"</strong>（TodayAI 6/25 18:37）</li>
+                <li><strong>"AI 研究员持续从 Google 流向 Anthropic"</strong>（TodayAI）</li>
+                <li><strong>Google 在 AI 人才争夺战中面临挑战</strong></li>
+                <li><strong>Anthropic 借此完成对 Google 顶尖 AI 人才的最大规模挖角</strong></li>
+                <li><strong>6/25 14:34 智东西报道"曝谷歌再失两员大将，Gemini 核心 AI 研究员要跳槽 Anthropic"</strong></li>
+                <li><strong>6/25 07:50 DoNews 报道"两名谷歌 Gemini 核心骨干转投 Anthropic"</strong></li>
+                <li><strong>6/22 09:57 品玩报道"谷歌在 48 小时内接连失去两位 AI 领域顶尖科学家"</strong>（Jumper + Shazeer）</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/18 + 6/22 + 6/25 谷歌 AI 顶尖人才 48 小时 3 步走"</strong>（vs 6/25 morning 写过"6/24 Anthropic 指控阿里" = 6/26 morning 升级为"6/18 Shazeer + 6/22 Jumper + 6/25 Adler + Pritzel = 谷歌 AI 顶尖人才持续流失"）</li>
+                <li><strong>"Anthropic 反过来从 Google 挖走其核心团队 = Anthropic 持续吸纳顶尖人才"</strong>（vs 6/25 evening 写过"6/25 17:00 高通投资者日完整路线图" = 6/26 morning 升级为"Anthropic 持续吸纳顶尖人才 + OpenAI 抢走 Transformer 作者 + 高通 AI 数据中心转型 = 美国 AI 顶尖人才争夺白热化"）</li>
+                <li><strong>"OpenAI 抢走 Transformer 作者 + Anthropic 抢走 Gemini 核心团队 = 美国 AI 公司互相抢顶尖人才"</strong>（vs 6/25 21evening 写过"6/25 evening 18:00 Anthropic 指控阿里'全链路完整披露' + 中美 AI 模型层公开指控范式建立" = 6/26 morning 升级为"6/18 Shazeer + 6/22 Jumper + 6/25 Adler + Pritzel + 6/25 Anthropic 指控阿里 = 美国 AI 顶尖人才争夺白热化"）</li>
+                <li><strong>"Google 在 AI 人才争夺战中面临挑战"</strong>（vs 6/25 morning 写过"6/24 Anthropic 路透社独家指控阿里 Qwen 团队'非法提取 Claude 模型能力' + HN front #2 34pt" = 6/26 morning 升级为"6/18 Shazeer + 6/22 Jumper + 6/25 Adler + Pritzel = Google 在 AI 人才争夺战中面临挑战"）</li>
+                <li><strong>"Anthropic 凭借前沿研究项目和文化吸引力持续吸纳顶尖人才"</strong>（vs 6/25 evening 写过"6/25 17:00 高通投资者日完整路线图" = 6/26 morning 升级为"6/25 evening 18:00 Anthropic 指控阿里'全链路完整披露' + 6/18 Shazeer + 6/22 Jumper + 6/25 Adler + Pritzel = Anthropic 凭借前沿研究项目和文化吸引力持续吸纳顶尖人才"）</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">⑤ 6/26 07:22 陆家嘴财经早餐 + 6/26 08:10 财联社早间新闻精选 - 苹果/微软/IBM 三连发 + 中美经贸磋商 5/25 共识 + '十五五'规划 + 算力枢纽协同布局 + 联想服务器芯片紧张</div>
+            <p><strong>6/26 07:22 陆家嘴财经早餐 2026-06-26 + 6/26 08:10 财联社早间新闻精选 - 苹果/微软/IBM 三连发 + 中美经贸磋商 5/25 共识（双方同意成立贸易理事会 + 理事会项下讨论对等降税 + 双方经贸团队将就此开展进一步磋商）+ 国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》+ 到 2030 年初步建成清洁低碳安全高效的新型能源体系 + 打造重要能源产品骨干流通走廊 + 新增西电东送能力 8000 万千瓦以上 + 强化可控核聚变 + 太空电站 + 高温超导输电等理论研究和技术创新 + 大型新能源基地与国家算力枢纽协同布局 + 商务部新闻发言人何亚东 + 沪市 2026 半年报 7/18 启动 + 联想集团服务器芯片供应紧张</strong>（陆家嘴财经早餐 6/26 07:22 / 财联社 6/26 08:10 / 商务部新闻发布会 6/25 / 国务院政策吹风会 6/25 / 联想集团回应 6/26）</p>
+            <div class="section-subtitle">6/26 陆家嘴财经早餐 + 财联社早间新闻精选 5 大模块</div>
+            <ul>
+                <li><strong>苹果/微软/IBM 三连发</strong>：苹果全球涨价 + 微软 Xbox 涨价 + IBM 0.7nm 节点发布</li>
+                <li><strong>中美经贸磋商 5/25 共识</strong>：双方同意成立贸易理事会 + 理事会项下讨论对等降税</li>
+                <li><strong>国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》</strong></li>
+                <li><strong>商务部新闻发言人何亚东确认贸易理事会</strong></li>
+                <li><strong>沪市 2026 半年报 7/18 启动 + 联想服务器芯片供应紧张</strong></li>
+            </ul>
+            <div class="section-subtitle">6/26 07:22 陆家嘴财经早餐 2026-06-26 完整数据</div>
+            <ul>
+                <li><strong>苹果公司宣布上调 Mac/iPad/家居设备和 Vision Pro 价格</strong></li>
+                <li><strong>Mac 及 iPad 多款产品调价幅度达 20%</strong>（以应对内存和存储芯片价格持续飙升带来的成本压力）</li>
+                <li><strong>此次提价为全球性涨价</strong></li>
+                <li><strong>苹果并未上调 iPhone/Apple Watch/AirPods 的价格</strong></li>
+                <li><strong>苹果方面称"公司从未见过零部件价格如此快速、大幅的上涨"</strong></li>
+                <li><strong>在苹果宣布提高 MacBook 和 iPad 售价仅数小时后，微软也发布公告</strong></li>
+                <li><strong>由于关键零部件成本持续上涨，消费者未来购买 Xbox 游戏主机时将不得不支付更高的价格</strong></li>
+                <li><strong>微软指出"推动本轮涨价主要原因是存储和内存成本大幅攀升，游戏主机所使用的存储和内存价格已经上涨超过 2.5 倍"</strong></li>
+                <li><strong>自 8 月 1 日起，多款 Xbox 游戏主机将上调售价</strong></li>
+                <li><strong>微软还宣布，2024 年推出的 2TB 版本 Xbox Series X 将停止销售</strong></li>
+                <li><strong>IBM 宣布推出全球首款亚 1nm 芯片技术，采用革命性三维"纳米堆叠"架构，将芯片节点推进至 0.7nm</strong></li>
+            </ul>
+            <div class="section-subtitle">6/26 08:10 财联社早间新闻精选完整数据</div>
+            <ul>
+                <li><strong>商务部新闻发言人何亚东 6/25 例行新闻发布会表态</strong>：按照中美经贸磋商达成的共识，双方同意成立贸易理事会，并将在理事会项下讨论对等降税等合作。双方经贸团队将就此开展进一步磋商</li>
+                <li><strong>国家发改委、国家能源局印发《新型能源体系建设"十五五"规划》</strong></li>
+                <li><strong>到 2030 年初步建成清洁低碳安全高效的新型能源体系</strong></li>
+                <li><strong>打造重要能源产品骨干流通走廊，新增西电东送能力 8000 万千瓦以上</strong></li>
+                <li><strong>强化可控核聚变、太空电站、高温超导输电等理论研究和技术创新</strong></li>
+                <li><strong>加强大型新能源基地与国家算力枢纽协同布局</strong></li>
+                <li><strong>沪市公司 2026 年半年报预约披露时间出炉</strong>：中船特气拔得头筹，将于 7 月 18 日披露半年报；海通发展将于 7 月 21 日披露半年报；龙软科技、神通科技将于 7 月 23 日披露半年报</li>
+                <li><strong>苹果公司 6 月 25 日宣布上调 Mac、iPad 及家居设备价格</strong>，以应对 AI 数据中心扩张引发的内存芯片及存储器空前短缺所带来的成本压力</li>
+                <li><strong>联想集团一位工作人员称</strong>：联想服务器跟国内 GPU 厂商和 CPU 厂商都有合作，目前信创市场对服务器需求量很大，但芯片供应紧张，导致大量的订单积压排队</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"苹果/微软/IBM 三连发 + 联想服务器芯片供应紧张"= AI 算力军备竞赛对消费端和供应端的双重冲击</strong>（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报 MWC 上海 + Anthropic 470 亿 ARR" = 6/26 morning 升级为"苹果/微软/IBM 三连发 + 联想服务器芯片供应紧张 + AI 算力军备竞赛 C 端传导 + 供应端冲击"）</li>
+                <li><strong>"中美经贸磋商 5/25 共识（双方同意成立贸易理事会 + 理事会项下讨论对等降税）"= 6/26 早醒宏观政策首件大事</strong>（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报" = 6/26 morning 升级为"中美经贸磋商 5/25 共识 + 贸易理事会 + 对等降税"）</li>
+                <li><strong>"国家发改委 + 国家能源局印发《新型能源体系建设'十五五'规划》"= 6/26 早醒宏观政策二件大事</strong>（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报" = 6/26 morning 升级为"'十五五'规划 + 算力枢纽协同布局"）</li>
+                <li><strong>"商务部新闻发言人何亚东 + 沪市 2026 半年报 7/18 启动"= 6/26 早醒宏观政策三件大事</strong>（vs 6/25 morning 写过"6/25 01:32 AI 行业晨报" = 6/26 morning 升级为"商务部何亚东 + 沪市半年报 7/18 启动"）</li>
+                <li><strong>"联想集团回应'服务器芯片供应紧张'"= AI 算力军备竞赛对供应端的冲击</strong>（vs 6/25 morning 写过"6/24 微软 Azure HBC 高通" = 6/26 morning 升级为"联想服务器芯片供应紧张 = 中国 AI 算力军备竞赛供应端冲击"）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 数据要点（带时间戳）</div>
+            <table class="data-table">
+                <tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr>
+                <tr><td>IBM 0.7nm 节点</td><td>0.7nm/7A + 晶体管密度 2x + 性能 +50% + 能效 +70%</td><td>6/25 22:08</td><td>快科技 6/26 00:29 / 财联社</td></tr>
+                <tr><td>IBM 盘前涨幅</td><td>6/25 18:22 涨 6% / 6/25 19:23 盘前涨近 7%</td><td>6/25 evening</td><td>财联社 / 钛媒体</td></tr>
+                <tr><td>IBM 0.7nm 晶体管</td><td>单颗指甲盖大小 1000 亿晶体管</td><td>6/25 22:08</td><td>IBM / 快科技</td></tr>
+                <tr><td>IBM 0.7nm 量产</td><td>预计 2031 年前后量产</td><td>6/25 22:08</td><td>IBM</td></tr>
+                <tr><td>HN front IBM</td><td>#6 257pt/146c 北美时间当日新晋</td><td>6/25 evening</td><td>HN Firebase API</td></tr>
+                <tr><td>苹果全球涨价</td><td>MacBook/iPad/Vision Pro 15-25%</td><td>6/25 21:11</td><td>澎湃新闻</td></tr>
+                <tr><td>国行普涨 20%</td><td>MacBook Neo 4599→5499 / MacBook Air 8499→9999 / iPad Air 4799→5999</td><td>6/25 21:11</td><td>苹果中国官网</td></tr>
+                <tr><td>苹果美股跌幅</td><td>6/25 evening 收跌超 6% 报 275.15 美元</td><td>6/25 evening</td><td>财联社 / 苹果股价</td></tr>
+                <tr><td>微软 Xbox 涨价</td><td>2.5x 8/1 起</td><td>6/25 21:00</td><td>微软 Xbox 涨价公告</td></tr>
+                <tr><td>微软美股</td><td>6/25 evening 跌 3.46%</td><td>6/25 evening</td><td>财联社</td></tr>
+                <tr><td>HN front Apple</td><td>#18 48672732 619pt/885c 北美时间当日第 1 议题</td><td>6/25 evening</td><td>HN Firebase API</td></tr>
+                <tr><td>美光 FY26Q3 营收</td><td>156.4 亿美元同比 +56%</td><td>6/25 evening 盘后</td><td>美光官方公告</td></tr>
+                <tr><td>美光 EPS</td><td>调整后 5.21 美元（超预期 4.78）</td><td>6/25 evening 盘后</td><td>美光官方公告</td></tr>
+                <tr><td>美光 FY26Q4 指引</td><td>175 亿美元（超预期 158 亿）</td><td>6/25 evening 盘后</td><td>美光官方公告</td></tr>
+                <tr><td>美光 evening 盘后</td><td>+15% 市值单日暴涨超 250 亿美元</td><td>6/25 evening</td><td>美光股价</td></tr>
+                <tr><td>6/25 16:00 美股</td><td>道指 51848.90 +0.35% / 纳指 25476.64 -0.43% / 标普 7358.22 -0.10%</td><td>6/25 16:00 美东</td><td>美股盘中</td></tr>
+                <tr><td>6/25 evening 美股</td><td>标普 500 几近收平 / 纳指 -0.46% / 苹果 -6% / 微软 -3.46% / 美光 +15%</td><td>6/25 evening</td><td>华尔街见闻早餐</td></tr>
+                <tr><td>存储股</td><td>闪迪 +24% / 西部数据 +4.90%</td><td>6/25 evening</td><td>财联社</td></tr>
+                <tr><td>芯片股</td><td>高通 +4% / AMD +2.5%</td><td>6/25 evening</td><td>财联社</td></tr>
+                <tr><td>美国 PCE</td><td>走高但略低于市场担忧的极值</td><td>6/25 evening</td><td>财联社</td></tr>
+                <tr><td>6/26 中概股</td><td>纳斯达克中国金龙指数 -2.74%</td><td>6/26 05:37</td><td>财联社</td></tr>
+                <tr><td>6/26 中概股普跌</td><td>阿里 -4.74% / 拼多多 -3.22% / 百度 -3.55% / 携程 -12.55%</td><td>6/26 05:37</td><td>财联社</td></tr>
+                <tr><td>美光目标价</td><td>10 家机构大幅上调</td><td>6/25 evening</td><td>财联社</td></tr>
+                <tr><td>谷歌 AI 人才 6/18</td><td>Noam Shazeer 离开 Google 加入 OpenAI</td><td>6/18 evening</td><td>钛媒体</td></tr>
+                <tr><td>谷歌 AI 人才 6/22</td><td>John Jumper（AlphaFold 核心人物）加入 Anthropic</td><td>6/22 evening</td><td>品玩</td></tr>
+                <tr><td>谷歌 AI 人才 6/25</td><td>Jonas Adler（AI 编程）+ Alexander Pritzel（AI 系统训练）将加入 Anthropic</td><td>6/25 14:34</td><td>智东西 / DoNews</td></tr>
+                <tr><td>中美经贸磋商 5/25</td><td>双方同意成立贸易理事会 + 对等降税</td><td>6/25</td><td>商务部</td></tr>
+                <tr><td>'十五五'规划</td><td>新型能源体系建设 + 西电东送 +8000 万千瓦</td><td>6/25</td><td>国家发改委 + 国家能源局</td></tr>
+                <tr><td>半年报预约</td><td>沪市 7/18 启动 + 中船特气拔得头筹</td><td>6/25 evening</td><td>上交所</td></tr>
+                <tr><td>联想服务器</td><td>芯片供应紧张 + 订单积压排队</td><td>6/26</td><td>联想集团回应</td></tr>
+                <tr><td>HN front 6/25 evening</td><td>Apple raises prices #18 619pt/885c + IBM sub-1nm #6 257pt/146c</td><td>6/25 22:00-21:00 UTC</td><td>HN Firebase API</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 撞车协议总结表（再次确认"主动剔除 X, 聚焦 Y"）</div>
+            <table class="data-table">
+                <tr><th>撞车源</th><th>已覆盖事件</th><th>6/26 morning 主动剔除（不重复）</th><th>6/26 morning 主动聚焦（新角度）</th></tr>
+                <tr><td>6/25 morning</td><td>6/24 OpenAI Jalapeño + 9 个月流片 / 6/24 Anthropic 指控阿里 / 6/24 高通 Dragonfly / 6/25 01:32 AI 行业晨报 / 6/24 隔夜美股涨跌不一 + 6/25 港股端午假期</td><td>OpenAI Jalapeño 完整细节 / Anthropic 指控阿里具体内容 / 高通 Dragonfly 路线图 / 6/25 AI 行业晨报 / 6/24 隔夜美股 / 6/25 港股端午假期</td><td>IBM 0.7nm + 苹果/微软双涨价 15-25% + 美光 FY26Q3 完整披露 + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐</td></tr>
+                <tr><td>6/25 afternoon</td><td>6/25 灵晟超算 / 6/25 创业板指突破 4000 点 / 6/25 09:47 港股正常开盘 / 6/25 11:25 智谱+华为 GLM-Image / 6/25 12:00 午间三角复盘</td><td>6/25 灵晟超算 / 6/25 创业板指突破 4000 点 / 6/25 09:47 港股正常开盘 / 6/25 11:25 智谱+华为 GLM-Image / 6/25 12:00 午间三角复盘</td><td>同上 5 个新角度（额外剔除灵晟超算 + 创业板指 4000 点 + 港股正常开盘数据 + 智谱+华为开源 GLM-Image + 午间收市前完整复盘）</td></tr>
+                <tr><td>6/25 evening</td><td>6/25 evening 港股大模型三段节奏 / 6/25 evening 收市完整复盘 / 6/25 Anthropic 指控阿里完整披露 / 6/25 evening 高通投资者日完整路线图 / HN front 6/25 06:00 UTC 6 条 AI 新晋</td><td>6/25 evening 港股大模型三段节奏 / 6/25 evening 收市完整复盘 / 6/25 Anthropic 指控阿里完整披露 / 6/25 evening 高通投资者日完整路线图 / HN front 6/25 06:00 UTC 6 条 AI 新晋</td><td>同上 5 个新角度（额外剔除 evening 港股大模型三段节奏 + evening 收市完整复盘 + Anthropic 指控阿里原始 6 项 + 阿里通义回应 + 高通投资者日 6 项 + 06:00 UTC HN front 6 条 AI 新晋）</td></tr>
+                <tr><td>6/25 21evening</td><td>6/25 evening 18:00 后港股 AI 板块收市完整复盘 - 智谱逆市涨 8.1% / 存储概念股逆势走强 / 6/25 Anthropic 指控阿里全链路完整披露 / 高通投资者日完整版 / 6/25 evening 美光 FY26Q3 财报完整披露 / HN front 6/25 12:00 UTC 6+2 条 AI 新晋</td><td>6/25 evening 18:00 后港股 AI 板块收市完整复盘 - 智谱逆市涨 8.1% / 存储概念股逆势走强 / 6/25 Anthropic 指控阿里全链路完整披露 / 高通投资者日完整版 / 6/25 evening 美光 FY26Q3 财报完整披露 / HN front 6/25 12:00 UTC 6+2 条 AI 新晋</td><td>同上 5 个新角度（额外剔除 evening 18:00 后港股 AI 板块收市复盘 + Anthropic 指控阿里全链路 + 高通投资者日完整版 + 美光 FY26Q3 + 12:00 UTC HN front 6+2 条 AI 新晋）</td></tr>
+            </table>
+        </div>
+
+        <div class="privacy-check">
+            <div class="section-title">🔒 隐私红线检查</div>
+            <p>✅ 无用户个人信息</p>
+            <p>✅ 无私人语气</p>
+            <p>✅ 无业务域名 / 资产 / 系统架构信息</p>
+            <p>✅ 无内部称呼 / 品牌标识</p>
+            <p>✅ 无 API key / 服务器配置</p>
+        </div>
+
+        <footer class="footer">
+            <p>数据来源：快科技 · 财联社 · 腾讯科技 · 钛媒体 App · 澎湃新闻 · 财闻海外资讯 · 苹果官方声明 · 微软 Xbox 涨价公告 · 智东西 · DoNews · TodayAI · 雪球 · 品玩 · 彭博社 · 华尔街见闻早餐 FM-Radio · 美光官方公告 · 陆家嘴财经早餐 · 商务部 · 国家发改委 · 国家能源局 · 上交所 · 联想集团 · HN Firebase API · 6/25 morning/afternoon/evening/21evening 4 份撞车源全有效主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-26 · AI 陪你看完今日简报 · morning 类型最强撞车源场景 4 份全有效</p>
+        </footer>
+    </div>
+</body>
+</html>
