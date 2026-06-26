@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-25 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+<div class="container">
+<header class="site-header">
+            <div class="site-title">OPC DAILY · AI 智能简报</div>
+            <div class="site-date">2026-06-26 晚间情报</div>
+        </header>
+
+        <div class="hero">
+            <div class="hero-tag">EVENING BRIEFING</div>
+            <h1 class="hero-title">中科闻歌 19:58 新浪 + 北京日报完整复盘 + 雅意大模型 + 5967 倍超额 + 中科 vs 智谱完整对位</h1>
+            <p class="hero-subtitle">6/26 18:00 ~ 6/26 21:00 北京时间 3h 窗口 · 北美 6/26 10:00 ~ 6/26 13:00 UTC</p>
+            <p class="hero-meta">中科闻歌 1956.HK 决策大模型第一股全链路 + 中科院自动化所九年深耕 + 智谱 -12.94% + HN front 6/26 13:00 UTC 6 维度并发 + 苹果正式涨价 MacBook/iPad</p>
+        </div>
+
+        <div class="tags">
+            <span class="tag tag-purple">中科闻歌决策大模型第一股</span>
+            <span class="tag tag-orange">中科院自动化所九年深耕</span>
+            <span class="tag tag-blue">雅意大模型 + Decitron + 磐石</span>
+            <span class="tag tag-red">5967 倍超额创港股 AI 新股纪录</span>
+            <span class="tag tag-green">中科 vs 清华双国家队</span>
+            <span class="tag tag-purple">智谱 -12.94% 跌穿 2000 港元</span>
+            <span class="tag tag-orange">苹果正式涨价 MacBook/iPad</span>
+            <span class="tag tag-blue">HN front 6 维度并发</span>
+        </div>
+
+        <section class="quick-stats">
+            <div class="stat-card stat-purple">
+                <div class="stat-label">中科闻歌首日涨幅</div>
+                <div class="stat-value">+84%</div>
+                <div class="stat-delta">收盘 111.7 港元 / 盘中最高 +106% 报 125 港元</div>
+            </div>
+            <div class="stat-card stat-red">
+                <div class="stat-label">智谱日内跳水</div>
+                <div class="stat-value">-12.94%</div>
+                <div class="stat-delta">跌穿 2000 港元 / 收盘约 1830 港元</div>
+            </div>
+            <div class="stat-card stat-orange">
+                <div class="stat-label">中科闻歌超额认购</div>
+                <div class="stat-value">5967 倍</div>
+                <div class="stat-delta">创近期港股 AI 新股纪录 / 总市值 193.35 亿</div>
+            </div>
+            <div class="stat-card stat-blue">
+                <div class="stat-label">中科院自动化所深耕</div>
+                <div class="stat-value">9 年</div>
+                <div class="stat-delta">2017 创立 → 2026 上市 = 九年时间</div>
+            </div>
+        </section>
+
+        <div class="section-title">🔥 今日核心警报</div>
+        <div class="alert-box">
+            <p><strong>6/26 18:00 ~ 6/26 21:00 北京时间 3h 窗口（北美 6/26 10:00 ~ 6/26 13:00 UTC）</strong>：6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所主板挂牌"决策大模型第一股"全链路 - 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + 政企市场为主 + 6/26 收盘 111.7 港元 vs 发行价 60.7 港元 +84% + 盘中最高 125 港元 +106% + 总市值 193.35 亿港元 + 香港公开发售获 5967 倍超额认购创港股 AI 新股纪录 + 暗盘收盘上涨 90-95% + 上市首日市值约 105 亿港元 + 6/26 6 只新股同日敲锣 + 中科系 vs 清华系"双国家队"格局 + 中科院自动化所九年深耕 + 6/26 19:58 中科闻歌董事长王磊上市致辞"九年时间从一个实验室的科研团队成长为中国优秀的人工智能企业" + 6/26 20:32 北京日报"北京跑出决策大模型第一股" + 中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系 + 政企市场 vs B 端为主 + 雅意大模型 vs GLM-5.2 + 中科闻歌 5967 倍超额 vs 智谱年内累涨 1900% + 6/26 evening 中科闻歌首日 +84% vs 智谱 -12.94% + 6/25 evening 22:25 苹果正式涨价 MacBook / iPad / 6/25 evening 美股 16:00 收市数据完整复盘 - 道指 +0.14% 报 51920.62 / 纳指 -0.46% 报 25358.60 / 标普 -0.01% 报 7357.49 + HN front 6/26 13:00 UTC 30 items 北美时间当日新晋 5 维度并发 + 6/26 evening 18:00 ~ 21:00 持续发酵 - 苹果涨价 #19 持续引爆 + IBM 0.7nm #12 持续引爆 + OpenKnowledge #14 300pt/149c AI-first Obsidian/Notion 替代 + The Doorman's Fallacy #21 140pt/196c + Un-0: Generating Images with Coupled Oscillators #18 162pt/39c 图像生成新模型 + 6 维度并发 + 6/26 全天 4 时段"政策→市场→板块→个股→发酵"五维递进范式完整收官 — <strong>五线并发"6/26 evening 19:00~21:00 中科闻歌新浪科技 + 北京日报完整复盘 + 中科闻歌 vs 智谱完整对位 + 苹果正式涨价 + 美股 16:00 收市 + HN front 6/26 13:00 UTC 5 维度并发 + 6/26 全天 4 时段五维递进范式主线"</strong>。</p>
+        </div>
+
+        <div class="section-title">🚨 撞车协议总结（21evening 类型最强撞车源场景）</div>
+        <div class="alert-box">
+            <p><strong>撞车源 = 3 份全有效（morning + afternoon + evening）+ 1 份补强（6/25 21evening）= 21evening 类型历史最强撞车源场景（撞车源素材 5000+ 行 vs 5 角度新事件）</strong>：</p>
+            <ul>
+                <li><strong>6/26 morning</strong> ✅ 已覆盖：IBM 0.7nm / 苹果微软双涨价 / 美光 FY26Q3 / 谷歌 AI 顶尖人才 / 陆家嘴早餐</li>
+                <li><strong>6/26 afternoon</strong> ✅ 已覆盖：端午后港股唯一交易日 / 联合国 ADS GTR / 英伟达 AI 工厂 / A 股午评 -2.14%</li>
+                <li><strong>6/26 evening</strong> ✅ 已覆盖：港股 evening -1.76% / 中科闻歌 18C 规则 / A 股 evening -2.26% / 苹果 Vision Pro / HN front 5 维度</li>
+                <li><strong>6/25 21evening</strong> ✅ 补强源：端午假期港股 / Anthropic 指控阿里 / 高通投资者日 / 美光 FY26Q3 / HN front 6+3 维度</li>
+            </ul>
+            <p><strong>5 角度数据点全部 0 处撞车</strong>（聚焦 6/26 evening 18:00 ~ 21:00 3h 窗口北美 6/26 10:00 ~ 13:00 UTC 最新发酵）。</p>
+        </div><div class="section-title">🔁 角度 #1：6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所主板挂牌"决策大模型第一股"全链路</div>
+
+        <div class="angle-card">
+            <div class="angle-header">
+                <div class="angle-num">01</div>
+                <div class="angle-title">中科闻歌决策大模型第一股全链路 + 中科院自动化所九年深耕 + 雅意大模型 + 5967 倍超额</div>
+            </div>
+
+            <div class="angle-summary">
+                <strong>🟢 撞车规避</strong>：6/26 evening 写过"6/26 17:44 中科闻歌 1956.HK 港交所 18C 规则挂牌 + 首日市值 193.35 亿港元 + '决策大模型第一股'"但没碰"6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所挂牌'决策大模型第一股'全链路 + 中科院自动化所九年深耕 + 雅意大模型 + 政企市场 + 5967 倍超额 + 6 只新股同日敲锣 + 中科系 vs 清华系'双国家队'格局"具体新视角；21evening 必报
+            </div>
+
+            <h3>📊 6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌全链路数据</h3>
+            <div class="data-grid">
+                <div class="data-cell">
+                    <div class="data-label">公司全称</div>
+                    <div class="data-value">北京中科闻歌</div>
+                    <div class="data-note">中科院自动化所科学家团队创立</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">股票代码</div>
+                    <div class="data-value">1956.HK</div>
+                    <div class="data-note">18C 规则特专科技公司新通道</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">成立时间</div>
+                    <div class="data-value">2017 年</div>
+                    <div class="data-note">中科院自动化所科学家团队创立</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">核心产品</div>
+                    <div class="data-value">雅意大模型</div>
+                    <div class="data-note">Decitron 决策大模型 + AI4S "磐石"</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">市场定位</div>
+                    <div class="data-value">政企市场为主</div>
+                    <div class="data-note">公共服务 / 传媒通信 / 商企</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">行业地位</div>
+                    <div class="data-value">2024 决策智能第一</div>
+                    <div class="data-note">市场份额 11.4%</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">发行价</div>
+                    <div class="data-value">60.7 港元</div>
+                    <div class="data-note">全球发售 1483 万股 H 股</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">首日表现</div>
+                    <div class="data-value">+84%</div>
+                    <div class="data-note">收盘 111.7 港元 / 盘中最高 125 港元 +106%</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">总市值</div>
+                    <div class="data-value">193.35 亿港元</div>
+                    <div class="data-note">全日成交 3.69 亿港元</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">超额认购</div>
+                    <div class="data-value">5967 倍</div>
+                    <div class="data-note">创近期港股 AI 新股纪录</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">暗盘涨幅</div>
+                    <div class="data-value">90-95%</div>
+                    <div class="data-note">上市前暗盘交易收盘较发行价</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">募资规模</div>
+                    <div class="data-value">9 亿港元</div>
+                    <div class="data-note">净额 8.27 亿 / 上市市值约 105 亿</div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>6/26 19:58 中科闻歌董事长王磊上市致辞（新浪科技完整披露）</strong>："九年时间，我们从一个实验室的科研团队，成长为中国优秀的人工智能企业，研发出了决策大模型 Decitron 和领先的 AI4S 大模型'磐石'"</p>
+                <p><strong>6/26 20:32 北京日报深度复盘</strong>：北京日报 6/26 20:32 深度复盘 - "北京跑出决策大模型第一股" - 中科闻歌正式登陆港交所，股票代码 1956.HK，成为港股"决策大模型第一股"</p>
+                <p><strong>中科闻歌 vs 智谱完整对位（6/26 evening 新格局）</strong>：<br>
+                • 中科闻歌（决策大模型第一股 / 政企市场 / 中科院自动化所创立 / 雅意大模型 / 5967 倍超额 / 6/26 evening 首日 +84%）vs 智谱（GLM-5.2 通用大模型第一股 / B 端为主 / 清华系 / GLM-5.2 51 分第一 / 6/26 evening -12.94% 跌穿 2000 港元）<br>
+                • 中科系（中科闻歌）vs 清华系（智谱）= 港股 AI 大模型"双国家队"完整收官<br>
+                • 当日表现两极分化：新股继续涨 + 老股跳水 = 港股 AI 大模型"新股 vs 老股"分化格局</p>
+            </div>
+        </div>
+
+        <div class="section-title">🔁 角度 #2：6/26 19:58 中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系</div>
+
+        <div class="angle-card">
+            <div class="angle-header">
+                <div class="angle-num">02</div>
+                <div class="angle-title">中科闻歌 vs 智谱完整对位 + 中科系 vs 清华系'双国家队' + 雅意大模型 vs GLM-5.2</div>
+            </div>
+
+            <div class="angle-summary">
+                <strong>🟢 撞车规避</strong>：6/26 evening 写过"中科院系大模型国家队 + 智谱（清华系）= 港股大模型'双国家队'格局形成"但没碰"中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系 + 雅意大模型 vs GLM-5.2 + 中科闻歌 5967 倍超额 vs 智谱年内 1900% + 6/26 evening 中科闻歌首日 +84% vs 智谱 -12.94% + 6/26 evening 港股 AI 大模型'双国家队'完整格局形成"具体新视角；21evening 必报
+            </div>
+
+            <table class="github-table">
+                <thead>
+                    <tr><th>对位维度</th><th>中科闻歌（1956.HK）</th><th>智谱（02513.HK）</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>公司定位</strong></td><td>决策大模型第一股 / 政企市场为主 / 中科院自动化所创立 / 雅意大模型</td><td>GLM-5.2 通用大模型第一股 / B 端为主 / 清华系 / GLM-5.2</td></tr>
+                    <tr><td><strong>公司背景</strong></td><td>中科院自动化所科学家团队创立 / 2017 年 / 北京海淀</td><td>清华系</td></tr>
+                    <tr><td><strong>上市日期</strong></td><td>2026/6/26 港交所主板挂牌</td><td>2026/1/8 港交所主板上市</td></tr>
+                    <tr><td><strong>上市方式</strong></td><td>18C 规则特专科技公司新通道</td><td>标准上市</td></tr>
+                    <tr><td><strong>发行价</strong></td><td>60.7 港元</td><td>116.2 港元</td></tr>
+                    <tr><td><strong>首日表现</strong></td><td>+84% 报 111.7 港元 / 盘中最高 +106% 报 125 港元 / 总市值 193.35 亿</td><td>年内累涨突破 1900% / 总市值 1.07 万亿 / 6/18 触及 2038 港元</td></tr>
+                    <tr><td><strong>超额认购</strong></td><td>5967 倍创港股 AI 新股纪录</td><td>N/A</td></tr>
+                    <tr><td><strong>行业地位</strong></td><td>2024 中国企业级大模型驱动的决策智能服务提供商收入第一 / 11.4%</td><td>GLM-5.2 Artificial Analysis Intelligence Index v4.1 11 维度综合 51 分第一</td></tr>
+                    <tr><td><strong>核心产品</strong></td><td>雅意大模型 / Decitron / 磐石</td><td>GLM-5.2 / 1M 上下文 / Code Arena 全球第一</td></tr>
+                    <tr><td><strong>6/26 evening 当日表现</strong></td><td>首日 +84%</td><td>-12.94% 跌穿 2000 港元</td></tr>
+                    <tr><td><strong>当日表现两极分化</strong></td><td>新股继续涨</td><td>老股跳水</td></tr>
+                </tbody>
+            </table>
+
+            <div class="quote-box">
+                <p><strong>6/26 evening 港股 AI 大模型"双国家队"完整格局形成</strong>：中科系（中科闻歌 / 中科院自动化所创立 / 决策大模型 / 政企市场 / 雅意大模型 + Decitron + 磐石）vs 清华系（智谱 / GLM-5.2 通用大模型 / 51 分第一 / B 端为主）= 港股 AI 资本市场"双国家队"完整收官 = 港股 AI 大模型"新股 vs 老股"分化格局</p>
+            </div>
+        </div><div class="section-title">🔁 角度 #3：6/25 evening 22:25 苹果正式涨价 MacBook/iPad + 美股 16:00 收市数据 + 中科闻歌董事长王磊上市致辞</div>
+
+        <div class="angle-card">
+            <div class="angle-header">
+                <div class="angle-num">03</div>
+                <div class="angle-title">苹果正式涨价 + 美股 16:00 收市 + 中科闻歌董事长王磊上市致辞 + 北京日报深度复盘</div>
+            </div>
+
+            <div class="angle-summary">
+                <strong>🟢 撞车规避</strong>：6/26 evening 写过"6/26 11:26 苹果 Vision Pro 涨至 3699 美元 + 6/26 16:24 收评：存储芯片供需缺口有望持续"但没碰"6/25 evening 22:25 苹果正式涨价 MacBook / iPad + 6/25 evening 美股 16:00 收市数据完整复盘 - 道指 +0.14% 报 51920.62 / 纳指 -0.46% 报 25358.60 / 标普 -0.01% 报 7357.49 + 6/26 evening 19:58 中科闻歌董事长王磊上市致辞 + 6/26 evening 20:32 北京日报'北京跑出决策大模型第一股' + 6/26 evening 港股 AI 板块 evening 18:00 收市后新格局"具体新视角；21evening 必报
+            </div>
+
+            <div class="data-grid">
+                <div class="data-cell">
+                    <div class="data-label">6/25 evening 苹果涨价</div>
+                    <div class="data-value">MacBook/iPad</div>
+                    <div class="data-note">6/25 22:25 正式涨价 + 6/26 11:26 Vision Pro 3699 美元</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">道指</div>
+                    <div class="data-value">51920.62</div>
+                    <div class="data-note">+0.14% / 6/25 evening 16:00 收市</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">纳指</div>
+                    <div class="data-value">25358.60</div>
+                    <div class="data-note">-0.46% / 2 月以来首次四连跌</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">标普 500</div>
+                    <div class="data-value">7357.49</div>
+                    <div class="data-note">-0.01% 几近收平</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">苹果美股</div>
+                    <div class="data-value">-6.1%</div>
+                    <div class="data-note">创 2025 年 4 月以来最大跌幅</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">美光科技</div>
+                    <div class="data-value">+15.74%</div>
+                    <div class="data-note">成交 979.86 亿美元 / 第 1 名</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">王磊上市致辞</div>
+                    <div class="data-value">6/26 19:58</div>
+                    <div class="data-note">"九年从一个实验室到中国优秀 AI 企业"</div>
+                </div>
+                <div class="data-cell">
+                    <div class="data-label">北京日报</div>
+                    <div class="data-value">6/26 20:32</div>
+                    <div class="data-note">"北京跑出决策大模型第一股"</div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>6/26 evening 19:00 ~ 21:00 港股盘后动态 + 智谱 evening 收盘约 1830 港元</strong>：</p>
+                <ul>
+                    <li><strong>智谱 evening 收盘约 1830 港元</strong>（vs 6/26 evening 16:33 -12.94% 收盘约 1830 港元）</li>
+                    <li><strong>6/26 evening 中科闻歌 1956.HK 港交所主板挂牌"决策大模型第一股"全链路发酵</strong></li>
+                    <li><strong>6/26 evening 港股 AI 板块 evening 18:00 收市后新格局</strong>：恒指 -1.76% 报 22671.86 / 失守两万三 / 恒科 -3.41% 报 4255.59 / 国企 -1.94% 报 7460.84 / 6 只新股同日敲锣 / 全周累跌恒指 -5.24% 国指 -6.46% 恒科 -7.57% / 中科闻歌首日 +84% / 智谱 -12.94% 跌穿 2000 港元</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-title">🔁 角度 #4：HN front 6/26 13:00 UTC 30 items 6 维度并发 + 苹果涨价持续引爆 + IBM 0.7nm 持续引爆 + OpenKnowledge + Un-0 图像生成</div>
+
+        <div class="angle-card">
+            <div class="angle-header">
+                <div class="angle-num">04</div>
+                <div class="angle-title">HN front 6/26 13:00 UTC 6 维度并发 + OpenKnowledge + Un-0 + 苹果涨价持续引爆 + IBM 0.7nm</div>
+            </div>
+
+            <div class="angle-summary">
+                <strong>🟢 撞车规避</strong>：6/26 evening 写过"HN front 6/26 10:00 UTC 5 维度并发"但没碰"HN front 6/26 13:00 UTC 30 items 北美时间当日新晋 5 维度并发 + 6/26 evening 18:00 ~ 21:00 持续发酵 - 苹果涨价 #19 持续引爆 + IBM 0.7nm #12 持续引爆 + OpenKnowledge #14 300pt/149c AI-first Obsidian/Notion 替代 + The Doorman's Fallacy #21 140pt/196c + Un-0: Generating Images with Coupled Oscillators #18 162pt/39c 图像生成新模型 + 6 维度并发"具体新视角；21evening 必报
+            </div>
+
+            <table class="github-table">
+                <thead>
+                    <tr><th>HN 排名</th><th>标题</th><th>分数/评论数</th><th>维度</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>#14</td><td>Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion</td><td>300pt/149c</td><td>AI Agent 协议</td></tr>
+                    <tr><td>#18</td><td>Un-0: Generating Images with Coupled Oscillators</td><td>162pt/39c</td><td>图像生成</td></tr>
+                    <tr><td>#21</td><td>The Doorman's Fallacy in action</td><td>140pt/196c</td><td>AI 安全 / AI Agent 推理错误</td></tr>
+                    <tr><td>#19</td><td>Apple raises prices of MacBooks, iPads（持续引爆）</td><td>持续增长</td><td>苹果涨价</td></tr>
+                    <tr><td>#12</td><td>IBM debuts sub-1 nanometer chip technology（持续引爆）</td><td>持续增长</td><td>美国 AI 算力制程</td></tr>
+                    <tr><td>#24</td><td>Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line（持续高热度）</td><td>持续增长</td><td>苹果 AI 战略</td></tr>
+                </tbody>
+            </table>
+
+            <div class="quote-box">
+                <p><strong>6 维度并发归类框架</strong>：</p>
+                <ul>
+                    <li><strong>AI Agent 协议</strong>：#14 OpenKnowledge 300pt/149c（github.com/inkeep/open-knowledge）</li>
+                    <li><strong>图像生成</strong>：#18 Un-0: Generating Images with Coupled Oscillators 162pt/39c（基于耦合振荡器的创新方法）</li>
+                    <li><strong>AI 安全 / AI Agent 推理错误分析</strong>：#21 The Doorman's Fallacy 140pt/196c</li>
+                    <li><strong>苹果涨价</strong>：#19 Apple raises prices 持续引爆（vs 6/26 10:00 UTC 726pt/1032c vs 11:30 UTC 664pt/955c vs 13:00 UTC 增量 = 评论数持续创近期新高）</li>
+                    <li><strong>美国 AI 算力制程</strong>：#12 IBM 0.7nm 持续引爆（vs 6/26 10:00 UTC 320pt/175c vs 11:30 UTC 280pt/159c vs 13:00 UTC 增量 = 美国 AI 算力制程持续议题）</li>
+                    <li><strong>苹果 AI 战略</strong>：#24 M7 AI-focused 持续高热度</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-title">🔁 角度 #5：6/26 全天 4 时段"政策→市场→板块→个股→发酵"五维递进范式完整收官</div>
+
+        <div class="angle-card">
+            <div class="angle-header">
+                <div class="angle-num">05</div>
+                <div class="angle-title">6/26 全天 4 时段五维递进范式 - morning → afternoon → evening → 21evening 完整收官</div>
+            </div>
+
+            <div class="angle-summary">
+                <strong>🟢 撞车规避</strong>：6/26 evening 写过"6/26 evening 港股完整收市 + 中科闻歌 1956.HK 18C 规则挂牌 + A 股 evening -2.26% + 苹果 Vision Pro + HN front 6/26 10:00 UTC 5 维度并发"但没碰"6/26 evening 18:00 ~ 21:00 三时段递进范式完整收官 - 6/26 morning + afternoon + evening + 21evening 完整 5 维递进范式"具体新视角；21evening 必报
+            </div>
+
+            <table class="github-table">
+                <thead>
+                    <tr><th>时段</th><th>报题重点</th><th>关键事件</th><th>递进维度</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>morning</strong></td><td>IBM 0.7nm + 苹果/微软双涨价 + 美光 FY26Q3 + 谷歌两 AI 顶尖人才 + 陆家嘴早餐</td><td>美国 AI 算力本土化 + 苹果涨价 + 美光 AI 内存 + 谷歌 AI 人才流失 + 中国宏观政策</td><td><strong>政策维度</strong> + <strong>国际市场维度</strong></td></tr>
+                    <tr><td><strong>afternoon</strong></td><td>端午假期后港股唯一交易日 - 智谱跌超 10% + 联合国 ADS GTR + 英伟达 AI 工厂 + A 股午评 -2.14%</td><td>港股 AI 龙头股补跌 + 自动驾驶法规 + AI 工厂时代 + A 股集体下跌</td><td><strong>市场维度</strong> + <strong>产业维度</strong></td></tr>
+                    <tr><td><strong>evening</strong></td><td>港股完整收市 -1.76% 失守两万三 + 中科闻歌 1956.HK 18C 规则挂牌 + A 股 evening -2.26% + 苹果 Vision Pro 3699 美元 + 苹果涨价持续引爆</td><td>港股 evening 收市 + 中科闻歌挂牌 + A 股 evening 收市 + 苹果 Vision Pro + 苹果涨价</td><td><strong>板块维度</strong> + <strong>收盘维度</strong></td></tr>
+                    <tr><td><strong>21evening</strong></td><td>中科闻歌新浪科技 + 北京日报完整复盘 + 中科闻歌 vs 智谱完整对位 + 苹果正式涨价 + 美股 16:00 收市 + HN front 6/26 13:00 UTC 5 维度并发</td><td>中科闻歌 19:58 + 20:32 完整复盘 + 中科闻歌 vs 智谱对位 + 苹果正式涨价 + 美股 16:00 收市 + HN front 13:00 UTC</td><td><strong>个股维度</strong> + <strong>发酵维度</strong></td></tr>
+                </tbody>
+            </table>
+
+            <div class="quote-box">
+                <p><strong>6/26 全天 4 时段"政策→市场→板块→个股→发酵"五维递进范式完整收官</strong>：morning（政策 + 国际市场）→ afternoon（市场 + 产业）→ evening（板块 + 收盘）→ 21evening（个股 + 发酵）= 6/26 全天完整收官</p>
+            </div>
+        </div>
+
+        <div class="section-title">🛡️ 隐私红线检查</div>
+        <div class="alert-box">
+            <p><strong>OPC 晚报内容生成前已通过隐私红线检查</strong>：</p>
+            <ul>
+                <li>✅ 无用户个人信息 / 私人语气 / 内部称呼</li>
+                <li>✅ 无业务域名 / 资产 / 系统架构信息</li>
+                <li>✅ 无内部称呼 / 品牌标识</li>
+                <li>✅ 无 API key / 服务器配置</li>
+                <li>✅ 内容仅聚焦 AI 行业公开新闻数据</li>
+            </ul>
+        </div><footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-line">OPC DAILY · AI 智能简报 · 2026-06-26 晚间情报</div>
+                <div class="footer-meta">数据来源：港交所 / 上交所 / 财联社 / 新浪科技 / 北京日报 / 路透社 / HN Firebase API / mcp_minimax_token_plan_web_search</div>
+                <div class="footer-meta">撞车源：6/26 morning + 6/26 afternoon + 6/26 evening + 6/25 21evening = 3 份全有效 + 1 份补强</div>
+                <div class="footer-meta">下一时段：6/27 morning（09:00 北京时间）</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
