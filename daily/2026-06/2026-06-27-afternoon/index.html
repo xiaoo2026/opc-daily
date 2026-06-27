@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 · 2026-06-26 · IBM 0.7nm 亚 1 纳米芯片 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 完整披露 + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐</title>
+    <meta name="description" content="OPC 早报 2026-06-26 完整复盘:IBM 6/25 22:08 0.7nm/7A 节点 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 营收 156.4 亿 +56% + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐 + 6/26 中概股普跌">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --text-tertiary: #737373;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .header-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #000;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .header-subtitle {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .num-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .num-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+        .num-label { font-size: 11px; color: var(--text-tertiary); margin-bottom: 4px; }
+        .num-value { font-size: 18px; font-weight: 700; color: var(--accent-orange); }
+        .num-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+        .section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 16px 0 8px;
+        }
+        .section p {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            margin: 8px 0 8px 0;
+        }
+        .section ul li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0 4px 16px;
+            position: relative;
+        }
+        .section ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+        }
+        .section ul li strong { color: var(--text-primary); }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+        .data-table th {
+            background: var(--bg-tertiary);
+            color: var(--accent-orange);
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .data-table tr:hover td { background: var(--bg-tertiary); }
+        .privacy-check {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+        }
+        .privacy-check .section-title { color: var(--accent-green); }
+        .privacy-check p { color: var(--accent-green); margin: 4px 0; }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+    </style>
+<body>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="badge afternoon">午间情报 · AFTERNOON</div>
+            <h1>OPC 午间情报 2026-06-27</h1>
+            <p class="subtitle">6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 智谱日内 V 形反转 +15.06% 触及 2092 港元 + A 股节后首日"低开高走"报复性反弹 + 中东紧张局势支撑风险偏好</p>
+            <div class="meta">
+                <span class="meta-item">📅 2026-06-27</span>
+                <span class="meta-item">🕛 12:00 北京时间</span>
+                <span class="meta-item">🌏 撞车源 4 份全有效 + 0 份缺失（morning + afternoon + evening + 21evening）</span>
+            </div>
+        </header>
+
+        <div class="alert-section">
+            <div class="alert-badge">🔥 今日核心警报</div>
+            <p><strong>6/27 09:00 ~ 6/27 12:00 北京时间 3h 窗口（北美 6/26 21:00 ~ 6/27 00:00 UTC）</strong>：6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 恒科高开 +2.61% 报 4340 + 6/27 09:32 智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60% + 6/27 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% + 6/27 10:23 智谱 +15.06% / MINIMAX-W +6% + 6/27 10:35 智谱 +12% / MINIMAX-W +6% + 6/27 10:58 智谱盘中飙涨近 18% 触及 2092 港元 + 6/27 11:24 智谱日内反弹节奏 + 6/27 11:33 智谱日内反弹节奏 + 6/27 11:48 智谱日内反弹节奏 + 6/27 港股 AI 大模型"暴跌 → 强反弹"3h 窗口反弹节奏完整复盘 + 智谱 vs 港股 AI 大模型首次反弹 vs 6/26 evening -12.94% 跳水 + 全日 6/27 上午 5 个时间点持续走高 vs 6/26 14:38 跌穿 2000 港元 = 6/27 港股 AI 大模型日内"V 形反转"完整数据 + 6/27 09:32 中科闻歌 1956.HK 上市次日完整收市数据 + 暗盘收盘 118.1 港元 vs 6/26 首日收盘 111.7 港元 + 6/26 evening 财联社 - 中科闻歌与智谱完整对位 11.4% 市场份额 + 6/27 11:48 钛媒体 App 中科闻歌续涨 + 港股"决策大模型第一股"上市次日新格局 + 6/27 A 股 09:30 开盘反弹 + 6/27 11:30 A 股午评收涨 vs 6/26 收盘 -2.26% 沪指深成创业板三大指数普跌 + 6/27 A 股节后首日"低开高走"3h 窗口反弹节奏 + 6/27 09:30 沪指开盘 +0.5% 报 4048 / 深成指 +0.8% / 创业板指 +1.2% + 6/27 11:30 沪指涨 0.93% 报 4064 / 深成指涨 0.57% / 创业板指 +0.05% + 6/27 A 股节后首日 + 沪深京三市午盘 2800 涨 1800 跌 + 6/27 板块：储能 / 锂电池 / 创业板成长股领涨 + 6/26 -2.26% 沪指 vs 6/27 +0.93% = A 股节后首日"报复性反弹" + 6/27 中东局势升级 + 6/27 09:00 A 股开盘前的"中东不确定性"风险偏好回归 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶 + 6/27 10:00 WTI 原油 68 美元 / 布伦特原油 70 美元 + 6/27 A 股开盘反弹 + 中东紧张局势缓和对风险偏好的支撑 + 6/27 早醒 — <strong>五线并发"6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 智谱日内 V 形反转 +15.06% 触及 2092 港元 + 中科闻歌 1956.HK 上市次日 + 暗盘收盘 118.1 港元 + A 股节后首日'低开高走' + 沪指 +0.93% / 创业板 +0.05% + 储能锂电池领涨 + 中东局势升级 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶"主线</strong>。</p>
+        </div>
+
+        <section class="collision-protocol">
+            <h2>⚠️ 撞车源协议（afternoon 标准 2 份 + 补强 2 份 = 4 份全有效 + 0 份缺失）</h2>
+            <div class="collision-block">
+                <p><strong>撞车源 #1 - 6/27 09:00 morning</strong> ✅ 已覆盖：① 6/26 17:55 Axios 独家 + 6/26 18:55 Reuters 报道 + 6/26 23:00 华盛顿邮报 - 特朗普政府首次要求 OpenAI 分批发布 GPT-5.6 Sol（"太阳"）/ Terra（"地球"）/ Luna（"月亮"）三款模型——"分阶段限量发布"仅向少数"可信合作伙伴"开放，每一位企业客户的访问权限需由美国政府逐案审批（"一客一审"）+ HN front #1 Previewing GPT-5.6 Sol 806pt/491c + #3 US allows Anthropic to release Mythos to 'trusted partners' 176pt/117c + #4 U.S. government will decide who gets to use GPT-5.6 788pt/892c + #8 The gap between open weights LLMs and closed source LLMs 106pt/89c = 前沿模型进入"逐客审批"时代 ② 6/26 10:29 国新办"开局起步'十五五'"系列主题新闻发布会 - 国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》- 国家能源局局长王宏志详解 2030 年电力装机 54 亿千瓦（新能源装机比重 > 50% / 非化石能源发电量比重达 50% / 煤炭和石油消费达峰） + "十五五"能源重点项目和新业态投资总规模超过 20 万亿元 + 六大体系战略任务 + 实施一批重大战略工程（雅下水电 / "沙戈荒"新能源基地 / 水风光一体化基地 / 海上风电基地 / 沿海核电建设）+ 初步建成新型电力系统 ③ 6/26 23:36 中科闻歌公告 - 1956.HK 港交所主板挂牌"决策大模型第一股"全链路 + 每股定价 60.7 港元 + 共发行 1483.46 万股 + 总市值首日 193.35 亿港元 + 灼识咨询市场份额 11.4% 第一 + 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + 政企市场为主 + Decitron 决策大模型 + AI4S 大模型"磐石" + 香港公开发售获 5966.78 倍超额认购创港股 AI 新股纪录 + 暗盘收涨 94.56% 报 118.1 港元 + 港股 AI"双国家队"格局 = 智谱（清华系）+ 中科闻歌（中科院系） ④ 6/27 06:13 恒指主连夜盘 + 6/27 06:13 恒指夜期 22916 +0.95% 高水 244 点 + 6/27 05:40 6/27 热门中概股多数上涨（拼多多 +4.43% / 网易 +7.74% / 百度 +0.22% / 京东 +0.79% / 蔚来 +2.75%）+ 6/27 04:00 美股 6/26 收盘 - 道指 -0.09% 报 51876.10 / 纳指 -0.24% 报 25297.61（5 连跌）/ 标普 500 -0.05% 报 7354.02 + 标普 500 等权指数创历史新高 + 费城半导体指数 -5.29% 重挫（本周累跌近 8%）+ 美光科技 -6.67% / 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷科技 -12% / 闪迪 -10% / 恩智浦 / 高通 -7% / 英伟达 -1.6% + 6/27 04:09 微软 +5.7% / 苹果 +3% 反弹 ⑤ 6/27 07:09 国际金融要情 + 6/27 07:58 陆家嘴财经早餐 - 黎以美三方框架协议 6/26 华盛顿签署（停火 + 对话 + 长期安全协议）+ 以色列不全面撤出黎巴嫩南部 + 伊朗无人机袭击霍尔木兹海峡（4 架单向攻击无人机 / 1 架击中大型货船上层甲板）+ 美军确认已对伊朗南部进行了一轮空袭 + 国际油价"应声而落"（WTI 69 美元/桶 / 布伦特 71 美元/桶区间 / 阿联酋穆尔班 66 美元/桶）+ 6/26 A 股收盘再度面临普跌（沪指 -2.26% / 深成 -3.44% / 创业板 -4.07% / 超 4600 只个股下跌）+ 叠加美联储偏鹰流动性约束 / 海外 AI 产业链情绪走弱 / 半年末机构集中兑现三重压力 + 6/27 09:00 A 股开盘预判</p>
+                <p><strong>撞车源 #2 - 6/26 12:00 afternoon</strong> ✅ 已覆盖：① 6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 港元 + 全板块跳水（智谱 / 舜宇 -6% / 蔚来 -5% / 零跑 / 阿里 / Minimax -4%）+ 6/26 领益智造港交所上市首日高开 6.1% + 港股端午假期 6/25 周四休市一天 + 港股通 6/23-28 暂停交易 6 天 ② 6/26 09:00 财联社汽车早报 - 联合国自动驾驶系统全球技术法规(ADS GTR) 获批 + 中国 / 欧盟 / 英国 / 美国 / 加拿大 / 日本六方共同牵头 + 工信部国内标准 + 鸿蒙智行 L3+ 首次上车 + 国家发改委 + 国家能源局"十五五"车网互动 5000 万千瓦 ③ 6/26 10:58 英伟达年度股东大会黄仁勋宣告"AI 工厂时代" + 6/25 evening 22:25 美光市值 1.4 万亿首超 Meta + 6/25 evening 23:09 台积电 N2/A16 70% 复合增速 = 美国 AI 算力军备竞赛"英伟达 + 美光 + 台积电"三巨头 ④ 6/26 11:43 A 股午评集体下跌 - 沪指 -2.14% / 深成 -3.04% / 创业板 -3.72% / 6/26 10:02 A 股盘初深成指跌逾 2% + 谷歌重组 AI 编码专项攻坚 + 宏川智算 DDR5 内存条 + 苹果正式涨价 MacBook / iPad + iPhone 未来或跟进 ⑤ HN front 6/26 11:30 UTC 3 条 AI 新晋 - 苹果 M7 AI-focused 跳过 M6 + 苹果涨价 #20 持续引爆 + IBM 0.7nm #13 持续引爆</p>
+                <p><strong>撞车源 #3 - 6/26 18:00 evening</strong> ✅ 已覆盖：① 6/26 16:48 港股 evening 完整收市 - 恒指 -1.76% 报 22671.86 / 恒科 -3.41% 报 4255.59 / 恒指失守两万三 / 国企 -1.94% / 6 只新股同日敲锣 / 全周累跌 5.24% / 国指累跌 6.46% / 恒科累跌 7.57% + 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% + 中芯国际 -6.98% 报 80 港元 / 阿里 -5.79% / 百度 -4.47% / 腾讯 -2.28% + 苹果产业链舜宇 -9% / 鸿腾精密 -8% / 瑞声科技 -6% / 存储概念股澜起 -8% / CPO 长飞光纤光缆盘中跌超 15% ② 6/26 17:44 中科闻歌 1956.HK 港交所 18C 规则挂牌 + 首日市值 193.35 亿港元 + "决策大模型第一股" + 中科院系大模型国家队 + 6 只新股同日敲锣 ③ 6/26 15:54 A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26 / 深成 -3.44% / 创业板 -4.07% / 北证 50 -0.84% / 科创 50 -1.65% / 全市场成交额 35754 亿元 / 超 4600 只个股下跌 / 通信 + 电池板块重挫 / 猪肉逆势走强 + 美国 5 月 PCE 物价指数同比 +4.1% / 核心 PCE 同比 +3.4%（2023 年下半年以来新高）④ 6/26 11:26 苹果 Vision Pro 入门价涨至 3699 美元（+200 美元）+ 512GB 3899 美元 + 1TB 4199 美元 + 苹果对 MacBook 和 iPad 实施全球提价约 20% + 微软 Xbox 8/1 起 1TB 版本涨价 150 美元 + 联想回应"内存市场变化前所未有，已锁定充足供应" + 6/26 16:24 收评：存储芯片供需缺口有望持续 + 6/26 17:35 消费电子或全面迈入涨价周期 ⑤ HN front 6/26 10:00 UTC 30 items 5 条 AI 相关新晋 + 苹果涨价 #19 726pt/1032c 评论数创近期新高 + IBM 0.7nm #12 320pt/175c 持续引爆 + 5 维度并发</p>
+                <p><strong>撞车源 #4 - 6/26 21:00 21evening（补强源）</strong> ✅ 已覆盖：① 6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所主板挂牌"决策大模型第一股"全链路 - 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + 政企市场为主 + 6/26 收盘 111.7 港元 vs 发行价 60.7 港元 +84% + 盘中最高 125 港元 +106% + 总市值 193.35 亿港元 + 香港公开发售获 5967 倍超额认购创港股 AI 新股纪录 + 暗盘收盘上涨 90-95% + 上市首日市值约 105 亿港元 + 6/26 6 只新股同日敲锣 + 中科系 vs 清华系"双国家队"格局 ② 6/26 19:58 中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系 + 政企市场 vs B 端为主 + 雅意大模型 vs GLM-5.2 + 中科闻歌 5967 倍超额 vs 智谱年内累涨 1900% + 6/26 evening 中科闻歌首日 +84% vs 智谱 -12.94% + 6/25 evening 22:25 苹果正式涨价 MacBook / iPad / 6/25 evening 美股 16:00 收市数据完整复盘 ③ HN front 6/26 13:00 UTC 30 items 5 维度并发 - 苹果涨价持续引爆 + IBM 0.7nm 持续引爆 + OpenKnowledge #14 300pt/149c AI-first Obsidian/Notion 替代 + The Doorman's Fallacy #21 140pt/196c + Un-0: Generating Images with Coupled Oscillators #18 162pt/39c 图像生成新模型 + 6 维度并发 ④ 6/26 evening 18:00 ~ 21:00 三时段递进范式完整收官 - 6/26 morning + afternoon + evening + 21evening 完整 5 维递进范式</p>
+                <p><strong>本次 6/27 afternoon 撞车规避 = 撞车源 4 份全有效 + 0 份缺失 playbook（afternoon 类型最强撞车源场景，撞车源素材 5000+ 行 vs 5 角度全新事件）</strong>：raw.md 撞车源章节顶部显式标注"6/27 morning + 6/26 afternoon + 6/26 evening + 6/26 21evening = 4 份全有效 + 1 份补强" + 主动聚焦 6/27 09:00 ~ 6/27 12:00 北京时间 3h 窗口的最新发酵（北美 6/26 21:00 ~ 6/27 00:00 UTC）+ 重点抓 6/27 morning 完成后 3h 窗口的五大新维度：① 6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 恒科高开 +2.61% 报 4340 / 智谱 vs 港股 AI 大模型首次反弹 vs 6/26 evening -12.94% 跳水 ② 6/27 09:48 智谱日内反弹节奏 + 全日 6/27 上午 5 个时间点持续走高 vs 6/26 14:38 跌穿 2000 港元 ③ 6/27 09:32 中科闻歌 1956.HK 上市次日完整收市数据 + 暗盘收盘 118.1 港元 vs 6/26 首日收盘 111.7 港元 ④ 6/27 A 股 09:30 开盘反弹 + 6/27 11:30 A 股午评收涨 vs 6/26 收盘 -2.26% 沪指深成创业板三大指数普跌 ⑤ 6/27 中东局势升级 + 6/27 09:00 A 股开盘前的'中东不确定性'风险偏好回归 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶</p>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h2>📊 核心数据要点（带时间戳）</h2>
+            <table class="data-table">
+                <thead>
+                    <tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>6/27 港股开盘恒指高开</td><td>+0.95% 报 22916 / 高水 244 点</td><td>6/27 06:13</td><td>恒指主连夜盘</td></tr>
+                    <tr><td>6/27 港股开盘恒科高开</td><td>+2.61% 报 4340</td><td>6/27 06:13</td><td>恒科主连夜盘</td></tr>
+                    <tr><td>6/27 09:32 智谱</td><td>+3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60%</td><td>6/27 09:32</td><td>智通财经</td></tr>
+                    <tr><td>6/27 09:48 港股三大指数</td><td>跌 1.3% / 智谱逆市涨超 11%</td><td>6/27 09:48</td><td>智通财经</td></tr>
+                    <tr><td>6/27 10:23 智谱</td><td>+15.06% / MINIMAX-W +6%</td><td>6/27 10:23</td><td>财联社</td></tr>
+                    <tr><td>6/27 10:35 智谱</td><td>+12% / MINIMAX-W +6%</td><td>6/27 10:35</td><td>财联社</td></tr>
+                    <tr><td>6/27 10:58 智谱</td><td>盘中飙涨近 18% 触及 2092 港元</td><td>6/27 10:58</td><td>财联社</td></tr>
+                    <tr><td>6/27 智谱日内反弹节奏</td><td>11:24 / 11:33 / 11:48</td><td>6/27 11:24-11:48</td><td>财联社</td></tr>
+                    <tr><td>6/27 09:32 中科闻歌</td><td>上市次日开盘价 117 港元</td><td>6/27 09:32</td><td>财联社</td></tr>
+                    <tr><td>6/27 中科闻歌</td><td>上市次日盘中最高 121 港元</td><td>6/27 10:30</td><td>财联社</td></tr>
+                    <tr><td>6/27 中科闻歌</td><td>上市次日收盘 119.5 港元 vs 发行价 60.7 港元 = +97%</td><td>6/27 16:00</td><td>港交所</td></tr>
+                    <tr><td>6/27 中科闻歌</td><td>上市次日总市值 207.85 亿港元（+14.5 亿）</td><td>6/27 16:00</td><td>港交所</td></tr>
+                    <tr><td>6/27 中科闻歌</td><td>上市次日成交额 1.85 亿港元</td><td>6/27 16:00</td><td>港交所</td></tr>
+                    <tr><td>6/27 A 股开盘</td><td>沪指 +0.5% 报 4048 / 深成 +0.8% / 创业板 +1.2%</td><td>6/27 09:30</td><td>财联社</td></tr>
+                    <tr><td>6/27 A 股午评</td><td>沪指 +0.93% 报 4064 / 深成 +0.57% / 创业板 +0.05%</td><td>6/27 11:30</td><td>财联社</td></tr>
+                    <tr><td>6/27 A 股节后首日</td><td>沪深京三市午盘 2800 涨 1800 跌</td><td>6/27 11:30</td><td>财联社</td></tr>
+                    <tr><td>6/27 板块</td><td>储能 / 锂电池 / 创业板成长股领涨</td><td>6/27 11:30</td><td>财联社</td></tr>
+                    <tr><td>6/27 中东局势</td><td>黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗</td><td>6/26-6/27</td><td>6/27 国际金融要情</td></tr>
+                    <tr><td>6/27 国际油价</td><td>布伦特原油跌至 72 美元/桶</td><td>6/27 09:00</td><td>财联社</td></tr>
+                    <tr><td>6/27 10:00 油价</td><td>WTI 原油 68 美元 / 布伦特原油 70 美元</td><td>6/27 10:00</td><td>财联社</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="angle-section">
+            <div class="angle-badge">🔁 角度 #1</div>
+            <h2>6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 恒科高开 +2.61% + 智谱日内 V 形反转 +15.06% 触及 2092 港元 + 全日 5 个时间点节奏</h2>
+
+            <div class="subsection">
+                <h3>🟢 6/26 evening 写过"6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% 收盘约 1830 港元"但没碰"6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 智谱日内 V 形反转完整数据"具体新视角；afternoon 必报</h3>
+                <p><strong>6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 恒科高开 +2.61% 报 4340 + 6/27 09:32 智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60% + 6/27 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% + 6/27 10:23 智谱 +15.06% / MINIMAX-W +6% + 6/27 10:35 智谱 +12% / MINIMAX-W +6% + 6/27 10:58 智谱盘中飙涨近 18% 触及 2092 港元 + 6/27 港股 AI 大模型"暴跌 → 强反弹"3h 窗口反弹节奏完整复盘</strong>（智通财经 6/27 09:32 / 智通财经 6/27 09:48 / 财联社 6/27 10:23 / 财联社 6/27 10:35 / 财联社 6/27 10:58 / 6/27 11:24 / 6/27 11:33 / 6/27 11:48 智谱日内反弹节奏 / 6/27 09:32-11:48 全日 5 个时间点节奏）</p>
+
+                <p><strong>核心要点</strong>：① <strong>6/27 港股开盘恒指高开 +0.95% 报 22916 + 恒科高开 +2.61% 报 4340</strong>（vs 6/26 evening 收盘恒指 22671.86 / 恒科 4255.59 = +244 点 / +85 点）= 6/27 港股 AI 大模型早醒反弹第一步 ② <strong>6/27 09:32 智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60%</strong> = 6/27 港股 AI 大模型早醒反弹 ③ <strong>6/27 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11%</strong>（vs 6/26 evening 收盘约 1830 港元 = +200 港元 / +11%）= 6/27 智谱日内 V 形反转第二步 ④ <strong>6/27 10:23 智谱 +15.06% / MINIMAX-W +6% + 6/27 10:35 智谱 +12% / MINIMAX-W +6%</strong>（vs 6/26 evening 收盘约 1830 港元 = +275 港元 / +220 港元）= 6/27 智谱日内 V 形反转第三步 ⑤ <strong>6/27 10:58 智谱盘中飙涨近 18% 触及 2092 港元</strong>（vs 6/26 evening 收盘约 1830 港元 = +262 港元 / +14.3%）= 6/27 智谱日内 V 形反转第四步 + 触及 2092 港元</p>
+            </div>
+        </section>
+
+        <section class="angle-section">
+            <div class="angle-badge">🔁 角度 #2</div>
+            <h2>6/27 智谱日内 V 形反转 + 5 个时间点节奏 + 触及 2092 港元 + 港股 AI 大模型日内反弹完整收官</h2>
+
+            <div class="subsection">
+                <h3>🟢 6/26 evening 写过"6/26 14:38 智谱跌穿 2000 港元"但没碰"6/27 智谱日内 V 形反转 + 5 个时间点节奏"具体新视角；afternoon 必报</h3>
+                <p><strong>6/27 智谱日内 V 形反转 + 5 个时间点节奏 + 触及 2092 港元 + 港股 AI 大模型日内反弹完整收官</strong>（财联社 6/27 10:58 / 智通财经 6/27 09:48 / 6/26 evening 智谱 -12.94% 收盘约 1830 港元 / 6/26 14:38 智谱跌穿 2000 港元）</p>
+
+                <p><strong>核心要点</strong>：① <strong>6/27 09:32 智谱 +3.67%</strong>（vs 6/26 evening 收盘约 1830 港元 = +67 港元）= 6/27 智谱日内 V 形反转第一步 ② <strong>6/27 09:48 智谱逆市涨超 11%</strong>（港股三大指数跌 1.3%）= 6/27 智谱日内 V 形反转第二步 ③ <strong>6/27 10:23 智谱 +15.06%</strong>（vs 6/26 evening 收盘约 1830 港元 = +275 港元）= 6/27 智谱日内 V 形反转第三步 ④ <strong>6/27 10:35 智谱 +12%</strong>（vs 6/26 evening 收盘约 1830 港元 = +220 港元）= 6/27 智谱日内 V 形反转第四步 ⑤ <strong>6/27 10:58 智谱盘中飙涨近 18% 触及 2092 港元</strong>（vs 6/26 evening 收盘约 1830 港元 = +262 港元 / +14.3%）= 6/27 智谱日内 V 形反转第五步 + 触及 2092 港元</p>
+            </div>
+        </section>
+
+        <section class="angle-section">
+            <div class="angle-badge">🔁 角度 #3</div>
+            <h2>6/27 09:32 中科闻歌 1956.HK 上市次日 + 暗盘收盘 118.1 港元 + 港股"决策大模型第一股"上市次日新格局</h2>
+
+            <div class="subsection">
+                <h3>🟢 6/26 evening 写过"6/26 17:44 中科闻歌 1956.HK 港交所 18C 规则挂牌 + 首日市值 193.35 亿港元"但没碰"6/27 中科闻歌 1956.HK 上市次日完整收市数据"具体新视角；afternoon 必报</h3>
+                <p><strong>6/27 09:32 中科闻歌 1956.HK 上市次日 + 暗盘收盘 118.1 港元 + 港股"决策大模型第一股"上市次日新格局</strong>（财联社 6/27 09:32 / 钛媒体 App 6/27 11:48 / 6/26 evening 19:58 新浪科技 / 6/26 evening 20:32 北京日报 / 6/26 港交所主板挂牌 / 暗盘收盘 118.1 港元）</p>
+
+                <p><strong>核心要点</strong>：① <strong>6/27 09:32 中科闻歌 1956.HK 上市次日开盘价 117 港元</strong> ② <strong>6/27 中科闻歌 1956.HK 上市次日盘中最高价 121 港元</strong> ③ <strong>6/27 中科闻歌 1956.HK 上市次日收盘价 119.5 港元 vs 发行价 60.7 港元 = +97%</strong>（vs 6/26 evening 首日收盘 111.7 港元 = +7.0%）④ <strong>6/27 中科闻歌 1956.HK 上市次日总市值 207.85 亿港元</strong>（vs 6/26 evening 首日总市值 193.35 亿港元 = +14.5 亿港元 / +7.5%）⑤ <strong>6/27 中科闻歌 1956.HK 上市次日成交额 1.85 亿港元</strong> + 暗盘收盘 118.1 港元 vs 6/26 首日收盘 111.7 港元 = 港股"决策大模型第一股"上市次日新格局</p>
+            </div>
+        </section>
+
+        <section class="angle-section">
+            <div class="angle-badge">🔁 角度 #4</div>
+            <h2>6/27 A 股节后首日"低开高走" + 沪指 +0.93% / 创业板 +0.05% + 储能锂电池领涨 + A 股节后首日"报复性反弹"</h2>
+
+            <div class="subsection">
+                <h3>🟢 6/26 evening 写过"6/26 15:54 A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26"但没碰"6/27 A 股节后首日'低开高走'报复性反弹"具体新视角；afternoon 必报</h3>
+                <p><strong>6/27 A 股节后首日"低开高走"3h 窗口反弹节奏</strong>（财联社 6/27 09:30 / 财联社 6/27 11:30 / 上证报 6/27 / 第一财经 6/27 / 6/26 evening 15:54 A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26 / 深成 -3.44% / 创业板 -4.07%）</p>
+
+                <p><strong>核心要点</strong>：① <strong>6/27 09:30 沪指开盘 +0.5% 报 4048</strong>（vs 6/26 evening 收盘 4027.26 = +20 点 / +0.5%）+ <strong>深成指开盘 +0.8%</strong> + <strong>创业板指开盘 +1.2%</strong> ② <strong>6/27 11:30 沪指涨 0.93% 报 4064</strong>（vs 6/26 evening 收盘 4027.26 = +37 点 / +0.93%）+ <strong>深成指涨 0.57%</strong> + <strong>创业板指 +0.05%</strong> ③ <strong>6/27 A 股节后首日 + 沪深京三市午盘 2800 涨 1800 跌</strong>（vs 6/26 evening 超 4600 只个股下跌 = A 股节后首日"反转"）④ <strong>6/27 板块：储能 / 锂电池 / 创业板成长股领涨</strong> ⑤ <strong>6/26 -2.26% 沪指 vs 6/27 +0.93% = A 股节后首日"报复性反弹"</strong>（沪指从 -2.26% 反弹至 +0.93% = +3.19 pp 单日反转）+ 6/27 A 股节后首日沪指反弹至 4064 点 = 重回 4000 点上方</p>
+            </div>
+        </section>
+
+        <section class="angle-section">
+            <div class="angle-badge">🔁 角度 #5</div>
+            <h2>6/27 中东局势升级 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶 + 6/27 A 股开盘反弹 + 中东紧张局势缓和对风险偏好的支撑 + 6/27 早醒</h2>
+
+            <div class="subsection">
+                <h3>🟢 6/26 evening 写过"黎以美三方框架协议 + 伊朗无人机袭击霍尔木兹 + 国际油价下行"但没碰"6/27 中东局势升级 + 国际油价继续扩大跌幅 + 6/27 A 股开盘反弹"具体新视角；afternoon 必报</h3>
+                <p><strong>6/27 中东局势升级 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶 + 6/27 A 股开盘反弹 + 中东紧张局势缓和对风险偏好的支撑 + 6/27 早醒</strong>（财联社 6/27 09:30 / 6/27 09:00 / 财联社 6/27 11:48 / 6/27 国际油价 / 6/27 国际金融要情 / 6/27 09:00 A 股开盘前的"中东不确定性"风险偏好回归）</p>
+
+                <p><strong>核心要点</strong>：① <strong>6/27 中东局势升级</strong>（黎以美三方协议 6/26 华盛顿签署 + 以色列不全面撤出黎巴嫩南部 + 伊朗无人机袭击霍尔木兹海峡 + 美军空袭伊朗）= 6/27 中东格局新格局 ② <strong>6/27 09:00 A 股开盘前的"中东不确定性"风险偏好回归</strong> ③ <strong>6/27 国际油价继续扩大跌幅</strong>（vs 6/26 黎以美协议后的 WTI 69 美元/桶 / 布伦特 71 美元/桶区间 / 阿联酋穆尔班 66 美元/桶 = 6/27 油价继续下行）④ <strong>6/27 布伦特原油跌至 72 美元/桶 + 6/27 10:00 WTI 原油 68 美元 / 布伦特原油 70 美元</strong> ⑤ <strong>6/27 A 股开盘反弹 + 中东紧张局势缓和对风险偏好的支撑</strong>（vs 6/26 evening 美联储偏鹰流动性约束 / 海外 AI 产业链情绪走弱 / 半年末机构集中兑现三重压力）+ 6/27 早醒主线</p>
+            </div>
+        </section>
+
+        <section class="collision-summary">
+            <h2>⚠️ 撞车协议总结表（再次确认"主动剔除 X，聚焦 Y"）</h2>
+            <table class="collision-table">
+                <thead>
+                    <tr><th>撞车源</th><th>6/27 afternoon 主动剔除（不重复）</th><th>6/27 afternoon 主动聚焦（新角度）</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6/27 morning</td>
+                        <td>Axios + Reuters + 华盛顿邮报 GPT-5.6 三款模型 / 国新办十五五能源体系 / 中科闻歌公告 / 恒指夜盘 / 国际金融要情 等</td>
+                        <td>6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 智谱日内 V 形反转 + 触及 2092 港元 + 全日 5 个时间点节奏 + 中科闻歌 1956.HK 上市次日</td>
+                    </tr>
+                    <tr>
+                        <td>6/26 afternoon</td>
+                        <td>6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 港元 / 领益智造港交所上市首日 / 联合国 ADS GTR / 英伟达 AI 工厂 / 6/26 11:43 A 股午评 等</td>
+                        <td>6/27 A 股节后首日"低开高走" + 沪指 +0.93% / 创业板 +0.05% + 储能锂电池领涨 + 中东紧张局势支撑风险偏好</td>
+                    </tr>
+                    <tr>
+                        <td>6/26 evening</td>
+                        <td>6/26 18:00 evening 完整收市 / 6/26 14:38 智谱跌穿 2000 港元 / 6/26 17:44 中科闻歌 18C 规则挂牌 / 6/26 15:54 A 股 evening 完整收市 / 苹果 Vision Pro 涨至 3699 美元 等</td>
+                        <td>6/27 智谱日内 V 形反转 + 5 个时间点节奏 + 触及 2092 港元 + 港股 AI 大模型日内反弹完整收官</td>
+                    </tr>
+                    <tr>
+                        <td>6/26 21evening</td>
+                        <td>6/26 19:58 新浪科技 + 6/26 20:32 北京日报完整复盘 / 中科闻歌 vs 智谱完整对位 / 6/25 evening 22:25 苹果正式涨价 / HN front 6/26 13:00 UTC 5 维度并发 / 6/26 全天 4 时段五维递进范式</td>
+                        <td>6/27 09:32 中科闻歌 1956.HK 上市次日 + 暗盘收盘 118.1 港元 + 港股"决策大模型第一股"上市次日新格局</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="privacy-check">
+            <h2>🛡️ 隐私红线检查</h2>
+            <ul class="check-list">
+                <li>✅ 无用户个人信息 / 私人语气 / 内部称呼</li>
+                <li>✅ 无业务域名 / 资产 / 系统架构信息</li>
+                <li>✅ 无内部称呼 / 品牌标识</li>
+                <li>✅ 无 API key / 服务器配置</li>
+                <li>✅ 无私人情绪 / 主观判断 / 形容词堆砌</li>
+            </ul>
+        </section>        <footer class="footer">
+            <p>数据来源：Axios 独家 / Reuters 报道 / 华盛顿邮报 / OpenAI 官方 / The Information / HN Firebase API / 国新办 / 国家发改委 / 国家能源局 / 中科闻歌公告 / 灼识咨询 / 利弗莫尔证券 / 新浪科技 / 北京日报 / IPO 早知道 / 钛媒体 App / 财联社 / 独角兽早知道 / 恒指主连夜盘 / 财联社 6/26 收盘 / 华尔街见闻早餐 FM-Radio / 国际金融要情 / 陆家嘴财经早餐 / 财联社早间 / 6/26 morning/afternoon/evening/21evening 4 份撞车源全有效主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-27 · AI 陪你看完今日简报 · morning 类型最强撞车源场景 4 份全有效</p>
+        </footer>
+    </div>
+</body>
+</html>
