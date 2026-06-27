@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 · 2026-06-26 · IBM 0.7nm 亚 1 纳米芯片 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 完整披露 + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐</title>
+    <meta name="description" content="OPC 早报 2026-06-26 完整复盘:IBM 6/25 22:08 0.7nm/7A 节点 + 苹果/微软双涨价 15-25% + 美光 FY26Q3 营收 156.4 亿 +56% + 谷歌两 AI 顶尖人才加入 Anthropic + 6/26 陆家嘴财经早餐 + 6/26 中概股普跌">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --text-tertiary: #737373;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .header-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #000;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .header-subtitle {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .num-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .num-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+        .num-label { font-size: 11px; color: var(--text-tertiary); margin-bottom: 4px; }
+        .num-value { font-size: 18px; font-weight: 700; color: var(--accent-orange); }
+        .num-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+        .section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 16px 0 8px;
+        }
+        .section p {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            margin: 8px 0 8px 0;
+        }
+        .section ul li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0 4px 16px;
+            position: relative;
+        }
+        .section ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+        }
+        .section ul li strong { color: var(--text-primary); }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+        .data-table th {
+            background: var(--bg-tertiary);
+            color: var(--accent-orange);
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .data-table tr:hover td { background: var(--bg-tertiary); }
+        .privacy-check {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+        }
+        .privacy-check .section-title { color: var(--accent-green); }
+        .privacy-check p { color: var(--accent-green); margin: 4px 0; }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-badge">OPC 早报 · 09:00</span>
+            <h1>OPC 早报 · 2026-06-27 · GPT-5.6 三款模型分阶段限量发布 + 国新办"十五五"能源体系 20 万亿 + 中科闻歌 5966.78 倍超额 + 6/27 早醒港股 + 中东局势升级</h1>
+            <div class="header-meta">📅 2026-06-27 | 🕘 09:00 | 类型：morning | 覆盖：6/26 22:00 ~ 6/27 09:00 北京时间 11h 窗口（北美 6/26 14:00 ~ 6/26 21:00 UTC）</div>
+            <div class="header-subtitle">⚠️ <strong>撞车源 = 4 份全有效（morning 类型最强撞车源场景，撞车源素材 5000+ 行 vs 5 角度新事件）</strong>：6/26 morning + 6/26 afternoon + 6/26 evening + 6/26 21evening = 4 份全有效，主动聚焦 6/26 22:00 ~ 6/27 09:00 北京时间 11h 窗口最新发酵。5 大新维度：① GPT-5.6 三款模型分阶段限量发布（"逐客审批"时代）② 国新办"十五五"能源体系战略完整披露 ③ 中科闻歌 5966.78 倍超额创港股 AI 新股纪录 ④ 6/27 早醒港股 + 美股期指 + 中概股三线反弹 ⑤ 中东局势升级 + 6/26 A 股收盘普跌复盘。</div>
+        </div>
+
+        <div class="num-grid">
+            <div class="num-card"><div class="num-label">GPT-5.6 三款模型</div><div class="num-value">Sol/Terra/Luna</div><div class="num-sub">分阶段限量发布 + 一客一审</div></div>
+            <div class="num-card"><div class="num-label">HN front #1</div><div class="num-value">806pt</div><div class="num-sub">Previewing GPT-5.6 Sol</div></div>
+            <div class="num-card"><div class="num-label">HN front #4</div><div class="num-value">788pt/892c</div><div class="num-sub">U.S. decide GPT-5.6</div></div>
+            <div class="num-card"><div class="num-label">2030 电力装机</div><div class="num-value">54 亿千瓦</div><div class="num-sub">新能源占比 >50%</div></div>
+            <div class="num-card"><div class="num-label">"十五五"能源投资</div><div class="num-value">20 万亿</div><div class="num-sub">王宏志 6/26 国新办发布</div></div>
+            <div class="num-card"><div class="num-label">中科闻歌超额</div><div class="num-value">5966.78x</div><div class="num-sub">创港股 AI 新股纪录</div></div>
+            <div class="num-card"><div class="num-label">中科闻歌首日</div><div class="num-value">+84%</div><div class="num-sub">111.7 港元 / 总市值 193.35 亿</div></div>
+            <div class="num-card"><div class="num-label">恒指夜期</div><div class="num-value">+0.95%</div><div class="num-sub">22916 高水 244 点</div></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源协议（4 份全有效）</div>
+            <p>本次 6/27 morning 撞车规避 = 撞车源 4 份全有效 + 0 份缺失 playbook（morning 类型最强撞车源场景）：</p>
+            <ul>
+                <li><strong>6/26 09:00 morning</strong> ✅ 已覆盖：① 6/25 22:08 IBM 0.7nm 亚 1 纳米芯片 + 三维纳米堆叠 + 性能 +50% / 能效 +70% / HN front #13 280pt ② 6/25 21:11 苹果 + 微软双涨价 15-25% / 国行 20% + 苹果官方表态"AI 数据中心内存芯片成本" ③ 6/25 evening 美光 FY26Q3 完整披露 - 营收 156.4 亿 +56% / EPS 5.21 / FY26Q4 指引 175 亿 + 隔夜美股苹果 -6% 盖过美光利好 + 标普 500 几近收平 + 芯片股分化 ④ 6/25 14:34 谷歌两 AI 顶尖人才 Jonas Adler + Alexander Pritzel 离开 Google 加入 Anthropic + 48 小时 3 步走（Jumper + Shazeer + Adler + Pritzel）⑤ 6/26 07:22 陆家嘴财经早餐 + 6/26 08:10 财联社早间新闻精选 - 苹果/微软/IBM 三连发 + 中美经贸磋商 5/25 共识（贸易理事会 + 对等降税）+ 国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》+ 西电东送 8000 万千瓦 + 大型新能源基地与国家算力枢纽协同布局 + 联想服务器芯片供应紧张 + 6/26 05:37 纳斯达克中国金龙指数收跌 2.74%</li>
+                <li><strong>6/26 12:00 afternoon</strong> ✅ 已覆盖：① 6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 港元 + 全板块跳水（智谱 / 舜宇 / 蔚来 / 零跑 / 阿里 / Minimax -4%）+ 6/26 领益智造港交所上市首日高开 6.1% + 港股端午假期 6/25 周四休市一天 + 港股通 6/23-28 暂停交易 6 天 + 港股 AI 龙头股补跌新格局 ② 6/26 09:00 财联社汽车早报 - 联合国自动驾驶系统全球技术法规(ADS GTR) 获批 + 中国 / 欧盟 / 英国 / 美国 / 加拿大 / 日本六方共同牵头 + 工信部国内标准 + 鸿蒙智行 L3+ 首次上车 + 国家发改委 + 国家能源局"十五五"车网互动 5000 万千瓦 ③ 6/26 10:58 英伟达年度股东大会黄仁勋宣告"AI 工厂时代" + 6/25 evening 22:25 美光市值 1.4 万亿首超 Meta + 6/25 evening 23:09 台积电 N2/A16 70% 复合增速 = 美国 AI 算力军备竞赛"英伟达 + 美光 + 台积电"三巨头对位 ④ 6/26 11:43 A 股午评集体下跌 - 沪指 -2.14% / 深成 -3.04% / 创业板 -3.72% + 6/26 22:14 谷歌重组 AI 编码专项攻坚 + 6/25 evening 22:55 宏川智算 DDR5 内存条 + 6/25 evening 22:25 苹果正式涨价 MacBook / iPad + iPhone 未来或跟进 ⑤ HN front 6/26 11:30 UTC 3 条 AI 新晋 - 苹果 M7 AI-focused 跳过 M6 + 苹果涨价 #20 持续引爆 + IBM 0.7nm #13 持续引爆 + 5 维度并发</li>
+                <li><strong>6/26 18:00 evening</strong> ✅ 已覆盖：① 6/26 16:48 港股 evening 完整收市 - 恒指 -1.76% 报 22671.86 / 恒科 -3.41% 报 4255.59 / 恒指失守两万三 / 国企 -1.94% 报 7460.84 / 6 只新股同日敲锣 / 全周累跌 5.24% / 国指累跌 6.46% / 恒科累跌 7.57% + 6/26 14:38 智谱跌穿 2000 港元关键价位 + 6/26 16:33 智谱 -12.94% + 中芯国际 -6.98% 报 80 港元 / 阿里 -5.79% / 百度 -4.47% / 腾讯 -2.28% + 苹果产业链舜宇 -9% / 鸿腾精密 -8% / 瑞声科技 -6% / 存储概念股澜起 -8% / CPO 长飞光纤光缆盘中跌超 15% ② 6/26 17:44 中科闻歌 1956.HK 港交所 18C 规则挂牌 + 首日市值 193.35 亿港元 + "决策大模型第一股" + 中科院系大模型国家队 + 6/26 6 只新股同日敲锣 ③ 6/26 15:54 A 股 evening 完整收市 - 沪指 -2.26% 报 4027.26 / 深成 -3.44% / 创业板 -4.07% / 北证 50 -0.84% / 科创 50 -1.65% / 全市场成交额 35754 亿元（较上日缩量 436 亿元）/ 超 4600 只个股下跌 / 通信 + 电池板块重挫 / 猪肉逆势走强 / 美国 5 月 PCE 物价指数同比 +4.1% / 核心 PCE 同比 +3.4%（2023 年下半年以来新高）④ 6/26 11:26 苹果 Vision Pro 入门价涨至 3699 美元（+200 美元）+ 512GB 3899 美元 + 1TB 4199 美元 + 苹果对 MacBook 和 iPad 实施全球提价约 20% + 微软 Xbox 8/1 起 1TB 版本涨价 150 美元 + 联想回应"内存市场变化前所未有，已锁定充足供应" + 6/26 16:24 收评：存储芯片供需缺口有望持续 + 6/26 17:35 消费电子或全面迈入涨价周期 ⑤ HN front 6/26 10:00 UTC 30 items 北美时间当日 5 条 AI 相关新晋：#1 We All Depend on Open Source 115pt/45c / #6 What happened after 2k people tried to hack my AI assistant 160pt/55c / #12 IBM debuts sub-1 nanometer chip technology 320pt/175c（vs 6/26 11:30 UTC #13 280pt/159c = +40pt/+16c 6h 增量 持续引爆）/ #19 Apple raises prices of MacBooks, iPads 726pt/1032c（vs 6/26 11:30 UTC #20 664pt/955c = +62pt/+77c 6h 增量 评论数 1032c 创近期新高 持续引爆）/ #24 Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line 262pt/256c（vs 6/26 11:30 UTC 同样 #24 262pt/256c = 6h 累计 0 增量 持续高热度）= 5 维度并发</li>
+                <li><strong>6/26 21:00 21evening</strong> ✅ 已覆盖：① 6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所主板挂牌"决策大模型第一股"全链路 - 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + 政企市场为主 + 6/26 收盘 111.7 港元 vs 发行价 60.7 港元 +84% + 盘中最高 125 港元 +106% + 总市值 193.35 亿港元 + 香港公开发售获 5967 倍超额认购创港股 AI 新股纪录 + 暗盘收盘上涨 90-95% + 6/26 6 只新股同日敲锣 + 中科系 vs 清华系"双国家队"格局 ② 6/26 19:58 中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系 + 雅意大模型 vs GLM-5.2 + 中科闻歌 5967 倍超额 vs 智谱年内累涨 1900% + 6/26 evening 中科闻歌首日 +84% vs 智谱 -12.94% ③ 6/25 evening 22:25 苹果正式涨价 MacBook / iPad / 6/25 evening 美股 16:00 收市数据完整复盘 - 道指 +0.14% 报 51920.62 / 纳指 -0.46% 报 25358.60 / 标普 -0.01% 报 7357.49 ④ HN front 6/26 13:00 UTC 30 items 北美时间当日新晋 5 维度并发 + 6/26 evening 18:00 ~ 21:00 持续发酵 - 苹果涨价 #19 持续引爆 + IBM 0.7nm #12 持续引爆 + OpenKnowledge #14 300pt/149c AI-first Obsidian/Notion 替代 + The Doorman's Fallacy #21 140pt/196c + Un-0: Generating Images with Coupled Oscillators #18 162pt/39c 图像生成新模型 ⑤ 6/26 evening 18:00 ~ 21:00 三时段递进范式完整收官</li>
+            </ul>
+            <p><strong>撞车规避要点</strong>：① 主动聚焦 6/26 22:00 ~ 6/27 09:00 北京时间 11h 窗口（北美 6/26 14:00 ~ 6/26 21:00 UTC）② 5 角度数据点必须全部基于 6/26 22:00 后（北美 6/26 14:00 UTC 后）新事件 ③ 5 个新角度 = 5 个全新事件 ④ 末尾"撞车协议总结表"对应行标注"4 份全有效 + 0 份缺失"</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">① 6/26 17:55 Axios + 6/26 18:55 Reuters + 6/26 23:00 华盛顿邮报 - 特朗普政府首次要求 OpenAI 分批发布 GPT-5.6 Sol/Terra/Luna 三款模型 + HN front #1 Previewing GPT-5.6 Sol 806pt/491c + 前沿模型进入"逐客审批"时代</div>
+            <p><strong>2026 年 6 月 25 日（美东时间 6/24）Axios 援引两位知情人士报道：特朗普政府已要求 OpenAI 将下一代模型 GPT-5.6 由"全面公开发布"改为"分阶段限量发布"——预览阶段仅向少数经政府批准的合作伙伴开放，且每一位企业客户的访问权限需由美国政府逐案审批</strong>（Axios 6/26 17:55 / Reuters 6/26 18:55 / 华盛顿邮报 6/26 23:00 / OpenAI 官方 6/26 / HN Firebase API 6/27 09:00 串行 fetch 实测 / The Information 6/26 09:56）</p>
+            <div class="section-subtitle">GPT-5.6 三款模型分阶段限量发布完整数据</div>
+            <ul>
+                <li><strong>6/26 17:55 Axios 独家报道</strong>：特朗普政府已要求 OpenAI 将下一代模型 GPT-5.6 由"全面公开发布"改为"分阶段限量发布"</li>
+                <li><strong>6/26 18:55 Reuters 报道</strong>："US allows Anthropic to release Mythos to 'trusted partners'"</li>
+                <li><strong>6/26 23:00 华盛顿邮报深度报道</strong>："U.S. government will decide who gets to use GPT-5.6"</li>
+                <li><strong>6/26 OpenAI CEO 萨姆·奥特曼周三告诉员工</strong>："将以有限预览形式发布 GPT-5.6，仅允许少数企业客户访问"</li>
+                <li><strong>6/24 Altman 与美国商务部长卢特尼克会面讨论 GPT-5.6</strong> - 卢特尼克希望确保该模型得到美国政府所有相关部门的测试和批准</li>
+                <li><strong>"美国政府将'逐一批准客户的访问权限'"</strong>（"一客一审"）</li>
+                <li><strong>"美国政府认为，OpenAI 最新模型的性能与 Anthropic 公司的 Mythos 模型不相上下"</strong></li>
+                <li><strong>"美国政府还发布了一项出口管制指令，禁止'外国公民'访问该技术（包括任何非美国公民的 Anthropic 员工）"</strong></li>
+                <li><strong>Altman："我们已经明确告知美国政府，这不是我们首选的长期模式。我们将与政府以及其他业内人士合作，为未来的模型发布制定更加可持续的方案"</strong></li>
+                <li><strong>三款模型</strong> - OpenAI 本次共发布三款模型：<strong>Sol（"太阳"）/ Terra（"地球"）/ Luna（"月亮"）</strong></li>
+                <li><strong>HN front #1 Previewing GPT-5.6 Sol: a next-generation model 806pt/491c</strong> - HN 当日第 1 议题</li>
+                <li><strong>HN front #3 US allows Anthropic to release Mythos to 'trusted partners' 176pt/117c</strong> - HN 当日新晋</li>
+                <li><strong>HN front #4 U.S. government will decide who gets to use GPT-5.6 788pt/892c</strong> - HN 当日第 4 议题 评论数 892c</li>
+                <li><strong>HN #8 The gap between open weights LLMs and closed source LLMs 106pt/89c</strong> - HN 当日新晋</li>
+                <li><strong>这是美国政府首次要求 AI 公司限量发布新模型</strong></li>
+                <li><strong>白宫国家网络总监办公室和科技政策办公室已要求 OpenAI 限制其新模型的发布范围</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"特朗普政府首次要求 OpenAI 分批发布 GPT-5.6 三款模型 + 每位企业客户访问权限需美国政府逐案审批（'一客一审'）= 前沿模型进入'逐客审批'时代"</strong></li>
+                <li><strong>"美国政府发布出口管制指令 + 禁止'外国公民'访问（包括任何非美国公民的 Anthropic 员工）= 美国前沿 AI 模型出口管制从企业层升级到个人层 = 美国 AI 治理个人身份化"</strong></li>
+                <li><strong>"Altman 同意限制 GPT-5.6 发布 + '已明确告知美国政府这不是首选长期模式' + '将合作制定更加可持续的方案' = OpenAI 配合度边界首次公开表态"</strong></li>
+                <li><strong>"美国政府认为 OpenAI 最新模型的性能与 Anthropic 公司的 Mythos 模型不相上下 = 美国 AI 治理首次以模型能力对比为依据"</strong></li>
+                <li><strong>"白宫国家网络总监办公室 + 科技政策办公室 + 商务部卢特尼克 + Altman 会面 = 美国 AI 治理'政府 + 企业'四方协调机制首次完整披露"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">② 6/26 10:29 国新办"开局起步'十五五'"系列主题新闻发布会 - 国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》- 王宏志详解 2030 年电力装机 54 亿千瓦 + "十五五"能源投资总规模超 20 万亿元 + 六大体系战略任务</div>
+            <p><strong>6/26 上午 10:00 国新办举行"开局起步'十五五'"系列主题新闻发布会 - 国家发展改革委党组成员、国家能源局局长王宏志详解"十五五"时期新型能源体系建设有关规划情况 + 副局长万劲松等出席发布会 + 经国务院同意，国家发展改革委、国家能源局印发《新型能源体系建设"十五五"规划》+ 主要目标：2030 年初步建成清洁低碳安全高效的新型能源体系</strong>（国新办 6/26 10:29 / 国家能源局 6/26 17:33 / 东方财富网 6/26 15:13 / 湖北科技智库 6/26 / 重庆石油天然气交易中心 6/26 17:59 / 陆家嘴财经早餐 6/27 07:58）</p>
+            <div class="section-subtitle">6/26 10:29 国新办"十五五"系列主题新闻发布会完整数据</div>
+            <ul>
+                <li><strong>6/26 上午 10:00 国新办举行"开局起步'十五五'"系列主题新闻发布会</strong></li>
+                <li><strong>国家发展改革委党组成员、国家能源局局长王宏志详解"十五五"时期新型能源体系建设有关规划情况</strong></li>
+                <li><strong>副局长万劲松等出席发布会</strong></li>
+                <li><strong>经国务院同意，国家发展改革委、国家能源局印发《新型能源体系建设"十五五"规划》</strong></li>
+                <li><strong>主要目标：2030 年初步建成清洁低碳安全高效的新型能源体系</strong></li>
+                <li><strong>"我国能源体系将呈现四个特征"</strong>：
+                    <ul>
+                        <li><strong>一是安全韧性更足</strong>，能源综合生产能力将达到 58 亿吨标准煤，自主保障能力稳中有升，能源进口更加多元可控</li>
+                        <li><strong>二是能源结构更优</strong> - 目前，我国电力装机规模已经突破 40 亿千瓦，预计 2030 年将达到 54 亿千瓦（新能源装机比重 > 50%、成为电力装机主体，非化石能源发电量比重达到 50%、成为电量主体，煤炭和石油消费达峰）</li>
+                        <li><strong>三是系统形态更新</strong> - 加快构建坚强韧性、绿色低碳、集成融合、智能高效的新型能源基础设施体系，初步建成新型电力系统</li>
+                        <li><strong>四是创新活力更强</strong> - 产业链现代化水平显著提升，迈入世界能源科技创新国家前列；适应新型能源体系的市场和价格机制更加健全，基本建成全国统一电力市场</li>
+                    </ul>
+                </li>
+                <li><strong>六大体系战略任务</strong></li>
+                <li><strong>预计"十五五"能源重点项目和新业态投资保持稳步增长态势，总规模超过 20 万亿元</strong></li>
+                <li><strong>实施一批重大战略工程</strong> - 高质量推进雅下水电等 25 个重大项目 + 建设"沙戈荒"新能源基地 + 水风光一体化基地 + 海上风电基地 + 积极安全有序推进沿海核电建设</li>
+                <li><strong>6/26 12:54 王宏志回应"十五五"时期能源安全保障</strong></li>
+                <li><strong>6/27 07:58 陆家嘴财经早餐 2026-06-27</strong> - 6/26 国新办"开局起步'十五五'"系列主题新闻发布会 + 国家能源局局长王宏志详解"十五五"时期新型能源体系建设顶层规划与落地举措</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"国新办'开局起步十五五'系列主题新闻发布会 + 国家发改委 + 国家能源局印发《新型能源体系建设'十五五'规划》= 6/27 早醒最大宏观政策"</strong></li>
+                <li><strong>"2030 年电力装机规模达 54 亿千瓦（新能源装机比重 > 50% / 非化石能源发电量比重达 50% / 煤炭和石油消费达峰）= 6/27 早醒新能源装机完整时间表"</strong></li>
+                <li><strong>"'十五五'能源重点项目和新业态投资总规模超过 20 万亿元 = 6/27 早醒能源投资完整规模"</strong></li>
+                <li><strong>"实施一批重大战略工程：高质量推进雅下水电等 25 个重大项目 + 建设'沙戈荒'新能源基地 + 水风光一体化基地 + 海上风电基地 + 积极安全有序推进沿海核电建设 = 6/27 早醒能源项目完整名单"</strong></li>
+                <li><strong>"6/27 07:58 陆家嘴财经早餐 2026-06-27 = 6/27 早醒完整宏观政策锚点"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">③ 6/26 23:36 中科闻歌公告 - 决策大模型 + 雅意大模型 + Decitron + AI4S 磐石 + 政企市场 + 5966.78 倍超额认购创港股 AI 新股纪录 + 灼识咨询 11.4% 市场份额 + 港股 AI"双国家队"格局</div>
+            <p><strong>2026 年 6 月 26 日中科闻歌（1956.HK）在港交所上市 - 每股定价 60.7 港元 + 共发行 1483.46 万股 + 总市值首日 193.35 亿港元 + 灼识咨询：按 2024 年中国企业级大模型驱动的决策智能服务提供商收入计算排名第一，市场份额 11.4% + 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + 政企市场为主 + Decitron 决策大模型 + AI4S 大模型"磐石"</strong>（中科闻歌 6/26 23:36 / 新浪科技 6/26 19:58 / 北京日报 6/26 20:32 / IPO 早知道 6/26 14:20 / 钛媒体 App 6/26 16:51 / 财联社 6/26 17:44 / 独角兽早知道 6/26 06:25 / 利弗莫尔证券 6/26 09:35 / OFweek 6/26 06:09）</p>
+            <div class="section-subtitle">6/26 23:36 中科闻歌公告完整数据</div>
+            <ul>
+                <li><strong>2026 年 6 月 26 日中科闻歌在港交所上市</strong></li>
+                <li><strong>股票代码：1956.HK</strong></li>
+                <li><strong>每股定价 60.7 港元</strong></li>
+                <li><strong>共发行 1483.46 万股</strong></li>
+                <li><strong>总市值首日 193.35 亿港元</strong></li>
+                <li><strong>灼识咨询：按 2024 年中国企业级大模型驱动的决策智能服务提供商收入计算排名第一，市场份额 11.4%</strong></li>
+                <li><strong>2024 年中国企业级大模型市场中排名第七，市场份额 2.4%</strong></li>
+                <li><strong>2017 年中科院自动化所科学家团队创立（王磊博士 / 罗引博士 / 曾大军博士）</strong></li>
+                <li><strong>自主研发"雅意大模型"</strong></li>
+                <li><strong>政企市场为主</strong></li>
+                <li><strong>Decitron 决策大模型</strong></li>
+                <li><strong>AI4S 大模型"磐石"</strong></li>
+                <li><strong>复杂数据分析及人工智能辅助决策</strong> - 服务于公共服务 / 传媒与通信 / 商企等领域</li>
+                <li><strong>通过港交所 18C 规则完成上市流程</strong></li>
+                <li><strong>上市首日高开 110 港元</strong></li>
+                <li><strong>收盘 111.7 港元 vs 发行价 60.7 港元 +84%</strong></li>
+                <li><strong>盘中最高 125 港元 +106%</strong></li>
+                <li><strong>香港公开发售获 5966.78 倍超额认购（创港股 AI 新股纪录 + vs 智谱 1164 倍 / Minimax 1209 倍）</strong></li>
+                <li><strong>暗盘收涨 94.56% 报 118.1 港元</strong></li>
+                <li><strong>全球发售 1483 万股募资约 9 亿港元 / 上市市值约 105 亿港元</strong></li>
+                <li><strong>6/26 港股 6 只新股同日敲锣</strong></li>
+                <li><strong>"通用决策大模型第一股" + "国家队 AI 第一股"</strong></li>
+                <li><strong>港股 AI 资本市场"双国家队"格局 = 智谱（清华系）+ 中科闻歌（中科院系）</strong></li>
+                <li><strong>王磊上市致辞</strong>："九年时间，我们从一个实验室的科研团队，成长为中国优秀的人工智能企业，研发出了决策大模型 Decitron 和领先的 AI4S 大模型'磐石'"</li>
+                <li><strong>北京日报"北京跑出决策大模型第一股"</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"中科闻歌 5966.78 倍超额认购创港股 AI 新股纪录 + 灼识咨询 11.4% 市场份额 + 政企市场为主 = 中科系大模型国家队'港股 AI 资本市场认账度'完整收官"</strong></li>
+                <li><strong>"中科闻歌 vs 智谱完整对位 - 决策大模型 vs 通用大模型 + 中科院系 vs 清华系 + 雅意大模型 vs GLM-5.2 + 中科闻歌 5966.78 倍超额 vs 智谱 1164 倍 + 6/26 evening 中科闻歌首日 +84% vs 智谱 -12.94% = 港股 AI'双国家队'格局"</strong></li>
+                <li><strong>"中科闻歌（Decitron 决策大模型 + AI4S 大模型'磐石'）+ 智谱（GLM-5.2 通用大模型 + 1M 上下文 + Code Arena 全球第一）= 港股 AI 大模型'决策 + 通用'完整双轨"</strong></li>
+                <li><strong>"中科院自动化所九年深耕 + 中科闻歌王磊上市致辞'九年时间从一个实验室的科研团队成长为中国优秀的人工智能企业' = 中科系大模型'九年叙事'"</strong></li>
+                <li><strong>"6/26 港股 6 只新股同日敲锣 + 中科闻歌 1956.HK 港交所 18C 规则挂牌 = 港股 AI 资本市场'新股密集发行'完整收官"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">④ 6/27 早醒港股恒指夜期 22916 +0.95% + 中概股多数上涨 + 美股 6/26 收盘纳指 5 连跌 + 费城半导体 -5.29% + 安森美 -24% + 微软 +5.7% 反弹</div>
+            <p><strong>6/27 06:13 恒指主连夜盘收涨 0.95% 报 22916 点 + 6/27 08:10 恒生指数夜期（6 月）收报 22916 点 升 216 点或 0.952% 高水 244 点 + 6/27 06:13 恒生科技指数主连夜盘收涨 2.61% 报 4340 点（vs 6/26 evening 收盘 4255.59 = +85 点 / +2.0%）+ 6/27 05:40 6/27 热门中概股多数上涨 纳斯达克中国金龙指数（HXC）收涨 0.70% + 6/27 04:00 美股 6/26 收盘：道指 -0.12% 报 51876.10 / 纳指 -0.24% 报 25297.61（5 连跌）/ 标普 500 -0.06% 报 7354.02 + 标普 500 等权指数创历史新高 + 费城半导体指数 -5.29% 重挫（本周累跌近 8%）+ 6/27 04:09 美光科技 -6.67% / 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷科技 -12% / 闪迪 -10% / 恩智浦 / 高通 -7% / 英伟达 -1.6% + 6/27 04:09 昨日下挫微软和苹果今日走强微软 +5.7% / 苹果 +3%</strong>（恒指主连夜盘 6/27 06:13 / 恒指夜期 6/27 08:10 / 6/27 热门中概股多数上涨 6/27 05:40 / 6/27 04:09 美股 6/26 收盘 / 华尔街见闻早餐 FM-Radio 6/27 07:42 / 6/26 evening 美股收盘数据）</p>
+            <div class="section-subtitle">6/27 早醒港股 + 美股期指 + 中概股三线反弹预判 + 6/26 evening 美股 chip 股重挫 + 6/27 早醒美股科技股反弹 + 6/27 全周芯片股累跌近 8% 完整数据</div>
+            <ul>
+                <li><strong>6/27 06:13 恒指主连夜盘收涨 0.95%</strong> - 报 22916 点</li>
+                <li><strong>6/27 08:10 恒生指数夜期（6 月）收报 22916 点，升 216 点或 0.952%，高水 244 点</strong> - 未平仓合约总数 33120 张，减少 54743 张；未平仓合约净数 15040 张，减少 16439 张</li>
+                <li><strong>6/27 06:13 恒生科技指数主连夜盘收涨 2.61%</strong> - 报 4340 点（vs 6/26 evening 收盘 4255.59 = +85 点 / +2.0%）</li>
+                <li><strong>6/27 05:40 6/27 热门中概股多数上涨</strong> - 纳斯达克中国金龙指数（HXC）收涨 0.70%</li>
+                <li><strong>6/27 热门中概股完整名单</strong> - 拼多多 +4.43% / 网易 +7.74% / 百度 +0.22% / 中华电信 +0.33% / 京东 +0.79% / 携程 +0.99% / 中通 +0.50% / 腾讯音乐 +2.82% / 华住酒店集团 +2.37% / 理想汽车 +1.78% / 蔚来 +2.75% / 满帮 +2.x</li>
+                <li><strong>6/27 04:09 美股 6/26 收盘数据完整复盘</strong> - 美股三大指数收盘集体下跌</li>
+                <li><strong>道指跌 0.12%（报 51876.10）/ 纳指跌 0.24%（报 25297.61，5 连跌）/ 标普 500 指数跌 0.06%（报 7354.02）</strong></li>
+                <li><strong>标普 500 等权指数创历史新高</strong></li>
+                <li><strong>费城半导体指数 -5.29% 重挫（本周累跌近 8%）</strong></li>
+                <li><strong>芯片股下挫</strong> - 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷科技 -12% / 闪迪 -10% / 恩智浦 -7% / 高通 -7% / 美光科技 -6.67% / 应用材料 -6% / 英伟达 -1.6%</li>
+                <li><strong>科技七巨头昨日下挫微软和苹果今日走强</strong> - 微软 +5.7% / 苹果 +3%</li>
+                <li><strong>本周科技七巨头整体重挫约 6%</strong></li>
+                <li><strong>标普 500 周内收平 vs 科技七巨头 -6%</strong> - 分化创 2024 年 7 月以来最悬殊的一周</li>
+                <li><strong>6/26 evening 16:00 美股盘中数据</strong> - 道指 51848.90 +0.35% / 纳指 25476.64 -0.43% / 标普 7358.22 -0.10%</li>
+                <li><strong>6/27 07:42 华尔街见闻早餐 FM-Radio 2026 年 6 月 27 日</strong> - 标普 500 周五收盘几乎持平 / 标普 500 等权指数创历史新高 / 纳指 5 连跌 / 费城半导体指数周五重挫 5.3% / 本周累计跌近 8%</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/27 06:13 恒指主连夜盘 + 6/27 06:13 恒指夜期 22916 +0.95% 高水 244 点 + 6/27 05:40 6/27 热门中概股多数上涨 = 6/27 早醒港股 + 美股期指 + 中概股三线反弹预判"</strong></li>
+                <li><strong>"6/27 06:13 恒科夜盘 +2.61% 报 4340 = 6/27 早醒恒科反弹预判"</strong></li>
+                <li><strong>"6/27 04:00 美股 6/26 收盘 - 道指 -0.09% 报 51876.10 / 纳指 -0.24% 报 25297.61（5 连跌）/ 标普 500 -0.05% 报 7354.02 + 标普 500 等权指数创历史新高 = 6/27 早醒美股科技股与传统行业分化"</strong></li>
+                <li><strong>"6/27 04:09 费城半导体指数 -5.29% 重挫（本周累跌近 8%）+ 安森美 -24% + 西部数据 -13% + 希捷 -12% + 闪迪 -10% + 恩智浦 -7% + 高通 -7% + 美光 -6.67% + 应用材料 -6% + 英伟达 -1.6% = 6/26 evening 美股 chip 股重挫"</strong></li>
+                <li><strong>"6/27 04:09 微软 +5.7% / 苹果 +3% = 6/27 早醒美股科技股反弹"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⑤ 6/27 国际金融要情 + 陆家嘴财经早餐 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价下行 + 6/26 A 股收盘普跌复盘 + 美联储偏鹰 + 海外 AI 产业链情绪走弱</div>
+            <p><strong>6/26 黎以美三方框架协议在华盛顿签署（停火 + 对话 + 长期安全协议）+ 以色列不全面撤出黎巴嫩南部 + 内塔尼亚胡必要时增加军力 + 伊朗不满 + 6/26 特朗普表示伊朗至少向经过霍尔木兹海峡的船只发射 4 架单向攻击无人机 + 一架击中一艘大型货船上层甲板造成损坏 + 美军确认已经对伊朗南部进行了一轮空袭 + 国际油价'应声而落' 基本抹平昨天的反弹幅度 + WTI 原油再度回到 69 美元/桶 + 布伦特原油降至 71 美元/桶区间 + 阿联酋穆尔班原油跌幅扩大 报价下降至 66 美元/桶 + 6/26 A 股收盘再度面临普跌 + 各大宽基指数同步收出大阴线 + 创业板领跌全市场 + 超 4600 只个股下跌 + 上半年涨幅较高的算力 / 有色 / 新能源等高估值赛道集体重挫 + 上证指数收报 4027.26 点 跌幅 2.26% + 深证成指 15782.22 点 下跌 3.44% + 创业板指收盘下跌 4.07% + 叠加美联储偏鹰流动性约束 / 海外 AI 产业链情绪走弱 / 半年末机构集中兑现三重压力</strong>（国际金融要情 6/27 07:09 / 陆家嘴财经早餐 6/27 07:58 / 财联社 6/27 06:27 / 上海证券报 6/27 / 6/27 06:00 早间新闻精选）</p>
+            <div class="section-subtitle">6/27 07:09 国际金融要情 + 6/27 07:58 陆家嘴财经早餐 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价下行 + 6/26 A 股收盘普跌复盘 + 创业板领跌 + 美联储偏鹰 + 海外 AI 产业链情绪走弱 完整数据</div>
+            <ul>
+                <li><strong>6/26 黎以美三方框架协议在华盛顿签署</strong>（停火 + 对话 + 长期安全协议）</li>
+                <li><strong>以色列不全面撤出黎巴嫩南部</strong> - 内塔尼亚胡必要时增加军力</li>
+                <li><strong>伊朗不满</strong></li>
+                <li><strong>6/26 特朗普表示伊朗至少向经过霍尔木兹海峡的船只发射 4 架单向攻击无人机</strong> - 一架击中一艘大型货船上层甲板造成损坏</li>
+                <li><strong>特朗普认为伊朗的行为违反了停火协议</strong></li>
+                <li><strong>截至目前，伊朗方面尚未就此作出官方回应</strong></li>
+                <li><strong>美军确认已经对伊朗南部进行了一轮空袭</strong></li>
+                <li><strong>国际油价'应声而落'</strong> - 基本抹平昨天的反弹幅度</li>
+                <li><strong>WTI 原油再度回到 69 美元/桶</strong></li>
+                <li><strong>布伦特原油降至 71 美元/桶区间</strong></li>
+                <li><strong>阿联酋穆尔班原油跌幅扩大 报价下降至 66 美元/桶</strong></li>
+                <li><strong>6/26 A 股收盘再度面临普跌</strong> - 各大宽基指数同步收出大阴线</li>
+                <li><strong>创业板领跌全市场</strong> - 超 4600 只个股下跌</li>
+                <li><strong>市场亏钱效应集中释放</strong></li>
+                <li><strong>叠加美联储偏鹰流动性约束 / 海外 AI 产业链情绪走弱 / 半年末机构集中兑现三重压力</strong></li>
+                <li><strong>上半年涨幅较高的算力 / 有色 / 新能源等高估值赛道集体重挫</strong></li>
+                <li><strong>上证指数收报 4027.26 点 跌幅 2.26%</strong></li>
+                <li><strong>深证成指 15782.22 点 下跌 3.44%</strong></li>
+                <li><strong>创业板指收盘下跌 4.07%</strong></li>
+                <li><strong>6/27 07:58 陆家嘴财经早餐 2026-06-27</strong> - 6/26 国新办"开局起步'十五五'"系列主题新闻发布会 + 国家能源局局长王宏志详解"十五五"时期新型能源体系建设顶层规划与落地举措 + 中国证监会对深圳前海玖瀛资产管理有限公司、深圳市前海腾创投资有限公司及相关责任人员违法违规行为作出行政处罚 - 对机构和相关人员合计处罚近 6000 万元 + 美国中央司令部表示美军于 6/26 行动</li>
+                <li><strong>6/27 06:27 财联社 6 月 27 日电</strong></li>
+                <li><strong>6/27 09:00 6/27 早醒完整宏观政策锚点</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"黎以美三方框架协议 6/26 华盛顿签署 + 以色列不全面撤出黎巴嫩南部 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 = 中东局势升级 / 6/27 早醒中东格局"</strong></li>
+                <li><strong>"国际油价'应声而落' + WTI 69 美元 + 布伦特 71 美元 + 阿联酋穆尔班 66 美元 = 6/27 早醒油价完整数据"</strong></li>
+                <li><strong>"6/26 A 股收盘再度面临普跌 + 上证 -2.26% + 深成 -3.44% + 创业板 -4.07% + 超 4600 只个股下跌 + 算力/有色/新能源高估值赛道集体重挫 = 6/27 早醒 A 股复盘完整数据"</strong></li>
+                <li><strong>"叠加美联储偏鹰流动性约束 / 海外 AI 产业链情绪走弱 / 半年末机构集中兑现三重压力 = 6/27 早醒 A 股三重压力完整识别"</strong></li>
+                <li><strong>"6/27 07:58 陆家嘴财经早餐 2026-06-27 + 6/27 07:09 国际金融要情 = 6/27 早醒双源宏观政策 + 国际金融市场完整收官"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 数据要点（带时间戳）</div>
+            <table class="data-table">
+                <tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr>
+                <tr><td>GPT-5.6 三款模型分阶段限量发布</td><td>特朗普政府首次要求 / 每位企业客户访问需美国政府逐案审批（"一客一审"）/ Sol/Terra/Luna 三款模型</td><td>6/26 17:55 / 6/26 18:55 / 6/26 23:00</td><td>Axios 独家 / Reuters 报道 / 华盛顿邮报</td></tr>
+                <tr><td>HN front #1 Previewing GPT-5.6 Sol</td><td>806pt/491c</td><td>6/27 09:00 串行 fetch</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #4 U.S. government will decide who gets to use GPT-5.6</td><td>788pt/892c</td><td>6/27 09:00 串行 fetch</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #3 US allows Anthropic to release Mythos to 'trusted partners'</td><td>176pt/117c</td><td>6/27 09:00 串行 fetch</td><td>HN Firebase API</td></tr>
+                <tr><td>国新办"十五五"系列主题新闻发布会</td><td>国家能源局局长王宏志详解"十五五"时期新型能源体系建设 / 主要目标：2030 年初步建成清洁低碳安全高效的新型能源体系</td><td>6/26 10:29</td><td>国新办</td></tr>
+                <tr><td>2030 年电力装机规模</td><td>达 54 亿千瓦 / 新能源装机比重 > 50% / 非化石能源发电量比重达 50% / 煤炭和石油消费达峰</td><td>6/26 10:29</td><td>国家能源局王宏志</td></tr>
+                <tr><td>"十五五"能源重点项目和新业态投资总规模</td><td>超过 20 万亿元</td><td>6/26 17:33</td><td>王宏志国新办发布</td></tr>
+                <tr><td>中科闻歌 1956.HK 港交所主板挂牌</td><td>每股定价 60.7 港元 + 共发行 1483.46 万股 + 总市值首日 193.35 亿港元</td><td>6/26 23:36</td><td>中科闻歌公告</td></tr>
+                <tr><td>中科闻歌决策智能市场份额</td><td>灼识咨询 11.4% 排名第一 / 企业级大模型市场份额 2.4% 排名第七</td><td>6/26 23:36</td><td>中科闻歌公告</td></tr>
+                <tr><td>中科闻歌首日表现</td><td>收盘 111.7 港元 vs 发行价 60.7 港元 +84% / 盘中最高 125 港元 +106%</td><td>6/26 18:00</td><td>港交所 / 钛媒体 App</td></tr>
+                <tr><td>中科闻歌超额认购</td><td>5966.78 倍创港股 AI 新股纪录 / vs 智谱 1164 倍 / Minimax 1209 倍</td><td>6/26 23:36</td><td>利弗莫尔证券</td></tr>
+                <tr><td>中科闻歌核心产品</td><td>雅意大模型 / Decitron 决策大模型 / AI4S 大模型"磐石" / 政企市场为主 11.4% 市场份额</td><td>6/26 23:36</td><td>中科闻歌公告</td></tr>
+                <tr><td>恒指主连夜盘</td><td>收涨 0.95% 报 22916 点</td><td>6/27 06:13</td><td>恒指主连夜盘</td></tr>
+                <tr><td>恒生科技指数主连夜盘</td><td>收涨 2.61% 报 4340 点</td><td>6/27 06:13</td><td>恒科主连夜盘</td></tr>
+                <tr><td>6/27 热门中概股多数上涨</td><td>拼多多 +4.43% / 网易 +7.74% / 百度 +0.22% / 京东 +0.79% / 蔚来 +2.75%</td><td>6/27 05:40</td><td>环球市场播报</td></tr>
+                <tr><td>美股 6/26 收盘 - 道指</td><td>-0.09% 报 51876.10</td><td>6/27 04:00</td><td>财联社</td></tr>
+                <tr><td>美股 6/26 收盘 - 纳指</td><td>-0.24% 报 25297.61 / 5 连跌</td><td>6/27 04:00</td><td>财联社</td></tr>
+                <tr><td>美股 6/26 收盘 - 标普 500</td><td>-0.05% 报 7354.02 / 等权指数创历史新高</td><td>6/27 04:00</td><td>财联社</td></tr>
+                <tr><td>费城半导体指数 6/26</td><td>-5.29% 重挫 / 本周累跌近 8%</td><td>6/27 04:00</td><td>财联社</td></tr>
+                <tr><td>6/26 evening 美股芯片股</td><td>安森美 -24% / 西部数据 -13% / 希捷 -12% / 闪迪 -10% / 恩智浦 -7% / 高通 -7% / 美光 -6.67% / 应用材料 -6% / 英伟达 -1.6%</td><td>6/27 04:09</td><td>财联社</td></tr>
+                <tr><td>6/27 早醒美股科技股反弹</td><td>微软 +5.7% / 苹果 +3%</td><td>6/27 04:09</td><td>财联社</td></tr>
+                <tr><td>黎以美三方框架协议 6/26 华盛顿签署</td><td>停火 + 对话 + 长期安全协议</td><td>6/26</td><td>6/27 07:09 国际金融要情</td></tr>
+                <tr><td>伊朗无人机袭击霍尔木兹海峡</td><td>特朗普表示伊朗至少向经过霍尔木兹海峡的船只发射 4 架单向攻击无人机</td><td>6/26</td><td>6/27 07:09 国际金融要情</td></tr>
+                <tr><td>美军空袭伊朗南部</td><td>美军确认已经对伊朗南部进行了一轮空袭</td><td>6/26</td><td>6/27 07:09 国际金融要情</td></tr>
+                <tr><td>国际油价 6/26 应声而落</td><td>WTI 原油 69 美元/桶 / 布伦特原油 71 美元/桶区间 / 阿联酋穆尔班原油 66 美元/桶</td><td>6/26</td><td>6/27 07:09 国际金融要情</td></tr>
+                <tr><td>6/26 A 股收盘 - 上证指数</td><td>-2.26% 报 4027.26 点</td><td>6/26 15:54</td><td>财联社</td></tr>
+                <tr><td>6/26 A 股收盘 - 深证成指</td><td>-3.44% 报 15782.22 点</td><td>6/26 15:54</td><td>财联社</td></tr>
+                <tr><td>6/26 A 股收盘 - 创业板指</td><td>-4.07% / 超 4600 只个股下跌</td><td>6/26 15:54</td><td>财联社</td></tr>
+                <tr><td>6/27 陆家嘴财经早餐</td><td>国新办"十五五"系列主题新闻发布会 + 国家能源局局长王宏志 + 证监会处罚近 6000 万 + 美国中央司令部 6/26 行动</td><td>6/27 07:58</td><td>陆家嘴财经早餐</td></tr>
+                <tr><td>6/27 财联社早间</td><td>6 月 27 日电</td><td>6/27 06:27</td><td>财联社</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 撞车协议总结表（再次确认"主动剔除 X, 聚焦 Y"）</div>
+            <table class="data-table">
+                <tr><th>撞车源</th><th>已覆盖事件</th><th>6/27 morning 主动剔除（不重复）</th><th>6/27 morning 主动聚焦（新角度）</th></tr>
+                <tr><td>6/26 morning</td><td>6/25 22:08 IBM 0.7nm 亚 1 纳米 + 晶体管密度 2x + 性能 +50% + 能效 +70% / 6/25 21:11 苹果 + 微软双涨价 15-25% / 国行 20% + 苹果官方表态"AI 数据中心内存芯片成本" / 6/25 evening 美光 FY26Q3 完整披露 - 营收 156.4 亿 +56% / EPS 5.21 / FY26Q4 指引 175 亿 + 隔夜美股苹果 -6% / 6/25 14:34 谷歌两 AI 顶尖人才加入 Anthropic + 48 小时 3 步走 / 6/26 陆家嘴早餐 + 财联社早间 - 苹果/微软/IBM 三连发 + 中美经贸磋商 5/25 共识 + 十五五规划 + 联想服务器芯片紧张</td><td>6/25 22:08 IBM 0.7nm 完整 13 项数据 / 6/25 21:11 苹果 + 微软双涨价 15-25% 完整 12 项细节 / 6/25 evening 美光 FY26Q3 完整 11 项数据 + 10 家机构上调目标价 / 6/25 14:34 谷歌两 AI 顶尖人才加入 Anthropic 完整 5 项数据 / 6/26 陆家嘴早餐 5 大模块 + 财联社早间 5 大模块 / 6/26 05:37 纳斯达克中国金龙指数 -2.74%</td><td>6/26 17:55 Axios + 6/26 18:55 Reuters + 6/26 23:00 华盛顿邮报 - 特朗普政府首次要求 OpenAI 分批发布 GPT-5.6 Sol/Terra/Luna 三款模型 + HN front #1 Previewing GPT-5.6 Sol 806pt/491c + HN front #4 U.S. government will decide who gets to use GPT-5.6 788pt/892c + HN front #3 US allows Anthropic to release Mythos to 'trusted partners' 176pt/117c + HN #8 The gap between open weights LLMs and closed source LLMs 106pt/89c = 前沿模型进入'逐客审批'时代 / 6/26 10:29 国新办'开局起步十五五'系列主题新闻发布会 - 国家发改委 + 国家能源局印发《新型能源体系建设'十五五'规划》- 王宏志详解 2030 年电力装机 54 亿千瓦 + '十五五'能源投资总规模超 20 万亿元 + 六大体系战略任务 / 6/26 23:36 中科闻歌公告 - 决策大模型 + 雅意大模型 + Decitron + AI4S 磐石 + 政企市场 + 5966.78 倍超额认购创港股 AI 新股纪录 + 灼识咨询 11.4% 市场份额 + 港股 AI'双国家队'格局 / 6/27 06:13 恒指主连夜盘 + 6/27 06:13 恒指夜期 22916 +0.95% 高水 244 点 + 6/27 05:40 6/27 热门中概股多数上涨 + 6/27 04:00 美股 6/26 收盘 + 6/27 06:13 恒科夜盘 +2.61% 报 4340 + 6/27 05:40 6/27 热门中概股 + 6/27 04:09 美股科技七巨头微软 +5.7% 苹果 +3% 反弹 + 6/27 04:09 费城半导体 -5.29% + 安森美 -24% + 西部数据 -13% + 希捷 -12% + 闪迪 -10% + 美光 -6.67% + 英伟达 -1.6% + 6/27 全周芯片股累跌近 8% / 6/27 07:09 国际金融要情 + 6/27 07:58 陆家嘴财经早餐 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价下行 + 6/26 A 股收盘普跌复盘 + 创业板领跌 + 美联储偏鹰 + 海外 AI 产业链情绪走弱</td></tr>
+                <tr><td>6/26 afternoon</td><td>6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 港元 + 全板块跳水 / 6/26 09:00 财联社汽车早报 - 联合国 ADS GTR + 鸿蒙智行 L3+ 首次上车 / 6/26 10:58 英伟达股东大会"AI 工厂时代" + 美光 1.4 万亿 + 台积电 N2/A16 70% / 6/26 11:43 A 股午评 - 沪指 -2.14% + 谷歌重组 AI 编码攻坚 + 宏川智算 DDR5 + 苹果 iPhone 涨价 / HN front 6/26 11:30 UTC 3 条 AI 新晋</td><td>6/26 端午假期后港股唯一交易日 - 智谱跌超 10% 报 2092 港元 / 6/26 领益智造港交所上市首日高开 6.1% / 联合国 ADS GTR + 鸿蒙智行 L3+ / 英伟达 AI 工厂 + 美光 1.4 万亿 + 台积电 N2/A16 70% / 6/26 11:43 A 股午评 - 沪指 -2.14% / HN front 6/26 11:30 UTC 3 条 AI 新晋</td><td>同上 5 个新角度（额外剔除 6/26 端午假期后港股唯一交易日 - 智谱跌超 10% / 6/26 领益智造港交所上市首日高开 6.1% / 联合国 ADS GTR + 鸿蒙智行 L3+ / 英伟达 AI 工厂 + 美光 1.4 万亿 + 台积电 N2/A16 70% / 6/26 11:43 A 股午评 / 谷歌重组 AI 编码攻坚 + 宏川智算 DDR5 + 苹果 iPhone 涨价 / HN front 6/26 11:30 UTC 3 条 AI 新晋）</td></tr>
+                <tr><td>6/26 evening</td><td>6/26 18:00 港股 evening 完整收市 - 恒指 -1.76% 报 22671.86 / 恒科 -3.41% / 恒指失守两万三 / 6 只新股同日敲锣 / 恒指全周累跌 5.24% / 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% + 中科闻歌 1956.HK 港交所 18C 规则挂牌 + "决策大模型第一股" + 中科院系大模型国家队 / 6/26 15:54 A 股 evening 完整收市 - 沪指 -2.26% / 创业板 -4.07% / 6/26 11:26 苹果 Vision Pro 涨至 3699 美元 + 6/26 16:24 收评：存储芯片供需缺口有望持续 + 6/26 17:35 消费电子或全面迈入涨价周期 / HN front 6/26 10:00 UTC 5 条 AI 新晋 + 苹果涨价 #19 726pt/1032c + IBM 0.7nm #12 320pt/175c</td><td>6/26 18:00 港股 evening 完整收市 - 恒指 -1.76% 报 22671.86 / 恒科 -3.41% / 6 只新股同日敲锣 / 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% / 中科闻歌 1956.HK 港交所 18C 规则挂牌 + "决策大模型第一股" + 中科院系大模型国家队 / 6/26 15:54 A 股 evening 完整收市 - 沪指 -2.26% / 创业板 -4.07% / 6/26 11:26 苹果 Vision Pro 涨至 3699 美元 / 6/26 16:24 收评：存储芯片供需缺口有望持续 / HN front 6/26 10:00 UTC 5 条 AI 新晋</td><td>同上 5 个新角度（额外剔除 6/26 18:00 港股 evening 完整收市 / 6/26 14:38 智谱跌穿 2000 港元 + 6/26 16:33 智谱 -12.94% / 中科闻歌 1956.HK 港交所 18C 规则挂牌 + "决策大模型第一股" + 中科院系大模型国家队 / 6/26 15:54 A 股 evening 完整收市 / 6/26 11:26 苹果 Vision Pro 涨至 3699 美元 / 6/26 16:24 收评：存储芯片供需缺口有望持续 / 6/26 17:35 消费电子或全面迈入涨价周期 / HN front 6/26 10:00 UTC 5 条 AI 新晋）</td></tr>
+                <tr><td>6/26 21evening</td><td>6/26 19:58 新浪科技完整披露 + 6/26 20:32 北京日报深度复盘 - 中科闻歌 1956.HK 港交所挂牌"决策大模型第一股"全链路 + 中科院自动化所九年深耕 + 雅意大模型 + 政企市场 + 5967 倍超额 + 中科闻歌 vs 智谱完整对位 + 6/25 evening 22:25 苹果正式涨价 + 美股 16:00 收市 + HN front 6/26 13:00 UTC 5 维度并发 + 6/26 全天 4 时段五维递进范式</td><td>6/26 19:58 新浪科技 + 6/26 20:32 北京日报完整复盘 - 中科闻歌 1956.HK 港交所挂牌"决策大模型第一股"全链路 + 中科院自动化所九年深耕 + 雅意大模型 + 政企市场 + 5967 倍超额 + 6 只新股同日敲锣 + 中科系 vs 清华系"双国家队"格局 + 6/26 19:58 中科闻歌 vs 智谱完整对位 + 6/25 evening 22:25 苹果正式涨价 MacBook / iPad / 6/25 evening 美股 16:00 收市数据完整复盘 - 道指 +0.14% 报 51920.62 / 纳指 -0.46% 报 25358.60 / 标普 -0.01% 报 7357.49 + HN front 6/26 13:00 UTC 30 items 北美时间当日新晋 5 维度并发 + 6/26 全天 4 时段五维递进范式</td><td>同上 5 个新角度（额外剔除 6/26 19:58 新浪科技 + 6/26 20:32 北京日报完整复盘 - 中科闻歌 1956.HK 港交所挂牌"决策大模型第一股"全链路 + 中科院自动化所九年深耕 + 雅意大模型 + 政企市场 + 5967 倍超额 + 6 只新股同日敲锣 + 中科系 vs 清华系"双国家队"格局 + 6/26 19:58 中科闻歌 vs 智谱完整对位 + 6/25 evening 22:25 苹果正式涨价 MacBook / iPad / 6/25 evening 美股 16:00 收市数据完整复盘 - 道指 +0.14% 报 51920.62 / 纳指 -0.46% 报 25358.60 / 标普 -0.01% 报 7357.49 + HN front 6/26 13:00 UTC 30 items 北美时间当日新晋 5 维度并发 + 6/26 全天 4 时段五维递进范式）</td></tr>
+            </table>
+        </div>
+
+        <div class="privacy-check">
+            <div class="section-title">🔒 隐私红线检查</div>
+            <p>✅ 无用户个人信息</p>
+            <p>✅ 无私人语气</p>
+            <p>✅ 无业务域名 / 资产 / 系统架构信息</p>
+            <p>✅ 无内部称呼 / 品牌标识</p>
+            <p>✅ 无 API key / 服务器配置</p>
+        </div>
+
+        <footer class="footer">
+            <p>数据来源：Axios 独家 / Reuters 报道 / 华盛顿邮报 / OpenAI 官方 / The Information / HN Firebase API / 国新办 / 国家发改委 / 国家能源局 / 中科闻歌公告 / 灼识咨询 / 利弗莫尔证券 / 新浪科技 / 北京日报 / IPO 早知道 / 钛媒体 App / 财联社 / 独角兽早知道 / 恒指主连夜盘 / 财联社 6/26 收盘 / 华尔街见闻早餐 FM-Radio / 国际金融要情 / 陆家嘴财经早餐 / 财联社早间 / 6/26 morning/afternoon/evening/21evening 4 份撞车源全有效主动差异化</p>
+            <p style="margin-top: 8px;">OPC Daily · 2026-06-27 · AI 陪你看完今日简报 · morning 类型最强撞车源场景 4 份全有效</p>
+        </footer>
+    </div>
+</body>
+</html>
