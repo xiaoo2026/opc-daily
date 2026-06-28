@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-25 | 陪你看完今日AI简报</title>
+    <style>
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --border-color: #2a2a3a;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-red: #ff6b6b;
+            --accent-orange: #ffa94d;
+            --accent-green: #69db7c;
+            --accent-blue: #74c0fc;
+            --accent-purple: #b197fc;
+            --accent: #6366f1;
+            --tag-red-bg: rgba(255, 107, 107, 0.15);
+            --tag-orange-bg: rgba(255, 169, 77, 0.15);
+            --tag-blue-bg: rgba(116, 192, 252, 0.15);
+            --tag-purple-bg: rgba(177, 151, 252, 0.15);
+            --tag-green-bg: rgba(105, 219, 124, 0.15);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 0 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .site-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+        .site-title span { color: var(--accent); }
+        .report-time { font-size: 13px; color: var(--text-muted); }
+        .hero { margin-bottom: 48px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #b0b0c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        .hero .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-capital { background: var(--tag-red-bg); color: var(--accent-red); }
+        .tag-product { background: var(--tag-orange-bg); color: var(--accent-orange); }
+        .tag-security { background: var(--tag-purple-bg); color: var(--accent-purple); }
+        .tag-trend { background: var(--tag-blue-bg); color: var(--accent-blue); }
+        .tag-policy { background: var(--tag-green-bg); color: var(--accent-green); }
+        .summary-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        .summary-card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .summary-card ul { list-style: none; }
+        .summary-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .summary-card li:last-child { border-bottom: none; }
+        .summary-card li::before {
+            content: '→';
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .card:hover { background: var(--bg-card-hover); border-color: #3a3a4a; }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .card .source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .key-numbers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .num-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .num-card .number {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .num-card .label { font-size: 12px; color: var(--text-muted); }
+        .num-red .number { color: var(--accent-red); }
+        .num-green .number { color: var(--accent-green); }
+        .num-blue .number { color: var(--accent-blue); }
+        .num-orange .number { color: var(--accent-orange); }
+        .num-purple .number { color: var(--accent-purple); }
+        .trend-alert {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(116, 192, 252, 0.08));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 40px 0;
+        }
+        .trend-alert h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .trend-alert p { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+        .trend-alert .last { margin-bottom: 0; }
+        .github-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+        .github-table th, .github-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .github-table th {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .github-table td { color: var(--text-secondary); }
+<div class="container">
+    <header class="site-header">
+        <div class="site-title">OPC DAILY · AI 智能简报</div>
+        <div class="site-date">2026-06-28 晚报</div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-tag">EVENING BRIEFING</div>
+        <h1 class="hero-title">周末三市场闭市 DeepSeek DSpark 4 段式发酵 + Anthropic 周末三大新信号</h1>
+        <p class="hero-subtitle">6/28 12:00 ~ 6/28 18:00 北京时间 6h 窗口 · 北美 6/28 04:00 ~ 6/28 10:00 UTC</p>
+        <p class="hero-meta">DeepSeek DSpark 推理优化 + 纳指科技 ETF 景顺 6/29 停牌 + Anthropic Fable 5 下周回归 + 急眼的 Anthropic 炒作蒸馏 + 周末三市场闭市</p>
+    </div>
+
+    <div class="tags">
+        <span class="tag tag-blue">DSpark 4 段式发酵</span>
+        <span class="tag tag-orange">纳指 ETF 6/29 停牌</span>
+        <span class="tag tag-purple">Anthropic Fable 5</span>
+        <span class="tag tag-red">急眼的蒸馏指控</span>
+        <span class="tag tag-green">三市场闭市</span>
+        <span class="tag tag-blue">DeepSeek 一边招人一边开源</span>
+        <span class="tag tag-orange">Anthropic 9700 用户调研</span>
+        <span class="tag tag-purple">HN front 7 维度</span>
+    </div>
+
+    <section class="quick-stats">
+        <div class="stat-card stat-blue">
+            <div class="stat-label">DeepSeek DSpark 4 段式</div>
+            <div class="stat-value">+25pt</div>
+            <div class="stat-delta">HN #27 762pt / 推理 60-85% 提速 / 一边招人一边开源</div>
+        </div>
+        <div class="stat-card stat-orange">
+            <div class="stat-label">美股点金</div>
+            <div class="stat-value">去杠杆</div>
+            <div class="stat-delta">6/28 12:26 芯片股板块轮动 / 6/29 纳指 ETF 停牌</div>
+        </div>
+        <div class="stat-card stat-purple">
+            <div class="stat-label">Anthropic Fable 5</div>
+            <div class="stat-value">下周回归</div>
+            <div class="stat-delta">6/28 11:06 彭博 / 6/28 09:32 Mythos 5 重新部署</div>
+        </div>
+        <div class="stat-card stat-red">
+            <div class="stat-label">Anthropic 蒸馏指控</div>
+            <div class="stat-value">2880 万</div>
+            <div class="stat-delta">4-6 月 25000 账号 / 阿里通义回应</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔥 今日核心警报（6/28 12:00 ~ 18:00 北京时间 6h 窗口）</div>
+        <div class="content-block">
+            <p>过去 6 小时全球 AI 行业在 5 个新维度同时放出压倒性信号：</p>
+            <ol>
+                <li><strong>DeepSeek DSpark 完整 4 段式发酵 + DeepSeek 大规模招兵买马 + 一边招人一边开源</strong> - 6/28 13:38 腾讯网 - DeepSeeK 突然发布 DSpark,让 AI 的回答不再「挤牙膏」+ 6/28 14:00 ~ 6/28 18:00 DeepSeek DSpark 三段式发酵（13:38 + 09:48 + 10:58 + 11:20 完整 4 段式发酵）+ 6/28 09:30 新浪财经 - DeepSeek 开始造富 + HN front #27 DSpark 762pt/323c（vs 6/28 afternoon #26 737pt/306c = +25pt/+17c 6h 增量 持续发酵）+ DeepSeek 一边招人一边开源 = 推理优化 + 商业双线并进</li>
+                <li><strong>6/28 12:26 美股点金芯片股抛售去杠杆 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 + 6/28 周末美股闭市</strong> - 6/28 12:26 财联社 - 美股点金丨芯片股遭遇抛售去杠杆,板块轮动如何演绎 + 6/27 evening 美股连续 4 日板块轮动持续 + 6/28 周末美股闭市 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 = 美股 6/29 开盘前 A 股 AI 板块预热信号</li>
+                <li><strong>6/28 11:06 彭博社 - Anthropic Fable 5 大模型管制有望松绑,下周或恢复公众访问 + 6/28 08:31 路透社 - 急眼的 Anthropic 炒作蒸馏,背后是叙事权之战</strong> - 6/28 11:06 彭博社 - Anthropic Fable 5 大模型管制有望松绑,下周或恢复公众访问 + 6/28 08:31 路透社 - Anthropic 致信美国参议员 + 白宫官员 + 4-6 月 25000 个虚假账号 + 2880 万次交互 + 蒸馏 Claude 模型 + 6/28 周末 Anthropic 多重利好集中发酵 = 6/28 evening Anthropic 周末三大新信号</li>
+                <li><strong>6/28 周末港股 + A 股闭市（端午小长假最后一天）+ 6/29 周一开盘预判</strong> - 6/28 周末港股闭市 + 6/28 周末 A 股闭市 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 = 6/28 evening 港股 + A 股 + 美股 evening 三市场闭市状态 + "三市场闭市 + 节后开盘"双线对位</li>
+                <li><strong>HN front 6/28 18:00 = 北美 6/28 10:00 UTC 30 items 串行 fetch 实测 + 7 维度并发 + 6h 增量 +108pt/+27pt/+25pt/+58pt</strong> - #5 OpenRA 713pt/134c + #7 Anonymous GitHub mass-dropping undisclosed 0-days 811pt/318c（vs 6/28 afternoon #5 703pt/279c = +108pt/+39c 6h 增量 持续引爆）+ #12 Ford hired AI and sacked humans. It backfired badly 200pt/125c + #20 AI learns the "dark art" of RFIC design 232pt/151c（vs 6/28 afternoon #8 205pt/134c = +27pt/+17c 6h 增量 持续发酵）+ #27 DSpark 762pt/323c（vs 6/28 afternoon #26 737pt/306c = +25pt/+17c 6h 增量 持续发酵）+ #29 Post-Mythos Cybersecurity 153pt/55c（vs 6/28 afternoon #25 138pt/44c = +15pt/+11c 6h 增量 持续引爆）+ #30 Asian AI startups launch Mythos-like models 230pt/174c（vs 6/28 afternoon #19 172pt/143c = +58pt/+31c 6h 增量 持续发酵）</li>
+            </ol>
+            <p><strong>五线并发"6/28 13:38 + 6/28 14:00 ~ 6/28 18:00 DeepSeek DSpark 完整 4 段式发酵 + 6/28 09:30 DeepSeek 开始造富 + HN front #27 762pt +25pt 6h 增量 + DeepSeek 大规模招兵买马 + 一边招人一边开源 + 6/28 12:26 美股点金芯片股抛售去杠杆 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 + 6/28 周末美股闭市 = 美股 6/28 evening 复盘 + 6/28 11:06 彭博社 - Anthropic Fable 5 下周或恢复公众访问 + 6/28 08:31 路透社 - 急眼的 Anthropic 炒作蒸馏,背后是叙事权之战 + 6/28 周末 Anthropic 多重利好集中发酵 + 6/28 周末港股 + A 股闭市（端午小长假最后一天）+ 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 + 6/29 周一开盘预判 + HN front 6/28 18:00 = 北美 6/28 10:00 UTC 30 items 串行 fetch 实测 + 7 维度并发 + 6h 增量 +108pt/+27pt/+25pt/+58pt 主线"</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #1：DeepSeek DSpark 完整 4 段式发酵 + 大规模招兵买马 + 一边招人一边开源</div>
+        <div class="content-block">
+            <h3>1️⃣ 6/28 13:38 腾讯网 - DeepSeeK 突然发布 DSpark,让 AI 的回答不再「挤牙膏」</h3>
+            <ul>
+                <li>DeepSeek 始终没有忘记开源这条主线,6 月 28 日,DeepSeek 联合北大开源 DSpark</li>
+                <li>核心思想是"并行主干 + 轻量串行模块",半自回归推测解码</li>
+                <li>DSpark 采用半自回归架构,将并行主干网络与轻量串行模块结合,以建立块内 token 依赖关系</li>
+            </ul>
+            <h3>2️⃣ 6/28 14:00 ~ 6/28 18:00 DeepSeek DSpark 完整 4 段式发酵</h3>
+            <ul>
+                <li>第 1 段 09:48 腾讯网 - DeepSeek 又变强了:发布 DSpark 框架 推理速度提升超 60%</li>
+                <li>第 2 段 10:58 完整披露 - DeepSeek 联合北大开源 DSpark V4 线上服务生成速度提升超 60%</li>
+                <li>第 3 段 11:20 腾讯网 - DeepSeek 发布推测解码框架 DSpark,生成速度最高提升 85%</li>
+                <li><strong>第 4 段 13:38 腾讯网 - DeepSeeK 突然发布 DSpark,让 AI 的回答不再「挤牙膏」</strong></li>
+            </ul>
+            <h3>3️⃣ HN front #27 DSpark 762pt/323c + DeepSeek 一边招人一边开源</h3>
+            <ul>
+                <li>HN front #27 DSpark 762pt/323c（vs 6/28 afternoon #26 737pt/306c = +25pt/+17c 6h 增量 持续发酵）</li>
+                <li>6/28 09:30 新浪财经 - DeepSeek 开始造富 - DeepSeek 概念股持续受益</li>
+                <li><strong>DeepSeek 大规模招兵买马</strong> - DeepSeek 近期开启大规模招聘</li>
+                <li><strong>DeepSeek 一边招人一边开源</strong> = 推理优化层落地 + 商业层持续扩张</li>
+                <li>DeepSeek 完整 4 段式发酵 + 大规模招兵买马 + 一边招人一边开源 = 推理优化 + 商业双线并进</li>
+            </ul>
+            <p><strong>evening 必报"6/28 13:38 + 6/28 14:00 ~ 6/28 18:00 DeepSeek DSpark 完整 4 段式发酵 + 6/28 09:30 DeepSeek 开始造富 + HN front #27 762pt +25pt 6h 增量 + DeepSeek 大规模招兵买马 + 一边招人一边开源"主线</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #2：6/28 12:26 美股点金芯片股抛售去杠杆 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 = 美股 6/28 evening 复盘</div>
+        <div class="content-block">
+            <h3>1️⃣ 6/28 12:26 财联社 - 美股点金丨芯片股遭遇抛售去杠杆,板块轮动如何演绎</h3>
+            <ul>
+                <li>6/26 费城半导体指数 -5.29%</li>
+                <li>6/27 美股成交额第 1 名美光科技跌 6.69% 成交 990.34 亿美元</li>
+                <li>OpenAI IPO 推迟至 2027</li>
+                <li>Baird 投资策略师 Ross Mayfield：板块轮动可能会"持续到七月"，部分原因是部分芯片股已经"涨得太多"</li>
+            </ul>
+            <h3>2️⃣ 6/27 evening 美股连续 4 日板块轮动持续</h3>
+            <ul>
+                <li>美光 6/26 -6.67%</li>
+                <li>安森美 -24% 创 2020 年以来最大单日跌幅</li>
+                <li>西部数据 -13% / 希捷 -12% / 闪迪 -10%</li>
+                <li>恩智浦 / 高通 -7% / 英伟达 -1.6%</li>
+                <li>6/27 美光 -6.69% 第 1 名 成交 990.34 亿美元</li>
+            </ul>
+            <h3>3️⃣ 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 = 美股 6/29 开盘前 A 股 AI 板块预热信号</h3>
+            <ul>
+                <li>6 月 28 日,景顺长城基金管理有限公司公告</li>
+                <li>景顺长城纳斯达克科技市值加权交易型开放式指数证券投资基金(QDII)(场内简称:纳指科技 ETF 景顺,交易代码:159509)</li>
+                <li>将于 2026 年 6 月 29 日开市起停牌,自当日 10:30 起复牌</li>
+                <li>停牌期间本基金赎回业务照常办理</li>
+                <li>= 美股 6/29 开盘前 A 股 AI 板块预热信号</li>
+            </ul>
+            <h3>4️⃣ 6/28 周末美股闭市</h3>
+            <ul>
+                <li>美股 6/28（周日）全市场闭市</li>
+                <li>6/29 周一开盘前 A 股 AI 板块预热信号 = 6/28 evening 美股板块轮动周末复盘第二步</li>
+            </ul>
+            <p><strong>evening 必报"6/28 12:26 美股点金芯片股抛售去杠杆 + 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 + 6/28 周末美股闭市 = 美股 6/28 evening 复盘"主线</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #3：Anthropic 周末三大新信号（Fable 5 下周回归 + 急眼的蒸馏指控 + 多重利好集中）</div>
+        <div class="content-block">
+            <h3>1️⃣ 6/28 11:06 彭博社 - Anthropic Fable 5 大模型管制有望松绑,下周或恢复公众访问</h3>
+            <ul>
+                <li>据彭博社消息,华盛顿方面计划放宽对人工智能企业 Anthropic 旗下 Fable 5 大模型的出口管制措施</li>
+                <li>相关限制有望最快于下周解除</li>
+                <li>该模型公众访问权限或将同步恢复</li>
+            </ul>
+            <h3>2️⃣ 6/28 08:31 路透社 - 急眼的 Anthropic 炒作蒸馏,背后是叙事权之战</h3>
+            <ul>
+                <li>6 月 25 日,外媒爆出,美国 AI 公司 Anthropic 指控阿里巴巴千问(Qwen)模型「蒸馏」其 Claude 模型</li>
+                <li>据路透社、《华尔街日报》,Anthropic 已致信美国参议员及白宫官员</li>
+                <li>指控阿里在 4 月到 6 月期间,用 25000 个虚假账号与 Claude 进行约 2880 万次交互,试图蒸馏 Claude</li>
+                <li>= 中美 AI 公开指控范式建立</li>
+            </ul>
+            <h3>3️⃣ 6/28 周末 Anthropic 多重利好集中发酵</h3>
+            <ul>
+                <li><strong>Fable 5 下周回归</strong> = 出口管制松绑</li>
+                <li><strong>Mythos 5 重新部署</strong> = 6/28 09:32 财联社 - 美国政府已通知 Anthropic,其最强网络安全模型 Mythos 5 可重新部署给一批运营和防御关键基础设施的美国机构</li>
+                <li><strong>9700 用户调研近半数 AI 可承担过半日常工作</strong> = 6/28 11:06 IT 之家 - 人工智能企业 Anthropic 面向约 9700 名 Claude 平台用户开展专项调研,近半数受访用户表示,当前人工智能已能够承担自身一半及以上工作内容</li>
+            </ul>
+            <p><strong>evening 必报"6/28 11:06 彭博社 - Anthropic Fable 5 下周或恢复公众访问 + 6/28 08:31 路透社 - 急眼的 Anthropic 炒作蒸馏,背后是叙事权之战 + 6/28 周末 Anthropic 多重利好集中发酵"主线</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #4：6/28 周末港股 + A 股闭市（端午小长假最后一天）+ 6/29 周一开盘预判</div>
+        <div class="content-block">
+            <h3>1️⃣ 6/28 周末港股闭市 + A 股闭市 = 端午小长假最后一天</h3>
+            <ul>
+                <li>6/28（周日）港股主板全天闭市（端午小长假最后一天）</li>
+                <li>6/28 上交所 + 深交所全天闭市</li>
+                <li>北证 50 / 科创 50 等全部休市</li>
+                <li>= 6/28 evening 港股 + A 股 + 美股 evening 三市场闭市状态第一步</li>
+            </ul>
+            <h3>2️⃣ 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 = 美股 6/29 开盘前 A 股 AI 板块预热信号</h3>
+            <ul>
+                <li>6 月 28 日,景顺长城基金管理有限公司公告</li>
+                <li>景顺长城纳斯达克科技市值加权交易型开放式指数证券投资基金(QDII)(场内简称:纳指科技 ETF 景顺,交易代码:159509)</li>
+                <li>将于 2026 年 6 月 29 日开市起停牌,自当日 10:30 起复牌</li>
+                <li>停牌期间本基金赎回业务照常办理</li>
+                <li>= 6/28 evening 港股 + A 股 + 美股 evening 三市场闭市状态第二步</li>
+            </ul>
+            <h3>3️⃣ 6/29 周一开盘预判</h3>
+            <ul>
+                <li>港股：6/29 周一开盘 = 端午小长假后第一个交易日</li>
+                <li>A 股：6/29 周一开盘</li>
+                <li>美股：6/29 周一开盘 = 6/28 evening 美股板块轮动延续</li>
+                <li>= "三市场闭市 + 节后开盘"双线对位</li>
+            </ul>
+            <p><strong>evening 必报"6/28 周末港股 + A 股闭市（端午小长假最后一天）+ 6/28 17:46 纳指科技 ETF 景顺 6/29 10:30 停牌 + 6/29 周一开盘预判"主线</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #5：HN front 6/28 18:00 = 北美 6/28 10:00 UTC 30 items 串行 fetch 实测 + 7 维度并发 + 6h 增量 +108pt/+27pt/+25pt/+58pt</div>
+        <div class="content-block">
+            <h3>1️⃣ HN front 6/28 18:00 = 北美 6/28 10:00 UTC 30 items 串行 fetch 实测 6 条 AI 相关新晋</h3>
+            <ul>
+                <li><strong>#5 OpenRA 713pt/134c</strong>（openra.net/ - 开源游戏引擎）</li>
+                <li><strong>#7 Anonymous GitHub mass-dropping undisclosed 0-days 811pt/318c</strong>（github.com/bikini/exploitarium - vs 6/28 afternoon #5 703pt/279c = <strong>+108pt/+39c 6h 增量 持续引爆</strong>）</li>
+                <li><strong>#12 Ford hired AI and sacked humans. It backfired badly 200pt/125c</strong>（the-independent.com - 企业 AI 化失败案例）</li>
+                <li><strong>#20 AI learns the "dark art" of RFIC design 232pt/151c</strong>（spectrum.ieee.org/ai-radio-chip-design - vs 6/28 afternoon #8 205pt/134c = <strong>+27pt/+17c 6h 增量 持续发酵</strong>）</li>
+                <li><strong>#27 DSpark: Speculative decoding accelerates LLM inference [pdf] 762pt/323c</strong>（github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf - vs 6/28 afternoon #26 737pt/306c = <strong>+25pt/+17c 6h 增量 持续发酵</strong>）</li>
+                <li><strong>#29 Post-Mythos Cybersecurity: Keep calm and carry on 153pt/55c</strong>（cephalosec.com - vs 6/28 afternoon #25 138pt/44c = <strong>+15pt/+11c 6h 增量 持续引爆</strong>）</li>
+                <li><strong>#30 Asian AI startups launch Mythos-like models 230pt/174c</strong>（techcrunch.com - vs 6/28 afternoon #19 172pt/143c = <strong>+58pt/+31c 6h 增量 持续发酵</strong>）</li>
+            </ul>
+            <h3>2️⃣ 7 维度并发</h3>
+            <ul>
+                <li><strong>开源游戏</strong> - #5 OpenRA = 开源游戏引擎 = HN front #5 当日</li>
+                <li><strong>GitHub 安全</strong> - #7 Anonymous GitHub mass-dropping undisclosed 0-days 811pt/318c +108pt/+39c 6h 增量 持续引爆</li>
+                <li><strong>企业 AI 化失败案例</strong> - #12 Ford hired AI and sacked humans. It backfired badly 200pt/125c</li>
+                <li><strong>国产模型推理优化</strong> - #20 AI learns the "dark art" of RFIC design 232pt/151c +27pt/+17c 6h 增量 持续发酵</li>
+                <li><strong>国产模型推理优化</strong> - #27 DSpark 762pt/323c +25pt/+17c 6h 增量 持续发酵</li>
+                <li><strong>后 Mythos 网络安全</strong> - #29 Post-Mythos Cybersecurity 153pt/55c +15pt/+11c 6h 增量 持续引爆</li>
+                <li><strong>亚洲 AI 创业</strong> - #30 Asian AI startups launch Mythos-like models 230pt/174c +58pt/+31c 6h 增量 持续发酵</li>
+            </ul>
+            <h3>3️⃣ 6h 累计增量</h3>
+            <ul>
+                <li><strong>#7 Anonymous GitHub mass-dropping</strong>: 703pt→811pt +108pt / 279c→318c +39c</li>
+                <li><strong>#20 AI learns the "dark art" of RFIC design</strong>: 205pt→232pt +27pt / 134c→151c +17c</li>
+                <li><strong>#27 DSpark</strong>: 737pt→762pt +25pt / 306c→323c +17c</li>
+                <li><strong>#29 Post-Mythos Cybersecurity</strong>: 138pt→153pt +15pt / 44c→55c +11c</li>
+                <li><strong>#30 Asian AI startups launch Mythos-like models</strong>: 172pt→230pt +58pt / 143c→174c +31c</li>
+                <li>= 6h 累计 +25pt/+108pt/+27pt/+15pt/+58pt = 持续引爆 + 持续发酵</li>
+            </ul>
+            <p><strong>evening 必报"HN front 6/28 18:00 = 北美 6/28 10:00 UTC 30 items 串行 fetch 实测 + 7 维度并发 + 6h 增量 +108pt/+27pt/+25pt/+58pt"主线</strong>。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🔁 角度 #6：三时段递进完整收官（morning + afternoon + evening）+ 撞车协议总结</div>
+        <div class="content-block">
+            <h3>1️⃣ 三时段递进复盘（DeepSeek DSpark 为例）</h3>
+            <ul>
+                <li>6/28 morning - 6/27 23:00 - 6/28 08:00 北大 + DeepSeek 联合开源 DSpark + HN front #20 DSpark 719pt/298c + DeepSeek 四层国际化布局完成 - 商业层 + 基础设施层 + 模型层 + 推理优化层</li>
+                <li>6/28 afternoon - 6/28 09:48 - 6/28 11:20 腾讯网 - DeepSeek 又变强了:发布 DSpark 框架 + DeepSeek-V4-Pro-DSpark + DeepSeek-V4-Flash-DSpark 模型 + HN front #26 DSpark 737pt/306c +18pt 3h 增量</li>
+                <li><strong>6/28 evening - 6/28 13:38 腾讯网 - DeepSeeK 突然发布 DSpark,让 AI 的回答不再「挤牙膏」+ HN front #27 DSpark 762pt/323c +25pt 6h 增量 + DeepSeek 大规模招兵买马 + 一边招人一边开源</strong></li>
+            </ul>
+            <h3>2️⃣ 撞车协议总结表</h3>
+            <table class="github-table">
+                <thead>
+                    <tr><th>撞车源</th><th>已覆盖事件</th><th>6/28 evening 主动剔除</th><th>6/28 evening 主动聚焦</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6/28 morning</td>
+                        <td>DSpark 4 段 + DeepSeek 100% 切换 + 美光 990.34 亿第 1 名 + 美光 CEO 内存危机 2028 + 港股早醒</td>
+                        <td>DSpark 4 段 + DeepSeek 100% 切换 + 美光 990.34 亿第 1 名 + 美光 CEO 内存危机 2028 + 港股早醒完整 5 项</td>
+                        <td>DeepSeek DSpark 4 段式 + 美股点金去杠杆 + Anthropic Fable 5 下周回归 + 急眼蒸馏指控 + HN front 7 维度</td>
+                    </tr>
+                    <tr>
+                        <td>6/28 afternoon</td>
+                        <td>DSpark 60-85% 提速 + Hunt Good 周末三信号 + 8 大产业新信号 + 港股早醒 + HN front 6 维度 3h 增量</td>
+                        <td>DSpark 60-85% 提速 + Hunt Good 周末三信号 + 8 大产业新信号 + 港股早醒 + HN front 6 维度 3h 增量完整 5 项</td>
+                        <td>同上 5 个新角度（额外剔除 6/28 09:48 - 6/28 11:20 腾讯网 - DeepSeek 又变强了 / 6/28 10:48 Hunt Good 周报 / 6/28 11:00 苹果 Vision Pro 负责人转投 OpenAI / 6/28 11:32 - 6/28 14:30 国产 AI + 港股 6/28 周末复盘 / HN front 6/28 12:00 6 维度）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">🛡️ 隐私红线检查</div>
+        <div class="content-block">
+            <p>无用户个人信息 / 私人语气 / 内部称呼。无业务域名 / 资产 / 系统架构信息。无内部称呼 / 品牌标识。无 API key / 服务器配置。</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>数据来源：腾讯网 6/28 13:38 - DeepSeeK 突然发布 DSpark,让 AI 的回答不再「挤牙膏」+ 6/28 11:20 DSpark 推测解码框架生成速度最高提升 85% + 6/28 10:58 完整披露 DeepSeek 联合北大开源 DSpark V4 线上服务生成速度提升超 60% + 6/28 09:48 - DeepSeek 又变强了:发布 DSpark 框架 推理速度提升超 60% | 新浪财经 6/28 09:30 - DeepSeek 开始造富 + DeepSeek 概念股持续受益 | 北大计算机学院 6/27 + DeepSpec GitHub 6/28 - deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf 完整论文披露 | DeepSeek 官方 6/27 - DeepSeek-V4-Pro-DSpark + DeepSeek-V4-Flash-DSpark 模型 + 梁文锋署名 | HN Firebase API 6/28 18:00 串行 fetch 实测 6-10s / HN front 30 items 7 条 AI 相关新晋 - #5 OpenRA 713pt/134c + #7 Anonymous GitHub mass-dropping undisclosed 0-days 811pt/318c（vs 6/28 afternoon #5 703pt/279c = +108pt/+39c 6h 增量 持续引爆）+ #12 Ford hired AI and sacked humans. It backfired badly 200pt/125c + #20 AI learns the "dark art" of RFIC design 232pt/151c（vs 6/28 afternoon #8 205pt/134c = +27pt/+17c 6h 增量 持续发酵）+ #27 DSpark: Speculative decoding accelerates LLM inference [pdf] 762pt/323c（vs 6/28 afternoon #26 737pt/306c = +25pt/+17c 6h 增量 持续发酵）+ #29 Post-Mythos Cybersecurity: Keep calm and carry on 153pt/55c（vs 6/28 afternoon #25 138pt/44c = +15pt/+11c 6h 增量 持续引爆）+ #30 Asian AI startups launch Mythos-like models 230pt/174c（vs 6/28 afternoon #19 172pt/143c = +58pt/+31c 6h 增量 持续发酵）| 财联社 6/28 12:26 - 美股点金丨芯片股遭遇抛售去杠杆,板块轮动如何演绎 + 6/27 美光 -6.69% 第 1 名 成交 990.34 亿美元 + OpenAI IPO 推迟至 2027 + Baird 投资策略师 Ross Mayfield 板块轮动可能会"持续到七月" | 景顺长城基金 6/28 17:46 - 景顺长城纳斯达克科技市值加权交易型开放式指数证券投资基金(QDII)(场内简称:纳指科技 ETF 景顺,交易代码:159509) 将于 2026 年 6 月 29 日开市起停牌,自当日 10:30 起复牌 | 彭博社 6/28 11:06 - Anthropic Fable 5 大模型管制有望松绑,下周或恢复公众访问 + 华盛顿方面计划放宽对 Anthropic 旗下 Fable 5 大模型的出口管制措施 | 路透社 6/28 08:31 - 急眼的 Anthropic 炒作蒸馏,背后是叙事权之战 + Anthropic 致信美国参议员 + 白宫官员 + 4-6 月 25000 个虚假账号 + 2880 万次交互 + 蒸馏 Claude 模型 | IT 之家 6/28 11:06 - Anthropic 面向 9700 名 Claude 用户调研,近半数 AI 可承担过半日常工作 | 财联社 6/28 09:32 - Anthropic Mythos 5 重新部署批准 + 美国政府已通知 Anthropic,其最强网络安全模型 Mythos 5 可重新部署给一批运营和防御关键基础设施的美国机构 | 港交所 6/28 evening 18:00 - 6/28 周末港股主板全天闭市（端午小长假最后一天）| 上交所 6/28 + 深交所 6/28 - 6/28 周末 A 股全天闭市</p>
+        <p style="margin-top: 8px;">OPC Daily · 2026-06-28 晚报 · AI 陪你看完今日简报</p>
+    </footer>
+</div>
+</body>
+</html>
