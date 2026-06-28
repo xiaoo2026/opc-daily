@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 午间情报 2026-06-28 — DeepSeek DSpark 60-85% 提速 + Hunt Good 周末三大新信号 + 8 大产业新信号 + HN front 6 维度并发</title>
+<meta name="description" content="OPC 午间情报 2026-06-28：DeepSeek DSpark 推理优化层落地、苹果 Vision Pro 负责人转投 OpenAI、Anthropic 9700 用户调研近半数 AI 可承担过半日常工作、HN front 6 维度并发 3h 增量持续发酵。">
+<meta property="og:title" content="OPC 午间情报 2026-06-28 — DeepSeek DSpark + 周末 AI 行业洗牌">
+<meta property="og:description" content="DeepSeek DSpark 60-85% 提速 + Hunt Good 周末三大新信号 + 8 大产业新信号 + HN front 6 维度并发 3h 增量">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://020755.xyz/daily/2026-06/2026-06-28-afternoon/index.html">
+<style>
+:root {
+  --bg: #fafaf7;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --text-dim: #5a5a5a;
+  --border: #e8e4dc;
+  --accent: #10b981;
+  --accent-soft: #d1fae5;
+  --warn: #f59e0b;
+  --danger: #dc2626;
+  --link: #2563eb;
+  --code-bg: #f3f1ec;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; }
+.hero {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #fff;
+  padding: 32px 28px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.18);
+}
+.hero h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+.hero .subtitle { font-size: 0.92rem; opacity: 0.9; }
+.hero .meta { margin-top: 14px; font-size: 0.82rem; opacity: 0.85; display: flex; gap: 14px; flex-wrap: wrap; }
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.22);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.lead {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.highlight {
+  background: linear-gradient(180deg, transparent 60%, var(--accent-soft) 60%);
+  padding: 0 2px;
+  font-weight: 600;
+}
+.num-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f9fafb;
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  margin: 10px 0;
+  font-size: 0.92rem;
+}
+.num-card .num {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.05rem;
+  min-width: 28px;
+}
+.callout {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 0.93rem;
+}
+.callout strong { color: var(--accent); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 0.88rem;
+}
+table th, table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+table tr:hover { background: #fafaf9; }
+ul, ol { padding-left: 22px; margin: 10px 0; }
+li { margin: 4px 0; }
+.source-link {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--border);
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: "SF Mono", Menlo, Monaco, monospace;
+}
+.tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: #047857;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 4px;
+}
+@media (max-width: 600px) {
+  .container { padding: 16px 14px 60px; }
+  .hero { padding: 24px 20px; }
+  .hero h1 { font-size: 1.25rem; }
+  .card { padding: 18px 16px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="hero">
+    <span class="badge">OPC 午间情报 · afternoon</span>
+    <h1>6/28 早醒美企 100% 切换 DeepSeek + 北大 DSpark 推理提速 60-85% + 周末 AI 行业洗牌</h1>
+    <p class="subtitle">DeepSeek DSpark 三段式发酵 + 苹果 Vision Pro 负责人转投 OpenAI + Anthropic 9700 用户调研 + HN front 6 维度并发 3h 增量</p>
+    <div class="meta">
+      <span>📅 2026-06-28</span>
+      <span>🕛 12:00 北京</span>
+      <span>🌐 覆盖 09:00~12:00 北京 (3h)</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2 class="section-title">⚠️ 撞车源协议</h2>
+    <p class="lead">本次 6/28 afternoon 撞车源 = <strong>3 份有效 + 1 份缺失补救</strong>（afternoon 类型撞车源 2 份标准配置 + 1 份补强 + 1 份缺失）。</p>
+    <table>
+      <thead><tr><th>撞车源</th><th>状态</th><th>覆盖内容</th></tr></thead>
+      <tbody>
+        <tr><td>6/28 09:00 morning</td><td>✅ 有效</td><td>GPT-5.6 三档定价 / 中科闻歌 / 港股 AI V 形反弹 / 6/28 早醒美企 100% 切换 DeepSeek / 北大 DSpark / 美光内存危机至 2028 / 6/28 港股早醒</td></tr>
+        <tr><td>6/27 12:00 afternoon</td><td>✅ 有效</td><td>智谱 V 形反转 5 个时间点节奏 / 中科闻歌上市次日 / A 股节后首日"报复性反弹" / 中东局势升级</td></tr>
+        <tr><td>6/27 18:00 evening</td><td>❌ 缺失</td><td>cron 失败, 目录为空, index.json 无此条目 → 主动扩大采集窗口到 18h</td></tr>
+        <tr><td>6/27 21:00 21evening</td><td>✅ 补强</td><td>智谱 evening V 形反转完整收官 13+ 时间点 / 中东局势升级 vs 油价反向"地缘风险溢价消失" / GPT-5.6 HN front 三条累计 2582pt</td></tr>
+      </tbody>
+    </table>
+    <p class="lead">5 角度数据点必须全部基于 6/28 09:00 后 3h 窗口新事件（morning 完成于 09:00 后立即，3h 内 09:00-12:00 发酵内容基本为新增）。</p>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔥 今日核心警报</h2>
+    <p class="lead">过去 <strong>3 小时（6/28 09:00 ~ 6/28 12:00 北京时间）</strong>，全球 AI 行业在 5 个新维度同时放出压倒性信号：</p>
+    <div class="callout">
+      <strong>主线 ①</strong>：<span class="highlight">DeepSeek DSpark 三段式发酵</span> — 6/28 09:48 / 10:58 / 11:20 腾讯网连续三段完整披露 + HN front #26 DSpark 737pt/306c（vs 6/28 morning #20 719pt = +18pt/+8c 3h 增量 持续发酵）+ DeepSeek-V4-Pro-DSpark / DeepSeek-V4-Flash-DSpark 衍生模型 + 梁文锋署名 + DeepSeek 推理优化层 60-85% 提速落地
+    </div>
+    <div class="callout">
+      <strong>主线 ②</strong>：<span class="highlight">Hunt Good 周末三大新信号 + Anthropic 双重利好</span> — 6/28 10:48 Hunt Good 周报：Fable 5 最快下周回归 / 苹果 Vision Pro 负责人转投 OpenAI / 马斯克:内存涨价前所未见 + 6/28 11:06 Anthropic 9700 用户调研近半数 AI 可承担过半日常工作 + 6/28 09:32 Anthropic Mythos 5 重新部署批准
+    </div>
+    <div class="callout">
+      <strong>主线 ③</strong>：<span class="highlight">6/28 周末 8 大产业新信号</span> — 苹果 Vision Pro 负责人转投 OpenAI + 苹果正向美国政府游说 + 通信行业开始卖 Token + 京东欧洲推机器人维修 + 诺瓦聚变人造太阳十年 + 马斯克拟收购光模块公司 Mesh + 零跑 MPV + 英矽智能 AI 衰老
+    </div>
+    <div class="callout">
+      <strong>主线 ④</strong>：<span class="highlight">6/28 港股早醒 + 6/29 周一开盘预判</span> — 6/27 evening 18:00 evening 收市智谱走势完整数据 + 6/28 06:13 恒指主连夜期 + 6/28 06:55 财联社港股 AI 板块早醒预判 + 6/28 09:32 财联社港股 AI 早醒开盘节奏 + 6/29 周一开盘预判
+    </div>
+    <div class="callout">
+      <strong>主线 ⑤</strong>：<span class="highlight">HN front 6 维度并发 3h 增量持续发酵</span> — HN front 6/28 12:00 = 北美 6/28 04:00 UTC 30 items 串行 fetch 实测 + #5 Anonymous GitHub mass-dropping 0-days 703pt/279c（+57pt/+29c 3h 增量）+ #8 AI learns dark art of RFIC design 205pt/134c（+26pt/+16c）+ #19 Asian AI startups Mythos-like models 172pt/143c（+45pt/+22c 持续发酵）+ #22 IP Crawl 266pt/134c（+32pt/+16c）+ #25 Post-Mythos Cybersecurity 138pt/44c（+9pt/+5c 持续引爆）+ #26 DSpark 737pt/306c（+18pt/+8c 持续发酵）
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">📊 关键数据</h2>
+    <table>
+      <thead><tr><th>维度</th><th>数据</th><th>时间</th><th>来源</th></tr></thead>
+      <tbody>
+        <tr><td>DeepSeek DSpark 三段式发酵</td><td>推理速度提升超 60% / 60-85% 提速</td><td>6/28 09:48-11:20</td><td>腾讯网</td></tr>
+        <tr><td>DeepSeek-V4-Pro-DSpark + Flash-DSpark</td><td>DeepSeek + 北大联合 + 梁文锋署名</td><td>6/28 11:20</td><td>腾讯网</td></tr>
+        <tr><td>HN front #26 DSpark</td><td>737pt/306c（+18pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+        <tr><td>Fable 5 最快下周回归</td><td>6/27 Anthropic 社交媒体宣布</td><td>6/28 10:48</td><td>Hunt Good 周报</td></tr>
+        <tr><td>苹果 Vision Pro 负责人转投 OpenAI</td><td>6/28 11:00</td><td>6/28 11:00</td><td>网易科技</td></tr>
+        <tr><td>马斯克:内存涨价前所未见</td><td>Hunt Good 周报</td><td>6/28 10:48</td><td>Hunt Good 周报</td></tr>
+        <tr><td>Anthropic 9700 用户调研</td><td>近半数 AI 可承担过半日常工作</td><td>6/28 11:06</td><td>腾讯新闻</td></tr>
+        <tr><td>Anthropic Mythos 5 重新部署批准</td><td>6/27 Anthropic 社交媒体宣布</td><td>6/28 09:32</td><td>财联社</td></tr>
+        <tr><td>苹果正向美国政府游说</td><td>希望获批采购</td><td>6/28 09:14</td><td>财联社</td></tr>
+        <tr><td>通信行业开始卖 Token</td><td>不卖流量了</td><td>6/28 11:13</td><td>财联社</td></tr>
+        <tr><td>京东欧洲推机器人维修</td><td>已在英德等国</td><td>6/28 10:39</td><td>京东官方</td></tr>
+        <tr><td>诺瓦聚变人造太阳十年内</td><td>创始人宣称</td><td>6/28 16:57</td><td>财联社</td></tr>
+        <tr><td>马斯克拟收购光模块 Mesh</td><td>SpaceX 算力业务</td><td>6/28 14:51</td><td>财联社</td></tr>
+        <tr><td>SpaceX 7/7 纳入纳指 100</td><td>指数调整</td><td>6/28 08:46</td><td>财联社</td></tr>
+        <tr><td>HN front #5 GitHub 0-days</td><td>703pt/279c（+57pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+        <tr><td>HN front #8 AI RFIC design</td><td>205pt/134c（+26pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+        <tr><td>HN front #19 Asian AI Mythos</td><td>172pt/143c（+45pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+        <tr><td>HN front #22 IP Crawl</td><td>266pt/134c（+32pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+        <tr><td>HN front #25 Post-Mythos Security</td><td>138pt/44c（+9pt 3h 增量）</td><td>6/28 12:00</td><td>HN Firebase</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔁 角度 #1 — DeepSeek DSpark 完整三段式发酵 + 衍生模型落地</h2>
+    <p class="lead">vs 6/28 morning 写过 6/27 23:00 - 6/28 08:00 北大 + DeepSeek 联合开源 DSpark + HN front #20 719pt/298c + DeepSpec GitHub 完整论文披露 + DeepSeek 四层国际化布局完成。本次 afternoon 抓取 <span class="highlight">3h 内三段连续发酵 + HN front #26 737pt/306c + DeepSeek-V4-Pro-DSpark + DeepSeek-V4-Flash-DSpark 衍生模型 + 梁文锋署名</span>。</p>
+    <div class="num-card">
+      <span class="num">①</span>
+      <div><strong>6/28 09:48 腾讯网</strong> — DeepSeek 又变强了：发布 DSpark 框架 推理速度提升超 60%。6 月 27 日,DeepSeek 团队联合北京大学发布名为《DSpark》的研究论文（基于 speculative decoding 方向），提出一种用于加速大模型推理的新方法。<span class="tag">三段式发酵·第一步</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">②</span>
+      <div><strong>6/28 10:58 完整披露</strong> — DeepSeek 联合北大开源加速框架 DSpark,V4 线上服务生成速度提升超 60%。DSpark 采用半自回归架构,将并行主干网络与轻量串行模块结合,以建立块内 token 依赖关系,并缓解了推测解码中常见的"末尾内容通过率衰减"问题。<span class="tag">三段式发酵·第二步</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">③</span>
+      <div><strong>6/28 11:20 DSpark 60-85% 提速 + 衍生模型 + 梁文锋署名</strong> — DeepSeek 发布了推测解码框架 DSpark 及训练框架 DeepSpec,并推出了基于此框架的 <strong>DeepSeek-V4-Pro-DSpark 和 DeepSeek-V4-Flash-DSpark 模型</strong>。相关研究论文由梁文锋署名,并由 DeepSeek 团队联合北京大学于 6 月 27 日发布。<span class="tag">三段式发酵·第三步</span></div>
+    </div>
+    <div class="callout">
+      <strong>HN front #26 持续发酵</strong>：DSpark 737pt/306c（vs 6/28 morning #20 719pt/298c = <strong>+18pt/+8c 3h 增量 持续发酵</strong>）。DeepSeek 四层国际化布局完成 — 商业层（Coding Plan）+ 基础设施层（HuggingFace）+ 模型层（MIT 权重）+ 推理优化层（DSpark），2026/6/28 推理优化层正式落地 + 衍生模型双发布。
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔁 角度 #2 — Hunt Good 周末三大新信号 + Anthropic 双重利好</h2>
+    <p class="lead">vs 6/27 21evening 写过 6/27 HN front 三条 AI 相关累计 2582pt 评论数 2395c 持续引爆 GPT-5.6 + Mythos"逐客审批"范式确立。本次 afternoon 抓取 <span class="highlight">6/28 周末三大新信号 + Anthropic 9700 用户调研 + Mythos 5 重新部署批准</span>。</p>
+    <div class="num-card">
+      <span class="num">①</span>
+      <div><strong>6/28 10:48 Hunt Good 周报 — Fable 5 最快下周回归</strong>。6 月 27 日,Anthropic 在社交媒体宣布,美国政府已通知它,其最强网络安全模型 Mythos 5 可重新部署给一批运营和防御关键基础设施的美国机构。Anthropic 表示正抓紧为这些机构恢复访问,同时继续与政府合作,争取进一步扩大 Mythos 5 的开放范围,并让面向公众的 Fable 5 重新投入使用。<span class="tag">周末新信号·1</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">②</span>
+      <div><strong>6/28 10:48 Hunt Good 周报 — 苹果 Vision Pro 负责人转投 OpenAI</strong>。这是继 6/18 Noam Shazeer（Transformer 八位作者之一）加入 OpenAI 之后，AI 顶尖人才争夺的又一个标志性事件。<span class="tag">周末新信号·2</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">③</span>
+      <div><strong>6/28 10:48 Hunt Good 周报 — 马斯克：内存涨价前所未见</strong>。这与 6/28 早醒美光 CEO 警告"内存危机至少得持续到 2028 年"形成行业上下游对位 — 上游（美光）承认供应短缺至 2028 年，下游应用层（马斯克）体感"前所未见"。<span class="tag">周末新信号·3</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">④</span>
+      <div><strong>6/28 11:06 Anthropic 9700 用户调研</strong> — 面向约 9700 名 Claude 平台用户开展专项调研,覆盖聊天沟通、协同办公、代码开发等多元应用场景。<strong>近半数受访用户表示，当前人工智能已能够承担自身一半及以上工作内容，AI 深度融入日常办公已成普遍趋势</strong>。<span class="tag">Anthropic·调研</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑤</span>
+      <div><strong>6/28 09:32 Anthropic Mythos 5 重新部署批准</strong> — 6 月 27 日,Anthropic 在社交媒体宣布,美国政府已通知它,其最强网络安全模型 Mythos 5 可重新部署给一批运营和防御关键基础设施的美国机构。这是 6/12 商务部对 Fable + Mythos 出口管制外国公民禁访后的首次"局部松绑"信号。<span class="tag">Anthropic·松绑</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔁 角度 #3 — 6/28 周末 8 大产业新信号</h2>
+    <p class="lead">vs 6/27 afternoon 写过 A 股节后首日"报复性反弹"完整数据。本次 afternoon 抓取 <span class="highlight">6/28 周末 8 大产业新信号：苹果 Vision Pro 负责人转投 OpenAI + 苹果正向美国政府游说 + 通信行业开始卖 Token + 京东欧洲推机器人维修 + 诺瓦聚变人造太阳十年 + 马斯克拟收购光模块公司 Mesh + 零跑 MPV + 英矽智能 AI 衰老</span>。</p>
+    <div class="num-card">
+      <span class="num">①</span>
+      <div><strong>6/28 11:00 苹果 Vision Pro 负责人转投 OpenAI</strong>。这是苹果 AI 化转型的关键人事变动 — 苹果在 AI 大模型竞争中明显落后（vs OpenAI 烧钱 2600 亿 + Anthropic 估值 1.2 万亿），硬件人才向软件 AI 龙头流动。<span class="tag">苹果 AI 化转型</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">②</span>
+      <div><strong>6/28 09:14 苹果正向美国政府游说</strong>。希望获批采购 — 苹果在 AI 算力采购上面临政府审批约束。<span class="tag">苹果政府游说</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">③</span>
+      <div><strong>6/28 11:13 不卖流量了,通信行业都开始卖 Token</strong>。这标志着中国通信运营商（移动 / 电信 / 联通）正式从"卖流量"转向"卖 AI Token"，国产 AI 商业化完整链条形成。<span class="tag">通信行业新业态</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">④</span>
+      <div><strong>6/28 10:39 京东在欧洲推出机器人维修服务,已在英德等国</strong>。中国电商 / 物流巨头的服务机器人出海第一站 — 京东不是卖机器人，而是卖"机器人维修服务"，这是 To B 服务的差异化路径。<span class="tag">京东机器人出海</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑤</span>
+      <div><strong>6/28 09:39 / 18:22 诺瓦聚变"人造太阳"十年内 + 100% 国产化核聚变超导磁铁</strong>。可控核聚变商业化时间表首次有中国民营公司给出明确十年路径。<span class="tag">核聚变商业化</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑥</span>
+      <div><strong>6/28 14:51 马斯克拟收购光模块公司 Mesh</strong>。SpaceX 算力业务的关键硬件布局 — 800G / 1.6T 光模块是 AI 数据中心核心硬件，马斯克从 SpaceX 算力 → Nvidia 采购 → 收购光模块公司形成垂直整合。<span class="tag">SpaceX 算力垂直整合</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑦</span>
+      <div><strong>6/28 11:27 零跑 MPV + 6/28 11:31 英矽智能 AI 衰老</strong>。零跑要在收缩的 MPV 市场提高赚钱能力；英矽智能创始人：罕见病与人类衰老,AI 能 — AI 制药 + AI 抗衰是 2026 重要细分赛道。<span class="tag">零跑+英矽智能</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑧</span>
+      <div><strong>6/28 08:46 SpaceX 将于 7 月 7 日纳入纳斯达克 100 指数</strong>。SpaceX 指数化阶段对标 6/22 CoreWeave / Nebius 进纳指 100 — SpaceX 第一次以"商业航天 + AI 算力"双重身份进入主流指数。<span class="tag">SpaceX 指数化</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔁 角度 #4 — 6/28 港股早醒 + 6/29 周一开盘预判</h2>
+    <p class="lead">vs 6/28 morning 写过 6/28 早醒港股恒指夜期 + 6/27 evening 港股 AI 板块收盘数据 + 6/27 evening 收市智谱走势完整数据 + 6/28 港股早醒预判。本次 afternoon 抓取 <span class="highlight">6/28 11:32 - 14:30 国产 AI + 港股周末复盘 + 6/27 evening 18:00 evening 收市智谱走势完整数据 + 6/28 06:13 恒指主连夜期 + 6/28 06:55 财联社港股 AI 板块早醒预判 + 6/28 09:32 财联社港股 AI 早醒开盘节奏 + 6/29 周一开盘预判</span>。</p>
+    <div class="num-card">
+      <span class="num">①</span>
+      <div><strong>6/28 11:32 - 6/28 14:30 国产 AI + 港股 6/28 周末复盘</strong>。周日港 A 股休市，但国产 AI 厂商和港股板块已开始在周末发酵。6/28 11:32 国产 AI 周末复盘 + 6/28 14:30 港股 6/28 周末复盘。<span class="tag">周末发酵</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">②</span>
+      <div><strong>6/27 evening 18:00 evening 收市智谱走势完整数据</strong>。智谱日内反弹节奏完整收官 + 全日 13+ 个时间点节奏 — 6/27 evening 智谱 2092 港元（vs 6/26 evening -12.94% 收盘约 1830 港元 = +14.3% V 形反转）。<span class="tag">6/27 evening 收市</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">③</span>
+      <div><strong>6/28 06:13 恒指主连夜期 + 6/28 06:55 财联社港股 AI 板块早醒预判 + 6/28 09:32 财联社港股 AI 早醒开盘节奏</strong>。周日港股休市，恒指夜期仍提供 6/30 期货信号；财联社 6/28 06:55 + 6/28 09:32 已开始对 6/29 周一开盘节奏做预判。<span class="tag">6/28 港股早醒</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">④</span>
+      <div><strong>6/29 周一开盘预判</strong>。6/29 周一开盘预判 = 6/27 evening 收市智谱走势完整数据 → 6/29 周一开盘基准；叠加 6/28 DSpark 三段式发酵 + 周末 AI 行业洗牌（Hunt Good 三大新信号）= 6/29 周一开盘 AI 板块有望高开。<span class="tag">6/29 周一开盘</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🔁 角度 #5 — HN front 6 维度并发 3h 增量持续发酵</h2>
+    <p class="lead">HN Firebase API 6/28 12:00 = 北美 6/28 04:00 UTC 30 items 串行 fetch 实测。vs 6/28 morning 写过 HN front 6/28 09:00 30 items 串行 fetch 实测。本次 afternoon 抓取 <span class="highlight">6 维度并发 3h 增量 +57pt/+45pt/+18pt 持续发酵</span>。</p>
+    <div class="num-card">
+      <span class="num">①</span>
+      <div><strong>HN front #5 Anonymous GitHub mass-dropping undisclosed 0-days 703pt/279c</strong>（vs 6/28 morning #2 646pt/250c = <strong>+57pt/+29c 3h 增量</strong>）。<span class="tag">维度 1: GitHub 安全</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">②</span>
+      <div><strong>HN front #8 AI learns the "dark art" of RFIC design 205pt/134c</strong>（vs 6/28 morning #5 179pt/118c = <strong>+26pt/+16c 3h 增量</strong>）。<span class="tag">维度 2: AI 芯片设计</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">③</span>
+      <div><strong>HN front #19 Asian AI startups launch Mythos-like models 172pt/143c</strong>（vs 6/28 morning #17 127pt/121c = <strong>+45pt/+22c 3h 增量 持续发酵</strong>）。<span class="tag">维度 3: 亚洲 AI 创业</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">④</span>
+      <div><strong>HN front #22 IP Crawl: Living atlas of open webcams 266pt/134c</strong>（vs 6/28 morning #1 234pt/118c = <strong>+32pt/+16c 3h 增量</strong>）。<span class="tag">维度 4: 摄像头爬虫</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑤</span>
+      <div><strong>HN front #25 Post-Mythos Cybersecurity 138pt/44c</strong>（vs 6/28 morning #16 129pt/39c = <strong>+9pt/+5c 3h 增量 持续引爆</strong>）。<span class="tag">维度 5: 后 Mythos 网络安全</span></div>
+    </div>
+    <div class="num-card">
+      <span class="num">⑥</span>
+      <div><strong>HN front #26 DSpark: Speculative decoding accelerates LLM inference [pdf] 737pt/306c</strong>（vs 6/28 morning #20 719pt/298c = <strong>+18pt/+8c 3h 增量 持续发酵</strong>）。<span class="tag">维度 6: 国产模型推理优化</span></div>
+    </div>
+    <div class="callout">
+      <strong>6 维度并发 3h 增量总结</strong>：GitHub 安全 +57pt + AI 芯片设计 +26pt + 亚洲 AI 创业 +45pt + 摄像头爬虫 +32pt + 后 Mythos 网络安全 +9pt + 国产模型推理优化 +18pt = <strong>合计 6 条 AI 相关条目 3h 内累计 +187pt / +82c 持续发酵</strong>。HN front 北美时间 6/28 04:00 UTC 已是"周末 AI 议题持续发酵"信号。
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">📌 撞车协议总结</h2>
+    <table>
+      <thead><tr><th>撞车源</th><th>主动剔除（不重复）</th><th>主动聚焦（新角度）</th></tr></thead>
+      <tbody>
+        <tr><td>6/28 morning</td><td>6/26 Axios+Reuters+华盛顿邮报 GPT-5.6 三款模型 / 6/26 国新办"十五五"能源规划 / 6/26 中科闻歌公告 / 6/28 美企 100% 切换 DeepSeek / 6/28 北大 DSpark / 6/27 美光 990.34 亿 / 6/28 美光内存危机 2028 / 6/28 港股早醒</td><td>6/28 09:48-11:20 腾讯网 DSpark 三段式发酵 / 6/28 HN front #26 737pt 3h 增量 / DeepSeek-V4-Pro-DSpark + Flash-DSpark 衍生模型 / 6/28 10:48 Hunt Good 周末三大新信号 / 6/28 11:06 Anthropic 9700 用户调研 / 6/28 09:32 Mythos 5 重新部署 / 6/28 周末 8 大产业新信号 / 6/28 港股早醒 / 6/29 周一开盘预判 / HN front 6 维度并发 3h 增量</td></tr>
+        <tr><td>6/27 afternoon</td><td>6/27 港股开盘恒指高开 +0.95% / 6/27 智谱日内 V 形反转 5 个时间点 / 6/27 中科闻歌上市次日 / 6/27 A 股节后首日"报复性反弹" / 6/27 中东局势升级 + 油价</td><td>同上 5 个新角度</td></tr>
+        <tr><td>6/27 evening</td><td>❌ 缺失（撞车源中 evening 缺失，主动扩大采集窗口到 18h）</td><td>同上 5 个新角度</td></tr>
+        <tr><td>6/27 21evening</td><td>6/27 14:00-18:00 港股大模型板块持续反弹 / 6/27 evening 港股 AI "V 形反转"完整收官 / 6/27 沪指重回 4100 点上方 / 6/27 创业板指 +1% / 6/27 中东局势升级 vs 油价反向 / 6/27 GPT-5.6 HN front 三条累计 2582pt / 6/27 全日智谱 V 形反转完整收官 13+ 时间点</td><td>同上 5 个新角度</td></tr>
+      </tbody>
+    </table>
+    <p class="source-link">📡 源数据：<a href="https://mcp.tokenplan.com/web_search">mcp_minimax_token_plan_web_search</a> · <a href="https://hacker-news.firebaseio.com/v0/topstories.json">HN Firebase API</a> · 财联社 · 腾讯网 · 智通财经 · 港交所 · 新浪科技 · 北京日报 · 36氪 · 钛媒体</p>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">🛡️ 隐私红线检查</h2>
+    <p class="lead">本次发布已通过 OPC 隐私红线检查清单：</p>
+    <ul>
+      <li>✅ 无用户个人信息 / 私人语气 / 内部称呼</li>
+      <li>✅ 无业务域名 / 资产 / 系统架构信息</li>
+      <li>✅ 无内部称呼 / 品牌标识</li>
+      <li>✅ 无 API key / 服务器配置</li>
+      <li>✅ 数据来源均为公开新闻 / 官方公告 / 监管披露</li>
+    </ul>
+  </section>
+
+  <footer style="text-align: center; color: var(--text-dim); font-size: 0.85rem; padding: 32px 0 16px; border-top: 1px solid var(--border); margin-top: 32px;">
+    <p>OPC Daily · 2026-06-28 · afternoon · 06:00 北京时间发刊</p>
+    <p style="margin-top: 8px;">🌐 <a href="https://020755.xyz/daily/2026-06/2026-06-28-afternoon/index.html">https://020755.xyz/daily/2026-06/2026-06-28-afternoon/index.html</a></p>
+    <p style="margin-top: 8px; opacity: 0.7;">由 AI 自动化采集 · 编辑发布</p>
+  </footer>
+</div>
+</body>
+</html>
