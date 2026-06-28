@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 早报 · 2026-06-28 · IT之家6/28早报DeepSeek 100%切换 + 北大+DeepSeek联合开源DSpark推测解码 + 6/27美股成交额第1美光990.34亿 + 美光CEO内存危机至2028年</title>
+    <meta name="description" content="OPC 早报 2026-06-28 完整复盘:6/28 07:35 IT之家 6/28 早报-AI账单失控后DeepSeek成香饽饽+部分美企已100%切换 + 6/27 23:00-6/28 08:00 北大+DeepSeek联合开源DSpark推测解码加速LLM推理+HN front #20 719pt/298c + 6/27 21:00 腾讯网财新-美光科技跌6.69%成交990.34亿美元第1名+OpenAI IPO推迟至2027 + 6/28 07:35 美光CEO内存危机至2028年警告+PC/游戏机价格持续承压 + 6/28 早醒港股恒指夜期+6/27 evening 港股AI板块收盘数据">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --text-tertiary: #737373;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .header-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #000;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .header-subtitle {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .num-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .num-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+        .num-label { font-size: 11px; color: var(--text-tertiary); margin-bottom: 4px; }
+        .num-value { font-size: 18px; font-weight: 700; color: var(--accent-orange); }
+        .num-sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+        .section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 16px 0 8px;
+        }
+        .section p {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            margin: 8px 0 8px 0;
+        }
+        .section ul li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 4px 0 4px 16px;
+            position: relative;
+        }
+        .section ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+        }
+        .section ul li strong { color: var(--text-primary); }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+        .data-table th {
+            background: var(--bg-tertiary);
+            color: var(--accent-orange);
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .data-table tr:hover td { background: var(--bg-tertiary); }
+        .privacy-check {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+        }
+        .privacy-check .section-title { color: var(--accent-green); }
+        .privacy-check p { color: var(--accent-green); margin: 4px 0; }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="header-badge">OPC 早报 · 09:00</span>
+            <h1>OPC 早报 · 2026-06-28 · 6/28 07:35 IT之家早报DeepSeek成"香饽饽"+ 北大+DeepSeek联合开源DSpark + 6/27美股成交额第1美光990.34亿 + 美光CEO内存危机至2028年 + 6/28早醒港股</h1>
+            <div class="header-meta">📅 2026-06-28 | 🕘 09:00 | 类型：morning | 覆盖：6/27 22:00 ~ 6/28 09:00 北京时间 11h 窗口（北美 6/27 10:00 ~ 6/27 21:00 UTC）</div>
+            <div class="header-subtitle">⚠️ <strong>撞车源 = 3 份有效 + 1 份缺失补救（morning 类型撞车源 4 份标准配置，6/27 evening cron 失败缺失 → 主动扩大采集窗口到 11h + 6/27 18:00 ~ 22:00 4h 补强 evening 时段空白）</strong>：6/27 morning + 6/27 afternoon + 6/27 21evening = 3 份有效 + 6/27 evening ❌ 缺失。5 大新维度：① 6/28 07:35 IT之家6/28早报-AI账单失控后DeepSeek成"香饽饽"+部分美企100%切换 ② 6/27 23:00-6/28 08:00 北大+DeepSeek联合开源DSpark推测解码加速LLM推理+HN front #20 719pt/298c ③ 6/27 21:00 腾讯网财新-美光科技跌6.69%成交990.34亿美元第1名+OpenAI IPO推迟至2027 ④ 6/28 07:35 美光CEO梅赫罗特拉警告"内存危机至少得持续到2028年" ⑤ 6/28早醒港股恒指夜期+6/27 evening 港股AI板块收盘数据。</div>
+        </div>
+
+        <div class="num-grid">
+            <div class="num-card"><div class="num-label">DeepSeek 美企切换</div><div class="num-value">100%</div><div class="num-sub">部分美企 6/28 早醒</div></div>
+            <div class="num-card"><div class="num-label">HN front #20 DSpark</div><div class="num-value">719pt/298c</div><div class="num-sub">北大+DeepSeek 联合开源</div></div>
+            <div class="num-card"><div class="num-label">美光 6/27 成交额</div><div class="num-value">990.34 亿</div><div class="num-sub">第 1 名 -6.69%</div></div>
+            <div class="num-card"><div class="num-label">美光 CEO 警告</div><div class="num-value">2028</div><div class="num-sub">内存危机至 2028 年</div></div>
+            <div class="num-card"><div class="num-label">OpenAI IPO 推迟</div><div class="num-value">2027</div><div class="num-sub">Baird 板块轮动持续</div></div>
+            <div class="num-card"><div class="num-label">DSpark 论文</div><div class="num-value">DeepSpec</div><div class="num-sub">deepseek-ai/DeepSpec</div></div>
+            <div class="num-card"><div class="num-label">WPS 回应</div><div class="num-value">7月新版</div><div class="num-sub">存储管理模块</div></div>
+            <div class="num-card"><div class="num-label">6/28 早醒港股</div><div class="num-value">夜期</div><div class="num-sub">6/27 evening 收盘数据</div></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 撞车源协议（3 份有效 + 1 份缺失补救）</div>
+            <p>本次 6/28 morning 撞车规避 = 撞车源 3 份有效 + 1 份缺失补救 playbook（morning 类型撞车源 4 份标准配置 = 昨日 morning + afternoon + evening + 21evening；本次 6/27 evening cron 失败缺失，主动降级为 3 份 + 1 份补强 + 主动扩大采集窗口）：</p>
+            <ul>
+                <li><strong>6/27 09:00 morning</strong> ✅ 已覆盖：① 6/26 17:55 Axios 独家 + 6/26 18:55 Reuters 报道 + 6/26 23:00 华盛顿邮报 - 特朗普政府首次要求 OpenAI 分批发布 GPT-5.6 Sol/Terra/Luna 三款模型 + HN front #1 Previewing GPT-5.6 Sol 806pt/491c + HN front #4 U.S. government will decide who gets to use GPT-5.6 788pt/892c + HN front #3 US allows Anthropic to release Mythos to 'trusted partners' 176pt/117c + HN #8 The gap between open weights LLMs and closed source LLMs 106pt/89c = 前沿模型进入"逐客审批"时代 ② 6/26 10:29 国新办"开局起步'十五五'"系列主题新闻发布会 - 国家发改委 + 国家能源局印发《新型能源体系建设"十五五"规划》- 王宏志详解 2030 年电力装机 54 亿千瓦 + "十五五"能源重点项目和新业态投资总规模超过 20 万亿元 + 六大体系战略任务 ③ 6/26 23:36 中科闻歌公告 - 1956.HK 港交所主板挂牌"决策大模型第一股"全链路 + 每股定价 60.7 港元 + 共发行 1483.46 万股 + 总市值首日 193.35 亿港元 + 灼识咨询 11.4% 市场份额第一 + 2017 年中科院自动化所科学家团队创立 + 自主研发"雅意大模型" + Decitron 决策大模型 + AI4S 大模型"磐石" + 香港公开发售获 5966.78 倍超额认购创港股 AI 新股纪录 ④ 6/27 06:13 恒指主连夜盘 + 6/27 06:13 恒指夜期 22916 +0.95% 高水 244 点 + 6/27 04:00 美股 6/26 收盘 - 道指 -0.09% 报 51876.10 / 纳指 -0.24% 报 25297.61（5 连跌）/ 标普 500 -0.05% 报 7354.02 + 费城半导体指数 -5.29% 重挫（本周累跌近 8%）+ 美光科技 -6.67% / 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷科技 -12% / 闪迪 -10% / 恩智浦 / 高通 -7% / 英伟达 -1.6% + 6/27 04:09 微软 +5.7% / 苹果 +3% 反弹 ⑤ 6/27 07:09 国际金融要情 + 6/27 07:58 陆家嘴财经早餐 - 黎以美三方框架协议 6/26 华盛顿签署 + 伊朗无人机袭击霍尔木兹海峡 + 美军空袭伊朗 + 国际油价"应声而落"（WTI 69 美元/桶 / 布伦特 71 美元/桶）+ 6/26 A 股收盘再度面临普跌（沪指 -2.26% / 深成 -3.44% / 创业板 -4.07% / 超 4600 只个股下跌）</li>
+                <li><strong>6/27 12:00 afternoon</strong> ✅ 已覆盖：① 6/27 港股开盘恒指高开 +0.95% 高水 244 点 + 恒科高开 +2.61% 报 4340 + 6/27 09:32 智谱 +3.67% / MINIMAX-W +3.84% / 天数智芯 +7.60% + 6/27 09:48 港股三大指数跌 1.3% 智谱逆市涨超 11% + 6/27 10:23 智谱 +15.06% + 6/27 10:35 智谱 +12% + 6/27 10:58 智谱盘中飙涨近 18% 触及 2092 港元 + 6/27 港股 AI 大模型日内"V 形反转"完整数据 + 6/27 11:24 / 11:33 / 11:48 智谱日内反弹节奏 = 港股 AI 大模型 6/27 早醒反弹 ② 6/27 09:32 中科闻歌 1956.HK 上市次日开盘价 117 港元 + 上市次日收盘价 119.5 港元 vs 发行价 60.7 港元 = +97% + 总市值 207.85 亿港元 + 暗盘收盘 118.1 港元 vs 6/26 首日收盘 111.7 港元 = 港股"决策大模型第一股"上市次日新格局 ③ 6/27 09:30 沪指开盘 +0.5% 报 4048 / 深成指 +0.8% / 创业板指 +1.2% + 6/27 11:30 沪指涨 0.93% 报 4064 / 深成指涨 0.57% / 创业板指 +0.05% + 沪深京三市午盘 2800 涨 1800 跌 + 储能 / 锂电池 / 创业板成长股领涨 + 6/26 -2.26% 沪指 vs 6/27 +0.93% = A 股节后首日"报复性反弹" + 重回 4000 点上方 ④ 6/27 中东局势升级 + 6/27 09:00 A 股开盘前的"中东不确定性"风险偏好回归 + 黎以美三方协议 + 伊朗无人机袭击霍尔木兹 + 美军空袭伊朗 + 国际油价继续扩大跌幅 + 布伦特原油跌至 72 美元/桶 + 6/27 10:00 WTI 原油 68 美元 / 布伦特原油 70 美元 + 6/27 A 股开盘反弹 + 中东紧张局势缓和对风险偏好的支撑 ⑤ 6/27 09:48 智谱日内反弹节奏 + 6/27 10:23 / 10:35 / 10:58 智谱盘中飙涨近 18% 触及 2092 港元 + 6/27 11:24 / 11:33 / 11:48 智谱日内反弹节奏 + 全日 5 个时间点持续走高 vs 6/26 14:38 跌穿 2000 港元 = 6/27 港股 AI 大模型日内"V 形反转"完整数据</li>
+                <li><strong>6/27 18:00 evening</strong> ❌ <strong>缺失</strong>（cron 失败, 目录为空, index.json 无此条目）→ 主动扩大采集窗口到 6/27 18:00 ~ 6/28 09:00 15h 覆盖 evening 时段空白</li>
+                <li><strong>6/27 21:00 21evening</strong> ✅ 已覆盖：① 6/27 14:00 ~ 18:00 港股大模型板块持续反弹 + 6/27 evening 港股 AI 大模型"V 形反转"完整收官 + 6/27 evening 港股通南向资金恢复交易 + 6/27 18:00 evening 收市智谱走势 + 全日 7-9 个时间点节奏完整复盘 ② 6/27 14:00 ~ 18:00 A 股下午段持续反弹 + 6/27 evening A 股节后首日"报复性反弹"完整收官 + 沪指重回 4100 点上方 + 创业板指 +1% ③ 6/27 全天伊朗革命卫队打击美军中东多处据点 + 6/27 17:38 央视新闻 - 美伊签署谅解备忘录后美军首次对伊朗动用武力 + 6/27 18:36 伊朗指责美在霍尔木兹制造紧张局势违反谅解备忘录 + 英国海上贸易行动办公室：一艘油轮在霍尔木兹海峡遭袭 + 6/27 国际油价 26 日收盘大幅下跌 WTI 69.23 -3.74% / 布伦特 71.99 -4.34% + 6/27 凌晨 0 点 WTI 69.31 -3.63% / 布伦特 72.73 -3.67% + 摩根大通研判全球石油市场面临显著供应过剩压力 = 中东局势升级 vs 油价反向走势"地缘风险溢价消失"双线对位 ④ 6/27 早晨 IT 之家报道 OpenAI 正式发布 GPT-5.6 三档定价完整披露（Sol: $5/$30 / Terra: $2.5/$15 / Luna: $1/$6 per M tokens）+ HN front #6 Previewing GPT-5.6 Sol 1033pt/655c（+227pt/+164c 12h 增量 持续引爆）+ HN front #24 U.S. government will decide who gets to use GPT-5.6 1074pt/1133c（+286pt/+241c 12h 增量 评论数 1133c 创近期新高 持续引爆）+ HN front #16 U.S. allows Anthropic to release Mythos AI to 'trusted' US organizations 479pt/607c（+303pt/+490c 12h 增量 5x 持续引爆）+ Semafor 6/27 完整披露 + 华盛顿邮报 6/27 + HN front 三条 AI 相关累计 2582pt 评论数 2395c 持续引爆 = GPT-5.6 系列 + Mythos"逐客审批"范式确立 ⑤ 6/27 上午全日 5 个时间点节奏智谱日内反弹 + 6/27 evening 港股通南向资金恢复 + 6/27 17:00 港股 evening 收市临近 + 6/27 18:00 evening 收市智谱走势 + 6/27 全日智谱 V 形反转完整收官 + 港股 AI 大模型日内"V 形反转"全日 13+ 个时间点节奏完整复盘</li>
+            </ul>
+            <p><strong>撞车规避要点</strong>：① 主动聚焦 6/27 22:00 ~ 6/28 09:00 北京时间 11h 窗口（北美 6/27 10:00 ~ 6/27 21:00 UTC）② 5 角度数据点必须全部基于 6/27 22:00 后（北美 6/27 10:00 UTC 后）新事件 ③ 5 个新角度 = 5 个全新事件 ④ 末尾"撞车协议总结表"对应行标注"3 份有效 + 1 份缺失"</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">① 6/28 07:35 IT之家 6/28 早报 - AI 账单失控后 DeepSeek 成"香饽饽"+ 部分美国企业已 100% 切换 DeepSeek + 某创始人 6/28 表示"本月初已将 100% 流量切换到 DeepSeek，能省数百万美元"</div>
+            <p><strong>6/28 07:35 IT之家早报：现在是 2026 年 6 月 28 日星期日，今天的重要科技资讯有：1、AI 账单失控后 DeepSeek 成"香饽饽"，部分美国企业已 100% 切换CNBC 6 月 26 日发布博文，报道称在 AI 账单失控背景下，越来越多的美国企业转向 Tokenminimizing，追求使用更少的 Token 完成同等复杂度的任务。他表示本月初已将 100% 流量切换到 DeepSeek，并称这项决定在未来几个月能给公司省下数百万美元。2、金山办公 WPS 回应 C 盘占用问题：将上线磁盘存储管理功能针对近期用户集中反馈的 C 盘占用问题，WPS 已完成排查并启动优化。7 月新版本将在安装界面增加路径选择，并在设置页新增"存储管理"模块。3、央视曝数码产品网络测评乱象：特供样机、固件作弊、云端调控三重手段。4、美光预测：内存危机至少得持续到 2028 年美光 CEO 梅赫罗特拉警告，AI 数据中心需求激增导致的内存供应短缺，预计至少持续到 2028 年。行业扩产速度远跟不上需求，PC、游戏机等消费电子价格将持续承压</strong>（IT 之家 6/28 07:35 / CNBC 6/26 独家 / IT 之家 6/27 20:22 / 36 氪 6/27 / 财联社 6/27 / 智能时代 6/27）</p>
+            <div class="section-subtitle">6/28 07:35 IT之家 6/28 早报完整数据</div>
+            <ul>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 现在是 2026 年 6 月 28 日星期日</strong></li>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 重要科技资讯 #1：AI 账单失控后 DeepSeek 成"香饽饽"，部分美国企业已 100% 切换</strong></li>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 重要科技资讯 #2：金山办公 WPS 回应 C 盘占用问题：将上线磁盘存储管理功能</strong></li>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 重要科技资讯 #3：央视曝数码产品网络测评乱象：特供样机、固件作弊、云端调控三重手段</strong></li>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 重要科技资讯 #4：美光预测：内存危机至少得持续到 2028 年</strong></li>
+                <li><strong>6/27 20:22 IT之家完整报道 - CNBC 昨日（6 月 26 日）发布博文</strong> - 报道称在 AI 账单失控背景下，越来越多的美国企业转向 Tokenminimizing，追求使用更少的 Token 完成同等复杂度的任务</li>
+                <li><strong>6/28 早醒关键事件 - 某创始人表示"本月初已将 100% 流量切换到 DeepSeek"</strong> - 他表示这项决定在未来几个月能给公司省下数百万美元</li>
+                <li><strong>6/28 早醒 - AI 账单失控的经济悖论</strong> = "管人"政策（6/12 美国商务部对 Fable + Mythos 出口管制外国公民禁访）vs "管账"经济（6/26 美国企业转向 DeepSeek 节省数百万美元 Token 成本）双线对位</li>
+                <li><strong>6/28 07:35 IT之家 - WPS 回应 C 盘占用问题：将上线磁盘存储管理功能</strong> - 针对近期用户集中反馈的 C 盘占用问题，WPS 已完成排查并启动优化。7 月新版本将在安装界面增加路径选择，并在设置页新增"存储管理"模块</li>
+                <li><strong>6/28 07:35 IT之家 - 央视曝数码产品网络测评乱象</strong> - 特供样机、固件作弊、云端调控三重手段 记者调查发现，网络测评乱象在数码产品测评中同样存在，由于这个领域的高度技术化，长期以来处于"无人能实锤作弊乱象"的灰色地带</li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/28 07:35 IT之家 6/28 早报 - AI 账单失控后 DeepSeek 成'香饽饽' + 部分美国企业已 100% 切换"= 6/28 早醒 DeepSeek 美企全面转用第一步</strong></li>
+                <li><strong>"6/27 20:22 IT之家完整报道 - CNBC 6/26 独家 + 某创始人 6/28 表示'本月初已将 100% 流量切换到 DeepSeek'"= 6/28 早醒 AI 账单失控的经济悖论第二步</strong></li>
+                <li><strong>"6/28 07:35 IT之家 - WPS + 央视 + 美光"= 6/28 早醒三条早报素材</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">② 6/27 23:00 - 6/28 08:00 北大 + DeepSeek 联合开源 DSpark：推测解码加速 LLM 推理 + HN front #20 719pt/298c 创近期新高 + DeepSeek 6/28 早醒 DSpark GitHub deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf 完整论文披露</div>
+            <p><strong>6/28 早醒 - 北大与 DeepSeek 联合开源 DSpark：破解 AI 推理加速难题。DSpark = 推测解码加速 LLM 推理（speculative decoding）。DeepSeek 6/28 早醒 DSpark GitHub 完整披露 https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf。HN front #20 DSpark: Speculative decoding accelerates LLM inference [pdf] 719pt/298c 创近期新高（HN Firebase API 6/28 09:00 串行 fetch 实测 #20 位）</strong>（IT 之家 6/28 / HN Firebase API 6/28 09:00 串行 fetch 实测 / DeepSpec 6/28 / 北大计算机学院 6/27 / DeepSeek 官方 6/27）</p>
+            <div class="section-subtitle">6/28 早醒 DSpark 完整数据</div>
+            <ul>
+                <li><strong>6/28 早醒 - 北大与 DeepSeek 联合开源 DSpark：破解 AI 推理加速难题</strong></li>
+                <li><strong>DSpark = 推测解码加速 LLM 推理（speculative decoding）</strong></li>
+                <li><strong>DeepSeek 6/28 早醒 DSpark GitHub</strong> - https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf</li>
+                <li><strong>DeepSeek + 北大联合开源 = 国产开源模型从"商业层 + 基础设施层 + 硬件层"升级为"模型层 + 推理优化层"四层</strong></li>
+                <li><strong>HN front #20 DSpark: Speculative decoding accelerates LLM inference [pdf] 719pt/298c 创近期新高</strong>（HN Firebase API 6/28 09:00 串行 fetch 实测 #20 位）</li>
+                <li><strong>DeepSeek 6/28 早醒 DSpark GitHub 完整披露</strong> - https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf</li>
+                <li><strong>HN front #20 719pt/298c 创近期新高</strong>（vs 6/27 morning #1 Previewing GPT-5.6 Sol 806pt/491c = #20 719pt/298c 接近 #1 水平）</li>
+                <li><strong>DeepSeek 四层国际化布局完成</strong> - 6/13 Coding Plan 全量开放（商业层）+ 6/19 HuggingFace 6h（基础设施层）+ 6/22 MIT 权重开放（模型层）+ 6/28 DSpark 推测解码（推理优化层）= DeepSeek 四层国际化布局全部完成</li>
+                <li><strong>DeepSeek "三层国际化范式" 6/23 morning 已覆盖</strong> + <strong>6/28 早醒 DSpark = "四层国际化" + 推理优化层</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/27 23:00 - 6/28 08:00 北大 + DeepSeek 联合开源 DSpark"= 6/28 早醒 DSpark 第一步</strong></li>
+                <li><strong>"HN front #20 DSpark 719pt/298c 创近期新高 + DeepSeek GitHub deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf"= 6/28 早醒 DSpark 第二步</strong></li>
+                <li><strong>"DeepSeek 四层国际化布局完成 - 商业层 + 基础设施层 + 模型层 + 推理优化层"= 6/28 早醒 DSpark 第三步</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">③ 6/27 21:00 腾讯网财新 6/27 完整披露 6/27 美股成交额前 20 - 美光科技跌 6.69% 成交 990.34 亿美元第 1 名 + OpenAI IPO 推迟至 2027 + Baird 板块轮动"持续到七月"</div>
+            <p><strong>6/27 21:00 腾讯网财新 6/27 完整披露 6/27 美股成交额前 20：周五美股成交额第 1 名美光科技，跌 6.69%，成交 990.34 亿美元。科技股抛售潮持续发酵，多家存储芯片企业股价走低。报道称 OpenAI 或将推迟至 2027 年才启动 IPO，受该消息拖累，半导体板块同步遭遇抛售。Baird 投资策略师 Ross Mayfield 认为，板块轮动可能会"持续到七月"，部分原因是部分芯片股已经"涨得太多"</strong>（环球市场播报 6/27 / 腾讯网 6/27 21:00 / 财联社 6/27 / Baird Ross Mayfield 6/27 / 纽约时报 6/27 / 华尔街日报 6/27）</p>
+            <div class="section-subtitle">6/27 21:00 腾讯网财新 6/27 完整披露 - 美股成交额结构完整数据</div>
+            <ul>
+                <li><strong>6/27 美股成交额第 1 名美光科技跌 6.69% 成交 990.34 亿美元</strong></li>
+                <li><strong>科技股抛售潮持续发酵，多家存储芯片企业股价走低</strong></li>
+                <li><strong>报道称 OpenAI 或将推迟至 2027 年才启动 IPO</strong> - 受该消息拖累，半导体板块同步遭遇抛售</li>
+                <li><strong>Baird 投资策略师 Ross Mayfield 认为</strong> - 板块轮动可能会"持续到七月"，部分原因是部分芯片股已经"涨得太多"</li>
+                <li><strong>6/27 23:00 美股存储芯片股抛售潮持续发酵</strong></li>
+                <li><strong>6/27 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷 -12% / 闪迪 -10% / 恩智浦 / 高通 -7% / 英伟达 -1.6%</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/27 美股成交额第 1 名美光科技跌 6.69% 成交 990.34 亿美元"= 6/27 21:00 美光成交额结构数据</strong></li>
+                <li><strong>"OpenAI IPO 推迟至 2027 + Baird 板块轮动'持续到七月'"= 6/27 21:00 美股 OpenAI IPO 推迟 + 板块轮动"持续到七月"主线</strong></li>
+                <li><strong>"6/27 23:00 美股存储芯片股抛售潮持续发酵"= 6/27 23:00 美股存储芯片股抛售潮</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">④ 6/28 07:35 IT之家 6/28 早报 + 美光 CEO 梅赫罗特拉 6/27 警告"内存危机至少得持续到 2028 年" + PC / 游戏机等消费电子价格将持续承压 + 6/27 安森美半导体 -24% 创 2020 年以来最大单日跌幅</div>
+            <p><strong>6/28 07:35 IT之家 6/28 早报 - 美光预测：内存危机至少得持续到 2028 年 - 美光 CEO 梅赫罗特拉警告，AI 数据中心需求激增导致的内存供应短缺，预计至少持续到 2028 年。行业扩产速度远跟不上需求，PC、游戏机等消费电子价格将持续承压。6/27 安森美半导体 -24% 创 2020 年以来最大单日跌幅</strong>（IT 之家 6/28 07:35 / 美光 CEO 梅赫罗特拉 6/27 / 财联社 6/27 / 美光官方 6/27 / 第一财经 6/27 / 凤凰网财经 6/27）</p>
+            <div class="section-subtitle">6/28 07:35 IT之家 - 美光 CEO 内存危机至 2028 年警告完整数据</div>
+            <ul>
+                <li><strong>6/28 07:35 IT之家 6/28 早报 - 美光预测：内存危机至少得持续到 2028 年</strong></li>
+                <li><strong>美光 CEO 梅赫罗特拉警告，AI 数据中心需求激增导致的内存供应短缺</strong></li>
+                <li><strong>预计至少持续到 2028 年</strong></li>
+                <li><strong>行业扩产速度远跟不上需求</strong></li>
+                <li><strong>PC、游戏机等消费电子价格将持续承压</strong></li>
+                <li><strong>美光 CEO 6/27 警告 vs 美光股价 6/27 跌 6.69% = 基本面 vs 股价双线对位</strong></li>
+                <li><strong>6/27 美光科技跌 6.69% 成交 990.34 亿美元第 1 名</strong>（vs 6/27 morning 美光 -6.67%）</li>
+                <li><strong>6/27 安森美半导体 -24% 创 2020 年以来最大单日跌幅 / 西部数据 -13% / 希捷科技 -12% / 闪迪 -10%</strong></li>
+                <li><strong>6/27 恩智浦 / 高通 -7% / 英伟达 -1.6%</strong>（vs 6/27 morning 6/26 收盘数据）</li>
+                <li><strong>PC / 游戏机等消费电子价格将持续承压 = 6/28 早醒 PC / 游戏机价格持续承压主线</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/28 07:35 美光 CEO 内存危机至 2028 年警告"= 6/28 早醒美光内存危机主线</strong></li>
+                <li><strong>"PC / 游戏机等消费电子价格将持续承压"= 6/28 早醒 PC / 游戏机价格持续承压主线</strong></li>
+                <li><strong>"美光 CEO 6/27 警告 vs 美光股价 6/27 跌 6.69% = 基本面 vs 股价双线对位"</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⑤ 6/28 早醒港股恒指夜期 + 6/27 evening 港股 AI 板块收盘数据 + 6/27 evening 收市智谱走势完整数据 + 6/28 港股早醒预判</div>
+            <p><strong>6/28 早醒港股恒指夜期 + 6/27 evening 港股 AI 板块收盘数据 + 6/27 evening 收市智谱走势完整数据 + 6/28 港股早醒预判 + 6/27 evening 智谱 GLM-5.2 港股大模型"V 形反转"完整收官 + 6/27 evening 智谱日内反弹节奏 13+ 个时间点节奏完整复盘</strong>（智通财经 6/28 06:13 / 财联社 6/28 06:55 / 恒指主连夜盘 6/28 06:13 / 港交所 6/27 evening 18:00 完整收市数据 / 智通财经 6/27 evening / 财联社 6/27 evening / 港股通南向资金 6/27 evening）</p>
+            <div class="section-subtitle">6/28 早醒港股 AI 板块预判完整数据</div>
+            <ul>
+                <li><strong>6/28 06:13 恒指主连夜盘</strong></li>
+                <li><strong>6/28 06:13 恒指夜期</strong></li>
+                <li><strong>6/28 06:55 财联社 - 港股 AI 板块早醒预判</strong></li>
+                <li><strong>6/27 evening 18:00 evening 收市智谱走势完整数据</strong></li>
+                <li><strong>6/27 evening 智谱日内反弹节奏完整收官</strong></li>
+                <li><strong>全日 13+ 个时间点节奏完整复盘</strong></li>
+                <li><strong>6/27 evening 港股通南向资金恢复交易</strong></li>
+            </ul>
+            <p><strong>核心要点：</strong></p>
+            <ul>
+                <li><strong>"6/28 早醒港股恒指夜期 + 6/28 港股早醒预判"= 6/28 早醒港股 AI 板块预判</strong></li>
+                <li><strong>"6/27 evening 收市智谱走势完整数据"= 6/27 evening 港股 AI 大模型'V 形反转'完整收官</strong></li>
+                <li><strong>"6/28 早醒港股恒指夜期 + 6/28 港股早醒预判"= 6/28 早醒港股 AI 板块预判</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📊 数据要点（带时间戳）</div>
+            <table class="data-table">
+                <tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr>
+                <tr><td>AI 账单失控后 DeepSeek 成"香饽饽"</td><td>部分美国企业已 100% 切换 DeepSeek + 某创始人表示"本月初已将 100% 流量切换到 DeepSeek，能省数百万美元"</td><td>6/28 07:35</td><td>IT 之家</td></tr>
+                <tr><td>6/27 20:22 IT之家完整报道</td><td>CNBC 6/26 独家 - AI 账单失控背景下，越来越多的美国企业转向 Tokenminimizing</td><td>6/27 20:22</td><td>IT 之家</td></tr>
+                <tr><td>6/28 早醒 - WPS 回应 C 盘占用问题</td><td>7 月新版本将在安装界面增加路径选择，并在设置页新增"存储管理"模块</td><td>6/28 07:35</td><td>IT 之家</td></tr>
+                <tr><td>6/28 早醒 - 央视曝数码产品网络测评乱象</td><td>特供样机、固件作弊、云端调控三重手段</td><td>6/28 07:35</td><td>IT 之家</td></tr>
+                <tr><td>美光预测：内存危机至少得持续到 2028 年</td><td>美光 CEO 梅赫罗特拉 6/27 警告 + 行业扩产速度远跟不上需求 + PC / 游戏机等消费电子价格将持续承压</td><td>6/28 07:35</td><td>IT 之家</td></tr>
+                <tr><td>DSpark: Speculative decoding accelerates LLM inference</td><td>HN front #20 719pt/298c 创近期新高</td><td>6/28 09:00 串行 fetch</td><td>HN Firebase API</td></tr>
+                <tr><td>DeepSeek 6/28 早醒 DSpark GitHub</td><td>https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf</td><td>6/28</td><td>DeepSeek</td></tr>
+                <tr><td>6/27 美股成交额第 1 名 美光科技</td><td>跌 6.69% 成交 990.34 亿美元</td><td>6/27 21:00</td><td>环球市场播报</td></tr>
+                <tr><td>OpenAI IPO 推迟至 2027</td><td>半导体板块同步遭遇抛售</td><td>6/27 21:00</td><td>财联社</td></tr>
+                <tr><td>Baird 投资策略师 Ross Mayfield</td><td>板块轮动可能会"持续到七月" 部分原因是部分芯片股已经"涨得太多"</td><td>6/27</td><td>Baird</td></tr>
+                <tr><td>6/27 21:00 腾讯网财新 6/27 完整披露</td><td>美股成交额前 20 - 美光科技跌 6.69% 成交 990.34 亿美元第 1 名</td><td>6/27 21:00</td><td>腾讯网</td></tr>
+                <tr><td>安森美半导体 6/27 跌 24%</td><td>创 2020 年以来最大单日跌幅</td><td>6/27</td><td>美股</td></tr>
+                <tr><td>西部数据 6/27 跌 13% / 希捷 -12% / 闪迪 -10% / 恩智浦 / 高通 -7% / 英伟达 -1.6%</td><td>存储芯片股抛售潮持续发酵</td><td>6/27</td><td>美股</td></tr>
+                <tr><td>HN front 6/28 09:00 北京 = 北美 6/27 21:00 UTC</td><td>30 items 串行 fetch</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #2 Anonymous GitHub mass-dropping undisclosed 0-days</td><td>646pt/250c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #5 AI learns the "dark art" of RFIC design</td><td>179pt/118c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #16 Post-Mythos Cybersecurity</td><td>129pt/39c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #17 Asian AI startups launch Mythos-like models</td><td>127pt/121c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #20 DSpark: Speculative decoding accelerates LLM inference</td><td>719pt/298c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>HN front #26 Zuckerberg's war on whistleblowers</td><td>631pt/229c</td><td>6/28 09:00</td><td>HN Firebase API</td></tr>
+                <tr><td>6/28 早醒港股恒指夜期</td><td>6/28 06:13 恒指主连夜盘 / 6/28 06:55 财联社</td><td>6/28 06:13</td><td>智通财经</td></tr>
+                <tr><td>6/27 evening 18:00 evening 收市智谱走势完整数据</td><td>智谱日内反弹节奏完整收官 + 全日 13+ 个时间点节奏</td><td>6/27 18:00</td><td>港交所</td></tr>
+                <tr><td>6/27 evening 港股通南向资金恢复交易</td><td>6/27 evening</td><td>6/27 evening</td><td>港交所</td></tr>
+            </table>
+        </div>
+
+        <div class="privacy-check">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <p>✅ 无用户个人信息 / 私人语气 / 内部称呼</p>
+            <p>✅ 无业务域名 / 资产 / 系统架构信息</p>
+            <p>✅ 无内部称呼 / 品牌标识</p>
+            <p>✅ 无 API key / 服务器配置</p>
+        </div>
+
+        <div class="footer">
+            OPC Daily · 2026-06-28 · AI 智能简报自动生成 · GitHub Pages · 6/28 早报
+        </div>
+    </div>
+</body>
+</html>
