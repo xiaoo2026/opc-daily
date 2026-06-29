@@ -711,3 +711,91 @@ body {
   .archive-item .arrow { display: none; }
   .section-title { font-size: 18px; }
 }
+
+/* ========== v2.0 Una 视角改版 ========== */
+
+/* 本周精选 weekly 区块 */
+.weekly {
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--border);
+}
+.weekly .section-header { margin-bottom: var(--space-lg); }
+.weekly .section-subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: var(--space-xs);
+}
+.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+.weekly-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+.weekly-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+.weekly-card-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: var(--space-md);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  align-self: flex-start;
+  background: var(--accent-bg);
+  color: var(--accent-dark);
+}
+.weekly-card-tag:nth-of-type(1) { background: var(--tag-github-bg); color: var(--tag-github-text); }
+.weekly-card-image {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+}
+.weekly-card-body { padding: var(--space-md) var(--space-lg); }
+.weekly-card-body h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+.weekly-card-body p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.weekly-card-loading { opacity: 0.6; }
+
+/* 公众号二维码占位 */
+.qrcode-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl) var(--space-md);
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border-medium);
+  border-radius: var(--radius-md);
+  margin: var(--space-md) 0;
+  min-height: 120px;
+  transition: border-color 0.2s;
+}
+.qrcode-placeholder:hover { border-color: var(--accent); }
+.qrcode-icon { font-size: 32px; opacity: 0.6; }
+.qrcode-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}

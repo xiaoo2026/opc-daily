@@ -116,5 +116,71 @@ async function loadArchive() {
 // ---- Init ----
 document.addEventListener('DOMContentLoaded', () => {
   loadLatestReport();
+  loadWeekly();
   loadArchive();
 });
+
+// ---- Weekly Pick (本周精选 3 张 — 公众号切入点: 一周回顾 3 张图卡) ----
+async function loadWeekly() {
+  const gridEl = document.getElementById('weekly-grid');
+  if (!gridEl) return;
+
+  try {
+    // 1. 拉最近 3 个月 daily/index.json
+    const months = ['2026-04', '2026-05', '2026-06'];
+    let allReports = [];
+    for (const month of months) {
+      try {
+        const res = await fetch(`daily/${month}/index.json`);
+        if (res.ok) {
+          const data = await res.json();
+          allReports = allReports.concat(data);
+        }
+      } catch {}
+    }
+    allReports.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    // 2. 取最近 7 个唯一日期 (每天最多取 morning/evening 一条, 优先 morning)
+    const seen = new Set();
+    const recent = [];
+    for (const r of allReports) {
+      if (seen.has(r.date)) continue;
+      seen.add(r.date);
+      recent.push(r);
+      if (recent.length >= 7) break;
+    }
+
+    // 3. 取最近 3 条作"本周精选"
+    const picks = recent.slice(0, 3);
+
+    // 4. 类型标签
+    const typeLabel = (type) => {
+      if (type === 'morning') return '早报';
+      if (type === 'afternoon') return '午报';
+      if (type === 'evening') return '晚报';
+      if (type === '21evening') return '21点晚报';
+      return '日报';
+    };
+
+    // 5. 渲染
+    gridEl.innerHTML = picks.map((r, i) => {
+      const tags = ['GitHub', '行业', '工具'];
+      const tag = tags[i] || '日报';
+      const dateStr = r.date || '';
+      const title = r.title || `📡 ${dateStr} ${typeLabel(r.type)}`;
+      const href = r.url || r.html_url || '#';
+      return `
+        <a href="${href}" class="weekly-card">
+          <div class="weekly-card-tag">${tag}</div>
+          <div class="weekly-card-image"></div>
+          <div class="weekly-card-body">
+            <h3>${dateStr} ${typeLabel(r.type)}</h3>
+            <p>${title}</p>
+          </div>
+        </a>
+      `;
+    }).join('');
+  } catch (e) {
+    gridEl.innerHTML = '<p class="loading">本周精选加载失败</p>';
+  }
+}
