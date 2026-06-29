@@ -1,0 +1,10 @@
+# Exclude git, build artifacts, and large docs from wrangler deploy
+.git/
+.github/
+_archive/
+node_modules/
+*.log
+.DS_Store
+README.md
+CHANGELOG.md
+test-push-2026-06-14.md
