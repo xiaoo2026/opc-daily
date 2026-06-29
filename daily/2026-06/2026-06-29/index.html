@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC 晚报 2026-06-29 · 港股 evening 收市 + A 股 evening 收市 + 美股盘前 30 min 完整收官 + HN front 6 维度新晋 + 6h 后续发酵</title>
+    <meta name="description" content="OPC 晚报 2026-06-29 完整复盘:6/29 16:17 港股 evening 收盘 - 恒指 +1.57% 收 23026.68 / 恒科指 +3.23% 收 4393.01 / 国企指数 +1.94% 收 7605.34 / 成交 3153.79 亿港元 + 智谱 evening -4.2% vs 6/29 上午触及 1967 港元 = 跨日 V 形反转 + evening 获利了结 + 联想集团 -9.2% + 地平线机器人 +14.7% + 网易-S +6.4%（双主要上市）+ 6/29 15:32 A 股 evening 收盘 - 科创50 +4.61% / 两市成交 3.52 万亿 / 半导体设备集体涨停（华海清科 +20% / 金海通 +20% / 华亚智能 +20% / 柏诚股份 +20%）/ 半导体芯片大爆发（银河微电 20% 涨停）/ 存储芯片大涨（正帆科技 +17% / 澜起科技 10%）/ 6/29 14:54 午后集体反攻 + 6/29 16:48 美股盘前 - 谷歌算力告急 + 美光科技盘前上涨（AI 数据中心需求 + HBM + DDR5 + 数据中心 SSD）+ 芯片股盘前普涨 + WTI 73.178 美元（vs 6/28 evening 75 美元 -1.82 美元）+ 6/29 13:00 ~ 17:00 期间 6h 后续发酵 - 智元 15000 台 + 功率半导体涨价 + 早醒三大信号 + 网易-S +6.4% + HN front 6/29 18:00 = 北美 6/29 10:00 UTC 30 items 串行 fetch 实测 6 维度新晋（独立基准 + 身份验证政策延展 + 6h 增量 + AI 算力 + 知识蒸馏黑盒 + AI 写作）+ 6/29 evening 中东地缘风险（美军继续空袭伊朗）">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --border-color: #2a2a2a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-tertiary: #707070;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-indigo: #6366f1;
+            --accent-pink: #ec4899;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; padding: 20px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%); border: 1px solid var(--border-color); border-radius: 16px; padding: 40px; margin-bottom: 24px; }
+        .badge { display: inline-block; background: var(--accent-indigo); color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+        .header h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; color: var(--text-primary); }
+        .subtitle { color: var(--text-secondary); font-size: 15px; margin-bottom: 16px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 6px; font-size: 12px; color: var(--text-secondary); }
+        .section { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+        .section-title { font-size: 18px; font-weight: 600; color: var(--accent-indigo); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); }
+        .section p { color: var(--text-secondary); margin-bottom: 10px; line-height: 1.7; }
+        .section ul { list-style: none; padding-left: 0; }
+        .section ul li { color: var(--text-secondary); padding-left: 20px; position: relative; margin-bottom: 8px; line-height: 1.6; }
+        .section ul li::before { content: "▸"; position: absolute; left: 0; color: var(--accent-indigo); font-weight: bold; }
+        .section ul li strong { color: var(--text-primary); }
+        .num-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 16px 0; }
+        .num-card { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px; text-align: center; }
+        .num-card .num { font-size: 22px; font-weight: 700; color: var(--accent-indigo); margin-bottom: 4px; }
+        .num-card .label { font-size: 12px; color: var(--text-secondary); margin-bottom: 2px; }
+        .num-card .detail { font-size: 11px; color: var(--text-tertiary); }
+        .privacy-check .section-title { color: var(--accent-green); }
+        .footer { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-top: 24px; text-align: center; font-size: 12px; color: var(--text-tertiary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="badge">🌙 晚报 · 18:00</div>
+            <h1>OPC 晚报 2026-06-29</h1>
+            <p class="subtitle">港股 evening 收市 + A 股 evening 收市 + 美股盘前 30 min 完整收官 + HN front 6 维度新晋 + 6h 后续发酵</p>
+            <div class="tags">
+                <span class="tag">📅 2026-06-29</span>
+                <span class="tag">🕕 18:00</span>
+                <span class="tag">📡 撞车源 2 份全有效 + 0 缺失</span>
+                <span class="tag">🌍 北京 6h 窗口</span>
+                <span class="tag">🤖 5 角度 0 处撞车</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔥 今日核心警报</div>
+            <p><strong>6/29 12:00 ~ 6/29 18:00 北京时间 6h 窗口（北美 6/29 04:00 ~ 6/29 10:00 UTC）：</strong>港股 evening 收盘 + 17:27 港股大模型概念股日报 - 恒指 +1.57% 收 23026.68 / 恒科指 +3.23% 收 4393.01 / 国企指数 +1.94% 收 7605.34 / 成交 3153.79 亿港元 + 智谱 evening -4.2% vs 6/29 上午触及 1967 港元 = "跨日 V 形反转 + evening 获利了结" + 联想集团 -9.2% + 地平线机器人 +14.7% + 网易-S +6.4%（双主要上市）+ A 股 evening 15:32 收盘 - 科创50 +4.61% / 两市成交 3.52 万亿 / 半导体设备集体涨停（华海清科 +20% / 金海通 +20% / 华亚智能 +20% / 柏诚股份 +20%）/ 半导体芯片大爆发（银河微电 20% 涨停）/ 存储芯片大涨（正帆科技 +17% / 澜起科技 10%）/ 6/29 14:54 午后集体反攻 + 美股盘前 16:48 - 谷歌算力告急 + 美光科技盘前上涨（AI 数据中心需求 + HBM + DDR5 + 数据中心 SSD）+ 芯片股盘前普涨 + WTI 73.178 美元（vs 6/28 evening 75 美元 -1.82 美元）+ 6h 后续发酵 - 智元 15000 台 + 功率半导体涨价 + 早醒三大信号 + 网易-S +6.4% + HN front 6/29 18:00 = 北美 6/29 10:00 UTC 30 items 串行 fetch 6 维度新晋（独立基准 + 身份验证政策延展 + 6h 增量 + AI 算力 + 知识蒸馏黑盒 + AI 写作）+ 6/29 evening 中东地缘风险（美军继续空袭伊朗）。</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📈 角度 1：6/29 16:17 港股 evening 收盘 + 17:27 港股大模型概念股日报 - 跨日 V 形反转 + evening 获利了结完整收官</div>
+            <p><strong>6/29 港股 evening 收盘核心数据：</strong></p>
+            <div class="num-grid">
+                <div class="num-card"><div class="num">+1.57%</div><div class="label">恒生指数</div><div class="detail">收 23026.68 点 / +354.82 点</div></div>
+                <div class="num-card"><div class="num">+3.23%</div><div class="label">恒生科技指数</div><div class="detail">收 4393.01 点 / 一度涨超 4%</div></div>
+                <div class="num-card"><div class="num">+1.94%</div><div class="label">国企指数</div><div class="detail">收 7605.34 点</div></div>
+                <div class="num-card"><div class="num">3153.79 亿</div><div class="label">港股全天成交</div><div class="detail">港元</div></div>
+                <div class="num-card"><div class="num">-4.2%</div><div class="label">智谱 evening</div><div class="detail">02513.HK vs 6/29 上午触及 1967 港元</div></div>
+                <div class="num-card"><div class="num">+14.7%</div><div class="label">地平线机器人</div><div class="detail">智驾芯片 HSD 持续量产上车</div></div>
+                <div class="num-card"><div class="num">+6.4%</div><div class="label">网易-S</div><div class="detail">将转为双重主要上市</div></div>
+                <div class="num-card"><div class="num">-9.2%</div><div class="label">联想集团</div><div class="detail">0992.HK evening</div></div>
+            </div>
+            <p><strong>5 大板块 evening 18:00 收市表现：</strong></p>
+            <ul>
+                <li><strong>大盘指数：</strong>恒指 +1.57% 收 23026.68 收复两万三大关 / 恒科指 +3.23% 收 4393.01 一度涨超 4% / 国企指数 +1.94% 收 7605.34 / 全天成交 3153.79 亿港元</li>
+                <li><strong>大模型概念股：</strong>智谱 02513.HK evening -4.2%（vs 6/29 上午触及 1967 港元 = 跨日 V 形反转 evening 获利了结 + vs 6/27 evening 收盘 1830 港元 = 跨日反弹 +7.5%）</li>
+                <li><strong>智驾芯片：</strong>地平线机器人-W +14.7%（智驾芯片市场"双强"格局 + HSD 持续量产上车）</li>
+                <li><strong>互联网龙头：</strong>网易-S +6.4%（公告"将转为双重主要上市"）/ 阿里巴巴、美团等跟涨</li>
+                <li><strong>AI 算力硬件：</strong>联想集团 0992.HK -9.2% evening 逆势回调</li>
+            </ul>
+            <p><strong>6/29 港股 evening 18:00 收市完整收官主线：</strong>恒指收复两万三大关 + 恒科指 +3.23% + 港股全天成交 3153.79 亿港元 + 智谱 evening -4.2% 获利了结 + 智驾芯片地平线 +14.7% + 网易 +6.4% 双主要上市 = evening 必报"跨日 V 形反转 + evening 获利了结"完整四件套</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📈 角度 2：6/29 15:32 A 股 evening 收盘 - 科创50 +4.61% 半导体设备集体涨停</div>
+            <p><strong>6/29 A 股 evening 收盘核心数据：</strong></p>
+            <div class="num-grid">
+                <div class="num-card"><div class="num">+4.61%</div><div class="label">科创50 指数</div><div class="detail">大幅领涨两市</div></div>
+                <div class="num-card"><div class="num">3.52 万亿</div><div class="label">两市成交</div><div class="detail">较上一交易日 -347 亿</div></div>
+                <div class="num-card"><div class="num">+20%</div><div class="label">华海清科</div><div class="detail">688120.SH 涨停</div></div>
+                <div class="num-card"><div class="num">+20%</div><div class="label">金海通</div><div class="detail">603061.SH 涨停</div></div>
+                <div class="num-card"><div class="num">+20%</div><div class="label">银河微电</div><div class="detail">688689.SH 20% 涨停</div></div>
+                <div class="num-card"><div class="num">+17%</div><div class="label">正帆科技</div><div class="detail">688596.SH 存储芯片</div></div>
+                <div class="num-card"><div class="num">+10%</div><div class="label">澜起科技</div><div class="detail">688008.SH 存储芯片</div></div>
+                <div class="num-card"><div class="num">+10%</div><div class="label">神工股份</div><div class="detail">688233.SH 半导体</div></div>
+            </div>
+            <p><strong>5 大板块 evening 15:32 收市表现：</strong></p>
+            <ul>
+                <li><strong>大盘指数：</strong>三大指数全线收红 / 创业板指探底回升 / 科创50 +4.61% / 两市成交 3.52 万亿</li>
+                <li><strong>半导体设备集体涨停：</strong>华海清科 688120.SH +20% / 金海通 603061.SH +20% / 华亚智能 003043.SZ +20% / 柏诚股份 601133.SH +20%</li>
+                <li><strong>半导体芯片大爆发：</strong>银河微电 688689.SH 20% 涨停 / 神工股份 688233.SH +10% / 宏微科技 / 扬杰科技 / 雅克科技 / 富满微 +5%</li>
+                <li><strong>存储芯片大涨：</strong>正帆科技 688596.SH +17% / 澜起科技 688008.SH +10% / 华清海科</li>
+                <li><strong>6/29 14:54 午后集体反攻：</strong>沪指涨近 1% / 深指涨 0.15% / 创业板指涨 0.47% / 此前一度跌超 2% / 半导体板块午后爆发</li>
+            </ul>
+            <p><strong>6/29 A 股 evening 18:00 收市完整收官主线：</strong>科创50 +4.61% / 两市成交 3.52 万亿 / 半导体设备集体涨停 / 半导体芯片大爆发 / 存储芯片大涨 + 14:54 午后集体反攻 = evening 必报"科创 50 +4.61% + 半导体设备集体涨停"完整四件套</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📈 角度 3：6/29 16:48 美股盘前 - 谷歌算力告急 + 美光科技盘前上涨</div>
+            <p><strong>6/29 evening 16:48 美股盘前 30 min 完整数据：</strong></p>
+            <div class="num-grid">
+                <div class="num-card"><div class="num">+5%</div><div class="label">美光科技</div><div class="detail">MU.US 盘前上涨</div></div>
+                <div class="num-card"><div class="num">40GW</div><div class="label">美数据中心</div><div class="detail">2028 电网限制</div></div>
+                <div class="num-card"><div class="num">+1%</div><div class="label">纳指期货</div><div class="detail">盘前微涨</div></div>
+                <div class="num-card"><div class="num">$73.178</div><div class="label">WTI 原油</div><div class="detail">vs 6/28 evening $75</div></div>
+            </div>
+            <p><strong>6/29 evening 16:48 美股盘前 5 大新维度：</strong></p>
+            <ul>
+                <li><strong>谷歌算力告急 - 美股芯片股盘前普涨：</strong>6/29 美光科技 MU.US 盘前上涨（AI 数据中心需求持续放量 + 内存价格 + HBM + DDR5 + 数据中心 SSD）</li>
+                <li><strong>谷歌母公司 Alphabet 因算力紧张限制 Meta 用 Gemini：</strong>6/29 16:48 财联社/CNBC 完整披露 = 美国 AI 算力"供不应求"白热化</li>
+                <li><strong>SemiAnalysis US Grid Constraints 40GW 2028：</strong>HN front #15 26pt/30c = 美国电网 AI 数据中心 40GW 2028 限制 = 算力军备竞赛的物理层瓶颈</li>
+                <li><strong>芯片股盘前普涨：</strong>美光 + 其他 AI 芯片股 同步上涨 = "AI 数据中心需求持续放量"vs "算力告急"双线</li>
+                <li><strong>WTI 73.178 美元：</strong>vs 6/28 evening 75 美元 -1.82 美元（伊朗未参加原定技术性谈判 + 中东地缘风险溢价部分消失）</li>
+            </ul>
+            <p><strong>6/29 evening 美股盘前 18:00 完整收官主线：</strong>AI 数据中心需求持续放量 + 内存价格 + HBM + DDR5 + 数据中心 SSD + 谷歌算力告急 = evening 必报"美光科技盘前上涨 + 谷歌算力告急"完整四件套</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📈 角度 4：6/29 13:00 ~ 17:00 期间 3h 后续发酵 - 智元 15000 台 + 功率半导体涨价 + 网易-S 双主要上市</div>
+            <p><strong>6/29 13:00 ~ 17:00 期间 6h 后续发酵完整数据：</strong></p>
+            <ul>
+                <li><strong>智元 15000 台 6h 后续发酵：</strong>6/29 08:22 AI 早报 + 6/28 下午 智元第 15000 台具身智能机器人下线（智元精灵 G2 + 6 天产线直播 99.99% + 龙旗科技工厂 + 姚卯青"量产是具身智能走出实验室、落地产业的核心根基"）→ 6/29 13:00 - 6/29 17:00 智元官方 + 第一财经 + 财联社 + 智通财经 6h 持续发酵 = "具身智能量产化中国速度"话题 24h 发酵完整</li>
+                <li><strong>功率半导体涨价 6h 后续发酵：</strong>6/29 07:11 数智早参功率半导体再启阶梯式调价 + 6/29 07:31 科创板日报 AI 相关电源功率订单爆满 + 800V HVDC + 服务器二次电源 + IDM 模式 → 6/29 13:00 - 6/29 17:00 财联社 + 第一财经 + 智通财经 6h 持续发酵 = "AI 算力上游涨价潮从存储扩散到功率半导体"话题 24h 发酵完整</li>
+                <li><strong>GLM-5.2 semgrep 基准 6h 后续发酵：</strong>6/29 09:00 HN front #1 GLM 5.2 beats Claude 399pt/187c（semgrep.dev 第三方独立机构网络安全基准）→ 6/29 18:00 HN front #2 849pt/395c（+450pt/+208c 9h 增量 持续引爆）= "国产大模型在独立机构再夺冠"话题 24h 发酵完整</li>
+                <li><strong>6/29 evening 17:00 网易-S +6.4%（双主要上市）：</strong>网易-S 9999.HK 6/29 evening 收盘 +6.4% / 公告"将转为双重主要上市"= 中概股回港二次上市 / 双重主要上市潮</li>
+            </ul>
+            <p><strong>6/29 evening 18:00 6h 后续发酵主线：</strong>智元 15000 台 + 功率半导体涨价 + 早醒三大信号 + 网易-S +6.4% = evening 必报"6h 后续发酵 + 网易-S 双主要上市"完整五件套</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📈 角度 5：HN front 6/29 18:00 = 北美 6/29 10:00 UTC 30 items 6 维度新晋</div>
+            <p><strong>HN front 6/29 18:00 30 items 串行 fetch 实测：</strong></p>
+            <div class="num-grid">
+                <div class="num-card"><div class="num">849pt/395c</div><div class="label">#2 GLM 5.2</div><div class="detail">+450pt/+208c 9h 增量</div></div>
+                <div class="num-card"><div class="num">441pt/159c</div><div class="label">#4 HackerRank ATS</div><div class="detail">招聘 AI 化</div></div>
+                <div class="num-card"><div class="num">467pt/270c</div><div class="label">#5 Age verification</div><div class="detail">AI 身份验证政策延展</div></div>
+                <div class="num-card"><div class="num">300pt/109c</div><div class="label">#8 Memory prices</div><div class="detail">+154pt/+54c 9h 增量</div></div>
+                <div class="num-card"><div class="num">434pt/570c</div><div class="label">#10 Claude Code MRI</div><div class="detail">+107pt/+135c 9h 增量</div></div>
+                <div class="num-card"><div class="num">98pt/16c</div><div class="label">#11 Distillation</div><div class="detail">黑盒 LLM 蒸馏</div></div>
+                <div class="num-card"><div class="num">151pt/202c</div><div class="label">#16 Tokenmaxxing</div><div class="detail">agent token 经济学</div></div>
+                <div class="num-card"><div class="num">407pt/541c</div><div class="label">#21 Brown AI fraud</div><div class="detail">+199pt/+248c 9h 增量</div></div>
+            </div>
+            <p><strong>HN front 6/29 18:00 6 维度新晋完整数据：</strong></p>
+            <ul>
+                <li><strong>独立基准（持续引爆）：</strong>#2 GLM 5.2 beats Claude 849pt/395c（6/29 09:00 #1 399pt → 18:00 #2 849pt = +450pt/+208c 9h 增量 持续引爆）</li>
+                <li><strong>身份验证政策延展：</strong>#5 Age verification is just a precursor to automated attribution of speech 467pt/270c（nonogra.ph 6/29）</li>
+                <li><strong>6h 增量（持续发酵）：</strong>#8 Historical memory prices 1960-2026 300pt/109c / #10 Claude Code MRI 434pt/570c / #21 Brown AI fraud 407pt/541c</li>
+                <li><strong>AI 算力（电网物理层）：</strong>#15 US Grid Constraints: Towards 40GW+ of Behind-the-Meter Datacenter by 2028? 26pt/30c（SemiAnalysis）</li>
+                <li><strong>知识蒸馏黑盒：</strong>#11 Knowledge Distillation of Black-Box Large Language Models 98pt/16c（arxiv 2401.07013 - vs Anthropic 蒸馏指控双线对位）</li>
+                <li><strong>AI 写作/创业：</strong>#4 HackerRank ATS 441pt/159c / #16 Tokenmaxxing is dead 151pt/202c / #19 TOP500 ISC'26 111pt/69c / #25 Librepods AirPods 392pt/132c / #28 OpenAI Codex sensitive files 207pt/132c</li>
+            </ul>
+            <p><strong>6/29 evening 中东地缘风险：</strong>美军继续空袭伊朗 / 6/29 evening 央视新闻 = 中东地缘风险持续（vs 6/29 早醒 6h 增量）</p>
+            <p><strong>HN front 6/29 18:00 6 维度新晋主线：</strong>独立基准 + 身份验证政策延展 + 6h 增量 + AI 算力 + 知识蒸馏黑盒 + AI 写作 = evening 必报"HN front 6/29 18:00 6 维度新晋"完整六件套</p>
+        </div>
+
+        <div class="section privacy-check">
+            <div class="section-title">🛡️ 隐私红线检查</div>
+            <ul>
+                <li>✅ 无用户个人信息 / 私人语气 / 内部称呼</li>
+                <li>✅ 无业务域名 / 资产 / 系统架构信息</li>
+                <li>✅ 无内部称呼 / 品牌标识</li>
+                <li>✅ 无 API key / 服务器配置</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>📅 2026-06-29 18:00 | 🌙 OPC 晚报 | 📡 撞车源 2 份全有效 | 🤖 5 角度 0 处撞车</p>
+            <p>OPC Daily · 2026-06-29 · Evening</p>
+        </div>
+    </div>
+</body>
+</html>
