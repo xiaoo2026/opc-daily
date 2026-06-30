@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 早报 | 2026-06-30</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+      --21evening: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; margin-bottom: 0.75rem; }
+    body.type-morning .badge { background: rgba(245, 158, 11, 0.15); color: var(--morning); border: 1px solid rgba(245, 158, 11, 0.3); }
+    body.type-afternoon .badge { background: rgba(16, 185, 129, 0.15); color: var(--afternoon); border: 1px solid rgba(16, 185, 129, 0.3); }
+    body.type-evening .badge { background: rgba(99, 102, 241, 0.15); color: var(--evening); border: 1px solid rgba(99, 102, 241, 0.3); }
+    body.type-21evening .badge { background: rgba(168, 85, 247, 0.15); color: var(--21evening); border: 1px solid rgba(168, 85, 247, 0.3); }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body class="type-morning">
+  <div class="container">
+    <header>
+      <div class="badge">MORNING · 早报</div>
+      <h1>OPC 早报 · 6 月最后一个交易日晨醒</h1>
+      <div class="subtitle">2026-06-30 · AI 行业动态日报</div>
+      <div class="meta">
+        <span>采集 09:00 CST</span>
+        <span>·</span>
+        <span>类型 morning</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2 class="cn">🔥 今日核心警报</h2>
+      <p><strong>6/29 22:00 ~ 6/30 09:00 北京时间 11h 窗口</strong>（北美 6/29 10:00 ~ 6/29 21:00 UTC），全球 AI 行业在 5 个新维度同时放出压倒性信号 — <strong>国务院 + 教育部双线 AI+ 政策落地 + DeepSeek V4 7 月中旬正式版 + 峰谷定价 + Grok 4.5 1.5 万亿参数 V9 + 美股 6/29 集体反弹五连跌终结 + 全球 20 家模拟及功率半导体企业即将于 7 月 1 日启动新一轮涨价 + Roundhill Memory ETF 首次纳入兆易创新 + 三星/SK/美光 反垄断集体诉讼 + 韩国启动"三大超级项目"豪掷千万亿韩元布局 AI 与芯片产业 + 央行 6/29 首次隔夜逆回购操作落地 + 6/30 港股 6/30 周二交易日 + 6/30 6 月最后一个交易日</strong>。</p>
+      <p>过去 11 小时（6/29 22:00 ~ 6/30 09:00 北京时间），全球 AI 行业在 5 个新维度同时放出压倒性信号。</p>
+    </div>
+
+    <div class="card">
+      <h2 class="cn">① 国务院 + 教育部双线 AI+ 政策落地</h2>
+      <p><strong>6/29 国务院常务会议（李强主持）核心要求</strong>：听取人工智能发展情况汇报 + 研究当前外贸形势和贸易强国建设有关工作 + 审议通过《"十五五"碳达峰行动方案》和《国民健康"十五五"规划》。会议指出"要深刻把握人工智能演进趋势，完善支持政策和治理体系，牢牢掌握发展主动权。<strong>要加力推进人工智能创新突破，加快关键技术攻关和超大规模智算集群建设。要深入实施'人工智能+'行动。要守牢人工智能安全底线，构建动态适应、分级分类的安全监管体系</strong>"。</p>
+      <p><strong>6/29 国务院印发《教育发展"十五五"规划》</strong>：完善科学教育体系 + 推进人工智能全学段教育 + 提升学生人工智能素养 + 增强提出问题、解决问题的能力 + 推动高等教育提质扩容 + <strong>"双一流"高校本科招生数增加 10 万人以上</strong> + 探索延长义务教育年限。</p>
+      <p><strong>6/30 陆家嘴财经早餐宏观三件套</strong>：国务院常务会议要求加力推进人工智能创新突破 + 教育发展"十五五"规划发布，推进人工智能全学段教育 + 中国央行首次隔夜逆回购操作落地，给量不给价 + 美国最高法院裁定特朗普暂不能罢免美联储理事库克 + 伊朗称未来几天内没有与美国开展谈判计划 + 韩国启动"三大超级项目"，豪掷千万亿韩元布局 AI 与芯片产业 + 三星、SK 海力士、美光等存储巨头在美国面临反垄断集体诉讼 + 周一全球股市普涨纳指涨 2%，A 股医药、半导体板块爆发。</p>
+      <div class="highlight">
+        <p><strong>国务院 + 教育部 + 央行</strong>三部委联动 = AI 大模型国家战略持续深化（vs 6/18 morning 写过"国务院 + 证监会 + 上交所"三级联动 → 6/29 升级为"国务院 + 教育部 + 央行"四线联动）</p>
+        <p>"加力推进人工智能创新突破 + 超大规模智算集群建设" = "十四五"AI 战略 → "十五五"AI 战略完整递进</p>
+        <p>"双一流"高校本科招生数增加 10 万人以上 + 推进人工智能全学段教育 = 教育部 AI 人才战略落地</p>
+      </div>
+      <p><span class="source-link">来源：国务院 6/29 / 陆家嘴财经早餐 6/30 07:18 / 财联社 6/30 08:13 / 财联社 6/30 08:31 / 21IC 6/30 01:00</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="cn">② DeepSeek V4 7 月中旬正式版 + 峰谷定价 + Grok 4.5 1.5 万亿参数 V9</h2>
+      <p><strong>6/29 DeepSeek 发送给用户的升级提醒邮件原文</strong>：邮件显示，DeepSeek V4 正式版计划于 7 月中旬正式上线，并将同步调整 API 定价策略，引入峰谷定价机制，以更合理地配置资源、提升服务稳定性。</p>
+      <p><strong>DeepSeek V4 峰谷定价机制具体规则</strong>：V4 Pro 和 V4 Flash 模型在平时价格保持不变，但高峰时段 API 价格将调整为平时的 2 倍 = 引入峰谷定价机制，<strong>高峰时段调用价格直接翻倍</strong>。</p>
+      <p><strong>马斯克透露 Grok 4.5 完整数据</strong>：<strong>Grok 4.5 基于 1.5 万亿参数的 V9 基础模型打造</strong> + 在补充训练中特别加入了热门 AI 编程工具 Cursor 的数据。</p>
+      <div class="highlight">
+        <p>DeepSeek V4 7 月中旬 + 峰谷定价（高峰时段翻倍）= 中国大模型 API 商业化进入"分时定价"新阶段</p>
+        <p>Grok 4.5 1.5 万亿参数 V9 + Cursor 数据补充训练 = xAI 编程工具深度协同路径</p>
+        <p>vs DSpark 推理优化层 → V4 正式版 = DeepSeek "四层国际化布局"持续演进</p>
+      </div>
+      <p><span class="source-link">来源：蓝鲸新闻 6/29 / 多位开发者 6/29 / DeepSeek 6/29 / 财联社 6/30 08:13 / AI 早报 6/30 08:22</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="global">③ 6/29 美股集体反弹五连跌终结 + 6/30 早醒开盘预判</h2>
+      <p><strong>6/29 美股 6/29 周一集体收涨完整数据</strong>：科技股力撑美股反弹 + <strong>标普纳指终结五连跌</strong> + 标普涨超 1% / 纳指涨超 2% / <strong>道指收创新高</strong> + 特斯拉收涨 8.5% 领涨科技巨头 + <strong>被纳入道指成分股首日，谷歌收涨近 5%</strong> + 和涨超 1% 的英伟达均扭转五连跌 + 下周将被纳入纳斯达克 100 的 <strong>SpaceX 涨逾 7%</strong> + 芯片指数收涨近 4% + 西部数据涨超 10% + Marvell 涨逾 4% + 超微电脑跌超 8%。</p>
+      <p><strong>6/30 早醒开盘预判</strong>：6/30 周一港股 + A 股 + 美股三市场同步开盘预判 - 港股 evening 收盘 23026 / 恒科指 4393 / 智谱 6/30 周一开盘预判 / A 股 科创50 +4.61% / 半导体设备涨停潮 6/30 延续 / 美股 6/30 周一开盘 5 大看点（美光 / 谷歌 / 微软 / 苹果 / 英伟达）。</p>
+      <p><strong>6/30 6 月最后一个交易日</strong>：6/30 港股 6/30 周二交易日 + 6/30 6 月最后一个交易日 + 6/30 6 月所有交易日节后完整收官。</p>
+      <div class="highlight">
+        <p>标普 +1% / 纳指 +2% <strong>终结五连跌</strong> = 上周 AI 交易退烧后蓝筹科技股强力反弹</p>
+        <p>特斯拉 +8.5% + 谷歌首入道指 +5% + SpaceX +7% 下周纳指 100 = <strong>科技龙头股三连发</strong></p>
+        <p>西部数据 +10% + Marvell +4% + 芯片指数 +4% = <strong>存储芯片股强势反弹</strong>（vs 6/29 evening 智谱获利了结 -4.2% = 港股 A 股与美股分化）</p>
+      </div>
+      <p><span class="source-link">来源：华尔街见闻早餐 6/30 07:13 / 财联社 6/30 08:13 / 陆家嘴财经早餐 6/30 07:18 / 21IC 6/30 01:00 / 财联社全球科技早参 6/29 07:58</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="global">④ 功率半导体 7/1 涨价 + Roundhill Memory ETF 纳入兆易创新 + 三星/SK/美光 反垄断集体诉讼</h2>
+      <p><strong>6/30 全球 20 家模拟及功率半导体企业即将于 7 月 1 日启动新一轮涨价</strong>：AI 超级周期的高景气正在向上游卡点环节全面传导 + 全球近 20 家模拟及功率半导体企业即将于 7 月 1 日启动新一轮涨价。</p>
+      <p><strong>Roundhill Memory ETF (DRAM) 首次纳入 A 股存储龙头兆易创新</strong>：全球首只内存领域主动管理型 ETF Roundhill Memory ETF (DRAM) 近日进行调仓，首次将 A 股存储龙头兆易创新纳入投资组合，为<strong>第八大重仓股</strong>。</p>
+      <p><strong>三星/SK 海力士/美光等存储巨头在美国面临反垄断集体诉讼</strong>：三星、SK 海力士、美光等存储巨头在美国面临反垄断集体诉讼。</p>
+      <div class="highlight">
+        <p>6/29 早醒功率半导体涨价 → 6/30 全球 20 家 7/1 涨价 = <strong>涨价周期"行业 → 全球"扩散</strong></p>
+        <p>6/29 evening A 股半导体设备集体涨停 → 6/30 7/1 全球 20 家涨价 = <strong>"A 股 → 全球"涨价传导</strong></p>
+        <p>Roundhill Memory ETF 首次纳入兆易创新 = <strong>A 股存储龙头首次进入全球主动管理型 ETF</strong>（= 国际资金对 A 股 AI 存储链认账）</p>
+      </div>
+      <p><span class="source-link">来源：财联社 6/30 08:13 / 陆家嘴财经早餐 6/30 07:18 / 第一财经 6/30 / 商务部 6/30 / 财联社汽车早报 6/30</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="viewpoint">⑤ 6/30 早醒港股 + A 股盘前要闻 + 韩国"三大超级项目" + 央行首次隔夜逆回购操作 + 6/30 港股 6 月最后交易日</h2>
+      <p><strong>6/30 早醒港股 + A 股盘前要闻</strong>：财联社 6/30 早间新闻精选 + 6 月 30 日 A 股盘前要闻 + 现代 AI 新闻早班车 6/30 07:50 + AI 早报 6/30 08:22。</p>
+      <p><strong>6/29 韩国启动"三大超级项目"豪掷千万亿韩元布局 AI 与芯片产业完整数据</strong>：<strong>三星宣布总额高达 2655 万亿韩元的投资计划</strong>（首尔都市圈半导体产业集群 2030 万亿韩元 + 湖南忠清岭南 625 万亿韩元） + <strong>SK 集团宣布将投资 1100 万亿韩元扩大半导体供应</strong> + 韩国产业通商资源部长官金正官表示韩国计划投资约 800 万亿韩元在西南地区建设四座半导体晶圆厂（三星电子 + SK 海力士各两座） + <strong>预计五年内 DRAM 生产能力翻倍 + 全球内存市场 5 年内增长四倍</strong>。</p>
+      <p><strong>央行 6/29 首次隔夜逆回购操作落地</strong>：央行 6/29 开展 1575 亿元 7 天期逆回购操作，同时开展 3000 亿元隔夜逆回购操作，单日净回笼 190 亿元 + <strong>这是隔夜逆回购操作首次实际运用</strong> + 值得注意的是，央行此次隔夜逆回购操作最终仅公布操作量，未披露利率。</p>
+      <p><strong>6/30 港股 6/30 周二交易日 + 6 月最后一个交易日</strong>：6/30 港股 6/30 周二交易日 + 6/30 6 月最后一个交易日 + 6/30 6 月所有交易日节后完整收官。</p>
+      <p><strong>6/29 商务部将 20 家日本实体列入出口管制管控名单</strong>：商务部发布公告，将 20 家日本实体列入出口管制管控名单，禁止出口经营者向上述实体出口两用物项 + 商务部还将 20 家日本实体列入关注名单。</p>
+      <p><strong>6/30 早醒港股夜期</strong>：6/29 恒指夜期 6/30 收 22976 低水 51 点 + 6/30 恒生指数主连夜盘 22976 +0.04% + 6/30 恒生科技指数主连夜盘 4419 +0.45%。</p>
+      <div class="highlight">
+        <p>三星 2655 万亿 + SK 1100 万亿 + 韩国政府 800 万亿 = <strong>韩国"三大超级项目"合计 4555 万亿韩元（≈ 3.5 万亿美元）</strong></p>
+        <p>5 年内 DRAM 生产能力翻倍 + 全球内存市场 5 年内增长四倍 = <strong>韩国举国押注 AI 存储芯片</strong></p>
+        <p>央行 3000 亿隔夜逆回购首次实际运用 + 仅公布量不给价 = <strong>中国央行货币政策工具创新</strong></p>
+        <p>6/30 港股 22976 +0.04% / 恒科指 4419 +0.45% = <strong>6/30 港股小幅高开预判</strong></p>
+      </div>
+      <p><span class="source-link">来源：财联社 6/30 08:13 / 财联社 6/30 08:31 / 现代 AI 新闻早班车 6/30 07:50 / AI 早报 6/30 08:22 / 商务部 6/30 / 央行 6/30 / 恒指夜期 6/30 06:20 / 恒指主连夜盘 6/30 05:24 / 陆家嘴财经早餐 6/30 07:18 / 格隆汇 6/30 07:57</span></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="card">
+      <h2 class="paper">📊 数据要点（带时间戳）</h2>
+      <table>
+        <thead><tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr></thead>
+        <tbody>
+          <tr><td>国务院常务会议要求"加力推进人工智能创新突破"</td><td>超大规模智算集群建设 + 深入实施"人工智能+"行动</td><td>6/29</td><td>国务院</td></tr>
+          <tr><td>《教育发展"十五五"规划》</td><td>推进人工智能全学段教育 + "双一流"本科招生 +10 万人</td><td>6/29</td><td>国务院</td></tr>
+          <tr><td>DeepSeek V4 正式版</td><td>7 月中旬上线 + 引入峰谷定价机制</td><td>6/29</td><td>DeepSeek 邮件</td></tr>
+          <tr><td>DeepSeek V4 峰谷定价</td><td>V4 Pro/V4 Flash 平时不变，高峰时段 API 价格 2 倍</td><td>6/29</td><td>DeepSeek 邮件</td></tr>
+          <tr><td>Grok 4.5 基础模型</td><td>1.5 万亿参数 V9 + 补充训练加入 Cursor 数据</td><td>6/29</td><td>AI 早报 6/30 08:22</td></tr>
+          <tr><td>美股 6/29 周一收涨</td><td>标普 +1% / 纳指 +2% / 道指创新高 / 五连跌终结</td><td>6/29</td><td>华尔街见闻 6/30 07:13</td></tr>
+          <tr><td>特斯拉 / 谷歌 / SpaceX</td><td>+8.5% / +5%（首入道指）/ +7%（下周纳指 100）</td><td>6/29</td><td>华尔街见闻 6/30 07:13</td></tr>
+          <tr><td>西部数据 / Marvell / 英伟达</td><td>+10% / +4% / +1%（扭转五连跌）</td><td>6/29</td><td>华尔街见闻 6/30 07:13</td></tr>
+          <tr><td>全球 20 家模拟及功率半导体涨价</td><td>7 月 1 日启动新一轮涨价</td><td>6/30</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>Roundhill Memory ETF</td><td>首次纳入 A 股存储龙头兆易创新（第八大重仓股）</td><td>6/30</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>三星/SK/美光 反垄断集体诉讼</td><td>美国法院受理存储巨头集体诉讼</td><td>6/30</td><td>陆家嘴财经早餐 6/30 07:18</td></tr>
+          <tr><td>韩国"三大超级项目"</td><td>三星 2655 万亿 + SK 1100 万亿 + 政府 800 万亿韩元</td><td>6/29</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>DRAM 产能翻倍 / 内存市场 4 倍</td><td>5 年内 DRAM 生产能力翻倍 + 全球内存市场 5 年增 4 倍</td><td>6/29</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>央行 6/29 隔夜逆回购</td><td>3000 亿元首次实际运用 + 仅公布量不给价</td><td>6/29</td><td>财联社 6/30 08:31</td></tr>
+          <tr><td>商务部对日本出口管制</td><td>20 家日本实体列入管控名单 + 关注名单</td><td>6/29</td><td>财联社 6/30 08:31</td></tr>
+          <tr><td>恒指夜期 / 主连夜盘</td><td>22976 低水 51 / 22976 +0.04% / 恒科指 4419 +0.45%</td><td>6/29 evening</td><td>智通财经 6/30 06:20</td></tr>
+          <tr><td>朱雀三号遥二静态点火</td><td>东风商业航天创新试验区顺利完成</td><td>6/29</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>AeroVironment 美股盘后</td><td>无人机概念股涨超 20%</td><td>6/30</td><td>每经 AI 6/30 05:11</td></tr>
+          <tr><td>6/30 港股 6 月最后交易日</td><td>6/30 港股周二交易日 + 6 月所有交易日节后收官</td><td>6/30</td><td>财联社 6/30 08:13</td></tr>
+          <tr><td>6/30 6/30 开盘预判</td><td>港股 23026 / 恒科指 4393 / 智谱 / A 股科创50 +4.61%</td><td>6/30</td><td>财联社 6/30 08:13</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC 早报 2026-06-30</p>
+    </footer>
+  </div>
+</body>
+</html>
