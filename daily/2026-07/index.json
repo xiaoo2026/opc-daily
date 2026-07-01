@@ -8,5 +8,10 @@
     "date": "2026-07-01",
     "type": "evening",
     "html_url": "https://020755.xyz/daily/2026-07/2026-07-01/index.html"
+  },
+  {
+    "date": "2026-07-01",
+    "type": "21evening",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-21evening/index.html"
   }
 ]
