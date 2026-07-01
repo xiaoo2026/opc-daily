@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 早报 | 2026-06-30</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+      --21evening: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; margin-bottom: 0.75rem; }
+    body.type-morning .badge { background: rgba(245, 158, 11, 0.15); color: var(--morning); border: 1px solid rgba(245, 158, 11, 0.3); }
+    body.type-afternoon .badge { background: rgba(16, 185, 129, 0.15); color: var(--afternoon); border: 1px solid rgba(16, 185, 129, 0.3); }
+    body.type-evening .badge { background: rgba(99, 102, 241, 0.15); color: var(--evening); border: 1px solid rgba(99, 102, 241, 0.3); }
+    body.type-21evening .badge { background: rgba(168, 85, 247, 0.15); color: var(--21evening); border: 1px solid rgba(168, 85, 247, 0.3); }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body class="type-morning">
+  <div class="container">
+    <header>
+      <div class="badge">MORNING · 早报</div>
+      <h1>OPC 早报 · 7 月首个交易日晨醒</h1>
+      <div class="subtitle">2026-07-01 · AI 行业动态日报</div>
+      <div class="meta">
+        <span>采集 09:00 CST</span>
+        <span>·</span>
+        <span>类型 morning</span>
+        <span>·</span>
+        <span>Hermes Agent</span>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2 class="cn">🔥 今日核心警报</h2>
+      <p><strong>6/30 22:00 ~ 7/1 09:00 北京时间 11h 窗口</strong>（北美 6/30 10:00 ~ 6/30 21:00 UTC），全球 AI 行业在 5 个新维度同时放出压倒性信号 — <strong>Anthropic 美商务部解除 Claude Fable 5 / Mythos 5 出口管制 + 7/1 早醒恢复访问 + Anthropic Claude Sonnet 5 正式发布（部分性能逼近 Opus 4.8 + 价格砍掉 60%）+ Anthropic Claude Science AI 科研工作台（60+ 科学数据库集成）+ Anthropic Sonnet 5 设为默认模型 + 输入 $2/M tokens 输出 $10/M tokens + 优必选 2026 全球发布会（深圳）发布全球首款全尺寸超仿生人形机器人 U1 系列 + U1 Lite 11.98 万 / U1 Pro 16.98 万 / U1 Ultra 99 万（男版）/ 88 万（女版）+ 上市即破万订单 13361 台 + 9/16 开始交付 + 周剑人机共生三步演进路径 + 88 个自由度 + 6/30 寒武纪盘中冲高 1620 元 + 总市值突破 1 万亿 + 收盘 1595.55 元 + 寒武纪成科创板首只万亿市值股票 + A 股总市值第九位 + 海光信息 8607 亿紧随其后 + 寒武纪当晚连夜发风险提示公告 + HN front 6/30 北美时间当日 13:00 UTC 30 items 7 条 AI 相关新晋（Claude Sonnet 5 855pt/486c HN #1 + Claude Code 隐写标记 HN #2 + Fable 5/Mythos 5 解禁 + Claude Science 工作台 + Nano Banana 2 Lite + Leanstral 1.5 + TabFM）+ 6/30 23:00 月之暗面 Kimi 上一轮 200 亿美元估值融资完成交割 + 新一轮融资启动 + 投前估值涨至 315 亿美元 + 6 月中旬 ARR 突破 3 亿美元（3 个月 3 倍曲线）+ API 收入占整体收入 70% 以上 + 收入曲线现 Anthropic 早期特征</strong>。</p>
+      <p>过去 11 小时（6/30 22:00 ~ 7/1 09:00 北京时间），全球 AI 行业在 5 个新维度同时放出压倒性信号。</p>
+    </div>
+
+    <div class="card">
+      <h2 class="cn">① Anthropic 单一公司 4 件套连发（Fable 5/Mythos 5 解禁 + Sonnet 5 发布 + Claude Science 工作台 + Sonnet 5 默认模型切换）</h2>
+      <p><strong>7/1 08:22 钛媒体 App - Anthropic 美商务部已解除 Claude Fable 5 / Mythos 5 出口管制</strong>：Anthropic 称，收到通知，美国商务部已解除对 Claude Fable 5 和 Mythos 5 的出口管制，<strong>将于明天（7/1）开始恢复访问</strong>。</p>
+      <p><strong>7/1 06:47 钛媒体 App - Anthropic 旗下 Fable 模型的出口管制料将于周二晚解除</strong>：美国商务部预计将于周二晚（北美 6/30 晚 = 北京 7/1 早）解除对 Anthropic 旗下 Fable 人工智能模型的出口管制。</p>
+      <p><strong>7/1 07:59 钛媒体 App - 6/12 出口管制 → 6/30 解禁 = 18 天</strong>：6 月 12 日收到出口管制令后，Anthropic 立即停用了其 Mythos 5 和 Fable 5 模型；上周五，Anthropic 表示美国政府已允许其向部分"可信"的美国组织发布其 Claude Mythos 5 人工智能模型；<strong>6/30 18 天后全面解禁</strong>。</p>
+      <p><strong>7/1 07:59 IT 之家 - Anthropic Claude Sonnet 5 正式发布</strong>：Anthropic 今天（7/1）发布公告，宣布推出 Claude Sonnet 5，<strong>声称是其 Sonnet 系列中智能体 AI 表现最强的模型</strong>，能够制定计划、使用浏览器和终端等工具，并自主运行；Claude Sonnet 5 模型已上线，已接入 Claude Code 和 Claude 平台。</p>
+      <p><strong>7/1 08:41 钛媒体 App - Anthropic Claude Sonnet 5 性能逼近 Opus 4.8、价格砍掉 60%</strong>：Anthropic 正式发布新一代中端模型 Claude Sonnet 5，并将其设为 Claude 平台默认模型，向免费及付费用户全面开放；截至 8 月 31 日，Sonnet 5 API 优惠价为每百万输入 Token 2 美元、输出 Token 10 美元，<strong>较 Opus 4.8 便宜约 60%</strong>，优惠结束后仍低约 40%，旨在进一步降低企业部署 AI 智能体成本。</p>
+      <p><strong>6/30 Anthropic 推出 Claude Science AI 科研工作台</strong>：从法律到制药！Anthropic 推出 Claude Science，旨在赋能科研自动化，加速药物发现进程；该产品将于周二（7/1）正式向用户开放；<strong>Claude Science 可广泛应用于生物学和化学领域的各类自动化任务，包括蛋白质结构预测</strong>等复杂工作；该工具<strong>整合了科研人员日常使用的超过 60 个科学数据库</strong>，使用户能够以自然语言提问、自动执行多步骤流程，并一站式获取跨数据源的综合答案；Anthropic 表示，Claude Science 目前以<strong>测试版形式向付费用户开放</strong>。</p>
+      <p><strong>Anthropic 商业化加速"基础设施 + 模型 + 计费"四位一体</strong>：6/30 06:41 Anthropic Claude 全面上线微软 Azure（基础设施）+ 6/30 11:19 亚马逊 AWS 按 Token 向 Anthropic 支付模型使用费（计费）+ 7/1 Claude Sonnet 5 发布（模型）+ 7/1 Claude Science 工作台（科研）= <strong>Anthropic 商业化完整收官</strong>。</p>
+      <div class="highlight">
+        <p><strong>Anthropic 美商务部解除 Fable 5/Mythos 5 出口管制 + 7/1 早醒恢复访问</strong> = 从 6/12 撤市到 6/30 解禁 = 18 天内完成"政策反复"</p>
+        <p>Claude Sonnet 5 <strong>部分性能逼近 Opus 4.8 + 价格砍掉 60%</strong> = 中端模型反超旗舰 + 价格战双线</p>
+        <p>Anthropic Claude Science <strong>集成 60+ 科学数据库 + 蛋白质结构预测 + Beta 付费用户</strong> = AI for Science 商业化（vs 6/17 21evening 写过 arXiv:2606.08044 审计缺口研究）</p>
+        <p>Anthropic 商业化 <strong>基础设施 + 模型 + 计费 + 科研工作台"四位一体"</strong>完整收官 = 冲刺 IPO 前争夺付费客户</p>
+      </div>
+      <p><span class="source-link">来源：钛媒体 App 7/1 08:22 / IT 之家 7/1 07:59 / 钛媒体 App 7/1 08:41 / 财联社 7/1 01:22 / 财联社 7/1 03:47 / Anthropic 6/30 / 美国商务部 6/30 / Synthwave DD 6/30 推文 / xcancel.com 7/1</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="cn">② 优必选 U1 全球首款全尺寸超仿生人形机器人 4 档定价 + 上市即破万订单 + 人机共生十年战略</h2>
+      <p><strong>6/30 优必选在深圳举办 2026 年度全球发布会</strong>：优必选在深圳举办 2026 年度全球发布会，发布<strong>面向下一个十年的"人机共生"战略</strong>。</p>
+      <p><strong>6/30 优必选 U1 全尺寸超仿生人形机器人 U1 系列</strong>：包括半身版 U1 Lite / 高配全身版 U1 Pro / 高动态全身版 U1 Ultra 三款产品。</p>
+      <p><strong>6/30 优必选 U1 系列 4 档定价</strong>：<strong>U1 Lite 售价 11.98 万元 / U1 Pro 售价 16.98 万元 / U1 Ultra 男版售价 99 万元 / U1 Ultra 女版售价 88 万元</strong>。</p>
+      <p><strong>6/30 优必选 U1 系列上市即破万订单</strong>：截至 6/30 下午 3 时，<strong>该系列机器人线上线下全渠道订单量已超 13361 台</strong>，9 月 16 日开始交付。</p>
+      <p><strong>6/30 优必选 U1 Ultra 88 个自由度</strong>：全身有 88 个自由度。</p>
+      <p><strong>6/30 优必选周剑"人机共生"三步演进路径</strong>：周剑在发布会上阐述了"人机共生"的三步演进路径：<strong>先替代高危重复劳动以解放人力 → 再渗透生活提供陪伴服务 → 最终实现人机深度融合</strong>。</p>
+      <p><strong>6/30 优必选周剑中国公司在场景应用上已具备世界话语权</strong>：周剑在发布会上表示，<strong>中国公司在场景应用上已具备世界话语权</strong>；国产链头部本体出货量规模有望从数千台跨越到数万台，应用场景主要来自于文娱商演、科研教育、数据采集、导览导购等。</p>
+      <p><strong>vs 6/30 morning 智元 15000 台 + 6/30 evening 联想 +8.18%</strong>：6/30 智元第 15000 台具身智能机器人下线（工业场景）→ 6/30 evening 联想集团 +8.18%（智能制造）→ 6/30 优必选 U1 <strong>11.98 ~ 99 万元 4 档定价 + 上市即破万订单（13361 台）</strong> = 国产人形机器人<strong>"工业 → 制造 → 消费（家庭 + 陪伴 + 深度融合）"三层场景完整收官</strong>。</p>
+      <div class="highlight">
+        <p>U1 Lite <strong>11.98 万元</strong> + U1 Pro <strong>16.98 万元</strong> = 国民级人形机器人入门价位</p>
+        <p>U1 Ultra <strong>男版 99 万元 / 女版 88 万元</strong> = 高端家庭机器人旗舰版</p>
+        <p>上市即破万订单 <strong>13361 台</strong> = 6/30 当日下午 3 时上市当日破万</p>
+        <p>周剑<strong>"人机共生"三步演进路径</strong> = 替代重复劳动 → 渗透生活陪伴 → 人机深度融合</p>
+        <p>88 个自由度 + 9/16 交付 + 锚定人机共生新十年 = 国产人形机器人从工业制造走向消费陪伴完整收官</p>
+      </div>
+      <p><span class="source-link">来源：财联社 7/1 07:06 / 优必选 6/30 全球发布会 / 深视新闻微信公众号 6/30 / 第一财经 7/1 / 证券日报 7/1 08:48</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="cn">③ 寒武纪科创板首只万亿市值股 + 连夜风险提示公告 + 国产 AI 芯片赛道万亿价值时代</h2>
+      <p><strong>6/30 寒武纪盘中涨幅扩大至超过 7%</strong>：6/30，AI 算力芯片企业寒武纪股价盘中涨幅扩大至超过 7%，<strong>总市值突破 1 万亿元</strong>，同时位居 A 股总市值前十。</p>
+      <p><strong>6/30 寒武纪盘中最高冲到 1620 元</strong>：6/30 寒武纪盘中最高冲到 1620 元，总市值突破 1 万亿——这是科创板第一只万亿市值的股票。</p>
+      <p><strong>6/30 寒武纪收盘价 1595.55 元 + 总市值 1 万亿元</strong>：截至 6/30 收盘，科创板上市公司中，<strong>中芯国际以总市值（A+H 股）1.36 万亿元居榜首，寒武纪是目前科创板唯一仅靠 A 股市值就突破万亿元大关的上市公司</strong>。</p>
+      <p><strong>6/30 海光信息 A 股市值 8607 亿元紧随其后</strong>：海光信息以 8607 亿元 A 股市值紧随寒武纪之后。</p>
+      <p><strong>6/30 寒武纪位列 A 股总市值第九位 + 紧随贵州茅台等核心权重股之后</strong>：6/30，AI 算力芯片企业寒武纪股价站上 1600 元关口，<strong>总市值成功突破 1 万亿元，成为科创板开市以来首只万亿市值个股，位列 A 股总市值第九位</strong>，紧随贵州茅台等核心权重股之后，标志着国产 AI 芯片赛道正式迈入万亿价值时代。</p>
+      <p><strong>6/30 寒武纪当晚连夜发风险提示公告 + 像一封劝退信</strong>：寒武纪核心数据（截至 6/30）收盘价 1595.55 元；逻辑上这很正常：股价异动就得发公告；但你把公告内容仔细读一遍，<strong>感觉像在看一封劝退信</strong>。</p>
+      <p><strong>寒武纪连亏八年到盈利称王的逆袭之路</strong>：回顾寒武纪的成长轨迹，这是一段从连亏八年到盈利称王的逆袭之路。</p>
+      <p><strong>2026 年上半年寒武纪升幅 22 名</strong>：2026 年上半年市值 500 强企业榜单中，中际旭创、寒武纪升幅较大，分别上升 11 名和 22 名。</p>
+      <p><strong>vs 6/30 evening 科创 50 +3.85% 大涨盘中创新高 + 上半年科创 50 累涨 64.25%</strong>：6/30 evening 写过科创 50 +3.85% 大涨盘中创新高 + 上半年科创 50 累涨 64.25% + 半导体芯片产业链爆发多股涨停；但都没写"<strong>6/30 寒武纪盘中冲高 1620 元 + 总市值突破 1 万亿 + 收盘 1595.55 元 + 寒武纪成科创板首只万亿市值股票 + A 股总市值第九位 + 海光信息 8607 亿紧随其后 + 寒武纪当晚连夜发风险提示公告</strong>"具体新视角。</p>
+      <div class="highlight">
+        <p>6/30 寒武纪盘中冲高 1620 元 + 总市值突破 1 万亿 = <strong>科创板第一只万亿市值股票</strong></p>
+        <p>6/30 寒武纪收盘 1595.55 元 + A 股总市值第九位 = <strong>国产 AI 芯片赛道正式迈入万亿价值时代</strong></p>
+        <p>中芯国际 A+H 1.36 万亿 + 寒武纪 A 股 1 万亿 + 海光信息 8607 亿 = <strong>科创板"国产 AI 芯片"梯队完整成型</strong></p>
+        <p>寒武纪当晚连夜发风险提示公告 + 像一封劝退信 = <strong>国产 AI 芯片估值争议 + 监管警示</strong></p>
+        <p>寒武纪连亏八年到盈利称王 + 上半年市值升 22 名 = <strong>国产 AI 算力"从亏损到万亿"完整收官</strong></p>
+      </div>
+      <p><span class="source-link">来源：每日经济新闻 7/1 02:23 / 每日经济新闻 7/1 07:14 / 新京报 7/1 08:35 / 21 经济网 7/1 / 上交所 6/30 / 海光信息 6/30</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="global">④ HN front 7/1 早醒 7 条 AI 新晋 6 维度并发 + Anthropic Fable 5 解禁 + Claude Sonnet 5 HN #1 855pt + Claude Code 隐写标记 HN #2 1390pt + 国产模型本地化持续引爆</h2>
+      <p><strong>HN front 6/30 21:00 = 北美 6/30 13:00 UTC 30 items 串行 fetch 实测 7 条 AI 相关新晋完整数据</strong>（HN Firebase API 6/30 21:00 串行 fetch 实测 30 items）：① <strong>#1 Claude Sonnet 5 855pt/486c</strong>（anthropic.com/news/claude-sonnet-5 / 美国 AI 旗舰模型 HN 头号）② <strong>#2 Claude Code is steganographically marking requests 1390pt/397c</strong>（thereallo.dev/blog/claude-code-prompt-steganography / Claude Code 隐写标记请求 HN front #2 + 反 AI 模型滥用提示词保护研究）③ <strong>#4 Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5 147pt/53c</strong>（AnthropicAI 推文 / 美商务部解禁 Fable 5/Mythos 5 出口管制 HN #4 147pt）④ <strong>#6 Claude Science 353pt/120c</strong>（claude.com/product/claude-science / Anthropic Claude Science AI 科研工作台 HN #6 353pt/120c = Anthropic AI for Science 商业化）⑤ <strong>#7 Nano Banana 2 Lite 298pt/117c</strong>（deepmind.google/models/gemini-image/flash-lite/ / Google Nano Banana 2 Lite = 轻量级 Gemini 图像模型 HN #7）⑥ <strong>#8 Leanstral 1.5 89pt</strong>（docs.mistral.ai/models/model-cards/leanstral-1-5-26-06 / Mistral Leanstral 1.5 = 开源小模型）⑦ <strong>#14 TabFM: A zero-shot foundation model for tabular data 34pt</strong>（research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/ / Google TabFM = 表格数据零样本基础模型）。</p>
+      <p><strong>6 维度并发</strong>：美国 AI 旗舰模型（Claude Sonnet 5 #1 855pt + Claude Code 隐写标记 #2 1390pt）+ 美商务部解禁（Fable 5/Mythos 5 #4 147pt）+ AI 科研工作台（Claude Science #6 353pt）+ 图像生成（Nano Banana 2 Lite #7 298pt）+ 开源小模型（Leanstral 1.5 #8 89pt）+ 表格数据基础模型（TabFM #14 34pt）。</p>
+      <p><strong>前 4 条全是 Anthropic 或 Claude 相关</strong>：HN front AI 相关前 4 条全部 Anthropic 主导 = <strong>"Anthropic 一家公司 = HN front AI 主题"</strong>。</p>
+      <p><strong>vs 6/30 afternoon + 6/30 21evening 6 维度并发</strong>：6/30 afternoon HN front 6/30 12:00 6 维度并发（Qwen 3.6 27B 701pt + LongCat-2.0 + South Korea $1T + Micro-Agent + Rocketlab + Apple Neural Engine）+ 6/30 21evening HN front 6/30 21:00 6 维度并发（European digital ID + Open Source Low Tech + Qwen 3.6 27B 995pt + .self 顶级域名 + Rocketlab + Ornith-1.0 + Apple Neural Engine + 30-year zines）= <strong>6/30 21:00 HN front 从"国产模型 + 全球开发者社区"主题 → 7/1 早醒 HN front 主题彻底转向"Anthropic 一家公司主导"</strong>。</p>
+      <div class="highlight">
+        <p><strong>#1 Claude Sonnet 5 855pt/486c</strong> = 美国 AI 旗舰模型 HN 头号</p>
+        <p><strong>#2 Claude Code is steganographically marking requests 1390pt/397c</strong> = 国产模型角度 / Claude Code 隐写标记请求</p>
+        <p><strong>#4 Fable 5/Mythos 5 解禁 147pt/53c</strong> = 美商务部解禁商业化</p>
+        <p><strong>#6 Claude Science 353pt/120c</strong> = AI 科研工作台商业化</p>
+        <p>前 4 条全是 Anthropic / Claude 相关 = <strong>"Anthropic 一家公司 = HN front AI 主题"</strong> ⭐⭐⭐</p>
+        <p>vs 6/30 21evening HN front 国产模型本地化主题 → 7/1 早醒 HN front = "Anthropic 商业化"主题彻底转向</p>
+      </div>
+      <p><span class="source-link">来源：HN Firebase API 6/30 21:00 串行 fetch 实测 30 items / Anthropic 6/30 / thereallo.dev 6/30 / AnthropicAI 推文 6/30 / anthropic.com/news/claude-science 6/30 / deepmind.google 6/30 / docs.mistral.ai 6/30 / research.google 6/30</span></p>
+    </div>
+
+    <div class="card">
+      <h2 class="viewpoint">⑤ 月之暗面 Kimi 估值涨至 315 亿美元 + ARR 突破 3 亿美元（3 个月 3 倍曲线）+ 收入曲线对位 Anthropic 早期特征 + API 收入占 70%+ 商业化加速</h2>
+      <p><strong>6/30 月之暗面 Kimi 上一轮 200 亿美元估值融资完成交割</strong>：据媒体 6/30 报道，<strong>月之暗面 Kimi 上一轮 200 亿美元估值融资于近日完成交割</strong>。</p>
+      <p><strong>6/30 月之暗面 Kimi 新一轮融资启动 + 投前估值涨至 315 亿美元</strong>：<strong>新一轮融资已经启动，目前企业的投前估值涨至 315 亿美元</strong>。</p>
+      <p><strong>6 月中旬月之暗面 Kimi ARR 突破 3 亿美元（3 个月 3 倍曲线）</strong>：截至 6 月中旬，月之暗面 Kimi ARR（年度经常性收入）突破 3 亿美元，这是继今年 3 月突破 1 亿美元、5 月突破 2 亿美元后，<strong>Kimi 商业化进程的又一重要节点</strong>。</p>
+      <p><strong>月之暗面 Kimi API 收入占整体收入 70% 以上 + 持续提升</strong>：API 收入已占 Kimi 整体收入的<strong>七成以上</strong>，并持续提升；此轮收入增长主要来自模型迭代带动的开发者使用和 API 收入提升。</p>
+      <p><strong>月之暗面 Kimi 收入曲线现 Anthropic 早期特征</strong>：收入曲线现 Anthropic 早期特征。</p>
+      <p><strong>vs 6/30 4 时段都没碰月之暗面数据</strong>：6/30 morning / afternoon / evening（缺失）/ 21evening 都没碰"6/30 月之暗面 Kimi 上一轮 200 亿美元估值融资完成交割 + 新一轮融资启动 + 投前估值涨至 315 亿美元 + 6 月中旬 ARR 突破 3 亿美元（3 个月 3 倍曲线）+ API 收入占整体收入 70% 以上 + 收入曲线现 Anthropic 早期特征"具体新视角 = <strong>7/1 早醒全新视角</strong>。</p>
+      <div class="highlight">
+        <p>Kimi 估值<strong>从 200 亿 → 315 亿美元</strong> = 跨轮涨幅 +57.5%</p>
+        <p>Kimi ARR <strong>3 个月 3 倍曲线</strong>（3 月破 1 亿 / 5 月破 2 亿 / 6 月破 3 亿）= 国产大模型最快商业化曲线</p>
+        <p>Kimi API 收入占<strong>整体收入 70%+</strong> = 商业化集中在 API 端 / 开发者主动调用</p>
+        <p>Kimi 收入曲线现 <strong>Anthropic 早期特征</strong> = 国产大模型 API 驱动商业化对位</p>
+        <p>vs 6/30 4 时段未碰月之暗面 = <strong>7/1 早醒"国产大模型商业化加速 + Anthropic 早期特征对位"主线</strong></p>
+      </div>
+      <p><span class="source-link">来源：财联社 6/30 18:47 / 量子位 6/30 20:12 / YiMagazine 7/1 08:58 / 上证报 6/30 / 邦早报 7/1 08:37 / 36 氪 6/30 / 第一财经 6/30</span></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="card">
+      <h2 class="paper">📊 数据要点（带时间戳）</h2>
+      <table>
+        <thead><tr><th>维度</th><th>关键数据</th><th>时间</th><th>来源</th></tr></thead>
+        <tbody>
+          <tr><td>Anthropic 美商务部解除 Fable 5/Mythos 5 出口管制</td><td>7/1 早醒恢复访问</td><td>7/1 08:22</td><td>钛媒体 App</td></tr>
+          <tr><td>Anthropic Claude Sonnet 5 正式发布</td><td>中端模型 + 部分性能逼近 Opus 4.8 + 价格砍掉 60%</td><td>7/1 07:59</td><td>IT 之家</td></tr>
+          <tr><td>Claude Sonnet 5 优惠价</td><td>输入 $2/M tokens 输出 $10/M tokens</td><td>7/1 08:41</td><td>钛媒体 App</td></tr>
+          <tr><td>Claude Sonnet 5 设为默认模型</td><td>向免费及付费用户全面开放</td><td>7/1 08:41</td><td>钛媒体 App</td></tr>
+          <tr><td>Anthropic Claude Science 工作台</td><td>集成 60+ 科学数据库 + 蛋白质结构预测 + Beta 付费用户</td><td>7/1 01:22</td><td>财联社</td></tr>
+          <tr><td>优必选 U1 全球首款全尺寸超仿生人形机器人</td><td>U1 Lite 11.98 万 / U1 Pro 16.98 万 / U1 Ultra 99 万（男）/ 88 万（女）</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>优必选 U1 系列订单</td><td>13361 台（截至 6/30 下午 3 时）</td><td>6/30 15:00</td><td>深视新闻</td></tr>
+          <tr><td>优必选 U1 系列交付</td><td>9 月 16 日开始交付</td><td>6/30</td><td>优必选 6/30</td></tr>
+          <tr><td>优必选 U1 Ultra 自由度</td><td>88 个自由度</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>周剑人机共生三步演进路径</td><td>替代高危重复劳动 → 渗透生活陪伴 → 人机深度融合</td><td>6/30</td><td>优必选 6/30</td></tr>
+          <tr><td>周剑中国公司在场景应用上已具备世界话语权</td><td>国产链头部本体出货量规模从数千台到数万台</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>6/30 寒武纪盘中冲高 1620 元</td><td>总市值突破 1 万亿元</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>寒武纪收盘价 / 总市值</td><td>1595.55 元 / 1 万亿元</td><td>6/30</td><td>上交所</td></tr>
+          <tr><td>寒武纪 A 股总市值排名</td><td>第九位 + 紧随贵州茅台等核心权重股</td><td>6/30</td><td>每日经济新闻</td></tr>
+          <tr><td>中芯国际科创板榜首</td><td>总市值 1.36 万亿（A+H）</td><td>6/30</td><td>上交所</td></tr>
+          <tr><td>海光信息 A 股市值</td><td>8607 亿元（紧追寒武纪）</td><td>6/30</td><td>上交所</td></tr>
+          <tr><td>寒武纪当晚连夜发风险提示公告</td><td>像一封劝退信</td><td>6/30 evening</td><td>新京报 7/1</td></tr>
+          <tr><td>寒武纪连亏八年到盈利称王</td><td>上半年市值升 22 名</td><td>7/1 07:00</td><td>财联社</td></tr>
+          <tr><td>HN front #1 Claude Sonnet 5</td><td>855pt/486c</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #2 Claude Code is steganographically marking requests</td><td>1390pt/397c</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #4 Fable 5/Mythos 5 解禁</td><td>147pt/53c</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #6 Claude Science</td><td>353pt/120c</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #7 Nano Banana 2 Lite</td><td>298pt/117c</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #8 Leanstral 1.5</td><td>89pt</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>HN front #14 TabFM</td><td>34pt</td><td>6/30 21:00</td><td>HN Firebase API</td></tr>
+          <tr><td>月之暗面 Kimi 上一轮融资交割</td><td>200 亿美元估值</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>月之暗面 Kimi 新一轮投前估值</td><td>315 亿美元</td><td>6/30</td><td>财联社</td></tr>
+          <tr><td>月之暗面 Kimi 6 月中旬 ARR</td><td>突破 3 亿美元（3 月 1 亿 / 5 月 2 亿 / 6 月 3 亿）</td><td>7/1 07:06</td><td>财联社</td></tr>
+          <tr><td>月之暗面 Kimi API 收入占比</td><td>70% 以上（持续提升）</td><td>7/1 08:37</td><td>邦早报</td></tr>
+          <tr><td>月之暗面 Kimi 收入曲线</td><td>现 Anthropic 早期特征</td><td>7/1 08:37</td><td>邦早报</td></tr>
+          <tr><td>6/30 上半年闪迪涨超 850%</td><td>美光科技 +305% / 英特尔 +278% / 西部数据 +271%</td><td>7/1 07:15</td><td>财联社</td></tr>
+          <tr><td>6/30 闪迪单日成交</td><td>248.1 亿美元 / 涨 10.89%</td><td>7/1 04:57</td><td>财联社</td></tr>
+          <tr><td>Anthropic Claude 全面上线微软 Azure</td><td>GB300 Blackwell Ultra GPU + Opus 4.8 + Haiku 4.5</td><td>6/30 06:41</td><td>财联社</td></tr>
+          <tr><td>亚马逊 AWS 按 Token 向 Anthropic 计费</td><td>从按计算小时收费改为按 Token 收费</td><td>6/30 11:19</td><td>IT 之家</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>Generated by Hermes Agent · OPC 早报 2026-07-01</p>
+    </footer>
+  </div>
+</body>
+</html>
