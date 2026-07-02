@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 早报 | 2026-06-30</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+      --21evening: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; margin-bottom: 0.75rem; }
+    body.type-morning .badge { background: rgba(245, 158, 11, 0.15); color: var(--morning); border: 1px solid rgba(245, 158, 11, 0.3); }
+    body.type-afternoon .badge { background: rgba(16, 185, 129, 0.15); color: var(--afternoon); border: 1px solid rgba(16, 185, 129, 0.3); }
+    body.type-evening .badge { background: rgba(99, 102, 241, 0.15); color: var(--evening); border: 1px solid rgba(99, 102, 241, 0.3); }
+    body.type-21evening .badge { background: rgba(168, 85, 247, 0.15); color: var(--21evening); border: 1px solid rgba(168, 85, 247, 0.3); }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+<body>
+    <div class="container">
+      <div class="hero">
+        <div class="badge">MORNING · 早报 · 2026-07-02</div>
+        <h1>OPC 早报 · 港股 7 月首个交易日 + Anthropic Fable 5 全球上线 + Cloudflare Agent 互联网</h1>
+        <p class="subtitle">覆盖 7/1 22:00 ~ 7/2 09:00 北京时间 11h 窗口（北美 7/1 10:00 ~ 7/1 21:00 UTC）— 港股 7 月首个交易日开市 + Anthropic Fable 5 美东 7/1 北京时间 7/2 凌晨全面接入 GitHub Copilot + Anthropic Claude Sonnet 5 完整披露 + Cloudflare x402 Monetization Gateway 推动 Agent 互联网 + 智谱 ZCode Harness for GLM-5.2 上 HN #2 + 月之暗面 Kimi 估值 315 亿美元</p>
+        <div class="tags">
+          <span class="tag">#Anthropic Fable 5</span>
+          <span class="tag">#Claude Sonnet 5</span>
+          <span class="tag">#Cloudflare x402</span>
+          <span class="tag">#智谱 ZCode 3.0</span>
+          <span class="tag">#Kimi 315 亿美元</span>
+          <span class="tag">#港股 7 月首个交易日</span>
+        </div>
+      </div>
+
+      <!-- 数据要点卡片 -->
+      <div class="num-grid">
+        <div class="num-card"><div class="num">$7,999</div><div class="num-label">Weave Robotics Isaac 1 家用机器人定价</div></div>
+        <div class="num-card"><div class="num">21 倍</div><div class="num-label">智谱 02513.HK 上市 6 个月最大涨幅</div></div>
+        <div class="num-card"><div class="num">2000%+</div><div class="num-label">智谱年内累涨（6/22 盘中 2980 港元）</div></div>
+        <div class="num-card"><div class="num">1.27 万亿</div><div class="num-label">智谱港股市值最高港元</div></div>
+        <div class="num-card"><div class="num">63.2%</div><div class="num-label">Sonnet 5 SWE-bench Pro 智能体编程测试</div></div>
+        <div class="num-card"><div class="num">1618 分</div><div class="num-label">Sonnet 5 GDPval-AA v2 超越 Opus 4.8</div></div>
+        <div class="num-card"><div class="num">9650 亿</div><div class="num-label">Anthropic 5 月 H 轮估值美元</div></div>
+        <div class="num-card"><div class="num">470 亿</div><div class="num-label">Anthropic 年化营收美元</div></div>
+      </div>
+
+      <!-- 角度 1 -->
+      <div class="section-title">① 7/2 凌晨 Anthropic Fable 5 全面接入 GitHub Copilot + Claude 平台全球上线</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>美东时间 7/1 周三、北京时间 7/2 凌晨，GitHub 在社交媒体宣布，Anthropic AI 旗下 Mythos 模型系列的首款产品 Claude Fable 5 现已在 GitHub Copilot 中重新启用，并全面上线。Anthropic 同步宣布 Fable 5 将于 7/2 起在 Claude 平台全球上线，Pro/Max/Team/Select Enterprise 用户可访问，使用量每周最高 50%，有效期至 7/7，将在 AWS/谷歌云/微软 Foundry 上重新启用 Fable 5 访问，并与亚马逊/微软/谷歌起草共识框架，短期常规任务编码和调试回退至 Opus 4.8。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/2 07:01 钛媒体 App</strong> - Anthropic Fable 5 全面接入 GitHub Copilot 重新启用并全面上线，押注长周期自主编程</li>
+        <li><strong>7/1 12:53 观点网</strong> - Anthropic Claude Fable 5 将于 7/2 在 Claude 平台全球上线</li>
+        <li><strong>7/1 11:20 财联社</strong> - Anthropic 称 Fable 5 将于明天在 Claude 平台全球上线，继续与美国政府协调扩大"Glasswing"计划下 Mythos 5 模型开放范围</li>
+        <li><strong>Fable 5 配额限制</strong> - Pro/Max/Team/Select Enterprise 用户可访问该模型，使用量每周最高限制为 50%，有效期至 7/7</li>
+        <li><strong>三云同步上线</strong> - Fable 5 将尽快在 AWS、谷歌云和微软 Foundry 上重新启用访问权限</li>
+        <li><strong>Anthropic 共识框架</strong> - 我们还已开始起草一个共识框架——与亚马逊、微软、谷歌以及其他行业参与者</li>
+        <li><strong>短期回退方案</strong> - 短期常规任务如编码和调试将回退至 Opus 4.8</li>
+        <li><strong>新分类器部署</strong> - Anthropic 使用一组新的分类器重新部署该模型，以针对并阻止更多网络安全任务</li>
+        <li><strong>6/12 撤市令 → 6/30 解禁 = 18 天</strong> - 6/12 美国政府因安全担忧发布出口管制指令 → 6/30 Anthropic 收到通知 → 7/2 全球恢复访问</li>
+        <li><strong>Anthropic 是首家受到此类管控的 AI 企业</strong> - OpenAI 新模型 GPT-5.6 同样受限</li>
+      </ul>
+
+      <!-- 角度 2 -->
+      <div class="section-title">② Anthropic Claude Sonnet 5 完整披露 + 冲刺万亿估值</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/2 早醒 Anthropic Claude Sonnet 5 完整披露：GDPval-AA v2 知识工作基准测试以 1618 分超越 Opus 4.8 的 1615 分；SWE-bench Pro 智能体编程测试得分 63.2%，高于前代 Sonnet 4.6 的 58.1%，逼近 Opus 4.8 的 69.2%；Anthropic 6/1 秘密提交 S-1，5 月完成 650 亿美元 H 轮融资后估值达 9650 亿美元，年化营收已突破 470 亿美元；6/30 发布 Claude Science 意在为计划中的 IPO 开辟新的收入来源，强攻 AI 制药，向亚马逊"要利润"。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/1 03:27 钛媒体 App</strong> - Anthropic Claude Sonnet 5 低价策略冲刺 IPO，SWE-bench Pro 智能体编程测试 63.2%</li>
+        <li><strong>Sonnet 5 GDPval-AA v2 1618 分</strong> - 超越 Opus 4.8 的 1615 分</li>
+        <li><strong>Sonnet 5 SWE-bench Pro 63.2%</strong> - 高于 Sonnet 4.6 58.1% 逼近 Opus 4.8 69.2%</li>
+        <li><strong>Sonnet 5 优惠期定价</strong> - 输入 $2/M tokens 输出 $10/M tokens（截至 8/31）</li>
+        <li><strong>Sonnet 5 优惠期后定价</strong> - 输入 $3/M tokens 输出 $15/M tokens</li>
+        <li><strong>Opus 4.8 定价</strong> - 输入 $5/M tokens 输出 $25/M tokens</li>
+        <li><strong>Anthropic 6/1 秘密提交 S-1 文件</strong> - 冲刺 IPO 关键时期</li>
+        <li><strong>Anthropic 5 月 H 轮 650 亿美元</strong> - 估值 9650 亿美元</li>
+        <li><strong>Anthropic 年化营收 470 亿美元</strong> - 远超去年预测值 90 亿美元</li>
+        <li><strong>Claude Science 强攻 AI 制药</strong> - 6/30 发布 Claude Science 意在为计划中的 IPO 开辟新的收入来源，将蛋白质三维结构渲染和药物发现列为核心应用场景</li>
+        <li><strong>向亚马逊"要利润"</strong> - Anthropic 在 IPO 前的最后阶段向亚马逊"要利润"</li>
+      </ul>
+
+      <!-- 角度 3 -->
+      <div class="section-title">③ Cloudflare Agent 互联网双轨：内容归你 + x402 Monetization Gateway</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/1 22:57 Cloudflare 以"内容归你，规则由你（Your Content, Your Rules）"核心理念推动自主智能体互联网的繁荣发展；7/1 blog.cloudflare.com 发布 Monetization Gateway via x402（HN #17 247pt/157c），x402 协议支持对 Cloudflare 任何资源进行付费；7/2 09:02 腾讯云开发者深度解读"一个人多个 Agent 等于一家公司"愿景。Cloudflare 完整 AI 基础设施 = AI Gateway（控制和优化 AI 应用）+ Monetization Gateway（付费）。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/1 22:57 环球市场播报</strong> - Cloudflare 以"内容归你，规则由你"理念赋能智能体互联网</li>
+        <li><strong>Cloudflare 7/1 blog.cloudflare.com</strong> - 发布 Monetization Gateway: Charge for any resource behind Cloudflare via x402（HN #17 247pt/157c）</li>
+        <li><strong>x402 协议</strong> - 支持对 Cloudflare 任何资源进行付费</li>
+        <li><strong>"一个人多个 Agent 等于一家公司"</strong> - 腾讯云开发者 7/2 09:02 深度解读</li>
+        <li><strong>Cloudflare AI Gateway</strong> - 监视、控制和最佳化 AI 应用程序的统一接口，连接应用程式，监视使用情况、成本和错误</li>
+        <li><strong>Cloudflare Monetization Gateway</strong> - 通过 x402 协议对 Cloudflare 任何资源进行付费</li>
+        <li><strong>Agent 互联网双轨</strong> - 内容归你（保护）+ x402 资源付费（变现）= Cloudflare 双向赋能</li>
+        <li><strong>Cloudflare 战略愿景</strong> - 自主智能体互联网 = "公司这种组织的边界，正在被重新定义"</li>
+        <li><strong>Cloudflare x402 是基于 HTTP 402 Payment Required 状态码的协议</strong> - 让任何资源都能被付费使用</li>
+        <li><strong>vs 7/1 Meta 盘前建云业务出售过剩 AI 算力</strong> - 美国 AI 顶尖公司从"自用"转向"对外销售"</li>
+      </ul>
+
+      <!-- 角度 4 -->
+      <div class="section-title">④ 智谱 ZCode Harness for GLM-5.2 上 HN #2 + 7/2 港股 7 月首个交易日恢复</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/2 智谱 ZCode Harness for GLM-5.2 登上 HN front #2（168pt/198c）；智谱 ZCode 3.0 自研 Agent 内核 + 深度适配 GLM-5.2（vLLM + SGLang + Hugging Face + ModelScope MIT 开源）；7/2 港股 7 月首个交易日恢复开市，沪深港通同步恢复；智谱 02513.HK 上市 6 个月最大涨幅近 21 倍，年内累涨 2000%+，6/22 盘中冲高 2980 港元，总市值最高 1.27 万亿港元。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>HN #2 ZCode – Harness for GLM-5.2</strong> - 168pt/198c（HN Firebase API 7/1 21:00 串行 fetch 实测 30 items）</li>
+        <li><strong>智谱 ZCode 3.0 6 月中旬发布</strong> - 全面切换自研 ZCode Agent 内核</li>
+        <li><strong>ZCode 3.0 深度适配 GLM-5.2</strong> - 工具与模型深度绑定优化</li>
+        <li><strong>ZCode 3.0 全新功能</strong> - Git 分支图谱、项目知识库、全新工作区</li>
+        <li><strong>智谱要把 ZCode 做成国产版 Cursor</strong> - 一句话总结</li>
+        <li><strong>GLM-5.2 在 Hugging Face 与 ModelScope 开源</strong> - 模型权重遵循最高权限 MIT License，可自由下载、部署与商用</li>
+        <li><strong>vLLM、SGLang、transformers 等主流推理框架已经支持 GLM-5.2</strong> - 完整生态</li>
+        <li><strong>GLM-5.2 在 Code Arena 取得全球可用模型第一</strong> - 编程智能体</li>
+        <li><strong>7/2 港股 7 月首个交易日恢复开市</strong> - 7/2（星期四）起照常开通港股通服务</li>
+        <li><strong>智谱 02513.HK 上市 6 个月最大涨幅近 21 倍</strong> - 发行价 116.2 港元 → 6/22 盘中 2980 港元</li>
+        <li><strong>智谱年内累涨 2000%+</strong> - 总市值最高 1.27 万亿港元</li>
+        <li><strong>国内首家市值突破万亿港元的纯 AI 企业</strong> - 智谱 6/22 盘中冲高 2980 港元 / 总市值最高 1.27 万亿港元</li>
+      </ul>
+
+      <!-- 角度 5 -->
+      <div class="section-title">⑤ HN front 7/1 21:00 UTC 6 维度并发 - Weave Robotics + Meta + Qualcomm + ZCode + Fable 5 + Cell + PlayStation</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>HN front 7/1 21:00 UTC 新晋条目（北美 7/1 17:00 后）：Weave Robotics Isaac 1 $7,999 家用机器人 2026 秋交付（HN #15 67pt/117c）+ Meta Caps Internal AI Token Spending After Costs Approach Billions in 2026（HN #12 11pt/1c）+ Qualcomm Linux 2.0（HN #13 43pt/9c）+ ZCode Harness for GLM-5.2（#3 168pt/198c）+ Claude Fable 5 Is Back（HN #16 306pt/283c）+ Cell from scratch grows and divides（HN #2 714pt/248c）+ PlayStation physical disc production ending Jan 2028（HN #4 581pt/613c）。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>HN #15 Weave Robotics Isaac 1</strong> - $7,999 家用机器人 2026 秋交付 67pt/117c</li>
+        <li><strong>HN #12 Meta Caps Internal AI Token Spending</strong> - After Costs Approach Billions in 2026 11pt/1c</li>
+        <li><strong>HN #13 Qualcomm Linux 2.0</strong> - 43pt/9c</li>
+        <li><strong>HN #3 ZCode Harness for GLM-5.2</strong> - 168pt/198c（智谱官方）</li>
+        <li><strong>HN #16 Fable 5 Is Back</strong> - 306pt/283c（Anthropic 官方）</li>
+        <li><strong>HN #2 Cell from scratch grows and divides</strong> - 714pt/248c（Quanta Magazine）</li>
+        <li><strong>HN #4 PlayStation physical disc production ending Jan 2028</strong> - 581pt/613c</li>
+        <li><strong>6 维度并发</strong> - 家用机器人（Weave Robotics）+ AI 成本治理（Meta）+ 老牌芯片（Qualcomm）+ 国产模型国际化（ZCode）+ 美国 AI 旗舰（Fable 5）+ 生命科学（Cell grows and divides）+ 实体游戏（PlayStation 2028）</li>
+        <li><strong>中美家用机器人双线对位</strong> - Weave Robotics Isaac 1 $7,999 vs 优必选 U1 上市即破 1.3 万台</li>
+        <li><strong>AI 成本治理 + AI 算力商业化双线对位</strong> - Meta Caps Internal AI Token Spending vs Anthropic 商业化 + Meta 算力商业化</li>
+      </ul><!-- 撞车协议总结 -->
+      <div class="section-title">⚠️ 撞车协议总结（再次确认"主动剔除 X，聚焦 Y"）</div>
+      <table class="data-table">
+        <thead><tr><th>撞车源</th><th>状态</th><th>7/2 morning 主动聚焦新角度</th></tr></thead>
+        <tbody>
+          <tr><td>7/1 09:00 morning</td><td>✅ 已覆盖</td><td rowspan="3">Fable 5 全球上线 + Sonnet 5 完整披露 + Cloudflare Agent 互联网 + 智谱 ZCode + Weave Robotics</td></tr>
+          <tr><td>7/1 18:00 evening</td><td>✅ 已覆盖</td></tr>
+          <tr><td>7/1 21:00 21evening</td><td>✅ 已覆盖</td></tr>
+          <tr><td>7/1 12:00 afternoon</td><td>❌ 缺失（cron 失败）</td><td>由 7/1 evening + 7/1 21evening 双重补强</td></tr>
+        </tbody>
+      </table>
+
+      <!-- 核心警报 -->
+      <div class="section-title">🔥 核心警报</div>
+      <div class="alert">
+        <strong>7/1 22:00 ~ 7/2 09:00 北京时间 11h 窗口</strong> — 港股 7 月首个交易日开市 + Anthropic Fable 5 美东 7/1 北京时间 7/2 凌晨全面接入 GitHub Copilot 全球上线 + Anthropic Claude Sonnet 5 完整披露（GDPval-AA v2 1618 分超越 Opus 4.8 + SWE-bench Pro 63.2% 逼近 Opus 4.8 69.2%）+ Anthropic Claude Science 强攻 AI 制药 + Anthropic 冲刺万亿估值（6/1 秘密提交 S-1 + 5 月 H 轮 650 亿美元 + 估值 9650 亿美元 + 年化营收 470 亿美元）+ Cloudflare 7/1 22:57 "内容归你 规则由你"赋能智能体互联网 + x402 Monetization Gateway（HN #17 247pt/157c）+ "一个人多个 Agent 等于一家公司"愿景 + 智谱 ZCode Harness for GLM-5.2 上 HN #2（168pt/198c）+ 智谱 ZCode 3.0 自研 Agent 内核 + 深度适配 GLM-5.2（vLLM + SGLang + Hugging Face + ModelScope MIT 开源）+ 智谱 02513.HK 上市 6 个月最大涨幅近 21 倍 / 年内累涨 2000%+ / 6/22 盘中冲高 2980 港元 / 总市值最高 1.27 万亿港元 + Weave Robotics Isaac 1 $7,999 家用机器人 2026 秋交付（HN #15 67pt/117c）+ Meta Caps Internal AI Token Spending After Costs Approach Billions in 2026（HN #12 11pt/1c）+ Qualcomm Linux 2.0（HN #13 43pt/9c）+ Claude Fable 5 Is Back（HN #16 306pt/283c）+ Cell from scratch grows and divides（HN #2 714pt/248c）+ PlayStation physical disc production ending Jan 2028（HN #4 581pt/613c）。
+      </div>
+
+      <!-- 隐私红线检查 -->
+      <div class="section-title">🛡️ 隐私红线检查</div>
+      <p>无用户个人信息 / 无私人语气 / 无业务域名 / 无资产信息 / 无内部称呼 / 无品牌标识 / 无系统架构信息 / 无 API key / 无服务器配置。</p><footer>
+      OPC Daily · 2026-07-02 · MORNING · 自动生成于 09:00 CST · 数据截至 7/1 21:00 UTC
+    </footer>
+</body>
+</html>
