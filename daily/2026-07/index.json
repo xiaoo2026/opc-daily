@@ -2,16 +2,25 @@
   {
     "date": "2026-07-01",
     "type": "morning",
-    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-morning/index.html"
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-morning/index.html",
+    "title": "OPC 早报 · 7 月首个交易日晨醒"
   },
   {
     "date": "2026-07-01",
     "type": "evening",
-    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01/index.html"
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01/index.html",
+    "title": "OPC 晚报 2026-07-01"
   },
   {
     "date": "2026-07-01",
     "type": "21evening",
-    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-21evening/index.html"
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-21evening/index.html",
+    "title": "OPC 晚间情报 2026-07-01"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "morning",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-02-morning/index.html",
+    "title": "OPC 早报 · 港股 7 月首个交易日 + Anthropic Fable 5 全球上线 + Cloudflare Agent 互联网"
   }
 ]
