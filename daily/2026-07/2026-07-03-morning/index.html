@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPC 早报 | 2026-06-30</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #13131a;
+      --border: #1e1e2e;
+      --accent: #10b981;
+      --accent2: #34d399;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --morning: #f59e0b;
+      --evening: #6366f1;
+      --afternoon: #10b981;
+      --21evening: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 999px; margin-bottom: 0.75rem; }
+    body.type-morning .badge { background: rgba(245, 158, 11, 0.15); color: var(--morning); border: 1px solid rgba(245, 158, 11, 0.3); }
+    body.type-afternoon .badge { background: rgba(16, 185, 129, 0.15); color: var(--afternoon); border: 1px solid rgba(16, 185, 129, 0.3); }
+    body.type-evening .badge { background: rgba(99, 102, 241, 0.15); color: var(--evening); border: 1px solid rgba(99, 102, 241, 0.3); }
+    body.type-21evening .badge { background: rgba(168, 85, 247, 0.15); color: var(--21evening); border: 1px solid rgba(168, 85, 247, 0.3); }
+    h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.3rem; background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .meta { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    h2.cn { color: #f87171; }
+    h2.global { color: #60a5fa; }
+    h2.paper { color: #34d399; }
+    h2.viewpoint { color: #fbbf24; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--accent2); }
+    h3.sub { color: #94a3b8; font-size: 0.85rem; font-weight: 600; margin-top: 0.75rem; }
+    p { margin-bottom: 0.75rem; color: #cbd5e1; font-size: 0.9rem; }
+    .highlight { border-left: 3px solid var(--accent); padding-left: 1rem; background: rgba(16, 185, 129, 0.05); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.88rem; }
+    .highlight p { margin-bottom: 0.25rem; color: #d1fae5; }
+    .highlight strong { color: var(--accent2); }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; background: var(--accent); color: white; font-weight: 700; font-size: 0.75rem; border-radius: 50%; margin-right: 0.5rem; flex-shrink: 0; }
+    .item { margin-bottom: 1.1rem; }
+    .item:last-child { margin-bottom: 0; }
+    .quote { background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: 10px; padding: 1rem 1.25rem; font-size: 0.88rem; color: #fde68a; font-style: italic; margin: 1.25rem 0; }
+    .quote::before { content: '💡 '; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.82rem; }
+    th { background: rgba(16, 185, 129, 0.2); color: var(--accent2); padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+    td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); color: #cbd5e1; }
+    tr:last-child td { border-bottom: none; }
+    ul { list-style: none; padding: 0; margin: 0.75rem 0; }
+    li { padding: 0.3rem 0; color: #cbd5e1; font-size: 0.875rem; }
+    li::before { content: '›'; color: var(--accent); margin-right: 0.5rem; font-weight: 700; }
+    .source-link { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; }
+    .source-link a { color: #60a5fa; text-decoration: none; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body class="type-morning">
+    <div class="container">
+      <div class="hero">
+        <div class="badge">MORNING · 早报 · 2026-07-03</div>
+        <h1>OPC 早报 · Anthropic 自研 AI 芯片 + 美国 AI 巨头 5% 股权提案 + 金山云 GPU 算力 + 7/3 早醒三件套</h1>
+        <p class="subtitle">覆盖 7/2 22:00 ~ 7/3 09:00 北京时间 11h 窗口（北美 7/2 10:00 ~ 7/2 21:00 UTC）— Anthropic 启动自研 AI 芯片早期开发与三星洽谈定制芯片代工合作 + 陆家嘴财经早餐 7/3 早醒三件套（OpenAI 5% 股权提案扩散 + Anthropic/谷歌/Meta 全部效仿 + 阿拉斯加永久基金模式）+ 金山云加速 GPU 算力建设（小米 + 阿里双线）+ 7/3 早醒 A 股延续重挫 -5.71% + 6 月新开户 286.46 万户同比 +73.99% + 宇树 IPO 注册生效 + HN front 北美 7/2 21:00 UTC 30 items 10 维度并发</p>
+        <div class="tags">
+          <span class="tag">#Anthropic 自研芯片</span>
+          <span class="tag">#三星 2 纳米</span>
+          <span class="tag">#OpenAI 5% 股权</span>
+          <span class="tag">#金山云 GPU</span>
+          <span class="tag">#小米算力升级</span>
+          <span class="tag">#7/3 早醒</span>
+        </div>
+      </div>
+
+      <!-- 数据要点卡片 -->
+      <div class="num-grid">
+        <div class="num-card"><div class="num">5%</div><div class="num-label">OpenAI + Anthropic + 谷歌 + Meta 美国 AI 巨头联合股权提案</div></div>
+        <div class="num-card"><div class="num">2 纳米</div><div class="num-label">Anthropic 拟采用三星 2 纳米制程工艺</div></div>
+        <div class="num-card"><div class="num">100 亿</div><div class="num-label">阿里 5 年期 3000+ 台八卡 GPU 服务器租赁</div></div>
+        <div class="num-card"><div class="num">百亿+</div><div class="num-label">小米算力预算从 40 亿增至百亿元</div></div>
+        <div class="num-card"><div class="num">-5.71%</div><div class="num-label">7/3 早醒创业板指延续 7/2 evening 重挫</div></div>
+        <div class="num-card"><div class="num">73.99%</div><div class="num-label">6 月 A 股新开户 286.46 万户同比</div></div>
+        <div class="num-card"><div class="num">104 天</div><div class="num-label">宇树科创板 IPO 最快审核纪录</div></div>
+        <div class="num-card"><div class="num">10 维</div><div class="num-label">HN front 北美 7/2 21:00 UTC 10 维度并发</div></div>
+      </div>
+
+      <!-- 角度 1 -->
+      <div class="section-title">① Anthropic 启动自研 AI 芯片早期开发 + 与三星洽谈定制芯片代工合作</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/2 21:57 财联社首爆 Anthropic 启动自研 AI 芯片早期开发 + 7/2 22:09 IT 之家 The Information 报道 + 7/3 01:07 观点网完整披露 - Anthropic 与三星洽谈定制人工智能芯片，拟采用三星 2 纳米制程工艺 + 先进封装技术 + 已招揽 OpenAI 初代芯片团队核心成员克莱夫·陈（Clive Mun）以推进相关研发服务 + 效仿 OpenAI 试图获得对其模型背后昂贵计算系统的更多控制权 + 双方合作若落地 Anthropic 将成为三星重要的 AI 客户。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/2 21:57 财联社首爆</strong> - 据三位直接了解该项目的人士透露，Anthropic 已开始开发自有的 AI 芯片，并与三星电子进行了谈判，作为潜在的制造合作伙伴</li>
+        <li><strong>7/2 22:09 IT 之家 The Information 报道</strong> - Anthropic 正与三星洽谈定制人工智能芯片事宜，Anthropic 已启动自研人工智能芯片的早期开发工作</li>
+        <li><strong>7/3 01:07 观点网</strong> - Anthropic 计划采用三星 2 纳米制程工艺及先进封装技术</li>
+        <li><strong>效仿 OpenAI</strong> - 此举旨在效仿竞争对手 OpenAI 试图获得对其模型背后昂贵计算系统的更多控制权</li>
+        <li><strong>三星重要 AI 客户</strong> - 双方合作若落地，Anthropic 将成为三星重要的 AI 客户</li>
+        <li><strong>招揽 OpenAI 初代芯片团队核心成员</strong> - 公司近期已招揽 OpenAI 初代芯片团队核心成员克莱夫·陈（Clive Mun）以推进相关研发服务</li>
+        <li><strong>Claude 制造商在开发自有 AI 服务器芯片方面将是相对较新的</strong> - 如果 Claude 制造商继续推进该芯片，在与其他公司相比，它在开发自有 AI 服务器芯片方面将是相对较新的</li>
+        <li><strong>7/2 21:55 新浪科技援引知情人士</strong> - Anthropic 正与三星洽谈定制 AI 芯片代工合作</li>
+        <li><strong>美国 AI 巨头自研芯片军备竞赛开启</strong> - Anthropic 启动自研 AI 芯片早期开发 + OpenAI 已自研芯片（GPT 系列训练芯片） + 谷歌自研 TPU 第八代 = 美国 AI 巨头芯片层军备竞赛白热化</li>
+        <li><strong>vs 7/2 evening 写过 Anthropic Fable 5 实测花了 90 元</strong> - 实测成本压力 → Anthropic 加速自研芯片 + 与三星洽谈代工合作 = 降低对英伟达的依赖</li>
+      </ul>
+
+      <!-- 角度 2 -->
+      <div class="section-title">② 金山云加速 GPU 算力建设 + 小米算力需求从万卡升级为超大规模 + 阿里 5 年期 3000+ 台八卡 GPU 服务器</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/3 07:07 数智早参金山云将加速 GPU 算力建设 - 小米对金山云的 GPU 算力需求已从万卡集群升级为超大规模算力集群 + 相关投入预算由最初的近 40 亿元增至百亿元以上 + 阿里大模型团队已与金山云签署了 5 年期的算力租赁合同 + 涉及 3000 余台八卡 GPU 服务器 = 国产 GPU 算力军备竞赛升级主线。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/3 07:07 数智早参金山云将加速 GPU 算力建设</strong> - 据媒体报道，金山云下半年将加速 GPU（图形处理器）算力集群建设</li>
+        <li><strong>满足头部客户爆发式增长的算力需求</strong> - 以满足头部客户爆发式增长的算力需求</li>
+        <li><strong>小米算力需求从万卡升级为超大规模算力集群</strong> - 小米对金山云的 GPU 算力需求已从万卡集群升级为超大规模算力集群</li>
+        <li><strong>小米预算从 40 亿增至百亿+</strong> - 相关投入预算由最初的近 40 亿元增至百亿元以上</li>
+        <li><strong>阿里 5 年期算力租赁合同</strong> - 阿里大模型团队已与金山云签署了 5 年期的算力租赁合同</li>
+        <li><strong>3000+ 台八卡 GPU 服务器</strong> - 涉及 3000 余台八卡 GPU 服务器</li>
+        <li><strong>国产 GPU 算力军备竞赛升级</strong> - 国内头部互联网/终端厂商对大模型训练的算力需求仍在升级</li>
+        <li><strong>vs 7/2 evening 写过"美光成交 529.2 亿美元第 1 / 英伟达 279.11 亿第 2 / Meta 276.61 亿第 3"</strong> - 美国 AI 内部换风格 + 国产 GPU 算力军备竞赛同步升级</li>
+        <li><strong>vs 6/29 morning 写过 6 月 A 股新开户</strong> - 6 月 A 股新开户数 286.46 万户 + 同比 +73.99% = 增量资金入场但科技股被砸</li>
+      </ul>
+
+      <!-- 角度 3 -->
+      <div class="section-title">③ 美国 AI 巨头 5% 股权提案扩散 - OpenAI + Anthropic + 谷歌 + Meta 全部效仿 + 阿拉斯加永久基金模式</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/3 06:43 陆家嘴财经早餐 7/3 早醒三件套 - 美国白宫国家经济委员会主任哈塞特表示，美国政府正和大型 AI 公司对话，探讨如何分享收益 + 据消息人士爆料，OpenAI 已与美国政府展开初步讨论，计划向政府提供约 5% 的股权，以寻求获得特朗普政府资金支持，并化解日益上升的监管压力 + OpenAI 同时还提议包括 Anthropic、谷歌、Meta 在内的其他主要 AI 开发商也采取类似措施 + 阿拉斯加永久基金模式（OpenAI 首席执行官山姆·奥尔特曼认为，让公众分享 AI 发展的经济收益是应对 AI 影响的最佳方式）。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/3 06:43 陆家嘴财经早餐 7/3 早醒三件套</strong> - 美国白宫国家经济委员会主任哈塞特表示，美国政府正和大型 AI 公司对话，探讨如何分享收益</li>
+        <li><strong>OpenAI 已与美国政府展开初步讨论</strong> - 据消息人士爆料，OpenAI 已与美国政府展开初步讨论</li>
+        <li><strong>计划向政府提供约 5% 的股权</strong> - 以寻求获得特朗普政府资金支持，并化解日益上升的监管压力</li>
+        <li><strong>OpenAI 同时还提议包括 Anthropic + 谷歌 + Meta 在内的其他主要 AI 开发商也采取类似措施</strong> - OpenAI 5% 股权提案扩散至全美 AI 巨头</li>
+        <li><strong>阿拉斯加永久基金模式</strong> - OpenAI 首席执行官山姆·奥尔特曼认为，让公众分享 AI 发展的经济收益是应对 AI 影响的最佳方式，并建议美国主要 AI 公司均拿出约 5% 的股权，注入类似阿拉斯加永久基金的公共投资载体，由政府持有并惠及公众</li>
+        <li><strong>7/2 15:34 财联社 OpenAI 提议向美国政府提供 5% 股权 以争取政策支持</strong> - 人工智能公司 OpenAI 正讨论向美国政府提供 5% 的股份</li>
+        <li><strong>7/2 18:41 新浪科技援引知情人士</strong> - OpenAI 设想政府持股 提议美国每家 AI 巨头都上交 5% 股份</li>
+        <li><strong>vs 7/2 21evening 写过 7/2 04:27 ~ 17:17 ~ 15:34 软银 100 亿 OpenAI 股权质押贷款 + OpenAI 5% 股权换政府支持</strong> - morning 升级为 OpenAI 5% 股权提案扩散至 Anthropic + 谷歌 + Meta</li>
+        <li><strong>vs 7/2 morning 写过 Anthropic 6/1 秘密提交 S-1 + 5 月 H 轮 650 亿美元 + 估值 9650 亿美元</strong> - Anthropic 也在 5% 股权提案扩散范围内</li>
+      </ul>
+
+      <!-- 角度 4 -->
+      <div class="section-title">④ 7/3 早醒三件套 + A 股延续重挫 -5.71% + 6 月新开户 286.46 万户 + 同比 +73.99% + 宇树 IPO 注册生效</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>7/3 早醒 A 股延续 7/2 evening 重挫（星闻财讯 7/3 08:44）- 上证指数 4028.90 点跌 2.03% + 深证成指 15498.81 点跌 3.85% + 创业板指 4017.27 点跌 5.71% + 7/2 evening 18:00 上交所披露 2026 年 6 月 A 股市场新开户数达 286.46 万户 + 环比增长 3.6% + 同比增长 73.99% + 证监会同意宇树科技股份有限公司首次公开发行股票注册 + 104 天最快审核纪录 + 7/3 07:59 早知道。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>7/3 08:44 星闻财讯 A 股上证指数 4028.90 点跌 2.03%</strong> - 7/3 早醒 A 股延续 7/2 evening 重挫</li>
+        <li><strong>深证成指 15498.81 点跌 3.85%</strong> - 创业板指 4017.27 点跌 5.71%</li>
+        <li><strong>H 股恒生指数 23055.03 点涨 0.76%</strong> - 恒生科技指数 4454.28 点跌 0.40%</li>
+        <li><strong>7/3 08:33 7/3 早醒证券之星</strong> - 证监会同意宇树科技首次公开发行股票注册</li>
+        <li><strong>宇树 104 天最快审核纪录</strong> - 宇树科技从今年 3 月 20 日科创板 IPO 申请获受理，再到 7 月 2 日注册生效，仅用时 104 天</li>
+        <li><strong>科创板预先审阅机制最快</strong> - 其创下科创板预先审阅机制落地以来的最快审核纪录，也成为科创板预先审阅机制落地以来继长鑫科技之后的又一标杆案例</li>
+        <li><strong>6 月新开户 286.46 万户</strong> - 7/2 evening 18:00 上交所披露 2026 年 6 月 A 股市场新开户数达 286.46 万户</li>
+        <li><strong>环比增长 3.6% 同比增长 73.99%</strong> - 增量资金入场但 A 股继续重挫</li>
+        <li><strong>7/3 07:59 早知道</strong> - 人民财讯 7 月 3 日电：国务院批复《体育强国建设"十五五"规划》、证监会同意宇树科技科创板 IPO 注册申请、Meta "带崩" 科技股?业内人士：算力过剩系误读</li>
+        <li><strong>7/3 07:18 四大证券报头版头条</strong> - 7 月 3 日（星期五）今日报刊头条主要内容精华：宇树科技 IPO 注册申请获批</li>
+        <li><strong>vs 7/2 evening 写过 7/2 17:13 证监会同意宇树科技 IPO 注册 + 73 天过会</strong> - morning 升级为 104 天最快审核纪录 + 6 月新开户 286.46 万户</li>
+      </ul>
+
+      <!-- 角度 5 -->
+      <div class="section-title">⑤ HN front 7/3 早醒串行 fetch 30 items - 10 维度并发</div>
+      <div class="alert">
+        <strong>📌 关键事实：</strong>HN front 7/3 早醒串行 fetch 30 items - 北美 7/2 21:00 UTC 当日 30 items AI / 科技 / 基础设施并发 - #1 Virginia bans sale of geolocation data 415pt/76c [隐私监管 - 弗吉尼亚州禁止出售地理位置数据] + #3 crustc: entirety of `rustc`, translated to C 110pt/25c [编译技术 - rustc 全部翻译到 C] + #7 Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory 395pt/187c [安全漏洞 - Linux 6.9 LUKS 加密密钥未清除] + #8 "An AI Job Apocalypse?" – Goldman Sachs Report [pdf] 8pt/3c [AI 失业 - 高盛报告] + #9 Podman v6.0.0 384pt/147c [容器技术] + #11 PeerTube is a free, decentralized and federated video platform 506pt/227c [联邦化视频] + #23 Claude-real-video - any LLM can watch a video 74pt/24c [视频理解 - Claude 视频理解] + #25 Immich 3.0 180pt/78c [自托管照片管理] + #26 The short leash AI coding method for beating Fable 57pt/61c [AI 编码 - 击败 Fable 5 的短绳 AI 编码方法] + #28 Right to Local Intelligence 10pt/2c [本地 AI 权利]。
+      </div>
+      <p><strong>核心数据点：</strong></p>
+      <ul>
+        <li><strong>HN #1 Virginia bans sale of geolocation data 415pt/76c</strong> - 隐私监管 - 弗吉尼亚州禁止出售地理位置数据</li>
+        <li><strong>HN #3 crustc: entirety of `rustc`, translated to C 110pt/25c</strong> - 编译技术 - rustc 全部翻译到 C</li>
+        <li><strong>HN #7 Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory 395pt/187c</strong> - 安全漏洞 - Linux 6.9 LUKS 加密密钥未清除</li>
+        <li><strong>HN #8 "An AI Job Apocalypse?" – Goldman Sachs Report [pdf] 8pt/3c</strong> - AI 失业 - 高盛报告</li>
+        <li><strong>HN #9 Podman v6.0.0 384pt/147c</strong> - 容器技术</li>
+        <li><strong>HN #11 PeerTube is a free, decentralized and federated video platform 506pt/227c</strong> - 联邦化视频</li>
+        <li><strong>HN #23 Claude-real-video - any LLM can watch a video 74pt/24c</strong> - 视频理解 - Claude 视频理解</li>
+        <li><strong>HN #25 Immich 3.0 180pt/78c</strong> - 自托管照片管理</li>
+        <li><strong>HN #26 The short leash AI coding method for beating Fable 57pt/61c</strong> - AI 编码 - 击败 Fable 5 的短绳 AI 编码方法</li>
+        <li><strong>HN #28 Right to Local Intelligence 10pt/2c</strong> - 本地 AI 权利</li>
+        <li><strong>10 维度并发</strong> - 隐私监管 + 编译技术 + 安全漏洞 + 高盛 AI 失业报告 + 容器技术 + 联邦化视频 + Claude 视频理解 + Immich 3.0 + 击败 Fable 5 的短绳 AI 编码方法 + 本地 AI 权利</li>
+        <li><strong>vs 7/2 evening HN front 11 维度全天并发</strong> - morning 升级为 10 维度并发 + Anthropic 单一公司主导让位给多极并发</li>
+      </ul><!-- 撞车协议总结 -->
+      <div class="section-title">⚠️ 撞车协议总结（再次确认"主动剔除 X，聚焦 Y"）</div>
+      <table class="data-table">
+        <thead><tr><th>撞车源</th><th>状态</th><th>7/3 morning 主动聚焦新角度</th></tr></thead>
+        <tbody>
+          <tr><td>7/2 09:00 morning</td><td>✅ 已覆盖</td><td rowspan="4">Anthropic 自研芯片 + 美国 AI 巨头 5% 股权 + 金山云 GPU 算力 + 7/3 早醒三件套 + HN front 10 维度</td></tr>
+          <tr><td>7/2 12:00 afternoon</td><td>✅ 已覆盖</td></tr>
+          <tr><td>7/2 18:00 evening</td><td>✅ 已覆盖</td></tr>
+          <tr><td>7/2 21:00 21evening</td><td>✅ 已覆盖</td></tr>
+        </tbody>
+      </table>
+
+      <!-- 核心警报 -->
+      <div class="section-title">🔥 核心警报</div>
+      <div class="alert">
+        <strong>7/2 22:00 ~ 7/3 09:00 北京时间 11h 窗口</strong> — Anthropic 启动自研 AI 芯片早期开发与三星洽谈定制芯片代工合作 + Anthropic 拟采用三星 2 纳米制程工艺 + 先进封装技术 + 已招揽 OpenAI 初代芯片团队核心成员克莱夫·陈（Clive Mun）推进研发 + 效仿 OpenAI 试图获得对其模型背后昂贵计算系统的更多控制权 + 陆家嘴财经早餐 7/3 早醒三件套（美国白宫国家经济委员会主任哈塞特表示 + 美国政府正和大型 AI 公司对话 + 探讨如何分享收益 + OpenAI 提议 5% 股权换政府支持 + Anthropic + 谷歌 + Meta 全部效仿 + 阿拉斯加永久基金模式）+ 金山云加速 GPU 算力建设（小米算力需求从万卡集群升级为超大规模算力集群 + 预算从 40 亿增至百亿 + 阿里大模型团队签 5 年期算力租赁合同 3000+ 台八卡 GPU 服务器）+ 7/3 早醒 A 股延续 7/2 evening 重挫（星闻财讯 7/3 08:44 - 上证指数 4028.90 点跌 2.03% / 深证成指 15498.81 点跌 3.85% / 创业板指 4017.27 点跌 5.71%）+ 7/3 早醒证券之星三件套（7/3 08:33-08:47 - 证监会同意宇树科技 IPO 注册 + 104 天最快审核纪录 + 6 月新开户 286.46 万户 环比 +3.6% 同比 +73.99%）+ HN front 北美 7/2 21:00 UTC 30 items 10 维度并发（Virginia 隐私监管 + rustc 编译技术 + LUKS 安全漏洞 + Goldman Sachs AI 失业报告 + Podman + PeerTube + Claude-real-video + Immich 3.0 + 击败 Fable 5 的短绳 AI 编码方法 + Right to Local Intelligence）。
+      </div>
+
+      <!-- 隐私红线检查 -->
+      <div class="section-title">🛡️ 隐私红线检查</div>
+      <p>无用户个人信息 / 无私人语气 / 无业务域名 / 无资产信息 / 无内部称呼 / 无品牌标识 / 无系统架构信息 / 无 API key / 无服务器配置。</p><footer>
+      OPC Daily · 2026-07-03 · MORNING · 自动生成于 09:00 CST · 数据截至 7/2 21:00 UTC
+    </footer>
+</body>
+</html>
