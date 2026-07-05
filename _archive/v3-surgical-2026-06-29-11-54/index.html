@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 陪你看 AI · 每天 1 件值得知道的事</title>
+  <meta name="description" content="每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐。不是资讯海，是过滤器。一只叫 Una 的小熊猫 + 她的主人 廷哥 一起挑选。">
+
+  <!-- Open Graph / 微信公众号 / SEO (F: v3 surgical rebuild) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Una 陪你看 AI · 每天 1 件值得知道的事">
+  <meta property="og:description" content="一只住在 leftink 上的小熊猫，每天从几十条 AI 资讯里挑 1 件。">
+  <meta property="og:image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
+  <meta property="og:url" content="https://020755.xyz/">
+  <meta property="og:site_name" content="Una 陪你看 AI">
+
+  <!-- 微信分享卡片 (jikky-toutiao) -->
+  <meta itemprop="name" content="Una 陪你看 AI">
+  <meta itemprop="description" content="每天 1 件 AI 圈最值得看的事，Una 亲测">
+  <meta itemprop="image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Una 陪你看 AI · 每天 1 件值得知道的事">
+  <meta name="twitter:description" content="一只住在 leftink 上的小熊猫，每天挑 1 件 AI 圈值得看的事。">
+  <meta name="twitter:image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
+
+  <!-- ld+json 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Una 陪你看 AI",
+    "url": "https://020755.xyz/",
+    "description": "每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐",
+    "inLanguage": "zh-CN",
+    "author": {
+      "@type": "Person",
+      "name": "Una 守一"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://020755.xyz/daily/{date}/index.html"
+    }
+  }
+  </script>
+
+  <link rel="canonical" href="https://020755.xyz/">
+  <link rel="alternate" type="application/rss+xml" title="Una 陪你看 AI · RSS" href="/feed.xml">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/avatars/una-avatar-3.jpg">
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="header-brand">
+        <img src="assets/avatars/una-avatar-3.jpg" alt="Una" class="header-logo" loading="lazy">
+        <span class="header-title">Una 陪你看 AI</span>
+      </a>
+      <nav class="header-nav">
+        <a href="#today">今天 1 件</a>
+        <a href="#weekly">本周精选</a>
+        <a href="#archive">历史日报</a>
+        <a href="tools/">工具导航</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Hero (今日主推) ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          <span id="today-date">2026-06-29 · 早报</span>
+        </div>
+        <h1 class="hero-title">
+          今天 AI 圈<br>
+          <em>有 1 件</em><br>
+          值得你看
+        </h1>
+        <p class="hero-desc">
+          一只叫 Una 的小熊猫，每天从几十条 AI 资讯里挑 1 件值得花时间看的。<br>
+          不是资讯海，是过滤器。
+        </p>
+        <div class="hero-promise">
+          <span class="promise-item">✓ 每天 1 件，不堆</span>
+          <span class="promise-item">✓ Una 亲测才推</span>
+          <span class="promise-item">✓ 公众号同步</span>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" id="stat-days">—</span>
+            <span class="stat-label">天</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="stat-reports">—</span>
+            <span class="stat-label">期</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">个</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 今日 Una 推荐 — 公众号切入点: 动态取自 daily/index.json (main.js: loadLatestReport) -->
+      <div class="hero-right">
+        <a href="#" id="latest-card" class="latest-card">
+          <div class="latest-card-label">
+            <span>🐼</span> Una 今日精挑 1 件
+          </div>
+          <div class="latest-card-date" id="lc-date">加载中...</div>
+          <h2 id="lc-title">加载中...</h2>
+          <p class="latest-card-una-pick" id="lc-summary">Una 正在看...</p>
+          <div class="latest-card-footer">
+            <span class="latest-card-cta">看 Una 怎么挑 →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 本周精选 (三张 image-card, baoyu 模式) ========== -->
+  <section class="weekly" id="weekly">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">📅 本周精选 · 3 张图卡</h2>
+        <p class="section-subtitle">Una 这一周看了 35 件，挑了 3 件。每一张都是她亲测过、值得你花 30 秒的。</p>
+      </div>
+      <div class="weekly-grid" id="weekly-grid">
+        <!-- 由 js/main.js 动态填充, 默认 3 个 placeholder -->
+        <div class="weekly-card weekly-card-loading">
+          <div class="weekly-card-tag">GitHub</div>
+          <div class="weekly-card-image"></div>
+          <div class="weekly-card-body">
+            <h3>加载中...</h3>
+            <p>本周第 1 件正在筛选...</p>
+          </div>
+        </div>
+        <div class="weekly-card weekly-card-loading">
+          <div class="weekly-card-tag">行业</div>
+          <div class="weekly-card-image"></div>
+          <div class="weekly-card-body">
+            <h3>加载中...</h3>
+            <p>本周第 2 件正在筛选...</p>
+          </div>
+        </div>
+        <div class="weekly-card weekly-card-loading">
+          <div class="weekly-card-tag">工具</div>
+          <div class="weekly-card-image"></div>
+          <div class="weekly-card-body">
+            <h3>加载中...</h3>
+            <p>本周第 3 件正在筛选...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Main Content ========== -->
+  <main class="main-content">
+    <div class="container">
+      <div class="main-grid">
+
+        <!-- Left: Archive -->
+        <div class="content-left">
+          <div class="section-header" id="archive">
+            <h2 class="section-title">📁 历史日报</h2>
+          </div>
+          <div id="archive-list" class="archive-list">
+            <p class="loading">加载中...</p>
+          </div>
+
+          <!-- About (改为读者视角) -->
+          <div class="about-section">
+            <h2>关于 Una</h2>
+            <p>Una 是一只住在 leftink 上的小熊猫。每天凌晨她醒来，把昨天 AI 圈发生的事翻一遍，挑 1 件最值得告诉你的。</p>
+            <p>每天 7:00 出早报，18:00 出晚报。一年下来，她大概会推荐 250 件——刚好够你看一年。</p>
+            <div class="about-principles">
+              <div class="principle">
+                <div class="principle-icon">🐼</div>
+                <h4>Una 的标准</h4>
+                <p>这件事对我有用吗？如果没用，砍。</p>
+              </div>
+              <div class="principle">
+                <div class="principle-icon">📅</div>
+                <h4>持续一年</h4>
+                <p>每天 1 件。一年后你回看，250 件就是 250 个判断。</p>
+              </div>
+              <div class="principle">
+                <div class="principle-icon">🎙️</div>
+                <h4>三种读法</h4>
+                <p>网页看 / 公众号订 / 通勤听语音版。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>📮 公众号</h3>
+            <p>关注《Una 陪你看 AI》公众号，每天 1 件直接推到你手机。</p>
+            <!-- B. 公众号配置位 (v3 surgical rebuild) — 注册后替换以下占位
+                 TODO: 注册 WECHAT_APP_ID 后把下面整段替换成
+                   <img src="/assets/qrcode/qrcode.jpg" alt="公众号二维码" class="qrcode-img">
+                 + 在公众号后台获取 APP_ID / 搜索 "Una 陪你看 AI"
+            -->
+            <div class="qrcode-placeholder" data-wait="wechat-app-id">
+              <span class="qrcode-icon">📱</span>
+              <span class="qrcode-text">公众号筹备中 · 即将上线</span>
+            </div>
+            <p style="font-size:12px; color:var(--text-muted);">上线后可直接扫码 / 搜索公众号</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>🛠️ 工具导航站</h3>
+            <p>独立开发者 / 出海必备工具库，持续更新。</p>
+            <a href="tools/" class="btn btn-outline btn-sm" style="width:100%; justify-content:center;">
+              进入导航站 →
+            </a>
+          </div>
+          <div class="sidebar-card">
+            <h3>🎙️ 语音版</h3>
+            <p>每期提供语音播报，温柔学姐音色，适合通勤听。</p>
+            <p style="font-size:12px; color:var(--text-muted);">音色：Chinese (Mandarin) Gentle Senior</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-brand">
+        <img src="assets/avatars/una-avatar-3.jpg" alt="Una">
+        Una 陪你看 AI
+      </span>
+      <span class="footer-meta">
+        一只小熊猫 + 她主人 廷哥 一起挑
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Update live stats
+    document.getElementById('stat-days').textContent = Math.floor((Date.now() - new Date('2026-04-27')) / 86400000) + 1;
+  </script>
+</body>
+</html>

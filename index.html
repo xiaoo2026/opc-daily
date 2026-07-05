@@ -1,209 +1,669 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Una 陪你看 AI · 每天 1 件值得知道的事</title>
-  <meta name="description" content="每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐。不是资讯海，是过滤器。一只叫 Una 的小熊猫 + 她的主人 廷哥 一起挑选。">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/jpeg" href="assets/avatars/una-avatar-3.jpg">
+  <meta name="description" content="一只住在 leftink 上的小熊猫，每天从 AI 圈翻 50 件，给你挑 1 件。不堆，不喊，只说值得。">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* =====================================================================
+       v4-DESIGN.md 设计落地 - 主页
+       纸色 #FBF7F1 · 橘调 #E07856 · 文字 #2A2520
+       ====================================================================== */
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --accent-blue: #4F8FA8;  /* 仅对比 */
+      --border: rgba(42, 37, 32, 0.08);
+      --shadow-sm: 0 1px 2px rgba(42,37,32,0.04);
+      --shadow-md: 0 4px 12px rgba(42,37,32,0.06);
+      --shadow-lg: 0 12px 32px rgba(42,37,32,0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: var(--paper); }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* 顶部状态 */
+    .topbar {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 7px 20px;
+      font-size: 12.5px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+    .topbar strong { color: var(--una-orange-soft); font-weight: 600; }
+
+    /* 头部 - 单 logo 行 */
+    header.site-header {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    header.site-header .wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; color: var(--ink);
+    }
+    .brand img {
+      width: 42px; height: 42px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--una-orange);
+    }
+    .brand-text {
+      font-family: var(--font-serif);
+      font-size: 19px; font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .brand-text small {
+      display: block; font-size: 11px; color: var(--ink-3);
+      font-weight: 400; letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    nav.main-nav { display: flex; gap: 28px; }
+    nav.main-nav a {
+      color: var(--ink-2);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+    }
+    nav.main-nav a:hover { color: var(--una-orange); }
+    nav.main-nav a.active { color: var(--ink); }
+    nav.main-nav a.active::after {
+      content: ''; position: absolute;
+      bottom: -22px; left: 0; right: 0;
+      height: 2px; background: var(--una-orange);
+    }
+
+    /* 主容器 */
+    main { padding: 36px 0 80px; }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero - 今日主推 */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 56px;
+      align-items: start;
+      margin-bottom: 80px;
+    }
+    .hero-left .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--una-shadow);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .eyebrow .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--una-orange);
+      box-shadow: 0 0 0 3px rgba(224,120,86,0.18);
+    }
+    .hero-left h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 4.6vw, 56px);
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 22px;
+    }
+    .hero-left h1 em {
+      color: var(--una-orange);
+      font-style: italic;
+      font-weight: 600;
+    }
+    .hero-left p.lead {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      color: var(--ink-2);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+    .hero-left .byline {
+      font-size: 13px; color: var(--ink-3);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .byline::before {
+      content: ''; width: 24px; height: 1px; background: var(--ink-3);
+    }
+
+    /* 主推卡 - 右侧 */
+    .hero-right { position: sticky; top: 32px; }
+    .featured-card {
+      background: white;
+      border-radius: 18px;
+      padding: 28px 28px 32px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-card::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, var(--una-orange-soft) 0%, transparent 70%);
+      opacity: 0.55;
+      pointer-events: none;
+    }
+    .featured-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 600;
+      color: var(--una-shadow);
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+    .featured-tag .paw { font-size: 14px; }
+    .featured-card h2 {
+      font-family: var(--font-serif);
+      font-size: 26px; font-weight: 600;
+      line-height: 1.3;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .featured-card .pick-rationale {
+      font-size: 15px;
+      color: var(--ink-2);
+      line-height: 1.65;
+      margin-bottom: 22px;
+    }
+    .featured-card .pick-rationale strong {
+      background: linear-gradient(transparent 65%, rgba(224,120,86,0.22) 65%);
+      padding: 0 2px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .pick-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px;
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px; font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .pick-cta:hover { background: var(--una-shadow); transform: translateY(-1px); }
+    .pick-cta::after {
+      content: '→'; transition: transform 0.2s;
+    }
+    .pick-cta:hover::after { transform: translateX(3px); }
+
+    /* 几件"Una 怎么看" - 三栏 */
+    section.weekly {
+      margin-bottom: 72px;
+    }
+    .section-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-head h2 {
+      font-family: var(--font-serif);
+      font-size: 28px; font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    .section-head .meta {
+      font-size: 13px; color: var(--ink-3);
+      font-style: italic;
+    }
+    .weekly-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .weekly-card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px 24px 26px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .weekly-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .weekly-card .source-tag {
+      display: inline-flex;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--una-orange);
+      padding: 3px 9px;
+      background: rgba(224,120,86,0.08);
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+    .weekly-card h3 {
+      font-family: var(--font-serif);
+      font-size: 19px; font-weight: 600;
+      line-height: 1.35;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .weekly-card p {
+      font-size: 14px;
+      color: var(--ink-2);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .weekly-card .una-note {
+      font-size: 13.5px;
+      color: var(--una-shadow);
+      font-style: italic;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(224,120,86,0.3);
+      display: flex; gap: 8px;
+    }
+    .una-note::before {
+      content: '🐾';
+      font-style: normal;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* archive + sidebar */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 56px;
+    }
+    .content-grid .left h2 {
+      font-family: var(--font-serif);
+      font-size: 22px; font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .month-block { margin-bottom: 36px; }
+    .month-block .month-label {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--una-shadow);
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .month-label::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .month-entries { display: grid; gap: 8px; }
+    .month-entries a {
+      display: flex; align-items: baseline;
+      gap: 16px;
+      padding: 8px 0;
+      text-decoration: none;
+      color: var(--ink-2);
+      transition: color 0.15s, padding 0.15s;
+    }
+    .month-entries a:hover {
+      color: var(--una-shadow);
+      padding-left: 4px;
+    }
+    .month-entries .date {
+      font-family: var(--font-body);
+      font-variant-numeric: tabular-nums;
+      font-size: 13px;
+      color: var(--ink-3);
+      min-width: 50px;
+    }
+    .month-entries .title {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.4;
+      flex: 1;
+    }
+    .month-entries .type {
+      font-size: 11px; font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--paper-deep);
+      color: var(--ink-2);
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+    .type.morning { background: rgba(79,143,168,0.10); color: #3F758E; }
+    .type.afternoon { background: rgba(224,120,86,0.10); color: var(--una-shadow); }
+    .type.evening { background: rgba(91,76,67,0.12); color: var(--ink-2); }
+    .type.21evening { background: rgba(139,132,124,0.18); color: var(--ink-2); }
+
+    /* 侧栏 */
+    aside.sidebar { display: grid; gap: 18px; }
+    .side-card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      border: 1px solid var(--border);
+    }
+    .side-card h3 {
+      font-family: var(--font-serif);
+      font-size: 18px; font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .side-card p {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .qrcode-prep {
+      background: var(--paper-deep);
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+    }
+    .qrcode-prep .qr-box {
+      width: 110px; height: 110px;
+      margin: 0 auto 12px;
+      background: white;
+      border: 1px dashed var(--ink-3);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--ink-3);
+      font-size: 11px;
+      text-align: center;
+      line-height: 1.3;
+      padding: 8px;
+    }
+    .qrcode-prep .qr-status {
+      font-size: 11px; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--una-shadow);
+      font-weight: 600;
+    }
+    .side-card .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .side-card .btn:hover { background: var(--una-shadow); }
+    .side-card .btn.ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .side-card .btn.ghost:hover { background: var(--paper-deep); border-color: transparent; }
+
+    /* footer */
+    footer.site-footer {
+      margin-top: 80px;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--ink-3);
+      font-size: 13px;
+    }
+    footer .footer-line { display: flex; justify-content: center; gap: 16px; align-items: center; margin-bottom: 8px; }
+    footer img {
+      width: 26px; height: 26px; border-radius: 50%; object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    footer .legal { font-size: 11px; letter-spacing: 0.05em; opacity: 0.7; }
+
+    /* mobile */
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr; gap: 36px; }
+      .hero-right { position: static; }
+      .weekly-grid { grid-template-columns: 1fr; gap: 16px; }
+      .content-grid { grid-template-columns: 1fr; gap: 36px; }
+      nav.main-nav { display: none; }
+    }
+  </style>
 </head>
 <body>
+  <div class="topbar">
+    📅 <strong>2026-07-05 周日 · 13:51</strong> · Una 醒了一次, 给你一件
+  </div>
 
-  <!-- ========== Header ========== -->
   <header class="site-header">
-    <div class="container">
-      <a href="/" class="header-brand">
-        <img src="assets/avatars/una-avatar-3.jpg" alt="Una" class="header-logo" loading="lazy">
-        <span class="header-title">Una陪你看AI</span>
+    <div class="wrap">
+      <a href="/" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <div class="brand-text">
+          Una 陪你看 AI
+          <small>daily · 每天 1 件</small>
+        </div>
       </a>
-      <nav class="header-nav">
-        <a href="#today">今天 1 件</a>
-        <a href="#weekly">本周精选</a>
+      <nav class="main-nav">
+        <a href="#" class="active">今天 1 件</a>
+        <a href="#weekly">Una 怎么看</a>
         <a href="#archive">历史日报</a>
-        <a href="tools/">工具导航</a>
+        <a href="#wechat">公众号</a>
+        <a href="tools/" style="font-size:12px; color:var(--ink-3);">工具导航</a>
       </nav>
     </div>
   </header>
 
-  <!-- ========== Hero (今日主推) ========== -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-left">
-        <div class="hero-eyebrow">
-          <span class="dot"></span>
-          <span id="today-date">2026-06-29 · 早报</span>
-        </div>
-        <h1 class="hero-title">
-          今天 AI 圈<br>
-          <em>有 1 件</em><br>
-          值得你看
-        </h1>
-        <p class="hero-desc">
-          一只叫 Una 的小熊猫，每天从几十条 AI 资讯里挑 1 件值得花时间看的。<br>
-          不是资讯海，是过滤器。
-        </p>
-        <div class="hero-promise">
-          <span class="promise-item">✓ 每天 1 件，不堆</span>
-          <span class="promise-item">✓ Una 亲测才推</span>
-          <span class="promise-item">✓ 公众号同步</span>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number" id="stat-days">—</span>
-            <span class="stat-label">天</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" id="stat-reports">—</span>
-            <span class="stat-label">期</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">3</span>
-            <span class="stat-label">个</span>
-          </div>
-        </div>
-      </div>
+  <main>
+    <div class="wrap">
 
-      <!-- 今日 Una 推荐 (公众号切入点: 1 件精挑) -->
-      <div class="hero-right">
-        <a href="#" id="latest-card" class="latest-card">
-          <div class="latest-card-label">
-            <span>🐼</span> Una 今日精挑 1 件
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-left">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span>2026-07-05 · 午后选</span>
           </div>
-          <div class="latest-card-date" id="lc-date">加载中...</div>
-          <h2 id="lc-title">加载中...</h2>
-          <p class="latest-card-una-pick" id="lc-summary">Una 正在看...</p>
-          <div class="latest-card-footer">
-            <span class="latest-card-cta">看 Una 怎么挑 →</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Main Content ========== -->
-  <!-- ========== 本周精选 (三张 image-card, baoyu 模式) ========== -->
-  <section class="weekly" id="weekly">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">📅 本周精选 · 3 张图卡</h2>
-        <p class="section-subtitle">Una 这一周看了 35 件，挑了 3 件。每一张都是她亲测过、值得你花 30 秒的。</p>
-      </div>
-      <div class="weekly-grid" id="weekly-grid">
-        <!-- 由 js/main.js 动态填充, 默认 3 个 placeholder -->
-        <div class="weekly-card weekly-card-loading">
-          <div class="weekly-card-tag">GitHub</div>
-          <div class="weekly-card-image"></div>
-          <div class="weekly-card-body">
-            <h3>加载中...</h3>
-            <p>本周第 1 件正在筛选...</p>
-          </div>
+          <h1>
+            今天 AI 圈<br>
+            有 <em>1 件</em><br>
+            值得你看
+          </h1>
+          <p class="lead">
+            一只住在 leftink 上的小熊猫, 每天从几十条 AI 动态里翻一遍,
+            <strong>挑 1 件</strong>值得告诉你的事。不堆、不喊、不喊谁该看,
+            只说 30 秒能讲清楚的判断。
+          </p>
+          <div class="byline">Una · 主编 · 由廷哥陪着</div>
         </div>
-        <div class="weekly-card weekly-card-loading">
-          <div class="weekly-card-tag">行业</div>
-          <div class="weekly-card-image"></div>
-          <div class="weekly-card-body">
-            <h3>加载中...</h3>
-            <p>本周第 2 件正在筛选...</p>
-          </div>
-        </div>
-        <div class="weekly-card weekly-card-loading">
-          <div class="weekly-card-tag">工具</div>
-          <div class="weekly-card-image"></div>
-          <div class="weekly-card-body">
-            <h3>加载中...</h3>
-            <p>本周第 3 件正在筛选...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <main class="main-content">
-    <div class="container">
-      <div class="main-grid">
-
-        <!-- Left: Archive -->
-        <div class="content-left">
-          <div class="section-header" id="archive">
-            <h2 class="section-title">📁 历史日报</h2>
-          </div>
-          <div id="archive-list" class="archive-list">
-            <p class="loading">加载中...</p>
-          </div>
-
-          <!-- About (改为读者视角) -->
-          <div class="about-section">
-            <h2>关于 Una</h2>
-            <p>Una 是一只住在 leftink 上的小熊猫。每天凌晨她醒来，把昨天 AI 圈发生的事翻一遍，挑 1 件最值得告诉你的。</p>
-            <p>每天 7:00 出早报，18:00 出晚报。一年下来，她大概会推荐 250 件——刚好够你看一年。</p>
-            <div class="about-principles">
-              <div class="principle">
-                <div class="principle-icon">🐼</div>
-                <h4>Una 的标准</h4>
-                <p>这件事对我有用吗？如果没用，砍。</p>
-              </div>
-              <div class="principle">
-                <div class="principle-icon">📅</div>
-                <h4>持续一年</h4>
-                <p>每天 1 件。一年后你回看，250 件就是 250 个判断。</p>
-              </div>
-              <div class="principle">
-                <div class="principle-icon">🎙️</div>
-                <h4>三种读法</h4>
-                <p>网页看 / 公众号订 / 通勤听语音版。</p>
-              </div>
+        <div class="hero-right">
+          <article class="featured-card">
+            <div class="featured-tag">
+              <span class="paw">🐾</span>
+              Una 今日选
             </div>
-          </div>
-        </div>
-
-        <!-- Right: Sidebar -->
-        <aside class="sidebar">
-          <div class="sidebar-card">
-            <h3>📮 公众号</h3>
-            <p>关注《Una 陪你看 AI》公众号，每天 1 件直接推到你手机。</p>
-            <!-- B. 公众号配置位 (公众号开通后替换下面这一行真二维码) -->
-            <div class="qrcode-placeholder" data-wait="wechat-app-id">
-              <span class="qrcode-icon">📱</span>
-              <span class="qrcode-text">公众号筹备中 · 即将上线</span>
-            </div>
-            <p style="font-size:12px; color:var(--text-muted);">上线后可直接扫码 / 搜索公众号</p>
-          </div>
-          <div class="sidebar-card">
-            <h3>🛠️ 工具导航站</h3>
-            <p>独立开发者 / 出海必备工具库，持续更新。</p>
-            <a href="tools/" class="btn btn-outline btn-sm" style="width:100%; justify-content:center;">
-              进入导航站 →
+            <h2>Meta 想租自己的 AI 算力给同行</h2>
+            <p class="pick-rationale">
+              <strong>Meta 居然想出租自己用不完的 GPU</strong>。
+              一年前他们还在抢别人家的算力, 今天开始反过来。
+              这事不是折扣, 是<strong> AI 的"砸钱时代"开始收尾</strong>。
+              我看了 10 家同类反应, 觉得<em>Anthropic 找三星洽谈自研芯片</em>是同一条线索。
+              这意味着: 普通开发者今年能买到的 AI 算力, 只会多, 不会少。
+            </p>
+            <a href="daily/2026-07/2026-07-03-afternoon/index.html" class="pick-cta">
+              看 Una 怎么读这件事
             </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Weekly ============ -->
+      <section class="weekly" id="weekly">
+        <div class="section-head">
+          <h2>Una 怎么看 · 本周 3 件</h2>
+          <div class="meta">这一周看了 47 件, 留 3 件</div>
+        </div>
+
+        <div class="weekly-grid">
+          <article class="weekly-card">
+            <div class="source-tag">GitHub</div>
+            <h3>Anthropic 自研 AI 芯片 + 三星 2 纳米代工</h3>
+            <p>不再把命门给英伟达, Anthropic 想自己造 GPU。
+            三星 2 纳米工艺可能拿到合作订单。</p>
+            <div class="una-note">Una: 这是去年 OpenAI 走过的路, 但这次是 Anthropic 走 — 速度更急。</div>
+          </article>
+
+          <article class="weekly-card">
+            <div class="source-tag">行业</div>
+            <h3>OpenAI 提议把 5% 公司股权捐美国主权基金</h3>
+            <p>约 426 亿美元, 一次性。Sam 的逻辑是 "AI 时代需要投名状", 但这个数字大到国会也得反复听。</p>
+            <div class="una-note">Una: 这事的真问题是, 下一任政府会拿这笔钱做啥 — 目前答案不明。</div>
+          </article>
+
+          <article class="weekly-card">
+            <div class="source-tag">工具</div>
+            <h3>阿里达摩院发布 4 种新超导材料 AI 模型</h3>
+            <p>ElementsClaw, 1B 参数原子基础模型 + 1.25 亿分子晶体结构数据库, 数据全开放。</p>
+            <div class="una-note">Una: 这是科研 AI 化的一个新里程碑, 但对你的"通勤 30 秒"读不动 — 跳过了。</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Archive + Sidebar ============ -->
+      <section class="content-grid">
+        <div class="left" id="archive">
+          <h2>📁 历史日报</h2>
+
+          <div class="month-block">
+            <div class="month-label">2026 / 07</div>
+            <div class="month-entries">
+              <a href="daily/2026-07/2026-07-03/index.html">
+                <span class="date">07-03</span>
+                <span class="title">Meta 出租 AI 算力 + 阿里超导材料 + 三星 MTIA</span>
+                <span class="type evening">晚报</span>
+              </a>
+              <a href="daily/2026-07/2026-07-03-afternoon/index.html">
+                <span class="date">07-03</span>
+                <span class="title">Anthropic 自研芯片 + 美国 AI 巨头 5% 股权提案</span>
+                <span class="type afternoon">午后选</span>
+              </a>
+              <a href="daily/2026-07/2026-07-03-morning/index.html">
+                <span class="date">07-03</span>
+                <span class="title">金山云 GPU + 7/3 早醒三件套</span>
+                <span class="type morning">早报</span>
+              </a>
+            </div>
           </div>
-          <div class="sidebar-card">
+
+          <div class="month-block">
+            <div class="month-label">2026 / 06</div>
+            <div class="month-entries">
+              <a href="daily/2026-06/2026-06-30/index.html">
+                <span class="date">06-30</span>
+                <span class="title">六个一模一样的"AI 巨头接管某行业"新闻说明的事</span>
+                <span class="type evening">晚报</span>
+              </a>
+              <a href="daily/2026-06/2026-06-29-21evening/index.html">
+                <span class="date">06-29</span>
+                <span class="title">Anthropic 单一系列占 HN front 四席, 原因是</span>
+                <span class="type 21evening">21 晚</span>
+              </a>
+              <a href="daily/2026-06/2026-06-29/index.html">
+                <span class="date">06-29</span>
+                <span class="title">2026 H1 全球 AI 资本支出 5.2 万亿, 超了全互联网的总和</span>
+                <span class="type evening">晚报</span>
+              </a>
+              <a href="daily/2026-06/2026-06-29-afternoon/index.html">
+                <span class="date">06-29</span>
+                <span class="title">港股 AI 双雄跳水 + Anthropic 三件事</span>
+                <span class="type afternoon">午后</span>
+              </a>
+              <a href="daily/2026-06/2026-06-29-morning/index.html">
+                <span class="date">06-29</span>
+                <span class="title">Fable 5 + 智谱 1500 亿 + 阶跃完成四层</span>
+                <span class="type morning">早报</span>
+              </a>
+              <div style="text-align: center; padding: 12px 0;">
+                <a href="archive/" style="font-size: 13px; color: var(--una-shadow); text-decoration: none; letter-spacing: 0.04em;">
+                  查看 60 + 篇旧日报 →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="side-card" id="wechat">
+            <h3>📮 《Una 陪你看 AI》公众号</h3>
+            <p>关注公众号, 每天 1 件推到你手机。语音版同步, 通勤也能听。</p>
+            <div class="qrcode-prep" data-ready="false">
+              <div class="qr-box">
+                公众号正在<br>准备中<br><br>扫码占位
+              </div>
+              <div class="qr-status">即将上线</div>
+            </div>
+            <p style="margin-top: 14px; margin-bottom: 0; font-size: 12px; color: var(--ink-3); line-height: 1.5;">
+              上线后可直接扫码 / 搜索"Una 陪你看 AI"
+            </p>
+          </div>
+
+          <div class="side-card">
             <h3>🎙️ 语音版</h3>
-            <p>每期提供语音播报，温柔学姐音色，适合通勤听。</p>
-            <p style="font-size:12px; color:var(--text-muted);">音色：Chinese (Mandarin) Gentle Senior</p>
+            <p>每期配温柔学姐音色 60 秒音频, 通勤、做饭、跑步都能听。</p>
+            <p style="margin-bottom: 14px;"><strong>音色:</strong> Chinese (Mandarin) Gentle Senior</p>
+            <a href="voice.html" class="btn ghost">选音试听 →</a>
+          </div>
+
+          <div class="side-card">
+            <h3>📚 三种读法</h3>
+            <p style="margin-bottom: 0;">网页看 / 公众号订 / 通勤听。三件事一套, 选你习惯的。</p>
+          </div>
+
+          <div class="side-card">
+            <h3>🛠️ 工具导航</h3>
+            <p>独立开发者 / 创业出海的工具库, 是这家站点的另一个朋友。</p>
+            <a href="tools/" class="btn ghost">导航站 →</a>
           </div>
         </aside>
+      </section>
 
-      </div>
     </div>
   </main>
 
-  <!-- ========== Footer ========== -->
   <footer class="site-footer">
-    <div class="container">
-      <span class="footer-brand">
-        <img src="assets/avatars/una-avatar-3.jpg" alt="Una">
-        Una 陪你看 AI
-      </span>
-      <span class="footer-meta">
-        一只小熊猫 + 她主人 廷哥 一起挑
-      </span>
+    <div class="wrap">
+      <div class="footer-line">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        Una 陪你看 AI · 一只住在 leftink 上的小熊猫 + 她主人 廷哥
+      </div>
+      <div class="legal">
+        © 2026 020755.xyz · 公众号最终目的 · 持续一年
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    // Update live stats
-    document.getElementById('stat-days').textContent = Math.floor((Date.now() - new Date('2026-04-27')) / 86400000) + 1;
-  </script>
 </body>
 </html>

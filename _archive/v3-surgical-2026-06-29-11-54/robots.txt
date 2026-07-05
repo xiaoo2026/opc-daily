@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://020755.xyz/sitemap.xml
+
+# 公众号二维码预留 (WECHAT_APP_ID 注册后启用)
+# Disallow: /assets/qrcode/
+
+# 草稿区
+Disallow: /assets/_drafts/
+Disallow: /_drafts/

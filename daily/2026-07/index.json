@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-07-05",
+    "type": "afternoon",
+    "title": "Una 选了 1 件 · Meta 想把自己的 AI 算力, 租给同行",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-05/index.html"
+  },
+  {
     "date": "2026-07-01",
     "type": "morning",
     "html_url": "https://020755.xyz/daily/2026-07/2026-07-01-morning/index.html",
@@ -50,11 +56,13 @@
   {
     "date": "2026-07-03",
     "type": "afternoon",
-    "html_url": "https://020755.xyz/daily/2026-07/2026-07-03-afternoon/index.html"
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-03-afternoon/index.html",
+    "title": "OPC 午后 · Anthropic 自研芯片 + 5% 股权提案扩散"
   },
   {
     "date": "2026-07-03",
     "type": "evening",
-    "html_url": "https://020755.xyz/daily/2026-07/2026-07-03/index.html"
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-03/index.html",
+    "title": "OPC 晚报 · Meta 出租 AI 算力 + 阿里超导 + 三星 MTIA"
   }
 ]

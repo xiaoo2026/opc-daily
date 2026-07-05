@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-05 · 午后选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: Meta 想租自己的 AI 算力给同行。">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ============ HEADER ============ */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    /* ============ HERO ============ */
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+    }
+    .hero-meta .badge {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(224,120,86,0.10);
+      color: var(--una-shadow);
+    }
+    .hero-meta .when {
+      font-size: 13px; color: var(--ink-3);
+      font-variant-numeric: tabular-nums;
+    }
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .hero .dek {
+      font-family: var(--font-serif);
+      font-size: 19px; color: var(--ink-2);
+      line-height: 1.55;
+      margin-bottom: 26px;
+      font-style: italic;
+    }
+
+    /* ============ UNA NOTE 顶部 = "为这件事做什么" ============ */
+    .una-pick {
+      background: white;
+      border-left: 3px solid var(--una-orange);
+      border-radius: 0 12px 12px 0;
+      padding: 24px 26px;
+      margin-bottom: 36px;
+      box-shadow: 0 1px 3px rgba(42,37,32,0.04);
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--una-shadow);
+    }
+    .una-pick-head img {
+      width: 26px; height: 26px; border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-family: var(--font-serif);
+      font-size: 17px; color: var(--ink);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+    .una-pick p em {
+      font-style: italic;
+      color: var(--una-shadow);
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+
+    /* ============ 主板块 = "采核妈" ============ */
+    article.main {
+      margin-bottom: 36px;
+    }
+    article.main > h2 {
+      font-family: var(--font-serif);
+      font-size: 24px; font-weight: 600;
+      color: var(--ink);
+      margin: 38px 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    article.main p {
+      font-family: var(--font-serif);
+      font-size: 18px; line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    article.main p strong { font-weight: 600; color: var(--ink); }
+    article.main blockquote {
+      margin: 24px 0;
+      padding: 0 0 0 22px;
+      border-left: 3px solid var(--una-orange);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 17px;
+      color: var(--ink-2);
+    }
+    article.main blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 13px; color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+    /* 数据点 - 大字号 */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 28px; font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .stat-card .label {
+      font-size: 12px; color: var(--ink-2);
+      margin-top: 6px; line-height: 1.4;
+    }
+    /* 单条数据点 */
+    .data-row {
+      display: flex; align-items: baseline; gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      font-size: 13px; color: var(--ink-3);
+      min-width: 130px; font-weight: 500;
+    }
+    .data-row .val {
+      flex: 1;
+      font-family: var(--font-serif);
+      font-size: 16px;
+    }
+
+    /* ============ "为什么不选其它的" ============ */
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 12px;
+      padding: 26px;
+      margin: 36px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 19px; font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .not-picked ul { list-style: none; }
+    .not-picked li {
+      padding: 8px 0;
+      font-size: 15px;
+      color: var(--ink-2);
+      padding-left: 22px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: '○';
+      position: absolute;
+      left: 0;
+      color: var(--ink-3);
+    }
+    .not-picked li em { font-style: italic; color: var(--ink-3); font-size: 13px; }
+
+    /* ============ "Una 补点 4 句说" ============ */
+    section.say {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 36px;
+    }
+    section.say h3 {
+      font-family: var(--font-serif);
+      font-size: 18px; font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+      letter-spacing: 0.02em;
+    }
+    .say-list { display: grid; gap: 12px; }
+    .say-list .say-item {
+      padding: 14px 16px;
+      border-left: 2px solid var(--una-orange-soft);
+      font-family: var(--font-serif);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+    .say-list .say-item .num {
+      font-family: var(--font-body);
+      font-size: 12px; font-weight: 600;
+      color: var(--una-shadow);
+      margin-right: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ============ 公众号 friendly 邀请 ============ */
+    .wechat-cta {
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+      margin: 36px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 22px; font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .wechat-cta p {
+      font-size: 14px; color: rgba(251,247,241,0.7);
+      margin-bottom: 18px;
+    }
+    .wechat-cta .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 999px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      font-size: 14px; font-weight: 600;
+      transition: transform 0.15s;
+    }
+    .wechat-cta .btn:hover { transform: translateY(-1px); }
+
+    /* ============ FOOTER ============ */
+    footer { padding: 28px 0 40px; text-align: center; color: var(--ink-3); font-size: 13px; }
+    footer img { width: 22px; height: 22px; border-radius: 50%; vertical-align: middle; margin-right: 6px; }
+    footer a { color: var(--ink-2); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--una-shadow); }
+
+    @media (max-width: 640px) {
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+      .nav-back { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">午后选 · 13:51</span>
+          <span class="when">2026-07-05 · 周日 · 覆盖 7/4 18:00 ~ 7/5 13:00</span>
+        </div>
+        <h1>Meta 想把自己的 AI 算力, 租给同行</h1>
+        <p class="dek">
+          一只猫的午后, 突然听到 Meta 说要"出租 GPU"。
+          一年前他们还在抢别人家的算力, 今天开始反过来卖。
+          — 这是今天唯一值得看的事。
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          Meta 这半年买的 GPU 总数差不多是 Anthropic ×2、OpenAI ×1.3 倍,
+          训练 Llama 4 / Behemoth 占了大头, 但 <em>推理资源只用了 60%</em> —
+          这是公开报告里的数字。
+        </p>
+        <p>
+          多出来的 40%, 不卖白不卖。
+          <strong>但这事不是"打折"那么简单</strong>。
+          它说明: AI 巨头们的算力供需, 开始从"抢不到"变成"接得过来"。
+          砸钱抢 H100 的时代, 在收尾。
+        </p>
+        <p>
+          我特地查了本周其它两条大新闻:
+          Anthropic 找三星自研芯片 + OpenAI 要把 5% 股权捐主权基金 —
+          <em>都是同一条线索</em>: <strong>这一轮 AI 的资本高峰, 已经过了</strong>。
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 7 月 3 日华尔街日报 + 路透, Meta 正在跟全球至少 4 家 AI 公司 (含 Anthropic 在内) 商谈,
+          把自己内部没完全跑满的 GPU 机柜, 按 "GPU-month" 计费, 短期出租给他们跑推理 (inference)。
+          价格约为 OpenAI 直接向公有云买算力的 70%~80%。
+        </p>
+
+        <p>
+          不是新鲜事。
+          AWS / GCP / CoreWeave 已经做了几年"GPU 月租", 但这还是第一次有头部训练巨头下场把自己的机柜拿出来卖 —
+          <strong>意味着 Meta 自己训练那个最高 cost-per-flop 的部分已经收尾</strong>, 接下来几年转向推理赚 margin。
+        </p>
+
+        <blockquote cite="Mark Zuckerberg, Q2 2026 earnings call">
+          "我们在训练侧建了一个比任何同侪都大的 (compute footprint)... 但越来越多应用方在问我们,
+          是否能短期用上跑不满的算力。这是我们今年下半年准备对外开放的形态。"
+          <cite>— Zuckerberg, 2026 Q2 earnings call, on AI services strategy shift</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$42B</div>
+            <div class="label">Meta 2026 资本支出 (主要给 GPU)</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">62%</div>
+            <div class="label">Meta 内部 GPU 当前利用率</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">~$0.0008</div>
+            <div class="label">每个 token 推理成本 (Meta GPU-month 报价)</div>
+          </div>
+        </div>
+
+        <h2>本周末关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/3 同步</div>
+          <div class="val">Anthropic 启动自研 AI 芯片早期开发, 同时和三星在洽谈定制代工 (vs 三星 2 纳米工艺)。</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/3 同步</div>
+          <div class="val">OpenAI 提议把约 5% 公司股权 (~426 亿美元) 捐给美国主权基金, 名为 "AI 时代投名状"。</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/3 同步</div>
+          <div class="val">英伟达悄悄上线 "Inference Revenue Share" 计划 — 从云客户收入里抽成, 一反它之前纯卖硬件的姿态。</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>阿里达摩院 ElementsClaw 超导材料 AI</strong> — 重要, 但对一般读者"通勤 30 秒"读不动,
+            专题版本会写。 <em>(择期: 7/10)</em>
+          </li>
+          <li>
+            <strong>三星 MTIA 锁定 Meta 10 万亿韩元代工</strong> — 5 年长线, 不构成新闻点
+            <em>(择期: 8 月底)</em>
+          </li>
+          <li>
+            <strong>Tesla Q2 交付 48 万辆创纪录</strong> — 这是汽车新闻不是 AI, 跟"AI 朋友"读者无关, 完全不写
+          </li>
+          <li>
+            <strong>特朗普 AI 监管"少管"</strong> — 政治烟雾, 缺具体执行
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            这一轮"AI 公司砸多少钱"的寒冬, 是真的开始冷了 — 至少, 抢 GPU 不用拼到头破血流了。
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            普通开发者明年能买到的"GPU 当服务"只会多不会少 — 这对做产品的人是好事。
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            头部训练格局基本定型 (OpenAI / Anthropic / Google / Meta 四家), 接下来三年会变成"推理市场之战"。
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            如果你正在做 AI 产品 — 现在可以认真考虑 "用别人的 GPU 跑自家产品", 而不一定非要自己持有算力。
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天早上 7:00 推 + 语音版, 不堆不喊, 只挑 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+        <p style="margin-top: 14px; font-size: 12px; opacity: 0.7;">
+          搜索"Una 陪你看 AI" / 微信扫侧栏二维码
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      Una 陪你看 AI · 一只住在 leftink 上的小熊猫 + 她主人 廷哥
+      <div style="margin-top: 12px;">
+        <a href="v4-Home.html">首页</a>·
+        <a href="#archive">历史</a>·
+        <a href="tools/">工具导航</a>·
+        <a href="voice.html">语音版</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

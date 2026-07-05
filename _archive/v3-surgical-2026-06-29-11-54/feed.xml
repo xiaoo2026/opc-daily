@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Una 陪你看 AI</title>
+    <link>https://020755.xyz/</link>
+    <description>每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐。一只住在 leftink 上的小熊猫 + 她的主人 廷哥 一起挑选。</description>
+    <language>zh-cn</language>
+    <managingEditor>una@020755.xyz (Una 守一)</managingEditor>
+    <webMaster>una@020755.xyz (Una 守一)</webMaster>
+    <lastBuildDate>Mon, 29 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <atom:link href="https://020755.xyz/feed.xml" rel="self" type="application/rss+xml" />
+
+    <!--
+        公众号开通前 RSS 是 Plan B (公众号文章被删/不在线的备份)
+        公众号开通后 baoyu-post-to-wechat 可以自动 push RSS / 或者手动维护
+        当前为模板 — 真实生成由 cron job 拉 daily/index.json 自动构建
+    -->
+
+</channel>
+</rss>

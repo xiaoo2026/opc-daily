@@ -1,0 +1,275 @@
+diff --git a/css/style.css b/css/style.css
+index b5eb93a..7fe69e4 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -711,3 +711,59 @@ body {
+   .archive-item .arrow { display: none; }
+   .section-title { font-size: 18px; }
+ }
++
++/* ========== v3 surgical rebuild ========== */
++
++/* B. 公众号二维码占位 */
++.qrcode-placeholder {
++  display: flex;
++  flex-direction: column;
++  align-items: center;
++  justify-content: center;
++  gap: var(--space-sm);
++  padding: var(--space-xl) var(--space-md);
++  background: var(--bg-secondary);
++  border: 1px dashed var(--border-medium);
++  border-radius: var(--radius-md);
++  margin: var(--space-md) 0;
++  min-height: 120px;
++  transition: border-color 0.2s;
++}
++.qrcode-placeholder:hover {
++  border-color: var(--accent);
++}
++.qrcode-icon {
++  font-size: 32px;
++  opacity: 0.6;
++}
++.qrcode-text {
++  font-size: 13px;
++  color: var(--text-muted);
++  font-weight: 500;
++}
++
++/* G. 公众号同步入口 (日报页) */
++.wechat-sync {
++  max-width: 1100px;
++  margin: var(--space-2xl) auto;
++  padding: var(--space-lg) var(--space-xl);
++  background: var(--bg-secondary);
++  border-left: 4px solid var(--accent);
++  border-radius: var(--radius-md);
++  font-size: 14px;
++}
++.wechat-sync-label {
++  font-weight: 600;
++  color: var(--text-primary);
++  margin: 0 0 var(--space-xs);
++}
++.wechat-sync-text {
++  color: var(--text-secondary);
++  margin: 0 0 var(--space-xs);
++}
++.wechat-sync-meta {
++  font-size: 12px;
++  color: var(--text-muted);
++  margin: 0;
++  font-family: var(--font-mono);
++}
+diff --git a/daily/2026-06/2026-06-29-morning/index.html b/daily/2026-06/2026-06-29-morning/index.html
+index b3d7e7e..44ecd05 100644
+--- a/daily/2026-06/2026-06-29-morning/index.html
++++ b/daily/2026-06/2026-06-29-morning/index.html
+@@ -327,7 +327,20 @@
+         </div>
+     </div>
+     <div class="footer">
+-        OPC Daily · 2026-06-29 · 9:00 CST
+-    </div>
+-</body>
+-</html>
++        </footer>
++        </div>
++
++        <!-- G. 公众号同步入口 (v3 surgical rebuild)
++         公众号发布后:
++         1. 注册 baoyu-post-to-wechat skill
++         2. 用 baoyu-post-to-wechat skill 发布本文到《Una 陪你看 AI》公众号
++         3. 公众号发布的 URL 在这里填入 (data-wechat-url)
++         4. 这块标记会被 main.js 渲染成"📮 查看公众号版本"按钮
++        -->
++        <aside class="wechat-sync" data-wechat-status="pending" data-wechat-url="">
++        <p class="wechat-sync-label">📮 公众号同步状态</p>
++        <p class="wechat-sync-text">本篇日报稍后同步至《Una 陪你看 AI》公众号</p>
++        <p class="wechat-sync-meta">WECHAT_APP_ID 待注册 · baoyu-post-to-wechat 待配置</p>
++        </aside>
++        </body>
++        </html>
+diff --git a/index.html b/index.html
+index 794fecd..117e818 100644
+--- a/index.html
++++ b/index.html
+@@ -5,6 +5,49 @@
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Una 陪你看 AI · 每天 1 件值得知道的事</title>
+   <meta name="description" content="每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐。不是资讯海，是过滤器。一只叫 Una 的小熊猫 + 她的主人 廷哥 一起挑选。">
++
++  <!-- Open Graph / 微信公众号 / SEO (F: v3 surgical rebuild) -->
++  <meta property="og:type" content="website">
++  <meta property="og:title" content="Una 陪你看 AI · 每天 1 件值得知道的事">
++  <meta property="og:description" content="一只住在 leftink 上的小熊猫，每天从几十条 AI 资讯里挑 1 件。">
++  <meta property="og:image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
++  <meta property="og:url" content="https://020755.xyz/">
++  <meta property="og:site_name" content="Una 陪你看 AI">
++
++  <!-- 微信分享卡片 (jikky-toutiao) -->
++  <meta itemprop="name" content="Una 陪你看 AI">
++  <meta itemprop="description" content="每天 1 件 AI 圈最值得看的事，Una 亲测">
++  <meta itemprop="image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
++
++  <!-- Twitter Card -->
++  <meta name="twitter:card" content="summary_large_image">
++  <meta name="twitter:title" content="Una 陪你看 AI · 每天 1 件值得知道的事">
++  <meta name="twitter:description" content="一只住在 leftink 上的小熊猫，每天挑 1 件 AI 圈值得看的事。">
++  <meta name="twitter:image" content="https://020755.xyz/assets/avatars/una-avatar-3.jpg">
++
++  <!-- ld+json 结构化数据 -->
++  <script type="application/ld+json">
++  {
++    "@context": "https://schema.org",
++    "@type": "WebSite",
++    "name": "Una 陪你看 AI",
++    "url": "https://020755.xyz/",
++    "description": "每天 1 件值得花时间看的 AI 动态 + 1 件 Una 亲测推荐",
++    "inLanguage": "zh-CN",
++    "author": {
++      "@type": "Person",
++      "name": "Una 守一"
++    },
++    "potentialAction": {
++      "@type": "SearchAction",
++      "target": "https://020755.xyz/daily/{date}/index.html"
++    }
++  }
++  </script>
++
++  <link rel="canonical" href="https://020755.xyz/">
++  <link rel="alternate" type="application/rss+xml" title="Una 陪你看 AI · RSS" href="/feed.xml">
++
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/jpeg" href="assets/avatars/una-avatar-3.jpg">
+ </head>
+@@ -64,17 +107,17 @@
+         </div>
+       </div>
+ 
+-      <!-- 今日 Una 推荐 (公众号切入点: 1 件精挑) -->
++      <!-- 今日 Una 推荐 — 公众号切入点: 动态取自 daily/index.json (main.js: loadLatestReport) -->
+       <div class="hero-right">
+-        <a href="#" id="today-card" class="today-card">
+-          <div class="today-card-label">
++        <a href="#" id="latest-card" class="latest-card">
++          <div class="latest-card-label">
+             <span>🐼</span> Una 今日精挑 1 件
+           </div>
+-          <div class="today-card-date" id="tc-date">加载中...</div>
+-          <h2 id="tc-title">加载中...</h2>
+-          <p class="today-card-una-pick" id="tc-una-pick">Una 正在看...</p>
+-          <div class="today-card-footer">
+-            <span class="today-card-cta">看 Una 怎么挑 →</span>
++          <div class="latest-card-date" id="lc-date">加载中...</div>
++          <h2 id="lc-title">加载中...</h2>
++          <p class="latest-card-una-pick" id="lc-summary">Una 正在看...</p>
++          <div class="latest-card-footer">
++            <span class="latest-card-cta">看 Una 怎么挑 →</span>
+           </div>
+         </a>
+       </div>
+@@ -162,7 +205,16 @@
+           <div class="sidebar-card">
+             <h3>📮 公众号</h3>
+             <p>关注《Una 陪你看 AI》公众号，每天 1 件直接推到你手机。</p>
+-            <p style="font-size:12px; color:var(--text-muted);">识别下方二维码 / 搜索"Una 陪你看 AI"</p>
++            <!-- B. 公众号配置位 (v3 surgical rebuild) — 注册后替换以下占位
++                 TODO: 注册 WECHAT_APP_ID 后把下面整段替换成
++                   <img src="/assets/qrcode/qrcode.jpg" alt="公众号二维码" class="qrcode-img">
++                 + 在公众号后台获取 APP_ID / 搜索 "Una 陪你看 AI"
++            -->
++            <div class="qrcode-placeholder" data-wait="wechat-app-id">
++              <span class="qrcode-icon">📱</span>
++              <span class="qrcode-text">公众号筹备中 · 即将上线</span>
++            </div>
++            <p style="font-size:12px; color:var(--text-muted);">上线后可直接扫码 / 搜索公众号</p>
+           </div>
+           <div class="sidebar-card">
+             <h3>🛠️ 工具导航站</h3>
+diff --git a/js/main.js b/js/main.js
+index 5e64553..29ecb64 100644
+--- a/js/main.js
++++ b/js/main.js
+@@ -113,8 +113,74 @@ async function loadArchive() {
+   }
+ }
+ 
++// ---- Weekly Pick (本周精选 3 张 — 公众号切入点: 一周回顾 3 张图卡) ----
++async function loadWeekly() {
++  const gridEl = document.getElementById('weekly-grid');
++  if (!gridEl) return;
++
++  try {
++    // 1. 拉最近 7 天日报
++    const months = ['2026-04', '2026-05', '2026-06'];
++    let allReports = [];
++    for (const month of months) {
++      try {
++        const res = await fetch(`daily/${month}/index.json`);
++        if (res.ok) {
++          const data = await res.json();
++          allReports = allReports.concat(data);
++        }
++      } catch {}
++    }
++    allReports.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
++
++    // 2. 取最近 7 个唯一日期 (每天最多取 morning/evening 一条, 优先 morning)
++    const seen = new Set();
++    const recent = [];
++    for (const r of allReports) {
++      if (seen.has(r.date)) continue;
++      seen.add(r.date);
++      recent.push(r);
++      if (recent.length >= 7) break;
++    }
++
++    // 3. 取最近 3 条作"本周精选"
++    const picks = recent.slice(0, 3);
++
++    // 4. 类型标签
++    const typeLabel = (type) => {
++      if (type === 'morning') return '早报';
++      if (type === 'afternoon') return '午报';
++      if (type === 'evening') return '晚报';
++      if (type === '21evening') return '21点晚报';
++      return '日报';
++    };
++
++    // 5. 渲染
++    gridEl.innerHTML = picks.map((r, i) => {
++      const tags = ['GitHub', '行业', '工具'];
++      const tag = tags[i] || '日报';
++      const dateStr = r.date || '';
++      const title = r.title || `📡 ${dateStr} ${typeLabel(r.type)}`;
++      const href = r.url || r.html_url || '#';
++      return `
++        <a href="${href}" class="weekly-card">
++          <div class="weekly-card-tag">${tag}</div>
++          <div class="weekly-card-image"></div>
++          <div class="weekly-card-body">
++            <h3>${dateStr} ${typeLabel(r.type)}</h3>
++            <p>${title}</p>
++          </div>
++        </a>
++      `;
++    }).join('');
++  } catch (e) {
++    gridEl.innerHTML = '<p class="loading">本周精选加载失败</p>';
++  }
++}
++
+ // ---- Init ----
+ document.addEventListener('DOMContentLoaded', () => {
+   loadLatestReport();
++  loadWeekly();
+   loadArchive();
+ });
+ css/style.css                               | 56 +++++++++++++++++++++++
+ daily/2026-06/2026-06-29-morning/index.html | 21 +++++++--
+ index.html                                  | 70 +++++++++++++++++++++++++----
+ js/main.js                                  | 66 +++++++++++++++++++++++++++
+ 4 files changed, 200 insertions(+), 13 deletions(-)

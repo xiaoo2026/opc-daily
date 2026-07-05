@@ -335,27 +335,6 @@ body {
   color: var(--accent);
   margin-bottom: var(--space-md);
 }
-.latest-card-una-bg {
-  position: absolute;
-  top: 0; right: 0;
-  width: 60%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0;
-}
-.latest-card {
-  position: relative;
-}
-.latest-card > *:not(.latest-card-una-bg) { position: relative; z-index: 1; }
-.latest-card-una-icon {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  object-fit: cover;
-  vertical-align: middle;
-}
 
 .latest-card-date {
   font-size: 12px;
@@ -460,69 +439,8 @@ body {
 .archive-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   margin-bottom: var(--space-2xl);
-}
-
-.archive-month {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: var(--bg-card);
-  overflow: hidden;
-}
-
-.archive-month[open] {
-  box-shadow: var(--shadow-card);
-}
-
-.archive-month-header {
-  cursor: pointer;
-  padding: var(--space-md) var(--space-lg);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  user-select: none;
-  list-style: none;
-}
-
-.archive-month-header::-webkit-details-marker {
-  display: none;
-}
-
-.archive-month-header::before {
-  content: '▶';
-  display: inline-block;
-  margin-right: var(--space-sm);
-  transition: transform 0.2s;
-  color: var(--text-muted);
-  font-size: 10px;
-}
-
-.archive-month[open] .archive-month-header::before {
-  transform: rotate(90deg);
-  color: var(--accent);
-}
-
-.month-label {
-  font-size: 15px;
-  color: var(--text-primary);
-  font-family: var(--font-mono);
-}
-
-.month-count {
-  font-size: 12px;
-  color: var(--text-muted);
-  background: var(--bg-secondary);
-  padding: 3px 10px;
-  border-radius: var(--radius-sm);
-}
-
-.archive-month-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  padding: 0 var(--space-md) var(--space-md) var(--space-md);
 }
 
 .archive-item {
@@ -692,14 +610,7 @@ body {
   gap: var(--space-xs);
 }
 
-.principle-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: var(--space-xs);
-  border: 2px solid var(--accent);
-}
+.principle-icon { font-size: 24px; margin-bottom: var(--space-xs); }
 .principle h4 { font-size: 14px; font-weight: 600; color: var(--text-primary); }
 .principle p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
@@ -801,74 +712,9 @@ body {
   .section-title { font-size: 18px; }
 }
 
-/* ========== v2.0 Una 视角改版 ========== */
+/* ========== v3 surgical rebuild ========== */
 
-/* 本周精选 weekly 区块 */
-.weekly {
-  padding: var(--space-2xl) 0;
-  border-bottom: 1px solid var(--border);
-}
-.weekly .section-header { margin-bottom: var(--space-lg); }
-.weekly .section-subtitle {
-  color: var(--text-muted);
-  font-size: 14px;
-  margin-top: var(--space-xs);
-}
-.weekly-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
-}
-.weekly-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s, box-shadow 0.15s;
-  display: flex;
-  flex-direction: column;
-}
-.weekly-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-}
-.weekly-card-tag {
-  display: inline-block;
-  padding: 4px 10px;
-  margin: var(--space-md);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border-radius: var(--radius-pill);
-  align-self: flex-start;
-  background: var(--accent-bg);
-  color: var(--accent-dark);
-}
-.weekly-card-tag:nth-of-type(1) { background: var(--tag-github-bg); color: var(--tag-github-text); }
-.weekly-card-image {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
-  display: block;
-}
-.weekly-card-body { padding: var(--space-md) var(--space-lg); }
-.weekly-card-body h3 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: var(--space-xs);
-}
-.weekly-card-body p {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-.weekly-card-loading { opacity: 0.6; }
-
-/* 公众号二维码占位 */
+/* B. 公众号二维码占位 */
 .qrcode-placeholder {
   display: flex;
   flex-direction: column;
@@ -883,10 +729,41 @@ body {
   min-height: 120px;
   transition: border-color 0.2s;
 }
-.qrcode-placeholder:hover { border-color: var(--accent); }
-.qrcode-icon { font-size: 32px; opacity: 0.6; }
+.qrcode-placeholder:hover {
+  border-color: var(--accent);
+}
+.qrcode-icon {
+  font-size: 32px;
+  opacity: 0.6;
+}
 .qrcode-text {
   font-size: 13px;
   color: var(--text-muted);
   font-weight: 500;
+}
+
+/* G. 公众号同步入口 (日报页) */
+.wechat-sync {
+  max-width: 1100px;
+  margin: var(--space-2xl) auto;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+}
+.wechat-sync-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-xs);
+}
+.wechat-sync-text {
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-xs);
+}
+.wechat-sync-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  font-family: var(--font-mono);
 }

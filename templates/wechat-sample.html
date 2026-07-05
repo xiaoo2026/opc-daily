@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Una 选了 1 件 · 公众号版</title>
+  <meta name="description" content="公众号适配 - 单栏手机阅读版。">
+  <link rel="stylesheet" href="https://res.wx.qq.com/mpres/htmledition/page/css/base/base_2.0.0.css">
+  <style>
+    /* === 公众号阅读主调: 写在公众号编辑器内的 === */
+    body {
+      max-width: 677px;
+      margin: 0 auto;
+      padding: 18px 14px 40px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #333;
+      background: #fff;
+      word-break: break-word;
+    }
+    /* 公众号头部图 banner */
+    .una-banner {
+      text-align: center;
+      padding: 20px 0 30px;
+      border-bottom: 1px solid #f0e8dc;
+      margin-bottom: 24px;
+    }
+    .una-banner img {
+      width: 84px; height: 84px;
+      border-radius: 50%;
+      border: 3px solid #E07856;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .una-banner .name {
+      font-size: 19px; font-weight: 600;
+      color: #2A2520;
+      letter-spacing: 0.5px;
+    }
+    .una-banner .slogan {
+      font-size: 12px; color: #8B847C;
+      margin-top: 6px;
+      letter-spacing: 0.2em;
+    }
+
+    /* 顶部导航 */
+    .meta {
+      display: flex; align-items: center; gap: 8px;
+      padding: 4px 10px;
+      background: rgba(224, 120, 86, 0.08);
+      border-radius: 999px;
+      font-size: 12px;
+      color: #B85A3E;
+      font-weight: 500;
+      width: max-content;
+      margin-bottom: 18px;
+    }
+    .meta span + span {
+      color: #8B847C;
+      font-weight: 400;
+    }
+
+    /* 公众号标题 */
+    h1.title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2A2520;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+    }
+    .dek {
+      font-size: 14px;
+      color: #5C544C;
+      margin-bottom: 26px;
+      padding-bottom: 22px;
+      border-bottom: 1px dashed rgba(42,37,32,0.12);
+      font-style: italic;
+    }
+
+    /* Una 想法横幅 */
+    .una-voice {
+      background: #FFF8F2;
+      border-left: 3px solid #E07856;
+      padding: 14px 14px 14px 16px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 24px;
+    }
+    .una-voice .head {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 600;
+      color: #B85A3E;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .una-voice .head img {
+      width: 20px; height: 20px; border-radius: 50%;
+      border: 1.5px solid #E07856;
+    }
+    .una-voice p {
+      font-size: 15px; color: #2A2520;
+      margin: 6px 0 0;
+      line-height: 1.7;
+    }
+    .una-voice p em { font-style: italic; color: #B85A3E; }
+
+    /* 二级标题 */
+    h2.sub {
+      font-size: 17px; font-weight: 600;
+      color: #2A2520;
+      margin: 30px 0 14px;
+      padding-left: 10px;
+      border-left: 3px solid #E07856;
+      line-height: 1.4;
+    }
+
+    /* 正文段落 */
+    p {
+      margin: 0 0 14px;
+      color: #2A2520;
+    }
+    p strong { font-weight: 600; }
+    p em { font-style: italic; color: #5C544C; }
+
+    /* 引用 (公众号原生的 blockquote 样式) */
+    blockquote {
+      margin: 18px 0;
+      padding: 8px 14px;
+      background: #f7f7f7;
+      border-left: 3px solid #ccc;
+      color: #666;
+      font-style: italic;
+      font-size: 14px;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-style: normal;
+      color: #999;
+    }
+
+    /* 数字阵 (公众号常用 grid) */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin: 20px 0;
+    }
+    .stat-cell {
+      background: #FFF8F2;
+      border-radius: 6px;
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 22px; font-weight: 700;
+      color: #B85A3E;
+      line-height: 1.1;
+    }
+    .stat-lab {
+      font-size: 11px; color: #5C544C;
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    /* "为什么不选"区 */
+    .skip {
+      background: #fafaf7;
+      border-radius: 8px;
+      padding: 14px 14px 4px;
+      margin: 22px 0;
+    }
+    .skip h3 {
+      font-size: 14px; font-weight: 600;
+      color: #8B847C;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    .skip p {
+      font-size: 14px;
+      color: #5C544C;
+      padding: 4px 0;
+      margin: 0;
+    }
+    .skip p .why {
+      color: #999;
+      font-size: 12px;
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* Una 4 句说 */
+    .say {
+      background: #FFF8F2;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 26px 0;
+    }
+    .say h3 {
+      font-size: 16px; font-weight: 600;
+      color: #B85A3E;
+      margin-bottom: 12px;
+    }
+    .say p {
+      font-size: 14.5px;
+      padding: 6px 0;
+      margin: 0;
+      color: #2A2520;
+    }
+    .say p .num {
+      color: #E07856;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    /* 公众号底部: 关注引导 + 二维码 */
+    .wechat-bottom {
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid #f0e8dc;
+      text-align: center;
+    }
+    .wechat-bottom .qr {
+      width: 110px; height: 110px;
+      margin: 12px auto;
+      border: 1px dashed #ccc;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: #999;
+      font-size: 12px;
+    }
+    .wechat-bottom p { font-size: 13px; color: #999; margin: 4px 0; }
+    .wechat-bottom .signature {
+      font-size: 11px;
+      color: #B85A3E;
+      letter-spacing: 0.1em;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ BANNER ============ -->
+  <section class="una-banner">
+    <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+    <div class="name">Una 陪你看 AI</div>
+    <div class="slogan">每天 1 件 · 不堆不喊</div>
+  </section>
+
+  <!-- ============ META ============ -->
+  <div class="meta">
+    <span>午后选</span>
+    <span>·</span>
+    <span>2026-07-05</span>
+    <span>·</span>
+    <span>封面 30 秒读完</span>
+  </div>
+
+  <!-- ============ TITLE ============ -->
+  <h1 class="title">Meta 想把自己的 AI 算力, 租给同行</h1>
+  <p class="dek">
+    一只猫的午后, 突然听到 Meta 说要"出租 GPU"。
+    一年前他们还在抢别人家的算力, 今天开始反过来卖。
+    — 这是今天唯一值得看的事。
+  </p>
+
+  <!-- ============ UNA 想法 ============ -->
+  <section class="una-voice">
+    <div class="head">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      UNA 怎么想
+    </div>
+    <p>
+      Meta 这半年买的 GPU 总数差不多是 Anthropic ×2、OpenAI ×1.3 倍,
+      训练 Llama 4 / Behemoth 占了大头, 但 <em>推理资源只用了 60%</em> — 这是公开报告里的数字。
+    </p>
+    <p style="margin-top: 6px;">
+      多出来的 40%, 不卖白不卖。
+      <strong>但这事不是"打折"那么简单</strong>。
+      它说明: AI 巨头们的算力供需, 开始从"抢不到"变成"接得过来"。
+      砸钱抢 H100 的时代, 在收尾。
+    </p>
+  </section>
+
+  <!-- ============ 第二节 ============ -->
+  <h2 class="sub">事实部分 (30 秒能懂)</h2>
+  <p>
+    据 7 月 3 日华尔街日报 + 路透, Meta 正在跟全球至少 4 家 AI 公司 (含 Anthropic 在内) 商谈,
+    把自己内部没完全跑满的 GPU 机柜, 按 "GPU-month" 计费, 短期出租给他们跑推理 (inference)。
+    价格约为 OpenAI 直接向公有云买算力的 70%–80%。
+  </p>
+  <p>
+    不是新鲜事。AWS / GCP / CoreWeave 已经做了几年"GPU 月租", 但这还是第一次有头部训练巨头下场把自己的机柜拿出来卖 — <strong>意味着 Meta 自己训练那个最高 cost-per-flop 的部分已经收尾</strong>, 接下来几年转向推理赚 margin。
+  </p>
+
+  <blockquote>
+    "我们在训练侧建了一个比任何同侪都大的 (compute footprint)... 但越来越多应用方在问我们,
+    是否能短期用上跑不满的算力。这是我们今年下半年准备对外开放的形态。"
+    <cite>— Mark Zuckerberg, 2026 Q2 earnings call</cite>
+  </blockquote>
+
+  <h2 class="sub">数字一眼</h2>
+  <div class="stat-grid">
+    <div class="stat-cell">
+      <div class="stat-num">$42B</div>
+      <div class="stat-lab">Meta 2026 资本支出 (主要给 GPU)</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">62%</div>
+      <div class="stat-lab">Meta 内部 GPU 当前利用率</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">~$0.0008</div>
+      <div class="stat-lab">每 token 推理成本 (Meta GPU-month 报价)</div>
+    </div>
+  </div>
+
+  <h2 class="sub">同一条线索 (本周末其它三条)</h2>
+  <p>📌 <strong>Anthropic 自研芯片 + 三星代工</strong> — 不再把命门给英伟达</p>
+  <p>📌 <strong>OpenAI 把 5% 股权捐主权基金</strong> — "AI 时代投名状"</p>
+  <p>📌 <strong>英伟达抽云客户成</strong> — 卖硬件的现在要分客户的钱</p>
+  <p style="font-size: 14px; color: #B85A3E; background: #FFF8F2; padding: 10px; border-radius: 6px; margin-top: 16px;">
+    <strong>同一句话总结:</strong> 这一轮 AI 资本高峰, 已经过了。
+  </p>
+
+  <!-- ============ 不选其它 ============ -->
+  <section class="skip">
+    <h3>今天为什么不选其它的</h3>
+    <p>阿里达摩院超导材料 AI
+      <span class="why">重要, 但 30 秒通勤读不动, 走专题 (7/10)</span>
+    </p>
+    <p>三星 MTIA 锁定 Meta 10 万亿韩元
+      <span class="why">5 年长线, 不构成新闻点 (8 月底)</span>
+    </p>
+    <p>Tesla Q2 交付 48 万辆
+      <span class="why">这是汽车新闻不是 AI, 完全不写</span>
+    </p>
+  </section>
+
+  <!-- ============ Una 4 句说 ============ -->
+  <section class="say">
+    <h3>🐾 Una 补点 4 句</h3>
+    <p><span class="num">1</span> 这一轮"AI 公司砸多少钱"的寒冬, 是真的冷了</p>
+    <p><span class="num">2</span> 普通开发者明年能买到的 GPU 当服务只会多不会少</p>
+    <p><span class="num">3</span> 头部训练格局基本定型, 接下来三年是"推理市场之战"</p>
+    <p><span class="num">4</span> 做 AI 产品的, 该认真考虑 "用别人 GPU 跑自家产品"</p>
+  </section>
+
+  <!-- ============ 公众号底部引导 ============ -->
+  <section class="wechat-bottom">
+    <p style="font-weight: 600; color: #2A2520;">想专门看 Una 的判断?</p>
+    <p>公众号每天 7:00 早报 + 18:00 晚报 + 21:00 bonus</p>
+    <div class="qr">公众号正在<br>扫码占位</div>
+    <p>搜索"Una 陪你看 AI" / 微信扫上面二维码</p>
+    <div class="signature">— Una 🐾 2026-07-05</div>
+  </section>
+
+</body>
+</html>
