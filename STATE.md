@@ -18,6 +18,20 @@
 - cron 第一次跑要等明早 7:00
 - 失败处理: 该日不出稿 (Una 在场 > 卡稿)
 
+## Where we are now (2026-07-07 07:00)
+- ✅ cron 第三期 (7/7 07:01 早选) 跑通 — 早选 2026-07-07-morning 已发
+- ✅ 7 files committed: 31d7446 (pushed origin main)
+- ✅ wrangler deploy v88d5b178 成功 — CF Worker 1101 故障已恢复 (昨天 21:00 故障解)
+- ✅ voice.mp3 (37s / 597KB / danya_xuejie) 生成
+- ✅ index.json 顶部追加 7/7 morning 条目
+- ✅ daily/index.html redirector 指向 7/7 morning
+- ✅ top-level index.html 顶部 featured 切换到 7/7 morning
+- ✅ TG 7069165189 sent
+- 主题: 国家大基金 12 年来首次跨界投纯大模型公司 — DeepSeek 首轮 \$45B 估值 / \$10B 规模 / 国家队领投, 中国 AI 大模型史上最大首轮
+- 📊 同步: 腾讯混元 Hy3 发布 (MoE 295B/21B + 1元/百万token) + 美团 LongCat-2.0 开源 (1.6T) + ICML 2026 Seoul 开幕 + SK Hynix \$28B 美股上市 + Mistral \$3.5B
+- 📝 raw 素材归档: ~/opc-daily/raw/2026-07-07-morning.md (30 条) + 2026-07-07-morning-supplement.md (9 条深度索引)
+- 📮 sub-agent 双轨: main capture 30 条 + supplement 主题深度包, Una 主审选 #1 DeepSeek
+
 ## Where we are now (2026-07-06 21:00)
 - ✅ cron 第二期 (7/6 21:00 晚选) 跑通 — 21evening 已发
 - ✅ 主题: Meta 的 AI agent 赌注, Zuckerberg 自己承认没那么快 (内部 town hall 7/6 PST 16:30)
@@ -54,5 +68,5 @@
 - [ ] loop-run-log.md (cron 跑几次后写)
 - [ ] 公众号 WeChat API token (廷哥抽时间)
 - [ ] waydroid 启动
-- [ ] **CF Worker / Pages 故障诊断** — 2026-07-06 21:00 cron 出现账号层故障 (Worker 1101 / Pages block 8000119), 需要廷哥看 CF dashboard 是否要换账号 / 解封 / 重新申请 worker
+- [x] **CF Worker / Pages 故障** — 2026-07-06 21:00 cron 出现的 1101 故障已恢复 (7/7 07:01 wrangler deploy v88d5b178 成功), Pages (020755.xyz) 状态待 7/7 单独确认
 
