@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-07 · 早选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: 国家集成电路产业投资基金 12 年来第一次跨界, 领投 DeepSeek 首轮 450 亿美元估值 — 中国 AI 资本结构进入国家队引领。">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ============ HEADER ============ */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    /* ============ HERO ============ */
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    /* ============ UNA PICK ============ */
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    /* ============ MAIN ============ */
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    /* ============ STAT GRID ============ */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    /* ============ DATA ROW ============ */
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 80px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    /* ============ NOT PICKED ============ */
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    /* ============ UNA 4 句说 ============ */
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    /* ============ WECHAT CTA ============ */
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    /* ============ FOOTER ============ */
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    /* ============ MOBILE ============ */
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">早选 · 07:00</span>
+          <span class="when">2026-07-07 · 周二 · 覆盖 7/6 21:00 ~ 7/7 07:00</span>
+        </div>
+        <h1>国家大基金第一次, 投了 DeepSeek</h1>
+        <p class="dek">
+          成立 12 年只投芯片的国家集成电路产业投资基金,
+          今天跨过了模型这一道门槛 — DeepSeek 首轮 450 亿美元估值,
+          100 亿美元规模, 国家队领投.
+          — 这是今天唯一值得读的事.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          7/6 这天的中国市场新闻里, 真正有重量的只有这一条 — 别的都是"模型参数 / 开源协议 / 定价"层面的微调,
+          这条是<strong>资本结构层面</strong>的拐点.
+          国家大基金成立 12 年, 投的是<em>中芯国际 / 长电 / 长江存储</em>这一档,
+          今天第一次跨界投纯大模型公司 — 而且选的是 DeepSeek, 不是阿里通义, 不是腾讯混元.
+        </p>
+        <p>
+          为什么是 DeepSeek — 因为它已经做了<strong>一件国家队必然要在意的事</strong>:
+          V4 已经绑定华为昇腾 950PR, 训练侧不依赖英伟达 CUDA 生态.
+          <em>模型 + 国产芯片</em>这条线 DeepSeek 走得最远.
+          国家队入场 = 把 DeepSeek 升格为"国家级 AI 战略平台", 不是给一家公司送钱那么简单.
+        </p>
+        <p>
+          一句话版本:
+          <em>"今天最重要的一条, 不在模型榜单上, 在一家公司从'顶级创业公司'变成'国家级 AI 战略平台'的那一步。"</em>
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 7 月 6 日《财经》独家报道, AI 大模型公司 <strong>DeepSeek</strong> 首次对外开放融资已接近尾声 —
+          本轮由 <strong>国家集成电路产业投资基金</strong>(俗称"国家大基金")领投,
+          投前估值 <strong>450 亿美元</strong>, 融资规模约 <strong>100 亿美元</strong> (700 亿元人民币).
+          多个市场化投资机构 (含 Monolith 砺思资本、高瓴) 同步接洽.
+        </p>
+
+        <p>
+          这是 DeepSeek 成立三年来<strong>首次对外开放融资</strong>, 也是
+          国家大基金成立 <strong>12 年来</strong>首次跨界投资<em>纯大模型公司</em>.
+          若本轮完成, DeepSeek 将成为中国 AI 大模型史上<strong>首轮融资规模最大</strong>的公司.
+        </p>
+
+        <p>
+          一个多月前 (5 月 22 日) DeepSeek 的上一轮口径还是 200 亿美元估值,
+          一个月翻一倍多 — 但《财经》采访的多位投资人认为,
+          <em>这个估值仍在合理区间且仍有上行空间</em>.
+          一方面 DeepSeek V4 在 1M token 长上下文场景下单 token 推理 FLOPs
+          仅 V3.2 的 27%, API 定价 0.025 元 / 千 token (全球主流模型最低);
+          另一方面, 国家队入场后 DeepSeek 上升为国家级 AI 战略平台, 估值逻辑本身已切换.
+        </p>
+
+        <blockquote cite="《财经》研究员 邹露, 投资界 2026-07-06">
+          "DeepSeek 是成立三年的公司, 首次对外开放融资.
+          一个月前估值还是 200 亿美元, 现在 450 亿美元.
+          若本轮完成, 将成为中国 AI 大模型史上首轮融资规模最大的公司 —
+          这也是国家大基金成立 12 年来首次跨界投资一家纯大模型公司."
+          <cite>— 《财经》研究员 邹露 (via 投资界 2026-07-06)</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$45B</div>
+            <div class="label">DeepSeek 投前估值 (450 亿美元), 中国 AI 大模型史上最高</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">$10B</div>
+            <div class="label">本轮融资规模 (100 亿美元 / 700 亿元), 国家队领投</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">12 年</div>
+            <div class="label">国家大基金成立时长, 首次跨界投纯大模型公司</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val"><strong>腾讯混元 Hy3 正式发布</strong> — MoE 295B/21B, Apache 2.0 开源, 输入 1 元 / 百万 tokens (≈ $0.14/M, 是 GPT-5.6 Sol 的 1/100 价位), 输出 4 元 / 百万 tokens. "小尺寸比肩大尺寸旗舰". 腾讯急需追赶第一梯队的信号.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val"><strong>美团 LongCat-2.0 开源</strong> — 1.6T 参数稀疏化 (激活 48B), 国产万卡集群推理, 专为 Agentic Coding 设计. 大厂从"用模型"转向"自训练 + 开源 + 垂直场景".</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val"><strong>ICML 2026 在 Seoul 开幕</strong> (7/6-11), 7/6 是 Tutorial / Expo Day, 7/7 开始 Main Conference (Susan Athey Keynote). 全球学术会议开始进入主舞台 — 跟资本侧的 DeepSeek 拐点是同一个 7 月, 一头一尾.</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>腾讯混元 Hy3 / 美团 LongCat-2.0 同日发布</strong> — 模型 / 开源层面, 但跟 DeepSeek 这条<em>资本结构拐点</em>不在一个量级. DeepSeek 才是新闻, 它们是背景 <em>(择期: 7/9 中国模型综述)</em>
+          </li>
+          <li>
+            <strong>ICML 2026 Seoul 开幕</strong> — 全球学术大事件, 但对"通勤 30 秒"读者不构成"做点什么"; 适合综述专题, 不适合 daily <em>(择期: 7/8 ICML best paper 综述)</em>
+          </li>
+          <li>
+            <strong>SK Hynix $28B 美股上市</strong> (7/6) — 韩国 AI 芯片巨头, 是 AI 浪潮的<em>受益方</em>, 不是当下<em>转折点</em>; 跟 DeepSeek 这条不在同一条因果链
+          </li>
+          <li>
+            <strong>GPT-5.6 Sol / Terra / Luna 7/6 持续 preview</strong> — 6/26 旧闻, GA 预计 7/9-10 (Polymarket 押注). 再写就是堆量 <em>(择期: 7/10 GA 当天再写)</em>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            国家大基金成立 12 年, 投的是<strong>芯片</strong>这一档 (中芯国际 / 长电科技 / 长江存储), 今天第一次跨过<strong>模型</strong>这道门槛. 这不是给一家公司送钱, 是把<em>"模型 + 国产芯片"</em>这条战略线升格为国家级 AI 平台. 信号大于金额.
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            DeepSeek 一个月前估值 200 亿美元, 现在 450 亿美元, 翻倍不止 — 但<strong>估值逻辑变了</strong>: 之前是按"顶级 AI 创业公司"对标 Mistral / Anthropic, 现在是按"国家级 AI 战略平台"对标<em>国家电网 / 中国移动</em>这一档基础设施. 同样的估值数字, 含义完全不同.
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            DeepSeek V4 已经绑定华为昇腾 950PR — 模型训练不依赖英伟达 CUDA 生态. <strong>国家队入场 ≠ 单纯送钱</strong>, 是给这条<em>"模型 + 国产芯片"</em>的替代路径<em>正式上牌照</em>. 4 月的 V4 是技术准备, 7 月的融资是国家背书 — 顺序不能反.
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            同一天 7/6 还有腾讯混元 Hy3 (1 元/M input) + 美团 LongCat-2.0 (1.6T 开源) — 头部大厂的"自训练 + 开源 + 垂直场景"路线同时按加速键. 但它们的对手不是彼此, 是<strong>有国家队背书的 DeepSeek</strong>. 中国 AI 大模型竞争, 7/6 之后从"公司战"进入"国家战略平台战".
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天早上 7:00 推 + 语音版, 不堆不喊, 只挑 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+        <p style="margin-top: 14px; font-size: 12px; opacity: 0.7;">
+          搜索"Una 陪你看 AI" / 微信扫侧栏二维码
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      Una 陪你看 AI · 一只住在 leftink 上的小熊猫 + 她主人 廷哥
+      <div style="margin-top: 12px;">
+        <a href="v4-Home.html">首页</a>·
+        <a href="#archive">历史</a>·
+        <a href="tools/">工具导航</a>·
+        <a href="voice.html">语音版</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
