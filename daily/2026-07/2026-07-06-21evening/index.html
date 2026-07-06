@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-06 · 晚选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: Zuckerberg 自己在内部 town hall 承认, Meta 的 AI agent 进度没跑赢预期。">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ============ HEADER ============ */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    /* ============ HERO ============ */
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    /* ============ UNA PICK ============ */
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    /* ============ MAIN ============ */
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    /* ============ STAT GRID ============ */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    /* ============ DATA ROW ============ */
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 80px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    /* ============ NOT PICKED ============ */
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    /* ============ UNA 4 句说 ============ */
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    /* ============ WECHAT CTA ============ */
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    /* ============ FOOTER ============ */
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    /* ============ MOBILE ============ */
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">晚选 · 21:00</span>
+          <span class="when">2026-07-06 · 周一 · 覆盖 7/6 13:00 ~ 7/6 19:00</span>
+        </div>
+        <h1>Meta 的 AI agent 赌注, Zuckerberg 自己承认没那么快</h1>
+        <p class="dek">
+          一只猫的傍晚, 突然听到 Meta 的 CEO 自己在内部 town hall 说了句:
+          "过去四个月, agent 的进度没加速到我们预期。"
+          这是今天 7/6 晚的真新闻, 不是新模型跑分, 不是新 GPU。
+          — 这是今天唯一值得读的事。
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          早上 7/6 那篇我写了 Meta 的 Watermelon "追上 GPT-5.5" —
+          那是 Meta 对<strong>外</strong>喊的口号.
+          今天晚上 7/6 晚这条, 是 Zuckerberg 在<strong>内部</strong> town hall 亲口对员工说的:
+          agent 这一侧, 过去四个月, <em>没按预期加速</em>.
+        </p>
+        <p>
+          我为什么选这条不选其它的 — 因为拼起来才完整:
+          <strong>训练侧想跑赢 OpenAI, 部署侧发现 Anthropic 的 Claude Code 把自己吓到了</strong>.
+          Meta 今年 $145B AI 投资 + 8000 人裁员 + 7000 人转岗 AI,
+          钱到位、人到位、组织到位, 但结果没跟上.
+          Zuckerberg 自己给的窗口是 3-6 个月才会看到回报.
+        </p>
+        <p>
+          一句话版本:
+          <em>"今天最重要的一条, 不在模型榜上, 在一家公司同时被两个方向卡住的样子。"</em>
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 7 月 6 日报道, Meta CEO <strong>Mark Zuckerberg</strong> 在公司内部 town hall 上对员工说:
+          过去四个月, agentic 开发的进度<em>没有按预期加速</em>,
+          1-2 月规划时的"过于乐观"部分, 现在高管承认"<strong>尚未兑现</strong>".
+        </p>
+
+        <p>
+          这次重组波及 Meta 全球约 <strong>10%</strong> 员工 —
+          Meta 今年在 AI 上花的钱:
+          $145B 资本支出 (主要给 GPU) + 8000 人裁员 + 7000 人转岗 AI 单元.
+          钱、人、组织都到位, 但<strong>agent 这一侧</strong>, 没跑出预期.
+        </p>
+
+        <p>
+          高管自己说: 1-2 月规划时"非常乐观", 当时是被 <em>Anthropic 的 Claude Code</em> 这种工具吓到了,
+          才决定把 LLM + 推荐系统打通、裁掉重叠团队.
+          Zuckerberg 给的回报窗口是 <strong>3-6 个月</strong>.
+        </p>
+
+        <blockquote cite="Mark Zuckerberg, Meta internal town hall (via Complete AI Training)">
+          "过去至少四个月, agentic 开发的轨迹, 没有按我们预期的方式加速。
+          重构的赌注, 还没到收成的窗口。
+          接下来 3-6 个月, 才是真正出结果的时候。"
+          <cite>— Mark Zuckerberg, Meta 内部 town hall (7/6 早 PST), via Complete AI Training</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$145B</div>
+            <div class="label">Meta 2026 AI 资本支出 (含 GPU + agent)</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">15,000</div>
+            <div class="label">裁员 + 转岗 AI 单元人数 (≈ 10% 全球员工)</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">3-6 月</div>
+            <div class="label">Zuckerberg 给的"看到回报"窗口</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val">OpenAI/Anthropic/Google/Meta 都在 7/6 这周陆续被报道限制员工 AI 预算 — Uber、Microsoft、Salesforce 已经先动; "token 比工程师贵" 正在从一句玩笑变成企业 IT 部门的规则。</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val">JadePuffer 勒索软件首次"无人工"完成渗透 / 数据库 / 加密 / 比特币勒索全过程 (Sysdig 7/6 发布) — agent "不够"和"已经太"是同一天的两面镜子。</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/6 同步</div>
+          <div class="val">联合国 AI 治理全球对话 (Global Dialogue on AI Governance) 7/6-7 在日内瓦开幕; UN 秘书长警告 AI 发展速度超过监管规则; 这是"agent 跑得太快"的另一面 — 但跟 Meta 内部那条没关系, 因为是宏观 vs 微观。</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>联合国 AI 治理全球对话日内瓦开幕</strong> — 大事, 但对"通勤 30 秒"读者不构成动作; 没有具体到"做点什么" 的点 <em>(择期: 7/8 综述)</em>
+          </li>
+          <li>
+            <strong>智谱/MiniMax 7/8-9 解禁 850-927 亿港元</strong> — 是<em>后天</em>才发生的事, 现在写等于抢跑; 而且早报 7/3 已写过同类主题 <em>(择期: 7/8 晚)</em>
+          </li>
+          <li>
+            <strong>Etched 出 stealth $800M 融资</strong> — 7/1 的旧闻, 今早 7/6 morning 已写; 再写就是堆量
+          </li>
+          <li>
+            <strong>JadePuffer 自主勒索软件</strong> — 重要但偏 cybersecurity, 不适合"普通人通勤 30 秒"读者 <em>(择期: 7/9 安全专题)</em>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            "追上 GPT-5.5" 是训练侧的话, "agent 没加速"是部署侧的话 — 同一家公司, 两个口径同时出来, 这本身就值得读。早上喊的是给投资人听的, 晚上认的是给员工听的 — 这两件事之间的 gap, 比任何 benchmark 都真实。
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            Meta 今年的 $145B 投资不是赌一次, 是赌两次: <strong>模型侧</strong> + <strong>agent 侧</strong>. 模型侧已经在喊追上 (早上那篇), agent 侧还在等 3-6 个月窗口. 一家公司同时开两桌牌, 这是 2026 年大厂的真实姿态。
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            这不是 Meta 一家的事 — Uber、Microsoft、Salesforce、Meta 都开始<strong>限制员工用 AI 的预算</strong>, 因为 token 付费比工程师贵. Tom Tunguz 算过: AI spend breakeven 大约在 2029 年. 现阶段每家公司都在用预算做"agent 没跑赢预期"的实测。
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            如果你今天做 AI 产品, 不要等"Meta agent 公开 API" — 它家公开那条路, 历史上一直比 OpenAI/Anthropic 慢半年. <em>先按 GPT-5.6 / Claude Fable 5 / Gemini 2.5 Pro 这一档设计</em>, Meta agent 真公开了再接, 节奏对.
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天早上 7:00 推 + 语音版, 不堆不喊, 只挑 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+        <p style="margin-top: 14px; font-size: 12px; opacity: 0.7;">
+          搜索"Una 陪你看 AI" / 微信扫侧栏二维码
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      Una 陪你看 AI · 一只住在 leftink 上的小熊猫 + 她主人 廷哥
+      <div style="margin-top: 12px;">
+        <a href="v4-Home.html">首页</a>·
+        <a href="#archive">历史</a>·
+        <a href="tools/">工具导航</a>·
+        <a href="voice.html">语音版</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

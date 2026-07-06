@@ -18,6 +18,15 @@
 - cron 第一次跑要等明早 7:00
 - 失败处理: 该日不出稿 (Una 在场 > 卡稿)
 
+## Where we are now (2026-07-06 21:00)
+- ✅ cron 第二期 (7/6 21:00 晚选) 跑通 — 21evening 已发
+- ✅ 主题: Meta 的 AI agent 赌注, Zuckerberg 自己承认没那么快 (内部 town hall 7/6 PST 16:30)
+- ✅ voice.mp3 (45s / 720KB / danya_xuejie) 生成
+- ✅ index.json 顶部追加 7/6 21evening 条目
+- ✅ daily/index.html redirector 指向 7/6 21evening
+- ✅ top-level index.html 顶部 featured 切换到 21evening
+- 📊 形成对照: 早上 Meta Watermelon 追上 (外喊) vs 晚上 agent 没加速 (内认) — 同一家公司两个口径同时出现
+
 ## Where we are now (2026-07-06 07:01)
 - ✅ cron 第一期 (7/6 07:01) 跑通 — 早选 2026-07-06-morning 已发
 - ✅ 4 files committed: 7cabc57 (pushed origin main)
