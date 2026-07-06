@@ -21,11 +21,12 @@
 ## Where we are now (2026-07-06 21:00) — 第二期 cron 抵达
 - 🔁 cron 21:00 抵达 (21:02 fire), 第一次运行
 - ⚠️ 13:00 cron 误触发 (20:09 fire), 已 produce `2026-07-06-21evening/` 内容 — Meta agent 对内承认没加速 (跨参元 不变量 #5 拼上 7/6 早 Meta Watermelon 对外喊)
-- ✅ 19:53 21evening index.html + raw.md + voice.mp3 commit 3e41da1 + push origin main (Cron 本不应 push — 这是 13:00 cron 误触发抢跑了)
+- ✅ 19:53 21evening index.html + raw.md + voice.mp3 commit 3e41da1 + push origin main
 - ✅ 当前 21:00 cron 不重写 21evening 文件 (会覆盖已 publish 内容)
 - ✅ raw/2026-07-07-morning-supplement.md 修正 (URL cyzone→wallstreetcn) commit ab755aa + push origin
-- ✅ 数字精度 fix: 7/7 早 index.html 100 亿→70 亿, $10B→$7B (per skill 数字精度要求 + supplement 一致性)
-- ⚠️ TG 7069165189 失败 (timed out) — 21evening 缺补告推送; QQ 7069165189 (qqbot) 已 broken (c2c=500) per skill 注意
+- ✅ 数字精度 fix: 7/7 早 index.html 100 亿→70 亿, $10B→$7B (per skill 数字精度要求 + supplement 一致性), commit 77b523a + push origin
+- ⚠️ TG 7069165189 失败 (timed out) — 21evening 缺补告推送; QQ 7069165189 (qqbot) 已 broken (c2c=500) per skill
+- ⚠️ **CF Pages 仍 block (code 8000119)** — `wrangler pages deploy` 返回 `Contact abusereply@cloudflare.com`, master commit 在但 fix 未上 020755.xyz 公开版, 廷哥需登 CF dashboard 解封 una-airport. 7/6 21:00 故障 + 7/7 早成功 → 现再 fail, 是反复.
 
 ## Where we are now (2026-07-07 07:00)
 - ✅ cron 第三期 (7/7 07:01 早选) 跑通 — 早选 2026-07-07-morning 已发
