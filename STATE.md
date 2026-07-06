@@ -80,3 +80,14 @@
 - [ ] waydroid 启动
 - [x] **CF Worker / Pages 故障** — 2026-07-06 21:00 cron 出现的 1101 故障已恢复 (7/7 07:01 wrangler deploy v88d5b178 成功), Pages (020755.xyz) 状态待 7/7 单独确认
 
+## Where we are now (2026-07-07 07:02) — 第四期 cron 抵达
+- 🔁 OPC 早报 7:00 cron 抵达 (07:01:02 fire), 第四次运行
+- ✅ 早选 2026-07-07-morning 已存在 (commit 31d7446, fix 77b523a) — 当前 cron 不重写 (cron 时序判断矩阵: 同 slot 已 commit + push, 不要再 publish 第二条; 这是 cron 第四期 signal-on-existing 模式)
+- 🛠️ **fix #3 — 移除 hallucinated 引述 (commit 5511728 + push origin main)**:
+  - 7/7 早 index.html blockquote cite 是 `《财经》研究员 邹露` — raw.md / supplement.md **没有任何 '邹露' 字样**, 是 subagent 自创的人名
+  - 违反 skill 不变量: **具名引述禁用** — 若来源是《财经》"获悉" 类匿名引述, 写"《财经》获悉", 不要 subagent 自己给个具体人名
+  - 替换为权威源: 华尔街见闻 / 《财经》独家 2026-07-06, https://wallstreetcn.com/articles/3773316 (supplement #1 source)
+  - 性质: fix: (additive, 不重写 voice.mp3 / 不重写 4-section 草稿) — per skill "**已确认的事实错误** 可先 patch 后报告"
+- ⚠️ CF Pages 020755.xyz cache 仍返旧版 (curl 仍 `邹露`); origin GitHub 是新版 (raw.githubusercontent 已更新) — Pages 项目 block 8000119 状态未变, **不要反复 wrangler pages deploy** per skill
+- ⏭️ 下次 cron: 13:00 OPC 午后 (d4623ff72812) — 但前提是 Una 醒 + 主审可达
+
