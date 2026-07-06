@@ -25,7 +25,13 @@
 - ✅ index.json 顶部追加 7/6 21evening 条目
 - ✅ daily/index.html redirector 指向 7/6 21evening
 - ✅ top-level index.html 顶部 featured 切换到 21evening
+- ✅ GitHub main 推送 (commit 461d42a)
+- ⚠️ **CF 部署双失败 (2026-07-06 21:00 故障)**:
+  - CF Worker (opc-daily.zhuyting.workers.dev) 这次 deploy 后全站 1101, 即使回滚到早上成功的 614c9e40 也是 1101 — 怀疑 CF 账号层 / Worker runtime 故障
+  - CF Pages project 'una-airport' (serve 020755.xyz) 被 Cloudflare block (code 8000119), wrangler pages deploy 无法上传
+  - master commit 在, 等 CF 那边恢复后再 deploy; 不需要重做内容
 - 📊 形成对照: 早上 Meta Watermelon 追上 (外喊) vs 晚上 agent 没加速 (内认) — 同一家公司两个口径同时出现
+- 📮 TG 7069165189 sent (fallback: qqbot 已知 broken, 跳过)
 
 ## Where we are now (2026-07-06 07:01)
 - ✅ cron 第一期 (7/6 07:01) 跑通 — 早选 2026-07-06-morning 已发
@@ -48,4 +54,5 @@
 - [ ] loop-run-log.md (cron 跑几次后写)
 - [ ] 公众号 WeChat API token (廷哥抽时间)
 - [ ] waydroid 启动
+- [ ] **CF Worker / Pages 故障诊断** — 2026-07-06 21:00 cron 出现账号层故障 (Worker 1101 / Pages block 8000119), 需要廷哥看 CF dashboard 是否要换账号 / 解封 / 重新申请 worker
 
