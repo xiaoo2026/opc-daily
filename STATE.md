@@ -138,3 +138,30 @@
 - 📝 选材决策回填 (给明天 Una): 候选 1 选中, 候选 2 (Trump gated regime 全行业升级) / 候选 3 (Karpathy-LeCun-Fung 学术内层 world model + harness) 留作后续素材; "inner cost check" baseline 持续生效直到 Lines v. OpenAI 案了结 / Microsoft 4,800 落地 / Anthropic fingerprint 公开听证为止
 - ⏭️ 下次 cron: 7/8 早 7:00 cron (Gen 3 baseline 第二天验证)
 
+
+## Where we are now (2026-07-08 07:13 CST) — 第八期 cron 抵达 (早)
+- 🔁 OPC 早报 7:00 cron 抵达 (07:00:31 fire), 第八期运行
+- ✅ Una 主审 选 **候选 A (Anthropic Fable 5 paywall + DeepSeek 永久降价 1/4)**, 写者一致 — 与 sub-agent 候选推荐吻合
+- ✅ 不变量 #5 同日 cross-reference 通过自检: 7/7 evening (钱扩张+人在失 inner cost baseline) → 7/8 早 12h 后 IP 公司自己回应 (worker 层 Microsoft 7/6 裁 4,800 已存在, user 层 Anthropic Fable 5 paywall 上线, trust 层 Anthropic Sonnet 5 同日隐式涨价 25-40%); inner cost baseline 仍生效, 但时间结构从 "暴露 → 操作性回应" 迁移
+- ✅ 不变量 #6 loop+darwin 双 YES:
+  - **Loop 闭环**: "AI 估值故事 = outer capital + inner cost 双轴, 双向都在提速" — 7/7 evening 提, 7/8 早验证. SKILL.md 不变量层的新结构化判据.
+  - **Darwin 突变**: baseline 持续生效条件 — 直到 Anthropic 6/1 S-1 后首份公开 S-1 / DeepSeek V4-Pro 降价后 9-12 月跑出 run-rate + 用户数 / Microsoft MAI 替代 OpenAI + Anthropic 落地 K2 数学 任一边不动 = 该边 baseline 失效, 主编 pivot.
+- ✅ 4-section v4-Daily.html 渲染 (commit 5e8355d, pushed origin main):
+  - 标题: "Anthropic 把 paywall 直接亮出来, DeepSeek 把价格砍到 1/4" (≤20 字 ✓ 人话 ✓)
+  - 数字一眼 3 卡: $10 / $50 (Anthropic Fable 5 usage-credit 上线) / 1/4 (DeepSeek V4-Pro 永久降价) / $450亿 (国家队领投估值翻番)
+  - 事实部分 4 段 (Anthropic Fable 5 paywall + Sonnet 5 隐式涨价反向证据 + DeepSeek 永久降价 + 大基金 $450亿)
+  - blockquote cite: The Macro Wire / 湾区信息汇 DeepSeek 官方公告 / The Decoder Sonnet 5 hidden — 3 个 source cite, 全部 raw grep 命中
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 552KB / 34.4s, ID3 header + 32000Hz sample rate)
+- ✅ wrangler deploy v9bf66ab2-a454-40ed-91fd-ba29e12ad6c4 成功 (32 files uploaded, 2.93 sec)
+  - ⚠️ **2026-07-08 07:09 CST discovered**: 整段 leftink 网络 workers.dev zonetimed out (curl exit 28 / connection timed out) — cloudflare.com / dash.cloudflare.com / cloudflarestatus.com 全部可达, 这是 leftink-side BGP 局部问题 不是 CF outage. wrangler deploy 仍成功 (CF API 走不同路由). 公开 URL 暂时看不到新 deploy, 等 BGP 自愈.
+- ✅ daily/index.html redirector → 2026-07-08-morning
+- ✅ top-level index.html: topbar 2026-07-08 / eyebrow 早选 / featured-card Fable 5 + DeepSeek 降价 / archive 7-08 早条目
+- ✅ daily/2026-07/index.json: 顶部追加 7/8 morning 条目 (html_url 指向 morning)
+- ✅ TG 7069165189 sent: "Una 选: Anthropic 把 paywall 直接亮出来..."
+- ✅ ad-hoc verifier 28 PASS / 0 FAIL — raw 30 条 / index.html markers / voice.mp3 ID3+32000Hz / index.json valid / redirector / topbar+eyebrow+featured / git SHA / author / 8a 数字 grep / 8b cite 名字 / 8d skeleton 无补料标记 (cron fresh publish, 无跨信源补料)
+- 主题: **AI 估值故事的真结构 = outer capital + inner cost 双轴, 双向都在提速**. 7/7 evening baseline (钱扩张+人在失 inner cost 三层) 24h 后验证: worker (Microsoft 7/6 4,800) + user (Anthropic Fable 5 paywall 上线 7/8) + trust (Anthropic Sonnet 5 隐式涨价 25-40%) 都被 IP 公司以商业化操作回应. 7/8 早另一新维度 = 中美头部 IP 公司同 12h 双线对位: Anthropic 提价试探 $800B IPO 估值锚点, DeepSeek 永久降价 75% 把"便宜能赚钱"做成可复制样本. 一提一降 = 2026 H2 估值故事的真正悬念
+- ⚠️ CF Pages 020755.xyz 仍 block (8000119) — 7/8 早 cron 没尝试 wrangler pages deploy per skill; master commit + Worker deploy 在, 不影响合规 publish; 廷哥仍需登 CF dashboard 解封 una-airport
+- 📝 Pitfall 9 partially triggered — 但 sub-agent 90s 内落盘 (远低于 5 min 阈值), 不需要 fast-mode fallback. 子 agent 7:09 dispatch → 7:10 raw 文件已存在 → 7:11 phase 3 起草 → 7:12 index.html 落盘 + voice TTS → 7:13 commit push + wrangler + TG. 全程 ~13 min (cf 7/7 evening 17 min 起的标准; 7/6 evening 7 min, 7/7 morning 18 min 含 fix-up)
+- 📝 Pitfall 11 (URL canonical) verified — 14 个 URL 全部完整 (无 ... 截断, 无省略 path), 全 canonical
+- 📝 "Loop+Darwin baseline" baseline 持续生效条件 (给 tomorrow Una): 直到 (a) Anthropic 6/1 S-1 后首份公开 S-1 / (b) DeepSeek V4-Pro 降价后 9-12 月 run-rate + 用户数跑通 / (c) Microsoft MAI 替代 OpenAI+Anthropic 落地 K2 数学. 任一边不动 = 该边 baseline 失效, 主编 pivot
+- ⏭️ 下次 cron: 7/8 13:00 OPC 午后 (OPC 午后 13:00 (Una 主编)) — 主审建议 pivot: "美侧 Anthropic 双线 (Fable 5 + Sonnet 5) 升级 vs 中美对照 国家队趋势" 或 "新事件不再 'outer capital + inner cost 双轴对位' 时, baseline 失效, 切到下一组"
