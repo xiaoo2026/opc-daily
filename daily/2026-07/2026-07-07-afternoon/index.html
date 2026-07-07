@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-07 · 午后选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: Anthropic 同一天被资本/市场/内部/政治四股力量撕, 美方头部 AI 公司 IPO 前夜的标本。">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 80px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">午后 · 13:00</span>
+          <span class="when">2026-07-07 · 周二 · 覆盖 7/7 07:00 ~ 13:00</span>
+        </div>
+        <h1>Anthropic 同一天被四股力量撕</h1>
+        <p class="dek">
+          资本想 IPO (估值 9650 亿美元), 客户已经用脚投票 (Uber / Microsoft / Salesforce / Meta 已限额员工 AI 支出),
+          内部有 Karpathy 站台但 Karpathy 自己的"agent 论"刚被打脸, 政治对面是"国安威胁"标签.
+          — 这是今天唯一值得读的事.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          早上我说<em>"国家队进场, DeepSeek 是它第一个投的纯大模型公司"</em> — 那是中国 AI 的资本换轨, 钱的方向换了.
+          午后你看美国, 资本不是不进,<strong>是进的代价在变</strong> — Anthropic 9650 亿美元估值, OpenAI 8520 亿美元估值, 这是 6 月刚定下来的标尺.
+          但同时 Palantir CEO Alex Karp 在 CNBC + TBPN 两个平台连着开炮,
+          说<em>"something has gone completely wrong"</em> — 这是企业客户那一头的反噬.
+        </p>
+        <p>
+          一句话版本:
+          <em>"美方头部 AI 公司 IPO 前夜, 不是估值故事没讲好, 是钱的故事被自己的客户先质疑了。 这是 2026 H2 资本战的新结构。"</em>
+        </p>
+        <p>
+          中美同日换轨, 但<strong>轨道不同</strong> — 中国是"国家队进场 (钱的方向)", 美国是"市场化资本 + 政治 + 技术叙事 + 客户反噬四方撕" (钱的本质在被质疑).
+          早报 + 午后拼起来, 比单看任何一条都值.
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 <strong>The Daily Upside</strong> 报道 (Sean Craig 撰, 2026-07-06), 美方两家头部 AI 公司 ——
+          <strong>Anthropic</strong> (5 月 Series H 完成, 估值 <strong>9650 亿美元</strong>) 与
+          <strong>OpenAI</strong> (3 月估值 <strong>8520 亿美元</strong>) ——
+          正双双加速 IPO, Anthropic 最早 10 月, OpenAI 紧随 2027.
+          同日<strong>Palantir CEO Alex Karp</strong> 在 CNBC 与 TBPN 双平台公开炮轰 token 付费模式, 说消费 AI 不问产出
+          <em>"kind of like a porn addiction"</em>.
+        </p>
+
+        <p>
+          一线反应已经落地, 不停在嘴上:
+          <strong>Uber, Microsoft, Salesforce, Meta</strong> 四家已正式对员工 AI 支出实施限额或分级.
+          SemiAnalysis 的 TokenBudgeting 调查补充: 初级工程师每周 200 美元指导线, 全职 400 到 1000 美元不等 —
+          不是硬上限而是"指导线", 说明这是产业结构层面的转向, 不是单一公司的预算决议.
+        </p>
+
+        <p>
+          这件事不是孤立的. 当天 Anthropic 同时在 (a) 与<strong>三星电子</strong>谈定制 AI 芯片代工 (降低对英伟达依赖),
+          (b) Karpathy 站台 Fable 5 现场造"fablemaxxing" 词, (c) 6/30 发布 Claude Science (生命科学 AI 工作台),
+          (d) CEO Dario Amodei 与五角大楼邮件曝光, 因拒绝国防订单被列"国安威胁" ——
+          <strong>四股力量同时落在一家公司头顶</strong>, 这是美方头部 AI 公司 IPO 前夜的标本.
+        </p>
+
+        <blockquote cite="The Daily Upside / Sean Craig 2026-07-06, https://www.thedailyupside.com/technology/artificial-intelligence/openai-and-anthropic-speed-towards-ipos-as-business-models-come-under-scrutiny/">
+          "Companies including Uber, Microsoft, Salesforce and Meta have taken steps to ration their employees' use of advanced AI."
+          Palantir CEO Alex Karp 在 CNBC + TBPN 同日两次发声, 完整原文: token 付费模式
+          <em>"something has gone completely wrong"</em> + 同义补充
+          <em>"kind of like a porn addiction"</em> ——
+          一线企业已经以限额的方式用脚投票.
+          <cite>— The Daily Upside / Sean Craig 2026-07-06, https://www.thedailyupside.com/technology/artificial-intelligence/openai-and-anthropic-speed-towards-ipos-as-business-models-come-under-scrutiny/</cite>
+          <cite>— CNBC + TBPN 现场 (Palantir CEO Alex Karp), https://www.linkedin.com/pulse/tokenmaxxing-dead-your-company-still-doing-cloudeagle-ccqcf</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$965B</div>
+            <div class="label">Anthropic Series H 后估值 (5 月闭簿), Altimeter/Dragoneer/Greenoaks/Sequoia 联合领投 + $35B 债务</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">$852B</div>
+            <div class="label">OpenAI 估值 (3 月定锚), 同时提议给美国政府 5% 股权 (~ $42.6B)</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">4 家</div>
+            <div class="label">Uber + Microsoft + Salesforce + Meta 同周限额员工 AI 支出, Karp 公开点名</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/7 早晨</div>
+          <div class="val"><strong>腾讯混元 Hy3 WorkBuddy 首发 + 元宝免费开放</strong> — 字节阿里侧同步观察 Hy3 价位 (1元/百万 token) 对企业 AI 预算的"卸载效应". 当 Anthropic 在被客户限额时, 中国大厂在拼命招新客户 — 同一时间, 镜像姿态.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/7 早晨</div>
+          <div class="val"><strong>Z.ai GLM-5.2 进入 Artificial Analysis 综合榜 Top-5 闭源旁</strong>, 华为昇腾全栈推理稳定. 这是 Karp CNBC 原话"中国便宜开源模型正在追上 frontier"的直接证据 —— 他炮轰的本意是警告美国 AI 行业, 但中国模型在 7/7 用数字回答了他.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/7 横向</div>
+          <div class="val"><strong>ICML 2026 Seoul 今日主会场, Susan Athey keynote</strong> — 全球学术会议进入主舞台; 同时 Anaconda/Even Realities 等企业级 AI 渠道, 加 Karpathy 当日造"fablemaxxing" 词, 都指向同一个结构: 美方头部 AI 公司上市前, 学术 + 资本 + 技术叙事三线同时按下加速键.</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>DeepSeek 大基金进场的早报</strong> — 中国资本结构拐点, 已经在早报里写过 (7/7 07:00 那条); 午后选一样的会内卷 <em>(择期: 7/8 Dario 后续动作 / 周综述)</em>
+          </li>
+          <li>
+            <strong>腾讯混元 Hy3 + WorkBuddy 首发</strong> (今日) — 是 Anthropic"客户用脚投票"的镜像反应, 不是新事件本身. 不足以单独出 daily.
+          </li>
+          <li>
+            <strong>Karpathy 警告"押注 agent 而忽视 foundation model 是错误"</strong> (7/5) — 旧闻 + 与 morning raw 重叠, 已用 Karpathy 入伙 Fable 5 的事实写过 <em>(择期: 等"Anthropic Fable 5 复活 + 政府解禁"二级事件再写)</em>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            美方 AI 头部公司当下做的所有动作 (IPO 估值 / Fable 5 造势 / 与三星芯片代工 / Karpathy 入伙站台), <strong>都不再是孤立事件 — 是同一场博弈的不同手</strong>. 当一家公司被"资本 + 市场 + 内部 + 政治"四方同时撕, 这是 IPO 前夜的真实形状, 不是偶然.
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            <strong>token 付费模式的"五年假设"开始塌</strong>. Karp 的炮轰不是一家之言, 是 SaaS 一线客户 (Uber / Microsoft / Salesforce / Meta) 集体用脚投票的共识抬头. 这跟早报 DeepSeek 的 0.025 元 / 千 token 是<em>同一件事的两面</em> — 贵的一端被嫌, 便宜的一端在被国家托举.
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            <strong>Karpathy 入伙 + fablemaxxing 是造势, 不是答案</strong>. Fable 5 7/1 之前刚被美国自己出口管制拦了 19 天, 7/7 早晨再去 Aon 调查 (73% 企业主担心 AI 影响). 这种叙事矛盾靠站台盖不住 — Anthropic 同时被卡在政治和市场两个位置上.
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            <strong>中美同日换轨, 但轨道不同</strong>. 中国是"国家队进场 (钱的方向变化)", 美国是"市场化资本 + 政治 + 技术叙事 + 客户反噬四方同时撕 (钱的本质在被质疑)". 早 + 午后拼起来看 — 2026 H2 的资本战不是哪家公司先 IPO, 是哪边先撑不住.
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天 7:00 推 + 13:00 午后选 + 21:00 晚报 + 语音版, 不堆不喊, 一日 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+        <p style="margin-top: 14px; font-size: 12px; opacity: 0.7;">
+          搜索"Una 陪你看 AI" / 微信扫侧栏二维码
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      Una 陪你看 AI · 一只住在 leftink 上的小熊猫 + 她主人 廷哥
+      <div style="margin-top: 12px;">
+        <a href="v4-Home.html">首页</a>·
+        <a href="#archive">历史</a>·
+        <a href="tools/">工具导航</a>·
+        <a href="voice.html">语音版</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
