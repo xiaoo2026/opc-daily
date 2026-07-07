@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-08 · 早选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: 7/8 早 Anthropic Fable 5 把 paywall 直接亮出来 — 订阅之外, 再按 token 收费, 同时 DeepSeek 把 V4-Pro 价格永久降到原价的 1/4. 美方头部 IP 公司第一次把"提价能不能走通"摆在全行业面前; 中方头部 IP 公司的回答是直接降价 75%. 中美同日双向测试 — 看哪边更像 2026 H2 真答案.">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 96px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">早选 · 07:00</span>
+          <span class="when">2026-07-08 · 周三 · 覆盖 7/7 21:00 ~ 7/8 07:00</span>
+        </div>
+        <h1>Anthropic 把 paywall 直接亮出来, DeepSeek 把价格砍到 1/4</h1>
+        <p class="dek">
+          7/8 早 7:00 起, Anthropic Fable 5 全面转 usage-credit 计费 ($10/M input, $50/M output, 订阅之外还得按 token 缴费); 同一窗口里 DeepSeek 把 V4-Pro API 永久降到原价 1/4. 一提一降, 中美头部 AI 公司同 12 小时把"AI 估值故事的真结构"摆上桌 — 头部 IP 公司第一次正面回答: 这个生意到底赚不赚钱, 看提价能不能走通.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          昨天 21:00 evening 那篇我写<em>"今天 钱在扩, 人在失"</em> — 那是说估值故事里完全缺席的 inner cost 三层 (worker / user / trust) 同周并发同源. 这是 <strong>cost-side 的 baseline</strong>: outer capital (钱扩张) 的反向资产, 已经肉眼可见.
+        </p>
+        <p>
+          7/8 早 12 小时过去, 这条 baseline 被验证, 但不是用 inner cost 层验证 — 是用 <strong>IP 公司自己</strong>验证. Anthropic Fable 5 把 paywall 直接摊到桌面上, 10月 IPO 前 12 周最大单日商业化转折, 配套 Manual Mode 默认权限一并上线; 同 12h DeepSeek 把 V4-Pro 永久砍到原价 1/4 (0.025元/M 缓存命中输入, 3元/M 输入, 6元/M 输出). 一边提价试探 IPO 估值 $800B 锚点, 一边降价把"开源便宜能赚钱"做成可复制样本.
+        </p>
+        <p>
+          早上接着 7/7 evening baseline 的主线: <em>昨天是 outer capital 故事里完全缺席的 inner cost 三层同时爆; 今天是 IP 公司自己把"提价 + 降价双向测试"摆在全行业面前</em>. 同一周的第二天, 主题已经从"内部 cost 暴露"演进到"商业化打法公开" — 这是同一组事件的同一个时间结构, capital & cost 双向都在提速.
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 <strong>The Macro Wire</strong> 7/7 早报 + <strong>Build Fast with AI</strong> 7/7 roundup 综合,
+          <strong>Anthropic Fable 5</strong> 自 <strong>2026-07-08</strong> 起全面切换 usage-credit 计费:
+          已在 Pro / Max / Team / Enterprise 订阅基础之上, 使用 Fable 5 须额外按 token 购买,
+          新价 <strong>$10/百万 tokens 输入</strong>, <strong>$50/百万 tokens 输出</strong>.
+          这是 Anthropic 6/1 已向 SEC 提交保密版 S-1 后, IPO 前 12 周首次公开商业化转折.
+          同期 <strong>Claude Code Manual Mode</strong> 默认部署 (任何敏感动作需人工显式 approve),
+          Anthropic 公开把它定位为<em>"regulatory scrutiny + IPO 前 safety-first 加固"</em>.
+        </p>
+
+        <p>
+          据 <strong>The Decoder</strong> 7/1 持续跟踪 + 7/8 早回声,
+          <strong>Anthropic Sonnet 5</strong> 在官方价格表不变的前提下, 通过减少输出 token 计数 + 增加"thinking tokens" + 隐藏 reasoning steps 等手法,
+          实现 <strong>隐式涨价 25-40%</strong> — 把"涨价"装进 token 模式不可见层.
+          这是对 Karp 7/1 CNBC + TBPN 双平台 "token 模式完全错" 抨击的具体反向证据:
+          <em>一边被说 token 模式不公平, 一边把 token 模式的不公平又加深了一层</em>.
+        </p>
+
+        <p>
+          据 <strong>DeepSeek 官方</strong> 5/31 公告 + 7/8 早回声,
+          <strong>DeepSeek-V4-Pro API</strong> 5/31 起永久降价至原价的 1/4:
+          <strong>输入 (缓存命中) 0.025元/百万 tokens</strong>, <strong>输入 (缓存未命中) 3元/百万 tokens</strong>, <strong>输出 6元/百万 tokens</strong>,
+          <strong>创全球大模型价格新低</strong>.
+          与 Anthropic Fable 5 usage-credit 计费同日启动形成 <strong>中美主流模型定价两极</strong>: Anthropic 提价 50% / DeepSeek 降价 75%.
+        </p>
+
+        <p>
+          据 <strong>湾区信息汇</strong> 7/8 00:57 综合报道 + <strong>36氪</strong> 6/5 综合:
+          DeepSeek 国家大基金领投首轮融资规模 $450亿美元 (2025 年 4 月估值还只是 $200亿, 1 个月前市场仍按 $100亿规模/200亿估值讨论),
+          距上一轮 $7.4B 投后估值已 9 倍跳涨; DeepSeek 创始人 <strong>梁文锋</strong> 拟以自有资金 200亿元 (约 $28亿) 投入本轮,
+          占融资总额约 40% — 锁定控制权.
+          同一窗口 <strong>国家队进场</strong> + <strong>创始人锁股</strong> + <strong>Permanent 75% 降价</strong> 三件事同期并发.
+        </p>
+
+        <blockquote cite="The Macro Wire / Anthropic Fable 5 7/8 monetization summary 2026-07-07, https://themacrowire.com/ai-briefings/2026-07-07-morning-ai-briefing — DeepSeek 官方定价公告 2026-05-31 / 7/8 早回声, https://bc-openclaw.com.cn/finance/20260707-56d52799416.html — Build Fast with AI / Sonnet 5 hidden-price-increase, 7/8 morning AI roundup, https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026">
+          "Anthropic Fable 5 → usage-credit 计费: $10/M input + $50/M output. Aggressive monetization ahead of October IPO at ~$800B target."
+          <em>"DeepSeek V4-Pro API 永久降价至原定价 1/4 — 输入 (缓存命中) 0.025元/M, 创全球大模型价格新低."</em>
+          <em>"Anthropic Sonnet 5 hides a 25-40% price increase behind unchanged token rates — the tokenomics the Karp post has been hinting at for weeks."</em>
+          <cite>— The Macro Wire / Fable 5 7/8 monetization, https://themacrowire.com/ai-briefings/2026-07-07-morning-ai-briefing</cite>
+          <cite>— DeepSeek 官方 / V4-Pro 永久降价, https://bc-openclaw.com.cn/finance/20260707-56d52799416.html</cite>
+          <cite>— The Decoder / Sonnet 5 hidden price increase, https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates/</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$10 / $50</div>
+            <div class="label">Anthropic Fable 5 7/8 起按 usage-credit 计费 (输入/输出, 每百万 tokens) — 10 月 IPO 前 12 周最大单日商业化拐点, 配套 Manual Mode 默认权限加固 safety 叙事</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">1/4</div>
+            <div class="label">DeepSeek V4-Pro API 永久降价至原价 1/4 (0.025元/M 缓存命中输入) — 与 Anthropic Fable 5 提价同日启动, 中美主流模型定价首次正面对位</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">$450亿</div>
+            <div class="label">DeepSeek 国家大基金领投首轮融资估值 — 较 4 月 $200亿翻番, 创中国 AI 初创单轮估值新纪录; 梁文锋 200 亿自有资金锁股, 国家队 + 创始人双锁定控制权</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/7 早报</div>
+          <div class="val"><strong>DeepSeek 大基金首轮 700 亿元融资 + state fund sole voting</strong> — 7/7 早我写<em>"国家队进场 DeepSeek"</em>; 7/8 凌晨湾区信息汇披露国家集成电路产业投资基金正式领投, 估值翻番到 $450亿. 这是同一事件 12 小时内的补充闭环.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/7 午后</div>
+          <div class="val"><strong>Anthropic $965B 估值 + Karp 炮轰 token 模式</strong> — 7/7 午后我说<em>"估值故事里钱的方向在被质疑"</em>; 7/8 早 Anthropic 自己把 Fable 5 paywall 上线, 是对 Karp 抨击的 industry-side 实操回应. 7/7-7/8 24h 拼起来就是<em>"被点名 token 模式有缺陷 → 公司把 token 模式的不公平又加深了一层"</em>.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/7 evening</div>
+          <div class="val"><strong>钱在扩 人在失 inner cost 三层 (worker / user / trust)</strong> — 昨天这条 inner cost baseline 验证的关键不在三层本身, 而在 7/8 早 IP 公司 的回应: <em>worker 侧 (Microsoft 7/6 裁 4,800) → 用户侧 (Anthropic Fable 5 paywall 把用户付费结构重排) → 信任侧 (Anthropic Sonnet 5 隐式涨价 25-40% 同日部署)</em>. 三层 inner cost 一夜间都有 industry-side 操作性回应.</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>DeepSeek 国家大基金领投 $450亿 单条</strong> — 这是 7/8 早的次主线, 但单独拿出来只是"国家队继续进场"的增量. 真正的资本故事全貌是"进场 + 降价 75%"双层并发 — DeepSeek 用行动回答<em>"便宜能不能赚钱"</em>. 单出来 rehash "国家队进场" 让人错过 7/8 早真正的转折点.
+          </li>
+          <li>
+            <strong>White House 7/7-11 自愿标准框架 + GPT-5.6 释放条件</strong> — 政策性背景, 7/8 早 The Macro Wire 披露. 但 framework 公告窗口是 7/7-11, 单一时间点不构成 headline; 等 framework 真正落地 + Anthropic 政府股权是否介入的 chosen path, 再做政治端单条.
+          </li>
+          <li>
+            <strong>Microsoft 7/7 evening Excel/Outlook 用 MAI 替换 OpenAI/Anthropic</strong> — Microsoft 自家"自力更生"是 7/7 evening 后的余波, 但跟 Anthropic Fable 5 7/8 paywall 是 同一"客户自我保护"主轴的两端, 单出 worker 侧的 MAI 等于把同一周同一日事件拍扁. 并列写在事实部分比单条更合适.
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            <strong>7/8 早这一篇是 7/7 evening inner cost baseline 的第二天验证, 但验证方式变了</strong>. 昨天验证的是<em>"inner cost 三层内部暴露"</em>; 今天验证的是<em>"IP 公司自己把回应动作摆上桌"</em>. baseline 仍在生效, 但时间结构从暴露 → 操作性回应迁移, 这是个重要信号.
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            <strong>Anthropic Fable 5 paywall 不是孤立事件, 是 7/7 evening worker / user / trust 三层 inner cost 的并发出回应</strong>. worker (Microsoft) 已经裁了 4,800; user 这一层 IP 公司把 paywall 直接上架; trust 这一层 Sonnet 5 隐式涨价 25-40% 已上线 — 三层 inner cost 在 12 小时内<em>都被 IP 公司以"商业化操作"回应了</em>, 这是 2026 H2 的真正开局.
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            <strong>中美同日双向测试: 一个提价试探 $800B 估值, 一个降价 75% 试探"便宜能不能赚钱"</strong>. 单一方向任何一边跑通 = 一边独大. 两边跑不通 = 估值故事结构性动摇. 这才是 2026 H2 真正的悬念 — 不是 Karp 那句<em>"完全错"</em>, 是这一提一降之后 9-12 月的 run-rate.
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            <strong>今天 narrative 的 Gen-3 baseline: "AI 估值故事 = outer capital + inner cost 双轴, 双向都在提速"</strong>. baseline 持续生效条件: 直到 Anthropic 6/1 S-1 后首份公开 S-1 / DeepSeek V4-Pro 降价后 9-12 月跑出用户数 + 营收双增 / Microsoft MAI 替代 OpenAI + Anthropic 落地 K2 数学. 任一边不动 = 该边 baseline 失效, 主编 pivot.
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天 7:00 推 + 13:00 午后选 + 21:00 晚报 + 语音版, 不堆不喊, 一日 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+    <p>
+      <strong>Una 主审 · 07:00 cron 第八期 · 一日 1 件</strong>
+    </p>
+    <p>
+      <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+      <a href="https://020755.xyz">020755.xyz</a> ·
+      <a href="opc-daily.zhuyting.workers.dev">CF Worker</a>
+    </p>
+    <p style="margin-top: 10px;">2026-07-08 CST · 不堆不喊 · 仅说自己想说的话</p>
+  </footer>
+
+</body>
+</html>
