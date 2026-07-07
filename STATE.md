@@ -113,3 +113,28 @@
 - 📝 配套 fix-vs-publish 区别: 本次是 cron 第五期 **full fresh publish** (不是 signal-on-existing additive fix), 所以 voice.mp3 与 index.html mtime 顺序对换 OK — skill [8c] mtime invariant 只约束 additive-fix 模式
 - 📮 sub-agent 双轨: main capture 30 条 + The Daily Upside 一手 web_extract 直接抓 4 项补料, Una 主审阶段 2 二次 grep 全 PASS, 不需要降级路径 (跨信源补料 4 项全部合法落入 stat-card / 引用)
 - ⏭️ 下次 cron: 21:00 OPC 晚报 (OPC 晚报 21:00 (Una 主编)) — 当日已经 cron 触发了 7/7 早 + 13:00 两次, 21:00 是第三次; 选材建议向"今日早 + 午后 哪条 narrative 的对内/对立面"靠 (不变量 #5 同日 cross-reference)
+
+## Where we are now (2026-07-07 21:00) — 第七期 cron 抵达 (晚报)
+- 🔁 OPC 晚报 21:00 cron 抵达 (21:00:51 fire), 第七期运行
+- ✅ phase 1 sub-agent 30 条 raw 落 `~/opc-daily/raw/2026-07-07-21evening.md` — 0 重叠 morning + afternoon raw (URL diff self-check); 8h 窗口 7/7 13:00~21:00 CST 严格互补
+- ✅ phase 2 Una 主审 二次选材 (Gen 3 不变量 #6 落地) — sub-agent 候选 1+2+3, Una 选中候选 1: **"今天 钱在扩, 人在失"** — Microsoft 4,800 + Anthropic fingerprint + Lines v. OpenAI 三层 inner cost 同周并发同源
+- ✅ 不变量 #5 同日 cross-reference: 早 = outer capital (DeepSeek 大基金) / 午后 = outer valuation + market reject (Anthropic) / 21:00 = inner cost (worker + user + trust) 三期拼起来 = "2026-07-07 是 AI 估值故事 outer capital 和 inner cost 肉眼可见对位的一天"
+- ✅ 不变量 #6 (loop+darwin) 双 YES: Loop = "AI 头部公司 IPO 前夜, worker/user/trust 三层 inner cost 是 outward capital story 的反向资产"; Darwin = "inner cost check" 作为 baseline 可遗传
+- ✅ 4-section v4-Daily.html 渲染 (commit a2d9361, pushed origin main):
+  - 标题: "今天 钱在扩, 人在失"
+  - 数字一眼: 4,800 (Microsoft 7/6 裁员) + ≥90 (Anthropic fingerprinting 版本数) + 3 起 (Lines v. OpenAI)
+  - 事实部分 (3 件 inner cost: worker / user / trust 三层同周并发同源)
+  - blockquote cite: The Verge (Tom Warren, Microsoft) + Ars Technica (Ashley Belanger, Anthropic) + The Verge (Emma Roth, Lines v. OpenAI) — 3 个 source cite, 全部 raw grep 命中
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 446KB / 28s, ID3 header + 32000Hz sample rate)
+- ✅ wrangler deploy v7add8f9a-5d1d-4541-8c40-8e4eea00dae6 成功 — CF Worker opc-daily 31 files uploaded (3.19s)
+- ✅ daily/index.html redirector → 2026-07-07-21evening
+- ✅ top-level index.html: topbar 21:00 / eyebrow 晚选 / featured-card "今天 钱在扩, 人在失" / archive 7-07 晚报条目
+- ✅ daily/2026-07/index.json: 顶部追加 7/7 21evening 条目 (html_url 指向 21evening)
+- ✅ TG 7069165189 sent: "Una 选: 今天 钱在扩, 人在失. 21:00 CST. Microsoft 一次性裁 4,800 ... Anthropic fingerprint ... Lines v. OpenAI ..."
+- ✅ 验收 PASS 33 / FAIL 0 — 8a 数字精度 consistency (4,800 / 1,600 / ≥90 / v2.1.91 stat-card 与 raw grep 一致) + 8b 具名引述 hallucination detect (Michael Lines / Satya Nadella / Tom Warren / Ashley Belanger / Emma Roth 全部 raw grep 命中) + 8c fresh publish mtime skip (7/7 13:00 实测补丁) + 8d skeleton 无 [Una 现场补料-待 cron 验] 标记 (cron fresh publish, 无跨信源补料)
+- 主题: AI 头部公司 "钱扩张" 同一周, "人失血" 同周并发 — Microsoft 4,800 裁员 (worker) + Anthropic 长期 fingerprint 监控中国路由 (trust) + OpenAI Lines v. OpenAI 诉讼 (user) 三件事同周 (7/6-7/7) 并发同源, 是 outer capital story 里完全缺席的 inner cost 三层一次性摆上桌. 早 + 午后 + 21:00 三期拼起来, **2026-07-07 是 AI 估值故事 outer capital 和 inner cost 肉眼可见对位的一天** = 2026 H2 资本战的真形状, 一边跑一边失血, 这才是能撑多久的真正变量.
+- ⚠️ CF Pages 020755.xyz 仍 block (8000119) — 7/7 21:00 cron 实测 wrangler deploy Worker 仍然成功 (Pages 与 Worker 是两个独立部署目标); 不反复 wrangler pages deploy per skill; master commit 在, 等廷哥登 CF dashboard 解封 una-airport
+- 📝 配套 fix-vs-publish 区别: 本次是 cron 第七期 **full fresh publish** (不是 signal-on-existing additive fix), so voice.mp3 与 index.html mtime 顺序对换 OK — skill [8c] mtime invariant 只约束 additive-fix 模式
+- 📝 选材决策回填 (给明天 Una): 候选 1 选中, 候选 2 (Trump gated regime 全行业升级) / 候选 3 (Karpathy-LeCun-Fung 学术内层 world model + harness) 留作后续素材; "inner cost check" baseline 持续生效直到 Lines v. OpenAI 案了结 / Microsoft 4,800 落地 / Anthropic fingerprint 公开听证为止
+- ⏭️ 下次 cron: 7/8 早 7:00 cron (Gen 3 baseline 第二天验证)
+
