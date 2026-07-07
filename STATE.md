@@ -91,3 +91,25 @@
 - ⚠️ CF Pages 020755.xyz cache 仍返旧版 (curl 仍 `邹露`); origin GitHub 是新版 (raw.githubusercontent 已更新) — Pages 项目 block 8000119 状态未变, **不要反复 wrangler pages deploy** per skill
 - ⏭️ 下次 cron: 13:00 OPC 午后 (d4623ff72812) — 但前提是 Una 醒 + 主审可达
 
+
+## Where we are now (2026-07-07 13:00) — 第五期 cron 抵达 (午后)
+- 🔁 OPC 午后 13:00 cron 抵达 (13:01 fire), 第五期运行
+- ✅ Una 主审骨架 7/7 早 10:42 已写进 `_skeleton.md` (commit 234d1e6) — Gen 3 (loop+darwin) 首次落地; 不变量 #5 同日 cross-reference (早 DeepSeek 大基金进场 ↔ 午后 Anthropic 四股力量撕) 通过自检
+- ✅ phase 1 sub-agent 30 条 raw 落 `~/opc-daily/raw/2026-07-07-afternoon.md` — **4 项 Una 现场补料 grep 全部 PASS** ($965B 4条 / $852B 4条 / Karp 5条 / Palantir 5条 / `has gone completely wrong` 2条 / Uber+Microsoft+Salesforce+Meta 4 条同条), 出处 The Daily Upside 7/6 Sean Craig
+- ✅ phase 2 Una 主审 二次 grep 通过 — 数字精度一致 (stat-card $965B/$852B/4家 与 raw grep 全撞), 具名引述 cite (The Daily Upside / Sean Craig + Karp / Palantir) 在 raw 命中, 无 hallucination
+- ✅ 4-section v4-Daily.html 渲染 (commit 3e7b2c2, pushed origin main):
+  - 标题: "Anthropic 同一天被四股力量撕"
+  - 4-section 草稿: 数字一眼 ($965B / $852B / 4家) + 事实部分 + 不选其它的 + Una 4 句说
+  - blockquote cite: The Daily Upside / Sean Craig 2026-07-06, https://www.thedailyupside.com/technology/artificial-intelligence/openai-and-anthropic-speed-towards-ipos-as-business-models-come-under-scrutiny/ (CNBC + TBPN 双平台 Karp 引述附加)
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 597KB / 37s, ID3 v2.4.0 + 32000Hz sample rate)
+- ✅ wrangler deploy v1a1ba5c1-cfc5-406b-9375-691aaf40256e 成功 — CF Worker 完全可用, 跨信源/正面/ 同时落地
+- ✅ daily/index.html redirector → 2026-07-07-afternoon
+- ✅ top-level index.html: topbar 13:00 / eyebrow 午后选 / featured-card Anthropic 同一天被四股力量撕 / archive 7-07 午后条目
+- ✅ daily/2026-07/index.json: 顶部追加 7/7 afternoon 条目 (html_url 指向 afternoon)
+- ✅ TG 7069165189 sent: "Una 选: Anthropic 同一天被四股力量撕. 13:00 CST. ..."
+- ⚠️ **CF Pages 020755.xyz 仍 block (8000119)** — 不反复 wrangler pages deploy per skill; master commit 在, 020755.xyz 服务旧 cache (curl 命中早报旧版); 廷哥需登 CF dashboard 解封 una-airport
+- 主题: 美方头部 AI 公司 IPO 前夜的标本 — Anthropic 9650 亿美元估值 + Palantir CEO Karp 公开炮轰 token 付费模式 + Uber/Microsoft/Salesforce/Meta 同周限额员工 AI 支出. **中美同日资本换轨**: 中国 = 国家队进场 (钱的方向), 美国 = 市场化资本+政治+技术叙事+客户反噬四方撕 (钱的本质被质疑).
+- 📝 同步: deepseek 大基金进场 (早报) + Anthropic IPO 准备 (7/6 morning raw [7] + 7/7 afternoon raw [14]) + Karpathy 7/6 站台 Fable 5 + Z.ai GLM-5.2 7/7 早晨上 Top-5 闭源旁 + ICML 2026 Seoul 7/7 main + Susan Athey keynote
+- 📝 配套 fix-vs-publish 区别: 本次是 cron 第五期 **full fresh publish** (不是 signal-on-existing additive fix), 所以 voice.mp3 与 index.html mtime 顺序对换 OK — skill [8c] mtime invariant 只约束 additive-fix 模式
+- 📮 sub-agent 双轨: main capture 30 条 + The Daily Upside 一手 web_extract 直接抓 4 项补料, Una 主审阶段 2 二次 grep 全 PASS, 不需要降级路径 (跨信源补料 4 项全部合法落入 stat-card / 引用)
+- ⏭️ 下次 cron: 21:00 OPC 晚报 (OPC 晚报 21:00 (Una 主编)) — 当日已经 cron 触发了 7/7 早 + 13:00 两次, 21:00 是第三次; 选材建议向"今日早 + 午后 哪条 narrative 的对内/对立面"靠 (不变量 #5 同日 cross-reference)
