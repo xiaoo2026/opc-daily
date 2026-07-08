@@ -165,3 +165,31 @@
 - 📝 Pitfall 11 (URL canonical) verified — 14 个 URL 全部完整 (无 ... 截断, 无省略 path), 全 canonical
 - 📝 "Loop+Darwin baseline" baseline 持续生效条件 (给 tomorrow Una): 直到 (a) Anthropic 6/1 S-1 后首份公开 S-1 / (b) DeepSeek V4-Pro 降价后 9-12 月 run-rate + 用户数跑通 / (c) Microsoft MAI 替代 OpenAI+Anthropic 落地 K2 数学. 任一边不动 = 该边 baseline 失效, 主编 pivot
 - ⏭️ 下次 cron: 7/8 13:00 OPC 午后 (OPC 午后 13:00 (Una 主编)) — 主审建议 pivot: "美侧 Anthropic 双线 (Fable 5 + Sonnet 5) 升级 vs 中美对照 国家队趋势" 或 "新事件不再 'outer capital + inner cost 双轴对位' 时, baseline 失效, 切到下一组"
+
+## Where we are now (2026-07-08 13:30 CST) — 第九期 cron 抵达 (午后)
+- 🔁 OPC 午后 13:00 cron 抵达 (13:00:51 fire), 第九期运行
+- ✅ phase 1 sub-agent 30 条 raw 落 `~/opc-daily/raw/2026-07-08-afternoon.md` — 0 重叠 morning raw (URL diff self-check 30/30 唯一); 6h 窗口 7/8 07:00~13:00 CST 严格互补
+- ✅ phase 2 Una 主审 二次选材 (Gen 3 不变量 #6 落地) — sub-agent 候选 A/B/C, Una 推翻 sub-agent 候选 A (Fable 5 切计费 6h 反馈, 同质稀释), 选中候选 G (新结构): **今天中国 AI 算力 4 线齐发** (华为 Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿)
+- ✅ 不变量 #5 同日 cross-reference: 7/7 morning = 国家队单点进场 → 7/7 afternoon = 美方市场化撕 → 7/7 evening = inner cost 三层 (baseline 立) → 7/8 morning = 中美定价两极 (baseline 验证: IP 公司回应) → **7/8 afternoon = 中方算力全栈 (baseline 升级: 三轴)**
+- ✅ 不变量 #6 (loop+darwin) 双 YES:
+  - Loop = "中国头部 AI 算力 = 真机 + 论文 + 模型 + 资本四线齐发, 模算协同是 2026 Q3 国产算力叙事核心" — 给 7/7 evening baseline (outer capital + inner cost) 加注脚: 中方资本不只给 DeepSeek, 而是给算力 + 模型 + 论文 + 商业化全栈
+  - Darwin = baseline 持续生效 — 直到 (a) Atlas 950 7/17-7/20 WAIC 真机首展后实际产能 (b) 韬定律 V2 工艺 (时间缩微 + 逻辑折叠 + Gear Ratio) 落地 (c) 智谱 GLM-5.2 百万 token 上下文用户跑通 (d) DeepSeek 700 亿融资最终 closed + 投后估值. 任一边不动 = 该边 baseline 失效, 主编 pivot
+- ✅ 4-section v4-Daily.html 渲染 (commit 774d393, pushed origin main):
+  - 标题: "今天中国 AI 算力 4 线齐发" (≤11 字 ✓ 人话 ✓)
+  - 数字一眼 3 卡: 56.8 倍 (Atlas 950 vs NVL144 规模) / 753B (智谱 GLM-5.2 旗舰) / 700 亿 (DeepSeek 融资升级, 国资 10 亿最低份额)
+  - 事实部分 (4 段: Atlas 950 真机 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿 + 1/1/.../10 亿元分账表)
+  - blockquote cite: 21世纪经济报道 / 36氪 / 读懂AI时代 / 湾区信息汇 / 财经 — 5 个 source cite, 全部 raw grep 命中
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 889908B / 55.5s, ID3 header + 32000Hz sample rate)
+- ✅ wrangler deploy v9ef780d1-e990-4b43-8365-1bc95f3ca61f 成功 — CF Worker opc-daily 31 files uploaded (3.86 sec)
+- ✅ daily/index.html redirector → 2026-07-08-afternoon
+- ✅ top-level index.html: topbar 13:00 / eyebrow 午后选 / featured-card "今天中国 AI 算力 4 线齐发" / archive 7-08 午后条目
+- ✅ daily/2026-07/index.json: 顶部追加 7/8 afternoon 条目 (html_url 指向 afternoon)
+- ✅ TG 7069165189 sent: "Una 选: 今天中国 AI 算力 4 线齐发 (华为 Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿). 13:00 CST. https://020755.xyz/daily/2026-07/2026-07-08-afternoon/"
+- ✅ ad-hoc verifier 29 PASS / 0 FAIL — raw 30 条 / index.html markers / voice.mp3 ID3+32000Hz / index.json valid / redirector / topbar+eyebrow+featured+archive / git SHA / author / 8a 数字 grep / 8b cite 名字 / 8c fresh publish skip / 8d skeleton 无补料标记
+- 主题: **AI 估值故事的真结构 = outer capital + inner cost + 中方算力结构性突破 三轴**. 7/7 evening baseline (outer capital + inner cost) → 7/8 morning 验证 (IP 公司回应: worker/user/trust) → 7/8 午后升级 (中方算力全栈). 中方不再单点深, 是真机 + 论文 + 模型 + 资本四线齐发; 一提一铺 (早 cron 提价 + 午后 cron 铺算力) = 2026 H2 真答案
+- ⚠️ CF Pages 020755.xyz 仍 block (8000119) — 7/8 午后 cron 没尝试 wrangler pages deploy per skill; master commit + Worker deploy 在, 不影响合规 publish; 廷哥仍需登 CF dashboard 解封 una-airport
+- 📝 选材决策回填 (给今天 evening / 明天 Una):
+  - 落选 5 个候选: A (Fable 5 切计费 6h 反馈, 同质续写早 cron Fable 5 段) / B (DeepSeek 700 亿 + 峰谷分时 2x + 510 亿分账表, 同质续写早 cron DeepSeek 段) / C (White House 自愿标准 + OpenAI stagger release, 政策叙事偏弱) / D (JADEPUFFER agentic ransomware 1,300+ database, raw 厚度不足 30 条单源) / E (智谱 GLM-5.2 + 华为 Atlas 950 + 韬定律 V2 + DeepSeek 700 亿单条, 跟 G 重叠)
+  - 选中 G: 中国 AI 算力 4 线齐发 — 给 baseline 加第三轴
+- 📝 "outer capital + inner cost + 中方算力结构性突破 三轴" baseline 持续生效条件 (给 tomorrow Una): 直到 (a) Atlas 950 7/17-7/20 WAIC 真机首展后实际产能 (b) 韬定律 V2 工艺落地 (c) 智谱 GLM-5.2 百万 token 上下文用户跑通 (d) DeepSeek 700 亿融资最终 closed + 投后估值. 任一边不动 = 该边 baseline 失效, 主编 pivot
+- ⏭️ 下次 cron: 7/8 21:00 OPC 晚报 (OPC 晚报 21:00 (Una 主编)) — 第三次; 主审建议 pivot: "美方 Anthropic 7/1-7/8 三层隐性涨价 + 集体诉讼 + Manual Mode + 7/8 Fable 5 落地后 24h 用户成本反应" 或 "ICML Seoul Day3 主会议 + Karpathy 首篇 co-author 论文" 或 "中国 AI 算力 baseline 6h 后 4 线再次齐发 / 任一边不动" 给 baseline 验真
