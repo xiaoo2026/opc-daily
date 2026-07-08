@@ -193,3 +193,36 @@
   - 选中 G: 中国 AI 算力 4 线齐发 — 给 baseline 加第三轴
 - 📝 "outer capital + inner cost + 中方算力结构性突破 三轴" baseline 持续生效条件 (给 tomorrow Una): 直到 (a) Atlas 950 7/17-7/20 WAIC 真机首展后实际产能 (b) 韬定律 V2 工艺落地 (c) 智谱 GLM-5.2 百万 token 上下文用户跑通 (d) DeepSeek 700 亿融资最终 closed + 投后估值. 任一边不动 = 该边 baseline 失效, 主编 pivot
 - ⏭️ 下次 cron: 7/8 21:00 OPC 晚报 (OPC 晚报 21:00 (Una 主编)) — 第三次; 主审建议 pivot: "美方 Anthropic 7/1-7/8 三层隐性涨价 + 集体诉讼 + Manual Mode + 7/8 Fable 5 落地后 24h 用户成本反应" 或 "ICML Seoul Day3 主会议 + Karpathy 首篇 co-author 论文" 或 "中国 AI 算力 baseline 6h 后 4 线再次齐发 / 任一边不动" 给 baseline 验真
+
+
+## Where we are now (2026-07-09 07:00 CST) — 第十一期 cron 抵达 (早选)
+
+- 🔁 OPC 早报 7:00 cron 抵达 (07:00:31 fire), 第十一期运行
+- ✅ phase 1 sub-agent 30 条 raw 落 `~/opc-daily/raw/2026-07-09-morning.md` — 10h 窗口 7/8 21:00 ~ 7/9 07:00 CST; 跨 slot URL overlap 8 条全部 TYPE3 canonical across slot (Atlas 950 WAIC / DeepSeek 造芯 / 韬定律 V2 / Fable 5 延期 / White House 自愿标准 / Mythos 100+ US orgs / ICML Seoul / GPT-5.6 stagger release)
+- ✅ phase 2 Una 主审 二次选材 (Gen 3 不变量 #6 落地) — sub-agent 候选 A 中方算力 4 子轴再确认 + 推荐 A; Una 二次验证 (Pitfall 22): (a) loop+darwin 双 YES — ✅ 中方算力 baseline additive 升级 4 子轴继续生效条件 24h 后再确认全部 ✅ + 美方 capex 投资叙事脆弱性同期对照 = baseline 局部失效信号 (b) 同主轴续写 = NO (续 7/8 evening C 段但 7/8 evening 已 additive 升级 baseline, 续写 = 4 子轴继续生效条件 10h 后续, baseline 持续生效不是 dilution) (c) additive 升级 = ✅ 续 7/8 evening baseline additive 升级 4 子轴, 不替换旧 baseline (d) Fable 5 baseline 子轴失效已在 7/8 evening 候选 G drop, 7/9 早 10h 续 = drop 失效子轴保留生效子轴 per Pitfall 18 续
+- ✅ 不变量 #5 同日 cross-reference: 7/7 evening (钱在扩+人在失 inner cost 三层 baseline 立) → 7/8 morning (中美定价两极 baseline 验证 IP 公司回应) → 7/8 afternoon (中方算力 4 子轴 baseline 立 outer capital + inner cost + 中方算力结构性突破 三轴) → 7/8 evening (baseline additive 升级加第 5 子轴 DeepSeek 跨硬件自研) → **7/9 morning (4 子轴 24h 后再确认全部 ✅ + 国产算力定价权 + 美方 capex 投资叙事擦除同期对照)**
+- ✅ 不变量 #6 (loop+darwin) 双 YES:
+  - Loop = "中方算力 baseline additive 升级 (外资本 + 内 cost + 中方算力) 4 子轴继续生效条件 24h 后再确认全部 ✅ + 国产算力定价权 (DeepSeek-V4-Pro 跟随国产算力降价) + 美方 capex 投资叙事脆弱性 (Meta $700B 擦除 + Microsoft $190B 15% 擦除) 同期双向测试" — 给 7/8 evening baseline additive 升级 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿 / 造芯) 加新维度: 国产算力定价权 + 美方 capex 投资叙事擦除
+  - Darwin = baseline 持续生效 — 直到 (a) WAIC 7/17-7/20 真机首展后实际产能 (b) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (c) 智谱 GLM-5.2 1M 上下文用户实际跑通 (d) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片 (e) DeepSeek-V4-Pro 下半年跟随降价实际落地. 任一边不动 = 该边 baseline 失效, 主编 pivot
+- ✅ 4-section v4-Daily.html 渲染 (commit ec4d5dd, pushed origin main):
+  - 标题: "10 小时后, 中方算力 4 子轴再确认, 美方 capex 已开始擦除" (≤28 字 ✓ 人话 ✓)
+  - 数字一眼 3 卡: 9 天 (WAIC 倒计时 + 8192 NPU 一机一手机) / 3 年 (韬定律 V2 单次迭代 = 传统几何微缩三年) / 立项一年 (DeepSeek 秘密造芯 + V4-Pro 跟随国产算力降价)
+  - 事实部分 (4 段: Atlas 950 WAIC 倒计时 + 韬定律 V2 爆改 5nm 工艺 + GLM-5.2 1M 上下文 DSA Coding Plan 全量 + DeepSeek 秘密造芯立项一年 + DeepSeek-V4-Pro 跟随降价)
+  - blockquote cite: DOIT 赖雅清 7/8 + 富途 7/8 + 36氪 蒋思源 7/8 08:10 + 智谱 / 腾讯云 / 阿里云 / GLM-5.2 6/13 + 36氪 / 量子位 / RFI 路透 DeepSeek 秘密造芯 7/7-8 — 5 个 source cite, 全部 raw grep 命中
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 559860B / 34.884s, ID3 v2.4.0 + 32000Hz sample rate + 128kbps + AIGC TC260PG label)
+- ✅ wrangler deploy v0b312c18-4770-423c-b648-b748704de7d6 + v44a7992b-84a5-474a-a69d-35e115bd10f5 成功 — CF Worker opc-daily 19 + 17 files uploaded (2.52 + 2.71 sec)
+- ✅ daily/index.html redirector → 2026-07-09-morning
+- ✅ top-level index.html: topbar 2026-07-09 周四 07:00 / eyebrow 早选 / featured-card "10 小时后, 中方算力 4 子轴再确认, 美方 capex 已开始擦除" / archive 7-09 entry
+- ✅ daily/2026-07/index.json: 顶部追加 7/9 morning 条目 (html_url 指向 morning)
+- ✅ TG 7069165189 sent: "Una 选: 10 小时后, 中方算力 4 子轴再确认, 美方 capex 已开始擦除. 07:00 CST 2026-07-09..."
+- ✅ ad-hoc verifier 44 PASS / 0 FAIL — raw 30 条 / index.html markers / voice.mp3 ID3+32000Hz+34.884s / index.json valid / redirector / topbar+eyebrow+featured+archive / git SHA / author Una / 8a 数字 grep (Atlas 950×20 / DeepSeek×56 / 8192×6 / 1M×14 / 立项一年×9) / 8b cite 5 个全部 raw 命中 (DOIT 赖雅清 / 富途 / 36氪 蒋思源 / 智谱腾讯云阿里云 / 36氪 量子位 RFI DeepSeek) / 8c fresh publish mtime voice ≥ index (per Pitfall 12) / 8d cron fresh publish 无 _skeleton.md 跳过 / 11 URL canonical 13/13 全 canonical 无截断
+- 主题: **AI 估值故事的真结构 = outer capital + inner cost + 中方算力结构性突破 三轴 baseline additive 升级 (4 子轴 + 第 5 子轴) 24h 后再确认全部 ✅ + 国产算力定价权 + 美方 capex 投资叙事脆弱性同期双向测试**. 7/7 evening baseline (outer capital + inner cost) → 7/8 morning 验证 (IP 公司回应: worker/user/trust) → 7/8 afternoon 升级 (中方算力 4 子轴 baseline 立) → 7/8 evening 再升级 (加第 5 子轴 DeepSeek 跨硬件自研) → **7/9 morning = 4 子轴 24h 后再确认全部 ✅ + 国产算力定价权 + 美方 capex 投资叙事擦除**. 中方算力 = 真机 + 论文 + 模型 + 资本 + 跨硬件自研 5 子轴 24h 后再确认全部继续生效条件激活. 美方 = 商业化加速 (GPT-5.6) / 延缓 (Fable 5) + capex 投资叙事擦除 (Meta + Microsoft) 同期双向测试
+- ⚠️ CF Pages 020755.xyz 仍 block (8000119) — 7/9 早 cron 没尝试 wrangler pages deploy per skill; master commit + Worker deploy 在, 不影响合规 publish; 廷哥仍需登 CF dashboard 解封 una-airport
+- 📝 配套 fix-vs-publish 区别: 本次是 cron 第十一期 **full fresh publish** (没有 slot 不存在的新建, 没有 _skeleton.md, 没有信号-on-existing additive fix), 所以 voice.mp3 与 index.html mtime 顺序 voice ≥ index OK — skill [8c] mtime invariant 只约束 additive-fix 模式
+- 📝 选材决策回填 (给今天 13:00 / 21:00 / 明早 Una):
+  - 落选 6 个候选: B (OpenAI GPT-5.6 监管放行周四全量, 美方监管 + 商业化加速续写不扩轴) / C (Anthropic Fable 5 延期 7/12 + Sonnet 5 隐式涨价 + Mythos 100+ US orgs, baseline 失效候选续写) / D (Meta 扎克伯格内部认输 + $700B 擦除, baseline 失效候选) / E (Microsoft $190B capex 15% 擦除, baseline 失效候选) / F (ICML Seoul Day3 Karpathy co-author Poster, baseline 不扩轴) / G (White House 自愿标准 + Mythos, baseline 不扩轴)
+  - 选中 A: 中方算力 4 子轴再确认全部 ✅ + 国产算力定价权 — baseline additive 升级 4 子轴继续生效条件 24h 后再确认
+- 📝 "outer capital + inner cost + 中方算力结构性突破 三轴 baseline additive 升级 (4 子轴 + 第 5 子轴 DeepSeek 跨硬件自研)" baseline 持续生效条件 (给 tomorrow Una): 直到 (a) WAIC 7/17-7/20 真机首展后实际产能 (b) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (c) 智谱 GLM-5.2 1M 上下文用户实际跑通 (d) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片 (e) DeepSeek-V4-Pro 下半年跟随降价实际落地. 任一边不动 = 该边 baseline 失效, 主编 pivot
+- 📝 Pitfall 22 落地实测: 7/9 早 sub-agent 推荐 A, 主审 stage 2 二次验证 (a) loop+darwin 双 YES ✅ (b) 同主轴续写 = NO (续 7/8 evening C 段 baseline 持续生效不是 dilution) (c) additive 升级 = ✅ (续 baseline 4 子轴不替换) (d) Fable 5 baseline 子轴失效已在 7/8 evening drop, 7/9 早 drop 失效子轴保留生效子轴 = 接受 sub-agent 推荐 A 但二次验证通过 per Pitfall 22
+- 📝 "不变量 #6 + Pitfall 18" baseline 演化模式在 7/9 早 cron 第 11 期实测: additive 升级后, 旧 baseline 部分子轴失效 ≠ 整条 baseline 替换, drop 失效子轴 + 保留生效子轴. Fable 5 切计费子轴 7/8 evening 已 drop, 中方算力 4 子轴 24h 后再确认全部生效. baseline 演化形态 = keep (旧子轴部分失效) + additive (新子轴生效) 双形态同期
+- ⏭️ 下次 cron: 7/9 13:00 OPC 午后 (OPC 午后 13:00 (Una 主编)) — 主审建议 pivot: "中方算力 4 子轴 13:00 后 6h 内任一边失效信号" 或 "美方 capex 投资叙事擦除 6h 内新发酵 (GPT-5.6 周四全量上线后用户跑通 / Fable 5 切计费 7/12 前是否再延期 / Microsoft Q2 earnings 后 capex ROI)" 或 "ICML Seoul Day3 orals Karpathy co-author paper 真正落地" 给 baseline 验真
