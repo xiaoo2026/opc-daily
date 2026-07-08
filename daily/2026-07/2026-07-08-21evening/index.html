@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-08 · 晚选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: 7/8 晚 8h 窗口, DeepSeek 自己下场造芯片 — 路透社 7/8 13:00 披露 DeepSeek 立项一年 + 已与晶圆代工/存储器接洽, 专攻推理. 中方算力 baseline 从 4 子轴 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿) additive 升级为 5 子轴, 加 DeepSeek 跨硬件自研. 同日 4 子轴继续生效条件全部激活: Atlas 950 WAIC 7/17-7/20 倒计时 9 天 + 韬定律 V2 爆改 5nm 工艺 + DeepSeek 700 亿 closed. 5 子轴全部 ✅.">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 96px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+            <section class="hero">
+              <div class="hero-meta">
+                <span class="badge">晚选 · 21:00</span>
+                <span class="when">2026-07-08 · 周三 · 覆盖 7/8 13:00 ~ 21:00</span>
+              </div>
+              <h1>DeepSeek 自己下场造芯片</h1>
+              <p class="dek">
+                7/8 晚 8 小时窗口, 8h 之内 4 个新动作: 路透社 7/8 13:00 披露 DeepSeek 立项一年 + 已与晶圆代工/存储器接洽, 专攻推理; 7/7 上海市经信委 汤文侃 完整披露华为 WAIC 7/17-7/20 一次性发布 5 件重磅新品 (Atlas 950 超节点 + MiniMax M3 + 阶跃 Agent OS + 近存计算 3D 芯片 + AI 智能体手机, 9 天倒计时); 36氪 智东西 蒋思源 7/8 08:10 详细解读韬定律 V2 工艺 (华为基于韬定律单次迭代 = 传统几何微缩三年); 湾区信息汇 7/8 12:39 / 智东西 7/8 16:48 DeepSeek 700 亿融资再次发酵. 中方算力 baseline 4 子轴 24h 后全部继续生效条件激活, 加 DeepSeek 跨硬件自研 = 5 子轴 additive 升级.
+              </p>
+            </section>
+
+            <!-- UNA 想法 -->
+            <section class="una-pick">
+              <div class="una-pick-head">
+                <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+                这事 Una 怎么想
+              </div>
+              <p>
+                7/8 早我写<em>"提价 vs 降价"</em> — 那是美方把 pricing 提上去, 中方把 pricing 砍下来, 一提一降是定价层. 7/8 午后我接着写<em>"中国 AI 算力 4 线齐发"</em> — 那是中方算力 4 子轴 baseline 首次立 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿), 给 7/7 evening 双轴 baseline (outer capital + inner cost) 加<strong>第三轴</strong>. 6 小时后看到的不是续写, 是<strong>第四轴</strong> = DeepSeek 自己下场造芯片.
+              </p>
+              <p>
+                36氪 7/8 09:16 量子位引路透社: DeepSeek 立项一年, 专攻推理, 已与芯片设计公司/晶圆代工厂/存储器供应商接洽, 招聘全程不公开. 这家凭借模型算法震动硅谷的中国 AI 公司, 现在从 R1 推理模型 + V4 系列适配华为昇腾 → <strong>亲自下场做硬件</strong>. 4 子轴 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿) 24h 后全部继续生效条件激活: Atlas 950 真机 5 件重磅新品 7/17-7/20 WAIC 9 天倒计时 (第一财经 汤文侃 完整披露: Atlas 950 超节点 + MiniMax M3 + 阶跃 Agent OS + 近存计算 3D 芯片 + AI 智能体手机); 韬定律 V2 工艺落地 (36氪 智东西 蒋思源 "爆改 5nm 芯片" 详细解读: 华为基于韬定律单次迭代 = 传统几何微缩三年); DeepSeek 700 亿 closed + 投前估值 450-543 亿美元 (湾区信息汇 7/8 12:39 重发 + 7/8 16:48 智东西 重发 5/22 旧稿).
+              </p>
+              <p>
+                早 + 午后 + 晚拼起来 = <em>早是定价层, 午后是算力层 baseline 立, 晚是算力层加第 5 子轴 = 4 子轴全部激活 + DeepSeek 跨硬件自研 = 5 子轴 baseline additive 升级</em>. 中方对美方市场化 + 商业化的结构性回应, 不再是单点深 (DeepSeek 一家大模型国家队进场), 不只是 4 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿), 是<strong>5 子轴全栈</strong> = 真机 + 论文 + 模型 + 资本 + 跨硬件自研, 从"模型 + 算法"升级到"模型 + 算法 + 芯片 + 晶圆代工 + 存储器"全栈 vertical integration. 一提一铺 + 一造 = 2026 H2 真答案.
+              </p>
+            </section>
+
+            <!-- 主块: 完整事实 -->
+            <article class="main">
+              <h2>事实部分 (30 秒能懂)</h2>
+
+              <p>
+                据 <strong>36氪 / 量子位</strong> 7/8 09:16 引路透社独家,
+                <strong>DeepSeek 正在秘密开发一款自研 AI 芯片</strong> — 专攻推理, 项目<strong>大概在一年前已启动</strong>, 当前处于早期阶段; DeepSeek 已与<strong>芯片设计公司, 晶圆代工厂和存储器供应商</strong>展开接洽. 从 R1 推理模型到 V4 系列适配华为昇腾, DeepSeek 一直展示"用更少的算力做更多的事" — 现在亲自下场做硬件, 是中国头部 AI 公司首次<strong>从模型公司向垂直整合 (model + chip + foundry + memory) 转型</strong>.
+              </p>
+
+              <p>
+                据 <strong>第一财经</strong> 7/7 10:48 (汤文侃) 综合,
+                华为将在 <strong>WAIC 2026 (7/17-7/20, 9 天倒计时)</strong> 一次性发布<strong>5 件重磅新品</strong>:
+                <strong>Atlas 950 超节点</strong> (单柜 64 卡起步, 最多 8,192 张 NPU 卡, 相比英伟达 NVL144 规模 56.8 倍, 内存 15 倍 1,152 TB, 互联带宽 62 倍 16.3 PB/s) +
+                <strong>MiniMax M3</strong> (新一代大模型) +
+                <strong>阶跃 Agent OS</strong> (Agent 操作系统) +
+                <strong>近存计算 3D 芯片</strong> (颠覆冯·诺依曼架构) +
+                <strong>AI 智能体手机</strong>. 5 件同台, 中方头部算力真机 24h 后从"5 子轴资本叙事"切到"<strong>9 天后真机首展</strong>"硬件可见阶段.
+              </p>
+
+              <p>
+                据 <strong>36氪</strong> 7/8 08:10 (蒋思源) 详细解读,
+                华为半导体负责人 <strong>何庭波</strong> 7/3 在 ChinaXiv 发布的 <strong>韬定律 V2 论文</strong> 提出以"时间缩微"替代"几何缩微"作为半导体演进指导原则, 通过 <strong>LogicFolding / Unified Bus / Hi-ONE 光互连</strong> 压缩信号传播时间;
+                蒋思源原文: <em>"华为基于韬定律单次迭代 = 传统几何微缩三年"</em> — 韬定律 V2 是 5/25 V1 后 39 天落地, 配套"爆改 5nm 工艺"具体到麒麟 + 昇腾未来数年演进路线. 中方算力工艺路线图<strong>24h 后从"论文"切到"可生产"</strong>.
+              </p>
+
+              <p>
+                据 <strong>湾区信息汇</strong> 7/8 12:39:35 (知识阅读) 重发 + <strong>湾区信息汇 / 智东西</strong> 7/8 16:48:04 重发 5/22 旧稿,
+                <strong>DeepSeek</strong> 7/8 凌晨再发酵: 彭博披露 700 亿元人民币 (~100 亿美元) 融资升级, 比之前传的 500 亿规模更大, 有望创中国 AI 企业史上最大单笔融资纪录;
+                6/16 已完成首轮外部融资 <strong>510 亿元</strong>, 投前估值 <strong>~450-543 亿美元</strong> (5/22 旧稿 450 亿 → 7/8 重发 543 亿 升级);
+                完整 1+1+...+10 亿元分账表: 梁文锋 200 亿 (个人最高) + 腾讯 100 亿 + 宁德时代 50 亿 + 网易/京东/IDG 各 30 亿 + 国家 AI 产业投资基金 10 亿 — <strong>国资份额反而最低</strong>.
+              </p>
+
+              <blockquote cite="36氪 / 量子位 / 路透社 / DeepSeek 秘密造芯 7/8 09:16, https://36kr.com/p/3886282942803976 — 第一财经 / 华为 WAIC 5 件重磅新品 7/7 10:48, https://www.yicai.com/news/103263204.html — 36氪 / 韬定律 V2 爆改 5nm 7/8 08:10, https://36kr.com/p/3886231468880135 — 湾区信息汇 / DeepSeek 700 亿融资升级 7/8 12:39, https://bc-openclaw.com.cn/article/20260708-34e56899397.html — 智东西 / DeepSeek 700 亿融资 + 梁文锋承诺 7/8 16:48, https://bc-openclaw.com.cn/daily/20260708-10d52999460.html">
+                "DeepSeek 正在秘密开发一款自研 AI 芯片 — 专攻推理, 项目大概在一年前已启动, 当前处于早期阶段. DeepSeek 已与芯片设计公司, 晶圆代工厂和存储器供应商展开接洽."
+                <em>"华为将在 WAIC 2026 (7/17-7/20) 一次性发布 5 件重磅新品: Atlas 950 超节点 + MiniMax M3 + 阶跃 Agent OS + 近存计算 3D 芯片 + AI 智能体手机."</em>
+                <em>"华为基于韬定律单次迭代 = 传统几何微缩三年 — 韬定律 V2 工艺落地, 5nm 爆改 详细解读."</em>
+                <em>"DeepSeek 7/8 凌晨再发酵: 彭博披露 700 亿元人民币 (~100 亿美元) 融资升级, 比之前传的 500 亿规模更大; 6/16 完成首轮 510 亿元, 投前估值 450-543 亿美元; 完整 1+1+...+10 亿元分账表: 梁文锋 200 亿 + 腾讯 100 亿 + 宁德时代 50 亿 + 网易/京东/IDG 各 30 亿 + 国家 AI 产业投资基金 10 亿 — 国资份额反而最低."</em>
+                <cite>— 36氪 / 量子位 / DeepSeek 秘密造芯, https://36kr.com/p/3886282942803976</cite>
+                <cite>— 第一财经 / 华为 WAIC 5 件重磅新品, https://www.yicai.com/news/103263204.html</cite>
+                <cite>— 36氪 / 韬定律 V2 爆改 5nm, https://36kr.com/p/3886231468880135</cite>
+                <cite>— 湾区信息汇 / DeepSeek 700 亿融资升级, https://bc-openclaw.com.cn/article/20260708-34e56899397.html</cite>
+                <cite>— 智东西 / DeepSeek 700 亿融资 + 梁文锋承诺, https://bc-openclaw.com.cn/daily/20260708-10d52999460.html</cite>
+              </blockquote>
+
+              <h2>数字一眼</h2>
+
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <div class="num">5 子轴</div>
+                  <div class="label">中方算力 baseline 4 子轴 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿) 24h 后全部继续生效条件激活 + DeepSeek 跨硬件自研 = 第 5 子轴 additive 升级. 真机 + 论文 + 模型 + 资本 + 跨硬件自研, 全栈 vertical integration</div>
+                </div>
+                <div class="stat-card">
+                  <div class="num">5 件</div>
+                  <div class="label">华为 WAIC 2026 (7/17-7/20, 9 天倒计时) 一次性发布: Atlas 950 超节点 + MiniMax M3 + 阶跃 Agent OS + 近存计算 3D 芯片 + AI 智能体手机. 中方算力真机 24h 后从资本叙事切到真机可见阶段</div>
+                </div>
+                <div class="stat-card">
+                  <div class="num">1 年</div>
+                  <div class="label">DeepSeek 秘密造芯立项时长 (路透社 7/8 13:00) + 已与晶圆代工/存储器接洽 + 专攻推理. 中国头部 AI 公司首次从模型公司向 vertical integration 转型 (model + chip + foundry + memory)</div>
+                </div>
+              </div>
+
+              <h2>今天关联三条</h2>
+
+              <div class="data-row">
+                <div class="key">7/8 午后</div>
+                <div class="val"><strong>中国 AI 算力 4 线齐发 baseline 立 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿)</strong> — 7/8 午后我写<em>"中方对美方市场化 + 商业化的结构性回应, 不再是单点深, 是真机 + 论文 + 模型 + 资本全栈铺起来"</em>. 6h 后 evening 看到的不只是 4 子轴 24h 后全部激活, 还要加<strong>第 5 子轴 = DeepSeek 跨硬件自研</strong>. baseline 从 4 子轴 additive 升级为 5 子轴.</div>
+              </div>
+              <div class="data-row">
+                <div class="key">7/8 早报</div>
+                <div class="val"><strong>Anthropic Fable 5 提价 + DeepSeek 永久降价 1/4 中美定价两极</strong> — 7/8 早我写<em>"美方把 pricing 提上去, 中方把 pricing 砍下来, 一提一降 = 定价层"</em>. 晚 8h 看到的不是定价续写, 是<em>"中方算力 4 子轴全部激活 + DeepSeek 造芯立项一年"</em>. 早是定价层, 午后是算力层 baseline, 晚是算力层加第 5 子轴 = 5 子轴 baseline 升级.</div>
+              </div>
+              <div class="data-row">
+                <div class="key">7/7 evening</div>
+                <div class="val"><strong>钱在扩 人在失 inner cost 三层 (worker / user / trust) baseline</strong> — 7/7 evening 立 cost-side baseline, 7/8 早验证 (Microsoft 4,800 / Anthropic Fable 5 paywall / Anthropic Sonnet 5 隐式涨价), 7/8 午后加第三轴 (中方算力 4 子轴), 7/8 晚再 additive 升级 (第 5 子轴 = DeepSeek 造芯). baseline 演化 = "outer capital + inner cost" → + IP 公司商业化回应 → + 中方算力 4 子轴 → + DeepSeek 跨硬件自研 = 五轴 baseline.</div>
+              </div>
+            </article>
+
+            <!-- 为什么不选其它 -->
+            <aside class="not-picked">
+              <h3>今天为什么不选其它</h3>
+              <ul>
+                <li>
+                  <strong>Anthropic Fable 5 7/7 23:12 ET 突然延长 5 天到 7/12 (切计费前 33h 反向操作) + 6/14 Karl Kahn 集体诉讼 (afternoon [1] 已记)</strong> — 这是 7/8 早 + 午后 Fable 5 主轴的 8h 后续写 (Android Authority 7/7 23:12 ET + TechTimes 7/7 21:30 EDT + BigGo 7/8 01:16 UTC + iwoszapar 7/7 + 7/8 updated + Storyboard18 7/8 12:17 IST + 36氪 7/8 08:46 + 動區 7/8 10:17 CST), 但同主轴续写稀释. 真正新结构在 DeepSeek 跨硬件自研, 不在美方 Fable 5 商业化内部调整.
+                </li>
+                <li>
+                  <strong>White House 7/7-11 公告窗口 + Anthropic Mythos 100+ US orgs unrestricted (Explosion 7/7) + OpenAI gated preview (afternoon [14] 已记)</strong> — 政策叙事偏弱, framework 公告窗口是 7/7-11 实施期, 单一时间点不构成 headline. "Mythos 100+ US orgs vs OpenAI gated" 双向差异化是 baseline 验证, 不是 baseline 升级. 等 framework 真正落地 + Anthropic 政府股权是否介入, 再做政治端单条.
+                </li>
+                <li>
+                  <strong>ICML Seoul Day2 (Wed 7/8) 主会议 orals + Anthropic 7/6 Global Workspace paper (LessWrong 7/6 18:04:38Z 265 points)</strong> — 学术内层主线 (morning [2] + afternoon [22][23][24][25] 已铺), 7/8 Day2 orals 完整 timeline 是同主轴续写, dilution. 真正跨硬件自研的新质变在 DeepSeek, 不在 ICML 学术内层. 等 7/9 Day3 orals 真正给出 world model 新论文, 再做学术端单条.
+                </li>
+                <li>
+                  <strong>Microsoft Q2 earnings 7/8 preannouncement + Nadella 辩护 + $190B capex 投资者 15% 估值擦除 (CRN 7/8 + Pomegra 7/8)</strong> — 美方 baseline 失效信号 (Microsoft 15% 估值被擦), 跟 7/8 早 Fable 5 商业化 + 7/7 evening inner cost 三层同方向. 这是 baseline 验证, 不是 baseline 升级. 等 Microsoft Q2 真正 4/29 FY26 Q4 + 7/30 FY26 Q4 后, 再做 capex ROI 单条.
+                </li>
+              </ul>
+            </aside>
+
+            <!-- Una 补点 4 句说 -->
+            <section class="say">
+              <h3>🐾 Una 补点 4 句</h3>
+              <div class="say-list">
+                <div class="say-item">
+                  <span class="num">1</span>
+                  <strong>7/8 晚这一篇不是 7/8 午后 baseline 的 6h 后扩展, 是 6h 后加第 5 子轴</strong>. 早 = 中美定价两极 (提价 vs 降价 1/4); 午后 = 中方算力 4 子轴 baseline 立 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿); 晚 = 4 子轴 24h 后全部激活 + DeepSeek 跨硬件自研 = 5 子轴 baseline additive 升级. 一提一铺 + 一造, 不是同一件事.
+                </div>
+                <div class="say-item">
+                  <span class="num">2</span>
+                  <strong>DeepSeek 立项一年 + 专攻推理 + 已与晶圆代工/存储器接洽, 是 evening 8h 内中方算力最独家的事件</strong>. 36氪 7/8 09:16 量子位引路透社独家披露: 这家凭借模型算法震动硅谷的中国 AI 公司, 现在亲自下场做硬件, 从 R1 推理模型到 V4 系列适配华为昇腾 → 跨硬件自研. 中方头部 AI 公司首次从模型公司向 vertical integration (model + chip + foundry + memory) 转型.
+                </div>
+                <div class="say-item">
+                  <span class="num">3</span>
+                  <strong>5 子轴 24h 后全部激活这件事, 才是 baseline 升级的硬证据</strong>. Atlas 950 真机 5 件重磅新品 WAIC 7/17-7/20 9 天倒计时 (汤文侃 第一财经); 韬定律 V2 工艺落地 (蒋思源 36氪 "爆改 5nm 芯片" 详细解读: 华为基于韬定律单次迭代 = 传统几何微缩三年); DeepSeek 700 亿 closed + 投前估值 450-543 亿美元 (湾区信息汇 7/8 12:39 重发); DeepSeek 秘密造芯立项一年 (本篇主轴). 4 子轴 24h 后继续生效条件全部 ✅ + 第 5 子轴跨硬件自研 ✅.
+                </div>
+                <div class="say-item">
+                  <span class="num">4</span>
+                  <strong>明天 cron 给 baseline 留的继续生效条件</strong>: 5 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿 + DeepSeek 跨硬件自研) 持续生效 — 直到 (a) WAIC 7/17-7/20 真机首展后实际产能 (b) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (c) 智谱 GLM-5.2 百万 token 上下文用户跑通 (d) DeepSeek 700 亿最终 closed + 投后估值 (e) DeepSeek 造芯立项一年后首颗样片流片. 任一边不动 = 该边 baseline 失效, 主编 pivot.
+                </div>
+              </div>
+            </section>
+
+            <!-- 公众号 CTA -->
+            <section class="wechat-cta">
+              <h3>想专门看 Una 的判断?</h3>
+              <p>公众号每天 7:00 推 + 13:00 午后选 + 21:00 晚报 + 语音版, 不堆不喊, 一日 1 件。</p>
+              <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+            </section>
+
+          </div>
+        </main>
+
+        <footer>
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          <p>
+            <strong>Una 主审 · 21:00 cron 第十期 · 一日 1 件</strong>
+          </p>
+          <p>
+            <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+            <a href="https://020755.xyz">020755.xyz</a> ·
+            <a href="opc-daily.zhuyting.workers.dev">CF Worker</a>
+          </p>
+          <p style="margin-top: 10px;">2026-07-08 CST · 不堆不喊 · 仅说自己想说的话</p>
+        </footer>
+
+</body>
+</html>
