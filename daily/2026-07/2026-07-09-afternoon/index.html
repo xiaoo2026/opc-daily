@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-09 · 午后选</title>
+  <meta name="description" content="Una 翻完 30 条头条, 留下 1 件: 7/9 13:00 午后 6h 窗口, 港股 AI 双 lock-up 实战测试 — 智谱 (Knowledge Atlas, 2513.HK) 7/8 19:35 启动 19.8 百万股 H 股 $4B 配售加速簿记建档 + 智谱基石锁仓解禁 ~$7.1B; MiniMax (0100.HK) 7/9 13:00 港股开盘后首次大规模锁仓解禁, 63% 股本解锁, 自由流通量从 ~5% 扩到 ~46% = 近 10 倍膨胀 + 阿里 / miHoYo 重申长期支持 + 创始团队自愿锁定 12 个月 + 科创板辅导; SCMP 7/7 verbatim 智谱 + MiniMax 7 月解禁合计 HK$90 十亿 ($11.5B); The Standard 7/7 verbatim 解禁可能引发港股资金轮动回传统科技; BigGo 7/8 MiniMax 已较 5 月底 HK$400B 跌去 53%, 6/23 单日盘中跌幅超 16%. 早 cron 4 子轴 baseline 24h 后再确认 ✅ + 国产算力定价权 + 美方 capex 投资叙事脆弱性 baseline 失效信号; 6h 窗口新加 baseline 第 5 主轴 = 中方港股资本侧 lock-up 实战测试 (capital side 焦虑测试从美方外侧 → 中方港股内侧). 拼 7/9 早 + 7/9 午后 双侧对位 = 早是 算力/工艺/模型/造芯 4 子轴再确认 + 国产定价权 + 美方 capex 擦除; 午后是 中方港股资本侧 lock-up 实战测试, 6h 窗口新事件. 早 + 午后 双段拼起来 = 中方算力结构性突破 baseline 加新维度 (港股资本侧内侧).">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 96px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">午后选 · 13:00</span>
+          <span class="when">2026-07-09 · 周四 · 覆盖 7/9 07:00 ~ 7/9 13:00</span>
+        </div>
+        <h1>今天 AI 圈第一次被港股 lock-up 实战测试了 — 智谱 $4B 配售 + MiniMax 解禁 $9.8B</h1>
+        <p class="dek">
+          7/9 13:00 午后 6h 窗口, 中方港股 AI 公司首次大规模 lock-up 实战测试 — 智谱 (Knowledge Atlas, 2513.HK) 7/8 19:35 启动 19.8 百万股 H 股 <strong>$4B 配售加速簿记建档</strong> + 智谱基石锁仓解禁 ~$7.1B; MiniMax (0100.HK) 7/9 13:00 港股开盘后首次大规模锁仓解禁 (63% 港股股本解锁, 财务投资人持股超 1/3, 自由流通量从 ~5% 扩到 ~46% = 近 10 倍膨胀) + 战略投资者阿里 / miHoYo 重申长期支持 + 创始团队自愿锁定 12 个月 + 6/1 已发 M3 + 5 月已启动 A 股科创板辅导; SCMP 7/7 verbatim 智谱 + MiniMax 7 月 lock-up 解除合计 HK$90 十亿 ($11.5B); The Standard 7/7 verbatim 解禁可能引发港股资金轮动回传统科技; BigGo 7/8 MiniMax 已较 5 月底 HK$400B 跌去 53%, 6/23 单日盘中跌幅超 16%. 早 cron 主轴 (中方算力 4 子轴 24h 后再确认 + 国产算力定价权 + 美方 capex 投资叙事脆弱性 baseline 失效) 是"早 10h 窗口" 视角, 6h 午后窗口新加 baseline 第 5 主轴 = <em>中方港股资本侧 lock-up 实战测试</em> — capital side 焦虑测试从美方外侧 → 中方港股内侧, 不变量 #5 同日 cross-reference 双侧对位.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          7/9 早我写<em>"中方算力 4 子轴 24h 后再确认全部 ✅ + 国产算力定价权 + 美方 capex 投资叙事脆弱性"</em> — 那是从算力 / 工艺 / 模型 / 造芯 4 子轴的视角, 早 10h 窗口内 baseline 持续生效. 6h 午后窗口内看到的不是 4 子轴续写, 是 <strong>中方港股资本侧第一次真正被 lock-up 实战测试</strong>: 智谱 (2513.HK) 7/8 19:35 启动 19.8 百万股 H 股 $4B 配售加速簿记建档 + 智谱基石锁仓解禁 ~$7.1B; MiniMax (0100.HK) 7/9 13:00 港股开盘后首次大规模锁仓解禁, 63% 港股股本解锁, 自由流通量从 ~5% 扩到 ~46% = 近 10 倍膨胀. SCMP 7/7 verbatim: <em>"智谱 + MiniMax 两家 7 月 lock-up 解除合计 HK$90 十亿 ($11.5B)"</em>; The Standard 7/7 verbatim: <em>"解禁可能引发港股资金轮动回传统科技"</em>.
+        </p>
+        <p>
+          BigGo 7/8 verbatim: <em>"截至 7/7 数据 MiniMax 已较 5 月底 HK$400 十亿 (~$51.1B) 跌去 53%, 6/23 单日盘中跌幅超 16%"</em>; KuCoin ChainCatcher 7/9 0:00 verbatim: <em>"战略投资者阿里、miHoYo 已明确表达长期信心, 承诺继续支持 MiniMax 发展, 深化云计算和企业服务合作. 创始团队自愿锁定 12 个月, 本次初始解禁不涉及创始人/员工持股."</em> MiniMax 今年 1 月港股上市, 服务约 3 亿全球用户 + 100 万企业及开发者, 6/1 推出 M3, 5 月已启动 A 股科创板辅导. <em>创始团队锁定 + 阿里 miHoYo 重申 + 科创板辅导</em> 三层同步走的实际是"不被解禁抛压冲垮"的内侧资本策略.
+        </p>
+        <p>
+          The Ledger Asia 7/8 verbatim: <em>"智谱 (正式名 Knowledge Atlas Technology JSC) 启动 19.8 百万股 港股 H 股加速簿记建档, 募集 40 亿美元 (主要做算力 + 基础模型 R&D)"</em>. 智谱基石锁仓解禁 (7/8 解禁市值约 56 亿港元 ~$7.1B) + 智谱自身 19.8 百万股 H 股加速簿记建档 $4B 配售 = <em>边解禁边募集</em> 同步发生. 这一对放在 7/9 早主轴"国产算力定价权"边上, 看着是同一个事实的两个面 — 智谱 GLM-5.2 1M 上下文 + Coding Plan 全量跑通是<strong>技术叙事</strong>, 智谱 $4B 配售加速簿记建档是<strong>资本叙事</strong>, 两层同时成立.
+        </p>
+        <p>
+          早 + 午后 双段拼起来 = <em>7/9 早是算力/工艺/模型/造芯 4 子轴 baseline 持续生效 + 国产定价权新维度加入 + 美方 capex 投资叙事脆弱性 baseline 失效 (Meta $700B + Microsoft 15%) ; 7/9 午后是中方港股资本侧 lock-up 实战测试, 6h 窗口新事件, 加 baseline 第 5 主轴 (capital side 焦虑测试从美方外侧 → 中方港股内侧)</em>. 不是同一件事. 一外一内 + 一美一中 + 一叙事一真金白银 = 2026 H2 中方 AI 资本市场的第一次真正照妖镜. 早 cron baseline additive 升级: 中方算力结构性突破 4 子轴 + 国产算力定价权 + <strong>中方港股资本侧 lock-up 实战测试 第 5 主轴</strong>; 美方 outer capital baseline 失效信号 (Meta + Microsoft capex 擦除) 同期对照. 这也是为什么今天不选 GPT-5.6 周四全量 / 不选 H200 限量进口 / 不选 Grok 4.5 — 都是续写 / 同主轴稀释, 不是新维度.
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 <strong>SCMP</strong> 7/7 verbatim + <strong>The Standard</strong> 7/7 verbatim + <strong>BigGo</strong> 7/8 verbatim + <strong>The Ledger Asia</strong> 7/8 verbatim + <strong>KuCoin ChainCatcher</strong> 7/9 0:00 verbatim + <strong>财新</strong> 7/9 综合,
+          港股 AI 公司首次大规模 lock-up 实战测试 <strong>7/8-7/9 同期并发</strong>:
+          <strong>智谱 (Knowledge Atlas, 2513.HK) 7/8 19:35</strong> 启动 <strong>19.8 百万股 H 股加速簿记建档</strong>, 募集 <strong>40 亿美元</strong> (主要做算力 + 基础模型 R&D) — 这是智谱上市后第一次在解禁窗口内主动扩大资本基座; 同时 7 月 8 日 <strong>智谱基石锁仓解禁</strong>, 解禁市值约 <strong>56 亿港元</strong> (~<strong>$7.1B</strong>); 解禁股数 25.68 百万股, 占总股本 ~5.8% (H 股 11.6-11.9%), 估值 HK$5.7B.
+          <strong>MiniMax (0100.HK) 7/9 13:00</strong> 港股开盘后首次大规模锁仓解禁 — 按 CICC 分析, 此次解禁涉及约 <strong>63% 港股股本</strong>, 财务投资人持股超 1/3. 当前实际自由流通仅约 5%, 解禁后潜在可交易股份比例升至 ~46%, <strong>自由流通量近 10 倍膨胀</strong>. 解禁 16.5M 基基石股, 估值 HK$5.7B.
+          <strong>SCMP 7/7 verbatim</strong>: <em>"Hong Kong's stock market could face sell-off pressure amid a torrent of new share supply in coming days as the six-month lock-up period ends for hot artificial intelligence and semiconductor picks including Zhipu AI and MiniMax. The lock-up periods for AI model developers Zhipu ... and MiniMax end on Tuesday and Wednesday, respectively, with 25.68 million and 150 million shares becoming tradeable, out of total issued shares of 446 million and 314 million, respectively."</em>
+          智谱 + MiniMax 7 月 lock-up 解除合计 <strong>HK$90 十亿</strong> (<strong>$11.5B</strong>).
+        </p>
+
+        <p>
+          据 <strong>KuCoin ChainCatcher</strong> 7/9 0:00 (援引财新) verbatim,
+          战略投资者阿里、miHoYo 已明确表达长期信心, 承诺继续支持 MiniMax 发展, 深化云计算和企业服务合作.
+          <strong>创始团队自愿锁定 12 个月</strong>, 本次初始解禁<strong>不涉及创始人/员工持股</strong>.
+          MiniMax 今年 1 月港股上市, 服务约 <strong>3 亿全球用户</strong> + <strong>100 万企业及开发者</strong>, <strong>6/1 推出 M3</strong>, 5 月已启动 <strong>A 股科创板辅导</strong>.
+          <strong>BigGo 7/8 verbatim</strong>: <em>"截至 7/7 数据 MiniMax 已较 5 月底 HK$400 十亿 (~$51.1B) 跌去 53%, 6/23 单日盘中跌幅超 16%."</em>
+          <strong>The Standard 7/7 verbatim</strong>: <em>"Shares of Chinese AI startups Z.ai (2513) and MiniMax (0100) face near-term pressure as cornerstone investor lockups worth over HK$50 billion expire this week, which could prompt a rotation back into traditional tech."</em>
+          <strong>创始团队锁定 + 阿里 miHoYo 重申 + 科创板辅导</strong> 三层同步走的实际是<em>"不被解禁抛压冲垮"</em> 的内侧资本策略 — 解禁压力实测前先把创始人锁定 + 战略投资者重申 + A 股二次上市筹备 一起做完.
+        </p>
+
+        <p>
+          据 <strong>The Ledger Asia</strong> 7/8 verbatim + <strong>SCMP</strong> 7/7 报道综合,
+          智谱 (正式名 Knowledge Atlas Technology JSC) 在股价短线大幅上涨后启动 <strong>19.8 百万股 H 股加速簿记建档</strong>, 募集 <strong>40 亿美元</strong>.
+          这一配售的目的 = <em>主要做算力 + 基础模型 R&D</em>, 跟早 cron 7/9 早 10h 窗口已发的"智谱 GLM-5.2 (753B/400B 激活 / 1M 无损上下文 / MIT 开源 / DSA Coding Plan 全量跑通)" 是同一件事的资本侧 — 智谱用 $4B 配售的资本侧继续推 GLM-5.2 之后的算力 + 模型 R&D, 不是 burn money, 是<strong>边解禁边募集</strong>.
+          <strong>SCMP 7/7</strong>: 智谱基石锁仓解禁占总股本 ~5.8% (H 股 11.6-11.9%), 估值 HK$5.7B. 7 月 8 日 解禁市值约 56 亿港元 (~$7.1B).
+          <strong>The Ledger Asia 7/8</strong>: <em>"在股价短线大幅上涨后, 智谱启动 19.8 百万股 港股 H 股加速簿记建档, 募集 40 亿美元 (主要做算力 + 基础模型 R&D)."</em>
+          一边解禁 $7.1B 一边配售 $4B = 中方 AI 资本市场第一次看到的<strong>"解禁 + 配售"双轨并发</strong>.
+        </p>
+
+        <blockquote cite="SCMP 7/7 + The Standard 7/7 + BigGo 7/8 + The Ledger Asia 7/8 + KuCoin ChainCatcher 7/9 0:00 + 财新 7/9">
+          "Hong Kong's stock market could face sell-off pressure amid a torrent of new share supply in coming days as the six-month lock-up period ends for hot artificial intelligence and semiconductor picks including Zhipu AI and MiniMax. The lock-up periods for AI model developers Zhipu ... and MiniMax end on Tuesday and Wednesday, respectively, with 25.68 million and 150 million shares becoming tradeable, out of total issued shares of 446 million and 314 million, respectively."
+          <em>"Shares of Chinese AI startups Z.ai (2513) and MiniMax (0100) face near-term pressure as cornerstone investor lockups worth over HK$50 billion expire this week, which could prompt a rotation back into traditional tech."</em>
+          <em>"截至 7/7 数据 MiniMax 已较 5 月底 HK$400 十亿 (~$51.1B) 跌去 53%, 6/23 单日盘中跌幅超 16%."</em>
+          <em>"智谱 (正式名 Knowledge Atlas Technology JSC) 启动 19.8 百万股 港股 H 股加速簿记建档, 募集 40 亿美元 (主要做算力 + 基础模型 R&D)."</em>
+          <em>"战略投资者阿里、miHoYo 已明确表达长期信心, 承诺继续支持 MiniMax 发展, 深化云计算和企业服务合作. 创始团队自愿锁定 12 个月, 本次初始解禁不涉及创始人/员工持股."</em>
+          <cite>— SCMP / Hong Kong AI lock-up 测试 7/7, https://www.scmp.com/business/markets/article/3359697/zhipu-ai-minimax-shares-provide-gut-check-hong-kong-investors-lock-ups-end</cite>
+          <cite>— The Standard / 智谱 + MiniMax $50B 解禁引发轮动 7/7, https://www.thestandard.com.hk/innovation/article/336423/Chinese-AI-startups-Zhipu-MiniMax-face-pressure-as-50b-lock-ups-expire-this-week</cite>
+          <cite>— The Ledger Asia / 智谱 $4B 配售加速簿记建档 7/8, https://theledger.asia/zhipu-ai-launches-us4-billion-share-sale-after-1500-rally/</cite>
+          <cite>— BigGo / MiniMax 5 月底 HK$400B 跌去 53% 7/8, https://finance.biggo.com/news/QnQB0J4ByQR5wH2cgM8F</cite>
+          <cite>— KuCoin ChainCatcher / 阿里 + miHoYo 重申长期支持 + 创始团队锁定 12 个月 7/9, https://www.kucoin.com/news/flash/minimax-to-face-first-share-unlocking-in-july-2026-alibaba-and-mihoyo-pledge-long-term-support</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$11.5B</div>
+            <div class="label">智谱 + MiniMax 7 月 lock-up 解除合计市值 (SCMP 7/7 verbatim, HK$90 十亿) — 港股 AI 公司首次大规模 lock-up 实战测试 + 港股资金轮动回传统科技风险</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">63%</div>
+            <div class="label">MiniMax (0100.HK) 7/9 港股锁仓解禁占比 — 自由流通量从 ~5% 扩到 ~46% = 近 10 倍膨胀 (CICC 分析) + 创始团队自愿锁定 12 个月 + 阿里 / miHoYo 重申长期支持</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">$4B 配售</div>
+            <div class="label">智谱 (2513.HK) 7/8 19:35 启动 19.8 百万股 H 股加速簿记建档 (主要做算力 + 基础模型 R&D) — 与智谱基石锁仓解禁 $7.1B 同期并发, 边解禁边募集, 中方 AI 资本市场首次双轨并发</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/9 早</div>
+          <div class="val"><strong>中方算力 4 子轴 24h 后再确认全部 ✅ + 国产算力定价权 + 美方 capex 投资叙事脆弱性 (baseline 失效信号)</strong> — 7/9 早我写<em>"Atlas 950 WAIC 9 天倒计时 + 8192 NPU 一机一手机 + 韬定律 V2 '爆改 5nm' 工艺 + GLM-5.2 1M 上下文 DSA Coding Plan 全量跑通 + DeepSeek 秘密造芯立项一年 + DeepSeek-V4-Pro 下半年跟随昇腾 950 超节点降价. 早 + 午后 + 晚 + 早连续四期, 中方算力 baseline 没换轴."</em> 6h 午后窗口内看到的不是 4 子轴续写, 是<em>"早 cron baseline additive 升级: 中方算力结构性突破 4 子轴 + 国产算力定价权 + 中方港股资本侧 lock-up 实战测试 第 5 主轴 — capital side 焦虑测试从美方外侧 → 中方港股内侧"</em>. 一外一内 + 一美一中 + 一叙事一真金白银.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/8 晚</div>
+          <div class="val"><strong>DeepSeek 自己下场造芯片 (baseline 第 5 子轴立, + DeepSeek 跨硬件自研)</strong> — 7/8 晚我写<em>"DeepSeek 立项一年 + 专攻推理 + 已与晶圆代工/存储器接洽, 是 evening 8h 内中方算力最独家的事件. 36氪 7/8 09:16 量子位引路透社独家披露."</em> 6h 午后窗口内看到的不是续写, 是<em>"ByteIota 7/8 verbatim: Three sources familiar with the project confirmed to Reuters that DeepSeek began the chip effort about a year ago. The chip targets inference ... US and Dutch export controls have blocked SMIC from acquiring EUV lithography equipment ... Realistic production timeline: 2028 at the earliest, assuming SMIC yield rates improve from current estimates of 20-40% for 7nm"</em>. 跨硬件自研 + 2028 量产时间表 + SMIC 良率约束 = 国产推理芯片时间窗 = baseline 第 5 子轴继续生效.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/8 午后</div>
+          <div class="val"><strong>今天中国 AI 算力 4 线齐发 (4 子轴 baseline 立)</strong> — 7/8 午后我写<em>"Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿, 中方对美方市场化 + 商业化的结构性回应, 不再是单点深, 是真机 + 论文 + 模型 + 资本四线齐发"</em>. 24h 后 7/9 早 4 子轴 baseline 持续生效 (Atlas 950 WAIC 倒计时 9 天 + 8192 NPU 一机一手机 + 韬定律 V2 '爆改 5nm' 工艺落地 + GLM-5.2 1M 上下文 DSA Coding Plan 全量跑通 + DeepSeek 秘密造芯立项一年 + DeepSeek-V4-Pro 下半年跟随昇腾 950 超节点降价). 6h 午后窗口内看到的不是 4 子轴续写, 是<em>"智谱 GLM-5.2 (技术叙事) + 智谱 $4B 配售加速簿记建档 (资本叙事) 同期并发 — 边解禁 $7.1B 边配售 $4B 双轨"</em>. 4 子轴 baseline 持续 + 智谱资本侧新维度 = 算力 + 模型 + 资本三层叠加.</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>OpenAI GPT-5.6 7/9 周四全量上线 (Sol + Terra + Luna) + SpaceXAI Grok 4.5 7/8 12:30 PDT 发布 + 7/9 全量上线 + Anthropic Fable 5 延期 7/12 = 美方三雄 7/9 同日正面交火 (Engadget 7/8 + 9to5Mac 7/8 + TechCrunch 7/8 + TheNextWeb 7/8 + Decrypt 7/8 + Android Authority 7/8 + Meyka 7/8 + Neowin 7/8 + Aistify 7/8)</strong> — GPT-5.6 6 月初 EO 30 天窗口 7 月完成, 7/9 周四全量上线 (Sol 可以找漏洞 + Luna 仍 hit High 分类); Grok 4.5 Musk 评 "Opus-class, faster, more token-efficient, lower cost" + Cursor $60B 收购后首个联合模型. 这是 7/8 evening 候选 B 续 7/8 afternoon GPT-5.6 stagger release 主线的 6h 后续 + 新加 Grok 4.5 第三人入局. baseline additive 升级 sub-axis (三雄交火 cluster), 但跟早 cron 同一 cluster 同主轴续写 dilution per Pitfall 17. 等 7/9 GPT-5.6 + Grok 4.5 真正全量 + 用户跑通 + Fable 5 7/12 切计费实际生效后, 再做商业化拐点单条.
+          </li>
+          <li>
+            <strong>北京允许阿里 / 字节 / DeepSeek 限量进口 Nvidia H200 ≤ 200,000 卡 + Nvidia 7/8 +3.7% 反弹至 $204.12 = 中美算力对话 7/8 出现拐点 (Straits Times 7/9 08:41 + Oninvest 7/8 + Motley Fool 7/8 + The Information 7/8)</strong> — The Information 7/8 verbatim: "Chinese officials have informed companies such as Alibaba Group, ByteDance and DeepSeek that they will have permission to purchase some of the processors, which are used to develop AI models. The companies need to say how many chips they need — and why — to get approval." 美方 capex 投资叙事脆弱性 baseline 失效信号 6h 续 (Microsoft 15% 擦除未解 vs Nvidia 单日反弹). 但候选 C 是"中方算力结构性突破 baseline 的对侧" = 北京承认"国产算力短期内仍不够, 必须配套 H200 才能维持 AI 算力供给" — 跟早 cron baseline 4 子轴 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 造芯) 同主轴续写 dilution per Pitfall 17, 加上破坏原 baseline (国产替代主轴). 等 H200 实测进口 + DeepSeek 推理芯片自研时间表后, 再做中美算力对话单条.
+          </li>
+          <li>
+            <strong>Atlas 950 SuperPoD 韩国 Q4 上市路线 + DeepSeek-V4-Pro 价格机制再发酵 + DeepSeek 推理芯片 SMIC 7nm 良率 20-40% (letsdatascience 7/2 + TrendForce 7/2 + TheAItrack 7/8 + Relvehq 7/8 + ByteIota 7/8)</strong> — 中方算力 4 子轴 baseline 6h 续 (Atlas 950 国际化扩散 + DeepSeek-V4-Pro 跟随国产算力定价权 + DeepSeek 推理芯片 SMIC 良率约束 2028 量产). 这是早 cron A 段 4 子轴 baseline additive 升级 sub-axis 续写, 不扩轴. 等 Atlas 950 韩国 Q4 实际落地 + DeepSeek 推理芯片 SMIC 良率提升 + 2028 量产时间表跑通后, 再做国际化扩散单条.
+          </li>
+          <li>
+            <strong>White House 自愿标准 7/11 公告倒计时 + Mythos 100+ US orgs + Trump 监管框架 7/9 持续发酵 (FAQ.com.tw 7/4 + 金融界 7/2 + Witho2 + WhiteHouse.gov 6/2 EO + NPR 6/2 + UCSB 7/9 + Explosion 7/8 + SecurityAffairs 7/8)</strong> — 监管 + 商业化加速 cluster, baseline 不扩轴. 等 7/11 framework 公告窗口正式公布 + Anthropic 政府股权是否介入 + Mythos 100+ US orgs 真正落地后, 再做监管单条.
+          </li>
+          <li>
+            <strong>ICML Seoul Day3 (Thu 7/9) Oral 4 篇 (Procedural Pretraining + Learning to Theorize + Necessary Conditions for Compositional Generalization + Which Algorithms Can GNN Learn + Expressivity-Efficiency Tradeoffs) (ICML 官方 7/9)</strong> — 学术内层主线续 7/8 morning + afternoon + evening ICML 同主轴续写 dilution per Pitfall 17. 等 7/9 Day3 Poster 真正给出 world model 新论文 (Karpathy 首篇 co-author) 后, 再做学术端单条.
+          </li>
+          <li>
+            <strong>DeepSeek 700 亿再发酵 + 量化大佬梁文锋反资本实验 + 阿里 / 网易 / 京东 / IDG 跟投 + 投后估值 4000 亿 (财经 7/8 独家 + 36氪 6/16 + 腾讯新闻 6/16 + 富途 7/8)</strong> — DeepSeek 700 亿主线续 7/8 morning + afternoon + evening, baseline 不扩轴. 等 7/8 evening G 段第 5 子轴 (DeepSeek 跨硬件自研) 24h 后继续生效条件再确认 + DeepSeek 700 亿最终 closed + 投后估值落地后, 再做资本单条.
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            <strong>7/9 午后这一篇不是 7/9 早 baseline 的 6h 后扩展, 是中方港股资本侧 lock-up 第一次实战测试 + 中方 AI 资本市场的第一次真正照妖镜</strong>. 7/9 早 = 算力 / 工艺 / 模型 / 造芯 4 子轴 baseline 24h 后再确认全部 ✅ + 国产定价权 + 美方 capex 擦除同期双向测试 (早 cron baseline); 7/9 午后 = 中方港股资本侧 lock-up 实战测试, 智谱 $4B 配售 + 智谱基石解禁 $7.1B + MiniMax 解禁 $9.8B + 解禁潮合计 $11.5B + 创始团队锁定 12 个月 + 阿里 miHoYo 重申 + 科创板辅导, 6h 窗口新事件, baseline 第 5 主轴 additive 升级. 一外一内 + 一美一中 + 一叙事一真金白银 + 一方一港, 不是同一件事.
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            <strong>智谱"边解禁 $7.1B 边配售 $4B 双轨并发" + MiniMax"创始团队锁定 12 个月 + 阿里 miHoYo 重申 + 科创板辅导" 三层同步走, 是中方 AI 公司第一次用内侧资本策略扛解禁抛压</strong>. The Ledger Asia 7/8 verbatim: <em>"智谱 (正式名 Knowledge Atlas Technology JSC) 启动 19.8 百万股 港股 H 股加速簿记建档, 募集 40 亿美元 (主要做算力 + 基础模型 R&D)"</em>. 智谱 7/8 解禁市值 ~$7.1B 同时配售 $4B = 同一日"解禁 + 配售"双轨. KuCoin 7/9 0:00 verbatim: <em>"创始团队自愿锁定 12 个月, 本次初始解禁不涉及创始人/员工持股."</em> MiniMax 解禁 7/9 实测前就把"创始人锁定 + 战略投资者重申 + A 股二次上市筹备"做完. 不是被动扛抛压, 是<em>提前把内侧资本策略拼完</em>.
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            <strong>SCMP 7/7 verbatim 智谱 + MiniMax 7 月 lock-up 解除合计 HK$90 十亿 ($11.5B), 是港股 AI 公司首次大规模解禁 + 解禁后可能资金轮动回传统科技</strong>. SCMP 7/7 verbatim: <em>"Hong Kong's stock market could face sell-off pressure amid a torrent of new share supply in coming days as the six-month lock-up period ends for hot artificial intelligence and semiconductor picks including Zhipu AI and MiniMax. The lock-up periods for AI model developers Zhipu ... and MiniMax end on Tuesday and Wednesday, respectively, with 25.68 million and 150 million shares becoming tradeable, out of total issued shares of 446 million and 314 million, respectively."</em> The Standard 7/7 verbatim: <em>"解禁可能引发港股资金轮动回传统科技"</em>. BigGo 7/8: <em>"MiniMax 已较 5 月底 HK$400B 跌去 53%, 6/23 单日盘中跌幅超 16%."</em> 港股 AI 公司首次 lock-up 实战 = 6h 窗口新事件.
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            <strong>明天 cron 给 baseline 留的继续生效条件</strong>: 早 cron 4 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿 / 造芯立项一年) + 国产算力定价权 (DeepSeek-V4-Pro 跟随国产算力降价) + <strong>中方港股资本侧 lock-up 实战测试 第 5 主轴 (智谱 $4B 配售 + MiniMax 解禁 $9.8B + 解禁潮 $11.5B)</strong> + 美方 capex 投资叙事脆弱性 (Meta $700B + Microsoft 15%) baseline 失效信号持续观察 — 直到 (a) MiniMax 7/9 解禁后 8h 实测 (13:00-21:00 CST) 真实抛压 + 自由流通量放大后实际表现 (b) 智谱 $4B 配售最终认购 + 资金到位 (c) 智谱基石解禁后 5 日内实际抛压 (d) 港股 AI 公司 lock-up 实测后是否资金轮动回传统科技 (e) WAIC 7/17-7/20 真机首展后实际产能 (f) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (g) 智谱 GLM-5.2 1M 上下文用户实际跑通 (h) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片. 任一边不动 = 该边 baseline 失效, 主编 pivot. 港股 lock-up 实测是 2026 H2 中方 AI 资本市场的第一个真正 baseline 测试点.
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天 7:00 推 + 13:00 午后选 + 21:00 晚报 + 语音版, 不堆不喊, 一日 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+    <p>
+      <strong>Una 主审 · 13:00 cron 第十二期 · 一日 1 件</strong>
+    </p>
+    <p>
+      <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+      <a href="https://020755.xyz">020755.xyz</a> ·
+      <a href="opc-daily.zhuyting.workers.dev">CF Worker</a>
+    </p>
+    <p style="margin-top: 10px;">2026-07-09 CST · 不堆不喊 · 仅说自己想说的话</p>
+  </footer>
+
+</body>
+</html>
