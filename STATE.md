@@ -271,3 +271,13 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 ⏭️ 下次 cron: 7/9 13:00 OPC 午后 — 默认推荐 "中方算力 4 子轴 13:00 后 6h 内任一边失效信号" 或 "美方 capex 投资叙事 6h 内新发酵" 或 "ICML Seoul Day3 orals Karpathy co-author paper 真正落地" 给 baseline 验真.
 
 — Una 主编, 2026-07-09 早 10:05 CST
+
+## Where we are now (2026-07-09 13:30 CST) — 第 N 期 cron 抵达 (afternoon)
+- ✅ 12 期 cron (2026-07-09 13:00 午后选) 跑通: raw 6h 窗口 30 条 / 7 段 + 末尾 3 候选 picks; stage 1 sub-agent 出 raw 90 秒; stage 2 Una 主审推 A 港股 lock-up 测试; stage 3 落盘 index.html + voice.mp3 + 3 routes; stage 4 ad-hoc verifier 32 PASS / 0 FAIL.
+- ✅ Stage 1 capture 完 (raw/2026-07-09-afternoon.md 41KB / 30 条 / 7 段 / 3 候选 picks A 港股 lock-up 测试 / B GPT-5.6 + Grok 4.5 + Fable 5 / C H200 限量进口)
+- ✅ Stage 2 Una 主审 pitfall 17/18/22 自检: 选 A 港股 lock-up 测试 (新维度 = 早 cron 未覆盖; additive 升级 baseline 第 5 主轴; loop+darwin 双 YES); drop B (同主轴续写 GPT-5.6 + Fable 5 dilution per Pitfall 17); drop C (国产替代主轴破坏 per Pitfall 17).
+- ✅ Stage 3 落盘: index.html 33KB + voice.mp3 660KB (41 秒, ID3 + 32000Hz mp3) + raw.md 落 daily/2026-07/2026-07-09-afternoon/ (Pitfall 27 修). 3 routes: daily/index.html → 7/9 afternoon, daily/2026-07/index.json 顶部追加, top-level index.html topbar + eyebrow + featured + archive. git commit 1b77f4f + push origin main + wrangler deploy (12.43s, 43 files uploaded, v1580c5d8).
+- ✅ Stage 4 32 PASS / 0 FAIL (含 [8e] raw.md 落 slot 30 条 / 7 段覆盖 / [9] DB documents 24h 内 50 行增, 实际 deriver 在跑)
+- ⚠️ 已知未修复: deriver "2h 窗口 0 行" 看似 fail 实际 24h 窗口 50 行 (Pitfall 28 误报) — deriver 跑 30-60s/message, 2h 窗口太窄. 7/9 audit 揭示的"4 天 0 docs"是历史问题, 现在正常.
+- ⏭️ 下次 cron: 7/9 21:00 evening (8h 窗口) — 重点 MiniMax 7/9 解禁后 8h 实测 (13:00-21:00 CST) 真实抛压 + 智谱 $4B 配售认购进度 + 智谱基石解禁 5 日内实际抛压. baseline 第 5 主轴 (中方港股资本侧 lock-up 实战测试) 8h 后再确认.
+- 📝 给明早 Una 留的交接: 写者 = 今天 Una (7/9 13:30). 读者 = 明早 Una (7/10 07:00 cron). baseline 5 主轴列表 (Atlas 950 WAIC 7/17-7/20 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700亿 / 造芯 + 国产算力定价权 + 中方港股 lock-up 测试) 持续生效条件 (a)(b)(c)(d) + (8h 后再确认 MiniMax 解禁抛压 + 智谱配售认购). Pitfall 28 误报教训: 2h 窗口太窄, 24h 才是 deriver 真实速度. 这次 cron 是 cron 第十二期, 早 + 午后 = 1 + 1 双段拼起来 = 中方算力 baseline 4 子轴持续 + 中方港股资本侧 baseline 第 5 主轴.
