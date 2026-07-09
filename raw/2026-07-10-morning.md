@@ -98,6 +98,10 @@
 
 [30] **学术 + 国产 GPU 续 — ICML Seoul Day4 Friday Schedule anchor + 中方学者 7/9 学术 cross-check**: 7/10 早 anchor. URL: (待 cron 阶段 3 收口补).
 
+### —— H. 投中网 Frontline 第 11 期 续 (1 条 — 主审 fast-mode 接管后补 [8d] 守门) ——
+
+[31] **投中网 Frontline 第 11 期 — 智谱 MiniMax 解禁 投资人开始想如何让 LP 利益最大化 (投中网 陈美 7/9 14:41 verbatim)**: 投中网 verbatim "大家好, 今天是【Frontline】第 11 期, 聊一聊投资人关注的解禁话题. 7 月 8 日、9 日, 港股 AI 双雄智谱 (02513.HK)、MiniMax (0100.HK) 分别迎来上市后的首批解禁股. 其中, 智谱解禁比例为 5.76%, 对应流通股数为 2568.16 万股; MiniMax 解禁比例为 34.25%, 对应股数达 1.07 亿股". — 拼 7/9 evening A 段 [4] 解禁比例 + cite [3][4] 时代周报 verbatim — 主审 fast-mode 接管 后续补 (per [Pitfall 30 3 阶扩 NON_NAME 守门] + [8d] cross-source verbatim 落 raw 兜底). URL: https://www.chinaventure.com.cn/news/80-20260709-392223.html.
+
 ---
 
 ## 7 候选 picks (主审 stage 2 7 维决策菜单 per Pitfall 23)
