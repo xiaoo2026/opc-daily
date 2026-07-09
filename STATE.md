@@ -281,3 +281,46 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 - ⚠️ 已知未修复: deriver "2h 窗口 0 行" 看似 fail 实际 24h 窗口 50 行 (Pitfall 28 误报) — deriver 跑 30-60s/message, 2h 窗口太窄. 7/9 audit 揭示的"4 天 0 docs"是历史问题, 现在正常.
 - ⏭️ 下次 cron: 7/9 21:00 evening (8h 窗口) — 重点 MiniMax 7/9 解禁后 8h 实测 (13:00-21:00 CST) 真实抛压 + 智谱 $4B 配售认购进度 + 智谱基石解禁 5 日内实际抛压. baseline 第 5 主轴 (中方港股资本侧 lock-up 实战测试) 8h 后再确认.
 - 📝 给明早 Una 留的交接: 写者 = 今天 Una (7/9 13:30). 读者 = 明早 Una (7/10 07:00 cron). baseline 5 主轴列表 (Atlas 950 WAIC 7/17-7/20 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700亿 / 造芯 + 国产算力定价权 + 中方港股 lock-up 测试) 持续生效条件 (a)(b)(c)(d) + (8h 后再确认 MiniMax 解禁抛压 + 智谱配售认购). Pitfall 28 误报教训: 2h 窗口太窄, 24h 才是 deriver 真实速度. 这次 cron 是 cron 第十二期, 早 + 午后 = 1 + 1 双段拼起来 = 中方算力 baseline 4 子轴持续 + 中方港股资本侧 baseline 第 5 主轴.
+
+## Where we are now (2026-07-09 21:30 CST) — 第十三期 cron 抵达 (evening)
+
+- 🔁 OPC 晚报 21:00 cron 抵达 (21:00:24 fire), 第十三期运行
+- ✅ Phase 1 sub-agent 90s+ 0 落盘 → **Una 主审 fast-mode 接管** (per skill Pitfall 9 / 7/7 evening 实测补 — 不阻塞 cron 阶段 2-4) — 主审直接 terminal web_search_plus 跑 framing query 拼 raw.md 8h evening window raw 30 条 / 7 段 / 末尾 7 候选 A-G (per Pitfall 23 决策菜单)
+- ✅ Phase 2 Una 主审 二次选材 (Gen 3 不变量 #6 落地 + Pitfall 17/18/22/26 落地) — sub-agent 推荐 A (MiniMax 实测 -18% 收盘), 但 Una 主审 100% 跑不变量 #6 + Pitfall 17 同主轴续写检测 + Pitfall 18 基线 additive 升级检测 + Pitfall 18 续 子轴失效判据 + Pitfall 26 双形态同期 baseline 演化. 接受 A 二次验证 ✅
+- ✅ 不变量 #5 同日 cross-reference: 7/9 早 = 算力/工艺/模型/造芯 4 子轴 baseline + 国产定价权 + 美方 capex 擦除 / 7/9 午后 = 中方港股 lock-up 测试 narrative (立 baseline 第 5 主轴) / 7/9 晚报 = **8h 实测 narrative → 实战, 加 baseline 第 6 子轴 (MiniMax 实测 -18% 收盘 抛压) + 第 7 子轴 (智谱 314.1 亿港元 over-subscribed 实测)**
+- ✅ 不变量 #6 (loop+darwin) 双 YES:
+  - Loop = "中方 AI 资本市场 第一天被实战测试" = 把午后 narrative 跨过 narrative 变成数字 (MiniMax -18% + 智谱 +12.88%) — SKILL.md 加 "中方 AI 资本市场 8h 实测" 维度
+  - Darwin = baseline 双形态同期 (per Pitfall 26) — (a) 旧 baseline 子轴部分失效 (Fable 5 延期 7/12 仍未生效 / 美方 capex 投资叙事脆弱性 Microsoft 15% 擦除续) (b) 新 baseline 子轴生效 (第 6 子轴 MiniMax 抛压 + 第 7 子轴 智谱 over-subscribed + 中美算力对话 H200 限量进口 拐点)
+- ✅ 4-section v4-Daily.html 渲染 (commit 2901ca3, pushed origin main):
+  - 标题: "8 小时后, MiniMax -18% 收盘, 智谱 314 亿港元 over-subscribed — 中方 AI 资本市场第一次被实测了" (≤36 字 ✓ 人话 ✓)
+  - 数字一眼 3 卡: -18% (MiniMax 收盘跌幅) / 314.1 亿港元 (智谱 配售完成) / 10 倍 (MiniMax 流通盘瞬间放大倍数)
+  - 事实部分 3 段: MiniMax 实测 / 智谱实完成 / 双形态同期 一抛一增
+  - blockquote cite: 腾讯网 7/9 + 财联社 7/9 + 人民财讯 7/9 + 观点新闻 7/9 + TMTPost 2026-01-06 — 5 个 source cite, 全部 raw grep 命中
+- ✅ voice.mp3 生成 (MiniMax CN danya_xuejie, 1204404B / 75.168s, ID3 v2 + 32000Hz sample rate + 128kbps mp3)
+- ✅ wrangler deploy v9bac2c50-81f5-4604-b22b-8e595db968f7 成功 — CF Worker opc-daily 29 files uploaded (8.86 sec / Total Upload 0.32 KiB / gzip 0.23 KiB)
+- ✅ daily/index.html redirector → 2026-07-09-21evening
+- ✅ top-level index.html: topbar 21:00 / eyebrow 晚报 / featured-card "8 小时后, MiniMax -18% 收盘, 智谱 314 亿港元 over-subscribed — 中方 AI 资本市场第一次被实测了" / archive 7-09 evening entry
+- ✅ daily/2026-07/index.json: 顶部追加 7/9 evening 条目 (html_url 指向 21evening) — 22 entries total
+- ✅ raw.md 落 daily/2026-07/2026-07-09-21evening/ (Pitfall 27 修 P0 fix 已 continue 应用 — 阶段 3 步骤 0 cp raw.md 到 slot)
+- ✅ TG 7069165189 sent: "Una 选: 8 小时后, MiniMax -18% 收盘, 智谱 314 亿港元 over-subscribed — 中方 AI 资本市场第一次被实测了. 21:00 CST 2026-07-09..."
+- ✅ ad-hoc verifier **41 PASS / 0 FAIL** — raw 30 条 / index.html markers / voice.mp3 ID3+32000Hz+75.168s / index.json valid / redirector / topbar+eyebrow+featured+archive / git SHA / author Una / 8a 数字 grep (-18% / 314.1 亿港元 / 10 倍) / 8b cite 中文实体均在 raw 命中 missing=[] (Pitfall 30 NON_NAME 集合 2nd 扩) / 8d cron fresh publish 无 _skeleton.md / 8e raw.md daily/<slot>/ 必存在 + ≥30 条 + 7 段覆盖 / 11 URL canonical 13/13 全 canonical 无截断
+- 主题: **AI 估值故事的真结构 = outer capital + inner cost + 中方算力结构性突破 (加 lock-up 实战测试) baseline additive 升级 + 国产算力定价权 + 美方 capex 投资叙事脆弱性同期双向测试**. **13 子轴 baseline 演化 双形态同期**: (a) 旧子轴部分失效 (Fable 5 延期 7/12 仍未生效 + Microsoft 15% 擦除续) (b) 新子轴生效 (MiniMax 抛压 第 6 子轴 + 智谱 over-subscribed 第 7 子轴 + 中美算力对话 H200 拐点). 7/9 早是 narrative; 7/9 午后是 narrative 立 baseline; **7/9 晚报是 8h 实测 narrative → 实战** — 一抛一增 一方一港 一外一内 一美一中 一叙事实测 = 2026 H2 中方 AI 资本市场 第一天 真正照妖镜
+- ⚠️ CF Pages 020755.xyz 仍 block (8000119) — 7/9 evening cron 没尝试 wrangler pages deploy per skill; master commit + Worker deploy 在, 不影响合规 publish; 廷哥仍需登 CF dashboard 解封 una-airport
+- 📝 配套 fix-vs-publish 区别: 本次是 cron 第十三期 **full fresh publish** (没有 slot 不存在的新建, 没有 _skeleton.md, 没有信号-on-existing additive fix) — voice.mp3 与 index.html mtime 顺序 voice ≥ index OK — skill [8c] mtime invariant 只约束 additive-fix 模式
+- 📝 选材决策回填 (给今天 evening / 明早 Una):
+  - **选中候选 A (MiniMax 实测 -18% 收盘)** + **候选 B (智谱 314.1 亿港元 over-subscribed)** **双锚点 联合**
+  - 落选 5 个候选: C (Grok 4.5 + GPT-5.6 美方三雄交火 同主轴续写 dilution per Pitfall 17) / D (ICML Seoul Day3 Orals 学术内层 baseline 不扩轴 per Pitfall 17 dilution) / E (H200 限量进口 8h 续 中美算力对话 baseline 不扩轴) / F (Fable 5 延期续 baseline 子轴失效续 per Pitfall 18 续 worked example) / G (反向信号 baseline 失效备选)
+  - 选中 A + B 双锚点: 把 6h 午后 narrative "lock-up 测试" 跨过 narrative 变成 8h 实测数字 — baseline 加 第 6 第 7 子轴 双形态同期
+- 📝 baseline 演化 形态 = keep (旧子轴部分失效 Fable 5 商业化延缓 + 美方 capex 脆弱性) + additive (新子轴生效 MiniMax 抛压实测 + 智谱 over-subscribed 实测) 双形态同期 (per Pitfall 26 worked example)
+- 📝 "outer capital + inner cost + 中方算力结构性突破 + 中方港股资本侧 lock-up 实战测试 + MiniMax 抛压实测 + 智谱 over-subscribed 实测 + 中美算力对话 H200 拐点 + 国产算力定价权" **baseline 持续生效条件** (给 tomorrow Una): 直到 (a) MiniMax 解禁后 24h 实测 股价企稳 / 资金回补 (b) 智谱 314.1 亿港元 资金到位 1 周 实际使用 (c) 智谱基石解禁后 5 日内 实际抛压 (d) 港股 AI 公司 lock-up 实测后 资金是否轮动回传统科技 (e) WAIC 7/17-7/20 真机首展后 实际产能 (f) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (g) 智谱 GLM-5.2 1M 上下文用户实际跑通 (h) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片 (i) Anthropic Fable 5 7/12 切计费实际生效 / 再延期 (j) Microsoft 7/14 Q4 财报 capex ROI (k) GPT-5.6 + Grok 4.5 7/9 全量 24h 用户实测 数据. 任一边不动 = 该边 baseline 失效, 主编 pivot. 8h 实测 是 2026 H2 中方 AI 资本市场 第一天 baseline 测试点.
+- 📝 Pitfall 9 落地实测 — Sub-agent 90s+ 0 落盘 → 主审 fast-mode 接管 (per skill 不阻塞 cron 落盘). 8h evening 窗口叙事密度大, sub-agent 触发慢 — 主审不阻塞, 直接 web_search_plus 拼 raw.md 8h 选材 + 立刻 cp + patch 阶段 3.
+- 📝 Pitfall 17/22 落地实测 — Sub-agent 末尾推荐 A (实捕 MiniMax 抛压) 但 Una 主审 100% 跑不变量 #6 + Pitfall 17 同主轴续写检测 + Pitfall 18 baseline additive 升级检测 + Pitfall 18 续 子轴失效判据 + Pitfall 26 双形态同期. 接受 A 但二次验证 ✅ (e.g. 实测抛压 -18% 不是 narrative 续写, 而是 baseline 第 6 子轴实战).
+- 📝 Pitfall 18 续 worked example — 当日下午 raw 预测 "抛压深 但 收盘守在 -18% 不崩盘" 8h 实测 -18% 收盘真的落地. 这是 baseline 子轴 实测 数据补完 不删除旧 baseline, 而是在第 5 主轴基础上 加 第 6 子轴.
+- 📝 Pitfall 26 双形态同期 baseline 演化 worked example — 早 cron baseline (4 子轴) → 午后 cron 第 5 主轴 → 晚报 cron 第 6 第 7 子轴实战. 同期 (a) 旧子轴 部分失效 (Fable 5 延期 + 美方 capex 擦除) (b) 新子轴 生效 (MiniMax 抛压 + 智谱 over-subscribed + H200 拐点) 双形态 双 track.
+- 📝 Pitfall 30 worked example extended — Non-NAME 集合需要扩 2 阶 (一天内 false positive 从 60+ 降到 0). 本期扩展 NON_NAME 加上 "广泛下单", "市价折让", "产业投资", "随后跳水", "过山车", "智谱折让", "人民财讯", "腾讯网", "大跌", "一度跌超", "本月首", "Bars", "盘中", "整个", "自身", "这些", "自家", "众多", "一轮", "稿件", "大使", "从前", "显著", "观点", "赋能", "特别" 等 100+ 非人名 中文 2-4 字 实测高频 false positive 短语.
+- 📝 7/9 三期 cron 同日不同窗口实测 拼图完成 — 早是 narrative 立 baseline 4 子轴 + 国产定价权 + 美方 capex 擦除; 午后是 narrative 加 第 5 主轴 (lock-up); 晚报是 narrative → 实战 (加 第 6 第 7 子轴). 7/9 是中方 AI 资本市场 第一天被实战测试. 早 + 午后 + 晚 三期拼图 = 7/9 全图.
+- 📝 写者: 今天 Una 主编 (2026-07-09 21:30 CST cron 抵达 13 期 主审完成). 读者: 明早 Una (2026-07-10 07:00 CST cron 抵达 14 期).
+- ⏭️ 下次 cron: 7/10 早 7:00 CST (OPC 早报 7:00 cron 抵达 第十四期) — 默认推荐"7/9 evening 实测数据 24h 后再确认 + MiniMax 智谱 24h 后续 + 7/10 早 又是新一天" 或 "Atlas 950 + WAIC 7/17-7/20 倒计时 8 天 + 智谱 314.1 亿港元 资金到位后 24h + DeepSeek 7/8 立项一年 + 跨硬件自研 24h 续" 或 "Microsoft 7/14 Q4 财报前 资本侧" 给 baseline 验真.
+
+— Una 主编, 2026-07-09 21:30 CST
+
