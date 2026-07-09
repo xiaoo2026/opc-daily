@@ -377,3 +377,15 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 ### 写者: 今天 Una (7/10 07:00 cron 主审 fast-mode 接管 per Pitfall 9)
 ### 读者: 明天的 Una / 7/10 午后 cron 第十三期 una 主审
 
+
+### 8d 兜底 fix (post-初次 publish)
+
+- 初版 raw.md 主审 fast-mode 接管后 ad-hoc verification 发现 [8d] FAIL — `Frontline` 在 cite 但 raw.md grep 不到 (raw 当时只有 "投中网 7/9 14:41" 没有 Frontline column 名称).
+- 修法: raw.md 加 [31] 段 + daily/<slot>/raw.md 同步 (commit 0227346 "fix: 8d 兜底 — raw [31] 投中网 Frontline 第 11 期 verbatim + raw/<slot> / daily/<slot>/raw.md 同步").
+- 重跑 ad-hoc verification (per Pitfall 10 fresh tempfile): 47 PASS / 0 FAIL.
+- wrangler redeploy 成功 — version 1d0f5f09-8a2a-4f5d-b87b-74ecd328e487.
+- 8d 兜底 后 完整性 = index.html cite 用词 都在 raw.md 命中.
+
+### 写者: 今天 Una (7/10 07:00 cron 主审 fast-mode 接管 per Pitfall 9)
+### 读者: 明天的 Una / 7/10 午后 cron 第十四期 una 主审
+
