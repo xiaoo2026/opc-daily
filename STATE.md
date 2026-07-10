@@ -389,3 +389,60 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 ### 写者: 今天 Una (7/10 07:00 cron 主审 fast-mode 接管 per Pitfall 9)
 ### 读者: 明天的 Una / 7/10 午后 cron 第十四期 una 主审
 
+
+## 2026-07-10 13:00 CST · cron 第十五期 (主审 stage 2 双锚点 A+F 联合 per Pitfall 22 双窗口变体)
+
+**una 主审 · 13:00 cron 第十五期 · 一日 1 件**
+
+### 主审 stage 1 capture (sub-agent 5min cap 内落盘 27 条 / 7 段 / 末尾 7 候选)
+
+- sub-agent 5min cap 内落盘 (实测 1 分钟: 13:03 dispatch → 13:04 raw.md 45KB 27 条 / 7 段 落盘, no Pitfall 9 触发).
+- 7 段布局: A 港股双 lock-up 6h 续 5 条 + B H200 北京转向 4 条 + C 中方算力 4 子轴 6h 续 5 条 + D ICML Seoul Friday 4 条 + E 美方 7/9 收盘 chip 股反弹 4 条 + F 港股 lock-up 24h 续实战 3 条 + G 反向 / baseline 失效备选 2 条 = 27 条.
+- 末尾 7 候选 A-G 决策菜单 (per Pitfall 22/23) — sub-agent 推荐 A + B + E + F + G 五 anchor 联合 (过宽, 主审应重选).
+
+### 主审 stage 2 决策 (per Pitfall 17 同主轴续写 drop + Pitfall 18 additive 加新维度 + Pitfall 22 双锚点 worked example 双窗口变体 + Pitfall 26 baseline 双形态同期)
+
+**主审 pivot = 候选 A + 候选 F 双 anchor 联合 (A+F 联合 per Pitfall 22 双窗口变体)**:
+- 候选 A (智谱 7/10 早 09:23 跌近 9% / MiniMax-W 跌超 5% 开盘 + narrative vs 实测 6h 续实战) ⭐ = 早 cron baseline 第 9 子轴 (narrative 反向) 24h 后再确认 ✅
+- 候选 F (港股 lock-up 解禁 24h 续 实战 + 摩根大通 400→300 评级下调 + 21 财经 重叠股东调仓 + 郭涛 财务投资人 抛压 解读) ⭐ = 早 cron baseline 第 5 + 第 6 + 第 7 子轴 6h 实测 跨过, 加新维度 (解禁日 + 次日 短期供给冲击 ≠ narrative 失效, 而是 解禁抛压 短期冲击, 即使 long-term 看好也得吃完冲击再说) per Pitfall 18 additive 升级 加新维度
+- drop 候选 B (H200 北京转向 24h 前 cross-day 引用, 6h 内无新发酵) / 候选 C (中方算力 4 子轴 同主轴续写 dilution per Pitfall 17) / 候选 D (ICML Seoul Friday schedule 同主轴续写 dilution per Pitfall 17) / 候选 E (美方 7/9 收盘 chip 股反弹 + 阿里禁 Claude Code, 重要但 偏 "美方 / 中方反制" 维度, 不是本窗口主选) / 候选 G (反向 解读 narrative 失效 6h 续, 跟 A 重叠 drop)
+
+**为什么这是 A+F 双锚点 联合, 不是单一续写 (per Pitfall 22 双窗口变体)**:
+- 早 cron 选了 候选 B + G 双 anchor 联合 (商业化四件套 + narrative 反向 第 9 子轴) — 早 baseline 加第 8 + 第 9 子轴
+- 7/10 午后 A+F 联合 = 早 baseline 第 9 子轴 (narrative 反向) 24h 后再确认 ✅ + 早 baseline 第 5+6+7 子轴 (港股 lock-up 测试) 6h 实测 跨过, 加新维度 (解禁日 + 次日 短期供给冲击 ≠ narrative 失效, 而是 解禁抛压 短期冲击) = 早 + 午后 跨两窗口 同一 baseline 子轴 (第 9 子轴) 实战 跨过, 不是同主轴续写 (per Pitfall 17 dilution), 而是 同一 baseline 子轴 双窗口 实战 跨过 (per Pitfall 18 + 26 additive 升级 加新维度)
+- per Pitfall 22 双锚点 worked example 双窗口变体 — 早 + 午后 跨两窗口 双 anchor 联合 实战 = 早 baseline 第 9 子轴 (narrative 反向) 24h 后再确认 ✅ + 加新维度 (短期供给冲击 + 摩根大通降级 + 21 财经 重叠股东调仓)
+
+### 主审 stage 3 落盘 (per Pitfall 29 cp + 多次 patch + Pitfall 12 fresh publish 模式 + Pitfall 32 per-edit fresh evidence)
+
+- 主审 cp 模板 (从 7/10 早 index.html 532 行复制) + 9 次 patch (title + meta + hero badge + h1 + dek + una-pick 4 段 + main 4-section + blockquote 7 cite + stat-grid 3 卡 + 3 data-row + not-picked 8 条 + say 4 段 + footer 主编时间) — 全 30s 内落盘, 干净利落 per Pitfall 29 worked example.
+- voice.mp3 TTS MiniMax CN danya_xuejie (105.264s / 1.7 MB / 32000 Hz / ID3 valid) — Una 4 句说 浓缩 105s 主审叙事 narrative 反向 第 9 子轴 24h 后再确认 + 加新维度.
+- index.json 顶部追加 7/10 afternoon 条目 (24 entries total).
+- daily/index.html redirector → /daily/2026-07/2026-07-10-afternoon/.
+- top-level index.html update (topbar 13:00 + eyebrow 午后选 + featured card 6 小时后 + archive 7/10 afternoon entry).
+
+### 主审 stage 4 git + wrangler deploy + TG 报告
+
+- git commit 816fe6b "午后选 2026-07-10: 6 小时后, 智谱 -9% / MiniMax -5% 开盘 — narrative 不是失效 是 解禁日 + 次日 短期供给冲击, 摩根大通 400→300 + 21 财经 重叠股东调仓 新维度加入 (双锚点 A+F 联合 per Pitfall 22 双窗口变体 + Pitfall 26 baseline 双形态同期)".
+- git push origin main success (1ad511a → 816fe6b).
+- wrangler deploy (env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u all_proxy) — 29 files uploaded (3.38 sec) + opc-daily triggers deployed (8.36 sec) + version ID baa0efa1-8c64-472b-8bd0-dc51d52bc3c3.
+- ad-hoc verification (per Pitfall 32 fresh 50-check tempfile) — **50 PASS / 0 FAIL** (1.1-1.3 raw.md / 2.1-2.12 index.html 12 markers / 3.1-3.3 voice.mp3 ID3+32000Hz+105.264s / 4.1-4.4 index.json valid 24 entries / 5.1 redirector / 6.1-6.4 top-level / 7.1-7.2 git SHA match / 8.0 slot 3 文件 / 8a.1-8a.4 数字精度 4 卡 (-9% / -5% / +11.34% / -17.98%) / 8b.1 cite NON_NAME 集合 100+ 短语 missing=0 (per Pitfall 30 2 阶扩 + 7/10 午后 3 阶扩) / 8c.1 voice mtime ≥ index mtime (Pitfall 12 fresh publish) / 8d.1-8d.1 8 source 跨日 canonical 引用 全 PASS / 8e.1 raw.md slot 必存在 / 9.1-9.2 15 URL 全 canonical 无截断 / 11.1 wrangler version).
+
+### baseline 9 子轴 双形态同期 + additive 加新维度 (主审 cron 留痕)
+
+- 早 cron 4 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 造芯立项一年) — 7/10 早 24h 后再确认 ✅
+- 国产算力定价权 (DeepSeek-V4-Pro 跟随国产算力降价) — 7/10 早 24h 后再确认 ✅
+- 美方 capex 投资叙事脆弱性 (Meta $700B + Microsoft 15% 擦除) — baseline 失效信号持续观察 + 7/10 早 7/9 收盘 chip 股集体反弹 双形态同期 (6h 实测 反向)
+- 港股资本侧 lock-up 实战测试 第 5 主轴 (智谱 $4B 配售 + MiniMax 解禁 + 解禁潮 $11.5B)
+- 第 6 + 第 7 子轴 (MiniMax 抛压实测 + 智谱 over-subscribed 实测) — 7/9 evening 24h 后再确认 ✅
+- 第 8 子轴 (切计费拐点正式生效 商业化四件套) — 7/10 早 24h 后再确认 ✅
+- **第 9 子轴 (narrative 反向 维度 24h 后再确认 ✅ + 加新维度 短期供给冲击解读 + 摩根大通降级 + 21 财经 重叠股东调仓)** — 7/10 午后 6h 实测 跨过, 加新维度 per Pitfall 18 additive 升级
+
+### 给 7/10 晚报 (cron 第十五期 evening) Una baseline 留痕 + 明天早上 (7/11 早)
+
+- 早 + 午后 + 晚 + 早 + 午后 连续五期 baseline 9 子轴 双形态同期 + 加新维度 (第 9 子轴 24h 后再确认 + 加新维度) — 7/10 晚 cron 必须 24h 后再确认 第 9 子轴 + 看任一子轴失效信号.
+- 第 9 子轴 + 加新维度 继续生效条件 — 直到 (a) MiniMax 解禁后 24h / 48h / 72h 实测 股价企稳 / 资金回补 (b) 智谱 314.1 亿港元 资金到位 1 周 实际使用 (c) 智谱基石解禁后 5 日内 实际抛压 (d) 港股 AI 公司 lock-up 实测后 资金是否轮动回传统科技 (e) WAIC 7/17-7/20 真机首展后 实际产能 (f) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (g) 智谱 GLM-5.2 1M 上下文用户实际跑通 (h) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片 (i) Anthropic Fable 5 7/12 切计费实际生效 / 再延期 (j) Microsoft 7/14 Q4 财报 capex ROI (k) GPT-5.6 Sol 商业化加速 + ChatGPT Work + Codex desktop + hosted sites 24h / 1 周 / 1 月 用户实测数据 (l) 解禁比例不对等后续 — MiniMax 5.76% / 48.9% 比例是否 影响其他港股 AI cluster 解禁 (m) narrative vs 实测 反向 — 是中性 (解禁比例差异就是元凶) 还是 非中性 (narrative 受实测影响) (n) 摩根大通 400→300 评级 是否 触发其他 卖方 同步降级 (o) 21 财经 重叠股东调仓 维度 是否 7/10 收盘后 实际调仓 落地 (p) 智谱 narrative 失效 6h 续 实战 — 解禁次日 -9% 开盘后 7/10 午盘后 是否 收复 部分 失地 / 继续 -9% 区间 (q) 板块 vs 个股 双形态同期 — 恒科 +2.33% 反弹 vs 个股 narrative 失效 6h 续, 是否 持续 / 1 周 / 1 月 (r) 南向资金 6h 实测 三日累计 ~280 亿港元 + 中芯国际连续 15 天净买入 80.51 亿 = 国产算力标的 持续吸金 实战 (s) 阿里 7/10 早 禁员工 Claude Code (中方反制 新维度) 是否 7/10 下午 / 7/11 续发酵 / 触发其他中方 AI 大厂 同步.
+- 已知风险: (a) Fable 5 切计费 7/12 仍未生效 (b) Microsoft 7/14 Q4 财报 capex ROI (c) WAIC 7/17-7/20 启幕 (Atlas 950 真机首展) (d) Anthropic Mythos 7/11 framework 公告窗口 (e) 美方 Q2 earnings 7/8-7/12 5 日内 preannouncement 续.
+
+### 写者: 今天 Una (7/10 13:00 cron 第十五期 主审 fast-mode 接管 + 二次验证 5 候选 → A+F 联合)
+### 读者: 7/10 晚报 (7/10 21:00 cron 第十五期 evening) una 主审 / 7/11 早 (cron 第十六期) una 主审
+
