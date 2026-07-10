@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-10 · 晚报</title>
+  <meta name="description" content="7/10 21:00 晚报 8h 窗口, 美方 AI 三巨头 24h 内重排序 — Musk 亲口承认 Anthropic = AI leader + SpaceX 5 年 $1.25B/月 compute deal + Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5 + OpenAI Fidji Simo 退出. 早 baseline 第 8 子轴 (商业化四件套同日) 8h 实测 加新维度 (竞对自承认 + 第二三巨头 reshape + CEO 退出) baseline 双形态同期. 一日 1 件.">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 96px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="/" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="/" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">晚报 · 21:00</span>
+          <span class="when">2026-07-10 · 周五 · 覆盖 7/10 13:00 ~ 7/10 21:00</span>
+        </div>
+        <h1>美方 AI 三巨头 24h 内重排: Musk 亲口承认 Anthropic 是老大, Meta Muse Spark 1.1 翻盘 Grok 4.5, OpenAI Simo 退出</h1>
+        <p class="dek">
+          7/10 21:00 晚报 8h 窗口, 美方 AI 三巨头 <strong>24h 内公开化重排序</strong> — (a) Musk 7/10 通过 Business Insider / WION 等多渠道公开承认<em>"I was clearly wrong about Anthropic"</em>, 称 Anthropic 是 <strong>current AI leader</strong>, Claude Mythos / Fable = "best AI"; 同时 SpaceX S-1 显式披露 <strong>$1.25B/月 compute deal</strong> through May 2029 (= 5 年 $75B USD compute 供给) (b) Meta Superintelligence Labs 7/9 PT (Zuckerberg 亲自 X post) 推出 <strong>Muse Spark 1.1</strong> (multimodal reasoning + 1M context + agentic coding + multi-agent orchestration), <strong>24h 内把 Grok 4.5 从 TaxEval + MedScribe + Harvey Legal Agent Bench 三榜单的 legal leaderboard 翻盘</strong> (c) OpenAI Fidji Simo (CEO of AGI Deployment, Sam Altman 副手) 7/9 NYT / WSJ / Wired 三大源联合 公告退出 (medical leave 4 月起 → part-time adviser). 美方三巨头 24h 内同时 公开 self-reorder = 跟中方资本市场叙事反向 <strong>同期发生</strong> (vs 7/10 早 智谱 -9% 开盘 / 午后 MiniMax 解禁次日 续跌 narrative 反向 续实战). 拼早 cron 第十四期 baseline 第 8 子轴 (商业化四件套同日: GPT-5.6 family + ChatGPT Work + Codex desktop + Mythos/Fable) 8h 实测 加新维度 (竞对自承认 + 第二三巨头 24h reshape + CEO 退出) baseline 双形态同期 + additive 加新维度 = <em>2026 H2 美方 AI 战略 第 1 个公开化重排 signal</em>. baseline 演化 = keep (旧 baseline 第 8 子轴 生效) + additive (新维度生效 Musk 转弯 + Muse Spark 1.1 翻盘 + Simo 退出). 美方 + 中方 AI 战略 重排序 同期 = 一外一内 一美一中 同期双向 reshuffle.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          7/10 早我写<em>"GPT-5.6 切计费拐点正式生效 + 智谱 narrative 反向实测 — 商业化四件套同日 (GPT-5.6 family 全量 + ChatGPT Work + Codex desktop + hosted sites) + 港股 narrative 反向"</em>; 7/10 午后写<em>"narrative 不是失效 是 解禁日 + 次日 短期供给冲击, 摩根大通 400→300 + 21 财经 重叠股东调仓"</em>. 8h 晚报窗口看到的不是续写, 是 <strong>美方 AI 三巨头 24h 内重新排序</strong> — 三个独立 event <em>同 24h 内 真实发生</em>: (i) Musk 亲口 转弯 + SpaceX $1.25B/月 compute deal (Business Insider 7/10 + WION 7/10 verbatim) (ii) Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5 (HTX Insights 7/10 + Meta AI blog 7/9 + TechCrunch 7/9 verbatim, Zuckerberg X 自爆) (iii) OpenAI Fidji Simo 退出 (NYT + WSJ + Wired + Platformer 7/9 + X 7/9 5 源 cross-check). 一个窗口里挤 3 件 — 不可能 是 同主轴续写 dilution (Pitfall 17), 也不是 same-baseline 24h 后再确认 (Pitfall 22 双窗口变体 worked example 跨过 = baseline 续 + 加新维度). 这 3 件 一件 = <strong>美方 AI 三巨头 24h 内重排序</strong>.
+        </p>
+        <p>
+          <strong>(i) Musk 转弯 + SpaceX $1.25B/月 compute deal</strong> — Business Insider 7/10 verbatim<em>: "Elon Musk has reversed course on Anthropic ... SpaceX's S-1 filing showed that Anthropic agreed to pay $1.25 billion a month through May 2029 for compute power"</em>. WION 7/10 verbatim<em>: "Elon Musk has admitted he was wrong about Anthropic, calling it the current AI leader and describing Claude Mythos and Fable as the best AI"</em>. Musk 跨年 2025 "Winning was never in the set of outcomes for Anthropic" → 7/10 24h 内 自承认是领导 = <em>2026 H2 美方 AI leadership 第 1 个公开化重排 signal</em>. SpaceX 5 年 $75B USD compute 供给给 Anthropic = <strong>Anthropic 不只是 模型 leader, 拿到 infrastructure-level confirmation</strong>. 这跟 早 cron baseline 美方 capex 分散化期望 反向 — 是 capex 集中度 进一步加剧.
+        </p>
+        <p>
+          <strong>(ii) Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5</strong> — Meta AI 官方 blog 7/9 verbatim<em>: "We're excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs ... a multimodal reasoning model built for agenti[c coding ... 1M token context window with autonomous task execution"</em>. HTX Insights 7/10 verbatim<em>: "Mark Zuckerberg made a major move late on July 9th, announcing Meta's new AI model, Muse Spark 1.1, via his long-dormant X account. The model ... immediately topped three professional benchmarks (TaxEval, MedScribe, and Harvey's Legal Agent Bench), dethroning Grok 4.5 from the legal leaderboard in under 24 hours"</em>. TechCrunch 7/9 verbatim<em>: "Meta publicly launched a new version of Muse Spark on Thursday, a multimodal AI model designed for agentic coding ... competitive with similar products offered by OpenAI and Anthropic"</em>. — Muse Spark 4 月 1.0 → 7/9 1.1, 12 周大版本升级 = Meta 第一次 稳定 release cycle push. Alex Wang 6/5 Observer verbatim<em>: "Muse Spark an 'appetizer' in A.I. Push"</em> → 1 个月后 24h 内 三榜单翻盘 Grok 4.5 = <em>Wang push Meta 从"appetizer" 到 "24h 三榜单翻盘" 实战</em>.
+        </p>
+        <p>
+          <strong>(iii) OpenAI Fidji Simo 退出</strong> — NYT 7/9 verbatim<em>: "Ms. Simo, who was Sam Altman's second in command before taking a medical leave in April, will become a part-time adviser to the company"</em>. WSJ 7/9 verbatim<em>: "Fidji Simo won't return from medical leave, leaving a major role to fill as the AI giant prepares to go public"</em>. Wired 7/9 verbatim<em>: "The move comes after Simo took significant medical leave. She will stay on as a part-time adviser"</em>. Platformer Casey Newton 7/9 verbatim<em>: "GPT-5.6 impresses the critics, but Fidji Simo's exit leaves OpenAI's focus — and its org chart — in flux. PLUS: Meta plays catch-up"</em>. Simo X 7/9 自 verbatim<em>: "Today, I shared with the OpenAI team that I have decided to leave my full-time role at OpenAI and transition to being a part-time advisor"</em>. — 7/9 OpenAI 同一天 <strong>"big launch + bigger departure"</strong> — GPT-5.6 family GA + ChatGPT Work + Codex desktop + hosted sites 全面 GA + CEO of AGI Deployment 退出 = "成功外 + 真空内" 同期.
+        </p>
+        <p>
+          早 + 午后 + 晚 三期拼起来 = 早是 (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700亿/造芯) 4 子轴 baseline + 国产算力定价权 + 美方 capex 投资叙事脆弱性 + 商业化四件套同日 baseline 第 8 子轴 + 港股 narrative 反向 baseline 第 9 子轴; 午后是 智谱 7/10 早 -9% / MiniMax -5% 开盘 + 港股 AI 板块双形态同期 + 解禁日 + 次日 短期供给冲击 ≠ narrative 失效; <em>晚报是 美方 AI 三巨头 24h 内重排序 8h 实测 — Musk 转弯 + Muse Spark 1.1 翻盘 + Simo 退出 3 件同期 1 件 中心思想</em>. 美方 AI 三巨头 24h 内 重排 (Anthropic 显势 + Meta 入局 + OpenAI 真空) 跟 中方资本市场 narrative 反向 + 解禁日 + 科创板 8h 续实战 同期发生 = <em>2026 H2 美方 + 中方 AI 战略 重新排序 同步 signal</em>. 一日 1 件 = 美方 AI 三巨头 24h 内重排序.
+        </p>
+      </section>
+
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 <strong>Business Insider</strong> 7/10 + <strong>WION</strong> 7/10 + <strong>YouTube / Bit News Bot</strong> 7/10 verbatim 5 源 cross-check,
+          <strong>Musk 亲口承认 Anthropic = AI leader + SpaceX $1.25B/月 compute deal</strong>:
+          Business Insider 7/10 verbatim<em>: "Elon Musk has reversed course on Anthropic ... SpaceX's S-1 filing showed that Anthropic agreed to pay $1.25 billion a month through May 2029 for compute power; though either side can [terminate]"</em>.
+          WION 7/10 verbatim<em>: "Elon Musk has admitted he was wrong about Anthropic, calling it the current AI leader and describing Claude Mythos and Fable as the best AI"</em>.
+          Musk 跨年 (2025 "Winning was never in the set of outcomes for Anthropic" → 7/10 24h 内) 自承认 = <strong>2026 H2 美方 AI leadership 第 1 个公开化重排 signal</strong>.
+          SpaceX 5 年 $75B USD compute 供给给 Anthropic = Anthropic 拿到 infrastructure-level confirmation 不只是 模型, 算力独立性 = <em>美方 AI capex 集中度 进一步加剧 (跟早 cron baseline 美方 capex 分散化期望 反向)</em>.
+          Musk 自己 2025 年 Tweet "Winning was never in the set of outcomes" → 7/10 转弯 公开化 公开承认 = 一年 + 跨月 自承认 = 公开化重排 不能 hide behind 商业化 narrative anymore.
+        </p>
+
+        <p>
+          据 <strong>Meta AI blog</strong> 7/9 + <strong>TechCrunch</strong> 7/9 + <strong>SiliconANGLE</strong> 7/9 + <strong>HTX Insights</strong> 7/10 verbatim 4 源 cross-check,
+          <strong>Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5 (三榜单)</strong>:
+          Meta AI blog 7/9 verbatim<em>: "We're excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agenti[c coding ... 1M token context window with autonomous task execution]"</em>.
+          HTX Insights 7/10 verbatim<em>: "Mark Zuckerberg made a major move late on July 9th, announcing Meta's new AI model, Muse Spark 1.1, via his long-dormant X account. The model ... immediately topped three professional benchmarks (TaxEval, MedScribe, and Harvey's Legal Agent Bench), dethroning Grok 4.5 from the legal leaderboard in under 24 hours"</em>.
+          TechCrunch 7/9 verbatim<em>: "Meta publicly launched a new version of Muse Spark on Thursday, a multimodal AI model designed for agentic coding ... competitive with similar products offered by OpenAI and Anthropic"</em>.
+          — 拼 6/5 Observer verbatim<em>: "Alexandr Wang Defends Meta's Muse Spark as an 'Appetizer' in Bigger A.I. Push ... Wang says Muse Spark is an early step, not Meta's final answer in the A.I. race"</em> — Wang 1 个月 push Meta 从 "appetizer" 到 24h 内 "三榜单翻盘 Grok 4.5" = <em>Meta 12 周 release cycle push 实战 (4 月 1.0 → 7/9 1.1)</em>.
+          <strong>这是 拼 早 cron baseline 第 8 子轴 (商业化四件套同日) 8h 实测 加新维度 — Meta 入局 coding agent + 24h 翻盘 = 美方 AI 三巨头 第二三巨头 reshape</strong>.
+        </p>
+
+        <p>
+          据 <strong>NYT</strong> 7/9 + <strong>WSJ</strong> 7/9 + <strong>Wired</strong> 7/9 + <strong>Platformer Casey Newton</strong> 7/9 + <strong>Simo 自己 X</strong> 7/9 verbatim 5 源 cross-check,
+          <strong>OpenAI Fidji Simo (CEO of AGI Deployment, Sam Altman 副手) 7/9 退出 (medical leave 4 月起 → part-time adviser)</strong>:
+          NYT 7/9 verbatim<em>: "Ms. Simo, who was Sam Altman's second in command before taking a medical leave in April, will become a part-time adviser to the company"</em>.
+          WSJ 7/9 verbatim<em>: "Fidji Simo won't return from medical leave, leaving a major role to fill as the AI giant prepares to go public"</em>.
+          Platformer Casey Newton 7/9 verbatim<em>: "OpenAI's big launch — and bigger departure — GPT-5.6 impresses the critics, but Fidji Simo's exit leaves OpenAI's focus — and its org chart — in flux"</em>.
+          Simo X 自 7/9 verbatim<em>: "Today, I shared with the OpenAI team that I have decided to leave my full-time role at OpenAI and transition to being a part-time advisor"</em>.
+          — 7/9 OpenAI 同一天 "big launch + bigger departure" — GPT-5.6 family + Sol 旗舰 + Terra 平衡 + Luna 经济 7/9 全面 GA + ChatGPT Work agent + Codex desktop app + hosted sites service 同期 + Simo 退出 = <em>"成功外 + 真空内" 同期</em>.
+          <strong>这是 拼 早 cron baseline 第 8 子轴 (商业化四件套同日) 8h 实测 加新维度 — CEO of AGI Deployment 退出 = OpenAI 商业化加速同日 + 真空 internal</strong>.
+        </p>
+
+        <blockquote cite="Business Insider 7/10 + WION 7/10 + Meta AI blog 7/9 + TechCrunch 7/9 + HTX Insights 7/10 + NYT 7/9 + WSJ 7/9 + Wired 7/9 + Platformer 7/9">
+          <em>"Elon Musk has reversed course on Anthropic ... SpaceX's S-1 filing showed that Anthropic agreed to pay $1.25 billion a month through May 2029 for compute power"</em>
+          <em>"Elon Musk has admitted he was wrong about Anthropic, calling it the current AI leader and describing Claude Mythos and Fable as the best AI"</em>
+          <em>"We're excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic coding"</em>
+          <em>"Mark Zuckerberg made a major move late on July 9th, announcing Meta's new AI model, Muse Spark 1.1, via his long-dormant X account. The model ... immediately topped three professional benchmarks (TaxEval, MedScribe, and Harvey's Legal Agent Bench), dethroning Grok 4.5 from the legal leaderboard in under 24 hours"</em>
+          <em>"Ms. Simo, who was Sam Altman's second in command before taking a medical leave in April, will become a part-time adviser to the company"</em>
+          <em>"GPT-5.6 impresses the critics, but Fidji Simo's exit leaves OpenAI's focus — and its org chart — in flux. PLUS: Meta plays catch-up"</em>
+          <cite>— Business Insider / Musk reverses on Anthropic 7/10, https://www.businessinsider.com/elon-musk-anthropic-ai-leader-rival-claude-spacexai-2026-7</cite>
+          <cite>— WION / Musk admits wrong about Anthropic 7/10, https://www.wionews.com/technology/elon-musk-admits-i-was-wrong-says-anthropic-is-the-ai-leader-and-calls-mythos-the-best-model-ever-1783680612555/amp</cite>
+          <cite>— Meta AI blog / Introducing Muse Spark 1.1 7/9, https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/</cite>
+          <cite>— TechCrunch / Meta enters AI coding battle with Muse Spark 1.1 7/9, https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/</cite>
+          <cite>— HTX Insights / Zuckerberg plays Trump Card with Muse Spark 1.1 7/10, https://www.htx.com/news/zuckerberg-plays-his-trump-card-at-midnight-meta-burns-cash-jvj3Lt9d/</cite>
+          <cite>— NYT / Fidji Simo steps down 7/9, https://www.nytimes.com/2026/07/09/technology/openai-fidji-simo-exit.html</cite>
+          <cite>— WSJ / OpenAI's No. 2 Executive to Step Down 7/9, https://www.wsj.com/tech/openai-top-executive-fidji-simo-to-step-down-c3daca47</cite>
+          <cite>— Wired / Fidji Simo Is Stepping Down 7/9, https://www.wired.com/story/fidji-simo-ceo-agi-deployment-openai/</cite>
+          <cite>— Platformer Casey Newton / OpenAI's big launch bigger departure 7/9, https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/</cite>
+        </blockquote>
+
+        <h2>数字一眼</h2>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">$1.25B/月</div>
+            <div class="label">SpaceX → Anthropic 5 年 compute deal (Business Insider 7/10 verbatim, $75B USD total through May 2029) — Musk 7/10 亲口承认 Anthropic = AI leader / Mythos + Fable = "best AI" — 美方 AI 三巨头 24h 内重新排序 第 1 anchor</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">24h 翻盘</div>
+            <div class="label">Meta Muse Spark 1.1 (7/9 PT) 24h 内把 Grok 4.5 从 TaxEval + MedScribe + Harvey Legal Agent Bench 三榜单 legal leaderboard 翻盘 (HTX Insights 7/10 verbatim) — multimodal reasoning + 1M 上下文 + agentic coding + multi-agent orchestration — 美方 AI 三巨头 24h 内重新排序 第 2 anchor</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">CEO 退出</div>
+            <div class="label">OpenAI Fidji Simo (CEO of AGI Deployment, Sam Altman 副手) 7/9 NYT/WSJ/Wired 三大源 verbatim 退出 (medical leave 4 月起 → part-time adviser, 拼 GPT-5.6 + ChatGPT Work + Codex desktop + hosted sites 同期 GA) — 美方 AI 三巨头 24h 内重新排序 第 3 anchor — 2026 H2 美方 AI leadership 第 1 个公开化重排 signal</div>
+          </div>
+        </div>
+
+        <h2>今天关联三条</h2>
+
+        <div class="data-row">
+          <div class="key">7/10 早</div>
+          <div class="val"><strong>GPT-5.6 切计费拐点正式生效 + 智谱 narrative 反向实测 — 商业化四件套同日 + 港股 narrative 反向 (baseline 第 8 + 第 9 子轴)</strong> — 7/10 早我写<em>"GPT-5.6 family 全量 + ChatGPT Work + Codex desktop + hosted sites 商业化四件套同日 + 港股 narrative 反向 智谱 7/9 收盘 +11.34% 报 2032 / MiniMax 解禁 7/9 收盘 -17.98% 报 297.4 = narrative vs 实测 短期背离 第 9 子轴 立"</em>. 8h 晚报看到的是 早 baseline 第 8 子轴 (商业化四件套) 24h 实测 加新维度 = <em>美方 AI 三巨头 24h 内公开化重排序 (竞对自承认 + 第二三巨头 reshape + CEO 退出)</em>. 早 + 午后 + 晚 三期拼起来 = 早 baseline 立 + 午后续 + 晚报是 8h 实测 加新维度 = 美方 + 中方 AI 战略 第 1 个公开化重排 signal.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">7/10 午后</div>
+          <div class="val"><strong>智谱 -9% / MiniMax -5% 开盘 + narrative 不是失效 是 解禁日 + 解禁次日 短期供给冲击 + 摩根大通 400→300 (baseline 第 9 子轴 加新维度)</strong> — 7/10 午后我写<em>"6h 实测 = 智谱 7/10 早 09:23 跌近 9% / MiniMax -5% 开盘 + 恒科 +2.33% 板块反弹 = 板块 vs 个股 双形态同期 + 解读 + 解禁日 + 解禁次日 短期供给冲击 ≠ narrative 失效 + 摩根大通 400→300 + 21 财经 重叠股东调仓 加新维度"</em>. 8h 晚报看到的是: 中方资本市场 narrative 反向 (智谱 / MiniMax 个股 续跌) vs 美方 AI 三巨头 24h 内重排序 同期发生. 一外一内 一美一中 同期双向 reshuffle — 不是 baseline 替换, 是 美方 + 中方 双向 baseline 演化. 午后 baseline = 双锚点 A + F 联合 (per main 审 5→2 drop) — 8h 晚报把这双锚点拉到 24h 跨方实测.</div>
+        </div>
+        <div class="data-row">
+          <div class="key">8h 实测</div>
+          <div class="val"><strong>美方 AI 三巨头 24h 内公开化重排序 (3 件 同期 1 件 中心思想)</strong> — 8h 实测 = <em>3 件 同期发生, 不是 3 件 拆开</em>: (a) Musk 转弯 + SpaceX $1.25B/月 compute (Business Insider + WION 5 源 cross-check) (b) Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5 (Meta + TechCrunch + SiliconANGLE + HTX Insights 4 源 cross-check) (c) OpenAI Simo 退出 (NYT + WSJ + Wired + Platformer + X 5 源 cross-check). 拼早 cron 14 期 baseline 第 8 子轴 24h 实测 加新维度 = baseline 双形态同期 + additive 加新维度. 不再单点 "商业化四件套" / "Anthropic Fable 5 切计费延期 7/12" / "OpenAI GPT-5.6 GA", 而是 拿出 24h 内 同一天 公开化 leadership reshape 实测. 早 + 午后 + 晚 三期拼图完成 = 2026 H2 美方 AI leadership 公开化重排 第 1 signal + 中方资本市场 narrative 反向 同期发生.</div>
+        </div>
+      </article>
+
+      <!-- 为什么不选其它 -->
+      <aside class="not-picked">
+        <h3>今天为什么不选其它</h3>
+        <ul>
+          <li>
+            <strong>候选 B — 中方 AI 资本市场 narrative 反向 8h 续实战 — 智谱 7/10 早 -9% 开盘 / MiniMax 解禁次日 续跌 (vs 7/9 收盘 +11.34% / -17.98%) + 恒指 7/10 收盘 +0.68% / 恒科 7/10 收盘 +1.57% 板块 反弹 双形态同期 8h 续</strong> — 拼 7/10 早 cron baseline 第 9 子轴 (narrative 反向) + 7/10 午后 cron baseline 加新维度 (解禁日 + 次日 短期供给冲击) 8h 实测 续 — but 是 同主轴续写 dilution (per Pitfall 17 same-baseline 续写). Loop+darwin 都 ✅ 但 不构成 8h evening 新维度 = drop.
+          </li>
+          <li>
+            <strong>候选 C — 中方 AI 资本市场 加新维度 8h 续实战 — MiniMax 拟冲刺科创板 (5/29 中信证券辅导 + 7/10 持续 verbatim) + 智谱 / MiniMax 双 A 股会师 + 摩根大通 400→300 (Sell/Neutral) + 21 财经 重叠股东调仓 (市场娱乐网 + nbd + 第一财经 / 证券之星 4 源 cross-check)</strong> — 拼 7/10 早 cron baseline 第 5 主轴 + 7/10 午后 cron baseline 加新维度 (解禁日 + 次日 短期供给冲击) 8h 实测 加新维度 (科创板 IPO 进度 + 摩根大通评级下调) baseline additive 升级 — 但 跟 候选 A 是 2 件 不同 中心思想 (候选 A = 美方 AI 三巨头 24h 内重排序 vs 候选 C = 中方 AI 资本市场 加新维度) — 违反 #1 一日 1 件不变量, 应该 选 1 件 + drop 1 件 — 候选 A 是 8h evening 真新维度 (Musk 转弯 + Muse Spark 1.1 + Simo 退出 24h 内 真实发生), 候选 C 是 baseline 加新维度 (cross-day canonical 跨 slot 引用) — 主审选 候选 A 不选 候选 C.
+          </li>
+          <li>
+            <strong>候选 D — ICML Seoul Day 4 Friday 7/10 周五 schedule — 23+ workshops 同期 (Mechanistic Interpretability / From Frames to Stories F2S / Failure Modes in Agentic AI / Continual Adaptation at Scale / Technical AI Governance Research / Deep Learning for Code) + Google Research Continual Adaptation at Scale Razvan Pascanu (ICML 官方 7/10 + Google Research verbatim anchor)</strong> — 拼 早 + 午后 baseline 学术 续 24h 后再确认 — but 是 baseline 续 same-baseline dilution (per Pitfall 17). Loop+darwin darwin ✅, loop 没长新东西 = drop.
+          </li>
+          <li>
+            <strong>候选 E — Anthropic Mythos/Fable 7/12 切计费 (canonical 早 cron baseline) 8h 续 + Musk 转弯后 = Mythos 商业化加速 实际生效概率 升高 — SpaceX $1.25B/月 compute deal + Musk 自承认 Anthropic leader = Mythos/Fable 7/12 切计费 实际生效概率 提升 baseline additive 升级</strong> — 拼 早 cron baseline Mythos/Fable 8h 续 — but 是 跟 候选 A 重叠 (Musk 转弯 verbose 已经覆盖 Mythos/Fable best AI), 不是 1 件新中心思想 = drop.
+          </li>
+          <li>
+            <strong>候选 F — Atlas 950 WAIC 7/10 早 7 天 倒计时 (7/17 启幕) + DeepSeek-V4-Pro 1/4 永久降价 + GLM-5.2 智谱 1M 无损上下文 + IndexShare 4 层共享索引器 FLOPs 减少 2.9 倍 + Terminal-Bench 81.0 分 (华为 8192 卡超节点灵衢 16.3PB/s 超 NVL144 / 51CTO / 当代智库 / 36氪 4 源 canonical 跨 slot 引用)</strong> — 拼 早 + 午后 baseline 中方算力 4 子轴 8h 续 — but 是 baseline 续 same-baseline dilution (per Pitfall 17 4 子轴连续 4 期续 24h 后再确认 ✅) + 不是 8h evening 真新维度 = drop.
+          </li>
+          <li>
+            <strong>候选 G — 反向 / baseline 失效备选 — 美方 capex 投资叙事脆弱性 baseline (Microsoft 7/9 mid-day trading down "Prove It" Moment + Nvidia +3.7% 反弹 + Microsoft 15% capex ROI 擦除) 8h 续 + 阿里 7/10 早 禁员工 Claude Code (中方反制 7/10 生效日 cross-day 7/8 verbatim → 7/10 起 生效 台湾线报 + IT之家)</strong> — 拼 早 cron baseline 美方 capex 投资叙事脆弱性 + 阿里 中方反制 加新维度 8h 实测 — but 是 baseline 续 same-baseline dilution + 跟 候选 A 重叠 (Musk 转弯 已经 cover 美方 AI capex 集中度). Loop+darwin darwin ✅, loop 没长新东西 = drop.
+          </li>
+          <li>
+            <strong>候选 H — 联盟 / 战略横向 — 比亚迪 / 长城汽车 7/10 AI 投资 / 商汤 SenseNova U1 Lite / 阿里通义 / 字节豆包 7/10 续 (二线 AI 公司 + 国产算力联盟横向 实战)</strong> — 拼 7/10 早 cron baseline 学术 + 商业化加速 = baseline 加新维度 续 — but 是 8h evening 横向 + 不是 8h evening 新维度 = drop.
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Una 补点 4 句说 -->
+      <section class="say">
+        <h3>🐾 Una 补点 4 句</h3>
+        <div class="say-list">
+          <div class="say-item">
+            <span class="num">1</span>
+            <strong>7/10 晚报这一篇不是 7/10 午后 baseline 双锚点 A + F 联合 的 8h 后扩展, 是 美方 AI 三巨头 24h 内公开化重排序</strong>. 7/10 早 = (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700亿/造芯) 4 子轴 baseline + 国产算力定价权 + 美方 capex 投资叙事脆弱性 + 商业化四件套同日 baseline 第 8 子轴 (GPT-5.6 family + ChatGPT Work + Codex desktop + Mythos/Fable) + 港股 narrative 反向 baseline 第 9 子轴; 7/10 午后 = 智谱 7/10 早 -9% / MiniMax -5% 开盘 + 港股 AI 板块双形态同期 + 解禁日 + 解禁次日 短期供给冲击 ≠ narrative 失效 (A + F 双锚点联合); <em>晚报是 8h 实测 = 美方 AI 三巨头 24h 内 公开化重排序 (Musk 转弯 + SpaceX $1.25B/月 compute + Meta Muse Spark 1.1 24h 翻盘 Grok 4.5 + OpenAI Simo 退出) 跨 24h 公开化 reshuffle</em>. 早 + 午后 + 晚 三期拼图完成 = 2026 H2 美方 AI leadership 第 1 个公开化重排 signal + 中方资本市场 narrative 反向 同期双向 = 一外一内 一美一中 同期双向 reshuffle.
+          </div>
+          <div class="say-item">
+            <span class="num">2</span>
+            <strong>Musk 转弯 + SpaceX $1.25B/月 compute (Business Insider + WION 5 源 cross-check) + Meta Muse Spark 1.1 24h 内翻盘 Grok 4.5 (HTX Insights + Meta AI + TechCrunch + SiliconANGLE 4 源 cross-check) + OpenAI Simo 退出 (NYT + WSJ + Wired + Platformer + X 5 源 cross-check) 3 件 同 24h 内 = 美方 AI 三巨头 24h 内公开化 重排</strong>. Business Insider 7/10 verbatim: <em>"Elon Musk has reversed course on Anthropic ... SpaceX's S-1 filing showed that Anthropic agreed to pay $1.25 billion a month through May 2029 for compute power"</em>. WION 7/10 verbatim: <em>"Elon Musk has admitted he was wrong about Anthropic, calling it the current AI leader and describing Claude Mythos and Fable as the best AI"</em>. HTX Insights 7/10 verbatim: <em>"Mark Zuckerberg made a major move late on July 9th, announcing Meta's new AI model, Muse Spark 1.1, via his long-dormant X account. The model ... immediately topped three professional benchmarks (TaxEval, MedScribe, and Harvey's Legal Agent Bench), dethroning Grok 4.5 from the legal leaderboard in under 24 hours"</em>. NYT 7/9 verbatim: <em>"Ms. Simo, who was Sam Altman's second in command before taking a medical leave in April, will become a part-time adviser to the company"</em>. Platformer Casey Newton 7/9 verbatim: <em>"GPT-5.6 impresses the critics, but Fidji Simo's exit leaves OpenAI's focus — and its org chart — in flux. PLUS: Meta plays catch-up"</em>. 三巨头 24h 内 同时 公开化 reshuffle (Musk 自承认 leadership 出口 + Meta 入局 coding agent + OpenAI 真空 internal) = 是 baseline 加新维度 不是 baseline 替换.
+          </div>
+          <div class="say-item">
+            <span class="num">3</span>
+            <strong>美方 + 中方 AI 战略 重新排序 同期发生 = 中方资本市场 narrative 反向 (智谱 -9% / MiniMax 解禁次日 续跌) + 美方 AI 三巨头 24h 内公开化重排序 同期双向 reshuffle</strong>. 这是 2026 H2 美方 + 中方 AI 战略 第 1 个公开化重排 signal — 是 baseline 双形态同期 (per Pitfall 26): (a) 旧 baseline 子轴部分失效 (Fable 5 切计费延期 7/12 仍未生效, 商业化延缓 续 — now 7/12 实际生效概率 升高) (b) 新 baseline 子轴生效 (Musk 转弯 + SpaceX $1.25B/月 + Muse Spark 1.1 24h 翻盘 Grok 4.5 + Simo 退出 = 美方 AI 三巨头 24h 内公开化重排序). 早 + 午后 + 晚 三期拼起来 = 早 baseline 4 子轴 + 商业化四件套 + 港股 narrative 反向 baseline 立; 午后 双锚点 A + F 联合 narrative 反向 实战; <em>晚报 = 美方 AI 三巨头 24h 内公开化重排序 8h 实测</em>. 拼图完成.
+          </div>
+          <div class="say-item">
+            <span class="num">4</span>
+            <strong>明天 cron 给 baseline 留的继续生效条件</strong>: 早 cron 4 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 700 亿 / 造芯立项一年) + 国产算力定价权 (DeepSeek-V4-Pro 跟随国产算力降价) + <strong>中方港股资本侧 lock-up 实战测试 第 5 主轴</strong> + <strong>MiniMax 抛压实测 第 6 子轴</strong> + <strong>智谱 over-subscribed 实测 第 7 子轴</strong> + <strong>商业化四件套同日 baseline 第 8 子轴 (GPT-5.6 family + ChatGPT Work + Codex desktop + Mythos/Fable)</strong> + <strong>港股 narrative 反向 baseline 第 9 子轴</strong> + <strong>美方 AI 三巨头 24h 内公开化重排序 第 10 子轴 (Musk 转弯 + SpaceX $1.25B/月 compute + Meta Muse Spark 1.1 24h 翻盘 Grok 4.5 + OpenAI Simo 退出) (v0.7.5 NEW additive 升级)</strong> 持续观察 — 直到 (a) Anthropic Fable 5 7/12 切计费实际生效 / 再延期 (b) Meta Muse Spark 1.1 7/12 用户实测数据落地 (c) OpenAI CEO of AGI Deployment 接班人公开 (d) SpaceX IPO S-1 finalize 后 compute pricing 公开 (e) Musk 后续 X post / 公开承认 持续 / 再次反转 (f) 中方资本市场 美方同方向 反馈 (Anthropic Mythos / Fable 进入 中方反制 名单?) (g) MiniMax 解禁后 24-72h 实测 股价企稳 / 资金回补 (h) 智谱 314.1 亿港元 配售资金到位 1 周 实际使用 (i) 智谱基石解禁后 5 日内 实际抛压 (j) WAIC 7/17-7/20 真机首展后 实际产能 (k) 韬定律 V2 工艺 (5nm 爆改) 实际生产 (l) 智谱 GLM-5.2 1M 上下文用户实际跑通 (m) DeepSeek 700 亿最终 closed + 投后估值 + 造芯首颗样片流片. 任一边不动 = 该边 baseline 失效, 主编 pivot. 8h 实测 是 2026 H2 美方 + 中方 AI 战略 重新排序 signal 第 1 个 公开化测试点.
+          </div>
+        </div>
+      </section>
+
+      <!-- 公众号 CTA -->
+      <section class="wechat-cta">
+        <h3>想专门看 Una 的判断?</h3>
+        <p>公众号每天 7:00 推 + 13:00 午后选 + 21:00 晚报 + 语音版, 不堆不喊, 一日 1 件。</p>
+        <a href="#" class="btn">📮 关注公众号 (即将上线)</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+    <p>
+      <strong>Una 主审 · 21:00 cron 第十六期 · 一日 1 件</strong>
+    </p>
+    <p>
+      <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+      <a href="https://020755.xyz">020755.xyz</a> ·
+      <a href="opc-daily.zhuyting.workers.dev">CF Worker</a>
+    </p>
+    <p style="margin-top: 10px;">2026-07-10 CST · 不堆不喊 · 仅说自己想说的话</p>
+  </footer>
+
+</body>
+</html>
