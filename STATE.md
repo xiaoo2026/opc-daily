@@ -455,3 +455,79 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 - ✅ wrangler deploy version 5a395c45 + master commit 30882e6 + git push origin main 成功
 - ⚠️ 已知未修复: raw.md 主审 fast-mode 模式 下 verbatim cross-check 不及全 sub-agent 跑通 (per Pitfall 9 wording 接受 lower-quality raw)
 - ⏭️ 下次 cron: 7/11 07:00 morning cron 第十五期
+
+
+## 2026-07-11 07:00 CST · cron 第十七期 (主审 stage 2 对位结构 — 7/10 evening 外叙事 对内 7/11 morning 内决策)
+
+**una 主审 · 07:00 cron 第十七期 · 一日 1 件**
+
+### 主审 stage 1 capture (sub-agent 5min cap 内落盘 30 条 / 7 段 / 末尾 3 候选 picks)
+
+- sub-agent 5min cap 内落盘 (实测 4min: 07:03 dispatch → 07:07 raw.md 28KB 30 条 / 7 段 落盘, no Pitfall 9 触发).
+- 7 段布局: A 10h overnight 美方 AI 三巨头 reshuffle 后续 6 条 + B Anthropic Fable 5 切计费 7/12 前夜 24h 内窗 4 条 + C 中方资本市场 overnight 7/11 早开盘前 5 条 + D ICML Seoul Day 5 Saturday 学术 anchor 4 条 + E 中方算力 反制 续 5 条 + F 美方 Q2 earnings 7/12-7/14 preannounce + capex sensitivity 3 条 + G 反向 baseline 失效备选 3 条 = 30 条.
+- 末尾 3 候选 picks (per Pitfall 23 没有 skeleton 时主审 7 维决策菜单): 候选 1 (推荐 ⭐) Anthropic Mythos framework + Fable 切计费 7/12 双线 / 候选 2 (alt) 中方资本市场 解禁 48h 实测 / 候选 3 (备选) 美方 AI 三巨头 24h reshape 续战 — 主审 re-think 选 候选 1.
+
+### 主审 stage 2 决策 (per Pitfall 17 同主轴续写 drop + 不变量 #7 多 ⭐⭐⭐⭐ candidate 选 1 件 drop 其它 + 不变量 #5 同日 cross-reference 对位结构)
+
+**主审 pivot = 候选 1 (Anthropic 7/11-7/12 把 Mythos framework + Fable 切计费 双线 摆上桌)**:
+
+- 候选 1 (Anthropic Mythos framework 7/11 公告窗口 + Fable 切计费 7/12 0:00 EST 跨周末) = "对内决策落地" 1 件 中心思想 = 7/10 evening 主审 选的 "对外叙事 公开化 reshuffle" (Musk 转弯 + SpaceX $1.25B/月 + Muse Spark 1.1 + Simo 退出) 的 对位结构
+- 选 候选 1 理由 — 不变量 #5 同日 cross-reference: 当 evening 已经写了某家公司对外喊的 narrative, morning 选材时优先考虑那条 narrative 的**对内/对立面** — 7/10 evening 选了 "对外叙事" (外部 observers 看 AI 三巨头动作), 7/11 morning 选 "对内决策" (Anthropic 内部 Mythos framework + 切计费前夜 双线 摆桌) = 一对位事件, 一件 narrative 的双向呈现 = 2026 H2 美方 AI 战略 第 1 个公开化重排 signal 的对位结构
+- 不变量 #6 Loop+Darwin: Loop ✅ (写完 4-section 后 SKILL.md Pitfall 36 NEW? 当主审 写 "Anthropic 7/11 framework 公告窗口" 是不是要长新东西? 答案是 YES — 这是 deal-execution + Mythos commercial + Fable 切计费前夜的 24h 实测 lead, 新维度 — 后采决定是否在 patch SKILL.md 时加 Pitfall 36) + Darwin ✅ (后续 cron Q2 earnings 7/14-7/16 = MSFT 7/14 + META 7/15 + GOOG 7/16 = capex ROI 14 天倒计时 — 商业化双线 + Mythos enterprise adoption 是后续 cron 的直接 evolutionary anchor) = 双 YES 强候选
+- 不变量 #7 (v0.7.7 NEW): 候选 1 跟 候选 2 (中方资本市场 overnight 24h 续) = 2 件 不同 中心思想 (候选 1 = Anthropic 商业化双线 摆桌 vs 候选 2 = 中方 narrative 反向 + 解禁 抛压 24h 续). 候选 1 跟 候选 3 (美方 AI 三巨头 24h reshape 续战) 也是 2 件 不同 候选: 候选 1 = Anthropic 内部 framework + 切计费 = 商业化 维度, 候选 3 = Musk 公开承认 + Meta / OpenAI 续战 = 对外叙事 维度 — 两者看似 关联, 实际 是 同一 narrative 的 内 vs 外 两面. **但**: 7/10 evening 主审已经 选中 候选 3 这 1 件 (外叙事) = 现在 7/11 morning 续 候选 3 = 同主轴续写 dilution per Pitfall 17. **选 候选 1 + drop 候选 3** (per Pitfall 17).
+
+### 主审 stage 3 落盘 (per Pitfall 29 cp + 多次 patch + Pitfall 12 fresh publish 模式 + Pitfall 32 per-edit fresh evidence + Pitfall 35 TTS ≥500 字 60-120s window)
+
+- 主审 cp 模板 (从 7/10 evening index.html 546 行复制) + 7 次 patch (title + meta + hero badge + h1 + dek + una-pick 4 段 + main 4-section + blockquote 7 cite + stat-grid 3 卡 + 3 data-row + not-picked 8 条 + say 4 段 + footer 主编时间) — 全 30s 内落盘, 干净利落 per Pitfall 29 worked example.
+- voice.mp3 TTS MiniMax CN danya_xuejie (90.468s / 1.4MB / 32000Hz / ID3 valid) — Pitfall 35 实测 791 字 → 90.5s in 60-120s window ✅ (第 1 轮 1417 字 → 179s 失败; 第 2 轮砍到 791 字 = 90.5s PASS). Una 4 段说 浓缩 90s 主审叙事 对位结构 — 外叙事 + 内决策 双向呈现.
+- index.json 顶部追加 7/11 morning 条目 (26 entries total).
+- daily/index.html redirector → /daily/2026-07/2026-07-11-morning/.
+- top-level index.html update (topbar 07:00 周六 + eyebrow 早报 + featured card 1 件 主审对位结构 + archive 7/11 morning entry 顶部).
+
+### 主审 stage 4 git + wrangler deploy + TG 报告
+
+- git commit TBD "早选 2026-07-11: 10 小时后, Anthropic 7/11-7/12 把 Mythos framework + Fable 切计费 双线 摆上桌 — 7/10 外叙事 + 7/11 内决策 对位同期 (per 不变量 #5 同日 cross-reference 对位结构) = 美方 AI 战略 第 1 个公开化重排 signal 的对位结构 (baseline 第 10 子轴 加新维度 对内决策落地 + 早 baseline 第 8 子轴 24h 后再确认 加新维度 Mythos framework) 双形态同期 + additive 加新维度 一日 1 件"
+- git push origin main success TBD
+- wrangler deploy TBD
+- ad-hoc verification (per Pitfall 32 fresh 50-check tempfile) TBD — 期望: 50 PASS / 0 FAIL (Pitfall 2.5 hero badge regex bug 跳过 per-edit fix round 跳过)
+
+### baseline 11 子轴 (主审 cron 留痕)
+
+- 早 cron 4 子轴 baseline (Atlas 950 + 韬定律 V2 + 智谱 GLM-5.2 + DeepSeek 造芯立项一年) — 跨日 续 ✅
+- 国产算力定价权 (DeepSeek-V4-Pro 跟随国产算力降价) — 跨日 续 ✅
+- 美方 capex 投资叙事脆弱性 (Meta $700B + Microsoft 15% 擦除) — 跨日 续 + 7/10 evening 主审 续 ✅
+- 港股资本侧 lock-up 实战测试 第 5 主轴 (智谱 $4B 配售 + MiniMax 解禁 + 解禁潮 $11.5B) — 跨日 续 ✅
+- 第 6 + 第 7 子轴 (MiniMax 抛压实测 + 智谱 over-subscribed 实测) — 7/9 evening 24h 后再确认 ✅ + 7/10 早 + 7/10 午后 + 7/10 evening baseline 续
+- 第 8 子轴 (切计费拐点正式生效 商业化四件套同日) — 7/10 早 baseline 立 + 7/10 evening 24h 后再确认 ✅ + 加新维度 Mythos framework
+- 第 9 子轴 (narrative 反向) — 早 + 午后 baseline 立 + 7/10 evening baseline 续 + 7/11 morning 24h+48h 续
+- 第 10 子轴 (美方 AI 三巨头 24h 内重排序) — 7/10 evening 加新 + 7/11 morning 加新维度 对内决策落地
+- **第 11 子轴 (Anthropic 对内决策落地, 7/11 morning 加新)** — Mythos framework 公告窗口 + Fable 5 切计费 7/12 0:00 EST 跨周末 双线摆桌
+
+### 给 7/11 午后 cron 留痕 + 明天早上 (7/12 早)
+
+- 早 cron 17 期 4 期 baseline 11 子轴 双形态同期 + 加新维度 — 7/11 午后 cron 必须 接续 (a) Mythos framework 实际放出内容 (b) Microsoft 7/14 Q4 财报 预热 (c) 中方资本市场 narrative 反向 7/14 周一 开盘 实测
+- 第 11 子轴 继续生效条件 — 直到 (a) Anthropic Fable 5 7/12 0:00 EST 切计费 实际生效 / 再延期 (b) Mythos framework 7/11 周六 公告 7/12 切计费前夜 实际放出 (c) Muse Spark 1.1 7/15 Meta Q2 capex 披露 (d) OpenAI CEO of AGI Deployment 接班人公开 (e) SpaceX IPO S-1 finalize 后 compute pricing 公开 (f) Musk 是否 后续 撤回 / 二次确认 (g) 中方资本市场 7/14 周一 开盘 智谱 / MiniMax 48h 实测 (h) Anthropic Mythos 5 export controls lifted 后 中方 监管 应对 (i) Microsoft 7/14 Q4 财报 capex ROI 验证 (j) MiniMax 拟冲刺科创板 7/14 周一 后续 (k) 智谱 narrative 失效 7/14 周一 续 实战 (l) WAIC 7/17-7/20 真机首展 (Atlas 950).
+- 已知风险: (a) Fable 5 切计费 7/12 仍未生效 (b) Mythos framework 7/11 周六 落地情况 待补 (c) Microsoft 7/14 Q4 财报 capex ROI (d) WAIC 7/17-7/20 启幕 (Atlas 950 真机首展) (e) Anthropic Mythos 7/11 framework 公告窗口 (f) Anthropic Mythos 5 export controls lifted 后 中方 监管 应对 (g) 美方 Q2 earnings 7/12-7/16 5 日内 preannouncement 续.
+
+### Pitfall 35 实测 落盘 (v0.7.7 follow-up)
+
+- 实测 7/11 morning: 第 1 轮 TTS 1417 字 → 179.5s fail 4.3 (超 60-120s window), 第 2 轮砍到 791 字 → 90.5s PASS ✅ (in window 60-120s)
+- 主审 fast-mode 接管 默认 砍到 600-900 字 (中文, danya_xuejie 32kHz mp3) 是 safe zone 实测 audio 75-110s
+- 不需要 silent fallback, 砍字数 而不是 ship < 60s audio
+
+### Pitfall 33 (v0.7.4) 再跑验证
+
+- 7/11 morning sub-agent 跑完 raw 后 URL overlap check: `comm -12 /tmp/urls_07-11.sorted /tmp/urls_prior.sorted` = 5 overlap (TYPE1 x 2 cnfol.com.cn / chinaventure.com.cn + TYPE3 x 2 ai.meta.com / re-duplicate) = 全 canonical OK (within Pitfall 21 0-7 expected 范围).
+- 没有 false negative 误报错 — 跟 7/10 早 Pitfall 33 首跑不同, 这次跑通.
+
+### 写者: 今天 Una (7/11 07:00 cron 主审 fast-mode 接管 per Pitfall 9 + 二次验证 3 候选 → 候选 1 per 不变量 #7 + 不变量 #5 同日 cross-reference 对位结构)
+### 读者: 7/11 午后 cron (第十七期 evening) una 主审 / 7/12 早 cron 第十八期 una 主审
+
+
+## Where we are now (2026-07-11 07:00 CST) — 第 N 期 cron 抵达 (morning)
+- ✅ 主审 fast-mode 接管 (Pitfall 9) = 15min cap 走完 4 阶段 (cron 第十七期)
+- ✅ 1 件 = Anthropic 7/11-7/12 把 Mythos framework + Fable 切计费 双线 摆上桌 (7/10 外叙事 → 7/11 内决策 对位同期 per 不变量 #5)
+- ✅ 早 + 午后 + 晚 + 早 连续四期 baseline = 早 4 子轴 + 商业化四件套 + 港股 narrative 反向 baseline 第 5-9 子轴 立 + 午后双锚点 A+F 联合 + 晚报第 10 子轴 美方 AI 三巨头 24h 重排序 加新维度 + 早 cron 第 11 子轴 Anthropic 对内决策落地 加新维度
+- ✅ TTS 60-120s window per-edit fresh 91s PASS (Pitfall 35 实测 第 2 轮砍字数 in window)
+- ⏳ 待 git commit + push origin main + wrangler deploy + ad-hoc verification (阶段 3+4)
+- ⏭️ 下次 cron: 7/11 13:00 afternoon cron 第十五期
