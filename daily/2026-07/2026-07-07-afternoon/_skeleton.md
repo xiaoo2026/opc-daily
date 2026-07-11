@@ -26,28 +26,28 @@
 ### v4-Daily 4-section 草稿
 
 #### 标题 (≤20 字)
-**Anthropic 同一天被四股力量撕**
+**Anthropic 这一天被四股力拉扯**
 
 #### 为什么这件 (100-150 字, Una 第一人称)
-今天读 30 条, 我看到的不是 30 件孤立新闻, 是同一家公司 (Anthropic) 在 36 小时内被四方同时施压. 这是美方头部 AI 公司 IPO 前夜的**真实形状** — 估值故事要讲、技术叙事要造、芯片要自主、政治风险要扛. 早报我说"国家大基金进场", 那是中国 AI 的资本换轨; 现在你看美方, 资本换轨的不是钱, 是**"token 付费模式被自己客户质疑"**这件事. 中美 H2 谁先撑不住, 看这四方怎么落.
+今天 30 条里, Anthropic 出现了 5 次. IPO 估值 / Karp 炮轰 token / Fable 5 站台 / 五角大楼邮件曝光 / 三星谈芯片 — 同一公司, 36 小时内被五件事砸. 早上我说"国家大基金进场", 中国 AI 在换钱的方向; 现在这家美方头部在换另一件事 — **客户开始怀疑 token 付费模型值不值**. 谁先撑不住, 看四股力怎么落, 不看估值数字.
 
 #### 事实部分 (200 字, 30 秒能懂)
-- **资本端**: Anthropic 估值 $965B (5 月), OpenAI $852B (3 月), The Daily Upside 报道两家下半年都将 IPO, Anthropic 最早 10 月.  ⚠️ **[Una 现场补料-待 cron 验]**: $965B/$852B 两个估值 + Karp 引述不在 morning raw.md 里, 是 Una web_extract The Daily Upside URL 现场抓的 (URL 已验证可达). 13:00 cron 阶段 1/2 必须 (a) sub-agent 重采 raw 时把 Karp + 估值补进 raw/2026-07-07-afternoon.md; (b) Una 主审二次 grep 确认才能进 stat-card / 数字一眼. 不满足则降级: 把 Karp 段落改成"路透 7/6 报道 token 模式被质疑"匿名表述, 删 $965B/$852B.
-- **市场端**: Palantir CEO Karp 公开炮轰 token 付费 "something has gone completely wrong", Uber / Microsoft / Salesforce / Meta 已开始限额员工 AI 支出. 一线企业客户在找更便宜的开源模型替代.  ⚠️ **[同上一条, Karp 名字 + Palantir 机构名都是现场补料]** — 引用必须跟 (a) (b) 走, 不在 cron 守门前不进正式 publish.
-- **技术端**: Karpathy 5 月加入 Anthropic 预训练, 7/6 出面给 Fable 5 站台 (1600 行代码生成 63 个 3D 世界), 造新词 "fablemaxxing". 但 Fable 5 7/1 之前刚被美国出口管制拦了 3 天.
-- **政治端**: Anthropic CEO Dario 与五角大楼邮件曝光, 因拒绝国防订单被列"国安威胁".
-- **横向**: Meta 同日内部承认 agent AI "未达预期", 转算力租赁; Anthropic 跟三星谈代工定制芯片 — 去 Nvidia 化加速.
+- **资本**: Anthropic 估值 $965B (5 月), OpenAI $852B (3 月), The Daily Upside 报道两家下半年都 IPO, Anthropic 最早 10 月.  ⚠️ **[Una 现场补料-待 cron 验]**: $965B/$852B + Karp 引述不在 morning raw.md, 是 Una web_extract The Daily Upside URL 现场抓的 (URL 已验证可达). 13:00 cron 阶段 1/2 必须 (a) sub-agent 重采 raw 把 Karp + 估值补进 raw/2026-07-07-afternoon.md; (b) Una 主审二次 grep 才能进 stat-card. 不满足则降级: Karp 段改"路透 7/6 报道 token 模式被质疑"匿名, 删 $965B/$852B.
+- **市场**: Palantir CEO Karp 说 token 付费模式"something has gone completely wrong". Uber / Microsoft / Salesforce / Meta 已经在限制员工 AI 支出.  ⚠️ **[同上, Karp + Palantir 都是现场补料]** — cron 守门前不进 publish.
+- **技术**: Karpathy 5 月加入 Anthropic 预训练, 7/6 给 Fable 5 站台 (1600 行代码生成 63 个 3D 世界). 但 Fable 5 在 7/1 之前被美国出口管制拦了 3 天.
+- **政治**: Anthropic CEO Dario 跟五角大楼邮件曝光, 拒绝国防订单被列"国安威胁".
+- **横向**: Meta 同一天承认 agent AI 没达预期, 转算力租赁; Anthropic 跟三星谈代工芯片.
 
 #### 不选其它的 (3 条, 30 字/条)
-- **腾讯混元 Hy3 发布 + 1元/百万token** (财新): 中国大厂旗舰发布, 节奏跟 DeepSeek 早报顺延, 不出新意.
-- **GPT-5.6 Sol 30小时跑赢 Opus 64小时** (36氪): 技术里程碑, 但 5/27 模型叙事已饱和, 无新增.
-- **美团 LongCat-2.0 1.6T + 5万卡国产集群推理** (比特范): 国产算力里程碑, 但跟 DeepSeek 早报同质, 当日不再加.
+- **腾讯混元 Hy3 + 1元/百万token** (财新): 大厂旗舰, 跟 DeepSeek 早报同方向, 不出新意.
+- **GPT-5.6 Sol 30小时跑赢 Opus** (36氪): 技术里程碑, 5 月以来模型叙事已饱和.
+- **美团 LongCat-2.0 1.6T** (比特范): 国产算力里程碑, 跟 DeepSeek 早报同质.
 
 #### Una 4 句说 (4 条 ≤ 50 字/条)
-1. **Anthropic 此刻的状态 = 美方 AI 头部公司 IPO 前夜的标本**. 估值 $965B, 但客户已经在用脚投票.
-2. **token 付费模式的"五年假设"开始塌**. Karp 的炮轰不是一家之言, 是 SaaS + 金融一线客户的共识抬头.
-3. **Karpathy 入伙 + fablemaxxing 是造势, 不是答案**. Fable 5 7/1 还在被美国自己拦, 这种叙事矛盾靠站台盖不住.
-4. **中美同日换轨, 但轨道不同**. 中国是"国家队进场 (钱的方向)", 美国是"市场化资本+政治+技术叙事三方撕 (钱的本质在被质疑)".
+1. Anthropic 这家公司的今天, 是美方头部 AI IPO 前夜的样子. 估值 $965B, 客户已经在限制支出.
+2. token 付费模式一直被当成默认, Karp 是第一个公开说它有问题的人. SaaS 客户已经在找开源替代.
+3. Karpathy 入伙 + fablemaxxing 是 IPO 前夜的造势. Fable 5 在 7/1 还在被美国自己拦, 这件事站台盖不住.
+4. 今天中美同日换轨. 中国是"国家队进来决定钱往哪走", 美国是"客户怀疑钱花得值不值".
 
 ---
 
