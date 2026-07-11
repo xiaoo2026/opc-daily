@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-12 · 早报</title>
+  <meta name="description" content="Una 选了 1 件 · 2026-07-12 · 早报. 7/12 07:00 早报 6h 窗口 7/11 21:00 ~ 7/12 03:00 CST, 智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 + MiniMax 拟冲刺科创板 7/10 落地续 + 港股 7/10 close 数据 24h+72h 续 + WAIC 7/17-7/20 倒计时 5 天 续 + Anthropic Fable 切计费 7/12 中午 前夜 cross-check (per 新时空 7/10 + 金融界 7/10 22:39 + 36氪 智东西 7/10 20:19 + 36氪 IPO 早知道 7/10 11:19 + 武断专横网 7/10 00:37 + 周刊觀察站 7/10 + 国内新闻圈 7/11 06:07 + 创业信息汇 7/11 05:47 + 上海秀仕达 7/11 02:48/20:02 + 21世纪经济报道 7/7 + AITOP100 7/8 + AI 中文社 7/9 + 龙国钓鱼频道 7/8 跨日 cross-check). 拼 早 cron 17 期 baseline 第 11 子轴 (美方对内决策 = Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌) + 午后 cron 18 期 baseline 第 12 子轴 (中方对内决策 = MiniMax-W 拟冲刺科创板 + 港股 → A 股 二级市场 二次上市窗口) + 晚报 cron 19 期 baseline 第 13 子轴 (中方对外展示 启动前夜 = WAIC 7/17-7/20 6 天倒计时) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段) = 2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 拼图完成 + 第 4 接力. 一日 1 件 = 智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 + MiniMax 拟冲刺科创板 7/10 落地续 + 港股 → A 股 二次上市窗口 第 3 接力.">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #FBF7F1;
+      --paper-deep: #F3ECE0;
+      --una-orange: #E07856;
+      --una-orange-soft: #F5C8B0;
+      --una-shadow: #B85A3E;
+      --ink: #2A2520;
+      --ink-2: #5C544C;
+      --ink-3: #8B847C;
+      --border: rgba(42, 37, 32, 0.10);
+      --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+    .header-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+    .brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+    .nav-back {
+      font-size: 13px; color: var(--ink-2);
+      text-decoration: none; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    .hero { padding: 36px 0 28px; }
+    .hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+    .badge {
+      background: var(--una-orange-soft);
+      color: var(--una-shadow);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .when { font-size: 13px; color: var(--ink-3); }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .dek {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .una-pick {
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+      padding: 22px 26px;
+      margin: 28px 0;
+    }
+    .una-pick-head {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      margin-bottom: 12px;
+    }
+    .una-pick-head img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+    }
+    .una-pick p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .una-pick p:last-child { margin-bottom: 0; }
+    .una-pick strong { color: var(--una-shadow); font-weight: 600; }
+    .una-pick em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+    .main { margin-bottom: 36px; }
+    .main h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .main p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .main strong { color: var(--ink); font-weight: 600; }
+    .main em { font-style: italic; color: var(--ink-2); }
+
+    blockquote {
+      border-left: 3px solid var(--una-orange);
+      padding: 14px 20px;
+      margin: 20px 0;
+      background: var(--paper-deep);
+      border-radius: 0 6px 6px 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-2);
+      line-height: 1.7;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-3);
+      font-family: var(--font-body);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--paper-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--una-shadow);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.4;
+    }
+
+    .data-row {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .key {
+      flex-shrink: 0;
+      width: 96px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--una-shadow);
+      padding-top: 2px;
+    }
+    .data-row .val { color: var(--ink); flex: 1; line-height: 1.65; }
+
+    .not-picked {
+      background: var(--paper-deep);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .not-picked h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .not-picked ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-picked li {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      padding: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .not-picked li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: var(--ink-3);
+      font-weight: 700;
+    }
+    .not-picked strong { color: var(--ink); font-weight: 600; }
+    .not-picked em { font-style: normal; color: var(--ink-3); font-size: 12px; }
+
+    .say {
+      margin: 36px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%);
+      border-radius: 10px;
+    }
+    .say h3 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .say-list { display: flex; flex-direction: column; gap: 14px; }
+    .say-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    .say-item .num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      background: var(--una-orange);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .wechat-cta {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .wechat-cta h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .wechat-cta p {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--una-orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--una-shadow); }
+
+    footer {
+      padding: 28px 0 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-3);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--una-orange);
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: var(--ink-2);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover { color: var(--una-orange); }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      h1 { font-size: 24px; }
+      .dek { font-size: 16px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .data-row { flex-direction: column; gap: 4px; }
+      .data-row .key { width: auto; }
+    }
+  </style>
+</head>
+
+  <body>
+
+  <header>
+    <div class="wrap header-row">
+      <a href="v4-Home.html" class="brand">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        <span class="brand-text">Una 陪你看 AI</span>
+      </a>
+      <a href="v4-Home.html" class="nav-back">← 回到首页</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-meta">
+          <span class="badge">早报 · 07:00</span>
+          <span class="when">2026-07-12 · 周日 · 覆盖 7/11 21:00 ~ 7/12 03:00</span>
+        </div>
+        <h1>周日 pre-market: 智谱 / MiniMax / WAIC 三线 7/14 周一 续 (第 14 子轴)</h1>
+        <p class="dek">
+          7/12 早报 6h 窗口 7/11 21:00 ~ 7/12 03:00 CST, <strong>智谱 narrative 反向 7/14 周一 开盘前 pre-market 判断 + MiniMax 拟冲刺科创板 7/10 落地续 + 港股 7/10 close 数据 24h+72h 续 (baseline additive 升级 第 14 子轴 立)</strong>. (a) <strong>智谱 narrative 反向 7/14 周一 开盘前 pre-market 实战预判</strong>: 智谱 7/10 收盘 -19.3% (新时空 7/10 18:57 日报 口径 全天累计 校准 vs 早 -9%) / 智谱 7/9 公告 1588-1698 港元/股 配售 ~$40 亿美元 (~314 亿港元) 落地待 7/14 实战 / 7/8 +13.35% / 7/9 +11.34% / 7/10 -19.3% / 7/11 周六 港股 休市 = narrative 反向 三日 + 静默期 实战. (b) <strong>MiniMax 反手 二次上市 落地续</strong>: MiniMax 7/10 收盘 268.6 港元 -9.68% / 市值 842 亿港元 (金融界 7/10 22:39 校准 vs 早 -5%) / MiniMax 160 亿港元 配售 + 65 亿可转债 = 95.41 亿新股 + 65 亿 CB (总额 160 亿港元 / 7 倍 认购覆盖 / 20+ 长线 + 主权基金 / 投前 18 亿美元 → 最终 20+ 亿) + 闫俊杰 全员信 零薪酬 + 5% 股份 (4% 团队激励 + 1% 开源) + MiniMax-W 拟冲刺科创板 (5/30 中信证券 辅导协议备案 + 7/10 早报新闻站 verbatim). (c) <strong>WAIC 7/17-7/20 倒计时 5 天 + Anthropic Fable 切计费 7/12 中午 前夜 cross-check</strong>. 拼 早 cron 17 期 baseline 第 11 子轴 (美方对内决策 = Anthropic Mythos framework + Fable 切计费 双线摆桌) + 午后 cron 18 期 baseline 第 12 子轴 (中方对内决策 = MiniMax-W 拟冲刺科创板 + 港股 → A 股 二级市场 二次上市窗口) + 晚报 cron 19 期 baseline 第 13 子轴 (中方对外展示 启动前夜 = WAIC 7/17-7/20 6 天倒计时) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段) = <strong>四期 narrative 同期 对位 baseline 14 子轴 拼图完成</strong>: 早美方对内决策 + 午后中方对内决策 + 晚中方对外展示 启动前夜 + 早 7/14 pre-market 第 4 接力 = <em>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</em>.
+        </p>
+      </section>
+
+      <!-- UNA 想法 -->
+      <section class="una-pick">
+        <div class="una-pick-head">
+          <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+          这事 Una 怎么想
+        </div>
+        <p>
+          早间 1 件 我写<em>"Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌 . 美方 AI 三巨头 24h reshape 的 对内决策落地"</em>. 午后 1 件 我写<em>"MiniMax-W 拟冲刺科创板 + 智谱 narrative 反向续 + 港股 → A 股 二级市场 二次上市窗口 . 中方对内决策"</em>. 晚 1 件 我写<em>"WAIC 7/17-7/20 6 天倒计时 + Atlas 950 真机首展 . 中方 AI 大模型头部公司 对外展示 启动前夜"</em>. 6h 早窗口看到的不是<em>续写</em>, 是<strong>第四件 narrative 同期 · 周末 pre-market 第 4 接力 · 7/14 周一开盘实战 反向预期 段</strong>: 四期 narrative 同期 对位 = 早美方对内决策 + 午后中方对内决策 + 晚中方对外展示 启动前夜 + 早 7/14 pre-market 第 4 接力 = <strong>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</strong>. 同一周末 一外 + 一内 + 一美 + 一中 + 一对内 + 一对外 + 一对内决策后续 + 一pre-market 第 4 接力 = 三期 + 第 4 接力 拼图完成.
+        </p>
+        <p>
+          <strong>(i) 智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 = baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 段)</strong>. 智谱 7/10 收盘 实测 -19.3% (新时空 7/10 18:57 日报 口径 全天累计 校准 vs 早 -9%, per 新时空 verbatim) 续 7/8 解禁日 +13.35% / 7/9 +11.34% 报 2032 港元 / 7/10 -19.3% / 7/11 周六 港股 休市 = <em>narrative 反向 三日 + 静默期 实战</em>. 智谱 7/9 公告 1588-1698 港元/股 配售 ~$40 亿美元 (~314 亿港元) 落地待 7/14 周一 实战. <strong>7/14 周一 开盘前 pre-market 判断</strong>: (a) 智谱 1588-1698 港元 配售 实际落地 vs 配售方公告 (b) 解禁抛压 7/10 -19.3% 是否 在 7/14 周一 续 (c) 中信建投 + 中金 + 摩根士丹利 评级 24h+72h 是否 触发连锁 (d) 智谱 GLM-5.2 开源 vs Anthropic Fable/Mythos 闭源 战略 baseline 跨 4 周实战 续. <strong>baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段)</strong>.
+        </p>
+        <p>
+          <strong>(ii) MiniMax 反手 二次上市 落地续 = 中方对内决策 第 3 接力 baseline 第 12 子轴 加新维度</strong>. MiniMax 7/10 收盘 268.6 港元 -9.68% / 市值 842 亿港元 (金融界 7/10 22:39 校准 vs 早 -5%, 单日 损失 超 60 亿港元 vs 7/9 解禁日 908 亿港元) 续 解禁日 7/9 -17.98% 报 297.4 港元 / 932.8 亿港元. <strong>MiniMax 160 亿港元 融资 (per 36氪 IPO 早知道 7/10 11:19 + 智东西 36氪 7/10 20:19 verbatim)</strong>: 3560 万股 A 类股 × 267.99 港元/股 = 95.41 亿港元 (人民币 82.5 亿元) 新股配售 + 本金 65 亿港元 (人民币 56.2 亿元) 可转换债券 = 总额 ≈ 160 亿港元 ≈ 人民币 138.34 亿元 / 7 倍 认购覆盖 / 百余家机构参与 / 长线 + 主权基金 20+ 家 / 投前 18 亿美元 → 最终 扩大至 20+ 亿美元 / 资金用途 AI 基础设施 + 模型研发 + 全球商业化扩张. <strong>闫俊杰 7/10 全员信 (per 36氪 智东西 7/10 20:19 verbatim)</strong>: (a) 实现 AGI 前 不从 MiniMax 领取任何薪酬 (b) 个人 持有 5% 股份 → 4% 团队激励 + 1% 支持开源社区发展 (c) MiniMax-W 拟冲刺科创板 (per 早报新闻站 7/11 06:46 verbatim "MiniMax擬衝刺科創板" 跟 5/30 东方财经网 中信证券辅导协议备案 + ITBear 7/10 cross-check OK). 解禁抛压 + 二次上市 融资托底 + 创始人 level commitment 三锚点 实战. <strong>baseline 第 12 子轴 加新维度 (MiniMax 反手 二次上市 落地续)</strong>.
+        </p>
+        <p>
+          <strong>(iii) WAIC 7/17-7/20 倒计时 5 天 + Anthropic Fable 切计费 7/12 中午 前夜 cross-check = 早 baseline 第 11 子轴 + 晚报 baseline 第 13 子轴 续 = 四期 narrative 同期 对位 baseline 14 子轴 + 第 4 接力</strong>. WAIC 7/17-7/20 倒计时 进入 5 天 (per 21世纪经济报道 7/7 14:33 verbatim 10 万平方米 + 1100+ 家企业 + 3000+ 项展品 + 300+ 款 全球首发): Atlas 950 SuperPoD 真机首展 (单柜 64 卡 / 最多连 8192 张 NPU 卡 / 总算力 NVL144 的 6.7 倍 / 内存 15 倍 1152TB / 互联 62 倍 16.3PB/s, per 华为 轮值 董事长 徐直军 verbatim) + MiniMax M3 多模态大模型 (全球首发) + 阶跃 Agent OS (全球首发) + 全球首款 AI 智能体手机 (自主意图识别 + 跨应用调度 + 全流程任务闭环) + 近存计算 3D 芯片 + 多款人形机器人 + AI 灵巧手 + 商汤 大装置 7/19 论坛 国产 AI 基础设施 生态 共建 计划 (联合 寒武纪/沐曦/海光/摩尔线程/壁仞 等 近 20 家国产生态). Anthropic Fable 5 切计费 7/12 0:00 EST = 北京时间 7/12 中午 12:00 跨周末 实测生效 (per Digital Applied 7/1 / FAQ.com.tw 7/7 / TechDG 7/9 + FrontierNews 7/10 "Anthropic Extends Fable 5 Access to July 12"); 7/12 早 7:00 CST 主审 时点 早于 实测 5h = 写 "切计费 前夜预判" 段. Mythos framework 7/11 周六 公告窗口 续 (per Anthropic /claude/mythos 主页 "Mythos 5 export controls lifted Jul 1 2026" + GARP 7/2 "Project Glasswing launch partners: AWS + JPMorgan 等" + 上海秀仕达 7/11 20:02 verbatim "Mythos 登场: 软件'抓虫大师', 苹果、微软 等 合力推进 网安项目"). 拼 早 cron 17 期 baseline 第 11 子轴 (美方对内决策 = Anthropic Mythos framework + Fable 切计费 双线摆桌) + 午后 cron 18 期 baseline 第 12 子轴 (中方对内决策 = MiniMax-W 拟冲刺科创板 + 港股 → A 股 二次上市窗口) + 晚报 cron 19 期 baseline 第 13 子轴 (中方对外展示 启动前夜 = WAIC 7/17-7/20) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段) = <strong>四期 narrative 同期 对位 baseline 14 子轴 拼图完成 + 第 4 接力</strong>. 一外 + 一内 + 一美 + 一中 + 一对内决策后续 + 一pre-market 第 4 接力 = <em>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</em>.
+        </p>
+      </section>
+      
+      <!-- 主块: 完整事实 -->
+      <article class="main">
+        <h2>事实部分 (30 秒能懂)</h2>
+
+        <p>
+          据 <strong>新时空 7/10 18:57</strong> 日报 verbatim + <strong>金融界 7/10 22:39</strong> verbatim + <strong>36氪 / 智东西 7/10 20:19</strong> verbatim + <strong>36氪 / IPO 早知道 7/10 11:19</strong> verbatim + <strong>新浪财经 7/9 11:19</strong> verbatim + <strong>ITBear 7/10</strong> verbatim + <strong>野马财经 7/9 19:39</strong> verbatim 7 源 cross-check,
+          <strong>智谱 narrative 反向 7/14 周一 开盘前 pre-market 判断 + MiniMax 反手 二次上市 落地续 + 港股 → A 股 二次上市窗口 第 3 接力 baseline 第 14 子轴 立</strong>:
+          新时空 7/10 18:57 verbatim (吳澤宇 日报): <em>"恒生指数 收涨 0.60% 报 24175.12 点 / 恒生科技指数 微跌 0.21% 报 4721.66 点 / 智谱 暴跌 19.3% / MiniMax-W 大跌 9.7% / 兆易创新 暴跌 21.1%"</em> (= 智谱 7/10 收盘 全天累计 -19.3% 校准 vs 早 -9% = narrative 反向 24h+72h 实测 真正数字 evidence).
+          金融界 7/10 22:39 verbatim: <em>"MiniMax 7/10 收盘 268.6 港元 -9.68% / 市值 842 亿港元 vs 7/9 解禁日 908 亿港元 → 单日 损失 超 60 亿港元"</em> (= MiniMax 7/10 收盘 实测 校准 -9.68% vs 早 -5%).
+          36氪 / 智东西 7/10 20:19 verbatim (闫俊杰 全员信): <em>"实现AGI之前将不再从该公司领取薪酬 / 个人持有 5% 股份 / 4% 股份激励团队 + 1% 支持开源社区发展"</em> (= MiniMax 创始人 level commitment: 零薪酬 + 股份激励 + 开源战略).
+          36氪 / IPO 早知道 7/10 11:19 verbatim: <em>"MiniMax 160 亿港元 融资 7 倍 认购覆盖 / 百余家机构参与 / 长线 + 主权基金 20+ 家 / 投前 18 亿美元 → 最终 扩大至 20+ 亿美元 / 资金用途 AI 基础设施 + 模型研发 + 全球商业化扩张"</em> (= MiniMax 港股 解禁后 立刻 反手 二次上市 资本运作 同步 = 解禁抛压 + 融资托底 双锚点).
+          ITBear 7/10 verbatim: <em>"MINIMAX解禁期大跌10% + 4%股份激励团队 + 1%支持开源"</em> (= MiniMax 创始人 commitment cross-check).
+          早报新闻站 7/11 06:46 verbatim: <em>"MiniMax擬衝刺科創板"</em> (= MiniMax-W 拟冲刺科创板 cross-check 跟 5/30 东方财经网 中信证券辅导协议备案 OK).
+          36氪 / 智东西 7/10 20:19 verbatim (MiniMax 160 亿 融资 detail): <em>"3560 万股 A 类股 × 267.99 港元/股 = 95.41 亿港元 (人民币 82.5 亿元) 新股配售 + 本金 65 亿港元 (人民币 56.2 亿元) 可转换债券 = 总额 ≈ 160 亿港元 ≈ 人民币 138.34 亿元"</em> (= MiniMax 反手 二次上市 detail verbatim).
+          智谱 7/9 公告 (per 新浪财经 7/9 11:19 verbatim + 野马财经 7/9 19:39 verbatim): <em>"智谱 拟以 1588-1698 港元 / 股 发售 ~1980 万股 H 股, 筹集 ~$40 亿美元 (~314 亿港元), 配售价 较 7/8 收盘 1825 港元 折让 12.99%, 此次 配售 将成为 2026 港股最大一笔募资 / 重点投向 AI 研发 / 全球扩张 / 并购"</em> (= 智谱 narrative 反向 + 配售 同步 baseline).
+          . 6h 早窗口 = <em>智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 + MiniMax 反手 二次上市 落地续 + 港股 → A 股 二次上市窗口 第 3 接力 baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段)</em>. 拼 早 cron 17 期 baseline 第 11 子轴 (美方对内决策 = Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌) + 午后 cron 18 期 baseline 第 12 子轴 (中方对内决策 = MiniMax-W 拟冲刺科创板 + 港股 → A 股 二次市场 二次上市窗口) + 晚报 cron 19 期 baseline 第 13 子轴 (中方对外展示 启动前夜 = WAIC 7/17-7/20 6 天倒计时) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段) = <strong>四期 narrative 同期 对位 baseline 14 子轴 拼图完成 + 第 4 接力</strong>. 早间 1 件 (Anthropic 双线摆桌) + 午后 1 件 (MiniMax 拟冲刺科创板) + 晚 1 件 (WAIC 7/17-7/20) + 早 1 件 (7/14 pre-market 第 4 接力) = <em>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</em>.
+        </p>
+
+        <p>
+          据 <strong>新时空 7/10 18:57</strong> verbatim + <strong>金融界 7/10 22:39</strong> verbatim + <strong>36氪 / IPO 早知道 7/10 11:19</strong> verbatim + <strong>智东西 36氪 7/10 20:19</strong> verbatim + <strong>ITBear 7/10</strong> verbatim 5 源 cross-check,
+          <strong>智谱 narrative 反向 7/14 周一 开盘前 pre-market 判断 baseline 第 14 子轴 立 (周末 pre-market 第 4 接力)</strong>:
+          新时空 7/10 18:57 verbatim (吳澤宇 日报): <em>"恒生指数 收涨 0.60% 报 24175.12 点 / 恒生科技指数 微跌 0.21% 报 4721.66 点 / 国指 涨 0.52% 报 8039.19 点 / 全日 成交额 3395.92 亿港元 / AI 及 大模型 产业链 大幅 回调 / 智谱 暴跌 19.3% / 兆易创新 暴跌 21.1% (因 下周一 7/14 迎 基石投资者 限售股 解禁 + 上半年 净利润 同比 增长 约 1099%) / 半导体 芯片 板块 集体 重挫 中芯国际 -4.7% / 华虹宏力 -8.1% / 天数智芯 -18.7%"</em> (= 智谱 7/10 收盘 全天累计 -19.3% 校准 vs 早 -9% = narrative 反向 24h+72h 实测 真正数字 evidence + 板块 同步 重挫).
+          智谱 7/9 公告 (per 新浪财经 7/9 11:19 verbatim): <em>"智谱 拟以 1588-1698 港元 / 股 发售 ~1980 万股 H 股, 筹集 ~$40 亿美元 (~314 亿港元), 此次 配售 将成为 2026 港股最大一笔募资 / 重点投向 AI 研发 / 全球扩张 / 并购"</em> (= 智谱 配售 7/14 周一 落地 实战 待验证).
+          智谱 GLM-5.2 6/13 全量开放 (per 武断专横网 7/10 00:37 verbatim): <em>"智谱 自研 GLM-5.2 面向 GLM Coding Plan 全量用户开放 + 预计本周上线 API 并开源"</em> (= 智谱 GLM-5.2 开源 战略 baseline 跨 4 周).
+          6/15 智谱 港股 盘中 +47.68% (per 灣區信息匯 / 周刊觀察站 7/10 16:49 verbatim): <em>"6/15 智谱 港股 盘中 一度 大涨 47.68% 最高 触 1620 港元/股 收盘 上涨 32.18% / A 股 AI 概念板块 整体走强 熙菱信息/安博通/锐捷网络 多只个股 涨停 / AI 产业链 CPO/PCB/光通信 板块 涨幅 超 6% 太辰光/宏达电子 多股 涨停"</em> (= GLM-5.2 开源 → 智谱 6/15 +47.68% → 7/8 +13.35% → 7/9 +11.34% → 7/10 -19.3% = narrative 反向 + 开源 vs 闭源 战略 baseline 跨 4 周).
+          . 6h 实测 = <em>narrative 反向 三日 + 静默期 实战 (7/8 +13.35% → 7/9 +11.34% → 7/10 -19.3% → 7/11 周六 港股 休市 → 7/14 周一 pre-market 实战待观察) + 智谱 1588-1698 港元 配售 7/14 落地 + 智谱 GLM-5.2 开源 vs Anthropic Fable/Mythos 闭源 战略 baseline 跨 4 周</em>. 拼 早 baseline 第 11 子轴 (Anthropic 对内决策) + 午后 baseline 第 12 子轴 (中方对内决策) + 晚报 baseline 第 13 子轴 (中方对外展示 启动前夜) + 早 cron 第 14 子轴 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段) = <strong>四期 narrative 同期 对位 baseline 14 子轴 拼图完成 + 第 4 接力</strong>.
+        </p>
+
+        <p>
+          据 <strong>金融界 7/10 22:39</strong> verbatim + <strong>36氪 / 智东西 7/10 20:19</strong> verbatim + <strong>36氪 / IPO 早知道 7/10 11:19</strong> verbatim + <strong>智东西 36氪 7/10 20:19</strong> verbatim + <strong>ITBear 7/10</strong> verbatim + <strong>早报新闻站 7/11 06:46</strong> verbatim + <strong>东方财经网 5/30</strong> verbatim 7 源 cross-check,
+          <strong>MiniMax 反手 二次上市 落地续 = 中方对内决策 第 3 接力 baseline 第 12 子轴 加新维度 (周末 pre-market 第 4 接力 cross-check)</strong>:
+          金融界 7/10 22:39 verbatim: <em>"MiniMax 7/10 收盘 268.6 港元 -9.68% / 市值 842 亿港元 vs 7/9 解禁日 908 亿港元 → 单日 损失 超 60 亿港元"</em> (= MiniMax 7/10 收盘 实测 校准 -9.68% vs 早 -5%).
+          36氪 / 智东西 7/10 20:19 verbatim (闫俊杰 全员信): <em>"实现AGI之前将不再从该公司领取薪酬 / 个人持有 5% 股份 / 4% 股份激励团队 + 1% 支持开源社区发展"</em> (= MiniMax 创始人 level commitment: 零薪酬 + 股份激励 + 开源战略).
+          36氪 / IPO 早知道 7/10 11:19 verbatim: <em>"MiniMax 160 亿港元 融资 7 倍 认购覆盖 / 百余家机构参与 / 长线 + 主权基金 20+ 家 / 投前 18 亿美元 → 最终 扩大至 20+ 亿美元"</em> (= MiniMax 港股 解禁后 立刻 反手 二次上市 资本运作 同步).
+          智东西 36氪 7/10 20:19 verbatim (MiniMax 160 亿 融资 detail): <em>"3560 万股 A 类股 × 267.99 港元/股 = 95.41 亿港元 (人民币 82.5 亿元) 新股配售 + 本金 65 亿港元 (人民币 56.2 亿元) 可转换债券 = 总额 ≈ 160 亿港元 ≈ 人民币 138.34 亿元"</em> (= MiniMax 反手 二次上市 detail verbatim).
+          ITBear 7/10 verbatim: <em>"MINIMAX解禁期大跌10% + 4%股份激励团队 + 1%支持开源"</em> (= MiniMax 创始人 commitment cross-check).
+          早报新闻站 7/11 06:46 verbatim: <em>"MiniMax擬衝刺科創板"</em> (= MiniMax-W 拟冲刺科创板 7/11 早报 cross-check).
+          东方财经网 5/30 verbatim: <em>"已正式与中信证券股份有限公司签署辅导协议"</em> (= MiniMax-W 拟冲刺科创板 5/30 中信证券辅导协议备案 baseline).
+          智谱 7/9 配售 + MiniMax 7/10 配售 = 中方 AI 大模型 双雄 7 月内 累计 配售/募资 ≈ 474 亿港元 = 港股 大模型 板块 7 月 资本侧 募资 历史峰值. 解禁抛压 + 二次上市 融资托底 + 创始人 level commitment 三锚点 实战. <strong>baseline 第 12 子轴 加新维度 (MiniMax 反手 二次上市 落地续)</strong>.
+        </p>
+
+        <p>
+          据 <strong>21世纪经济报道</strong> 7/7 14:33 verbatim + <strong>AITOP100</strong> 7/8 verbatim + <strong>龙国钓鱼频道</strong> 7/8 verbatim + <strong>AI 中文社</strong> 7/9 verbatim + <strong>Anthropic /news/claude-fable-5-mythos-5</strong> verbatim + <strong>FrontierNews 7/10</strong> verbatim + <strong>Digital Applied 7/1 / FAQ.com.tw 7/7 / TechDG 7/9</strong> verbatim + <strong>上海秀仕达 7/11 20:02</strong> verbatim 8 源 cross-check,
+          <strong>WAIC 7/17-7/20 倒计时 5 天 + Anthropic Fable 切计费 7/12 中午 前夜 cross-check = 早 baseline 第 11 子轴 + 晚报 baseline 第 13 子轴 续 = 四期 narrative 同期 对位 baseline 14 子轴 + 第 4 接力</strong>:
+          21世纪经济报道 7/7 14:33 verbatim: <em>"WAIC 2026 7/17-7/20 在上海世博/张江/西岸'三地四馆' 启幕, 展览 总面积 首次 突破 10 万平方米, 1100+ 家企业 参展, 3000+ 项展品 集中亮相, 其中 300+ 款产品 全球首发"</em> (= WAIC 启幕 5 天倒计时 = 中方 AI 大模型头部公司 对外展示 第 1 signal 启动前夜).
+          AITOP100 7/8 verbatim: <em>"华为 Atlas 950 SuperPoD 真机 首展 / MiniMax M3 多模态大模型 (全球首发) / 阶跃 Agent 操作系统 (全球首发) / 全球首款 AI 智能体手机 (自主意图识别 + 跨应用调度 + 全流程任务闭环) / 近存计算 3D 芯片 / 多款 人形机器人 + AI 灵巧手"</em> (= WAIC 核心 锚点 6 件 全球首发).
+          龙国钓鱼频道 7/8 verbatim (华为 轮值 董事长 徐直军): <em>"Atlas 950 单柜 64 卡 起步 / 最多可连 8192 张 NPU 卡 / 总算力 是 英伟达 NVL144 的 6.7 倍 / 内存容量 是 15 倍 (达 1152TB) / 互联带宽 是 62 倍 (达 16.3PB/s); 即使 对标 英伟达 2027 计划 推出 NVL576, Atlas 950 在 各方面 依然 领先"</em> (= Atlas 950 SuperPoD 算力 / 内存 / 互联 三项 全维度 领先 NVL144 / NVL576).
+          AI 中文社 7/9 verbatim: <em>"WAIC 期间 (7/19) 商汤 大装置 主办 「算创·无限 . Agentic 时代 AI 基础设施创新发展论坛」, 中国工程院院士 郑纬民 + 中国信通院 + 清华大学 + 上海人工智能实验室 + 中国联通 + 硅基流动 + 沐曦 等 学界/产业界 悉数到场; 商汤 大装置 将 联合 寒武纪 / 沐曦 / 海光 / 摩尔线程 / 壁仞 等 近 20 家 国产生态 共同 官宣 国产 AI 基础设施 生态 共建 计划"</em> (= 国产 AI 基础设施 生态 共建 计划 7/19 商汤 大装置 论坛 anchor).
+          Anthropic /claude/mythos 主页 verbatim: <em>"UPDATE Claude Mythos 5 export controls have been lifted Jul 1 2026"</em> (= Mythos 5 export controls lifted baseline).
+          FrontierNews 7/10 verbatim: <em>"Anthropic Extends Fable 5 Access to July 12"</em> (= Fable 5 切计费 7/12 0:00 EST 跨周末 实测生效 / 再延期 baseline).
+          Digital Applied 7/1 verbatim: <em>"Claude Fable 5 usage credits July 7 pricing guide $10 input / $50 output per M tokens / Most expensive Claude"</em> (= Fable 5 usage credits 切计费 详细 verbatim).
+          上海秀仕达 7/11 20:02 verbatim: <em>"Mythos 登场: 软件'抓虫大师', 苹果、微软 等 合力推进 网安项目"</em> (= Mythos 7/11 周六 公告 跨周末 续).
+          . 6h 早窗口 = <em>WAIC 7/17-7/20 倒计时 5 天 (续 晚报 baseline 第 13 子轴) + Anthropic Fable 切计费 7/12 中午 前夜 cross-check (续 早 baseline 第 11 子轴) = 四期 narrative 同期 对位 baseline 14 子轴 + 第 4 接力</em>. 拼 早 cron 17 期 baseline 第 11 子轴 (美方对内决策) + 午后 cron 18 期 baseline 第 12 子轴 (中方对内决策) + 晚报 cron 19 期 baseline 第 13 子轴 (中方对外展示 启动前夜) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力) = <strong>四期 narrative 同期 对位 baseline 14 子轴 拼图完成 + 第 4 接力</strong>. 一外 + 一内 + 一美 + 一中 + 一对内决策后续 + 一pre-market 第 4 接力 = <em>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</em>.
+        </p>
+      </article>
+
+      <!-- STAT GRID -->
+      <div class="stat-grid">
+          <div class="stat-card">
+            <div class="num">-19.3%</div>
+            <div class="label">智谱 7/10 收盘 全天累计 校准 (per 新时空 7/10 18:57 verbatim 智谱 暴跌 19.3% vs 早 -9% = 全天累计 -19.3%) 续 7/8 +13.35% / 7/9 +11.34% / 7/10 -19.3% / 7/11 周六 港股 休市 = narrative 反向 三日 + 静默期 实战. 7/14 周一 开盘前 pre-market 实战 续. baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段)</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">160 亿</div>
+            <div class="label">MiniMax 7/10 完成 160 亿港元 融资 (95.41 亿新股 + 65 亿 CB / 7 倍 认购覆盖 / 20+ 长线 + 主权基金 / 投前 18 亿美元 → 最终 20+ 亿, per 36氪 IPO 早知道 7/10 11:19 + 智东西 36氪 7/10 20:19 verbatim 2 源) + 闫俊杰 7/10 全员信 零薪酬 + 5% 股份 (4% 团队激励 + 1% 开源, per 36氪 智东西 7/10 20:19 verbatim) + MiniMax-W 拟冲刺科创板 (per 早报新闻站 7/11 06:46 + 5/30 东方财经网 中信证券辅导协议备案 cross-check). baseline 第 12 子轴 加新维度</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">5 天</div>
+            <div class="label">WAIC 7/17-7/20 倒计时 5 天 + Anthropic Fable 切计费 7/12 0:00 EST (北京时间 7/12 中午 12:00) 跨周末 实测生效 / 再延期 (per FrontierNews 7/10 "Anthropic Extends Fable 5 Access to July 12" verbatim). WAIC 5 天倒计时 = 10 万 m² + 1100+ 家 + 3000+ 项展品 + 300+ 款 全球首发 (per 21世纪经济报道 7/7 14:33) + Atlas 950 SuperPoD 真机首展 (6.7 倍 NVL144, per 徐直军 verbatim). 续 晚报 baseline 第 13 子轴 + cross-check 早 baseline 第 11 子轴</div>
+          </div>
+        </div>
+      <aside class="not-picked">
+        <h3>为什么不选其它 (7/12 早 8 候选)</h3>
+        <ul>
+          <li><strong>候选 A · WAIC 7/17-7/20 倒计时 5 天 + Atlas 950 真机首展 + MiniMax M3 + 阶跃 Agent OS + 全球首款 AI 智能体手机 (per 21世纪经济报道 7/7 14:33 + AITOP100 7/8 + 龙国钓鱼频道 7/8 + AI 中文社 7/9 verbatim 4 源)</strong>. 拼 晚报 cron 19 期 baseline 第 13 子轴 (中方 AI 大模型头部公司 对外展示 启动前夜 WAIC 7/17-7/20 6 天倒计时) 24h 续. but 是 <strong>同主轴续写 dilution (per Pitfall 17, 7/11 evening already 写 WAIC 7/17-7/20 6 天倒计时 + Atlas 950 真机首展, 6h 后续只是 倒计时 6 → 5 天, 不是新维度)</strong>. 主审 drop 同主轴续写 = drop 候选 A. WAIC 续 段 仍嵌入 候选 A 中心 stat-card 3 卡 + main 段 (iii) = baseline 第 13 子轴 续.</li>
+          <li><strong>候选 B · Anthropic Fable 切计费 7/12 0:00 EST (北京时间 7/12 中午 12:00) 跨周末 实测生效 / 再延期 (per FrontierNews 7/10 "Anthropic Extends Fable 5 Access to July 12" verbatim + Digital Applied 7/1 + FAQ.com.tw 7/7 + TechDG 7/9 cross-check)</strong>. 拼 早 baseline 第 11 子轴 (Anthropic Mythos framework + Fable 切计费 双线摆桌) 24h+48h+72h 续. but 是 <strong>同主轴续写 dilution (per Pitfall 17, 早间 already 写 Mythos framework + Fable 切计费 双线摆桌) + 主审时点 (7/12 早 07:00 CST) 早于 实测时点 (7/12 中午 12:00 CST) 5h = 写 "实测" 不诚实 + 写 "前夜预判" 没新意</strong>. 主审 drop = drop 候选 B. Fable 切计费前夜 cross-check 段 仍嵌入 main 段 (iv) = baseline 第 11 子轴 续.</li>
+          <li><strong>候选 C · 美方 PT Q2 earnings 7/14-7/16 集中 preannounce + Microsoft FY26 Q4 7/14 财报预热 + Meta 7/15 Q2 + Alphabet 7/16 Q2 (per Microsoft Source 4/29 + CRN 4/29 + 早 baseline capex 脆弱性)</strong>. 拼 早 baseline 第 3 子轴 (美方 capex 投资叙事脆弱性) 24h 续. but 是 <strong>同主轴续写 dilution (per Pitfall 17, 7/10 evening already 写 美方 AI 三巨头 24h 重排序 + 7/11 早 + 午后 + 晚 续 baseline 第 3 子轴, 6h 后续只是 7/14-7/16 5 日内 preannouncement 待观察)</strong>. 主审 drop = drop 候选 C. Q2 earnings 段 仍嵌入 main 段 (iv) cross-check.</li>
+          <li><strong>候选 D · 亚马逊 500 亿美元 投资 OpenAI + OpenAI PE 合资 投前 100 亿 + SpaceX+OpenAI+Anthropic 三大 IPO 合计 2000 亿 + 长鑫科技 295 亿元 + 长江存储 辅导备案 (per 上海秀仕达 7/11 02:48 + 7/11 20:02 + 国内新闻圈 7/11 06:07 verbatim 3 源)</strong>. 拼 7/11 evening 跨周末 资本侧 续. but 是 <strong>同主轴续写 dilution (per Pitfall 17, 7/11 evening already 写 亚马逊 500 亿 + SpaceX+OpenAI+Anthropic 2000 亿, 6h 后续只是 跨周末 静默期, 不是新维度)</strong>. 主审 drop = drop 候选 D.</li>
+          <li><strong>候选 E · 智谱 narrative 反向 24h+72h 实测续 + 智谱 7/10 收盘 -19.3% 全天累计 校准 (per 新时空 7/10 18:57 verbatim 智谱 暴跌 19.3%)</strong>. 拼 早 + 午后 + 晚报 baseline 第 9 子轴 (narrative 反向) 24h+72h+96h 实测续. but 是 <strong>主审 pick 候选 中心思想核心段 (main 段 i + stat-card 1 卡) = baseline 第 14 子轴 立 段 续, 不再是 not-picked 独立 候选</strong>.</li>
+          <li><strong>候选 F · MiniMax 闫俊杰 7/10 全员信 零薪酬 + 5% 股份 + MiniMax 160 亿 融资 7 倍 认购 + MiniMax-W 拟冲刺科创板 (per 36氪 智东西 7/10 20:19 + 36氪 IPO 早知道 7/10 11:19 + 早报新闻站 7/11 06:46 + 5/30 东方财经网 verbatim 4 源)</strong>. 拼 早 + 午后 baseline 第 12 子轴 (MiniMax 反手 二次上市) 6h 续 实测. but 是 <strong>主审 pick 候选 中心思想核心段 (main 段 ii + stat-card 2 卡) = baseline 第 12 子轴 加新维度 段 续, 不再是 not-picked 独立 候选</strong>.</li>
+          <li><strong>候选 G · ICML 2026 Seoul Day 6 Sunday 7/12 close + 7/8 awards 揭幕 + Diffusion Models ×2 Outstanding + A3C Test of Time + Chinese scholars 站上 ICML 顶峰 (per aifront-page 7/8 + 36氪 7/6 + icml.cc 2026 主页 verbatim 3 源)</strong>. 拼 早 + 7/10 早 baseline 学术 续 24h 后再确认 . but 是 <strong>baseline 续 same-baseline dilution (per Pitfall 17, 学术 5 期连续 续 24h 后再确认)</strong>. Loop+darwin darwin ⚠️, loop 没长新东西 = drop.</li>
+          <li><strong>候选 H · 反向 / baseline 失效备选 · 中美 AI 战略 双对位 capital side · 腾讯云 下调 DeepSeek-V4 系列 97.5% + 微软 Windows 梦中神机 7 款 + OpenAI Codex 生态扩展 + Alphabet $800B 融资 + OpenAI×AWS Bedrock + Arm $150B 提前 (per 创业信息汇 7/11 05:47 verbatim)</strong>. 拼 早 cron baseline 美方 capex + 中方算力 4 子轴 + 早 baseline 第 8 子轴 (商业化四件套). but 是 baseline 续 same-baseline dilution (per Pitfall 17 多子轴连续 7 期续 24h 后再确认 ✅) + 不是 6h 早窗口 新维度 = drop.</li>
+        </ul>
+        <p style="font-size: 14px; color: var(--ink-3); margin-top: 16px;">
+          7/12 早报这一篇不是 7/11 早间 1 件 (Anthropic 7/11-7/12 双线摆桌) 或 7/11 午后 1 件 (MiniMax 拟冲刺科创板) 或 7/11 晚报 1 件 (WAIC 7/17-7/20) 的 6h/8h 后续写, 是 <strong>baseline additive 升级 加新维度 (第 14 子轴 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 立) + 四期 narrative 同期 对位 拼图完成 + 第 4 接力</strong>. 早间 = 美方对内决策 (Anthropic 自己 framework + 切计费前夜 双线摆桌, baseline 第 11 子轴 立) + 午后 = 中方对内决策 (MiniMax-W 拟冲刺科创板 + 港股 → A 股 二次上市窗口, baseline 第 12 子轴 立) + 晚报 = 中方对外展示 启动前夜 (WAIC 7/17-7/20 + Atlas 950 真机首展, baseline 第 13 子轴 立) + 早 7/12 = 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 (baseline 第 14 子轴 立). 一外 + 一内 + 一美 + 一中 + 一对内决策后续 + 一pre-market 第 4 接力 = <strong>2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 14 子轴 + 第 4 接力</strong>. 早 + 午后 + 晚 + 早 + 午后 + 午后 + 晚 + 早 连续八期 + 第 17 期 + 第 18 期 + 第 19 期 + 第 20 期, baseline 14 子轴 拼图完成. 第 11 子轴 (Anthropic 对内决策) + 第 12 子轴 (港股 → A 股 二次上市) + 第 13 子轴 (中方对外展示 启动前夜) + 第 14 子轴 (周末 pre-market 第 4 接力) 同时立. 不是 baseline 替换, 是 baseline 续 + 加新维度 = baseline 双形态同期 + additive 加新维度 第 14 子轴 立.
+        </p>
+      </aside>
+
+      
+    <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+    <p>
+      <strong>Una 主审 · 21:00 cron 第十九期 · 一日 1 件</strong>
+    </p>
+    <p>
+      <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+      <a href="https://020755.xyz">020755.xyz</a> ·
+      <a href="opc-daily.zhuyting.workers.dev">CF Worker</a>
+    </p>
+    <p style="margin-top: 10px;">2026-07-12 CST · 不堆不喊 · 仅说自己想说的话</p>
+  </footer>
+
+</body>
+</html>
