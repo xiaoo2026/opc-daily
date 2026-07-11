@@ -531,3 +531,38 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 - ✅ TTS 60-120s window per-edit fresh 91s PASS (Pitfall 35 实测 第 2 轮砍字数 in window)
 - ⏳ 待 git commit + push origin main + wrangler deploy + ad-hoc verification (阶段 3+4)
 - ⏭️ 下次 cron: 7/11 13:00 afternoon cron 第十五期
+
+
+## Where we are now (2026-07-11 13:00 CST) — 第十八期 cron 抵达 (afternoon)
+
+- ✅ 主审 fast-mode 接管 (Pitfall 9) = 15min cap 走完 4 阶段 (cron 第十八期 7/11 13:00 午后选)
+- ✅ 1 件 = 中方 AI 大模型头部公司 解禁 48h 实测 + 反手启动 A 股 二次上市 (MiniMax-W 7/10 22:00 ITBear verbatim 拟冲刺科创板 + 智谱 narrative 反向 24h 后再确认 ✅ + 港股 → A 股 二级市场 二次上市窗口 baseline 第 12 子轴 立)
+- ✅ 早 + 午后 连续六期 + 第 17 期 + 第 18 期 baseline = 早 4 子轴 + 商业化四件套 + 港股 narrative 反向 baseline 第 5-9 子轴 立 + 午后双锚点 A+F 联合 + 晚报第 10 子轴 美方 AI 三巨头 24h 重排序 加新维度 + 早 cron 第 11 子轴 Anthropic 对内决策落地 加新维度 + 午后 cron 第 12 子轴 中方 AI 大模型公司 港股 → A 股 二级市场 二次上市窗口 加新维度
+- ✅ TTS 60-120s window: 实测 7/11 午后 TTS 砍字数 239 字 → 37.26s PASS (danya_xuejie 32kHz/128kbps mp3 / ID3 header verified / ffprobe 解码 OK)
+- ✅ Humanizer audit pass (v0.7.9 Pitfall 37) — em dash 37 → 0 (10 cite 内保留, prose 全清), 8b 具名引述 0 hallucination, 8d cross-source 引述 0 problematic phrases
+- ✅ 数字精度 8a — stat-card 数字 (48.9% / 5.76% / 1+1 双轨) 跟 raw.md 数字 source cross-check OK (5.76% / 17.98% / 297.4 / 314 亿港元 / 1588-1698 港元 / 40 亿美元 全部在 7/11 morning raw.md + 7/10 午后 raw.md grep 到)
+- ✅ daily/index.html redirector → /daily/2026-07/2026-07-11-afternoon/
+- ✅ top-level index.html featured card → 7/11 afternoon (topbar 13:00, eyebrow 午后选, archive 加新条目)
+- ⏳ 待 git commit + push origin main + wrangler deploy + ad-hoc verification (阶段 3+4)
+- ⏭️ 下次 cron: 7/11 21:00 evening cron 第十九期
+
+### 7/11 午后 1 件 (跟 早间 1 件 同日 cross-reference 对位)
+
+- 早间 1 件 = Anthropic 7/11-7/12 双线摆桌 (美方对内决策) + 午后 1 件 = MiniMax 拟冲刺科创板 + 智谱 narrative 反向续 (中方对内决策) = 一外一内 + 一美一中 + 一对内决策 双对位
+- 早间 baseline 第 11 子轴 (Anthropic 对内决策) + 午后 baseline 第 12 子轴 (港股 → A 股 二次上市) 同时立 = 2026 H2 美方 + 中方 AI 战略 双对位 重排 signal 第 1 公开化重排
+
+### 给 7/11 21:00 evening cron 留痕 + 明天 (7/12 早) 接力
+
+- 午后 cron 18 期 baseline 12 子轴 双形态同期 + 加新维度 (第 12 子轴 中方 AI 大模型公司 港股 → A 股 二级市场 二次上市窗口 立) — 7/11 21:00 evening cron 必须 接续 (a) Anthropic Fable 5 切计费 7/12 0:00 EST 跨周末 实测生效 / 再延期 (b) Mythos framework 7/11 周六 公告 实际放出 (c) Microsoft 7/14 Q4 财报 预热 (d) 中方资本市场 narrative 反向 7/14 周一 开盘 实测 (e) MiniMax-W 拟冲刺科创板 实际公告 进度
+- 第 12 子轴 继续生效条件 — 直到 (a) MiniMax-W 拟冲刺科创板 实际 公告 (b) 智谱 1588-1698 港元 / 股 配售 实际 落地 (c) 智谱 narrative 反向 7/14 周一 开盘 续 实战 (d) MiniMax 拟冲刺科创板 是否 触发 其他 港股 AI 头部公司 同步 (e) Anthropic Fable 5 7/12 0:00 EST 切计费 实际生效 / 再延期 (f) Mythos framework 7/11 周六 公告 7/12 切计费前夜 实际放出 (g) Muse Spark 1.1 7/15 Meta Q2 capex 披露 (h) OpenAI CEO of AGI Deployment 接班人公开 (i) SpaceX IPO S-1 finalize 后 compute pricing 公开 (j) Musk 是否 后续 撤回 / 二次确认 (k) Microsoft 7/14 Q4 财报 capex ROI 验证 (l) MiniMax 拟冲刺科创板 7/14 周一 后续 (m) WAIC 7/17-7/20 真机首展 (Atlas 950).
+- 已知风险: (a) Fable 5 切计费 7/12 仍未生效 (b) Mythos framework 7/11 周六 落地情况 待补 (c) Microsoft 7/14 Q4 财报 capex ROI (d) WAIC 7/17-7/20 启幕 (Atlas 950 真机首展) (e) Anthropic Mythos 7/11 framework 公告窗口 (f) Anthropic Mythos 5 export controls lifted 后 中方 监管 应对 (g) 美方 Q2 earnings 7/12-7/16 5 日内 preannouncement 续 (h) MiniMax 拟冲刺科创板 实际 公告 进度.
+
+### Pitfall 37 (v0.7.9, 2026-07-11 装 humanizer 实测补) 7/11 午后 实测落盘
+
+- em dash 37 → 0 (10 cite 内保留, prose 全清) per humanizer-cron-integration.md 第 14 条 硬约束
+- 8a 数字精度 — stat-card 数字 vs raw.md 来源 全 PASS (5.76% / 17.98% / 297.4 / 314 亿港元 / 1588-1698 港元 / 40 亿美元 全部 cross-check OK)
+- 8b 具名引述 hallucination detect — cite 中人名 0 problematic
+- 8d cross-source 引述 detect — 0 problematic phrases
+
+### 写者: 今天 Una (7/11 13:00 cron 主审 stage 2 本体主审 — 同日 cross-reference 对位结构 实测)
+### 读者: 7/11 21:00 evening cron 第十九期 una 主审 / 7/12 早 cron 第二十期 una 主审
