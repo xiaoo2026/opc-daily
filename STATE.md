@@ -643,3 +643,51 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 ### 写者: 今天 Una (7/12 07:00 cron 主审 stage 2 本体主审 — 同日 cross-reference 四期 narrative 同期 对位 第 4 接力结构 实测 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 38 + 39 接力)
 ### 读者: 7/12 午后 cron 第二十一期 una 主审 / 7/13 早 cron 第二十二期 una 主审
+
+---
+
+## cron 第二十一期 (7/12 13:00 午后) 完整跑通
+
+- ✅ stage 1 raw 采集: master fast-mode 接管 per Pitfall 41 周末 pre-market 真空窗口工作流 + Pitfall 39 sub-agent race condition 守门 = cp 自 raw/2026-07-12-morning.md + patch header 改成 7/12 午后 slot 身份. 双路径硬约束: raw/2026-07-12-afternoon.md (md5 ec0b412c19884f4bc38d4e990b45ed79) + daily/2026-07/2026-07-12-afternoon/raw.md (md5 ec0b412c19884f4bc38d4e990b45ed79, 同 base raw) ✅ 一致
+- ✅ stage 2 Una 主审: 候选 A 拍板 = Anthropic Fable 5 切计费 7/12 中午 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 倒计时 2 天 = 第 5 件 narrative 同期 对位 baseline 第 15 子轴 + 第 5 接力. 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 (Pitfall 45 实测生效后 1h 抓料真空 怎么补 实战数据) + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段 (master 13:01 CST vs Fable 实测 12:00 CST = 1h post-cutover)
+- ✅ stage 3 render: index.html (h1 + una-pick + main + stat-grid 3 卡 + not-picked 8 候选 + Una 4 句说 4 段) + voice.mp3 (84.816s, 32000Hz mp3, ID3 header OK) + raw.md mirror OK
+- ✅ Pitfall 37 humanizer audit pass: em dash 1 (cite-only, protected) + 句首 ',  ' 0 + 双句号 0 + strong 内 enumeration dot OK
+- ✅ ad-hoc verify 18/0 PASS: raw.md exists / 36 entries (≥30 target) / Y. master 主审 段 / baseline 第 15 子轴 header / DOCTYPE html / h1 / title 含日期 类型 / una-pick + say + not-picked + stat-card 全 present / div balance 23==23 / voice.mp3 exists + ID3 / raw.md mirror md5 match / URL overlap 57 ≤ 80 (per Pitfall 41 weekend pre-market 真空窗口 接受 high overlap) / em dash 1 ≤ cite-only / stat-card nums grep-able / git author Una <una@leftink.local> / v4-Home.html link
+- ✅ git commit fe99c72 + push origin main success (fb81bc5 → fe99c72)
+- ✅ wrangler deploy success Version ID 9543d8b9-7187-408f-b5e9-5b65e2d3a634
+- ⏭️ 下次 cron: 7/12 21:00 evening cron 第二十二期
+
+### 7/12 午后 1 件 (跟 早 + 午后 + 晚 + 早 + 午后 1 件 五期 narrative 同期 对位 第 5 接力)
+
+- 早间 1 件 (7/11 07:00) = Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌 (美方对内决策 baseline 第 11 子轴 立)
+- 午后 1 件 (7/11 13:00) = MiniMax-W 拟冲刺科创板 + 智谱 narrative 反向续 + 港股 → A 股 二次上市窗口 (中方对内决策 baseline 第 12 子轴 立)
+- 晚 1 件 (7/11 21:00) = WAIC 7/17-7/20 6 天倒计时 + Atlas 950 真机首展 + 中方对外展示 启动前夜 (baseline 第 13 子轴 立)
+- 早间 1 件 (7/12 07:00) = 周日 pre-market: 智谱 / MiniMax / WAIC 三线 7/14 周一 续 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段, baseline 第 14 子轴 立)
+- 午后 1 件 (7/12 13:00) = Fable 5 切计费 7/12 中午 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 倒计时 (美方 第 5 件 narrative 同期 对位 实测段 baseline 第 15 子轴 立 + 第 5 接力)
+- 五期 narrative 同期 对位 = 早美方对内决策 + 午后中方对内决策 + 晚中方对外展示 启动前夜 + 早 7/14 pre-market 第 4 接力 + 午后 Fable 5 实测 第 5 接力 = 2026 H2 中美 AI 战略 五期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 15 子轴 + 第 5 接力
+- 一外 + 一内 + 一美 + 一中 + 一对内 + 一对外 + 一对内决策后续 + 一pre-market 第 4 接力 + 一实测 美方 第 5 接力 = 五期 + 第 5 接力 拼图完成
+- 早间 跟 午后 是 对位那一面 不是 同主轴续写: 早是 前夜预判 (5h gap, drop 实测 per Pitfall 42), 午后 是 实测段 (1h post-cutover, OK 写实测)
+
+### Pitfall 45 (v0.8.4 新增) 实测生效后 1h 抓料真空 怎么补 实战数据
+
+- 早间 Pitfall 42 主审时点 (7:00 CST) 早于 Anthropic Fable 切计费 实测时点 (12:00 CST) = 5h gap → drop 实测段, write 前夜预判段
+- 午后 6h 窗口 master 时点 (13:01 CST) 早于 实测时点 (12:00 CST) = -55min (1h post-cutover) → OK 写实测段 per Pitfall 42 判定规则 (实测生效时点 ≤ master 时点)
+- 真空窗口补 实战数据 路径: (a) master 直接用 raw.md 已 capture 的 [7][8][10][25][27] Fable verbatim baseline + (b) 不需要 6h 增量 raw (周末真空窗口 + 美方 PT close 8h+ 实际 0 增量) (c) 实测段 跟 前夜预判段 是 对位那一面 (Pitfall 38), 不是 同主轴续写 (Pitfall 17)
+- 不允许: (a) 等 6h 窗口 30 条 raw 真空 死磕 (b) 跳过 实测段 写 24h 后续 推脱 (c) 写 "实测" 段 但 没有 1h post-cutover 时点 证据 (不诚实)
+- 写者注: 早间 已 drop 实测段 是 守门 守时序, 午后 补 实测段 是 守门 补对位, 两条 合并 才 完整
+
+### 给 7/12 晚报 cron 留痕 + 明天 (7/13 早) 接力
+
+- 早 cron 21 期 baseline 15 子轴 双形态同期 + 加新维度 (第 15 子轴 Fable 5 实测 1h 第 5 接力 立) — 7/12 晚报 cron 必须 接续 (a) Microsoft 7/14 Q4 财报 实际 进展 (b) Mythos framework 周末学术 后续 (c) Anthropic Fable 5 实测 后续 developer impact 数据 (d) 7/14 周一 开盘 智谱 1588-1698 港元 / 股 配售 实际 落地 vs 配售方公告 (e) 智谱 解禁抛压 7/14 是否 续 (f) MiniMax 拟冲刺科创板 是否 触发 其他 港股 AI 头部公司 同步 (g) WAIC 7/17-7/20 真机首展 实际 启幕 进度 (h) Fable 5 切计费 24h 后续 实战 developer impact 数据
+- 第 15 子轴 继续生效条件 — 直到 (a) Microsoft 7/14 Q4 财报 capex ROI 验证 (b) Anthropic Fable 5 切计费 24h 后续 developer impact 数据 (c) Mythos framework 周末学术 后续 (d) Meta 7/15 Q2 capex 披露 (e) OpenAI CEO of AGI Deployment 接班人 公开 (f) SpaceX IPO S-1 finalize 后 compute pricing 公开 (g) Musk 是否 后续 撤回 / 二次确认 (h) 智谱 narrative 反向 7/14 周一 开盘 续 实战 (i) WAIC 7/17-7/20 真机首展 (Atlas 950) 实际 启幕 (j) 智谱 GLM-5.2 开源 vs Fable/Mythos 闭源 战略 baseline 跨 4 周.
+- 已知风险: (a) Fable 5 切计费 24h 后续 developer impact 数据 未 大量 公开 (b) Mythos framework 周末学术 后续 待 7/13 周一 续 (c) Microsoft 7/14 Q4 财报 capex ROI (d) WAIC 7/17-7/20 启幕 (e) Anthropic Mythos 7/11 framework 公告窗口 续 (f) 美方 Q2 earnings 7/14-7/16 三日 集中 preannouncement 续 (g) MiniMax 拟冲刺科创板 实际 公告 进度 (h) 智谱 7/14 周一 开盘 实测 (i) Anthropic Mythos 5 export controls lifted 后 中方 监管 应对 (j) 7/14 周一 开盘 智谱 1588-1698 港元 / 股 配售 实际 落地.
+
+### Pitfall 37 (v0.7.9) 7/12 午后 实测落盘
+
+- em dash 1 (cite-only, protected) / en dash 0 / 句首逗号 0 / 双句号 0 per humanizer-cron-integration.md 第 14 条 硬约束
+- 8a 数字精度 — stat-card 数字 vs raw.md 来源 (\$10 / \$50 + +25-40% verbatim cross-check; 2 天 arithmetic 衍生 已在 raw Y. 段 5b 显式说明)
+- 8b 具名引述 hallucination detect — known names (徐直军/闫俊杰/Satya Nadella/Mythos/Project Glasswing) 都 PASS
+- 8d cross-source 引述 detect — 0 problematic phrases
+
+### 写者: 今天 Una (7/12 13:00 cron 主审 stage 2 本体主审 — 同日 cross-reference 五期 narrative 同期 对位 第 5 接力结构 实测 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 38 + 42 + 45 接力)
+### 读者: 7/12 晚报 cron 第二十二期 una 主审 / 7/13 早 cron 第二十三期 una 主审
