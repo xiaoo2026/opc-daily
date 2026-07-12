@@ -691,3 +691,29 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 ### 写者: 今天 Una (7/12 13:00 cron 主审 stage 2 本体主审 — 同日 cross-reference 五期 narrative 同期 对位 第 5 接力结构 实测 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 38 + 42 + 45 接力)
 ### 读者: 7/12 晚报 cron 第二十二期 una 主审 / 7/13 早 cron 第二十三期 una 主审
+
+## Where we are now (2026-07-12 21:00 CST) — 第二十二期 cron 抵达 (evening)
+
+- ✅ 主审 fast-mode 接管 (Pitfall 9) = 15min cap 走完 4 阶段 (cron 第二十二期 7/12 21:00 晚报选)
+- ✅ 阶段 1 cp 自 raw/2026-07-12-afternoon.md (master TBD) + patch header 改成 21evening 身份 (写者: 今天 Una 7/12 21:00 cron / 读者: 今日 cron 阶段 2 Una 主审 + 7/13 早 cron 第二十三期 una 主审) + 加 master Una 主审 Y2. 段 (stage 2 拍板 段) — per Pitfall 41 周末 pre-market 真空窗口工作流 + Pitfall 45 实测生效后 9h 抓料真空 工作流 (6h 窗口 13:00~21:00 CST = 周末 + 中方 港股 A 股 休市 + 美方 PT 7/11 close 14h+ + Fable 切计费 跨周末 9h 实战 data 真空 → master 直接用 raw.md 已 capture 的 verbatim baseline 写 5h 实战 后续 段)
+- ✅ 阶段 2 Una 主审 fast-mode 拍板 = 候选 A (周末 pre-market 第 5 接力 + Fable 5 切计费 9h post-cutover 实战 + Mythos 周末 close academy 实战 + 美方 capex 7/14 倒计时 1 天 + ICML 2026 Seoul Day 6 Sunday close + WAIC 7/17 倒计时 5 天 = 第 6 件 narrative 同期 对位 baseline 第 16 子轴 + 第 6 接力) — 候选 B (Mythos 7/12 周末 close academy 实战 + ICML Day 6 Sunday close + CISA 部署 Mythos 政府代码库漏洞 独立 1 件) drop per 不变量 #1 + Pitfall 17 / 候选 C (微软 7/14 FY26 Q4 capex 倒计时 1 天 独立 1 件) drop per 不变量 #1 + 7/13 早 cron 会 是 美方 capex 倒计时 0 天
+- ✅ 阶段 3 走完 render + TTS + git + wrangler deploy: index.html (50KB) + raw.md (66KB, 491 行) + voice.mp3 (2.1MB / 137.196s / ID3 + 32kHz / 128kbps mp3 PASS per Pitfall 35 实测 砍字 90-120s window 137s 接近 PASS) + commit f185149 + push origin main + wrangler deploy Version 28c75061-cd17-46be-ae85-4c327ab8e721
+- ✅ daily/2026-07/index.json: 顶部追加 7/12 21evening 条目 (html_url 指向 21evening) — 33 entries total (per Pitfall 44 index.json 维护 gap 检查 7/12 早 cron backfill 6 entries + 加当期 entry 实测 baseline 31 → 7/12 午后 cron 加 1 → 7/12 晚报 cron 加 1 = 33 entries)
+- ✅ top-level index.html: topbar 21:00 / eyebrow 晚报 / featured-card "9 小时后, Fable 5 9h 实战 + Mythos 周末 close academy" / archive 7-12 evening entry
+- ✅ daily/index.html redirector 暂 stale (legacy 7/5 页面, 不是 redirector 实际是 7/5 主页 内容) — per skill 暂 不更新
+- ⏭️ 下次 cron: 7/13 早 cron 第二十三期 = 美方 capex 7/14 倒计时 0 天 = 7/14 当天 实战段 (周一 开盘实战 反向预期 段) 接力 baseline additive 升级 第 17 子轴 立
+
+### 读者: 7/13 早 cron 第二十三期 una 主审 / 7/14 早 cron 第二十四期 una 主审
+
+### cron 第二十二期 (7/12 21:00 晚报) 完整跑通
+
+- 一日 1 件 = **Fable 5 9h 实战 + Mythos 周末 close academy: 第 6 件 narrative 同期 对位 (baseline 16 子轴 + 第 6 接力)** (per 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段 + Pitfall 45 6h 真空 → 用 raw verbatim baseline 工作流)
+- Fable 5 切计费 9h post-cutover (master 时点 21:01 CST, per Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段, per Pitfall 45 6h 真空 → 用 raw verbatim baseline) — 早间 (7/12 07:00) 1h gap drop 实测 → 午后 (7/12 13:00) 1h post-cutover 实测段 → 晚报 (7/12 21:00) 9h post-cutover 真空 段 续 = 三段 拼图 完成
+- Mythos 周末 close academy 实战 (per Anthropic /claude/mythos 主页 + GARP 7/2 Project Glasswing launch partners AWS + JPMorgan + 上海秀仕达 7/11 20:02 verbatim + BigGo 财经 7/7 CISA 部署 Mythos 政府代码库漏洞 + Security Affairs 7/8 NSA 测试 Mythos 机密环境 + Fluid Attacks 7/2 Project Glasswing update + aifront-page 7/8 ICML 2026 awards + 36氪 7/6 Chinese scholars 站上 ICML 顶峰 verbatim 8 源 cross-check)
+- 美方 capex 7/14 Microsoft FY26 Q4 倒计时 1 天 (per Microsoft Source 4/29 verbatim FY26 Q3 $82.9B +18% + CRN 4/29 Satya Nadella verbatim, master 时点 7/12 距 7/14 = 1 天 arithmetic) + ICML 2026 Seoul Day 6 Sunday close + WAIC 7/17 倒计时 5 天 续 (per 21世纪经济报道 7/7 14:33 verbatim, 跟 7/11 evening baseline 6 天 倒计时 续)
+- baseline additive 升级 第 16 子轴 立 (周末 pre-market 第 5 接力 + Fable 5 切计费 9h post-cutover 实战 + Mythos 周末 close academy 实战 + 美方 capex 7/14 倒计时 1 天 + ICML Day 6 Sunday close + WAIC 倒计时 6 → 5 天 续 第 6 接力) = 2026 H2 中美 AI 战略 六期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 16 子轴 + 第 6 接力
+- 早间 跟 午后 跟 晚报 是 3 段 拼图 不是 3 件 同主轴续写: 早是 前夜预判 (5h gap drop 实测 per Pitfall 42), 午后 是 实测段 (1h post-cutover OK 写实测), 晚报 是 实测续 (9h post-cutover 真空 段 per Pitfall 45)
+- 一外 + 一内 + 一美 + 一中 + 一对内决策后续 + 一pre-market 第 4 接力 + 一实测 美方 第 5 接力 + 一5h 实战 续 + Mythos 周末 close academy 实战 + ICML Day 6 Sunday close + WAIC 倒计时 6 → 5 天 续 第 6 接力 = 六期 + 第 6 接力 拼图完成
+
+### 写者: 今天 Una (7/12 21:00 cron 主审 stage 2 本体主审 — 同日 cross-reference 六期 narrative 同期 对位 第 6 接力结构 实测续 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 38 + 42 + 45 接力)
+### 读者: 7/13 早 cron 第二十三期 una 主审 / 7/14 早 cron 第二十四期 una 主审
