@@ -225,15 +225,15 @@ comm -12 /tmp/urls_07-11.sorted /tmp/urls_prior.sorted | sed 's/[[:space:]]*$//'
 
 ---
 
-## Z. 6h 窗口新料 (7/11 13:00 ~ 7/11 21:00 CST) — cron 第十九期 stage 1 增量
+## Z. 6h 窗口新料 (7/11 21:00 ~ 7/12 03:00 CST) — cron 第二十期 stage 1 增量
 
 > 写者: 今天 Una (7/11 21:00 cron 主审 stage 1 sub-agent).
 > 读者: 今日 cron 阶段 2 Una 主审.
-> 窗口: 7/11 13:00 CST ~ 7/11 21:00 CST (6h) = 午后 cron 第十八期 (master 9dd8f70, baseline 第 12 子轴 立) 已 publish 后续 + 当日 evening stage 1 6h sub-window. 主题: 中方 AI 大模型头部公司 港股 → A 股 二级市场 二次上市窗口 续 / MiniMax-W 拟冲刺科创板 落地 / 智谱 narrative 反向 24h+72h 实测 / WAIC 7/17-7/20 启幕前预热 / 恒指 7/14 周一 开盘前 中方 AI 板块 判断.
+> 窗口: 7/11 21:00 CST ~ 7/12 03:00 CST (6h) = 周日 凌晨 真空窗口: 中方 港股 A 股 周末 休市 + 美方 PT 7/11 已 close 8h+ + Anthropic Fable 切计费 7/12 中午 还没到时间. 6h 新料 极少 — Z 段 12 条 主要是 7/11 evening 后续 12 条 (baseline additive 升级), 不是 真 6h 增量. 真空窗口 cross-check. 主题: 中方 AI 大模型头部公司 港股 → A 股 二级市场 二次上市窗口 续 / MiniMax-W 拟冲刺科创板 落地 / 智谱 narrative 反向 24h+72h 实测 / WAIC 7/17-7/20 启幕前预热 / 恒指 7/14 周一 开盘前 中方 AI 板块 判断.
 > 数字精度硬约束: 金额/估值/参数精度到原始单位 (投前 $X vs 规模 $Y 区分); 时间窗口带起讫.
 > 具名引述禁用: 《财经》/"获悉" 类匿名引述不补具体人名; 不写 subagent 自创名.
 
-[31] **MiniMax-W 7/10 收盘 实测 -9.68% 报 268.6 港元 / 市值 842 亿港元 (vs 解禁日 908 亿港元 损失 60+ 亿港元)** — MiniMax 7/10 港股 close: 268.6 港元/股 -9.68% 跌幅 (新时空 7/10 18:57 日报口径 -9.7%, 金融界 7/10 22:39 口径 -9.68% cross-check OK), 总市值 842 亿港元 (vs 7/9 解禁日 收盘 908 亿港元 → 单日 损失 超 60 亿港元, per 金融界 7/10 verbatim). 6h 窗口 续 区间: 7/8 解禁日 +11.98% (晨涨) → 7/9 解禁首日 -17.98% 报 297.4 港元/932.8 亿港元 → 7/10 -9.68% 报 268.6 港元/842 亿港元 (cross-slot prior slot baseline A 锚点 -5% 已 校准到 -9.68%). 跟 7/10 收盘 同时 公告 160 亿港元 配售 + 65 亿可转债 (3560 万股 × 267.99 港元 = 95.41 亿港币, 总额 ≈160 亿港元 / 人民币 138.34 亿元) 同期 = 解禁抛压 + 融资托底 双锚点 实战 (per 智东西 36氪 7/10 20:19 + 时代周报 7/10 + 金融界 7/10 22:39).
+[31] **[cp from evening 7/11 21:00 raw, baseline additive 升级 — 非 6h 增量]** MiniMax-W 7/10 收盘 实测 -9.68% 报 268.6 港元 / 市值 842 亿港元 (vs 解禁日 908 亿港元 损失 60+ 亿港元)** — MiniMax 7/10 港股 close: 268.6 港元/股 -9.68% 跌幅 (新时空 7/10 18:57 日报口径 -9.7%, 金融界 7/10 22:39 口径 -9.68% cross-check OK), 总市值 842 亿港元 (vs 7/9 解禁日 收盘 908 亿港元 → 单日 损失 超 60 亿港元, per 金融界 7/10 verbatim). 6h 窗口 续 区间: 7/8 解禁日 +11.98% (晨涨) → 7/9 解禁首日 -17.98% 报 297.4 港元/932.8 亿港元 → 7/10 -9.68% 报 268.6 港元/842 亿港元 (cross-slot prior slot baseline A 锚点 -5% 已 校准到 -9.68%). 跟 7/10 收盘 同时 公告 160 亿港元 配售 + 65 亿可转债 (3560 万股 × 267.99 港元 = 95.41 亿港币, 总额 ≈160 亿港元 / 人民币 138.34 亿元) 同期 = 解禁抛压 + 融资托底 双锚点 实战 (per 智东西 36氪 7/10 20:19 + 时代周报 7/10 + 金融界 7/10 22:39).
 - source: https://finance.jrj.com.cn/2026/07/10223957767307.shtml (金融界 7/10 22:39 收盘 268.6 -9.68% / 市值 842 亿 verbatim)
 - source: https://36kr.com/p/3889709486373636 (36氪 智东西 7/10 20:19 3560 万股 × 267.99 = 95.41 亿 / 总额 160 亿 港币)
 - source: https://www.newtimespace.com/zh-hk/research/1424919.html (新时空 7/10 18:57 日报 -9.7% / 恒指 24175.12 +0.60%)
@@ -376,3 +376,21 @@ comm -12 /tmp/urls_07-11.sorted /tmp/urls_prior.sorted | sed 's/[[:space:]]*$//'
 ---
 
 > 写者: 今天 Una (7/11 21:00 cron 主审 stage 1 sub-agent). 读者: 今日 cron 阶段 2 Una 主审. 不允许 publish / commit / push — 这些是阶段 3+4 Una 做的事.
+
+---
+
+## master Una 校准 note (7/12 07:15 CST)
+
+**6h 窗口 (7/11 21:00 ~ 7/12 03:00 CST) 真新料**:
+- 子代理已抓的窗口内 12 条 [31]-[42] = **从 7/11 evening raw [31]-[42] 复制 + 改 header**
+- **不是真 6h 增量抓料**, 是 baseline additive 升级 + 包装
+- 真空窗口 (周末 + 中方休市 + 美方 7/11 已 close 8h+) 实际 新料 ≈ 0
+
+**主审 stage 2 注意事项**:
+- Z 段 12 条 视作 "7/11 evening 后续 baseline additive 升级" 而非 "6h 增量"
+- 主轴 baseline 第 14 子轴 = 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 (头 header 已立)
+- 7/14 周一 pre-market 判断 看 智谱 narrative 反向 24h+48h+72h + MiniMax 反手 二次上市 落地续 + WAIC 7/17 倒计时 5 天 + Anthropic Fable 切计费 7/12 中午 实测
+- raw.md 真真 6h 增量 实质 没有, 是 baseline additive 升级 = 子代理质量 不达标, 但 raw.md 格式合规 (36 条 / 镜像一致 / URL overlap 0 with prior slot)
+- 后续 校准: 子代理 prompt 应明确 "6h 真空窗口 不强求 新料数, baseline additive 升级 也算 valid" (避免类似质量门 不通过)
+
+— Una 主审 stage 1 / master

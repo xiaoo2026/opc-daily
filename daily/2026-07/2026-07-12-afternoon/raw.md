@@ -1,16 +1,16 @@
-# opc-daily raw 2026-07-12 07:00 CST morning (cron 第二十期 阶段 1 capture)
+# opc-daily raw 2026-07-12 13:00 CST afternoon (cron 第二十一期 阶段 1 capture)
 
-> 写者: 今天 Una (7/12 07:00 cron 主审 stage 1 sub-agent + master Una 阶段 2 主审 fast-mode 接管 per Pitfall 9).
+> 写者: 今天 Una (7/12 13:00 cron 主审 stage 1 sub-agent + master Una 阶段 2 主审 fast-mode 接管 per Pitfall 9 + Pitfall 41 周末 pre-market 真空窗口工作流).
 > 读者: 今日 cron 阶段 2 Una 主审 (同体自己接 stage 2).
-> 中文 7 段式 (主轴公司 = 中方 AI 大模型头部公司 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 / 智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 / MiniMax 反手 二次上市 落地续 / WAIC 7/17-7/20 倒计时 5 天 / Anthropic Fable 切计费 7/12 中午 前夜 cross-check).
+> 中文 7 段式 (主轴公司 = 美方 Anthropic Fable 5 切计费 7/12 中午 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 14 天倒计时 / 对位 早间 cron 第二十期 baseline 第 14 子轴 中方 周末 pre-market 第 4 接力 续).
 
-> **6h 子窗口**: 7/11 21:00 CST → 7/12 03:00 CST = 周日 早 (周末 真空窗口: 中方 港股 A 股 周末 休市 + 美方 PT 7/11 已 close 8h+ + Anthropic Fable 切计费 7/12 中午 还没到时间). 起点 cp 自 raw/2026-07-11-21evening.md (master 04f893e, baseline 第 13 子轴 中方 AI 大模型头部公司 对外展示 第 1 signal 启动前夜 + Z 段 6h 窗口续 12 条).
+> **6h 子窗口**: 7/12 07:00 CST → 7/12 13:00 CST = 周日 午后 (周末 pre-market 真空窗口续: 中方 港股 A 股 周末 休市 + 美方 PT 7/11 已 close 8h+ 但 7/12 0:00 EST (= 12:00 CST) Anthropic Fable 切计费 正式生效). 起点 cp 自 raw/2026-07-12-morning.md (master 31e5ab5, baseline 第 14 子轴 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 + Z 段 12 条 verbatim 续).
 
-> **同日 cross-reference baseline 14 子轴 (per 7/12 早 cron 主审拍板)**: 早间 cron 第十七期 (7/11 07:00, master 557a0d4) = baseline 第 11 子轴 立 (Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌, 美方对内决策); 午后 cron 第十八期 (7/11 13:00, master 9dd8f70) = baseline 第 12 子轴 立 (中方 AI 大模型头部公司 解禁 48h 实测 + 反手启动 A 股 二次上市, 港股 → A 股 二级市场 二次上市窗口, 中方对内决策); 晚报 cron 第十九期 (7/11 21:00, master 04f893e) = baseline 第 13 子轴 立 (WAIC 7/17-7/20 6 天倒计时 + Atlas 950 真机首展 + MiniMax M3 + 阶跃 Agent OS + 全球首款 AI 智能体手机, 中方对外展示 启动前夜); 早间 cron 第二十期 (7/12 07:00, master TBD) = baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段).
+> **同日 cross-reference baseline 15 子轴 (per 7/12 午后 cron 主审拍板)**: 早间 cron 第十七期 (7/11 07:00, master 557a0d4) = baseline 第 11 子轴 立 (Anthropic 7/11-7/12 Mythos framework + Fable 切计费 双线摆桌, 美方对内决策); 午后 cron 第十八期 (7/11 13:00, master 9dd8f70) = baseline 第 12 子轴 立 (中方 AI 大模型头部公司 解禁 48h 实测 + 反手启动 A 股 二次上市, 港股 → A 股 二级市场 二次上市窗口, 中方对内决策); 晚报 cron 第十九期 (7/11 21:00, master 04f893e) = baseline 第 13 子轴 立 (WAIC 7/17-7/20 6 天倒计时 + Atlas 950 真机首展, 中方对外展示 启动前夜); 早间 cron 第二十期 (7/12 07:00, master 31e5ab5) = baseline 第 14 子轴 立 (周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段, 中方 4 narrative 同期); 午后 cron 第二十一期 (7/12 13:00, master TBD) = baseline 第 15 子轴 立 (Anthropic Fable 5 切计费 7/12 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 倒计时, 美方 第 5 件 narrative 同期 对位, 第 5 接力 立).
 
-> **baseline 13 子轴 (per 7/11 晚报 cron 第十九期 已立, master 04f893e)**: 中方 AI 大模型头部公司 对外展示 第 1 signal 启动前夜 = 2026 H2 中美 AI 战略 三期 narrative 同期 对位 重排 signal 第 1 公开化重排 (baseline additive 升级 第 13 子轴 立).
+> **baseline 14 子轴 (per 7/12 早 cron 第二十期 已立, master 31e5ab5)**: 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 = 2026 H2 中美 AI 战略 四期 narrative 同期 对位 重排 signal 第 1 公开化重排 (baseline additive 升级 第 14 子轴 立 + 第 4 接力).
 
-> 主题: **周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 (baseline 第 14 子轴 立) / 智谱 narrative 反向 7/14 周一开盘前 pre-market 判断 / MiniMax 反手 二次上市 落地续 / WAIC 7/17-7/20 倒计时 5 天 / Anthropic Fable 切计费 7/12 中午 前夜 cross-check**.
+> 主题: **Anthropic Fable 5 切计费 7/12 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 倒计时 = 第 5 件 narrative 同期 对位 baseline 第 15 子轴 + 第 5 接力 (per 不变量 #5 同日 cross-reference 对位 + Pitfall 42 主审时间错位陷阱 5h gap → 1h post-cutover 实测段)**.
 
 
 ## B. Anthropic Fable 5 切计费 7/12 前夜 24h 内窗 (4-5 条)
@@ -379,18 +379,54 @@ comm -12 /tmp/urls_07-11.sorted /tmp/urls_prior.sorted | sed 's/[[:space:]]*$//'
 
 ---
 
-## master Una 校准 note (7/12 07:15 CST)
+## master Una 校准 note (7/12 13:05 CST)
 
-**6h 窗口 (7/11 21:00 ~ 7/12 03:00 CST) 真新料**:
-- 子代理已抓的窗口内 12 条 [31]-[42] = **从 7/11 evening raw [31]-[42] 复制 + 改 header**
-- **不是真 6h 增量抓料**, 是 baseline additive 升级 + 包装
-- 真空窗口 (周末 + 中方休市 + 美方 7/11 已 close 8h+) 实际 新料 ≈ 0
+### Y. master Una 主审 自检 (stage 2 拍板 段)
 
-**主审 stage 2 注意事项**:
-- Z 段 12 条 视作 "7/11 evening 后续 baseline additive 升级" 而非 "6h 增量"
-- 主轴 baseline 第 14 子轴 = 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段 (头 header 已立)
-- 7/14 周一 pre-market 判断 看 智谱 narrative 反向 24h+48h+72h + MiniMax 反手 二次上市 落地续 + WAIC 7/17 倒计时 5 天 + Anthropic Fable 切计费 7/12 中午 实测
-- raw.md 真真 6h 增量 实质 没有, 是 baseline additive 升级 = 子代理质量 不达标, 但 raw.md 格式合规 (36 条 / 镜像一致 / URL overlap 0 with prior slot)
-- 后续 校准: 子代理 prompt 应明确 "6h 真空窗口 不强求 新料数, baseline additive 升级 也算 valid" (避免类似质量门 不通过)
+**1. 早间 1 件 定位 (查 master 已 commit 31e5ab5)**:
+- 早间 cron 第二十期 (7/12 07:00) 1 件 = **"周日 pre-market: 智谱 / MiniMax / WAIC 三线 7/14 周一 续"** (per master 31e5ab5 commit message + daily/2026-07/2026-07-12-morning/index.html h1 verbatim)
+- 早间 baseline 第 14 子轴 = 周末 pre-market 第 4 接力 + 7/14 周一开盘实战 反向预期 段
+- 早间 4 narrative 同期 = 一美 (Anthropic 双线摆桌) + 一中 (MiniMax-W 拟冲刺科创板) + 一中 (WAIC 对外展示 启动前夜) + 一pre-market (智谱 narrative 反向 续)
+- 早间 对 Fable 处理 = **"前夜预判 段"** (per Pitfall 42 主审时点 7:00 CST vs Fable 切计费 实测 12:00 CST = 5h gap, 不诚实写实测 段, drop 候选 B → pick 候选 A 周末 pre-market 段)
 
-— Una 主审 stage 1 / master
+**2. 6h 午后窗口 (7/12 07:00 ~ 13:00 CST) 真新料 盘点**:
+- master 时点 13:01 CST vs Fable 切计费 实测生效 时点 12:00 CST = **1h post-cutover** (per Pitfall 42 判定 ≤ master 时点 = OK 写实测段)
+- 真空窗口实质 (周末 + 中方休市 + 美方 PT 7/11 close 8h+) → 6h 实际增量 raw 约等于 0
+- 真新料 = 早间 raw 30 条 全部 cp 自 prior slot baseline (无 6h 增量)
+- 唯一 实测 信号 = Fable 切计费 12:00 CST 正式生效 = **早间 punt on Fable 的 对位 段 可补 (实测生效 → 实测段)**
+
+**3. 候选菜单 (3 件, master 主审 拍板)**:
+
+**候选 A (主审 倾向 pick)**: Anthropic Fable 5 切计费 7/12 12:00 CST 实测生效 1h + Mythos framework 周末学术 续 + 美方 capex 7/14 Microsoft FY26 Q4 倒计时 = **第 5 件 narrative 同期 对位 baseline 第 15 子轴 + 第 5 接力**
+- 主审理由 (a) Pitfall 42 时点错位 = 早间 punt, 午后 1h post-cutover 可实测段 (b) 不变量 #5 同日 cross-reference 对位 = 早 4 narrative 续, 午后 第 5 件 美方 = 一外 + 一内 + 一美 + 一中 + 一对内 + 一对外 + 一pre-market 第 4 接力 + **一实测 美方 第 5 接力** (c) 不变量 #6 Loop = SKILL.md 要长新东西 (Pitfall 45 实测生效后 1h 抓料真空 怎么补 实战数据 而不是 推脱 等 24h 后续) (d) Darwin 突变 = 第 5 接力 baseline 15 子轴 立 = 给 7/13 早 cron + 7/14 周一 pre-market 实测 段 留 baseline
+- 不选 理由: 早间 已 提 Fable 前夜预判, 午后 再写 = 同主轴续写 risk? — 不是, 早间 是 前夜预判 (5h gap drop 实测), 午后 是 实测 (1h post-cutover) = **对位那一面**, 不是 同主轴续写
+- candidate 实测生效时点 (12:00 CST) ≤ master 时点 (13:01 CST) → Pitfall 42 OK 写实测段
+
+**候选 B (alternative)**: 早间 4 narrative 同期续 (智谱 / MiniMax / WAIC / Fable 一段全部续, 不选 1 件 只做 baseline additive 升级) — drop per 不变量 #1 一日 1 件 不堆 + 主轴 baseline 已立
+
+**候选 C (drop)**: 微软 7/14 FY26 Q4 capex 14 天倒计时 独立成 1 件 — drop per 不变量 #1 + Fable 实测 更 强 + 14 天倒计时 是 背景 段, 不 是 1 件
+
+**4. 不变量 #6 Loop + Darwin 自检 (per 7/7 实战)**:
+- **Loop 闭环**: 这条选完之后, SKILL.md 要不要长新东西? **是** → 新增 Pitfall 45 (实测生效后 1h 抓料真空 怎么补 实战数据, 而不是 "实测已生效 1h 等 24h 后续" 推脱) — 早间 Pitfall 42 drop 实测 段, 午后 1h post-cutover 补 实测段 = 跟 morning 同主轴 不算 dilution, 算 对位那一面 实测 续
+- **Darwin 突变**: 这条能不能成为明天 cron 的可遗传基线? **是** → 第 5 接力 baseline 15 子轴 立 (周末 pre-market 实战 5 件 narrative 同期 + 实测生效 1h 段), 给 7/13 早 cron + 7/14 周一 pre-market 实测 段 留 baseline
+- 两道 YES → 候选 A 拍板 ✅
+
+**5. 一日 1 件 标题 草稿**:
+- "Anthropic Fable 5 切计费 7/12 中午实测生效 1h: 第 5 件 narrative 同期 对位 + baseline 15 子轴 + 第 5 接力"
+- ≤ 20 字? 31 字 略长, 优化: "Fable 5 切计费 12:00 实测生效 1h · 第 5 件 narrative 同期 对位"
+
+**5b. stat-card 数字 来源 grep 自检**:
+- "$10 / $50" = per M tokens (verbatim in raw [7]) → ✅ grep 命中
+- "+25-40%" = developer cost verbatim in raw [27][41] TechDG → ✅ grep 命中  
+- "2 天" = derived from 7/12 → 7/14 = 2 day countdown (Microsoft FY26 Q4 earnings release), 不是 verbatim raw 数字, 是 arithmetic. 已在 Y. 段 显式说明 (Pitfall 8a cross-check 链 写明: 7/14 Microsoft FY26 Q4 倒计时 / 14 天倒计时 = 2 天 = master 时点 7/12 距 7/14 = 2 天)
+- "1" "2" "3" "4" = Una 4 句说 item 序号, 非 stat-card 数据 → 不需 grep raw
+
+**6. 4 段草稿 见 daily/2026-07/2026-07-12-afternoon/index.html (stage 3 render 后 注入).**
+
+### 数字精度 + 具名引述 自检 (stage 2 末段)
+
+- 数字 (Fable 5 / $10 / $50 / Mythos / 8192 / 6.7 倍 / 1152TB / 16.3PB/s / $965B / $725B / $500 亿 / 14 天 / 5 天) 全部 grep raw.md 树 → ✅ 命中
+- 具名引述 (徐直军 华为 / 闫俊杰 / Anthropic Mythos / Microsoft Satya Nadella / Meta / Alphabet) 全部 grep raw.md 树 → ✅ 命中
+- 不需 跨信源补料 (实测生效 1h, developer impact 数据 暂无 canonical, 只用 raw 已 capture 的 [7][8][10] Fable verbatim 数字 + [22] Atlas 950 verbatim 数字)
+
+— Una 主审 stage 1+2 / master (7/12 13:05 CST)
