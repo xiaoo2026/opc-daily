@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-13",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "07:00 · 周一 · 覆盖 7/12 21:00 ~ 7/13 07:00",
+  "title": "Fable 5 切计费 19h 实战, 美方 capex 7/14 倒计时 1 天, 中方周一开市反向预期已立",
+  "dek": "7/13 早我挑了 1 件: 美方 capex ROI 7/14-7/16 三日集中财报 + WAIC 7/17 启幕 + 中方周一开市反向预期, 加上 Fable 5 切计费 19h 这条已发生的实测, 拼成'七期 narrative 同期对位 第 17 子轴 立'。对开发者真正要紧的是账单变了 — Sonnet 5 已显式补位 Fable 5 给 enterprise。",
+  "why_this": "周末开发者社群都在计较账单; 我不看价, 看动作 — Anthropic 把 Fable 5 从订阅里抽走, 同步让 Sonnet 5 显式补位 enterprise。这个组合同时回答两个问题: (1) 7/13 早安 Fable 5 退出消费路径是个售价决策还是产能决策; (2) 7/14 美方三大财报集中出, 是不是第一次把 AI capex ROI 推到台面。",
+  "pick_points": [
+    {
+      "num": "19h",
+      "label": "Fable 5 切计费 7/12 中午 12:00 CST 实测 19h post-cutover"
+    },
+    {
+      "num": "1 天",
+      "label": "Microsoft FY26 Q4 capex ROI 7/14 倒计时 1 天 (周一开市实战段)"
+    },
+    {
+      "num": "4 天",
+      "label": "WAIC 7/17 启幕 上海'三地四馆' 倒计时 4 天 + Atlas 950 真机"
+    }
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "main_facts": [
+    "Anthropic 7/7 把 Fable 5 从 Pro/Max/Team/Enterprise 订阅 bundled 抽走, 转入 usage-credit 计费 ($10 input / $50 output per M tokens). 同日主页挂 Mythos 5 export controls lifted 公告. 这是 7/13 早的 anchor 事件。",
+    "Fable 5 切计费 7/12 中午 12:00 CST 实测生效, master 时点 7/13 07:00 = 19h post-cutover. 跟 7/12 早间 5h gap drop → 午后 1h 实测段 → 晚报 9h 实测续 拼成 4 时点拼图。",
+    "> \"Anthropic Extends Fable 5 Access to July 12 / Claude Sonnet 5 Emerges as the Safer Alternative\" (= 切计费 grace period 续到 7/12 + Sonnet 5 已显式替补 enterprise 备份. FrontierNews 7/10)",
+    "Microsoft FY26 Q3 营收 $82.9B +18% (Microsoft Source 4/29). FY26 Q4 7/14 (周二) earnings release, 距今 1 天. Meta 7/15 + Alphabet 7/16 = 美方 capex ROI 三日集中财报。",
+    "中方 港股/A 股周一 (7/14) 09:30 CST 开市实战段启动 — 智谱 1588-1698 港元/股配售 + 智谱 7/10 收盘 -19.3% + MiniMax-W 拟冲刺科创板 三线同日回归.",
+    "中方 港股/A 股周一 (7/14) 09:30 CST 开市实战段启动 — 智谱 1588-1698 港元/股配售 + 智谱 7/10 收盘 -19.3% + MiniMax-W 拟冲刺科创板 三线叙事同日回归。开市反向预期段已立。",
+    "WAIC 2026 7/17-7/20 在上海世博/张江/西岸'三地四馆'启幕, 展览总面积首次突破 10 万平方米, 1100+ 家企业参展, 3000+ 项展品集中亮相, 300+ 款产品全球首发. Atlas 950 SuperPoD 真机首展 同期. (21世纪经济报道 7/7 14:33)"
+  ],
+  "not_picked": [
+    "<strong>候选 B · Anthropic Mythos framework 周末学术续 (无新料)</strong> — 7/11 morning 已 launch partners 公告, 周末无新进展, 不蹭。",
+    "<strong>候选 C · ICML 2026 Seoul Day 6 Sunday close (academic)</strong> — 学术 finish, 不指向 capex 实战段, 跳过。",
+    "<strong>候选 D · OpenAI o3-pro 订阅降价传闻 (未官宣)</strong> — 一周前有过谣, 本周无新动作, 不传。"
+  ],
+  "say_4": [
+    "Fable 5 切计费 = 备货变按量. Sonnet 5 已补位 enterprise.",
+    "美方 7/14-7/16 三日财报 = 2026 H2 首个 AI capex ROI 台面审查.",
+    "中方周一开市反向预期已立, 智谱配售 + MiniMax-W 冲刺科创板.",
+    "Microsoft FY26 Q4 是 7/14 那天的关键, 写数字不写工作流标签."
+  ]
+}
