@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-13",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周一 · 覆盖 7/13 15:00 ~ 7/13 21:00",
+  "title": "Fable 5 切计费 33h post-cutover + 美方 capex 7/14 倒计时 0 天: 第 8 件 narrative 同期 对位",
+  "dek": "7/13 晚报我挑了 1 件: Anthropic Fable 5 切计费已 33h, 开发者 impact 数据 跨周末应大量浮出; 美方 capex 7/14 Microsoft FY26 Q4 release 倒计时 0 天; 中方 港股/A 股 周一 收盘实战段 已 6h 收市。拼成'八期 narrative 同期对位 第 18 子轴 立', Fable 5 跨周末真空段 + Mythos framework 周一学术回归 + WAIC 7/17 倒计时 3 天。",
+  "why_this": "周末开发者社群都在计较账单 24h+ 实战数据; 我不看价, 看动作 — Fable 5 退出订阅切计费后, Sonnet 5 已显式补位 enterprise. 这个组合同时回答两个问题: (1) 7/13 晚 Fable 5 切计费 33h 实战 developer impact 数据是否浮出, Sonnet 5 是否真的接住; (2) 7/14 美方 capex ROI 7/14-7/16 三日集中财报 + WAIC 7/17 启幕 + 中方 周一 收盘 实战段 是否在 7/13 收盘 已 落地. 七期拼图 (7/11 早 → 7/13 早) + 7/13 晚报 第 8 期, 跨 day 边界加新维度。",
+  "pick_points": [
+    {
+      "num": "33h",
+      "label": "Fable 5 切计费 7/12 中午 12:00 CST 实测 33h post-cutover 24h 实战段"
+    },
+    {
+      "num": "0 天",
+      "label": "Microsoft FY26 Q4 capex ROI 7/14 release 倒计时 0 天 (周二当天实战段)"
+    },
+    {
+      "num": "3 天",
+      "label": "WAIC 7/17 启幕 上海'三地四馆' 倒计时 3 天 + Atlas 950 真机"
+    }
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "main_facts": [
+    "Anthropic 7/7 把 Fable 5 从 Pro/Max/Team/Enterprise 订阅 bundled 抽走, 转入 usage-credit 计费 ($10 input / $50 output per M tokens). 7/12 中午 12:00 CST 实测生效. master 时点 7/13 21:00 = 33h post-cutover = 跨周末 实战 真空 段, developer impact 24h+ 数据 应 大量 公开. 这是 7/13 晚报 anchor 事件。",
+    "Fable 5 切计费 7/12 中午 12:00 CST 实测生效, master 时点 7/13 21:00 = 33h post-cutover. 跟 7/12 早间 5h gap drop → 7/12 午后 1h 实测段 → 7/12 晚报 9h 实测续 → 7/13 早 19h 实测续 → 7/13 晚报 33h post-cutover 24h 实战段 = 5 时点 1h~5h~9h~19h~33h post-cutover 五段拼图。",
+    "> \"Anthropic Extends Fable 5 Access to July 12 / Claude Sonnet 5 Emerges as the Safer Alternative\" (= 切计费 grace period 续到 7/12 + Sonnet 5 已显式替补 enterprise 备份. FrontierNews 7/10)",
+    "Microsoft FY26 Q3 营收 $82.9B +18% (Microsoft Source 4/29). FY26 Q4 7/14 (周二) earnings release, 距 7/13 21:00 = 0 天 倒计时 = 周二 当天 实战段. Meta 7/15 + Alphabet 7/16 = 美方 capex ROI 三日集中财报 启动 段。",
+    "中方 港股/A 股 周一 (7/13) 全天 实战段 已 6h 收市 — 智谱 1588-1698 港元/股配售 + 智谱 7/10 收盘 -19.3% + MiniMax-W 拟冲刺科创板 三线同日回归, 周一开市实战段已立。",
+    "WAIC 2026 7/17-7/20 在上海世博/张江/西岸'三地四馆'启幕, 展览总面积首次突破 10 万平方米, 1100+ 家企业参展, 3000+ 项展品集中亮相, 300+ 款产品全球首发. Atlas 950 SuperPoD 真机首展 同期. (21世纪经济报道 7/7 14:33)",
+    "Mythos framework 周一学术回归 — Anthropic /claude/mythos 主页 + GARP 7/2 Project Glasswing launch partners AWS + JPMorgan + 上海秀仕达 7/11 20:02 verbatim, 周末 close academy 实战 + 周一 学术 续 = baseline 第 18 子轴 加新维度。",
+    "Meta 7/15 + Alphabet 7/16 三日集中财报续 — Microsoft 7/14 + Meta 7/15 + Alphabet 7/16 = 美方 Q2 capex ROI 三日集中财报实战段启动, 距 7/13 21:00 = 1 天 + 2 天 arithmetic, baseline 第 17 子轴 续。"
+  ],
+  "not_picked": [
+    "<strong>候选 B · Anthropic Mythos 周末 close academy 续 (无新料)</strong> — 周末已 launch partners 公告, 周一学术回归是 baseline additive 加新维度, 不单独 1 件。",
+    "<strong>候选 C · ICML 2026 Seoul Day 6 Sunday close (academic)</strong> — 学术 finish, 不指向 capex 实战段, 跳过。",
+    "<strong>候选 D · OpenAI o3-pro 订阅降价传闻 (未官宣)</strong> — 一周前有过谣, 本周无新动作, 不传。"
+  ],
+  "say_4": [
+    "Fable 5 切计费 33h = 24h 实战 developer impact 数据 应 浮出. 周末账单 已是 first read.",
+    "美方 7/14-7/16 三日财报 = 2026 H2 首个 AI capex ROI 台面审查 0 天 倒数.",
+    "中方 周一 收盘 实战段 已立, 智谱配售 + MiniMax-W 冲刺科创板 三线同日回归.",
+    "Microsoft FY26 Q4 是 7/14 那天的关键, 写数字不写工作流标签."
+  ]
+}

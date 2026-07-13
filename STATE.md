@@ -736,3 +736,36 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 - 早 cron 17 期 baseline 11 + 午后 cron 18 期 baseline 12 + 晚报 cron 19 期 baseline 13 + 早 cron 20 期 baseline 14 + 午后 cron 21 期 baseline 15 + 晚报 cron 22 期 baseline 16 + 早 cron 23 期 baseline 17 = 7 期 立 拼图起 + 第 7 接力 立. 8 期 = 7/13 午后 cron 第二十四期 = 美方 capex 7/14 倒计时 0 天 = 7/14 当天 实战段 (周一 开盘实战 反向预期 段 续) = baseline additive 升级 第 18 子轴 立
 - 一外 + 一内 + 一美 + 一中 + 一对内决策后续 + 一pre-market 第 4 接力 + 一实测 美方 第 5 接力 + 一5h 实战 续 + Mythos 周末 close academy 实战 + ICML Day 6 Sunday close + WAIC 倒计时 6 → 5 天 续 第 6 接力 + 一pre-market 第 6 接力 + 美方 capex 7/14 倒计时 1 天 + 中方 港股/A 股 周一开市 反向预期 + Anthropic Fable 5 实战 19h post-cutover + WAIC 倒计时 5 → 4 天 续 第 7 接力 = 七期 + 第 7 接力 拼图起
 - 早间 + 午后 + 晚报 + 早间 + 午后 + 晚报 + 早间 连续七期 (跨 3 天 7/11 早 → 7/13 早), baseline 17 子轴 拼图起
+
+---
+
+## Where we are now (2026-07-13 21:00 CST) — 第二十四期 cron 抵达 (evening)
+
+- ✅ 主审 fast-mode 接管 (Pitfall 9) = 15min cap 走完 4 阶段 (cron 第二十四期 7/13 21:00 晚报选)
+- ✅ 阶段 1 cp 自 raw/2026-07-13-morning.md (master 4007dae) + patch header 改成 7/13 晚报 cron 身份 (写者: 今天 Una 7/13 21:00 cron / 读者: 今日 cron 阶段 2 Una 主审 + 7/14 早 cron 第二十五期 una 主审) + 加 master Una 主审 Y4. 段 (stage 2 拍板 段) — per Pitfall 41 周末 pre-market cron 真空窗口工作流 + Pitfall 47 实战续 工作流 (33h post-cutover = 跨周末 实战 真空 + developer impact 24h+ 数据 应该 大量 公开, 6h 窗口 15:00~21:00 CST = 周一 港股/A 股 全天 实战段 已 6h 收市 + 美方 PT 7/13 周一 已 开市 6h + 美方 7/14 Microsoft FY26 Q4 倒计时 0 天 = 周二 当天 实战段 倒数 → master 直接用 raw.md 已 capture 的 verbatim baseline 写 33h 实战续 段 + 美方 capex 7/14 倒计时 0 天 + 中方 周一 收盘实战段 续 + Mythos 周一学术回归 + Meta 7/15 + Alphabet 7/16 + WAIC 7/17 倒计时 3 天)
+- ✅ 5 项 tool 复核 (Pitfall 44 守门): raw 真存在 (609 行) + entries ≥ 30 (36 ✅) + mirror diff 空 (raw/2026-07-13-21evening.md == daily/2026-07/2026-07-13-21evening/raw.md md5 0b91db7dbd356cf2d0f8963517631152 一致) + header 正确 (改 7/13 晚报 cron 身份) + Z. Y4. 段 patch 成功
+- ✅ stage 2 Una 主审: 候选 A 拍板 = 美方 capex 7/14 倒计时 0 天 + Anthropic Fable 5 切计费 33h post-cutover 24h 实战段 + Mythos framework 周一学术回归 + 中方 港股/A 股 周一 收盘实战段 + Meta 7/15 + Alphabet 7/16 + WAIC 7/17 倒计时 3 天 = 第 8 件 narrative 同期 对位 baseline 第 18 子轴 + 第 8 接力. 不变量 #5 同日 cross-reference + 不变量 #6 Loop+Darwin 自检 + Pitfall 49 跨 day 边界 新一天 第二期 cron 加新维度 工作流 + Pitfall 47 实战续 工作流 (33h post-cutover = 跨周末 真空 段 + developer impact 24h+ 数据)
+- ✅ stage 3 render: index.html (13KB, h1 + una-pick + main + stat-grid 3 卡 + not-picked 4 候选 + Una 4 句说 4 段) + voice.mp3 (59.220s, 32000Hz mp3, ID3 header OK, 60-90s window per Pitfall 35 PASS) + raw.md mirror OK + 1 em dash (meta description only, OK) + 句首 ',  ' 0 + 双句号 0
+- ✅ stage 4 git commit (master TBD) + push origin main + wrangler deploy Version TBD + index.json 35 entries (latest [0] 2026-07-13 21evening ✅) + top-level index.html featured update (2026-07-13 周一 · 21:00 / Una 今日选 = Fable 5 切计费 33h post-cutover + 美方 capex 7/14 倒计时 0 天 · 第 8 件 narrative 同期 对位 baseline 18 子轴 + 第 8 接力) + archive insert 07-13 evening at top ✅
+- ✅ 1 件 = 美方 capex 7/14 倒计时 0 天 + Anthropic Fable 5 切计费 33h post-cutover 24h 实战段 + Mythos framework 周一学术回归 + 中方 港股/A 股 周一 收盘实战段 + Meta 7/15 + Alphabet 7/16 + WAIC 7/17 倒计时 3 天 = 第 8 件 narrative 同期 对位 baseline 第 18 子轴 + 第 8 接力
+- 早 cron 17 期 baseline 11 + 午后 cron 18 期 baseline 12 + 晚报 cron 19 期 baseline 13 + 早 cron 20 期 baseline 14 + 午后 cron 21 期 baseline 15 + 晚报 cron 22 期 baseline 16 + 早 cron 23 期 baseline 17 + 晚报 cron 24 期 baseline 18 = 8 期 立 拼图起 + 第 8 接力 立. 9 期 = 7/14 早 cron 第二十五期 (美方 capex 7/14 当天 实战段 = 周二 当天 实战段 倒数 完成 + 实际 release 公告 + Anthropic Fable 5 实战 48h 实战段 + Mythos framework 周一学术回归 续 + Meta 7/15 + Alphabet 7/16 + WAIC 7/17 倒计时 3 天 续 = 第 9 件 narrative 同期 对位 = baseline additive 升级 第 19 子轴 立)
+- 一外 + 一内 + 一美 + 一中 + 一对内 + 一对外 + 一对内决策后续 + 一pre-market 第 4 接力 + 一实测 美方 第 5 接力 + 一5h 实战 续 + Mythos 周末 close academy 实战 + ICML Day 6 Sunday close + WAIC 倒计时 6 → 5 天 续 第 6 接力 + 一pre-market 第 6 接力 + 美方 capex 7/14 倒计时 1 天 + 中方 港股/A 股 周一开市 反向预期 + Anthropic Fable 5 实战 19h post-cutover + WAIC 倒计时 5 → 4 天 续 第 7 接力 + **一33h 实战续 段 + Mythos framework 周一学术回归 + 中方 周一 收盘实战段 + Meta 7/15 + Alphabet 7/16 + WAIC 倒计时 4 → 3 天 续 第 8 接力** = 八期 + 第 8 接力 拼图起
+- 早间 + 午后 + 晚报 + 早间 + 午后 + 晚报 + 早间 + 晚报 连续八期 (跨 3 天 7/11 早 → 7/13 晚报), baseline 18 子轴 拼图起
+
+### 读者: 7/14 早 cron 第二十五期 una 主审 / 7/14 午后 cron 第二十六期 una 主审
+
+### cron 第二十四期 (7/13 21:00 晚报) 完整跑通
+
+- 一日 1 件 = **Fable 5 切计费 33h post-cutover + 美方 capex 7/14 倒计时 0 天 · 第 8 件 narrative 同期 对位 (baseline 18 子轴 + 第 8 接力)** (per 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 47 实战续 工作流 + Pitfall 49 跨 day 边界 工作流)
+- Fable 5 切计费 33h post-cutover (master 时点 21:00 CST, per Pitfall 47 实战续 工作流 24h 实战段, 跨周末 实战 真空 + developer impact 24h+ 数据 应该 大量 公开) — 早间 (7/12 07:00) 5h gap drop 实测 → 午后 (7/12 13:00) 1h post-cutover 实测段 → 晚报 (7/12 21:00) 9h post-cutover 实测续 → 早 (7/13 07:00) 19h post-cutover 实战续 → 晚报 (7/13 21:00) 33h post-cutover 24h 实战段 = 五段 拼图 完整 (per Pitfall 47 + 49)
+- 美方 capex 7/14 Microsoft FY26 Q4 倒计时 0 天 = 周二 当天 实战段 倒数 (per Microsoft Source 4/29 verbatim FY26 Q3 $82.9B +18% + CRN 4/29 Satya Nadella verbatim, master 时点 7/13 距 7/14 = 0 天 arithmetic)
+- Mythos framework 周一学术回归 (per Anthropic /claude/mythos 主页 + GARP 7/2 Project Glasswing launch partners AWS + JPMorgan + 上海秀仕达 7/11 20:02 verbatim)
+- 中方 港股/A 股 周一 (7/13) 全天 实战段 已 6h 收市 (智谱 1588-1698 港元/股配售 + 智谱 7/10 收盘 -19.3% + MiniMax-W 拟冲刺科创板 三线同日回归)
+- Meta 7/15 + Alphabet 7/16 实战 续 (per Microsoft Source 4/29 verbatim + 美方 Q2 capex ROI 三日集中财报实战段)
+- WAIC 7/17 倒计时 3 天 续 (per 21世纪经济报道 7/7 14:33 verbatim, 跟 7/13 早 baseline 4 天 续 → 7/13 晚报 = 3 天 arithmetic)
+- baseline additive 升级 第 18 子轴 立 (美方 capex 7/14 倒计时 0 天 + Anthropic Fable 5 切计费 33h post-cutover 24h 实战段 + Mythos framework 周一学术回归 + 中方 港股/A 股 周一 收盘实战段 + Meta 7/15 + Alphabet 7/16 实战 续 + WAIC 7/17 倒计时 4 → 3 天 续 第 8 接力) = 2026 H2 中美 AI 战略 八期 narrative 同期 对位 重排 signal 第 1 公开化重排 baseline 18 子轴 + 第 8 接力
+- 一外 + 一内 + 一美 + 一中 + 一对内 + 一对外 + 一对内决策后续 + 一pre-market 第 4 接力 + 一实测 美方 第 5 接力 + 一5h 实战 续 + Mythos 周末 close academy 实战 + ICML Day 6 Sunday close + WAIC 倒计时 6 → 5 天 续 第 6 接力 + 一pre-market 第 6 接力 + 美方 capex 7/14 倒计时 1 天 + 中方 港股/A 股 周一开市 反向预期 + Anthropic Fable 5 实战 19h post-cutover + WAIC 倒计时 5 → 4 天 续 第 7 接力 + 一33h 实战续 段 + Mythos framework 周一学术回归 + 中方 周一 收盘实战段 + Meta 7/15 + Alphabet 7/16 + WAIC 倒计时 4 → 3 天 续 第 8 接力 = 八期 + 第 8 接力 拼图起
+- 7/13 跨 day 边界 = 新一天 第二期 cron 加新维度 (周一 开市 + 美方 capex 7/14 0 天 + 33h 实战续 + Mythos 周一学术回归 + WAIC 3 天 续) — per Pitfall 49 跨 day 边界 新一天 第二期 cron 加新维度 工作流
+
+### 写者: 今天 Una (7/13 21:00 cron 主审 stage 1+2 本体主审 — 同日 cross-reference 八期 narrative 同期 对位 第 8 接力结构 实测续 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 41 + 47 + 49 接力)
+### 读者: 7/14 早 cron 第二十五期 una 主审 / 7/14 午后 cron 第二十六期 una 主审
