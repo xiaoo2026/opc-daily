@@ -1,0 +1,37 @@
+{
+    "date": "2026-07-14",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午后",
+    "hero_meta_short": "13:00 · 周二 · 覆盖 7/14 07:00 ~ 7/14 13:00",
+    "title": "Fable 5 三时点 + 美方 capex 真实 release 校准",
+    "dek": "1 件: 之前 baseline 美方 capex 7/14/7/15/7/16 是 mistake. 真实 = 7/22 Alphabet + 7/29 Microsoft + 7/29 Meta, 距 8/15/15 天. Fable 5 = 7/8 + 7/12 grace + 7/19 延期.",
+    "why_this": "我看到之前 8 期 baseline 错位后 web 二次验证 + 修正. 当周 capex + Fable 5 三时点 + 周一开市实战 = 第 19 子轴 + 第 9 接力.",
+    "pick_points": [
+        {"num": "8/15 天", "label": "capex: 7/22 + 7/29 MS/Meta"},
+        {"num": "5.9 天", "label": "Fable 5 第一阶段 + 22h 第二阶段"},
+        {"num": "3 天", "label": "WAIC 7/17 启幕 + Atlas 950 真机"}
+    ],
+    "main_h2": "事实部分 (30 秒能懂)",
+    "main_facts": [
+        "Microsoft FY26 Q4 = Wednesday, July 29, 2026 after close (per Microsoft Source 7/8 verbatim); Meta Q2 = 7/29; Alphabet Q2 = 7/22 1:30 PM PT. 距 master = **8/15/15 天**, 不是错算 0/1/2 天.",
+        "Fable 5 = 7/7 公告 + 7/8 0:00 PT 第一阶段 (per byteiota \"billing cliff lands tonight\") + 7/12 23:59 PT 第二阶段 grace end + **7/13 Anthropic 二次延期到 7/19** (per Digital Applied 7/13 verbatim).",
+        "> \"Anthropic Extends Fable 5 Access to July 12 / Claude Sonnet 5 Emerges as the Safer Alternative\" (FrontierNews 7/10)",
+        "Microsoft FY26 Q3 营收 $82.9B +18% (per Microsoft Source 4/29 verbatim). 距 7/29 release = 15 天.",
+        "中方 港股/A 股 7/14 周一开市 已 6h 收市. 智谱 1588-1698 港元配售 + 智谱 7/10 -19.3% + MiniMax-W 拟冲刺科创板 (per prior slot baseline).",
+        "Mythos 周一学术回归. CISA 部署 (BigGo 7/7) + NSA 测试 (Security Affairs 7/8) + 上海秀仕达 7/11 20:02 verbatim.",
+        "Meta Q2 + Alphabet Q2 + Microsoft FY26 Q4 当周集中财报段 (7/22 + 7/29). Meta Muse Spark 1.1 7/9 launch.",
+        "WAIC 2026 7/17-7/20 上海\"三地四馆\", 1100+ 家企业, Atlas 950 真机首展 (per 21世纪经济报道 7/7 14:33 verbatim)."
+    ],
+    "not_picked": [
+        "<strong>候选 B · Mythos 周一学术回归</strong> — launch partners + CISA/NSA 已立, baseline 续.",
+        "<strong>候选 C · Fable 5 周末账单独立段</strong> — 已并入 anchor.",
+        "<strong>候选 D · 中方 周一开市实战段</strong> — 已 6h 收市, baseline 续."
+    ],
+    "say_4": [
+        "美方 capex 真实 release = 7/22 + 7/29, 距 8/15 天.",
+        "Fable 5 = 7/8 + 7/12 grace + 7/19 延期.",
+        "中方 周一开市 已 6h 实战段已立.",
+        "WAIC 7/17 + Atlas 950, 给 7/22-7/29 留 baseline."
+    ]
+}
