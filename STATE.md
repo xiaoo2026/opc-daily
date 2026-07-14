@@ -812,3 +812,28 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 ### 写者: 今天 Una (7/14 21:01 cron 第二十七期 晚报 主审 stage 1+2 本体主审 — 同日 cross-reference 十期 narrative 同期 对位 第 10 接力结构 + fact-check fix 段 延续 + 大模型双雄 6h 分化 10 倍 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 6 + 9 + 41 + 43 + 50 + 51 + 54 接力)
 ### 读者: 7/15 早 cron 第二十八期 una 主审 / 7/15 午后 cron 第二十九期 una 主审 / 7/14 周二开市 实战段
+
+## Where we are now (2026-07-15 07:00) — cron 第二十八期 (早报)
+
+- ✅ cron 第二十八期 (7/15 07:01 早 cron) 跑通 — 早报 2026-07-15-morning 已发
+- ✅ 8 files committed: 8b8ec41 (pushed origin main SHA 8b8ec41)
+- ✅ wrangler deploy 99975a57-b4bb-42f0-9a0d-891e4456aab6 成功
+- ✅ post-deploy verify: 020755.xyz prod 12129 bytes == local 12129 bytes EXACT MATCH ✅ + cf-cache-status: HIT
+- ✅ voice.mp3 (74.66s / 1.2MB / danya_xuejie 32000Hz mp3) 生成 — PASS 50-90s window per Pitfall 35
+- ✅ content.json 字数硬约束 PASS (dek=171 ≤200 / why=179 ≤200 / pp=[17,20,16] ≤35 / say=[46,41,48,50] ≤50)
+- ✅ Pitfall 37 humanizer audit pass em dash 5 → 0 清理 + 句首 ',  ' 0 + 双句号 0
+- ✅ 阶段 1 master fast-mode 接管 per Pitfall 41 (sub-agent 4min 超时 raw.md 未交付) — cp 自 raw/2026-07-14-21evening.md + patch header 第二十八期身份 + FACT-CHECK FIX 段 preserved verbatim + md5 34c68cac496b0de0932f546ebe2b2782 一致 (raw == daily mirror)
+- ✅ Pitfall 49 + 18 additive 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (实测 7/15 07:01 CST web_search_plus 二次验证) — 加新维度: 智谱 唐杰 7/11 内部信《巨浪已来》Touch High 摸高计划 战略层 + 摩根大通 7/14 二次上调 2000→2400 资本层 + MiniMax 7/14 反弹 +3.32% 一度破发 209.20 港元 解禁层 = 战略 / 资本 / 解禁 三角 (vs 7/14 晚报 第 10 接力 baseline 20 子轴 立 第 2 段视角)
+- ✅ Pitfall 54 fact-check fix 段 跨 slot 延续 (per 7/14 午后 fix 段 verbatim Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19 preserved verbatim)
+- ✅ Pitfall 55 top-level index.html 5 处 surgical patch (topbar 7/15 周二 · 07:00 + eyebrow 2026-07-15 · 早报 + featured h2 "智谱唐杰发内部信《巨浪已来》: 战略摸高 + 资本看多 双线合击" + pick-rationale rewrite 当期 + pick-cta href 2026-07-15-morning)
+- ✅ Top-level archive prepend 当期 entry (10 小时后 + 智谱唐杰 + 战略 + 资本 双线 + 第 11 件 + 第 11 接力)
+- ✅ daily/2026-07/index.json prepend 7/15 morning entry (37 → 38 entries, latest = 2026-07-15 morning)
+- 主题: 智谱唐杰发内部信《巨浪已来》: 战略摸高 + 资本看多 双线合击 · 第 11 件 narrative 同期 对位 (baseline 21 子轴 + 第 11 接力)
+- 📊 主选: 智谱 7/14 高开低走报 1528 港元 跌 7.11% (盘中最低 1473 跌破配售价 1588, 总市值回落至 7115 亿港元, per 21财经 7/14 14:39 verbatim); 唐杰 7/11 内部信《巨浪已来》正式启动 Touch High 摸高计划 未来两年战略性投入 长程任务 / 自治智能体 / 完全自我训练 / 极致安全治理 四引擎 不追求短期应用变现 直指 AGI 下一个高地 (per 36氪 7/14 14:41 verbatim); 摩根大通 7/14 一周内 二次上调智谱目标价 2000→2400 港元 (per 21财经 7/14 14:39 verbatim); MiniMax 7/14 收盘 230 港元 +3.32% 但 一度破发 209.20 港元 创上市新低 (per 国际金融报 7/14 21:04 verbatim), 自由流通股 解禁后 6%→50% (per 证券时报 7/13 verbatim); WAIC 7/17 启幕 T-2 天 倒计时 1100+ 企业参展 300+ 全球首发 华为 Atlas 950 真机首秀 (per 新浪财经 7/7 verbatim) + MiniMax M3 多模态大模型 全球首发 + 苏昊/闫俊杰/杨植麟 等超百名青年科学家 + 9 位图灵奖/诺贝尔奖得主参会; Fable 5 切计费延期 7/19 T-4 天 二次延期 (per AIBase 7/13 + INSIDE 7/13 verbatim)
+- 📈 baseline additive 升级 baseline 第 21 子轴 + 第 11 接力 立 — 11 期 baseline + 拼图起 (7/11 早 + 午后 + 晚报 + 7/12 早 + 午后 + 晚报 + 7/13 早 + 晚报 + 7/14 午后 + 7/14 晚报 + 7/15 早, 跨 5 天)
+- 🔗 拼图链路: 早 cron 17 期 baseline 第 11 子轴 (Anthropic 双线摆桌 = 美方对内决策) + 午后 cron 18 期 baseline 第 12 子轴 (MiniMax-W 拟冲刺科创板 = 中方对内决策) + 晚报 cron 19 期 baseline 第 13 子轴 (WAIC 7/17-7/20 = 中方对外展示启动前夜) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力) + 午后 cron 21 期 baseline 第 15 子轴 (Fable 5 实测 1h 第 5 接力) + 晚报 cron 22 期 baseline 第 16 子轴 (Fable 5 9h 实战 第 6 接力) + 早 cron 23 期 baseline 第 17 子轴 (Fable 5 19h 实战 第 7 接力) + 晚报 cron 24 期 baseline 第 18 子轴 (Fable 5 33h 实战 第 8 接力) + 午后 cron 26 期 baseline 第 19 子轴 (fact-check fix 段 + 美方 capex 真实 release 校准 第 9 接力) + 晚报 cron 27 期 baseline 第 20 子轴 (7/14 当天 大模型双雄 实战段 + 美方 capex 当周 集中财报段 + WAIC 7/17 倒计时 2 天 第 10 接力) + 早 cron 28 期 baseline 第 21 子轴 (7/15 早 跨 day 边界 战略 + 资本 双线 第 11 接力)
+- 给 7/15 午后 cron 第二十九期 (7/15 当天 周二 开市 实战段 + 美方 capex 7/22 Alphabet 7 天 倒数 + WAIC 7/17 启幕 倒计时 2 天 = baseline 22 子轴 立) 留 baseline
+- 📮 待 TG 7069165189 (QQ 7069165189 已 broken per skill, fallback 暂无)
+
+### 写者: 今天 Una (7/15 07:01 cron 第二十八期 早 主审 stage 1+2 本体主审 — 同日 cross-reference 十一期 narrative 同期 对位 第 11 接力结构 + 战略 + 资本 双线 新维度 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 6 + 9 + 41 + 43 + 49 + 50 + 51 + 53 + 54 + 55 接力)
+### 读者: 7/15 午后 cron 第二十九期 una 主审 / 7/15 晚报 cron 第三十期 una 主审 / 7/16 早 cron 第三十一期 una 主审 / 7/15 周二开市 实战段
