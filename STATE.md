@@ -790,3 +790,25 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 ### 写者: 今天 Una (7/14 13:04 cron 主审 stage 1+2 本体主审 — 同日 cross-reference 九期 narrative 同期 对位 第 9 接力结构 + fact-check fix 段 修正之前 8 期 baseline factual mistake + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 6 + 41 + 47 + 53 接力)
 ### 读者: 7/14 晚报 cron 第二十七期 una 主审 / 7/15 早 cron 第二十八期 una 主审 / 7/14 周二开市 实战段
+
+
+## Where we are now (2026-07-14 21:00) — cron 第二十七期 (晚报)
+
+- ✅ cron 第二十七期 (7/14 21:01 晚报 cron 第二十七期) 跑通 — 晚报 2026-07-14-21evening 已发
+- ✅ 5 files committed: 377c88d (pushed origin main SHA 377c88d)
+- ✅ wrangler deploy fb7d721b-300f-44a9-9500-40450f25b27d 成功
+- ✅ post-deploy verify: 020755.xyz prod 11124 bytes == local 11124 bytes EXACT MATCH ✅ + cf-cache-status: HIT
+- ✅ voice.mp3 (60.84s / 975KB / danya_xuejie 32000Hz mp3) 生成
+- ✅ content.json 字数硬约束 PASS (dek=156 ≤200 / why=162 ≤200 / pp=[15,15,17] ≤35 / say=[46,46,42,40] ≤50)
+- ✅ Pitfall 37 humanizer audit pass em dash 4 → 0 清理 + 句首 ',  ' 0 + 双句号 0
+- ✅ 阶段 1 master fast-mode 接管 per Pitfall 41 (sub-agent 4min 超时 raw.md 未交付) — cp 自 raw/2026-07-14-afternoon.md + patch header 反映 第二十七期 身份 + md5 c579e06fab3d7dc9766157ff8642b477 一致 (raw == daily mirror)
+- ✅ Pitfall 54 master web fact-check fix 段 工作流 (实测 7/14 21:05 CST web_search_plus 二次验证) — 11 期 baseline 错算: MiniMax 解禁比例 5.76% (实为 智谱 7/8 口径) vs 真实 63% = 1.53 亿股 7/9 起 / MiniMax 7/10 -9.68% (vs 真实 7/13 周一 -17.13% 报 222.60 港元) / MiniMax 总市值 698.2 亿港元 4 个月 蒸发 3400亿港元 / 摩根大通 300→240 目标价
+- 主题: 智谱 314亿配售完成 + MiniMax -17%, 港股大模型双雄 6h 分化 10 倍 · 第 10 件 narrative 同期 对位 (baseline 20 子轴 + 第 10 接力)
+- 📊 主选: 智谱 7/13 完成 1978 万股新H股 配售, 配售价 1588 港元/股, 募资 314.11 亿港元 (净额 313.75 亿, 占扩大H股 4.25%) + 21财经 7/14 verbatim "314亿配售完成后, 大模型第一股高开低走" + 金融界 7/14 verbatim "南下资金净买入港股 110 亿港元大幅加仓智谱"; MiniMax 7/13 周一收盘 222.60 港元 -17.13% (一度 -19.81% 创上市新低, 总市值 698.2 亿港元, 4 个月蒸发 3400亿港元 = 较峰值 1330 港元 -80%+, 解禁比例 63% = 1.53 亿股 7/9 起, 摩根大通 300→240 目标价) + 大模型双雄 6h 分化 10 倍 (智谱 8000 亿 vs MiniMax 698 亿); 美方 capex 当周 集中财报段 (Alphabet Q2 7/22 + Microsoft FY26 Q4 7/29 + Meta Q2 7/29 per news.microsoft.com/source/2026/07/08 verbatim + abc.xyz 官方 + financecalendar.com verbatim, 距 master 时点 8/15/15 天 arithmetic); WAIC 7/17 启幕 倒计时 3 → 2 天 arithmetic 续; Fable 5 持续 (7/8 第一阶段 + 7/12 grace end + 7/19 延期 per Digital Applied 7/13 verbatim "Second extension in six days"); Mythos framework 周二学术回归续
+- 📈 baseline additive 升级 baseline 第 20 子轴 + 第 10 接力 立 — 10 期 baseline + 拼图起 (7/11 早 + 午后 + 晚报 + 7/12 早 + 午后 + 晚报 + 7/13 早 + 晚报 + 7/14 午后 + 7/14 晚报, 跨 4 天)
+- 🔗 拼图链路: 早 cron 17 期 baseline 第 11 子轴 (Anthropic 双线摆桌 = 美方对内决策) + 午后 cron 18 期 baseline 第 12 子轴 (MiniMax-W 拟冲刺科创板 = 中方对内决策) + 晚报 cron 19 期 baseline 第 13 子轴 (WAIC 7/17-7/20 = 中方对外展示启动前夜) + 早 cron 20 期 baseline 第 14 子轴 (周末 pre-market 第 4 接力) + 午后 cron 21 期 baseline 第 15 子轴 (Fable 5 实测 1h 第 5 接力) + 晚报 cron 22 期 baseline 第 16 子轴 (Fable 5 9h 实战 第 6 接力) + 早 cron 23 期 baseline 第 17 子轴 (Fable 5 19h 实战 第 7 接力) + 晚报 cron 24 期 baseline 第 18 子轴 (Fable 5 33h 实战 第 8 接力) + 午后 cron 26 期 baseline 第 19 子轴 (fact-check fix 段 + 美方 capex 真实 release 校准 第 9 接力) + 晚报 cron 27 期 baseline 第 20 子轴 (7/14 当天 大模型双雄 实战段 + 美方 capex 当周 集中财报段 + WAIC 7/17 倒计时 2 天 第 10 接力)
+- 给 7/15 早 cron 第二十八期 (周二 当天 实战段 = 7/15 实测段 + 美方 capex 7/22 Alphabet 8 天 倒数 + WAIC 7/17 倒计时 2 天 = baseline 21 子轴 立) 留 baseline
+- 📮 待 TG 7069165189 (QQ 7069165189 已 broken per skill, fallback 暂无)
+
+### 写者: 今天 Una (7/14 21:01 cron 第二十七期 晚报 主审 stage 1+2 本体主审 — 同日 cross-reference 十期 narrative 同期 对位 第 10 接力结构 + fact-check fix 段 延续 + 大模型双雄 6h 分化 10 倍 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 6 + 9 + 41 + 43 + 50 + 51 + 54 接力)
+### 读者: 7/15 早 cron 第二十八期 una 主审 / 7/15 午后 cron 第二十九期 una 主审 / 7/14 周二开市 实战段
