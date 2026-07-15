@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-15",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后报",
+  "hero_meta_short": "13:00 · 周二 · 覆盖 7/15 07:00 ~ 7/15 13:00",
+  "title": "Fable 延期 T-4 天 + Mythos 学术 + 美方 capex 集中",
+  "dek": "Anthropic Fable 5 二次延期到 7/19 (T-4 天) + Mythos framework 周二学术回归 + 美方 capex 当周 集中财报段 T-14/T-7/T-14 倒数. 跟早间中方战略+资本双线 拼 = 中美 AI 战略 双线合击 双对位 第 2 段.",
+  "why_this": "早间 cron 选了智谱唐杰战略+资本双线, 午后必须 = 美方对位那一面. 7/15 周二 Anthropic Fable 5 延期到 7/19 (T-4 天, 二次延期 6 天间隔 verbatim) + Mythos framework 周二学术回归 + 美方 capex 集中披露段 三线实战 = 美方三角对位早间.",
+  "pick_points": [
+    {"num": "T-4 天", "label": "Fable 5 延期到 7/19"},
+    {"num": "T-14/7/14", "label": "MSFT/GOOG/META 倒数"},
+    {"num": "12 期", "label": "baseline 第 12 接力"}
+  ],
+  "main_h2": "事实部分 (周二 午后 30 秒能懂)",
+  "main_facts": [
+    "Anthropic 7/13 二次延期 Fable 5 grace period 到 7/19 23:59 PT (per Digital Applied 7/13 verbatim \"Second extension in six days · promo now runs through Jul 19 · the current end date, not a final one\"). 真实时间线 = 7/7 起订阅计划移除 + 7/8 0:00 PT 第一阶段 cutover + 7/12 23:59 PT 第二次 grace end + 7/13 二次延期到 7/19. 来源: Digital Applied 7/13.",
+    "Mythos 5 framework 周二学术回归: per Anthropic /claude/mythos 主页 \"UPDATE Claude Mythos 5 export controls have been lifted Jul 1 2026\" + GARP 7/2 \"Project Glasswing launch partners: AWS + JPMorgan 等\" + Mythos 5 = \"Our most capable model for cybersecurity and biology research\" verbatim. 周二学术 = 商业化双线对位 (Fable 5 商业化延期 + Mythos 5 学术+商业 双线). 来源: Anthropic canonical + GARP 7/2.",
+    "美方 capex 当周 集中财报段 = Alphabet Q2 7/22 (T-7 天) 1:30 PM PT (per abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z verbatim) + Microsoft FY26 Q4 7/29 (T-14 天) after close (per news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/ verbatim) + Meta Q2 7/29 (T-14 天) after close (per financecalendar.com/event/meta-earnings-july-2026/). 来源: 3 家官方 IR verbatim.",
+    "对位早间 cron 智谱 唐杰 战略+资本双线 = 中美 AI 战略 双线合击 双对位 第 2 段: 早间 中方 = 战略 (唐杰《巨浪已来》摸高计划) + 资本 (摩根大通 2000→2400 二次上调) + 解禁弱 (MiniMax 反弹 +3.32% 209.20 一度破发) 三角; 午后 美方 = 商业化延期 (Fable 5 T-4 天) + 学术回归 (Mythos framework 周二) + capex 集中披露 (MSFT/GOOG/META T-14/T-7/T-14 倒数) 三角. 一外一内 + 一美一中 + 一对内决策 双对位结构 第 12 件 narrative 同期 对位 baseline 22 子轴 + 第 12 接力 立."
+  ],
+  "not_picked": [
+    "<strong>候选 B · WAIC 7/17 启幕 T-2 天 + Atlas 950 真机首秀</strong> — 7/11 晚报 baseline 13 子轴 立过 + 7/15 早 已加 T-2 天 续, dilution drop.",
+    "<strong>候选 C · Mythos 5 学术 独立 1 件</strong> — Mythos 学术已并入候选 A 美方三角, 不重 stack.",
+    "<strong>候选 D · 美方 capex 集中披露 独立 1 件</strong> — capex 集中披露 已并入候选 A 美方三角, 不重 stack."
+  ],
+  "say_4": [
+    "Fable 5 二次延期 7/19, 二次延期 6 天间隔 verbatim.",
+    "Mythos framework 周二学术 = 商业化延期+学术 双线.",
+    "美方 capex T-14/7/14 MSFT/GOOG/META 7/29+7/22+7/29.",
+    "对位早间智谱唐杰战略+资本 = 中美 AI 双线合击 第 12 接力."
+  ]
+}
