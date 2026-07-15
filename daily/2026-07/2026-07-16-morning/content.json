@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-16",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "07:00 · 周四 · 覆盖 7/15 21:00 ~ 7/16 07:00",
+  "title": "WAIC T-1 + 白宫 lifted 出口管制",
+  "dek": "WAIC 7/17 启幕 T-1 + Anthropic + 白宫 6/30 lifted + 三协议 + 港股 Hang Seng 7/15 +1.4% 24,681 + 智谱入恒科 + Stock Connect + Goldman coverage note = 启幕前夜 1 天 中美 AI 双线合击 政治+资本+商业 三层 收官段 第 14 接力.",
+  "why_this": "启幕前夜 1 天, 中美 AI 双线已 公开化协议层: WAIC + Anthropic + 白宫 三协议 + Hang Seng +1.4% + 入恒科 + Stock Connect + 智谱 1588-1698 + MiniMax +14-20% = 同一事 中美 + 三层. 拼 7/15 = baseline 21/22/23 续 → 第 14 接力 baseline 24 立.",
+  "pick_points": [
+    {"num": "T-1", "label": "WAIC 7/17 启幕前夜"},
+    {"num": "6/30", "label": "白宫 lifted Mythos + Fable 出口管制"},
+    {"num": "14 接力", "label": "baseline 24 子轴 立"}
+  ],
+  "main_h2": "事实部分 (周四 早 30 秒能懂)",
+  "main_facts": [
+    "Anthropic + 白宫 6/30 lifted Mythos 5 + Fable 5 export controls + 三协议 (proactively detect and address security risks tied to Fable 5 and Mythos 5) 政治安全层. 来源: War on the Rocks verbatim 'U.S. government stepped in on June 12, 2026, and forced Anthropic to take down Mythos and its safeguarded form, Fable 5' + brightdefense 6/30 verbatim 'Commerce lifted the Fable 5 and Mythos 5 export controls' + ABC News verbatim 'Anthropic agreed to three things: One, proactively detect and address security risks tied to Fable 5 and Mythos 5'.",
+    "港股 Hang Seng 7/15 收盘 +1.4% (340 点) 至 24,681 = 6 月以来最高 + Zhipu & MiniMax 入恒生科技指数 (累计涨幅 300%+ since January 2026 IPOs) + Zhipu Stock Connect 纳入 预计 HK$51-92B 南下资金流入 (MiniMax Stock Connect 延期至 8月). 来源: tradingeconomics.com verbatim 'Hang Seng Index rose 1.4%, or 340 points, to close at 24,681 on Wednesday, its highest level since June 2026' + aiweekly.co verbatim 'Both stocks rallied over 300% since their January 2026 Hong Kong IPOs' + IndiaInfoline verbatim 'Zhipu could attract HK$51–92B in mainland'.",
+    "Goldman Sachs 7/9 coverage note = AI video generation 质量 = 股票信号, ranked ByteDance's video-generation models above Zhipu. Zhipu 7/8 配售 真实价格区间 = HK$1,588 到 HK$1,698 (上限, $4 billion follow-on share sale, discount of up to 13% to 7/8 close 1750 港元). 来源: ngram.com verbatim 'Goldman Sachs Just Made AI Video Generation Quality a Stock Signal. Goldman Sachs ranked ByteDance's video-generation models above Zhipu' + 'A day before Goldman's coverage note, on July 8, Zhipu priced a $4 billion follow-on share sale at HK$1,588 to HK$1,698 per share, a discount of up to 13%'.",
+    "拼 = 早 (7/15 07:01 = 智谱 唐杰《巨浪已来》Touch High 战略 + 摩根大通 2400 二次上调 + MiniMax 7/14 反弹 +3.32% 一度破发 209.20 = 中方三角 战略+资本+解禁弱 第 11 接力 baseline 21 子轴) + 午后 (7/15 13:01 = 美方三角 商业化延期+学术+capex 集中 第 12 接力 baseline 22 子轴) + 晚报 (7/15 21:01 = 启幕前夜 收官段 WAIC T-2 + capex 倒数 + Fable T-4 = 双对位 第 13 接力 baseline 23 子轴) + 早 (7/16 07:01 = 启幕前夜 1 天 中美 AI 双线合击 政治+资本+商业 三层 收官段 第 14 接力 baseline 24 子轴) = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (per Pitfall 49) = 2026 H2 中美 AI 战略 十四期 narrative 同期 对位 baseline 24 子轴 + 第 14 接力 立."
+  ],
+  "not_picked": [
+    "<strong>候选 B · 智谱 唐杰 战略+资本双线 续</strong> — 7/15 早 + 午后 + 晚报 三 slot 都 stack 智谱唐杰, dilution drop per Pitfall 17.",
+    "<strong>候选 C · 美方 capex 7/14 集中披露 单线 独立</strong> — 7/15 早 + 午后 + 晚报 baseline 21/22/23 子轴 已立, 续段无新维度 drop.",
+    "<strong>候选 D · WAIC T-2 启幕前夜 单线 续</strong> — 7/15 晚报 baseline 23 子轴 已立, 续段无新维度 drop per Pitfall 17."
+  ],
+  "say_4": [
+    "Anthropic + 白宫 6/30 lifted + 三协议 = 美方 AI 政治安全层.",
+    "Hang Seng +1.4% 24,681, 智谱入恒科 + Stock Connect.",
+    "WAIC T-1 + 美方 capex 7/29 T-13 + Fable 5 T-3.",
+    "拼 7/15 三 slot = 中美 AI 双线合击 第 14 接力."
+  ]
+}
