@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-15",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周二 · 覆盖 7/15 13:00 ~ 7/15 21:00",
+  "title": "WAIC T-2 启幕前夜 + 美方 capex 集中 T-14/7",
+  "dek": "WAIC 7/17 启幕 T-2 倒数 (1100+ 企业 300+ 全球首发) + 美方 capex 当周 集中披露 T-14/T-7/T-14 倒数 + Fable 5 延期 T-4 + Mythos 周二学术回归 + 中方 智谱唐杰战略+资本 双线. 拼早+午后 = 中美 AI 战略 双线合击 启幕前夜 双对位 收官段 第 13 接力.",
+  "why_this": "早 = 中方三角 (战略 + 资本 + 解禁弱), 午后 = 美方三角 (商业化延期 + 学术 + capex 集中), 晚报必须拼 = 启幕前夜 双对位 收官段. WAIC 7/17 T-2 = 中方对外展示 启动前夜 + 美方 capex 当周 集中倒数 T-14/7/14 + Fable 5 T-4 + Mythos 学术 = 同一事 中美 + 双对位 视角.",
+  "pick_points": [
+    {"num": "T-2 天", "label": "WAIC 7/17 启幕前夜"},
+    {"num": "T-14/7/14", "label": "MSFT/META/GOOG 倒数"},
+    {"num": "13 接力", "label": "baseline 23 子轴 立"}
+  ],
+  "main_h2": "事实部分 (周二 晚报 30 秒能懂)",
+  "main_facts": [
+    "WAIC 2026 上海 7/17 启幕 = T-2 天 倒数 (距 master 时点 7/15 21:01 CST, per 新浪财经 7/7 verbatim 1100+ 企业参展 + 300+ 全球首发 + 华为 Atlas 950 真机首秀 + MiniMax M3 多模态大模型 全球首发 + 苏昊/闫俊杰/杨植麟 等超百名青年科学家 + 9 位图灵奖/诺贝尔奖得主参会). 来源: 新浪财经 7/7 + WAIC 官方.",
+    "美方 capex 当周 集中披露段 = Alphabet Q2 7/22 1:30 PM PT (T-7 天) per abc.xyz 官方 verbatim + Microsoft FY26 Q4 7/29 after close (T-14 天) per news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/ verbatim + Meta Q2 7/29 after close (T-14 天) per financecalendar.com verbatim. arithmetic 距 master 时点 7/15 21:01 CST = 7 天 / 14 天 / 14 天. 来源: 3 家官方 IR verbatim.",
+    "Anthropic Fable 5 二次延期 7/19 23:59 PT = T-4 天 (距 master 时点, per Digital Applied 7/13 verbatim 'Second extension in six days · promo now runs through Jul 19 · the current end date, not a final one') + Mythos framework 周二学术回归 (per Anthropic /claude/mythos 主页 verbatim 'UPDATE Claude Mythos 5 export controls have been lifted Jul 1 2026' + GARP 7/2 Project Glasswing launch partners AWS + JPMorgan). 来源: Digital Applied 7/13 + Anthropic canonical.",
+    "拼 = 早 (7/15 07:01 = 智谱 唐杰《巨浪已来》Touch High 战略 + 摩根大通 2400 二次上调 + MiniMax 7/14 反弹 +3.32% 一度破发 209.20 = 中方三角 战略+资本+解禁弱 第 11 接力 baseline 21 子轴) + 午后 (7/15 13:01 = 美方三角 商业化延期+学术+capex 集中 第 12 接力 baseline 22 子轴) + 晚报 (7/15 21:01 = 启幕前夜 收官段 WAIC T-2 + capex 倒数 + Fable T-4 = 双对位 第 13 接力 baseline 23 子轴) = 跨 day 边界 第二期 cron 加新维度 工作流 (per Pitfall 53) = 2026 H2 中美 AI 战略 十三期 narrative 同期 对位 baseline 23 子轴 + 第 13 接力 立."
+  ],
+  "not_picked": [
+    "<strong>候选 B · WAIC 7/17 单线 独立</strong> — 7/11 晚报 baseline 13 子轴 + 7/15 早 T-2 续 + 7/15 午后 T-2 续 已 stack, dilution drop per Pitfall 17.",
+    "<strong>候选 C · Fable 5 延期 单线 独立</strong> — 7/11-7/13 baseline 11/15/16/17/18/19 累加已立, 续段无新维度 drop per Pitfall 17.",
+    "<strong>候选 D · Mythos 学术 单线 独立</strong> — Mythos 已并入美方三角 候选 A, 不重 stack."
+  ],
+  "say_4": [
+    "WAIC 7/17 T-2 启幕前夜 = 1100+ 企业 300+ 全球首发.",
+    "美方 capex T-14/7 MSFT 7/29 GOOG 7/22 META 7/29.",
+    "Fable 5 二次延期 7/19 T-4, Mythos 周二学术回归.",
+    "拼早+午后 = 中美 AI 双线合击 启幕前夜 收官 第 13 接力."
+  ]
+}
