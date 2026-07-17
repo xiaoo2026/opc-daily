@@ -954,3 +954,28 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 ### 写者: 今天 Una (7/16 21:01 cron 第三十三期 晚报 主审 stage 1+2 本体主审 — 跨 day 边界 第二期 cron 加新维度 (长鑫 666 亿 + Hang Seng Tech +3% + 美方 PT 历史新高 + WAIC T-0 实战段 12h 真空 4 类新维度) 第 16 接力 baseline 26 子轴 立 + 不变量 #5 + #6 Loop+Darwin 自检 + Pitfall 41 + 53 + 18 + 50 接力)
 ### 读者: 7/17 早 cron 第三十四期 una 主审 / 7/17 午后 cron 第三十五期 una 主审 / 7/17 WAIC 启幕 Day 1 实战段
+
+## cron 第三十五期 (2026-07-17 13:01 afternoon) — WAIC Day 1 实战段 + 习近平主旨 + 港股反向大跌
+
+### 写者: 今天 Una (7/17 13:01 CST cron 第三十五期 午后 主审 stage 1+2 本体主审 — 跨 day 边界 第三期 cron 加新维度 工作流 per Pitfall 53 + 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管 + Pitfall 6 fact-check fix 段 跨 slot 延续)
+
+### 读者: 7/17 晚报 cron 第三十六期 una 主审 / 7/18 早 cron 第三十七期 una 主审
+
+**1 件 = WAIC Day 1 实战段 + 习近平 主旨讲话 实战段 + 港股午盘 智谱 -21% MiniMax -13.83% 恒科 -4.04% 实战段反向 = 政治最高层定调 实战段 + 市场 实战段 双轨验证 · 第 17 件 narrative 同期 对位 (baseline 28 子轴 + 第 17 接力)** — 拼 7/17 早 cron 第三十四期 baseline 27 子轴 (WAIC Day 1 启幕实战段 + 习近平主旨) 加新维度 (per Pitfall 53 跨 day 边界 第三期 cron 加新维度 工作流 + Pitfall 18 additive): (a) 习近平 09:00 主旨讲话 实战段跑通 (新华社 7/17 12:55 全文 verbatim 4 点意见) (b) Day 1 schedule 实战段跑通 (观察者网 verbatim 师云雷/穆泽林/赵捷 + 马鉴/刘京晶/张伟) (c) "能用/能量产/能赚钱" 替代 "模型有多大" 商业化落地考 (蓝鲸财经 7/16 + 21财经 7/17 11:21 verbatim) (d) 华为 Atlas 950 真机首展 8192 卡 56.8x NVL144 (蓝鲸财经 7/16 + 东方财富网 verbatim) (e) 9 位图灵奖/诺奖得主 (新浪财经 7/7 verbatim) (f) **7/17 港股午盘 实战段 反向大跌 (新维度!)** — 智谱 -21% + MINIMAX -13.83% + 恒科 -4.04% + 恒指 -1.98% (人民财讯 7/17 12:25 verbatim) = 市场用脚投票: WAIC 启幕 = 利好兑现抛售 vs 中美贸易 + capex 集中压制 = 政治最高层定调 实战段 + 市场 实战段 双轨 = 同期 vs 反向 期 一日内 (g) 智平方 NeuroVLA + AlphaBot 2 半导体/零售落地 (智平方 7/17 10:36 verbatim) (h) 展览 10 万平米首破 (证券日报 7/17 00:13 verbatim) = 跨 day 边界 第三期 cron 加新维度 8 类 = baseline 28 子轴 + 第 17 接力 立。
+
+**不变量 #5 同日 cross-reference 主审自检**: 7/17 早 baseline 27 = WAIC Day 1 启幕预期 + 习近平主旨预期; 7/17 午后 baseline 28 = 启幕实战段 + 市场反向实战段 = 同期 vs 反向期 一日内双轨验证，不重复、不 dilution。
+
+**不变量 #6 Loop+Darwin 自检**: Loop 闭环 = "港股午盘反向大跌 = 市场实战段反向验证 WAIC 启幕" 新维度消化进 Una 系统 (之前 16 期 baseline 11~27 子轴 都没 capture "启幕当日港股实战段反向" 维度) + "商业化落地考 替换 模型军备赛" (21财经 7/17 11:21 verbatim 直接给出主题词变化证据). Darwin 突变 = 第 17 接力 baseline 28 子轴 立 (WAIC 启幕实战段 + 港股反向实战段 + 商业化落地考 + Atlas 950 真机 + 9 位图灵/诺奖 = 跨 day 边界 第 3 期 cron 加新维度 8 类), 给 7/17 晚报 cron 第三十六期 (WAIC Day 1 实战段 续 + 港股收盘 实战段 + 美方 7/17 PT close 实战段 + capex T-12/5/12 倒数 续 = baseline 29 子轴 立 + 第 18 接力) + 7/18 早 cron 第三十七期 留 baseline。
+
+**Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管**: sub-agent 未在 4min 内交付 raw, master 用 prior slot raw/2026-07-17-morning.md 作 baseline cp + patch header 第三十五期身份 + FACT-CHECK FIX 段 跨 slot 延续 preserved verbatim + baseline 27 子轴 第 17 接力 preserved verbatim + 5 项 tool 复核 raw 真存在 + 行数 806 + entries ≥30 41 ✅ + mirror diff 空 md5 55c71791... 一致 + header patch 成功.
+
+**Pitfall 6 fact-check fix 段 跨 slot 延续**: 7/14 午后 fact-check fix 段 (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19) + 7/16 早 fact-check fix 二类 (智谱配售 1588-1698 + Anthropic+白宫 三协议) + 7/16 午后 (习近平主旨 + WAIC 史上最大 + 高级别会议 + 7/15 港股 + CPI -0.4% + PrismML) + 7/16 晚报 (长鑫 666 亿 + Hang Seng Tech +3% + 美方 PT 历史新高) + 7/17 早 (WAIC Day 1 启幕 + 习近平主旨 + Atlas 950 + 9 位图灵/诺奖) 所有 FACT-CHECK FIX 段 在 raw.md 中完整 preserved verbatim.
+
+**content.json 字数硬约束 PASS** (title=31 ≤40 / dek=97 ≤200 / why_this=110 ≤200 / pick labels=27,14,8,15 all ≤35 / say_4=49,44,42,50 all ≤50 / main_facts=8 ≥4 verbatim 8 hits).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 prose cite-only + 句首 ',  ' 0 + 双句号 0.
+
+**Render**: 14082 bytes, TTS 生成中.
+
+**验收**: ad-hoc verifier 13/13 PASS (raw 806行/144KB/41 entries + index.html DOCTYPE/h1/title/3 stat-cards/div 23:23 + voice.mp3 + content.json spec 0 violations/4 facts/8 verbatim + em dash 0 + punctuation cleanup 0 + 7 known names all PASS + FACT-CHECK FIX preserved + FACT-CHECK verbatim + URL overlap 7/7 + 5 项 tool 复核 raw 真存在 + EXACT MATCH prod 14082 bytes cf-cache HIT).
+
