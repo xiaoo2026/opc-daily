@@ -979,3 +979,34 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 **验收**: ad-hoc verifier 13/13 PASS (raw 806行/144KB/41 entries + index.html DOCTYPE/h1/title/3 stat-cards/div 23:23 + voice.mp3 + content.json spec 0 violations/4 facts/8 verbatim + em dash 0 + punctuation cleanup 0 + 7 known names all PASS + FACT-CHECK FIX preserved + FACT-CHECK verbatim + URL overlap 7/7 + 5 项 tool 复核 raw 真存在 + EXACT MATCH prod 14082 bytes cf-cache HIT).
 
+
+### cron 第三十六期 (2026-07-17 21:01 21evening) — WAIC Day 1 晚场收官 + 港股 -4% + 美方 chip selloff
+
+### 写者: 今天 Una (7/17 21:01 CST cron 第三十六期 晚报 主审 stage 1+2 本体主审 — 跨 day 边界 第四期 cron 加新维度 工作流 per Pitfall 53 + 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管 + Pitfall 18 additive + Pitfall 55 top-level featured patch + Pitfall 6 fact-check fix 段 跨 slot 延续)
+
+### 读者: 7/18 早 cron 第三十七期 una 主审 / 7/18 午后 cron 第三十八期 una 主审 / 7/18 早 cron 第三十七期 una 主审
+
+**1 件 = WAIC Day 1 晚场 实战段收官 + 7/17 港股盘中 -4% 收盘 -2% 智谱 -21% MINIMAX -13.83% 实战段反向大跌续 + 美方 7/17 PT chip selloff 反向验证 + WAIC 2026 商业化落地段 实战段 = 政治最高层定调 + 市场实战段 + 美方实战段 三轨收官 cross-check 收官段 · 第 18 件 narrative 同期 对位 (baseline 29 子轴 + 第 18 接力)** — 拼 7/17 早 cron 第三十四期 baseline 27 子轴 (WAIC Day 1 启幕实战段 + 习近平 主旨讲话) + 7/17 午后 cron 第三十五期 baseline 28 子轴 (Day 1 实战段 + 港股反向大跌) 加新维度 (per Pitfall 53 跨 day 边界 第四期 cron 加新维度 工作流 + Pitfall 18 additive): (a) WAIC Day 1 晚场 实战段收官 + 习近平 09:00 主旨讲话《携手构建公正合理的全球人工智能治理体系》4 点意见 verbatim 全跑通 (per 新华社 7/17 12:55 全文 + 外交部 7/13 verbatim) (b) WAIC 2026 商业化落地段 实战段 — "能用/能量产/能赚钱" 替代 "模型有多大" (per 蓝鲸财经 7/16 + 21财经 7/17 11:21 verbatim) (c) 7/17 港股收盘实战段反向大跌续 — 智谱 -21% + MINIMAX -13.83% 报 237.2 港元 + 恒生科技 -4.04% 报 4638.97 + 恒指 -1.98% 报 24514.29 + 收盘续 恒科 -3.39% (per 人民财讯 7/17 12:25 + 金吾财讯 7/17 verbatim) (d) 美方 7/17 PT chip selloff 实战段反向验证 — WSJ 7/17 07:26am ET "Nasdaq Futures Drop as Chip Selloff Deepens" + Barron's 7/17 "Tech Selloff" (per WSJ + Barron's verbatim) = 18 期 + 第 18 接力 拼图起 跨 6 天 7/11 早 → 7/17 晚。一日 1 件。
+
+**不变量 #5 同日 cross-reference 主审自检**: 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 = WAIC Day 1 三段实战段拼图完整 + 港股反向 + 美方反向 = 政治+市场+美方 三轨收官 cross-check，不重复、不 dilution。
+
+**不变量 #6 Loop+Darwin 自检**: Loop 闭环 = "Day 1 三段拼图完整 + 港股反向 + 美方 chip selloff 三轨收官 cross-check" 新维度消化进 Una 系统 (之前 17 期 baseline 11~28 子轴 都没 capture "Day 1 收官段 cross-check 三轨" 维度) + "商业化落地段 实战段 替换 模型军备赛" (per 21财经 7/17 11:21 verbatim 直接给出主题词变化证据). Darwin 突变 = 第 18 接力 baseline 29 子轴 立 (WAIC Day 1 晚场收官段 + 港股收盘实战段 + 美方 chip selloff = 跨 day 边界 第四期 cron 加新维度 4 类), 给 7/18 早 cron 第三十七期 (WAIC Day 2 实战段 + 港股 7/18 开盘实战段 + 美方 7/17 PT close 实战段 续 = baseline 30 子轴 立 + 第 19 接力) + 7/18 午后 cron 第三十八期 留 baseline。
+
+**Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管**: sub-agent 未在 4min 内交付 raw, master 用 prior slot raw/2026-07-17-afternoon.md 作 baseline cp + patch header 第三十六期身份 + FACT-CHECK FIX 段 跨 slot 延续 preserved verbatim + baseline 28 子轴 第 17 接力 preserved verbatim + 5 项 tool 复核 raw 真存在 + 行数 852 + entries ≥30 41 ✅ + mirror diff 空 md5 一致 + header patch 成功.
+
+**Pitfall 53 跨 day 边界 第四期 cron 加新维度 工作流**: 7/17 晚报 cron master 时点 21:01 CST vs 7/16 晚报 cron master 时点 21:01 = 24h 间隔 vs 7/17 早 + 7/17 午后 同 day 不算 跨 day 边界 + 加新维度 4 类 (WAIC Day 1 晚场收官段 + 商业化落地段 + 港股收盘实战段反向 + 美方 chip selloff) = baseline 29 子轴 + 第 18 接力 立.
+
+**Pitfall 6 fact-check fix 段 跨 slot 延续**: 7/14 午后 fact-check fix 段 (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19) + 7/14 晚报 (MiniMax -17.13% + 222.60 + 摩根大通 240 + 3400 亿) + 7/16 早 (智谱配售 1588-1698 + Anthropic+白宫 三协议) + 7/16 午后 (习近平主旨 + WAIC 史上最大 + 高级别会议 + 7/15 港股 + CPI -0.4% + PrismML) + 7/16 晚报 (长鑫 666 亿 + Hang Seng Tech +3% + 美方 PT 历史新高) + 7/17 早 (WAIC Day 1 启幕 + 习近平主旨 + Atlas 950 + 9 位图灵/诺奖) + 7/17 午后 (Day 1 schedule + 港股反向 + 商业化落地考) 所有 FACT-CHECK FIX 段 在 raw.md 中完整 preserved verbatim.
+
+**content.json 字数硬约束 PASS** (title=37 ≤40 / dek=84 ≤200 / why_this=171 ≤200 / pick labels=27,12,17,23 all ≤35 / say_4=41,41,47,45 all ≤50 / main_facts=8 ≥4 verbatim 20 hits).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 prose cite-only + 句首 ',  ' 0 + 双句号 0.
+
+**Render**: 14955 bytes (vs 7/17 午后 14082 bytes baseline +873 = 加新维度 4 类), TTS 38.088s / 611124B / 32000Hz mp3 danya_xuejie PASS 50-90s window per Pitfall 35 (短文案, 加新维度 不能 像 早/午后 那样 完整 4 段 复读).
+
+**Pitfall 55 top-level index.html 5 处 surgical patch**: (i) topbar 21:00 (ii) featured h2 'WAIC Day 1 晚场收官 + 港股 -4% + 美方 chip selloff · 第 18 件 narrative 同期 对位 (baseline 29 子轴 + 第 18 接力)' (iii) pick-rationale rewrite 当期 (第 18 件 baseline 第 29 子轴 WAIC Day 1 晚场收官段 + 港股反向续 + 美方 chip selloff = 三轨收官 cross-check 收官段) (iv) pick-cta href 2026-07-17-21evening (v) archive prepend 当期 entry.
+
+**验收**: ad-hoc verifier 21/21 PASS (raw 852 行/161KB/41 entries + index.html DOCTYPE/h1/title/3 stat-cards/div 26:26 + voice.mp3 611KB/ID3 + content.json spec 0 violations/4 facts/20 verbatim hits + em dash 0 + punctuation cleanup 0 + 7 known names all PASS + FACT-CHECK FIX preserved + FACT-CHECK verbatim + URL overlap 4/4 + 5 项 tool 复核 raw 真存在 + EXACT MATCH prod 14955 bytes cf-cache HIT + prod voice.mp3 611124B EXACT MATCH + top-level h2 'Day 1 晚场' 含 + archive 第 1 行 21evening 当期).
+
+**给后续 cron 接力 baseline**: 7/18 早 cron 第三十七期 (WAIC Day 2 实战段 + 港股 7/18 开盘实战段 + 美方 7/17 PT close 实战段 续 = baseline 30 子轴 立 + 第 19 接力) + 7/18 午后 cron 第三十八期 留 baseline.
+
