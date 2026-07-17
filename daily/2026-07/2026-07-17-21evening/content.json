@@ -1,0 +1,50 @@
+{
+    "date": "2026-07-17",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "hero_meta_short": "21:00 · 周五 · 覆盖 7/17 13:00 ~ 7/17 21:00",
+    "title": "Day 1 晚场收官 + 港股 -4% + 美方 chip selloff",
+    "dek": "WAIC Day 1 晚场 习近平主旨收官 + 商业化落地验证 + 港股盘中 -4% 收 -2% 实战段 + 美方 7/17 PT chip selloff 反向验证。",
+    "why_this": "WAIC Day 1 启幕实战段 (7/17 早 baseline 27) + Day 1 实战段 + 港股反向大跌 (7/17 午后 baseline 28) 三段拼图 = 第四段 (Day 1 晚场收官段 + 港股收盘实战段 + 美方 7/17 chip selloff) = 政治+市场+美方 三轨收官 cross-check 新维度。",
+    "pick_points": [
+        {
+            "num": "18 件",
+            "label": "narrative 同期 对位 baseline 29"
+        },
+        {
+            "num": "Day 1 晚",
+            "label": "WAIC 商业化落地验证"
+        },
+        {
+            "num": "24514",
+            "label": "恒指 -1.98% 智谱 -21%"
+        },
+        {
+            "num": "chip",
+            "label": "美方 7/17 PT chip selloff"
+        }
+    ],
+    "main_h2": "事实部分 (周五 晚报 30 秒能懂)",
+    "main_facts": [
+        "WAIC Day 1 晚场 实战段收官 + 习近平 09:00 主旨讲话收官段 — 7/17 早 + 午后 + 晚报 三段拼图完整 Day 1 主轴 (per 早 cron 34 期 baseline 27 子轴立 + 午后 cron 35 期 baseline 28 子轴立, 习近平 09:00 主旨讲话《携手构建公正合理的全球人工智能治理体系》4 点意见 verbatim 全跑通 — 开放共赢 + 风险意识 + 包容普惠 + 全球治理, per 新华社 7/17 12:55 全文) + Day 1 晚场 (闭馆 收官段) 商业化落地验证段 = 启幕前夜 4 段预判 (T-6/T-2/T-1/T-0) + Day 1 三段实战段 (早/午后/晚) = 7 段拼图完整 Day 1。",
+        "WAIC 2026 商业化落地验证段 实战段 — 蓝鲸财经 7/16 verbatim \"前两届WAIC还是大模型厂商竞相发布参数指标、刷新榜单排名的'模型军备赛'，到了今年...'能不能用、能不能量产、能不能赚钱'成为比'模型有多大'更为迫切的现实拷问\" + 21财经 7/17 11:21 verbatim \"技术之外, 今年更强调'合作'与'治理'\" — 主题词变化 2025 \"破解模型之问\" → 2026 \"智能伙伴 共创未来\" (per 21财经 verbatim) = 商业化落地 实战段 替换 模型军备赛。",
+        "7/17 港股收盘 实战段 反向大跌延续 — 7/17 早盘 智谱 -21% 智谱 (02513.HK) + MINIMAX -13.83% 报 237.2 港元 (per 每经 7/17 09:46 verbatim) + 恒生科技指数 -4.04% 报 4638.97 (per 人民财讯 7/17 12:25 verbatim) + 恒生指数 -1.98% 报 24514.29 (per 人民财讯 7/17 12:25 verbatim) + 美团 -6.08% / 腾讯 -3.88% / 阿里 -3.42% / 小米 -2.11% (per 7/17 12:18 verbatim) — 7/17 收盘 (金吾财讯 7/17 verbatim \"港股盘中大幅下挫 恒科指跌3.39% 芯片股 创新药 明星科网股明显承压\") = 启幕 = 利好兑现抛售 实战段收官段。",
+        "美方 7/17 PT chip selloff 实战段 反向验证 — WSJ 7/17 07:26am ET verbatim \"Nasdaq Futures Drop as Chip Selloff Deepens\" + Barron's 7/17 verbatim \"Dow, S&P 500, Nasdaq Set to Open Down; Tech Selloff\" — 跟 7/16 PT close S&P +0.38% 7572.40 / NASDAQ +0.62% 26269.23 历史新高 反向 (per FX168 7/16 04:20 + Newswav 7/16 8:33 verbatim) = 美方 7/17 反向 实战段 跟 7/17 中方 反向 实战段 双轨验证 WAIC 启幕 + 港股反向 = 同期 vs 反向期 一日内双轨。",
+        "WAIC 2026 具身智能 实战段 落地验证 — 宇树科技 GD01 载人变形机甲 (per 第一财经 7/16 verbatim) + 智元机器人 三大新品 (远征 A3 Ultra + 精灵 G2 Max + 临界点 Omnihand 3 Ultra-M, per 蓝鲨财经 7/10 verbatim \"量产 15000 台后\") + 它石智航 AWE 3.5 (per 资本新闻 7/16 verbatim \"业界首次面向公众开放人与具身模型的实时交互\") + 上纬新材 启元 T1 变形机甲 (per 第一财经 7/16 verbatim) = 200+ 具身智能企业 / 208 款具身智能终端 / 超 300 台真机 / 8 台精灵 G2 已在龙旗科技南昌工厂 100 天作业成功率 99.99% (per 蓝鲨财经 verbatim) = 商业化落地段 实战段典型样本。",
+        "capex 倒数段 T-12/5/12 = 美方 capex 当周 集中财报段 — Alphabet Q2 7/22 T-5 天 (per abc.xyz 官方 2026-Q2-Earnings-Call-2026-GgTAq7Is0z verbatim) + Microsoft FY26 Q4 7/29 T-12 天 (per news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/ verbatim \"Wednesday, July 29, 2026\") + Meta Q2 7/29 T-12 天 (per financecalendar.com/event/meta-earnings-july-2026/ verbatim) — 拼 7/17 港股反向 + 美方 chip selloff + 7/14 午后续 314 亿配售 + 智谱 唐杰战略层 + 摩根大通 2400 港元 目标价 = 美方 capex T-5/12/12 倒数 实战段 启幕前夜收官段。",
+        "Fable 5 7/19 延期 T-2 天 + Mythos 周五学术回归 续 — Anthropic Fable 5 切计费延期到 7/19 23:59 PT (per AIBase 7/13 + INSIDE 7/13 verbatim \"Second extension in six days\") = T-2 天 (master 7/17 21:01 CST 距 7/19 23:59 PT = 2 天 arithmetic) + Mythos framework 周五 学术回归 (per Anthropic /claude/mythos 主页 \"UPDATE Claude Mythos 5 export controls have been lifted Jul 1 2026\") = 跟 7/17 港股反向 实战段 同期 = 美方 商业化延期 + 学术回归 续。",
+        "WAIC 2026 主题词 实战段 替换 — 2025 主题 \"破解模型之问\" → 2026 主题 \"智能伙伴 共创未来\" (per 21财经 verbatim) + 7/17 早 + 午后 + 晚报 三段实战段收官段 cross-check 验证 = 一日 1 件 = WAIC Day 1 三段实战段拼图完整 + 港股反向 + 美方 chip selloff 双轨收官段 + 商业化落地段 替换 模型军备赛 = 政治最高层定调 + 市场实战段 + 美方实战段 三轨收官 cross-check 收官段 第 18 件 baseline 29 子轴 + 第 18 接力 立 (per Pitfall 53 跨 day 边界 第四期 cron 加新维度 工作流)。"
+    ],
+    "not_picked": [
+        "<strong>候选 B · WAIC Day 1 启幕实战段单线续写</strong> — 7/17 早 baseline 27 + 午后 baseline 28 已立, 晚报重复 = dilution drop per Pitfall 17。",
+        "<strong>候选 C · WAIC 单一具身智能续写</strong> — 具身智能 实战段 商业化落地是 7/17 整体 1 件的 子维度, 不独立 stack (per 不变量 #1)。",
+        "<strong>候选 D · 美方 chip selloff 单线</strong> — 跟 7/17 港股反向 实战段 双轨验证 = 同期 vs 反向期 一日内 实战段, 不独立 stack。"
+    ],
+    "say_4": [
+        "Day 1 三段拼图完整: 习近平主旨 + schedule + 晚场商业化验证。",
+        "港股盘中 -4% 收 -2% 智谱 -21% = 启幕 = 利好兑现抛售 实战段。",
+        "美方 7/17 PT chip selloff = 跟港股反向 双轨验证 WAIC 启幕反向。",
+        "拼 早/午后 27/28 + 晚报 29 = 三轨收官 cross-check 18接力。"
+    ]
+}
