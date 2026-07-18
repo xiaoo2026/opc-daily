@@ -2,15 +2,15 @@
 
 > 这文件给 opc-daily cron / 全 loop shared state. 任何 sub-agent 起来接 opc-daily 第一件事是 read this.
 
-## Where we are now (2026-07-17 07:00) — 第三十四期 cron 抵达
-- ✅ cron 第三十四期 (7/17 07:01 早选) 跑通 — 早选 2026-07-17-morning 已发
-- ✅ 5 files committed: daily/2026-07/2026-07-17-morning/ (content.json, index.html, raw.md, voice.mp3, voice_raw.mp3) + raw/2026-07-17-morning.md + daily/2026-07/index.json (44 entries) + top-level index.html (featured + archive prepend) — commit 827b9d3 pushed origin main
-- ✅ wrangler deploy v849334d1 成功 — 020755.xyz/daily/2026-07/2026-07-17-morning/ 字节数 12533 == local EXACT MATCH + cf-cache-status: HIT
-- ✅ voice.mp3 (1770036B / 110.5s / 32000Hz / danya_xuejie) 生成 PASS 50-90s window per Pitfall 35
-- ✅ top-level index.html featured + archive prepend surgical patch done
-- 主题: WAIC Day 1 启幕实战段 + 习近平 主旨讲话 = 政治最高层 AI 大会定调 实战段 · 第 17 件 narrative 同期 对位 (baseline 27 子轴 + 第 17 接力)
-- 📊 同步: 拼 7/16 早 baseline 24 + 7/16 午后 baseline 25 + 7/16 晚报 baseline 26 = 启幕前夜 三段 + Day 1 实战段 = 4 段拼图完整 Day 1
-- 📝 raw 素材归档: raw/2026-07-17-morning.md (cp 自 prior slot raw/2026-07-16-21evening.md md5 71007ba1740baf27a60e9f9dd13e3ecc 一致 + patch header 第三十四期身份 + FACT-CHECK FIX 跨 slot 延续 preserved verbatim + baseline 26 子轴 第 16 接力 preserved verbatim)
+## Where we are now (2026-07-18 21:00) — 第三十七期 cron 抵达
+- ✅ cron 第三十七期 (7/18 21:00 晚报) 跑通 — 2026-07-18-21evening 已发
+- ✅ 5 files committed: daily/2026-07/2026-07-18-21evening/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-18-21evening.md — commit a1b2347 pushed origin main
+- ✅ wrangler deploy v92ec8bcb 成功 — 020755.xyz/daily/2026-07/2026-07-18-21evening/ 字节数 13515 == local EXACT MATCH
+- ✅ voice.mp3 (815604B / 50.868s / 32000Hz / danya_xuejie) 生成 PASS 50-90s window per Pitfall 35
+- ✅ top-level index.html featured + archive prepend surgical patch done — commit 923f543
+- 主题: WAIC Day 2 商业化落地 vs 费半跌入熊市 = 大会火热 vs 市场冰冷 冰火两重天 · 第 19 件 narrative 同期 对位 (baseline 30 子轴 + 第 19 接力)
+- 📊 同步: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 = Day 1 三段 + Day 2 冰火两重天 = 5 段拼图
+- 📝 raw 素材归档: raw/2026-07-18-21evening.md (cp 自 prior slot raw/2026-07-17-21evening.md md5 6874f02e 一致 + patch header 第三十七期身份 + FACT-CHECK FIX 跨 slot 延续 preserved verbatim + baseline 29 子轴 第 18 接力 preserved verbatim + Y17. 加新维度 4 类段)
 - 📮 TG 7069165189 sent (fallback: QQ 7069165189)
 
 
