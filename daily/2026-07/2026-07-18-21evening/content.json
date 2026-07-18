@@ -1,0 +1,48 @@
+{
+    "date": "2026-07-18",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "hero_meta_short": "21:00 · 周六 · 覆盖 7/18 15:00 ~ 7/18 21:00",
+    "title": "WAIC Day 2 商业化落地 vs 费半跌入熊市",
+    "dek": "WAIC Day 2 荣耀 Robot Phone 全球首发 + 人形机器人规模化商用 + A 股 AI 板块 -8.53% + 费半较历史高点回撤 20.2% 正式进入熊市。大会火热 vs 市场冰冷。",
+    "why_this": "7/17 早+午后+晚报 三段拼图完成 Day 1 政治定调+实战+收官。7/18 Day 2 新维度: 从展示到兑现 — 荣耀 Robot Phone 预约开启 + 人形机器人首次规模化商用。同日 A 股 AI -8.53% + 费半跌入熊市 = 大会热度 vs 资本冰冷 冰火两重天。第 19 件 baseline 30 子轴 + 第 19 接力。",
+    "pick_points": [
+        {
+            "num": "19 件",
+            "label": "narrative 同期 对位 baseline 30"
+        },
+        {
+            "num": "Day 2",
+            "label": "WAIC 商业化落地 + 产品首发"
+        },
+        {
+            "num": "-8.53%",
+            "label": "A 股 AI 板块暴跌"
+        },
+        {
+            "num": "熊市",
+            "label": "费半较历史高点回撤 20.2%"
+        }
+    ],
+    "main_h2": "事实部分 (周六 晚报 30 秒能懂)",
+    "main_facts": [
+        "WAIC Day 2 具身智能商业化落地实战段 — 荣耀 CEO 李健 7/18 发布全球首款机器人手机荣耀 Robot Phone (10:08 开启预约, Agentic OS 感知/推理/执行/反馈 四核心能力, AI 终端进化为类人生命体, per 荣耀官方 7/18 15:54 verbatim) + 睿尔曼智能全球首发 RealBot-S2 与 RealBot-L2 两款轮式人形机器人 (关节模组年产能突破 50 万台, per 太平洋科技 7/18 21:32 verbatim) + 约 60 台人形机器人首次规模化商用部署于大型展会 (per QQ 7/17 12:09 verbatim 全尺寸人形机器人正式落地实景服务场景 首次在大型行业展会中实现规模化商用部署). Day 1 = 政治定调 + 首展亮相; Day 2 = 商业化落地 + 产品首发 = 从展示到兑现的关键转折.",
+        "7/18 A 股 AI 板块暴跌实战段 — 上证 -3.05% 3764 / 深证 -5.40% 13706 / 创业板 -7.15% 3428 / 人工智能指数 -8.53% 2730 (per 东方财富 7/17 16:29 verbatim 涨跌幅 -8.53% 成交额 2524 亿) + 恒指 -1.78% 24562 (per 东方财富 verbatim). 7/17 港股 -4% 延续 + A 股加入暴跌 = 中方金融市场全面反应 WAIC 热度 vs 资本市场冰冷 = 冰火两重天.",
+        "美方费半正式跌入技术性熊市实战段 — 费城半导体指数较 6/22 历史高点回撤 20.2% (per 新浪财经 7/18 05:27 verbatim 累计回撤约20.2% 跌入技术性熊市) + 纳指 -1.4% 25520 / 标普 -1.01% 7457 / 道指 -0.77% 52146 + 本周纳指 -2.9% / 标普 -1.55% / 道指 -0.93% (per 腾讯 7/18 04:18 verbatim) + 市场重新审视 AI capex 估值持续性 (per 新浪财经 7/18 05:27 verbatim). 7/17 晚报 = chip selloff 实战段; 7/18 = selloff 升级为熊市确认 = 量变到质变.",
+        "Alphabet Q2 Earnings T-4 天倒数实战段 — Alphabet Q2 Earnings Call 7/22 1:30 PM PT (per abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026 verbatim) = 美方 capex 集中财报段第一家. 距 master 时点 7/18 21:00 CST = 4 天 arithmetic. 市场将用它验证 AI capex 能否兑现 = AI 牛市换锚时刻 (per 新浪财经 7/18 05:27 verbatim AI牛市迎来换锚时刻). 拼 Microsoft 7/29 + Meta 7/29 = capex T-4/11/11 倒数实战段.",
+        "WAIC 2026 主题词实战段替换验证 — 2025 主题 破解模型之问 → 2026 主题 智能伙伴 共创未来 (per 21财经 7/17 11:21 verbatim) + 蓝鲸财经 7/16 verbatim 能不能用 能不能量产 能不能赚钱 成为比模型有多大 更为迫切的现实拷问 = Day 1 政治定调 + Day 2 商业化落地 + 产品首发 = 从模型军备赛到商业化兑现周期.",
+        "Fable 5 7/19 延期 T-1 天 + Mythos 周六学术回归续 — Anthropic Fable 5 切计费延期到 7/19 23:59 PT (per AIBase 7/13 + INSIDE 7/13 verbatim Second extension in six days) = T-1 天 (master 7/18 21:00 CST 距 7/19 23:59 PT = 1 天 arithmetic) + Mythos framework 周六学术回归续 (per Anthropic /claude/mythos 主页 UPDATE Claude Mythos 5 export controls have been lifted Jul 1 2026) = 跟 A 股暴跌 + 费半熊市 同期 = 美方商业化延期 + 学术回归 续 + 中方金融市场全面反应."
+    ],
+    "not_picked": [
+        "<strong>候选 B · WAIC Day 2 单独人形机器人线续写</strong> — 7/17 晚报 baseline 29 已 capture 具身智能商业化落地段, Day 2 续写 = dilution drop per Pitfall 17.",
+        "<strong>候选 C · 港股智谱/MiniMax 续跌单独线</strong> — 7/17 晚报 baseline 29 已 capture 港股反向大跌, Day 2 A 股加入暴跌 = 新维度但不是独立 1 件, 跟 WAIC Day 2 冰火两重天拼起来更值得读.",
+        "<strong>候选 D · Alphabet T-4 单独倒数线</strong> — capex 倒数段已在 7/17 晚报 baseline 29 capture, T-4 是 arithmetic 续不是新维度, drop per Pitfall 17."
+    ],
+    "say_4": [
+        "Day 2 最值得看: 荣耀开卖机器人手机, Agentic OS 四核心, PPT 到收银台.",
+        "同日 A 股 AI -8.53%, 费半入熊 — 市场说 我先看看.",
+        "费半回撤 20.2% = 技术性熊市, 不是回调, 是重定价 AI capex.",
+        "19 期拼图: 谁模型更大 → 谁真的赚钱, 这才是 WAIC 真信号."
+    ]
+}
