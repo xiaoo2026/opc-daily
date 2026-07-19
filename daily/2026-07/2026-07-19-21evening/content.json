@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-19",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周日 · 覆盖 7/19 15:00 ~ 7/19 21:00",
+  "title": "Kimi K3扔进WAIC启幕前夜 触发DeepSeek时刻重演",
+  "dek": "WAIC 2026收官周末,Kimi K3凌晨发布→智谱单日-28.49%蒸发2000亿港元,MiniMax-15.63%,美方chip selloff一周-2.9%,Fable 5三延期终局7/20落地。六维同期拼图完整收官段,第20件narrative同期对位,baseline 31子轴加第20接力。",
+  "why_this": "WAIC启幕前夜7/17凌晨Kimi K3扔进中国AI市场,Code Arena编程榜抢第一,智谱MiniMax单日蒸发3000亿港元,美方芯片一周-2.9%反向验证。三延期终局7/20落地,Permanent Max + Credits-only Pro双轨。一日内六维同期收官段,只有选这一件才配得上收官周末的密度。",
+  "main_h2": "事实部分 (周日 晚报 30 秒能懂)",
+  "pick_points": [
+    {"num": "20 件", "label": "narrative 同期 对位 baseline 31"},
+    {"num": "Kimi K3", "label": "扔进 WAIC 前夜 触发 DeepSeek 重演"},
+    {"num": "-28.49%", "label": "智谱 单日 蒸发 2000 亿港元"},
+    {"num": "Fable 5", "label": "三延期终局 7/20 双轨落地"}
+  ],
+  "main_facts": [
+    "<blockquote><em>Kimi K3:2.8万亿参数+KDA混合线性注意力+100万token上下文+全球首个开源3万亿级模型,输入$3/M tokens输出$15/M tokens,Code Arena编程超Claude Fable 5登顶第一,Artificial Analysis全球第三超GPT-5.5+Claude Opus 4.8</em></blockquote>",
+    "<p>月之暗面7/17凌晨发布Kimi K3(per新浪财经7/17+财联社7/17 09:51+月之暗面官方):2.8万亿参数,KDA混合线性注意力机制,注意力残差,100万token上下文窗口,全球首个开源3万亿级模型。</p>",
+    "<blockquote><em>DeepSeek时刻重演 — 中国最新开源模型Kimi K3,嚇倒美半导体类股</em></blockquote>",
+    "<p>TechNews 7/18 18:02 verbatim\"DeepSeek时刻重演?中国最新开源模型Kimi K3,嚇倒美半导体类股\":Kimi K3发布直接触发美方芯片一周-2.9%反向验证。</p>",
+    "<blockquote><em>单日暴跌28.49%、市值蒸发超2000亿港元:智谱被Kimi K3\"吓崩\"了?</em></blockquote>",
+    "<p>智谱(02513.HK)7/18单日-28.49%报1107港元(per财经中国7/18 16:10),单日市值蒸发超2000亿港元,总市值回落5154亿港元,创上市以来最大单日跌幅;MiniMax同日-15.63%报216港元;港股AI板块集体承压,恒生科技指数-5%。</p>",
+    "<blockquote><em>Starting July 20, Max and Team Premium subscribers will receive Fable 5 permanently — Competition from GPT-5.6 Sol reversed Anthropic's plan to drop Fable 5 from subscriptions entirely</em></blockquote>",
+    "<p>TechTimes 7/18 08:56 ET verbatim\"Claude Fable 5 Ends Subscription Limbo: Permanent for Max, Credits-Only for Pro\":三延期终局,7/20落地,Permanent Max + Credits-only Pro双轨(per techtimes.com/articles/320905/20260718)。</p>",
+    "<p>美方7/17-7/18 chip selloff实战段反向验证:7/18 PT close纳指-1.4% 25520/标普-1.01% 7457/费半-2.78%续/周累计纳指-2.9%/标普-1.55%(per新浪财经7/18+BusinessToday 7/18 verbatim)。</p>",
+    "<blockquote><em>SAIL奖颁发现场 主办方供图 — Superior(超越赛道):昇腾950超节点(华为)</em></blockquote>",
+    "<p>WAIC 2026 SAIL Award揭晓4项SAIL奖+6项SAIL之星,SAIL Award超越赛道=昇腾950超节点(华为)(per爱力方7/17 23:54 verbatim)。展览10万平米+1100+企业/3000+展品/300+全球首发;华为/昆仑芯/摩尔线程/清微智能百余家企业/200+前沿产品/67项国内首发首秀,四大全新技术架构同台竞技=国产AI算力进入生态竞速期(per智东西7/17+36氪7/18 19:58)。</p>",
+    "<p>拼图链路第20接力baseline 31子轴立:早cron 34期baseline 27(7/17早WAIC Day 1启幕实战段+习近平主旨讲话)+午后cron 35期baseline 28(Day 1 schedule+港股盘中-4%智谱-21%)+晚报cron 36期baseline 29(Day 1晚场收官段+港股收盘-2%+美方chip selloff=三轨收官)+早cron 37期baseline 30(7/18 Day 2商业化落地具身智能)+晚报cron 37期baseline 30(7/18 Day 2 vs费半跌入熊市=冰火两重天第19接力)+晚报cron 38期baseline 31(7/19 Day 3收官段+Kimi K3 DeepSeek时刻重演+Fable 5三延期终局7/20+华为昇腾950 SAIL锚定=六维同期收官段第20件baseline 31+第20接力)=20期+第20接力拼图起跨7天7/11早→7/19晚。</p>"
+  ],
+  "not_picked": [
+    "<strong>候选B · 7/18 A股+创业板+人工智能指数暴跌续写</strong> — per Pitfall 17 dilution drop,已立过baseline 30续段,单一市场续写不构成跨day边界第六期cron加新维度5类cross-check拼图",
+    "<strong>候选C · 费半正式跌入技术性熊市续</strong> — 单点市场续写,跟Kimi K3触发器同源但已是续写而非新维度,跨day边界第六期cron需要加新维度5类,续写不构成5类",
+    "<strong>候选D · 荣耀Robot Phone/睿尔曼RealBot-S2/L2/人形机器人规模化商用续</strong> — Day 2商业化落地续写,baseline 30子轴立过,不重stack,跨day边界第六期cron加新维度5类是Kimi K3/Fable 5/智谱崩盘/美方chip/SAIL=5类,不重复Day 2具身智能续写"
+  ],
+  "say_4": [
+    "Kimi K3扔进WAIC前夜,DeepSeek时刻重演,是估值重写不是参数问题。",
+    "智谱一天蒸发2000亿港元,大模型第一股叙事被Kimi K3最狠校准。",
+    "美方芯片一周-2.9%,capex估值持续性被中国开源模型重审。",
+    "Fable 5三延期终局,7/20双轨落地,跟Kimi同期,商业化终局对话。"
+  ]
+}
