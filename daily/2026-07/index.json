@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-20",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "slot_label": "晚报",
+    "title": "WAIC 闭幕 港股双轨反向 大模型双雄再跌",
+    "title_short": "WAIC 闭幕 港股双轨反向",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-20-21evening/",
+    "url": "daily/2026-07/2026-07-20-21evening/index.html",
+    "commit": "TBD",
+    "summary": "WAIC 2026 7/20 上海闭幕 9 届以来最高规模 重点行业 AI 渗透率 80% + 港股 7/20 收盘双轨反向 6h cross-check 收官段 恒指 +2.36% 算力领涨 vs 智谱 -19.6% MiniMax -10.6% 大模型双雄续跌 2 天 = WAIC 6 期完整拼图收官段 跨 day 边界 第 7 期 cron 加新维度 3 类 第 21 件 narrative 同期 对位 baseline 32 子轴 + 第 21 接力"
+  },
+  {
+    "date": "2026-07-19",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "title": "Kimi K3扔进WAIC启幕前夜 触发DeepSeek时刻重演",
+    "url": "daily/2026-07/2026-07-19-21evening/index.html"
+  },
+  {
     "date": "2026-07-18",
     "type": "21evening",
     "slot": "21evening",
