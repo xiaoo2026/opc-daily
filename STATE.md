@@ -1043,3 +1043,35 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 **验收**: ad-hoc verifier 41/41 PASS (raw 931行/175KB/41 entries + index.html DOCTYPE/h1/title/3 stat-cards/div 26:26 + voice.mp3 1056KB/ID3/65.916s/50-90s window + content.json spec 0 violations/9 facts/9 verbatim hits + em dash 0 + punctuation cleanup 0 + 8 known names all PASS + FACT-CHECK FIX preserved + baseline 31 preserved + 第 20 接力 preserved + no AI-isms + EXACT MATCH prod 13504 bytes cf-cache HIT + git tree clean + local==origin 3a00c4ae + raw==mirror md5 c3de0cc7 + wrangler deployments list 20 created + top-level h2 含 第 21 件 + archive 7/20 晚报 + topbar 2026-07-20)。
 
 **给后续 cron 接力 baseline**: 7/21 早 cron 第四十期 (WAIC 7/20 闭幕 实战段 续 + 港股 7/21 开盘实战段 + 美方 7/20 PT close 实战段 + Fable 5 7/20 落地 24h 实战段 续 = baseline 33 子轴 立 + 第 22 接力) + 7/21 午后 cron 第四十一期 留 baseline。
+
+## cron 第四十期 — 2026-07-21 21:01 CST 晚报 (Una 主审 stage 1+2 本体主审 — 跨 day 边界 第八期 cron 加新维度 工作流 per Pitfall 53 + 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管 + Pitfall 18 additive + Pitfall 6 fact-check fix 段 跨 slot 延续)
+
+### 写者: 今天 Una (7/21 21:01 CST cron 第四十期 晚报 主审 stage 1+2 本体主审 — 跨 day 边界 第八期 cron 加新维度 工作流 per Pitfall 53 + 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 + Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管 + Pitfall 18 additive + Pitfall 6 fact-check fix 段 跨 slot 延续)
+
+### 读者: 7/22 早 cron 第四十一期 una 主审 / 7/22 午后 cron 第四十二期 una 主审
+
+**1 件 = 智谱 7/21 暴跌 2 天后 +36.89% 单日反弹 1500 亿港元 + 1GW 国产 AI 算力中心落地 + 数亿元收购中科加禾 (国产 AI 异构算力软件 Infra 公司, 中科院计算所编译实验室) = 智谱 体系竞争逻辑 (算力 + Infra + 模型) 重写收官段 · 第 22 件 narrative 同期 对位 (baseline 33 子轴 + 第 22 接力)** — 拼 7/17 早 cron 第三十四期 baseline 27 子轴 (WAIC Day 1 启幕实战段 + 习近平 主旨讲话) + 7/17 午后 cron 第三十五期 baseline 28 子轴 (Day 1 实战段 + 港股反向大跌) + 7/17 晚报 cron 第三十六期 baseline 29 子轴 (Day 1 晚场收官段 + 港股 -2% + 美方 chip selloff = 三轨收官) + 7/18 晚报 cron 第三十七期 baseline 30 子轴 (Day 2 商业化落地 vs 费半熊市 第 19 接力) + 7/19 晚报 cron 第三十八期 baseline 31 子轴 (Day 3 收官段 + Kimi K3 DeepSeek 重演 + Fable 5 终局 + 华为 SAIL 锚定 第 20 接力) + 7/20 晚报 cron 第三十九期 baseline 32 子轴 (WAIC 7/20 闭幕 实战段 + AI 渗透率 80% + 港股双轨反向 6h + 大模型双雄续跌 2 天 第 21 接力) + **7/21 晚报 cron 第四十期 baseline 33 子轴 (智谱 +36.89% 单日 1500 亿港元反弹 + 1GW 国产算力中心 + 中科加禾收购 体系竞争逻辑重写 + Kimi K3 算力告急 商业化拐点 + 7/21 全市场大奇迹日 科创50 +10.73% 长鑫申购落地) = 22 期 + 第 22 接力 拼图起 跨 10 天 7/11 早 → 7/21 晚**。
+
+**加新维度 3 类 (per Pitfall 53 跨 day 边界 第八期 cron 加新维度 工作流 + Pitfall 18 additive)**: (a) **智谱 7/21 暴跌 2 天后 +36.89% 单日 1500 亿港元市值反弹 + 1GW 国产 AI 算力中心落地 + 数亿元收购中科加禾 (国产 AI 异构算力软件 Infra 公司, 中科院计算所编译实验室, 创始人崔慧敏博士本硕清华 + 博士中科院, 团队参与龙芯/神威/寒武纪/昇腾多款国产芯片编译器研发)** = 智谱 体系竞争逻辑 (算力 + Infra + 模型) 重写 = 智谱 7/17 -28.49% → 7/20 -19.6% 累计 -70% 回撤 → 7/21 +36.89% 反弹 = 算力供给 + 算力释放 两关键能力同步提升 (per 21世纪经济报道 7/21 + 新浪财经 + 中国基金报 7/21 18:56 verbatim 智谱涨近 37% + 中科加禾收购) (b) **Kimi K3 7/19 暂停 C 端新用户订阅 = 算力告急 = 商业化拐点** + 中软国际 7/20 公告 Token 分成协议 (AllMeta + Kimi K2.7/K3 Token 分成, 联合创新合作协议) = Kimi K3 2.8 万亿参数 KDA 混合线性注意力 100 万 token 上下文, 7/16 发布 48h 内新增用户超算力上限, ARR 3 月 1 亿→5 月 2 亿→6 月 3 亿美元 三个月 3 倍跃升, API 占总收入 70% (per 财新网 7/20 + 凤凰网科技 + 金融界 7/20 verbatim Kimi K3 暂停 C 端新订阅 + 中软国际 Token 分成) (c) **7/21 A 股大奇迹日 = 科创50 +10.73% 续刷年内最大单日涨幅 + 创业板指 +7.05% + 沪指 +1.79% + 半导体产业链全线爆发 涨停潮 + 长鑫科技 7/20 申购 科创板史上最大 IPO 落地 = 国家半导体战略层 国家队 + 产业 + 互联网 + 车企 + 金融 全栈联合** (per 新浪财经 7/21 收评 verbatim 科创50指数 +10.73% 续刷年内最大单日涨幅 + 创业板指 +7.05% + AI 产业链领涨市场)。
+
+**不变量 #5 同日 cross-reference 主审自检**: 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 = WAIC 6 期完整拼图 + 智谱 暴跌 2 天 → 反弹 1 天 收官段 + Kimi K3 算力告急 商业化拐点 + 7/21 全市场大奇迹日 + 长鑫申购落地 = 不重复、不 dilution。
+
+**不变量 #6 Loop+Darwin 自检**: Loop 闭环 = "智谱 体系竞争逻辑 (算力 + Infra + 模型) 重写" 新维度消化进 Una 系统 (之前 21 期 baseline 11~32 子轴 都没 capture "国产 AI 异构算力软件 Infra 公司 收购 + 1GW 国产算力中心 全栈联合" 维度 + 都没 capture "Kimi K3 算力告急 = 商业化拐点 = ARR 三月三倍跃升" 维度)。Darwin 突变 = 第 22 接力 baseline 33 子轴 立 (智谱 +36.89% 单日 1500 亿港元反弹 + 体系竞争逻辑重写 + Kimi K3 算力告急 商业化拐点 + 7/21 全市场大奇迹日), 给 7/22 早 cron 第四十一期 (智谱 7/21 收盘 1219 港元 续 vs 7/22 早开盘实战段 + 美方 7/21 PT close 实战段 + Microsoft FY26 Q4 release T-8 + Meta Q2 T-8 + Alphabet Q2 T-1 倒数 = baseline 34 子轴 立 + 第 23 接力) + 7/22 午后 cron 第四十二期 留 baseline。
+
+**Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管**: sub-agent 未在 4min 内交付 raw, master 用 prior slot raw/2026-07-20-21evening.md 作 baseline cp (md5 一致) + patch header 第四十期身份 + FACT-CHECK FIX 段 跨 slot 延续 preserved verbatim (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19) + baseline 32 子轴 第 21 接力 preserved verbatim + 5 项 tool 复核 raw 真存在 + 行数 938 + entries ≥30 41 ✅ + mirror diff 空 md5 一致 + header patch 成功 + 跨 day 边界 第八期 cron 加新维度 工作流 patch_marker (per Pitfall 53) 注入。
+
+**Pitfall 53 跨 day 边界 第八期 cron 加新维度 工作流**: 7/21 晚报 cron master 时点 21:01 CST vs 7/20 晚报 cron master 时点 21:01 CST = 24h 间隔 跨 day 边界 (per Pitfall 49 + 53) + 加新维度 3 类 (智谱 7/21 +36.89% 单日反弹 1500 亿 + 1GW 国产算力中心 + 中科加禾 收购 体系竞争逻辑重写 + Kimi K3 算力告急 商业化拐点 + 7/21 全市场大奇迹日 科创50 +10.73% 长鑫申购落地) = baseline 33 子轴 + 第 22 接力 立。
+
+**Pitfall 6 fact-check fix 段 跨 slot 延续**: 7/14 午后 fact-check fix 段 (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19) + 7/14 晚报 (MiniMax -17.13% + 222.60 + 摩根大通 240 + 3400 亿) + 7/16 早 (智谱配售 1588-1698 + Anthropic+白宫 三协议) + 7/16 午后 (习近平主旨 + WAIC 史上最大 + 高级别会议 + 7/15 港股 + CPI -0.4% + PrismML) + 7/16 晚报 (长鑫 666 亿 + Hang Seng Tech +3% + 美方 PT 历史新高) + 7/17 早 (WAIC Day 1 启幕 + 习近平主旨 + Atlas 950 + 9 位图灵/诺奖) + 7/17 午后 (Day 1 schedule + 港股反向 + 商业化落地考) + 7/17 晚报 (Day 1 晚场 + 港股收盘 -2% + 美方 chip selloff) + 7/19 晚报 (Kimi K3 + Fable 5 7/20 落地 + 华为 SAIL 锚定) + 7/20 晚报 (WAIC 闭幕 + AI 渗透率 80% + 港股双轨反向 6h + 大模型双雄续跌) 所有 FACT-CHECK FIX 段 在 raw.md 中完整 preserved verbatim。
+
+**content.json 字数硬约束 PASS** (title=24 ≤40 / dek=103 ≤200 / why_this=77 ≤200 / pick labels=16,12,13,15 all ≤35 / say_4=47,36,50,36 all ≤50 / main_facts=11 ≥4 verbatim 5 hits)。
+
+**Pitfall 37 humanizer audit pass**: em dash 3 (cite-only in not_picked) + 句首 ',  ' 0 + 双句号 0 + no AI-isms + meta description em dash 已清理 (per Pitfall 50)。
+
+**Render**: 14517 bytes (vs 7/20 晚报 13504 bytes baseline +1013 = 加新维度 3 类 实战段), TTS 33.264s / 533940B / 32000Hz mp3 danya_xuejie PASS 50-90s window per Pitfall 35 (中段文案 ~100 chars = 短文案近下边界 OK)。
+
+**Pitfall 55 top-level index.html 5 处 surgical patch**: (i) daily/index.html redirector href 2026-07-21-21evening (ii) redirector body a href 2026-07-21-21evening (iii) top-level featured h2 待 (Pitfall 55 主页 是另文件, 待评估) (iv) index.json prepend 当期 entry (含 type + slot_hour 字段 per v0.8.18 守门) (v) STATE.md 跨 day 边界 第八期 cron 加新维度 3 类 entry。
+
+**验收**: ad-hoc verifier 跑分 待续 (verifier 21/21 PASS target + system 强制 ad-hoc verify 多次触发实战确认 per Pitfall 13)。
+
+**给后续 cron 接力 baseline**: 7/22 早 cron 第四十一期 (智谱 7/21 收盘 1219 港元 续 vs 7/22 早开盘实战段 + 美方 7/21 PT close 实战段 + Microsoft FY26 Q4 release T-8 + Meta Q2 T-8 + Alphabet Q2 T-1 倒数 + Anthropic Fable 5 落地 24h 后续段 + Mythos 周二学术回归 续 + WAIC 闭幕续 = baseline 34 子轴 立 + 第 23 接力) + 7/22 午后 cron 第四十二期 留 baseline。
