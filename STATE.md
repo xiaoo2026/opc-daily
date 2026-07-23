@@ -2,6 +2,20 @@
 
 > 这文件给 opc-daily cron / 全 loop shared state. 任何 sub-agent 起来接 opc-daily 第一件事是 read this.
 
+## Where we are now (2026-07-23 21:00) — 第四十四期 cron 抵达
+- ✅ cron 第四十四期 (7/23 21:00 晚报) 跑通 — 2026-07-23-21evening 已发
+- ✅ 5 files committed: daily/2026-07/2026-07-23-21evening/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-23-21evening.md — commit 495a5e0 pushed origin main (从 98155df)
+- ✅ wrangler deploy Version ac7410fa-22ff-4e7f-a592-a0f22d21462c 成功 — 020755.xyz/daily/2026-07/2026-07-23-21evening/ 字节数 18063 == local EXACT MATCH (cf-cache HIT post-deploy)
+- ✅ voice.mp3 (1546548B / 96.552s / 32000Hz / danya_xuejie) 生成 PASS 50-90s window per Pitfall 35
+- ✅ content.json 字数硬约束 PASS title=36 ≤40 dek=140 ≤200 why=166 ≤200 pp labels=[27,17,20,18] all ≤35 say=[49,41,48,30] all ≤50 + 9 main_facts verbatim 4 类
+- ✅ Pitfall 37 humanizer audit pass em dash 0 + 句首 ',  ' 0 + 双句号 0 + div 26:26
+- ✅ top-level index.html featured + archive prepend surgical patch done (per Pitfall 55)
+- 主题: Alphabet 烧钱 5.9B + 美方 capex 195-205B · 第 24 件 narrative 同期 对位 (baseline 35 子轴 + 第 24 接力)
+- 📊 同步: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 = 9 段拼图 = 美方 + 中方 AI 商业化拐点 同步 收官段
+- 📝 raw 素材归档: raw/2026-07-23-21evening.md (cp 自 prior slot raw/2026-07-22-21evening.md + patch header 第四十四期身份 + FACT-CHECK FIX 跨 slot 延续 preserved verbatim + baseline 34 子轴 第 23 接力 preserved verbatim + Y41 段 baseline 34 第 23 接力 preserved verbatim + 跨 day 边界 第一期 cron 加新维度 工作流 patch_marker (per Pitfall 53) 注入 + Y44-new. master 7/23 21:01 CST 拍板段 verbatim)
+- 📮 TG 7069165189 sent (fallback: QQ 7069165189)
+- 关键新维度 4 类: (a) Alphabet Q2 7/23 04:30 CST 实测生效段 一手 SEC 8-K + blog.google + HK01 7/23 05:24 + CNBC + BigGo verbatim: Revenue $119.8B +24% / Google Cloud $24.8B +82% / CapEx $44.9B 单季历史最高 +100% YoY / Free cash flow -$5.9B 史上首次 negative / 2026 capex 指引 上调 180-190B → 195-205B / 7/22 PT close GOOGL -1.46% + after-hours -4% = 美方头部 AI 公司首次 FCF negative 烧钱阶段 启动 + 商业化拐点信号; (b) 港股 7/23 周报收官 = 恒指周涨 3.5% 累升 825 点 / 恒生科技周涨 5.33% / 阿里周涨 17% 领涨大模型概念股 / 智谱完成 314 亿港元 配售创年内纪录 + 大模型双雄 5 时点 拼图完整 (7/8 + 7/9 + 7/14 + 7/22 + 7/23); (c) Pitfall 6 fact-check fix 二类 实战段: 7/22 baseline 34 写 Alphabet Q2 capex 预期 180-190B (release 前旧指引) vs 真实 release 后 上调 180-190B → 195-205B = 之前 23 期 baseline 11~34 子轴 都 capture capex 段 但 都没 capture 美方头部 AI 公司首次 FCF negative 烧钱阶段 启动 这一商业化拐点信号 + 修法 = patch raw.md header + 加 Y44-new 段 verbatim FACT-CHECK FIX 标记 + 主审阶段 2 拍板段 显式说明之前 baseline 错算; (d) MiniMax M3 Pro 2.7 万亿参数 Q3 发布 + 开源 续 + MiniMax 完成 160 亿港元融资 + 闫俊杰零薪酬 + 4% 股权激励 = 跟 7/22 baseline 34 cross-check 目标价 vs 模型能力 vs 资本决心 三轨 估值锚点重写续
+
 ## Where we are now (2026-07-18 21:00) — 第三十七期 cron 抵达
 - ✅ cron 第三十七期 (7/18 21:00 晚报) 跑通 — 2026-07-18-21evening 已发
 - ✅ 5 files committed: daily/2026-07/2026-07-18-21evening/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-18-21evening.md — commit a1b2347 pushed origin main
