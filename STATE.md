@@ -1121,3 +1121,30 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 **验收**: ad-hoc verifier 21/21 PASS (raw 976行/41 entries + index.html DOCTYPE/h1/title/3 stat-cards/div 26:26 + voice.mp3 1.4MB/ID3/89.82s/50-90s window + content.json spec 0 violations/11 facts/10 verbatim hits + em dash 0 + punctuation cleanup 0 + no AI-isms + EXACT MATCH prod 13820 bytes cf-cache MISS + git tree clean + local==origin 727d3ca + raw==mirror md5 一致 + wrangler deployments list 2aca5b24 + top-level h2 含 第 23 件 + archive 7/22 晚报 + 7/21 晚报 backfill + topbar 2026-07-22 周三)。
 
 **给后续 cron 接力 baseline**: 7/23 早 cron 第四十二期 (Alphabet Q2 7/23 04:30 CST 实战生效段 + 港股 7/23 开盘实战段 + Microsoft FY26 Q4 T-6 + Meta Q2 T-6 + Anthropic Fable 5 实战续 + WAIC 启幕后实战续 = baseline 35 子轴 立 + 第 24 接力) + 7/23 午后 cron 第四十三期 留 baseline。
+
+
+---
+
+## cron 第四十七期 (2026-07-24 21:01 CST 21evening)
+
+**主题**: 美七巨头 8000 亿蒸发 + 智谱配售 313.75 亿 · 第 25 件 narrative 同期 对位 (baseline 36 子轴 + 第 25 接力)
+
+**master 拍板段**: master 7/24 21:01 CST cron 第四十七期 主审 stage 1+2 本体主审 — 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 53 (注: 7/24 早 + 7/24 午后 cron 未 fire, 7/24 晚报 cron = 实际同 day 第二期 cron, master 时点 - 7/23 晚报 cron master 时点 = 24h 跨 day 边界 标志) + Pitfall 49 新一天 第一期 cron slot 边界 patch header 守门.
+
+**Pitfall 53 跨 day 边界 第一期 cron 加新维度 工作流**: master 时点 7/24 21:01 CST vs 7/23 晚报 cron master 时点 7/23 21:01 CST = 24h 跨 day 边界 + 加新维度 5 类 (美方 capex 烧钱 7天 续 + 港股流动性 + 摩根大通 跨段估值 + 智谱配售 + 双轨烧钱率) = **baseline 36 子轴 + 第 25 接力 立**.
+
+**Pitfall 6 fact-check fix 段 跨 slot 延续**: 7/14 午后 fact-check fix 段 (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19) + 7/14 晚报 (MiniMax -17.13% + 222.60 + 摩根大通 240 + 3400 亿) + 7/16 早 (智谱配售 1588-1698 + Anthropic+白宫 三协议) + 7/16 午后 (习近平主旨 + WAIC 史上最大 + 高级别会议 + 7/15 港股 + CPI -0.4% + PrismML) + 7/16 晚报 (长鑫 666 亿 + Hang Seng Tech +3% + 美方 PT 历史新高) + 7/17 早 (WAIC Day 1 启幕 + 习近平主旨 + Atlas 950 + 9 位图灵/诺奖) + 7/17 午后 (Day 1 schedule + 港股反向 + 商业化落地考) + 7/17 晚报 (Day 1 晚场 + 港股收盘 -2% + 美方 chip selloff) + 7/19 晚报 (Kimi K3 + Fable 5 7/20 落地 + 华为 SAIL 锚定) + 7/20 晚报 (WAIC 闭幕 + AI 渗透率 80% + 港股双轨反向 6h + 大模型双雄续跌) + 7/21 晚报 (智谱 +36.89% + 1GW 算力中心 + 中科加禾 + Kimi K3 算力告急 + 7/21 大奇迹日 长鑫申购落地) + 7/22 晚报 (摩根大通 PE 30→20 MiniMax 240→160 + 港股实战段反向) + 7/23 晚报 (Alphabet Q2 实测 + 美方 AI 烧钱阶段 启动 + FCF -5.9B + capex 195-205B + 港股周综) + 7/24 晚报 (美方 7/24 PT 实战段 8000 亿蒸发 + 港股 流动性 + 摩根大通 跨段 + 智谱配售 实测 + 双轨烧钱率) 所有 FACT-CHECK FIX 段 在 raw.md 中完整 preserved verbatim.
+
+**content.json 字数硬约束 PASS** (title=29 ≤40 / dek=155 ≤200 / why_this=192 ≤200 / pick labels=[29,20,13,15] all ≤35 / say_4=[37,29,42,45] all ≤50 / main_facts=9 ≥4 verbatim 5 类).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 (含 meta description per Pitfall 50) + 句首 ',  ' 0 + 双句号 0 + no AI-isms.
+
+**Render**: 18429 bytes, TTS 69.300s / 1110516B / 32000Hz mp3 danya_xuejie PASS 50-90s window per Pitfall 35 (中段文案 387 chars).
+
+**Pitfall 55 top-level index.html 5 处 surgical patch**: (i) topbar 21:00 周五 (ii) eyebrow 2026-07-24 · 晚报 (iii) featured h2 '美七巨头 8000 亿蒸发 + 智谱配售 313.75 亿 · 第 25 件 narrative 同期 对位 (baseline 36 子轴 + 第 25 接力)' (iv) pick-rationale rewrite 当期 (第 25 件 baseline 第 36 子轴 美方 7/24 实战段 + 港股 流动性 + 摩根大通 跨段估值 + 智谱配售 + 双轨烧钱率 = 25 期 + 第 25 接力 拼图起) (v) pick-cta href 2026-07-24-21evening precise anchor via per Pitfall 55(e) (vi) archive prepend 当期 entry 7/24 晚报 + 同时 archived pre-existing 7/23 晚报 entry preserved verbatim.
+
+**Pitfall 55(e) cta href precise anchor 实战**: 修复 v0.8.17 撞 archive sed 替换 bug — 用精确 anchor `<a href="daily/2026-07/2026-07-23-21evening/index.html" class="pick-cta">` (1 occurrence 唯一) 单独 patch, 不用 全字符串 sed 's/2026-07-23-21evening/2026-07-24-21evening/g' (会 误伤 archive 第 1 行 + pick-rationale 文本含 7/23 字串). 验证 cta href 唯一 patch + archive 第 1 行 href 仍 = 2026-07-23-21evening + archive 第 2 行 新 entry href = 2026-07-24-21evening = PASS.
+
+**验收**: ad-hoc verifier 33+ check 待跑 (raw 1084行/41 entries + index.html DOCTYPE/h1/title/4 stat-cards/div 26:26 + voice.mp3 1.1MB/ID3/69.30s/50-90s window + content.json spec 0 violations/9 facts/5 verbatim hits + em dash 0 + punctuation cleanup 0 + no AI-isms + EXACT MATCH prod 18429 bytes cf-cache + git tree clean + local==origin SHA match).
+
+**给后续 cron 接力 baseline**: 7/25 早 cron 第四十八期 (Microsoft FY26 Q4 7/29 T-4 倒数 + 美方 AI 烧钱阶段 续 + 港股 7/25 实战段续 + Mythos 周四学术回归 续 + Anthropic Fable 5 落地 120h+ 续 + WAIC 启幕后 8 天 续 = baseline 37 子轴 立 + 第 26 接力) + 7/25 午后 cron 第四十九期 留 baseline.

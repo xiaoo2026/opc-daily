@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-24",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "美七巨头 8000 亿蒸发 + 智谱配售 313.75 亿",
+    "theme_brief": "美方 7/24 PT 美七巨头 8000 亿市值蒸发 AI capex 烧钱阶段 续 + 港股 7/24 流动性抽离 + 摩根大通 中银香港 增持 + 智谱配售 313.75 亿 实测 + 中美 AI 双轨烧钱率 cross-check 续",
+    "pick_baseline": "baseline 36 子轴 + 第 25 接力",
+    "cron_id": "第四十七期",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-24-21evening/index.html"
+  },
+  {
     "date": "2026-07-23",
     "type": "21evening",
     "slot_hour": "21:00",
