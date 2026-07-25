@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-25",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "Fable 5 24 天 + 长鑫 7/27 295 亿 + Kimi K3 7/27 1687",
+    "theme_brief": "Anthropic Fable 5 6/12 US Gov 紧急出口管制 24 天 (6/30 lifted 7/1 重启) + 长鑫 7/27 科创板挂牌 295 亿元 + Kimi K3 7/27 全面开源 1687 > Opus 4.8 Max + Microsoft FY26 Q4 7/29 T-4 倒数 + 港股 7/25 半日 智谱 +25% 华虹宏力 +16% = 中美 AI 算力双层 实战段",
+    "pick_baseline": "baseline 37 子轴 + 第 26 接力",
+    "cron_id": "第四十八期",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-25-21evening/index.html"
+  },
+  {
     "date": "2026-07-24",
     "slot": "21evening",
     "type": "21evening",
