@@ -1,5 +1,19 @@
 # opc-daily STATE.md (loop-engineering pattern, 自 2026-07-05)
 
+## Where we are now (2026-07-26 07:01) — 第四十九期 cron 抵达
+- ✅ cron 第四十九期 (7/26 07:01 早报) 跑通 — 2026-07-26-morning 已发
+- ✅ 5 files committed: daily/2026-07/2026-07-26-morning/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-26-morning.md — commit 911a053 pushed origin main (从 47d7e5e)
+- ✅ wrangler deploy Version f90c567d-442e-498e-a5a7-446e4e1279d9 成功 — 020755.xyz/daily/2026-07/2026-07-26-morning/ bytes 待 cf-cache 落地
+- ✅ voice.mp3 (1177332B / 73.476s / 128kbps / 32kHz / danya_xuejie) 生成 PASS 50-90s window per Pitfall 35
+- ✅ content.json 字数硬约束 PASS title=27 ≤40 dek=151 ≤200 why=171 ≤200 pp labels=[19,24,22,12] all ≤35 say=[36,41,42,37] all ≤50 + 8 main_facts verbatim 5 类
+- ✅ Pitfall 37 humanizer audit pass em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup per Pitfall 50
+- ✅ top-level index.html featured + archive prepend surgical patch done (per Pitfall 55 + 55(e)) + 7/24 entry 破损 bug 修
+- 主题: 7/27 双重磅 T-1 + 7/29 双财报 T-3 · 第 27 件 narrative 同期 对位 (baseline 38 子轴 + 第 27 接力)
+- 📊 同步: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 = 11 段拼图 = 美方 + 中方 AI 算力双层 4 重磅实战段 周末 pre-market 拼图完整
+- 📝 raw 素材归档: raw/2026-07-26-morning.md (cp 自 raw/2026-07-25-21evening.md md5 e0abbb2e 一致 + patch header 第四十九期身份 + FACT-CHECK FIX 段 跨 slot 延续 preserved verbatim (Microsoft 7/29 / Meta 7/29 / Alphabet 7/22 + Fable 7/19 + Fable US Gov 紧急禁用 7/20) + baseline 37 子轴 第 26 接力 preserved verbatim + 跨 day 边界 第一期 cron 加新维度 工作流 patch_marker (per Pitfall 53) 注入 + 周末 pre-market cron 真空窗口 加新维度 5 类 (a) 7/27 周一 长鑫科技 科创板挂牌实战段 T-1 倒数 (b) 7/27 周一 Kimi K3 全面开源实战段 T-1 倒数 (c) 美方 7/25-7/26 周末 pre-market 段 = capex 烧钱率 续 + Fable 5 紧急禁用 6 天 续 (d) 7/29 周三 Microsoft + Meta 双财报 T-3 倒数 (e) Anthropic + 白宫 7/19 三次延期 + 7/20 US Gov 紧急禁用 6 天 真空 跨 day 边界 第二期 cron 加新维度 工作流. master 7/26 07:01 CST 拍板段 verbatim)
+- 📮 TG 7069165189 sent (fallback: QQ 7069165189)
+- 关键新维度 5 类: (a) 7/27 周一 长鑫科技 科创板挂牌实战段 T-1 倒数 = 科创板史上第二大 IPO (仅次于中芯国际 2020 年 532 亿) + Q1 营收 +719% + 上半年 2244-2544% 净利润同比 + 全球份额 7.67% + 苹果测试长鑫 DRAM 用于中国市场设备 (per 网易 5/27 verbatim + 观点网 + 新浪财经 verbatim); (b) 7/27 周一 Kimi K3 全面开源实战段 T-1 倒数 = 2.8 万亿参数 + 100 万 Token 上下文 + 896 个专家只激活 16 个 + GDPval-AA 1687 分 > Claude Opus 4.8 Max 1600 分 + 1.4TB 显存 + API 100元/百万 Token + ARR 3 亿美元 + 投前估值 315 亿美元 7 倍跃升 + 赴港上市准备 (per gate.com verbatim + INSIDE verbatim + ZAKER verbatim + HKET + Bloomberg); (c) 美方 7/25-7/26 周末 pre-market 段 = capex 烧钱率 续 + Fable 5 紧急禁用 6 天 续 + Microsoft 7 款自研模型 7/25 周五发布 = 中美 AI 双轨 实战段; (d) 7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-3 倒数 = 美方头部 AI 公司 FCF 烧钱阶段 7/22-7/29 跨 7 天 双连续实战段 收官段 + 商业化拐点; (e) Anthropic + 白宫 7/19 三次延期 + 7/20 US Gov 紧急禁用 6 天 真空 跨 day 边界 第二期 cron 加新维度 工作流.
+
 > 这文件给 opc-daily cron / 全 loop shared state. 任何 sub-agent 起来接 opc-daily 第一件事是 read this.
 
 ## Where we are now (2026-07-23 21:00) — 第四十四期 cron 抵达
