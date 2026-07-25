@@ -1,0 +1,52 @@
+{
+  "title": "Fable 5 24 天 + 长鑫 295 亿 + Kimi K3 1687",
+  "dek": "美方 7/24 capex 烧钱阶段 续 + Anthropic Fable 5 US Gov 紧急出口管制 24 天 (6/12 lifted 7/1) + 长鑫 7/27 科创板挂牌 + Kimi K3 全面开源 = 中美 AI 算力双层 实战段 第 26 件 baseline 37",
+  "why_this": "7/24 8000 亿 + 智谱 313.75 亿;7/25 出 中美 AI 算力双层: Fable 5 紧急管制 24 天 + 长鑫 7/27 295 亿 + Kimi K3 开源 1687 + Microsoft 7/29 T-4. 加新维度 4 = 第 26 接力 baseline 37.",
+  "pick_points": [
+    {
+      "num": "6/12 lifted 7/1",
+      "label": "Fable 5 紧急出口管制 24 天"
+    },
+    {
+      "num": "295 亿",
+      "label": "长鑫 7/27 挂牌 科创板第二大"
+    },
+    {
+      "num": "> Opus 4.8 Max",
+      "label": "Kimi K3 7/27 全面开源 跑分 1687"
+    },
+    {
+      "num": "T-4 天",
+      "label": "Microsoft FY26 Q4 7/29 T-4 倒数"
+    }
+  ],
+  "main_facts": [
+    "<blockquote><em>Anthropic Fable 5 + Mythos 5 6/12 US Gov 紧急出口管制 24 天 (6/30 lifted 7/1 重启) + 7/19 商业化层 二次延期 至 8/19 Claude Code 配额 50%</em></blockquote>",
+    "<p>美方 7/24-7/25 续 段 双轨 capex 烧钱率 + Anthropic Fable 5 / Mythos 5 紧急出口管制 24 天 实战段 (per cnbc 6/12 verbatim \"Anthropic Disables Access to Fable 5 and Mythos 5 to Comply with Government Directive\" + ai-visibility verbatim \"On 30 June 2026 the US Commerce Department withdrew the export-control directive, and on 1 July Anthropic redeployed Fable 5 and Mythos 5 globally\" + explainx.ai 7/19 verbatim \"Fable 5 Extended July 19 Anthropic extended Claude Code weekly limits 50% higher through August 19 2.2M+ views\"): <strong>6/12 US Gov 紧急禁用 Fable 5 + Mythos 5</strong> (Anthropic 全面禁用 18 天 6/12-6/30 + 7/1 lifted 重新部署全球) + <strong>7/19 商业化层 二次延期</strong> 至 8/19 Claude Code 配额 50% (US Gov 出口管制 层 lifted 后 商业化层 续 单独延期) + <strong>7/25 收官段 第 24 天</strong> (US Gov 出口管制 已 lifted + 商业化延期 持续中) = 中美 AI 算力 双 layer 实战段 信号 1.</p>",
+    "<blockquote><em>长鑫科技 7/27 科创板挂牌 295 亿元 = 科创板史上第二大 IPO + Q1 营收 +719% + 净利润 247.62 亿 同比扭亏</em></blockquote>",
+    "<p>长鑫科技 7/27 科创板挂牌 (per 网易 7/16 verbatim \"长鑫科技过会！拟募资295亿元 科创板史上第二大IPO项目\" + Yahoo Finance verbatim \"長鑫存儲 7/27 掛牌 募資 295 億人民幣 創今年亞洲最大 IPO\"): 拟募资 295 亿元 = 科创板史上第二大 (仅次于中芯国际 2020 年 532 亿) + Q1 营收 508 亿元 +719.13% YoY + 归母净利润 247.62 亿元 同比扭亏 = 日均盈利超 2.75 亿 + 2026 上半年预计营收 1100-1200 亿 +612.53% ~ +677.31% YoY + 净利润 500-570 亿 +2244% ~ +2544% YoY = 国产 DRAM 巨头 商业化拐点 + 全球份额 7.67% (三星 海力士 美光 总合占 超 90%) + 朱一明 锁定 10 年不出售股权 + 7.68 亿股 200 亿元 A股史上最大个人员工股权激励 + 苹果测试长鑫 DRAM 用于中国市场 = 中美 AI 算力 双 layer 实战段 信号 2.</p>",
+    "<blockquote><em>Kimi K3 7/27 全面开源 2.8 万亿参数 跑分 1687 > Claude Opus 4.8 Max 1600 + ARR 3 亿美元 + 赴港上市准备</em></blockquote>",
+    "<p>Kimi K3 7/17 凌晨发布 + 7/27 全面开源 (per gate.com verbatim \"月之暗面推出Kimi K3 拥有2.8万亿参数 全部权重将于7月27日开源\" + INSIDE verbatim \"2.8万亿 月之暗面发布全球最大开源模型\" + Bloomberg verbatim \"公司正在推进赴港上市准备\"): 2.8 万亿参数 + 100 万 Token 上下文 + 896 个专家 只激活 16 个 稀疏度纪录 + GDPval-AA v2 测试 1687 分 超 Anthropic Claude Opus 4.8 Max 1600 分 (仅次于 Claude Fable 5 Max + GPT-5.6 Sol Max) + K3 完整权重 7/27 全面开源 + 1.4TB 显存 + 推理只需少量算力 + API 输出定价 100 元 / 百万 Token = 国产首个双位数 + ARR 突破 3 亿美元 + 投前估值 315 亿美元 (vs 去年 12 月 43 亿美元 + 7 倍跃升) + K3 跑分超 Claude Opus 4.8 Max = 国产开源模型 算力告急 反向 商业化拐点 信号 3.</p>",
+    "<blockquote><em>美方 7/24-7/25 capex 烧钱率 续 + Microsoft FY26 Q4 7/29 T-4 倒数 + Meta Q2 7/29 T-4</em></blockquote>",
+    "<p>美方 7/24 续 段 + 7/25 收官段 双轨 capex 烧钱率 (per 7/24 baseline 36 verbatim cross-slot 引用 per 8a 合法): <strong>Microsoft FY26 Q4 release 7/29 after-market close PT = T-4 天 倒数</strong> (per news.microsoft.com/source/2026/07/08 verbatim \"Microsoft Corp. will publish fiscal year 2026 fourth-quarter financial results after the close of the market on Wednesday, July 29, 2026\") + <strong>Meta Q2 release 7/29</strong> (per financecalendar verbatim) + Alphabet Q2 实测生效 7/23 CapEx $44.9B 单季最高 + FCF -5.9B 史上首次 negative + capex 指引 195-205B 上调 + 美七巨头 7/24 -3.86% 8000 亿美元市值蒸发 = 美方头部 AI 公司 烧钱阶段 启动 + 商业化拐点 + Microsoft 7/29 倒数 T-4 = 跨段 收官段 信号 4.</p>",
+    "<blockquote><em>港股 7/25 半日 智谱 +25% 华虹宏力 +16% MiniMax +11% + 周末 pre-market 续</em></blockquote>",
+    "<p>港股 7/25 半日 (周五 close 前) 实战段 (per RTHK verbatim + eastmoney verbatim): 恒生科技 +1.83% 报 4838 + 智谱 涨超 25% (配售 313.75 亿 落地 后 反向 反弹) + 华虹宏力 +16% (国产 DRAM 算力 + 长鑫 7/27 挂牌 预期) + MiniMax +11% (跟 智谱 反向 同日 大模型 双雄 反向) + 中芯国际 +8% (国产半导体 续) + 7/25 周末 pre-market 段 = 港股 7/25 续 baseline 36 + 7/24 续 baseline 36 双向 cross-check 拼图完整 + 7/25 美方 + 中方 双轨 AI 算力 双 layer 实战段 收官段 = 第 26 件 (baseline 37 子轴 立 + 第 26 接力).</p>"
+  ],
+  "say_4": [
+    "Fable 5 紧急出口管制 24 天 7/1 lifted 重启。",
+    "长鑫 7/27 科创板挂牌 295 亿 + Q1 营收 +719% = 中美 DRAM 算力双层。",
+    "Kimi K3 7/27 全面开源 2.8 万亿 跑分 1687 > Opus 4.8 Max。",
+    "Microsoft FY26 Q4 7/29 T-4 + Meta Q2 T-4 双锚点 倒数。"
+  ],
+  "not_picked": [
+    "<strong>候选 B · Alphabet 7/23 Q2 烧钱 5.9B 续写 单一</strong> — per Pitfall 17 dilution, 7/24 晚报 baseline 36 + 7/23 晚报 baseline 35 已 capture Alphabet release 段 + FCF negative + capex 195-205B 上调, 7/25 续写 = 同主轴 dilution drop. 不构成 跨 day 边界 第一期 cron 加新维度 4 类 算力双层 收官段 cross-check 拼图完整.",
+    "<strong>候选 C · 港股 7/25 半日 单段</strong> — per 港股 单段 7/25 半日 不够构成 一日 1 件 narrative; 7/25 同时段 美方 7/24 capex 烧钱 续 + Anthropic Fable 5 24 天 + 长鑫 7/27 + Kimi K3 7/27 开源 = 4 维 cross-check 拼图完整 比 单段 港股 7/25 半日 更值得读 per 不变量 #5.",
+    "<strong>候选 D · 美方 capex 7/29 T-4 倒数 单段</strong> — per Pitfall 42 实测生效时点 (> master 时点 + 2h drop 实测段), Microsoft 7/29 release 实测生效时点 = 7/29 after-market close PT = 7/30 11:00 CST, master 时点 7/25 21:01 CST = 实测生效时点 - 7/30 11:00 CST = -5 天 = drop 实测段 + 写倒数段 (per 7/19 baseline 31 + 7/21 baseline 33 已 capture 倒数段, 续写 = 同主轴 dilution drop)."
+  ],
+  "stat_card_date_label": "7/25 周五",
+  "date": "2026-07-25",
+  "slot_label": "晚报",
+  "slot_hour": "21:00",
+  "hero_meta_short": "21:00 · 周五 · 覆盖 7/25 15:00 ~ 7/25 21:00 · Fable 5 24 天 + 长鑫 295 亿 + Kimi K3 1687",
+  "main_h2": "Una 怎么看 · 中美 AI 算力双层 24h+ 实战段"
+}
