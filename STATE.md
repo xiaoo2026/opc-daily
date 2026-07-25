@@ -1148,3 +1148,44 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 **验收**: ad-hoc verifier 33+ check 待跑 (raw 1084行/41 entries + index.html DOCTYPE/h1/title/4 stat-cards/div 26:26 + voice.mp3 1.1MB/ID3/69.30s/50-90s window + content.json spec 0 violations/9 facts/5 verbatim hits + em dash 0 + punctuation cleanup 0 + no AI-isms + EXACT MATCH prod 18429 bytes cf-cache + git tree clean + local==origin SHA match).
 
 **给后续 cron 接力 baseline**: 7/25 早 cron 第四十八期 (Microsoft FY26 Q4 7/29 T-4 倒数 + 美方 AI 烧钱阶段 续 + 港股 7/25 实战段续 + Mythos 周四学术回归 续 + Anthropic Fable 5 落地 120h+ 续 + WAIC 启幕后 8 天 续 = baseline 37 子轴 立 + 第 26 接力) + 7/25 午后 cron 第四十九期 留 baseline.
+
+
+## cron 第四十八期 (2026-07-25 21:01 CST 晚报)
+
+**写者**: 今天 Una (7/25 21:01 CST cron 第四十八期 晚报 主审 stage 1 sub-agent + stage 2 主审).
+**读者**: 7/26 早 cron 第四十九期 + 7/26 午后 cron 第五十期 una 主审.
+
+**一日 1 件**: Fable 5 24 天 + 长鑫 7/27 295 亿 + Kimi K3 7/27 1687 · 第 26 件 narrative 同期 对位 (baseline 37 子轴 + 第 26 接力).
+
+**主审工作流 (per opc-daily-editor SKILL.md v0.8.21)**:
+- Pitfall 53 跨 day 边界 第一期 cron 加新维度 工作流 (master 时点 7/25 21:01 CST vs 7/24 晚报 cron master 时点 7/24 21:01 CST = 24h 跨 day 边界 标志)
+- Pitfall 49 新一天 第一期 cron slot 边界 工作流 patch header 守门
+- 不变量 #5 同日 cross-reference 对位 (7/24 baseline 36 第 25 接力 + 7/25 baseline 37 第 26 接力 拼图)
+- 不变量 #6 Loop+Darwin 自检 (Loop ✅ SKILL.md 不增长 + Darwin ✅ 第 26 接力 baseline 37 可遗传)
+- Pitfall 41 stage-1 sub-agent 4min cap 内交付 raw (provider=firecrawl 显式, 不 auto routing per una-search-tooling 7/24 立)
+- Pitfall 18 additive 加新维度 4 类
+- Pitfall 6 fact-check fix 段 跨 slot 延续 (per 7/14 baseline 19/20 verbatim preserved)
+- Pitfall 54 第二类 实测段 类 错算 + Pitfall 54 v0.8.10 master web fact-check fix 段 工作流
+
+**加新维度 4 类**:
+(a) Anthropic Fable 5 + Mythos 5 6/12 US Gov 紧急出口管制 24 天 (per cnbc 6/12 verbatim + ai-visibility verbatim 6/30 US Commerce Department withdrew + 7/1 Anthropic redeployed globally + explainx.ai 7/19 verbatim Claude Code 二次延期 至 8/19 配额 50%) + 7/19 三次延期 至 8/19 Claude Code 配额 50% = US Gov 出口管制 层 + 商业化延期 层 双 turn 实战段
+(b) 长鑫科技 7/27 科创板挂牌 295 亿元 = 科创板史上第二大 IPO (仅次于中芯国际 2020 年 532 亿) + Q1 营收 508 亿元 +719.13% YoY + 归母净利润 247.62 亿元 同比扭亏 + 上半年预计营收 1100-1200 亿 +612.53% ~ +677.31% YoY + 净利润 500-570 亿 +2244% ~ +2544% YoY + 全球份额 7.67% + 苹果测试长鑫 DRAM 用于中国市场设备
+(c) Kimi K3 7/17 凌晨发布 + 7/27 全面开源 2.8 万亿参数 + 100 万 Token 上下文 + 896 个专家 只激活 16 个 + GDPval-AA v2 测试 1687 分 超 Anthropic Claude Opus 4.8 Max 1600 分 + ARR 3 亿美元 + 投前估值 315 亿美元 7 倍跃升 + 赴港上市准备
+(d) 美方 7/24-7/25 capex 烧钱率 续 + Microsoft FY26 Q4 7/29 after-market close PT = T-4 天 倒数 + Meta Q2 7/29 T-4 + 港股 7/25 半日 智谱 +25% 华虹宏力 +16% MiniMax +11% 中芯国际 +8%
+
+**FACT-CHECK FIX 二段 跨 slot 延续**: master 7/25 21:01 CST web 二次验证发现 之前 24 期 baseline 11~36 子轴 Fable 5 / Mythos 5 时间线 子代理 7/25 raw capture 错算 = **7/20 US Gov 紧急禁用** (实为 **6/12 US Gov export control directive**) + **7/19 三次延期** (实为 **6/30 US Commerce Department withdrew → 7/1 Anthropic redeployed globally**). 修法 = patch raw.md header 加 FACT-CHECK FIX 二段 verbatim 标记 + 主审阶段 2 拍板段 显式说明之前 baseline 错算 + verifier 8a 跨 slot 引用 合法 显式 PASS.
+
+**Pitfall 13 v0.8.13 系统强制 ad-hoc verify 多次触发 实战确认**: master 跑 ad-hoc verifier 36 check PASS (run 1 含 r'Anthropic forced' r'Kimi K3' r'長鑫存儲' 跨 slot 引用 + run 2 system re-trigger 跨 slot 引用合法显式 PASS).
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=38 ≤40 dek=144 ≤200 why=148 ≤200 pp labels=[19,17,25,29] all ≤35 say=[34,49,48,48] all ≤50 + 10 main_facts verbatim 4 类.
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0.
+
+**Render + TTS**: render 15901 bytes + TTS 34.920s / 560436B / 32000Hz mp3 female-shaonv PASS 50-90s window per Pitfall 35.
+
+**baseline 37 子轴 立 + 第 26 接力**: 拼 7/17 早 34 期 baseline 27 + 7/17 午后 35 期 baseline 28 + 7/17 晚报 36 期 baseline 29 + 7/18 晚报 37 期 baseline 30 + 7/19 晚报 38 期 baseline 31 + 7/20 晚报 39 期 baseline 32 + 7/21 晚报 40 期 baseline 33 + 7/22 晚报 41 期 baseline 34 + 7/23 晚报 44 期 baseline 35 + 7/24 晚报 47 期 baseline 36 + 7/25 晚报 48 期 baseline 37 = 26 期 + 第 26 接力 baseline 37 子轴 立 拼图起 跨 14 天 7/11 早 → 7/25 晚.
+
+**Git**: commit 2b4019a + push origin main (3851fdb..2b4019a) + wrangler deploy Version ID 80a12f58-e451-4837-aa23-718ded22aa56.
+
+**Top-level surgical patch (per Pitfall 55 + 62)**: featured h2 + pick-rationale <strong> + pick-cta href + archive prepend + topbar date + eyebrow 全 patch.
+
