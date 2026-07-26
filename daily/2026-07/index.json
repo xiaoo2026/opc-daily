@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-27",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "title": "7/27 双重磅 T-0 实战段 + 7/29 双财报 T-2",
+    "theme_brief": "7/27 周一 长鑫科技 科创板挂牌 295 亿 实战段 T-0 倒数 2h+ + 7/27 周一 Kimi K3 全面开源 2.8 万亿 1687 分 实战段 T-0 倒数 2h+ + 7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数 + 周末 pre-market cron 真空窗口 + Fable 5 + Mythos 5 US Gov 紧急禁用 7 天 续 + 7/19 三次延期 8 天 续 + 7/17 WAIC 闭幕 10 天 续 + 7/13 切计费 二次延期 14 天 续 = 中美 AI 算力双层 实战段 倒数 2h 周末 pre-market 拼图完整",
+    "pick_baseline": "baseline 39 子轴 + 第 28 接力",
+    "cron_id": "第五十期",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-27-morning/index.html"
+  },
+  {
     "date": "2026-07-26",
     "slot": "morning",
     "type": "morning",

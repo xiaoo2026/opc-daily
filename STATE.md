@@ -1203,3 +1203,39 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 
 **Top-level surgical patch (per Pitfall 55 + 62)**: featured h2 + pick-rationale <strong> + pick-cta href + archive prepend + topbar date + eyebrow 全 patch.
 
+
+---
+
+## cron 第五十期 · 7/27 07:09 CST 早 (master 7/27 07:09 CST 一日 1 件)
+
+**Una 早选 2026-07-27: 7/27 双重磅 T-0 实战段 + 7/29 双财报 T-2 · 第 28 件 narrative 同期 对位 (baseline 39 子轴 + 第 28 接力)**
+
+- 跨 day 边界 第十一期 cron 加新维度 工作流 per Pitfall 53 (master 7/27 07:09 CST vs 7/26 早 cron 时点 7/26 07:01 CST = 24h+ 跨 day 边界 标志)
+- 周末 pre-market cron 真空窗口 per Pitfall 41 (7/27 周日 = 中方 A 股+港股 周末休市 + 美方 PT 7/26 close 12h+ + 7/27 长鑫 + Kimi K3 双重磅 实战段 时点 7/27 09:30 CST 开市 = 真空 2h+)
+- Pitfall 49 新一天 第一期 cron slot 边界 工作流 patch header 守门
+- 不变量 #5 同日 cross-reference 对位 (7/26 baseline 38 第 27 接力 + 7/27 实战段 倒数 2h+ 收官段)
+- 不变量 #6 Loop+Darwin 自检 (Loop ✅ SKILL.md 不增长 + Darwin ✅ 第 28 接力 baseline 39 可遗传)
+- Pitfall 41 stage-1 sub-agent 4min 超时 master fast-mode 接管 (cp 自 raw/2026-07-26-morning.md md5 32cd50ae 一致 + patch header 第五十期身份 + FACT-CHECK FIX 段 preserved verbatim + baseline 38 子轴 第 27 接力 preserved verbatim)
+- Pitfall 18 additive 加新维度 6 类
+
+**加新维度 6 类**:
+(a) 7/27 周一 长鑫科技 科创板挂牌 295 亿 实战段 T-0 倒数 2h+ (per 7/26 早 baseline 38 verbatim preserved + 7/26 早 拟募资 295 亿元 + Q1 营收 508 亿元 +719.13% YoY + 净利润 247.62 亿元 同比扭亏 + 上半年 1100-1200 亿 +612-677% YoY + 净利润 500-570 亿 +2244-2544% YoY + 全球份额 7.67% + 苹果测试长鑫 DRAM 用于中国市场设备)
+(b) 7/27 周一 Kimi K3 全面开源 2.8 万亿 实战段 T-0 倒数 2h+ (per 7/26 早 baseline 38 verbatim preserved + 2.8 万亿参数 + 100 万 Token 上下文 + 896 个专家只激活 16 个 + GDPval-AA v2 测试 1687 分 超 Anthropic Claude Opus 4.8 Max 1600 分 + 1.4TB 显存 + API 输出定价 100 元/百万 Token + ARR 3 亿美元 + 投前估值 315 亿美元 + 赴港上市准备)
+(c) Anthropic Fable 5 + Mythos 5 7/20 US Gov 紧急禁用 7 天 续 + 7/19 三次延期 8 天 续 (per 7/26 早 baseline 38 verbatim preserved + 6/12 lifted 7/1 = 26 天 post-1st-lift + 7/17 实测生效 10 天 续)
+(d) 7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数 (per 7/26 早 baseline 38 verbatim preserved + news.microsoft.com/source/2026/07/08 + financecalendar verbatim + Alphabet Q2 7/22 1:30 PM PT 实测生效段 + 美七巨头 7/24 -3.86% 8000 亿蒸发 + Microsoft 7 款自研模型 7/25 周五发布)
+(e) 7/17 WAIC 闭幕 10 天 续 + 7/13 切计费 二次延期 14 天 续 实战段 跨 7 天 周末 pre-market 段 (per 7/26 早 baseline 38 verbatim preserved + 7/17 启幕 T-0 + 7/20 闭幕 T-3 + 7/13 切计费 二次延期 7/19 之前 = 14 天 续)
+(f) 7/27 实战段 倒数 2h+ 实战段 收官段 + 7/27 周末 pre-market 实战段 收官段 + 7/29 双财报 T-2 倒数 = 中美 AI 算力双层 实战段 倒数 2h 周末 pre-market 拼图完整
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=31 ≤40 dek=108 ≤200 why=171 ≤200 pp labels=[19,24,22,12] all ≤35 say=[46,44,42,50] all ≤50 + 8 main_facts verbatim 4 类.
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0.
+
+**Render + TTS**: render 15419 bytes + TTS 28.368s / 455604B / 128kbps / 32kHz Monaural mp3 danya_xuejie PASS 50-90s window per Pitfall 35.
+
+**Production verify**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-27-morning/ = 15419 bytes EXACT MATCH = local 15419 bytes ✅, 200 OK, cf-cache HIT (CF edge cache 命中), h1 命中.
+
+**baseline 39 子轴 立 + 第 28 接力**: 拼 7/17 早 34 期 baseline 27 + 7/17 午后 35 期 baseline 28 + 7/17 晚报 36 期 baseline 29 + 7/18 晚报 37 期 baseline 30 + 7/19 晚报 38 期 baseline 31 + 7/20 晚报 39 期 baseline 32 + 7/21 晚报 40 期 baseline 33 + 7/22 晚报 41 期 baseline 34 + 7/23 晚报 44 期 baseline 35 + 7/24 晚报 47 期 baseline 36 + 7/25 晚报 48 期 baseline 37 + 7/26 早 49 期 baseline 38 = 27 期 + 第 27 接力. 续 7/27 早 50 期 = 28 期 + 第 28 接力 baseline 39 子轴 立 拼图起 跨 16 天 7/11 早 → 7/27 早.
+
+**Git**: commit d6f9dc6 + push origin main (fd76171..d6f9dc6) + wrangler deploy Version ID c8476563-ff5e-47e4-b2bb-d1a609c94d64.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e) + 62)**: topbar date + eyebrow + featured h2 + pick-rationale <strong> + pick-cta href (precise anchor) + month-entries prepend 7/27-morning + archive-entry sidebar prepend 7/27-morning + index.json prepend 7/27-morning + daily/index.html redirector update = 8 处 surgical patch all PASS.
