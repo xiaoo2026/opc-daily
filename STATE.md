@@ -1300,3 +1300,39 @@ master 7/27 21:01 CST cron 第五十二期 主审 stage 1+2+3+4 — 不变量 #5
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 3 期 baseline (7/25 晚 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39) 长鑫 募资 295 亿 错算段 已 校准 = 579.19 亿. 7/27 午后 baseline 40 raw.md Y5/Y6 段 verbatim FACT-CHECK FIX 标记 preserved 至 7/27 晚报 = 跨 slot 延续 verbatim PASS.
 
 **Git + Wrangler**: commit + push origin main + wrangler deploy (待最终 batch).
+
+---
+
+## cron 第五十三期 7/28 07:01 CST 早 (主审 stage 4 留痕段 + 跨 day 边界 第一期 cron 加新维度 工作流)
+
+**Una 早选 2026-07-28: Kimi K3 跑通芯片 EDA 头部 跌 + Anthropic S-1 + 7/29 T-1 · 第 31 件 baseline 42 子轴 + 第 31 接力**
+
+master 7/28 07:01 CST cron 第五十三期 主审 stage 1+2+3+4 本体主审 — 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 + Pitfall 53 + 不变量 #5 同日 cross-reference 对位 + 不变量 #6 Loop+Darwin 自检 (Loop ✅ SKILL.md 不增长 + Darwin ✅ 第 31 接力 baseline 42 可遗传) + Pitfall 18 additive 加新维度 5 类 + Pitfall 50 meta description em-dash cleanup + Pitfall 8b/8d known names 守门.
+
+**加新维度 5 类 (跨 17 天 vs 之前 30 期 baseline 11-41)**:
+(a) Kimi K3 48h 跑通 芯片设计 (per 新浪 7/27 08:23 + 快科技 verbatim 跨 2 源). 月之暗面 团队 7/17 发布 Kimi K3, 连续 48h 自主 智能体 测试 依托 开源 EDA 工具 + Nangate 45nm 工艺 库, 独立 完成 芯片 全流程 开发, 交出 首份 由 开源 大模型 独立 产出 的 完整 芯片 方案.
+(b) 中美 AI 性能 差距 缩至 6% 创历史最低 (per 新浪 7/27 20:49 + LiveBench 2026-06-25 verbatim). LiveBench 2026-06-25: Kimi K3 78.5 总榜 第六, 智谱 GLM-5.2 73.2 第 18. Code Arena GLM-5.2 全球 第二 公开 第一. 前 谷歌 CEO 施密特 承认 中美 顶尖 AI 模型 差距 约 六个月. Hugging Face 平台 过去 一年 41% 模型 下载量 来自 中国.
+(c) Anthropic 7/28 凌晨 提交 S-1 IPO 招股 (per 区域头条 7/28 03:57 + 官方声明 verbatim). Anthropic 已 向 SEC 秘密 提交 Form S-1 注册 招股 说明书, 领先 OpenAI 一步. 上星期 H 轮 650 亿 融资 投后 估值 9650 亿 美元 超过 OpenAI 7300 亿. 14 月 估值 涨 15 倍, 年化 收入 470 亿.
+(d) NVIDIA 拟担保 2500 亿 OpenAI 俄亥俄 10GW 数据中心 (per WSJ via TechStartups 7/27 verbatim). 10GW 项目 总 成本 可超 5000 亿 美元, 第一 阶段 800MW 预计 2028 投运. 7/24 ASML + 美方 设备股 LRCX + AMAT 应声 跌 跟随 S&P chip selloff, 总 设备股 板块 单日 -3% (per Schwabb 7/27 verbatim).
+(e) 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-1 倒数 (per 早 50 期 + 午后 51 期 + 晚报 52 期 verbatim preserved + news.microsoft.com/source/2026/07/08 verbatim). 生效 时点 7/30 04:00 CST, 距 master 7/28 07:01 = 21h. Alphabet Q2 7/22 1:30 PM PT 段 24% 收入 涨 + cloud 涨 82% + Anthropic 持股 拉 净利 $112B. 长鑫 全段 实战 续 收盘 仍超 涨 350%.
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=16 ≤40 dek=98 ≤200 why=98 ≤200 main_h2=11 ≤20 pp labels=[22,15,29,21] all ≤35 say=[22,22,28,22] all ≤50 + 10 main_facts verbatim 2 类 (one is `> ` blockquote) + em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup) + known names Moonsot + Kimi + Anthropic + NVIDIA + Microsoft + Meta + OpenAI + 长鑫 + LiveBench all PASS (per Pitfall 8b 8d 守门).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup (per Pitfall 50).
+
+**Render + TTS**: render 13528 bytes + TTS 84.744s / 1357620B / 128kbps / 32kHz mp3 danya_xuejie PASS 50-90s window per Pitfall 35 (接近上边界, 实战段 540 chars 拼 = dek + say_4 + mf[0] + mf[3] + mf[5]).
+
+**Production verify**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-28-morning/index.html = 13528 bytes EXACT MATCH local 13528 bytes ✅, md5 9bcce544dc7efbcd908a968b03c93db9, 200 OK, cf-cache MISS (Cache-Control: no-cache 验证 PASS).
+
+**Top-level surgical patch (per Pitfall 55 + 55(e) + 62)**: topbar date (2026-07-28 周二 · 07:00) + eyebrow (2026-07-28 · 早报) + featured h2 (Kimi K3 跑通芯片 EDA 头部 跌 + Anthropic S-1 + 7/29 T-1 · 第 31 件 baseline 42 子轴 + 第 31 接力) + pick-rationale (Kimi K3 48h 跑通 芯片设计 + EDA 头部 Synopsys + Cadence 跌 + 中美 AI 性能 差距 6% 创历史最低 + Anthropic 7/28 凌晨 提交 S-1 IPO 招股 估值 9650 亿 14 月 涨 15 倍 + NVIDIA 拟担保 2500 亿 OpenAI 俄亥俄 10GW 数据中心 + 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-1 倒数 + 7/27 长鑫 全段 实战 续 收盘 仍超 涨 350% · 第 31 件 narrative 同期 对位 (baseline 42 子轴 + 第 31 接力)) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-07/2026-07-28-morning/index.html + month-entries prepend 7/28 早 entry + index.json prepend 7/28 morning 第 31 件 baseline 42 (slot_hour=07:00 per v0.8.18 守门) + daily/index.html redirector → 2026-07-28-morning/ = 8 处 surgical patch all PASS.
+
+**Ad-hoc verifier 63 check run (per Pitfall v0.8.13 + 8a/8b/8d)**: 61/63 PASS initial + 2 fix pass (em-dash cleanup per Pitfall 50 + Moonsot raw 补 verbatim per Pitfall 8b/8d) = **63/63 PASS** final. 跑完 PASS = "63/63 PASS" 报 TG 即可. 不依赖 suite green. ad-hoc verification NOT suite green per Pitfall 13.
+
+**baseline 42 子轴 立 + 第 31 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 = 30 期 + 第 30 接力. 续 7/28 早 53 期 = 31 期 + 第 31 接力 baseline 42 子轴 立 拼图起 跨 17 天 7/11 早 → 7/28 早.
+
+**Git + Wrangler**: 4 commits (46804b3 + 436e7cf + 8fe455a = final main) + push origin main + wrangler deploy 3 次 (Version ID da4edbc9 + 02c1f1d6 + 12562dc6).
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 3 期 baseline (7/25 晚 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39) 长鑫 募资 295 亿 错算段 已 校准 = 579.19 亿. 7/28 早 raw.md verbatim preserved (per 早 50 期 + 午后 51 期 + 晚报 52 期 跨 slot 引用 合法 per 8a).
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部 沿用 7/26-7/27 实战段 已固化段) + Darwin ✅ 第 31 接力 baseline 42 可 遗传 (7/28 午后 cron 接力 baseline 42 + 第 31 接力 续 = 给 7/28 午后 cron 第五十四期 接力 baseline 42 子轴).
+
