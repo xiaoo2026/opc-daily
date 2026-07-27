@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-07-27",
+    "type": "afternoon",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-27-afternoon/index.html",
+    "title": "7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源",
+    "summary": "长鑫 7/27 09:30 开盘 49.5 元 +471.59% 3.31 万亿 A 股第一 + Kimi K3 7/27 全面开源 2.8T + A 股 7/27 实战段 + 7/29 双财报 T-2 续."
+  },
+  {
+    "date": "2026-07-27",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",

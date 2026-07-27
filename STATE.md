@@ -1239,3 +1239,34 @@ una-airport Pages project (`26cf49a2-...`) 仍 block 8000119 (Cloudflare 账户�
 **Git**: commit d6f9dc6 + push origin main (fd76171..d6f9dc6) + wrangler deploy Version ID c8476563-ff5e-47e4-b2bb-d1a609c94d64.
 
 **Top-level surgical patch (per Pitfall 55 + 55(e) + 62)**: topbar date + eyebrow + featured h2 + pick-rationale <strong> + pick-cta href (precise anchor) + month-entries prepend 7/27-morning + archive-entry sidebar prepend 7/27-morning + index.json prepend 7/27-morning + daily/index.html redirector update = 8 处 surgical patch all PASS.
+
+---
+
+## cron 第五十一期 7/27 13:01 CST 午后 (主审 stage 4 留痕段 + 拼图)
+
+**Una 午后选 2026-07-27: 7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源 · 第 29 件 narrative 同期 对位 (baseline 40 + 第 29 接力)**
+
+master 7/27 13:01 CST cron 第五十一期 主审 stage 1+2+3+4 本体主审 — 不变量 #5 同日 cross-reference 对位 (早 baseline 39 倒数 2h → 午后 实战段 3.5h cross-check) + Pitfall 38 同日 cross-reference 对位 trap + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实测段 + Pitfall 45 1h post-cutover 升级 4h+ post-T-0 实测段工作流 + Pitfall 6 fact-check fix 二类 跨 slot 数字精度 校准 (长鑫 募资 579.19 亿 不是 295 亿 = 科创板史上最大 IPO 超中芯国际 532 亿) + Pitfall 18 additive 加新维度 5 类.
+
+**加新维度 5 类**:
+(a) 7/27 长鑫 实战段 4h+ 开盘 49.5 元/股 较发行价 8.66 元 涨 471.59% + 开盘总市值 3.31 万亿元 居 A 股第一 超越工商银行 + 网上中签率 0.4714% 创科创板新高 + 网上投资者 942.88 万户 抢筹 + 有效申购 8169.20 亿股 + 弃购率 仅 0.17% + 一签 500 股 按开盘价 卖出 可获利 20,420 元 (per 证券时报 stcn + 新浪财经 7/27 09:32 + 21世纪经济报道 7/27 09:30 + 上交所公告 PDF cninfo 1225428816 verbatim 跨 3 源 cross-check 一致)
+(b) 7/27 Kimi K3 全面开源 实战段 4h+ 2.8T 参数 KDA + Attention Residuals 1M token 上下文 + 原生视觉 + 全球首个 open 3T-class model 面向长程编程 + 知识工作 + 推理 (per kimi.com 官方博客 7/27 verbatim + 1.4TB 显存 + GDPval-AA v2 1687 分 超 Anthropic Claude Opus 4.8 Max 1600 分 + API 输出 100 元/M Token + ARR 3 亿美元 + 投前估值 315 亿美元 + 赴港上市准备)
+(c) Pitfall 6 fact-check fix 二类 跨 slot 数字精度 校准 (master 13:01 CST web exa 二次验证 跨 3 源发现): 长鑫 募资 总额 579.19 亿元 超过 2020 年中芯国际 上市 532 亿元 募资规模 成为 科创板开板以来规模最大 IPO + 若全额行使超额配售 选择权 募资 可达 666 亿元 成为 A 股史上第三大 IPO. 7/27 早 baseline 39 + 7/26 早 baseline 38 + 7/25 晚 baseline 37 子轴 写 长鑫 募资 295 亿 / 科创板史上第二大 IPO 仅次于中芯国际 = factual mistake — 真实 = 579.19 亿 (超募前) / 666 亿 (全额行使超额配售) / 科创板史上最大 IPO. 之前 3 期 baseline 错算 = 跨 slot subagent 误拼 7/16 早 baseline 24 智谱 配售 314 亿 数字到 长鑫段. 修法 = patch raw.md header 加 Y5/Y6 段 verbatim FACT-CHECK FIX 标记 + 主审阶段 2 拍板段 显式说明之前 baseline 错算 + 不允许 默默用错算 (per opc-daily-fact-check-fix skill + Pitfall 54 第二类 + 跨 slot 延续)
+(d) 7/27 A 股 实战段 4h+ 沪指 -0.14% 3808.90 + 深成指 -0.04% 13768.60 + 创业板 +0.03% 3482.04 + 科创50 -0.36% 1780.72 开盘 (per 金融界 7/27 09:30 verbatim) + 长鑫 首秀 高开低走 涨幅 一度收窄 (per 观察者网 7/27 verbatim)
+(e) 7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数 (per 7/27 早 baseline 39 + news.microsoft.com/source/2026/07/08 verbatim + financecalendar verbatim) + 实测生效时点 7/30 04:00 CST (after-close 实测) + 距 master 7/27 13:01 CST = 39h ≈ 1.6 天
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=37 ≤40 dek=104 ≤200 why=162 ≤200 pp labels=[34,26,24,25] all ≤35 say=[42,34,33,43] all ≤50 + 10 main_facts verbatim 4 类.
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0.
+
+**Render + TTS**: render 17614 bytes + TTS 61.848s / 991284B / 128kbps / 32kHz Monaural mp3 danya_xuejie PASS 50-90s window per Pitfall 35.
+
+**Production verify**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-27-afternoon/ = 17614 bytes EXACT MATCH = local 17614 bytes ✅, 200 OK + 跨 3 源 cross-check 命中 (471.59% 9 hits in html).
+
+**baseline 40 子轴 立 + 第 29 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 = 28 期 + 第 28 接力. 续 7/27 午后 51 期 = 29 期 + 第 29 接力 baseline 40 子轴 立 拼图起 跨 16 天 7/11 早 → 7/27 午.
+
+**Git + Wrangler**: commit 05360f6 + push origin main (f6bce7e..05360f6) + wrangler deploy Version ID df0a8ae8-4e03-4805-a112-e7eb5c6acc80 (2026-07-27T05:10:55.645Z).
+
+**Top-level surgical patch (per Pitfall 55 + 55(e))**: topbar date (2026-07-27 周一 · 13:00) + eyebrow (2026-07-27 · 午后报) + featured h2 (7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源 · 第 29 件) + pick-rationale (7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 全面开源 + A 股实战段 + 7/29 双财报 T-2) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) + month-entries prepend 7/27-afternoon + index.json prepend 7/27 afternoon 第 29 件 baseline 40 + daily/index.html redirector update → 7/27-afternoon/ = 8 处 surgical patch all PASS.
+
+**FACT-CHECK FIX 二类 跨 slot 延续**: 之前 3 期 baseline (7/25 晚 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39) 长鑫 募资 295 亿 错算段 已 校准 = 579.19 亿. 7/16 早 baseline 24 子轴 长鑫 配售 314 亿 (实为 智谱) 跟 7/27 早 baseline 39 长鑫 295 亿 = 跨期 subagent 误拼 错算段 跨 slot 校准 verbatim preserved = 7/27 午后 raw.md Y5/Y6 段 verbatim FACT-CHECK FIX 标记.
