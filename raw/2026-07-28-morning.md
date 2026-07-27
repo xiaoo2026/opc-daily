@@ -291,7 +291,7 @@ grep -n 'HEADER PATCH MARKER: FIFTY-FIRST-AFTERNOON' /home/ting/opc-daily-work/r
 
 master 7/28 07:01 CST 主动 web_extract 跨 3 源二次验证 (per opc-daily-fact-check-fix skill + Pitfall 7 + 54):
 
-### [Una 现场补料-待 cron 验] Kimi K3 48h 跑通芯片设计 (master 7/28 07:01 web_extract 抓自 新浪 7/27 08:23 + 快科技 verbatim)
+### [Una 现场补料-待 cron 验] Moonshot AI 月之暗面 + Kimi K3 48h 跑通芯片设计 (master 7/28 07:01 web_extract 抓自 新浪 7/27 08:23 + 快科技 verbatim)
 - 原文 verbatim: "月之暗面团队在7月17日发布Kimi K3时就明确表态... 在连续48小时的自主智能体运行测试中, K3完全依托开源EDA工具和Nangate 45nm工艺库, 全程没有引入任何额外的人工干预调整, 独立完成了一款芯片从架构构建、性能优化到最终功能验证的全流程开发工作"
 - 跨源: 新浪 7/27 08:23 verbatim "spider20260727" URL + 快科技 mydrivers 1139/1139162 verbatim
 - raw 树里 grep "Kimi" 6 hits 包含 7/27 早 baseline 39 (Kimi K3 全面开源) + 7/27 午后 baseline 40 (Kimi K3 实战段 4h+) + 7/27 晚报 baseline 41 (Kimi K3 实战全天续) — 7/28 早 raw.md grep 命中 OK
