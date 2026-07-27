@@ -1270,3 +1270,33 @@ master 7/27 13:01 CST cron 第五十一期 主审 stage 1+2+3+4 本体主审 —
 **Top-level surgical patch (per Pitfall 55 + 55(e))**: topbar date (2026-07-27 周一 · 13:00) + eyebrow (2026-07-27 · 午后报) + featured h2 (7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源 · 第 29 件) + pick-rationale (7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 全面开源 + A 股实战段 + 7/29 双财报 T-2) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) + month-entries prepend 7/27-afternoon + index.json prepend 7/27 afternoon 第 29 件 baseline 40 + daily/index.html redirector update → 7/27-afternoon/ = 8 处 surgical patch all PASS.
 
 **FACT-CHECK FIX 二类 跨 slot 延续**: 之前 3 期 baseline (7/25 晚 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39) 长鑫 募资 295 亿 错算段 已 校准 = 579.19 亿. 7/16 早 baseline 24 子轴 长鑫 配售 314 亿 (实为 智谱) 跟 7/27 早 baseline 39 长鑫 295 亿 = 跨期 subagent 误拼 错算段 跨 slot 校准 verbatim preserved = 7/27 午后 raw.md Y5/Y6 段 verbatim FACT-CHECK FIX 标记.
+
+---
+
+## cron 第五十二期 7/27 21:01 CST 晚报 (3 段 拼图 第 3 段 + baseline 41 子轴 立)
+
+**Una 晚报选 2026-07-27: 7/27 长鑫全段实战 + Kimi K3 实战全天续 + 7/29 T-2 · 第 30 件 baseline 41 + 第 30 接力 (3 段 拼图 第 3 段)**
+
+master 7/27 21:01 CST cron 第五十二期 主审 stage 1+2+3+4 — 不变量 #5 同日 cross-reference 对位 (早 baseline 39 倒数 2h → 午后 baseline 40 实测 4h → 晚报 实战段 全段 收官段) + Pitfall 46 3 段 拼图 第 3 段 + Pitfall 53 跨 day 边界 第二期 cron 加新维度 + Pitfall 6 fact-check fix 二类 跨 slot 数字精度 preserved verbatim + Pitfall 18 additive 加新维度 + 跨 slot 延续 FACT-CHECK FIX verbatim preserved.
+
+**加新维度 4 类**:
+(a) 7/27 长鑫 实战段 全段 收盘 较开盘 49.5 元 涨 471.59% 后续 高开低走 后回升 全段 实战 (per 上交所公告 cninfo + 证券时报 verbatim) + 收盘 仍 超 涨 +350% 以上 总市值 仍 居 A 股第一 (per 收盘实战段) + 一签 500 股 按收盘价 卖出 仍 可获利 1.4 万元以上 (per cross-check).
+(b) 7/27 Kimi K3 实战段 全天续 (per 7/27 早 baseline 39 verbatim + 7/27 午后 baseline 40 verbatim + master 21:01 CST 距 7/27 00:00 全面开源 21h 间隔) — 全天 实战 developer 反馈 + GitHub star 冲到 + HuggingFace 下载 实战段 续.
+(c) FACT-CHECK FIX preserved verbatim (per 午后 baseline 40 verbatim preserved): 长鑫 募资 总额 579.19 亿元 = 科创板开板以来规模最大 IPO 超中芯国际 2020 532 亿 = 若全额行使超额配售 募资 可达 666 亿元 = A 股史上第三大 IPO.
+(d) 7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数 (per 7/27 早 baseline 39 verbatim + news.microsoft.com/source/2026/07/08 + financecalendar.com verbatim) + 实测生效时点 7/30 04:00 CST (after-close 实测) + 距 master 7/27 21:01 CST = 31h ≈ 1.3 天.
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=37 ≤40 dek=101 ≤200 why=165 ≤200 pp labels=[33,23,22,32] all ≤35 say=[37,42,37,41] all ≤50 + 10 main_facts verbatim 4 类.
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ",  " 0 + 双句号 0 + meta description em dash 0.
+
+**Render + TTS**: render 14984 bytes + TTS 32.796s / 526452B / 128kbps / 32kHz Monaural mp3 danya_xuejie PASS 50-90s window per Pitfall 35.
+
+**Production verify**: curl --noproxy "*" -sL https://020755.xyz/daily/2026-07/2026-07-27-21evening/ = 14984 bytes EXACT MATCH = local 14984 bytes ✅, 200 OK + 跨 3 源 cross-check 命中 (471.59% 9 hits in html + 579.19 亿 4 hits + Kimi 2.8T 5 hits + Microsoft + Meta T-2 7 hits).
+
+**baseline 41 子轴 立 + 第 30 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 = 29 期 + 第 29 接力. 续 7/27 晚报 52 期 = 30 期 + 第 30 接力 baseline 41 子轴 立 拼图起 跨 16 天 7/11 早 → 7/27 晚.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e))**: topbar date (2026-07-27 周一 · 21:00) + eyebrow (2026-07-27 · 晚报) + featured h2 (7/27 长鑫全段实战 + Kimi K3 实战全天续 + 7/29 T-2 · 第 30 件 baseline 41 子轴 + 第 30 接力) + pick-rationale (7/27 周一 长鑫 实战段 全段 收盘 +471% 1.4 万/签 + Kimi K3 实战段 全天续 + 募资 579.19 亿 preserved 跨 slot 校准 + 7/29 双财报 T-2 倒数) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-07/2026-07-27-21evening/ + month-entries prepend 7/27-晚报 entry + index.json prepend 7/27 21evening 第 30 件 baseline 41 + daily/index.html redirector update → 8 处 surgical patch all PASS.
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 3 期 baseline (7/25 晚 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39) 长鑫 募资 295 亿 错算段 已 校准 = 579.19 亿. 7/27 午后 baseline 40 raw.md Y5/Y6 段 verbatim FACT-CHECK FIX 标记 preserved 至 7/27 晚报 = 跨 slot 延续 verbatim PASS.
+
+**Git + Wrangler**: commit + push origin main + wrangler deploy (待最终 batch).
