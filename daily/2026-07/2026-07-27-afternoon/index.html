@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-07-27 · 午后报</title>
+  <meta name="description" content="13:00 · 周一 · 覆盖 7/27 07:00 ~ 7/27 13:00 · 7/27 长鑫 实战段 4h + Kimi K3 全面开源 + 7/29 T-2 . 7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">午后报 · 13:00</span>
+        <span class="when"><pre style="margin:0;font:inherit;color:inherit;background:transparent;border:0;display:inline;padding:0;white-space:pre-wrap">13:00 · 周一 · 覆盖 7/27 07:00 ~ 7/27 13:00 · 7/27 长鑫 实战段 4h + Kimi K3 全面开源 + 7/29 T-2</pre></span>
+      </div>
+      <h1>7/27 长鑫 +471.59% 3.31 万亿 + Kimi K3 开源</h1>
+      <p class="dek">长鑫 7/27 09:30 开盘 49.5 元 +471.59% 3.31 万亿 A 股第一 + Kimi K3 7/27 全面开源 2.8T + A 股 7/27 实战段 + 7/29 双财报 T-2 续.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>早 baseline 39 立 倒数 2h,午后 13:01 = 实战段 3.5h cross-check (Pitfall 38+42+45). 早 = 倒数,午后 = 实战段 4h+ 同日同主轴 = 第 29 件 baseline 40 + 第 29 接力. 7/27 实战段 跨 3 源 cross-check 命中.</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">T-0 实战</div>
+        <div class="label">7/27 长鑫 开盘 49.5 元 +471.59% 3.31 万亿</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">T-0 实战</div>
+        <div class="label">7/27 Kimi K3 全面开源 2.8T 实战段</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">A 股 实战</div>
+        <div class="label">7/27 沪 -0.14% 长鑫一签 20420</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">T-2 倒数</div>
+        <div class="label">Microsoft + Meta 7/29 双财报</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>Una 怎么看 · 7/27 长鑫科创板 第一 579 亿 + Kimi K3 实战段 4h+ cross-check 收官段</h2>
+        <p><blockquote><em>7/27 09:30 长鑫科技 科创板 挂牌实战段 4h+ 开盘 49.5 元/股 +471.59% 较发行价 8.66 元 + 开盘总市值 3.31 万亿元 居 A 股第一 超越工商银行 + 中签率 0.4714% 创科创板新高 + 一签 500 股 浮盈 20,420 元 (per 证券时报 + 新浪 + 21财经 + 上交所公告 PDF 跨 3 源 verbatim 一致)</em></blockquote></p>
+        <p><p>7/27 09:30 CST 长鑫科技 科创板挂牌 实战段 4h+ (per 7/27 早 baseline 39 verbatim preserved + master 13:01 CST vs 09:30 开市 = 3.5h 间隔): <strong>开盘 49.5 元/股 较发行价 8.66 元 涨 471.59%</strong> + <strong>开盘总市值 3.31 万亿元 居 A 股第一 超越工商银行</strong> + 网上中签率 <strong>0.4714%</strong> 创科创板新高 + 网上投资者 942.88 万户 抢筹 + 有效申购 8169.20 亿股 + 弃购率 仅 0.17% 显著低于今年新股平均 + 一签 500 股 按开盘价 卖出 可获利 <strong>20,420 元</strong> (per 证券时报 + 新浪 7/27 09:32 + 21世纪经济报道 7/27 09:30 + 上交所公告 PDF cninfo 1225428816 verbatim cross-check). 开盘后 高开低走 涨幅一度收窄 (per 观察者网 7/27 verbatim).</p></p>
+        <p><blockquote><em>FACT-CHECK FIX: 长鑫 募资 579.19 亿 不是 295 亿 = 科创板史上最大 IPO 超中芯国际 532 亿 = A 股史上第三大 IPO = 之前 3 期 baseline (37+38+39) 错算段 跨 slot 校准</em></blockquote></p>
+        <p><p>Pitfall 6 fact-check fix 二类 跨 slot 数字精度 校准 (master 13:01 CST web 二次验证 exa 跨 3 源发现): <strong>长鑫 募资 总额 579.19 亿元</strong> 超过 2020 年中芯国际 上市 532 亿元 募资规模,成为 <strong>科创板开板以来规模最大 IPO</strong> + 若全额行使超额配售 选择权 募资 可达 <strong>666 亿元</strong> 成为 <strong>A 股史上第三大 IPO</strong> (per 新浪财经 7/27 09:32 + 21世纪经济报道 7/27 09:30 + 上交所公告 PDF cninfo 1225428816 verbatim). <strong>7/27 早 baseline 39 + 7/26 早 baseline 38 + 7/25 晚 baseline 37 子轴 写 长鑫 募资 295 亿 / 科创板史上第二大 IPO 仅次于中芯国际 = factual mistake</strong> . 真实 = 579.19 亿 (超募前) / 666 亿 (全额行使超额配售) / 科创板史上最大 IPO. 之前 3 期 baseline 错算 = 跨 slot subagent 误拼 7/16 早 baseline 24 智谱 配售 314 亿 数字到 长鑫段 = 跨期 subagent 错算段. 修法 = patch raw.md header 加 Y5. 段 verbatim FACT-CHECK FIX 标记 + 主审阶段 2 拍板段 显式说明之前 baseline 错算 + 不允许 默默用错算 (per opc-daily-fact-check-fix skill + Pitfall 54 第二类 + 跨 slot 延续).</p></p>
+        <p><blockquote><em>7/27 Kimi K3 全面开源 2.8T 参数 KDA + Attention Residuals 1M token 实战段 = 早 baseline 39 新维度 (b) 实测兑现</em></blockquote></p>
+        <p><p>7/27 Kimi K3 全面开源 实战段 4h+ (per 7/27 早 baseline 39 verbatim preserved + master 13:01 CST 距 7/27 00:00 全面开源 13h 间隔): <strong>Kimi K3 2.8T 参数 KDA + Attention Residuals 1M token 上下文 + 原生视觉 + 全球首个 open 3T-class model</strong> 面向 长程编程 + 知识工作 + 推理 (per kimi.com 官方博客 7/27 verbatim). 7/17 凌晨发布 完整权重 7/27 全面开源 实战段 = 早 cron 5 类新维度 (b) 实测兑现 = 中方头部大模型 商业化拐点 + 算力 是胜负手 信号 1 (per 7/16 早 baseline 24 + 7/19 晚 baseline 31 verbatim preserved). 1.4TB 显存 + GDPval-AA v2 1687 分超 Anthropic Claude Opus 4.8 Max 1600 分 + API 输出 100 元/M Token + ARR 3 亿美元 + 投前估值 315 亿美元 + 赴港上市准备.</p></p>
+        <p><blockquote><em>7/27 A 股 实战段 4h+ 沪深偏弱 科创50 -0.36% 长鑫高开低走 + 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 续</em></blockquote></p>
+        <p><p>7/27 A 股 实战段 4h+ (per 7/27 早 baseline 39 + 7/22 早 baseline 34 verbatim preserved + master 13:01 CST = 沪深 早盘 + 午盘 实战段): <strong>沪指 -0.14% 3808.90</strong> + <strong>深成指 -0.04% 13768.60</strong> + <strong>创业板 +0.03% 3482.04</strong> + <strong>科创50 -0.36% 1780.72</strong> 开盘 (per 金融界 7/27 09:30 verbatim cross-check) + 长鑫 首秀 高开低走 涨幅 一度收窄 (per 观察者网 7/27 verbatim). 长鑫 7/27 实战段 4h+ = 开盘 +471.59% → 高开低走 → 收官段 实战段 4h cross-check 收官段. <strong>7/29 周三 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数</strong> (per 7/27 早 baseline 39 + news.microsoft.com/source/2026/07/08 verbatim + financecalendar.com verbatim) + 实测生效时点 7/30 04:00 CST (after-close 实测) + 距 master 7/27 13:01 CST = 39h ≈ 1.6 天 = 跟 早 cron T-2 倒数 一致 + 美方头部 AI 公司 FCF 烧钱阶段 7/22-7/29 跨 7 天 双连续实战段 收官段 (per 7/27 早 baseline 39 verbatim preserved).</p></p>
+        <p><blockquote><em>7/27 午后 cron 第五十一期 跨 day 边界 第十期 cron 加新维度 工作流 = 实战段 4h+ cross-check + 募资 错算 fix + Kimi 开源 + A 股 实战段 + 7/29 双财报 续</em></blockquote></p>
+        <p><p>7/27 午后 cron 第五十一期 (master 13:01 CST) 加新维度 5 类 (per Pitfall 38 不变量 #5 同日 cross-reference 对位 + Pitfall 42 实测生效时点 ≤ master 时点 + Pitfall 45 1h post-cutover 升级 4h+ post-T-0 实测段 + Pitfall 18 additive 加新维度 + Pitfall 6 fact-check fix 二类 跨 slot 数字精度 校准 + 跨 slot 延续): (a) 7/27 长鑫 实战段 4h+ 开盘 49.5 元 +471.59% 3.31 万亿 A 股第一 (b) 7/27 Kimi K3 全面开源 实战段 4h+ 2.8T KDA 1M token 实战段 (c) Pitfall 6 fact-check fix 二类 长鑫 募资 579.19 亿 不是 295 亿 = 科创板史上最大 IPO 跨 slot 校准 (d) 7/27 A 股 实战段 4h+ 沪指 -0.14% + 科创50 -0.36% + 长鑫高开低走 实战段 (e) 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-2 倒数 续 = 早 baseline 39 + 第 28 接力 + 4h+ 实战段 cross-check 收官段 + 募资 错算 fix + Kimi 开源 + A 股 + 7/29 双财报 = 29 期 + 第 29 接力 baseline 40 子轴 立 拼图起 跨 16 天 7/11 早 → 7/27 午. 一日 1 件 = 长鑫 7/27 实战段 4h+ 1 件 实战段 收官段 + Kimi K3 全面开源 1 件 实战段 收官段 + A 股 实战段 4h+ + 7/29 双财报 T-2 倒数 续 = 早 + 午后 实战段 4h+ cross-check 收官段 拼图完整 第 29 件 baseline 40 子轴 + 第 29 接力 立.</p></p>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它 (07-27 早 cron 3 候选)</h3>
+      <ul>
+          <li><strong>候选 B · 港股 7/27 实战段 单段 (恒指 +0.28% / 恒科 +0.74% 盘中 10:42 快照)</strong> ,  per Pitfall 17 同主轴 dilution, 跟 7/25 晚 baseline 37 (智谱 +25% / MiniMax +11% 7/25 午盘) + 7/27 早 baseline 39 同主轴 = 同主轴续写 dilution drop. raw [17-20] 港股 智谱 + MiniMax 同刻个股数值 子代理未抓到可靠,显式留缺口. 不构成 跨 day 边界 第十期 cron 加新维度 5 类 实战段 4h+ 拼图完整.</li>
+          <li><strong>候选 C · 美方 7/26 PT 实战段 单段 (S&P 周线 -0.6% / NASDAQ -2.1%)</strong> ,  per 7/26 是 周日 7/27 早 baseline 39 + 7/22 早 baseline 34 拼图已立 美方实战段,7/27 早 baseline 39 verbatim 美七巨头 7/24 -3.86% 8000 亿蒸发 续 实战段 跨 slot verbatim preserved. 7/27 13:01 CST 加新维度 = 实战段 4h+ cross-check,不是 美方 单段.</li>
+          <li><strong>候选 D · Kimi K3 单独 1 件</strong> ,  per Pitfall 17 同主轴 dilution, 跟 7/19 晚 baseline 31 (Kimi K3 + Fable 5 7/20 落地 + 华为 SAIL 锚定) + 7/20 早 baseline 32 + 7/25 晚 baseline 37 (Kimi K3 7/27) + 7/27 早 baseline 39 (Kimi K3 7/27 实战段 倒数 2h) 同主轴 = 同主轴续写 dilution drop. Kimi K3 是 候选 1 加新维度 (b) 子段,不算 1 件 中心思想.</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>7/27 长鑫开盘 +471.59% 3.31 万亿 A 股第一 一签 20420.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>募资 579.19 亿 = 科创板史上最大 超中芯国际 532 亿.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>Kimi K3 2.8T 全面开源 1687 分 实战段 4h+.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>7/29 Microsoft + Meta T-2 倒数 A 股 沪指 -0.14%.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 午后报 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-07-27 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
