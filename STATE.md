@@ -1336,3 +1336,33 @@ master 7/28 07:01 CST cron 第五十三期 主审 stage 1+2+3+4 本体主审 —
 
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部 沿用 7/26-7/27 实战段 已固化段) + Darwin ✅ 第 31 接力 baseline 42 可 遗传 (7/28 午后 cron 接力 baseline 42 + 第 31 接力 续 = 给 7/28 午后 cron 第五十四期 接力 baseline 42 子轴).
 
+
+---
+
+## cron 第五十四期 7/28 21:01 CST 晚报 (跨 day 边界 后续期 cron 加新维度 工作流 per Pitfall 53 + 第 32 件 baseline 43 子轴 立 + 第 32 接力)
+
+**Una 晚报选 2026-07-28: 全球芯片 二次 抛售 长鑫回调 + 7/29 T-7h · 第 32 件 baseline 43 子轴 + 第 32 接力 (cron 第五十四期)**
+
+master 7/28 21:01 CST cron 第五十四期 主审 stage 1+2+3+4 — 不变量 #5 同日 cross-reference 对位 (早 cron 第五十三期 Kimi K3 + Anthropic S-1 + 7/29 T-1 → 晚报 cron 全球芯片二次抛售 长鑫回调 7/29 T-7h = 一内 + 一外 + 一资本 + 一商业 + 一pre-market 第 31 接力 + 一实战 美方 第 32 接力) + Pitfall 53 跨 day 边界 后续期 cron 加新维度 工作流 (master 时点 7/28 21:01 CST vs 7/27 晚报 master 时点 7/27 21:01 CST = 24h 跨 day 边界 标志, vs 早 cron = Pitfall 49 新一天 第一期 cron) + Pitfall 18 additive 加新维度 4 类 + Pitfall 47 实战续段 (长鑫 7/27 全段 365% 实战 + 7/28 -4.08% 回调 = 2 天 实战续) + Pitfall 42 实测段 drop (7/29 T-7h 距 master 7h = T-7h 倒数段 OK, 写 实测段 drop, 写 倒数段 OK) + Pitfall 50 meta description em-dash cleanup + Pitfall 8b/8d known names 守门 + Pitfall 12 Hindsight recall grep 复验 + Pitfall 13 system 强制 ad-hoc verify 多次触发 + Pitfall v0.8.14 size-of-read-text 守门 + FACT-CHECK FIX preserved verbatim 跨 slot 延续.
+
+**加新维度 4 类**:
+(a) 长鑫 7/28 实战段 全段 收官段 = -4.08% 回调 + 两日 1850 亿 成交 + 公募首日浮盈 500+ 亿 次日回调后 479+ 亿 + 野村 116 元 目标价 基于 2028 预期 EPS 5.8 元 20x PE = 7.76 万亿 ~ 美光市值 (per 新浪 7/28 17:02 + 香港商報 + 21财经 7/28 06:57 verbatim 跨 3 源 一致).
+(b) 港股 7/28 实战段 全球芯片股 二次抛售 (per 中金在线 7/28 16:59 verbatim 跨 2 源 一致) = 恒生科技 +0.61% 4730 点 + 半导体抛售 兆易创新 -17% + 南方两倍做多海力士 -30% + 南方两倍做多三星电子 -26.7% + 餐饮/汽车/银保涨 网易 +4% 京东 +4% 小米 +2% 农业银行 +3% 徽商银行 +6%.
+(c) 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-7h 倒数 (per 早 53 期 verbatim preserved + news.microsoft.com/source/2026/07/08 verbatim) + 微软 Q2 FY26 收入 +17% Azure 拉动 + capex 2026 1900 亿 +61% (per crn 7/28 + fool.com 7/27 verbatim) + Meta + 微软 同周 + 1450 亿 美元 capex 计划 (per startupfortune 7/28 11:58 verbatim).
+(d) 美方 chip selloff 5 天 续段 = 7/24 ASML/LRCX/AMAT 设备股 -3% → 7/28 全球 二次 实战段 (per 早 53 期 verbatim preserved + 中金在线 verbatim "隔夜 美股 芯片 股 遭遇 剧烈 重挫").
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=13 ≤40 dek=130 ≤200 why=170 ≤200 pp labels=[20,22,23,20] all ≤35 say=[45,36,43,46] all ≤50 + 10 main_facts verbatim 5 类 (含 2 个 > blockquote) + em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup) + known names Kimi + Anthropic + Microsoft + Meta + NVIDIA + 兆易 + 海力士 + 三星 + 长鑫 all PASS (per Pitfall 8b 8d 守门).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup (per Pitfall 50).
+
+**Render + TTS**: render 14073 bytes (chars 12231, Python chars vs shell bytes 不混用 per v0.8.14) + TTS 62.532s / 1002228B / 128kbps / 32kHz mp3 danya_xuejie PASS 50-90s window per Pitfall v0.8.9 (实测有效窗口).
+
+**Production verify**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-28-21evening/ = 14073 bytes EXACT MATCH local 14073 bytes ✅, md5 00d2c5afc06dbc6fb8fc335da5d2a1f2.
+
+**baseline 43 子轴 立 + 第 32 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 = 31 期 + 第 31 接力. 续 7/28 晚报 54 期 = 32 期 + 第 32 接力 baseline 43 子轴 立 拼图起 跨 18 天 7/11 早 → 7/28 晚.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e))**: topbar date (2026-07-28 周二 · 21:00) + eyebrow (2026-07-28 · 晚报) + featured h2 (7/28 晚报 全球芯片二次抛售 长鑫回调 + 7/29 T-7h · 第 32 件 baseline 43 子轴 + 第 32 接力) + pick-rationale (全球芯片二次抛售 + 长鑫回调 + 7/29 T-7h + chip selloff 5 天续) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-07/2026-07-28-21evening/index.html + month-entries prepend 7/28 晚报 entry (precise anchor prepend 在 7/28 早 entry 之前 per Pitfall 55(e) 不误伤) + index.json prepend 7/28 21evening 第 32 件 baseline 43 (slot_hour=21:00 per v0.8.18 守门) + daily/index.html redirector → 2026-07-28-21evening/ + daily/index.html 点此直接进入 href → 8 处 surgical patch all PASS.
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿 (per 早 53 期 + 7/27 午后 baseline 40 verbatim preserved) 7/28 晚报 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/28 实战段已固化段) + Darwin ✅ 第 32 接力 baseline 43 可遗传 (7/29 早 cron 接力 baseline 43 + 第 32 接力 续 = 给 7/29 早 cron 第五十五期 接力 baseline 43 子轴 + 7/29 Microsoft + Meta 双财报 T-0 实战段).

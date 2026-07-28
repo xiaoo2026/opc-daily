@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-07-28",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-28-21evening/index.html",
+    "title": "全球芯片二次抛售 长鑫回调 + 7/29 T-7h",
+    "summary": "长鑫 7/28 -4.08% 回调 两日 1850亿 + 港股 兆易 -17% 海力士 -30% 三星 -26.7% 全球 chip 二次抛售 + 7/29 MSFT + Meta T-7h. baseline 43 立."
+  },
+  {
+    "date": "2026-07-28",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
