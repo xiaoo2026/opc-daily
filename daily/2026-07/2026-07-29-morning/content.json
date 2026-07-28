@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-29",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "07:00 · 周三 · 覆盖 7/28 21:00 ~ 7/29 07:00 · MCP 1.0 + Mythos 拆 HAWK + 7/29 双财报 T-0",
+  "title": "MCP 1.0 + Mythos 拆 HAWK + 双财报 T-0",
+  "dek": "MCP 2026-07-28 spec 7/28 19:35 落地, 改无状态 + HTTP 头路由. 同日 Anthropic 19:12 披露 Mythos 60h 拆 NIST HAWK, 有效密钥砍一半. 7/29 9:00 PT Microsoft + Meta 双财报. 1 夜 = 协议 + 加密 + 商业化 同步换位.",
+  "why_this": "1 夜 3 层 换位: MCP 1.0 = AI 应用 internet moment. Mythos 拆 HAWK = AI 先于量子计算机碰到后量子密码 (NIST 2 年 3 轮没看出, 1 个研究员 + $100K 跑出来). 7/29 双财报 = 换位 hook. 是基础设施层一起被 AI 重新定义.",
+  "pick_points": [
+    {"num": "1.0", "label": "MCP spec 2026-07-28 取消会话 改无状态"},
+    {"num": "/2", "label": "Mythos 60h 拆 HAWK 有效密钥砍一半"},
+    {"num": "T-0", "label": "7/29 Microsoft + Meta 双财报 倒计时"},
+    {"num": "$1450亿", "label": "Meta + MSFT 同周 capex 计划"}
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "main_facts": [
+    "MCP 2026-07-28 spec 7/28 19:35 落地 (per modelcontextprotocol.io 官方 spec blog + Anthropic Claude by Anthropic 7/28 + VentureBeat 7/28 05:00 PT). 核心改: 取消 initialize 握手机制 + 取消 Mcp-Session-Id 头, 协议改无状态; 新增 MCP-Protocol-Version 头 + Mcp-Method / Mcp-Name HTTP 头, 让任意 round-robin 负载均衡直接路由; elicitation/create + sampling/createMessage + roots/list 合并成 Multi Round-Trip Requests (MRTR); tasks 移出 experimental 进 io.modelcontextprotocol/tasks 扩展; 授权层加 RFC 9207 issuer 校验 + 弃用 Dynamic Client Registration 改用 Client ID Metadata Documents (CIMD); 12 个月弃用窗口, roots/sampling/logging + 旧 HTTP+SSE transport 同步退役. Tier 1 SDK (TypeScript / Python / Go / C#) 当天全部 200 升级, Rust beta 跟. Tier 1 SDK 月下载量 ~5 亿次, 总下载量过 10 亿. Anthropic + AWS + Cloudflare + Figma + Sentry + Linear + Supabase + Runlayer + FastMCP 同时发声认领.",
+    "> \"MCP 2026-07-28 is a major step toward making agent infrastructure work like the rest of the web: stateless, cacheable, routable, and globally scalable. Cloudflare's Agents SDK supports the spec from day zero, so developers can run MCP servers directly in Workers\" per Brendan Irvine-Broque Cloudflare 7/28 verbatim",
+    "Anthropic 7/28 19:12 同步发 Discovering cryptographic weaknesses with Claude 7/28 (per anthropic.com/research/discovering-cryptographic-weaknesses). 核心披露: Claude Mythos Preview 在 Project Glasswing 框架下 60 小时自主拆掉 NIST 第三轮后量子数字签名候选 HAWK, 有效密钥长度砍一半 (要同等安全 HAWK 必须把密钥长度翻倍, 抹掉它作为 PQC 候选的吸引力); 同 harness 自主发现 reduced-round AES 攻击技术 (起名 Möbius Bridge), 把现有最优攻击速度提 200-800 倍. 两个发现都不是 production 影响 (HAWK 还没部署, AES 攻击只对 reduced-round), 但 demonstration 价值: 之前 2 年 3 轮人类专家评议没发现的算法层数学漏洞, 一个研究员 + 一个 $100K API 成本 + 1 周跑出来. ETH Zurich + Tel Aviv University + U of Haifa 联合发布 CryptanalysisBench (arXiv 2607.18538) 给后续 LLM cryptanalytic 能力做公开基准. 同日 Anthropic CTO Dario Amodei 凌晨发 Our position on open-weights models 7/27: 公开反对禁止开源权重, 但要求 global safety testing + 芯片管控 + 抗蒸馏规则. 一周之内 同一个 Mythos 模型 同时证明了 (a) 它能破密码, (b) 它支持开源. 这个姿态不是 PR, 是 Mythos Preview 在 8 月华盛顿国会听证前先把筹码放桌上.",
+    "7/29 Microsoft FY26 Q4 + Meta Q2 双财报 9:00 PT after close, 距 master 21:01 CST = 7h 倒计时 (per news.microsoft.com/source/2026/07/08 微软 7/8 公告 + Alphabet 7/22 已发 Q2 7/22 1:30 PM PT 4% 跌 + Meta IR 7/15 已发 Q2 7/29 4:30 PT 5% 跌前 announcement). Bloomberg 共识 Microsoft 营收 $876-877 亿 +14.7% / EPS $4.21-4.24 +15.6% / Azure constant-currency 39-40% (per BNP Paribas 估 41% / 美银 估 39-40%); Q4 capex >$40B + FY26 capex 1900 亿 +61% / FY27 capex 一度传出 $262B (BNP); RPO $6270 亿 +97% YoY. Meta 共识 Q2 营收 $60.2B +33% (上季 +33% 已是 2021 来最快) / EPS $7.18-7.23; 2026 capex 指引上调 125-145B (vs 115-135); 8/11 Levi & Korsinsky securities class action Copilot adoption 误导集体诉讼 lead-plaintiff 截止. 两家同周 1450 亿 capex + 阿尔特曼 7/28 访谈确认 OpenAI 已经把 programming agents 提到第 3 战略级 (超过 Sora) = 商业化层同时换位: 模型层 → 应用层 → 资本层 全部押到 7/29 收盘后 1 个晚上.",
+    "7/28 实战段 跟 7/29 早 cross-check (per 早 53 期 + 晚 54 期 verbatim preserved). 长鑫 7/28 -4.08% 回调 + 两日 1850 亿 + 港股 兆易 -17% / 海力士 -30% / 三星 -26.7% 二次抛售 + 美方 7/24 ASML/LRCX/AMAT 设备股 -3% → 7/28 全球芯片股 跨 5 天二次实战段 + 微软 Q2 capex $31.9B +49% YoY + FCF -22% (上季对比) + Alphabet 7/22 195-205B capex 指引 (从 180-190 上调) + S&P 500 7/28 7,427.20 -0.21% + Nasdaq 100 27,766.20 -0.26%. Anthropic 凌晨 7/28 03:57 提交 S-1 IPO 招股 估值 9650 亿 14 月涨 15 倍 (per 早 53 verbatim). 港股 7/28 14:38 恒指 +0.41% 报 25310.85 / 恒生科技 +0.61% 报 4730.61 (per 财联社 7/28 verbatim, 中方 7/27 长鑫 7/28 -4.08% 跨日延续). 7/28 全球资本 1 天 同时给协议层 (MCP 1.0) + 加密层 (HAWK 拆) + 商业化层 (capex 1900 亿 + RPO 6270 亿) 发通知单, 7/29 早 cron 接力段 不堆 1 件, 把 1 夜当 1 个换位来写.",
+    "主审选材 工作流: 7/28 早 = Kimi K3 实战段 (中方开源 + 美方 IPO 资本段 双对位, baseline 42). 7/28 晚 = 全球芯片二次抛售 (长鑫 -4.08% + 海力士 -30% + 三星 -26.7%, baseline 43). 7/29 早 = MCP 1.0 spec + Mythos 拆 HAWK 同夜换位 (协议层 + 加密层, baseline 44 + 第 33 接力) — 不是 同主轴 dilution, 段间有 4 个新维度 (MCP 1.0 spec / HAWK 拆 / Mythos 项目 60h 60M 算 / Anthropic CTO open-weights 公开立场 / MCP 月下载 5 亿里程碑) + 段间 时序分工 (7/28 早 Kimi 实操 → 7/28 晚 全球资本二次抛 → 7/29 早 协议 + 加密 换位). 7/29 13:00 午后 cron 接力 7/29 双财报 after-close 实战段, 7/29 21:00 晚报 cron 接力 7/29 实战 收官段. 33 期 + 第 33 接力 baseline 44 子轴 立 拼图起 跨 19 天 7/11 早 → 7/29 早."
+  ],
+  "not_picked": [
+    "<strong>候选 B · Microsoft Q4 capex 1900 亿 + Meta 1450 亿</strong> · 7/29 收盘后实战段, 7/29 午后 cron 接力 (per Pitfall 42 时序 段, 不重复 主轴).",
+    "<strong>候选 C · Anthropic 凌晨 S-1 提交 估值 9650 亿</strong> · 7/28 早 baseline 42 第 31 接力 已 立, 7/29 早 同主轴 dilution drop.",
+    "<strong>候选 D · 长鑫 7/28 -4.08% 回调 + 全球芯片二次抛售</strong> · 7/28 晚 baseline 43 第 32 接力 已 立, 7/29 早 同主轴 dilution drop.",
+    "<strong>候选 E · Mythos 7/19 商业化线 weekly limits 7 天</strong> · Fable 商业化 基线 = 7/12-7/16 baseline 14-20 段, 7/29 早 不算 新料.",
+    "<strong>候选 F · Kimi K3 实战 续 (7/29 早 续 7/17-7/28 段)</strong> · 7/17-7/28 baseline 16-43 段 已 完整 拼图, 7/29 早 同主轴 dilution drop, 留 7/29 午后 实测段 用."
+  ],
+  "say_4": [
+    "MCP 1.0 让 AI 应用有了 internet moment.",
+    "Mythos 60h 拆 HAWK: 加密 review 跟 AI 速度差一个数量级.",
+    "7/29 双财报 = 商业化层 1 晚 跟协议加密 同步换位.",
+    "1 夜 3 件 (MCP + HAWK + 财报) = AI 重写基础设施."
+  ],
+  "stat_card_date_label": "7/29 周三",
+  "meta_description": "MCP 1.0 spec 7/28 19:35 + Mythos 60h 拆 HAWK + 7/29 双财报 T-0. baseline 44 + 第 33 接力 立."
+}
