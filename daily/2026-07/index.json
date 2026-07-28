@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-07-29",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-29-morning/index.html",
+    "title": "MCP 1.0 + Mythos 拆 HAWK + 双财报 T-0",
+    "summary": "MCP 1.0 spec 7/28 19:35 + Mythos 60h 拆 HAWK 7/28 19:12 + 7/29 Microsoft + Meta 双财报 T-0. baseline 44 + 第 33 接力 立."
+  },
+  {
     "date": "2026-07-28",
     "type": "21evening",
     "slot": "21evening",

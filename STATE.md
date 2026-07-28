@@ -1,6 +1,34 @@
 # opc-daily STATE.md (loop-engineering pattern, 自 2026-07-05)
 
-## Where we are now (2026-07-26 07:01) — 第四十九期 cron 抵达
+## Where we are now (2026-07-29 07:14) — 第五十五期 cron 抵达
+- ✅ cron 第五十五期 (7/29 07:01 早报) — 早 7/28 21:18 last_run 失败 (database disk image is malformed) + master fast-mode 接管 接管 (per Pitfall 41 4min cap 内 sub-agent 不可用 → master 跨天接管)
+- ✅ 5 files committed: daily/2026-07/2026-07-29-morning/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-29-morning.md — commit abb7aa6 pushed origin main
+- ✅ wrangler deploy Version bc4b77cd-becc-4fd9-916c-66aca6dd4c83 成功 — 020755.xyz/daily/2026-07/2026-07-29-morning/ bytes 16157
+- ✅ voice.mp3 (1356468B / 84.672s / 128kbps / 32kHz / danya_xuejie) 生成 PASS 50-90s window per Pitfall v0.8.9
+- ✅ content.json 字数硬约束 PASS title=33 ≤40 dek=167 ≤200 why=156 ≤200 pp labels=[29,25,29,23] all ≤35 say=[34,43,31,38] all ≤50 + 6 main_facts verbatim 4 类
+- ✅ Pitfall 37 humanizer audit pass em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup per Pitfall 50
+- ✅ top-level index.html featured + archive prepend surgical patch done (per Pitfall 55 + 55(e)) + 7/29 早 entry 新增
+- 主题: MCP 1.0 spec 7/28 19:35 落地 + Mythos 60h 拆 NIST HAWK + 7/29 Microsoft + Meta 双财报 T-0 · 第 33 件 baseline 44 + 第 33 接力 (cron 第五十五期)
+- 📊 同步: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 + 7/28 晚报 baseline 43 = 32 期 + 第 32 接力 + 7/29 早 = 33 期 + 第 33 接力 baseline 44 子轴 立 拼图起 跨 19 天 7/11 早 → 7/29 早
+- 📝 raw 素材归档: raw/2026-07-29-morning.md (FIFTY-FIFTH-MORNING / 2026-07-29 / CROSS-DAY-BOUNDARY / BASELINE-44 / RELAY-33 标记, 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49, master 时点 7/29 07:01 CST vs 7/28 早 cron master 时点 7/28 07:01 CST = 24h 跨 day 边界 标志, 显式区分 vs 早 cron = Pitfall 49 + vs 7/28 晚报 = Pitfall 53 跨 day 边界 后续期 cron)
+- 📮 TG 7069165189 sent (fallback: QQ 7069165189)
+- 关键新维度 4 类: (a) MCP 1.0 spec 7/28 19:35 落地 (协议层: 取消 initialize 握手 + 取消 Mcp-Session-Id 头 + 改无状态 + HTTP 头路由 + Multi Round-Trip Requests (MRTR) + tasks 进 io.modelcontextprotocol/tasks 扩展 + 弃用 DCR 改 CIMD + 12 个月弃用窗口 + 400M 月下载协议正式工业化 + 8 家 大厂 当天 发声认领 AWS / Cloudflare / Figma / Sentry / Linear / Supabase / Runlayer / FastMCP); (b) Anthropic Claude Mythos Preview 7/28 19:12 60h 拆 NIST HAWK (加密层: NIST 第三轮后量子数字签名候选 HAWK 有效密钥长度砍一半 + 1 个研究员 + $100K API 成本 + 1 周跑出来 vs 之前 2 年 3 轮人类专家评议 + 同步 AES reduced-round 攻击提速 200-800 倍 + 联合 ETH Zurich + Tel Aviv University + U of Haifa 发 CryptanalysisBench arXiv 2607.18538); (c) Anthropic CTO Dario Amodei 7/27 凌晨 Our position on open-weights models (开放层: Anthropic 公开反对禁止开源权重 + 但要求 global safety testing + 芯片管控 + 抗蒸馏规则 + 拒绝签 Nvidia 反对限制信); (d) 7/29 9:00 PT Microsoft FY26 Q4 + Meta Q2 双财报 T-0 倒计时段 (商业化层: Microsoft 共识 876-877B +14.7% / EPS $4.21-4.24 / Azure 39-40% / Q4 capex >$40B / FY26 capex 1900 亿 +61% / RPO $6270 亿 +97% YoY / Copilot 2000 万付费席位 +250% YoY / AI 业务 annualized $37B +123% YoY vs Meta 共识 $60.2B +33% / EPS $7.18-7.23 / 2026 capex 125-145B / 同周 capex 1450 亿). 1 夜 = 协议层 + 加密层 + 商业化层 同步换位.
+
+## Where we are now (2026-07-28 21:07) — 第五十四期 cron 抵达
+- ✅ cron 第五十四期 (7/28 21:01 晚报) 跑通 — 2026-07-28-21evening 已发
+- ✅ 5 files committed: daily/2026-07/2026-07-28-21evening/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-28-21evening.md — commit 33ceb59 pushed origin main
+- ✅ wrangler deploy Version b7187e30 + 34d9f928 (per Pitfall 43 STATE.md commit vs wrangler deploy 时序 双 deploy)
+- ✅ voice.mp3 (1002228B / 62.532s / 128kbps / 32kHz / danya_xuejie) 生成 PASS 50-90s window per Pitfall v0.8.9
+- ✅ content.json 字数硬约束 PASS title=13 ≤40 dek=130 ≤200 why=170 ≤200 pp labels=[20,22,23,20] all ≤35 say=[45,36,43,46] all ≤50 + 10 main_facts verbatim 5 类
+- ✅ Pitfall 37 humanizer audit pass em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup per Pitfall 50
+- ✅ top-level index.html featured + archive prepend surgical patch done (per Pitfall 55 + 55(e))
+- 主题: 全球芯片二次抛售 长鑫回调 + 7/29 T-7h · 第 32 件 baseline 43 + 第 32 接力 (cron 第五十四期)
+- 📊 同步: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 = 31 期 + 第 31 接力 + 7/28 晚报 = 32 期 + 第 32 接力 baseline 43 子轴 立 拼图起 跨 18 天 7/11 早 → 7/28 晚
+- 📝 raw 素材归档: raw/2026-07-28-21evening.md (FIFTY-FOURTH-21EVENING / 2026-07-28 / POST-T0-FULLDAY / BASELINE-43 / RELAY-32 标记, Pitfall 53 跨 day 边界 后续期 cron 加新维度 工作流 per SKILL.md changelog)
+- 📮 TG 7069165189 sent
+- 关键新维度 4 类: (a) 长鑫 7/28 实战段 回调 -4.08% (per 新浪 7/28 17:02 verbatim "低开 7.71% 报 45.22, 盘中 一度 翻红 触及 49.74, 收跌 4.08% 成交 444.28 亿") + 两日 1850 亿 + 公募 浮盈 500+ 亿 回调 后 479+ 亿; (b) 港股 7/28 实战段 兆易 -17% / 海力士 -30% / 三星 -26.7% 全球 芯片股 二次 抛售 + 港股 恒指 +0.41% / 恒生科技 +0.61% / 国企指数 +0.85% (per 财联社 7/28 verbatim); (c) 7/29 Microsoft FY26 Q4 + Meta Q2 双财报 T-7h 倒数 (微软 共识 876-877B + Azure 39-40% + capex 1900 亿 / Meta 共识 $60.2B + capex 125-145B 同周 capex 1450 亿) + Anthropic 7/28 凌晨 S-1 提交 估值 9650 亿; (d) 早 cron 7/28 早 baseline 42 verbatim preserved (Kimi K3 48h 跑通芯片 + EDA 跌 + Anthropic 7/28 凌晨 S-1 提交). 32 期 + 第 32 接力 baseline 43 子轴 立 拼图起 跨 18 天 7/11 早 → 7/28 晚
+
+## Where we are now (2026-07-28 07:09) — 第五十三期 cron 抵达
 - ✅ cron 第四十九期 (7/26 07:01 早报) 跑通 — 2026-07-26-morning 已发
 - ✅ 5 files committed: daily/2026-07/2026-07-26-morning/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-26-morning.md — commit 911a053 pushed origin main (从 47d7e5e)
 - ✅ wrangler deploy Version f90c567d-442e-498e-a5a7-446e4e1279d9 成功 — 020755.xyz/daily/2026-07/2026-07-26-morning/ bytes 待 cf-cache 落地
