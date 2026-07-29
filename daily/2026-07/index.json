@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-07-29",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "title": "MSFT -29% + META capex 翻倍 + carry over",
+    "short_title": "MSFT -29% + META capex 翻倍",
+    "html_url": "/daily/2026-07/2026-07-29-afternoon/index.html",
+    "type": "afternoon",
+    "relay": 34,
+    "baseline": 45,
+    "cron_no": "第五十六期"
+  },
+  {
+    "date": "2026-07-29",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",

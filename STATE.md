@@ -1394,3 +1394,33 @@ master 7/28 21:01 CST cron 第五十四期 主审 stage 1+2+3+4 — 不变量 #5
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿 (per 早 53 期 + 7/27 午后 baseline 40 verbatim preserved) 7/28 晚报 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
 
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/28 实战段已固化段) + Darwin ✅ 第 32 接力 baseline 43 可遗传 (7/29 早 cron 接力 baseline 43 + 第 32 接力 续 = 给 7/29 早 cron 第五十五期 接力 baseline 43 子轴 + 7/29 Microsoft + Meta 双财报 T-0 实战段).
+
+## cron 第五十六期 7/29 13:01 CST 午后 (跨 day 边界 后续期 cron 加新维度 工作流 per Pitfall 53 + 第 34 件 baseline 45 子轴 立 + 第 34 接力)
+
+**Una 午后选 2026-07-29: MSFT -29% + META capex 翻倍 + 1 夜 carry over 三地联动 · 第 34 件 baseline 45 + 第 34 接力 (cron 第五十六期)**
+
+master 7/29 13:01 CST cron 第五十六期 主审 stage 1+2+3+4 — 不变量 #5 同日 cross-reference 对位 (早 cron 第五十五期 MCP 1.0 + Mythos 拆 HAWK + 双财报 T-0 倒数 → 午后 cron pre-earnings capex 6h 后窗段 + 1 夜 carry over 三地联动 = 一美方基础设施层 vs 一商业化层加深 + 中美+韩 三地 carry over) + Pitfall 53 跨 day 边界 后续期 cron 加新维度 工作流 (master 时点 7/29 13:01 CST vs 7/29 早 cron master 时点 7/29 07:01 CST = 6h 间隔 跨 day 边界 标志) + Pitfall 42 实测生效时点 vs master 时点 (9:00 PT after-close 距 master -4h drop, 不写 实战段) + Pitfall 18 additive 加新维度 6 类 + Pitfall 6 fact-check fix 二类 跨 slot 数字精度 (META Q1 capex $19.84B → 后三季 each $38.39B = 93% 步进 arithmetic 派生 跨 slot verbatim preserved) + FACT-CHECK FIX preserved verbatim (长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿).
+
+**加新维度 6 类**:
+(a) MSFT 7/27 ET close $389.1 / +1.94% 当日 / -19.54% YTD / $345 support / 距历史高 -29% (per TradingKey 7/28 verbatim + Tickeron verbatim) + 4 季度连 beat EPS 平均 surprise 8.4%.
+(b) MSFT Q4 FY26 consensus 营收 $87.72B +14.8% (Azure $8.85B) / 调整后 EPS $4.25 / Q4 capex $35.22B / Gross Margin 66.5% / Azure constant-currency 39-40% (Q3 已给) + FY27 capex guidance 关注 $220B 关口 (per Pepperstone + Tastylive + Tickeron verbatim 跨 3 家分析 跨源).
+(c) META Q2 7/29 after-close 实战段 T-4h: Q1 capex $19.84B vs 公司 guide 全年 $125-145B → 后三季 each 需 $38.39B = 93% 步进 + Q2 consensus EPS $7.20 / 营收 $60.2B +26.7% + 7/24 close $595.19 / market cap $1.51T / 52-WK $520.26-$796.25 / 距高 -24% / YTD -9.7% + options 8 prints 中 6 次破 implied move = highest break rate 该分析师 跟踪 9 家公司中最高 (per T&G 7/29 verbatim Meta Earnings Preview: The Capex Has To Nearly Double).
+(d) 7/28 16:23 PT 全球 chip selloff 蔓延 段: Nasdaq-100 期货 -0.9% / S&P 500 -0.2% pre-market / Kioxia -18% / Kospi -10% circuit breaker / ASML/Infineon/STM each -2% 欧洲段 / AMD $454 + 长鑫 -500% A 股 debut 引发 + NVDA $250B OpenAI 后续 funding + $500B Ohio 数据中心 lease (per fakta 7/28 16:23 verbatim).
+(e) 7/29 FOMC 14:00 ET 决定 + 双财报 9:00 PT after-close = 2.5h 间隔同日 双击 (per Phemex 7/28 verbatim Microsoft Reports Hours After the Fed Decision + Averin 7/27 verbatim Four Trillion-Dollar Tests This Week).
+(f) Moonshot public Kimi K3 7/27 全面开源 2.8 万亿 + OpenAI/NVDA 跨 Moonshot 跟进 段 西方 chip selloff 同步 (per fakta verbatim + 早 baseline 44 Kimi K3 verbatim preserved).
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=38 ≤40 dek=175 ≤200 why=144 ≤200 pp labels=[18,20,17,22] all ≤35 say=[32,40,30,30] all ≤50 + 6 main_facts verbatim 4 类 (含 MSFT -29% / META capex 93% 步进 / 三地 carry over / FOMC 双击 / 早 baseline 44 verbatim preserved / 7/29 双财报) + em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup) + known names MSFT + Microsoft + Meta + NVDA + OpenAI + Anthropic + Moonshot + 长鑫 + Kimi + Azure + HAWK all PASS (per Pitfall 8b 8d 守门) + 跨 4 源 cross-check verbatim (TradingKey + T&G + fakta + Phemex) + web exa/firecrawl 二次验证 一致.
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup (per Pitfall 50).
+
+**Render + TTS**: render 14675 bytes (after patch master stage 3 render) + TTS 72.288s / 1158324B / 128kbps / 32kHz mp3 danya_xuejie PASS 50-90s window per Pitfall v0.8.9 (实测有效窗口).
+
+**Production verify (Stage 4 first deploy)**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-29-afternoon/ = 14675 bytes EXACT MATCH local 14675 bytes ✅.
+
+**baseline 45 子轴 立 + 第 34 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 + 7/28 晚报 baseline 43 + 7/29 早 baseline 44 = 33 期 + 第 33 接力 + 7/29 午后 56 期 = 34 期 + 第 34 接力 baseline 45 子轴 立 拼图起 跨 19 天 7/11 早 → 7/29 午.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e))**: topbar date (2026-07-29 周三 · 13:00) + eyebrow (2026-07-29 · 午后) + featured h2 (7/29 午后 MSFT -29% + META capex 翻倍 + 1 夜 carry over 三地联动 · 第 34 件 baseline 45 + 第 34 接力) + pick-rationale (早 = 协议+加密+商业化 1 夜换位, 午后 = 商业化层 加深 + 1 夜 carry over 三地联动: 长鑫 7/28 -4.08% 回调 + Kioxia -18% + Kospi -10% circuit breaker + NVDA $250B OpenAI + $500B Ohio 数据中心 + Moonshot Kimi K3 同步 + MSFT 距高 -29% + Q4 capex $35.22B + META Q1 capex $19.84B → 后三季 each $38.39B = 93% 步进 + 7/29 FOMC 14:00 ET + 双财报 9:00 PT = 2.5h 间隔同日 双击) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-07/2026-07-29-afternoon/index.html + month-entries prepend 7/29 午后 entry (precise anchor prepend 在 7/29 早 entry 之前 per Pitfall 55(e) 不误伤) + index.json prepend 7/29 afternoon 第 34 件 baseline 45 (type=afternoon + slot_hour=13:00 per v0.8.18 守门) + daily/index.html redirector → 2026-07-29-afternoon/ + daily/index.html 点此直接进入 href → 8 处 surgical patch all PASS.
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿 (per 早 53 期 + 7/27 午后 baseline 40 + 7/29 早 baseline 44 verbatim preserved) 7/29 午后 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/29 实战段已固化段) + Darwin ✅ 第 34 接力 baseline 45 可遗传 (7/29 晚报 cron 接力 baseline 45 + 第 34 接力 续 = 给 7/29 晚报 cron 第五十七期 接力 baseline 45 子轴 + 7/29 双财报 after-close 实战段 T+12h post-cutover + 长鑫 7/29 A 股 K 线 close 实战段).
