@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-07-29",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "title": "MSFT $393.35 + FOMC hold + 港股 +1.96%",
+    "html_url": "daily/2026-07/2026-07-29-21evening/index.html",
+    "commit": "012965c"
+  },
+  {
+    "date": "2026-07-29",
     "slot": "afternoon",
     "slot_hour": "13:00",
     "title": "MSFT -29% + META capex 翻倍 + carry over",
