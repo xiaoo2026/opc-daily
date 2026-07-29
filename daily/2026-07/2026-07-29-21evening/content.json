@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-29",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周三 · 覆盖 7/29 13:00 ~ 7/29 21:00 · 双财报 T-3h + FOMC hold 同日双击 + 港股 回暖",
+  "title": "MSFT $393.35 + FOMC 不动 + 港股 +1.96%",
+  "dek": "MSFT 7/28 close $393.35, 距高 -29%. FOMC 7/29 14:00 ET hold 3.50-3.75%. 港股 恒指 +1.96% / 恒科 +2.84%. 双财报 T-3h, 距 after-close 9:00 PT = 7/30 0:00 CST.",
+  "why_this": "7/29 早 T-7h + 午后 T-4h + 晚报 T-3h = 同 day 3 段 拼图 第 3 段 (per Pitfall 46). 加新 dim 7 类: 收盘 $393.35 + pre-market $395 + FOMC hold 同日双击实战段 + 港股回暖 + 距 $400 测试 + 95% beat priced in + $627B backlog. 实战段 OK.",
+  "pick_points": [
+    {"num": "$393.35", "label": "MSFT 7/28 close 距高 -29%"},
+    {"num": "3.50%", "label": "FOMC 7/29 hold 中位 不动"},
+    {"num": "+1.96%", "label": "港股 7/29 close 恒指回"},
+    {"num": "$597.38", "label": "META 7/29 pre-market 测试 $575-595"}
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "main_facts": [
+    "MSFT 7/28 4:00 PM EDT close $393.35 (+4.25/+1.09%) volume 32,168,649, 距 52-WK 高点 -29%. 7/29 07:03 AM EDT pre-market $395.00 (+1.65/+0.42%). YTD -19.54%, 较 S&P 500 落后 26 pct. fxleaders 7/29 verbatim MSFT 距 $400 关键 测试, Azure 40% growth target + $40B AI spending 段 (per stockanalysis.com + gurufocus 7/29 02:02 verbatim + fxleaders 7/29 verbatim 续 baseline 44/45). 实战段 接力 同 day T-7h → T-4h → T-3h 3 段 拼图 第 3 段 (per Pitfall 46 OK 不 dilution 区别 Pitfall 17 同主轴续写).",
+    "META 7/29 pre-market $597.38 (+3.97/+0.67%) per stockscan.io verbatim. 7/24 close $595.19, market cap $1.51T, 52-WK range $520.26 - $796.25, 距高 -24%, YTD -9.7%. $575-$595 关键 battleground zone — Fibonacci support + 20-day SMA + coiled RSI 36-44 收敛 (per stockwirex 7/29 verbatim). implied move ±7.9% = $548.17 - $642.21. 8 prints 中 6 次 破 implied (4/29 2026 -8.5% / 1/2026 +22.2% / 10/2025 -9.1% / 7/2025 +9.7% / 4/2025 +14.4% / 1/2025 +11.4%) — highest break rate 该分析师 跟踪 9 家公司中最高 (per tradesandgains 7/29 verbatim 续 baseline 45).",
+    "7/29 14:00 ET FOMC 决议 hold 3.50-3.75% 中位区间 + 9/15-16 加息窗口推迟段. master 21:01 CST 距 7/29 14:00 ET = +6h 实战生效段 OK 写 (per Pitfall 42 时序守门). Boston Globe 7/29 verbatim 距 Sep 15-16 会议 (5+ 年 inflation stuck > 2% target, Fed policymakers 失去 patience). Monetary Policy Report July 2026 7/10 已给 (per federalreserve.gov 7/10 verbatim context). 1 晚 双击 实战生效 = FOMC 14:00 ET hold + 双财报 9:00 PT after-close 21:00 ET = 7h 间隔 (per Phemex 7/28 verbatim Microsoft Reports Hours After the Fed Decision 续 baseline 45).",
+    "港股 7/29 收盘 16:15 CST 恒指 +1.96% / 恒科 +2.84% 回暖 vs 7/28 全球抛售 = 二阶段 carry over (per wap.stockstar.com 证券时报 7/29 16:15 verbatim 人民财讯). 汽车板块领涨 理想 +10% / 零跑 +9% / 奇瑞 +8% / 吉利 +6%. 权重科技股走强 小米 +9% / 腾讯 +4%. PCB 存储下挫 芯碁微装 -15% / 胜宏 -8% / 建滔 -6% / 兆易 -3% — 7/28 晚 baseline 43 verbatim 兆易 -17% / 海力士 -30% / 三星 -26.7% 全球抛售 续 + 港股 +1.96% 实战生效段 接力 cross-check = 二阶段 carry over. 星岛 7/29 verbatim 恒指升 346 点 + 小米 +9% + 理想 +10% 跨源 cross-check 1 源.",
+    "MSFT 距 $400 关键 测试 + $230B capex 关注 + 95% beat odds 已 priced in + FY27 capex guidance 是真正 stock mover. 247wallst 7/28 verbatim META + MSFT both 95% beat odds priced in / Meta 82% gross margin + 19x forward P/E wider margin of safety / MSFT less-bounded AI capex ramp / $627 billion commercial backlog capex cover / capex nearing $230. 实战段 capex 关注 段 vs 午后 baseline 45 capex $35.22B 季度 + FY26 capex 190B + FY27 capex $220B 关口 段 verbatim preserved 续. ajupress 7/29 14:42 verbatim Big Tech Faces Market Anxiety Ahead of Q2 Earnings Amid Cash Flow Concerns 段. 跨 3 源 实战段 cross-check OK.",
+    "7/29 早 baseline 44 第 33 接力 + 7/29 午后 baseline 45 第 34 接力 verbatim preserved (跨 day 边界 第一 + 第二期 + 同 day 3 段 拼图 第 3 段). 7/29 早 = MCP 1.0 spec 7/28 19:35 (协议层) + Mythos 60h 拆 NIST HAWK (加密层) + 双财报 T-7h 倒数 (商业化层). 7/29 午后 = 加新 dim 6 类 (MSFT -29% + META 93% 步进 + 1 夜 carry over 三地 + FOMC 同日双击 + 长鑫+Moonshot 同步 + options 6/8 破 implied). **7/29 晚报 (本期) = 加新 dim 7 类 (per Pitfall 46 3 段 拼图 第 3 段 + Pitfall 53 跨 day 边界 后续期 cron 加新维度)**: (a) MSFT 7/28 close $393.35 + 7/29 pre-market $395 段 (b) META 7/29 pre-market $597.38 + $575-595 关键 zone 段 (c) FOMC 7/29 14:00 ET hold 3.50-3.75% 实战生效段 (d) 港股 7/29 +1.96% 实战生效段 (e) MSFT 距 $400 + $230B capex + 95% beat priced in 段 (f) META $627B backlog + 82% gross margin + 19x P/E wider margin of safety 段 (g) ajupress 247wallst yahoo 跨 3 源 实战段 cross-validate 段."
+  ],
+  "not_picked": [
+    "<strong>候选 B · Anthropic + 协议层 7/28 1 暗 1 亮 (MCP 1.0 + Mythos 拆 HAWK + Anthropic CTO 公开立场)</strong> · 7/29 早 baseline 44 第 33 接力 + 7/29 午后 baseline 45 第 34 接力 verbatim preserved 已立, 7/29 晚报 同主轴 dilution drop (per Pitfall 17).",
+    "<strong>候选 C · 长鑫 + Moonshot Kimi K3 carry over 7/28 16:23 PT 三地联动</strong> · 7/29 早 baseline 44 + 7/29 午后 baseline 45 verbatim preserved 已立, 7/29 晚报 dilution drop, 但 7/29 港股 PCB 存储下挫 -15%/-8%/-6%/-3% 段 接 续 实战段 OK.",
+    "<strong>候选 D · 全球芯片二次抛售 7/28 Kioxia -18% + Kospi circuit breaker</strong> · 7/28 晚 baseline 43 第 32 接力 + 7/29 午后 baseline 45 第 34 接力 verbatim preserved 已立, 7/29 晚报 dilution drop, 但 港股 7/29 PCB 存储下挫 段 接 续.",
+    "<strong>候选 E · Anthropic S-1 7/28 凌晨 提交 IPO 估值 9650 亿 14 月涨 15 倍</strong> · 7/28 早 baseline 42 第 31 接力 已立, 7/29 早 + 7/29 午后 dilution drop.",
+    "<strong>候选 F · 7/30 0:00 CST 双财报 公告 T+0 实战段</strong> · 实战生效时点 > master 时点 + 2h drop 实测段 (per Pitfall 42), 7/30 早 cron 第五十八期 接力 实战段."
+  ],
+  "say_4": [
+    "MSFT 7/28 close $393.35, 距高 -29% 进双财报.",
+    "FOMC 7/29 14:00 ET hold 3.50-3.75% 同日双击.",
+    "港股 7/29 +1.96%, 暖但 PCB 存储续下挫.",
+    "META 7/29 pre-market $597.38, 测 $575-595 zone."
+  ],
+  "stat_card_date_label": "7/29 周三",
+  "meta_description": "MSFT 7/28 close $393.35 距高 -29% + FOMC 7/29 hold 3.50-3.75% + 港股 7/29 +1.96% 回暖 + META 7/29 pre-market $597.38. 同日双击实战生效段. baseline 46 + 第 35 接力 立."
+}
