@@ -1439,3 +1439,41 @@ master 7/29 13:01 CST cron 第五十六期 主审 stage 1+2+3+4 — 不变量 #5
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿 (per 早 53 期 + 7/27 午后 baseline 40 + 7/29 早 baseline 44 verbatim preserved) 7/29 午后 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
 
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/29 实战段已固化段) + Darwin ✅ 第 34 接力 baseline 45 可遗传 (7/29 晚报 cron 接力 baseline 45 + 第 34 接力 续 = 给 7/29 晚报 cron 第五十七期 接力 baseline 45 子轴 + 7/29 双财报 after-close 实战段 T+12h post-cutover + 长鑫 7/29 A 股 K 线 close 实战段).
+
+
+---
+
+## cron 第五十八期 7/30 07:01 CST 早 (主审 stage 4 留痕段 + 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 + 53 + 第 36 件 baseline 47 子轴 立 + 第 36 接力)
+
+**Una 早选 2026-07-30: MSFT 赢 Azure 输股价 + META 赢营收 EPS miss · 第 36 件 baseline 47 + 第 36 接力 (cron 第五十八期)**
+
+master 7/30 07:01 CST cron 第五十八期 主审 stage 1+2+3+4 — 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 (新一天 baseline 立 重新开始) + Pitfall 53 (master 时点 7/30 07:01 CST vs 7/29 早 cron master 时点 7/29 07:01 CST = 24h 跨 day 边界 标志) + 不变量 #5 同日 cross-reference 对位 (7/29 晚报 = 双财报 T-3h + 7/29 港股 +1.96% + FOMC hold → 7/30 早 = 双财报 T+7h 实战生效段 = 7/29 晚报 对位 那一面: 一预期 一 实测) + 不变量 #6 Loop+Darwin 自检 (Loop ✅ SKILL.md 0 增长 + Darwin ✅ 第 36 接力 baseline 47 可遗传) + Pitfall 42 实战生效时点 ≤ master 时点 OK 写 实战段 (7/29 双财报 after-close 9:00 PT 距 master 7/30 07:01 CST = 14h 实战生效段 OK 写) + Pitfall 18 additive 加新维度 7 类 + Pitfall 46 3 段 拼图 收官段.
+
+**加新维度 7 类 (跨 19 天 vs 之前 35 期 baseline 11-46)**:
+(a) **MSFT Q4 FY26 7/29 实战生效段**: ET close $390.34 (-7.41/-1.86%) + after-hours $387.18 (-3.16/-0.81%) (per Yahoo Finance + CNBC 7/29 实时 quote). 营收 $90B vs $87.7B consensus BEAT +2.6% + 18% YoY over 3 年最快 (per constellationr.com Larry Dignan 7/29 verbatim "Microsoft reported fourth quarter earnings of $35.8 billion, or $4.81 a share, on revenue of $90 billion, up 18% from a year ago"). Azure 41% constant currency 超 39-40% guide + AI workload 转化优预期. Azure FY26 全年 >$100B 跨 major milestone (per constellationr.com verbatim). EPS $4.81 GAAP / $4.74 non-GAAP BEAT vs $4.24 consensus +13.4%. OpenAI 持股 Q4 gain $3.4B + Anthropic 持股 Q4 gain $3.2B = $6.6B total. Xbox severance 6 cent hit EPS.
+(b) **MSFT 7/29 stock 反应 段**: ET close -1.86% + after-hours -0.81% = capex 关注 + FCF collapse 段 (per YouTube Zacks 7/29 verbatim "Microsoft stock dropped after earnings" + "free cash flow just plummeted, right? It was down to 5 billion. It's usually in the 20 billion range"). FCF 跌至 $5B (vs 历史 $20B). 反差 = 营收 +18% YoY + Azure 41% + EPS beat 大幅 但股价 跌 1.86% + after-hours 进一步 0.81% = "speed kills" 247wallst 7/28 预言 命中 段.
+(c) **META Q2 2026 7/29 实战生效段**: 7/29 ET close $595.19 → after-hours 跌 ~8% to $547 (per Yahoo Finance 7/29 verbatim "Shares fell nearly 8% in after-hours trading"). 营收 $60.8B BEAT +0.9% vs $60.23B est + +28% YoY (per Yahoo Finance 7/29 verbatim "Meta Q2 2026 Actual Estimate Revenue $60.8B $60.23B" + Investing.com transcript verbatim "Q2 total revenue was $60.8 billion, up 28%, or 27% on a constant currency basis"). 广告 $59.36B BEAT +0.6% vs $59B est + +27% YoY. EPS $6.18 MISS -13.5% vs $7.14 est (per Yahoo Finance verbatim "Adj. earnings per share $6.18 $7.14").
+(d) **META 2026 capex narrowed to $130-145B** (vs prior $125-145B per Q1 报告) — lower-end raised $5B to $130B (per Reuters 7/29 verbatim "The Facebook parent now expects 2026 capital expenditure to be between $130 billion and $145 billion, compared with its prior forecast of $125 billion to $145 billion"). $2.4B 法律 charges Q2 (per Reuters verbatim). Q3 2026 指引 $61-64B revenue (per Investing.com transcript verbatim "We expect third quarter 2026 total revenue to be in the range of $61 billion to $64 billion"). 黑石 + Meta 合作 compute infrastructure (per Investing.com verbatim "with BlackRock yesterday is an example of the partnerships that we can structure to complement our approach to building infrastructure capacity"). Reality Labs Q2 revenue $431M +16% YoY AI glasses 强 + Quest 跌.
+(e) **MSFT vs META 7/29 实战生效 对位 段**: 营收 BEAT + Azure 41% BEAT + EPS $4.81 BEAT vs 营收 BEAT + 广告 BEAT + EPS $6.18 MISS = 一美方 vs 一美方 = 同 company 节奏 一 missed 一 beat 一 FCF collapse 一 narrows 段 = 速度定价 显眼段 (per 247wallst 7/28 + YouTube Zacks 7/29 verbatim). MSFT stock close -1.86% + after-hours -0.81% to $387.18 vs META after-hours -8% to $547 = META after-hours 跌得更狠 段.
+(f) **7 段 拼图 收官段**: 7/26 早 baseline 38 + 7/26 晚报 第 27 接力 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 + 7/28 晚 baseline 43 + 7/29 早 baseline 44 + 7/29 午后 baseline 45 + 7/29 晚 baseline 46 + 7/30 早 baseline 47 立 拼图起 跨 19 天 7/11 早 → 7/30 早.
+(g) **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 6 期 baseline (7/27 午后 + 7/28 早 + 7/28 晚 + 7/29 早 + 7/29 午后 + 7/29 晚) 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 2020 532 亿 段 已 校准. 7/30 早 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=36 ≤40 dek=198 ≤200 why=156 ≤200 main_h2=13 ≤20 pp labels=[31,23,32,23] all ≤35 say=[39,41,45,44] all ≤50 + 7 main_facts verbatim 5 类 + em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup) + known names Microsoft + Azure + Meta + OpenAI + Anthropic + Kimi + Moonshot + 长鑫 + BlackRock + 247wallst all PASS (per Pitfall 8b 8d 守门).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup (per Pitfall 50).
+
+**Render + TTS**: render 18309 bytes + TTS 77.688s / 1244724B / 128kbps / 32kHz mp3 danya_xuejie PASS 50-90s window per Pitfall 35 (实测有效窗口).
+
+**Production verify**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-07/2026-07-30-morning/index.html = 18309 bytes EXACT MATCH local 18309 bytes ✅, 200 OK, cf-cache MISS (Cache-Control: no-cache 验证 PASS).
+
+**Top-level surgical patch (per Pitfall 55 + 55(e) + 62)**: topbar date (2026-07-30 周四 · 07:00) + eyebrow (2026-07-30 · 早报) + featured h2 (7/30 早 MSFT 赢 Azure 输股价 + META 赢营收 EPS miss · 第 36 件 baseline 47 + 第 36 接力) + pick-rationale (7/30 周四 早 (T+7h) 实战生效段 + MSFT $90B + Azure 41% + FCF collapse vs META $60.8B BEAT + EPS miss + 2026 capex narrows + 247wallst 7/28 命中段) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-07/2026-07-30-morning/index.html + month-entries prepend 7/30-morning entry (precise anchor prepend 在 7/29 evening entry 之前 per Pitfall 55(e) 不误伤) + index.json prepend 7/30 morning 第 36 件 baseline 47 (slot_hour=07:00 per v0.8.18 守门) + daily/index.html redirector → 2026-07-30-morning/ = 8 处 surgical patch all PASS.
+
+**Ad-hoc verifier 47 check run (per Pitfall v0.8.13 + 8a/8b/8d)**: 45/47 PASS initial + 2 fix pass (em-dash cleanup per Pitfall 50 + Moonshot raw 补 verbatim per Pitfall 8b/8d) = **45/47 PASS** final (2 FAIL = STATE.md cron 期 entry 还没写入 + production 200 OK 还没 deploy — 阶段 4 后续 commit + wrangler deploy 后 47/47 PASS). 跑完 PASS = "45/47 PASS" 报 TG 即可. 不依赖 suite green. ad-hoc verification NOT suite green per Pitfall 13.
+
+**baseline 47 子轴 立 + 第 36 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 + 7/28 晚报 baseline 43 + 7/29 早 baseline 44 + 7/29 午后 baseline 45 + 7/29 晚报 baseline 46 = 35 期 + 第 35 接力. 续 7/30 早 58 期 = 36 期 + 第 36 接力 baseline 47 子轴 立 拼图起 跨 19 天 7/11 早 → 7/30 早.
+
+**Git + Wrangler**: commit af52da6 + push origin main (29742a2..af52da6) + wrangler deploy Version ID 36572c90-732e-4229-986e-2735918b8683 (production verify 18309 bytes EXACT MATCH).
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 6 期 baseline (7/27 午后 baseline 40 + 7/28 早 baseline 42 + 7/28 晚 baseline 43 + 7/29 早 baseline 44 + 7/29 午后 baseline 45 + 7/29 晚 baseline 46) 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 2020 532 亿 段 已 校准. 7/30 早 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/29 实战段已固化段) + Darwin ✅ 第 36 接力 baseline 47 可遗传 (7/30 午后 cron 接力 baseline 47 + 第 36 接力 续 = 美方 7/29 双财报 实战段 接力 = 7/30 午后 cron 第五十九期 接力 baseline 47 子轴 + 黑石 +2026 capex narrows 实战段 路径).
