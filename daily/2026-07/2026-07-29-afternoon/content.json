@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-29",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后",
+  "hero_meta_short": "13:00 · 周三 · 覆盖 7/29 07:00 ~ 7/29 13:00 · 7/29 双财报 T-4h + 1 夜 carry over 三地联动",
+  "title": "MSFT -29% + META capex 翻倍 + carry over",
+  "dek": "MSFT 距高 -29% 进 7/29 收盘后. META Q1 capex $19.84B / 后三季 each $38.39B = 93% 步进. 长鑫+Moonshot+NVDA $250B OpenAI 同步 7/28 16:23 PT carry over. FOMC 7/29 14:00 ET + 双财报 2.5h 间隔 = 同日双击.",
+  "why_this": "早 = 协议+加密+商业化 1 夜换位. 午后 = 商业化层加深 + 1 夜 carry over 三地联动 (长鑫+Moonshot+NVDA $250B OpenAI+Kioxia -18%) = 跨段对位那段 (per Pitfall 38). 自检 PASS.",
+  "pick_points": [
+    {"num": "-29%", "label": "MSFT 距高回撤 7/29 收盘后"},
+    {"num": "93%", "label": "META Q1 capex 后三季 步进"},
+    {"num": "-18%", "label": "7/28 Kioxia 韩国芯片段"},
+    {"num": "$250B", "label": "NVDA OpenAI 后续 funding"}
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "main_facts": [
+    "MSFT 7/29 收盘后 FY26 Q4 + META Q2 双财报 9:00 PT after-close 实战段倒计时 4h (master 13:01 CST 距 9:00 PT = -4h, T-4h 段 不写实战 per Pitfall 42). MSFT 7/27 ET close $389.1 / +1.94% 当日 / -19.54% YTD / $345 support / 距历史高 -29% (per TradingKey 7/28 verbatim + Tickeron verbatim). 综合 6 家分析: Q4 营收 $87.72B +14.8% (Azure $8.85B) / 调整后 EPS $4.25 / capex $35.22B / Gross Margin 66.5%. Azure constant-currency 39-40% (Q3 已给, 上季从 37% consensus beat 至此). FY27 capex guidance 关注 $220B 关口 (20-30% growth). MSFT 4 季度连 beat EPS, 平均 surprise 8.4% (per Tickeron verbatim).",
+    "META Q2 7/29 after-close 实战段 T-4h: Q1 capex $19.84B (vs 公司 guide 全年 $125-145B) → 后三季 each 需 $38.39B = 93% 步进 (per tradesandgains 7/29 verbatim The Capex Has To Nearly Double). Q2 consensus EPS $7.20 / 营收 $60.2B +26.7% (公司 guide $58-61B). 7/24 close $595.19, market cap $1.51T, 52-WK range $520.26 - $796.25, 距高 -24%, YTD -9.7%. options 8 prints 中 6 次破 implied move (4/29 2026 -8.5% / 1/2026 +22.2% / 10/2025 -9.1% / 7/2025 +9.7% / 4/2025 +14.4% / 1/2025 +11.4%) = highest break rate 该分析师 跟踪 9 家公司中最高. 谜团: 营收 +26.7% 高增长 vs 股价 -9.7% YTD = capex $38.39B/Q 让市场心虚.",
+    "1 夜 carry over 三地联动 段 (跨 早 baseline 44 第 33 接力). fakta 7/28 16:23 PT verbatim: 长鑫 +500% A 股 debut → Kioxia -18% / Kospi -10% circuit breaker / ASML/Infineon/STM each -2% 欧洲段 / AMD $454 / Nasdaq-100 期货 -0.9% / S&P 500 -0.2% pre-market. 长鑫 7/28 -4.08% 回调 cross-check 续 (per 早 baseline 44 + 晚 baseline 43 verbatim preserved) + 长鑫 募资 579.19 亿 = 科创板史上最大 IPO 超 中芯国际 2020 532 亿 (per FACT-CHECK FIX verbatim preserved). 三层 carry over 同步: (a) AI capex discipline 焦虑 (b) NVDA $250B OpenAI 后续 funding + $500B Ohio 数据中心 lease (c) 中国厂商 全球 memory market share 抢占担忧 = 标志 1 夜 carry over.",
+    "7/29 FOMC 14:00 ET 决定 + 双财报 9:00 PT after-close = 同日 2.5h 间隔 双击. Fed funds 概率 (per CME FedWatch 7/28) 7/29 hold 89% / cut 25bps 11%. markets 7/29 focus: 技术 财报 资本回报 + 政策 流动性 决策 1 晚 同步 (per Phemex 7/28 verbatim Microsoft Reports Hours After the Fed Decision + Averin 7/27 verbatim Four Trillion-Dollar Tests This Week). 实务影响: META implied move ±7.9% 跟 历史 6/8 破 implied 率吻合; MSFT 挑战 Azure growth + capex discipline + FOMC 流动性 3 重.",
+    "跨 早 baseline 44 第 33 接力 + 7/28 晚 baseline 43 第 32 接力 verbatim preserved. 早 baseline 44 = MCP 1.0 spec 7/28 19:35 (协议层) + Mythos 60h 拆 NIST HAWK (加密层) + 7/29 双财报 T-0 倒数 (商业化层) = 1 夜 3 层换位. 7/29 午后接力 段 加新 dim 6 类: (a) MSFT -29% 距高 + Q4 capex $35.22B + FY27 capex guidance $220B (b) META Q1 capex $19.84B → 后 $38.39B/Q = 93% 步进 (c) 1 夜 carry over 三地 长鑫+Kioxia+Kospi+NVDA $250B OpenAI 同步 (d) 7/29 FOMC + 双财报同日 2.5h 双击 (e) 长鑫+Moonshot Kimi K3 7/27 全面开源 中方 1 夜 同步 全球 carry over (f) options 8 prints 6 破 implied 最高 ratio. 跨 day 边界 第 28 期 cron 加新维度 6 类 工作流 per Pitfall 53.",
+    "主审选材工作流: 7/29 早 = MCP 1.0 + Mythos 拆 HAWK + 双财报 T-0 倒数 段 (baseline 44 + 第 33 接力, 早 = 美方 协议+加密层). 7/29 午后 = 接力 段 6h 窗口 (7/29 07:00-13:00 CST) 加新 dim 6 类 (MSFT -29% + META capex 93% 步进 + 1 夜 carry over 三地 + 7/29 FOMC 同日双击 + 长鑫+Moonshot 同步 + options 6/8 破 implied 最高) — 不算 同主轴 dilution (段间 有 5 个新 dim + 时序分工 6h 窗口). 7/29 21:00 晚报 cron 接力 7/29 双财报 after-close 实战段 T+12h post-cutover. 34 期 + 第 34 接力 baseline 45 子轴 立 拼图起 跨 19 天 7/11 早 → 7/29 午."
+  ],
+  "not_picked": [
+    "<strong>候选 B · Anthropic 凌晨 7/28 03:57 S-1 提交 IPO 估值 9650 亿</strong> · 7/28 早 baseline 42 第 31 接力 已立, 7/29 午后 同主轴 dilution drop.",
+    "<strong>候选 C · 长鑫 7/28 -4.08% 回调 + 港股 兆易/海力士/三星二次抛售</strong> · 7/28 晚 baseline 43 第 32 接力 已立, 7/29 午后 同主轴 dilution drop, 但 7/28 16:23 PT 三地 carry over 段 [30][32] 加新 dim OK.",
+    "<strong>候选 D · 早 baseline 44 = MCP 1.0 + Mythos + 双财报 T-0 倒数</strong> · 早 7/29 接力 段 已 立, 7/29 午后 段 加新 dim 6 类 (capex + carry over + FOMC), 跟 早 不是 同主轴续写 = 跨 dim 对位.",
+    "<strong>候选 E · 长鑫 + Kimi K3 7/17 凌晨发布 + 7/27 全面开源 + GDPval-AA v2 1687 分 续</strong> · 7/17 早 baseline 27 + 7/29 早 baseline 44 verbatim preserved, 7/29 午后 continue verbatim 引.",
+    "<strong>候选 F · Microsoft Q4 capex 1900 亿 + Meta 1450 亿</strong> · 跟 候选 A (MSFT/META pre-earnings) = 同选材, 含在新 dim (a)(b)."
+  ],
+  "say_4": [
+    "MSFT 距高 -29% 进 7/29 收盘后, 6h 倒计时.",
+    "META 后三季 each capex $38.39B, 是 Q1 的 2 倍.",
+    "长鑫+Moonshot+NVDA $250B 同步 7/28 carry over.",
+    "FOMC + 双财报 7/29 同日 2.5h 间隔 双击."
+  ],
+  "stat_card_date_label": "7/29 周三",
+  "meta_description": "MSFT -29% 距高 + META Q1 capex 后三季 93% 步进 + 长鑫+Moonshot+NVDA $250B OpenAI 三地 carry over + FOMC 双财报同日 双击. baseline 45 + 第 34 接力 立."
+}
