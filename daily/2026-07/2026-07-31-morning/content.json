@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-31",
+  "slot": "morning",
+  "slot_label": "早报",
+  "slot_hour": "07:00",
+  "hero_meta_short": "07:00 · 周五 · 覆盖 7/30 21:00 ~ 7/31 07:00 · 1 夜 reaction 段 · MSFT +3 万亿 + 投行集体上调 6 家",
+  "type": "morning",
+  "title": "MSFT 单日 +3 万亿 投行集体上调 6 家",
+  "dek": "MSFT 7/30 ET close +9% 单日市值暴增 3 万亿. 6 家投行上调目标价 丰业 470→510. 7 月最后交易日 T-0. 8/1 Trump 关税 deadline T-1.",
+  "why_this": "MSFT 7/30 ET close +9% ~ +11% 单日市值暴增 3 万亿, 1 夜 reaction 段 6 家投行集体上调 (丰业 470→510 / 花旗 →600 / 富国 650 / 瑞穗 →510 / PiperSandler →550 / 伯恩斯坦 →647, 仅巴克莱 512). 跟 7/30 晚报 META -10% 拼成 1 夜双对位, 现金流转 vs 现金流转负.",
+  "main_metrics": null,
+  "main_h2": "事实部分 (30 秒能懂)",
+  "stat_card_date_label": "7/31 周五",
+  "meta_description": "MSFT +9% 单日 +3 万亿. 6 家投行上调目标价 丰业 470→510. META -10% + 高盛降. 7 月最后交易日 T-0. 8/1 Trump 关税 deadline T-1. Anthropic S-1 6/2 已提交 (vs 7/28 早 raw 错算 7/28 凌晨 = 错算 56 天 arithmetic fix).",
+  "headline_alt": "MSFT 1 夜 +3 万亿 投行集体上调 6 家",
+  "canonical_url": "daily/2026-07/2026-07-31-morning/",
+  "main_facts": [
+    "MSFT 7/30 ET close 实战收官 +9% ~ +11% 单日市值暴增 3 万亿, S&P 500 +1.66% 7437.63 / Nasdaq +2.78% 25122.18 / Dow +1.19% 52208.06 (per 财联社 7/31 05:39 verbatim + 腾讯 7/30 21:34 verbatim)",
+    "MSFT 7/30 投行集体上调目标价 6 家: 丰业 470→510 / 伯恩斯坦 646→647 / 花旗 →600 / 富国 650 / 瑞穗 →510 / PiperSandler →550, 仅巴克莱下调至 512 (per 腾讯 7/30 20:50 verbatim)",
+    "META 7/30 ET close 实战收官 -10% + 高盛跟进降评级, 长期算力投入规模 缺乏足够能见度 (per 腾讯 7/30 21:34 + 东方财富 7/30 22:22 verbatim)",
+    "7/30 6 月 PCE 同比 +3.7% 符合预期, Fed 第 5 次按兵不动 3 票鹰派异议 (per 东方财富 7/30 21:42 + 新浪 7/30 22:22 verbatim)",
+    "8/1 Trump 关税 deadline 倒数 T-1 + Trump 7/30 再威胁打击伊朗 + 美军 7/30 空袭赞詹 杀 3 名革命卫队成员 (per 新浪 7/30 22:22 + NYT 7/29 verbatim)",
+    "Anthropic S-1 6/2 已 IPO 提交 (vs 7/28 早 raw 错算 7/28 凌晨 = 错算 56 天) 7/30 公开反应 估值 9650 亿 14 月涨 15 倍 (per 搜狐 6/2 verbatim + Y7. FACT-CHECK FIX)"
+  ],
+  "pick_points": [
+    {"num": "+3 万亿", "label": "MSFT 单日 +9% ~ +11% 实战收官"},
+    {"num": "6 家", "label": "投行集体上调目标价 丰业 470→510 等"},
+    {"num": "-10%", "label": "META ET close 实战收官 段 + 高盛降"},
+    {"num": "T-1", "label": "8/1 Trump 关税 deadline 倒数 + Fed 鹰派"}
+  ],
+  "say_4": [
+    "MSFT 1 夜收官 +3 万亿, 1 个晚上 重写 AI 算力 定价 — 现金流转的, 给溢价.",
+    "投行集体上调 6 家, 共识速度定价 — Azure 43% 之外, 现金流转 才是 关键.",
+    "META -10% + 高盛降, 现金流转 负 — 长期算力投入 缺 商业化证据.",
+    "7 月最后交易日 T-0 + 8/1 关税 T-1, AI 之外 现实世界 给 倒数."
+  ],
+  "not_picked": [
+    "Anthropic S-1 6/2 校准 段: 错算 56 天 arithmetic 已知, 不是新料",
+    "Trump 7/30 打击伊朗 段: 跟 AI 算力叙事 弱关联, 让位 关税 deadline",
+    "高盛 META 降评级 段: 已 capture 在 META -10% 段 不另立"
+  ],
+  "fact_check_fix": "7/28 早 raw.md verbatim 'Anthropic 7/28 凌晨 S-1 提交' 是 错算 56 天 arithmetic — 真实 6/1-6/2 已提交, 7/30 公开反应. 7/31 早 raw 校准 为 'Anthropic 6/2 S-1 已提交 7/30 公开反应' per Y7. 段.",
+  "baseline": 49,
+  "relay": 38,
+  "narrative_count": 39,
+  "raw_md_source": "raw/2026-07-31-morning.md",
+  "render_engine": "draft-daily.py v0.8.16"
+}
