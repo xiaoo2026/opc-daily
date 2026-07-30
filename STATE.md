@@ -1516,3 +1516,21 @@ master 7/30 13:01 CST cron 第五十九期 主审 stage 1+2+3+4 — 跨 day 边�
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 7 期 baseline (7/27 午后 baseline 40 + 7/28 早 baseline 42 + 7/28 晚 baseline 43 + 7/29 早 baseline 44 + 7/29 午后 baseline 45 + 7/29 晚报 baseline 46 + 7/30 早 baseline 47 verbatim preserved) 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 2020 532 亿 + MSFT Q4 $90B + Azure 41%→43% 校准 + META Q2 $60.8B + EPS $6.18 MISS + 2026 capex narrows $130-145B + 港股 周 +3.53% + 智谱 314亿 + IMF 3% vs 中国 4.6% + META premarket -6.72% to $546.28 + FCF $784M + 长鑫 险企 +1400亿. 7/30 午后 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
 
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/26-7/30 实战段已固化段) + Darwin ✅ 第 37 接力 baseline 48 可遗传 (7/30 晚报 cron 接力 baseline 48 + 第 37 接力 续 = 给 7/30 晚报 cron 第六十期 接力 baseline 48 子轴 + 美方 7/29 双财报 实战续段后续 + 中方 港股 / 长鑫 K 线 / 黑石合作 实战段续).
+
+
+## Where we are now (2026-07-31 07:05) — 第六十一期 cron 抵达 (Una 早报)
+
+- ✅ cron 第六十一期 (7/31 07:01 早报) 跑通 — 2026-07-31-morning 已发
+- ✅ 5 files committed: daily/2026-07/2026-07-31-morning/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-31-morning.md — commit f4321d8 pushed origin main
+- ✅ wrangler deploy (后台 process proc_02ea1eec044c)
+- ✅ voice.mp3 (1200372B / 74.916s / 128kbps / 32kHz / danya_xuejie) 生成 PASS 50-90s window per Pitfall v0.8.9 (实测有效窗口)
+- ✅ content.json 字数硬约束 PASS title=24 ≤40 dek=99 ≤200 why=198 ≤200 pp labels=[16,10,18,19] all ≤35 say=[49,46,41,43] all ≤50 + 6 main_facts verbatim 5 类
+- ✅ Pitfall 37 humanizer audit pass em dash 0 (4 处 in say_4 + meta description 全 cleanup) + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup per Pitfall 50
+- ✅ top-level index.html featured + archive prepend surgical patch done (per Pitfall 55 + 55(e) + 55(f) + 49 + 53) + 7/31 早 entry 新增 (per Pitfall 49 新一天 第一期 cron)
+- 主题: MSFT 7/30 ET close +9% ~ +11% 单日市值暴增 3 万亿 + 6 家投行集体上调目标价 6 家 (丰业 470→510 / 伯恩斯坦 646→647 / 花旗 →600 / 富国 650 / 瑞穗 →510 / PiperSandler →550, 仅巴克莱 512) + META -10% + 高盛跟进降评级 + 7 月最后交易日 T-0 + 8/1 Trump 关税 deadline T-1 + Anthropic S-1 6/2 已提交 (Y7. FACT-CHECK FIX 7/28 早 raw 错算 56 天 arithmetic) · 第 39 件 baseline 49 + 第 38 接力 (cron 第六十一期)
+- 📊 同步: 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 (master 时点 7/31 07:01 CST vs 7/30 早 cron master 时点 7/30 07:01 CST = 24h 跨 day 边界 标志, 显式区分 vs 7/30 晚报 = 同 day 3 段 拼图 第 3 段 per Pitfall 46) + 7/30 早 + 7/30 午后 + 7/30 晚报 3 段 拼图 baseline 48 收官段 + 7/31 早 = 新一天 baseline 立 重新开始 = baseline 49 子轴 立
+- 📝 raw 素材归档: raw/2026-07-31-morning.md (SIXTY-FIRST-MORNING / 2026-07-31 / NEW-DAY-FIRST / BASELINE-49 / RELAY-38 标记, 7 类新 dim: (a) MSFT 7/30 ET close +9% ~ +11% 单日市值暴增 3 万亿 (b) 6 家投行集体上调 目标价 (丰业 470→510 等) (c) META -10% + 高盛降评级 (d) Trump 7/30 打击伊朗 + 美军空袭赞詹 (e) 8/1 Trump 关税 deadline T-1 + Fed 第 5 次按兵不动 3 票鹰派 + 7 月最后交易日 T-0 (f) 7/30 6 月 PCE 同比 +3.7% 符合预期 (g) Anthropic S-1 6/2 校准 56 天 arithmetic fix)
+- 📮 TG 7069165189 sent (fallback: QQ 7069165189)
+- 跨 slot verbatim preserved: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 2020 532 亿 + MSFT Q4 $90B + Azure 41%→43% 校准 + META Q2 $60.8B + EPS $6.18 MISS + 2026 capex narrows $130-145B + 港股 周 +3.53% + 智谱 314亿 + IMF 3% vs 中国 4.6% + META premarket -6.72% to $546.28 + FCF $784M + 长鑫 险企 +1400亿 + MSFT 7/30 ET close +9% $418.59 + META 7/30 ET close -10% recovery + 港股 7/30 恒指 25858.88 +0.2% / 恒科 -1.25% + A 股 7/30 沪指 3804.69 -0.62% / 创业板 -3.97% / 科创50 -5.38% + Anthropic S-1 6/2 真实提交 7/30 公开反应 9650 亿 14 月涨 15 倍 (Y7. FACT-CHECK FIX: 之前 7/28 早 raw verbatim "Anthropic 7/28 凌晨 S-1 提交" 错算 56 天 arithmetic = 7/28 - 6/2 = 56 天)
+- 不变量 #5 同日 cross-reference 对位: 7/30 晚报 = MSFT +9% / META -10% 双财报 收官段 (双对位 一美一美 一 cash flow positive 一 cash flow negative) → 7/31 早 = 1 夜 reaction 段 实战收官段 + 投行集体上调 6 家 + Anthropic S-1 6/2 校准 56 天 arithmetic fix
+- Loop+Darwin 自检 (不变量 #6): Loop ✅ SKILL.md 0 增长 (没有新 pitfall) + Darwin ✅ 第 39 接力 baseline 49 可遗传 (7/31 午后 cron 接力 baseline 49 + 第 39 接力 续 = MSFT 1 夜 reaction 段 续 + 7 月最后交易日 实战段 + 8/1 关税 deadline T-0 + Anthropic S-1 7/30 公开反应 段)
