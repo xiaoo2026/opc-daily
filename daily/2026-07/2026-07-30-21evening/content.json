@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-30",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周四 · 覆盖 7/30 15:00 ~ 7/30 21:00 · 双财报实战收官 · MSFT +9% $418.59 + META -10%→-6% + 港股分化 + A 股 科创50 -5.38%",
+  "title": "MSFT +9% 双财报实战收官 · META -10% 港股分化",
+  "dek": "MSFT +9% $418.59 Azure 43% crushes 40.2% consensus. META -6.72% FCF $784M 跌 91%. 恒指 +0.2% 恒科-1.25% 中芯-7%. 科创50 -5.38% 长鑫-13% S&P 7365 +0.67%. Anthropic S-1 9650 亿.",
+  "why_this": "7/30 晚报 3 段拼图 第 3 段 (Pitfall 46). 新维度: MSFT 实收 +9% (超越 premarket) → Azure 43% 锚定 FY27. META -10% recovery FCF $784M 致命. 港股分化 恒指+0.2% 恒科-1.25% A股 科创-5.38% 长鑫-13%. 第 38 件 baseline 48 跨 19 天.",
+  "main_metrics": null,
+  "pick_points": [
+    {"num": "$418.59", "label": "MSFT ET close +9% $90B revenue"},
+    {"num": "$784M", "label": "META FCF 跌 91% YoY"},
+    {"num": "-5.38%", "label": "科创50 长鑫 -13% 回调"},
+    {"num": "0.2%", "label": "恒指 +0.2% 恒科 -1.25%"}
+  ],
+  "main_h2": "事实部分 (30 秒能懂)",
+  "stat_card_date_label": "7/30 周四",
+  "main_facts": [
+    "MSFT 7/30 ET close +9% to $418.59 (per fxleaders.com 7/30 Aiswarya Gopan verbatim 'MSFT Stock Jumps 7% Above $418 as Azure Growth and AI Cash Flow Crush Expectations'; TS2.tech 7/30 Mateusz Kaczmarek verbatim 'surge close to 9% after easing of AI order backlog tempers spending worries'; TradingKey 7/30 verbatim 'Why Shares Surged 9% — Microsoft Q4 Earnings Beat Expectations Across the Board'; CNBC 7/30 verbatim 'Shares jumped 9% after quarterly revenue of $90.01 billion'). Azure 43% constant currency blowout (BEAT StreetAccount 40.2% consensus), up from 40% last quarter. Full-year Azure revenue cleared $100 billion for first time. Q4 revenue $90.01B vs $87.63B consensus. FY27 capex expected to continue at elevated levels per CFO Amy Hood. S&P 500 +0.67% to 7365, Nasdaq +0.62% (per tradingeconomics.com 7/30 verbatim).",
+    "META 7/30 ET close -6.72% to $546.28 + recovery from -10% intraday (per fxleaders.com 7/30 verbatim 'Meta shares plunged 6.72% to $546.28 after earnings missed estimates, free cash flow collapsed to $784 million'; dnyuz.com 7/30 verbatim 'Meta stock drops 10% as free cash flow gets crushed — and Zuckerberg hints at launching cloud business with few details'; proinvestnews.com 7/30 verbatim 'Meta's stock drops on disappointing guidance, dwindling free cash flow'). FCF $784M vs Q1 $8.79B = 91% drop. Costs ballooning 55%. Zuckerberg hints at launching cloud business with few details — AI trade realization: America's best businesses turning into utilities. Meta FY26 capex narrows $130-145B.",
+    "7/30 港股 收盘 (per Hawk Insight 7/30 17:00 verbatim '港股收盘：恒生指数收涨0.2%，恒生科技指数收跌1.25%。剑桥科技跌近13%，华虹宏力跌超8%，中芯国际跌超7%；新东方涨近19%'; 新浪港股 7/30 16:08 verbatim '恒指涨0.2%, 报25858.88, 恒生科技指数跌1.25%, 国企指数涨0.25%'). 7/30 A 股 收盘 (per 新浪财经 7/30 15:06 verbatim '沪指跌0.62%报3804.69点, 深成指跌2.73%, 创业板指跌3.97%, 科创50指数跌5.38%报1588.41点; 全市场超3600只个股下跌; 中际旭创成交额超597亿元刷新历史天量'; 财讯快报 7/30 verbatim '科创50和创指收挫5.38%和3.97%, 长鑫科技泻逾13%'). 7/30 长鑫 K 线 第 4 日: 7/27 首日 49.5 元 +471.59% 3.31 万亿 A 股第一 → 7/30 泻逾 -13% 回调 (per 褒恨玉 7/30 + 伍梦竹 7/30 verbatim '上市首日狂飙471%市值3.31万亿' + '长鑫科技泻逾13%').",
+    "Anthropic S-1 7/28 夜间秘密提交 SEC, 估值 9650 亿美元 (14 月涨 15 倍, 从 615 亿到 9650 亿), 年化收入率 470 亿美元, 领先 OpenAI 一步进入 IPO 流程 (per 36氪 7/29 verbatim 'Anthropic 保密向 SEC 提交了 S-1 注册声明草案'; 新报 7/29 14:16 verbatim 'Anthropic 迈出了走向上市的重要一步, 在 IPO 竞争中领先 OpenAI 一步'; 快报智库 7/30 06:07 verbatim 'Anthropic 提交招股书, 冲击万亿市值'). 7/28 凌晨提交 + 7/28 19:12 Mythos 拆 HAWK + 7/28 19:35 MCP 1.0 + 7/29 双财报 = 7 月最后一周 1 夜 4 件 接力 Anthropic 全线出击.",
+    "IMF 2026 全球 3% 下调 (含 AI 资产泡沫风险警示) + 中国 4.6% 上调 (per 第夏梦 7/29 18:06 verbatim 'IMF下调2026年全球经济增长预期至3% 警示通胀持续性和AI资产泡沫两大长期风险 上调中国至4.6%'). 工信部《高速光模块产业发展白皮书》战略 AI 算力基础设施. 7/30 美方宏观: Fed hold 7/29 + 3 票鹰派异议 + 油价回升至 $90 + Trump 伊朗威胁 (per TradingKey 7/30 verbatim 'Three Fed Voters Flip to Hawkish, Trump Vows Iran Strike, Brent Surges Back to $90').",
+    "FACT-CHECK FIX preserved verbatim 跨 slot 延续 (per 7/27 午后 baseline 40 → 7/30 晚报 verbatim 8 slot preserved): 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 532 亿 + MSFT $90B + Azure 43% + META $60.8B + EPS $6.18 MISS + 港股 +3.53% 周 + 智谱 314亿 + IMF 3% vs 4.6% + META FCF $784M + 长鑫 险企 +1400亿. 7/30 早 实战段 + 7/30 午后 实战续段 + 7/30 晚报 实战收官段 = 3 时点 拼图 收官 = 38 期 + 第 38 接力 baseline 48 子轴 立 跨 19 天."
+  ],
+  "not_picked": [
+    {"label": "长鑫 -13% 回调", "why": "长鑫 第 4 日 回调 是 双财报 叙事 的 side effect, 不是 1 件主轴."},
+    {"label": "Anthropic S-1 9650 亿", "why": "S-1 是 7/28 事件, 在 双财报 T+21h 收官日 是 background, 加新 dim 6 已进 main_facts."},
+    {"label": "港股 教育股领涨", "why": "新东方 +19% 是 个股 财报驱动, 不是 AI 叙事 内核."},
+    {"label": "IMF 全球 3%", "why": "宏观 长期 背景, 非 当日 1 件."}
+  ],
+  "say_4": [
+    "MSFT +9% 收 $418.59, Azure 43% 碾压 $100B.",
+    "META -6.72%, FCF $784M 跌 91%.",
+    "港股分化: 恒指 +0.2% 恒科 -1.25%.",
+    "A 股 科创50 -5.38%, 长鑫 -13%."
+  ],
+  "meta_description": "MSFT +9% $418.59 Azure 43%. META FCF $784M 91% drop. 恒指+0.2% 恒科-1.25% 科创-5.38% 长鑫-13%. S&P 7365. Anthropic S-1 $9650亿. 第38件 baseline 48.",
+  "headline_alt": "MSFT +9% 收官双财报 · META FCF 崩 · 港股分化",
+  "canonical_url": "daily/2026-07/2026-07-30-21evening/"
+}
