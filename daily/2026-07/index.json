@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-07-30",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "headline": "MSFT +9% 双财报实战收官 · META -10% 港股分化",
+    "html_url": "https://020755.xyz/daily/2026-07/2026-07-30-21evening/"
+  },
+  {
+    "date": "2026-07-30",
     "slot": "afternoon",
     "slot_hour": "13:00",
     "title": "双财报 T+13h 实战续段 + 长鑫 K 线 + 黑石",
