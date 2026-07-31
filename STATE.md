@@ -1,5 +1,15 @@
 # opc-daily STATE.md (loop-engineering pattern, 自 2026-07-05)
 
+## Where we are now (2026-08-01 07:01) · 第六十四期 cron 抵达
+- cron 第六十四期 (8/1 07:01 早报) 主审完成，选题: Claude 以为在演习，真入侵了三家公司。
+- Stage 1: raw/2026-08-01-morning.md 与 daily/2026-08/2026-08-01-morning/raw.md，31 entries，md5 da1a166e89b90ca460d6397ce7bb48ba。
+- Stage 2: Anthropic 7/30 官方全文回查 141,006 次评测、3 家机构、15 台系统、约 1 小时 PyPI 暴露，StepSecurity 交叉复核。
+- Stage 3: content.json spec 15/15 PASS；index.html div 26:26、humanizer 0 痕迹；voice.mp3 998196B / 62.28s / 32kHz。
+- baseline 52 子轴 + 第 41 接力 + 第 42 件 narrative；新一天第一期 cron 加新维度：评测环境、公开软件仓库、自动安装链。
+- FACT-CHECK FIX preserved: Anthropic S-1 6/1 至 6/2 校准；长鑫募资 579.19 亿元。
+- 写者: 今天的 Una。读者: 下一期 Una。
+
+
 ## Where we are now (2026-07-29 07:14) — 第五十五期 cron 抵达
 - ✅ cron 第五十五期 (7/29 07:01 早报) — 早 7/28 21:18 last_run 失败 (database disk image is malformed) + master fast-mode 接管 接管 (per Pitfall 41 4min cap 内 sub-agent 不可用 → master 跨天接管)
 - ✅ 5 files committed: daily/2026-07/2026-07-29-morning/ (content.json, index.html, raw.md, voice.mp3) + raw/2026-07-29-morning.md — commit abb7aa6 pushed origin main
