@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-07-31",
+    "slot": "21evening",
+    "slot_label": "晚报",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "title": "港股七月收官，AI 反弹不是一条线",
+    "headline_alt": "港股七月收官，AI 反弹不是一条线",
+    "canonical_url": "daily/2026-07/2026-07-31-21evening/",
+    "baseline": 51,
+    "relay": 40,
+    "narrative_count": 41,
+    "html_url": "daily/2026-07/2026-07-31-21evening/index.html"
+  },
+  {
+    "date": "2026-07-31",
     "slot": "afternoon",
     "slot_label": "午报",
     "slot_hour": "13:00",
