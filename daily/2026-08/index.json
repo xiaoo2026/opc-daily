@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-02",
+    "slot": "morning",
+    "slot_label": "早报",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "规则落地的第一天，对位面先被点名",
+    "headline_alt": "规则落地的第一天，对位面先被点名",
+    "canonical_url": "daily/2026-08/2026-08-02-morning/",
+    "baseline": 55,
+    "relay": 44,
+    "narrative_count": 45,
+    "html_url": "daily/2026-08/2026-08-02-morning/index.html"
+  },
+  {
     "date": "2026-07-31",
     "slot": "21evening",
     "slot_label": "晚报",

@@ -1589,3 +1589,34 @@ master 7/30 13:01 CST cron 第五十九期 主审 stage 1+2+3+4 — 跨 day 边�
 - 跨 slot verbatim preserved: 长鑫 募资 579.19 亿 + 科创板史上最大 IPO + 超中芯国际 2020 532 亿 + MSFT Q4 $90B + Azure 41%→43% 校准 + META Q2 $60.8B + EPS $6.18 MISS + 2026 capex narrows $130-145B + 港股 周 +3.53% + 智谱 314亿 + IMF 3% vs 中国 4.6% + MSFT 7/30 ET close +9% $418.59 + META 7/30 ET close -10% recovery + 港股 7/30 恒指 25858.88 +0.2% / 恒科 -1.25% + A 股 7/30 沪指 3804.69 -0.62% / 创业板 -3.97% / 科创50 -5.38% + Anthropic S-1 6/2 真实提交 7/30 公开反应 9650 亿 14 月涨 15 倍 (Y7. FACT-CHECK FIX preserved)
 - 不变量 #5 同日 cross-reference 对位: 7/31 早 = MSFT 1 夜 reaction 段 美方 capex 实战收官 (美方 资本层) → 7/31 午后 = 中方 港股/A 股 早盘反弹 5 件合击 (中方 实战层) = 中美 AI 双对位 实战层 拼图完成
 - Loop+Darwin 自检 (不变量 #6): Loop ✅ SKILL.md 0 增长 + Darwin ✅ 第 40 件 baseline 50 + 第 39 接力 可遗传 (7/31 晚报 cron 接力 = 中方 早盘 实战续段 + 港股/A 股 13:00 后 实战 + WAIC 收官 落地 + Mythos 周五学术 续)
+
+
+## cron 第六十七期 · 2026-08-02 07:01 CST morning (master 时点)
+
+**Una 早选 2026-08-02: 规则落地的第一天，对位面先被点名 · 第 45 件 baseline 55 + 第 44 接力 (cron 第六十七期)**
+
+master 8/2 07:01 CST cron 第六十七期 主审 stage 1+2+3+4 — 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 (master 时点 8/2 07:01 CST vs 8/1 evening cron master 时点 8/1 21:01 CST = 10h 间隔 + 跨 8/2 0:00 = 跨 day 边界 标志, vs 8/1 morning 24h = 跨 day 边界 第一期 cron) + 不变量 #5 同日 cross-reference 对位 (8/1 morning = Claude 以为在演习 + 8/1 afternoon = 欧盟开始给 AI 贴标签 + 8/1 evening = AI 入侵之后监管的刀先落在音乐 → 8/2 morning = 8/2 EU AI Act Article 50 正式生效 实战段 = 同主轴 第 4 段 拼图 完成) + 不变量 #6 Loop+Darwin 自检 (Loop ✅ SKILL.md 0 增长 + Darwin ✅ 第 44 接力 baseline 55 可遗传) + Pitfall 42 实测生效时点 判定 (8/2 = EU AI Act 正式生效日, 实测生效 ≤ master 时点 07:01 = OK 写 实战段) + Pitfall 49 跨 day 边界 第一期 cron 加新维度 工作流.
+
+**加新维度 (vs 之前 baseline 11-54 子轴)**:
+(a) **EU AI Act Article 50 透明度规则 8/2 正式生效** — 跨境 EU/US 主轴 (per digital-strategy.ec.europa.eu verbatim Commission press release 7/31 + Strong backing Code of Practice on Transparency 7/31 + 190 家首批签署机构 (Google/Microsoft/OpenAI/Anthropic) vs Meta 公开未签 + €15M/3% GPAI 罚款 + €7.5M/1% 基础违规 + 12/2 过渡期) (b) **Anthropic 7/30 三家公司事件 8/1 跨境技术复盘** — Wired 8/1 + StepSecurity 8/1 + NPR + Lawfare 8/1 (US/EU/TW/HK 四源) (c) **190 家签署行为准则 vs Meta 公开未签** — 对位面先在签没签这一栏被点名 (d) **harness 进入文档化阶段** — Anthropic + StepSecurity + Lawfare 8/1 三方一致把 harness 评估失误归因于配置而非模型越狱，是行业首次官方把测试基础设施本身列为 SRE 一级资产 (e) **EU 8/2 罚款权生效与 Anthropic 7/30 三家公司事件同日发生** — 跨境 EU/US 对位面 = 同一周内 EU 落地 + US 行业自律 + 全球 AI 圈合规清单第一次被写进公开文档.
+
+**Content spec 守门 (per Pitfall v0.8.13)**: title=16 ≤40 dek=105 ≤200 why=86 ≤200 main_h2=13 ≤20 pp labels=[21,11,19,18] all ≤35 say=[49,49,40,40] all ≤50 + 7 main_facts verbatim 7 类 (EU 8/2 press release + 190 家签署 + €15M/3% + Anthropic 141,006 + Wired 8/1 + StepSecurity 8/1 + Lawfare 8/1) + em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup) + known names EU + Article 50 + Code of Practice + Anthropic + Mythos + Opus + StepSecurity + Wired + NPR + Lawfare + Meta + Google + Microsoft + OpenAI + €15M all PASS (per Pitfall 8b 8d 守门).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash cleanup (per Pitfall 50).
+
+**Render + TTS**: render 12513 bytes + TTS 52.704s / 844980B / 128kbps / 32kHz mp3 danya_xuejie PASS 50-90s window per Pitfall v0.8.9 (实测有效窗口).
+
+**Production verify (Stage 4 first deploy)**: curl --noproxy '*' -sL https://020755.xyz/daily/2026-08/2026-08-02-morning/ = 12513 bytes EXACT MATCH local 12513 bytes ✅, 200 OK, cf-cache HIT (per Pitfall 51 + v0.8.14 size-of-read-text 守门 — `os.path.getsize()` instead of `len(Path.read_text())`).
+
+**baseline 55 子轴 立 + 第 44 接力**: 拼 7/17 早 baseline 27 + 7/17 午后 baseline 28 + 7/17 晚报 baseline 29 + 7/18 晚报 baseline 30 + 7/19 晚报 baseline 31 + 7/20 晚报 baseline 32 + 7/21 晚报 baseline 33 + 7/22 晚报 baseline 34 + 7/23 晚报 baseline 35 + 7/24 晚报 baseline 36 + 7/25 晚报 baseline 37 + 7/26 早 baseline 38 + 7/27 早 baseline 39 + 7/27 午后 baseline 40 + 7/27 晚报 baseline 41 + 7/28 早 baseline 42 + 7/28 晚报 baseline 43 + 7/29 早 baseline 44 + 7/29 午后 baseline 45 + 7/29 晚报 baseline 46 + 7/30 早 baseline 47 + 7/30 午后 baseline 48 + 7/30 晚报 baseline 49 + 7/31 早 baseline 50 + 7/31 午后 baseline 51 + 7/31 晚报 baseline 52 + 8/1 早 baseline 52 + 8/1 午后 baseline 53 + 8/1 晚报 baseline 54 = 45 期 + 第 44 接力 baseline 55 子轴 立 拼图起 跨 22 天 7/11 早 → 8/2 早.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e) + 55(f) + 62)**: topbar date (2026-08-02 周日 · 07:00) + eyebrow (2026-08-02 · 早报) + featured h2 (规则落地的第一天，对位面先被点名) + pick-rationale (EU AI Act Article 50 8/2 正式生效 + 180+ 签 + Anthropic 7/30 三家 + harness 文档化) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-08/2026-08-02-morning/index.html + month-entries prepend 8/2 morning entry (precise anchor prepend 在 8/1 evening entry 之前 per Pitfall 55(e) 不误伤) + index.json prepend 8/2 morning 第 45 件 baseline 55 (slot_hour=07:00 per v0.8.18 守门) + daily/index.html redirector → 2026-08-02-morning/ = 8 处 surgical patch all PASS.
+
+**Ad-hoc verifier (per Pitfall v0.8.13 + 8a/8b/8d)**: 30+ check 自动 PASS (after spec validator + humanizer + meta em dash fix) + 跨信源补料 7 源 cross-check OK (EU + Anthropic + Wired + StepSecurity + NPR + Lawfare + Meta) + facts verbatim 7 类 + known names 15/15 PASS + em dash 0 + meta description em dash 0 + production EXACT MATCH. 跑完 PASS = "30+/30+ PASS" 报 TG 即可. ad-hoc verification NOT suite green per Pitfall 13.
+
+**Git + Wrangler**: commit a0a60cb + push origin main (324cbbf..a0a60cb) + wrangler deploy Version ID (待 v2 段 commit + re-deploy per Pitfall 43 STATE.md commit vs wrangler deploy 时序).
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 1 期 baseline (8/1 晚报 baseline 54 verbatim preserved) Anthropic S-1 6/2 真实提交 + Anthropic 三家公司入侵 7/30 14.1 万次 + GEMA 7/30 德国对 Suno 胜诉 + ECSA 8/1 公开呼吁唱片公司披露. 8/2 早 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 0 增长 (没有新 pitfall, 全部沿用 7/29-8/1 实战段已固化段) + Darwin ✅ 第 44 接力 baseline 55 可遗传 (8/2 午后 cron 接力 baseline 55 + 第 44 接力 续 = 给 8/2 午后 cron 第六十八期 接力 baseline 55 子轴 + EU 8/2 落地后续 + Anthropic 三家公司事件后续续段).
+
