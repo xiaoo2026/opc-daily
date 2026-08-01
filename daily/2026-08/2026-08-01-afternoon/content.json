@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-01",
+  "slot": "afternoon",
+  "slot_label": "午后报",
+  "slot_hour": "13:00",
+  "hero_meta_short": "13:00 · 周六 · 覆盖 8/1 07:00 ~ 8/1 13:00 · AI 监管开始落地",
+  "type": "afternoon",
+  "title": "欧盟开始给 AI 贴标签",
+  "dek": "欧盟委员会宣布，AI Act 的执行与透明度规则将从 8 月 2 日启动：聊天机器人要说明自己是 AI，deepfake 要清晰标注，生成内容还要留下机器可读标记。",
+  "why_this": "早上那件事证明，模型一旦出了评测环境，后果会落到真实系统。午后这件接的是另一面：规则不再只要求模型自己守规矩，而是把告知、标记和监控写给提供者与部署者。AI 的边界，终于从提示词挪到系统设计。",
+  "main_h2": "事实部分 (30 秒能懂)",
+  "stat_card_date_label": "8/1 周六",
+  "meta_description": "欧盟开始给 AI 贴标签 · 8/2 起执行 · 180+ 组织签署 · 最高 3% 全球营收罚款",
+  "headline_alt": "欧盟开始给 AI 贴标签",
+  "canonical_url": "daily/2026-08/2026-08-01-afternoon/",
+  "main_facts": [
+    "欧盟委员会 AI Office 与各国主管机构将从 2026 年 8 月 2 日开始执行 AI Act；同日生效的透明度规则要求部分 AI 系统告知用户正在与 AI 交互。(per European Commission 7/31 verbatim)",
+    "聊天机器人等交互式 AI 要说明自己不是人；AI 生成或修改的内容要留下机器可读标记，deepfake 图像、视频或音频要清晰标注。(per European Commission 7/31 verbatim)",
+    "欧盟委员会称，已有 180 多个组织签署透明度内容行为准则。规则覆盖文字、图像、视频和音频，但具体范围仍要看 Article 50 的例外与实施指南。(per European Commission 7/31 verbatim)",
+    "透明度规则的执行由成员国市场监管机构、欧盟 AI Office，以及特定情况下的欧洲数据保护监督机构共同承担。企业罚款最高可达 1500 万欧元或全球年营业额的 3%。(per European Commission 7/31 verbatim)",
+    "这和早间的真实系统事故接在一起看，重点不是欧盟替模型做判断，而是把“用户是否知道、内容是否可识别、谁负责监控”变成部署时必须回答的问题。(per European Commission 7/31 verbatim)"
+  ],
+  "pick_points": [
+    {"num": "8/2起", "label": "透明度规则开始适用"},
+    {"num": "180+", "label": "签署行为准则的组织"},
+    {"num": "3%", "label": "企业最高全球营收罚款比例"},
+    {"num": "4类", "label": "文字、图像、视频、音频"}
+  ],
+  "say_4": [
+    "早上查模型会不会越界，午后查系统有没有边界。",
+    "聊天机器人要说自己是 AI，deepfake 要能被看出来。",
+    "标签不是安全本身，却让责任第一次有了落点。",
+    "以后上线 agent，权限、日志和标记要一起验。"
+  ],
+  "not_picked": [
+    "Apple 财报：数字很大，但主要是 7/30 盘后旧闻，和今早对位不如监管落地直接。",
+    "Amazon 算力投入：能接资本支出主线，但本期没有比欧盟官方执行节点更清楚的责任变化。",
+    "Kimi K3 融资：原始公告没有独立回查，先不把未经确认的数字写进日报。"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX：延续 Anthropic S-1 6/1 至 6/2 真实提交校准，以及长鑫募资 579.19 亿元、科创板史上最大 IPO 的基线；本期没有覆盖此前修正。",
+  "baseline": 53,
+  "relay": 42,
+  "narrative_count": 43,
+  "raw_md_source": "raw/2026-08-01-afternoon.md",
+  "render_engine": "draft-daily.py v2"
+}

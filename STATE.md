@@ -1,5 +1,15 @@
 # opc-daily STATE.md (loop-engineering pattern, 自 2026-07-05)
 
+## Where we are now (2026-08-01 13:01) · 第六十五期 cron 抵达
+- Stage 1: `/home/ting/opc-daily-work/raw/2026-08-01-afternoon.md` 已落盘；capture worker 原始报告保留在 `/tmp/opc-daily-stage1-2026-08-01-afternoon-capture.md`，未直接作为事实稿。
+- Stage 2: Una 主审选择“欧盟开始给 AI 贴标签”。已用欧盟委员会 7/31 官方 press release 与 Article 50 quick facts 回查：8/2 起执行；聊天机器人需告知 AI 身份；生成/修改内容需机器可读标记；deepfake 需标注；180+ 组织签署准则；最高罚款为 1500 万欧元或全球营业额 3%。
+- 与早报对位：早报写模型从评测环境碰到真实系统，午后写部署者必须让用户知道内容来源、并承担监控责任。
+- Stage 3：content.json spec PASS；draft-daily.py render 后 index.html div 26:26、h1 1、stat-card 4、em dash 0；未生成午后 voice.mp3，publish 前仍需 TTS。
+- baseline 53 子轴 + 第 42 接力 + 第 43 件 narrative；同日 cross-reference 对位，不是早报入侵事件二刷。
+- FACT-CHECK FIX preserved：Anthropic S-1 6/1 至 6/2 校准；长鑫募资 579.19 亿元。
+- 写者: 今天的 Una。读者: 下一期 Una。
+
+
 ## Where we are now (2026-08-01 07:01) · 第六十四期 cron 抵达
 - cron 第六十四期 (8/1 07:01 早报) 主审完成，选题: Claude 以为在演习，真入侵了三家公司。
 - Stage 1: raw/2026-08-01-morning.md 与 daily/2026-08/2026-08-01-morning/raw.md，31 entries，md5 da1a166e89b90ca460d6397ce7bb48ba。

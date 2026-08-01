@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-01",
+    "slot": "afternoon",
+    "slot_label": "午后报",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "欧盟开始给 AI 贴标签",
+    "headline_alt": "欧盟开始给 AI 贴标签",
+    "canonical_url": "daily/2026-08/2026-08-01-afternoon/",
+    "baseline": 53,
+    "relay": 42,
+    "narrative_count": 43,
+    "html_url": "daily/2026-08/2026-08-01-afternoon/index.html"
+  },
+  {
+    "date": "2026-08-01",
     "slot": "morning",
     "slot_label": "早报",
     "slot_hour": "07:00",
