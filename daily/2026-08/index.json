@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-02",
+    "slot": "afternoon",
+    "slot_label": "午后",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "规则落地六小时，欧盟先做了清点",
+    "headline_alt": "规则落地六小时，欧盟先做了清点",
+    "canonical_url": "daily/2026-08/2026-08-02-afternoon/",
+    "baseline": 56,
+    "relay": 45,
+    "narrative_count": 46,
+    "html_url": "daily/2026-08/2026-08-02-afternoon/index.html"
+  },
+  {
+    "date": "2026-08-02",
     "slot": "morning",
     "slot_label": "早报",
     "slot_hour": "07:00",

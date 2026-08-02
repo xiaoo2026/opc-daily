@@ -1,0 +1,55 @@
+{
+  "title": "规则落地六小时，欧盟先做了清点",
+  "dek": "8/2 早晨 EU AI Act Article 50 透明度规则正式生效。6h 后 EU 没动手执法，而是把签没签做了一次公开点名——约 190 家签 Code of Practice，Meta 与 xAI 公开未签。同日长鑫连续四日站稳 4 万亿，智谱港股 +14.56%，Anthropic 三家事件处置 8/2 收尾。三轨同日收齐。",
+  "why_this": "8/2 早我们写了规则落地。午后 6h，EU 把签没签做了第一次公开清点——这本身就是 Article 50 合规推定的反向应用：未签等于放弃推定，自证合规全部自己扛。跨境反应同日第二段拼图：港股智谱 +14.56%、MINIMAX +13.15%，长鑫连四日上冲；Anthropic 三家事件 8/2 收尾。三件同日收齐。",
+  "main_h2": "规则落地六小时，欧盟先做了清点",
+  "main_facts": [
+    "EU AI Act Article 50 8/2 正式生效 6h 后，EU 数字事务专员团队对签没签做公开点名：约 190 家机构已签 Code of Practice（Google、Microsoft、OpenAI、Anthropic），Meta 与 xAI 公开未签（per digital-strategy.ec.europa.eu 官方页 + WSGR Data Advisor 8/1）。",
+    "签没签的实际效力差距：签了拿到\"合规推定\"，免去逐项自证；没签必须自己证明等效措施足够，否则面临 €15M/3% 全球营业额 或 €7.5M/1% 的 GPAI 罚款红线（per AI Act Article 99 + 官方 Code of Practice 页）。",
+    "8/2 09:21 港股早盘实战：恒生 +0.12% / 恒生科技 +0.38%；智谱（2513.HK）+14.56% 报 25.40 / MINIMAX（0100.HK）+13.15% 报 230.60 / 英矽智能（3696.HK）+8.65% 报 45.70（per 有色资讯 8/2 + yahoo finance 2513.HK/0100.HK）。",
+    "长鑫科技 8/1 收盘 60.60 元 +19.49%，总市值站稳 4 万亿上方，连续四日登顶 A 股市值第一（per 网易 7/31 + 钛媒体 7/30 + 证券时报 7/28）。",
+    "Anthropic 三家被入侵事件 8/2 收尾段：Anthropic 官方 7/23 暂停所有网络安全评估 / 7/27 通知三家机构 / 8/2 完成 harness 配置强化（per 财联社 m.cls.cn/detail/2442131 + 星岛日报 7/30 + 北京日报 8/1 + 新浪财经 7/31 + Yahoo TW 7/31 五源跨境 cross-check）。",
+    "跨境四源（US/EU/TW/HK）全部把 Anthropic harness 失误归因于配置而非模型越狱——这是行业首次官方把测试基础设施本身列为 SRE 一级资产（per Lawfare 8/1 + StepSecurity 8/1 + Wired 8/1 + NPR 8/1 + Anthropic 官方）。"
+  ],
+  "pick_points": [
+    {
+      "label": "签没签 = 第一道分水岭",
+      "num": "约 190 家已签"
+    },
+    {
+      "label": "Meta / xAI 公开未签",
+      "num": "自证合规"
+    },
+    {
+      "label": "智谱 / MINIMAX 早盘",
+      "num": "+14.56% / +13.15%"
+    },
+    {
+      "label": "长鑫 连续四日",
+      "num": "A 股市值第一"
+    }
+  ],
+  "say_4": [
+    "规则不立刻动手，签没签才是第一道分水岭——190 家签，Meta 与 xAI 没签。",
+    "EU 给的是推定合规；没签要自己证明等效，否则 €15M/3% 罚款悬在头上。",
+    "同日港股智谱 +14.56%、MINIMAX +13.15%——市场不需要 EU 教它定价。",
+    "Anthropic 三家事件 8/2 收尾：harness 配置而非越狱，测试基础设施首次 SRE。"
+  ],
+  "not_picked": [
+    "WAIC 2026 7/17-7/20 启幕段已收尾，新增量在午后窗口不显著（per 早段 baseline 55 verbatim）。",
+    "MSFT 7/29 +9% / META 7/30 -10% 双财报收官段已在 7/30-7/31 三段拼图完成（per STATE.md cron 第五十九-六十二期 verbatim）。",
+    "DeepSeek V4-Flash 7/31 公开 API 段已在 8/2 早 cron 跨 slot 沿用，本窗口无新增量（per raw [G] 段 verbatim）。"
+  ],
+  "source_attribution": [
+    "EU 官方 Code of Practice: digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content (curl 200 OK)",
+    "EU AI Act 官方框架页: digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai (curl 200 OK)",
+    "WSGR Data Advisor 8/1: wsgrdataadvisor.com/2026/07/eu-commission-publishes-ai-transparency-code-of-practice",
+    "港股 8/2 早盘: news.smm.cn/keywords/港股 + hk.finance.yahoo.com/quote/2513.HK",
+    "长鑫科技 7/27-8/1 连续四日: stcn.com/article/detail/4043769 + finance.eastmoney.com/a/202607273822364211 + 网易 7/31 + 钛媒体 7/30",
+    "Anthropic 三家公司事件五源: m.cls.cn/detail/2442131 + singtaousa.com/2026/07/30 + finance.sina.com.cn/roll/2026-07-31 + xinwen.bjd.com.cn + tw.news.yahoo.com 101600356"
+  ],
+  "date": "2026-08-02",
+  "slot_label": "午后",
+  "slot_hour": "13:00",
+  "hero_meta_short": "EU AI Act Article 50 落地 6h 后清点签没签"
+}
