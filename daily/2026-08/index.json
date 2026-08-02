@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-02",
+    "slot": "21evening",
+    "slot_label": "晚报",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "title": "规则落地十二小时，欧盟第一次没忍住",
+    "headline_alt": "规则落地十二小时，欧盟第一次没忍住",
+    "canonical_url": "daily/2026-08/2026-08-02-21evening/",
+    "baseline": 56,
+    "relay": 46,
+    "narrative_count": 47,
+    "html_url": "daily/2026-08/2026-08-02-21evening/index.html"
+  },
+  {
+    "date": "2026-08-02",
     "slot": "afternoon",
     "slot_label": "午后",
     "slot_hour": "13:00",
