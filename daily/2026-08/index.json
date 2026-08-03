@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-03",
+    "slot": "morning",
+    "slot_label": "早报",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "AI 安全，开始自己修自己",
+    "headline_alt": "AI 安全，开始自己修自己",
+    "canonical_url": "daily/2026-08/2026-08-03-morning/",
+    "baseline": 57,
+    "relay": 48,
+    "narrative_count": 48,
+    "html_url": "daily/2026-08/2026-08-03-morning/index.html"
+  },
+  {
     "date": "2026-08-02",
     "slot": "21evening",
     "slot_label": "晚报",

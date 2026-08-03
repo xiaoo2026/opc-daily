@@ -1685,3 +1685,24 @@ master 8/2 21:00 CST cron 第六十九期 主审 stage 1+2+3+4 — 跨 day 边�
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 2 期 baseline (8/2 早 baseline 55 + 8/2 午后 baseline 56 verbatim preserved) EU AI Act Article 50 8/2 落地 + 190 家签 vs Meta 公开未签 + Anthropic 三家公司事件 7/30 14.1 万次 + 长鑫 +465.82% 募资 579 亿 + 8/1 收盘 60.60 +19.49% + A 股市值第一 + MSFT 7/29 +9% / Azure $100B+ + META 7/30 -10% + AAPL 7/30 -7% + GEMA 7/30 德国对 Suno 胜诉 + ECSA 8/1 公开呼吁唱片公司披露 + DeepSeek V4-Flash 7/31 公开 API + Kimi K3 7/27 全量开源 + Seedance 2.5 7/31 发布. 8/2 晚报 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved.
 
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 加新维度 "3 段 拼图 收官段 工作流 跨 周末 / 周末 真空窗口 / 跨 day 边界 第 4 期 cron 工作流" — 8/2 晚报 cron 是 实战段 (周末 + 中方港股 A 股半日休市 + 美方 PT 周日未开盘 → 6h 窗口 真空 → master 直接用 raw [31][32][33] verbatim baseline 写 实测段), 这是 Pitfall 46 + 47 + 52 + 53 实战拼图 完整 模式. Darwin ✅ 第 46 接力 baseline 56 可遗传 (8/3 早 cron 第七十期 立 baseline 第 57 子轴 + 第 47 接力 = 新一周 / 第一天 / 新 baseline / EU 8/2 落地后续 first enforcement letter 跟踪 / Anthropic 三家事件后续续 / 长鑫 8/2 收盘 续 / 港股/A 股 8/3 开盘 实战续 / MSFT 8/1 capex 续 / META / AAPL 续 / WAIC 2026 收官后续 / DeepSeek V4-Flash / Kimi K3 等 续 维度).
+
+
+---
+
+## cron 第七十期 · 2026-08-03 07:00 CST morning
+
+**Una 早报选 2026-08-03: AI 安全，开始自己修自己 · baseline 第 57 子轴 + 第 48 接力**
+
+master 8/3 07:00 CST cron 第七十期。今天是新一天第一期，按 Pitfall 49 + Pitfall 53 的跨 day 边界工作流，不把 8/2 EU 三段收官继续换标题，而是加新维度：从规则透明度走到安全控制面。阶段 1 采用中文 7 段式，补抓英文安全材料；阶段 2 主审选 NVIDIA 官方 Open Secure AI Alliance。
+
+**主审拍板**: 选 NVIDIA 7/27 官方宣布 Open Secure AI Alliance。NVIDIA 官方把 agent 安全拆成 identity、permissions、harnesses、guardrails、logs、evaluation，且联盟由 Hugging Face 安全事件推动。8/2 EU Article 50 处理“能不能看见”，8/3 这件处理“防守方能不能检查和修改”。这是 8/2 后的新工程维度，不是 EU 规则续写。
+
+**Loop + Darwin 自检**: Loop ✅ 今日吸收的新东西是“AI 安全不只看模型权重，控制链也要可检查、可修改、可运行”。Darwin ✅ baseline 第 57 子轴可传给 8/3 午后：继续观察 Open Secure AI Alliance、Hugging Face 事件后续与 agent 安全控制面，不重复 8/2 的 EU 签没签清点。
+
+**Content spec**: title=13 / dek=117 / why=114；pick labels=[13,19,25,12]；say_4=[34,37,38,30]；main_facts=7；verbatim source hit=PASS；em dash=0；句首逗号=0；双句号=0。
+
+**Humanizer audit**: 删除宣传式扩写，保留 NVIDIA 官方具体控制面名词和 17,000 个动作事实。HTML em dash / en dash = 0，meta description 同样 = 0。
+
+**Render + TTS**: index.html 12061 bytes；TTS voice.mp3 1,145,652B / 71.496s / ID3 / 32kHz / mp3 / danya_xuejie，PASS 50-90s window。
+
+**Production files**: daily/2026-08/2026-08-03-morning/raw.md + content.json + index.html + voice.mp3；daily/2026-08/index.json prepend 当期 entry，type=morning / slot_hour=07:00；daily/index.html redirector → 2026-08-03-morning；top-level index.html 已 surgical patch featured / rationale / cta / archive。

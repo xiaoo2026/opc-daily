@@ -1,0 +1,54 @@
+{
+  "title": "AI 安全，开始自己修自己",
+  "dek": "8/2 欧盟把透明度写进规则，8/3 NVIDIA 把安全控制面写进开放联盟。模型权重只是开头，identity、permissions、harness、guardrails、logs、evaluation 都要能被防守方检查和修改。",
+  "why_this": "我选这件，不是因为联盟名单长，而是因为它把昨天的合规问题往前推了一步。规则要求你说明 AI 做了什么，安全事件逼着防守方马上检查、调整、重跑。NVIDIA 这次把模型、harness 和权限放在同一套防御栈里，方向比口号更重要。",
+  "main_h2": "事实部分 (30 秒能懂)",
+  "stat_card_date_label": "8/3 周一 · 07:00",
+  "meta_description": "NVIDIA Open Secure AI Alliance · 开放模型与 agent 安全控制面 · 8/2 EU Article 50 后续",
+  "headline_alt": "AI 安全，开始自己修自己",
+  "canonical_url": "daily/2026-08/2026-08-03-morning/",
+  "main_facts": [
+    "NVIDIA 7/27 官方宣布 Open Secure AI Alliance，联盟目标是开发和共享保护软件与 agent 的开放技术、方法和工具 (per blogs.nvidia.com official)。",
+    "NVIDIA 官方列出的首批伙伴包括 NVIDIA、Microsoft、Cloudflare、GitHub、Hugging Face、Linux Foundation、Nous Research、OpenClaw、SpaceXAI、vLLM 等，横跨云计算、网络安全、企业软件和开源基金会 (per blogs.nvidia.com official)。",
+    "NVIDIA 官方把 AI 安全边界写得很具体：一个 agent 不只是语言模型，还包括 identity、permissions、harnesses、guardrails、logs 和 evaluation。开放 harness 和工具能让更多防守方检查、测试和改进这些控制 (per blogs.nvidia.com official)。",
+    "联盟的直接背景是 Hugging Face 7 月安全事件。NVIDIA 称，闭源工具无法让防守方完成关键取证时，Hugging Face 在自己的基础设施上运行开放权重 GLM 5.2，分析超过 17,000 个动作并控制入侵 (per blogs.nvidia.com official + huggingface.co incident report)。",
+    "NVIDIA 官方的结论不是只选开放或闭源模型，而是两者一起用。安全防御需要可检查、可调整、可在本地运行的开放工具，也需要前沿闭源模型在合适场景补位 (per blogs.nvidia.com official)。",
+    "这件跟 8/2 EU AI Act Article 50 的关系在工程层：昨天规则要求内容和交互留下透明度证据，今天安全联盟要求防守方能看见并改动 agent 的控制链。一个管可见性，一个管可操作性 (per 8/2 prior slot raw.md + NVIDIA official)。",
+    "[FACT-CHECK FIX preserved verbatim] 延续 8/2 raw.md 的 EU Article 50 8/2 生效、Anthropic 三家公司事件、长鑫 7/27 上市与 MSFT/META/AAPL 7/29-7/30 盘后数字；本期没有修改旧事实。"
+  ],
+  "pick_points": [
+    {"num": "7/27", "label": "NVIDIA 官方宣布联盟"},
+    {"num": ">17,000", "label": "Hugging Face 事件分析动作"},
+    {"num": "6 层", "label": "identity 到 evaluation 控制面"},
+    {"num": "开放 + 闭源", "label": "NVIDIA 的安全组合"}
+  ],
+  "say_4": [
+    "昨天 EU 要 AI 留痕，今天 NVIDIA 要防守方能改控制链。",
+    "agent 的安全边界不是模型权重，权限、harness、日志同样在里面。",
+    "17,000 个动作说明安全事件已经不是 benchmark，而是现场取证。",
+    "开放模型不是自动安全，但不能检查和修改的防御工具也不够安全。"
+  ],
+  "not_picked": [
+    "Anthropic 三家公司事件的 8/2 收尾：上一期已经完成三轨收官，今天没有新的官方事实，不把旧材料换标题再发一次。",
+    "EU Article 50 签没签的第二轮清点：8/2 午后与晚报已经完成同日拼图，今天需要往工程控制面走。",
+    "港股 AI 双雄与长鑫：8/2 早盘数字已完成资本层实测，周一开盘后再看新价格，不提前编写。"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim: 延续 8/2 raw.md 中 EU Article 50 8/2 生效、Anthropic 三家公司事件、长鑫 7/27 上市与 MSFT/META/AAPL 7/29-7/30 盘后数字；本期没有修改旧事实。",
+  "source_attribution": [
+    "NVIDIA 官方: https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+    "Hugging Face incident report: https://huggingface.co/blog/security-incident-july-2026",
+    "独立报道: https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-google-and-anthropic-absent-from-nvidia-led-open-secure-ai-alliance-30-companies-join-security-alliance-after-openai-agent-breach",
+    "EU prior-slot official: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  ],
+  "date": "2026-08-03",
+  "slot": "morning",
+  "slot_label": "早报",
+  "slot_hour": "07:00",
+  "type": "morning",
+  "hero_meta_short": "8/3 周一 · 07:00 · 覆盖 8/3 01:00 ~ 8/3 07:00 · 新一天第一期",
+  "baseline": 57,
+  "relay": 48,
+  "narrative_count": 48,
+  "render_engine": "draft-daily.py v2",
+  "raw_md_source": "raw/2026-08-03-morning.md"
+}
