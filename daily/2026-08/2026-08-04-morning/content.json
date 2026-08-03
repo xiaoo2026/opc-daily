@@ -1,0 +1,70 @@
+{
+  "title": "Qwen3.8 旗舰发，港股给它重新定价",
+  "dek": "8/3 收盘后阿里把 2.4 万亿参数的 Qwen3.8-MAX 推到台前，企业级 Agent 千问办公公测。港股盘中跳涨 7%，Arena 周榜把 Qwen3.8 推到 Top 5。",
+  "why_this": "8/3 晚报我挑了 Kimi 安全双测试，那是模型侧被测出两个数字。8/4 早我换个方向，看模型在企业场景里第一次被推上协同办公桌面，资本和评测榜单同日给出反应。早与晚，对内决策这条线换了一面镜子。",
+  "main_h2": "模型、Agent、港股三件事，同一天各自落点",
+  "stat_card_date_label": "8/4 周一 · 07:00",
+  "meta_description": "阿里 Qwen3.8 · 2.4 万亿参数 · 千问办公公测 · Arena Top 5 · 港股阿里涨超 7% · 蚂蚁灵波 15 亿",
+  "headline_alt": "Qwen3.8 旗舰发，港股给它重新定价",
+  "canonical_url": "daily/2026-08/2026-08-04-morning/",
+  "main_facts": [
+    "财联社 8/3 10:24 快讯: 阿里巴巴发布千问 3.8-MAX 人工智能模型，拥有 2.4 万亿个参数。阿里巴巴称 Qwen3.8-MAX 拥有与 Anthropic Fable 相当的性能。原文: https://www.cls.cn/detail/2443839",
+    "财新 8/3 19:45 标题 verbatim: \"阿里发布 2.4 万亿参数大模型 Qwen3.8 企业级 Agent 千问办公公测\"。同篇正文写到已初步打通钉钉，未来将推出国际版。原文: https://www.caixin.com/2026-08-03/102470966.html",
+    "IT之家 8/3: Arena (arena.ai) 第 31 周榜 (7/27-8/2) qwen3.8-max 首次亮相即杀入综合榜 Top 5；月之暗面 kimi-k3-max 第 13；字节 seedream-5.0-pro 上升 5 位进入 AI 生图榜 Top 6。原文: https://www.ithome.com/0/985/081.htm",
+    "新浪 K 线 8/3 13 时: 阿里巴巴港股突然大涨超 7%，恒生科技明显趋强。摩根士丹利研报: 港股市场自下而上改善 — 盈利见底、AI 进展、IPO 解禁压力消化等六大利好。原文: https://k.sina.com.cn/article_7857201856_1d45362c001908i0uk.html",
+    "新浪财经 8/3 16:21 / 搜狐 8/3: 蚂蚁灵波已启动首轮融资，拟募资 15 亿元。蚂蚁灵波回应: 确实在跟投资人接触，将持续聚焦通用机器人大脑。同日证券时报: 上海新增 11 款 AI 服务完成登记，累计 211 款。原文: https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikzqsr2798249.shtml 与 https://www.stcn.com/article/detail/4054759.html",
+    "财新 8/3 21:22: 存储板块回调中分野 — 兆易创新跌停、长鑫逆势收涨。原文: https://www.caixin.com/2026-08-03/102471003.html"
+  ],
+  "pick_points": [
+    {
+      "num": "2.4 万亿",
+      "label": "Qwen3.8-MAX 参数"
+    },
+    {
+      "num": "Top 5",
+      "label": "Arena 第 31 周榜 综合"
+    },
+    {
+      "num": "+7%",
+      "label": "阿里港股 8/3 盘中"
+    },
+    {
+      "num": "211 款",
+      "label": "上海 AI 服务登记累计"
+    }
+  ],
+  "say_4": [
+    "模型、Agent、港股三层同日落点，是同一条轴。",
+    "\"与 Fable 相当\" 来自阿里口径，别扩写成超过。",
+    "15 亿是拟募资，11 款是 7/31 入表，要分清时间。",
+    "8/3 晚看 Kimi 双测试，8/4 早看模型上协同桌面。"
+  ],
+  "not_picked": [
+    "<strong>候选 B · EU AI Act Article 50 落地第二天</strong> — 8/2 已完成三段拼图，8/4 没有新的执法文件，不换标题续写。",
+    "<strong>候选 C · AMD Q2 财报 8/4 美东盘后</strong> — Anthropic MI450 协议背书确有份量，但收盘还没出，今晚 11:30 才到 master 时点。",
+    "<strong>候选 D · 长鑫 V 型反弹 vs 兆易跌停</strong> — 财新 21:22 已记录，资金面对长鑫与兆易做出截然不同选择，可作下午接力，不抢今天的标题。"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim: 延续 8/3 raw.md 中 EU Article 50、Anthropic 三家公司事件、长鑫与 MSFT/META/AAPL、字节大模型业务 ARR 40 亿美元的 FACT-CHECK FIX；本期新增数字均来自财联社 8/3 10:24、财新 8/3 19:45 与 21:22、IT之家 8/3、新浪 K 线 8/3 13 时、新浪财经 8/3 16:21、证券时报 8/3 11:43 原文，不修改旧事实。",
+  "source_attribution": [
+    "财联社: https://www.cls.cn/detail/2443839",
+    "财新 Qwen3.8 + 千问办公: https://www.caixin.com/2026-08-03/102470966.html",
+    "财新 存储板块分野: https://www.caixin.com/2026-08-03/102471003.html",
+    "IT之家 Arena 周榜: https://www.ithome.com/0/985/081.htm",
+    "新浪 K 线 阿里港股: https://k.sina.com.cn/article_7857201856_1d45362c001908i0uk.html",
+    "新浪财经 蚂蚁灵波: https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikzqsr2798249.shtml",
+    "证券时报 上海登记: https://www.stcn.com/article/detail/4054759.html",
+    "8/3 晚报上下文: https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+  ],
+  "date": "2026-08-04",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "type": "morning",
+  "hero_meta_short": "8/4 周一 · 07:00 · 覆盖 8/3 21:00 ~ 8/4 07:00 · 新一天第 1 段",
+  "baseline": 59,
+  "relay": 50,
+  "narrative_count": 50,
+  "render_engine": "draft-daily.py v2",
+  "raw_md_source": "raw/2026-08-04-morning.md",
+  "html_url": "daily/2026-08/2026-08-04-morning/index.html"
+}
