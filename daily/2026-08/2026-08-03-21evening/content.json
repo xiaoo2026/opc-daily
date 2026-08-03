@@ -1,0 +1,66 @@
+{
+  "title": "同一个 Kimi，两套安全答案",
+  "dek": "早报说 agent 安全要看完整控制链，晚报找到了一组更直接的证据。同一个 Kimi K3，在专用审计 harness 里找到 23/26 个漏洞；换成漏洞利用和企业网络攻击测试，总分只有 32.2%。",
+  "why_this": "我选这件，因为两份结果看着互相打脸，其实正好解释了早报。模型能力不会脱离 harness 单独存在。给它侦察、并行调查和复核流程，它像审计员；让它自己完成攻击链，它又明显落后。比较模型前，先看测试到底让它做了什么。",
+  "main_h2": "两个数字都对，任务不同",
+  "stat_card_date_label": "8/3 周一 · 21:00",
+  "meta_description": "Kimi K3 · Aikido 23/26 CVE · AISI/CAISI 32.2% · harness 改变结果",
+  "headline_alt": "同一个 Kimi，两套安全答案",
+  "canonical_url": "daily/2026-08/2026-08-03-21evening/",
+  "main_facts": [
+    "Aikido 用同一套 AI Code Analysis harness 测 13 个模型。模型提前拿到脆弱代码片段，每个模型跑三次，再合并三次找到的漏洞 (per aikido.dev 7/16, 7/27 update verbatim)。",
+    "Kimi K3 在这套审计任务里找到 23/26 个 CVE，跟 GPT-5.6 Terra 同档；Aikido 称它比 GPT-5.6 Sol 便宜 4 倍 (per aikido.dev verbatim)。",
+    "UK AISI 与 US CAISI 换了一套题。Kimi K3 在 ExploitBench 得 32.2%，GLM-5.2 得 24.4%，顶级未具名美国模型平均 76.2% (per SCMP 7/24 reporting joint study)。",
+    "41 个 ExploitBench 任务里，Kimi K3 没有一次做到 arbitrary code execution；顶级美国模型做到 20 次 (per SCMP verbatim)。",
+    "在 The Last Ones 企业网络攻击模拟里，Kimi K3 平均走到 17 步，美国顶级模型平均 28.5 步；Kimi 仍在 10 次里完整攻破过 1 次 (per SCMP verbatim)。",
+    "两套结果不冲突。Aikido 测的是专用 harness 辅助下重发现已知漏洞，UK-US 测的是把漏洞变成攻击链。任务、工具和运行流程一起决定了模型表现。",
+    "[FACT-CHECK FIX preserved verbatim] 延续 8/2 EU Article 50、Anthropic 三家公司事件、长鑫与 MSFT/META/AAPL 数字；本期没有修改旧事实。"
+  ],
+  "pick_points": [
+    {
+      "num": "23/26",
+      "label": "专用审计 harness 找到 CVE"
+    },
+    {
+      "num": "32.2%",
+      "label": "ExploitBench 总分"
+    },
+    {
+      "num": "0/41",
+      "label": "做到任意代码执行"
+    },
+    {
+      "num": "1/10",
+      "label": "完整攻破企业网络模拟"
+    }
+  ],
+  "say_4": [
+    "23/26 和 32.2% 都是真的，别把不同任务揉成排行榜。",
+    "harness 会决定模型先看哪里、能用什么工具、何时继续查。",
+    "找出漏洞和完成攻击链不是同一件事，安全评测必须分开写。",
+    "早报说控制链要开放，晚报补上原因：控制链会改变结果。"
+  ],
+  "not_picked": [
+    "恒指半年度审议预测：智谱与 MINIMAX 只是候选，8/21 才公布结果，现在写成入选太早。",
+    "EU Article 50 第二天：8/2 已完成三段拼图，今天没有新的执法文件，不换标题续写。",
+    "Anthropic 三家公司事件：工程事实已经写过；本期更值得补的是如何读安全测试。"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim: 延续 8/2 EU Article 50、Anthropic 三家公司事件、长鑫与 MSFT/META/AAPL 数字；本期没有修改旧事实。",
+  "source_attribution": [
+    "Aikido: https://www.aikido.dev/blog/benchmarking-ai-models-known-cves",
+    "SCMP on AISI/CAISI: https://www.scmp.com/tech/tech-war/article/3361711/chinas-kimi-k3-significantly-below-us-rivals-hacking-power-uk-us-study-shows",
+    "Morning context: https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+  ],
+  "date": "2026-08-03",
+  "slot": "21evening",
+  "slot_label": "晚报",
+  "slot_hour": "21:00",
+  "type": "21evening",
+  "hero_meta_short": "8/3 周一 · 21:00 · 覆盖 8/3 15:00 ~ 8/3 21:00 · 同日第 2 段",
+  "baseline": 58,
+  "relay": 49,
+  "narrative_count": 49,
+  "render_engine": "draft-daily.py v2",
+  "raw_md_source": "raw/2026-08-03-21evening.md",
+  "html_url": "daily/2026-08/2026-08-03-21evening/index.html"
+}

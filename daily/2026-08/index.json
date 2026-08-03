@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-03",
+    "slot": "21evening",
+    "slot_label": "晚报",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "title": "同一个 Kimi，两套安全答案",
+    "headline_alt": "同一个 Kimi，两套安全答案",
+    "canonical_url": "daily/2026-08/2026-08-03-21evening/",
+    "baseline": 58,
+    "relay": 49,
+    "narrative_count": 49,
+    "html_url": "daily/2026-08/2026-08-03-21evening/index.html"
+  },
+  {
+    "date": "2026-08-03",
     "slot": "morning",
     "slot_label": "早报",
     "slot_hour": "07:00",
