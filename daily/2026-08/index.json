@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-04",
+    "slot": "morning",
+    "slot_label": "早报",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "Qwen3.8 旗舰发，港股给它重新定价",
+    "headline_alt": "Qwen3.8 旗舰发，港股给它重新定价",
+    "canonical_url": "daily/2026-08/2026-08-04-morning/",
+    "baseline": 59,
+    "relay": 50,
+    "narrative_count": 50,
+    "html_url": "daily/2026-08/2026-08-04-morning/index.html"
+  },
+  {
     "date": "2026-08-03",
     "slot": "21evening",
     "slot_label": "晚报",
