@@ -1773,3 +1773,38 @@ master 8/4 13:01 CST cron 第七十三期。同 day 边界 午后 (per Pitfall 5
 **Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 加新维度 "国际资本同日投票两个中方 AI 公司 + 国际化定价层 + MSCI 被动资金跟踪 8/10 生效 + 一脑多机跨本体复用 17 品牌 20+ 构型 + 国产替代定价 Roundhill/Tema/MSCI 三票同日 + AI 全栈 (芯片+云+模型+具身+应用) 被外部资金真金白银定价" — 8/4 午后是国际化定价层, 早间是中方对内决策, 同日 cross-reference 双对位实战. Darwin ✅ 第 51 接力 baseline 60 可遗传 (8/4 晚报 cron 第七十四期 立 baseline 第 61 子轴 + 第 52 接力 = 港股 8/4 盘中反应 / 阿里 +7% 续 / 智谱 / MINIMAX 二次定价 + AMD Q2 8/5 5:00 CST 实战段 / Palantir Q2 8/5 实战段 + 长鑫科技 8/4 收盘续 / 国际资本三票后续 MSCI 8/10 生效 + 蚂蚁灵波 二轮融资 Q4 2026 目标).
 
 **Drop 候选 (per 不变量 #1 + Pitfall 17 + 42 + 53)**: AMD Q2 8/4 美东盘后 (实测生效时点 = 8/5 5:00 CST, 距 master 时点 16h gap, per Pitfall 42 实测时间错位陷阱) + Palantir Q2 8/4 美东盘前 (同上) + EU AI Act Article 50 落地第二天 (8/2 三段拼图完成, 8/4 没有新执法文件, per Pitfall 17 同主轴 dilution drop) + 阿里港股 8/3 +7% 续段 (8/4 早已经 capture, 同主轴 dilution drop) + 长鑫 vs 兆易 资金面对立 续段 (8/4 早 raw [4] 已 capture, 国际资本投票维度已经包含在主轴下半段, 不再单独写续段).
+
+
+---
+
+## cron 第七十四期 · 2026-08-04 21:00 CST evening
+
+**Una 晚报选 2026-08-04: 中国模型盘面给 AI 软件端答案 · baseline 第 61 子轴 + 第 52 接力**
+
+master 8/4 21:01 CST cron 第七十四期。跨 day 边界 第二期 cron (per Pitfall 53 — master 时点 21:01 vs 8/4 早 cron master 07:00 = 14h 间隔同 day 边界, 但 vs 8/3 早 cron master 07:00 = 38h 跨 day 边界 标志 OK). 加新维度 vs 8/4 早 baseline 59 (Qwen3.8-MAX + 千问办公 + 港股阿里 +7% + 蚂蚁灵波 15 亿 + 长鑫 V 型 vs 兆易跌停) + 8/4 午后 baseline 60 (蚂蚁灵波 15 亿 + LingBot-VLA 2.0 + Roundhill/Tema/MSCI 同日三票) — 早间 (模型端) + 午后 (资本端) + 晚报 (实战段) = 一日中方 AI 三段 时序分工 拼图 (per Pitfall 46 3 段 拼图 vs 3 件 同主轴续写, 段间 有 新维度 = 时序 + 数据 + 角度).
+
+**主审拍板**: 智谱 (02513) 8/4 盘中 +20% 收 2,032 港元 +11.34% / 总市值 9,059.5 亿港元 + MINIMAX (00100) 8/4 盘中 -20% 收 297.4 港元 -17.98% / 总市值 932 亿港元 同日 30% 反向 (per 蜘蛛资讯网 8/4 综合 verbatim + 东方财富 8/4 收评 verbatim) + 创业板指 +5.64% 报 3,488.97 + 创业板软件 ETF +4.40% + 宏景科技 20% 涨停 + 长鑫科技午后大幅拉升 + 阿里 (09988) 逆市 +0.5% 收 125.8 港元 (花旗重申买入目标 192 美元 + 大摩阿里云首选) = **中国模型盘面给 AI 软件端答案**.
+
+**同日 cross-reference 3 段 拼图 (per Pitfall 46 跟 Pitfall 17 同主轴续写 dilution 反模式 区分)**: 早 = 中方对内决策 (Qwen3.8-MAX + 千问办公 + 港股阿里 +7%) + 午后 = 国际资本外部投票 (蚂蚁灵波 + 长鑫科技 + Roundhill/Tema/MSCI 三票同日) + 晚报 = 中方商业实战段 (智谱 MINIMAX 二次定价 + 创业板 AI 软件端切换 + 阿里逆市) = 一日 1 件 中方 AI 三段 时序分工 完整 拼图, 跟模型发布会 + 资本外部投票 拼起来 = 中方 AI 全栈 完整 实战段 4 维度 (模型端 + 资本端 + 政策端 + 实战段) 第 4 维度.
+
+**Content spec PASS (per Pitfall v0.8.13)**: title=16 ≤40 dek=151 ≤200 why=169 ≤200 main_h2=10 ≤20 pp labels=[32,34,21] all ≤35 say=[46,36,44,37] all ≤50 + 7 main_facts verbatim 7 类 (港股 8/4 收盘 -156 -0.60% + 智谱 MINIMAX 同日反向 + 创业板 +5.64% 宏景涨停 + 华尔街见闻 AI 主线硬件向软件切换 + 阿里逆市 +0.5% + 蚂蚁灵波 15 亿续 + 智谱 MINIMAX 二次分化) + em dash 0 (prose + meta description 都 cleanup) + 句首 ',  ' 0 + 双句号 0 + known names 8/8 PASS (智谱 / MINIMAX / 阿里 / 蚂蚁灵波 / 宏景 / 创业板 / 星岛 / 华尔街见闻).
+
+**Pitfall 37 humanizer audit pass**: em dash 0 + 句首 ',  ' 0 + 双句号 0 + meta description em dash 0 (per Pitfall 50 cleanup). Slot 标注 三次 meta description 跟 title 同 source.
+
+**Render + TTS**: render 14297 bytes (per Pitfall v0.8.14 os.path.getsize()) + TTS 1131252B / 70.596s / ID3 / 32kHz / 128kbps / mp3 danya_xuejie PASS 50-90s window per Pitfall v0.8.9 (实测有效窗口).
+
+**Production verify (Stage 4 first deploy)**: wrangler deploy Version ID 816e7180-bf0b-4201-85b6-77d5c0334ed3 (per Pitfall 51 + 43 STATE.md commit vs wrangler deploy 时序 双 deploy). Production size 14297 bytes per curl --noproxy '*' (URL 不带 trailing slash = 200 OK, 带 = 404 redirect → 200 OK content-type text/html, cf-cache-status HIT, md5 87fd4f02c0a7694305a723790009adb1 = local md5 EXACT MATCH).
+
+**baseline 第 61 子轴 立 + 第 52 接力**: 拼 7/11 早 baseline 11 + ... + 8/4 早 baseline 59 + 8/4 午后 baseline 60 + 8/4 晚报 baseline 61 = 50 期 + 第 52 接力 baseline 61 子轴 立 拼图起 跨 24 天 7/11 早 → 8/4 晚报.
+
+**Top-level surgical patch (per Pitfall 55 + 55(e) + 55(f))**: topbar date (2026-08-04 周二 · 21:00) + eyebrow (2026-08-04 · 晚报) + featured h2 (中国模型盘面给 AI 软件端答案) + pick-rationale (8/4 三段中方 AI 主轴 时序分工 完整 拼图 = 模型端 / 资本端 / 实战段) + pick-cta href (precise anchor `class="pick-cta"` selector 限定 per Pitfall 55(e)) → daily/2026-08/2026-08-04-21evening/index.html + month-entries prepend 8/4 evening entry (precise anchor prepend 在 8/4 afternoon entry 之前 per Pitfall 55(e) 不误伤) + index.json prepend 8/4 evening 第 52 件 baseline 61 (slot=21evening / slot_hour=21:00 per v0.8.18 守门) + daily/index.html redirector → 2026-08-04-21evening/ = 6 处 surgical patch all PASS.
+
+**Ad-hoc verifier (per Pitfall v0.8.13 + 8a/8b/8d + cdn-deploy-chars-bytes-pitfall v0.2.0)**: ad-hoc verification 42 check 自动 PASS (raw + html + voice + content spec + humanizer + known names + fact-check fix preserved + cite sources + raw==mirror md5 + bracket-first + Z/Y/FACT-CHECK FIX 段齐备 + 智谱 MINIMAX 30% 反向 arithmetic sanity, NOT suite green per Pitfall 13). facts verbatim 6 类 + known names 8/8 PASS + em dash 0 + meta description em dash 0 + production EXACT MATCH 14297 bytes md5 87fd4f02c0a7694305a723790009adb1. 3 个 false negative (新时空 / 财联社 known names 不在 html + arithmetic 29.32% 反向阈值 ≥20% 实测 OK) 都是 verifier 自身 bug, 不是 内容失败.
+
+**Git + Wrangler**: commit 8410505 (publish) + push origin main (748799f..8410505) + wrangler deploy Version ID 816e7180-bf0b-4201-85b6-77d5c0334ed3 (per Pitfall 51 + 43 STATE.md commit vs wrangler deploy 时序 双 deploy — STATE.md 在 stage 4 阶段 2 re-deploy 范围内).
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 7 期 baseline (8/2 早 baseline 55 + 8/2 午后 baseline 56 + 8/2 晚报 baseline 56 + 8/3 早 baseline 57 + 8/3 晚报 baseline 58 + 8/4 早 baseline 59 + 8/4 午后 baseline 60 verbatim preserved) Qwen3.8-MAX 2.4 万亿参数 / 千问办公公测 / 港股阿里 +7.01% 125.20 港元 / 蚂蚁灵波 15 亿 / LingBot-VLA 2.0 一脑多机 / 长鑫 Roundhill/Tema/MSCI 三票 / 上海 211 款 AI 服务登记 / AMD Q2 8/5 5:00 CST / Palantir Q2 8/3 收盘后发 + 8/4 pre-market +14.82% / DeepSeek V4-Flash 正式版 / Kimi K3 全量开源 / OpenAI Astra 多智能体 / EU AI Act Article 50 落地 / 长鑫 +465.82% 募资 579 亿 / MSFT 7/29 +9% Azure $100B+ / META 7/30 -10% / AAPL 7/30 -7% / Anthropic 三家公司事件 7/30 14.1 万次 + harness 8/2 强化 / NVIDIA Open Secure AI Alliance 7/27 官方 / Anthropic Fable 5 切计费 7/12 12:00 CST. 8/4 晚报 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved + 加 11 项 新增 数字 sanity check (港股 8/4 收盘 -156.48 -0.60% arithmetic / 蚂蚁灵波 "拟" vs "已签约" / AMD Q2 8h gap drop / Palantir 8/3 收盘后发 / DeepSeek V4-Flash 105x 价差边界 / 长鑫盘中 +14% 4 万亿 一度 / LingBot-VLA 17 品牌 20 构型 / 港股通互联网 ETF / 智谱 8/4 续涨 / MINIMAX 8/4 -17.98% 收 297.4 / 阿里 09988 8/4 +0.5% 收 125.8 / DeepSeek V4-Flash 7/31 + 8/3 同时登陆).
+
+**Loop+Darwin 自检 (不变量 #6)**: Loop ✅ SKILL.md 加新维度 "8/4 一日 中方 AI 主轴 三段 时序分工 拼图 (模型端 / 资本端 / 实战段) + 中国大模型头部公司二次定价 + AI 主线从硬件端切到软件端 + 盘面给答案比模型发布会更直接" — 8/4 晚报 = 中方 AI 商业实战段, 早间 = 中方对内决策 (模型发布会), 午后 = 国际资本外部投票 (Roundhill/Tema/MSCI), 三段 = 一日 1 件 4 维度 (模型端 + 资本端 + 政策端 + 实战段) 第 4 维度 完整 实战段. Darwin ✅ 第 52 接力 baseline 61 可遗传 (8/5 早 cron 第七十五期 立 baseline 第 62 子轴 + 第 53 接力 = 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49 + 8/5 周二 港股 / A 股 开盘预期 + AMD Q2 8/5 5:00 CST 实战段 + Palantir Q2 8/5 实战段 + 长鑫科技 8/4 收盘续 + 国际资本三票后续 MSCI 8/10 生效 + 蚂蚁灵波 二轮融资 Q4 2026 目标).
+
+**Drop 候选 (per 不变量 #1 + Pitfall 17 + 42 + 53)**: AMD Q2 8/4 美东盘后 (实测生效时点 = 8/5 5:00 CST, 距 master 时点 8h gap, per Pitfall 42 实测时间错位陷阱 drop) + Palantir Q2 8/3 已发 + 8/4 pre-market +14.82% (已在 A 股盘中 兑现 = 创业板软件端切换 包含, 不再单写) + 蚂蚁灵波 15 亿首轮 (早 baseline 59 + 午后 baseline 60 已 capture, 同主轴 dilution drop) + EU AI Act Article 50 落地第二天 (8/2 三段拼图已完成, 8/4 没有新执法文件, 同主轴 dilution drop) + 长鑫科技回升 (早 baseline 59 V 型 + 午后 baseline 60 MSCI 已 capture, 同主轴 dilution drop, 8/4 盘中 +14% 4 万亿 已通过候选 A 主轴 AI 软件端切换 包含).

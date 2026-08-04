@@ -1,6 +1,22 @@
 [
   {
     "date": "2026-08-04",
+    "slot": "21evening",
+    "type": "evening",
+    "slot_hour": "21:00",
+    "title": "中国模型盘面给 AI 软件端答案",
+    "headline_alt": "中国模型盘面给 AI 软件端答案",
+    "meta_description": "中国模型盘面给 AI 软件端答案 · 智谱 +11% MINIMAX -18% · 创业板 +5.64% AI 主线切软件 · 阿里逆市 +0.5%",
+    "html_url": "daily/2026-08/2026-08-04-21evening/index.html",
+    "canonical_url": "daily/2026-08/2026-08-04-21evening/",
+    "baseline": 61,
+    "relay": 52,
+    "cron": 74,
+    "tier": "evening",
+    "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续 baseline 59+60 → baseline 61 接力 第七十四期"
+  },
+  {
+    "date": "2026-08-04",
     "slot": "afternoon",
     "slot_hour": "13:00",
     "type": "afternoon",
