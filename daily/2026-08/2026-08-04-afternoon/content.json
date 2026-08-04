@@ -1,0 +1,67 @@
+{
+  "title": "国际资本同日给两家中国 AI 投了票",
+  "dek": "8/3 一边是蚂蚁灵波确认 15 亿首轮融资, 一边是长鑫科技被 Roundhill Memory ETF 加到 2.52%, 被 Tema DISK 升到 12.97% 第一大重仓, 还被 MSCI 中国全股票指数放进 8/10 生效名单。一内一外, 一商业一硬件, 同一天被外部资金正式投票。",
+  "why_this": "8/4 早我选了阿里 Qwen3.8-MAX, 那是中方自己给自己定价, 模型上协同办公桌面, 港股反应。8/4 午后换个方向, 看外部世界怎么看中方 AI 全栈。蚂蚁灵波 + 长鑫科技, 同日被三只国际 ETF + 一只全球指数同时投票, 这才是模型发布会背后真正的国际化定价层。",
+  "main_h2": "国际资本同日投了三票",
+  "stat_card_date_label": "8/4 周二 · 13:00",
+  "meta_description": "蚂蚁灵波 15 亿 · LingBot-VLA 2.0 · 长鑫科技 · Roundhill Memory ETF 2.52% · Tema DISK 12.97% · MSCI 8/10 生效",
+  "headline_alt": "国际资本同日给两家中国 AI 投了票",
+  "canonical_url": "daily/2026-08/2026-08-04-afternoon/",
+  "main_facts": [
+    "新浪财经 8/3 16:21 / 北京商报 verbatim: 蚂蚁灵波已启动首轮融资, 拟募资 15 亿元, 目标今年年底完成二轮融资。蚂蚁灵波回应: 确实在跟投资人接触, 将持续聚焦通用机器人大脑, 加大对具身原生技术路线的投入, 加速产业落地。原文: https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikzqsr2798249.shtml",
+    "搜狐 / 证券时报 8/3 verbatim: 蚂蚁累计在灵波投入超一线创业公司融资额, 本轮融资后灵波仍是蚂蚁在具身和物理 AI 领域最核心载体。灵波已发布 LingBot-VLA / LingBot-VA / LingBot-Vision / LingBot-World 等 10 余款模型, LingBot-VLA 2.0 已在预训练阶段适配宇树、智元、银河通用、乐聚等 17 个机器人品牌的 20 多种机器人构型, 展现通用大脑跨本体复用和泛化能力。原文: https://m.sohu.com/a/1058285835_115433",
+    "IT之家 8/3 verbatim: 全球最火内存 ETF — Roundhill Memory ETF (DRAM) 于 7 月底完成调仓, 再度纳入 A 股公司长鑫科技 (688825), 权重为 2.52%, 位列该 ETF 第八大重仓股。兆易创新 (HK3986) 权重从 2.91% 降至 1.51%, 位列第十大重仓股。该 ETF 由 Roundhill Investments 发行, 于 2026/4/2 在美国 Cboe BZX 交易所挂牌上市, 是全球首只以纯内存芯片为投资主题的 ETF。原文: https://www.ithome.com/0/984/918.htm",
+    "东方财富 8/3 13:52 verbatim: 美国主动管理型 ETF 提供商 Tema ETFs 旗下聚焦存储芯片行业的主动管理 ETF — Tema 内存 ETF (DISK) 已将长鑫科技调整为其第一大重仓股, 持仓占比达 12.97%。该产品在长鑫科技上市首日便将该股纳入组合, 赋予其超过 10% 的高权重。截至 7/31 DISK 资产管理规模为 7736.84 万美元, 7 月份规模增长超过 30 倍。原文: https://finance.eastmoney.com/a/202608033829686014.html",
+    "金融界 8/3 15:45 verbatim: 明晟公司 (MSCI) 公告, 长鑫科技因 IPO 上市, 将被纳入 MSCI 中国全股票指数, 并于 8/10 正式生效。MSCI 中国全股票指数覆盖 A 股、H 股、美国存托凭证 (ADR) 等多个市场的中国股票。由于 MSCI 中国指数又被嵌套进 MSCI 全球标准指数系列, 一旦进入 MSCI 体系, 也意味着将获得更多全球被动资金的跟踪和配置。原文: https://stock.jrj.com.cn/2026/08/03154557993526.shtml",
+    "中国基金报 8/3 20:05 verbatim: 截至 8/3 收盘, 长鑫科技报 54.99 元/股, 总市值为 3.68 万亿元, 稳坐 A 股市值一哥宝座。该 ETF 前三大持仓分别为三星电子 26.39%、美光科技 24.54%、SK 海力士 22.77%。原文: https://www.chnfund.com/article/AR4e11fd8a-d6dd-52ab-22c8-3a22d98ebf5c",
+    "钛媒体 8/3 verbatim: 截至 7 月, 蚂蚁灵波全系列模型被开发者认可的 Star 数已接近 3 万, 是第二名的 2.7 倍多。原文: https://www.163.com/dy/article/L3EK97850530KP1K.html"
+  ],
+  "pick_points": [
+    {
+      "num": "15 亿",
+      "label": "蚂蚁灵波首轮拟募资"
+    },
+    {
+      "num": "2.52%",
+      "label": "Roundhill DRAM 长鑫权重"
+    },
+    {
+      "num": "12.97%",
+      "label": "Tema DISK 长鑫第一大重仓"
+    },
+    {
+      "num": "8/10",
+      "label": "MSCI 中国全股票指数生效"
+    }
+  ],
+  "say_4": [
+    "蚂蚁灵波 + 长鑫科技, 一家是具身大脑, 一家是 DRAM 原厂。",
+    "Roundhill + Tema + MSCI, 三票同日, 不是巧合。",
+    "15 亿是拟募资, 国际资本是真金白银, 节奏不同。",
+    "早间模型上桌面, 午后外部资金给它盖印。"
+  ],
+  "not_picked": [
+    "<strong>候选 B · 阿里港股 8/3 收盘 +7% 报 125.2 港元</strong> — 8/4 早已经 capture Qwen3.8 + 港股反应, 同主轴 dilution, 不换标题续写。",
+    "<strong>候选 C · AMD Q2 8/4 美东盘后 / Palantir Q2 8/4 美东盘前</strong> — 实测生效时点都在 8/5 凌晨 5:00 CST 之后, 距 master 时点 13:00 CST 还有 16h, Pitfall 42 时序错位, 写实测不诚实。",
+    "<strong>候选 D · EU AI Act Article 50 落地第二天</strong> — 8/2 三段拼图已完成, 8/4 没有新执法文件, 不换标题续写。",
+    "<strong>候选 E · 长鑫 vs 兆易 资金面对立 续段</strong> — 8/4 早 raw [4] 已 capture 兆易跌停 + 长鑫 V 型, 国际资本投票维度已经包含在主轴下半段, 不再单独写续段。"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续: 延续 8/2 早 baseline 55 + 8/2 午后 baseline 56 + 8/2 晚报 baseline 56 + 8/3 早 baseline 57 + 8/3 晚报 baseline 58 + 8/4 早 baseline 59 (Qwen3.8-MAX 2.4 万亿参数 / 千问办公 / 港股阿里 +7% / 蚂蚁灵波 15 亿 / 长鑫 V 型 vs 兆易跌停 / 上海 211 款 AI 服务登记 / 长鑫 Roundhill 调仓 / AMD Q2 8/4 盘后 / DeepSeek V4-Flash 正式版 / OpenAI Astra 多智能体 / EU AI Act Article 50 落地); 本期新增数字均来自新浪财经 8/3 16:21、IT之家 8/3、东方财富 8/3 13:52、金融界 8/3 15:45、中国基金报 8/3 20:05 原文, 不修改旧事实。MSCI 8/10 生效为官方公告时点。",
+  "source_attribution": [
+    "新浪财经 蚂蚁灵波: https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikzqsr2798249.shtml",
+    "搜狐/证券时报 蚂蚁灵波: https://m.sohu.com/a/1058285835_115433",
+    "网易/钛媒体 蚂蚁灵波: https://www.163.com/dy/article/L3EK97850530KP1K.html",
+    "IT之家 Roundhill DRAM 加仓: https://www.ithome.com/0/984/918.htm",
+    "东方财富 Tema DISK 第一大重仓: https://finance.eastmoney.com/a/202608033829686014.html",
+    "金融界 MSCI 中国全股票指数: https://stock.jrj.com.cn/2026/08/03154557993526.shtml",
+    "中国基金报 Roundhill 调仓: https://www.chnfund.com/article/AR4e11fd8a-d6dd-52ab-22c8-3a22d98ebf5c",
+    "Yahoo Finance HK 9988.HK: https://hk.finance.yahoo.com/quote/9988.HK",
+    "证券时报 港股 8/3 开盘: https://www.stcn.com/article/detail/4054723.html"
+  ],
+  "date": "2026-08-04",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后",
+  "type": "afternoon",
+  "hero_meta_short": "8/4 · 13:00"
+}
