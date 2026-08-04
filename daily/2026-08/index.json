@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-08-05",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "title": "AMD Q2 实测 AI 算力二源上线",
+    "headline_alt": "AMD Q2 实测 AI 算力二源上线",
+    "meta_description": "AMD Q2 FY2026 实测 $11.5B 营收 +50% YoY · Data Center 占 58% 翻倍多 · 非 GAAP EPS $1.66 beat 6 期连 · 美方 AI 资本支出 4 巨头 半年收官 · NVIDIA/AMD 双轨正式拼完",
+    "html_url": "daily/2026-08/2026-08-05-morning/index.html",
+    "canonical_url": "daily/2026-08/2026-08-05-morning/",
+    "baseline": 62,
+    "relay": 53,
+    "cron": 75,
+    "tier": "morning",
+    "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续 baseline 59+60+61 → baseline 62 接力 第七十五期"
+  },
+  {
     "date": "2026-08-04",
     "slot": "21evening",
     "type": "evening",
