@@ -1,6 +1,21 @@
 [
   {
     "date": "2026-08-05",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "title": "美股创新高 Palantir 给了答案",
+    "headline_alt": "美股创新高 Palantir 给了答案",
+    "meta_description": "Palantir Q2 实战 +29.45% 创 2024/2 以来最大 + 标普 7736.51 / 道指 史上首次 54000 + 卡特彼勒 +5.6% + 智谱 GLM-5.3 提前曝光 — 三方拼图 = 一算力 + 一软件 + 一对内",
+    "html_url": "daily/2026-08/2026-08-05-afternoon/index.html",
+    "canonical_url": "daily/2026-08/2026-08-05-afternoon/",
+    "baseline": 63,
+    "relay": 54,
+    "narrative_count": 54,
+    "raw_url": "raw/2026-08-05-afternoon.md"
+  },
+  {
+    "date": "2026-08-05",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
