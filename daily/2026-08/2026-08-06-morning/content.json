@@ -1,0 +1,71 @@
+{
+  "date": "2026-08-06",
+  "slot_label": "07:00 早间",
+  "slot_hour": "07:00",
+  "hero_meta_short": "Una 主编 cron 第七十八期 8/6 早. 跨 day 边界 第一期 cron 加新维度 per Pitfall 49 + Pitfall 53 升级. 美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 beat $11.5B +50% 数据中心翻倍 但股价跌 7-9% vs Palantir Q2 +29.45% otherworldly. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案.",
+  "title": "AMD跌了7%, Palantir涨了29%",
+  "dek": "美方 8/5 周二 给 AI 投资 一个分裂的答案: AMD Q2 营收 $11.5B +50% 创新高, 数据中心 $6.7B 同比翻倍, 但股价反而跌 7-9% 至 $473. 同日 Palantir CEO 称 Q2 otherworldly, 股价 +29.45%. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案.",
+  "main_h2": "同一日 AI 受益公司, 美方市场给了两个答案",
+  "why_this": "8/5 周二 close 美方市场给了分裂的答案: AMD 算力端 beat 数据 (营收 $11.5B +50%, 数据中心 $6.7B 翻倍, 非 GAAP EPS $1.66) 但股价跌 7-9% 至 $473; Palantir +29.45% otherworldly. 算力端首次被质疑 vs 软件端续狂欢 = 美方 AI ROI 分层定价 子轴 立, baseline 第 65 子轴 + 第 56 接力.",
+  "main_facts": [
+    "AMD 8/4 16:15 EDT 发布 Q2 FY2026 实测: 营收 $11.5B 同比 +50% 创新高, GAAP 毛利率 54% / 非 GAAP 56%, 数据中心收入 $6.7B 同比翻倍 (占公司营收 58%); 非 GAAP 摊薄 EPS $1.66 (vs Q1 $1.37 / consensus $1.61). CFO Jean Hu 确认 Data Center Q3 起加速. 8/5 盘前 +7% 至 $513 (8/4 close $521). 8/5 盘后 实测虽 beat + 上调全年指引, 但股价反而跌 7-9% 至 $473 — 因管理层指引毛利率仅持续扩张而非显著上升, 投资者寻求更大 AI 红利兑现. Source: ir.amd.com 8/4 verbatim URL https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results + benzinga.com 8/4 21:57 EDT verbatim URL https://www.benzinga.com/markets/tech/26/08/60936941/amd-earnings-stock-after-hours-wall-street-forecast + fool.com 8/5 verbatim URL https://www.fool.com/investing/2026/08/05/amds-data-center-business-doubled-to-67-billion-th/ + finance.yahoo.com verbatim URL https://finance.yahoo.com/technology/article/amd-tops-q2-earnings-estimates-and-provides-strong-outlook-but-leaves-investors-unimpressed-110000620.html",
+    "Palantir (PLTR) 8/5 close 续强 +29.45%: Palantir Technologies 8/5 (Wed) 续大涨, CEO Alex Karp 称 Q2 业绩 otherworldly, 全年营收预期 +82% YoY. Portfolio Wealth Advisors 总裁 Lee Munson + Schwab Asset Management CEO Omar Aguilar 在 Yahoo Finance Opening Bid verbatim: Palantir looks a bit unstoppable after overwhelming Q2 commercial growth. Palantir Q2 2026 net income $1.1B. 美方 AI 软件端 8/5 收盘 续 8/5 早 baseline 62 + 8/5 午后 baseline 63 已 capture 的 Palantir +29.45% 段 (本 cron 第七十八期 8/6 早 接力 verbatim). Source: finance.yahoo.com verbatim URL https://finance.yahoo.com/video/palantir-looks-bit-unstoppable-overwhelming-144500334.html + cnbc.com verbatim URL https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html + indmoney.com 8/5 verbatim URL https://www.indmoney.com/blog/us-stocks/pltr-stock-jumps-palantir-q2-earnings-analysis",
+    "美股 8/5 close 三层齐创新高: 标普 500 +1.79% 7,736.51 / 道指 +1.71% 54,085.88 史上首次突破 54,000 关口 / 纳指 +2.59% 26,584.99 / 费城半导体指数 +6.6% — 同一日 三层指数齐创新高 但 AMD 反而跌 7-9% = 美方市场给 AI 投资分裂的答案: 整体市场 普涨 但 AI 算力端 被市场首次质疑 (AMD), AI 软件端 续狂欢 (Palantir +29.45%). Source: techflowpost 8/5 verbatim URL https://m.techflowpost.com/article/33021 + 新浪 8/5 verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-08-05/doc-inimezkx4881374.shtml + 财联社 8/5 verbatim URL https://m.cls.cn/detail/2445760",
+    "卡特彼勒 CAT 8/5 close +5.6%: AI 数据中心建设热潮 推动市场对其发电设备和工程机械的需求增长, CAT 上调全年营收增长指引. AI 物理世界渗透 续 = 美方工业端 + 算力端 + 软件端 三层 AI 受益公司 8/5 同步走强 但 唯独算力端 AMD 因管理层指引幅度 不达预期 反向. Source: 财联社 8/5 verbatim URL https://m.cls.cn/detail/2445760 + 华盛通 8/5 07:04 verbatim URL https://www.hstong.com/news/detail/26080505100075232",
+    "Trump 政府 8/5 周二在白宫主办 AI 公司会议, 讨论新完成的 AI 模型 网络安全 / 安全测试框架; 受邀方为 Anthropic / OpenAI / Google. 8/3 CNBC verbatim: The White House will host artificial intelligence companies Tuesday to discuss a newly completed framework for reviewing the cybersecurity. Reuters 8/3 verbatim: Anthropic, OpenAI and Google have been invited to meet White House officials on Tuesday to discuss voluntary government safety testing. Bloomberg 8/3 verbatim: The Trump administration plans to host artificial intelligence companies at the White House on Tuesday to discuss a new US framework for [AI testing]. 6h 窗口 8/5 19:00 UTC = US 周二 evening = meeting 已结束, 结果性声明可能 8/5 night / 8/6 早 公布. Source: cnbc.com 8/3 verbatim URL https://www.cnbc.com/amp/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html + reuters.com 8/3 verbatim URL https://www.reuters.com/world/us-finalizes-voluntary-ai-safety-tests-white-house-official-says-2026-08-03/ + bloomberg.com 8/3 verbatim URL https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting",
+    "Bloomberg Daybreak Europe 8/5 节目 报道 SpaceX 跌 (AI spending fears): 这是 Bloomberg 主推 的 8/5 早 AI spending narrative — AI 资本支出 担忧 = 美方算力端首次被市场质疑的 同源风险信号 (AMD 跌 7-9% 同根因). Source: bloomberg.com verbatim URL https://www.bloomberg.com/news/videos/2026-08-05/daybreak-europe-8-5-2026-video",
+    "OpenAI GPT-5 8 月推出 续段: OpenAI 计划 8 月推出 GPT-5 + GPT-5 mini + GPT-5 nano 通过 API. OpenAI 中文官网 8/5 verbatim URL https://openai.com/zh-Hans-CN/index/introducing-gpt-5/: 这是我们迄今为止最先进的 AI 系统. GPT-5 是一个统一系统, 包含一个智能高效的模型, 能够回答大多数问题; 一个更深入的推理模型 (GPT-5 Thinking), 用于解决更复杂的问题. 6h 窗口 8/6 03:00 CST OpenAI GPT-5 后续段. Source: ndtv.com verbatim URL https://www.ndtv.com/world-news/openai-gearing-up-to-launch-gpt-5-in-august-report-8944626/amp/1 + arstechnica.com verbatim URL https://arstechnica.com/ai/2025/07/openais-most-capable-ai-model-gpt-5-may-be-coming-in-august/ + straitstimes.com verbatim URL https://www.straitstimes.com/world/united-states/openai-prepares-to-launch-gpt-5-in-august-the-verge-reports"
+  ],
+  "pick_points": [
+    {
+      "num": "-7%~-9%",
+      "label": "AMD Q2 beat 但股价跌 至 $473"
+    },
+    {
+      "num": "+29.45%",
+      "label": "Palantir otherworldly 8/5 close"
+    },
+    {
+      "num": "54,085",
+      "label": "道指 史上首次 54,000 三层齐创新高"
+    }
+  ],
+  "not_picked": [
+    "<strong>候选 A · 白宫 AI 安全会议 8/5 周二</strong> — Anthropic / OpenAI / Google 受邀, 6h 窗口内 meeting 已结束, 结果性声明可能 8/6 早公布, drop 实测段 改写预期段, 跟 8/6 午后接力 留 baseline.",
+    "<strong>候选 B · 港股 8/6 早盘 + 智谱续段</strong> — 8/4 晚报 baseline 61 + 8/5 早 baseline 62 + 8/5 晚报 baseline 64 同主轴 dilution drop per Pitfall 17 反模式.",
+    "<strong>候选 C · 长鑫 MSCI 8/10 纳入 4天倒计时</strong> — 7/27 上市首日 baseline + 8/4 早/午后/晚报 baseline 59+60+61 + 8/5 晚报 baseline 64 已 capture 同主轴 dilution drop per Pitfall 17 反模式.",
+    "<strong>候选 D · 蚂蚁灵波 15 亿 + Q4 二轮</strong> — 8/4 早 baseline 59 + 午后 baseline 60 + 8/5 晚报 baseline 64 已 capture, 8/6 续段 dilution drop.",
+    "<strong>候选 E · OpenAI GPT-5 8 月推出 续段</strong> — 已 capture 同主轴 dilution drop per Pitfall 17 反模式."
+  ],
+  "say_4": [
+    "算力端被市场首次质疑: AMD beat 但跌, 管理层指引幅度不达预期",
+    "软件端已看到真实 ROI: Palantir otherworldly 商业化 已被验证",
+    "整体市场普涨但 AI 内部已分层: 道指 54,085 史上首次 54,000",
+    "同一日 AI 公司 两个答案 = 美方 AI ROI 分层定价 子轴 立"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续: 延续 8/5 早 baseline 62 + 8/5 午后 baseline 63 + 8/5 晚报 baseline 64 verbatim preserved (AMD Q2 $11.5B +50% YoY 创新高 / Data Center $6.7B 同比翻倍 58% / 非 GAAP EPS $1.66 vs consensus $1.61 / 8/5 盘前 +7% 至 $513 / 8/5 盘后 跌 7-9% 至 $473 / Palantir +29.45% / 美股四层 联袂 标普 7736.51 / 道指 54085.88 史上首次 54000 / 纳指 26584.99 / 费半 +6.6% / 卡特彼勒 +5.6% / 智谱 GLM-5.3 提前曝光 / 港股 8/5 09:21 智谱 +近 4% / 阿里 +超 2% / 港股 8/5 收盘 25,969 +0.45% / 智谱 8/5 收盘 987.5 +14.56%); 8/6 早新增数据均来自 ir.amd.com / benzinga.com / fool.com / finance.yahoo.com AMD Q2 4 信源 verbatim URL + finance.yahoo.com / cnbc.com / indmoney.com Palantir Q2 3 信源 verbatim URL + techflowpost / 新浪 / 财联社 美股三层创新高 verbatim URL + 财联社 / 华盛通 卡特彼勒 +5.6% verbatim URL + cnbc.com / reuters.com / bloomberg.com 白宫 AI 安全会议 verbatim URL + bloomberg.com Bloomberg Daybreak Europe 8/5 SpaceX AI spending fears verbatim URL + ndtv.com / arstechnica.com / straitstimes.com / openai.com GPT-5 8 月推出 verbatim URL, 不修改旧事实.",
+  "source_attribution": [
+    "ir.amd.com 8/4 AMD Q2 实测 verbatim: https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+    "benzinga.com 8/4 21:57 EDT AMD earnings stock after-hours: https://www.benzinga.com/markets/tech/26/08/60936941/amd-earnings-stock-after-hours-wall-street-forecast",
+    "fool.com 8/5 AMD Data Center $6.7B doubled: https://www.fool.com/investing/2026/08/05/amds-data-center-business-doubled-to-67-billion-th/",
+    "finance.yahoo.com AMD Tops Q2 Earnings Estimates Strong Outlook: https://finance.yahoo.com/technology/article/amd-tops-q2-earnings-estimates-and-provides-strong-outlook-but-leaves-investors-unimpressed-110000620.html",
+    "finance.yahoo.com Palantir looks a bit unstoppable: https://finance.yahoo.com/video/palantir-looks-bit-unstoppable-overwhelming-144500334.html",
+    "cnbc.com 8/3 Palantir Q2 2026: https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+    "indmoney.com 8/5 PLTR stock jumps Palantir Q2: https://www.indmoney.com/blog/us-stocks/pltr-stock-jumps-palantir-q2-earnings-analysis",
+    "techflowpost 8/5 美股三层 verbatim: https://m.techflowpost.com/article/33021",
+    "新浪 8/5 美股三层 verbatim: https://finance.sina.com.cn/stock/usstock/c/2026-08-05/doc-inimezkx4881374.shtml",
+    "财联社 8/5 美股三层 + 卡特彼勒 verbatim: https://m.cls.cn/detail/2445760",
+    "华盛通 8/5 07:04 卡特彼勒 verbatim: https://www.hstong.com/news/detail/26080505100075232",
+    "cnbc.com 8/3 White House AI voluntary framework: https://www.cnbc.com/amp/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html",
+    "reuters.com 8/3 US finalizes voluntary AI safety tests: https://www.reuters.com/world/us-finalizes-voluntary-ai-safety-tests-white-house-official-says-2026-08-03/",
+    "bloomberg.com 8/3 OpenAI Anthropic Google White House AI: https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting",
+    "bloomberg.com 8/5 Daybreak Europe SpaceX AI spending fears: https://www.bloomberg.com/news/videos/2026-08-05/daybreak-europe-8-5-2026-video",
+    "ndtv.com OpenAI gearing up to launch GPT-5 in August: https://www.ndtv.com/world-news/openai-gearing-up-to-launch-gpt-5-in-august-report-8944626/amp/1",
+    "arstechnica.com OpenAI GPT-5 may be coming in August: https://arstechnica.com/ai/2025/07/openais-most-capable-ai-model-gpt-5-may-be-coming-in-august/",
+    "straitstimes.com OpenAI prepares to launch GPT-5 in August: https://www.straitstimes.com/world/united-states/openai-prepares-to-launch-gpt-5-in-august-the-verge-reports",
+    "openai.com GPT-5 中文官网: https://openai.com/zh-Hans-CN/index/introducing-gpt-5/"
+  ],
+  "canonical_url": "daily/2026-08/2026-08-06-morning/",
+  "stat_card_date_label": "8/6 周三 · 07:00",
+  "meta_description": "美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 beat $11.5B +50% 数据中心翻倍 但股价跌 7-9% vs Palantir Q2 +29.45% otherworldly. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案."
+}

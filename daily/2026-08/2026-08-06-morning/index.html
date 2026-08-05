@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-08-06 · 07:00 早间</title>
+  <meta name="description" content="Una 主编 cron 第七十八期 8/6 早. 跨 day 边界 第一期 cron 加新维度 per Pitfall 49 + Pitfall 53 升级. 美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 beat $11.5B +50% 数据中心翻倍 但股价跌 7-9% vs Palantir Q2 +29.45% otherworldly. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案. · AMD跌了7%, Palantir涨了29%">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">07:00 早间 · 07:00</span>
+        <span class="when">Una 主编 cron 第七十八期 8/6 早. 跨 day 边界 第一期 cron 加新维度 per Pitfall 49 + Pitfall 53 升级. 美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 beat $11.5B +50% 数据中心翻倍 但股价跌 7-9% vs Palantir Q2 +29.45% otherworldly. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案.</span>
+      </div>
+      <h1>AMD跌了7%. Palantir涨了29%</h1>
+      <p class="dek">美方 8/5 周二 给 AI 投资 一个分裂的答案: AMD Q2 营收 $11.5B +50% 创新高. 数据中心 $6.7B 同比翻倍. 但股价反而跌 7-9% 至 $473. 同日 Palantir CEO 称 Q2 otherworldly. 股价 +29.45%. 同一日 同是 AI 受益公司 市场 给两个截然相反的答案.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>8/5 周二 close 美方市场给了分裂的答案: AMD 算力端 beat 数据 (营收 $11.5B +50%. 数据中心 $6.7B 翻倍. 非 GAAP EPS $1.66) 但股价跌 7-9% 至 $473; Palantir +29.45% otherworldly. 算力端首次被质疑 vs 软件端续狂欢 = 美方 AI ROI 分层定价 子轴 立, baseline 第 65 子轴 + 第 56 接力.</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">-7%~-9%</div>
+        <div class="label">AMD Q2 beat 但股价跌 至 $473</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">+29.45%</div>
+        <div class="label">Palantir otherworldly 8/5 close</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">54,085</div>
+        <div class="label">道指 史上首次 54,000 三层齐创新高</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>同一日 AI 受益公司. 美方市场给了两个答案</h2>
+        <p>AMD 8/4 16:15 EDT 发布 Q2 FY2026 实测: 营收 $11.5B 同比 +50% 创新高. GAAP 毛利率 54% / 非 GAAP 56%. 数据中心收入 $6.7B 同比翻倍 (占公司营收 58%); 非 GAAP 摊薄 EPS $1.66 (vs Q1 $1.37 / consensus $1.61). CFO Jean Hu 确认 Data Center Q3 起加速. 8/5 盘前 +7% 至 $513 (8/4 close $521). 8/5 盘后 实测虽 beat + 上调全年指引. 但股价反而跌 7-9% 至 $473  ·  因管理层指引毛利率仅持续扩张而非显著上升. 投资者寻求更大 AI 红利兑现. Source: ir.amd.com 8/4 verbatim URL https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results + benzinga.com 8/4 21:57 EDT verbatim URL https://www.benzinga.com/markets/tech/26/08/60936941/amd-earnings-stock-after-hours-wall-street-forecast + fool.com 8/5 verbatim URL https://www.fool.com/investing/2026/08/05/amds-data-center-business-doubled-to-67-billion-th/ + finance.yahoo.com verbatim URL https://finance.yahoo.com/technology/article/amd-tops-q2-earnings-estimates-and-provides-strong-outlook-but-leaves-investors-unimpressed-110000620.html</p>
+        <p>Palantir (PLTR) 8/5 close 续强 +29.45%: Palantir Technologies 8/5 (Wed) 续大涨. CEO Alex Karp 称 Q2 业绩 otherworldly. 全年营收预期 +82% YoY. Portfolio Wealth Advisors 总裁 Lee Munson + Schwab Asset Management CEO Omar Aguilar 在 Yahoo Finance Opening Bid verbatim: Palantir looks a bit unstoppable after overwhelming Q2 commercial growth. Palantir Q2 2026 net income $1.1B. 美方 AI 软件端 8/5 收盘 续 8/5 早 baseline 62 + 8/5 午后 baseline 63 已 capture 的 Palantir +29.45% 段 (本 cron 第七十八期 8/6 早 接力 verbatim). Source: finance.yahoo.com verbatim URL https://finance.yahoo.com/video/palantir-looks-bit-unstoppable-overwhelming-144500334.html + cnbc.com verbatim URL https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html + indmoney.com 8/5 verbatim URL https://www.indmoney.com/blog/us-stocks/pltr-stock-jumps-palantir-q2-earnings-analysis</p>
+        <p>美股 8/5 close 三层齐创新高: 标普 500 +1.79% 7,736.51 / 道指 +1.71% 54,085.88 史上首次突破 54,000 关口 / 纳指 +2.59% 26,584.99 / 费城半导体指数 +6.6%  ·  同一日 三层指数齐创新高 但 AMD 反而跌 7-9% = 美方市场给 AI 投资分裂的答案: 整体市场 普涨 但 AI 算力端 被市场首次质疑 (AMD). AI 软件端 续狂欢 (Palantir +29.45%). Source: techflowpost 8/5 verbatim URL https://m.techflowpost.com/article/33021 + 新浪 8/5 verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-08-05/doc-inimezkx4881374.shtml + 财联社 8/5 verbatim URL https://m.cls.cn/detail/2445760</p>
+        <p>卡特彼勒 CAT 8/5 close +5.6%: AI 数据中心建设热潮 推动市场对其发电设备和工程机械的需求增长. CAT 上调全年营收增长指引. AI 物理世界渗透 续 = 美方工业端 + 算力端 + 软件端 三层 AI 受益公司 8/5 同步走强 但 唯独算力端 AMD 因管理层指引幅度 不达预期 反向. Source: 财联社 8/5 verbatim URL https://m.cls.cn/detail/2445760 + 华盛通 8/5 07:04 verbatim URL https://www.hstong.com/news/detail/26080505100075232</p>
+        <p>Trump 政府 8/5 周二在白宫主办 AI 公司会议. 讨论新完成的 AI 模型 网络安全 / 安全测试框架; 受邀方为 Anthropic / OpenAI / Google. 8/3 CNBC verbatim: The White House will host artificial intelligence companies Tuesday to discuss a newly completed framework for reviewing the cybersecurity. Reuters 8/3 verbatim: Anthropic. OpenAI and Google have been invited to meet White House officials on Tuesday to discuss voluntary government safety testing. Bloomberg 8/3 verbatim: The Trump administration plans to host artificial intelligence companies at the White House on Tuesday to discuss a new US framework for [AI testing]. 6h 窗口 8/5 19:00 UTC = US 周二 evening = meeting 已结束. 结果性声明可能 8/5 night / 8/6 早 公布. Source: cnbc.com 8/3 verbatim URL https://www.cnbc.com/amp/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html + reuters.com 8/3 verbatim URL https://www.reuters.com/world/us-finalizes-voluntary-ai-safety-tests-white-house-official-says-2026-08-03/ + bloomberg.com 8/3 verbatim URL https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting</p>
+        <p>Bloomberg Daybreak Europe 8/5 节目 报道 SpaceX 跌 (AI spending fears): 这是 Bloomberg 主推 的 8/5 早 AI spending narrative  ·  AI 资本支出 担忧 = 美方算力端首次被市场质疑的 同源风险信号 (AMD 跌 7-9% 同根因). Source: bloomberg.com verbatim URL https://www.bloomberg.com/news/videos/2026-08-05/daybreak-europe-8-5-2026-video</p>
+        <p>OpenAI GPT-5 8 月推出 续段: OpenAI 计划 8 月推出 GPT-5 + GPT-5 mini + GPT-5 nano 通过 API. OpenAI 中文官网 8/5 verbatim URL https://openai.com/zh-Hans-CN/index/introducing-gpt-5/: 这是我们迄今为止最先进的 AI 系统. GPT-5 是一个统一系统. 包含一个智能高效的模型. 能够回答大多数问题; 一个更深入的推理模型 (GPT-5 Thinking). 用于解决更复杂的问题. 6h 窗口 8/6 03:00 CST OpenAI GPT-5 后续段. Source: ndtv.com verbatim URL https://www.ndtv.com/world-news/openai-gearing-up-to-launch-gpt-5-in-august-report-8944626/amp/1 + arstechnica.com verbatim URL https://arstechnica.com/ai/2025/07/openais-most-capable-ai-model-gpt-5-may-be-coming-in-august/ + straitstimes.com verbatim URL https://www.straitstimes.com/world/united-states/openai-prepares-to-launch-gpt-5-in-august-the-verge-reports</p>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它</h3>
+      <ul>
+          <li><strong>候选 A · 白宫 AI 安全会议 8/5 周二</strong>  ·  Anthropic / OpenAI / Google 受邀, 6h 窗口内 meeting 已结束. 结果性声明可能 8/6 早公布, drop 实测段 改写预期段. 跟 8/6 午后接力 留 baseline.</li>
+          <li><strong>候选 B · 港股 8/6 早盘 + 智谱续段</strong>  ·  8/4 晚报 baseline 61 + 8/5 早 baseline 62 + 8/5 晚报 baseline 64 同主轴 dilution drop per Pitfall 17 反模式.</li>
+          <li><strong>候选 C · 长鑫 MSCI 8/10 纳入 4天倒计时</strong>  ·  7/27 上市首日 baseline + 8/4 早/午后/晚报 baseline 59+60+61 + 8/5 晚报 baseline 64 已 capture 同主轴 dilution drop per Pitfall 17 反模式.</li>
+          <li><strong>候选 D · 蚂蚁灵波 15 亿 + Q4 二轮</strong>  ·  8/4 早 baseline 59 + 午后 baseline 60 + 8/5 晚报 baseline 64 已 capture, 8/6 续段 dilution drop.</li>
+          <li><strong>候选 E · OpenAI GPT-5 8 月推出 续段</strong>  ·  已 capture 同主轴 dilution drop per Pitfall 17 反模式.</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>算力端被市场首次质疑: AMD beat 但跌. 管理层指引幅度不达预期</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>软件端已看到真实 ROI: Palantir otherworldly 商业化 已被验证</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>整体市场普涨但 AI 内部已分层: 道指 54,085 史上首次 54,000</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>同一日 AI 公司 两个答案 = 美方 AI ROI 分层定价 子轴 立</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 07:00 早间 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-08-06 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
