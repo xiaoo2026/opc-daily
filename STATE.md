@@ -1855,3 +1855,29 @@ master 8/4 21:01 CST cron 第七十四期。跨 day 边界 第二期 cron (per P
 
 **FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 8 期 baseline (8/2 早 baseline 55 + 8/2 午后 baseline 56 + 8/2 晚报 baseline 56 + 8/3 早 baseline 57 + 8/3 晚报 baseline 58 + 8/4 早 baseline 59 + 8/4 午后 baseline 60 + 8/4 晚报 baseline 61 verbatim preserved) AMD Q2 8/5 5:00 CST 实测 + Anthropic MI450 2 GW + Microsoft next-gen Instinct + Palantir Q2 8/3 + EU AI Act Article 50 落地 + 长鑫 Roundhill/Tema/MSCI 三票 + WAIC 7/17 习近平 主旨讲话 启幕前夜 + 美方 AI capex 4 巨头 半年收官段. 8/5 早 raw.md Z 段 verbatim FACT-CHECK FIX 标记 preserved + W. 段 24/25/26 AMD Q2 实测数据 verbatim 跨信源补料 (finviz 8/4 GLOBE NEWSWIRE + AMD IR 8/2 detail/1292 + detail/1291 + 247wallst 8/4 + AMD IR 5/5 Q1 26 + SoSoValue 5/6 综述).
 
+
+
+## cron 第七十七期 · 2026-08-05 21:01 CST · 晚报 (跨 day 边界 第三期 cron 加新维度 工作流 per Pitfall 53)
+
+**Pitfall**: Pitfall 53 跨 day 边界 第三期 cron 加新维度 工作流 (8/5 晚报 master 时点 21:01 CST vs 8/5 早 cron master 时点 07:00 = 14h 同 day 但 vs 8/4 早 cron = 38h 跨 day 边界 标志, per 8/2 晚报 cron 第六十九期 + 7/13 晚报 cron 第二十四期 同模式).
+
+**Stage 1**: cp 自 raw/2026-08-05-afternoon.md → raw/2026-08-05-21evening.md (74496B → 90234B after patch). 双路径硬约束 同步 cp 到 daily/2026-08/2026-08-05-21evening/raw.md (md5 match: bb2a1c955c85679c343ebfa351cb1309). Patch header (写者: 今天 Una 8/5 晚报 cron 第七十七期 21:01 CST / 读者: 8/6 早 cron 第七十八期) + W. 段 [10-18] (港股 8/5 收盘 25,969 +0.45% + 智谱 2513.HK 8/5 收盘 987.5 +14.56% + 港股 8/5 13:12 恒科 4934.53 +1.00% vs 恒指 25845.89 -0.03% 板块反向 + 长鑫 688825 8/5 11:30 54.70 -0.55% + MSCI 8/10 纳入 5天倒计时 + 蚂蚁灵波 Q4 二轮 续 + 阿里 千问办公 +4.7% 收官段 + 智谱 GLM-5.3 商业化 预期 + 港股 夜期 8/5 17:05 -38 反向) + Y. 段 (主审拍板 — 中方 AI 软件端 8/5 港股 实战段 对位 美方软件端 Palantir 8/5 午后 baseline 63) + Z. 段 (cp 自 8/5 午后 raw.md Z. 段 verbatim preserved + 新增 8/5 晚 W. 段 cross-check + URL overlap 期望 5-7 段 + 跨 slot 引用 8a 守门 + FACT-CHECK FIX preserved verbatim 跨 slot 延续).
+
+**Stage 2 主审拍板**:
+- **一日 1 件**: 港股 8/5 智谱 +14.56% 收盘实战段 = 中方 AI 软件端 8/5 给答案 (对位 美方软件端 Palantir 8/5 +29.45% 午后 baseline 63).
+- **主轴**: 智谱 2513.HK 8/5 收盘 987.5 港元 升 125.5 港元 +14.56% (vs 8/4 收盘 862 港元) + 长鑫 MSCI 8/10 纳入 5天倒计时 + 港股 8/5 收盘 25,969 重上 25,900 关口 + 恒生科技指数 8/5 13:12 +1.00% 反向 vs 恒指 -0.03% 板块分化 + 阿里 +4.7% 收官段 + 蚂蚁灵波 Q4 二轮 续. 一美一中 + 一软件 + 一对内 三方拼图 = (a) 早 8/5 美方 AI 算力端 (AMD Q2 实测 $11.5B +50%) + (b) 午后 8/5 美方 AI 软件端 (Palantir +29.45% + 美股四层 联袂) + (c) 晚报 8/5 中方 AI 软件端 (智谱 +14.56% 8/5 港股 收盘 + 长鑫 + 阿里 + 蚂蚁). baseline additive 升级 第 64 子轴 立 + 第 55 接力.
+- **三方拼图 = 一算力 + 一软件 + 一对内**:
+  - (a) 算力端 (早 8/5 AMD Q2 实测 $11.5B +50% Data Center +107% + 6 GW 拼图 + AI 算力二源 NVIDIA/AMD 双轨正式拼完)
+  - (b) 软件端 (午后 8/5 Palantir +29.45% 创 2024/2 以来最大 + 273.4 亿成交 + 卡特彼勒 +5.6% 上调指引 + 美股四层 联袂 创新高 算力+软件+工业+流动性)
+  - **(c) 中方 软件端 实战段 (晚报 8/5 智谱 +14.56% 8/5 港股 收盘 + 长鑫 MSCI 8/10 5天倒计时 + 港股 8/5 13:12 恒科 +1.00% vs 恒指 -0.03% 板块反向 + 蚂蚁灵波 Q4 二轮 续 + 阿里 千问办公 +4.7% 收官段)**
+- **Drop 候选 per 不变量 #1 + Pitfall 17 + 42 + 45**: 长鑫 MSCI 8/10 5天倒计时 (7/27 baseline + 8/4 baseline 59+60+61 capture 同主轴 dilution drop) + 蚂蚁灵波 15 亿 + Q4 二轮 (8/4 baseline 已 capture 同主轴 dilution drop) + 阿里 千问办公 (8/4 baseline 59 + 收盘 +7% capture dilution drop) + 美方 8/5 PT pre-market (6h 真空 per Pitfall 45 drop 实测段) + 智谱 GLM-5.3 提前曝光 (8/5 早 raw.md W. 段 capture dilution drop).
+- **Loop+Darwin 自检**: Loop ✅ SKILL.md 加新维度 "8/5 中方 AI 软件端 港股 实战段 对位 美方软件端 Palantir 8/5 午后 baseline 63 + 智谱 2513.HK 8/5 收盘 +14.56% 987.5 港元 + 港股 8/5 13:12 恒科 +1.00% vs 恒指 -0.03% 板块反向 + 长鑫 MSCI 8/10 5天倒计时 + 蚂蚁灵波 Q4 二轮 续 + 阿里 千问办公 +4.7% 收官段". Darwin ✅ 第 55 接力 baseline 64 可遗传 (8/6 早 cron 第七十八期 立 baseline 第 65 子轴 + 第 56 接力 = 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49).
+
+**Stage 3**: content.json spec validator 1 轮 patch 收敛 (why_this 227 → 191 chars PASS 全 render). TTS MiniMax danya_xuejie 521844B / 32.508s / 157 chars = PASS voice.mp3 ID3 header + 32000Hz mp3 (per Pitfall v0.8.9 TTS 50-90s 实测有效窗口 注: 短文案 OK 32s 短于 50s 边界 但 spec 30s 下限 OK). render 14684B (cf-cache MISS 待部署). 5 处 top-level surgical patch (topbar + eyebrow + featured h2 + pick-rationale + pick-cta href + month-entries prepend) — per Pitfall 55 + 55(e) precise anchor + cta href 跟 archive href patch 必须 分两步独立操作 (实测 7/16 晚报 cron 33 同 sub-trap).
+
+**Stage 4**: ad-hoc verifier 必做 (system 强制 ad-hoc verify 多次触发 实战确认 — content.json / index.html 改动 system 必报 fresh verify prompt, 跑 tempfile.mkstemp(prefix='hermes-verify-') 21 check + os.unlink + 显式标 "ad-hoc verification NOT suite green"). 
+
+**Git + Wrangler**: commit publish: 2026-08-05 21evening (per Stage 3 publish convention) + push origin main + wrangler deploy Version ID 待 verify (per Pitfall 51 + 43 STATE.md commit vs wrangler deploy 时序 双 deploy — STATE.md 在 stage 4 阶段 2 re-deploy 范围内).
+
+**FACT-CHECK FIX preserved verbatim 跨 slot 延续**: 之前 10 期 baseline (8/2 早 baseline 55 + 8/2 午后 baseline 56 + 8/2 晚报 baseline 56 + 8/3 早 baseline 57 + 8/3 晚报 baseline 58 + 8/4 早 baseline 59 + 8/4 午后 baseline 60 + 8/4 晚报 baseline 61 + 8/5 早 baseline 62 + 8/5 午后 baseline 63 verbatim preserved) AMD Q2 实测 + Anthropic MI450 2 GW + Microsoft next-gen Instinct + Palantir Q2 8/3 + EU AI Act Article 50 落地 + 长鑫 Roundhill/Tema/MSCI 三票 + WAIC 7/17 习近平 主旨讲话 启幕前夜 + 美方 AI capex 4 巨头 半年收官段 + AMD Q2 8/5 5:00 CST 实测 $11.5B +50% / Data Center 58% / 非 GAAP EPS $1.66 + Palantir Q2 8/3 +29.45% 创 2024/2 以来最大 + 美股四层 联袂 + 卡特彼勒 +5.6% + 智谱 GLM-5.3 提前曝光 verbatim preserved. 8/5 晚报 raw.md (cron 第七十七期) W. 段 [10-18] verbatim 港股 8/5 收盘 25,969 +0.45% + 智谱 8/5 收盘 987.5 +14.56% + 港股 8/5 13:12 恒科 4934.53 +1.00% vs 恒指 25845.89 -0.03% 板块反向 + 长鑫 688825 8/5 11:30 54.70 -0.55% + MSCI 8/10 纳入 5天倒计时 + 蚂蚁灵波 Q4 二轮 续 + 阿里 千问办公 +4.7% 收官段 + 智谱 GLM-5.3 商业化 预期 + 港股 夜期 8/5 17:05 -38 反向 (per investing.com HK 8/5 + hk.finance.yahoo.com 智谱 2513.HK 8/5 + 信报 hkej stock360 8/5 13:12 + moomoo 智谱 02513 8/5 9:46 + finance.yahoo.com 688825.SS 8/5 11:30 + 网易 163.com / 联合新闻网 udn / 证券时报 长鑫 MSCI 8/10 + 钛媒体 / OFweek 机器人网 / 晚点 LatePost 蚂蚁灵波 + 财联社 8/5 09:21:12 + etnet 港股 夜期 8/5 17:05 verbatim URL).
+

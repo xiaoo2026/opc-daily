@@ -1,6 +1,25 @@
 [
   {
     "date": "2026-08-05",
+    "slot": "21evening",
+    "slot_label": "晚报",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "title": "港股智谱14.56% 中方软件端给答案",
+    "headline_alt": "港股智谱14.56% 中方软件端给答案",
+    "meta_description": "港股 8/5 智谱 2513.HK 收盘 987.5 港元 +14.56% · 恒指 25,969 重上 25,900 关口 · 长鑫 MSCI 8/10 纳入 5天倒计时 · 三方拼图 = 一算力 + 一软件 + 一对内",
+    "canonical_url": "daily/2026-08/2026-08-05-21evening/",
+    "baseline": 64,
+    "relay": 55,
+    "narrative_count": 55,
+    "cron": 77,
+    "tier": "evening",
+    "html_url": "daily/2026-08/2026-08-05-21evening/index.html",
+    "raw_url": "raw/2026-08-05-21evening.md",
+    "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续 baseline 59+60+61+62+63 → baseline 64 接力 第七十七期"
+  },
+  {
+    "date": "2026-08-05",
     "slot": "afternoon",
     "type": "afternoon",
     "slot_hour": "13:00",
