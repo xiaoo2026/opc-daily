@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-08-06",
+    "slot": "morning",
+    "slot_label": "早间",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "AMD跌了7%, Palantir涨了29%",
+    "headline_alt": "AMD跌了7%, Palantir涨了29%",
+    "meta_description": "美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 beat $11.5B +50% 数据中心翻倍 但股价跌 7-9% vs Palantir Q2 +29.45% otherworldly",
+    "canonical_url": "daily/2026-08/2026-08-06-morning/",
+    "baseline": 65,
+    "relay": 56,
+    "narrative_count": 56,
+    "cron": 78,
+    "tier": "morning",
+    "html_url": "daily/2026-08/2026-08-06-morning/index.html",
+    "raw_url": "raw/2026-08-06-morning.md",
+    "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续 baseline 62+63+64 → baseline 65 接力 第七十八期"
+  },
+  {
     "date": "2026-08-05",
     "slot": "21evening",
     "slot_label": "晚报",
