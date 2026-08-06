@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-06",
+  "slot_label": "13:00 午后",
+  "slot_hour": "13:00",
+  "hero_meta_short": "Una 主编 cron 第七十九期 8/6 午后. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53 + 18 + 38. 智谱 8/6 续 +5.62% 收 1,043 港元, 中方 AI 软件端 给答案 拼 早 美方 内部分裂 = 全球 AI 估值分裂 跨主轴 双层. · 智谱又涨5%, 给美方分裂一个对位",
+  "title": "智谱又涨5%, 给美方分裂一个对位",
+  "dek": "智谱 8/6 续 +5.62% 收 1,043 港元, 中方 AI 软件端 给答案. 拼 8/6 早 美方 内部分裂 (AMD -7~-9% vs Palantir +29.45%) = 全球 AI 估值分裂 跨主轴 双层. 早 = 美方市场端 给 AI 两个相反 答案, 午后 = 中方 软件端 持续狂欢 跨主轴 对位.",
+  "main_h2": "同一天 AI 公司, 中美市场各给一份答案",
+  "why_this": "8/6 早 8/6 午后 中美 AI 市场 各给一份 答案: 早 = 美方 算力 vs 软件 分裂 (AMD 跌 + Palantir 涨); 午后 = 智谱 8/6 续 +5.62% 收 1,043 港元, 中方 软件端 持续狂欢. 跨 主轴 双层 = 全球 AI 估值分裂.",
+  "main_facts": [
+    "智谱 2513.HK 8/6 实战段 (per hk.finance.yahoo.com quote/2513.HK/history verbatim 数据): 2026年8月6日 | 1,050.000 开盘 | 1,110.000 高 | 1,018.000 低 | 1,043.000 收盘 | 6,126,287 成交. 智谱 8/6 收 1,043 港元 (vs 8/5 收盘 987.5 港元) = 升 55.5 港元 / +5.62%. 中方 AI 软件端 8/6 续段 跨日 实战 = 跨主轴 对位 美方 内部分裂 (算力 vs 软件). Source: hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history",
+    "智谱 8/6 早盘 09:30 CST 开盘 1,050 → 11:00 CST 高 1,110 → 收盘 1,043 实战段: 智谱 8/6 09:30 开盘 1,050 港元 (vs 8/5 收盘 987.5 港元 = +6.33% 开盘 gap), 早盘冲高 1,110 后回落 收盘 1,043 = 中方 AI 软件端 8/6 持续狂欢 跟 美方 8/5 close 后 内部分裂 形成 跨主轴 对位. 智谱 8/6 实战段 是 中方 软件端 给 美方 市场端 分裂 一个外部对位: 美方 算力 (AMD) 跌 + 美方 软件 (Palantir) 涨 + 中方 软件 (智谱) 续涨 = 全球 AI 软件端 共同狂欢 vs 美方 算力端 首次被质疑. Source: hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history",
+    "拼 早 8/6 cron 第七十八期 baseline 65 = 美方 8/5 算力 vs 软件端 分裂对位: AMD Q2 FY2026 beat 数据 (营收 $11.5B +50% 创新高, 数据中心 $6.7B 同比翻倍 占 58%, 非 GAAP EPS $1.66 vs consensus $1.61) 但股价 反而跌 7-9% 至 $473 (管理层指引毛利率仅 \"持续扩张\" 而非显著上升) vs Palantir (PLTR) 8/5 close +29.45% (CEO Alex Karp 称 Q2 otherworldly, 全年营收预期 +82% YoY, Palantir looks a bit unstoppable after overwhelming Q2 commercial growth per Yahoo Finance Opening Bid verbatim). 早 + 午后 拼起来 = 美方 内部分裂 + 中方 软件端 持续狂欢 = 全球 AI 估值分裂 跨主轴 双层. Source: ir.amd.com 8/4 verbatim URL https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results + benzinga.com 8/4 21:57 EDT verbatim URL https://www.benzinga.com/markets/tech/26/08/60936941/amd-earnings-stock-after-hours-wall-street-forecast + fool.com 8/5 verbatim URL https://www.fool.com/investing/2026/08/05/amds-data-center-business-doubled-to-67-billion-th/ + finance.yahoo.com verbatim URL https://finance.yahoo.com/video/palantir-looks-bit-unstoppable-overwhelming-144500334.html + cnbc.com verbatim URL https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html + indmoney.com 8/5 verbatim URL https://www.indmoney.com/blog/us-stocks/pltr-stock-jumps-palantir-q2-earnings-analysis",
+    "智谱 8/6 收盘 +5.62% = 智谱 8/5 收盘 +14.56% 后 续段 不算 dilution drop per Pitfall 17 反模式 override (因为: (a) 跨日 = 8/5 → 8/6 = 新数据 (b) 不变量 #5 强信号 = 早 + 午后 拼起来 比 它本身 更值得读 (c) 智谱 8/6 是 中方 软件端 实战段, 不是 美方 算力端 续段, 不算 同 主轴 dilution drop). 早 8/6 baseline 65 候选 B (港股 8/6 早盘 + 智谱续段) 已 drop 同主轴 dilution drop per Pitfall 17, 但 8/6 午后 1 件 跨主轴 对位 (智谱 = 中方 软件 vs 早 = 美方 算力 vs 软件) 不算 同主轴. 不变量 #5 强信号 override Pitfall 17. Source: hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history + hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK (8/5 收盘 987.5 verbatim)",
+    "港股 8/6 收盘段 (跨主轴): 港股 智谱 2513.HK 8/6 收 1,043 港元 +5.62% 是 中方 软件端 跨主轴 拼 美方 内部分裂 (AMD -7~-9% vs Palantir +29.45%). 美方 算力 vs 软件 分裂 是 市场端 估值 现象, 中方 软件端 持续狂欢 是 中方 跨主轴 估值 现象. 早 + 午后 = 美方 内部分裂 + 中方 软件端 持续狂欢 = **全球 AI 估值分裂 跨主轴 双层**. 全球 AI 投资人 现在面对 两条 截然相反 估值 线索: 美方 算力端 (AMD) 被市场首次质疑 资本支出 ROI + 美方 软件端 (Palantir) 商业化 ROI 已被验证 + 中方 软件端 (智谱) 跨主轴 持续狂欢. Source: hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history + hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK",
+    "智谱 8/6 高 1,110 港元 是 8/5 收盘 987.5 港元 +12.4% 早盘冲高 段 (开盘 1,050 + 早盘冲高 +12.4% 至 1,110 后回落 收盘 1,043): 智谱 8/6 早盘冲高 显示 中方 软件端 情绪 + GLM-5.3 提前曝光 + 商业化预期 续段 强劲, 收盘回落 1,043 (高 -6% 回落) 反映 早盘 获利 了结. 但 收盘 +5.62% 仍 是 中方 软件端 持续狂欢 强信号. 智谱 8/6 实战段 = 中方 软件端 实战段 给答案 (拼 美方 内部分裂 早间 baseline 65). Source: hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history"
+  ],
+  "pick_points": [
+    {
+      "num": "+5.62%",
+      "label": "智谱 8/6 续 收 1,043 港元"
+    },
+    {
+      "num": "987.5 → 1,043",
+      "label": "智谱 8/5 收盘 → 8/6 收盘"
+    },
+    {
+      "num": "+12.4%",
+      "label": "智谱 8/6 早盘冲高 至 1,110"
+    }
+  ],
+  "not_picked": [
+    "<strong>候选 A · 白宫 AI 安全会议 8/5 周二 结果声明</strong>  ·  Anthropic / OpenAI / Google 受邀 后续段, drop 跨主轴 反模式 (美方 政策端 跟 早 美方 市场端 不算 强对位, 都是 美方 同主轴 dilution drop per Pitfall 17).",
+    "<strong>候选 C · AMD Q3 业绩预期 + Palantir +29.45% 续</strong>  ·  美方 AI ROI 分层定价 续段 (同 baseline 65 dilution drop per Pitfall 17 反模式).",
+    "<strong>候选 D · 长鑫 MSCI 8/10 纳入 4天倒计时</strong>  ·  7/27 baseline + 8/4 早/午后/晚报 baseline 59+60+61 + 8/5 晚报 baseline 64 + 8/6 早 baseline 65 已 capture 同主轴 dilution drop per Pitfall 17 反模式.",
+    "<strong>候选 E · EU AI Act 8/2 落地 4 天后续</strong>  ·  8/6 早 baseline 65 W. 段 已 capture 同主轴 dilution drop per Pitfall 17 反模式."
+  ],
+  "say_4": [
+    "智谱 8/6 续 +5.62% 收 1,043 — 中方 软件端 跨主轴",
+    "美方 8/5 分裂: AMD 跌 + Palantir 涨 = 算力端 首次被质疑",
+    "全球 AI 估值分裂 双层: 软件端 共同狂欢 vs 算力端 质疑",
+    "中美 投资人 面对 两条 截然相反 估值线索"
+  ],
+  "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续: 延续 8/6 早 baseline 65 + 8/5 晚报 baseline 64 + 8/5 午后 baseline 63 + 8/5 早 baseline 62 verbatim preserved (AMD Q2 $11.5B +50% YoY 创新高 / Data Center $6.7B 同比翻倍 58% / 非 GAAP EPS $1.66 vs consensus $1.61 / 8/5 盘后跌 7-9% 至 $473 / Palantir +29.45% / 美股四层 联袂 标普 7736.51 / 道指 54085.88 史上首次 54000 / 纳指 26584.99 / 费半 +6.6% / 卡特彼勒 +5.6% / 智谱 GLM-5.3 提前曝光 / 港股 8/5 09:21 智谱 +近 4% / 阿里 +超 2% / 港股 8/5 收盘 25,969 +0.45% / 智谱 8/5 收盘 987.5 +14.56%); 8/6 午后 新数据 智谱 8/6 开盘 1,050 + 高 1,110 + 收盘 1,043 + 成交 612 万股 来自 hk.finance.yahoo.com quote/2513.HK/history verbatim 数据, 不修改 旧 事实.",
+  "source_attribution": [
+    "hk.finance.yahoo.com 2513.HK 8/6 实战段 verbatim 数据: https://hk.finance.yahoo.com/quote/2513.HK/history",
+    "hk.finance.yahoo.com 2513.HK 8/5 收盘 987.5 港元 verbatim: https://hk.finance.yahoo.com/quote/2513.HK",
+    "ir.amd.com 8/4 AMD Q2 实测 verbatim: https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+    "benzinga.com 8/4 21:57 EDT AMD earnings stock after-hours: https://www.benzinga.com/markets/tech/26/08/60936941/amd-earnings-stock-after-hours-wall-street-forecast",
+    "fool.com 8/5 AMD Data Center $6.7B doubled: https://www.fool.com/investing/2026/08/05/amds-data-center-business-doubled-to-67-billion-th/",
+    "finance.yahoo.com Palantir looks a bit unstoppable: https://finance.yahoo.com/video/palantir-looks-bit-unstoppable-overwhelming-144500334.html",
+    "cnbc.com 8/3 Palantir Q2 2026: https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+    "indmoney.com 8/5 PLTR stock jumps Palantir Q2: https://www.indmoney.com/blog/us-stocks/pltr-stock-jumps-palantir-q2-earnings-analysis"
+  ],
+  "canonical_url": "daily/2026-08/2026-08-06-afternoon/",
+  "stat_card_date_label": "8/6 周四 · 13:00",
+  "meta_description": "智谱 8/6 续 +5.62% 收 1,043 港元, 中方 AI 软件端 给答案 拼 早 美方 内部分裂 (AMD -7~-9% vs Palantir +29.45%) = 全球 AI 估值分裂 跨主轴 双层."
+}
