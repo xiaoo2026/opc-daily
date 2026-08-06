@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-06",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "智谱8/6再涨7%, 拼出AI估值三层分裂",
+    "url": "daily/2026-08/2026-08-06-21evening/",
+    "html_url": "daily/2026-08/2026-08-06-21evening/index.html",
+    "cron_number": 80,
+    "baseline": 67,
+    "relay": 58
+  },
+  {
+    "date": "2026-08-06",
     "slot": "afternoon",
     "slot_label": "午后",
     "slot_hour": "13:00",
