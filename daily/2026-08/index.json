@@ -1,6 +1,25 @@
 [
   {
     "date": "2026-08-06",
+    "slot": "afternoon",
+    "slot_label": "午后",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "智谱又涨5%, 给美方分裂一个对位",
+    "headline_alt": "智谱又涨5%, 给美方分裂一个对位",
+    "meta_description": "智谱 8/6 续 +5.62% 收 1,043 港元, 中方 AI 软件端 给答案 拼 早 美方 内部分裂 (AMD -7~-9% vs Palantir +29.45%) = 全球 AI 估值分裂 跨主轴 双层.",
+    "canonical_url": "daily/2026-08/2026-08-06-afternoon/",
+    "baseline": 66,
+    "relay": 57,
+    "narrative_count": 57,
+    "cron": 79,
+    "tier": "afternoon",
+    "html_url": "daily/2026-08/2026-08-06-afternoon/index.html",
+    "raw_url": "raw/2026-08-06-afternoon.md",
+    "fact_check_fix": "FACT-CHECK FIX preserved verbatim 跨 slot 延续 baseline 62+63+64+65 → baseline 66 接力 第七十九期"
+  },
+  {
+    "date": "2026-08-06",
     "slot": "morning",
     "slot_label": "早间",
     "slot_hour": "07:00",
