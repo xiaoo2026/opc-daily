@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-08-07",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "html_url": "daily/2026-08/2026-08-07-21evening/index.html",
+    "title": "智谱续强 + 长鑫 T-2 + 高盛 ARR"
+  },
+  {
+    "date": "2026-08-07",
     "type": "afternoon",
     "slot": "afternoon",
     "slot_hour": "13:00",
