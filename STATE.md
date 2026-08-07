@@ -2054,3 +2054,27 @@ master 8/4 21:01 CST cron 第七十四期。跨 day 边界 第二期 cron (per P
 baseline 第 71 子轴 立 (vs 8/7 早 baseline 68 + 8/7 午后 baseline 69 + 8/7 晚报 baseline 70 续 baseline) + 第 62 接力 = 跨 day 边界 第一期 cron 加新维度 工作流 per Pitfall 49. 第 82 件 narrative 同期 对位 baseline 71 子轴 + 第 62 接力 = 16 期 + 第 62 接力 拼图起 (跨 2 天 8/7 早 → 8/7 午后 → 8/7 晚报 → 8/8 早).
 
 — 8/7 晚报 cron 第八十三期 master 时点 21:01 CST 完结.
+
+
+## 8/8 早 cron 第八十五期 (2026-08-08 07:00 CST) · baseline 第 71 子轴 + 第 62 接力 立
+
+- ✅ cron 第八十五期 (8/8 07:00 早报) 主审完成 — 第 62 件 baseline 71 立 — 选 长鑫 MSCI T-2 +8/7 三层创新高 (跨 day 边界 第一期 cron 加新维度 per Pitfall 49)
+- Stage 1: sub-agent 4min cap 内交付 raw/2026-08-08-morning.md (875 行, 92 entries, md5 5ab60b90339b77faf65f1821b7e5fe84 mirror 一致) — per Pitfall 41 race condition 守门 + 5 项 tool 复核 PASS
+- Stage 2: Una 主审 候选 拍板 — 8/8 早 周六 6h 窗口全市场真空 (港股 + A 股 + 美方 + 欧方 周末休市) → master fast-mode 接管 cp 8/7 晚报 baseline 70 verbatim + 加新维度: (a) 8/7 PT close 三层齐创新高 (S&P 7,757.64 +0.62% / Nasdaq 26,690.62 +1.30% / Dow 54,036.93 +0.28% / Russell 2000 3,034.49 +1.1% / VIX 15.15 -4.17%, per AP 8/7 verbatim) (b) US 7 月 -23K jobs 意外 (失业率 4.1%, Fed 9 月加息概率 55%→42%, per AP + Schwab Network 8/7 verbatim) (c) 8/7 港股大模型双雄齐大涨 (智谱 1,246 HKD +14.63% / MiniMax 326.40 HKD +9.83%, per 中新经纬 + Yahoo Finance 8/7 verbatim) (d) 长鑫 8/7 close 52.48 +1.0% (per 证券之星 verbatim) (e) 长鑫 MSCI 8/10 T-2 决战 (8/7→8/10 = 3 天倒计时, 8/10 A 股开盘即生效, per 财新 7/31 + 证券时报 7/28 + 澎湃 7/28 verbatim) (f) 8/8 周六 6h 窗口全真空 (HKEX + SSE + Nasdaq + LSE/Euronext 周末休市 verbatim) = 6 类新 dim 加新维度 续 baseline
+- 不变量 #1 一日 1 件 + 不变量 #5 cross-reference: 8/7 晚报 baseline 70 (智谱续强 + 长鑫 T-2 + 高盛 ARR) → 8/8 早 (跨 day 边界 第一期 cron 加新维度 per Pitfall 49) = 长鑫 MSCI T-2 决战 + 8/7 PT 三层齐创新高 = 跨 day 边界 24h 真空段 + 8/10 A 股开盘即生效 实战段 留 baseline
+- 📝 raw 素材归档: raw/2026-08-08-morning.md (92 entries, 875 行)
+- Git + Wrangler: commit + push origin main + wrangler deploy (per Pitfall 51 + 43 双 deploy 时序)
+- Top-level surgical patch (per Pitfall 55 + 55(e) + 55(f)): (1) topbar 2026-08-08 周六 · 07:00 (2) eyebrow 2026-08-08 · 早 (3) featured h2 长鑫 MSCI T-2 +8/7 创新高 (4) pick-rationale 当期 why_this (5) pick-cta href 8/8-morning (6) archive prepend 8/8 早间 (在 8/7 晚报 之前) (7) index.json prepend 8/8 morning (type=morning / slot_hour=07:00) (8) daily/index.html redirector → 2026-08-08-morning/
+
+## 给下一期 cron 接力 baseline
+
+8/8 午后 cron 第八十六期 = 跨 day 边界 第二期 cron 加新维度 工作流 per Pitfall 53. master 时点 8/8 13:00 CST vs 8/8 早 cron master 时点 07:00 CST = 6h 同 day 跨 slot + vs 8/7 午后 cron master 时点 13:00 CST = 24h 跨 day 边界 标志. 加新维度 段 (vs 8/8 早 baseline 71 + 8/7 晚报 baseline 70, per 不变量 #1 一日 1 件 + Pitfall 18 additive + Pitfall 53):
+- (a) 8/8 午后 港股 8/10 周一 开盘 实战段 pre-market (周末 真空 续)
+- (b) 8/8 午后 长鑫 MSCI 8/10 T-1 决战 (8/8 → 8/10 = 2 天倒计)
+- (c) 8/8 午后 美方 8/7 PT close 三层创新高 续 (8/7 PT 收盘后 30h+ 实战段)
+- (d) 8/8 午后 高盛 ARR $13B + OpenRouter 续 baseline (8/7 实战段 续)
+- (e) 8/8 午后 US 7 月 CPI 8/12 倒计时 4 天 (per Barron 8/7 verbatim 'next week's inflation data will still likely be the deciding factor')
+
+baseline 第 72 子轴 立 (vs 8/8 早 baseline 71 续 baseline) + 第 63 接力 = 跨 day 边界 第二期 cron 加新维度 工作流 per Pitfall 53.
+
+— 8/8 早 cron 第八十五期 master 时点 07:00 CST 完结.
