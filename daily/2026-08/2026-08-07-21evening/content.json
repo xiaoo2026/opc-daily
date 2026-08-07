@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-07",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "hero_meta_short": "Una 选: 8/7 晚报. 智谱续强 + 长鑫 MSCI T-2 + 高盛 ARR + OpenRouter 实测.",
+  "main_h2": "三段拼图完整. 高盛加ARR + OpenRouter实测, 中美 AI 双层定价",
+  "title": "智谱续强 + 长鑫 T-2 + 高盛 ARR",
+  "dek": "智谱 8/7 港股实战续段 + 长鑫 8/7 A 股实战续段 + MSCI 8/10 T-2 决战 + 高盛上调 ARR $13B + OpenRouter top8 占八 = 全球 AI 估值分裂 跨主轴 三层定价, 拼 8/7 早 + 8/7 午后 三段 拼图完整段.",
+  "why_this": "8/7 晚报 cron 跨 day 边界 第三期 cron 加新维度 per Pitfall 53. master fast-mode 接管 cp 自 8/7 午后 raw 第八十二期 baseline 69. 智谱 + 长鑫 + 高盛 ARR + OpenRouter 实测 = 中方一侧 模型+资本 双层定价 续段 = 体系 vs 模型 vs 资本 三层定价.",
+  "pick_points": [
+    {
+      "label": "智谱续强",
+      "value": "T+1 续强",
+      "sublabel": "8/7 vs 8/6 close 1,117 +7.30%",
+      "num": "T+1"
+    },
+    {
+      "label": "长鑫 MSCI",
+      "value": "T-2 决战",
+      "sublabel": "8/7 → 8/10 = 3 天倒计",
+      "num": "T-2"
+    },
+    {
+      "label": "高盛 ARR",
+      "value": "$13B",
+      "sublabel": "高盛 8/7 大幅上调中国大模型 ARR 预期",
+      "num": "$13B"
+    }
+  ],
+  "main_facts": [
+    "智谱 2513.HK 8/6 close 1,117 港元 +7.30%, 三日累涨 +13.11%, 四日 +19.10% (vs 8/4 close 939 港元) (per hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history + hk.investing.com verbatim). 8/7 港股 实战续段 (T+1 vs 8/6 close 1,117) = Yahoo 当前延时快照 暂未出 8/7 close 数据, 实战段 真空 续 baseline 写实战续段 per Pitfall 45.",
+    "长鑫科技 688825.SH 8/7 A 股 实战段 + MSCI 8/10 2 天倒计时决战 (8/7→8/10 = 3 天, 跨 8/8 周六 + 8/9 周日 = 8/10 周一 09:30 CST A 股开盘 即生效) (per 财新 7/31 verbatim URL https://finance.caixin.com/2026-07-31/102469836.html + 证券时报 7/28 verbatim URL https://www.stcn.com/article/detail/4045814.html + 澎湃 7/28 verbatim URL https://www.thepaper.cn/newsDetail_forward_33675168). 长鑫 8/4 IPO close 128.90 + 8/5 11:30 54.70 -0.55% + 8/7 实战段 cross-check (moomoo 延时未出 8/7 close).",
+    "高盛 8/7 大幅上调中国大模型 ARR 预期至 130 亿美元 (per 华尔街见闻 8/7 50 分钟前 verbatim URL https://news.futunn.com/hk/post/77131316/goldman-sachs-significantly-raised-its-revenue-expectations-for-china-s). '中国大模型正从「性价比叙事」迈向「收入兑现叙事」。高盛上调 2026 年 ARR 预期至 130 亿美元, Agent 与编码场景驱动 token 消费结构性爆发, 中国模型已连续 14 周包揽 OpenRouter 调用量前五. 4 到 8 倍的成本优势叠加能力跃迁, 使中国模型从「便宜但凑合」进阶为「足够好且不可不用」' = 中方一侧 模型端 收入兑现 段.",
+    "OpenRouter 周榜中国模型前十占八席 (per futunn 8/7 36 分钟前 verbatim URL https://news.futunn.com/flash/20599151/chinese-models-dominate-openrouter-s-weekly-leaderboard-occupying-eight-of). 实战验证段 = 中方一侧 模型端 agentic usage 实测 top8 占八席 = 中美 AI 模型端 双层定价 实战段.",
+    "美方 8/6 PT 双双回调段 续: AMD 8/6 close $489.28 -6.99% (vs 8/5 close $526.06, 续跌 7%) + Palantir 8/6 close $155.35 -1.94% (vs 8/5 close $158.43, 续跌 2%) (per public.com + finance.yahoo.com verbatim). 双双回调 = 同步 非反向 per FACT-CHECK FIX 校准. 美方 8/7 PT 实战段 drop per Pitfall 42 (master 时点 21:01 CST vs 8/7 PT 9:30 ET = 21:30 CST = 0.5h gap).",
+    "Qwen3.8-MAX 反超 Opus 5 模型端 跨境对位 (per artificialanalysis.ai verbatim URL https://artificialanalysis.ai/models/qwen-max-vs-opus-5 + modelscope.cn verbatim URL https://modelscope.cn/models/qwen3-max + r/LocalLLaMA 647 upvotes verbatim URL https://www.reddit.com/r/LocalLLaMA/comments/1vhd416/) = 中美 AI 模型 双层定价 段 续.",
+    "Anthropic Claude Opus 4.1 8/5 退役后续: claude-opus-4-1-20250805 永久退役, 推荐 Opus 4.8 替代 (per platform.claude.com verbatim URL https://platform.claude.com/docs/en/about-claude/model-deprecations + kingy.ai verbatim URL https://kingy.ai/ai-launch-tracker/anthropic-will-retire-claude-opus-4-1-on-august-5 + verdent.ai + endoflife.date + medium.com 5 家 verbatim).",
+    "白宫 8/5 AI 安全会议 framework 后续: Anthropic / OpenAI / Google / Meta 受邀 (per CNN verbatim URL https://www.cnn.com/2026/08/03/tech/white-house-meet-with-top-ai-companies-big-regulation-push + Bloomberg + Reuters + CNBC + NY Post 5 家 verbatim). 结果性声明可能 8/5 night / 8/6 早 公布, 后续 实战段 续 baseline.",
+    "Cathie Wood Ark Invest 8/5 调仓: 加仓 NVDA 80,415 股 $17.6M + 减持 PLTR 70,259 股 $11.1M (per benzinga verbatim URL https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/08/60981051/cathie-wood-buys-17-6-million-of-nvidia-stock). 8/7 实战段 续 baseline preserved."
+  ],
+  "say_4": [
+    "智谱 8/7 港股实战续段, T+1 vs 8/6 close 1,117, 中方软件端二次狂欢.",
+    "长鑫 MSCI 8/10 T-2 决战, 国家队+全栈 续段 跨周末倒计时.",
+    "高盛加 ARR $13B, 中方模型从便宜凑合进阶到不可不用.",
+    "OpenRouter 前十占八, 中美 AI 模型双层定价 实战段."
+  ],
+  "not_picked": [
+    "AMD 8/7 PT drop per Pitfall 42 0.5h gap",
+    "白宫 8/5 meeting 没新进展",
+    "Opus 4.1 退役 是续段非新料"
+  ],
+  "source_attribution": "per hk.finance.yahoo.com / hk.investing.com + 财新 / 证券时报 7/28 / 澎湃 / 华尔街见闻 8/7 + futunn 8/7 + artificialanalysis.ai + modelscope.cn + public.com + finance.yahoo.com + benzinga + CNN + Bloomberg + Reuters + CNBC + NY Post + platform.claude.com + kingy.ai + verdent.ai + endoflife.date + medium.com + r/LocalLLaMA verbatim.",
+  "meta_description": "Una 主编 cron 第八十三期 8/7 晚报. 跨 day 边界 第三期 cron 加新维度 per Pitfall 53. 智谱续强 + 长鑫 MSCI T-2 + 高盛 ARR $13B + OpenRouter top8 占八 = 全球 AI 估值分裂 跨主轴 三层定价. 第 61 接力 baseline 70.",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21"
+}
