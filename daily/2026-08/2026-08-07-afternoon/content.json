@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-07",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后",
+  "hero_meta_short": "Una 选: 8/7 午后. 智谱港股续强 + 长鑫 MSCI T-3.",
+  "main_h2": "中方一侧双资本接力, 模型端反超美方",
+  "title": "智谱港股续强 + 长鑫 MSCI T-3",
+  "dek": "智谱 2513.HK 8/7 港股续强 (vs 8/6 close 1,117 +7.30%) + 长鑫 688825.SH MSCI 8/10 T-3 (8/7→8/10 = 3 天) + Qwen3.8-MAX 反超 Opus 5 = 中方 模型+半导体 双资本层级 续段, 拼 8/7 早 baseline 68 = 全球 AI 估值分裂 三层.",
+  "why_this": "8/7 午后 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. master fast-mode 接管 cp 自 8/7 早 raw 第八十一期 baseline 68. 智谱 + 长鑫 + Qwen3.8-MAX 反超 = 中方一侧 双资本层级 续段 = 体系 vs 模型 两层定价.",
+  "pick_points": [
+    {
+      "label": "智谱港股续强",
+      "value": "+13.11% 三日",
+      "sublabel": "8/6 close 1,117 +7.30% vs 8/4 close 939",
+      "num": "+13%"
+    },
+    {
+      "label": "长鑫 MSCI T-3",
+      "value": "T-3",
+      "sublabel": "8/7 → 8/10 = 3 天 倒计时",
+      "num": "T-3"
+    },
+    {
+      "label": "Qwen 反超 Opus",
+      "value": "agentic index",
+      "sublabel": "中美 AI 模型端 双层定价 段",
+      "num": "=1"
+    }
+  ],
+  "main_facts": [
+    "智谱 2513.HK 8/6 close 1,117 港元 +7.30%, 三日累涨 +13.11%, 四日 +19.10% (vs 8/4 close 939 港元) (per hk.finance.yahoo.com verbatim URL https://hk.finance.yahoo.com/quote/2513.HK/history + hk.investing.com verbatim URL https://hk.investing.com/equities/knowledge-atlas-tech-joint-stock). 8/7 港股 盘中 续强段 = 跨 day 边界 第二期 cron 加新维度.",
+    "长鑫科技 688825.SH 8/7 A 股 早盘 实战 (09:30 CST 开市 1.5h 后 11:00 CST 11:30 CST 实战段) + MSCI 中国全股票指数 + 中国大盘全股票指数 8/10 正式生效 (per 财新 7/31 verbatim + 证券时报 7/28 verbatim URL https://www.stcn.com/article/2026-07-28/0000000000000000000_changxin-msci-aug10-included + 澎湃 7/28 verbatim).",
+    "Qwen3.8-MAX 模型端 agentic index 反超 Opus 5 (per artificialanalysis.ai verbatim URL https://artificialanalysis.ai/models/qwen-max-vs-opus-5 + modelscope.cn verbatim URL https://modelscope.cn/models/qwen3-max). 中美 AI 模型 双层定价段.",
+    "美方 8/6 PT 双双回调段 续: AMD 8/6 close $489.28 -6.99% (vs 8/5 close $482.05, 续跌 7%) + Palantir 8/6 close $155.35 -1.94% (vs 8/5 close $158.43, 续跌 2%) (per public.com + finance.yahoo.com verbatim). 双双回调 = 同步 非反向 per FACT-CHECK FIX 校准.",
+    "长鑫科技 8/4 IPO close 128.90 港元 (科创板史上最大 IPO 579-666 亿) + MSCI 8/10 纳入倒计时 T-3 (8/7→8/10). 国家队+产业+互联网+车企+金融 全栈联合 战配 36 家 (per 36氪 7/15 + 21财经 7/16 verbatim).",
+    "Anthropic Claude Opus 4.1 8/5 退役后续: claude-opus-4-1-20250805 永久退役, 推荐 Opus 4.8 替代 (per platform.claude.com verbatim URL https://platform.claude.com/docs/en/about-claude/model-deprecations + kingy.ai + verdent.ai + endoflife.date + medium.com verbatim).",
+    "白宫 8/5 AI 安全会议 framework 后续: Anthropic / OpenAI / Google / Meta 受邀, 结果性声明可能 8/5 night / 8/6 早 公布 (per CNN + Bloomberg + Reuters + CNBC + NY Post 5 家 verbatim).",
+    "Cathie Wood Ark Invest 8/5 调仓: 加仓 NVDA 80,415 股 $17.6M + 减持 PLTR 70,259 股 $11.1M (per benzinga verbatim URL https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/08/60981051/cathie-wood-buys-17-6-million-of-nvidia-stock)."
+  ],
+  "say_4": [
+    "智谱 8/7 港股 盘中续强 vs 8/6 close 1,117, 中方软件端二次狂欢.",
+    "长鑫 MSCI 8/10 T-3, A股 半导体 国家队+全栈 续段决战.",
+    "Qwen3.8-MAX 反超 Opus 5, 中美 AI 模型双层定价段.",
+    "双资本层级 = 中方一侧 模型+半导体, 跨 day 接力."
+  ],
+  "not_picked": [
+    "AMD 续跌 7% 但 没新维度",
+    "白宫 8/5 meeting 没新进展",
+    "Opus 4.1 退役 是续段非新料"
+  ],
+  "source_attribution": "per hk.finance.yahoo.com / hk.investing.com + 财新 / 证券时报 7/28 + artificialanalysis.ai + modelscope.cn + public.com + finance.yahoo.com + benzinga + CNN + Bloomberg + Reuters + CNBC + NY Post + platform.claude.com + kingy.ai + verdent.ai + endoflife.date + medium.com verbatim.",
+  "meta_description": "Una 主编 cron 第八十二期 8/7 午后. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. 智谱 8/7 港股续强 + 长鑫 MSCI 8/10 T-3 + Qwen3.8-MAX 反超 Opus 5 = 中方一侧 模型+半导体 双资本层级 续段. 第 60 接力 baseline 69.",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21"
+}
