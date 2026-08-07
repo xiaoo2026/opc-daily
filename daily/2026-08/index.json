@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-08-07",
+    "type": "afternoon",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "html_url": "daily/2026-08/2026-08-07-afternoon/index.html",
+    "title": "智谱港股续强 + 长鑫 MSCI T-3"
+  },
+  {
+    "date": "2026-08-07",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
