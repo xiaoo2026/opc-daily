@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-08-09",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "长鑫 T-0 倒计时 + 周末真空",
+    "headline_alt": "长鑫 T-0 倒计时 + 周末真空",
+    "meta_description": "8/9 周日 21:00 CST 晚场. 跨 day 边界 第四期 cron 加新维度 per Pitfall 53. 长鑫 MSCI 8/10 T-0 倒计时 + 周日 9h 真空续 baseline + 8/12 CPI T-3 + 8/7 港股双雄 + OpenRouter top5 + WAIC Sutton 续. baseline 74 立 + 第 65 接力.",
+    "html_url": "daily/2026-08/2026-08-09-21evening/",
+    "url": "daily/2026-08/2026-08-09-21evening/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 74,
+    "relay": 65,
+    "patch_header_pitfall": "Pitfall 53 跨 day 边界 第四期 cron 加新维度 工作流 per v0.8.18 实测补"
+  },
+  {
     "date": "2026-08-08",
     "slot": "21evening",
     "type": "21evening",
