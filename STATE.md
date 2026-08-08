@@ -2102,3 +2102,27 @@ baseline 第 73 子轴 立 (vs 8/8 午后 baseline 72 + 8/8 早 baseline 71 续 
 baseline 第 72 子轴 立 (vs 8/8 早 baseline 71 续 baseline) + 第 63 接力 = 跨 day 边界 第二期 cron 加新维度 工作流 per Pitfall 53.
 
 — 8/8 早 cron 第八十五期 master 时点 07:00 CST 完结.
+
+## 8/8 晚报 cron 第八十七期 (2026-08-08 21:00 CST) · baseline 第 73 子轴 + 第 64 接力 立
+
+- ✅ cron 第八十七期 (8/8 21:00 晚报) 主审完成 — 第 64 件 baseline 73 立 — 选 长鑫 MSCI T-1 +周末夜段 9h 真空 (跨 day 边界 第三期 cron 加新维度 per Pitfall 53 v0.8.18 实测补 — patch header 守门实战补)
+- Stage 1: sub-agent 4min cap 内 未交付 raw/2026-08-08-21evening.md, master Una 主审 stage 2 fast-mode 接管 per Pitfall 41 race condition protocol + Pitfall 53 跨 day 边界 第三期 cron 加新维度 工作流 — cp raw/2026-08-08-afternoon.md → raw/2026-08-08-21evening.md + patch header 第八十七期身份 (跨 day 边界 第三期 cron 显式区分 Pitfall 49 第一期 vs Pitfall 53 第二期 per v0.8.18 实测补) + 加新维度 7 类 (a-g): (a) 周末夜段 9h 真空 (vs 早/午后 6h 真空 续 baseline 跨周末) (b) 长鑫 MSCI 8/10 T-1 决战 (8/8 晚 → 8/10 周一开盘即生效) (c) 8/12 US CPI T-3 倒计 (per Barron 8/7 verbatim 'next week's inflation data will still likely be the deciding factor') (d) 8/7 港股大模型双雄齐大涨跨周末真空续 baseline (e) Goldman ARR $13B + OpenRouter top8 占八续 baseline (f) 美方 8/7 PT 三层创新高跨周末真空续 baseline (g) US 7 月 -23K jobs 跨周末真空续 baseline → mirror 同步 daily/2026-08/2026-08-08-21evening/raw.md (md5 b31af280d9489ae2ecf05e86077673a0 双路径一致, 916 行 / 92 entries)
+- Stage 2: Una 主审 候选 拍板 — 8/8 周六 21:00 CST 6h 窗口全市场周末夜段真空 (HKEX/SSE/NYSE/Nasdaq/LSE/Euronext 全休市) → master fast-mode cp 8/8 午后 baseline 72 verbatim + 加新维度 7 类 段 → 1件 = 长鑫 MSCI T-1 决战 + 周末夜段 9h 真空 续 baseline + 8/7 拼图续段 + 8/12 CPI T-3 baseline 留
+- 不变量 #1 一日 1 件 + 不变量 #5 cross-reference + 不变量 #6 Loop+Darwin: 8/8 午后 cron 第八十六期 baseline 72 (长鑫 MSCI T-2 +周末真空段) → 8/8 晚报 (跨 day 边界 第三期 cron 加新维度 per Pitfall 53 v0.8.18 实测补 — patch header 守门实战) = 长鑫 MSCI T-1 决战 + 周末夜段 9h 真空 续 baseline + 8/7 拼图续段 + 8/12 CPI T-3 baseline 留. Loop ✅ (Pitfall 53 v0.8.18 patch header 守门 实战补, 第一版 patch header 就 OK = 显式区分 Pitfall 49 vs Pitfall 53 第二期 vs Pitfall 53 第三期) + Darwin ✅ (baseline 73 可遗传 — 8/9 周日 cron 三期 + 8/10 周一 A 股开盘实战段 + 8/12 周二 US CPI 实战段 接力)
+- 📝 raw 素材归档: raw/2026-08-08-21evening.md (916 行, 92 entries, md5 b31af280d9489ae2ecf05e86077673a0 mirror 一致) + daily/2026-08/2026-08-08-21evening/raw.md 双路径硬约束 (per Pitfall 27 + 39 race condition)
+- Stage 3: content.json spec 1 轮 patch 收敛 (title 23→14, why_this 226→198 per v0.8.13 字数硬约束 循环收敛 spec PASS) + draft-daily.py render 15499 bytes index.html + TTS MiniMax CN danya_xuejie 69.408s / 1112244B / ID3 / 32000Hz / 128kbps MP3 (50-90s 实测有效窗口 PASS per Pitfall 35 + v0.8.9)
+- Git + Wrangler: commit + push origin main + wrangler deploy Version ID faad3e33-524c-4cb5-a046-9a5ebac242f8 (per Pitfall 51 + 43 双 deploy 时序)
+- Top-level surgical patch (per Pitfall 55 + 55(e) + 55(f)): (1) topbar 2026-08-08 周六 · 21:00 (2) eyebrow 2026-08-08 · 晚报 (3) featured h2 长鑫 T-1 + 周末 9h 真空 (4) pick-rationale 当期 why_this + 第 64 接力 (5) pick-cta href 8/8-21evening (6) archive prepend 8/8 晚报 (5 件齐备: entry-date + time + title + type 21evening) (7) index.json prepend 8/8 21evening (type=21evening / slot_hour=21:00, per v0.8.18 字段守门) (8) daily/index.html redirector → 2026-08-08-21evening/
+
+## 给下一期 cron 接力 baseline
+
+8/9 周日 cron (早 + 午后 + 晚报 三期 cron 跨 day 边界 续 baseline) = master 时点 8/9 07:00 CST vs 8/8 晚报 cron master 时点 21:00 CST = 10h 同 day 跨 slot + vs 8/8 早 cron master 时点 07:00 CST = 24h 跨 day 边界 标志. 加新维度 段 (vs 8/8 晚报 baseline 73 + 8/8 午后 baseline 72 + 8/8 早 baseline 71, per 不变量 #1 一日 1 件 + Pitfall 18 additive + Pitfall 53 跨 day 边界 续期 cron 加新维度 工作流):
+- (a) 8/9 周末 全市场 真空 续 baseline 段 (vs 8/8 周末夜段 9h 真空 续 baseline = 8/9 周日继续真空 = 8/10 周一开盘前最后真空段)
+- (b) 8/9 长鑫 MSCI 8/10 T-0 决战 (8/9 → 8/10 = 1 天倒计 = 周末夜段跨周末夜段 = 8/10 周一开盘前最后实战段留 baseline)
+- (c) 8/9 8/12 US CPI T-2 倒计 (8/9 → 8/12 = 3 天 倒计 续 baseline)
+- (d) 8/9 高盛 ARR $13B + OpenRouter 续 baseline (跨周末夜段 续 baseline)
+- (e) 8/9 美方 8/8 重大事件 后续 (8/8 周六晚 PT 不开, 但 美方 weekend announcements 实战段 OK)
+
+baseline 第 74 子轴 立 (vs 8/8 晚报 baseline 73 续 baseline) + 第 65 接力 = 跨 day 边界 续期 cron 加新维度 工作流 per Pitfall 53.
+
+— 8/8 晚报 cron 第八十七期 master 时点 21:00 CST 完结.
