@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-08",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后",
+  "hero_meta_short": "Una 选: 8/8 午后. 周末真空 T-2 + 8/7 拼图续段 + 8/10 长鑫决战倒计.",
+  "main_h2": "周末真空段. 长鑫 MSCI T-2 + 8/7 港股拼图续段 + 8/10 周一开盘决战, 跨 day 边界 1 件",
+  "title": "长鑫 MSCI T-2 +周末真空段",
+  "dek": "8/8 周六午后 6h 窗口全市场真空. 长鑫 MSCI 8/10 T-2 决战 + 8/7 港股大模型双雄齐大涨续段 + 高盛 ARR $13B + OpenRouter 中国模型前十占八 = 8/10 周一开盘前最后跨周末真空段.",
+  "why_this": "8/8 午后 cron 第八十六期 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. master 13:00 vs 8/7 午后 24h 边界. 6h 窗口全市场周末真空 (HKEX/SSE/NYSE/Nasdaq/LSE/Euronext 全休). 1件 = 长鑫 MSCI T-2 决战 + 8/7 拼图续段 + 8/10 周一开盘实战段 baseline 留.",
+  "pick_points": [
+    {
+      "label": "长鑫 MSCI",
+      "value": "T-2 决战",
+      "sublabel": "8/8→8/10 = 2 天倒计时周末真空",
+      "num": "T-2"
+    },
+    {
+      "label": "8/7 港股",
+      "value": "双雄齐涨",
+      "sublabel": "智谱 1,246 +14.63% / MiniMax 326.40 +9.83%",
+      "num": "双雄"
+    },
+    {
+      "label": "8/10 实战段",
+      "value": "周一开盘",
+      "sublabel": "MSCI 纳入 8/10 09:30 CST 即生效",
+      "num": "实战"
+    }
+  ],
+  "main_facts": [
+    "长鑫科技 688825.SH 长鑫 MSCI 8/10 T-2 决战段 (per 财新 7/31 verbatim URL https://finance.caixin.com/2026-07-31/102469836.html + 证券时报 7/28 verbatim URL https://www.stcn.com/article/detail/4045814.html + 澎湃 7/28 verbatim URL https://www.thepaper.cn/newsDetail_forward_33675168): 8/8→8/10 = 2 天倒计时决战, 跨 8/8 周六 + 8/9 周日 = 全市场周末真空段, 8/10 周一 09:30 CST A 股开盘 即 MSCI 中国全股票指数 (MSCI CHINA ALL SHARES INDEX) 纳入生效段. 长鑫 7/27 科创板上市 8.66 元发行价 + 579 亿募资 + 3.28 万亿市值 = 科创板史上最大 IPO (超中芯国际 532 亿). 长鑫纳入后预计成为 MSCI 中国全股票指数 第二大市值成份股 仅次于腾讯控股 (per 雅虎股市 7/29 verbatim). 8/10 实战段被动资金流入预期 500-1000 亿人民币 (per 21财经 8/5 verbatim 估计).",
+    "8/8 周末 6h 窗口全市场真空段 (per HKEX 8/8 周六休市 verbatim URL https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Calendar-and-Holiday-Schedule + cmschina.com.hk 2026 calendar verbatim URL https://www.cmschina.com.hk/en/CS/Calendar + SSE verbatim URL https://english.sse.com.cn/start/trading/schedule + Nasdaq verbatim URL https://www.nasdaq.com/trading-calendar + markethours.io LSE/Euronext verbatim URL https://www.markethours.io/exchanges): 港股 8/8 周六全日休市 + A 股 8/8 周六全日休市 + 美方 NYSE/Nasdaq 8/8 周六全日休市 + 欧方 LSE/Euronext 8/8 周六全日休市 = 6h 窗口 no live market data. 8/9 周日继续真空 + 8/10 周一开盘 = 长鑫 MSCI 实战段当天.",
+    "8/7 港股大模型双雄齐大涨段 (per 中新经纬 8/7 16:59 verbatim URL https://xinwen.bjd.com.cn/content/s6a759e80e4b0e45f3fd5bfb4.html + 证券时报 8/7 12:09 verbatim URL https://www.stcn.com/article/detail/4063318.html): 智谱 2513.HK 8/7 close 1,246 HKD +14.63% (per Yahoo Finance 2513.HK verbatim URL https://finance.yahoo.com/quote/2513.HK/history, 早盘 1,108 低 / 1,300 高 / 收 1,246 = 高位震荡) + MiniMax 0100.HK 8/7 close 326.40 HKD +9.83% (per Yahoo Finance 0100.HK verbatim). 恒生指数 8/7 收盘 +0.54% / 恒生科技指数 8/7 收盘 +0.78%. 早盘 11:30 阶段智谱 +17% / MiniMax +17% (per 证券时报 8/7 12:09 verbatim 港股午评). 8/7 拼图续段 = 跨 day 边界 第三期 cron baseline 70 实战续段.",
+    "美方 8/7 PT close 三层创新高段 (per AP verbatim URL https://apnews.com/article/jobs-report-stocks-economy-fed-rates + Barron verbatim URL https://www.barrons.com/livecoverage/stock-market-news-today-080726 + seattlepi verbatim URL https://www.seattlepi.com/business/how-major-us-stock-indexes-fared-friday-8-7-2026-a22379449 + CNBC verbatim URL https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html): S&P 500 +47.68 (+0.62%) 7,757.64 创新高 / Nasdaq Composite +342.26 (+1.30%) 26,690.62 / Dow +151.83 (+0.28%) 54,036.93 / Russell 2000 +32.95 (+1.1%) 3,034.49 / VIX -0.66 (-4.17%) 15.15. 8/7 是美方自 4 月以来最佳周 (S&P 500 +3.6% / Dow +3% / Nasdaq +5.2% / Russell 2000 +3.5%, per AP verbatim). 2Y UST 4.2% 单周大跌 (最大自 6 月) / 10Y UST 4.66% / 4.64%.",
+    "Goldman Sachs 8/4 China AI ARR $13B 段 (per SCMP verbatim URL https://www.scmp.com/tech/big-tech/article/3363059/chinas-ai-revenue-projected-reach-us13b-breakthroughs-adoption-goldman-sachs + CNBC verbatim URL https://www.cnbc.com/2026/07/12/goldman-sachs-picks-its-favorite-chinese-ai-models.html + IndexBox verbatim URL https://www.indexbox.io/blog/goldman-sachs-raises-china-ai-model-market-forecast-to-13b, 8a 跨 slot 引用 verbatim preserved): 8/4 上调 2026 China AI 整体 ARR $10B → $13B. '4 到 8 倍的成本优势叠加能力跃迁, 使中国模型从「便宜但凑合」进阶为「足够好且不可不用」' = 中方一侧 模型端 收入兑现 段. 8/7 港股实战段: 智谱 8/7 close 1,246 HKD +14.63% / MiniMax 8/7 close 326.40 HKD +9.83%.",
+    "OpenRouter 周榜中国模型前十占八席 (per futunn 新闻 verbatim URL https://news.futunn.com/flash/20599151/chinese-models-dominate-openrouter-s-weekly-leaderboard-occupying-eight-of, 8a 跨 slot 引用 verbatim preserved): '快訊 | OpenRouter 周榜被中國模型刷屏, 前十佔八席'. 实战验证段 = 中方一侧 模型端 agentic usage 实测 top8 占八席 = 中美 AI 模型端 双层定价 实战段. 高盛 + OpenRouter 双源 cross-check 段 = 中方一侧 模型端 收入兑现 + 用量爆发 双信号.",
+    "US 7 月 -23K jobs 意外段 (per AP verbatim 8/7 + Schwab Network 8/7 14:00 verbatim URL https://www.facebook.com/schwabnetwork/posts/august-7-2026-the-us-labor-market-unexpectedly-contracted-in-july-shedding-23000/1642237734570249 + Barron verbatim 8/7 4:05 PM ET, 8a 跨 slot 引用 verbatim preserved): 7 月失业率 4.1% (vs 4.2%); US 经济意外 -23,000 jobs (Bloomberg consensus +80,000); 5 月 + 6 月修订累计减 103,000 jobs. Fed 9 月加息概率 (CME FedWatch) 从 55% 跌至 42%; 全年不动概率 24.8% (vs 15.5% 周四, per Barron verbatim). '今天的 jobs report 把 100% 焦点放在 CPI', Christopher Shaffer, Talaria Capital Management, Barron verbatim. 8/12 US 7 月 CPI 实战段 T-4 倒计 = 美方 Fed 利率路径 关键 时点."
+  ],
+  "say_4": [
+    "8/8 周末全市场真空, HKEX/SSE/NYSE/LSE 全休市 6h 窗口.",
+    "长鑫 MSCI 8/10 T-2 决战, 周末真空后周一开盘即生效.",
+    "8/7 港股双雄大涨, 智谱 1,246 +15% / MiniMax 326 +10%",
+    "高盛 ARR $13B + OpenRouter top8 占八 = 中方模型端双信号."
+  ],
+  "not_picked": [
+    "智谱 8/8 解禁日 = 7/8 旧新闻, 同主轴 dilution drop per Pitfall 17",
+    "AMD 8/7 PT 实战段, 周末 pre-market 已停牌 真空",
+    "Bloomberg 中国 Show 8/7 DeepSeek 融资续段, 跨 day 边界第二期不写续段"
+  ],
+  "source_attribution": "per 财新 7/31 + 证券时报 7/28 + 澎湃 7/28 + HKEX 8/8 休市 + cmschina 2026 calendar + SSE 8/8 休市 + Nasdaq 8/8 + markethours.io LSE/Euronext 8/8 + 中新经纬 8/7 + 证券时报 8/7 12:09 + Yahoo Finance 2513.HK + 0100.HK + AP 8/7 + Barron 8/7 + seattlepi 8/7 + CNBC 8/7 + Schwab Network 8/7 + SCMP 8/4 + CNBC 7/12 + IndexBox 8/4 + futunn 8/7 verbatim URLs.",
+  "meta_description": "Una 主编 cron 第八十六期 8/8 午后. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. 长鑫 MSCI 8/10 T-2 决战 + 8/8 周末真空段 + 8/7 港股双雄续段 + 高盛 ARR + OpenRouter. baseline 72 立 + 第 63 接力.",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21"
+}

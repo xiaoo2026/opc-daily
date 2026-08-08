@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-08-08",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "title": "长鑫 MSCI T-2 +周末真空段",
+    "html_url": "daily/2026-08/2026-08-08-afternoon/"
+  },
+  {
+    "date": "2026-08-08",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
