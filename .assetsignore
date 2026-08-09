@@ -1,0 +1,13 @@
+/.git/
+/.hermes/
+/.wrangler/
+/node_modules/
+/.assetsignore
+/wrangler.jsonc
+/package.json
+/package-lock.json
+/scripts/
+/tools/
+/cron-output/
+/raw/
+/references/
