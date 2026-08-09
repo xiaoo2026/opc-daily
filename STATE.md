@@ -2141,6 +2141,12 @@ baseline 第 74 子轴 立 (vs 8/8 晚报 baseline 73 续 baseline) + 第 65 接
 
 — 8/9 晚报 cron 第八十八期 master 时点 21:00 CST 完结.
 
+### 21:01 晚报收口修复
+
+- 检查确认 `2026-08-09-21evening` 已由 07:00 错位 publisher 提前生成并发布，未重写当期正文、raw 或 voice，避免同一 slot 二次 publish。
+- 修复 13:00 午后任务留下的最新路由漂移：主页 featured 与 `daily/index.html` 恢复指向 21:00 晚报；`daily/2026-08/index.json` 按同日 slot 时间倒序重排，晚报保持第一项。
+- 当期一件仍为「长鑫 T-0 倒计时 + 周末真空」，baseline 74 + 第 65 接力。修复性质为 additive `fix:`，不是新一期 publish。
+
 
 ## 8/9 午后 cron 第八十八期 (2026-08-09 13:00 CST) · baseline 第 74 子轴 + 第 65 接力 续立
 
