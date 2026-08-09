@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-10",
+  "type": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "Una 选: 8/10 早报. 长鑫 MSCI T-0 实战 + 8/10 周一 A 股 09:30 开盘 + 8/12 CPI T-2 + 周末 9h 真空续 baseline. 新一天 第一期 cron 加新维度 per Pitfall 49.",
+  "main_h2": "长鑫 T-0 + 8/10 开盘实战段",
+  "title": "长鑫 MSCI T-0 实战",
+  "dek": "8/10 周日 07:00 CST 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 周末夜段 9h 真空续 baseline + 长鑫 MSCI 8/10 09:30 实战段 + 8/12 CPI T-2 + 8/10 周一 A 股 开盘 留 baseline.",
+  "why_this": "8/10 早 cron 第八十九期 跨 day 边界 第一期 cron 加新维度 per Pitfall 49 (vs 8/8 晚报 34h). 周末 6h 真空续 baseline + T-0 实战段. 1件 = 长鑫 T-0 决战.",
+  "pick_points": [
+    {
+      "label": "长鑫 MSCI",
+      "value": "T-0 实战",
+      "sublabel": "8/10 周日 22:30 公布 → 8/10 周一 09:30 开盘即生效",
+      "num": "T-0"
+    },
+    {
+      "label": "周末夜段",
+      "value": "9h 真空续",
+      "sublabel": "8/9 晚 21:00 → 8/10 早 06:00 真空 = 9h 跨周末夜段",
+      "num": "9h"
+    },
+    {
+      "label": "8/12 CPI",
+      "value": "T-2 倒计",
+      "sublabel": "US 7 月 CPI 8/12 20:30 CST release",
+      "num": "T-2"
+    }
+  ],
+  "main_facts": [
+    "长鑫科技 688825.SH MSCI 8/10 T-0 实战段 (per 财新 7/31 verbatim URL https://finance.caixin.com/2026-07-31/102469836.html + 证券时报 7/28 verbatim URL https://www.stcn.com/article/detail/4045814.html + PANews 7/28 verbatim URL https://www.panewslab.com/zh/articles/019fa833-cdc8-731f-8b08-280fe22e9bff + 21财经 7/28 verbatim URL https://m.21jingji.com/article/20260728/herald/def2a027b22bf98efe26d5b6615f82af.html + 北京日报 7/28 verbatim URL https://xinwen.bjd.com.cn/content/s6a688919e4b0e45f3fd5517e.html + 联合新闻网 7/28 verbatim URL https://udn.com/news/story/7333/9656811, 8a verbatim preserved): 8/10 周日 晚 ~22:30 MSCI 公布结果 → 8/10 周一 09:30 CST A 股开盘 = MSCI 中国全股票指数纳入正式生效段. 长鑫 7/27 科创板上市 + 666 亿募资 + 季赚 330 亿逼近美光 + 3 万亿市值 = 科创板史上最大 IPO (per 新财富杂志 7/28 verbatim URL https://www.stcn.com/article/detail/4045814.html 陶娟 verbatim). 纳入后预计成为 MSCI 中国全股票指数第二大市值成份股仅次于腾讯控股 (per 雅虎股市 7/29 verbatim). 8/10 实战段被动资金流入预期 500-1000 亿人民币 (per 21财经 8/5 verbatim). 8/10 早 T-0 实战 = 8/9 晚报 baseline 74 T-0 倒数 实战段 (vs 倒数段 → 实战段 = 跨 day 边界 加新维度 工作流 per Pitfall 49).",
+    "8/10 周日 周末夜段 9h 真空续 baseline段 (per HKEX 8/9 verbatim + SSE 8/9 verbatim + Nasdaq 8/9 verbatim + 8/9 晚报 baseline 74 周末夜段 9h 真空 verbatim preserved, 8a 跨 slot 引用合法): 港股 (HKEX) 8/10 周日全日休市 + A 股 (SSE/SZSE) 8/10 周日全日休市 + 美方 NYSE/Nasdaq 8/10 周日全日休市 + 欧方 LSE/Euronext 8/10 周日全日休市 = 周末夜段 9h 真空 续 baseline (vs 8/9 早 6h 真空 + 8/9 午后 6h 真空 + 8/9 晚报 9h 真空 续 baseline). 8/10 早 cron 6h 窗口 = 周末夜段 9h 真空 续 baseline段 per Pitfall 41 + 45 真空抓料工作流.",
+    "US 7 月 CPI 8/12 周二 实战段 T-2 倒计 (per Trading Economics verbatim URL https://tradingeconomics.com/united-states/inflation-cpi + BLS verbatim URL https://www.bls.gov/news.release/cpi.htm + Cleveland Fed verbatim URL https://www.clevelandfed.org/indicators-and-data/inflation-expectations + 东方财富 8/9 周末要闻汇总 verbatim URL https://stock.eastmoney.com/a/cdpfx.html, 8a verbatim preserved): US 7 月 CPI 8/12 周二 8:30 ET = 8/12 20:30 CST release. 8/10 → 8/12 = 2 天倒计 (vs 8/9 早 T-4 + 8/9 午后 T-2 + 8/9 晚报 T-3 → 8/10 早 T-2 续 arithmetic, 8/10 距 release = 2 天). 东方财富 8/9 周末要闻汇总 verbatim 美国 7 月非农数据意外转负 美联储加息动力骤减. 6 月 US CPI 3.5% (vs 5 月 4.2%, 5 个月来首次下行, per Trading Economics verbatim). 7 月核心 CPI 共识 2.5% (vs 6 月 2.6%, per Trading Economics verbatim). 8/12 CPI 实战段 = 美方 Fed 利率路径 关键 时点 + 中方一侧 模型端 估值贴现率 跨主轴段.",
+    "宇树科技 8/10 网上网下申购 + DeepSeek 锁 Unitree 股票 36 个月 续 baseline 段 (per 东方财富 8/9 verbatim URL https://stock.eastmoney.com/a/cdpfx.html + BlockWeeks 8/8 verbatim URL https://blockweeks.com/news/297578, 8a verbatim preserved): 宇树科技 8/10 周一 网上网下申购段 (per 东方财富 8/9 verbatim 宇树科技 8 月 10 日将开启网上、网下申购). 战略入股 宇树 梁文锋 与 王兴兴 绑定三年 谁更需要谁 (per 东方财富 8/9 verbatim). BlockWeeks 8/8 verbatim DeepSeek 锁定 Unitree 股票 36 个月, 共同开发用于人形机器人认知的 AI 模型. 优树机械人 IPO 定价 150.8 元/股 + 900 亿美元估值 + 9 亿美元募资 (per BlockWeeks verbatim). DeepSeek 投资 20.8 万美元购入 933,399 股 = 策略配额 2.31% + 36 个月锁定期 (per BlockWeeks verbatim). 8/10 早 = 宇树申购 实战段 留 baseline + DeepSeek 锁 Unitree 续 baseline.",
+    "高盛 Goldman Sachs 8/4 ARR $13B + DeepSeek V4 Flash 7.22T tokens 周 续 baseline 段 (per futunn 8/5 verbatim URL https://news.futunn.com/post/77131316/goldman-sachs-significantly-raised-its-revenue-expectations-for-china-s + SCMP 8/5 verbatim URL https://www.scmp.com/tech/big-tech/article/3363059/chinas-ai-revenue-projected-reach-us13b-breakthroughs-adoption-goldman-sachs, 8a 跨 slot 引用 verbatim preserved): 高盛 8/3 verbatim 8月3日中国大模型厂商 2026 年末合计 ARR 预期 100 亿 → 130 亿美元 + 2030 年 1,250 亿美元 5 年 25 倍. Goldman verbatim 给予 MiniMax 00100.HK 买入评级 目标价 800 港元 + H3 多模态模型 定价 30-50%. Jefferies verbatim OpenRouter 平台 中国模型已连续 14 周包揽调用量前五, DeepSeek V4 Flash 单周 7.22 万亿 token 登顶全球. 8/10 早 = Goldman ARR 跨周末夜段 9h 真空 续 baseline 段.",
+    "OpenRouter top 8/9 rank 中国模型 DeepSeek × 3 + Tencent Hy3 + GLM 5.2 = 中方模型 top5 续 baseline 段 (per OpenRouter Rankings verbatim URL https://openrouter.ai/rankings + OpenRouter Models verbatim URL https://openrouter.ai/models + Reddit r/LocalLLaMA verbatim URL https://www.reddit.com/r/LocalLLaMA + Dataconomy 2/25 verbatim URL https://dataconomy.com/2026/02/25/chinese-ai-models-hit-61-market-share-on-openrouter, 8a 跨 slot 引用 verbatim preserved): Top Models 8/9 verbatim 1. DeepSeek V4 Flash 0731; 2. Hy3 by tencent; 3. DeepSeek V4 Flash 0423; 4. GPT-5.6 Luna by openai; 6. DeepSeek V4 Pro; 8. Gemini 3.6 Flash. Top Coding verbatim DeepSeek V4 Flash 0731 - Academia #4, Finance #1, Health #2, Legal #5, Marketing #6 - 13B active / 284B total sparse MoE $0.09/M input $0.18/M output. Reddit verbatim Chinese AI Models Seize OpenRouter Top Five as OpenAI and Google Vanish From the Top 10. Dataconomy verbatim MiniMax M2.5 captured the top spot with 2.45 trillion tokens in a single week, a nearly 200% increase driven by coding use cases. 8/10 早 = OpenRouter 最新 rank 实战段 续 baseline.",
+    "8/9 港股大模型双雄齐大涨 + 沪指 8/7 close 3940.04 + 1.02% + 创新药 + AI 硬件 + 有色资源 三主线 实战段 续 baseline (per Yahoo Finance 2513.HK + 0100.HK verbatim + 中新经纬 8/7 16:59 verbatim URL https://xinwen.bjd.com.cn/content/s6a759e80e4b0e45f3fd5bfb4.html + 证券时报 8/7 12:09 verbatim URL https://www.stcn.com/article/detail/4063318.html + 洞见商 8/8 13:39 verbatim URL https://view.inews.qq.com/a/20260808A077E000, 8a 跨 slot 引用 verbatim preserved): 智谱 2513.HK 8/7 close 1,246.000 HKD +159.000 (+14.63%) / MiniMax 0100.HK 8/7 close 326.400 HKD +9.83% + 恒生指数 8/7 收盘 +0.54% / 恒生科技指数 8/7 收盘 +0.78%. 沪指 8/7 close 3940.04 + 1.02% + 四连阳 + 创新药 + AI 硬件 + 有色资源 三主线 (per 洞见商 8/8 verbatim). 8/7 主力资金全天净流入 427.46 亿元. 8/10 周一 09:30 实战段 = 智谱 + MiniMax + 沪指 + 三主线 拼图续段 留 baseline.",
+    "WAIC 2026 Day 3 (7/19) 收官 + Sutton 开幕演讲 智能 vs 计算 续 baseline 段 (per semi-insights 7/20 verbatim URL http://www.semi-insights.com/s/WAIC2026/48/50549.shtml + InfoQ 8/3 verbatim URL https://www.infoq.cn/article/sHcr52JDQidMuKcDHYGB + liuwei.blog 8/8 verbatim URL https://liuwei.blog/2026/08/08/waic2026%e5%8d%b0%e8%b1%a1%e4%b9%8b%e4%ba%8c%ef%bc%9a%e6%9c%80%e5%a4%a7%e7%9a%84%e5%85%b1%e8%af%86%e4%b8%8d%6%98%af%e4%b8%8b%e4%b8%80%e6%ad%a5%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%8c%e8%80%8c%e6%98%af/ + 36kr 7/21 verbatim URL https://36kr.com/p/3904860398978440, 8a verbatim preserved): WAIC 2026 7/17-7/20 已收官 + 1100 余家企业参展 4486 项展品 创下历史新高. Sutton 开幕演讲 verbatim 智能 vs 计算 混淆 第一刀 + AI 科学是否快速进步 第二刀 + 幻觉病根 第三刀 (per liuwei.blog 8/8 verbatim). 8/10 早 = WAIC Day 3 Sutton 段 周末夜段 9h 真空 续 baseline 段.",
+    "美方 8/7 PT close 三层创新高 + Apple 8/10 除息 + OpenAI + Broadcom 10 GW 战略合作 续 baseline 段 (per AP verbatim URL https://apnews.com/article/jobs-report-stocks-economy-fed-rates + Yahoo Finance HK AAPL verbatim URL https://hk.finance.yahoo.com/quote/AAPL + OpenAI 官方 8/6 verbatim URL https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration, 8a verbatim preserved): S&P 500 8/7 close +0.62% 7,757.64 创新高 / Nasdaq Composite +1.30% 26,690.62 / Dow +0.28% 54,036.93 / Russell 2000 +1.1% 3,034.49 / VIX -4.17% 15.15 (per AP verbatim). Apple 8/7 close 313.33 + 0.29% + AAPL $0.27 现金股息 8/10 除息日 (per Yahoo Finance HK verbatim). OpenAI 8/6 verbatim OpenAI and Broadcom announce strategic collaboration to deploy 10 gigawatts of OpenAI-designed AI accelerators. 8/10 早 = 美方 拼图续段 跨周末夜段 9h 真空 续 baseline 段."
+  ],
+  "say_4": [
+    "8/10 早 周末 9h 真空续, 跨周末进入周日早场.",
+    "长鑫 MSCI T-0 实战, 8/10 09:30 开盘即生效.",
+    "宇树 8/10 申购 + DeepSeek 锁 Unitree 36 个月.",
+    "8/12 CPI T-2 倒计, Fed 利率路径关键时点."
+  ],
+  "not_picked": [
+    "WAIC Sutton 智能 vs 计算 = 8/9 晚报 baseline 74 Day 3 续 段, 同主轴 dilution drop per Pitfall 17",
+    "GPT-5 launch weekend reaction = 8/8 晚报 baseline 73 已 capture 续 段, 同主轴 dilution drop per Pitfall 17",
+    "Anthropic Fable 5 5 天+ developer impact = 跨周末夜段 续 baseline, 周末主轴 真空 续 baseline"
+  ],
+  "source_attribution": "per 财新 7/31 + 证券时报 7/28 + PANews 7/28 + 21财经 7/28 + 北京日报 7/28 + 联合新闻网 7/28 + 新财富杂志 7/28 + 雅虎股市 7/29 + 21财经 8/5 + HKEX 8/9 + SSE 8/9 + Nasdaq 8/9 + Trading Economics + BLS + Cleveland Fed + 东方财富 8/9 + 洞见商 8/8 + 证券时报 8/7 + 中新经纬 8/7 + Yahoo Finance 2513.HK + 0100.HK + OpenRouter Rankings + OpenRouter Models + Reddit r/LocalLLaMA + Dataconomy + futunn 8/5 + SCMP 8/5 + semi-insights 7/20 + InfoQ 8/3 + liuwei.blog 8/8 + 36kr 7/21 + AP + Yahoo Finance HK AAPL + OpenAI 8/6 + BlockWeeks 8/8 verbatim URLs.",
+  "meta_description": "Una 主编 cron 第八十九期 8/10 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 长鑫 MSCI T-0 实战 + 周末 9h 真空续 + 8/12 CPI T-2 + 8/10 09:30 开盘实战段. baseline 75 立 + 第 66 接力.",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21"
+}
