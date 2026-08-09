@@ -17,6 +17,23 @@
     "patch_header_pitfall": "Pitfall 53 跨 day 边界 第四期 cron 加新维度 工作流 per v0.8.18 实测补"
   },
   {
+    "date": "2026-08-09",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午后",
+    "title": "8/12 US CPI T-2 倒计 + Fed 9月加息路径",
+    "headline_alt": "8/12 US CPI T-2 倒计 + Fed 9月加息路径",
+    "meta_description": "8/9 周日 13:00 CST 午后. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. 8/12 US CPI T-2 倒计 + Fed 9月加息路径 55→42% + 中方 AI 模型估值贴现率 跨主轴第四层. baseline 74 立 + 第 65 接力续.",
+    "html_url": "daily/2026-08/2026-08-09-afternoon/",
+    "url": "daily/2026-08/2026-08-09-afternoon/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 74,
+    "relay": 65,
+    "patch_header_pitfall": "Pitfall 53 跨 day 边界 第二期 cron 加新维度 工作流 per v0.8.18 实测补"
+  },
+  {
     "date": "2026-08-08",
     "slot": "21evening",
     "type": "21evening",
