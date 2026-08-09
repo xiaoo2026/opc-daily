@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-08-10",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "长鑫 MSCI T-0 实战",
+    "headline_alt": "长鑫 MSCI T-0 实战",
+    "meta_description": "8/10 周日 07:00 CST 早场. 新一天 第一期 cron 加新维度 per Pitfall 49. 长鑫 MSCI T-0 实战 + 周末 9h 真空续 + 8/12 CPI T-2 + 8/10 09:30 开盘实战段. baseline 75 立 + 第 66 接力.",
+    "html_url": "daily/2026-08/2026-08-10-morning/",
+    "url": "daily/2026-08/2026-08-10-morning/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 75,
+    "relay": 66,
+    "patch_header_pitfall": "Pitfall 49 新一天 第一期 cron 加新维度 工作流 per v0.8.18 实测补"
+  },
+  {
     "date": "2026-08-09",
     "slot": "21evening",
     "type": "21evening",
