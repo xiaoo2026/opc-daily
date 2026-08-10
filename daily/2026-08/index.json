@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-08-10",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "title": "8/12 US CPI T-1, 决战夜",
+    "headline_alt": "8/12 US CPI T-1 决战 + 美方 8/9 周末实战段收官",
+    "meta_description": "Una 主编 cron 第九十期 8/10 午报. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. 美方 8/9 周末实战段 + 8/12 US CPI T-1 决战 + Goldman ARR $13B + OpenAI + Broadcom 10 GW + Fable 5 切计费 impact.",
+    "html_url": "daily/2026-08/2026-08-10-afternoon/",
+    "url": "daily/2026-08/2026-08-10-afternoon/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 76,
+    "relay": 67,
+    "patch_header_pitfall": "Pitfall 53 跨 day 边界 第二期 cron 加新维度 工作流 per v0.8.18 实测补"
+  },
+  {
+    "date": "2026-08-10",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
