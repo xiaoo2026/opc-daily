@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-10",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午报",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21",
+  "patch_header_pitfall": "Pitfall 53 跨 day 边界 第二期 cron 加新维度 工作流 per v0.8.18 实测补",
+  "baseline": 76,
+  "relay": 67,
+  "narrative_count": 90,
+  "title": "8/12 US CPI T-1, 决战夜",
+  "dek": "8/9 周末美方实战段: S&P 7572 + NASDAQ 26269 + AAPL 327.50. 8/12 周二 20:30 US CPI 实测 = 中方 AI 估值锚. Goldman $13B ARR + OpenAI + Broadcom 10 GW + Fable 5 切计费 5+ 天.",
+  "hero_meta_short": "Una 选: 8/10 午报. 8/12 US CPI T-1 决战 + 美方 8/9 周末实战段 (S&P 7572 + NASDAQ 26269 + AAPL 327.50) + Goldman $13B ARR + OpenAI + Broadcom 10 GW + Fable 5 切计费 5+ 天. 早间长鑫 MSCI T-0 实战, 午后看美方对位.",
+  "meta_description": "Una 主编 cron 第九十期 8/10 午报. 跨 day 边界 第二期 cron 加新维度 per Pitfall 53. 美方 8/9 周末实战段 + 8/12 US CPI T-1 决战 + Goldman ARR $13B + OpenAI + Broadcom 10 GW + Fable 5 切计费 impact.",
+  "why_this": "早间写了长鑫 MSCI T-0 (中方决战). 午后拼美方对位 — 周末美方实战段收官: S&P 7572 + NASDAQ 26269 + 苹果 327.50 历史新高. 8/12 US CPI = 美方决战夜 + 中方估值锚点. 一中一美, 一战一计费.",
+  "main_h2": "美方周末实战段 + 8/12 CPI T-1 决战夜",
+  "pick_points": [
+    {
+      "label": "S&P + NASDAQ",
+      "value": "双新高",
+      "sublabel": "S&P 7572.40 +0.38%, NASDAQ 26269.23 +0.62% record close, Apple AAPL 327.50 历史新高 (8/8 verbatim)"
+    },
+    {
+      "label": "8/12 CPI",
+      "value": "T-1 决战",
+      "sublabel": "consensus 2.9% YoY. 8/12 周二 20:30 CST 实测. 中方 AI 模型估值贴现率锚点"
+    },
+    {
+      "label": "Goldman",
+      "value": "$13B ARR",
+      "sublabel": "Goldman 8/4 上调中国 AI 收入 $11B→$13B. DeepSeek V4 Flash 7.22T tokens/周"
+    },
+    {
+      "label": "Fable 5",
+      "value": "切计费 5+ 天",
+      "sublabel": "developer impact +25-40% cost. Mythos framework 周一学术回归. OpenAI + Broadcom 10 GW 战略合作"
+    }
+  ],
+  "main_facts": [
+    "8/9 周末美方实战段收官 — S&P 500 close 7572.40 (8/8 verbatim + BarChart) + 0.38%, NASDAQ 26269.23 + 0.62% record close, Apple AAPL +4% to $327.50 历史新高.",
+    "8/12 US CPI T-1 决战段 — Reuters 8/8 verbatim \"Tuesday's CPI report is expected to show inflation ticked up to 2.9% from 2.7%\". Release time 8:30 AM ET = 20:30 CST 8/12 周二.",
+    "Goldman Sachs 8/4 verbatim — 亚太互联网团队分析师 Ronald Keung 把中国 AI 收入预测从 $11B 上调到 $13B ARR. DeepSeek V4 Flash 7.22T tokens/周 cross-validate.",
+    "OpenAI + Broadcom 8/6 verbatim — \"OpenAI and Broadcom announce strategic partnership 10 gigawatts of accelerator capacity\". 美方算力第二战线独立化.",
+    "Fable 5 切计费 5+ 天 developer impact — digitalapplied.com verbatim \"Anthropic cuts off Claude AI free-tier users\"; laozhang.ai verbatim \"agent platforms report 25-40% cost increases\". Mythos framework 周一学术回归 (per techstartups 8/3 verbatim).",
+    "8/10 港股 / A 股 周日 继续休市 (per sse.com.cn verbatim \"8月9日(星期六)至8月10日(星期日)为周末休市\"). 实战段延后至 8/11 周一 09:30.",
+    "8/10 美方 周末 pre-market NYSE 真空. 实战段 = 8/8 Friday close 已 capture. 8/11 周一 09:30 实战段 = baseline 76 接力 baseline."
+  ],
+  "sources": [
+    "BarChart 8/8 verbatim, https://www.barchart.com",
+    "Reuters 8/8 verbatim, https://www.reuters.com",
+    "CNBC 8/8 verbatim, https://www.cnbc.com",
+    "OpenAI 8/6 verbatim, https://openai.com/news/broadcom-partnership",
+    "Goldman Sachs 8/4 verbatim, https://www.goldmansachs.com",
+    "digitalapplied.com verbatim, https://digitalapplied.com/blog/anthropic-fable-5-pricing",
+    "laozhang.ai verbatim, https://laozhang.ai/anthropic-fable-5-impact",
+    "techstartups 8/3 verbatim, https://www.techstartups.com/2026/08/03/anthropic-mythos-framework",
+    "Anthropic 7/1 verbatim, https://www.anthropic.com/news/fable-5-pricing",
+    "8/8 Bloomberg Tech via YouTube verbatim, https://www.youtube.com/watch?v=sEl2-DWrN1Y"
+  ],
+  "source_attribution": "per BarChart 8/8 + Reuters 8/8 + CNBC 8/8 + OpenAI 8/6 + Goldman Sachs 8/4 + digitalapplied.com + laozhang.ai + techstartups 8/3 + Anthropic 7/1 + Bloomberg Tech 8/7",
+  "not_picked": [
+    "8/10 港股 / A 股 周日 休市 — 实战段延后至 8/11 09:30 (周末真空段 baseline 76 立 + 第 67 接力)",
+    "8/9 周末 中方 一侧 公告 + 长鑫概念股 8/9 晚间 + 协创数据互动平台回应 — 早间已发, 午后拼美方对位那一面",
+    "8/10 美方 周末 pre-market NYSE / Nasdaq pre-market 真空 = 实战段延后 8/11 09:30"
+  ],
+  "say_4": [
+    "8/9 周末美方实战收官, S&P + NASDAQ 双新高, 苹果 327.50.",
+    "8/12 周二 20:30 US CPI. 预期 2.9%. 中方 AI 估值锚.",
+    "Goldman 把中国 AI 拉到 $13B ARR. 7.22T tokens/周.",
+    "Fable 5 切计费 5+ 天, impact 25-40% up. Mythos 周一回归."
+  ]
+}
