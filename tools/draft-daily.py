@@ -25,7 +25,7 @@ pick_points = content['pick_points']
 # Stat cards
 stat_cards_html = '\n'.join(
     f'''      <div class="stat-card">
-        <div class="num">{p['num']}</div>
+        <div class="num">{p['value']}</div>
         <div class="label">{p['label']}</div>
       </div>'''
     for p in pick_points
@@ -224,17 +224,22 @@ footer img {{ width: 40px; height: 40px; border-radius: 50%; object-fit: cover; 
 </html>'''
 
 # em dash cleanup (Pitfall 37 multi-stage)
-# 1. protect meta description
-out = out.replace(f'<meta name="description" content="{hero_short} · {title_clean}">',
-                  '<meta name="description" content="__META_DESC_PLACEHOLDER__">')
-# 2. cite blocks already use <blockquote><em>...</em></blockquote> which doesn't contain em dash
-# 3. em dash → " · " in prose
-out = out.replace('—', ' · ')
-# 4. prose ",  X" → ". X" if any
+# 0. protect meta description - find it BEFORE replace
 import re
-out = re.sub(r',\s+(?=[\u4e00-\u9fffA-Z])', '. ', out)
-# 5. restore meta description with em dash preserved (or sanitized)
-out = out.replace('__META_DESC_PLACEHOLDER__', f'{hero_short} · {title_clean}')
+meta_match = re.search(r'(<meta name="description" content=")([^"]+)(">)', out)
+if meta_match:
+    out = out.replace(meta_match.group(0),
+                      meta_match.group(1) + '__META_DESC_PLACEHOLDER__' + meta_match.group(3))
+# 1. em dash → " · " (cite-only en-dash 没事)
+out = out.replace('—', ' · ')
+# 2. prose ",  X" → ". X" (限定中文字符前)
+out = re.sub(r',\s+(?=[\u4e00-\u9fff])', '. ', out)
+# 3. strong-internal ". X" → " · X" (if any)
+# 4. 双句号 cleanup
+out = out.replace('. . ', '. ')
+# 5. restore meta description (with em dash pre-cleaned)
+meta_content_clean = f'{hero_short} · {title_clean}'.replace('—', ' · ')
+out = out.replace('__META_DESC_PLACEHOLDER__', meta_content_clean)
 
 (slot_dir / 'index.html').write_text(out)
 print(f"rendered {slot_dir / 'index.html'} ({len(out)} bytes)")
