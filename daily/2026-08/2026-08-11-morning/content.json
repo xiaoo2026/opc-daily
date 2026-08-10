@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-11",
+  "type": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21",
+  "patch_header_pitfall": "Pitfall 49 新一天 第一期 cron 加新维度 工作流 per v0.8.7 实测补",
+  "baseline": 78,
+  "relay": 69,
+  "narrative_count": 92,
+  "title": "MSCI 实战 + Mythos 回归",
+  "dek": "周一开市三件齐发 — 9:30 长鑫 MSCI 正式纳入 + 周一 Mythos framework 学术回归 + 8/12 CPI T-1 中方 AI 估值锚点.",
+  "hero_meta_short": "Una 选: 8/11 早. 新一天 第一期 cron 加新维度 per Pitfall 49. 周末夜段真空后周一三件齐发 — MSCI 实战 + Mythos 回归 + 8/12 CPI 倒数.",
+  "meta_description": "Una 主编 cron 第九十二期 8/11 早. 新一天 第一期 cron 加新维度 per Pitfall 49 v0.8.7. 周末夜段 9h+6h 真空收口 + 周一全市场开市 — 9:30 长鑫 MSCI 实战 + Mythos 周一学术回归 + 8/12 CPI T-1 中方 AI 估值锚点.",
+  "why_this": "周末夜段 9h+周一早 6h 共 15h 真空收口, 周一开市三件齐发: 中方 MSCI 实战 (9:30 长鑫正式纳入, 500-1000 亿被动资金流入) + 美方 Mythos 学术回归 (Anthropic 第一周学术 session) + 8/12 CPI T-1 中方 AI 估值锚点. 一日 1 件, 三段拼图.",
+  "main_h2": "8/11 周末夜段真空收口 + 周一三件齐发",
+  "pick_points": [
+    {
+      "label": "MSCI",
+      "value": "9:30 实战",
+      "sublabel": "长鑫 688825.SH MSCI 中国全股票指数 正式纳入生效, 主力资金 500-1000 亿被动资金流入"
+    },
+    {
+      "label": "Mythos",
+      "value": "周一回归",
+      "sublabel": "Anthropic Mythos framework 第一周学术 session 8/11 周一回归, Fable 5 切计费 5+ 天 developer impact"
+    },
+    {
+      "label": "8/12 CPI",
+      "value": "T-1 倒数",
+      "sublabel": "8/12 周二 20:30 CST release, consensus 2.9% YoY, 中方 AI 模型估值锚点"
+    },
+    {
+      "label": "Goldman",
+      "value": "$13B ARR",
+      "sublabel": "高盛 8/4 上调中方 AI 收入 $11B→$13B ARR, DeepSeek V4 Flash 7.22T tokens/周"
+    }
+  ],
+  "main_facts": [
+    "per 财新 7/31 verbatim + 21财经 8/5 verbatim + 雅居股市 7/29 verbatim, 8/11 周一 09:30 长鑫 MSCI 正式纳入生效, 主力资金 500-1000 亿被动资金流入.",
+    "per techstartups 8/3 verbatim + digitalapplied 7/20 verbatim + AI 内参 7/13 verbatim, 8/11 Mythos framework 周一学术回归 + Fable 5 切计费 5+ 天 developer impact.",
+    "per BLS verbatim + Reuters 8/8 verbatim + Cleveland Fed verbatim, 8/12 周二 20:30 CST US CPI release, consensus 2.9% YoY, 中方 AI 模型估值锚点.",
+    "per SCMP 8/5 verbatim + futunn 8/5 verbatim + OpenRouter Rankings verbatim, Goldman Sachs 8/4 ARR 上调 130 亿美元, DeepSeek V4 Flash 7.22T tokens/周.",
+    "per SSE.com.cn verbatim + sse.com.cn 周末休市安排 verbatim, 8/10 周末夜段 9h + 8/11 早 6h 共 15h 真空收口, 实战段延后至 8/11 周一 09:30 双市场开盘.",
+    "per OpenRouter Rankings verbatim + Reddit LocalLLaMA verbatim + CGTN 8/7 verbatim, OpenRouter 8/9 rank 中方模型 top5, DeepSeek V4 Flash 0731 + Hy3 by tencent 包揽前三.",
+    "per openai.com 8/6 verbatim + Sam Altman verbatim, OpenAI + Broadcom 10 GW 战略合作续 baseline, 美方算力第二战线独立化.",
+    "per 8/10 晚报 baseline 77 verbatim preserved, 8/11 港股 双雄 智谱 + MiniMax 8/11 实战段续 baseline, Goldman ARR 上调 MiniMax 800 港元目标价."
+  ],
+  "not_picked": [
+    "8/11 港股 双雄 8/11 实战段 — 续 baseline, 跟 MSCI 实战段拼图但单独 1 件不够 (per 不变量 #1 + 8/10 晚报 baseline 77 已写 港股双雄).",
+    "xAI Grok 4.6/4.7 target ship date 8/7 实战段 — 续 baseline, 但 美方 周一 PT close 实战段 更值得 (8/12 CPI T-1 + Goldman ARR).",
+    "NVIDIA Actuate 26 8/18-19 SF 准备 commit — T+7 倒数, 8/18 才到, 跟周一开市 MSCI 实战段 不拼图."
+  ],
+  "say_4": [
+    "周一三件齐发: MSCI 9:30 + Mythos 回归 + 8/12 CPI.",
+    "长鑫 MSCI 500-1000 亿被动流入, 中方队 实战收口.",
+    "Mythos 周一回归 = Anthropic 学术 session, Fable 5 实战段续.",
+    "8/12 CPI T-1 = 中方 AI 估值锚点, consensus 2.9%."
+  ],
+  "raw_md_url": "raw/2026-08-11-morning.md"
+}
