@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-08-12",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "8/12 CPI 90 分钟后炸场 + 美方周一微跌 0.1%",
+    "headline_alt": "8/12 CPI T-0 倒数 + 美方周一微跌 + 中美 AI 估值锚点第四层",
+    "meta_description": "Una 主编 cron 第九十五期 8/12 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 8/12 US CPI 7 月 release 8:30 ET 倒数 90 分钟 · consensus 2.9% YoY + 8/11 美方三大指数全微跌 + 中美 AI 估值锚点跨主轴第四层.",
+    "html_url": "daily/2026-08/2026-08-12-morning/",
+    "url": "daily/2026-08/2026-08-12-morning/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 81,
+    "relay": 72,
+    "patch_header_pitfall": "Pitfall 49 新一天 第一期 cron 加新维度 工作流 per v0.8.7 实测补 + 跨 day 边界 标志 (vs 8/11 早 cron 24h 标志) per v0.8.18 实测补"
+  },
+  {
     "date": "2026-08-11",
     "slot": "21evening",
     "type": "21evening",
