@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-12",
+  "type": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21",
+  "patch_header_pitfall": "Pitfall 49 新一天 第一期 cron 加新维度 工作流 per v0.8.7 实测补 + 跨 day 边界 标志 (vs 8/11 早 cron 24h 标志) per v0.8.18 实测补",
+  "baseline": 81,
+  "relay": 72,
+  "narrative_count": 95,
+  "title": "8/12 CPI 90 分钟后炸场 · 美方周一微跌 0.1%",
+  "dek": "8/12 美方 7 月 CPI release 8:30 ET 倒数 90 分钟. consensus 2.9% YoY (vs 6 月 2.7%); 8/11 美方三大微跌; 中美 AI 估值锚点第四层 测.",
+  "hero_meta_short": "Una 选: 8/12 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 8/12 CPI T-0 倒数 + 美方周一微跌 + 中美 AI 估值锚点跨主轴第四层.",
+  "meta_description": "Una 主编 cron 第九十五期 8/12 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 8/12 US CPI 7 月 release 8:30 ET 倒数 90 分钟 · consensus 2.9% YoY + 8/11 美方三大指数全微跌 + 中美 AI 估值锚点跨主轴第四层.",
+  "why_this": "8/12 CPI 90 分钟后炸场. consensus 2.9% YoY (vs 6 月 -0.4% 通缩), 测 7 月是不是反弹 +0.2pp. 7 月非农 -23K 后 9 月加息概率 55%→42%. 中美 AI 估值锚点第四层: 体系 vs 模型 定价分裂测.",
+  "main_h2": "8/12 CPI T-0 倒数 90 分钟 + 美方周一微跌 + 估值锚点第四层",
+  "pick_points": [
+    {
+      "num": "8:30 ET",
+      "label": "CPI release",
+      "value": "8:30 ET",
+      "sublabel": "8/12 20:30 CST · 距 master 07:00 = 1.5h pre-release · 不能写实测段 per Pitfall 42"
+    },
+    {
+      "num": "2.9%",
+      "label": "consensus CPI YoY",
+      "value": "2.9%",
+      "sublabel": "7 月 consensus 2.9% (vs 6 月 2.7% +0.2pp, 6 月 -0.4% 通缩) · Fed 9 月 加息概率 42%"
+    },
+    {
+      "num": "-0.1%",
+      "label": "Dow 8/11 close",
+      "value": "-0.1% 53,975.98",
+      "sublabel": "Nasdaq 26,605.36 -0.3% + S&P 8/10 7,753.11 -0.06% · 美方周一 三大 微跌"
+    },
+    {
+      "num": "$13B",
+      "label": "Goldman 中国 AI ARR",
+      "value": "$13B ARR",
+      "sublabel": "Goldman 8/4 中国 AI 收入预测上调 · 摩根大通 PE 30→20 baseline 第 34 子轴 跨月延续"
+    }
+  ],
+  "main_facts": [
+    "> 8/12 US CPI release: per BLS verbatim \"The Consumer Price Index news release for July 2026 is scheduled to be published on Wednesday, August 12, 2026, at 8:30 a.m. (ET)\" — 距 master 07:00 CST 1.5h pre-release, 不能写实测段 per Pitfall 42.",
+    "> Reuters 8/8 verbatim: \"Tuesday's CPI report is expected to show inflation ticked up to 2.9% from 2.7%\". Cleveland Fed verbatim: \"10-year expected inflation 2.43%. Next update August 12\".",
+    "> Zacks 8/11 verbatim: \"The Dow Jones Industrial Average fell 0.1%, or 60.95 points, to close at 53,975.98. The tech-heavy Nasdaq Composite declined 0.3%, to close at 26,605.36\".",
+    "> Yahoo Finance verbatim: \"S&P 500 Aug 10, 2026 close 7,753.11 -4.53 (-0.06%). Aug 7, 2026 7,757.64\" — 美方 8/7 + 8/10 周末 实际 微跌 段, 跟 raw 里 7572.40 (8/8 close) 不同源, fact-check fix.",
+    "> 东方财富 8/9 verbatim: \"美国6月PCE物价指数同比上升3.7%, 预期3.7%...9月加息概率骤降\" — 7 月非农 -23K 后 9 月加息概率从 55% 跳水到 42%.",
+    "> Goldman Sachs 8/4 verbatim: \"Goldman's Asia Pacific internet team analyst Ronald Keung raised China AI revenue forecast $13B ARR\" — 中美 AI 估值锚点体系层 vs 模型层 定价分裂 测.",
+    "> 摩根大通 7/22 baseline 第 34 子轴 verbatim: 大模型行业 长期估值框架 PE 30→20, P/ARR 30% 折让 — MiniMax 目标价 240→160 -33% (跨月延续 verbatim preserved, 8/12 早 = 第 95 期 cron)."
+  ],
+  "not_picked": [
+    "<strong>港股双雄持续大涨</strong> — 智谱 2513.HK / MiniMax 0100.HK 8/11 close 续 baseline, vs 8/11 晚报 baseline 80 同主轴 dilution (per Pitfall 17), drop, 但 verbatim preserved.",
+    "<strong>Fable 5 切计费 6+ 天 developer impact</strong> — 持续性 narrative 不算今天新 dim, drop, verbatim preserved 在 raw [13].",
+    "<strong>长鑫 MSCI -1.75% 利好兑现</strong> — 8/11 实战段 已 capture 在 8/11 晚报 baseline 80, drop 同主轴 dilution."
+  ],
+  "say_4": [
+    "CPI 90 分钟后炸场, 2.9% vs 6 月 -0.4% 通缩.",
+    "美方周一三大微跌, Dow -0.1% / Nasdaq -0.3%.",
+    "估值锚点第四层: 体系层 vs 模型层 定价分裂.",
+    "CPI 决定 9 月加息窗口 = 中方流动性锚."
+  ]
+}

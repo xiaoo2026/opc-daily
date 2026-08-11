@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-08-12 · 早报</title>
+  <meta name="description" content="Una 选: 8/12 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 8/12 CPI T-0 倒数 + 美方周一微跌 + 中美 AI 估值锚点跨主轴第四层. · 8/12 CPI 90 分钟后炸场 · 美方周一微跌 0.1%">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">早报 · 07:00</span>
+        <span class="when">Una 选: 8/12 早报. 新一天 第一期 cron 加新维度 per Pitfall 49. 8/12 CPI T-0 倒数 + 美方周一微跌 + 中美 AI 估值锚点跨主轴第四层.</span>
+      </div>
+      <h1>8/12 CPI 90 分钟后炸场 · 美方周一微跌 0.1%</h1>
+      <p class="dek">8/12 美方 7 月 CPI release 8:30 ET 倒数 90 分钟. consensus 2.9% YoY (vs 6 月 2.7%); 8/11 美方三大微跌; 中美 AI 估值锚点第四层 测.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>8/12 CPI 90 分钟后炸场. consensus 2.9% YoY (vs 6 月 -0.4% 通缩). 测 7 月是不是反弹 +0.2pp. 7 月非农 -23K 后 9 月加息概率 55%→42%. 中美 AI 估值锚点第四层: 体系 vs 模型 定价分裂测.</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">8:30 ET</div>
+        <div class="label">CPI release</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">2.9%</div>
+        <div class="label">consensus CPI YoY</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">-0.1% 53,975.98</div>
+        <div class="label">Dow 8/11 close</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">$13B ARR</div>
+        <div class="label">Goldman 中国 AI ARR</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>8/12 CPI T-0 倒数 90 分钟 + 美方周一微跌 + 估值锚点第四层</h2>
+        <blockquote><em>8/12 US CPI release: per BLS verbatim "The Consumer Price Index news release for July 2026 is scheduled to be published on Wednesday, August 12, 2026, at 8:30 a.m. (ET)"  ·  距 master 07:00 CST 1.5h pre-release. 不能写实测段 per Pitfall 42.</em></blockquote>
+        <blockquote><em>Reuters 8/8 verbatim: "Tuesday's CPI report is expected to show inflation ticked up to 2.9% from 2.7%". Cleveland Fed verbatim: "10-year expected inflation 2.43%. Next update August 12".</em></blockquote>
+        <blockquote><em>Zacks 8/11 verbatim: "The Dow Jones Industrial Average fell 0.1%, or 60.95 points, to close at 53,975.98. The tech-heavy Nasdaq Composite declined 0.3%, to close at 26,605.36".</em></blockquote>
+        <blockquote><em>Yahoo Finance verbatim: "S&P 500 Aug 10, 2026 close 7,753.11 -4.53 (-0.06%). Aug 7, 2026 7,757.64"  ·  美方 8/7 + 8/10 周末 实际 微跌 段. 跟 raw 里 7572.40 (8/8 close) 不同源, fact-check fix.</em></blockquote>
+        <blockquote><em>东方财富 8/9 verbatim: "美国6月PCE物价指数同比上升3.7%. 预期3.7%...9月加息概率骤降"  ·  7 月非农 -23K 后 9 月加息概率从 55% 跳水到 42%.</em></blockquote>
+        <blockquote><em>Goldman Sachs 8/4 verbatim: "Goldman's Asia Pacific internet team analyst Ronald Keung raised China AI revenue forecast $13B ARR"  ·  中美 AI 估值锚点体系层 vs 模型层 定价分裂 测.</em></blockquote>
+        <blockquote><em>摩根大通 7/22 baseline 第 34 子轴 verbatim: 大模型行业 长期估值框架 PE 30→20, P/ARR 30% 折让  ·  MiniMax 目标价 240→160 -33% (跨月延续 verbatim preserved, 8/12 早 = 第 95 期 cron).</em></blockquote>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它</h3>
+      <ul>
+          <li><strong>港股双雄持续大涨</strong>  ·  智谱 2513.HK / MiniMax 0100.HK 8/11 close 续 baseline, vs 8/11 晚报 baseline 80 同主轴 dilution (per Pitfall 17), drop. 但 verbatim preserved.</li>
+          <li><strong>Fable 5 切计费 6+ 天 developer impact</strong>  ·  持续性 narrative 不算今天新 dim, drop, verbatim preserved 在 raw [13].</li>
+          <li><strong>长鑫 MSCI -1.75% 利好兑现</strong>  ·  8/11 实战段 已 capture 在 8/11 晚报 baseline 80, drop 同主轴 dilution.</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>CPI 90 分钟后炸场, 2.9% vs 6 月 -0.4% 通缩.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>美方周一三大微跌, Dow -0.1% / Nasdaq -0.3%.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>估值锚点第四层: 体系层 vs 模型层 定价分裂.</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>CPI 决定 9 月加息窗口 = 中方流动性锚.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 早报 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-08-12 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
