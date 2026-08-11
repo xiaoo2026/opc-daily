@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-11",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "slot_label": "晚报",
+  "stage": 2,
+  "version": "0.8.21",
+  "author": "Una <una@leftink.local>",
+  "skill_version": "0.8.21",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 + Pitfall 53 跨 day 边界 标志 (vs 8/10 晚报24h 标志) per v0.8.18 实测补",
+  "baseline": 80,
+  "relay": 71,
+  "narrative_count": 94,
+  "title": "周一全市场收口 + MSCI 兑现",
+  "dek": "8/11 周一全市场实战段收口 — 沪指 -0.82% 3934.09 + 长鑫 MSCI -1.75% 利好兑现 + 港股双雄持续大涨 + 8/12 CPI T-0 中方 AI 估值锚点倒数.",
+  "hero_meta_short": "Una 选: 8/11 晚报. 同 day 第三期 cron 加新维度 per Pitfall 46 + 53 跨 day 边界 标志. 周一全市场实战段收口 + MSCI 利好兑现 + 8/12 CPI T-0 倒数.",
+  "meta_description": "Una 主编 cron 第九十四期 8/11 晚报. 同 day 第三期 cron 加新维度 per Pitfall 46 + 53. 周一全市场实战段收口 + 沪指 -0.82% 3934.09 + 长鑫 MSCI -1.75% 利好兑现 + 港股双雄持续大涨 + 8/12 CPI T-0 中方 AI 估值锚点倒数.",
+  "why_this": "8/11 周一全市场实战段收口: 中方一日分化 — 沪指 -0.82% + 长鑫 MSCI -1.75% 利好兑现 + 港股双雄持续大涨; 美方 8/7 PT 三层新高 + 8/12 CPI T-0 倒数. 一日 1 件, 中美 AI 双轨收口段.",
+  "main_h2": "8/11 周一全市场收口 + MSCI 兑现 + 港股双雄涨",
+  "pick_points": [
+    {
+      "num": "3934.09",
+      "label": "沪指",
+      "value": "-0.82% 3934.09",
+      "sublabel": "8/11 沪指 close -0.82% 3934.09 = MSCI 利好兑现 + 8/12 CPI 担忧 + 周末调整"
+    },
+    {
+      "num": "-1.75%",
+      "label": "长鑫 MSCI",
+      "value": "-1.75% 利好兑现",
+      "sublabel": "8/11 长鑫 -1.75% = 9:30 正式纳入生效 + 主力资金 500-1000 亿被动流入 + 涨幅透支前期"
+    },
+    {
+      "num": "续涨",
+      "label": "港股双雄",
+      "value": "持续大涨",
+      "sublabel": "智谱 8/7 close 1246 +14.63% + MiniMax 8/7 close 326.40 +9.83% + 入通资金共振 + DeepSeek 涨价 + Goldman ARR $13B"
+    },
+    {
+      "num": "T-0",
+      "label": "8/12 CPI",
+      "value": "T-0 倒数",
+      "sublabel": "8/12 周二 20:30 CST release, consensus 2.9% YoY, 中方 AI 模型估值锚点"
+    }
+  ],
+  "main_facts": [
+    "per 新浪财经 8/11 15:35 verbatim + 8/11 周一全市场 close 实战段, 8/11 沪指 close -0.82% 3934.09 (昨收 3966.59 量 5.29亿 额 1.07万亿 涨 655 跌 1513), 长鑫 -1.75% = MSCI 利好兑现.",
+    "per 商途观察窗 8/8 verbatim + 新浪财经 8/7 verbatim + 东方财富 verbatim, 8/11 港股 close 实战段: 大模型双雄智谱 + MiniMax 持续大涨, DeepSeek 涨价 + 高盛上调中国 AI 收入 $13B ARR + MiniMax 8/6 纳入港股通 资金面共振.",
+    "per BLS verbatim + Reuters 8/8 verbatim + Cleveland Fed verbatim + Trading Economics verbatim, 8/12 周二 20:30 CST US CPI release T-0 倒数实战段续, consensus 2.9% YoY (vs 7 月 2.7%), 中方 AI 模型估值锚点.",
+    "per SCMP 8/5 verbatim + futunn 8/5 verbatim + OpenRouter Rankings verbatim, Goldman Sachs 8/4 ARR 上调 130 亿美元, DeepSeek V4 Flash 7.22T tokens/周 + OpenRouter 8/9 rank 中方模型 top5 续.",
+    "per 新浪财经 8/11 沪指 + 8/11 长鑫 + 港股 双雄 close + 8/9 US -23K jobs 周末夜段反应 + Fed 9月加息概率 55→42% 跳水 续, 8/11 周一全市场实战段收口 — 中方一日分化 + 美方 8/7 PT 三层新高 + 加息预期跳水.",
+    "per OpenRouter Rankings verbatim + Reddit LocalLLaMA verbatim + CGTN 8/7 verbatim, OpenRouter 8/9 rank 中方模型 top5, DeepSeek V4 Flash 0731 + Hy3 by tencent 包揽前三 + DeepSeek 17.6% 占 OpenRouter 平台.",
+    "per openai.com 8/6 verbatim + Sam Altman verbatim, OpenAI + Broadcom 10 GW 战略合作续 baseline, 美方算力第二战线独立化.",
+    "per 8/11 早 cron baseline 78 verbatim preserved + 8/11 晚报 baseline 80 verbatim preserved, 8/11 周一全市场实战段收口 — MSCI 实战 + Mythos 回归 + 8/12 CPI T-0 倒数 三段拼图完整."
+  ],
+  "not_picked": [
+    "8/11 港股 双雄 8/11 实战段 — 续 baseline, 跟 MSCI 实战段拼图但单独 1 件不够 (per 不变量 #1 + 8/10 晚报 baseline 77 已写 港股双雄).",
+    "8/11 沪指 close 实战段 — 单独 1 件不够, 跟 MSCI 实战段 利好兑现拼图 = 收口段.",
+    "NVIDIA Actuate 26 8/18-19 SF 准备 commit — T+7 倒数, 8/18 才到, 跟周一全市场实战段收口 不拼图."
+  ],
+  "say_4": [
+    "周一全市场实战收口 + MSCI 利好兑现 + 8/12 CPI T-0.",
+    "沪指 -0.82% 3934.09 + 长鑫 -1.75%, 中方一日分化.",
+    "港股双雄持续大涨 + DeepSeek 涨价 + Goldman $13B ARR.",
+    "8/12 CPI T-0 = 中方 AI 估值锚点, consensus 2.9%."
+  ],
+  "raw_md_url": "raw/2026-08-11-21evening.md"
+}
