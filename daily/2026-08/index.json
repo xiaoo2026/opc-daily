@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-13",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "8/13 早 CPI 24h 后续 + Fed 跳水 + 港股通估值重塑",
+    "headline_alt": "8/12 CPI 3.4% 24h 后续实战续段 + Fed 9 月加息 50→43% 跳水 + JACKSON HOLE 8/22 序幕 + 8/13 早 IPC 真空段",
+    "html_url": "daily/2026-08/2026-08-13-morning/",
+    "baseline": 84,
+    "relay": 75,
+    "narrative_count": 98,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流"
+  },
+  {
     "date": "2026-08-12",
     "slot": "21evening",
     "type": "21evening",
