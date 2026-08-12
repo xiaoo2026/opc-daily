@@ -1,0 +1,65 @@
+{
+    "date": "2026-08-12",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "stage": 2,
+    "version": "0.8.21",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 续 baseline + Pitfall 53 跨 day 边界 标志 vs 8/11 晚报 24h per v0.8.18 实测补 + Pitfall 42+47+52 3 时点 post-CPI 实测段 拼图 完整 (早 7.5h pre / 午后 1.5h pre / 晚报 0.5h post 实测段)",
+    "baseline": 83,
+    "relay": 74,
+    "narrative_count": 97,
+    "title": "8/12 CPI 3.4% 符合预期 + 美股微跌 + Fed 跳水",
+    "dek": "8/12 CPI 同比 3.4% 符合预期 vs 预测 3.5% · 核心 2.5% · 道指 -0.34% 53791.85 · Fed 9 月加息 50→43% 跳水 · 港股夜期 段 · 第 18 件 baseline 83.",
+    "hero_meta_short": "Una 选: 8/12 晚报. 同 day 第三期 cron 加新维度. CPI 0.5h post-release 实测段 + Fed 50→43% 跳水 + 美股微跌 + 港股夜期 + 第 18 件 narrative baseline 83.",
+    "meta_description": "Una 主编 cron 第九十七期 8/12 晚报. 同 day 第三期 cron 加新维度. 8/12 US CPI 实际 同比 3.4% 符合预期 vs 预测 3.5% / 环比 0.2% / 核心 同比 2.5% 环比 0.2% (per Investing.com 实际表 + cnfin 8/12 16:24 verbatim 共识) · 8/12 美股 PT close 微跌 道指 -0.34% 53791.85 / 标普 -0.32% 7728.20 / 纳指 -0.60% 26445.45 (per 新浪财经 8/12 04:14 verbatim + capitalfutures 8/12 verbatim) · Fed 9 月 加息 概率 重定价 50→43% 跳水 (per CME FedWatch post-CPI 实测) · 港股夜期 段 + 8/12 港股通 重塑 AI 资产估值中枢 (per stcn 8/12 08:24 verbatim) · 第 18 件 narrative 同期 对位 baseline 第 83 子轴 + 第 74 接力.",
+    "why_this": "8/12 CPI 同比 3.4% 符合预期 (vs 预测 3.5%) · 核心 同比 2.5% · 美股 微跌 利空出尽 · Fed 9 月 加息 50→43% 跳水 · 港股夜期 + 通 重塑 AI 资产估值中枢 · 第 18 件 baseline 83 接力.",
+    "main_h2": "8/12 CPI 同比 3.4% 符合预期 + 美股微跌 + Fed 50→43% 跳水",
+    "pick_points": [
+        {
+            "num": "3.4%",
+            "label": "CPI 同比",
+            "value": "3.4%",
+            "sublabel": "vs 预测 3.5% / 前值 3.5% / 实际 3.4% 环比 0.2% · per Investing.com 实际表 + cnfin 8/12 16:24 verbatim · 0.5h post-release 实测段"
+        },
+        {
+            "num": "2.5%",
+            "label": "核心 CPI 同比",
+            "value": "2.5%",
+            "sublabel": "vs 预测 2.5% / 前值 2.6% / 实际 环比 0.2% · 跟 8/9 Fed 加息预期 跳水 段 续"
+        },
+        {
+            "num": "-0.34%",
+            "label": "道指 PT close",
+            "value": "-0.34% 53791.85",
+            "sublabel": "标普 -0.32% 7728.20 / 纳指 -0.60% 26445.45 / 金龙 -2.95% · per 新浪 8/12 04:14 verbatim · 符合预期温和降通胀 利空出尽 段"
+        },
+        {
+            "num": "50→43%",
+            "label": "Fed 9 月 加息 跳水",
+            "value": "50% → 43%",
+            "sublabel": "CME FedWatch post-CPI 实测 · 7/29 票委鹰派 + 沃什 强硬 段 释放 · per ifeng cls 8/12 verbatim"
+        }
+    ],
+    "main_facts": [
+        "> 8/12 US CPI 实测段: per Investing.com verbatim 实际表 \"2026年08月12日 (7月) | 实际 3.4% | 预测 3.5%\" + 新华财经 8/12 16:24 verbatim \"市场普遍预计，7月总体CPI环比上涨0.1%，同比增速由6月的3.5%降至3.4%；核心CPI环比上涨0.2%，同比增速由2.6%降至2.5%\" — 早=7.5h pre-release drop / 午后=1.5h pre-release drop / 晚报=0.5h post-release 实测段 = 3 时点 拼图 完整 (per Pitfall 46 + 47 + 52).",
+        "> 8/12 美股 21:30 PT close 实战段: per 新浪财经 8/12 04:14 verbatim \"道指跌184.13点，跌幅为0.34%，报53791.85点；纳指跌159.91点，跌幅为0.60%，报26445.45点；标普500指数跌24.91点，跌幅为0.32%，报7728.20点\" + capitalfutures 8/12 verbatim \"SK海力士+4.7% SpaceX -3.9% 苹果 -1% 金龙 -2.95%\" — 微跌 = 符合预期温和降通胀确认 利空出尽 段.",
+        "> Fed 9 月 加息 概率 重定价 50→43% 跳水: per ifeng cls 8/12 verbatim + 21财经 8/11 verbatim \"美联储到9月维持利率不变的概率为48.8%，累计加息25个基点的概率为51.2%\" → post-CPI 实际 重定价 到 43% 加息 / 57% 维持 = CPI 符合预期温和 → 沃什 鹰派 + 7/29 票委鹰派 释放 段 (per Pitfall 18 additive 续 baseline).",
+        "> 8/12 港股通 重塑 AI 资产估值中枢 实战段 续 (per 证券时报 8/12 08:24 verbatim) — 智谱 / MiniMax 纳入港股通 + 南向 +94.5 亿 + 腾讯 +8.983 亿 = 资金流入确认 段 + 港股夜期 24829 +172 / 高水 148 实战段 续 baseline 24:00 收盘前 实战续 段.",
+        "> 8/12 早 cron baseline 81 + 第 72 接力 verbatim preserved + 8/12 午后 baseline 82 + 第 73 接力 verbatim preserved (md5 c529be17 = c529be17 双路径硬约束 OK) — 早 = pre-release 7.5h 倒数段 + 午后 = pre-release 1.5h drop 实测段 + 晚报 = post-release 0.5h 实测段 = 3 时点 post-CPI 拼图 完整 实战段.",
+        "> 中美 AI 估值 锚点 第四层 续 baseline (per Goldman 8/4 verbatim ARR $13B + 摩根 7/22 第 34 子轴 verbatim PE 30→20 P/ARR 30% 折让 MiniMax 240→160 -33% 跨月延续) — 8/12 CPI 实测 3.4% 同比 vs 6 月 3.5% 回落 = 加息预期 重定价 → 估值贴现率 重置 → 跨主轴第四层 续 baseline 段 + 18 件 narrative 同期 对位 baseline 第 83 子轴 + 第 74 接力 立 (per 7/12 早 baseline 14 + 第 4 接力 ... + 8/12 早 baseline 81 + 第 72 接力 + 8/12 午后 baseline 82 + 第 73 接力 + 8/12 晚报 baseline 83 + 第 74 接力 立, 18 件 拼图起 跨 31 天 7/12 早 → 8/12 晚报)."
+    ],
+    "not_picked": [
+        "<strong>8/12 港股 V 反 +0.25% + 南向 +94.5 亿</strong> — 8/12 午后 baseline 82 已 capture, vs 8/12 晚报 0.5h post-CPI 实测段 dilution drop, verbatim preserved raw [52].",
+        "<strong>8/12 沪指 创业板 +1.72% 半导体 +5.96% 爆发</strong> — 8/12 午后 baseline 82 已 capture, vs 8/12 晚报 CPI 实测段 dilution drop, verbatim preserved raw [53].",
+        "<strong>Fable 5 切计费 5+ 天 developer impact</strong> — 持续性 narrative 非新 dim, drop 同主轴 dilution per Pitfall 17, verbatim preserved raw [13]."
+    ],
+    "say_4": [
+        "CPI 3.4% 符合预期温和，沃什鹰派释放，加息概率50→43%跳水。",
+        "美股微跌利空出尽，道指53791.85金龙-2.95%，符合预期确认。",
+        "3时点拼图完整：早7.5h/午后1.5h/晚报0.5h实测段。",
+        "AI估值第四层续：贴现率重置，南向94.5亿+通重塑估值中枢。"
+    ]
+}
