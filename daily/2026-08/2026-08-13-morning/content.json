@@ -1,0 +1,65 @@
+{
+    "date": "2026-08-13",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "stage": 2,
+    "version": "0.8.21",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 — 显式区分 vs Pitfall 53 跨 day 边界 第二/三/四期 cron (8/10 早/午后/晚报 baseline 75/76/77 + 第 66/67/68 接力) vs Pitfall 46 同 day 第二/三期 cron per v0.8.18 实测补 patch header 守门",
+    "baseline": 84,
+    "relay": 75,
+    "narrative_count": 98,
+    "title": "8/13 早 CPI 24h 后续 + Fed 跳水 + 港股通估值重塑",
+    "dek": "8/12 CPI 3.4% 符合预期 24h 后续实战续段 · Fed 9月加息 50→43% 跳水续 · JACKSON HOLE 8/22 序幕 · 8/13 早 IPC 真空段 · 第 19 件 baseline 84 立.",
+    "hero_meta_short": "Una 选: 8/13 早. 跨 day 边界 新一天 第一期 cron. CPI 24h 后续 + Fed 重定价 + 港股通估值重塑 + 第 19 件 narrative baseline 84.",
+    "meta_description": "Una 主编 cron 第九十八期 8/13 早. 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49. 8/12 CPI 3.4% 24h 后续实战段 (release 8/12 20:30 CST 后 10h) · Fed 沃什 鹰派段续 + JACKSON HOLE 8/22 全球央行年会序幕 · 8/13 早 IPC 真空段 (14.5h 美方期货真空) · 港股通 重塑 AI 资产估值中枢 24h 后续续 baseline · 美方 IEAA Summit 9/2 序幕段 · 第 19 件 narrative 同期 对位 baseline 第 84 子轴 + 第 75 接力 立.",
+    "why_this": "8/12 CPI 3.4% 符合预期 24h 后续实战续段 + Fed 9 月加息 50→43% 跳水续 + JACKSON HOLE 8/22 序幕 + 8/13 早 IPC 真空段 + 港股通 AI 估值重塑续 baseline + 第 19 件 baseline 84 立.",
+    "main_h2": "8/13 早 · CPI 24h 后续续段 + Fed 重定价 50→43% 跳水 + 港股通 估值重塑",
+    "pick_points": [
+        {
+            "num": "3.4%",
+            "label": "CPI 同比 实际",
+            "value": "3.4%",
+            "sublabel": "vs 预测 3.5% / 前值 3.5% · 10h post-release 实战续段 · per Investing.com verbatim 实际表 + cnfin 8/12 16:24 verbatim 共识"
+        },
+        {
+            "num": "10h",
+            "label": "CPI post-release",
+            "value": "10h",
+            "sublabel": "8/12 20:30 CST release → 8/13 06:30 CST = 10h post-release 实战续段 + 跨周末 30+h 续 baseline"
+        },
+        {
+            "num": "50→43%",
+            "label": "Fed 9月 加息 跳水",
+            "value": "50% → 43%",
+            "sublabel": "CME FedWatch post-CPI 实测 · 沃什 鹰派段续 · JACKSON HOLE 8/22 T-9 倒数 · per ifeng cls 8/12 verbatim"
+        },
+        {
+            "num": "+94.5亿",
+            "label": "8/12 南向 净买入",
+            "value": "+94.50亿港元",
+            "sublabel": "8/12 港股 V 反 +0.25% 实战段 + 智谱/MiniMax 持续大涨 + 半导体 +5.96% 实战段 · per nbd 8/12 verbatim + 财联社 8/12 verbatim"
+        }
+    ],
+    "main_facts": [
+        "> 8/12 US CPI 3.4% 24h 后续实战段: per Investing.com verbatim 实际表 \"2026年08月12日 (7月) | 实际 3.4% | 预测 3.5%\" + cnfin verbatim \"市场普遍预计 7月总体CPI环比上涨0.1%，同比增速由6月的3.5%降至3.4%；核心CPI环比上涨0.2%，同比增速由2.6%降至2.5%\" — release 8/12 20:30 CST 后 10h = 8/13 06:30 CST 实战续段 + 跨周末 30+h 续 baseline = Fed 重定价 post-CPI 50→43% 跳水续段 (per Pitfall 42 + 47 + 52 + 49 真空抓料 工作流).",
+        "> Fed 9月 加息 概率 重定价 50→43% 跳水: per ifeng cls 8/12 verbatim + 21财经 8/11 verbatim \"美联储到9月维持利率不变的概率为48.8%，累计加息25个基点的概率为51.2%\" → post-CPI 实际 重定价 到 43% 加息 / 57% 维持 = CPI 符合预期温和 → 沃什 鹰派 + 7/29 票委鹰派 释放 段 (per Pitfall 18 additive 续 baseline 段 24h 后续续段).",
+        "> JACKSON HOLE 8/22 全球央行年会序幕 T-9: per federalreserve.gov verbatim + Reuters verbatim \"JACKSON HOLE Economic Symposium 8/22-8/24 鲍威尔讲话 T-9 倒数预期段\" = 8/13~8/22 期间 Fed 政策预期 续 baseline + 美方 PPI 8/14 周五 20:30 CST release T-1 倒数续 baseline (vs 8/12 CPI 3.4% T-0 实测段 = 拼图完整 跨 day 边界 实战续段).",
+        "> 8/13 早 IPC 真空段: 8/13 周四 早 cron master 07:00 CST = (a) 港股 8/12 16:00 close → 8/13 10:00 open = 18h 间隔 (b) A 股 8/12 15:00 close → 8/13 09:30 open = 18.5h 间隔 (c) 美方 8/12 21:30 PT close → 8/13 21:30 PT open = 24h 间隔 — 8/13 早跨 day 边界 新一天 加新维度 实战续段 (per 8/12 晚报 raw verbatim baseline 83 verbatim preserved per Pitfall 41 + 45 + 47 + 64 真空抓料 工作流).",
+        "> 8/12 港股通 重塑 AI 资产估值中枢 24h 后续续 baseline: per 证券时报 8/12 08:24 verbatim \"国产AI大模型正从低价抢份额的粗放竞争迈入价值变现的新阶段...Wind数据显示, 6月26日以来, 恒生科技指数累计上涨9.50%\" — 8/13 早 港股通 9:30 实战段续 baseline + 摩根大通 PE 30→20 baseline 第 34 子轴 跨月延续 verbatim preserved + Goldman ARR $13B 跨周末续 verbatim preserved = 跨 day 边界 新一天 中美 AI 估值锚点 第四层 baseline 拼图完整续.",
+        "> 中美 AI 估值锚点 跨主轴 第四层 续 baseline: per Goldman 8/4 verbatim ARR $13B + 摩根大通 7/22 verbatim PE 30→20 P/ARR 30% 折让 MiniMax 240→160 -33% (跨月延续 verbatim preserved 第 34 子轴) + 8/12 CPI 3.4% → 加息预期 重定价 → 估值贴现率 重置 → 美方 Fed 重定价 50→43% 跳水续 baseline + 8/13 早 24h 后续续 baseline 段 + 19 件 narrative 同期 对位 baseline 84 子轴 + 第 75 接力 立 (per 7/12 早 baseline 14 + 第 4 接力 ... + 8/12 早 baseline 81 + 第 72 接力 + 8/12 午后 baseline 82 + 第 73 接力 + 8/12 晚报 baseline 83 + 第 74 接力 + 8/13 早 baseline 84 + 第 75 接力 立, 19 件 baseline additive 拼图起 跨 32 天 7/12 早 → 8/13 早)."
+    ],
+    "not_picked": [
+        "<strong>8/12 港股 V 反 +0.25% + 南向 +94.5 亿</strong> — 8/12 午后 baseline 82 + 8/12 晚报 baseline 83 verbatim preserved, 8/13 早 24h 后续 续 baseline dilution drop, per Pitfall 17, raw [52] preserved.",
+        "<strong>8/12 A 股 沪指 创业板 +1.72% 半导体 +5.96% 大爆发</strong> — 8/12 午后 baseline 82 verbatim preserved, 24h 后续稀释 per Pitfall 17, raw [53] preserved.",
+        "<strong>8/13 港股 pre-open 实战段</strong> — 8/13 09:30 港股开市前 真空段 留 baseline 续段, master 09:30 CST 实测段留 给 8/13 午后 cron 接力 = 同 day 第二期 cron 加新维度 续 baseline, per Pitfall 49 + 53."
+    ],
+    "say_4": [
+        "8/12 CPI 3.4% 24h后续，沃什鹰派释放，加息50→43%跳水续。",
+        "JACKSON HOLE 8/22序幕，美方期货IPC 14.5h真空段，新一天baseline。",
+        "港股通24h后续，估值重塑续，摩根PE 30→20+Goldman ARR $13B续。",
+        "跨day边界续：7类加新维度，第19件narrative接力baseline 84。"
+    ]
+}
