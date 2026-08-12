@@ -1,0 +1,66 @@
+{
+    "date": "2026-08-12",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午后",
+    "stage": 2,
+    "version": "0.8.21",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 续 baseline + Pitfall 53 跨 day 边界 后续期 cron 加新维度 per v0.8.18 实测补",
+    "baseline": 82,
+    "relay": 73,
+    "narrative_count": 96,
+    "title": "8/12 港股 V 反 南向94.5亿",
+    "dek": "8/12 港股早 -0.6% 午收 +0.25% V 反 · 南向净买 94.5 亿 (腾讯 +8.98 亿 + 智谱 +2.39 亿) · 创业板 +1.72% 半导体 +5.96% · CPI T-0 7.5h pre",
+    "hero_meta_short": "Una 选: 8/12 午后. 同 day 第二期 cron 加新维度 续 baseline. 港股 V 反 + 南向 94.5 亿 + 半导体爆发 + CPI T-0 倒数 + 第 18 件 narrative baseline 82.",
+    "meta_description": "Una 主编 cron 第九十六期 8/12 午后. 同 day 第二期 cron 加新维度 续 baseline. 8/12 港股早 -0.6% 午收 +0.25% V 反 · 南向净买入 94.5 亿港元 (腾讯 +8.983 亿 + 智谱 +2.39 亿) · 创业板 +1.72% 半导体 +5.96% 爆发 · 8/12 CPI T-0 7.5h pre-release · 第 18 件 narrative 同期 对位 baseline 第 82 子轴 + 第 73 接力.",
+    "why_this": "8/12 港股 -0.6% 收 +0.25% V 反 · 南向 94.5 亿 (腾讯 +8.98 亿 + 智谱 +2.39 亿) · 8/11 恒指 -1.1% 反转 · 创业板 +1.72% 半导体 +5.96% (WF6+AI) · CPI 7.5h pre drop · Goldman $13B + 摩根 PE 30→20 · 18件 narrative 对位 baseline 82 接力.",
+    "main_h2": "8/12 港股 V 反 + 南向 94.5 亿 + 半导体爆发 + CPI T-0 倒数",
+    "pick_points": [
+        {
+            "num": "+0.25%",
+            "label": "恒指收盘 V 反",
+            "value": "+0.25%",
+            "sublabel": "早 -0.6% 25498.39 → 收 +0.25% V 反 · 跟 8/11 -1.1% 续 baseline · per nbd 8/12 + 智通 8/12 verbatim"
+        },
+        {
+            "num": "+94.5 亿",
+            "label": "南向净买入",
+            "value": "+94.50 亿港元",
+            "sublabel": "腾讯 +8.98 亿 + 智谱 +2.39 亿 + 中芯 +3.20 亿 · 港股通 AI 重塑 · per nbd cls 8/12 verbatim"
+        },
+        {
+            "num": "+5.96%",
+            "label": "半导体指数",
+            "value": "+5.96% 午盘",
+            "sublabel": "创业板 +1.72% 近 3000 只涨 · WF6 供需紧 + AI 存储扩产 · per cls 09:47 + wallstreetcn 8/12 verbatim"
+        },
+        {
+            "num": "7.5h",
+            "label": "CPI T-0 pre",
+            "value": "7.5h pre-release",
+            "sublabel": "BLS 8/12 20:30 CST release · master 13:00 = 7.5h gap drop 实测 per Pitfall 42"
+        }
+    ],
+    "main_facts": [
+        "> 8/12 港股 V 反: per 每日经济新闻 8/12 verbatim \"恒生指数上涨0.25% 南向净买入94.50亿港元...腾讯控股净买入8.983亿港元\" — 早 -0.6% 25498.39 (智通 8/12 verbatim) → 收 +0.25% = V 反. 8/11 恒指 -1.1% 恒科 -1.93% (同花顺 8/12 早报) → 8/12 实战段确认反转.",
+        "> 南向 +94.5 亿: per nbd 8/12 + cls 8/12 verbatim \"大幅净买入：华虹 +3.79 亿 中芯 +3.20 亿 智谱 +2.39 亿\" — 腾讯 +8.98 亿 + 智谱 +2.39 亿 + 中芯 +3.20 亿 = 港股通 AI 重塑核心信号.",
+        "> 8/12 A 股半导体爆发: per cls 8/12 09:47 verbatim \"创业板指涨逾1% 上涨个股近3000只...半导体芯片、算力硬件涨幅居前\" + wallstreetcn 8/12 verbatim \"半导体指数午盘涨5.96%...WF6 供需趋紧核心逻辑 AI 算力驱动存储扩产 国金证券: 国内钨原料出口管制 日本减产 全球供给缺口\" — 创业板 +1.72% 半导体 +5.96% 午盘爆发.",
+        "> 8/12 港股通 AI 估值重塑: per 证券时报 8/12 08:24 verbatim \"入通引活水 提价 多重因素叠加...港股AI板块估值逻辑由投入侧向产出侧切换...恒科累计上涨9.50%...港股通资金通道扩容 头部大模型释放提价信号 标志着国产AI大模型从低价抢份额迈入价值变现新阶段\".",
+        "> CPI T-0 7.5h pre-release: per BLS verbatim \"8/12 周三 8:30 ET = 20:30 CST\" — master 13:00 = 7.5h gap drop 实测 per Pitfall 42. Consensus 2.9% (Reuters 8/8 + Cleveland Fed 2.43%). 8/11 美方微跌: Dow -0.1% 53,975.98 / Nasdaq -0.3% 26,605.36 (Zacks 8/11 verbatim). 8/10 S&P 7,753.11 -0.06% (Yahoo Finance verbatim).",
+        "> 中美 AI 估值锚点第四层: Goldman 8/4 verbatim ARR $13B + 摩根 7/22 第 34 子轴 verbatim PE 30→20 P/ARR 30%折让 MiniMax 240→160 -33% (跨月延续). 8/12 早 baseline 81 + 第 72 接力 verbatim preserved (md5 d8c2ac73 = d8c2ac73 双路径硬约束 OK).",
+        "> 18 件 narrative 同期 对位 baseline 第 82 子轴 + 第 73 接力: 7/12 早 baseline 14 + 第 4 接力 ... + 8/12 早 baseline 81 + 第 72 接力 + 8/12 午后 baseline 82 + 第 73 接力. 18 件 拼图起 跨 31 天."
+    ],
+    "not_picked": [
+        "<strong>8/11 沪指 -0.82% + 长鑫 MSCI -1.75%</strong> — 8/11 晚报 baseline 80 已 capture, vs 8/12 午后 实战段 dilution drop, verbatim preserved raw [44][55].",
+        "<strong>Fable 5 切计费 5+ 天 developer impact</strong> — 持续性 narrative 非新 dim, drop 同主轴 dilution per Pitfall 17, verbatim preserved raw [13].",
+        "<strong>8/12 早 CPI T-0 倒数 + 美方周一微跌</strong> — 同 verbatim 续 baseline 段, main_facts [5] 跨 slot 引用合法 per 8a."
+    ],
+    "say_4": [
+        "港股早 -0.6% 收 +0.25% V 反，南向 +94.5 亿确认反转。",
+        "创业板 +1.72% 半导体 +5.96%，WF6 供需紧 + AI 存储扩产。",
+        "CPI T-0 7.5h 倒数，2.9% consensus vs 6 月 -0.4% 测反弹。",
+        "中美 AI 估值第四层：体系 PE 30→20 vs 模型分裂，南向投票。"
+    ]
+}
