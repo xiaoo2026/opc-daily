@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-12",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "8/12 CPI 3.4% 符合预期 + 美股微跌 + Fed 跳水",
+    "headline_alt": "8/12 CPI 同比 3.4% 符合预期 + 美股微跌 + Fed 50→43% 跳水",
+    "html_url": "daily/2026-08/2026-08-12-21evening/",
+    "baseline": 83,
+    "relay": 74,
+    "narrative_count": 97
+  },
+  {
+    "date": "2026-08-12",
     "slot": "afternoon",
     "type": "afternoon",
     "slot_hour": "13:00",
