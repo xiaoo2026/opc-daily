@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-12",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午后",
+    "title": "8/12 港股 V 反 南向94.5亿",
+    "headline_alt": "8/12 港股 V 反 +0.25% + 南向 94.5 亿 + 半导体爆发 + CPI T-0 倒数",
+    "html_url": "daily/2026-08/2026-08-12-afternoon/",
+    "baseline": 82,
+    "relay": 73,
+    "narrative_count": 96
+  },
+  {
+    "date": "2026-08-12",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
