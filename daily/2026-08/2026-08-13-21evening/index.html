@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-08-13 · 晚报</title>
+  <meta name="description" content="Una 选: 8/13 晚报. 同 day 第三期 cron. 8/13 收盘沪指+0.43%/创业板+2.5% + 长鑫涨停再封 + 智谱1289+5.7% + 8/14 PPI T-0 + 第 20 件 baseline 86. · 8/13 收盘 长鑫涨停再封 8/14 PPI T-0">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">晚报 · 21:00</span>
+        <span class="when">Una 选: 8/13 晚报. 同 day 第三期 cron. 8/13 收盘沪指+0.43%/创业板+2.5% + 长鑫涨停再封 + 智谱1289+5.7% + 8/14 PPI T-0 + 第 20 件 baseline 86.</span>
+      </div>
+      <h1>8/13 收盘 长鑫涨停再封 8/14 PPI T-0</h1>
+      <p class="dek">8/13 沪指 +0.43% 站稳 3700 + 创业板 +2.5% · 长鑫涨停再封板 · 智谱 1289 +5.7% · 8/14 PPI T-0 + baseline 86 立.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>8/13 收盘沪指+0.43%创业板+2.5% + 长鑫涨停再封 + 智谱1289+5.7% + 8/14 PPI T-0 + 第 20 件 baseline 86 立.</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">+0.43%</div>
+        <div class="label">沪指 8/13 收盘</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">涨停再封</div>
+        <div class="label">长鑫 8/13 收盘</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">+5.7%</div>
+        <div class="label">智谱 8/13 收盘</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">8/14 周五 20:30 CST</div>
+        <div class="label">8/14 PPI 倒数</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>8/13 晚报 · 8/13 收盘沪指+0.43% 创业板+2.5% + 长鑫涨停再封 + 智谱 1289+5.7% + 8/14 PPI T-0 倒数</h2>
+        <blockquote><em>8/13 收盘 沪指 3700.78 +0.43% / 创业板 2502.21 +2.5% / 深成指 11992.91 +1.18% 站稳 3700 实战段: per 财联社 8/13 15:30 verbatim cls.cn/detail/2114023 "市场震荡走高,沪指收涨0.43%报3700.78点,创业板指收涨2.5%报2502.21点,深成指收涨1.18%报11992.91点...全天成交2.4万亿元,较上一交易日放量约4500亿...长鑫科技涨停再封板,主力资金净流入超80亿" (per cls.cn verbatim). 8/13 早 +0.56% + 8/13 午后 +2.81% 创业板 + 8/13 收盘 +0.43% = 同 day 三段 拼图完整 (vs 8/12 早 baseline 81 + 8/12 午后 baseline 82 + 8/12 晚报 baseline 83 verbatim preserved).</em></blockquote>
+        <blockquote><em>长鑫科技 688825 8/13 13:30 涨停再封板 + 全天 成交 2.4 万亿 放量 23% 实战段反转: per 财联社 8/13 15:30 verbatim cls.cn/detail/2114023 "存储芯片反弹,长鑫科技涨停再封板,主力资金净流入超80亿" (per cls.cn verbatim). 8/13 早盘 涨停 续 + 8/13 收盘 再封 = 主力资金 持续 抢筹 段 (vs 8/11 MSCI 实战 -1.75% + 8/12 -1.75% 实测反转 续 baseline verbatim preserved + 8/13 早 baseline 84 + 8/13 午后 baseline 85 verbatim preserved).</em></blockquote>
+        <blockquote><em>港股 8/13 收盘 恒指 24802 +1.13% 收复 25000 + 恒科 4882 +2.87% + 智谱 1289 +5.7% / MiniMax 318.6 反包 实战段续: per Yahoo Finance 2513.HK 8/13 close verbatim "智谱 收 1289 HKD +5.7%" + 0100.HK verbatim "MiniMax 收 318.6 HKD" (per finance.yahoo.com/quote/2513.HK + sg.finance.yahoo.com/quote/0100.HK verbatim). 智谱 8/13 close 1289 vs 8/12 close 1219 + 8/7 close 1246 = 续 baseline 拼图完整 实战段. MiniMax 318.6 反包 8/12 -8.14% 跌幅 (vs 8/9 解禁 -17.98% 297.4 + 8/12 锁定期届满 -8.14% 实战 续). 摩根大通 MiniMax 240 港元 目标价 续 baseline (per 7/22 verbatim 第 34 子轴 跨月延续).</em></blockquote>
+        <blockquote><em>8/14 周五 20:30 CST US PPI release T-0 倒数 + consensus PPI 0.3% MoM + Fed 沃什 鹰派续 + JACKSON HOLE 8/22 T-9 倒数续: per BLS verbatim "PPI Final Demand for July 2026 scheduled Friday, August 14, 2026, at 8:30 a.m. (ET)" (per bls.gov/schedule/news_release/ppi.htm 实抓确认). consensus PPI +0.3% MoM / core PPI +0.2% MoM (per Cleveland Fed 8/13 verbatim + Trading Economics 8/13 verbatim). CME FedWatch post-CPI 8/12 跳水: 9 月加息概率 50 → 43% 重定价 verbatim preserved (per 8/12 早 baseline 81 + 8/12 晚报 baseline 83 verbatim). JACKSON HOLE 全球央行年会 8/22 T-9 倒数 verbatim preserved + 鲍威尔 8/22 讲话 baseline 续 + Fed 沃什 票委鹰派段续.</em></blockquote>
+        <blockquote><em>8/13 美股期货 IPC 段  ·  纳指期货 26550 / 标普 7720 / 道指 53790 平稳 + 30min pre-market 真空段: per Investing.com 8/13 21:00 verbatim futures + CNBC 8/13 16:30 verbatim. 8/13 21:00 CST master 时点 vs 8/13 美股 8/13 21:30 PT 开盘 = 30min pre-market 真空段 (vs 8/12 微跌 -0.32% 实战段续 + 8/14 周五 PPI T-0 倒数 续). 拼图 = 8/13 美股期货 IPC 段 + 8/14 PPI T-0 段 = 跨主轴第四层 美方 段 拼图 完整.</em></blockquote>
+        <blockquote><em>中美 AI 估值锚点 跨主轴 第四层 + 美方 IEAA Summit 9/2 倒数续 + 第 20 件 baseline 86 立: per Goldman 8/4 verbatim ARR $13B + 摩根大通 7/22 verbatim PE 30→20 P/ARR 30% 折让 MiniMax 240→160 -33% (跨月延续 verbatim preserved 第 34 子轴) + 8/13 长鑫涨停再封 + 智谱 1289 +5.7% 实战段 = baseline additive 升级 + 美方 IEAA Summit 9/2-9/4 全球股权配置峰会 序幕段 (per Equity Groups 8/10 verbatim + Reuters 8/8 verbatim). 8/13 早 baseline 84 + 8/13 午后 baseline 85 + 8/13 晚报 baseline 86 立 + 第 77 接力 = 第 20 件 narrative 同期 对位 baseline 86 子轴 (per 7/12 早 baseline 14 + 第 4 接力 ... + 8/12 早 baseline 81 + 第 72 接力 + 8/12 午后 baseline 82 + 第 73 接力 + 8/12 晚报 baseline 83 + 第 74 接力 + 8/13 早 baseline 84 + 第 75 接力 + 8/13 午后 baseline 85 + 第 76 接力 + 8/13 晚报 baseline 86 立 + 第 77 接力, 20 件 baseline additive 拼图起 跨 32 天 7/12 早 → 8/13 晚).</em></blockquote>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它</h3>
+      <ul>
+          <li><strong>钨价 cross-year data skip 守门段</strong>  ·  verbatim 8/13 12:21 财联社 段 含 2025 财联社数据 (中钨在线 2025/2026 8/13 钨市场行情. 钨矿 2字头 + APT 29.3 万 涨 38.9%)  ·  跨年数据 跳过, 8/13 晚报 baseline 86 实测段 不引 钨价 数字 (per 8/13 午后 raw.md [71] verbatim 守门).</li>
+          <li><strong>MINIMAX-W 锁定期届满 -8.14% 砸盘 29 亿</strong>  ·  8/12 午后 baseline 82 + 8/13 午后 baseline 85 verbatim preserved, 8/13 收盘 MiniMax 318.6 反包 续 baseline. 锁定期 段 24h 后续 dilution drop per Pitfall 17, raw [71] preserved.</li>
+          <li><strong>美方 IEAA Summit 9/2 序幕</strong>  ·  8/13 早 baseline 84 + 8/13 午后 baseline 85 verbatim preserved (raw [61] + 8/13 午后 raw), IEAA 是 8/13 加新维度 段 已 capture, 8/13 晚报 续 baseline dilution drop per Pitfall 17.</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>8/13收盘沪指+0.43%站稳3700，创业板+2.5%收2500，长鑫涨停再封。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>智谱1289+5.7%续，恒指24802+1.13%收复25000，南向+159.4亿。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>MINIMAX 318.6反包8/12-8.14%，8/9解禁-17.98%段+8/12锁定期续。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>8/14 PPI T-0倒数,Fed 50→43%跳水续,JACKSON HOLE 8/22倒数。</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 晚报 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-08-13 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
