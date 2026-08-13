@@ -1,0 +1,65 @@
+{
+    "date": "2026-08-13",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "stage": 2,
+    "version": "0.8.21",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 续 baseline 工作流 — 显式区分 vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/13 早 baseline 84 + 第 75 接力) per v0.8.18 实测补 patch header 守门",
+    "baseline": 85,
+    "relay": 76,
+    "narrative_count": 99,
+    "title": "8/13 全面反弹 长鑫涨停 PPI T-1 倒数",
+    "dek": "8/13 早盘 沪指 +0.56% 创业板 +2.81% 全面反弹 · AI 硬件续创新高 长鑫涨停 · MINIMAX -8.14% 锁定期 · 8/14 US PPI T-1 倒数 · baseline 85 立.",
+    "hero_meta_short": "Una 选: 8/13 午后. 同 day 第二期 cron. 8/13 早盘全面反弹 + 长鑫涨停 + MINIMAX -8.14% + PPI T-1 倒数 + 第 20 件 narrative baseline 85.",
+    "meta_description": "Una 主编 cron 第九十九期 8/13 午后. 同 day 第二期 cron 加新维度 续 baseline 工作流 per Pitfall 46 + 53. 8/13 早盘全面反弹沪指 +0.56% / 创业板 +2.81% 创近 4 年新高 + 半日成交 1.31 万亿放量 + AI 硬件新易盛/中际旭创续创新高 + 长鑫科技涨停反转续 baseline · MINIMAX-W 8/12 close -8.14% 锁定期届满 + 8/12 19:00 砸盘 29 亿 + 摩根大通 240 港元目标价续 baseline · 8/14 周五 20:30 CST US PPI release T-1 倒数 + Fed 重定价 50→43% 跳水续 baseline + JACKSON HOLE 8/22 T-9 倒数 · 第 20 件 narrative 同期 对位 baseline 第 85 子轴 + 第 76 接力 立.",
+    "why_this": "8/13 早盘沪指 +0.56% / 创业板 +2.81% 全面反弹 + 长鑫涨停 + MINIMAX -8.14% + 8/14 PPI T-1 + 第 20 件 baseline 85 立.",
+    "main_h2": "8/13 午后 · 8/13 早盘全面反弹 + AI 硬件续创新高 + 长鑫涨停 + MINIMAX 锁定期 + 8/14 PPI T-1",
+    "pick_points": [
+        {
+            "num": "+0.56%",
+            "label": "沪指 8/13 早盘",
+            "value": "+0.56%",
+            "sublabel": "8/13 12:21 沪指 3686.34 突破去年 10/8 高点 + 创业板 +2.81% 2476.99 + 深成指 +1.47% + 半日成交 1.31 万亿放量 1186 亿 · per 财联社 cls.cn/detail/2113794 verbatim"
+        },
+        {
+            "num": "+2.81%",
+            "label": "创业板 8/13 早盘",
+            "value": "+2.81%",
+            "sublabel": "8/13 早盘 创业板指领涨 + AI 硬件大涨 新易盛/中际旭创续创新高 + 长鑫科技涨停反转 + 半日 1.31 万亿放量 · per cls.cn verbatim"
+        },
+        {
+            "num": "-8.14%",
+            "label": "MINIMAX-W 8/12 close",
+            "value": "-8.14%",
+            "sublabel": "锁定期 8/9 届满 实战段 · 摩根大通 240 港元 目标价 续 baseline · 8/12 19:00 砸盘 29 亿 · per 新浪港股 + 财联社 verbatim"
+        },
+        {
+            "num": "T-1",
+            "label": "8/14 PPI 倒数",
+            "value": "8/14 周五 20:30 CST",
+            "sublabel": "US PPI release T-1 倒数 · Fed 重定价 post-CPI 50→43% 跳水续 baseline · JACKSON HOLE 8/22 T-9 倒数续 baseline · per BLS ppi.htm verbatim"
+        }
+    ],
+    "main_facts": [
+        "> 8/13 早盘实战段 沪指 +0.56% / 创业板 +2.81% / 深成指 +1.47% 全面反弹 + 半日成交 1.31 万亿放量: per 财联社 8/13 12:21 verbatim \"市场早盘震荡走高,创业板指领涨,沪指突破去年10月8日高点...沪深两市半日成交额1.31万亿,较上个交易日放量1186亿...AI硬件股再度大涨,新易盛等多股续创历史新高...大金融方向盘中拉升,国盛金控2连板、长城证券涨停...截至收盘,沪指涨0.56%,深成指涨1.47%,创业板指涨2.81%\" (per cls.cn/detail/2113794 verbatim). 8/12 午后 close 沪指 +0.05% → 8/13 早盘 沪指 +0.56% 3686.34 创近 4 年新高 + 创业板 +2.81% 2476.99 = 全面反弹段 续 baseline (per 8/12 早 baseline 81 + 8/12 午后 baseline 82 verbatim preserved).",
+        "> 8/13 早盘 AI 硬件大涨 + 长鑫科技涨停 实战段反转: per 财联社 8/13 12:21 verbatim \"AI硬件股再度大涨,新易盛、中际旭创、工业富联、胜宏科技均续创历史新高,光库科技20CM涨停\" + verbatim \"存储芯片同样迎来反弹,先导基电涨停,长鑫科技、正帆科技、普冉股份、中微公司、澜起科技等涨幅居前\" (per cls.cn/detail/2113794 verbatim). 8/12 午 前 baseline 半导体 +5.96% 续 + 长鑫 MSCI 8/10 -1.75% 实战段 → 8/13 早盘 长鑫涨停 反转 = baseline additive 升级 + 中美 AI 资本+商业 双层 续 baseline (vs 8/12 早 baseline 81 verbatim preserved + 8/13 早 baseline 84 verbatim preserved).",
+        "> MINIMAX-W 8/12 close 暴跌 -8.14% 锁定期届满 + 砸盘 29 亿 + 摩根大通 240 港元目标价续 baseline: per 新浪港股 8/12 11:30 verbatim \"MiniMax-W 跌 8.14% 锁定期届满 ... 股票目标价 530 元\" (per stock.finance.sina.com.cn/hkstock/news/00100.html verbatim) + 新浪财经 8/12 19:00 verbatim \"斥资近 29 亿港币 硬砸 MiniMax 砸盘 AI 砸盘\" + 摩根大通 MiniMax 240 港元 目标价 verbatim preserved (per 8/12 早 baseline 81 verbatim 摩根大通 2000 → 2400 智谱 vs MiniMax 300 → 240 实战段续 baseline). 6h 窗口 8/13 07:00~13:00 CST = MINIMAX 锁定期 8/12 届满 -8.14% 实战段 + 摩根大通 240 港元 目标价 续 baseline 实战段.",
+        "> 8/14 周五 20:30 CST US PPI release T-1 倒数 + Fed 重定价续 baseline + JACKSON HOLE 8/22 T-9 倒数续 baseline: per BLS verbatim \"PPI release schedule: Aug 14, 2026 at 8:30 AM ET\" (per bls.gov/schedule/news_release/ppi.htm 实抓确认). CME FedWatch post-CPI 8/12 跳水: 9 月加息概率 50 → 43% 重定价 verbatim preserved (per 8/12 早 baseline 81 verbatim). JACKSON HOLE 全球央行年会 8/22 T-9 倒数 verbatim preserved + 鲍威尔 8/22 讲话 baseline 续 + Fed 沃什 票委鹰派段续. 6h 窗口 8/13 07:00~13:00 CST = 8/14 PPI T-1 倒数 + Fed 重定价续 baseline + JACKSON HOLE T-9 倒数续 baseline 段.",
+        "> 8/12 CPI 3.4% 24h 后续实战段续 baseline + 跨 day 边界 24h 后续续: per 8/13 早 baseline 84 verbatim preserved (md5 49bd82b9 = 49bd82b9 双路径硬约束 OK per Pitfall 49 + 53). 8/12 CPI release 8/12 20:30 CST → 8/13 13:00 CST = 16.5h post-release 实战续段 + 跨 day 边界 24h 后续 续 baseline + Fed 重定价 50→43% 跳水 续 baseline + JACKSON HOLE T-9 倒数 续 baseline (vs 8/12 早 baseline 81 + 8/12 午后 baseline 82 + 8/12 晚报 baseline 83 + 8/13 早 baseline 84 verbatim preserved).",
+        "> 中美 AI 估值锚点 跨主轴 第四层 + 美方 IEAA Summit 9/2 倒数续 baseline: per Goldman 8/4 verbatim ARR $13B + 摩根大通 7/22 verbatim PE 30→20 P/ARR 30% 折让 MiniMax 240→160 -33% (跨月延续 verbatim preserved 第 34 子轴) + 8/13 长鑫涨停 实战段反转 = baseline additive 升级 + 跨 day 边界 24h 后续续 baseline 段 + 美方 IEAA Summit 9/2-9/4 全球股权配置峰会 序幕段 (per Equity Groups 8/10 verbatim + Reuters 8/8 verbatim) + 8/13 早 baseline 84 verbatim preserved + 第 20 件 narrative 同期 对位 baseline 85 子轴 + 第 76 接力 立 (per 7/12 早 baseline 14 + 第 4 接力 ... + 8/12 早 baseline 81 + 第 72 接力 + 8/12 午后 baseline 82 + 第 73 接力 + 8/12 晚报 baseline 83 + 第 74 接力 + 8/13 早 baseline 84 + 第 75 接力 + 8/13 午后 baseline 85 + 第 76 接力 立, 20 件 baseline additive 拼图起 跨 32 天 7/12 早 → 8/13 午后)."
+    ],
+    "not_picked": [
+        "<strong>8/12 港股 V 反 +0.25% + 南向 +94.5 亿</strong> — 8/12 晚报 baseline 83 verbatim preserved, 24h 后续稀释 per Pitfall 17, raw [52] preserved.",
+        "<strong>8/12 A 股 创业板 +1.72% 半导体 +5.96% 大爆发</strong> — 8/12 午后 baseline 82 verbatim preserved, 8/13 早盘全面反弹 续 baseline dilution drop per Pitfall 17, raw [53] preserved.",
+        "<strong>美方 IEAA Summit 9/2 序幕</strong> — 8/13 早 baseline 84 verbatim preserved (raw [61]), IEAA 是 8/13 早 加新维度 段 已 capture, 8/13 午后 续 baseline dilution drop per Pitfall 17."
+    ],
+    "say_4": [
+        "8/13早盘沪指+0.56%创业板+2.81%全面反弹，创近4年新高放量。",
+        "AI硬件续创新高+长鑫涨停反转，8/12午后 +5.96% 段24h后续续。",
+        "MINIMAX -8.14%锁定期届满，砸盘29亿，摩根大通240港元续。",
+        "8/14 PPI T-1倒数,Fed 50→43%跳水续,JACKSON HOLE 8/22倒数。"
+    ]
+}
