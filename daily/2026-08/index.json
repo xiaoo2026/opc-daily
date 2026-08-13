@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-08-13",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "title": "8/13 全面反弹 长鑫涨停 PPI T-1 倒数",
+    "headline_alt": "8/13 早盘沪指+0.56%/创业板+2.81%全面反弹+长鑫涨停+MINIMAX -8.14%锁定期+8/14 US PPI T-1倒数",
+    "html_url": "daily/2026-08/2026-08-13-afternoon/",
+    "url": "daily/2026-08/2026-08-13-afternoon/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 85,
+    "relay": 76,
+    "narrative_count": 99,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 续 baseline 工作流 per v0.8.18 实测补 patch header 守门"
+  },
+  {
+    "date": "2026-08-13",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
