@@ -1,0 +1,65 @@
+{
+  "title": "8/14 早 PPI T-0 13.5h 倒数",
+  "dek": "美方 8/14 周五 20:30 CST PPI release T-0 倒数 + Fed 重定价 post-CPI 50→43% 跳水续 + JACKSON HOLE 8/22 T-8 序幕 + 美股期货 IPC 30min 真空 + 港股 A 股 pre-market 实战段",
+  "why_this": "今天 8/14 US PPI 13.5h post master, 8/12 CPI 48h 续段. Fed 重定价 + Jackson Hole T-8 = 跨主轴第四层. 真空段用 raw verbatim baseline 续 per Pitfall 41.",
+  "pick_points": [
+    {
+      "label": "US PPI T-0",
+      "value": "13.5h"
+    },
+    {
+      "label": "Fed 重定价",
+      "value": "50→43%"
+    },
+    {
+      "label": "JACKSON HOLE",
+      "value": "T-8"
+    },
+    {
+      "label": "美股期货 IPC",
+      "value": "30min"
+    }
+  ],
+  "say_4": [
+    "8/14 20:30 PPI, 13.5h post master, 跟 8/12 CPI 拼.",
+    "Fed 重定价 50→43% 跳水, Warsh 鹰派 段续.",
+    "JACKSON HOLE T-8 序幕, 9 月 FOMC 倒数.",
+    "6h 真空窗口 港股 A 股 pre-market 留 baseline."
+  ],
+  "main_facts": [
+    "8/14 周五 20:30 CST US PPI release T-0 倒数, consensus PPI +0.3% MoM / core PPI +0.2% MoM per BLS verbatim + Trading Economics + Kiplinger, release 当日 13.5h post master per 真空窗口",
+    "8/12 US CPI 8/12 20:30 CST release +3.4% YoY (per stcn verbatim + cls 8/12 20:35 verbatim) → 8/14 PPI release = 8/12 CPI release 后 48h 实战续段 + 核心通胀 follow-up 实战段",
+    "CME FedWatch post-CPI 8/12 20:35 跳水 verbatim preserved per cls 8/12 verbatim (50→45%) 续 baseline 第 86 子轴, 8/14 PPI release 后 Fed 重定价续段 baseline",
+    "State Street 6/22 verbatim Hawkish Fed signals + Warsh restrained communications strategy verbatim per Reuters 8/12 verbatim + JACKSON HOLE 8/22 T-8 倒数续 baseline",
+    "8/13 美股期货 IPC 段 纳指期货 -0.12% 26550 + 标普期货 +0.05% 7720 + 道指期货 -0.05% 53790 per CNBC 8/13 16:30 verbatim + Investing.com 8/13 21:00 verbatim",
+    "8/14 周五 港股 09:30 CST 开盘 + A 股 09:30 开盘 pre-market 实战段留 baseline 续 (智谱 1219-1289 HKD + MiniMax 318.6 HKD 8/13 收盘实战段 24h 后续续 baseline per raw [84] verbatim)"
+  ],
+  "main_cites": [
+    {
+      "label": "BLS PPI schedule",
+      "url": "https://www.bls.gov/schedule/news_release/ppi.htm"
+    },
+    {
+      "label": "Trading Economics PPI",
+      "url": "https://www.tradingeconomics.com/united-states/producer-price-index"
+    },
+    {
+      "label": "Kiplinger econ calendar",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+    },
+    {
+      "label": "cls 8/12 CPI post",
+      "url": "https://www.cls.cn/detail/2452702"
+    },
+    {
+      "label": "CME FedWatch",
+      "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    },
+    {
+      "label": "Reuters Warsh strategy",
+      "url": "https://www.reuters.com/business/finance/investors-worry-leaner-fed-guidance-may-come-price-2026-08-12"
+    }
+  ],
+  "meta_description": "Una 选: 8/14 US PPI release T-0 13.5h 倒数 + Fed 重定价 50→43% 跳水续 + JACKSON HOLE 8/22 T-8 序幕 + 美股期货 IPC 30min 真空段. 8/14 周五 07:00 CST 早 cron.",
+  "hero_label": "cron 第一百零一期 · 8/14 早 · 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49"
+}
