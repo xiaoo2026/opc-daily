@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-08-14",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "8/14 早 PPI T-0 13.5h 倒数 + Fed 50→43% + JACKSON HOLE T-8",
+    "headline_alt": "8/14 US PPI release T-0 13.5h 倒数 + Fed 重定价 post-CPI 50→43% 跳水续 + JACKSON HOLE 8/22 T-8 序幕 + 美股期货 IPC 30min 真空段",
+    "html_url": "daily/2026-08/2026-08-14-morning/",
+    "url": "daily/2026-08/2026-08-14-morning/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 87,
+    "relay": 78,
+    "narrative_count": 101,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per v0.8.18 实测补 patch header 守门"
+  },
+  {
     "date": "2026-08-13",
     "slot": "21evening",
     "type": "21evening",
