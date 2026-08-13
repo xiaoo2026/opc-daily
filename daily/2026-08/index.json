@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-08-13",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "8/13 收盘 长鑫涨停再封 8/14 PPI T-0",
+    "headline_alt": "8/13 收盘 沪指 3700.78 +0.43% 创业板 2502.21 +2.5% + 长鑫涨停再封 + 智谱 1289 +5.7% + MiniMax 318.6 反包 + 8/14 PPI T-0",
+    "html_url": "daily/2026-08/2026-08-13-21evening/",
+    "url": "daily/2026-08/2026-08-13-21evening/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 86,
+    "relay": 77,
+    "narrative_count": 100,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第三期 cron 加新维度 续 baseline 工作流 per v0.8.18 实测补 patch header 守门"
+  },
+  {
+    "date": "2026-08-13",
     "slot": "afternoon",
     "type": "afternoon",
     "slot_hour": "13:00",
