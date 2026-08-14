@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-15",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "weekday": "周六",
+    "title": "长鑫登顶 24h 后续 · JACKSON HOLE T-5 倒数",
+    "baseline": 90,
+    "relay": 81,
+    "narrative_count": 104,
+    "html_url": "daily/2026-08/2026-08-15-morning/index.html",
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron + Pitfall 41 周末 pre-market 真空 + Pitfall 42 跨周末 续段"
+  },
+  {
     "date": "2026-08-14",
     "slot": "21evening",
     "type": "21evening",
