@@ -1,0 +1,91 @@
+{
+    "date": "2026-08-14",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "stage": 2,
+    "version": "0.8.21",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 续 baseline 工作流 — 显式区分 vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/14 早 baseline 87 + 第 78 接力) per v0.8.18 实测补 patch header 守门 + Pitfall 54 第二类 fact-check fix 实战补 (8/14 早 cron baseline 87 US PPI release T-0 factual mistake, 8/14 午后 cron 加显式 FACT-CHECK FIX 段)",
+    "baseline": 88,
+    "relay": 79,
+    "narrative_count": 102,
+    "title": "长鑫市值超腾讯 中国资本市场重排 第 1 信号",
+    "dek": "8/14 早 长鑫市值超腾讯成中国市值最大上市公司 · 长鑫科技 8/14 上午盘 +3% 涨停续段 · DeepSeek 8/17 涨价 +500% · 美联储不再complete 加息定价 23BP · 8/14 US PPI 已 8/13 公布 实战段续 · baseline 88 立.",
+    "hero_meta_short": "Una 选: 8/14 午后. 同 day 第二期 cron. 长鑫市值超腾讯 + DeepSeek 8/17 续涨 +500% + 8/14 US PPI fact-check fix + 第 22 件 narrative baseline 88.",
+    "meta_description": "Una 主编 cron 第一百零二期 8/14 午后. 同 day 第二期 cron 加新维度 续 baseline 工作流 per Pitfall 46 + 53. 8/14 上午盘 A股实战段 创业板 +1% 芯片领涨 长鑫科技涨超3% 涨停续段 · 长鑫市值超越腾讯控股 成中国市值最大上市公司 (per 新浪财经 8/14 07:18 verbatim + 金十数据 8/14 verbatim) · DeepSeek 8/17 涨价 最高 +500% (per xnews.jin10.com verbatim) · 8/14 港股 09:30 实战段 HSI 25160.25 -0.9% / HSTECH 4706.73 -1.8% + 高盛 8/14 10:18 华虹 -10% Q3 逊预期 anchor 续段 (per stock360.hkej.com verbatim) · 8/13 US close S&P 7798.99 历史新高 + NASDAQ 26803.03 + 闪迪 +13.6% / MU +4% / SK Hynix +7% 存储芯片爆发 (per m.jrj.com.cn verbatim) · 利率期货 美联储今年加息定价降至 23BP 不再complete一次 (per 金十数据 8/14 verbatim) · FACT-CHECK FIX: 8/14 早 cron baseline 87 US PPI release T-0 倒数 是 factual mistake — 实际 PPI 8/13 8:30 ET 已公布 +4.7% YoY (per bls.gov/schedule/2026 + bls.gov/ppi verbatim) · 8/14 22:00 密歇根大学消费者信心 初值 release 倒数 续 baseline · 第 22 件 narrative 同期 对位 baseline 第 88 子轴 + 第 79 接力 立.",
+    "why_this": "长鑫市值超腾讯 = 中国资本市场 重排 第 1 信号 + DeepSeek 8/17 续涨 +500% = 中方大模型 估值 anchor 续段 + 美联储不再complete 加息定价 = 美方宏观流动性 段续 = 跨主轴 第四层 实测段 + 第 22 件 baseline 88 立.",
+    "main_h2": "8/14 午后 · 长鑫市值超腾讯 + DeepSeek 8/17 +500% + 美联储不再complete 加息 + 8/14 US PPI fact-check fix",
+    "pick_points": [
+        {
+            "num": "第 1",
+            "label": "长鑫市值超腾讯",
+            "value": "第 1 信号",
+            "sublabel": "8/14 早 长鑫科技超越腾讯控股 成中国市值最大上市公司 · 长鑫科技 8/14 上午盘 +3% 涨停续段 · per 新浪财经 财经早报 8/14 07:18 verbatim + 财联社 8/14 09:33 verbatim"
+        },
+        {
+            "num": "+500%",
+            "label": "DeepSeek 8/17 续涨",
+            "value": "8/17 涨价",
+            "sublabel": "DeepSeek 将于 8 月 17 日涨价 最高涨幅达 +500% · 中方大模型 估值 anchor 续段 · per 金十数据 8/14 全球财经早餐 verbatim xnews.jin10.com/details/227338"
+        },
+        {
+            "num": "23BP",
+            "label": "Fed 不再complete 加息",
+            "value": "今年定价 23BP",
+            "sublabel": "利率期货市场对美联储今年的加息定价降至23BP 不再有一次完整的加息定价 · post-CPI 50→43% 续 + post-PPI 8/13 unchanged · per 金十数据 8/14 verbatim"
+        },
+        {
+            "num": "8/13 已公布",
+            "label": "US PPI fact-check fix",
+            "value": "8/13 4.7% YoY",
+            "sublabel": "8/14 早 baseline 87 US PPI release T-0 倒数 factual mistake · per bls.gov/schedule/2026 verbatim 实际 PPI 8/13 8:30 ET 已公布 +4.7% YoY (services +0.2% / goods -0.7%) + 8/14 22:00 密歇根大学消费者信心 初值 release 倒数 续 baseline"
+        }
+    ],
+    "main_facts": [
+        "> 8/14 A 股 09:30-12:00 上午盘实战段 — 创业板 +1% 芯片领涨 + 长鑫科技 688825 涨超3% 涨停续段 + 长鑫市值超腾讯 成中国市值最大上市公司 实战段 (per 财联社 8/14 09:33 verbatim cls.cn \"A股异动丨海外利好强力共振！A股存储股普涨，长鑫科技涨超3% ... 长鑫市值登顶AH股，芯片成为新时代'点击量'！科创芯片ETF易方达（589130）标的指数近一年上涨超110%\" + 新浪财经 财经早报 8/14 07:18 verbatim \"长鑫科技成中国市值最高上市公司\"). 长鑫科技 8/14 上午盘 +3% 续 baseline (vs 8/13 收盘 涨停再封板 baseline 86 verbatim preserved + 8/12 MSCI 8/10 收盘 -1.75% 反转段 + 8/10 长鑫 MSCI 实战段 = 主力资金 持续抢筹 长鑫 段). 中国资本市场 重排 第 1 信号 — 长鑫超越腾讯 收盘市值 = 继 7/27 上市 +465.82% + 8/1 收盘 60.60 +19.49% + 8/12 MSCI 实战段 + 8/13 收盘涨停再封板 后续实战段. 6h 窗口 8/14 07:00~13:00 CST = 8/14 A 股 09:30 开市后 3.5h 实战段.",
+        "> DeepSeek 8/17 涨价最高 +500% 实战段 + 中方大模型 估值 anchor 续段 (per 金十数据 8/14 全球财经早餐 2026年8月14日 verbatim xnews.jin10.com/details/227338 \"DeepSeek将于8月17日涨价，最高涨幅达500% ... 长鑫科技超越腾讯控股，成为中国市值最大的上市公司 ... 日本政府据悉支持日本央行更快加息 ... 特朗普对特定无人机及零部件进口加征100%关税 ... 利率期货市场对美联储今年的加息定价降至23BP，不再有一次完整的加息定价\"). DeepSeek 8/17 续涨 +500% = 中方大模型 估值 anchor 续段 (vs 7/22 摩根 PE 30→20 baseline 第 34 子轴 跨月延续 + 8/4 早 baseline 59 Goldman ARR $13B verbatim preserved + 8/13 早 baseline 84 verbatim preserved + 8/14 早 baseline 87 verbatim preserved). 长鑫市值超腾讯 = 中国资本市场 重排 第 1 信号 (vs 8/12 早 baseline 81 verbatim 长鑫 MSCI 8/10 + 7/27 上市 +465.82% + 8/1 收盘 60.60 +19.49% verbatim preserved + 8/13 收盘 涨停再封板 verbatim baseline 86 preserved). 6h 窗口 8/14 07:00~13:00 CST = DeepSeek 续涨 + 长鑫市值超腾讯 + Fed 重定价 续段 全 stack 拼图完整 段.",
+        "> 8/14 港股 09:30 实战段 — HSI 25160.25 -0.9% / HSTECH 4706.73 -1.8% / 上证 3918.65 -8.31 + 恒指早段曾跌逾200點考驗100天線 + 高盛 8/14 10:18 華虹 -10% Q3 遜預期 anchor 续段 (per 信报 stock360 8/14 12:06 verbatim hkej.com \"恒生指數 25160.25 -236.26 (-0.9%) ... 開市: 25219.15 最高: 25311.86 ... 成交額: 1,357.240億 最低: 25149.81 ... 恒生科技指數 4706.73 -85.66 (-1.8%) ... 上證指數 3918.65 -8.31 ... 恒指走勢丨早段曾跌逾200點考驗100天線 業績股兩極\" + hkej 8/14 10:18 verbatim 異動股 「今日 10:18 異動股丨華虹宏力挫一成 高盛指第三季收入指引遜預期」). 8/14 港股开盘 -0.9% 早段曾跌 200點 考验 100 天线 = 8/13 close +1.13% 反转后 回调段 (vs 8/13 close 24802 +1.13% verbatim baseline 86 preserved + 8/14 早 baseline 87 verbatim preserved). 高盛 8/14 10:18 华虹 -10% Q3 guide miss = anchor 续段 + 中美 AI 估值锚点 续 baseline 段 (per 8/13 早 baseline 84 verbatim Goldman ARR $13B + 摩根 PE 30→20 verbatim preserved + 7/22 baseline 第 34 子轴 跨月延续 verbatim preserved). 6h 窗口 8/14 07:00~13:00 CST = 8/14 港股 09:30 开市后 3.5h 实战段.",
+        "> 8/13 US close 实战段 — 标普 500 7798.99 历史新高 + NASDAQ 26803.03 + 道指 53839.99 + 闪迪 +13.6% / 美光 MU +4% / SK 海力士 +7% 存储芯片 爆发 (per 金融界 8/14 08:28 verbatim jrj.com.cn \"标普500指数盘中首次站上7800点，收盘报7798.99点，刷新历史最高纪录。道指涨0.13%报53839.99点，纳指涨0.81%报26803.03点。纳斯达克100指数收于30084.50点，时隔一个多月重返30000点上方\" + verbatim \"美股道指收涨0.13%，标普500指数涨0.65%，纳指涨0.8%。美光科技(MU.O)涨4%，闪迪(SNDK.O)涨13.6%，SK海力士(SKHY.O)涨7%\"). 8/13 US close 标普 历史新高 + 存储芯片爆发 = 直接 8/14 港股 半导体板块 9:44-10:18 高开即回落 叙事锚点 (hkej 华虹 -10%) — 跟 DeepSeek 8/17 +500% 涨价值段 同日发生 = 跨主轴 第四层 实测段.",
+        "> FACT-CHECK FIX 段 — 8/14 早 cron baseline 87 \"US PPI release T-0 13.5h 倒数\" 是 factual mistake (per BLS 官方 schedule verbatim bls.gov/schedule/2026/home.htm 实际 PPI 8/13 8:30 ET 已公布 not 8/14) + 8/14 22:00 密歇根大学消费者信心 初值 release 倒数 续 baseline (per 金十数据 8/14 风险预警段 verbatim xnews.jin10.com/details/227338). BLS 官方 schedule verbatim \"Thursday, August 13, 2026 | 08:30 AM | Producer Price Index for July 2026\" + BLS 官方 news release verbatim \"PPI for final demand unchanged in July; services advance 0.2%, goods fall 0.7% ... PPI for final demand increased 4.7 percent for the 12 months ended in July\" (per bls.gov/ppi verbatim 8/13 published). 8/14 早 cron 第 78 接力 verbatim preserved \"8/14 周五 20:30 CST US PPI release T-0 倒数\" 段 — 这是 factual mistake (PPI 实际 8/13 已公布 not 8/14). 8/14 早 cron 第 78 接力 不是 直接改 prior slot (per Pitfall 43 跨 slot 演化 失锚 反模式), 而是 当期 cron (8/14 午后) 加显式 FACT-CHECK FIX 段 标注 — 修正后 baseline 第 88 子轴 verbatim 段 实际 是 \"PPI 8/13 已公布 + 8/14 22:00 密歇根大学消费者信心 初值 release 倒数 9h post master\". 6h 窗口 8/14 07:00~13:00 CST = US PPI 已 8/13 公布 24h+ post-release 实战续段 + 8/14 22:00 密歇根信心 倒数 续 baseline + 8/14 20:30 零售销售 倒数 续 baseline = 跨主轴 第四层 美方宏观流动性 段 实战补.",
+        "> 利率期货 美联储今年加息定价降至23BP 不再有一次完整的加息定价 实战段 + 8/14 22:00 密歇根大学消费者信心 初值 release 倒数 续 baseline (per 金十数据 8/14 全球财经早餐 verbatim xnews.jin10.com/details/227338 \"利率期货市场对美联储今年的加息定价降至23BP，不再有一次完整的加息定价\"). 8/12 US CPI 3.4% 后 Fed 重定价 50→43% 跳水 + 8/13 US PPI unchanged + services +0.2% + Fed 沃什 restrained communications 段续 + JACKSON HOLE 8/22 T-8 倒数续 baseline + 美方 IEAA Summit 9/2 序幕段续 baseline verbatim preserved (per 8/13 早 baseline 84 + 8/13 午后 baseline 85 + 8/13 晚报 baseline 86 + 8/14 早 baseline 87 verbatim preserved 全 chain). 6h 窗口 8/14 07:00~13:00 CST = 美方宏观流动性 段 + 中美 AI 估值锚点 段续 + 跨主轴 第四层 实测段 全 stack 拼图完整."
+    ],
+    "not_picked": [
+        "8/14 港股 09:30 实战段 HSI -0.9% / HSTECH -1.8% 回调段 · verbatim hkej 8/14 12:06 preserved both 段. 回调段 dilution drop per Pitfall 17, 当期 cron 不引 (vs 长鑫市值超腾讯 主轴更强势).",
+        "高盛 8/14 10:18 华虹 -10% Q3 逊预期 anchor 续段 · verbatim hkej 8/14 10:18 preserved both 段. 港股 哑火股 dilution drop per Pitfall 17, 早段反应 段 实测 (not 主轴), 当期 cron 不引 anchor (vs DeepSeek 8/17 +500% 主轴更强势).",
+        "8/13 US close S&P 7798.99 历史新高 + 闪迪 +13.6% / MU +4% / SK Hynix +7% 实战段 · verbatim jrj 8/14 08:28 preserved both 段. 24h 后续段 dilution drop per Pitfall 17, 8/14 早 baseline 87 verbatim 段续 (not 当期 cron 主轴)."
+    ],
+    "main_cites": [
+        {
+            "label": "金十数据 8/14 全球财经早餐",
+            "url": "https://xnews.jin10.com/details/227338"
+        },
+        {
+            "label": "金融界 8/14 US close 实战段",
+            "url": "https://m.jrj.com.cn/madapter/usstock/2026/08/14082858101548.shtml"
+        },
+        {
+            "label": "信报 stock360 8/14 12:06 港股 quote",
+            "url": "https://stock360.hkej.com"
+        },
+        {
+            "label": "财联社 8/14 09:33 长鑫实战段",
+            "url": "https://www.cls.cn/detail/2114833"
+        },
+        {
+            "label": "新浪财经 长鑫 8/14 早 财经早报",
+            "url": "http://vip.stock.finance.sina.com.cn/corp/go.php/vCB_AllNewsStock/symbol/sh688825.phtml"
+        },
+        {
+            "label": "BLS 8/13 PPI schedule",
+            "url": "https://www.bls.gov/schedule/2026/home.htm"
+        }
+    ],
+    "say_4": [
+        "长鑫市值超腾讯, 中国资本市场第 1 重排.",
+        "DeepSeek 8/17 涨价 +500%, 大模型估值续.",
+        "美联储 23BP, 不再complete 加息定价.",
+        "PPI 8/13 已公布, 8/14 早 baseline 错."
+    ]
+}
