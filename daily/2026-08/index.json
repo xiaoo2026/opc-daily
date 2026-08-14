@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-08-14",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "8/14 晚报 JACKSON HOLE 8/27 才开 不再加息",
+    "headline_alt": "JACKSON HOLE 2026 实际 8/27-29 修正 8/22 错算 T-6 倒数 + 8/14 US 7 月零售销售 实测段 0.3% MoM headline + Fed 加息定价 23BP 不再complete + 8/13 US close S&P 7798.99 历史新高 + 长鑫市值超腾讯 24h 后续封板 + MiniMax -10% 锁定期届满 + 同 day 第三期 cron 加新维度 + Pitfall 54 第二类 fact-check fix 实战补",
+    "html_url": "daily/2026-08/2026-08-14-21evening/",
+    "url": "daily/2026-08/2026-08-14-21evening/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 89,
+    "relay": 80,
+    "narrative_count": 103,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第三期 cron 加新维度 工作流 per v0.8.18 实测补 patch header 守门 + Pitfall 54 第二类 fact-check fix 实战补 JACKSON HOLE 8/22→8/27-29 T-6 倒数"
+  },
+  {
+    "date": "2026-08-14",
     "slot": "afternoon",
     "type": "afternoon",
     "slot_hour": "13:00",
