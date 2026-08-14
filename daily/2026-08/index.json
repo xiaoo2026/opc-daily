@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-08-14",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "title": "8/14 午后 长鑫市值超腾讯 中国资本市场重排 第 1 信号",
+    "headline_alt": "8/14 早 长鑫市值超越腾讯控股 成中国市值最大上市公司 · 长鑫科技 8/14 上午盘 +3% 涨停续段 · DeepSeek 8/17 涨价 +500% · 美联储不再complete 加息定价 23BP · 8/14 US PPI 已 8/13 公布 实战段续 · baseline 88 立",
+    "html_url": "daily/2026-08/2026-08-14-afternoon/",
+    "url": "daily/2026-08/2026-08-14-afternoon/",
+    "author": "Una <una@leftink.local>",
+    "skill_version": "0.8.21",
+    "baseline": 88,
+    "relay": 79,
+    "narrative_count": 102,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 续 baseline 工作流 — 显式区分 vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/14 早 baseline 87 + 第 78 接力) per v0.8.18 实测补 patch header 守门 + Pitfall 54 第二类 fact-check fix 实战补 (8/14 早 cron baseline 87 US PPI release T-0 factual mistake, 8/14 午后 cron 加显式 FACT-CHECK FIX 段)"
+  },
+  {
+    "date": "2026-08-14",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
