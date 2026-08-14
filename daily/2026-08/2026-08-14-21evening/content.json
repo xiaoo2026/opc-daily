@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-14",
+  "slot": "21evening",
+  "slot_label": "晚报",
+  "slot_hour": "21:00",
+  "hero_meta_short": "Una 选: 8/14 晚报. 同 day 第三期 cron. JACKSON HOLE 8/27-29 T-6 倒数 + 8/14 US 7 月零售 实测段 + 长鑫市值超腾讯 24h 后续 第 1 信号 + 第 23 件 narrative baseline 89.",
+  "title": "JACKSON HOLE 8/27 才开",
+  "dek": "JACKSON HOLE 实际 8/27-29 不是 8/22 · 8/14 US 零售 0.3% 符合预期 · 长鑫 24h 内 连续封板 市值登顶 AH · MiniMax 锁定期届满 -11%",
+  "why_this": "美方宏观流动性段落定 · Fed 重定价 50→43% 后 9 月加息不再 complete · JACKSON HOLE 8/27-29 T-6 倒数 vs 之前 baseline 错算 8/22 fact-check fix · 长鑫市值超腾讯 24h 后续 第 1 信号续段.",
+  "main_h2": "JACKSON HOLE 8/27 T-6 + 8/14 零售 实测段 + 长鑫 24h 续",
+  "main_facts": [
+    "<strong>JACKSON HOLE 2026 实际日期 修正</strong> — 8/27 周三 - 8/29 周五,不是之前 baseline 87 写的 8/22 T-8。Kansas City Fed 官方 verbatim: \"The 2026 Jackson Hole Economic Policy Symposium will take place Aug. 27-29. The topic is 'Financial Innovation: Implications for Payments and Policy'\"。Powell 8/27 8:00 MT 开幕(per InvestingLive verbatim)。master 21:00 vs 8/27 开幕 = <strong>T-6 倒数 续 baseline</strong>。",
+    "<strong>8/14 20:30 CST US 7 月零售 实测段 OK per Pitfall 42</strong> — consensus 0.3% MoM headline / 0.2% MoM ex-auto (per Trading Economics verbatim)。master 21:00 vs release 20:30 = <strong>0.5h post-release 实测段</strong>。WSJ 8/14 verbatim: \"S&P Futures Steady After Record Close. Markets have been buoyed in recent days as traders have increasingly discounted the prospect of imminent interest-rate increases from the Federal Reserve\"。Fed 加息定价 23BP 不再complete 续 baseline。",
+    "> CNBC 8/13 verbatim: \"The S&P 500 rose to a fresh all-time intraday high on Thursday ... The S&P 500 notched a closing record of 7,798.99. The Nasdaq Composite gained 0.81% to end at 26,803.03 ... The Dow Jones Industrial Average inched up 0.13%, or 69.72 points, to 53,839.99\"。8/13 美股三大 再创历史新高 续 baseline 24h 后续。",
+    "<strong>8/14 港股 收盘实战段 HSI 25037.46 -0.49%</strong> / HSTECH 4713.05 +0.13% (per 信报 stock360 verbatim)。智谱 1218 -1% + <strong>MiniMax 286.6 -10% 锁定期届满</strong>续 baseline (vs 8/13 收盘 318.6 verbatim baseline 86 preserved + 8/12 -8.14% verbatim baseline 85 preserved)。",
+    "<strong>长鑫市值超腾讯 中国资本市场重排 第 1 信号 24h 后续</strong> — 长鑫 688825 8/14 收盘 +5% 涨停再封板 (per 财联社 verbatim)。vs 8/13 涨停再封板 verbatim baseline 86 preserved + 8/14 早 长鑫科技成中国市值最高上市公司 verbatim preserved + 8/14 午后 长鑫市值登顶AH股 verbatim preserved。",
+    "<strong>8/14 22:00 密歇根信心 8月初值 倒数 1h pre-release OK per Pitfall 42</strong> — consensus 54.5 (per Trading Economics verbatim)。master 21:00 vs release 22:00 = <strong>1h pre-release 倒数段</strong>。"
+  ],
+  "not_picked": [
+    "8/14 美股期货 IPC 段震荡 — WSJ 8/14 verbatim 但 master 21:00 没 capture 8/14 US close,只 capture 8/13 close 续 baseline = 24h 后续段不重复",
+    "8/14 港股 智谱 1218 / MiniMax -10% 锁定期 — 当期主轴已用 长鑫 + 港股收盘 + MiniMax 三件,不堆不重复",
+    "8/14 A 股 收盘 沪指 3926 +0.2% / 创业板 +1.8% — 长鑫 +5% 涨停再封板 段是 A 股今日最大 anchor,不重复 收盘指数段"
+  ],
+  "pick_points": [
+    {"value": "8/27-29", "label": "JACKSON HOLE 真实日程 fix 8/22→8/27"},
+    {"value": "+0.3%", "label": "8/14 US 7 月零售 OK 实测段"},
+    {"value": "第 23 件", "label": "narrative 同期 baseline 89 + 第 80 接力"}
+  ],
+  "say_4": [
+    "JACKSON HOLE 8/22 错算 → 8/27-29 修正 T-6 倒数",
+    "9 月加息不再 complete · 加息定价 23BP 段落定",
+    "长鑫市值超腾讯 24h 后续封板 · 第 1 信号续段",
+    "8/14 零售 0.3% + 智谱 -1% + MiniMax -10% 三轨收官"
+  ],
+  "patch_header_pitfall": "Pitfall 46 + 53 同 day 第三期 cron + Pitfall 54 第二类 fact-check fix JACKSON HOLE 8/22→8/27-29"
+}
