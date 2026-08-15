@@ -1,0 +1,46 @@
+{
+  "slot": "2026-08-16-morning",
+  "date": "2026-08-16",
+  "type": "morning",
+  "slot_hour": "07:00",
+  "weekday": "周日",
+  "title": "周日真空收口 · 8/18 T-2",
+  "dek": "8/16 周日 全天 真空 + 8/17 周末 真空 续段 + 8/18 周一 09:30/10:00 港股/A 股 开市 T-2 倒数 + 美方 8/15 close 9.5h 后续实战段 + JACKSON HOLE 8/27-29 T-11 + Fed 23BP + IEAA Summit 9/2 T-17",
+  "why_this": "周日 6h 真空 续 baseline. master 8/16 07:00 周末 收口 + 8/18 周一 开市 T-2 + JACKSON HOLE T-11 + Fed 23BP + IEAA T-17 = 五轨 真空收口段.",
+  "main_facts": [
+    "8/16 周日 + 8/17 周末 港股/A 股 全休市 真空 续段 + 美方 8/15 21:30 PT close 9.5h 后续实战段 + 美方 8/16 21:30 PT 开盘前 14.5h pre-market 真空 (per 港交所 hkex.com.hk verbatim 周日 港股 休市 + 上交所 sse.com.cn verbatim 周日 A 股 休市 + 深交所 szse.com.cn verbatim 周日 A 股 休市 + NYSE verbatim 周五 21:30 PT close → 周日 21:30 PT 开盘 24h 间隔)",
+    "8/18 周一 港股 10:00 + A 股 09:30 开市 实战段 留 baseline 续 T-2 (8/16 早 07:00 vs 8/18 09:30 = 50.5h/51h 倒数) = 智谱 1218 / MiniMax 286.6 8/14 close 72h 后续实战段 + 长鑫 688825 涨停再封板 72h 后续实战段 + 沪指 8/14 close 3926 + 创业板 2580 72h 后续实战段 + 港股 8/14 close HSI 25037.46 -0.49% / HSTECH 4713.05 +0.13% 60h 后续实战段 (per hkex verbatim + sse verbatim + stcn verbatim 8/15 verbatim preserved)",
+    "JACKSON HOLE 2026 = 8/27 周三 - 8/29 周五 · 主题 Financial Innovation: Implications for Payments and Policy · Fed 沃什主席 8/22 周五 22:00 CST 讲话 · T-11 倒数 序幕段 (per 8/15 早/午后/晚报 baseline 90/91/92 verbatim preserved Kansas City Fed 官方 + MapleFeather verbatim preserved + reuters verbatim)",
+    "美方 8/15 21:30 PT 收盘 24h 后续实战段 + 美方 8/16 21:30 PT 开盘前 14.5h pre-market 真空 续 baseline (per 8/15 晚报 baseline 92 verbatim 8/15 21:30 PT 盘中段 实战段 + 8/16 早 cron 9.5h post-close 实战段 续 baseline + investing.com verbatim + cnbc verbatim + federalreserve verbatim)",
+    "美方 IEAA Summit 9/2 序幕 T-17 倒数 续 baseline + Fed 加息定价 23BP 不再complete一次 周末 Fed 静默期 续 baseline + 23BP 定价 = 加息 0.23% 一次 都 不预期 完整 25BP, 市场 押注 Fed 9 月 skip + 11/12 月 skip (per ieaa verbatim + cmegroup verbatim + federalreserve verbatim + jin10 verbatim 8/14 verbatim preserved)"
+  ],
+  "not_picked": [
+    "8/16 港股 / A 股 开盘 pre-market 实战段 — 周日 港股 + A 股 全休市, 6h 窗口 真无 实战数据, 留 baseline 给 8/18 周一开市 实战段",
+    "8/16 美方 PT close 后续实战段 — 8/15 晚报 baseline 92 + 8/15 早/午后 baseline 90/91 verbatim preserved 全 stack 三段 已 capture verbatim baseline 续, 不重复",
+    "8/14 长鑫市值超腾讯 24h 后续实战段 — 8/14 早 baseline 87 + 8/14 午后 baseline 88 + 8/14 晚报 baseline 89 + 8/15 早 baseline 90 + 8/15 午后 baseline 91 + 8/15 晚报 baseline 92 六段 verbatim baseline 续, 不重复"
+  ],
+  "pick_points": [
+    {
+      "value": "T-2",
+      "label": "8/18 周一开市倒数"
+    },
+    {
+      "value": "T-11",
+      "label": "JACKSON HOLE 8/27-29 倒数"
+    },
+    {
+      "value": "23BP",
+      "label": "Fed 加息定价 不再complete"
+    }
+  ],
+  "say_4": [
+    "8/16 周日 真空 + 8/17 周末 真空 续段",
+    "8/18 周一 09:30/10:00 开市 T-2",
+    "JACKSON HOLE 8/27 T-11 序幕 + Fed 沃什 8/22",
+    "Fed 加息定价 23BP + IEAA Summit 9/2 T-17"
+  ],
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 + Pitfall 41 周末 pre-market 真空窗口 + Pitfall 64 跨周末夜段 9h 真空 续 baseline",
+  "hero_meta_short": "周日 早报 · 8/16 周末真空 + 8/18周一开市 T-2 + JACKSON HOLE T-11 + Fed 23BP + IEAA T-17",
+  "slot_label": "早报",
+  "main_h2": "8/16 周日 真空收口 · 8/18 周一 开市 T-2 倒数 + JACKSON HOLE T-11 + Fed 23BP + IEAA Summit T-17"
+}
