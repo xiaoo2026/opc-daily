@@ -1,0 +1,47 @@
+{
+  "slot": "2026-08-15-afternoon",
+  "date": "2026-08-15",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "weekday": "周六",
+  "title": "长鑫 48h · MiniMax 锁定期 36h",
+  "dek": "8/14 收盘 长鑫市值超腾讯 1.65 万亿 48h 后续封板 · 智谱 1218 / MiniMax 286.6 8/14 close 锁定期届满 36h 后续实战段 · 8/18 周一 港股/A 股 9:30/10:00 开盘 pre-market 实战段 留 baseline 续 · 8/15 周末 港股/A 股 全休市 真空 续",
+  "why_this": "8/15 周末 真空, master 8/14 收盘 48h 后续 续 baseline. 长鑫 1.65 万亿 登顶 + 智谱 1218 / MiniMax 286.6 锁定期 36h 后续 + 8/18 周一 开市 实战段 留 baseline + JACKSON HOLE T-12 + Fed 23BP = 三轨收官.",
+  "main_facts": [
+    "8/14 收盘 长鑫科技 688825 涨停再封 +5% · 1.65 万亿 超腾讯 1.55 万亿 · 中国资本市场重排 第 1 信号 48h 后续实战段 (per 8/15 早 cron baseline 90 verbatim 财联社 8/14 收盘 verbatim + stcn 8/14 verbatim + hkex 8/14 verbatim + 8/14 晚报 baseline 89 verbatim preserved)",
+    "8/14 收盘 智谱 2513.HK 1218 -1% 回落 · MINIMAX 0100.HK 286.6 -10% 锁定期届满 · 中方大模型双雄 8/14 close 36h 后续实战段 (per 8/15 早 cron baseline 90 verbatim Yahoo Finance 2513.HK + 0100.HK 8/14 close + 信报 stock360 8/14 16:09 verbatim preserved)",
+    "8/18 周一 港股 10:00 + A 股 09:30 开盘 pre-market 实战段 留 baseline 续 (per 8/15 周末 真空 续 baseline + 8/18 周一 港股/A 股 开盘 实战段续 = 智谱/MiniMax 续实战段 + 沪指 8/14 close 3926 续实战段 + 8/14 US close S&P 7798.99 36h 后续续 baseline + JACKSON HOLE 8/27-29 T-12 倒数续)",
+    "8/15 周末 港股/A 股 全休市 真空 + 美方 8/14 21:30 PT close 15.5h 后续实战段 + 美方 8/15 21:30 PT 开盘前 8.5h 真空 (per 港交所 hkex.com.hk verbatim 周末休市 + 上交所 sse.com.cn verbatim 周末休市 + 美方 NYSE verbatim 周五 21:30 PT close → 周六 21:30 PT open 24h 间隔)",
+    "JACKSON HOLE 2026 = 8/27-29 周三-周五 · 主题 Financial Innovation: Implications for Payments and Policy · Fed 沃什主席 8/22 周五 22:00 CST 讲话 · T-12 倒数 序幕段 (per 8/15 早 cron baseline 90 verbatim Kansas City Fed 官方 + MapleFeather verbatim preserved)",
+    "Fed 加息定价 23BP 不再complete一次 · CME FedWatch post-CPI 50→43% + post-PPI unchanged 续 · 9 月 FOMC 9/16-17 倒数 32 天 · 周末 Fed 静默期 段 (per 8/15 早 cron baseline 90 verbatim CME FedWatch + 8/14 早 baseline 87 verbatim jin10 8/14 verbatim preserved)"
+  ],
+  "not_picked": [
+    "8/15 美方 IEAA Summit 9/2 序幕段 — 距 9/2 开幕 18 天, T-18 倒数 段续 baseline 但 8/15 早 cron 已 capture, 不重复",
+    "8/14 港股通 南向成交段 — 8/14 收盘 实战段已 8/15 早 cron baseline 90 覆盖, 不重复",
+    "8/15 港股 / A 股 开盘 pre-market 实战段 — 周六 港股 + A 股 周末 休市, 6h 窗口 真无 实战数据, 留 baseline 给 8/18 周一开市 实战段"
+  ],
+  "pick_points": [
+    {
+      "value": "1.65万亿",
+      "label": "长鑫登顶 48h 后续封板"
+    },
+    {
+      "value": "286.6",
+      "label": "MiniMax 8/14 close -10% 锁定期届满"
+    },
+    {
+      "value": "T-12",
+      "label": "JACKSON HOLE 8/27-29 倒数"
+    }
+  ],
+  "say_4": [
+    "8/14 收盘 长鑫 1.65 万亿 登顶 中国资本市场 48h 后续封板",
+    "智谱 1218 / MiniMax 286.6 8/14 close 锁定期 36h 后续实战段",
+    "JACKSON HOLE 8/27 T-12 序幕 沃什 8/22 讲话",
+    "Fed 加息定价 23BP 不再complete 9 月 FOMC skip"
+  ],
+  "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 + Pitfall 41 周末 pre-market 真空 + Pitfall 42 跨周末 续段",
+  "hero_meta_short": "周六 午报 · 8/14 收盘战果 48h 后续 续 baseline",
+  "slot_label": "午报",
+  "main_h2": "8/14 收盘战果 48h 后续 · 长鑫登顶 1.65 万亿 + 智谱/MiniMax + 8/18 周一 开盘 pre-market 实战段 留 baseline + JACKSON HOLE T-12 + Fed 23BP 续 baseline"
+}

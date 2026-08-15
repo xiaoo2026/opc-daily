@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-15",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "weekday": "周六",
+    "title": "长鑫 48h · MiniMax 锁定期 36h",
+    "baseline": 91,
+    "relay": 82,
+    "narrative_count": 105,
+    "html_url": "daily/2026-08/2026-08-15-afternoon/index.html",
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 + Pitfall 41 周末 pre-market 真空 + Pitfall 42 跨周末 续段"
+  },
+  {
+    "date": "2026-08-15",
     "type": "morning",
     "slot_hour": "07:00",
     "weekday": "周六",
