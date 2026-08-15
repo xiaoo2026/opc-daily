@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-16",
+    "type": "morning",
+    "slot": "2026-08-16-morning",
+    "slot_hour": "07:00",
+    "title": "8/16 早 周日真空收口 · 8/18 周一开市 T-2",
+    "html_url": "2026-08/2026-08-16-morning/index.html",
+    "baseline": 93,
+    "relay": 84,
+    "narrative_count": 107,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 + Pitfall 41 周末 pre-market 真空窗口"
+  },
+  {
     "date": "2026-08-15",
     "type": "21evening",
     "slot_hour": "21:00",
