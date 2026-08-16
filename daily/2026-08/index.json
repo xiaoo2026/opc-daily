@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-17",
+    "type": "morning",
+    "slot": "2026-08-17-morning",
+    "slot_hour": "07:00",
+    "weekday": "周一",
+    "title": "8/17早 8/18周二 T-26.5h · DeepSeek +500% T-0",
+    "html_url": "2026-08/2026-08-17-morning/index.html",
+    "baseline": 96,
+    "relay": 87,
+    "narrative_count": 110,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 + Pitfall 41 周末 pre-market 真空窗口 + Pitfall 47 真空抓料 工作流 + Pitfall 53 跨 day 边界 后续期 cron (vs 8/16 晚报 baseline 95 + 第 86 接力)"
+  },
+  {
     "date": "2026-08-16",
     "type": "21evening",
     "slot": "2026-08-16-21evening",
