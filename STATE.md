@@ -71,3 +71,37 @@
 - top-level patch commit: [pending] (topbar + eyebrow + featured h2 + pick-meta + pick-rationale + pick-cta + archive-entry + index.json)
 - wrangler deploy 1: Version ID e5f6ba0a (content + slot assets)
 - wrangler deploy 2: [pending] (top-level index.html + index.json + STATE.md re-deploy per Pitfall 43 + 55(f))
+
+## cron 第一百一十三期 8/18 早 跨 day 边界 新一天 第一期 cron 加新维度
+
+### baseline
+- 第 99 子轴 立
+- 第 90 接力 立
+- 32 件 baseline additive 拼图起 跨 37 天 7/12 早 → 8/18 早
+
+### picked
+- 8/18 早 跨 day 边界 第一期 cron 加新维度
+- 8/19 周三 宇树科技 688836.SH 科创板上市 T-1 倒数 1 天 17h 段
+- 8/17 战配 DeepSeek 锁 Unitree 36 个月 1.41 亿 续 baseline
+- 8/17 宇树"超人"机器人发布 原地跳高 2 米 极限速度 12.66 m/s
+- 8/18 周二 A 股 09:30 pre-market 实战段 2.5h 倒数 + 港股 10:00 pre-market 实战段 3h 倒数
+- JACKSON HOLE 8/27-29 T-9→T-8 倒数 + Fed 沃什 8/22 22:00 CST 讲话 T-4→T-3 倒数
+- 8/20 周三 8 月 LPR 公布 T-2 倒数 2 天 2.5h 续 baseline
+- DeepSeek 8/17 涨价 T-0 28h 后续实战段 + 智谱 02613 8/17 收盘 1270 HKD -3.57% 24h 后续
+- MiniMax 0100 8/17 收盘 329 HKD -12.69% 24h 后续 实战段
+- 23BP 周末 Fed 静默期续 + 美方 IEAA Summit 9/2 序幕 T-15→T-14 倒数续
+
+### 加新维度 5 类 M16. [131-135]
+- (a) 8/19 周三 宇树科技 688836.SH 科创板上市 T-1 倒数 1 天 17h 段 + A 股"人形机器人第一股"定价锚 + 发行价 150.80 元/股 + 募资 60.99 亿 + 战配 DeepSeek 锁 36 个月 1.41 亿
+- (b) 8/17 宇树"超人"机器人发布 续 baseline + 2025 人形机器人出货量超 5500 台全球第一
+- (c) 8/18 周二 A 股 09:30 pre-market 实战段 2.5h 倒数 + 港股 10:00 pre-market 实战段 3h 倒数 + 美方 8/17 21:30 PT 美股 周一 收盘 9.5h 实战段 续 baseline
+- (d) JACKSON HOLE 8/27-29 T-9→T-8 倒数 续 baseline + Fed 沃什 8/22 T-4→T-3 倒数 续 baseline + 23BP 周末 Fed 静默期 续 baseline + 美方 IEAA Summit 9/2 T-15→T-14 倒数 续 baseline
+- (e) DeepSeek 8/17 涨价 T-0 28h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/17 收盘 24h 后续实战段 续 baseline + 8/20 周三 8 月 LPR 公布 T-2 倒数 续 baseline
+
+### next relay
+- 给 8/18 午后 cron 第一百一十四期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + 53 + baseline 第 100 子轴 立 + 第 91 接力 段 (8/18 09:30 A 股 实战段 5h post-open + 8/18 10:00 港股 实战段 4h post-open + 8/18 09:30 A 股 宇树 8/19 上市 T-0.5 实战段 续 baseline + 8/18 11:00 港股 宇树 8/19 上市 T-0.5 实战段 续 baseline + 美方 8/17 21:30 PT 收盘 实战段 续 baseline + DeepSeek 8/17 涨价 32h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/18 09:30 实战段 续 baseline + JACKSON HOLE T-8→T-7 倒数 + Fed 沃什 T-3→T-2 倒数 + 23BP 静默期续 + IEAA Summit 9/2 T-14→T-13 倒数续 + 8/20 周三 8 月 LPR 公布 T-2 续 baseline)
+
+### commit
+- publish commit: f057ca5 (8/18 早 content + raw + voice + index.html + top-level patch + index.json + STATE.md)
+- top-level patch commit: 同 publish commit (8/18 早 7 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f))
+- wrangler deploy 1: Version ID 91deee10-78cb-4426-ba6b-b5c06d0decec (content + slot assets 4 files uploaded + 020755.xyz deployed)

@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-18",
+    "type": "morning",
+    "slot": "2026-08-18-morning",
+    "slot_hour": "07:00",
+    "weekday": "周二",
+    "title": "8/18 早 跨 day 边界 第一期 cron · 8/19 宇树 688836.SH 科创板上市 T-1 倒数 1 天 17h",
+    "html_url": "daily/2026-08/2026-08-18-morning/index.html",
+    "baseline": 99,
+    "relay": 90,
+    "narrative_count": 113,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron (24h 跨 day 边界 标志 OK per Pitfall 49 模式 vs 8/17 早 master 时点 24h) + Pitfall 41 周末 pre-market 真空窗口 + Pitfall 47 真空抓料 工作流"
+  },
+  {
     "date": "2026-08-17",
     "type": "21evening",
     "slot_hour": "21:00",
