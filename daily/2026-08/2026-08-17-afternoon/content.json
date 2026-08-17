@@ -1,0 +1,46 @@
+{
+    "slot": "2026-08-17-afternoon",
+    "date": "2026-08-17",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "weekday": "周一",
+    "title": "8/17午后 DeepSeek涨价T-0",
+    "dek": "8/17 09:30 A股3.5h + 10:00 港股3h 实战段 + DeepSeek 8/17 涨价 T-0 13h V4 Pro 缓存命中 12倍 + V4 Pro 输出 350% + 智谱 02613 1270 -3.57% + MiniMax 329 -12.69% + 8/18周二开市 T-0.5 + JACKSON HOLE T-9",
+    "why_this": "8/17 午后 = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + 53. 8/17 09:30 A 股 3.5h + 10:00 港股 3h 实战段 + DeepSeek 8/17 涨价 T-0 13h 后续 + 智谱 + MiniMax 8/14 close 24h+. 加新维度 5 类 M14.",
+    "main_facts": [
+        "8/17 09:30 A 股 实战段 3.5h post-open + 早盘 sina 02:00 经济参考报 'A 股稳市场信号密集释放' + 1-6 月 工业企业利润 39479.9 亿 +18.7% 实战段 (per 新浪财经 8/17 02:00 verbatim + 8/17 早 baseline 96 verbatim preserved + 8/16 早 baseline 93 + 8/16 午后 baseline 94 + 8/16 晚报 baseline 95 verbatim preserved 全 stack 拼图完整 per Pitfall 46). 8/17 午后 13:00 CST vs 8/17 09:30 A 股 开盘 = 3.5h 实战段 续 baseline. Source: sina verbatim URL https://cj.sina.cn/articles/view/7857201856/1d45362c001908jqau",
+        "8/17 09:30 A 股 实战段 + 年内 A 股 再融资 4700 亿 186 项目 实战段 + 1 摩 8/14 沪深 300 2026 年底 5200 点 基准目标 +24% EPS 段 (per 新浪财经 8/17 verbatim + 小摩 verbatim + 8/17 早 baseline 96 verbatim). 8/17 午后 13:00 CST vs 8/17 09:30 A 股 开盘 = 3.5h 实战段 续 baseline. Source: sina verbatim URL https://finance.sina.com.cn/7x24/2026-08-17/doc-ininpwie9442099.shtml + sina verbatim URL https://k.sina.com.cn/article_7879776976_1d5abdad006802ia02.html",
+        "8/17 00:00 DeepSeek 涨价已生效 T-0 13h 后续实战段 V4 Pro 缓存命中输入 0.025→0.30 高峰 12倍 (1100%) + V4 Pro 输出 6→27 高峰 350% + V4 Flash 输出 2→9 高峰 350% (per 华尔街见闻 8/13 11:47 verbatim + 知乎 lixiaobao-81-15 8/14 verbatim + 北京商报 8/13 20:05 verbatim + 新浪财经 8/17 verbatim + 8/14 早 baseline 87 + 8/14 午后 baseline 88 + 8/17 早 baseline 96 verbatim preserved 全 stack 拼图完整). V4 Pro 实战: DeepSWE 编程 12.8→62.7 飙升 + TerminalBench 2.1 87.9 与全球第一差距 0.1 分. 8/17 午后 13:00 CST vs 8/17 00:00 DeepSeek 涨价 T-0 = 13h 后续实战段. Source: wallstreetcn verbatim URL https://wallstreetcn.com/articles/3779377 + zhihu verbatim URL https://zhuanlan.zhihu.com/p/2071731871747258113 + k.sina.com.cn verbatim URL https://k.sina.com.cn/article_7879923512_1d5ae173806801fous.html",
+        "DeepSeek 涨价 = 算力稀缺货币化 + 商业化拐点 + V4 Pro 性能逼近 Claude Fable 5 (per 新浪财经 8/17 verbatim + 鳌头财经 verbatim + 高盛 verbatim + 8/14 早 baseline 87 verbatim preserved). 新浪 8/17 verbatim 'DeepSeek于5月曾将V4 Pro永久下调至原价25%, 此次反向大幅提价, 意味着低价换份额的打法正式转弯' + '8月1日一天在OpenCode平台就处理了约8万亿tokens, 高峰期服务器接口频繁超时' + 'DeepSeek 周调用量一度登顶全球第一'. 鳌头财经 verbatim 'V4 Pro 输出27元/百万tokens, 折算后仍低于Anthropic Claude Fable 5的3.15美元/百万tokens和OpenAI GPT-5.6的1.86美元/百万tokens' (即涨价后仍比海外旗舰便宜一半以上). 8/17 午后 13:00 CST vs 8/17 00:00 涨价 T-0 = 13h 后续实战段 续 baseline. Source: cj.sina.com.cn verbatim URL https://cj.sina.cn/articles/view/7880068329/1d5b04ce906801a2tm",
+        "智谱 02613 8/14 close 1270.0 HKD -3.57% + MiniMax 0100.HK 8/14 close 329.0 HKD -12.69% 大模型双雄 8/14 close 实战段 续 baseline (per Yahoo Finance 2513.HK + 0100.HK 8/14 verbatim + 8/17 早 baseline 96 verbatim + 8/15 早 + 8/15 午后 + 8/15 晚报 + 8/16 早 + 8/16 午后 + 8/16 晚报 7 期累计 baseline 拼图完整 per Pitfall 46). 8/17 早 baseline 96 智谱 1218 HKD + MiniMax 286.6 HKD 数字 verbatim preserved per 8/17 早 raw.md, 8/17 午后本期 raw 命中 实数据 智谱 02613 8/14 close 1270.0 HKD -3.57% + MiniMax 0100.HK 8/14 close 329.0 HKD -12.69% (vs 8/17 早 baseline 96 估计值 1218 + 286.6 略低, 8/17 下一期 cron 应校准; 8a 数字精度 跨 slot 引用 合法 per Pitfall 8a 跨 slot 引用). Source: yahoo verbatim URL https://hk.finance.yahoo.com/quote/2513.HK + sg.finance.yahoo.com verbatim URL https://sg.finance.yahoo.com/quote/0100.HK"
+    ],
+    "not_picked": [
+        "8/16 21:30 PT 美股周五收盘 15.5h 后续实战段 — 8/16 晚报 baseline 95 verbatim preserved 已 充分 cover, 不重复",
+        "8/17 21:30 PT 美股开盘前 8.5h pre-market 真空 — 续 baseline 给 8/17 晚报 cron 接力",
+        "8/18 周二 港股/A 股 9:30/10:00 开市 实战段 留 baseline 续 T-0.5/T-0.5 — 8/17 晚报 cron 实战段 接力"
+    ],
+    "pick_points": [
+        {
+            "value": "T-0 13h",
+            "label": "DeepSeek 8/17 涨价生效 13h 后续"
+        },
+        {
+            "value": "12倍",
+            "label": "V4 Pro 缓存命中输入 高峰涨幅"
+        },
+        {
+            "value": "+18.7%",
+            "label": "1-6月 规上工业 利润 同比"
+        }
+    ],
+    "say_4": [
+        "DeepSeek 8/17 涨价 T-0 13h V4 Pro 高峰 12倍",
+        "智谱 1270 -3.57% + MiniMax 329 -12.69%",
+        "A 股 9:30 3.5h + 港股 10:00 3h 实战段 + 4700 亿再融资",
+        "JACKSON HOLE T-9 + Fed沃什 T-4 + 23BP 周末 续"
+    ],
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 工作流 (8/17 午后 = baseline 97 + 第 88 接力, master 时点 8/17 13:00 vs 8/17 早 master 时点 8/17 07:00 = 6h 同 day 跨 slot) vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/17 早 = baseline 96 + 第 87 接力, master 时点 8/17 07:00 vs 8/16 晚报 master 时点 8/16 21:00 = 10h 同 day 跨 slot; vs 8/16 早 master 时点 8/16 07:00 = 24h 跨 day 边界 标志 OK per Pitfall 49 模式) vs Pitfall 53 跨 day 边界 后续期 cron (8/16 晚报 baseline 95 + 第 86 接力 vs 8/15 早 master 时点 8/15 07:00 CST = 54h 跨 day 边界 标志 OK per Pitfall 53 模式)",
+    "hero_meta_short": "周一 午报 · 8/17 09:30 A股 3.5h + 10:00 港股 3h 实战段 + DeepSeek 8/17 涨价 T-0 13h 后续 V4 Pro 12倍 + V4 Pro 输出 350% + 智谱 8/14 1270 -3.57% + MiniMax 8/14 329 -12.69% + 8/18 周二开市 T-0.5 + 1-6月 工业利润 +18.7% + 4700亿 再融资 + JACKSON HOLE T-9 + Fed沃什 T-4 + 23BP 周末Fed静默期续",
+    "slot_label": "午报",
+    "main_h2": "8/17 午后 同 day 第二期 cron 加新维度 · 8/17 09:30 A 股 实战段 3.5h post-open + 10:00 港股 实战段 3h post-open + DeepSeek 8/17 00:00 涨价 已生效 T-0 13h 后续实战段 V4 Pro 缓存命中输入 0.025→0.30 高峰 12倍 (1100%) + V4 Pro 输出 6→27 高峰 350% + 智谱 02613 8/14 close 1270 HKD -3.57% + MiniMax 0100 8/14 close 329 HKD -12.69% + 8/18 周二 开市 T-0.5 + 8/16 21:30 PT close 15.5h 后续实战段 + JACKSON HOLE 8/27-29 T-9 倒数 + Fed 沃什 8/22 22:00 CST 讲话 T-4 倒数 + 23BP 周末 Fed 静默期续"
+}
