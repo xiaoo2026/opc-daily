@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-17",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "8/17 晚 同 day 第三期 cron 收官 · 8/17 14:00 港股 4h post-open 收盘实战段 + 8/17 15:00 A 股 沪指 5.5h post-open 收盘实战段 + 8/17 21:30 PT 美股 周一 开盘 实战段 + 8/18 周二 港股/A 股 09:30/10:00 开市 T-0.5 + JACKSON HOLE T-9 + Fed 沃什 T-4 + DeepSeek 8/17 涨价 T-0 21h 后续 + 智谱 1270 -3.57% + MiniMax 329 -12.69%",
+    "html_url": "daily/2026-08/2026-08-17-21evening/index.html",
+    "baseline": 98,
+    "relay": 89,
+    "narrative_count": 112,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 + Pitfall 53 跨 day 边界 后续期 cron"
+  },
+  {
+    "date": "2026-08-17",
     "type": "afternoon",
     "slot": "2026-08-17-afternoon",
     "slot_hour": "13:00",
