@@ -4,7 +4,7 @@
     "type": "21evening",
     "slot_hour": "21:00",
     "weekday": "周一",
-    "title": "8/17晚 同 day 第三期 · T-0.5",
+    "title": "8/17晚 同 day 第三期",
     "dek": "8/17 14:00 港股收盘实战段 + 8/17 A股收盘实战段 + 8/17 21:30 PT 美股开盘 实战段 续 + 8/18 周二 开市 T-0.5 + JACKSON HOLE T-9 + Fed 沃什 T-4 + 23BP 周末 续 + DeepSeek 8/17 涨价 T-0 21h 后续",
     "why_this": "8/17 晚 = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + 53. 8/17 14:00 港股收盘实战段 + 8/17 A股收盘实战段 + 8/17 21:30 PT 美股周一开盘实战段 + 8/18 周二开市 T-0.5 (12.5h/13h/24.5h 倒数). 第 31 件 narrative 同期 对位 baseline 98 + 第 89 接力.",
     "main_facts": [
