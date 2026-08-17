@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-17",
+    "type": "afternoon",
+    "slot": "2026-08-17-afternoon",
+    "slot_hour": "13:00",
+    "weekday": "周一",
+    "title": "8/17午后 DeepSeek涨价T-0 · V4 Pro 12倍",
+    "html_url": "2026-08/2026-08-17-afternoon/index.html",
+    "baseline": 97,
+    "relay": 88,
+    "narrative_count": 111,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度 (6h 同 day 跨 slot) + Pitfall 53 跨 day 边界 后续期 cron (vs 8/17 早 baseline 96 + 第 87 接力)"
+  },
+  {
+    "date": "2026-08-17",
     "type": "morning",
     "slot": "2026-08-17-morning",
     "slot_hour": "07:00",
