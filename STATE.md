@@ -1,5 +1,41 @@
 # STATE.md — opc-daily cron state
 
+
+## cron 第一百一十六期 8/19 早 07:00 CST (2026-08-19)
+
+### baseline
+- 第 102 子轴 立
+- 第 93 接力 立
+- 35 件 baseline additive 拼图起 跨 38 天 7/12 早 → 8/19 早
+
+### picked
+- 8/19 早 跨 day 边界 新一天 第一期 cron 加新维度
+- 8/19 周三 宇树科技 688836.SH 科创板 上市 T-0 当天 实战段
+- 发行价 150.80 元/股 + 募资 60.99 亿 + 网上中签率 0.01809759% 科创板史上最难
+- 战配 DeepSeek 锁 36 个月 1.41 亿 + 腾讯 + 南方电网 + 中国电信 + 中信证券 + 全国社保基金 + 昆仑资本
+- 8/17 宇树 超人 机器人发布 原地跳高 2 米 + 12.66 m/s 全球第一
+- 8/19 A 股 09:30 pre-market 实战段 + 港股 10:00 pre-market 实战段
+- 美方 8/18 21:30 PT 收盘实战段 续 baseline
+- JACKSON HOLE 8/27-29 T-8 倒数 + Fed 沃什 8/22 T-3 倒数 + 23BP + IEAA Summit T-14
+- DeepSeek 8/17 涨价 T-0 41h 后续 + 智谱 02613 / MiniMax 0100 8/18 收盘实战段续
+
+### 加新维度 5 类 M19. [146-150]
+- (a) 8/19 周三 宇树科技 688836.SH 科创板 上市 T-0 当天实战段 + A 股"人形机器人第一股"定价锚
+- (b) 8/17 宇树"超人"机器人发布 续 baseline + 2025 人形机器人出货量超 5500 台全球第一
+- (c) 8/19 周二 A 股 09:30 pre-market 实战段 2.5h 倒数 + 港股 10:00 pre-market 实战段 3h 倒数
+- (d) JACKSON HOLE 8/27-29 T-8 倒数 + Fed 沃什 8/22 T-3 倒数 + 23BP + IEAA Summit T-14 倒数
+- (e) DeepSeek 8/17 涨价 T-0 41h 后续实战段 + 智谱/MiniMax 8/18 收盘实战段续
+
+### next relay
+- 给 8/19 午后 cron 第一百一十七期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + 53 + baseline 第 103 子轴 立 + 第 94 接力 段 (8/19 09:30 A 股 实战段 5h post-open + 8/19 10:00 港股 实战段 4h post-open + 8/19 09:30 A 股 宇树 实战段 5h post-open + 美方 8/18 21:30 PT 收盘 实战段 续 baseline + DeepSeek 8/17 涨价 T-0 45h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/19 09:30 实战段 续 baseline + JACKSON HOLE T-8→T-7 倒数 + Fed 沃什 T-3→T-2 倒数 + 23BP 静默期续 + IEAA Summit 9/2 T-14→T-13 倒数续)
+
+### commit
+- publish commit: ad1df95 (8/19 早 content + raw + voice + index.html 5 files)
+- top-level patch commit: 72bdc4c (topbar + eyebrow + featured h2 + pick-meta + pick-rationale + pick-cta + archive-entry + index.json 8 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g) + 49 跨 day 边界 第一期 cron 加新维度)
+- wrangler deploy 1: Version ID 7fd405ad (content + slot assets 4 files uploaded + 020755.xyz deployed)
+- wrangler deploy 2: Version ID a88b27ef (top-level index.html + index.json + STATE.md re-deploy per Pitfall 43 + 55(f))
+- prod EXACT MATCH: daily/2026-08/2026-08-19-morning/ local 13119 bytes == curl --noproxy '*' -sL 13119 bytes
+
 ## cron 第一百一十一期 8/17 午后 13:00 CST (2026-08-17)
 
 ### baseline
