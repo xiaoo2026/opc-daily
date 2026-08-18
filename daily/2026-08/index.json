@@ -1,6 +1,16 @@
 [
   {
     "date": "2026-08-18",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "baseline": 100,
+    "relay": 91,
+    "narrative_count": 114,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度",
+    "html_url": "/daily/2026-08/2026-08-18-afternoon/index.html"
+  },
+  {
+    "date": "2026-08-18",
     "type": "morning",
     "slot": "2026-08-18-morning",
     "slot_hour": "07:00",
