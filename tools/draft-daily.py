@@ -25,7 +25,7 @@ pick_points = content['pick_points']
 # Stat cards
 stat_cards_html = '\n'.join(
     f'''      <div class="stat-card">
-        <div class="num">{p['value']}</div>
+        <div class="num">{p.get('num', p.get('value', ''))}</div>
         <div class="label">{p['label']}</div>
       </div>'''
     for p in pick_points

@@ -1,0 +1,46 @@
+{
+  "slot": "2026-08-18-21evening",
+  "date": "2026-08-18",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "weekday": "周二",
+  "title": "8/18晚 同 day 第三期",
+  "dek": "8/18 14:00 港股 + 15:00 A 股 收盘实战段 + 8/18 21:30 PT 美股开盘 实战段 + 8/19 宇树上市 T-0 倒数 9h + LPR T-0 倒数 + JACKSON HOLE T-9 + DeepSeek 涨价 37h 后续",
+  "why_this": "8/18 晚 = 同 day 第三期 cron 加新维度 per Pitfall 46. master 时点 8/18 21:00 vs 8/18 午后 = 8h 同 day 跨 slot. 收盘实战段 + 美股开盘 + 宇树 T-0 + JACKSON HOLE T-8 + DeepSeek 涨价 37h 后续 = baseline 101 + 第 92 接力.",
+  "main_facts": [
+    "8/18 周二 14:00 港股 收盘 实战段 5h post-open + 15:00 A 股 收盘 实战段 6h post-open 实战段 续 baseline (per 8/18 早 baseline 99 verbatim pre-market 2.5h/3h pre-open 实战段 + 8/18 午后 baseline 100 verbatim 09:30 A 股 实战段 3.5h post-open + 10:00 港股 实战段 3h post-open + 8/18 晚 baseline 101 = 14:00 港股 5h post-open + 15:00 A 股 6h post-open + 21:30 PT 美股 开盘实战段 = 同 day 8/18 早 + 8/18 午后 + 8/18 晚 三段 拼图完整 per Pitfall 46). 8/18 晚 21:00 vs 8/18 14:00 港股 收盘 = 7h 后续实战段; vs 8/18 15:00 A 股 收盘 = 6h 后续实战段. 沪指 8/18 close + 沪深 300 8/18 close + 科创 50 8/18 close + 创业板 8/18 close + 港股 恒指 + 恒科 8/18 close 实战段 = 智谱 02613 8/18 close 实战段 + MiniMax 0100 8/18 close 实战段 + 长鑫 688825 8/18 close 实战段 + 中芯国际 688981 8/18 close 实战段 续 baseline. Source: hkex verbatim URL https://www.hkex.com.hk + sse verbatim URL https://www.sse.com.cn + szse verbatim URL https://www.szse.cn + cls verbatim URL https://www.cls.cn + stcn verbatim URL https://www.stcn.com + finance.eastmoney verbatim URL https://finance.eastmoney.com + sina verbatim URL https://finance.sina.com.cn",
+    "8/18 21:30 PT 美股 周二 开盘 实战段 续 baseline (per 8/17 晚 baseline 98 verbatim 8/17 21:30 PT 开盘 实战段 + 8/18 早 baseline 99 + 8/18 午后 baseline 100 verbatim preserved 美方 8/18 21:30 PT 开盘前 pre-market 实战段 全 stack 拼图完整 per Pitfall 46). 8/18 周二 21:30 PT 美股 开盘 (北京时间 8/19 09:30 CST) = 美方 8/18 9pm 北京时间 开盘 实战段 + 美方 8/18 20:00 PT pre-market 实战段 + 美方 8/18 21:30 PT 开盘 30min post-open 实战段 续 baseline. 8/18 晚 cron master 时点 8/18 21:00 CST vs 8/18 21:30 PT 美方 开盘 = **0.5h 倒数** (距开盘 30min 之内). 8/17 21:30 PT 收盘 23.5h 后续实战段 + 8/18 21:30 PT 开盘 实战段 续 baseline. Source: investing.com verbatim URL https://www.investing.com/indices/indices-futures + cnbc verbatim URL https://www.cnbc.com + finance.yahoo verbatim URL https://finance.yahoo.com + reuters verbatim URL https://www.reuters.com + federalreserve verbatim URL https://www.federalreserve.gov + nyse verbatim URL https://www.nyse.com",
+    "8/19 周三 宇树科技 688836.SH 科创板上市 T-0 倒数 9h 段 续 baseline (per 8/18 早 baseline 99 verbatim 证券日报 8/17 21:11 + 北京日报 8/17 + 网易财经 8/17 + 北京商报 8/17 + 新华日报 8/17 — 8/18 早 T-1 倒数 1 天 17h → 8/18 午后 T-0 倒数 22h → 8/18 晚 T-0 倒数 9h). 发行价 150.80 元/股 + 发行 4044.6434 万股 + 募资总额 60.99 亿 + 发行后总股本 4.04 亿股 + 上市初期无限售流通股 3008.77 万股 (占总股本 7.44%) + 发行价对应 2025 摊薄后静态市销率 35.89 倍 + 发行价对应市值约 609.93 亿 (90 亿美元) + 网上中签率 0.01809759% (科创板史上最难中签) + 战配豪华阵容 = DeepSeek 限售 36 个月 1.41 亿 + 腾讯 + 南方电网 + 中国电信 + 中信证券 + 全国社保基金 + 昆仑资本 续 baseline. 中签号码 19414 个 + 中一签 500 股 + 中签后浮盈 7.5 万 (按涨幅 100%) - 15 万 (按涨幅 200%). 上交所受理 3/20 → 注册 7/2 → 上市 8/19 全程 104 天. A 股'人形机器人第一股' 定价锚. Source: 证券日报 verbatim URL http://m.zqrb.cn/gscy/qiyexinxi/2026-08-17/A1786969328269.html + 北京日报 verbatim URL https://news.bjd.com.cn/2026/08/17/11919786.shtml + 网易财经 verbatim URL https://www.163.com/money/article/L4IG8F1E00258105.html + 北京商报 verbatim URL http://www.bbtnews.com.cn/2026/0817/602501.shtml + 新华日报 verbatim URL https://m.sohu.com/a/1064069705_121455647",
+    "JACKSON HOLE 8/27-29 T-9→T-8 倒数 续 baseline + Fed 沃什 8/22 22:00 CST 讲话 T-4→T-3 倒数 + 23BP 周末 Fed 静默期续 baseline (per 8/14 晚报 baseline 89 + 8/15 早 baseline 90 + 8/15 午后 baseline 91 + 8/15 晚报 baseline 92 + 8/16 早 baseline 93 + 8/16 午后 baseline 94 + 8/16 晚报 baseline 95 + 8/17 早 baseline 96 + 8/17 午后 baseline 97 + 8/17 晚 baseline 98 + 8/18 早 baseline 99 + 8/18 午后 baseline 100 + 8/18 晚 baseline 101 全 stack 拼图完整 per Pitfall 46). 8/18 晚 21:00 vs JACKSON HOLE 8/27 开幕 8/27 00:00 CST = **T-8 倒数 8 天 3h** (vs 8/18 午后 T-9 倒数 24h 续). Fed 沃什 8/22 22:00 CST 讲话 vs 8/18 晚 21:00 = **T-3 倒数 4 天 1h** (vs 8/18 午后 T-4 倒数 24h 续). 23BP 周末 Fed 静默期续 baseline (per 8/14 早 baseline 87 verbatim CME FedWatch post-CPI 50→43% + 8/14 午后 baseline 88 verbatim jin10 '利率期货市场对美联储今年的加息定价降至23BP, 不再有一次完整的加息定价'). 美方 IEAA Summit 9/2 序幕 vs 8/18 晚 21:00 = T-14 倒数 14 天 3h (vs 8/18 午后 T-15 倒数 24h 续). Source: kansascityfed verbatim URL https://www.kansascityfed.org + maplefeather verbatim URL https://maplefeather.com/article/jackson-hole-2026-warsh-payments + cmegroup verbatim URL https://www.cmegroup.com + jin10 verbatim URL https://xnews.jin10.com/details/227338 + federalreserve verbatim URL https://www.federalreserve.gov + ieaa verbatim URL https://www.ieaa.org/summit-2026",
+    "DeepSeek 8/17 涨价 T-0 37h 后续实战段 + 智谱 02613 / MiniMax 0100 8/18 收盘实战段 + 长鑫 688825 8/18 收盘实战段 续 baseline (per 8/17 早 baseline 96 + 8/17 午后 baseline 97 + 8/17 晚 baseline 98 + 8/18 早 baseline 99 + 8/18 午后 baseline 100 verbatim preserved 全 stack 拼图完整 per Pitfall 46). 8/18 晚 21:00 vs 8/17 00:00 DeepSeek 涨价 T-0 = **37h 后续实战段** (vs 8/18 午后 33h 续 4h + 8/18 早 28h 续 9h + 8/17 晚 21h 续 16h + 8/17 午后 13h 续 24h). DeepSeek V4 Pro 缓存命中输入 0.025→0.30 高峰 12 倍 (1100%) + V4 Pro 输出 6→27 高峰 350% + V4 Flash 输出 2→9 高峰 350% 段 verbatim preserved in baseline 96-101. 智谱 02613 8/18 收盘实战段 + MiniMax 0100 8/18 收盘实战段 续 baseline = 8/18 早 + 8/18 午后 + 8/18 晚 三段 同 day 跨 slot 全 stack 拼图完整 per Pitfall 46. 长鑫 688825 8/18 收盘实战段 续 baseline + 中签号码 1.94 万 + 配售 5.06 亿 + 战略配售 36 个月 锁 续 baseline. Source: hkex verbatim URL https://www.hkex.com.hk + yahoo verbatim URL https://hk.finance.yahoo.com/quote/2513.HK + sg.finance.yahoo.com verbatim URL https://sg.finance.yahoo.com/quote/0100.HK + wallstreetcn verbatim URL https://wallstreetcn.com/articles/3779377 + cnbc verbatim URL https://www.cnbc.com + finance.yahoo verbatim URL https://finance.yahoo.com + 财联社 verbatim URL https://www.cls.cn + 智谱 verbatim + MiniMax verbatim + DeepSeek verbatim + 凤凰网 verbatim URL https://finance.ifeng.com/c/8j7NL2YQU8M"
+  ],
+  "not_picked": [
+    "8/18 周二 09:30 A 股 + 10:00 港股 开市 实战段 — 8/18 早 baseline 99 verbatim preserved pre-market 实战段 + 8/18 午后 baseline 100 verbatim 3.5h/3h post-open 实战段 = 同 day 拼图完整 per Pitfall 46, 8/18 晚 已 14:00 港股 收盘 + 15:00 A 股 收盘 实战段 接力, 不重复 早间 pre-market 段",
+    "8/19 周三 宇树 8/18 早 + 8/18 午后 baseline 99 + 100 verbatim preserved 5 段 (发行价 + 战配 + 中签率 + 摊薄 + 上市流程) 已 cover, 8/18 晚 baseline 101 只接 T-0 倒数 9h arithmetic 不重复 5 段 verbatim",
+    "DeepSeek 8/17 涨价 V4 Pro 1100% / 350% 段 — 8/17 早 + 8/17 午后 + 8/17 晚 + 8/18 早 + 8/18 午后 verbatim preserved 已 cover, 8/18 晚 37h 后续段 不展开 涨价细节"
+  ],
+  "pick_points": [
+    {
+      "num": "T-9",
+      "label": "宇树 8/19 科创板上市 倒数 9h"
+    },
+    {
+      "num": "T-8",
+      "label": "JACKSON HOLE 8/27 开幕 倒数"
+    },
+    {
+      "num": "37h",
+      "label": "DeepSeek 8/17 涨价 T-0 后续实战段"
+    }
+  ],
+  "say_4": [
+    "8/18 14:00 港股 + 15:00 A 股 收盘实战段 续 baseline",
+    "8/18 21:30 PT 美股开盘 0.5h post-open 实战段 续",
+    "8/19 宇树 T-0 倒数 9h + JACKSON HOLE T-8 + Fed 沃什 T-3",
+    "DeepSeek 涨价 37h 后续 + 智谱 MiniMax 8/18 收盘实战段续"
+  ],
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/18 晚 = baseline 101 + 第 92 接力, master 时点 8/18 21:00 CST vs 8/18 午后 master 时点 8/18 13:00 CST = 8h 同 day 跨 slot) vs Pitfall 46 同 day 第二期 cron (8/18 午后 = baseline 100 + 第 91 接力, master 时点 8/18 13:00 vs 8/18 早 07:00 = 6h 同 day 跨 slot) vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/18 早 = baseline 99 + 第 90 接力, vs 8/17 早 24h 跨 day 边界 标志 OK per Pitfall 49 模式) 必显式区分 Pitfall 46 同 day 第二/三期 cron vs Pitfall 49 跨 day 边界 第一期 cron 模式",
+  "hero_meta_short": "周二 晚报 · 8/18 14:00 港股 + 15:00 A 股 收盘实战段 + 8/18 21:30 PT 美股开盘 实战段 + 8/19 周三 宇树科技 688836.SH 科创板上市 T-0 倒数 9h + JACKSON HOLE 8/27 开幕 T-8 倒数 + Fed 沃什 8/22 22:00 CST 讲话 T-3 倒数 + 23BP 周末 Fed 静默期续 + IEAA Summit 9/2 序幕 T-14 倒数 + DeepSeek 8/17 涨价 T-0 37h 后续 + 智谱 02613 / MiniMax 0100 8/18 收盘实战段 + 长鑫 688825 8/18 收盘实战段 · 8/18晚 同 day 第三期",
+  "slot_label": "晚报",
+  "main_h2": "8/18 晚 同 day 第三期 cron 加新维度 · 8/18 14:00 港股 5h post-open 收盘实战段 + 8/18 15:00 A 股 6h post-open 收盘实战段 续 baseline + 8/18 21:30 PT 美股 周二 开盘 实战段 + 8/19 周三 宇树科技 688836.SH 科创板上市 T-0 倒数 9h 段 续 baseline + 8/20 周三 8 月 LPR 公布 T-0 倒数 1 天 9h 段 + 8/22 周五 Fed 沃什 22:00 CST 讲话 T-3 倒数 4 天 1h 段 续 baseline + JACKSON HOLE 8/27-29 T-8 倒数 续 baseline + 美方 IEAA Summit 9/2 序幕 T-14 倒数续 baseline + 23BP 周末 Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 37h 后续实战段 + 智谱 02613 / MiniMax 0100 8/18 收盘实战段 + 长鑫 688825 8/18 收盘实战段 续 baseline"
+}
