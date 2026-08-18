@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-18",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "8/18 晚 同 day 第三期 cron · 收盘实战段 + 美股开盘 + 宇树 T-0 + DeepSeek 37h",
+    "html_url": "daily/2026-08/2026-08-18-21evening/",
+    "narrative_count": 115,
+    "baseline": 101,
+    "relay": 92,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/18 晚 = baseline 101 + 第 92 接力, master 时点 8/18 21:00 vs 8/18 午后 master 时点 8/18 13:00 = 8h 同 day 跨 slot)"
+  },
+  {
+    "date": "2026-08-18",
     "type": "afternoon",
     "slot_hour": "13:00",
     "baseline": 100,
