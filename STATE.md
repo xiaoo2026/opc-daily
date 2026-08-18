@@ -110,3 +110,22 @@
 - publish commit: 57541a3 (8/18 午后 content + raw + voice + index.html 4 files)
 - top-level patch commit: TBD (per Pitfall 55 + 55(e) + 55(f) top-level surgical patch)
 - wrangler deploy 1: Version ID 0d2df009-824a-4b40-8dc6-35100d275924 (content + slot assets 4 files uploaded + 020755.xyz deployed)
+
+
+## cron 第一百一十五期 8/18 晚报 (2026-08-18 21:00 CST · 周二晚报 · baseline 101 + 第 92 接力)
+
+**Patch header 守门**: Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/18 晚 = baseline 101 + 第 92 接力, master 时点 8/18 21:00 CST vs 8/18 午后 master 时点 8/18 13:00 CST = 8h 同 day 跨 slot; vs 8/18 早 master 时点 8/18 07:00 CST = 14h 同 day 跨 slot) vs Pitfall 46 同 day 第二期 cron (8/18 午后 = baseline 100 + 第 91 接力, 6h 同 day 跨 slot) vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/18 早 = baseline 99 + 第 90 接力, 24h 跨 day 边界 标志 OK per Pitfall 49 模式) 必显式区分 Pitfall 46 同 day 第二/三期 cron vs Pitfall 49 跨 day 边界 第一期 cron 模式.
+
+**6h 窗口 13:00~21:00 CST**: 8/18 14:00 港股 5h post-open 收盘实战段 + 8/18 15:00 A 股 6h post-open 收盘实战段 + 8/18 21:30 PT 美股 周二 开盘 实战段 (0.5h 倒数) + 8/19 周三 宇树科技 688836.SH 科创板上市 T-0 倒数 9h 段 + 8/20 周三 8 月 LPR 公布 T-0 倒数 1 天 9h 段 + 8/22 周五 Fed 沃什 22:00 CST 讲话 T-3 倒数 4 天 1h 段 + JACKSON HOLE 8/27-29 T-8 倒数 + 美方 IEAA Summit 9/2 序幕 T-14 倒数 + 23BP 周末 Fed 静默期续 + DeepSeek 8/17 涨价 T-0 37h 后续实战段 + 智谱 02613 / MiniMax 0100 8/18 收盘实战段 + 长鑫 688825 8/18 收盘实战段 续 baseline.
+
+**加新维度 5 类 (M18. [141-145])**: (a) 8/18 周二 14:00 港股 5h post-open 收盘实战段 + 15:00 A 股 6h post-open 收盘实战段 续 baseline (b) 8/18 周二 21:30 PT 美股 开盘 实战段 续 baseline (c) 8/19 周三 宇树科技 688836.SH 科创板上市 T-0 倒数 9h 段 续 baseline (d) JACKSON HOLE 8/27-29 T-9→T-8 倒数 续 baseline + Fed 沃什 8/22 T-4→T-3 倒数 续 baseline + 23BP 周末 Fed 静默期续 baseline + 美方 IEAA Summit 9/2 T-15→T-14 倒数 续 baseline (e) DeepSeek 8/17 涨价 T-0 33h→37h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/18 收盘实战段 + 长鑫 688825 8/18 收盘实战段 续 baseline = baseline additive 升级 第 101 子轴 立 + 第 92 接力 = 第 33 + 1 = **第 34 件 narrative 同期 对位** baseline 第 101 子轴 立.
+
+**Stack 拼图完整**: 34 件 baseline additive 拼图起 跨 37 天 7/12 早 → 8/18 晚报. cp 自 8/18 午后 cron raw/2026-08-18-afternoon.md verbatim baseline preserved md5 aec76eaf → patched to 3935accd 双路径硬约束 OK per Pitfall 27 + 41. raw.md 715 行 / 103 entries ≥ 30 / content.json 字数 spec PASS title=15/dek=131/why_this=183/pp labels [19,23,26]/say_4 [42,39,49,43] chars / 5 main_facts + verbatim 5 hits / draft-daily.py render 18535 bytes index.html (per wc -c, prod EXACT MATCH 18535) + em dash 0 cleanup per Pitfall 50 + 3 stat-cards / div 23=23 平衡 OK + verbatim citations + draft-daily.py fix per Pitfall 跨 num/value 字段兼容 (p.get('num', p.get('value', ''))) + TTS MiniMax CN danya_xuejie model=speech-02-hd 73.476s / 1177332B / ID3 OK / mp3 32000Hz / 128kbps (50-90s 实测有效窗口 OK per v0.8.9 spec).
+
+**8 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g)**: (1) topbar 2026-08-18 周二 · 21:00 (2) eyebrow 2026-08-18 · 晚报 (3) featured h2 替换 (4) pick-meta 晚报 · 21:00 · 第 34 件 narrative · baseline 101 · 第 92 接力 (5) pick-rationale 当晚 (6) pick-cta href 2026-08-18-21evening (anchor 限定 per Pitfall 55(e)) (7) archive-entry prepend (anchor 限定) (8) main month-entry prepend per Pitfall 55(g) month-label 锚点 + index.json prepend 8/18 21evening entry.
+
+**Wrangler deploy 双阶段**: 1st deploy Version 74b332ac-6962-40f0-aabe-14a3dc1a5cea (content + slot 4 files uploaded) + git push origin main + 2nd commit top-level fix + git push + 2nd wrangler deploy Version f4fbcd5a-12e6-4a0a-b870-10af02c35f7e (per Pitfall 43 STATE.md commit vs wrangler deploy 时序). 020755.xyz 真生效 (cf-cache MISS w/ Cache-Control: no-cache).
+
+**ad-hoc verifier 38/40 PASS** (2 false negatives = ffprobe streams format vs format format regex miss + wrangler Version(s) regex vs Current Version ID miss, 真生产 OK). 9 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g).
+
+**接力给 8/19 早 cron 第一百一十六期**: 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 102 子轴 立 + 第 93 接力 段 (8/19 周三 宇树科技 688836.SH 科创板上市 T-0 当天 实战段 + A 股 09:30 开盘前 30min 实战段 + 港股 10:00 开盘前 实战段 + 美方 8/18 21:30 PT 收盘实战段 + JACKSON HOLE T-9→T-8 倒数 + Fed 沃什 8/22 T-4→T-3 倒数 + 23BP 静默期续 + IEAA Summit 9/2 T-15→T-14 倒数续 + DeepSeek 涨价 T-0 37h 后续实战段 续 baseline + 智谱 MiniMax 8/18 收盘 实战段 续 baseline).
