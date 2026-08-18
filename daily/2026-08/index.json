@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-19",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "title": "8/19 早 跨 day 边界 新一天 第一期 cron · 宇树科技 688836.SH 科创板 上市 T-0 当天实战段 + 战配 DeepSeek 锁 36 月 + 8/19 09:30 A 股 pre-market 2.5h + JACKSON HOLE T-8 + Fed 沃什 T-3",
+    "html_url": "daily/2026-08/2026-08-19-morning/",
+    "narrative_count": 35,
+    "baseline": 102,
+    "relay": 93,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度"
+  },
+  {
     "date": "2026-08-18",
     "type": "21evening",
     "slot_hour": "21:00",
