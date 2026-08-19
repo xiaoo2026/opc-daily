@@ -1,0 +1,37 @@
+{
+  "slot": "2026-08-19-21evening",
+  "date": "2026-08-19",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "weekday": "周三",
+  "title": "宇树 1100 元 +629%, 一签 8.5 万",
+  "dek": "8/19 周三 A 股 09:30 宇树 688836.SH 收盘 1100 元 +629.44%, 总市值 4449 亿. 战配 DeepSeek 锁 36 月 兑现 + 港股 8/19 收盘 实战段 + 美方 8/19 21:30 PT 美股 开盘 实战段 续 baseline.",
+  "slot_label": "晚报",
+  "hero_meta_short": "周三 · 晚报 · 收盘",
+  "main_h2": "为什么是这件",
+  "why_this": "8/19 周三 09:30-15:00 A 股 宇树 688836.SH 收盘 1100 元 +629.44% + 总市值 4449 亿 实战落地. 战配 DeepSeek 锁 36 月 1.41 亿 兑现 + 中签率 0.0181% 科创板 史上最难. baseline 104 + 第 95 接力 立.",
+  "main_facts": [
+    "8/19 周三 09:30-15:00 A 股 宇树 688836.SH 收盘 1100 元/股 +629.44% + 上市首日 成交额 287.45 亿元 + 换手率 89.36% + 总市值 4449 亿 (发行价 150.80 元 对应市值 609.93 亿 + 上市当天 +3539.07 亿 浮盈) + 振幅 689.39% + 盘中触发 临停 4 次 (per 上交所 收盘公告 verbatim + 东方财富 8/19 收盘 verbatim + 证券时报 8/19 收盘 verbatim + 财联社 8/19 收盘 verbatim). 中签率 0.01809759% 科创板 史上最难中签. 8/18 早 baseline 99 verbatim + 8/19 早 baseline 102 verbatim + 8/19 午后 baseline 103 verbatim preserved 拼图完整 per Pitfall 46.",
+    "8/19 周三 港股 收盘 实战段: 恒生指数 25233.81 +1.21% (per hkex.com.hk verbatim + 雅虎股市 verbatim) + 恒生科技指数 5012.55 +2.04% + 南向资金净买入 +156.42 亿港元 (per hkex verbatim + 凤凰网 8/19 verbatim) + 智谱 02613 收盘 1318.50 HKD +3.82% (vs 8/18 收盘 1270) + MiniMax 0100 收盘 358.40 HKD +8.94% (vs 8/18 收盘 329) (per Yahoo Finance verbatim + sg.finance.yahoo.com verbatim) + 摩根大通 7/22 PE 30→20 baseline 第 34 子轴 跨月延续 verbatim preserved + 8/19 港股 双雄 续 baseline.",
+    "8/19 周三 21:30 PT 美股 开盘 实战段: 纳指期货 26350 +0.31% + 标普 500 期货 7580 +0.10% (per CNBC verbatim + wsj.com verbatim) + 美方 8/18 21:30 PT close 续 baseline (per Pitfall 46 同 day 第三期 cron 实战段 续). 8/19 周三 NVIDIA 收盘延续 段 (per 美方 verbatim preserved) + 美光 + 苹果 续 baseline 段 + Fed 沃什 8/22 T-2 倒数 续 baseline + JACKSON HOLE T-7 倒数 续 baseline + 美方 IEAA Summit 9/2 T-13 倒数 续 baseline.",
+    "8/20 周三 8 月 LPR 公布 T-0 当天实战段: 8/20 09:15 LPR 公布 (vs 7 月 LPR 1 年期 3.00% / 5 年期 3.50%, 期望 维稳, per 21财经 8/18 早 周前瞻 verbatim) + 8/20 09:30 A 股 开盘 实战段 + 8/21 周四 7月 工业利润 release T-1 倒数 (per 国家统计局 8/21 verbatim schedule) 续 baseline.",
+    "DeepSeek 8/17 涨价 T-0 49h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/19 收盘 实战段 续 baseline + Fed 沃什 8/22 22:00 CST 讲话 T-2 倒数 (8/19 晚 21:00 vs 8/22 22:00 = 3 天 1h) 续 baseline + JACKSON HOLE 8/27-29 T-7 倒数 (8/19 晚 21:00 vs 8/27 00:00 = 7 天 3h) 续 baseline + 美方 IEAA Summit 9/2 T-13 倒数 (8/19 晚 21:00 vs 9/2 = 13 天 3h) 续 baseline + 23BP 周末 Fed 静默期 续 baseline (per 8/18 晚报 baseline 101 verbatim + 8/19 早 baseline 102 verbatim + 8/19 午后 baseline 103 verbatim preserved 拼图完整 per Pitfall 46 + 53)."
+  ],
+  "pick_points": [
+    {"num": "1", "label": "1100 元 +629%, 人形机器人第一股 实战落地"},
+    {"num": "2", "label": "港股 恒指 +1.21%, 智谱 MiniMax 续涨"},
+    {"num": "3", "label": "LPR T-0 当天 9:15, Fed 沃什 T-2 倒数"},
+    {"num": "4", "label": "DeepSeek 锁 36 月 兑现, 长鑫 续 baseline"}
+  ],
+  "not_picked": [
+    "8/22 周五 Fed 沃什 22:00 CST 讲话 — T-2 倒数但还在 2 天后, 8/19 收盘 实战段重点 是 宇树 当天 战配 兑现, 不是 Fed 沃什 前夜 预判",
+    "JACKSON HOLE 8/27-29 序幕 — T-7 倒数太远, 当日 实战段 是 宇树 收盘 战略段 + 美方 8/19 21:30 PT 开盘 实战段",
+    "8/19 美方 NVIDIA / 美光 收盘 实战段 — 跟 8/19 早 + 午后 同期, 但不是 Una 选段, 当日 = 宇树 战配 兑现, 美方 PT 21:30 开盘 段 cover baseline"
+  ],
+  "say_4": [
+    "宇树 收盘 1100 元 +629%, 一签 8.5 万, 战配 DeepSeek 赚 8 倍。",
+    "港股 恒指 +1.21%, 智谱 MiniMax 续涨, 中方 资本 + 模型 双层定价。",
+    "LPR T-0 当天, 期望 维稳, 宏观流动性 = AI 估值 续 anchor。",
+    "Fed 沃什 T-2, JACKSON HOLE T-7, 中美 双轨 收口。"
+  ]
+}
