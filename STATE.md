@@ -184,6 +184,31 @@
 
 **接力给 8/19 晚报 cron 第一百一十八期**: 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline 第 104 子轴 立 + 第 95 接力 段 (8/19 15:00 A股 收盘 6h post-open + 8/19 16:00 港股 收盘 6h post-open + 8/19 21:30 PT 美股 开盘 实战段 续 baseline + 宇树 688836.SH 收盘 实战段 + 8/20 LPR T-0 当天实战段 + Fed 沃什 T-2 倒数 + JACKSON HOLE T-7 倒数 + IEAA Summit T-13 倒数续 + DeepSeek 49h 后续实战段 续 baseline + 智谱 MiniMax 长鑫 8/19 收盘 实战段 续 baseline).
 
+
+## cron 第一百一十八期 8/19 晚报 (2026-08-19 21:00 CST · 周三晚报 · baseline 104 + 第 95 接力)
+
+**Patch header 守门**: Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/19 晚报 = baseline 104 + 第 95 接力, master 时点 8/19 21:00 CST vs 8/19 午后 master 时点 8/19 13:00 CST = 8h 同 day 跨 slot; vs 8/19 早 master 时点 8/19 07:00 CST = 14h 同 day 跨 slot) vs Pitfall 46 同 day 第二期 cron (8/19 午后 = baseline 103 + 第 94 接力, 6h 同 day 跨 slot) vs Pitfall 49 跨 day 边界 新一天 第一期 cron (8/19 早 = baseline 102 + 第 93 接力, 24h 跨 day 边界 标志 OK per Pitfall 49 模式) 必显式区分 Pitfall 46 同 day 第三期 cron vs Pitfall 49 跨 day 边界 第一期 cron 模式.
+
+**6h 窗口 13:00~21:00 CST**: 8/19 周三 15:00 A 股 收盘 6h post-open + 16:00 港股 收盘 6h post-open + 8/19 09:30 宇树 688836.SH 实战段 5h 收盘 +1100 元 +629.44% + 总市值 4449 亿 + 战配 DeepSeek 锁 36 月 兑现 + 8/19 21:30 PT 美股 周三 开盘 实战段 (0.5h 倒数) + 8/20 周三 8 月 LPR 公布 T-0 当天实战段 + 8/21 周四 7月 工业利润 T-1 倒数 段 + 8/22 周五 Fed 沃什 22:00 CST 讲话 T-2 倒数 段 + JACKSON HOLE 8/27-29 T-7 倒数 + 美方 IEAA Summit 9/2 序幕 T-13 倒数 + 23BP Fed 静默期续 + DeepSeek 8/17 涨价 T-0 49h 后续实战段 + 智谱 02613 / MiniMax 0100 8/19 收盘实战段 + 长鑫 688825 8/19 实战段 续 baseline.
+
+**加新维度 5 类 (M21. [156-160])**: (a) 8/19 周三 15:00 A股 收盘 6h post-open + 16:00 港股 收盘 6h post-open 续 baseline (b) 8/19 周三 09:30 宇树 688836.SH 实战段 5h 收盘 +1100 元 +629.44% + 总市值 4449 亿 + 战配 DeepSeek 锁 36 月 兑现 续 baseline (c) 8/19 周三 21:30 PT 美股 开盘 实战段 续 baseline + Fed 沃什 8/22 T-2 倒数 + JACKSON HOLE T-7 倒数 + IEAA Summit T-13 倒数 (d) 8/20 周三 8 月 LPR 公布 T-0 当天实战段 + 8/21 周四 7月 工业利润 T-1 倒数 (e) DeepSeek 8/17 涨价 T-0 49h 后续实战段 + 智谱 02613 / MiniMax 0100 8/19 收盘实战段 + 长鑫 688825 8/19 实战段 续 baseline = baseline additive 升级 第 104 子轴 立 + 第 95 接力 = 第 36 + 1 = **第 37 件 narrative 同期 对位** baseline 第 104 子轴 立.
+
+**Stack 拼图完整**: 37 件 baseline additive 拼图起 跨 38 天 7/12 早 → 8/19 晚报. cp 自 8/19 午后 cron raw/2026-08-19-afternoon.md verbatim baseline preserved md5 50a44060aecc4a59d17fb3c848411a0c = 50a44060 双路径硬约束 OK per Pitfall 27 + 41. raw.md 715 行 / 103 entries ≥ 30 / content.json 字数 spec PASS title=25/dek=142/why_this=153/pp labels [27,27,30,33]/say_4 [48,45,42,39] chars / 5 main_facts + verbatim 12 hits / draft-daily.py render 12739 bytes index.html (per wc -c, prod EXACT MATCH 12739 bytes cf-cache MISS w/ Cache-Control: no-cache) + em dash 0 cleanup per Pitfall 50 + meta description · 替代 per Pitfall 50 v0.8.9 实测补 + 4 stat-cards / div 26=26 平衡 OK + verbatim citations + draft-daily.py 跨 num/value 字段兼容 (p.get(\'num\', p.get(\'value\', \'\'))) 双兼容 OK + TTS MiniMax CN danya_xuejie model=speech-02-hd 18.792s / 302388B / ID3 OK / mp3 32000Hz / 128kbps (短文案窗口 OK per v0.8.9 spec, 18s 偏短但合规 - content 短 段).
+
+**8 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g)**: (1) topbar 2026-08-19 周三 · 21:00 (2) eyebrow 2026-08-19 · 晚报 (3) featured h2 替换 (4) pick-meta 晚报 · 21:00 · 第 37 件 narrative · baseline 104 · 第 95 接力 (5) pick-rationale 当晚 (6) pick-cta href 2026-08-19-21evening (anchor 限定 per Pitfall 55(e)) (7) archive-entry prepend (anchor 限定) (8) main month-entry prepend per Pitfall 55(g) month-label 锚点 + index.json prepend 8/19 21evening entry (type=21evening / slot_hour=21:00 / baseline=104 / relay=95 / narrative_count=37 / patch_header_pitfall=Pitfall 46 + 53, per v0.8.18 字段守门).
+
+**Wrangler deploy 双阶段**: 1st deploy Version 796404a6-92d2-4e31-8f36-9f5f6521f7d6 (content + slot 4 files uploaded) + git push origin main + 2nd commit top-level fix + git push + 2nd wrangler deploy Version 79927f0b-14c4-42af-b74a-ce87d1ef07f8 (per Pitfall 43 STATE.md commit vs wrangler deploy 时序). 020755.xyz 真生效 (cf-cache MISS w/ Cache-Control: no-cache, prod EXACT MATCH 12739 bytes).
+
+**ad-hoc verifier 26/26 PASS**: raw.md 双路径 md5 match + index.html DOCTYPE/h1/title/主关键词/stat-grid 4卡/div平衡 + voice.mp3 ID3/302388B/ID3 OK/32kHz/128kbps + content.json spec + daily/index.json entries=55/[0] date+type=21evening/baseline=104/relay=95 + top-level index.html topbar/eyebrow/featured/archive/month-entry 全 8 处 patch + git clean + local==origin SHA b51a816 + prod EXACT MATCH 12739 bytes + wrangler latest 79927f0b. 26/26 PASS, no false negative.
+
+**接力给 8/20 早 cron 第一百一十九期**: 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline 第 105 子轴 立 + 第 96 接力 段 (8/20 周四 09:15 LPR T-0 当天实战段 + 09:30 A 股 开盘 实战段 + 8/21 周四 7月 工业利润 release + Fed 沃什 8/22 T-1 倒数 + JACKSON HOLE T-6 倒数 + 8/19 美方 8/19 21:30 PT 收盘实战段 + 智谱 MiniMax 长鑫 8/20 开盘实战段).
+
+### commit
+- publish commit: a4ca842 (8/19 晚报 content + raw + voice + index.html 4 files)
+- top-level patch commit: b51a816 (8/19 晚报 index.html + index.json 2 files)
+- wrangler deploy 1: Version ID 796404a6-92d2-4e31-8f36-9f5f6521f7d6 (content + slot assets 4 files uploaded + 020755.xyz deployed)
+- wrangler deploy 2: Version ID 79927f0b-14c4-42af-b74a-ce87d1ef07f8 (top-level patch index.html + index.json 2 files uploaded + 020755.xyz deployed 真生效)
+
 ### commit
 - publish commit: fe45ed1 (8/19 午后 content + raw + voice + index.html 4 files)
 - top-level patch commit: TBD (per Pitfall 55 + 55(e) + 55(f) + 55(g) top-level surgical patch)
