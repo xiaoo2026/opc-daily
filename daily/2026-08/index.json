@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-19",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "title": "8/19 晚报 同 day 第三期 cron 加新维度 · 8/19 周三 15:00 A股 收盘 6h post-open + 16:00 港股 收盘 + 8/19 09:30 宇树 688836.SH 收盘 +1100 元 +629.44% + 总市值 4449 亿 + 战配 DeepSeek 锁 36 月 兑现 + 8/19 21:30 PT 美股 开盘 + 8/20 LPR T-0 + Fed 沃什 8/22 T-2 倒数 + JACKSON HOLE T-7 倒数",
+    "html_url": "daily/2026-08/2026-08-19-21evening/",
+    "narrative_count": 37,
+    "baseline": 104,
+    "relay": 95,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第三期 cron 加新维度"
+  },
+  {
+    "date": "2026-08-19",
     "type": "afternoon",
     "slot_hour": "13:00",
     "title": "8/19 午后 同 day 第二期 cron 加新维度 · 8/19 周三 09:30 A股 实战段 3.5h post-open + 宇树 688836.SH 开盘 1100 元 +629.44% 市值 4449 亿 + 10:00 港股 实战段 3h post-open + 美方 8/18 21:30 PT 收盘 9.5h 后续实战段 + JACKSON HOLE T-8 倒数 + Fed 沃什 T-3 倒数 + LPR T-1 倒数 + DeepSeek 45h 后续 · 第 35 件 baseline 103 第 94 接力",
