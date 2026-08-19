@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-20",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "title": "8/20 早 跨 day 边界 新一天 第一期 cron 加新维度 · 8/20 周四 LPR T-0 当天 + 09:30 A 股 开盘实战段",
+    "baseline": 105,
+    "relay": 96,
+    "narrative_count": 38,
+    "patch_header_pitfall": "Pitfall 49 + 53 跨 day 边界 新一天 第一期 cron 加新维度",
+    "html_url": "daily/2026-08/2026-08-20-morning/index.html"
+  },
+  {
     "date": "2026-08-19",
     "type": "21evening",
     "slot_hour": "21:00",
