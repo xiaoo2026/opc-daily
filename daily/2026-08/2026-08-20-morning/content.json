@@ -1,0 +1,51 @@
+{
+  "title": "LPR 维稳. AI 估值 续 anchor",
+  "dek": "8/20 周四 09:15 LPR T-0 当天 维稳. 中方 宏观流动性 续 anchor. AI 估值 接力.",
+  "why_this": "8/20 周四 09:15 LPR T-0 当天实战段 (per 8/19 晚报 baseline 104 verbatim LPR T-0 续 baseline). LPR 1 年期 期望 维稳 3.00% / 5 年期 3.50%. 8/20 周四 09:30 A 股 开盘实战段. baseline 105 + 第 96 接力 立.",
+  "main_facts": [
+    "8/20 周四 09:15 LPR T-0 当天 实战段 — 1 年期 3.00% / 5 年期 3.50% 期望 维稳 (per 8/19 晚报 baseline 104 verbatim LPR T-0 续 baseline).",
+    "8/20 周四 09:30 A 股 开盘 实战段 — 沪指 8/19 收盘 3940 / 长鑫 688825 收盘 +5% / 宇树 688836.SH 收盘 1100 元 +629.44% 24h 后续实战段 (per 8/19 晚报 verbatim).",
+    "8/21 周四 7 月 工业利润 release T-1 倒数 — 1-6 月 工业利润 +18.7% (per 国家统计局 8/21 schedule + 8/19 早 baseline 102 verbatim 续 baseline).",
+    "Fed 沃什 8/22 22:00 CST 讲话 T-2 倒数 — 8/20 早 07:00 vs 8/22 22:00 = 2 天 15h (per 8/19 晚报 verbatim Fed 沃什 续 baseline + MapleFeather verbatim 8/22).",
+    "JACKSON HOLE 8/27-29 T-7 倒数 + IEAA Summit 9/2 T-13 倒数 + 23BP Fed 静默期 续 baseline (per 8/19 晚报 verbatim + 8/14 晚报 baseline 89 JACKSON HOLE verbatim).",
+    "DeepSeek 8/17 涨价 T-0 73h 后续实战段 + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/20 开盘 实战段 续 baseline (per 8/19 晚报 verbatim)."
+  ],
+  "pick_points": [
+    {
+      "num": "1",
+      "label": "LPR 维稳. 中方 流动性 = AI anchor"
+    },
+    {
+      "num": "2",
+      "label": "宇树 1100 元 +629%. 长鑫 续涨停"
+    },
+    {
+      "num": "3",
+      "label": "Fed 沃什 T-2. JACKSON HOLE T-7"
+    },
+    {
+      "num": "4",
+      "label": "智谱 +3.82%. MiniMax +8.94%"
+    }
+  ],
+  "not_picked": [
+    "8/22 周五 Fed 沃什 22:00 CST 讲话  ·  T-2 倒数但还在 2 天后. 当日实战段重点 是 LPR 当天 维稳 + A 股 09:30 开市 续 baseline. 不是 Fed 沃什 前夜 预判",
+    "JACKSON HOLE 8/27-29 序幕  ·  T-7 倒数太远. 当日 实战段 是 LPR T-0 当天 维稳 + A 股 09:30 开市 实战段. 美方 T-7 倒数段 cover baseline",
+    "8/20 美方 NVIDIA / 美光 收盘 实战段  ·  跟 8/19 早 + 午后 + 晚报 同期. 但不是 Una 选段. 当日 = LPR T-0 当天 维稳 + A 股 09:30 开市 实战段. 美方 PT 9.5h 后续 段 cover baseline"
+  ],
+  "say_4": [
+    "LPR 维稳. 1 年期 3.00% / 5 年期 3.50%",
+    "宇树 1100 元 +629% 24h 后续",
+    "Fed 沃什 T-2, JACKSON HOLE T-7",
+    "智谱 +3.82%, MiniMax +8.94%"
+  ],
+  "baseline": "105",
+  "relay": "96",
+  "narrative_count": "38",
+  "patch_header_pitfall": "Pitfall 49 + 53",
+  "hero_meta_short": "周四 · 早报 · LPR 当天",
+  "main_h2": "为什么是这件",
+  "date": "2026-08-20",
+  "slot_label": "早报",
+  "slot_hour": "07:00"
+}
