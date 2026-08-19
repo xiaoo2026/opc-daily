@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-19",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "title": "8/19 午后 同 day 第二期 cron 加新维度 · 8/19 周三 09:30 A股 实战段 3.5h post-open + 宇树 688836.SH 开盘 1100 元 +629.44% 市值 4449 亿 + 10:00 港股 实战段 3h post-open + 美方 8/18 21:30 PT 收盘 9.5h 后续实战段 + JACKSON HOLE T-8 倒数 + Fed 沃什 T-3 倒数 + LPR T-1 倒数 + DeepSeek 45h 后续 · 第 35 件 baseline 103 第 94 接力",
+    "html_url": "daily/2026-08/2026-08-19-afternoon/",
+    "narrative_count": 35,
+    "baseline": 103,
+    "relay": 94,
+    "patch_header_pitfall": "Pitfall 46 + 53 同 day 第二期 cron 加新维度"
+  },
+  {
+    "date": "2026-08-19",
     "type": "morning",
     "slot_hour": "07:00",
     "title": "8/19 早 跨 day 边界 新一天 第一期 cron · 宇树科技 688836.SH 科创板 上市 T-0 当天实战段 + 战配 DeepSeek 锁 36 月 + 8/19 09:30 A 股 pre-market 2.5h + JACKSON HOLE T-8 + Fed 沃什 T-3",
