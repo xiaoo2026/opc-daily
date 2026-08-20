@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-20",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "港股 14:00 收 + 8/21 工业利润 T-0 倒数 3h",
+    "baseline": 107,
+    "relay": 98,
+    "narrative_count": 40,
+    "html_url": "daily/2026-08/2026-08-20-21evening/index.html",
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度"
+  },
+  {
+    "date": "2026-08-20",
     "type": "afternoon",
     "slot_hour": "13:00",
     "baseline": 106,
