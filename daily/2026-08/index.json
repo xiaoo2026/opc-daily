@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-21",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "7月 工业利润 T-0 + Fed 沃什 T-1 倒数",
+    "baseline": 108,
+    "relay": 99,
+    "narrative_count": 41,
+    "html_url": "daily/2026-08/2026-08-21-morning/index.html",
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度"
+  },
+  {
     "date": "2026-08-20",
     "type": "21evening",
     "slot": "21evening",
