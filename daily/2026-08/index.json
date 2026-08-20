@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-20",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "baseline": 106,
+    "relay": 97,
+    "narrative_count": 120,
+    "title": "LPR T-0 双不变 + A股 09:30 实战段 续 baseline",
+    "html_url": "daily/2026-08/2026-08-20-afternoon/index.html",
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度"
+  },
+  {
+    "date": "2026-08-20",
     "type": "morning",
     "slot_hour": "07:00",
     "title": "8/20 早 跨 day 边界 新一天 第一期 cron 加新维度 · 8/20 周四 LPR T-0 当天 + 09:30 A 股 开盘实战段",
