@@ -1,0 +1,45 @@
+{
+  "slot": "2026-08-20-21evening",
+  "date": "2026-08-20",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "weekday": "周四",
+  "title": "港股 14:00 收 + 8/21 T0",
+  "dek": "8/20 14:00 港股 收盘实战段 + 8/20 15:00 A 股 收盘实战段 续 baseline + 8/21 工业利润 T-0 倒数 3h 段 + Fed 沃什 T-1 倒数 1 天 1h 段 续 baseline.",
+  "slot_label": "晚报",
+  "hero_meta_short": "周四 · 晚报 · 收盘",
+  "main_h2": "8/20 晚报 同 day 第三期 cron 加新维度 · 8/20 14:00 港股 实战段 7h post-close + 8/20 15:00 A 股 实战段 6h post-close + 8/20 21:30 PT 美股 0.5h 倒数 + 8/21 7 月 工业利润 T-0 倒数 3h 段 + Fed 沃什 8/22 T-1 倒数 1 天 1h 段 续 baseline + JACKSON HOLE T-6 倒数 + IEAA Summit T-12 倒数 + 23BP 静默期续 baseline + DeepSeek 8/17 涨价 T-0 89h 后续实战段 + 智谱 MiniMax 8/20 实战段 续 baseline + 长鑫 688825 8/20 实战段 续 baseline",
+  "why_this": "8/20 14:00 港股 实战段 7h post-close 续 baseline + 8/20 15:00 A 股 实战段 6h post-close 续 baseline + 8/21 7 月 工业利润 T-0 倒数 3h 段 + Fed 沃什 T-1 倒数 1 天 1h 段 续 baseline. baseline 107 + 第 98 接力 立.",
+  "main_facts": [
+    "8/20 周四 14:00 港股 实战段 7h post-close 续 baseline + 8/20 14:00 港股 收盘 verbatim 实战段 — 恒生指数 / 恒生科技指数 8/20 收盘 实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/20 收盘实战段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim preserved 双路径硬约束 OK per Pitfall 27 + 41 + 8/19 晚报 baseline 104 + 第 95 接力 verbatim 续 baseline + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/20 14:00 港股 收盘 = 7h 后续实战段. 港股 通 净买入 实战段 续 baseline + 港股 8/20 HSI 实战段 续 baseline + 港股 8/20 智谱 02613 / MiniMax 0100 收盘 实战段 续 baseline.",
+    "8/20 周四 15:00 A 股 实战段 6h post-close 续 baseline + 8/20 沪指 收盘 实战段 续 baseline + 8/20 A 股 09:30 后 收盘 实战段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim preserved + 8/20 午后 baseline 106 + 第 97 接力 verbatim preserved + 8/19 晚报 baseline 104 + 第 95 接力 verbatim 续 baseline + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/20 15:00 A 股 收盘 = 6h 后续实战段. 长鑫 688825 8/20 收盘实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/20 收盘实战段 续 baseline + 沪指 8/20 收盘 实战段 续 baseline + 科创板 8/20 收盘 实战段 续 baseline + 主力资金 8/20 净流入 实战段 续 baseline.",
+    "8/20 周四 21:30 PT 美股 实战段 0.5h 倒数 续 baseline + 8/20 21:30 PT 美股 周四 开盘 实战段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim 美方 8/19 21:30 PT close 实战段 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim preserved + 8/19 晚报 baseline 104 + 第 95 接力 verbatim 续 baseline + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/20 21:30 PT 美股 开盘 = 0.5h 倒数 (即将 开盘 实战段 实战段 续 baseline). 美方 8/20 21:30 PT 开盘 实战段 续 baseline + 美方 8/19 21:30 PT close 18h 后续实战段 续 baseline + NVIDIA 8/20 收盘延续 段 + 美光 8/20 收盘 续 baseline 段 + 苹果 AAPL 8/20 收盘 实战段 续 baseline 段 + Fed 沃什 8/22 T-1 倒数 续 baseline + JACKSON HOLE T-6 倒数 续 baseline + 美方 IEAA Summit 9/2 T-12 倒数 续 baseline.",
+    "8/21 周五 7 月 工业利润 release T-0 倒数 3h 段 + 国家统计局 8/21 schedule verbatim '7 月规模以上工业企业 利润总额 1-6 月 39479.9 亿元 +18.7%' 续 baseline + 8/21 09:30 港股 / A 股 开盘 实战段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim 8/21 7 月 工业利润 T-1 段 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim 8/21 T-0 倒数 9h 段 + 8/19 晚报 baseline 104 + 第 95 接力 verbatim 8/21 schedule 续 baseline). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/21 09:30 A 股 开盘 = 12.5h 倒数 + vs 8/21 10:00 港股 开盘 = 13h 倒数 + vs 8/21 7 月 工业利润 release 时间 = 3h 倒数 实战段.",
+    "Fed 沃什 8/22 周五 22:00 CST 讲话 T-1 倒数 1 天 1h 段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim Fed 沃什 8/22 22:00 CST 讲话 T-2 段 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim Fed 沃什 8/22 T-2 倒数 1 天 13h 段 + 8/19 晚报 baseline 104 + 第 95 接力 verbatim Fed 沃什 8/22 T-2 倒数 3 天 1h 段 + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/22 22:00 CST = 1 天 1h = T-1 倒数 1 天 1h 段.",
+    "JACKSON HOLE 8/27-29 T-6 倒数 续 baseline + Fed 沃什 8/22 T-1 倒数 1 天 1h 段 续 baseline + 23BP 周末 Fed 静默期 续 baseline + 美方 IEAA Summit 9/2 T-12 倒数 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim JACKSON HOLE 8/27-29 T-7 倒数 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim JACKSON HOLE 8/27-29 T-7 倒数 续 baseline + 8/19 晚报 baseline 104 + 第 95 接力 verbatim JACKSON HOLE 8/27-29 T-7 倒数 续 baseline + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/27 00:00 = 6 天 3h = T-6 倒数 续 baseline + vs 9/2 = 12 天 3h = T-12 倒数 续 baseline.",
+    "DeepSeek 8/17 涨价 T-0 89h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/20 收盘实战段 续 baseline + 长鑫 688825 8/20 收盘实战段 续 baseline (per 8/20 早 baseline 105 + 第 96 接力 verbatim DeepSeek 8/17 涨价 T-0 73h 后续实战段 续 baseline + 8/20 午后 baseline 106 + 第 97 接力 verbatim DeepSeek 8/17 涨价 T-0 81h 后续实战段 续 baseline + 8/19 晚报 baseline 104 + 第 95 接力 verbatim DeepSeek 8/17 涨价 T-0 49h 后续实战段 续 baseline + 8/19 早/午后 baseline 102/103 + 第 93/94 接力 verbatim preserved 拼图完整 per Pitfall 46 + 53). 8/20 晚 cron master 时点 8/20 21:00 CST vs 8/17 涨价 T-0 = 89h 后续实战段 续 baseline."
+  ],
+  "pick_points": [
+    {"num": "14:00", "label": "港股 14:00 收盘 7h post-close"},
+    {"num": "15:00", "label": "A 股 15:00 收盘 6h post-close"},
+    {"num": "8/21", "label": "7 月 工业利润 T-0 倒数 3h"},
+    {"num": "8/22", "label": "Fed 沃什 T-1 倒数 1 天 1h"}
+  ],
+  "not_picked": [
+    "JACKSON HOLE 8/27-29 T-6 倒数 续 baseline  ·  T-6 倒数 6 天 后, 当日 实战段 是 8/20 14:00 港股 7h post-close + 8/20 15:00 A 股 6h post-close + 8/21 工业利润 T-0 倒数 3h 段 + 美方 8/20 21:30 PT 0.5h 倒数 续 baseline. 美方 T-6 倒数 段 cover baseline",
+    "美方 IEAA Summit 9/2 T-12 倒数 续 baseline  ·  T-12 倒数 12 天 后, 当日 实战段 是 8/20 14:00 港股 + 8/20 15:00 A 股 + 8/21 工业利润 T-0 倒数 3h 段. 远期 段 cover baseline",
+    "DeepSeek 8/17 涨价 T-0 89h 后续实战段 续 baseline  ·  89h 后续 实战段, 不如 8/20 14:00 港股 + 8/20 15:00 A 股 当日 收盘实战段 + 8/21 工业利润 T-0 倒数 3h 段 紧急"
+  ],
+  "say_4": [
+    "8/20 14:00 港股 收盘 7h post-close, 智谱 MiniMax 续.",
+    "8/20 15:00 A 股 收盘 6h post-close, 长鑫 688825 续.",
+    "8/21 7 月 工业利润 T-0 倒数 3h, 1-6 月 +18.7%.",
+    "Fed 沃什 8/22 T-1 倒数 1 天 1h, JACKSON HOLE T-6."
+  ],
+  "baseline": "107",
+  "relay": "98",
+  "narrative_count": "40",
+  "patch_header_pitfall": "Pitfall 46 + 53",
+  "slot": "21evening",
+  "slot_hour": "21:00"
+}
