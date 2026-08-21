@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-21",
+    "type": "afternoon",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "title": "7月 工业利润 -1.7% + 集成电路 +176%",
+    "baseline": 109,
+    "relay": 100,
+    "narrative_count": 42,
+    "html_url": "daily/2026-08/2026-08-21-afternoon/index.html",
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流"
+  },
+  {
+    "date": "2026-08-21",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
