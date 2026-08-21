@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-21",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "slot_label": "晚报",
+    "title": "A 股缩量、港股重夺 26000",
+    "baseline": 110,
+    "relay": 101,
+    "narrative_count": 42,
+    "html_url": "daily/2026-08/2026-08-21-21evening/index.html",
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8h 同 day 跨 slot)"
+  },
+  {
+    "date": "2026-08-21",
     "type": "afternoon",
     "slot": "afternoon",
     "slot_hour": "13:00",

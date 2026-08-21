@@ -1,0 +1,58 @@
+{
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "date": "2026-08-21",
+  "weekday_cn": "周五",
+  "weekday_short": "Fri",
+  "baseline": 110,
+  "relay": 101,
+  "narrative_count": 42,
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8h 同 day 跨 slot) — vs Pitfall 46 同 day 第二期 cron (6h 跨 slot) vs Pitfall 49 跨 day 边界 第一期 cron (24h 跨 day 边界) vs Pitfall 53 跨 day 边界 后续期 cron (38h 跨 day 边界)",
+  "slot_label": "晚报",
+  "hero_meta_short": "2026-08-21 周五 · 21:00 CST",
+  "main_h2": "今天 为这件事",
+  "title": "A 股缩量、港股重夺 26000",
+  "dek": "周五收盘，沪指勉强收红、创业板指反弹 1.43%；港股恒指涨 1.21% 重回 26000 整数关，智谱与 MINIMAX 联手涨超 10%。这是 7 月工业利润 release 实测、财政部三新举措、8 月中报披露密集窗口、JACKSON HOLE 沃什讲话 T-0 倒数同框的一天。",
+  "why_this": "今天的关键是三件事同框：A 股全天成交 1.89 万亿缩量超 2000 亿 + 港股恒指重夺 26000 + 大模型双雄联手涨超 10% + 摩根大通把 MINIMAX 目标价从 160 港元上调到 260 港元（+63%）。三件事拼起来，是 8 月中下旬中报披露密集窗口，市场缩量震荡消化业绩校准，再被港股资金托起来；JACKSON HOLE 沃什讲话 T-0 倒数。这是周一开盘最值得读的一张图。",
+  "pick_points": [
+    {"num": "01", "label": "A 股 8/21 收盘 + 创业板 +1.43%"},
+    {"num": "02", "label": "港股重夺 26000 + 大模型双雄 +10%"},
+    {"num": "03", "label": "摩根大通 MiniMax 目标价 160→260"},
+    {"num": "04", "label": "JACKSON HOLE 沃什讲话 T-0 倒数"}
+  ],
+  "main_facts": [
+    "8 月 21 日 A 股收盘，沪指报 3905.20 点 +0.04%、深证成指 +0.87%、创业板指 +1.43%；沪深两市全天成交约 1.89 万亿元，较上一交易日缩量超 2000 亿元；半日成交 1.25 万亿元较上日缩量 1179 亿元；超 2500 只个股上涨，主线为贵金属、能源金属、工业金属、铜缆高速连接、CPO（per 证券时报 8/21 15:03 verbatim + 央广网 8/21 15:47 verbatim + 财联社 8/21 11:48 verbatim）",
+    "8 月 21 日港股收盘，恒生指数报 26009.46 点 +1.21%（+310.97），重新收复 26000 点整数关；恒生科技指数报 4766.16 点 +1.40%（+65.63）；大模型双雄联手走强，MINIMAX（HK00100）涨超 11%、智谱（2513.HK）涨超 10%；摩根大通此前的研报将 MINIMAX 目标价由 160 港元大幅上调至 260 港元（+63%）；山东黄金 +8%、小米 +4%、网易 +4%、阿里 -2%、中远海能 +7%、天齐锂业 +11%；南向资金净卖出超 76 亿港元（per 新浪财经 8/21 17:12 verbatim + 每日经济新闻 8/21 verbatim）",
+    "财政部副部长廖岷 8/21 在国新办 '开局起步十五五' 系列主题新闻发布会上介绍，财政金融协同促内需政策作了优化完善，主要是三个新举措：拓宽贴息范围、增加经办机构、提高额度上限；下半年将继续研究制定新政策新举措（per 新华财经 8/21 verbatim）",
+    "8 月中下旬中报披露最为密集，前期基于未来潜力、产业逻辑、政策催化形成的一致预期，将通过营收、利润、订单、现金流等核心财报数据完成一轮系统性校准；中国银河指出 AI 时代算力集群拉动交换机需求，1.6T 端口交换机有望在 2027 年开始放量，WAIC 2026 超节点成为绝对主角（per 东方财富 8/21 verbatim + 新华财经 8/21 verbatim）",
+    "8 月 22 日（周五）22:00 CST 美联储主席沃什将在 JACKSON HOLE 发表讲话，主题为 'Financial Innovation: Implications for Payments and Policy'；市场关注沃什的 regime change 主张，他过去几年批评 Fed 模型、数据与决策，现在作为主席已设立 task force 推动变革（per investing.com 8/21 verbatim）"
+  ],
+  "not_picked": [
+    "DeepSeek 8/17 涨价 T-0 89h→101h 后续实战段 — 续 baseline 不算新维度",
+    "8/20 美方 21:30 PT 美股 周四 收盘 17.5h post-close 实战段 — 续 baseline 不算新维度",
+    "美方 IEAA Summit 9/2 T-12→T-11 倒数 — 续 baseline 不算新维度"
+  ],
+  "say_4": [
+    "今天 A 股缩量震荡，创业板涨 1.43% 是结构亮点。",
+    "港股恒指重夺 26000，是真金白银买的，不是反弹。",
+    "财政部廖岷的三新举措只是铺垫，下半年才是真正发力。",
+    "沃什 JACKSON HOLE 讲话 T-0 倒数，要的是 Fed 内部变革细节。"
+  ],
+  "stat_cards": [
+    {"label": "A 股 创业板 8/21", "value": "+1.43%", "delta": "缩量 2000 亿", "tone": "up"},
+    {"label": "港股 恒指 8/21", "value": "26009 +1.21%", "delta": "重夺 26000", "tone": "up"},
+    {"label": "摩根大通 MINIMAX 目标价", "value": "260 HKD", "delta": "上调 +63%", "tone": "up"},
+    {"label": "JACKSON HOLE 沃什", "value": "8/22 22:00", "delta": "T-0 倒数", "tone": "neutral"}
+  ],
+  "source": {
+    "primary": "证券时报 8/21 15:03 verbatim + 新浪财经 8/21 17:12 verbatim + 新华财经 8/21 verbatim + 东方财富 8/21 verbatim + investing.com 8/21 verbatim",
+    "urls": [
+      "http://www.stcn.com/article/detail/4096187.html",
+      "https://finance.sina.com.cn/roll/2026-08-21/doc-inipakum6487802.shtml",
+      "https://m.cnfin.com/yw-lb//zixun/20260821/4458469_1.html",
+      "https://finance.eastmoney.com/a/202608213849318858.html",
+      "https://www.investing.com/analysis/kevin-warsh-goes-to-jackson-hole-time-to-fill-in-the-blanks-200685976"
+    ]
+  },
+  "render_engine": "draft-daily.py v0.8.22"
+}
