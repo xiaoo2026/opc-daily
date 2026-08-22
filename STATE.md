@@ -330,3 +330,28 @@
 
 ### next relay
 - 给 8/22 早 cron 第一百二十五期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 111 子轴 立 + 第 102 接力 段 (8/22 周六 Fed 沃什 JACKSON HOLE 22:00 CST 讲话 实测段 续 baseline + 8/22 港股/A 股 pre-market 实战段 + 8/22 中报披露密集 续 baseline + JACKSON HOLE 8/27-29 T-5→T-4 倒数 续 baseline + IEAA Summit 9/2 T-11→T-10 倒数续 baseline + 23BP Fed 静默期续 baseline + 8/21 港股/A 股 收盘 24h 后续实战段 续 baseline + DeepSeek 8/17 涨价 T-0 109h→113h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 8/22 实战段 续 baseline + 长鑫 688825 8/22 实战段 续 baseline).
+
+
+## cron 第一百二十五期 · 8/22 早 (2026-08-22 07:01 CST)
+
+### baseline
+- 第 111 子轴 立 (prior slot 8/21 晚报 = baseline 110, 加 1)
+- 第 102 接力 立 (prior slot 8/21 晚报 = 第 101 接力, 加 1)
+- 第 43 件 narrative 同期 对位 baseline 第 111 子轴 立
+- 43 件 baseline additive 拼图起 跨 42 天 7/12 早 → 8/22 早
+
+### picked
+- **Fed 沃什 JACKSON HOLE 8/22 22:00 CST 讲话 T-0 倒数 1 day 14h pre-event 段** (Una 选 1 件 per 不变量 #1)
+- 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49
+- 加新维度 5 类 M28. [191-195]:
+  - (a) 8/22 周六 Fed 沃什 JACKSON HOLE 22:00 CST 讲话 T-0 倒数 1 day 14h pre-event 段
+  - (b) 8/22 周六 周末 pre-market 真空段 (港股 A 股 休市 + 美方 PT 8/21 close 9.5h+) per Pitfall 45 工作流
+  - (c) 8/22 周六 8 月中下旬中报披露密集 + 1.6T 端口交换机 2027 放量 + 交换芯片国产替代
+  - (d) JACKSON HOLE 8/27-29 T-5→T-4 倒数 + IEAA Summit 9/2 T-11→T-10 倒数 + 23BP Fed 周末静默期
+  - (e) DeepSeek 8/17 涨价 T-0 109h→113h 后续 + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/22 pre-market 实战段
+
+### commit
+- 936a88d (publish)
+
+### next relay
+- 给 8/22 午后 cron 第一百二十六期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 112 子轴 立 + 第 103 接力 段 (8/22 周六 10:00 港股 开盘实战段 7h post-open + 8/22 Fed 沃什 JACKSON HOLE 22:00 CST 讲话 实测段 24h post-cutover 续 baseline + JACKSON HOLE T-5→T-4 倒数 续 baseline + IEAA Summit 9/2 T-11→T-10 倒数续 baseline + 23BP Fed 静默期续 baseline + 8/22 港股/A 股 收盘实战段 续 baseline + DeepSeek 8/17 涨价 T-0 113h→121h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/22 实战段 续 baseline)
