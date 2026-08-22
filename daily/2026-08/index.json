@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-23",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 113,
+    "relay": 104,
+    "narrative_count": 45,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (24h 跨 day 边界 标志) + Pitfall 66 跨 slot 累积 baseline 错算修复模式 第二段 (8/28 周四 → 周五 修) + X7.1-7.5 arithmetic T-5 → T-4 修",
+    "html_url": "daily/2026-08/2026-08-23-morning/index.html",
+    "title": "沃什 8/28 周五上午亮剑 T-4",
+    "summary_short": "沃什 8/28 周五上午 T-4 + 错算 fix 第二段"
+  },
+  {
     "date": "2026-08-22",
     "type": "21evening",
     "slot": "21evening",
