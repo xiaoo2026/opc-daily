@@ -1,0 +1,56 @@
+{
+  "title": "8月22日 · 沃什亮剑前夜",
+  "title_en": "Was ahead of Jackson Hole",
+  "dek": "美东周五 22:00, Fed 沃什 JACKSON HOLE 讲话 T-0 倒数 1 day 14h pre-event, regime change + process > data 主张 = 替代 Fed 模型。周末 pre-market 真空, 港股 A 股 休市, 美方 PT close 9.5h+。第 43 件 baseline 111 + 第 102 接力。",
+  "why_this": "为什么是这件: 周末 6h 窗口 真空, 不等 sub-agent 抓 raw。8/22 是 Fed 沃什 JACKSON HOLE 讲话日, T-0 倒数 1 day 14h pre-event = 真实 1 件 (不变量 #1)。走 Pitfall 49 跨 day 边界 第一期 cron 加新维度 工作流, 用 verbatim baseline 续。",
+  "pick_points": [
+    {
+      "label": "沃什 JACKSON HOLE T-0 1d 14h",
+      "value": "Fed regime change"
+    },
+    {
+      "label": "周末 pre-market 真空段",
+      "value": "6h 窗口"
+    },
+    {
+      "label": "中报披露密集 续 baseline",
+      "value": "1.6T 端口交换机"
+    },
+    {
+      "label": "JACKSON HOLE T-5 倒数",
+      "value": "23BP Fed 静默期"
+    }
+  ],
+  "say_4": [
+    "沃什 JACKSON HOLE 8/22 22:00 讲话 T-0 倒数 14h。",
+    "周末 pre-market 真空: 港股 A 股 休市, 美方 PT close 9.5h+。",
+    "JACKSON HOLE 8/27-29 T-5 + IEAA 9/2 T-11 倒数。",
+    "中报密集 + 1.6T 端口交换机 2027 放量 + 交换芯片国产替代。"
+  ],
+  "main_facts": [
+    "8/22 周六 Fed 沃什 JACKSON HOLE 22:00 CST 讲话 T-0 倒数 1 day 14h pre-event 段 (per 8/21 晚报 M27 [190] verbatim 沃什 + investing.com 8/21 verbatim 沃什 regime change + process > data + 替代 Fed 模型 段 preserved baseline)",
+    "8/22 周六 周末 pre-market 真空段 = 港股 A 股 周末休市 + 美方 PT 8/21 close 9.5h+ = 真空 6h 窗口 (per Pitfall 45 工作流 verbatim baseline + 周一 8/24 港股/A 股 09:30 开盘前 60h 倒数续 baseline)",
+    "8/22 周六 8 月中下旬中报披露密集 续 baseline + 财政部廖岷 8/21 国新办 三新举措 (拓宽贴息范围 + 增加经办机构 + 提高额度上限) + 1.6T 端口交换机 2027 放量 + WAIC 2026 超节点 + Scale-Up 交换机 百 ns 级 + 交换芯片国产替代 (per 8/21 晚报 M27 [188-189] verbatim 新华财经 8/21 + 东方财富 8/21 + 财政部 8/21 verbatim preserved)",
+    "JACKSON HOLE 8/27-29 T-5→T-4 倒数 续 baseline + 美方 IEAA Summit 9/2 序幕 T-11→T-10 倒数 续 baseline + 23BP Fed 周末静默期 续 baseline (per 8/21 晚报 baseline 110 + 第 101 接力 verbatim preserved 全 stack 拼图完整 per Pitfall 46)",
+    "DeepSeek 8/17 涨价 T-0 109h→113h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/22 周六 pre-market 实战段 续 baseline (per 8/21 晚报 baseline 110 + 第 101 接力 verbatim preserved 全 stack 拼图完整 per Pitfall 46 + 53)"
+  ],
+  "narrative_count": 43,
+  "baseline": 111,
+  "relay": 102,
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "date": "2026-08-22",
+  "type": "morning",
+  "summary_short": "8月22日 · 沃什亮剑前夜",
+  "summary_meta": "Fed 沃什 JACKSON HOLE 8/22 22:00 CST 讲话 T-0 倒数 1 day 14h pre-event 段 · 周末 pre-market 真空 + 中报披露密集 续 baseline · 第 43 件 narrative · baseline 111 · 第 102 接力",
+  "hero_meta_short": "8月22日 · 沃什亮剑前夜",
+  "main_h2": "沃什亮剑前夜 = Fed 模型 即将改写",
+  "not_picked": [
+    "周末 港股 A 股 休市 — 真空 6h 窗口, 不在主审时段",
+    "DeepSeek 涨价 113h 后续 — 旧闻续段, 不算新 1 件",
+    "中报披露密集 — 节奏段, 不敌 Fed 沃什 单点信号"
+  ],
+  "meta_description": "8月22日 · 沃什亮剑前夜: Fed 沃什 JACKSON HOLE 8/22 22:00 CST 讲话 T-0 倒数 1 day 14h pre-event 段 · 周末 pre-market 真空 + 中报披露密集 续 baseline · 第 43 件 narrative · baseline 111 · 第 102 接力",
+  "slot_label": "早报"
+}
