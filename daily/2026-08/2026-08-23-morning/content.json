@@ -1,0 +1,56 @@
+{
+  "title": "沃什 8/28 周五上午亮剑 T-4",
+  "title_en": "Warsh 8/28 Fri T-4",
+  "dek": "FACT-CHECK FIX 第二段: 真实 release = 沃什 8/28 周五上午首场 = 距 master 4 天 16h 59min = T-4. 8/22 晚报 + 8/23 早 sub-agent 都把 8/28 错算周四, 实际周五 (TechTimes verbatim).",
+  "why_this": "master 8/23 周日, 港股/A 股休市. 8/22 晚报 + 8/23 早 都把 8/28 错算周四 (实周五). 加新维度 M29 [196-200]: 沃什 T-4 + 8/22 PT close 9.5h+ + 8/24 pre-market 26.5h + 中报密集 + JACKSON HOLE T-3 + DeepSeek 145h. Pitfall 49 + 66.",
+  "pick_points": [
+    {"label": "沃什 JACKSON HOLE", "value": "8/28 周五上午"},
+    {"label": "距 master 时点", "value": "4 天 16h 59min"},
+    {"label": "T-4 倒数", "value": "regime change"},
+    {"label": "8/23 周末真空", "value": "6h 窗口"}
+  ],
+  "say_4": [
+    "FACT-CHECK FIX 第二段: 沃什 8/28 周五上午, T-4 倒数.",
+    "8/22 晚报 + 8/23 早 都把 8/28 错算周四, 实周五.",
+    "周末真空: 港股 A 股 周日休市, 美方 PT 8/22 close 9.5h+.",
+    "8/24 周一 A 股 09:30 pre-market 26.5h 倒数续 baseline."
+  ],
+  "main_facts": [
+    "FACT-CHECK FIX 第二段 (master 8/23 07:01 CST web 二次验证发现): 真实 release = 沃什 Jackson Hole 2026 首场主席演讲 8/28 周五上午 (per TechTimes 8/21 verbatim 'Friday, August 28' + 紫荆 8/21 verbatim '美东时间8月28日上午10点' + 新浪财经 8/20 verbatim) = 距 master 8/23 07:01 CST = 4 天 16h 59min = T-4 倒数. 8/22 晚报 baseline 112 错算 '8/28 周四', 8/23 早 sub-agent 也延续 '周四' 错算, 实际 8/28 = 星期五 Friday (per `date -d '2026-08-28' +%A` = 星期五).",
+    "8/23 周日 港股/A 股 周末休市 pre-market 真空段 = 港股 A 股 全天 休市 + 美方 PT 8/22 21:30 close 已 9.5h+ = 真空 6h 窗口 per Pitfall 45 工作流 + 周一 8/24 09:30 A 股 开盘前 26.5h 倒数 + 周一 8/24 10:00 港股 开盘前 27h 倒数续 baseline",
+    "8/22 周六 8 月中下旬中报披露密集 续 baseline + 1.6T 端口交换机 2027 放量 + WAIC 2026 超节点 + Scale-Up 交换机 百 ns 级 + 交换芯片国产替代 续 baseline (per 8/21 晚报 M27 verbatim 新华财经 8/21 + 东方财富 8/21 + 中国银河 8/21 verbatim preserved)",
+    "JACKSON HOLE 8/27-29 T-4→T-3 倒数 续 baseline + IEAA Summit 9/2 T-10→T-9 倒数 续 baseline + 23BP Fed 周末静默期 续 baseline + 美方 8/22 21:30 PT close 周五 收盘 9.5h+ post-close 实战段 续 baseline (per 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved)",
+    "DeepSeek 8/17 涨价 T-0 121h→145h 后续实战段 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/23 pre-market 实战段 续 baseline (per 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved 8/22 收盘实战段 → 8/23 周末 pre-market 真空段 24h+ 后续实战段 续 baseline)"
+  ],
+  "narrative_count": 45,
+  "baseline": 113,
+  "relay": 104,
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (24h 跨 day 边界 标志) + Pitfall 66 跨 slot 累积 baseline 错算修复模式 第二段 (8/28 周四 → 周五 修) + X7.1-7.5 arithmetic T-5 → T-4 修",
+  "slot": "morning",
+  "slot_label": "早报",
+  "slot_hour": "07:00",
+  "date": "2026-08-23",
+  "type": "morning",
+  "summary_short": "沃什 8/28 周五上午 T-4 + 错算 fix 第二段",
+  "summary_meta": "FACT-CHECK FIX 第二段: 真实 release = 沃什 Jackson Hole 8/28 周五上午 = 距 master 4 天 16h 59min = T-4 倒数 · 周末 6h 真空 + 中报披露密集 + JACKSON HOLE T-4 + IEAA Summit T-10 · 第 45 件 baseline 113 · 第 104 接力",
+  "hero_meta_short": "8月23日 · 沃什亮剑前 4 天 + 错算 fix 第二段",
+  "main_h2": "FACT-CHECK FIX 第二段: 沃什 8/28 周五上午 = T-4 倒数",
+  "not_picked": [
+    "8/23 周日 港股 A 股 休市 — 周末真空, 不在主审时段",
+    "8/22 美方 PT 已 close 9.5h+ — 周末 真空 段",
+    "8/22 沃什 22:00 CST 讲话 — 已重新安排至 8/28, drop 段"
+  ],
+  "stat_cards": [
+    {"label": "沃什 8/28 周五上午", "value": "T-4", "delta": "4 天 16h 59min", "tone": "neutral"},
+    {"label": "错算 fix 第二段", "value": "周四→周五", "delta": "FACT-CHECK FIX", "tone": "down"},
+    {"label": "周末真空", "value": "6h", "delta": "港股 A 股 周日休市", "tone": "neutral"},
+    {"label": "DeepSeek 涨价", "value": "145h", "delta": "续 baseline", "tone": "neutral"}
+  ],
+  "source": {
+    "primary": "TechTimes 8/21 verbatim Friday, August 28 + 紫荆 (中国基金报) 8/21 verbatim 美东时间8月28日上午10点 + 新浪财经 8/20 verbatim 沃什定于8月28日上午的首次杰克逊霍尔主旨演讲",
+    "factcheck": "FACT-CHECK FIX 第二段: 8/28 实为周五 (per `date -d '2026-08-28' +%A` = 星期五), 不是周四 (8/22 晚报 + 8/23 早 sub-agent 错算 fix)"
+  },
+  "humanizer_check": "v0.7.9 33 patterns 自审 + em dash multi-stage cleanup path 必跑 (per Pitfall 50)",
+  "render_pipeline": "v0.8.22 (Pitfall 55 + 55(e) + 55(f) + 55(g) top-level surgical patch 守门 + 9 处 patch + 双 wrangler deploy + STATE.md commit vs wrangler deploy 时序 守门)",
+  "ad_hoc_verify": "v0.8.23 实测 5 项 tool 复核 + 33 check 双 verify (per Pitfall 65 system 强制 ad-hoc verify 多次触发 实战补, 跑 2 轮 tempfile.mkstemp(prefix='hermes-verify-', dir='/tmp') + os.unlink + 显式标 'NOT suite green')"
+}
