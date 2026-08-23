@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-23",
+  "slot": "afternoon",
+  "slot_label": "午报",
+  "slot_hour": "13:00",
+  "baseline": 114,
+  "relay": 105,
+  "narrative_count": 46,
+  "weekday_cn": "周日",
+  "weekday_short": "Sun",
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 (6h 同 day 跨 slot 标志 OK) + Pitfall 45 真空抓料 工作流 (周末 + 2h 窗口 真空, 抓到 1 条新料 DeepSeek 周末折扣) + Pitfall 66 跨 slot 延续 fix 段第二段 续 (8/28 周五上午首场 T-3)",
+  "hero_meta_short": "2026-08-23 周日 · 13:00 CST",
+  "main_h2": "DeepSeek 周末折扣新规 8/23 实战生效",
+  "title": "DeepSeek 周日按谷价, 开发者笑了",
+  "dek": "<strong>周末终于便宜了</strong>. DeepSeek 8/23 周日 00:00 起, 周末全天统一按低谷时段价格计费 = API 价格减半. 这是 DeepSeek 自 8/17 大涨价后 6 天内的第二次价格动作.",
+  "why_this": "8/17 涨 1100% 后 6 天就反向给周末打折 — DeepSeek 在用 <em>峰谷定价</em> 把算力压力转嫁给开发者. 周六周日 API 价格只剩高峰的一半. 一日 1 件 = 这条不是普通的'优惠', 是国产大模型第一次把'峰谷电价'思路搬进 API 计费. (per 8/23 午后 cron 第一百二十八期)",
+  "pick_points": [
+    {
+      "label": "DeepSeek 周末折扣",
+      "value": "8/23 起",
+      "delta": "全天按谷价"
+    },
+    {
+      "label": "8/17 大涨价",
+      "value": "+1100%",
+      "delta": "缓存命中输入"
+    },
+    {
+      "label": "周末开发者成本",
+      "value": "减半",
+      "delta": "非紧急任务移周末"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "value": "T-3",
+      "delta": "8/28 周五上午首场"
+    }
+  ],
+  "main_facts": [
+    "DeepSeek API 平台 8/23 周日 00:00 起, 周末 (周六周日) 全天不再区分峰谷时段, 统一按低谷时段价格计费 (per 财联社 8/22 21:45 verbatim 'DeepSeek API开放平台将于2026年8月23日 (周日) 00:00起, 优化峰谷计费规则. 调整后, 周末 (周六及周日) 全天将不再区分峰谷时段, 统一按低谷时段价格计费. 新规则生效前产生的费用, 仍按原计费标准结算'). 来源: https://www.cls.cn/detail/2461482",
+    "8/17 DeepSeek 已大幅涨价: V4-Pro 缓存命中输入涨幅 1100% + V4-Flash 涨幅 400% (per 新浪财经 8/17 verbatim 'V4 Pro高峰时间段, 输入 (缓存未命中) 9元 (涨幅200%)、输出27元 (涨幅350%)、缓存命中输入0.3元 (涨幅1100%)...空闲时段, 输入 (缓存未命中) 4.5元、输出13.5元、缓存命中输入0.15元'). 来源: https://finance.sina.com.cn/stock/t/2026-08-17/doc-ininrkkk0127067.shtml",
+    "DeepSeek V4-Pro 正式版 8/12 晚发布, 8/17 大涨价, 8/23 周末折扣 = 11 天内 两次价格动作. 第一次反向: '把开发者从高峰时段赶走'; 第二次正向: '给非紧急任务留出便宜时段'. 国产大模型第一次把'峰谷电价'思路搬进 API 计费 (per 国际电子商情 8/17 verbatim). 来源: https://www.esmchina.com/news/14483.html",
+    "8/23 周日 = 周末折扣 实战生效日 (master 时点 13:01 CST, 已生效 13h+). 8/24 周一 A 股/港股 pre-market 倒数续 baseline (周末不开盘) + 8/28 周五 沃什 JACKSON HOLE 首场 T-3 倒数 续 baseline (per 新浪财经 8/20 verbatim 沃什 8/28 上午首场 + 8/22 晚报 + 8/23 早 baseline 113 verbatim preserved T-6/T-4 倒数 + 8/23 午后 arithmetic T-3 倒数合法 per 8a). 同步背景: 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/23 周末 真空段 实战补 OK",
+    "今年以来阿里云 + 腾讯云 + 百度智能云 + 智谱AI 已集体涨价. 智谱年内 3 次上调. 中银证券: 'DeepSeek-V4-Pro 上调价格的产业信号意义较强. 一方面, 大模型推理成本伴随参数规模、上下文长度和用户调用量提升而增加; 另一方面, 模型能力提升及付费模式逐步成熟, 将推动大模型行业从低价获客转向价值定价'. (per 新浪财经 8/22 verbatim)"
+  ],
+  "not_picked": [
+    "8/23 周日 港股 A 股 全休市 — 周末 真空, 不在主审时段",
+    "美方 PT 8/22 close 15.5h+ — 周末 真空段 续 baseline",
+    "沃什 8/28 周五上午首场 T-3 倒数 — 已接 8/22 晚报 + 8/23 早, 不重写"
+  ],
+  "say_4": [
+    "8/17 涨价 1100%, 8/23 周末就打折 — 这不是让步, 是峰谷计费的下一段.",
+    "DeepSeek 把'峰谷电价'思路搬进 API. 周末开发者成本减半 = 鼓励错峰.",
+    "8/23 周日 实战生效 13h+, 8/24 周一 pre-market 续 baseline.",
+    "沃什 T-3 倒数续 baseline + 智谱 MiniMax 长鑫 周末真空段."
+  ],
+  "source": {
+    "primary": "财联社 8/22 21:45 verbatim + 科创板日报 8/22 verbatim + 新浪财经 8/22 21:35 verbatim (DeepSeek 周末折扣新规 8/23 实战生效)",
+    "secondary": "新浪财经 8/17 verbatim (DeepSeek 8/17 大涨价 V4-Pro +1100% / V4-Flash +400%) + 国际电子商情 8/17 verbatim (峰谷分时空闲时段半价 国产大模型首次)"
+  },
+  "humanizer_check": "v0.7.9 33 patterns 自审 + em dash multi-stage cleanup (Pitfall 50)",
+  "render_pipeline": "v0.8.22 (draft-daily.py render + em dash cleanup + 跨 num/value 字段兼容)"
+}
