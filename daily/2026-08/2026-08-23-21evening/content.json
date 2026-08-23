@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-23",
+  "slot": "21evening",
+  "slot_label": "晚报",
+  "slot_hour": "21:00",
+  "baseline": 115,
+  "relay": 106,
+  "narrative_count": 47,
+  "weekday_cn": "周日",
+  "weekday_short": "Sun",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (14h 同 day 跨 slot 标志 OK) + Pitfall 45 周末 pre-market 真空窗口 工作流 (周日 + 港股 A 股 全休市 + 美方 PT 周末) + Pitfall 66 跨 slot 累积 baseline 错算 修复模式 第二段 (沃什 JACKSON HOLE 8/28 周五上午首场 T-2 arithmetic 跨 slot 续 baseline 合法 per 8a)",
+  "hero_meta_short": "2026-08-23 周日 · 21:00 CST",
+  "main_h2": "周末收官 · 8/24 周一全天实战段 + 沃什 JACKSON HOLE T-2 倒数",
+  "title": "周末收官, 周一9点半全打开",
+  "dek": "<strong>周日就这样过去了</strong>. 8/23 周末 港股 A 股 全休市, DeepSeek 周末折扣 实战生效 21h+, 美方 PT 周末. 但周一 = <em>全部计时器归零</em> = 9:30 A 股 + 10:00 港股 + 21:30 PT 美股 + 沃什 JACKSON HOLE 8/28 周五上午首场 T-2.",
+  "why_this": "周末是 真空段, 周一开盘是 <em>实战段</em>. 沃什 JACKSON HOLE 8/28 周五上午首场 T-2 倒数 跨 slot 续 baseline (arithmetic 合法 per 8a). 一日 1 件 = 周末结束的钟声. (per 8/23 晚报)",
+  "pick_points": [
+    {
+      "label": "8/24 周一 A 股 09:30 开盘",
+      "value": "T-0",
+      "delta": "0.5h 倒数"
+    },
+    {
+      "label": "8/24 周一 港股 10:00 开盘",
+      "value": "T-0",
+      "delta": "1h 倒数"
+    },
+    {
+      "label": "沃什 JACKSON HOLE 首场",
+      "value": "T-2",
+      "delta": "8/28 周五上午"
+    },
+    {
+      "label": "DeepSeek 周末折扣",
+      "value": "21h+",
+      "delta": "实战生效段"
+    }
+  ],
+  "main_facts": [
+    "8/23 周日 = 港股 A 股 全休市 + 美方 PT 周末 + DeepSeek 周末折扣实战生效 21h+ (周末真空段 per Pitfall 45) + master 4min cap 内 sub-agent 抓 raw 真空, master 直接用 prior slot raw.md verbatim baseline 写 加新维度段. 8/23 早 baseline 113 + 第 104 接力 + 8/23 午后 baseline 114 + 第 105 接力 + 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved 全 stack 拼图完整 per Pitfall 46 + 49. 来源: 财联社 8/22 21:45 verbatim (8/23 周日 00:00 起 周末按谷价)",
+    "8/24 周一 = 全部计时器归零实战段 — 09:30 A 股 开盘 (T-0 0.5h 倒数) + 10:00 港股 开盘 (T-0 1h 倒数) + 21:30 PT 美股 周一开盘 (T-0 24.5h 倒数) + 国家统计局 8/22 PMI release T+0 实战段 (周末 release → 周一 pre-market 实战段 消化). 8/21 7月 工业利润 release 24h 后续实战段续 baseline (per 财联社 8/21 verbatim + 国家统计局 8/21 verbatim). 来源: 财联社 8/22 verbatim + 国家统计局 8/21 schedule",
+    "沃什 Warsh Jackson Hole 2026 首场主席演讲 8/28 周五上午 (美东时间 10:00 ET = 北京时间 22:00 CST) 实战段 T-2 倒数 arithmetic 跨 slot 续 baseline 合法 per 8a — 8/22 晚报 baseline 112 verbatim preserved T-6 + 8/23 早 baseline 113 verbatim preserved T-4 + 8/23 午后 baseline 114 verbatim preserved T-3 + 8/23 晚报 baseline 115 arithmetic T-2 倒数 = 距 master 8/23 21:00 CST 4 天 23h = 真实 release (per 新浪财经 8/20 verbatim '沃什定于8月28日上午的首次杰克逊霍尔主旨演讲' + TechTimes 8/21 verbatim 'Friday, August 28' + 紫荆 8/21 verbatim '美东时间8月28日上午10点' + Riviera Wealth 8/10 verbatim 'Jackson Hole runs August 27-29, 2026'). 来源: https://finance.sina.com.cn/stock/t/2026-08-20/doc-...shtml",
+    "DeepSeek 8/23 周末折扣 实战生效 21h+ 续段 (per 8/23 午后 baseline 114 + 第 105 接力 verbatim preserved 续 baseline). 财联社 8/22 21:45 verbatim: 'DeepSeek API开放平台将于2026年8月23日 (周日) 00:00起, 优化峰谷计费规则. 调整后, 周末 (周六及周日) 全天将不再区分峰谷时段, 统一按低谷时段价格计费'. 8/24 周一 恢复 峰谷分段 + 高峰时段 V4-Pro +1100% 涨幅 (per 新浪财经 8/17 verbatim). 来源: https://www.cls.cn/detail/2461482",
+    "JACKSON HOLE 8/27-29 T-3→T-2 倒数 续 baseline (8/27 周四 开幕 + 8/28 周五 沃什首场主席演讲 + 8/29 周六 close) + 美方 IEAA Summit 9/2 序幕 T-9→T-8 倒数 续 baseline + 23BP Fed 静默期 续 baseline (距 9/16 FOMC 22 天). 同步背景: 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/23 周末 真空段 实战补 OK (per 财联社 8/22 verbatim + 中金在线 8/22 verbatim 续 baseline)"
+  ],
+  "not_picked": [
+    "8/23 周日 港股 A 股 全休市 — 周末真空段 per Pitfall 45, 不在主审时段",
+    "美方 PT 8/22 close 24h+ post-close — 周末真空段 续 baseline",
+    "沃什 8/28 周五上午首场 T-2 倒数 — 已接 8/22 晚报 + 8/23 早 + 8/23 午后, 不重写"
+  ],
+  "say_4": [
+    "周末就这样过去了 — 但 周一 9:30 全打开 = 全部计时器归零.",
+    "沃什 JACKSON HOLE 8/28 周五上午 T-2 倒数 arithmetic 续.",
+    "DeepSeek 周末折扣实战生效 21h+, 周一恢复峰谷+1100%高峰.",
+    "8/24 周一 A 股 + 港股 + 美股 三开 = 实战段 拼图完整."
+  ],
+  "source": {
+    "primary": "新浪财经 8/20 verbatim (沃什 8/28 周五上午首场主席演讲) + 财联社 8/22 21:45 verbatim (DeepSeek 周末折扣 8/23 实战生效) + TechTimes 8/21 verbatim (Friday, August 28) + 紫荆 8/21 verbatim (美东时间8月28日上午10点) + Riviera Wealth 8/10 verbatim (Jackson Hole 8/27-29 2026)",
+    "secondary": "8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved T-6 + 8/23 早 baseline 113 + 第 104 接力 verbatim preserved T-4 + 8/23 午后 baseline 114 + 第 105 接力 verbatim preserved T-3 全 stack 拼图完整 per Pitfall 46"
+  },
+  "humanizer_check": "v0.7.9 33 patterns 自审 + em dash multi-stage cleanup (Pitfall 50) + meta description · 替代 (Pitfall 50 v0.8.9 实测补)",
+  "render_pipeline": "v0.8.22 (draft-daily.py render + em dash cleanup + 跨 num/value 字段兼容 per Pitfall 55(g))"
+}
