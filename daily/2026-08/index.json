@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-23",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "slot_label": "晚报",
+    "baseline": 115,
+    "relay": 106,
+    "narrative_count": 47,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (14h 同 day 跨 slot 标志 OK) + Pitfall 45 周末 pre-market 真空窗口 工作流 (周日 + 港股 A 股 全休市 + 美方 PT 周末) + Pitfall 66 跨 slot 累积 baseline 错算 修复模式 第二段 (沃什 JACKSON HOLE 8/28 周五上午首场 T-2 arithmetic 跨 slot 续 baseline 合法 per 8a)",
+    "html_url": "daily/2026-08/2026-08-23-21evening/index.html",
+    "title": "周末收官, 周一9点半全打开",
+    "summary_short": "周末真空收官 · 8/24 周一 全天实战段 + 沃什 JACKSON HOLE T-2 倒数"
+  },
+  {
+    "date": "2026-08-23",
     "type": "afternoon",
     "slot_hour": "13:00",
     "slot": "afternoon",

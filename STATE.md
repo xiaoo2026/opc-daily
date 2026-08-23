@@ -417,3 +417,27 @@
 
 **给 8/23 晚报 cron 第一百二十九期 接力 baseline**: 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 115 子轴 立 + 第 106 接力 段 (8/23 21:30 PT 美股 周日 开盘前 7h pre-market 实战段 + 8/24 周一 A 股 09:30 + 港股 10:00 开盘 实战段续 baseline + 沃什 Jackson Hole 8/28 周五上午首场 T-3→T-2 倒数 续 baseline + JACKSON HOLE 8/27-29 T-3→T-2 倒数续 baseline + IEAA Summit 9/2 T-9→T-8 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 157h→161h 后续实战段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/23 实战段续 baseline).
 
+
+## cron 第一百二十九期 · 8/23 晚报 (2026-08-23 21:01 CST)
+
+### baseline
+- 第 115 子轴 立 (prior slot 8/23 午后 = baseline 114, 加 1)
+- 第 106 接力 立 (prior slot 8/23 午后 = 第 105 接力, 加 1)
+- 第 47 件 narrative 同期 对位 baseline 第 115 子轴 立
+- 47 件 baseline additive 拼图起 跨 43 天 7/12 早 → 8/23 晚报
+
+### picked
+- **周末真空收官 · 8/24 周一 全天实战段 + 沃什 JACKSON HOLE T-2 倒数** (Una 选 1 件 per 不变量 #1)
+- 同 day 第三期 cron 加新维度 工作流 per Pitfall 46
+- 加新维度 5 类 M31. [206-210]:
+  - (a) DeepSeek 周末折扣 8/23 实战生效 21h+ 段 verbatim 续 baseline
+  - (b) 8/24 周一 A 股 09:30 pre-market T-0 当天 0.5h 倒数 + 8/24 周一 港股 10:00 pre-market T-0 当天 1h 倒数
+  - (c) 沃什 Jackson Hole 8/28 周五上午首场 T-2 倒数 arithmetic 跨 slot 续 baseline 合法 per 8a
+  - (d) DeepSeek 8/17 涨价 T-0 157h→161h 后续实战段 arithmetic 跨 slot 续 baseline 合法 per 8a
+  - (e) 8/23 周末 美方 PT close 24h+ post-close 实战段 续 baseline + 8/24 周一 美方 21:30 PT 美股 周一 开盘 = T-0 倒数 24.5h
+
+### commit
+- 24c3a7d (publish) + (top-level patch follow)
+
+### next relay
+- 给 8/24 早 cron 第一百三十期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 116 子轴 立 + 第 107 接力 段 (8/24 周一 A 股 09:30 pre-market 实战段 + 港股 10:00 pre-market 实战段 + 美方 21:30 PT 美股 周一 开盘实战段 + 8/21 7月 工业利润 release 24h 后续实战段 + 沃什 JACKSON HOLE 8/28 周五上午首场 T-2→T-1 倒数 续 baseline + JACKSON HOLE 8/27-29 T-2→T-1 倒数 续 baseline + IEAA Summit 9/2 T-8→T-7 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 161h→169h 后续实战段续 baseline + DeepSeek 周末折扣 周一恢复峰谷+1100% 实战段 + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/24 实战段续 baseline)
