@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-08-23",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot": "afternoon",
+    "slot_label": "午报",
+    "baseline": 114,
+    "relay": 105,
+    "narrative_count": 46,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 (6h 同 day 跨 slot 标志 OK) + Pitfall 45 真空抓料 工作流 (周末 + 2h 窗口 真空, 抓到 1 条新料 DeepSeek 周末折扣) + Pitfall 66 跨 slot 延续 fix 段第二段 续 (8/28 周五上午首场 T-3)",
+    "html_url": "daily/2026-08/2026-08-23-afternoon/index.html",
+    "title": "DeepSeek 周日按谷价, 开发者笑了",
+    "summary_short": "DeepSeek 周末折扣新规 8/23 实战生效"
+  },
+  {
+    "date": "2026-08-23",
     "type": "morning",
     "slot_hour": "07:00",
     "slot": "morning",
