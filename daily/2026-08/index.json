@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-24",
+    "slot": "morning",
+    "slot_label": "早报",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "周一9点半. 三件事一起打开",
+    "headline_alt": "周一9点半. 三件事一起打开",
+    "canonical_url": "daily/2026-08/2026-08-24-morning/",
+    "baseline": 116,
+    "relay": 107,
+    "narrative_count": 48,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (24h 跨 day 边界 标志 OK) + Pitfall 45 周末 pre-market 真空窗口 工作流 (周日 + 港股 A 股 全休市 + 美方 PT 周末) + 加新维度 5 类 M32. [211-215]",
+    "html_url": "daily/2026-08/2026-08-24-morning/index.html"
+  },
+  {
     "date": "2026-08-23",
     "type": "21evening",
     "slot_hour": "21:00",
