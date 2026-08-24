@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-25",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "html_url": "daily/2026-08/2026-08-25-morning/index.html",
+    "title": "沃什 JACKSON HOLE T-3 + 8/25 周二 pre-market 倒数 + DeepSeek 193h 续",
+    "baseline": 119,
+    "relay": 110,
+    "narrative_count": 50,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流"
+  },
+  {
     "date": "2026-08-24",
     "slot": "21evening",
     "type": "21evening",
