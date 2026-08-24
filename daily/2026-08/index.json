@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-08-24",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "baseline": 118,
+    "relay": 109,
+    "narrative_count": 49,
+    "html_url": "daily/2026-08/2026-08-24-21evening/",
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/24 晚报 8h 同 day 跨 slot 加新维度) + Pitfall 42 实测生效时点 ≤ master 时点 OK 写收盘实战段"
+  },
+  {
+    "date": "2026-08-24",
     "slot": "afternoon",
     "slot_hour": "13:00",
     "type": "afternoon",
