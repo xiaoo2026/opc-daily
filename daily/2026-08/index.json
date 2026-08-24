@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-24",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "周一午盘, 三件一起反向",
+    "url": "daily/2026-08/2026-08-24-afternoon/index.html",
+    "baseline": 117,
+    "relay": 108,
+    "narrative_count": 49,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 (6h 同 day 跨 slot 标志 OK) + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段 + Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (24h 跨 day 边界 标志) 8/24 早 baseline 116 + 第 107 接力"
+  },
+  {
+    "date": "2026-08-24",
     "slot": "morning",
     "slot_label": "早报",
     "slot_hour": "07:00",
