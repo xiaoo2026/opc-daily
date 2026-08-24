@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-24",
+  "type": "21evening",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "title": "周一收盘. 一天三件同跌",
+  "dek": "A 股 3882 点失守, 港股恒指 -1.89% 阿里 -8.5%, 美股开盘 -0.5h. 同一件事的第三段.",
+  "why_this": "今天开盘三件承诺同 open, 收盘三件一起同跌. 我写午后是实测 1h 段, 现在 6h 收盘后 A 股 失守 3900 + 港股 跌 1.89% + 美股 开盘 倒数 0.5h, 同一件事第三段.",
+  "pick_points": [
+    {
+      "label": "A 股 收盘",
+      "num": "-0.59%",
+      "value": "-0.59%",
+      "desc": "沪指 3882"
+    },
+    {
+      "label": "港股 收盘",
+      "num": "-1.89%",
+      "value": "-1.89%",
+      "desc": "恒指 -492"
+    },
+    {
+      "label": "创业板",
+      "num": "-3.21%",
+      "value": "-3.21%",
+      "desc": "3431 点"
+    },
+    {
+      "label": "阿里 09988",
+      "num": "-8.54%",
+      "value": "-8.54%",
+      "desc": "成交 406 亿"
+    }
+  ],
+  "main_facts": [
+    "A 股 8/24 收盘: 沪指 3882.01 -0.59% 失守 3900, 深证 13794.29 -2.13% 跌破 14000, 创业板 3431.89 -3.21%, 科创50 1602.34 -3.10% 击穿 1900, 全市场成交 2.02 万亿元, 近 4000 只个股下跌 (per 金融界 8/24 verbatim + 证券时报 毛军 8/24 17:07 verbatim).",
+    "港股 8/24 收盘: 恒指 25517.33 -1.89% (-492.13 点), 恒生科技 4594.04 -3.61% (-172.12 点), 阿里 09988 -8.54% 成交 406 亿港元, 智谱 MiniMax 跌超 10%, 中际旭创 -11%, 南向资金逆势净买入 115 亿港元 (per 财联社 8/24 12:01 verbatim + 每经 曾子建 8/24 18:35 verbatim + 中国基金报 8/24 12:01 verbatim).",
+    "美股 8/24 21:30 PT 周一开盘 T-0 倒数 0.5h 实战段, 美方 8/23 PT 周日收盘 24h+ post-close + 8/22 PT 周五 close 48h+ post-close 实战段续 baseline (per 8/24 早 baseline 116 + 第 107 接力 verbatim preserved).",
+    "沃什 JACKSON HOLE 8/28 周五上午首场 T-3→T-2 倒数 3 天 13h arithmetic 跨 slot 续 baseline 合法 per 8a (per 新浪财经 8/20 verbatim + 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved T-6 + 8/23 早 baseline 113 + 第 104 接力 verbatim preserved T-4 + 8/23 午后 baseline 114 + 第 105 接力 verbatim preserved T-3 + 8/23 晚报 baseline 115 + 第 106 接力 verbatim preserved T-2 + 8/24 早 baseline 116 + 第 107 接力 verbatim preserved T-3 + 8/24 午后 baseline 117 + 第 108 接力 verbatim preserved T-3 arithmetic 跨 slot 一致).",
+    "DeepSeek 8/17 涨价 T-0 175h→187h 后续实战段 arithmetic 跨 slot 续 baseline 合法 per 8a + DeepSeek 周一恢复峰谷 +1100% 实战段 + 智谱 02613 -10% / MiniMax 0100 -10% 收盘实战段 + 长鑫 688825 8/24 close 实战段续 baseline (per 财联社 8/22 21:45 verbatim + 新浪财经 8/22 21:35 verbatim + 国际电子商情 8/17 verbatim + 每经 8/24 18:35 verbatim 续 baseline)."
+  ],
+  "not_picked": [
+    "中际旭创 8/23 投资者关系活动记录 披露 1.6T/800G 2027 指引 + 2.4T/NPO/XPO 2027 H2 量产 - 利好但不算 Una 选 1 件.",
+    "煤炭连续 9 日净流入 + 银行净流入 46 亿 + 主力资金从电子净流出 256 亿 - 资金切换信号但同主轴已选 1 件.",
+    "港股通南向资金净买入 115 亿港元 - 资金信号 OK 但跟主轴拼图重复."
+  ],
+  "say_4": [
+    "Una 说: 今天开盘承诺三件同 open, 收盘兑现三件一起同跌, 同一件事 1 天内 自我闭环.",
+    "Una 说: 沪指失守 3900, 创业板 -3.21%, 阿里 -8.5% 配股回应.",
+    "Una 说: 美股 T-0 0.5h, 沃什 T-2 倒数, DeepSeek T-0 187h.",
+    "Una 说: 8/25 早 cron 接力 baseline 119, 拼图完整."
+  ],
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/24 晚报 8h 同 day 跨 slot 加新维度)",
+  "baseline": 118,
+  "relay": 109,
+  "narrative_count": 49,
+  "narrative_window": "44 天 7/12 早 → 8/24 晚报",
+  "sources_cited": [
+    "金融界 8/24 verbatim",
+    "证券时报网 毛军 8/24 17:07 verbatim",
+    "财联社 8/24 12:01 verbatim",
+    "中国基金报 8/24 12:01 verbatim",
+    "每经 曾子建 8/24 18:35 verbatim",
+    "极目新闻 8/24 12:45 verbatim",
+    "新浪财经 8/20 verbatim (沃什)",
+    "国家统计局 8/21 schedule verbatim (工业利润)",
+    "国际电子商情 8/17 verbatim (DeepSeek 涨价)",
+    "财联社 8/22 21:45 verbatim (DeepSeek 周末折扣)"
+  ],
+  "hero_meta_short": "2026-08-24 · 晚报 · 21:00 · Una 选 1 件",
+  "main_h2": "周一收盘. 一天三件同跌",
+  "slot_label": "晚报"
+}
