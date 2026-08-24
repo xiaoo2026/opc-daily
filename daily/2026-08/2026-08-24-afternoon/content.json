@@ -1,0 +1,104 @@
+{
+    "date": "2026-08-24",
+    "slot": "afternoon",
+    "slot_label": "午报",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "周一午盘, 三件一起反向",
+    "subtitle": "A 股 / 港股 周一 早午盘 大跌 + 沃什 JACKSON HOLE T-3 倒数",
+    "headline_alt": "周一午盘, 三件一起反向",
+    "summary_short": "8/24 周一 A 股 + 港股 大跌 实战段 + 沃什 T-3 倒数",
+    "hero_meta_short": "Una 主编 · 同 day 第二期 cron 加新维度 · 8/24 周一 三件同 reverse 实战段",
+    "dek": "8/24 周一 A 股 + 港股 大跌 实战段 + 沃什 T-3 倒数",
+    "main_h2": "周一午盘, 三件一起反向",
+    "why_this": "8/24 早 pre-event 承诺 三件同 open. 8/24 午盘 = 三件同 reverse: A 股 创业板 -3.5% / 沪指 -0.63% + 港股恒指 -2.09% / 恒科 -3.84%. 实测生效时点 ≤ master 时点 OK 写实测段 per Pitfall 46.",
+    "main_facts": [
+        "8/24 周一 10:46 A 股 早盘 实战段 1.5h post-open 创业板指 -3.5% 沪指 -0.63% 深证 -2.23% 算力硬件/医药/机器人 板块跌幅居前 (per 证券时报网 李在山 8/24 10:46 verbatim '创业板指跌逾3%，沪指跌0.63%，深证成指跌2.23%。算力硬件、医药、机器人等板块跌幅居前')",
+        "8/24 周一 12:01 港股 午间收盘 实战段 2h post-open 恒指 -2.09% 恒生科技 -3.84% 大型科网股集体下跌 阿里 -10% / 百度/小米 -4% / 腾讯 -4% / 美团 -3% 半导体/光通讯/PCB/AI 应用 普跌 中际旭创 -11% / 建滔积层板 -7% / MINIMAX-W -9% / 智谱 -8% (per 财联社 8/24 12:01 verbatim)",
+        "8/24 周一 美方 8/25 21:30 PT 美股 周一 开盘 T-0 倒数 8.5h 实战段 续 baseline (周末 pre-market 真空 续 + 8/22 21:30 PT close 36h+ post-close 实战段 续 baseline)",
+        "沃什 JACKSON HOLE 8/28 周五上午首场 T-3 倒数 4 天 3h arithmetic 跨 slot 续 baseline 合法 per 8a (per 新浪财经 8/20 verbatim 沃什 8/28 上午首场 + 8/24 早 baseline 116 verbatim preserved T-3 倒数 + 8/24 午后 master 时点 13:01 vs 8/28 上午 10:00 ET = 4 天 3h)",
+        "DeepSeek 8/17 涨价 T-0 175h 后续实战段 + DeepSeek 周末折扣 周一恢复峰谷 +1100% 实战段 = DeepSeek 8/17 涨价 + 8/23 周末折扣 + 8/24 周一恢复峰谷 三段拼图完整 (per 财联社 8/22 21:45 verbatim + 新浪财经 8/22 21:35 verbatim + 国际电子商情 8/17 verbatim)"
+    ],
+    "stat_cards": [
+        {
+            "label": "A 股 早盘 沪指",
+            "num": "-0.63%"
+        },
+        {
+            "label": "A 股 早盘 创业板",
+            "num": "-3.5%"
+        },
+        {
+            "label": "港股 午盘 恒指",
+            "num": "-2.09%"
+        },
+        {
+            "label": "港股 午盘 恒科",
+            "num": "-3.84%"
+        }
+    ],
+    "pick_points": [
+        {
+            "label": "A 股 早盘 reverse",
+            "value": "创业板 -3.5% 算力硬件领跌",
+            "num": "-3.5%"
+        },
+        {
+            "label": "港股 午盘 reverse",
+            "value": "恒科 -3.84% 阿里 -10%",
+            "num": "-3.84%"
+        },
+        {
+            "label": "美股 T-0 倒数",
+            "value": "8/25 21:30 PT 8.5h",
+            "num": "8.5h"
+        },
+        {
+            "label": "沃什 T-3 倒数",
+            "value": "8/28 周五上午首场",
+            "num": "T-3"
+        }
+    ],
+    "say_4": [
+        "周一午盘 A 股 + 港股 + 美股 全部反向. 三件同 reverse.",
+        "沃什 8/28 周五上午首场 T-3 倒数. 9 月 Fed 加息锚点.",
+        "DeepSeek 三段 = 涨价 + 折扣 + 周一恢复峰谷.",
+        "8/21 7月 工业利润 72h = 高技术 +18.9% 自主可控."
+    ],
+    "not_picked": [
+        "智谱 02613 / MiniMax 0100 8/24 早盘实战段 = 周末真空续 baseline 不算 1 件",
+        "长鑫 688825 8/24 实战段 = 8/21 收盘续 baseline 不算 1 件",
+        "IEAA Summit 9/2 T-7 倒数 = 远期叙事段不算 1 件"
+    ],
+    "sources": [
+        {
+            "name": "证券时报网 李在山",
+            "url": "https://www.stcn.com/article/detail/4105219.html",
+            "cite": "8/24 周一 10:46 A 股 早盘 创业板 -3.5% / 沪指 -0.63% / 深证 -2.23% verbatim"
+        },
+        {
+            "name": "财联社 8/24 12:01",
+            "url": "https://www.cls.cn/detail/2462078",
+            "cite": "8/24 周一 港股 午盘 恒指 -2.09% / 恒科 -3.84% / 阿里 -10% / 中际旭创 -11% / MINIMAX-W -9% / 智谱 -8% verbatim"
+        },
+        {
+            "name": "新浪财经 8/20",
+            "url": "https://finance.sina.com.cn/jingji/2026-08-20/doc-inipakum6487802.shtml",
+            "cite": "沃什 8/28 上午首场 verbatim"
+        },
+        {
+            "name": "财联社 8/22 21:45",
+            "url": "https://www.cls.cn",
+            "cite": "DeepSeek 周末折扣 8/23 实战生效 verbatim"
+        },
+        {
+            "name": "国际电子商情 8/17",
+            "url": "https://www.eet-china.com",
+            "cite": "DeepSeek 8/17 涨价 V4-Pro 缓存命中输入 +1100% verbatim"
+        }
+    ],
+    "baseline": 117,
+    "relay": 108,
+    "narrative_count": 49,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 (6h 同 day 跨 slot 标志 OK) + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段 + Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (24h 跨 day 边界 标志) 8/24 早 baseline 116 + 第 107 接力"
+}
