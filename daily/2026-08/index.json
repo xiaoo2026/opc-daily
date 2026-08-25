@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-26",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "html_url": "daily/2026-08/2026-08-26-morning/index.html",
+    "title": "周三启幕. T-2 倒数",
+    "baseline": 122,
+    "relay": 113,
+    "narrative_count": 53,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (8/26 早 = baseline 122 + 第 113 接力, master 时点 8/26 07:00 vs 8/25 早 master 时点 8/25 07:01 = 24h 跨 day 边界 标志 OK per Pitfall 49 模式; vs 8/25 晚报 baseline 121 + 第 112 接力 master 时点 8/25 21:01 = 10h 同 day 跨 slot per Pitfall 46 模式)"
+  },
+  {
     "date": "2026-08-25",
     "type": "21evening",
     "slot_hour": "21:00",
