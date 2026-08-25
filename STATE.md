@@ -522,3 +522,17 @@ Stage 4: top-level surgical patch 9 处 all PASS per Pitfall 55 + 55(e) + 55(f) 
 
 ### next relay
 - 给 8/25 午后 cron 第一百三十四期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 120 子轴 立 + 第 111 接力 段 (8/25 周二 09:30 A 股 实战段 2.5h post-open reverse + 8/25 周二 10:00 港股 实战段 3h post-open reverse + 8/25 周二 14:00 港股 收盘实战段 + 8/25 周二 15:00 A 股 收盘实战段 + 8/25 21:30 PT 美股 周二 开盘实战段 + 沃什 JACKSON HOLE 8/28 周五上午首场 T-3→T-2 倒数 续 baseline + JACKSON HOLE 8/27-29 T-2 倒数续 baseline + IEAA Summit 9/2 T-7 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 193h→199h 后续实战段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/25 实战段续 baseline).
+
+
+### cron 第一百三十四期 (8/25 午后 同 day 第二期 cron 加新维度 工作流 per Pitfall 46)
+- baseline 第 120 子轴 立 + 第 111 接力 立 = 第 50 + 1 = 第 51 件 narrative 同期 对位 baseline 第 120 子轴 立. 51 件 baseline additive 拼图起 跨 45 天 7/12 早 → 8/25 午后.
+- 加新维度 5 类 M36. [231-235] — (a) 8/25 周二 09:30 A 股 实战段 3.5h post-open reverse 续 baseline + 8/25 11:22 A 股午评 沪指横盘调整 创业板指跌超 3% 煤炭板块逆势大涨 (per 新浪财经 8/25 03:22:26 verbatim UTC→CST 11:22) + 8/25 12:00 A 股 午间收盘实战段 (b) 8/25 周二 10:00 港股 实战段 3h post-open reverse 续 baseline + 8/25 11:18 港股实战段 阿里 09988 翻红 +0.62% 蔡崇信 + 吴泳铭 增持合计约 1.2 亿港元阿里股票 (per 新浪财经 8/25 11:18 verbatim + 港交所信息 verbatim) + 8/24 阿里 800 亿港元新股配售 全球主权财富基金等长线投资者近 3 倍超额认购 + 8/24 阿里 Wan3.0 视频生成大模型正式上线 单次生成 30 秒 (c) 沃什 JACKSON HOLE 8/28 周五上午首场 T-3→T-2 倒数 3 天 3h arithmetic 跨 slot 续 baseline 合法 per 8a (d) DeepSeek 8/17 涨价 T-0 193h→199h 后续实战段 + DeepSeek 周末折扣 实战生效 73h+ + DeepSeek 周一恢复峰谷 +1100% = DeepSeek 8/17 涨价 + 8/23 周末折扣 + 8/25 周二实战段 三段拼图完整 (e) 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/25 实战段 续 baseline + 8/21 周五 7月 工业利润 release 96h+ 后续实战段 续 baseline.
+- Patch header 守门 实战补 — 显式区分 Pitfall 46 同 day 第二期 cron 6h 模式 (8/25 午后 = baseline 120 + 第 111 接力) vs Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (8/25 早 = baseline 119 + 第 110 接力) vs Pitfall 53 跨 day 边界 后续期 cron 62h 模式 (8/24 晚报 vs 8/22 早).
+- 加新维度 加 5 类 M36. [231-235].
+- 接力 给 8/25 晚报 cron 第一百三十五期 = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 121 子轴 立 + 第 112 接力 段 (8/25 周二 14:00 港股 收盘实战段 4h post-港股 open + 8/25 周二 15:00 A 股 收盘实战段 5.5h post-A股 open + 8/25 21:30 PT 美股 周二 开盘实战段 + 沃什 JACKSON HOLE 8/28 周五上午首场 T-2→T-1 倒数 续 baseline + JACKSON HOLE 8/27-29 T-1 倒数续 baseline + IEAA Summit 9/2 T-6→T-5 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 199h→205h 后续实战段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/25 实战段续 baseline).
+
+### commit
+- 5324e6f (publish) + (top-level patch follow)
+
+### next relay
+- 给 8/25 晚报 cron 第一百三十五期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 121 子轴 立 + 第 112 接力 段.
