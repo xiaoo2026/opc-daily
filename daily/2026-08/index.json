@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-25",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "html_url": "daily/2026-08/2026-08-25-21evening/index.html",
+    "title": "周二收官. 三轨合击",
+    "baseline": 121,
+    "relay": 112,
+    "narrative_count": 52,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/25 晚报 = baseline 121 + 第 112 接力, master 时点 8/25 21:01 vs 8/25 午后 master 时点 8/25 13:01 = 8h 同 day 跨 slot OK per Pitfall 46 模式)"
+  },
+  {
+    "date": "2026-08-25",
     "type": "afternoon",
     "slot_hour": "13:00",
     "slot": "afternoon",

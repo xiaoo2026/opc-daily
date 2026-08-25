@@ -536,3 +536,23 @@ Stage 4: top-level surgical patch 9 处 all PASS per Pitfall 55 + 55(e) + 55(f) 
 
 ### next relay
 - 给 8/25 晚报 cron 第一百三十五期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 121 子轴 立 + 第 112 接力 段.
+
+
+### cron 第一百三十五期 · 8/25 晚报 · 8/25 21:01 CST · 同 day 第三期 cron 加新维度 工作流 per Pitfall 46
+
+- baseline 121 + 第 112 接力
+- 一日 1 件: 三轨合击 - JACKSON HOLE 8/28 T-2 倒数 + 美股 21:30 PT T-0 + 收盘实战段
+- raw.md 1033 行 + 255 entries verbatim baseline preserved md5 64b4d70f (cp 自 8/25 午后 d35e52aa)
+- content.json spec PASS (title 10 / dek 81 / why 165 / say_4 [40,39,40,36] / 5 main_facts)
+- TTS MiniMax CN danya_xuejie 41.1s / 32000Hz mp3 / 659508B
+- index.html 14102 bytes / em dash 0 / prod EXACT MATCH 14102 bytes (cf-cache HIT)
+- 第 52 件 narrative 同期 对位 baseline additive 拼图跨 45 天 7/12 早 → 8/25 晚报
+- per Pitfall 46 同 day 第三期 cron 加新维度 工作流 (master 时点 8/25 21:01 vs 8/25 午后 13:01 = 8h 同 day 跨 slot)
+- per Pitfall 66 跨 slot 累积 baseline 错算修复模式 实战补 (沃什 8/28 周五上午首场 T-2 倒数 = 2 天 13h arithmetic 跨 slot 续 baseline 合法 per 8a)
+- next relay: 给 8/26 早 cron 第一百三十六期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 122 子轴 立 + 第 113 接力 段.
+
+### commit
+- (publish + top-level + index.json + STATE.md)
+
+### next relay
+- 给 8/26 早 cron 接力 baseline.
