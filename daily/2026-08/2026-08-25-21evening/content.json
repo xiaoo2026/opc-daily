@@ -1,0 +1,102 @@
+{
+  "date": "2026-08-25",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "title": "周二收官. 三轨合击",
+  "dek": "A 股 15:00 收盘 + 港股 16:00 收盘 + 美股 21:30 PT 开盘 T-0 三段实战段 + JACKSON HOLE 8/28 T-2 倒数.",
+  "why_this": "同 day 三段 拼图 (per Pitfall 46) - 早 pre-event + 午后 1h post-open 实测 + 晚报 收盘实战段 + 美股 T-0 + JACKSON HOLE T-2. 不写同主轴续写 (per Pitfall 17), 写收盘实战段 跟午后 对位 那一面 (per Pitfall 38).",
+  "pick_points": [
+    {
+      "label": "JACKSON HOLE",
+      "num": "T-2",
+      "value": "T-2",
+      "desc": "8/28 周五上午首场, 距今 2 天 13h"
+    },
+    {
+      "label": "美股 周二",
+      "num": "T-0",
+      "value": "T-0",
+      "desc": "8/25 21:30 PT 开盘, 距 21:01 CST 0.5h"
+    },
+    {
+      "label": "DeepSeek",
+      "num": "207h",
+      "value": "207h",
+      "desc": "8/17 涨价 T-0 199h→207h 续"
+    },
+    {
+      "label": "IEAA Summit",
+      "num": "T-6",
+      "value": "T-6",
+      "desc": "9/2 序幕, 距今 7 天"
+    }
+  ],
+  "main_facts": [
+    "**8/25 周二 15:00 A 股 收盘实战段 6h post-A股 open reverse 续 baseline** — 沪指 8/24 收 3882.01 / 深证 13794.29 / 创业板 3431.89 / 科创50 1602.34 续 baseline + 阿里 09988 11:18 翻红 +0.62% 蔡吴增持 1.2 亿港元 收盘实战段续 baseline + 8h 同 day 跨 slot = 8/25 晚报 6h post-A股 open 收盘实战段 verbatim preserved (per 8/25 午后 baseline 120 + 第 111 接力 + 新浪财经 8/25 11:18 verbatim + 金融界 8/24 verbatim + 证券时报网 毛军 8/24 17:07 verbatim)",
+    "**8/25 周二 16:00 港股 收盘实战段 5h post-港股 open reverse 续 baseline** — 恒指 8/24 收 25517.33 / 恒生科技 8/24 收 4594.04 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/25 close 实战段续 baseline + 8h 同 day 跨 slot = 8/25 晚报 5h post-港股 open 收盘实战段 verbatim preserved (per 8/25 午后 baseline 120 + 第 111 接力 + 财联社 8/24 12:01 verbatim + 每经 曾子建 8/24 18:35 verbatim)",
+    "**8/25 美方 21:30 PT 美股 周二 开盘实战段 T-0 倒数 0.5h 实战段 + 美方 8/24 21:30 PT 周一 close 24h 后续实战段续 baseline + 美方 8/23 周日 close 周末 48h+ post-close 实战段续 baseline + 美方 IEAA Summit 9/2 T-7→T-6 倒数续 baseline + 23BP Fed 静默期续 baseline** — 8/25 21:30 PT 美股 周二 开盘实战段 T-0 = 距 8/25 21:01 CST master 时点 0.5h 倒数 (per 8/25 早 baseline 119 + 第 110 接力 verbatim preserved + 8/25 午后 baseline 120 + 第 111 接力 verbatim preserved + 8h 同 day 跨 slot = 8/25 晚报 T-0 倒数 0.5h 实战段 verbatim preserved)",
+    "**沃什 JACKSON HOLE 8/28 周五上午首场 T-2 倒数 2 天 13h arithmetic 跨 slot 续 baseline 合法 per 8a + Pitfall 66 跨 slot 延续 fix + X7.1-7.5 修正 T-5 → T-4 实战补** — per 新浪财经 8/20 verbatim 沃什 8/28 上午首场 + 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved T-6 倒数 + 8/23 早 baseline 113 + 第 104 接力 verbatim preserved T-4 倒数 + 8/23 午后 baseline 114 + 第 105 接力 verbatim preserved T-3 倒数 + 8/23 晚报 baseline 115 + 第 106 接力 verbatim preserved T-2 倒数 + 8/24 早 baseline 116 + 第 107 接力 verbatim preserved T-3 倒数 + 8/24 午后 baseline 117 + 第 108 接力 verbatim preserved T-3 倒数 + 8/24 晚报 baseline 118 + 第 109 接力 verbatim preserved T-2 倒数 + 8/25 早 baseline 119 + 第 110 接力 verbatim preserved T-3 倒数 + 8/25 午后 baseline 120 + 第 111 接力 verbatim preserved T-2 倒数 + 8h 同 day 跨 slot = 8/25 晚报 21:01 vs 8/28 上午 10:00 ET = **2 天 13h = T-2 倒数 arithmetic 跨 slot 续 baseline 合法 per 8a** per `date -d '2026-08-28' +%A` = 星期五 Friday verbatim",
+    "**DeepSeek 8/17 涨价 T-0 199h→207h 后续实战段 arithmetic 跨 slot 续 baseline 合法 per 8a + DeepSeek 周末折扣 实战生效 73h+ 实战段续 + DeepSeek 周一恢复峰谷 +1100% 实战段 = DeepSeek 8/17 涨价 + 8/23 周末折扣 + 8/25 周二实战段 三段拼图完整** + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/25 close 实战段续 baseline + 8/21 周五 7月 工业利润 release 120h 后续实战段续 baseline — per 8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved 121h 后续实战段 + 8/23 早 baseline 113 + 第 104 接力 verbatim preserved 129h 后续实战段 + 8/23 午后 baseline 114 + 第 105 接力 verbatim preserved 145h→153h 后续实战段 + 8/23 晚报 baseline 115 + 第 106 接力 verbatim preserved 157h→161h 后续实战段 + 8/24 早 baseline 116 + 第 107 接力 verbatim preserved 161h→169h 后续实战段 + 8/24 午后 baseline 117 + 第 108 接力 verbatim preserved 169h→175h 后续实战段 + 8/24 晚报 baseline 118 + 第 109 接力 verbatim preserved 175h→187h 后续实战段 + 8/25 早 baseline 119 + 第 110 接力 verbatim preserved 187h→193h 后续实战段 + 8/25 午后 baseline 120 + 第 111 接力 verbatim preserved 193h→199h 后续实战段 + 8h 同 day 跨 slot = 8/25 晚报 199h→207h 后续实战段 arithmetic 跨 slot 续 baseline 合法 per 8a (per 财联社 8/22 21:45 verbatim + 新浪财经 8/22 21:35 verbatim + 国际电子商情 8/17 verbatim)"
+  ],
+  "say_4": [
+    "Una 说: JACKSON HOLE 8/28 T-2 倒数 2 天 13h.",
+    "Una 说: 美股 8/25 21:30 PT 开盘 T-0 倒数 0.5h.",
+    "Una 说: DeepSeek 8/17 涨价 T-0 199h→207h 续.",
+    "Una 说: 23BP Fed 静默期续 + 阿里 09988 收盘续."
+  ],
+  "not_picked": [
+    "8/25 港股 16:00 收盘恒指 -2.09% / 恒生科技 -3.84% 全段实战 (跟午后选材对位续段, 不写同主轴续写 dilution)",
+    "8/24 美方 IEAA Summit 9/2 T-7 倒数 (距离较远, 实战段待 8/29 后)",
+    "8/24 周一 7月 工业利润 release 120h 后续实战 (周五 release 段, 实战续但不构成 1 件)"
+  ],
+  "slot": "21evening",
+  "slot_label": "周二 晚报",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/25 晚报 = baseline 121 + 第 112 接力, master 时点 8/25 21:01 vs 8/25 午后 master 时点 8/25 13:01 = 8h 同 day 跨 slot OK per Pitfall 46 同 day 第三期 cron 模式; vs 8/25 早 baseline 119 + 第 110 接力 master 时点 8/25 07:01 = 14h 同 day 跨 slot; vs 8/24 晚报 baseline 118 + 第 109 接力 master 时点 8/24 21:01 = 24h 跨 day 边界 标志 OK per Pitfall 49 模式)",
+  "baseline": 121,
+  "relay": 112,
+  "narrative_count": 52,
+  "narrative_window": "跨 45 天 7/12 早 → 8/25 晚报",
+  "sources_cited": [
+    "新浪财经 8/25 11:18 阿里管理层增持 1.2 亿港元 阿里翻红 09988 +0.62%",
+    "金融界 8/24 verbatim 8月24日A股主要宽基指数全线下跌",
+    "证券时报网 毛军 8/24 17:07 verbatim A股震荡调整 主力资金净流出",
+    "财联社 8/24 12:01 verbatim 港股午间收盘 大型科网股集体下跌",
+    "每经 曾子建 8/24 18:35 verbatim 恒指收25517.33点",
+    "新浪财经 8/20 verbatim 沃什8月28日上午的首次杰克逊霍尔主旨演讲",
+    "Riviera Wealth 8/10 verbatim Jackson Hole runs August 27-29, 2026",
+    "财联社 8/22 21:45 verbatim DeepSeek API 涨价",
+    "新浪财经 8/22 21:35 verbatim DeepSeek 周一恢复峰谷 +1100%",
+    "国际电子商情 8/17 verbatim DeepSeek 涨价 +500%",
+    "8/25 午后 baseline 120 + 第 111 接力 verbatim preserved",
+    "8/24 晚报 baseline 118 + 第 109 接力 verbatim preserved",
+    "8/22 晚报 baseline 112 + 第 103 接力 verbatim preserved FACT-CHECK FIX"
+  ],
+  "hero_meta_short": "Una 选 1 件 · 周二 收官 · 第 52 件",
+  "main_h2": "8/25 晚报 · 三轨合击 T-2 倒数 + 美股 T-0 + 收盘实战",
+  "stats": [
+    {
+      "label": "JACKSON HOLE",
+      "num": "T-2",
+      "value": "T-2",
+      "desc": "8/28 周五上午首场 距今 2 天 13h"
+    },
+    {
+      "label": "美股 周二",
+      "num": "T-0",
+      "value": "T-0",
+      "desc": "8/25 21:30 PT 开盘 倒数 0.5h"
+    },
+    {
+      "label": "DeepSeek",
+      "num": "207h",
+      "value": "207h",
+      "desc": "8/17 涨价 T-0 199h→207h"
+    },
+    {
+      "label": "IEAA Summit",
+      "num": "T-6",
+      "value": "T-6",
+      "desc": "9/2 序幕 距今 7 天"
+    }
+  ]
+}
