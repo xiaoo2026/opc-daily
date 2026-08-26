@@ -1,0 +1,101 @@
+{
+  "date": "2026-08-26",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "title": "A 股半日翻红",
+  "dek": "沪指 +0.70% / 深证 +1.20% / 创业板 +1.37%, 大金融板块走强, 黄金+钠电池+可控核聚变 段.",
+  "why_this": "8/26 周三 09:30 A 股实战段 3.5h post-open, 跟 8/25 收盘 baseline 118 verbatim 全市场近 4000 只个股下跌 完全 reverse. 沃什 JACKSON HOLE T-1 = 美方 9 月议息 前 最后公开信号.",
+  "pick_points": [
+    {
+      "label": "A 股 沪指 半日",
+      "num": "+0.70%",
+      "value": "+0.70%",
+      "desc": "8/26 11:34 半日 收盘 大金融涨停潮"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 周五上午首场 9 月议息前 最后信号"
+    },
+    {
+      "label": "DeepSeek 涨价",
+      "num": "T-0+219h",
+      "value": "T-0+219h",
+      "desc": "8/17 涨价 三段 拼图 完整"
+    },
+    {
+      "label": "美股 道指 周二",
+      "num": "+0.30%",
+      "value": "+0.30%",
+      "desc": "8/25 PT 收盘 53577 英伟达+2.19%"
+    }
+  ],
+  "main_facts": [
+    "**A 股 8/26 半日 沪指 +0.70% / 深证 +1.20% / 创业板 +1.37%, 大金融板块走强 锦龙股份+湘财股份+南华期货 多股涨停, 黄金+钠电池+可控核聚变 段** — 沪深两市 半日成交 1.23 万亿 放量 837 亿, 全市场超 3500 股飘红 (per 证券时报 李在山 8/26 11:34 verbatim + 每日经济新闻 8/26 11:32:15 verbatim)",
+    "**8/25 美方 PT 周二 收盘 道指 +0.30% 53577.40 / 标普500 +0.32% 7677.28 / 纳指 +0.66% 26151.30, 英伟达 +2.19% 终结七连跌, Meta +1.97%, 微软 +0.90%, 苹果 -0.14%, 谷歌 -0.36%** — 费半 +1.44%, AMD +4.91%, 美光 +2.48%, Lumentum +6.67%, Coherent +4.59%, SK海力士 +2.68%. 7月 PCE 周三 release + 周三盘后 英伟达 财报 实战段 (per 新浪财经 8/26 04:21:15 verbatim + 华盛通 8/26 07:09 verbatim)",
+    "**沃什 JACKSON HOLE 8/28 周五上午 10:00 ET 首场 主席演讲, 距 master 时点 8/26 13:00 = 1 天 19h T-1 倒数** — 9 月议息 前 最后公开信号. 市场 9 月加息 概率 ~1/3 (per 新浪财经 8/20 verbatim + Riviera Wealth 8/10 verbatim + investinglive 8/26 verbatim Federal Reserve Chair Kevin Warsh is scheduled to speak on August 28, 2026 + MNI Markets 8/20 20:35 verbatim)",
+    "**DeepSeek 8/17 涨价 T-0 213h→219h 后续实战段 + 8/23 周末折扣 + 8/26 实战段 = 三段拼图完整** — V4 Pro 高峰输出 6→27 涨幅 350%, 缓存命中输入 0.025→0.30 涨幅 1100%, V4 Flash 输出 2→9 涨幅 350% (per 华尔街见闻 8/14 verbatim + 国际电子商情 8/17 verbatim + 新浪财经 8/17 verbatim + 财联社 8/22 21:45 verbatim + 新浪财经 8/22 21:35 verbatim)",
+    "**智谱 02613 / MiniMax 0100 / 长鑫 688825 8/26 实战段续 baseline + 美方 IEAA Summit 9/2 T-6 倒数续 baseline + 23BP Fed 静默期续 baseline + 8/21 7月 工业利润 release 144h 后续实战段续 baseline = 53 件 baseline additive 拼图起 跨 46 天 7/12 早 → 8/26 午后** (per 8/25 晚报 baseline 121 + 第 112 接力 + 8/25 午后 baseline 120 + 第 111 接力 + 8/25 早 baseline 119 + 第 110 接力 verbatim preserved 全 stack 拼图完整 per Pitfall 46 + 49 + 53)"
+  ],
+  "say_4": [
+    "Una 说: A 股半日翻红, 大金融板块涨停潮, 不像昨天那种全市场跌.",
+    "Una 说: 沃什周五JACKSON HOLE首场, 9月议息前最后一次公开信号.",
+    "Una 说: DeepSeek涨价三周, 已变节奏工具 — 周末折扣+工作日实战段.",
+    "Una 说: 美股周二收涨, 英伟达终结七连跌, 周三财报是真考验."
+  ],
+  "not_picked": [
+    "8/26 港股 10:00 实战段 3h post-open — 跟 8/25 收盘 reverse 同段, 不算新维度",
+    "8/21 7月 工业利润 release 144h 后续 — 实战段续 baseline 已 cover",
+    "7月 PCE 周三 release + 周三盘后 英伟达 财报 — 是 沃什 JACKSON HOLE 倒数的同段, 不算新维度"
+  ],
+  "slot": "afternoon",
+  "slot_label": "周三 午报",
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 (8/26 午后 = baseline 123 + 第 114 接力, master 时点 8/26 13:00 CST vs 8/26 早 master 时点 8/26 07:00 CST = 6h 同 day 跨 slot OK per Pitfall 46 模式; vs 8/25 晚报 baseline 121 + 第 112 接力 master 时点 8/25 21:01 CST = 16h 同 day 跨 slot)",
+  "baseline": 123,
+  "relay": 114,
+  "narrative_count": 53,
+  "narrative_window": "跨 46 天 7/12 早 → 8/26 午后",
+  "sources_cited": [
+    "证券时报 李在山 8/26 11:34 verbatim",
+    "每日经济新闻 8/26 11:32:15 verbatim",
+    "新浪财经 8/26 04:21:15 verbatim 美股周二收盘",
+    "华盛通 8/26 07:09 verbatim 英伟达 +2.19% 终结七连跌",
+    "investinglive 8/26 verbatim Federal Reserve Chair Kevin Warsh is scheduled to speak on August 28, 2026",
+    "新浪财经 8/20 verbatim 沃什 8/28 上午首场",
+    "Riviera Wealth 8/10 verbatim Jackson Hole runs August 27-29, 2026",
+    "华尔街见闻 8/14 verbatim DeepSeek V4 Pro 6→27 涨幅 350%",
+    "国际电子商情 8/17 verbatim DeepSeek 涨价",
+    "财联社 8/22 21:45 verbatim DeepSeek 周末折扣",
+    "8/25 晚报 baseline 121 + 第 112 接力 verbatim preserved 全 stack",
+    "8/25 午后 baseline 120 + 第 111 接力 verbatim preserved"
+  ],
+  "hero_meta_short": "Una 选 1 件 · 周三午报 · 第 53 件",
+  "main_h2": "8/26 午后 · A 股半日翻红 + 沃什 JACKSON HOLE T-1 倒数",
+  "stats": [
+    {
+      "label": "A 股 沪指 半日",
+      "num": "+0.70%",
+      "value": "+0.70%",
+      "desc": "8/26 11:34 半日 收盘 大金融涨停潮"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 周五上午首场 9 月议息前 最后信号"
+    },
+    {
+      "label": "DeepSeek 涨价",
+      "num": "T-0+219h",
+      "value": "T-0+219h",
+      "desc": "8/17 涨价 三段 拼图 完整"
+    },
+    {
+      "label": "美股 道指 周二",
+      "num": "+0.30%",
+      "value": "+0.30%",
+      "desc": "8/25 PT 收盘 53577 英伟达+2.19%"
+    }
+  ]
+}
