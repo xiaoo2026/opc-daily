@@ -1,0 +1,102 @@
+{
+  "date": "2026-08-26",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "title": "三轨齐收红. 沃什倒数",
+  "dek": "A 股 +0.59% / 港股 +0.56%, 大金融 + 中资券商 涨停潮, 美股 道指 +0.36% 续.",
+  "why_this": "8/26 周三 14:00 港股 + 15:00 A 股 + 21:30 PT 美股 三段收盘实战段, 跟 8/25 收盘 baseline 118 verbatim 全市场近 4000 只个股下跌 完全 reverse. 沃什 JACKSON HOLE T-1 = 美方 9 月议息前 最后公开信号.",
+  "pick_points": [
+    {
+      "label": "A 股 沪指 全日",
+      "num": "+0.59%",
+      "value": "+0.59%",
+      "desc": "8/26 15:00 收盘 3912.52 证券板块 涨幅居前"
+    },
+    {
+      "label": "港股 恒指 全日",
+      "num": "+0.56%",
+      "value": "+0.56%",
+      "desc": "8/26 14:00 收盘 25652.97 中金 +8.25%"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 22:00 CST 主旨演讲 9 月议息前 最后信号"
+    },
+    {
+      "label": "英伟达 周三盘后",
+      "num": "±6%",
+      "value": "±6%",
+      "desc": "营收共识 922亿 LSEG 期权 预期波动"
+    }
+  ],
+  "main_facts": [
+    "**8/26 15:00 A 股 收盘 实战段: 沪指 3912.52 +0.59% / 深证 13841.33 +0.69% / 创业板 3414.88 +0.51%, 全市场集体上涨, 证券板块 涨幅居前, 大金融板块 续 8/26 早 +0.70% 涨停潮 段** — 沪深两市 全日成交 8572.23 亿 + 9515.00 亿, 沪指 收涨但 升幅 从 8/26 11:34 半日 +0.70% 收窄至 +0.59% (per 中国经济网 8/26 verbatim http://finance.ce.cn/stock/gsgdbd/202608/t20260826_3171657.shtml)",
+    "**8/26 14:00 港股 收盘 实战段 4h post-港股 open: 恒指 25652.97 +0.56% +141.87 / 恒生科技 4626.15 +0.82% +37.61 / 恒生国企 +1.05% 8533.84, 中资券商股 涨幅居前 中金 +8.25% / 招商证券 +6.59% / 中信证券 +6.39% / 华虹宏力 +6.43%** — 大反转 vs 8/25 收盘 baseline 118 verbatim 恒指 25517.33 -1.89% -492.13 / 恒生科技 4594.04 -3.61% (per 东方财富 Choice 8/26 verbatim + 证券时报 周映彤 8/26 16:15 verbatim + 21财经 万倩倩 8/26 verbatim)",
+    "**沃什 JACKSON HOLE 8/28 周五 22:00 CST (10:00 ET) 首场 主旨演讲, T-1 倒数 1 天 19h, 距 master 时点 8/26 21:01 = 1 天 19h arithmetic 跨 slot 续 baseline 合法 per 8a** — 9 月议息 前 最后公开信号. 30 年期 美债 5.27% → 5.334% → 5.4% (per 新浪财经 / 澎湃 赵宇琦 8/24 09:44 verbatim + 金融界 智通财经 8/24 08:11 verbatim 5 种情景 实战段 + MNI Markets 8/20 20:35 verbatim Chair Warsh To Give Jackson Hole Keynote Speech Aug 28 At 10am ET)",
+    "**8/26 周三盘后 英伟达 NVDA 2027 财年 Q2 财报 实战段 T-0: LSEG 共识 总收入 922 亿美元 (同比 +97%) / StreetAccount 数据中心 863 亿 (占总收入 94%) / ACIE 430 亿 (同比 +149%) / 期权 预期波动 ±6%** — 上行 6% 至 225 美元, 下行 6% 至 202 美元 (per 华盛通 8/26 16:27 verbatim + FactSet 共识 8/26 verbatim + StreetAccount 8/26 verbatim)",
+    "**8/26 周三 21:30 PT 美股 开盘实战段: 标普 +0.36% / 道指 +0.36% / 纳指 +0.67% + AMD +2.90% / SpaceX +1.63% / Meta +1.15% / 英伟达 +1.05% / 网易 +4.33% + 存储芯片股 普涨 + 现货黄金 -1% 4610 美元/盎司 + 布油/美油 -3%+** — 7月 PCE 8/26 20:30 CST release 核心PCE 同比 3.2% (per 中新经纬 8/25 21:40 verbatim + Gate FactSet 8/26 verbatim + TradingKey 8/25 verbatim)"
+  ],
+  "say_4": [
+    "Una 说: A 股从半日 +0.70% 收窄到全日 +0.59%, 升幅收窄但仍是集体上涨.",
+    "Una 说: 港股中资券商股集体涨停, 中金 +8.25%, 大金融板块续涨停潮.",
+    "Una 说: 沃什周五 22:00 CST 首场, 30 年期 5.4%, 五个情景都在等.",
+    "Una 说: 英伟达周三盘后, 营收共识 922 亿同比 +97%, 期权 ±6% 波动定价."
+  ],
+  "not_picked": [
+    "8/26 10:00 港股 实战段 3h post-open — 跟 8/26 14:00 收盘实战段 同段, 不算新维度",
+    "智谱 02613 8/26 -2.64% + MiniMax 0100 +1.27% — 跟 8/25 收盘 -10%/-10% 反转段, 但已 cover 在港股收盘实战段",
+    "DeepSeek 8/17 涨价 T-0 219h→225h + 摩根士丹利 研报 — 跟 8/26 午后 M39 [249] 同主轴 续段, 不算新维度"
+  ],
+  "slot": "21evening",
+  "slot_label": "周三 晚报",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/26 晚报 = baseline 124 + 第 115 接力, master 时点 8/26 21:01 CST vs 8/26 午后 baseline 123 + 第 114 接力 master 时点 8/26 13:01 CST = 8h 同 day 跨 slot OK per Pitfall 46 模式; vs 8/26 早 baseline 122 + 第 113 接力 master 时点 8/26 07:00 CST = 14h 同 day 跨 slot)",
+  "baseline": 124,
+  "relay": 115,
+  "narrative_count": 54,
+  "narrative_window": "跨 46 天 7/12 早 → 8/26 晚报",
+  "sources_cited": [
+    "中国经济网 8/26 verbatim http://finance.ce.cn/stock/gsgdbd/202608/t20260826_3171657.shtml",
+    "东方财富 Choice 8/26 verbatim 港股 收盘 25652.97",
+    "证券时报 周映彤 8/26 16:15 verbatim 港股 收盘 +0.56%",
+    "21财经 万倩倩 8/26 verbatim 中金 +8.25% 招商证券 +6.59%",
+    "新浪财经 / 澎湃 赵宇琦 8/24 09:44 verbatim 沃什 8/28 22:00 CST",
+    "金融界 智通财经 8/24 08:11 verbatim 30 年期 5.27%→5.4% 5 种情景",
+    "MNI Markets 8/20 20:35 verbatim Chair Warsh To Give Jackson Hole Keynote Speech Aug 28 At 10am ET",
+    "华盛通 8/26 16:27 verbatim 英伟达 营收 922 亿 期权 ±6%",
+    "Gate FactSet 8/26 verbatim 7月 PCE 核心 同比 3.2%",
+    "中新经纬 8/25 21:40 verbatim 美股 周二 开盘 +0.36%/+0.67%",
+    "8/26 午后 baseline 123 + 第 114 接力 verbatim preserved 全 stack",
+    "8/26 早 baseline 122 + 第 113 接力 verbatim preserved",
+    "8/25 晚报 baseline 121 + 第 112 接力 verbatim preserved"
+  ],
+  "hero_meta_short": "Una 选 1 件 · 周三晚报 · 第 54 件",
+  "main_h2": "8/26 晚报 · 三轨齐收红. 沃什倒数 + 英伟达财报",
+  "stats": [
+    {
+      "label": "A 股 沪指 全日",
+      "num": "+0.59%",
+      "value": "+0.59%",
+      "desc": "8/26 15:00 收盘 3912.52 证券板块 涨幅居前"
+    },
+    {
+      "label": "港股 恒指 全日",
+      "num": "+0.56%",
+      "value": "+0.56%",
+      "desc": "8/26 14:00 收盘 25652.97 中金 +8.25%"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 22:00 CST 主旨演讲 9 月议息前 最后信号"
+    },
+    {
+      "label": "英伟达 周三盘后",
+      "num": "±6%",
+      "value": "±6%",
+      "desc": "营收共识 922亿 LSEG 期权 预期波动"
+    }
+  ]
+}
