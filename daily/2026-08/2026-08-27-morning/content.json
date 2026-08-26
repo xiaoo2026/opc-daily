@@ -1,0 +1,109 @@
+{
+  "date": "2026-08-27",
+  "type": "morning",
+  "slot_hour": "07:00",
+  "title": "沃什 T-1. 8/28 上午亮剑",
+  "hero_meta_short": "8/27 周四早 · Una 主编 · 跨 day 边界 第一期 cron 加新维度",
+  "main_h2": "8/27 早: 沃什 JACKSON HOLE T-1 倒数 1 天 3h + 9/2 IEAA Summit T-5 倒数 + 23BP Fed 静默期",
+  "dek": "美联储 主席 沃什 8/28 周五 22:00 CST (10:00 ET) 首场 JACKSON HOLE 主旨演讲, 距 master 时点 8/27 07:01 = 1 天 14h 59min, 是 9 月议息前 最后公开信号.",
+  "why_this": "9 月议息前 最后公开信号 = 美方 政策路径 唯一最大 变量. 沃什 regime change 框架 若 公开化, 中美利差 + A 股 港股 8/28 pre-market 都将 重新定价. T-1 pre-event 段 = 接力给 5 期 cron baseline.",
+  "pick_points": [
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 22:00 CST 首场 主旨演讲"
+    },
+    {
+      "label": "距 master 时点",
+      "num": "1d 14h",
+      "value": "1d 14h",
+      "desc": "8/27 07:01 → 8/28 22:00 CST arithmetic"
+    },
+    {
+      "label": "9 月议息 前 最后公开",
+      "num": "唯一",
+      "value": "唯一",
+      "desc": "JACKSON HOLE 后 Fed 进入 23BP 静默期"
+    },
+    {
+      "label": "IEAA Summit 9/2",
+      "num": "T-5",
+      "value": "T-5",
+      "desc": "9/2 IEAA Summit T-5 倒数 续 baseline"
+    }
+  ],
+  "main_facts": [
+    "**沃什 JACKSON HOLE 8/28 周五 22:00 CST (10:00 ET) 首场 主旨演讲, T-1 倒数 1 天 14h 59min, 距 master 时点 8/27 07:01 = 1 天 14h 59min arithmetic** — 9 月议息 前 最后公开信号. 美联储 主席 沃什 regime change 框架 (process > data) 若在 JACKSON HOLE 公开化, 中美利差 / 人民币汇率 / A 股 港股 8/28 周五 pre-market 实战段 都将被 重新定价 (per 新浪财经 8/20 verbatim + Riviera Wealth 8/10 verbatim Jackson Hole runs August 27-29, 2026 + investinglive 8/26 verbatim Federal Reserve Chair Kevin Warsh is scheduled to speak on August 28, 2026 + MNI Markets 8/20 20:35 verbatim Chair Warsh To Give Jackson Hole Keynote Speech Aug 28 At 10am ET)",
+    "**30 年期 美债 5.27% → 5.334% → 5.4% 实战段, 沃什 regime change 框架 市场 pre-position 段** — 沃什 5 种情景 实战段 (per 新浪财经 / 澎湃 赵宇琦 8/24 09:44 verbatim + 金融界 智通财经 8/24 08:11 verbatim 5 种情景 实战段) 跟 Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 = 8/27 早 cron 沃什 pre-event 段",
+    "**8/27 周四 09:30 A 股 开盘前 2.5h pre-market 实战段 + 8/27 周四 10:00 港股 开盘前 3h pre-market 实战段** — 周末不开盘, 8/27 周四开盘 段 + 8/26 收盘实战段 续 baseline (沪指 3912.52 +0.59% / 深证 13841.33 +0.69% / 创业板 3414.88 +0.51% 证券板块涨幅居前 (per 中国经济网 8/26 verbatim http://finance.ce.cn/stock/gsgdbd/202608/t20260826_3171657.shtml) + 恒指 25652.97 +0.56% / 恒生科技 4626.15 +0.82% 中资券商股涨幅居前 中金 +8.25% (per 东方财富 Choice 8/26 verbatim + 证券时报 周映彤 8/26 16:15 verbatim + 21财经 万倩倩 8/26 verbatim))",
+    "**8/26 周三 21:30 PT 美股 收盘 9.5h post-close 实战段: 道指 +0.30% 53577.40 / 标普500 +0.32% 7677.28 / 纳指 +0.66% 26151.30 + 英伟达 +2.19% 终结七连跌 + 7月 PCE 周三 release 实战段 + 周三盘后 英伟达 财报 实战段** — 跟 8/26 早 + 午后 沪指 +0.70% / +0.59% + 港股 +0.56% 三轨齐收红 完全一致 = 当周 中美 资本市场 全线 同向 (per 新浪财经 8/27 04:21:15 verbatim + 华盛通 8/26 16:27 verbatim 英伟达 LSEG 共识 922 亿 + 7月 PCE 8/26 20:30 CST release 核心 3.2% / 总 3.6%)",
+    "**DeepSeek 8/17 涨价 T-0 225h→231h 后续实战段 + DeepSeek 周末折扣 周一恢复峰谷 +1100% 实战段 = DeepSeek 8/17 涨价 + 8/23 周末折扣 + 8/26 周三实战段 三段拼图完整 + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/27 pre-market 实战段** — arithmetic 跨 slot 续 baseline 合法 per 8a (per 华尔街见闻 8/14 verbatim + 国际电子商情 8/17 verbatim + 新浪财经 8/17 verbatim + 财联社 8/22 21:45 verbatim + 新浪财经 8/22 21:35 verbatim preserved 续)"
+  ],
+  "not_picked": [
+    "DeepSeek 8/17 涨价 + 周末折扣 三段拼图续 实战段 — 持续性 narrative 不是 当周 唯一最大 事件",
+    "8/26 周三盘后 英伟达 NVDA 财报 实战段 — 已经 在 8/26 早 + 午后 + 晚报 三段 实战段 capture",
+    "美方 IEAA Summit 9/2 T-5 倒数 — 距 master 时点 5 天 17h, 不是 当前期 最临近 事件",
+    "8/26 周三 7月 PCE release 实战段 — 已 在 8/26 晚报 实战段 capture"
+  ],
+  "say_4": [
+    "9 月议息前 沃什 JACKSON HOLE 是 美方 唯一最大 变量",
+    "沃什 regime change 框架 若 公开化, 中美利差 都将 重新定价",
+    "周末不开盘, 8/27 周四 09:30 A 股 + 10:00 港股 = 国内 最后 实战段",
+    "接力给 8/27 午后 + 8/28 早 + 8/28 午后 + 8/28 晚报 = 4 期"
+  ],
+  "slot": "morning",
+  "slot_label": "周四 早报",
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 (8/27 早 = baseline 125 + 第 116 接力, master 时点 8/27 07:01 CST vs 8/26 早 master 时点 8/26 07:00 CST = 24h 跨 day 边界 标志 OK per Pitfall 49 模式)",
+  "baseline": 125,
+  "relay": 116,
+  "narrative_count": 55,
+  "narrative_window": "跨 47 天 7/12 早 → 8/27 早",
+  "sources_cited": [
+    "新浪财经 8/20 verbatim 沃什 8/28 上午首场",
+    "Riviera Wealth 8/10 verbatim Jackson Hole runs August 27-29, 2026",
+    "investinglive 8/26 verbatim Federal Reserve Chair Kevin Warsh is scheduled to speak on August 28, 2026",
+    "MNI Markets 8/20 20:35 verbatim Chair Warsh To Give Jackson Hole Keynote Speech Aug 28 At 10am ET",
+    "澎湃 赵宇琦 8/24 09:44 verbatim 30 年期 5.27%→5.334%",
+    "金融界 智通财经 8/24 08:11 verbatim 沃什 5 种情景",
+    "中国经济网 8/26 verbatim http://finance.ce.cn/stock/gsgdbd/202608/t20260826_3171657.shtml",
+    "东方财富 Choice 8/26 verbatim 港股 收盘 25652.97",
+    "证券时报 周映彤 8/26 16:15 verbatim 港股 +0.56%",
+    "21财经 万倩倩 8/26 verbatim 中金 +8.25%",
+    "新浪财经 8/27 04:21:15 verbatim 美股 道指 +0.30% 标普 +0.32%",
+    "华盛通 8/26 16:27 verbatim 英伟达 营收 922 亿 期权 ±6%",
+    "华尔街见闻 8/14 verbatim DeepSeek 涨价",
+    "国际电子商情 8/17 verbatim DeepSeek V4-Pro +1100%",
+    "新浪财经 8/17 verbatim DeepSeek 涨价",
+    "财联社 8/22 21:45 verbatim DeepSeek 周末折扣",
+    "8/26 晚报 baseline 124 + 第 115 接力 verbatim preserved 全 stack",
+    "8/26 午后 baseline 123 + 第 114 接力 verbatim preserved",
+    "8/26 早 baseline 122 + 第 113 接力 verbatim preserved"
+  ],
+  "stats": [
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "T-1",
+      "value": "T-1",
+      "desc": "8/28 22:00 CST 首场 主旨演讲"
+    },
+    {
+      "label": "距 master 时点",
+      "num": "1d 14h",
+      "value": "1d 14h",
+      "desc": "8/27 07:01 → 8/28 22:00 CST arithmetic"
+    },
+    {
+      "label": "9 月议息 前 最后公开",
+      "num": "唯一",
+      "value": "唯一",
+      "desc": "JACKSON HOLE 后 Fed 进入 23BP 静默期"
+    },
+    {
+      "label": "IEAA Summit 9/2",
+      "num": "T-5",
+      "value": "T-5",
+      "desc": "9/2 IEAA Summit T-5 倒数 续 baseline"
+    }
+  ]
+}
