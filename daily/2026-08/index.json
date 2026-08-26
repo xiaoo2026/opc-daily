@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-26",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "html_url": "daily/2026-08/2026-08-26-21evening/index.html",
+    "title": "三轨齐收红. 沃什倒数",
+    "baseline": 124,
+    "relay": 115,
+    "narrative_count": 54,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 (8/26 晚报 = baseline 124 + 第 115 接力, master 时点 8/26 21:01 CST vs 8/26 午后 baseline 123 + 第 114 接力 master 时点 8/26 13:01 CST = 8h 同 day 跨 slot OK per Pitfall 46 模式; vs 8/26 早 baseline 122 + 第 113 接力 master 时点 8/26 07:00 CST = 14h 同 day 跨 slot)"
+  },
+  {
+    "date": "2026-08-26",
     "type": "afternoon",
     "slot_hour": "13:00",
     "slot": "afternoon",
