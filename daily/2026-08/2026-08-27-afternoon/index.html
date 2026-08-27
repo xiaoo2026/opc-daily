@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-08-27 · 周四 午报</title>
+  <meta name="description" content="8/27 周四午 · Una 主编 · 同 day 第二期 cron 加新维度 · 英伟达炸裂 算力链暴动">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">周四 午报 · 13:00</span>
+        <span class="when">8/27 周四午 · Una 主编 · 同 day 第二期 cron 加新维度</span>
+      </div>
+      <h1>英伟达炸裂 算力链暴动</h1>
+      <p class="dek">英伟达 2027 财年 Q2 营收 962.21 亿 +106% 大超预期. 首次提前一年给指引 2028 财年 +70%; A 股科创50 半日 +3.45%, PCB/CPO/光纤涨停潮; 智谱 GLM-5.3-Flash 开源定价 1/10.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>英伟达 财报是 8 月 AI 信仰 压力测试  ·  连跌 7 天 盘后一度 -3% 再直线拉涨 +5%, 2028 财年 +70% 首次提前一年给指引 = AI 算力需求 见顶 争论 暂时有答案. 科创50 半日 +3.45% + 港股 澜起 +10% + 智谱 开源 GLM-5.3-Flash 国产芯片 支撑 = 中美 AI 算力链 同日 同向 暴动.</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">962 亿</div>
+        <div class="label">英伟达 Q2 营收</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">+70%</div>
+        <div class="label">2028 财年指引</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">+3.45%</div>
+        <div class="label">科创50 半日</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">1/10</div>
+        <div class="label">智谱 GLM-5.3-Flash</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>8/27 午后: 英伟达 Q2 962 亿 +106% 2028 财年 +70% 首给一年指引 + 科创50 半日 +3.45% PCB/CPO/光纤涨停潮 + 智谱 GLM-5.3-Flash 开源</h2>
+        <p>**英伟达 2027 财年 Q2 财报 962.21 亿美元 同比 +106% 环比 +18%. 大超市场预期 923.8 亿; 数据中心收入 890 亿 +117%; GAAP 净利 596.88 亿 +126%; 调整后 EPS 2.22 美元 +120%**  ·  Q3 指引 1080 亿 ±2% (市场预估 1051.5 亿); **管理层首次提前一年给指引: 2028 财年营收增长约 70% (市场此前预估 45%)**; 财报日收盘 -1.59% (连跌 7 日 近四年最长). 盘后一度 -3% 随后直线拉涨最高 +5%. 截至发稿 +4.71% (per 21世纪经济报道 8/27 07:09 verbatim + 证券时报 毛军 8/27 08:56 verbatim + 金融界 8/27 verbatim)</p>
+        <p>**8/27 A 股 午间实战段: 沪指 +0.6% 报 3935.99 / 深成指 +1.19% 报 14005.93 / 创业板指 +1.51% / 科创50 +3.45% 报 1688.38**  ·  沪深两市半日成交 1.35 万亿 (沪深京 13611 亿 放量 1211 亿). 超 3000 股上涨; PCB 涨停潮 金安国纪/宝鼎科技/协和电子/宏昌电子/嘉立创; CPO 赛微电子 20cm 涨停; 光纤 长飞光纤涨停; 黄金 湖南黄金涨停; 银行走弱 浙商/常熟跌超 3% (per 金融界 青枫 8/27 11:33:37 verbatim + 钛媒体 8/27 11:44 verbatim)</p>
+        <p>**8/27 港股 午间实战段: 恒指 -0.42% 报 25544.93 / 恒生科技 +0.19% 报 4630.48**  ·  开盘恒指 +0.48% 恒生科技 +0.85% 智谱涨超 8% MiniMax 涨近 5%; 芯片股走强 澜起科技 +10~11% 建滔积层板 +9% 长飞光纤光缆 +8% 兆易创新 +7%; AI 应用股活跃 智谱 +8%; 内银走低 农业银行 -2.63%; 南向资金净买入 28.75 亿港元 (per 每经 8/27 12:27 verbatim + 证券时报 李在山 8/27 09:24 verbatim)</p>
+        <p>**智谱 8/26 上线并开源 GLM-5.3-Flash (320B-A18B)**  ·  GLM-5 系列首个原生多模态模型. 定价为 GLM-5.3 的 1/10 (限时折扣 1/20. 为 Opus4.8 的 1/40); 此前以匿名模型 Ox-Alpha (中文社区称作牛来) 在 OpenCode/OpenRouter 大规模测试 创双平台调用量新高. 请求流量全部由国产芯片提供算力支持 (per 星岛 8/27 verbatim)</p>
+        <p>**美股期指集体拉升: 道指期货 +0.47% / 标普500 期货 +0.6% / 纳指100 期货 +1.08%**  ·  存储/光通信/AI 云 盘后暴动: SK海力士 +4.5% 闪迪/美光 +3.8% 康宁 +2% 应用光电 +4% CoreWeave +5% Nebius +6% (per 21世纪经济报道 8/27 07:09 verbatim) + 沃什 JACKSON HOLE 8/28 上午首场 T-1 倒数 1 天 17h (per 新浪财经 8/20 verbatim + investinglive 8/26 verbatim) + DeepSeek 涨价 T-0 231h→237h 续 + JACKSON HOLE 8/27-29 T-0 + IEAA Summit 9/2 T-4 + 23BP Fed 静默期 + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/27 实战段续 baseline</p>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它</h3>
+      <ul>
+          <li>沃什 JACKSON HOLE T-1 倒数  ·  早间已 pick 美方宏观变量. 午后接产业实测段对位</li>
+          <li>美股三大期指 + 存储板块 盘后暴动  ·  是 英伟达财报 的子段. 并入主件</li>
+          <li>7月 PCE 核心 3.2% / 总 3.6%  ·  8/26 晚报已 capture. 续 baseline</li>
+          <li>港股 内银走低 农业银行 -2.63%  ·  非 AI 主轴. 不是 1 件</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>英伟达 962 亿 +106%, 2028 财年 +70%, AI 需求见顶争论暂时有答案</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>科创50 半日 +3.45%, PCB/CPO/光纤涨停潮, A 股算力链全线暴动</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>智谱 GLM-5.3-Flash 开源 定价 1/10. 国产芯片支撑 调用量新高</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>沃什 JACKSON HOLE 8/28 T-1, 9 月议息前 最后公开信号</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 周四 午报 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-08-27 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
