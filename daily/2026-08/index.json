@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-27",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "title": "港股双雄认牛来 长鑫破4万亿",
+    "summary": "8月27日港股收盘实战段 · 智谱 +12.62% 1160 HKD 认领牛来 + MiniMax +3.83% ARR 8亿美元 + 长鑫 +5.26% 突破4万亿",
+    "html_url": "daily/2026-08/2026-08-27-21evening/index.html",
+    "baseline": 127,
+    "relay": 118,
+    "narrative_count": 57,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 53 跨 day 边界 后续期 cron 38h 模式"
+  },
+  {
+    "date": "2026-08-27",
     "type": "afternoon",
     "slot_hour": "13:00",
     "slot": "afternoon",
