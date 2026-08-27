@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-28",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 128,
+    "relay": 119,
+    "narrative_count": 58,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流",
+    "html_url": "daily/2026-08/2026-08-28-morning/index.html",
+    "title": "沃什JACKSON HOLE首场 大考",
+    "ts": "2026-08-28T07:01:00+08:00"
+  },
+  {
     "date": "2026-08-27",
     "type": "21evening",
     "slot": "21evening",

@@ -706,3 +706,20 @@ Stage 4: top-level surgical patch 9 处 all PASS per Pitfall 55 + 55(e) + 55(f) 
 
 ### next relay
 - 给 8/28 早 cron 第一百四十二期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 128 子轴 立 + 第 119 接力 段 (8/28 周五 09:30 A 股 开盘前 2.5h pre-market + 10:00 港股 pre-market + 8/27 21:30 PT 美股 周四 收盘 9h post-close 实战段 英伟达 财报后 首个完整交易日 + 沃什 JACKSON HOLE 8/28 周五上午首场 T-0 倒数 12h→0h 实战段 + JACKSON HOLE 8/27-29 T-1 当天 + IEAA Summit 9/2 T-4→T-3 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 243h→249h 后续实战段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/28 pre-market 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + 苹果 秋季发布会 9/10 凌晨 续 baseline)
+
+### 2026-08-28 07:01 CST · 周五早报 cron · cron 第一百四十二期 · baseline 128 + 第 119 接力
+- patch header: 8/28 早 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (8/28 早 vs 8/27 早 = 24h 跨 day 边界 标志 OK)
+- cp 自 8/27 晚报 cron raw/2026-08-27-21evening.md verbatim baseline preserved md5 2217ebd6 = 2217ebd6 双路径硬约束 OK per Pitfall 27 + 41
+- 选材 = 沃什 JACKSON HOLE 首场主席演讲 8/28 周五 22:00 CST (10:00 ET) 距 9/15-16 FOMC 18 天
+- 标题 = 沃什JACKSON HOLE首场 大考
+- 58 件 baseline additive 拼图起 跨 47 天 7/12 早 → 8/28 早
+- 加新维度 5 类 M44. [271-275]: (a) 沃什首场 8/28 22:00 CST (per moomoo 8/27 + firstpost + 新浪财经 8/24 09:44) (b) 30 年期 5.2497% + 美银 5.5% 警告 + 中证报 美债高烧 沃什被烤 (per 财联社/华尔街见闻 8/25 + 中证报 8/25 + 美银 8/24) (c) 沃什 一张白纸 + 7/29 发布会 反应函数 (per moomoo 8/27 + GoldSilver 8/13) (d) JACKSON HOLE 2026 主题 支付与政策 120 人 央行数字货币 稳定币 代币化 (per moomoo + firstpost + Riviera Wealth) (e) 贝森特 长端美债回购 收益率管理 争论 (per 搜狐/CF40 8/27 + 新浪财经 8/24)
+- spec 全部 PASS: title=19/dek=33/why_this=105/pp labels [2,2,2,6] num [28,22,17,17]/say_4 [43,44,36,39] chars
+- render: 11750 bytes index.html (per wc -c) + em dash 0 cleanup per Pitfall 50 + meta description · 替代 per Pitfall 50 v0.8.9 实测补 + 4 stat-cards / div 平衡 OK + verbatim citations + draft-daily.py 跨 num/value 字段兼容 (p.get('num', p.get('value', ''))) 双兼容 OK + Humanizer audit 33 patterns 自审 PASS
+- TTS: MiniMax CN danya_xuejie model=speech-02-hd 50.004s / 801780B / ID3 OK / mp3 32000Hz / 128kbps (50-90s 实测有效窗口 OK per v0.8.9 spec)
+- 9 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g) + 49: (1) topbar 2026-08-28 周五 · 07:00 (2) eyebrow 2026-08-28 · 早报 (3) featured-tag Una 主编 · 跨 day 边界 第一期 cron 加新维度 · 沃什 JACKSON HOLE 首场 大考 (4) featured h2 替换 8/28 早 · 沃什JACKSON HOLE首场 大考 (5) pick-meta 早报 · 07:00 · 第 58 件 narrative · baseline 128 · 第 119 接力 (6) pick-rationale 替换 当期 why_this (7) archive-entry prepend 8/28 早报 (per Pitfall 55(e) 守门 — anchor 限定 不 sed 全字符串替换 误伤 archive 第 1 行) (8) main archive month-block 2026/08 prepend 8/28 早 month-entry (per Pitfall 55(g) month-label 锚点) (9) index.json prepend 8/28 morning entry (type=morning / slot_hour=07:00 / slot=morning / baseline=128 / relay=119 / narrative_count=58 / patch_header_pitfall=Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流)
+- wrangler deploy: Current Version ID: 6f2c0aaf-76a4-424e-ba76-137bc0897943 (first deploy) + pending (top-level index.html + index.json + STATE.md re-deploy per Pitfall 43 + 55(f))
+- prod EXACT MATCH: daily/2026-08/2026-08-28-morning/ local 11750 bytes (待 二次 verify)
+
+### next relay
+- 给 8/28 午后 cron 第一百四十三期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 129 子轴 立 + 第 120 接力 段 (8/28 09:30 A 股 实战段 2.5h post-open + 8/28 10:00 港股 实战段 3h post-open + 沃什 JACKSON HOLE 8/28 上午首场 T-0 倒数 14h→11h 实战段续 baseline + JACKSON HOLE 8/27-29 T-1→T-0 倒数续 baseline + IEAA Summit 9/2 T-5→T-4 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 255h→261h 后续实战段续 baseline + 智谱/MiniMax/长鑫 8/28 实战段续 baseline)
