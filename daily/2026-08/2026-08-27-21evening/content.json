@@ -1,0 +1,92 @@
+{
+  "schema_version": "v4-daily",
+  "slot": "evening",
+  "slot_hour": "21:00",
+  "slot_date": "2026-08-27",
+  "weekday_zh": "周四",
+  "topbar_label": "2026-08-27 周四 · 21:00",
+  "eyebrow_label": "2026-08-27 · 晚报",
+  "title": "港股双雄认牛来 长鑫破4万亿",
+  "dek": "8月27日港股收盘实战段。智谱认领牛来大涨12.62%, MiniMax八月ARR破8亿美元, 长鑫突破4万亿, 三家拼完中方大模型算力链最后一环。",
+  "why_this": "早间定沃什倒数, 午后炸裂算力链, 晚报收港股双雄加长鑫实战段 — 三段拼图完整, 中方大模型与算力核心第一次以收盘实战段形式被同时看见。",
+  "pick_points": [
+    {
+      "label": "智谱 2513.HK",
+      "value": "+12.62% 1160港元",
+      "desc": "认领牛来 全天高走",
+      "num": "+12.62% 1160港元"
+    },
+    {
+      "label": "MiniMax 0100.HK",
+      "value": "+3.83%",
+      "desc": "8月ARR破8亿美元",
+      "num": "+3.83%"
+    },
+    {
+      "label": "长鑫 688825.SH",
+      "value": "+5.26% 4.01万亿",
+      "desc": "午间突破4万亿 创52周新高",
+      "num": "+5.26% 4.01万亿"
+    },
+    {
+      "label": "A 股收盘",
+      "value": "科创50 +3.77%",
+      "desc": "算力PCB光纤存储涨停潮",
+      "num": "科创50 +3.77%"
+    }
+  ],
+  "main_facts": [
+    "8月27日16时港股收盘实战段: 恒指 25565.74 跌 0.34%, 恒生科技 4620.29 跌 0.13%, 国企指数 8490.31 跌 0.51%, 全日总成交额 2335.15 亿港元; 南向资金净买入 31.8 亿港元 (per 中国基金报 8月27日 17:49 verbatim)",
+    "智谱 2513.HK 大涨 12.62% 收 1160 港元, 全天高开高走, 因认领牛来且其大模型在全球范围内广受欢迎, 带动港股大模型概念股集体上涨 (per 中国基金报 8月27日 17:49 verbatim)",
+    "MiniMax 0100.HK 大涨 3.83%, 上半年收入已超去年全年, 8月ARR突破8亿美元, AI业务爆发式增长提振股价 (per 中国基金报 8月27日 17:49 verbatim)",
+    "长鑫科技 688825.SH 8月27日午间涨 5.26% 报 59.05 元, 总市值 4.01 万亿元, 创 52 周新高, 午间休市报价 (per Moomoo 8月27日 11:29 verbatim)",
+    "8月27日15时 A 股收盘实战段: 沪指 3956.57 涨 1.13%, 深证 14048.88 涨 1.50%, 创业板 3473.35 涨 1.71%, 科创50 1693.48 涨 3.77%, 沪深两市成交额 2.13 万亿元, 较上日放量 3172 亿元, 算力硬件PCB CPO光纤存储芯片涨停潮 (per 新浪财经 8月27日 15:00 verbatim)"
+  ],
+  "say_4": [
+    "智谱认领牛来, 大模型体系 vs 模型两层定价分裂第一次被二级市场实战段验证。",
+    "MiniMax 八月 ARR 破 8 亿美元, 上半年收入已超去年全年, AI 业务不再是故事。",
+    "长鑫突破 4 万亿, 国家队+产业全栈联合在中美 AI 双线里不再是备选项。",
+    "三段拼图完成, 中方大模型与算力核心第一次以收盘实战段同时被看见。"
+  ],
+  "not_picked": [
+    "NVDA 财报后首个交易日 — 8月27日 21:30 PT 段属于明早 cron 接力, 美方业绩段已被午后段覆盖",
+    "沃什 JACKSON HOLE T-0 倒数 12h — 8月28日 22:00 CST 讲话实战段属于明早 cron 接力, 政策段已被早间段覆盖",
+    "DeepSeek 涨价 T-0 243h — 周末折扣 + 峰谷定价三段拼图完整, 8月27日无新增数据点, 续 baseline 即可"
+  ],
+  "voice_text": "Una 选1件。8月27日港股收盘实战段, 智谱2513大涨12.62%收1160港元, 认领牛来, MiniMax 0100涨3.83%八月ARR破8亿美元, 长鑫688825涨5.26%突破4万亿。三家拼完中方大模型与算力核心最后一环。早间定沃什倒数, 午后炸裂算力链, 晚报收实战段。三段拼图完成, 中方大模型与算力核心第一次以收盘实战段同时被看见。",
+  "voice_meta": {
+    "model": "speech-02-hd",
+    "voice_id": "danya_xuejie",
+    "provider": "MiniMax CN",
+    "speech_rate": 0
+  },
+  "audio_format": "mp3",
+  "audio_sample_rate": 32000,
+  "audio_bitrate": 128000,
+  "chart_caption": "8月27日16时港股收盘实战段 · 智谱 +12.62% / MiniMax +3.83% / 长鑫 +5.26% 4.01万亿",
+  "chart_note": "Una 主编 · 同 day 第三期 cron 加新维度 · per Pitfall 46 + 49 + 53 baseline additive 升级 第 127 子轴 立 + 第 118 接力 段",
+  "footer_note": "本日 raw.md 40 条 entries 覆盖 A 股 15 时收盘 + 港股 16 时收盘 + NVDA 财报 T-0 实战段 + 智谱 GLM-5.3-Flash 牛来揭晓 + 沃什 JACKSON HOLE T-0 倒数 12h + DeepSeek 涨价 T-0 243h + 智谱/MiniMax/长鑫 实战段 + IEAA Summit 9/2 T-3 倒数 + 23BP Fed 静默期续 baseline",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 (8月27日 晚报 vs 8月27日 午后 = 8h 同 day 跨 slot OK per Pitfall 46) + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (8月27日 早 vs 8月26日 早 = 24h 跨 day 边界 标志 OK) + Pitfall 53 跨 day 边界 后续期 cron 30h/38h/48h 模式 (8月27日 晚报 vs 8月26日 早 = 38h 跨 day 边界 标志 OK)",
+  "stage_meta": {
+    "master_time_cst": "2026-08-27 21:01",
+    "stage_2_completed_at": "2026-08-27 21:01",
+    "stage_3_completed_at": null,
+    "stage_4_completed_at": null,
+    "cron_slot": "evening",
+    "cron_seq": 141,
+    "baseline_axis": 127,
+    "relay_axis": 118,
+    "narrative_count": 57,
+    "raw_md5": "3f5fc65a91fa9eb6306967fed74fa2d4",
+    "raw_size_bytes": 54945,
+    "raw_lines": 133,
+    "raw_entries": 40,
+    "daily_raw_md5": "3f5fc65a91fa9eb6306967fed74fa2d4",
+    "md5_match": true,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 53 跨 day 边界 后续期 cron 30h/38h/48h 模式"
+  },
+  "date": "2026-08-27",
+  "slot_label": "2026-08-27 · 晚报",
+  "hero_meta_short": "08-27 周四",
+  "main_h2": "为什么是这件"
+}
