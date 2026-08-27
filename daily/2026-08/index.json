@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-27",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot": "afternoon",
+    "title": "英伟达炸裂 算力链暴动",
+    "baseline": 126,
+    "relay": 117,
+    "narrative_count": 56,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段",
+    "html_url": "daily/2026-08/2026-08-27-afternoon/index.html"
+  },
+  {
+    "date": "2026-08-27",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
