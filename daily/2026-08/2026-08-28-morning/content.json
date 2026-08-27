@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-28",
+  "date_label_short": "08-28",
+  "slot_label": "早报",
+  "slot_hour": "07:00",
+  "main_h2": "事实部分 · T-0 当天 沃什首场杰克逊霍尔主席演讲",
+  "title": "沃什JACKSON HOLE首场 大考",
+  "hero_meta_short": "07:00 · 周五 · 覆盖 8/27 21:01 ~ 8/28 07:01",
+  "why_this": "美联储新主席首场主席演讲 = 秋季政策路径最清晰的一次公开锚。距 9/15-16 FOMC 仅 18 天, 但 沃什上任以来压缩声明 + 取消点阵图 + 减少前瞻指引, 这场演讲成了市场填补信息真空的唯一窗口。",
+  "pick_points": [
+    {
+      "label": "时间",
+      "num": "8/28 周五 22:00 CST (10:00 ET)"
+    },
+    {
+      "label": "地点",
+      "num": "怀俄明 Jackson Lake Lodge"
+    },
+    {
+      "label": "性质",
+      "num": "沃什 5/22 上任后首场主席演讲"
+    },
+    {
+      "label": "距 FOMC",
+      "num": "18 天 (9/15-16 议息)"
+    }
+  ],
+  "say_4": [
+    "市场要的不是 加25BP还是不动, 是 反应函数本身。沃什 7/29 自述 一张白纸。",
+    "30 年期 5.2497%。美银警告 不释放降息信号, 收益率恐冲 5.5%。沃什被烤。",
+    "官方议程谈支付, 但交易盘只盯 9 月。货币 + 财政 信誉 同时承压。",
+    "贝森特 突然宣布 扩大长端美债回购, 引发 债务管理 走向 收益率管理 争论。"
+  ],
+  "main_facts": [
+    "沃什首场JACKSON HOLE主席演讲 = 8/28 周五 22:00 CST (10:00 ET) · 距 9/15-16 FOMC 18 天 · 秋季政策路径最清晰的一次公开锚 (per moomoo 8/27 + firstpost + 新浪财经 8/24 09:44 + 新浪财经 8/24 verbatim \"美联储主席凯文·沃什将于北京时间8月28日22时, 在杰克逊霍尔全球央行年会上发表主旨演讲\")",
+    "30 年期美债 5.2497% + 10 年期 4.7120% + 2 年期 4.225% + 美银警告 若沃什不释放降息信号 30 年期 收益率 恐冲上 5.5% + 巴克莱 9 月 FOMC 加息概率 >50% (per 财联社/华尔街见闻 8/25 verbatim + 中证报/上海证券报 8/25 verbatim + 美银 8/24 报告 verbatim + 巴克莱 8/21 报告 verbatim)",
+    "沃什 7/29 发布会 自述 \"一张白纸\" + \"不希望陷入 加25个基点还是不动 的近视\" + \"Fed is not constrained by market prices\" + 5/22 上任以来 压缩声明 + 取消点阵图 + 减少前瞻指引 (per moomoo 8/27 verbatim + GoldSilver verbatim + 财新 8/27 verbatim)",
+    "JACKSON HOLE 2026 主题 = 金融创新 · 支付与政策 · 约 120 人受邀 · 央行数字货币 + 稳定币 + 代币化资产 · 1975 年以来封闭式规格 · 主席演讲自 2020 年起 Kansas City Fed YouTube 直播 (per moomoo 8/27 verbatim + firstpost verbatim + Riviera Wealth verbatim)",
+    "贝森特 突然宣布 扩大长端美债回购 + 称 长期收益率 没有反映 经济基本面 + 引发 财政部 是否正从 债务管理 走向 收益率管理 的争论 + 沃什需在演讲中 明确 Fed 与 财政部 政策边界 (per 搜狐/CF40 8/27 verbatim + 新浪财经 8/24 verbatim + 财联社 verbatim)"
+  ],
+  "not_picked": [
+    "8/28 长鑫科技 688825 pre-market - 续 8/27 收 +5.26% / 突破 4 万亿 已 24h 实战段",
+    "8/28 智谱 02613 pre-market - 续 8/27 港股 close +12.62% 1160 HKD 收 实战段",
+    "8/27 NVDA 财报后 首个完整交易日 - 9.5h post-close 实战段 续 baseline"
+  ],
+  "sources": [
+    {
+      "label": "moomoo 8/27 沃什首场JACKSON HOLE前瞻",
+      "url": "https://www.moomoo.com/news/post/75011809"
+    },
+    {
+      "label": "搜狐/CF40 8/27 沃什Jackson Hole讲话前瞻",
+      "url": "https://m.sohu.com/a/1068515063_122014422"
+    },
+    {
+      "label": "新浪财经 8/24 09:44 沃什8/28 22:00 CST 主旨演讲",
+      "url": "https://finance.sina.com.cn/jjxw/2026-08-24/doc-inipkriy6194182.shtml"
+    },
+    {
+      "label": "GoldSilver 8/13 Warsh \"not constrained by market prices\"",
+      "url": "https://goldsilver.com/industry-news/goldsilver-news/gold-price-jackson-hole-warsh"
+    },
+    {
+      "label": "firstpost 8/27 JACKSON HOLE 2026 markets preview",
+      "url": "https://www.firstpost.com/business/jackson-hole-2026-why-kevin-warshs-first-speech-matters-for-markets-14040672.html"
+    }
+  ],
+  "dek": "今晚22点 沃什就任主席三个月后首场主席演讲 · 全球资本市场押注"
+}
