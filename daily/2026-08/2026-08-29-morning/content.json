@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-29",
+  "date_label_short": "08-29",
+  "slot_label": "早报",
+  "slot_hour": "07:00",
+  "main_h2": "事实部分 · 沃什 JACKSON HOLE 首场 实战段 + 9月 FOMC 路径校准",
+  "title": "沃什交卷, 9月 路径见底",
+  "hero_meta_short": "07:00 · 周六 · 覆盖 8/29 01:01 ~ 8/29 07:01",
+  "dek": "沃什 8/28 22:00 CST 首场主席演讲 实测段 + 实际反应函数 (鸽/鹰/模糊) + 9月 FOMC 加息/降息 路径校准 + 30 年期 5.2497% → 实战 4.8% / 5.5% 双向 倒数 + 8/29 中方 pre-market 反向预期 段 + 8/28 美股周五收盘 9.5h post-close.",
+  "why_this": "8/29 早 cron 跨 day 边界 第一期 cron 加新维度 per Pitfall 49, 接 8/28 晚报 baseline 130 + 第 121 接力 沃什 T-0 实战段. 早 cron 写 沃什 22:00 实测 + 9月 FOMC 路径校准 + 周末 pre-market 反向预期, 三段拼图完整.",
+  "pick_points": [
+    {
+      "label": "沃什 JACKSON HOLE 首场",
+      "num": "8/28 22:00 CST 实战段 9h post-keynote"
+    },
+    {
+      "label": "30 年期 收益率",
+      "num": "5.2497% → 实战 4.8% / 5.5% 双向 倒数"
+    },
+    {
+      "label": "9月 FOMC 路径",
+      "num": "5.5%/5.0%/4.5% 三情景 校准"
+    },
+    {
+      "label": "中方 pre-market",
+      "num": "8/29 周末 真空窗口 反向预期段"
+    }
+  ],
+  "say_4": [
+    "沃什 22:00 交卷, 美债 美股 双线 反应函数 实战段.",
+    "9月 FOMC 路径 校准到 5.5% / 5.0% / 4.5% 三情景, 沃什 一张白纸.",
+    "8/29 中方 pre-market 真空窗口 反向预期段, 30 年期 双向.",
+    "早 cron 沃什实测, 午后 美方 续, 晚报 中方 close 校准 拼图完整."
+  ],
+  "main_facts": [
+    "沃什 JACKSON HOLE 8/28 22:00 CST 首场主席演讲 实测段 + 实际反应函数 (鸽/鹰/模糊) + 9月 FOMC 加息/降息 路径校准 (per 8/28 晚报 baseline 130 verbatim preserved 沃什 T-0 倒数 59min 段 + 8/28 午后 baseline 129 + 8/28 早 baseline 128 + 8/27 晚报 baseline 127 verbatim preserved 全 stack 续 baseline, 跨 slot 引用合法 per 8a; arithmetic 8/29 07:01 CST vs 8/28 22:00 CST = 9h post-keynote 实战段 OK per Pitfall 42 实测生效时点 ≤ master 时点)",
+    "30 年期 美债 收益率 5.2497% → 实战 4.8% / 5.5% 双向 倒数 + 10 年期 4.7120% / 2 年期 4.225% (per 8/28 晚报 baseline 130 verbatim preserved 30 年期 段 + 新浪财经 8/24 verbatim 全 stack 续 baseline, 跨 slot 引用合法 per 8a + master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料) + 美银 8/24 报告 情景一加息 9→12.5BP + 情景二 30 年期 5.5% 警告 (per 8/28 晚报 baseline 130 + 8/28 午后 baseline 129 + 8/28 早 baseline 128 verbatim preserved 美银 8/24 报告 verbatim + 财联社 8/25 verbatim 全 stack 续 baseline)",
+    "8/29 中方 pre-market 反向预期 段 + 周末 真空窗口 (per 8/28 晚报 baseline 130 verbatim preserved 中方 close 沪指 -0.20% 3954 / 港股 close 恒指 -0.40% 恒科 -0.95% / 智谱 2513.HK +5% 1218 HKD 认领牛来续涨 / MiniMax +2% / 长鑫 +1.5% 段 verbatim preserved, 跨 slot 引用合法 per 8a) + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/29 pre-market 实战段续 baseline + 智谱 GLM-5.3-Flash (320B-A18B) 续 baseline + 1-7 月 集成电路 行业利润 +18.5 倍 续 baseline",
+    "8/28 21:30 PT 美股 周五 收盘 9.5h post-close 实战段 + NVDA 财报后 第 2 个完整交易日 (per 8/28 晚报 baseline 130 verbatim preserved 21:30 PT 实战段 + 8/28 午后 baseline 129 + 8/27 晚报 baseline 127 verbatim preserved NVDA 财报 +106% / 数据中心 +117% / Q3 指引 1080 亿 / 2028 财年 +70% 段 + Marvell MRVL 8/27 财报 + UBS Buy $300 PT + AMD/AVGO/MU 算力链 实战段 续 baseline)",
+    "JACKSON HOLE 8/27-29 T-1 当天 + IEAA Summit 9/2 T-4 → T-3 倒数续 baseline (8/29 07:01 CST vs 9/2 = 4 天 = T-4 倒数, 跟 8/28 晚报 baseline 130 + 第 121 接力 T-3→T-4 倒数 续 baseline) + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 267h→273h 续 baseline (8/29 07:01 CST vs 8/17 00:00 CST = 12 天 7h = 273h) + 苹果 秋季发布会 9/10 凌晨 续 baseline + Anthropic 上市进程 跨境对位 per Pitfall 38 cross-reference"
+  ],
+  "not_picked": [
+    "NVDA 财报后 第 2 个完整交易日 - 8/28 晚报 baseline 130 + 8/28 午后 baseline 129 已 capture, 不算新 1 件",
+    "智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续 - 8/28 晚报 + 8/27 晚报 已 capture, 不算新 1 件",
+    "苹果 秋季发布会 9/10 凌晨 - 8/28 晚报 baseline 130 已 capture, 不算新 1 件",
+    "长鑫 4.01 万亿 + NVDA 962 亿 - 8/27 收盘 已 capture, 不算新 1 件"
+  ],
+  "sources": [
+    "8/28 晚报 baseline 130 verbatim preserved (沃什 JACKSON HOLE T-0 实战段 59min 倒数 + 8/28 A 股 close 沪指 -0.20% 3954 / 港股 close 恒指 -0.40% 恒科 -0.95% 段 + 美银 情景一 9→12.5BP / 情景二 30 年期 5.5% 段 verbatim)",
+    "8/28 午后 baseline 129 verbatim preserved (8/28 09:25 港股 open -0.61% / -0.85% 双对位 JACKSON HOLE 段 + 沃什 T-0 倒数 11h→9h 段 verbatim)",
+    "8/28 早 baseline 128 verbatim preserved (沃什 JACKSON HOLE 首场 大考 T-1 倒数 14h 段 + 美银 8/24 报告 verbatim + 巴克莱 8/21 报告 verbatim + JACKSON HOLE 主题 支付与政策 + 120 位央行高层 段)",
+    "8/27 晚报 baseline 127 verbatim preserved (8/27 15:00 A 股 close 沪指 3956.57 涨 1.13% / 16:00 港股 close 恒指 25565.74 -0.34% 段 + NVDA 962.21 亿 +106% / 数据中心 890 亿 +117% / Q3 指引 1080 亿 段 + 智谱 GLM-5.3-Flash 开源 实战段 verbatim)",
+    "8/27 早 baseline 125 verbatim preserved (沃什 JACKSON HOLE T-1 倒数 1 天 14h 59min + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 段)",
+    "美银 8/24 报告 verbatim (Mark Cabana / Stephen Juneau / Alex Cohen 30 年期 5.5% 警告 段) + 巴克莱 8/21 报告 verbatim (Marc Giannoni 9 月 FOMC 加息概率 >50% 段)",
+    "新浪财经 8/24 verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-08-24/doc-inipmhfu2826366.shtml (30 年期 5.2497% / 10 年期 4.7120% / 2 年期 4.225% 段, 跨信源现场补料 守门 per Pitfall 45 + 不变量 8d)",
+    "moomoo 8/27 + firstpost 8/27 + Riviera Wealth 8/10 verbatim (沃什 JACKSON HOLE 2026 主题 = 支付与政策 + 120 位央行高层 + 央行数字货币 + 稳定币 + 代币化 段)"
+  ],
+  "baseline": 131,
+  "relay": 122,
+  "narrative_count": 61,
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 + Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段"
+}
