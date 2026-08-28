@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-28",
+  "date_label_short": "08-28",
+  "slot_label": "午后报",
+  "slot_hour": "13:00",
+  "main_h2": "事实部分 · 8/28 09:25 港股 open 双跌 实战段 续 baseline",
+  "title": "港股open -0.85%, 双对位",
+  "hero_meta_short": "13:00 · 周五 · 覆盖 8/28 07:01 ~ 8/28 13:01",
+  "dek": "8/28 09:25 港股开盘: 恒指 -0.61% / 恒科 -0.85%, 中方 AI 三家 早盘 反应 沃什 政策",
+  "why_this": "8/28 09:25 港股 open 双跌 = 沃什 JACKSON HOLE 倒数 12h 时点 中方 早盘 反应 实战段. 早 cron 沃什 首场, 午后 必须 中方对位 那一面 = 双对位. 长鑫 智谱 MiniMax 三家 早盘 拼图完整.",
+  "pick_points": [
+    {
+      "label": "8/28 港股 open",
+      "num": "恒指 -0.61% / 恒科 -0.85%"
+    },
+    {
+      "label": "领涨",
+      "num": "智云 +8% / 天齐锂业 +5%"
+    },
+    {
+      "label": "沃什 JACKSON HOLE",
+      "num": "今晚 22:00 CST 倒数 11h"
+    },
+    {
+      "label": "长鑫 早盘",
+      "num": "续 8/27 收 4.01 万亿"
+    }
+  ],
+  "say_4": [
+    "8/28 09:25 港股 open -0.85%, 沃什 倒数 12h.",
+    "智谱 +12.62% 1160 HKD, 牛来 没 跟 上.",
+    "长鑫 4.01 万亿 +5.26%, NVDA 962 亿 +106%.",
+    "美银 30 年期 恐冲 5.5%, 9 月 加息 >50%."
+  ],
+  "main_facts": [
+    "8/28 周五 09:25 港股 open 实战段: 恒生指数 -0.61% / 恒生科技 -0.85% / 智云科技建设 +8% / 天齐锂业 +5% / 金山软件 +2% (per 证券时报 8/28 09:25 verbatim, master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料)",
+    "8/27 港股 close 实战段: 恒指 -0.34% 25565.74 / 恒生科技 -0.13% 4620.29 / 智谱 2513.HK +12.62% 1160 HKD 收 认领\"牛来\" / MiniMax 0100.HK +3.83% 上半年收入超去年全年 8 月 ARR 突破 8 亿美元 (per 中国基金报 8/27 17:49 verbatim)",
+    "沃什 JACKSON HOLE 8/28 22:00 CST 首场主席演讲 T-0 倒数 11h 实战段 (8/28 13:01 CST vs 8/28 22:00 CST = 9h 倒数 vs 8/28 10:00 ET = 3h 倒数) + 30 年期 美债 5.2497% + 美银警告 沃什若不释放降息信号 收益率 恐冲 5.5% + 巴克莱 9 月 FOMC 加息概率 >50% (per 财联社/华尔街见闻 8/25 verbatim + 美银 8/24 报告 verbatim)",
+    "8/27 A 股 close 实战段: 沪指 +1.13% 3956.57 / 深证 +1.50% 14048.88 / 创业板 +1.71% 3473.35 / 科创50 +3.77% 1693.48 + 沪深两市成交额 2.13 万亿 + 算力硬件/PCB/CPO/光纤/存储芯片 涨停潮 (per 新浪财经 8/27 15:00 verbatim + 财联社 8/27 16:52 verbatim)",
+    "长鑫科技 688825.SH 8/27 午间 涨 5.26% 59.05 元 收 + 总市值 4.01 万亿 + 创 52 周新高 (per Moomoo 8/27 11:29 午间休市 verbatim, 续 baseline 段)"
+  ],
+  "not_picked": [
+    "NVDA 财报后 首个完整交易日 实战段 - 8/27 收盘 0.5h post-close 段已 续 baseline, 不算 新 1 件",
+    "智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续 - 8/27 收盘 实战段已 capture, 不算 新 1 件",
+    "苹果 秋季 9/10 凌晨 - 8/27 收盘 已 capture 段, 不算 新 1 件"
+  ],
+  "sources": [
+    "证券时报 8/28 09:25 verbatim URL http://www.stcn.com/article/detail/4149417.html (master 现场补料)",
+    "中国基金报 8/27 17:49 verbatim URL https://www.chnfund.com/article/AR63af4d00-0b93-56d7-bbfa-3a235499b7d4",
+    "财联社/华尔街见闻 8/25 verbatim URL https://wallstreetcn.com/articles/3780233",
+    "新浪财经 8/27 15:00 verbatim URL https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsr9112392.shtml",
+    "财联社 8/27 16:52 verbatim URL https://www.cls.cn/detail/2466265",
+    "Moomoo 8/27 11:29 午间休市 verbatim URL https://www.moomoo.com/hans/stock/688825-SH"
+  ],
+  "baseline": 129,
+  "relay": 120,
+  "narrative_count": 59,
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 + Pitfall 45 真空抓料 工作流 + Pitfall 38 同日 cross-reference 对位 + 不变量 8d 跨信源现场补料"
+}
