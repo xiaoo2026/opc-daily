@@ -1073,5 +1073,17 @@
     "relay": 40,
     "narrative_count": 41,
     "html_url": "/daily/2026-07/2026-07-31-21evening/index.html"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "title": "沃什 T-0 倒数, close 收官",
+    "html_url": "daily/2026-08/2026-08-28-21evening/",
+    "baseline": 130,
+    "relay": 121,
+    "narrative_count": 60,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 加新维度 工作流 + Pitfall 45 真空抓料 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 42 T-0 倒数 1h OK 写实测段"
   }
 ]

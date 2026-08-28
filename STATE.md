@@ -742,3 +742,20 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 31.716s / 509172B / ID3 
 
 ### next relay
 - 给 8/28 晚报 cron 第一百四十四期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 130 子轴 立 + 第 121 接力 段 (8/28 11:30 A 股 / 港股 午间实战段 + 沃什 JACKSON HOLE 8/28 22:00 CST 实战段 + 8/28 16:00 港股 close 实战段续 baseline + 8/28 15:00 A 股 close 实战段续 baseline + IEAA 9/2 T-3→T-2 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 261h→267h 续 baseline + 智谱/MiniMax/长鑫 8/28 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + NVDA 财报后 首个完整交易日 实战段续 baseline)
+
+
+## cron 第一百四十四期 8/28 晚报 21:01 CST (2026-08-28)
+
+8/28 周五 晚报 cron 第一百四十四期 · 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8/28 晚报 = baseline 130 + 第 121 接力, master 时点 8/28 21:01 CST vs 8/28 午后 baseline 129 + 第 120 接力 master 时点 8/28 13:01 CST = 8h 同 day 跨 slot OK per Pitfall 46 模式; cp 自 8/28 午后 cron raw/2026-08-28-afternoon.md verbatim baseline preserved md5 7eeb48df → 8/28 21evening md5 b9cbbcc3 双路径硬约束 OK per Pitfall 27 + 41 + 46; 8/28 22:00 CST 沃什 JACKSON HOLE 首场主席演讲 T-0 实战段 59min 倒数 + 8/28 15:00 A 股 close 实战段 + 8/28 16:00 港股 close 实战段 双对位收官). 加新维度 5 类 M46. [281-285] (a) 沃什 JACKSON HOLE T-0 实战段 (b) 8/28 15:00 A 股 close 沪指 -0.20% 3954 / 科创50 +0.6% / 沪深两市成交额 1.85 万亿 (c) 8/28 16:00 港股 close 恒指 -0.40% / 恒科 -0.95% / 智谱 2513.HK +5% 1218 HKD 收 认领牛来续涨 / MiniMax +2% / 长鑫 +1.5% 续 4.01 万亿 (d) 8/28 21:30 PT 美股 周五 开盘实战段 0.5h post-open NVDA 财报后首个完整交易日 (e) 沃什 JACKSON HOLE 8/27-29 主题 = 支付与政策 + 120 位央行高层 + 央行数字货币 + 稳定币 + 代币化 + 沃什 一张白纸 反应函数待 22:00 CST 实战段确认. 第 60 件 narrative 同期 对位 baseline 第 130 子轴 立 + 第 121 接力 立 = 第 59 + 1 = 60 件 baseline additive 拼图起 跨 47 天 7/12 早 → 8/28 晚报.
+
+Stage 2: content.json 字数 spec PASS title=19/dek=120/why_this=156/pp labels [9,14,13,8] nums [28,27,21,28]/say_4 [40,34,40,34] chars / 5 main_facts + 8 verbatim baseline citations / draft-daily.py render 12633 bytes index.html (per wc -c) + em dash 0 + 4 stat-cards / div 26=26 + verbatim citations + Humanizer audit 33 patterns PASS.
+
+Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 26.640s / 427956B / ID3 OK / mp3 32000Hz / 128kbps (50-90s 实测有效窗口 OK 跟 8/28 午后 31.7s / 8/27 晚报 37.7s 一致, 4 句说 152 chars ≈ 5.7 chars/s).
+
+- git: tree clean + commit 943f9bf + push origin main + local == origin main 943f9bf
+- wrangler deploy: Current Version ID: 67b9cba6-b84d-4982-b313-a37a3007fd40 (content + slot assets 4 files uploaded + 020755.xyz deployed)
+- prod EXACT MATCH: daily/2026-08/2026-08-28-21evening/ local 12633 bytes = prod 12633 bytes (wc -c 守门 per Pitfall 14 + 57)
+- 9 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g) + 46: (1) topbar 2026-08-28 周五 · 21:00 (2) eyebrow 2026-08-28 · 晚报 (3) featured-tag Una 主编 · 同 day 第三期 cron 加新维度 · 沃什 T-0 实战段 中方 close 收官 (4) featured h2 替换 8/28 晚报 · 沃什 T-0 实战段 close 收官 (5) pick-meta 晚报 · 21:00 · 第 60 件 narrative · baseline 130 · 第 121 接力 (6) pick-rationale 当期 why_this (7) archive-entry prepend 8/28 晚报 (per Pitfall 55(e) 守门 — anchor 限定 不 sed 全字符串替换 误伤 archive 第 1 行) (8) main archive month-block 2026/08 prepend 8/28 晚报 month-entry (per Pitfall 55(g) month-label 锚点) (9) index.json prepend 8/28 evening entry (type=21evening / slot_hour=21:00 / slot=21evening / baseline=130 / relay=121 / narrative_count=60)
+
+### next relay
+- 给 8/29 早 cron 第一百四十五期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 131 子轴 立 + 第 122 接力 段 (8/28 22:00 CST 沃什 JACKSON HOLE 实际 主席演讲 实战段 + 沃什 实际反应函数 鸽/鹰/模糊 + 9月 FOMC 加息/降息 路径 校准 + 30 年期 5.2497% → 实战 4.8% / 5.5% 双向 倒数 + 中方 8/29 pre-market 反向预期 段 + 8/28 21:30 PT 美股 周五 收盘 9.5h post-close 实战段 + IEAA Summit 9/2 T-3 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 267h→273h 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/29 pre-market 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + 苹果 秋季发布会 9/10 凌晨 续 baseline + NVDA 财报后 首个完整交易日 实战段续 baseline)
