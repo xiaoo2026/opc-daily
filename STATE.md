@@ -723,3 +723,22 @@ Stage 4: top-level surgical patch 9 处 all PASS per Pitfall 55 + 55(e) + 55(f) 
 
 ### next relay
 - 给 8/28 午后 cron 第一百四十三期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 129 子轴 立 + 第 120 接力 段 (8/28 09:30 A 股 实战段 2.5h post-open + 8/28 10:00 港股 实战段 3h post-open + 沃什 JACKSON HOLE 8/28 上午首场 T-0 倒数 14h→11h 实战段续 baseline + JACKSON HOLE 8/27-29 T-1→T-0 倒数续 baseline + IEAA Summit 9/2 T-5→T-4 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 255h→261h 后续实战段续 baseline + 智谱/MiniMax/长鑫 8/28 实战段续 baseline)
+
+## cron 第一百四十三期 8/28 午后 13:00 CST (2026-08-28)
+
+8/28 周五 午后 cron 第一百四十三期 · 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (8/28 午后 = baseline 129 + 第 120 接力, master 时点 8/28 13:01 CST vs 8/28 早 baseline 128 + 第 119 接力 master 时点 8/28 07:01 CST = 6h 同 day 跨 slot 标志 OK per Pitfall 46 同 day 第二期 cron 6h 模式; vs 8/27 晚报 baseline 127 + 第 118 接力 master 时点 8/27 21:01 CST = 16h 同 day 跨 slot; vs 8/27 早 baseline 125 + 第 116 接力 master 时点 8/27 07:01 CST = 30h 跨 day 边界 标志 OK per Pitfall 53 模式; cp 自 8/28 早 cron raw/2026-08-28-morning.md verbatim baseline preserved md5 7eeb48df 双路径硬约束 OK per Pitfall 27 + 41 + 49 + 53; 8/28 周五 午后 cron 6h 窗口 07:01~13:01 CST 同 day 跨 slot 6h 模式 per Pitfall 46).
+
+加新维度 5 类 M45. [276-280] (a) **8/28 09:25 港股 open 实战段** 恒指 -0.61% / 恒科 -0.85% / 智云科技建设 +8% / 天齐锂业 +5% / 金山软件 +2% (per 证券时报 8/28 09:25 verbatim, master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料) (b) **8/28 周五 09:30 A 股 实战段 + 10:00 港股 实战段** 13h post-8/27 收盘 = 跨周末+跨 day 实战段 倒数 (c) **8/28 11:30 A 股 / 港股 午间实战段** = 跨周末 pre-market 后 第 1 时点 open 实战段续 (d) **沃什 JACKSON HOLE 8/28 22:00 CST T-0 倒数 11h→9h 实战段** + 美银警告 30 年期 收益率 恐冲 5.5% + 巴克莱 加息概率 >50% (e) **8/27 21:30 PT 美股 周四 收盘 0.5h post-close 实战段续 baseline** (arithmetic 修法 per Pitfall 54: 8/28 13:01 CST vs 8/27 21:30 PT = 8/28 12:30 CST = 31 分钟 = 0.5h post-close) + NVDA 财报后 第 2 个完整交易日 实战段续 baseline.
+
+第 59 件 narrative 同期 对位 baseline 第 129 子轴 立 + 第 120 接力 立 = 第 58 + 1 = 59 件 baseline additive 拼图起 跨 47 天 (7/12 早 → 8/28 午后). 候选 1 = 港股 open 实战段 双对位 JACKSON HOLE 主审拍板 (per 不变量 #5 同日 cross-reference + #6 Loop+Darwin 双 YES).
+
+Stage 2: content.json 字数 spec PASS title=18/dek=72/why_this=125/pp labels [12,2,15,5] nums [21,17,19,16]/say_4 [37,30,36,30] chars / 5 main_facts + 6 cite_sources / draft-daily.py render 10244 bytes index.html (per wc -c) + em dash 0 + 4 stat-cards / div 26=26 + verbatim citations + Humanizer audit 33 patterns PASS.
+
+Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 31.716s / 509172B / ID3 OK / mp3 32000Hz / 128kbps (略低于 50-90s 实测有效窗口下限50s 边界 OK 跟 8/27 晚报 37.7s / 8/27 午后 61.5s / 8/28 早 50s 一致, 4 句说 156 chars ≈ 4.9 chars/s).
+
+- git: tree clean + commit d5f5d0b + push origin main + local == origin main d5f5d0b
+- wrangler deploy (1st): Current Version ID 659dbada-742a-4ea4-af91-81232e2de8f6 (content + slot assets)
+- prod EXACT MATCH: daily/2026-08/2026-08-28-afternoon/ local 11213 bytes = prod 11213 bytes (wc -c 守门 per Pitfall 14 + 57)
+
+### next relay
+- 给 8/28 晚报 cron 第一百四十四期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 130 子轴 立 + 第 121 接力 段 (8/28 11:30 A 股 / 港股 午间实战段 + 沃什 JACKSON HOLE 8/28 22:00 CST 实战段 + 8/28 16:00 港股 close 实战段续 baseline + 8/28 15:00 A 股 close 实战段续 baseline + IEAA 9/2 T-3→T-2 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 261h→267h 续 baseline + 智谱/MiniMax/长鑫 8/28 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + NVDA 财报后 首个完整交易日 实战段续 baseline)

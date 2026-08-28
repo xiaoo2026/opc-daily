@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-08-28",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "港股open -0.85%, 双对位",
+    "html_url": "daily/2026-08/2026-08-28-afternoon/index.html",
+    "baseline": 129,
+    "relay": 120,
+    "narrative_count": 59,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 加新维度 工作流 + Pitfall 45 真空抓料 + Pitfall 38 同日 cross-reference + 不变量 8d 跨信源现场补料"
+  },
+  {
+    "date": "2026-08-28",
     "type": "morning",
     "slot_hour": "07:00",
     "slot": "morning",
