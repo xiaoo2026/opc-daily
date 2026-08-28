@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-29",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "title": "沃什交卷, 9月 路径见底",
+    "html_url": "daily/2026-08/2026-08-29-morning/index.html",
+    "baseline": 131,
+    "relay": 122,
+    "narrative_count": 61,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 加新维度 工作流 + Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写实测段"
+  },
+  {
     "date": "2026-08-28",
     "slot": "afternoon",
     "slot_hour": "13:00",

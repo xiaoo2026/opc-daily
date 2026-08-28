@@ -759,3 +759,24 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 26.640s / 427956B / ID3 
 
 ### next relay
 - 给 8/29 早 cron 第一百四十五期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 131 子轴 立 + 第 122 接力 段 (8/28 22:00 CST 沃什 JACKSON HOLE 实际 主席演讲 实战段 + 沃什 实际反应函数 鸽/鹰/模糊 + 9月 FOMC 加息/降息 路径 校准 + 30 年期 5.2497% → 实战 4.8% / 5.5% 双向 倒数 + 中方 8/29 pre-market 反向预期 段 + 8/28 21:30 PT 美股 周五 收盘 9.5h post-close 实战段 + IEAA Summit 9/2 T-3 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 267h→273h 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/29 pre-market 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + 苹果 秋季发布会 9/10 凌晨 续 baseline + NVDA 财报后 首个完整交易日 实战段续 baseline)
+
+
+## cron 第一百四十五期 8/29 早 07:01 CST (2026-08-29)
+
+8/29 周六 早报 cron 第一百四十五期 · 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (8/29 早 vs 8/28 早 = 24h 跨 day 边界 标志 OK; cp 自 8/28 晚报 cron raw/2026-08-28-21evening.md verbatim baseline preserved md5 b9cbbcc3 双路径硬约束 OK per Pitfall 27 + 41 + 49; 8/29 周六 早报 cron 6h 窗口 01:01~07:01 CST = 周五夜段续 + 8/29 周六 pre-market 真空窗口段 + 8/28 22:00 CST 沃什 JACKSON HOLE 首场主席演讲 实测段 + 8/28 21:30 PT 美股 周五 收盘 9.5h post-close 实战段 续 baseline + 沃什 实际 反应函数 (鸽/鹰/模糊) + 9月 FOMC 加息/降息 路径 校准 + 30 年期 5.2497% → 实战 4.8% / 5.5% 双向 倒数 + 8/29 中方 pre-market 反向预期 段 + IEAA Summit 9/2 T-4 → T-3 倒数续 baseline (8/29 07:01 CST vs 9/2 = 4 天 = T-4 倒数) + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 267h→273h 续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 8/29 pre-market 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + 苹果 秋季发布会 9/10 凌晨 + NVDA 财报后 第 2 个完整交易日 实战段续 baseline).
+
+加新维度 5 类 M47. [286-290] (a) **8/28 22:00 CST 沃什 JACKSON HOLE 实际 主席演讲 实战段** + 沃什 实际 反应函数 (鸽/鹰/模糊) + 9月 FOMC 加息/降息 路径 校准 + 30 年期 5.2497% → 实战 4.8% / 5.5% 双向 倒数 (per master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料) (b) **8/29 周六 pre-market 真空窗口段** 中方 反向预期 段 + 8/28 21:30 PT 美股 周五 收盘 9.5h post-close 实战段续 baseline (c) **沃什 JACKSON HOLE 8/28 22:00 CST T-0 实测 9h post-keynote 段** = 沃什 一张白纸 反应函数 实战段续 baseline (d) **9月 FOMC 加息/降息 路径 校准段** = 沃什 演讲 实战后 市场 pricing 校准 续 baseline (e) **8/29 中方 pre-market 反向预期 段** = 8/28 沃什 演讲 后 中方 周末 资本市场 反向预期 实战段续 baseline.
+
+第 61 件 narrative 同期 对位 baseline 第 131 子轴 立 + 第 122 接力 立 = 第 60 + 1 = 61 件 baseline additive 拼图起 跨 47 天 (7/12 早 → 8/29 早). 候选 1 = 沃什 22:00 实测 + 9月 FOMC 路径 校准 + 周末 pre-market 反向预期 主审拍板 (per 不变量 #5 同日 cross-reference + #6 Loop+Darwin 双 YES).
+
+Stage 2: content.json 字数 spec PASS title=13/dek=165/why_this=162/pp labels [18,9,10,13] nums [34,30,21,18]/say_4 [31,47,40,42] chars / 5 main_facts + 8 verbatim baseline citations / draft-daily.py render 13014 bytes index.html (per wc -c) + em dash 0 cleanup per Pitfall 50 + meta description · 替代 per Pitfall 50 v0.8.9 实测补 + 4 stat-cards / div 26=26 平衡 OK + verbatim citations + draft-daily.py 跨 num/value 字段兼容 (p.get('num', p.get('value', ''))) 双兼容 OK + Humanizer audit 33 patterns 自审 PASS.
+
+Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 25.992s / 417588B / ID3 OK / mp3 32000Hz / 128kbps (短文案 窗口 per v0.8.9 spec OK 跟 8/28 早 baseline 128 + 50s / 8/28 午后 baseline 129 + 31.7s / 8/28 晚报 baseline 130 + 26.6s 一致, 4 句说 160 chars ≈ 6.16 chars/s).
+
+- git: tree clean + commit 2313abf + push origin main + local == origin main 2313abf
+- wrangler deploy (1st): Current Version ID c18d3159-c345-4dd0-a548-adc3aaf27633 (content + slot assets 4 files uploaded + 020755.xyz deployed)
+- prod EXACT MATCH: daily/2026-08/2026-08-29-morning/ local 13014 bytes = prod 13014 bytes (wc -c 守门 per Pitfall 14 + 57)
+- 9 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g) + 49: (1) topbar 2026-08-29 周六 · 07:00 (2) eyebrow 2026-08-29 · 早报 (3) featured-tag Una 主编 · 跨 day 边界 第一期 cron 加新维度 · 沃什 22:00 交卷 9月 FOMC 路径见底 (4) featured h2 替换 8/29 早 · 沃什交卷, 9月 路径见底 (5) pick-meta 早报 · 07:00 · 第 61 件 narrative · baseline 131 · 第 122 接力 (6) pick-rationale 当期 why_this (7) archive-entry prepend 8/29 早报 (per Pitfall 55(e) 守门 — anchor 限定 不 sed 全字符串替换 误伤 archive 第 1 行) (8) main archive month-block 2026/08 prepend 8/29 早 month-entry (per Pitfall 55(g) month-label 锚点) (9) index.json prepend 8/29 morning entry (type=morning / slot_hour=07:00 / slot=morning / baseline=131 / relay=122 / narrative_count=61)
+
+### next relay
+- 给 8/29 午后 cron 第一百四十六期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 132 子轴 立 + 第 123 接力 段 (8/29 周六 09:30 A 股 实战段 2.5h post-open + 8/29 周六 10:00 港股 实战段 3h post-open + 沃什 JACKSON HOLE 8/28 22:00 CST 实测 9h post-keynote → 11h post-keynote 段续 baseline + 沃什 实际 反应函数 (鸽/鹰/模糊) + 9月 FOMC 加息/降息 路径 校准续 baseline + JACKSON HOLE 8/27-29 T-1 当天 + IEAA Summit 9/2 T-4→T-3 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 273h→279h 后续实战段续 baseline + 智谱/MiniMax/长鑫 8/29 实战段续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段 + NVDA 财报后 第 2 个完整交易日 实战段续 baseline)
