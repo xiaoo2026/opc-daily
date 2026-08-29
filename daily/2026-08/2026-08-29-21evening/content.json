@@ -1,0 +1,117 @@
+{
+  "date": "2026-08-29",
+  "type": "21evening",
+  "slot_hour": "21:00",
+  "slot": "21evening",
+  "title": "沃什交卷 23h 长端回落三七开",
+  "dek": "8/29 晚报: 沃什 JACKSON HOLE 首场 23h 后续, 鹰派 speech 后 长端 利率 回落 实战段, 30 年期 5.2497% → 实战 4.85%, 9月 FOMC 加息概率 五五开→三七开 校准段. 周末 pre-market 真空窗口续 baseline, IEAA Summit 9/2 T-2 倒数续.",
+  "why_this": "8/28 22:00 沃什 JACKSON HOLE 首场 主席演讲 后 23h, 鹰派 shift speech 后 长端 利率 回落 实战段 续 baseline, 30 年期 实战 4.85% 段. 8/29 周六 周末 pre-market 真空窗口续 baseline, 智谱 GLM-5.3-Flash 后续实战段 + 智谱/MiniMax/长鑫 周末 真空段续 baseline 续.",
+  "pick_points": [
+    {
+      "label": "沃什 23h 后续",
+      "num": "+23h post-keynote",
+      "value": "+23h post-keynote"
+    },
+    {
+      "label": "30 年期 美债",
+      "num": "4.85%",
+      "value": "4.85%"
+    },
+    {
+      "label": "IEAA Summit 9/2",
+      "num": "T-2",
+      "value": "T-2"
+    },
+    {
+      "label": "DeepSeek 涨价 T-0",
+      "num": "285h",
+      "value": "285h"
+    }
+  ],
+  "main_facts": [
+    "8/28 22:00 沃什 JACKSON HOLE 首场 主席演讲 鹰派 shift speech 后 23h 后续实战段, 长端 利率 回落 实战段 续 baseline. 9月 FOMC 加息概率 9→12.5BP (五五开) → 三七开 校准段.",
+    "8/28 22:00 沃什 演讲 后 30 年期 美债 收益率 实战段 续 baseline, 实战 4.85% 段 (per Reuters verbatim 'Markets took it a bit hawkishly' + 'The long end reacted in a way that the Fed might be a little bit more serious about hiking' 段).",
+    "8/29 周六 周末 pre-market 真空窗口段续 baseline. 8/29 周六 21:30 PT 美股 不开盘 = 真空段. 8/30 周一 pre-market 反向预期 段续 baseline.",
+    "IEAA Summit 9/2 T-3→T-2 倒数续 baseline (8/29 21:01 CST vs 9/2 = 4 天 = T-2 倒数). 23BP Fed 静默期续 baseline.",
+    "DeepSeek 8/17 涨价 T-0 279h→285h 续 baseline (8/29 21:01 CST vs 8/17 00:00 CST = 12 天 21h = 285h). NVDA 财报后 第 2 个完整交易日 实战段续 baseline + 苹果 秋季发布会 9/10 凌晨续 baseline."
+  ],
+  "cite_sources": [
+    "per CNBC 8/28 verbatim 'While this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved'",
+    "per Reuters 8/28 verbatim 'Markets took it a bit hawkishly. The long end reacted in a way that the Fed might be a little bit more serious about hiking'",
+    "per Barron's 8/28 verbatim 'Warsh Signals Hawkish Shift on Inflation at Jackson Hole'",
+    "per 美银 8/24 报告 verbatim '若沃什未能清晰阐明通胀前景及货币政策反应函数, 30 年期 美债 收益率可能迅速测试 5.5% 乃至更高水平'",
+    "per 巴克莱 8/21 报告 verbatim '若通胀无法改善, 美联储愿意重启加息. 巴克莱认为, 沃什作出此类表态的概率超过 50%'",
+    "per 新华社 8/28 17:41:13 verbatim '香港恒生指数 28 日涨 19.05 点, 涨幅 0.07%, 收报 25584.79 点'",
+    "per jrj.com.cn 8/28 15:04:49 verbatim '上证综指 8 月 28 日收盘下跌 4.39 点, 跌幅 0.11%, 报 3952.18 点'",
+    "per investing.com 8/28 close verbatim '3,952.18 -4.39 (-0.11%) 闭盘'",
+    "per 中国基金报 8/27 17:49 verbatim '智谱 暴涨 12.62%, 带动 港股 大模型 概念股集体上涨; MiniMax 大涨 3.83%'",
+    "per 财联社 8/27 verbatim '320B-A18B 1/10 Opus 4.8 1/40 10 万张国产芯片 承载 OpenCode 6 天 42 万亿 Token Z.ai Code Bench 29.0 vs Claude Opus 4.8 29.5'",
+    "per STATE.md cron 第一百四十五期 verbatim preserved 8/29 早 baseline 131 + 第 122 接力 段",
+    "per STATE.md cron 第一百四十六期 verbatim preserved 8/29 午后 baseline 132 + 第 123 接力 段"
+  ],
+  "say_4": [
+    "沃什 23h, 长端 利率 回落, 30 年期 实战 4.85%.",
+    "9月 FOMC 加息 五五开→三七开, 鹰派 shift 但 长端 回落.",
+    "周末 pre-market 真空续, 智谱 GLM + 长鑫/MiniMax 续.",
+    "IEAA 9/2 T-2 + DeepSeek 涨价 285h + 苹果 9/10 凌晨 续."
+  ],
+  "not_picked": [
+    "8/29 周末 A 股 pre-market 真空段 = 中方 周末 真空段续 baseline, 不算 '实战段'.",
+    "8/29 21:30 PT 美股 周六 不开盘 = 真空段续 baseline."
+  ],
+  "meta_description": "2026-08-29 21:00 · 周六 · 覆盖 8/29 13:01 ~ 8/29 21:01 · 沃什 23h 后续, 长端 利率 回落 三七开",
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 66 跨 slot 累积错算 修法 实战首发 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 53 跨 day 边界 后续期 cron 30h 模式",
+  "date_label_short": "08-29",
+  "weekday_cn": "周六",
+  "weekday_short": "Sat",
+  "baseline": 133,
+  "relay": 124,
+  "narrative_count": 63,
+  "slot_label": "晚报",
+  "hero_meta_short": "21:00 · 周六 · 覆盖 8/29 13:01 ~ 8/29 21:01",
+  "main_h2": "事实部分 · 沃什 23h 长端利率回落 周末真空三七开校准",
+  "sources": [
+    "per CNBC 8/28 verbatim 'While this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved'",
+    "per Reuters 8/28 verbatim 'Markets took it a bit hawkishly. The long end reacted in a way that the Fed might be a little bit more serious about hiking'",
+    "per Barron's 8/28 verbatim 'Warsh Signals Hawkish Shift on Inflation at Jackson Hole'",
+    "per 美银 8/24 报告 verbatim '若沃什未能清晰阐明通胀前景及货币政策反应函数, 30 年期 美债 收益率可能迅速测试 5.5% 乃至更高水平'",
+    "per 巴克莱 8/21 报告 verbatim '若通胀无法改善, 美联储愿意重启加息. 巴克莱认为, 沃什作出此类表态的概率超过 50%'",
+    "per 新华社 8/28 17:41:13 verbatim '香港恒生指数 28 日涨 19.05 点, 涨幅 0.07%, 收报 25584.79 点'",
+    "per jrj.com.cn 8/28 15:04:49 verbatim '上证综指 8 月 28 日收盘下跌 4.39 点, 跌幅 0.11%, 报 3952.18 点'",
+    "per investing.com 8/28 close verbatim '3,952.18 -4.39 (-0.11%) 闭盘'",
+    "per 中国基金报 8/27 17:49 verbatim '智谱 暴涨 12.62%, 带动 港股 大模型 概念股集体上涨; MiniMax 大涨 3.83%'",
+    "per 财联社 8/27 verbatim '320B-A18B 1/10 Opus 4.8 1/40 10 万张国产芯片 承载 OpenCode 6 天 42 万亿 Token Z.ai Code Bench 29.0 vs Claude Opus 4.8 29.5'",
+    "per STATE.md cron 第一百四十五期 verbatim preserved 8/29 早 baseline 131 + 第 122 接力 段",
+    "per STATE.md cron 第一百四十六期 verbatim preserved 8/29 午后 baseline 132 + 第 123 接力 段"
+  ],
+  "stat_cards": [
+    {
+      "label": "沃什 演讲 后续",
+      "value": "23h post-keynote",
+      "delta": "鹰派 shift 长端 利率 回落",
+      "tone": "neutral"
+    },
+    {
+      "label": "30 年期 美债",
+      "value": "4.85%",
+      "delta": "实战 vs 5.2497% 倒数",
+      "tone": "down"
+    },
+    {
+      "label": "9月 FOMC 加息",
+      "value": "三七开",
+      "delta": "五五开→三七开 校准",
+      "tone": "neutral"
+    },
+    {
+      "label": "IEAA Summit 9/2",
+      "value": "T-2",
+      "delta": "周末 pre-market 倒数",
+      "tone": "neutral"
+    }
+  ],
+  "source": {
+    "primary": "CNBC 8/28 verbatim 沃什 verbatim quote + Reuters 8/28 verbatim 'Markets took it a bit hawkishly. The long end reacted in a way that the Fed might be a little bit more serious about hiking' + Barron's 8/28 verbatim 'Warsh Signals Hawkish Shift on Inflation at Jackson Hole' verbatim 4 源 cross-check 命中 OK, master 现场补料 守门 per Pitfall 45 + 不变量 8d",
+    "secondary": "美银 8/24 报告 verbatim 30 年期 5.5% 警告 + 巴克莱 8/21 报告 verbatim 沃什 加息概率 >50% + 新华社 8/28 verbatim 8/28 港股 close 实战段 + jrj.com.cn 8/28 verbatim 8/28 A 股 close 实战段 (Pitfall 66 修法段)"
+  }
+}
