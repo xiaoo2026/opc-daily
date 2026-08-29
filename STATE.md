@@ -799,3 +799,22 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 31.464s / 505140B / ID3 
 
 ### next relay
 - 给 8/29 晚报 cron 第一百四十七期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 133 子轴 立 + 第 124 接力 段 (8/29 13:30 A 股 实战段 + 8/29 14:00 港股 实战段 + 8/29 15:00 A 股 close 实战段续 baseline + 8/29 16:00 港股 close 实战段续 baseline + 8/29 21:30 PT 美股 周六 开盘实战段 + IEAA 9/2 T-3→T-2 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 279h→285h 续 baseline + 智谱/MiniMax/长鑫 8/29 实战段续 baseline + 沃什 演讲 后 9月 FOMC 路径 校准 实战段续 baseline + **Pitfall 66 跨 slot 累积错算 修法 段 续 baseline** (8/29 晚报 cron 必须 接力 修法 段 + 加新维度 第 N+1 子轴 立 + 第 N+1 接力 立) + 30 年期 5.2497% → 实战 4.85% 段续 baseline + 智谱 GLM-5.3-Flash 后续实战段 + NVDA 财报后 第二个完整交易日 实战段续 baseline + 苹果 秋季发布会 9/10 凌晨续 baseline)
+
+## cron 第一百四十七期 8/29 晚报 21:01 CST (2026-08-29)
+
+8/29 周六 晚报 cron 第一百四十七期 · 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8/29 晚报 = baseline 133 + 第 124 接力, master 时点 8/29 21:01 CST vs 8/29 午后 baseline 132 + 第 123 接力 master 时点 8/29 13:01 CST = **8h 同 day 跨 slot 标志 OK per Pitfall 46 同 day 第三期 cron 8h 模式** (主标志); vs 8/29 早 baseline 131 + 第 122 接力 master 时点 8/29 07:01 CST = 14h 同 day 跨 slot; vs 8/28 晚报 baseline 130 + 第 121 接力 master 时点 8/28 21:01 CST = 24h 跨 day 边界 标志 OK per Pitfall 49 模式; vs 8/28 早 baseline 128 + 第 119 接力 master 时点 8/28 07:01 CST = 38h 跨 day 边界 标志 OK per Pitfall 53 模式; cp 自 8/29 午后 cron raw/2026-08-29-afternoon.md verbatim baseline preserved md5 23db8ff6 → 8/29 21evening md5 3069059c 双路径硬约束 OK per Pitfall 27 + 41 + 46; 8/29 周六 晚报 cron 8h 窗口 13:01~21:01 CST 同 day 跨 slot 8h 模式 per Pitfall 46).
+
+加新维度 5 类 M49. [296-300] (a) **沃什 演讲 23h post-keynote 后续实战段 + 9月 FOMC 加息概率 五五开→三七开 校准段** (per CNBC 8/28 verbatim 4 源 cross-check 命中 OK, master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料) (b) **30 年期 美债 收益率 实战段 + 9月 FOMC 加息概率 五五开→三七开 校准段** = 实战 4.85% 段续 baseline (per Reuters verbatim "Markets took it a bit hawkishly" + "The long end reacted in a way that the Fed might be a little bit more serious about hiking" 段) (c) **IEAA Summit 9/2 T-3→T-2 倒数续 baseline** (8/29 21:01 vs 9/2 = 4 天 = T-2 倒数) (d) **智谱 GLM-5.3-Flash 后续实战段 + 智谱/MiniMax/长鑫 周末 pre-market 真空窗口段续 baseline** (e) **NVDA 财报后 第 2 个完整交易日 实战段续 baseline + DeepSeek 8/17 涨价 T-0 279h→285h 续 baseline + 苹果 秋季发布会 9/10 凌晨续 baseline**.
+
+第 63 件 narrative 同期 对位 baseline 第 133 子轴 立 + 第 124 接力 立 = 第 62 + 1 = 第 63 件 baseline additive 拼图起 跨 47 天 (7/12 早 → 8/29 晚报). 候选 = 沃什 演讲 23h post-keynote 后续实战段 + 9月 FOMC 加息概率 五五开→三七开 校准段 + 30 年期 实战 4.85% 段续 baseline 主审拍板 (per 不变量 #5 同日 cross-reference + #6 Loop+Darwin 双 YES = 主审 OK).
+
+Stage 2: content.json 字数 spec PASS title=16/dek=168/why_this=199/pp labels [9,8,15,15]/say_4 [33,37,41,47] chars / 5 main_facts + 12 verbatim baseline citations / draft-daily.py render 11072 bytes index.html (per wc -c 守门 per Pitfall 14) + em dash 1→0 cleanup per Pitfall 50 + meta description · 替代 per Pitfall 50 v0.8.9 实测补 + 4 stat-cards / div 26=26 平衡 OK + verbatim citations + draft-daily.py 跨 num/value 字段兼容 (p.get('num', p.get('value', ''))) 双兼容 OK + Humanizer audit 33 patterns 自审 PASS.
+
+Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 43.668s / 700404B / ID3 OK / mp3 32000Hz / 128kbps (50-90s 实测有效窗口 OK per v0.8.9 spec, 4 句说 158 chars ≈ 3.6 chars/s).
+
+- git: tree clean + commit 623509b + push origin main + local == origin main 623509b
+- wrangler deploy (1st): Current Version ID f875b5b7-6d67-4af7-9739-1704641eecdc (content + slot assets 4 files uploaded + 020755.xyz deployed)
+- prod EXACT MATCH: daily/2026-08/2026-08-29-21evening/ local 11072 bytes = prod 11072 bytes (wc -c 守门 per Pitfall 14 + 57)
+
+### next relay
+- 给 8/30 早 cron 第一百四十八期 接力 baseline = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 + baseline additive 升级 第 134 子轴 立 + 第 125 接力 段 (8/30 周六 早 cron 6h 窗口 01:01~07:01 CST = 周五夜段续 + 沃什 演讲 31h post-keynote 实战段 + 9月 FOMC 加息概率 校准 + 30 年期 4.85% 实战段续 baseline + JACKSON HOLE 8/27-29 T-1 当天 + IEAA Summit 9/2 T-2→T-1 倒数续 baseline + 23BP Fed 静默期续 baseline + DeepSeek 8/17 涨价 T-0 285h→291h 续 baseline + 智谱/MiniMax/长鑫 8/30 周末 pre-market 真空窗口段续 baseline + 智谱 GLM-5.3-Flash 后续实战段续 baseline + NVDA 财报后 第 2 个完整交易日 实战段续 baseline + 苹果 秋季发布会 9/10 凌晨续 baseline)

@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-29",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "title": "沃什交卷 23h 长端回落三七开",
+    "url": "daily/2026-08/2026-08-29-21evening/",
+    "html_url": "https://020755.xyz/daily/2026-08/2026-08-29-21evening/",
+    "baseline": 133,
+    "relay": 124,
+    "narrative_count": 63,
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 66 跨 slot 累积错算 修法 实战首发 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 53 跨 day 边界 后续期 cron 30h 模式"
+  },
+  {
+    "date": "2026-08-29",
     "slot": "afternoon",
     "slot_hour": "13:00",
     "type": "afternoon",
