@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-30",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "html_url": "daily/2026-08/2026-08-30-morning/index.html",
+    "title": "沃什 31h 周末落定 4.85%",
+    "baseline": 134,
+    "relay": 125,
+    "narrative_count": 64,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 新一天 第一期 cron 24h 模式 + Pitfall 45 真空抓料 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 46 同 day 第二/三期 cron 6h/8h/14h 模式 + Pitfall 53 跨 day 边界 后续期 cron 30h/38h/48h/62h 模式"
+  },
+  {
     "date": "2026-08-29",
     "type": "21evening",
     "slot_hour": "21:00",

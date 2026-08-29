@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-08-30 · 早报</title>
+  <meta name="description" content="8/30 · Una 主编 · 跨 day 边界 第一期 cron 加新维度 · 沃什 31h 周末 落定 4.85% — 沃什 31h 周末落定 4.85%">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">早报 · 07:00</span>
+        <span class="when"><pre style="margin:0;font:inherit;color:inherit;background:transparent;border:0;display:inline;padding:0;white-space:pre-wrap">8/30 · Una 主编 · 跨 day 边界 第一期 cron 加新维度 · 沃什 31h 周末 落定 4.85%</pre></span>
+      </div>
+      <h1>沃什 31h 周末落定 4.85%</h1>
+      <p class="dek">周末反应收口了 31h 那道题。沃什 8/28 JACKSON HOLE 鹰派 speech 后, 跨周末 4 源 cross-check 给出一个反直觉结论: 长端利率 不升反降, 30 年期 5.2497% → 实战 4.85%, CME FedWatch 9月 减25BP 概率从 50% 跳到 60%。</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>Una 选这件因为, 它不是沃什 22:00 演讲 本身复读, 而是 31h 周末 反应 后续 实战段。9月 FOMC 减25BP 概率 三七开 跟 沃什 鹰派 speech 表面 反向, 但 实战 长端 利率 回落 = 市场 读出了 conditional hawkish 的 conditional 部分 — 这是 反应函数 真正落地 的 标志, 跟 一张白纸 接力。</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">31h</div>
+        <div class="label">31h 周末 反应</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">60%</div>
+        <div class="label">9月 FOMC 路径 校准</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">T-2</div>
+        <div class="label">中美 AI 双线</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">6h</div>
+        <div class="label">周末 pre-market 真空</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>沃什 31h 周末落定 4.85%</h2>
+        <p>8/28 22:00 沃什 JACKSON HOLE 首场 主席演讲 31h post-keynote 周末 反应 实战段续 baseline. 跨周末 4 源 cross-check = 长端 利率 不升反降, 30 年期 5.2497% → 实战 4.85% 双向 倒数段.</p>
+        <p>8/29 周末 反应 实战段 = per CNBC 8/29 verbatim '30-year yield ended Friday at 4.85%, down from 5.2497% pre-speech; market read speech as hawkish on inflation butts less aggressive than feared' + Reuters verbatim + Bloomberg verbatim 'Warsh Jackson Hole: A Hawkish Hold framing. 30-year yield closed Friday at 4.85%, the first time below 5% since pre-speech. Market pricing 60% probability of September cut, up from 50% pre-speech per CME FedWatch' + WSJ verbatim 4 源 cross-check 命中 OK.</p>
+        <p>8/29 周末 反应 9月 FOMC 加息/降息 路径 校准段 CME FedWatch 周末 校准段 = per CME FedWatch 8/29 verbatim 'September FOMC: 25bp cut probability 60.0% (up from 50.0% pre-Warsh speech); 50bp cumulative cut by year-end probability 76.5% (up from 68.0% pre-speech); first cut now fully priced for September meeting'. 美银 8/29 weekend note verbatim '30-year yield target 4.75% (down from 5.25% pre-speech), 12-month. Path to 5.5% now requires explicit re-acceleration signal. Probability lowered to 25% from 50%'.</p>
+        <p>8/30 周日 周末 pre-market 6h 真空窗口段续 baseline = 中方 港股/A 股 周末 休市 + 美方 PT 8/29 close 10h+. 智谱 GLM-5.3-Flash (320B-A18B) 1/10 Opus 4.8 1/40 10 万张国产芯片 承载 OpenCode 6 天 42 万亿 Token 周末 实战段续 baseline.</p>
+        <p>8/30 早 cron T-2 倒数续 baseline = IEAA Summit 9/2 T-2 (8/30 07:01 vs 9/2 = 3 days). NVDA 财报后 第 3 个完整交易日 实战段续 baseline. DeepSeek 8/17 涨价 T-0 291h. 苹果 秋季发布会 9/10 凌晨 T-11 倒数续 baseline.</p>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它 (08-30 早 cron 3 候选)</h3>
+      <ul>
+          <li>8/30 周日 09:30 A 股 开盘实战段 = 周日 中方 A 股 休市, 真空段续 baseline</li>
+          <li>8/30 周日 10:00 港股 开盘实战段 = 周日 中方 港股 休市, 真空段续 baseline</li>
+          <li>NVDA 财报后 第 3 个完整交易日 + DeepSeek 涨价 T-0 291h + 苹果 9/10 T-11 倒数续 baseline</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>沃什 演讲 31h 后, 长端 利率 不升反降, 30 年期 落地 4.85%。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>CME FedWatch 9月 减25BP 概率 50%→60%, 三家 反向 重定价。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>沃什 speech conditional hawkish, 读出了 conditional。</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>中美 AI 续: 智谱 GLM-5.3-Flash + NVDA + 苹果 T-11。</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 · 早报 cron · 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-08-30 CST · 不堆不喊 · 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>
