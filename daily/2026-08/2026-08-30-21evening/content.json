@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-30",
+  "slot_label": "晚报 · 周日 · 21:00",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "title": "沃什 47h 后加息概率到六成",
+  "hero_meta_short": "2026-08-30 周日 · 晚报 · Una 选了 1 件 · 沃什 47h 后",
+  "dek": "美联储主席沃什 8/28 JACKSON HOLE 首秀 47h 后 — 9 月加息概率从 35% 飙到近 60%, 2-year yield 跳升 12bp 至 4.35% (per WSJ + 华尔街见闻 verbatim). 周末 4 时点全真空.",
+  "why_this": "一周前还在赌降息的人, 现在在赌加息 — 47h 走完. 8/30 早/午后 master 用了 fake 4.85% quote + 错数字 — 真实 2-year 4.22%→4.35% + 概率 35%→60%. 周末 pre-market 4 时点全真空, 沃什反应函数 = conditional hawkish.",
+  "main_h2": "沃什 47h, 短端跳, 长端稳",
+  "main_facts": [
+    "沃什 8/28 22:00 CST JACKSON HOLE 首场主席演讲 verbatim baseline — 沃什 verbatim \"我们必须确信, 基础通胀正朝着我们的目标迈进, 而且这一进程必须清晰且足够迅速. 否则, 我们还有工作要做\" + 沃什 verbatim \"我很难将整体金融条件描述为具有限制性\" (per 华尔街见闻 8/28 19:25 verbatim + 证券时报 8/29 verbatim + CNBC verbatim + WSJ verbatim + Politico verbatim + 澎湃 verbatim 6 源 cross-check 命中 OK)",
+    "沃什 演讲 后 市场 反应 verbatim — 2-year yield 单日跳升 12bp 从 4.22% 跃升至 4.35%, 创 近一个月 新高 (per WSJ 8/28 19:37 ET verbatim + 华尔街见闻 8/28 19:25 verbatim '两年期美债收益率日内一度升超10个基点至一个月新高' + 证券时报 8/29 20:37 verbatim '从4.22%跃升至4.35%' + 澎湃 verbatim + 新浪财经 8/30 10:17 verbatim 5 源 cross-check 命中 OK, master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料)",
+    "9 月 FOMC 加息概率 从 35% 飙到 近 60% verbatim — CME FedWatch Tool verbatim 'odds rising to nearly 60%, up from 35% Thursday' (per WSJ 8/28 19:37 ET verbatim + 证券时报 8/29 verbatim '芝商所美联储观察工具显示, 市场押注美联储9月加息的概率从前一天的约35%升至近60%' + 新浪财经 8/30 10:17 verbatim '美联储9月加息概率一夜之间从35%飙到60%' + 澎湃 verbatim + 华尔街见闻 verbatim 5 源 cross-check 命中 OK, master 现场补料 守门 per 不变量 8d)",
+    "沃什 演讲 后 彭博 测算 verbatim — 沃什 此次讲话 市场反应 可能是 2009 年以来最鹰 一次, 超过 鲍威尔 2022 年和 2023 年 的 JACKSON HOLE 讲话 (per 华尔街见闻 8/28 19:25 verbatim '如果以讲话后两年期美债收益率的即时升幅衡量, 沃什此次讲话的市场反应甚至超过了鲍威尔2022年和2023年的杰克逊霍尔讲话'), 但 沃什 并未 直接承诺 9 月加息 (per 华尔街见闻 verbatim '不过, 沃什并未直接承诺9月加息'), 沃什 给定 条件 函数 = conditional hawkish",
+    "30 年期 美债 收益率 相对 稳定 verbatim — 30-year yield 5.2497% → 实战 4.85%-5.16% 区间 震荡, 跟 2-year yield 12bp 跳升 形成 '短端涨 + 长端稳' 鹰派 扭曲 (per Reuters 8/28 verbatim '30-year Treasury yield was down 3 basis points at 5.16%' + 华尔街见闻 verbatim '30年期收益率涨幅则明显较小' + 8/29 早 baseline 131 沃什交卷 verbatim baseline preserved 4.85% 段续 baseline + 8/29 午后 baseline 132 + 8/29 晚报 baseline 133 + 8/30 早 baseline 134 + 8/30 午后 baseline 135 全 stack 拼图完整 per Pitfall 27 + 41 + 46 + 49 + 53)"
+  ],
+  "pick_points": [
+    {"num": "12bp", "label": "2-year yield 单日跳升"},
+    {"num": "60%", "label": "9 月加息概率 新高"},
+    {"num": "47h", "label": "post-keynote 实战段续"},
+    {"num": "2009", "label": "年来最鹰 JACKSON HOLE"}
+  ],
+  "not_picked": [
+    "美股 三大指数 周五 沃什 演讲后 全线 下跌 + 美元 指数 涨 1.4% 至 99.703 + 现货 黄金 重挫 近 3% 至 4453.7 美元 (per 证券时报 + 华尔街见闻 verbatim), 但 沃什 反应函数 conditional hawkish 比 美股 走势 更 值得 写",
+    "美方 IEAA Summit 9/2 T-2→T-1 倒数 续 baseline (8/30 21:01 CST vs 9/2 = 3 天 = T-2 倒数, 跟 8/30 早 baseline 134 T-3 倒数 + 8/30 午后 baseline 135 T-2 倒数 续 baseline)",
+    "DeepSeek 8/17 涨价 T-0 285h→291h 续 baseline + 智谱 GLM-5.3-Flash Hugging Face/OpenRouter/OpenCode 后续实战段续 baseline + 智谱/MiniMax/长鑫 8/30 周末 pre-market 真空窗口段续 baseline + NVDA 财报后 第 2 个完整交易日 实战段续 baseline"
+  ],
+  "say_4": [
+    "47h 走完 一周前 降息 路径, 9 月 加息 概率 飙到 接近 六成",
+    "2-year 12bp + 30-year 持平 = 短端 定价 加息, 收益率 曲线 鹰派 扭曲",
+    "沃什 没 承诺 9 月, 但 conditional hawkish",
+    "周末 真空, 9/1 21:30 PT 美股 开盘 是 第一个 实战 段"
+  ],
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 66 跨 slot 累积错算 修法 实战首发 第二次 + Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 53 跨 day 边界 后续期 cron 38h/62h/86h 模式",
+  "narrative_count": 66,
+  "baseline": 136,
+  "relay": 127,
+  "cron_no": 150
+}
