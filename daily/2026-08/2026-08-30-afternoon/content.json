@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-30",
+  "type": "afternoon",
+  "slot_hour": "13:00",
+  "slot": "afternoon",
+  "slot_label": "午后报",
+  "title": "沃什 39h 加息路径, 57.5% 落地",
+  "main_h2": "沃什 39h 加息路径, 57.5% 落地",
+  "meta_description": "8/30 午后 · Una 主编 · 沃什 8/28 JACKSON HOLE 演讲 39h post-keynote 周末 实战段 + 真实 沃什 反应函数 = conditional hawkish, 2-year yield 跳升 12bp 至 4.35%, 9月 FOMC 加息概率 35.4% → 57.5%, 巴克莱 + 法兴调整预测 9月+12月各加 25bp · 修法 8/30 早 baseline 134 fake verbatim 4.85% 段.",
+  "hero_meta_short": "8/30 · Una 主编 · 同 day 第二期 cron 加新维度 · 沃什 39h 加息路径, 57.5% 落地",
+  "dek": "周末 39h 后, 沃什 鹰派 speech 的 真实 反应函数 浮出水面: 2-year yield 跳升 12bp 至 4.35%, 9月 加息 概率 从 35.4% 跳到 57.5% (per CME FedWatch). 巴克莱 + 法兴 预测 9月 + 12月 各加 25bp. 8/30 早 4.85% 长端 段 是 fake verbatim, 真实 是 短端 上行 加息预期升温.",
+  "why_this": "Una 选这件 因为 8/30 早 baseline 134 fact-check fix — 早 cron fake 4.85%, 真实 沃什 反应 = 2-year 上行 + 9月 加息 35.4% → 57.5% + 9月 + 12月 各加 25bp. 8/30 午后 加新维度 = 39h post-keynote + 真实 数字 修法 + 周末 真空 续 baseline. Pitfall 66 第二类 实战首发.",
+  "main_facts": [
+    "8/28 22:00 CST 沃什 JACKSON HOLE 演讲 39h post-keynote (8/30 13:01 vs 8/28 22:00 = 39h) 实战段续 baseline. 真实 沃什 反应函数 = conditional hawkish = 2-year yield 跳升 12bp 至 4.35% (per 上海有色网/华尔街见闻 verbatim 8/28 '市场迅速计入加息预期. 两年期美债收益率跳升12个基点至4.35%, 为6月首场新闻发布会以来最大单日涨幅, 也是2010年以来杰克逊霍尔期间最大波动').",
+    "9月 FOMC 加息 概率 35.4% → 57.5% 段 (per CNBC 8/28 verbatim 'The hawkish stance raised expectations of an interest rate hike coming in September, with odds rising to 57.5%, up from 35.4% one day ago, according to the CME FedWatch Tool' + 国盛证券 verbatim 8/28 '沃什演讲后, 市场对美联储的加息预期明显升温. 截至8.28收盘, 利率期货隐含的2026年9月加息概率由35.8%升至58.2%, 到12月加息次数从1.1升至1.52, 即年内100%会加息' + Morningstar verbatim 'Expectations of a September Fed rate hike rose to nearly 60% from below 40%') 3 源 cross-check 命中 OK, 5 源 cross-check 含 巴克莱 + 法兴 调整预测 9月 + 12月 各加 25bp.",
+    "Pitfall 66 跨 slot 累积错算 修法 实战首发 段: 8/30 早 cron baseline 134 + 第 125 接力 L.4.1 + L.4.2 段 master 现场补料 fake CNBC/Reuters/Bloomberg/WSJ verbatim 4.85% quote + 假 '减 25BP 50%→60%' 数字 — 真实 是 hawkish 加息 升温 段, 8/30 午后 cron 加 Y5./Y6. 段 verbatim 'FACT-CHECK FIX' 标记 + 主审 rationale 显式说明 + 接力给 8/30 晚报 cron 修法 段续 baseline.",
+    "8/30 周日 周末 pre-market 6h 真空窗口段续 baseline = 中方 港股/A 股 周末 休市 + 美方 PT 8/29 周五 close 17h+ = 真空窗口段续 baseline + 智谱 GLM-5.3-Flash (320B-A18B) 1/10 Opus 4.8 1/40 10 万张国产芯片 周末 实战段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 周末 pre-market 实战段续 baseline.",
+    "NVDA 财报后 第 3 个完整交易日 (8/29 周五 21:30 PT 美股 收盘 → 第 2 个 → 9/1 周一 21:30 PT 美股 开盘实战段 = 跨周末 真空) 实战段续 baseline + DeepSeek 8/17 涨价 T-0 297h→325h (8/30 13:01 vs 8/17 = 13 天 13h) 续 baseline + 苹果 秋季发布会 9/10 凌晨 T-11 倒数续 baseline + IEAA Summit 9/2 T-2 倒数续 baseline (8/30 13:01 vs 9/2 = 3 天)."
+  ],
+  "pick_points": [
+    {
+      "label": "39h post-keynote",
+      "num": "39h",
+      "desc": "沃什 演讲 39h post-keynote 实战段, 周末 真空 续 baseline"
+    },
+    {
+      "label": "9月 加息 概率",
+      "num": "57.5%",
+      "desc": "9月 FOMC 加息 概率 35.4% → 57.5%, CME FedWatch 校准段"
+    },
+    {
+      "label": "2-year yield 跳升",
+      "num": "4.35%",
+      "desc": "2-year yield 跳升 12bp 至 4.35%, 2010年以来 杰克逊霍尔 期间最大波动"
+    },
+    {
+      "label": "巴克莱 + 法兴",
+      "num": "+50bp",
+      "desc": "巴克莱 + 法兴 调整预测 9月 + 12月 各加 25bp, 9月+12月累计 +50bp"
+    }
+  ],
+  "stat_cards": [
+    {
+      "label": "2-year yield",
+      "value": "4.35%",
+      "delta": "跳升 12bp, hawkish 反应",
+      "tone": "up"
+    },
+    {
+      "label": "9月 加息 概率",
+      "value": "35.4% → 57.5%",
+      "delta": "CME FedWatch 周末 校准",
+      "tone": "up"
+    },
+    {
+      "label": "12月 加息 次数",
+      "value": "1.1 → 1.52",
+      "delta": "年内 100% 加息",
+      "tone": "up"
+    },
+    {
+      "label": "IEAA Summit 9/2",
+      "value": "T-2",
+      "delta": "8/30 午后 倒数",
+      "tone": "neutral"
+    }
+  ],
+  "say_4": [
+    "沃什 39h 后, 真实 反应 = 短端 上行, 9月 加息 57.5% 落地。",
+    "2-year yield 跳升 12bp 至 4.35%, 不是 长端 4.85%。",
+    "8/30 早 fake 修法, 接力 8/30 晚报 cron 续 baseline。",
+    "周末 真空 续 baseline, 智谱/NVDA/苹果 全 stack 待晚报。"
+  ],
+  "not_picked": [
+    "8/30 早 cron baseline 134 fake verbatim 4.85% 段 = fact-check fix 已写明 (per Y5. 段), 不重复",
+    "周末 pre-market 真空段续 baseline = 跟 8/30 早 baseline 134 续 baseline 不重复",
+    "DeepSeek 8/17 涨价 T-0 297h → 325h + 苹果 9/10 T-11 + NVDA 第 3 个完整交易日续 baseline = 跟 8/30 早 baseline 134 续 baseline 不重复"
+  ],
+  "cite_sources": [
+    "上海有色网 verbatim URL https://news.smm.cn/news/104086665 (2-year yield 4.35% + 巴克莱 + 法兴 9月+12月 各加 25bp)",
+    "华尔街见闻 verbatim URL https://wallstreetcn.com/articles/3780619 (沃什 鹰派 段)",
+    "CNBC verbatim URL https://www.cnbc.com/2026/08/28/treasury-yields-jackson-hole.html (9月 加息 概率 35.4% → 57.5%)",
+    "国盛证券 verbatim URL https://www.fxbaogao.com/detail/5650876 (35.8% → 58.2% + 12月 加息 次数 1.1 → 1.52)",
+    "Morningstar verbatim URL https://www.morningstar.com/economy/warsh-sounds-hawkish-will-there-be-september-rate-hike (60% from below 40%)",
+    "cryptorank verbatim URL https://cryptorank.io/news/feed/b1e47-treasury-yields-rise-warsh-speech-september-hike (2-year soars as September rate hike bets return)",
+    "搜狐 verbatim URL https://timeline.sohu.com/news/0Ju5HZymPM (Kalshi 48% 加息 25bp)",
+    "STATE.md cron 第一百四十八期 8/30 早 verbatim preserved baseline 134 + 第 125 接力"
+  ],
+  "sources": [
+    "上海有色网 verbatim URL https://news.smm.cn/news/104086665",
+    "华尔街见闻 verbatim URL https://wallstreetcn.com/articles/3780619",
+    "CNBC verbatim URL https://www.cnbc.com/2026/08/28/treasury-yields-jackson-hole.html",
+    "国盛证券 verbatim URL https://www.fxbaogao.com/detail/5650876",
+    "Morningstar verbatim URL https://www.morningstar.com/economy/warsh-sounds-hawkish-will-there-be-september-rate-hike",
+    "cryptorank verbatim URL https://cryptorank.io/news/feed/b1e47-treasury-yields-rise-warsh-speech-september-hike",
+    "搜狐 verbatim URL https://timeline.sohu.com/news/0Ju5HZymPM",
+    "STATE.md cron 第一百四十八期 8/30 早 verbatim preserved"
+  ],
+  "source": "上海有色网/华尔街见闻 + CNBC + 国盛证券 + Morningstar + cryptorank + 搜狐 verbatim URL preserved + STATE.md cron 第一百四十八期 8/30 早 verbatim preserved",
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 + Pitfall 66 跨 slot 累积错算 修法 实战首发 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 53 跨 day 边界 后续期 cron 24h/30h 模式",
+  "date_label_short": "8/30 午后",
+  "weekday_cn": "周日",
+  "weekday_short": "周日",
+  "baseline": 135,
+  "relay": 126,
+  "narrative_count": 65
+}
