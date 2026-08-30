@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-08-31",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "baseline": 137,
+    "relay": 128,
+    "narrative_count": 67,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 66 实战首发 第三次 接力 + Pitfall 45 真空抓料 + Pitfall 53 跨 day 边界 后续期 cron 30h/96h 模式 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点",
+    "html_url": "https://020755.xyz/daily/2026-08/2026-08-31-morning/"
+  },
+  {
     "date": "2026-08-30",
     "slot": "21evening",
     "slot_hour": "21:00",
