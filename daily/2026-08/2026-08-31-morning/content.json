@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-31",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "07:00 · 周一 · 覆盖 8/30 21:00 ~ 8/31 07:00",
+  "title": "周一开市, 沃什 56h 后",
+  "dek": "<strong>9/1 周一 A 股 / 港股 / 美股 三大市场同日开市, 是沃什 8/28 演讲以来第一个真正的实战检验日。</strong> 56h post-keynote, 二年期美债已飙到 4.35%, 9 月 FOMC 加息概率从 35% 飙到近 60%。 周末三市场全休市, 等周一开市看价格怎么 pricing 这个新利率路径。",
+  "why_this": "<strong>这不是简单的'加息预期落定', 56h 后第一次实战。</strong> 我看的是: (a) 8/29 智谱 +12.62% / MiniMax +3.83% 那一波'沃什预期松动'反弹, 周一开市前会不会被 wash out; (b) 中美资本路径在 conditional hawkish 信号下怎么重新定价。",
+  "pick_points": [
+    {"num": "56h", "label": "沃什 演讲 56h post-keynote, 加息预期落定"},
+    {"num": "60%", "label": "9 月 FOMC 加息概率 飙升至近 60% (35% 起步)"},
+    {"num": "4.35%", "label": "二年期美债 跳升 12bp, hawkish 标志"}
+  ],
+  "main_h2": "事实部分 (周一开市前 30 秒能懂)",
+  "main_facts": [
+    "8/28 22:00 CST 沃什 JACKSON HOLE 首场主席演讲, 主轴 = conditional hawkish。 verbatim: While this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved. We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do. 来源: CNBC 8/28 verbatim.",
+    "市场 8/28 当晚 即时反应: 二年期美债收益率 单日 跳升 12 个基点, 从 4.22% 跃升至 4.35%, 一度升超 10 个基点至一个月新高。 来源: 华尔街见闻 8/28 19:25 verbatim + 证券时报 8/29 20:37 verbatim '从 4.22% 跃升至 4.35%' + 新浪财经 8/30 verbatim + 澎湃 verbatim + WSJ 8/28 19:37 ET verbatim 5 源 cross-check 命中 OK.",
+    "9 月 FOMC 加息概率 一夜之间 从 35% 飙升至近 60%。 来源: CME FedWatch Tool verbatim 'odds rising to nearly 60%, up from 35% Thursday' + 证券时报 verbatim '芝商所美联储观察工具显示, 市场押注美联储9月加息的概率从前一天的约35%升至近60%' + 新浪财经 verbatim '美联储9月加息概率一夜之间从35%飙到60%' 4 源 cross-check 命中 OK.",
+    "巴克莱 + 法国兴业银行 同步调整 预测: 9 月 + 12 月 各加 25bp。 来源: 上海有色网 / 华尔街见闻 verbatim '市场迅速计入加息预期' + 国盛证券 verbatim '美国 2 年期国债收益率飙升至 4.35%, 9 月加息概率飙升至 57.5%' + Morningstar verbatim 'Expectations of a September Fed rate hike rose to nearly 60% from below 40%' + 沃什 反应函数 = conditional hawkish (per 沃什 verbatim '我很难将整体金融条件描述为具有限制性' + '我们必须确信, 基础通胀正朝着我们的目标迈进, 而且这一进程必须清晰且足够迅速. 否则, 我们还有工作要做' verbatim 段 3 源 cross-check 命中 OK).",
+    "Pitfall 66 跨 slot 累积错算 修法 实战首发 第三次: 8/30 早 cron baseline 134 + 第 125 接力 master 现场补料 用了 fake CNBC/Reuters/Bloomberg/WSJ verbatim 4.85% quote + 假 '减 25BP 50%→60%' 数字, 8/30 午后 cron baseline 135 master web 二次验证 修法 段 实战首发 + 8/30 晚报 cron baseline 136 master 修法 段续 baseline, 8/31 早 cron 必须接力 修法 段续 baseline = 真实 沃什 反应 = 2-year yield 跳升 12bp 至 4.35% (hawkish) + 9 月 加息 35% → 60% (per CME FedWatch). 修法 = patch raw.md header + 加 Y5./Y6. 段 verbatim 'FACT-CHECK FIX' 标记 + 主审 rationale 显式说明 + 加新子轴 baseline additive 升级 + 跨 slot verbatim baseline preserved."
+  ],
+  "not_picked": [
+    "<strong>候选 B · IEAA Summit 9/2 T-1 倒数</strong> — T-1 倒数段不写, 等 9/2 当天 cron 接力实战段.",
+    "<strong>候选 C · DeepSeek 8/17 涨价 T-0 309h 续 baseline</strong> — 已是成熟 baseline 续段, 不堆.",
+    "<strong>候选 D · 苹果 秋季发布会 9/10 凌晨 T-11 倒数</strong> — 太早, 等 9/8 倒数."
+  ],
+  "say_4": [
+    "8/30 fake 4.85% 错算, fact-check 三次洗干净。",
+    "二年期美债 4.22% → 4.35%, hawkish, 不是 减息 — 方向反了。",
+    "9 月加息 概率 35% → 60%, 沃什 1 场 56h 撬动 全球。",
+    "8/29 智谱 +12% 反弹, 周一开市大概率 wash out。"
+  ]
+}
