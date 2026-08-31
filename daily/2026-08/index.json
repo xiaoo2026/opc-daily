@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-08-31",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "title": "周一开市20h倒数. 沃什63h",
+    "short_title": "周一开市 20h 倒数, 沃什 63h 后",
+    "baseline": 138,
+    "relay": 129,
+    "narrative_count": 68,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 + Pitfall 53 跨 day 边界 后续期 cron 30h/96h 模式 + Pitfall 66 实战首发 第四次修法段续 baseline + Pitfall 42 实测生效时点 ≤ master 时点 + Pitfall 45 真空抓料 + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference",
+    "html_url": "daily/2026-08/2026-08-31-afternoon/index.html"
+  },
+  {
+    "date": "2026-08-31",
     "slot": "morning",
     "slot_hour": "07:00",
     "type": "morning",
