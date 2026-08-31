@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-09-01",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "html_url": "/daily/2026-09/2026-09-01-morning/",
+    "title": "周一开市2.5h倒数. 沃什81h",
+    "baseline": 140,
+    "relay": 131,
+    "narrative_count": 70,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 41 weekend pre-market cron 真空窗口段续 baseline + Pitfall 53 跨 day 边界 后续期 cron 30h/96h 模式 + Pitfall 66 实战首发 第五次 修法段续 baseline + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战续 段"
+  }
+]
