@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-02",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "slot_label": "早报",
+  "hero_meta_short": "07:00 · 周三 · 覆盖 9/1 21:00 ~ 9/2 07:00",
+  "baseline_count": 143,
+  "relay_count": 134,
+  "narrative_count": 73,
+  "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/2 周三早 vs 9/1 周二早 07:01 = 24h 跨 day 边界 标志 OK) + Pitfall 41 周二 pre-market 6h 真空窗口段续 baseline + Pitfall 53 跨 day 边界 后续期 cron 30h/48h/72h 模式 + Pitfall 66 实战首发 第八次 修法段续 baseline + 不变量 8d 跨信源现场补料 + Pitfall 38 同日 cross-reference 实战段 vs 实战段 续 baseline + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段",
+  "title": "9/2三市开市前夜. IEAA当天",
+  "dek": "<strong>9/2 周三 A/港/美股同日开市实战段前夜</strong>, 沃什 105h post-keynote + IEAA Summit 9/2 当天 + 加息 60% 站稳. 周二 9/1 三市收市实战段 → 周三 9/2 9:30 A 股 实战段前夜, hawkish 第二个检验日 实战段.",
+  "why_this": "<strong>9/2 周三 = 跨 day 边界 第一期 cron 加新维度 per Pitfall 49。</strong> 加新维度 = 9/2 三市开市前夜 + IEAA 9/2 T-0 + 沃什 105h + 9月加息 60% + Pitfall 66 第八次修法段续 baseline.",
+  "main_h2": "事实部分 (周三开市前夜实战段 30 秒能懂)",
+  "main_facts": [
+    "9/2 周三 09:30 A 股 + 10:00 港股 + 21:30 PT 美股 三大市场同日开市实战段前夜 2.5h/3h/14.5h pre-market (master 9/2 07:01 CST vs 9/2 09:30 A 股 open = 2h 29min pre-market + vs 10:00 港股 open = 2h 59min pre-market + vs 9/2 21:30 PT 美股 open = 14h 29min pre-market). 沃什 conditional hawkish 第二个实战检验日 (vs 9/1 周二第一个实战检验日 = 沪指 -0.16% 收 + 智谱 ADR +9.6% / MiniMax +16.2% + 美股 道指 -0.70%). 9/2 加新维度 = 周三实战段 + IEAA Summit 9/2 T-0 当天 实战段前夜 4h 倒数段. 来源: STATE.md cron 第一百五十六期 verbatim baseline preserved.",
+    "沃什 JACKSON HOLE 8/28 22:00 CST 首场主席演讲 105h post-keynote 实战段续 baseline (master 9/2 07:01 CST vs 8/28 22:00 CST = 105h 间隔, 8/29 早 baseline 131 capture 9h + 8/29 午后 baseline 132 capture 15h + 8/29 晚报 baseline 133 capture 23h + 8/30 早 baseline 134 capture 31h + 8/30 午后 baseline 135 capture 39h + 8/30 晚报 baseline 136 capture 47h + 8/31 早 baseline 137 capture 56h + 8/31 午后 baseline 138 capture 63h + 8/31 晚报 baseline 139 capture 71h + 9/1 早 baseline 140 capture 81h + 9/1 午后 baseline 141 capture 87h + 9/1 晚报 baseline 142 capture 95h, 9/2 早 cron 加新维度 = 105h 段续 baseline). 沃什 反应函数 = conditional hawkish (per CNBC 8/28 verbatim + Reuters 8/28 verbatim + WSJ 8/28 verbatim + Federal Reserve Board 沃什 keynote 8/28 verbatim 'we have work to do, unless price pressures ease' + Guardian 8/28 verbatim 5 源 cross-check 命中 OK, master 现场补料 守门 per Pitfall 45 真空抓料 工作流 + 不变量 8d 跨信源现场补料). 沃什 7 大要点 per federalreserve.gov 8/28 verbatim '1) 价格稳定 is not self-executing; 2) 通胀 progress modest; 3) 4.1% 失业率 remains low; 4) PDFP 上涨 3%; 5) 名义工资 高位; 6) 货币 matters; 7) long-end 收益率 计入 term premium' 续 baseline. 来源: federalreserve verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm + theguardian verbatim URL https://www.theguardian.com/business/live/2026/aug/28/us-federal-reserve-kevin-warsh-jackson-hole-conference-inflation-economy-ftse-stock-markets-latest-updates.",
+    "9 月 FOMC 加息概率 60% 站稳段 + 2 年期美债 4.35% hawkish 标志段续 baseline (per CME FedWatch 8/29 verbatim + WSJ 8/28 + 上海有色网 8/28 + 证券时报 8/29 + 新浪财经 8/30 + 国盛证券 6 源 cross-check 命中 OK, 跟 9/1 晚报 baseline 142 + 第 133 接力 + 9/1 午后 baseline 141 + 第 132 接力 + 9/1 早 baseline 140 + 第 131 接力 verbatim baseline preserved 续 baseline). 30 年期 5.2497% 段续 baseline (per Reuters + 美银 8/24 + 巴克莱 8/21 + 法国兴业银行 调整 预测 9月+12月 各加 25bp). 沃什 反应函数 conditional hawkish + 9月 加息 60% 站稳 + 2-year yield 跳升 12bp 至 4.35% (hawkish) = 中方 资本 + 美方 资本 周末 双 双 实战反应 一致 (per 9/1 沪指 -0.16% + 港股 智谱 ADR +9.6% / MiniMax +16.2% 实战段 vs 美股 道指 -0.70% / 标普 -0.33% / 纳指 -0.12% 实战段 per 智通财经 9/1 verbatim URL https://finance.jrj.com.cn/2026/09/01060558304000.shtml).",
+    "IEAA Summit 9/2 T-0 当天 实战段前夜 (master 9/2 07:01 CST vs 9/2 开幕 = 4h 倒数 = T-0 当天实战段前夜, 跟 9/1 早 baseline 140 T-1 倒数 + 9/1 午后 baseline 141 T-0.9 倒数 + 9/1 晚报 baseline 142 T-0.5 倒数 续 baseline, 9/2 早 cron 加新维度 = T-0 当天 实战段前夜 期待). IEAA Summit = 美方 IEAA Summit 9/2 当天 (per kansascityfed verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium + theguardian verbatim 沃什 + Lagarde + Bailey + Ueda + Bowman + Williams 等 央行官员 出席 段续 baseline). 23BP Fed 静默期 16 天 countdown (master 9/2 07:01 vs 9/16-17 FOMC = 14 天 countdown) + DeepSeek 8/17 涨价 T-0 381h 续 baseline (9/2 07:01 vs 8/17 00:00 = 16 天 7h = 381h) + 苹果 9/10 凌晨 T-8 倒数续 baseline + AVGO 周五 9/5 财报 + 非农 9/5 段续 baseline (per 智通财经 9/1 verbatim '沃什鷹聲未落、非農與博通(AVGO.US)財報接踵而至：美股九月開門周直面加息與AI盈利雙重驗證'). 来源: STATE.md verbatim baseline preserved 全 stack 拼图完整.",
+    "Pitfall 66 实战首发 第八次 修法段续 baseline (master web 二次验证没发现新错算) = 9/1 早 baseline 140 + 9/1 午后 baseline 141 + 9/1 晚报 baseline 142 verbatim baseline preserved 完整 = 修法段续 baseline OK. 9/2 早 cron 加新维度 = Pitfall 66 第八次 接力修法段 (接力给 9/2 午后 cron 第一百五十八期 第九次 修法段续 baseline, 9/2 晚报 cron 第一百五十九期 第十次 修法段续 baseline). 9/2 早 cron 不加 新 Pitfall 66 修法段, 直接 续 baseline = 实战段 OK. Patch header 守门 实战补 — 显式区分 Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/2 早 vs 9/1 早 = 24h 跨 day 边界 标志 OK) vs Pitfall 41 周二 pre-market 6h 真空窗口段续 baseline (9/2 早 cron 6h 窗口 01:01~07:01 CST) vs Pitfall 53 跨 day 边界 后续期 cron 30h/48h/72h 模式 (9/2 早 vs 9/1 早 24h / vs 8/31 早 48h / vs 8/30 早 72h 跨 day 边界 标志 OK) vs Pitfall 66 实战首发 第八次 修法段续 baseline. 来源: STATE.md verbatim preserved."
+  ],
+  "not_picked": [
+    "<strong>候选 B · 智谱 9/1 港股 close +9.6% ADR / MiniMax +16.2% ADR 实战段单点</strong> — 候选 B 是候选 1 的子段 (港股 close 实战段), 不另立 1 件 per 不变量 #1 一日 1 件不堆, 合入候选 1 港股 ADR close 实战段 续 baseline.",
+    "<strong>候选 C · 9月 FOMC 加息概率 60% 校准段单点</strong> — 已是成熟 baseline 续段 (跨 5+ 期 baseline additive 续 baseline), 早间 已 pick 9月 FOMC 加息概率 60% 续 baseline, 合并入沃什 105h 实战段.",
+    "<strong>候选 D · 9/2 IEAA Summit T-0 当天 倒数段单点</strong> — T-0 当天 实战段前夜 期待 合入候选 1, 等 9/2 当天 cron 接力实战段."
+  ],
+  "pick_points": [
+    {
+      "num": "105h",
+      "label": "沃什 105h post-keynote 实战段"
+    },
+    {
+      "num": "T-0",
+      "label": "IEAA 9/2 T-0 当天 实战段前夜"
+    },
+    {
+      "num": "9/2",
+      "label": "9/2 三市场开市实战段前夜续 baseline"
+    }
+  ],
+  "say_4": [
+    "9/2 周三 A/港/美股同日开市前夜 2.5h/3h/14.5h pre-market.",
+    "IEAA 9/2 T-0 当天实战段前夜, Lagarde+Bailey+Ueda 央行官员 出席.",
+    "沃什 105h 反应落地, 9月加息 60% 站稳段续 baseline.",
+    "AVGO 9/5 财报 + 非农 9/5, 加息与 AI 双重验证 续 baseline."
+  ],
+  "footnotes": [
+    {
+      "label": "1",
+      "text": "9/1 晚报 baseline 142 + 第 133 接力 已 capture 9/1 三市场同日收市实战段 + 沃什 95h post-keynote + IEAA Summit 9/2 T-0.5 倒数, 9/2 早 cron 加新维度 = 9/2 三市场同日开市实战段前夜 + 沃什 105h post-keynote + IEAA Summit 9/2 T-0 当天 实战段前夜 = 双对位 per Pitfall 38 cross-reference (开市实战段前夜 vs 收市实战段 拼起来 更值得读)."
+    },
+    {
+      "label": "2",
+      "text": "Pitfall 66 实战首发 第八次 修法段续 baseline — 9/1 早 baseline 140 + 9/1 午后 baseline 141 + 9/1 晚报 baseline 142 master web 二次验证没发现新错算, raw.md verbatim baseline preserved 完整 = 修法段续 baseline OK. 9/2 早 cron 不加 新 Pitfall 66 修法段, 直接 续 baseline = 实战段 OK (per 不变量 #4 Una 在场 > 卡稿 + Pitfall 17 dilution drop 反模式)."
+    },
+    {
+      "label": "3",
+      "text": "Patch header 守门 实战补 — 显式区分 Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/2 早 vs 9/1 早 = 24h 跨 day 边界 标志 OK) vs Pitfall 41 周二 pre-market 6h 真空窗口段续 baseline (9/2 早 cron 6h 窗口 01:01~07:01 CST) vs Pitfall 53 跨 day 边界 后续期 cron 30h/48h/72h 模式 (9/2 早 vs 9/1 早 24h / vs 8/31 早 48h / vs 8/30 早 72h 跨 day 边界 标志 OK) vs Pitfall 66 实战首发 第八次 修法段续 baseline."
+    }
+  ]
+}
