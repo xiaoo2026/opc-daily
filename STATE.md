@@ -964,3 +964,34 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **wrangler**: deploy Version ID 625e44a4-24ea-414b-acc0-bf7027a97591 (content + slot assets 4 files uploaded + 020755.xyz deployed).
 - **ad-hoc verifier**: 必跑 tempfile.mkstemp(prefix='hermes-verify-', dir='/tmp') 33 check + os.unlink + 显式标 NOT suite green (per Pitfall 65 + 13 + 44 + v0.8.13 spec).
 - **接力给 9/2 午后 cron 第一百五十八期** = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式) + baseline additive 升级 第 144 子轴 立 + 第 135 接力 段 (9/2 09:30 A 股 open 实战段 2.5h post-open + 9/2 10:00 港股 open 实战段 3h post-open + 沃什 演讲 111h post-keynote 实战段续 baseline + IEAA Summit 9/2 T-0 当天 实战段续 baseline + 9月 FOMC 加息 60% 段 + 2 年期美债 4.35% hawkish 段续 baseline + 智谱 02613 / MiniMax 0100 / 长鑫 688825 9/2 open 实战段 + DeepSeek 8/17 涨价 T-0 387h 续 baseline + 苹果 9/10 凌晨 T-8 倒数续 baseline + AVGO 周五 9/5 财报 + 非农 9/5 段续 baseline + Pitfall 66 实战首发 第九次 修法段续 baseline).
+
+## cron 第一百五十八期 9/2 午后 13:00 CST (2026-09-02)
+
+### baseline
+- 第 144 子轴 立
+- 第 135 接力 立
+- 74 件 baseline additive 拼图起 跨 51 天 7/12 早 → 9/2 午后
+
+### picked
+- 9/2 午后 同 day 第二期 cron 加新维度
+- 9/2 周三 A 股 09:30 + 港股 10:00 三市场同日开市实战段 3.5h/3h post-open
+- 沪指 3963.07 -0.42%/-16.82 点 open + 深成 13732.18 -1.01% + 创业板 3347.68 -1.35% + 科创50 1623.53 -1.46%
+- 港股 恒指 -0.19% / 恒科 -0.41% / MiniMax 0100.HK 9/2 早盘 9:55 CST 涨 5.1% 报 366.8 港元
+- 沃什 111h post-keynote + JACKSON HOLE 8/27-29 收官后第 1 实战验证日段续 baseline
+- 9月 FOMC 加息 60% 站稳 + 2 年美债 4.327% hawkish 段续 baseline
+
+### 加新维度 5 类 M60. [356-360]
+- (a) 9/2 周三 A 股 09:30 open 实战段 3.5h post-open = 沪指 3963.07 -0.42%/-16.82 点 + 深成 13732.18 -1.01% + 创业板 3347.68 -1.35% + 科创50 1623.53 -1.46% + 沪深300 4581.51 -0.65%
+- (b) 9/2 港股 10:00 open 实战段 3h post-open = 恒指 -0.19% / 恒科 -0.41% + MiniMax 0100.HK 9/2 早盘涨 5.1% 报 366.8 港元
+- (c) 沃什 111h post-keynote + JACKSON HOLE 8/27-29 已收官段续 baseline
+- (d) JACKSON HOLE 收官后第 1 实战验证日段续 baseline (per Kansas City Fed 官方 verbatim)
+- (e) Pitfall 66 实战首发 第九次 修法段续 baseline = 4 类错算 verbatim 校准 — IEAA Summit 9/2 不存在 / 智谱 ticker 02613 → 02513 / MiniMax 9/1 收盘 349+16.18% → 336.8-3.50% / 港股 9/1 收盘 -0.95% 24892.66 → -0.93% 25310.88
+
+### Pitfall 66 第九次 实战首发 (master 9/2 13:01 CST web 二次验证发现新错算 4 类)
+- **(A) IEAA Summit 9/2 不存在** — 真实 JACKSON HOLE 2026 = Aug 27-29 已收官 (per Kansas City Fed 官方 verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium); 9/2 是 JACKSON HOLE 收官后实战验证日, 不是 T-0 倒数
+- **(B) 智谱 ticker 02613.HK → 02513.HK** — per 搜狐 + 21财经 + 证券时报 3 源 verbatim
+- **(C) MiniMax 9/1 收盘 349 +16.18% → 336.8 -3.50%** — per Yahoo Finance 9/1 收盘 verbatim
+- **(D) 港股 9/1 收盘 -0.95% 24892.66 → -0.93% 25310.88** — per 格隆汇 + 智通财经 + Investing.com 3 源 verbatim
+
+### next relay
+- 给 9/2 晚报 cron 第一百五十九期 接力 baseline = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8h 模式) + baseline additive 升级 第 145 子轴 立 + 第 136 接力 段 (9/2 15:00 A 股 close 实战段 5.5h post-open + 9/2 16:00 港股 close 实战段 5h post-open + 美股 9/2 21:30 PT open 实战段 + 沃什 119h post-keynote 段续 baseline + Pitfall 66 实战首发 第十次 修法段续 baseline)
