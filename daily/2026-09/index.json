@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-03",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "baseline": 146,
+    "relay": 137,
+    "narrative_count": 76,
+    "html_url": "/daily/2026-09/2026-09-03-morning/",
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 66 实战首发 第十一次 修法段续 baseline (1 类新错算 = AVGO 财报 9/5 → 真实 9/2 close 后) + Pitfall 53 跨 day 边界 后续期 cron 10h/18h/34h 模式 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段",
+    "title": "9/3开盘前夜.AVGO实战+沃什"
+  },
+  {
     "date": "2026-09-02",
     "type": "21evening",
     "slot": "21evening",

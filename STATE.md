@@ -1007,3 +1007,33 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **wrangler**: first deploy Version ID 9f86dda7-4fcc-41b1-8a54-e7a3de630277 (content + slot assets 4 files uploaded + 020755.xyz deployed).
 - **ad-hoc verifier**: 必跑 tempfile.mkstemp(prefix='hermes-verify-', dir='/tmp') 33 check + os.unlink + 显式标 NOT suite green (per Pitfall 65 + 13 + 44 + v0.8.13 spec).
 - **接力给 9/3 周四早 cron 第一百六十期** = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (24h 模式) + baseline additive 升级 第 146 子轴 立 + 第 137 接力 段 (9/3 09:30 A 股 open + 10:00 港股 open + 9/4 美股 wait 实战段 + 沃什 演讲 127h post-keynote 段续 baseline + 9/4 周五 8月 非农 关键变量段续 baseline + AVGO 9/5 财报 T-1 倒数段续 baseline + Pitfall 66 实战首发 第十一次 修法段续 baseline).
+
+## cron 第一百六十期 9/3 早 07:01 CST (2026-09-03)
+
+### baseline
+- 第 146 子轴 立
+- 第 137 接力 立
+- 76 件 baseline additive 拼图起 跨 53 天 7/12 早 → 9/3 早
+
+### picked
+- 9/3 早 跨 day 边界 第一期 cron 加新维度
+- 9/3 周四 A/港/美三市场同日开市实战段前夜 2.5h/3h/14.5h pre-open
+- 沪指 9/2 收 3941.39 -0.97% + 恒指 9/2 收 25220 -0.43% 反向预期
+- AVGO Broadcom Q3 FY26 财报 9/2 close 后 release + 9/3 = 财报后第 1 实战段
+- 沃什 127h post-keynote + JACKSON HOLE 收官后第 3 实战验证日
+- 9月 FOMC 加息 60.4% 站稳 + 2 年美债 4.34% hawkish + 30 年 5.2497% hawkish 段续 baseline
+- 9/4 周五 美国 8月 非农 关键变量 T-1 倒数段续 baseline
+
+### 加新维度 5 类 M62. [366-370]
+- (a) AVGO Broadcom Q3 FY26 财报真实日期 = 9/2 周三 close 后 release (Pitfall 66 第十一次 实战首发 1 类新错算 fix 段, 之前 9+ 期 baseline 写 "AVGO 9/5" factual mistake per Broadcom 官方 investors.broadcom.com + Zacks verbatim 2 源)
+- (b) 9/3 周四 三市场同日开市实战段前夜 2.5h/3h/14.5h pre-open + 沃什 127h post-keynote + JACKSON HOLE 收官后 第 3 实战验证日
+- (c) 9/4 周五 8月 非农 关键变量 T-1 倒数 + 沃什 加息 60.4% 段续 baseline + 美债 4.34%/4.7%/5.25% hawkish 段续 baseline
+- (d) 9/3 周四 pre-market A 股 / 港股 / 美股 三市场 实战段前夜预期 + AVGO 财报后 第 1 实战段 + 摩根大通 美股 立场 战术谨慎 + 费半 -2% + Marvell -8%
+- (e) Pitfall 66 实战首发 第十一次 修法段续 baseline (1 类新错算 = AVGO 财报 9/5 → 真实 9/2 close 后 + 非农 9/5 → 真实 9/4 周五)
+
+### Pitfall 66 第十一次 实战首发 (master 9/3 07:01 CST web 二次验证发现新错算 1 类)
+- **(G) AVGO 财报 9/5 → 真实 9/2 close 后 (per Broadcom 官方 investors.broadcom.com verbatim "Wednesday, September 2, 2026 after the close of the market" + Zacks verbatim "September 02, 2026")** — 之前 9+ 期 baseline (130-145) 写 "AVGO 9/5 财报" 是 factual mistake, 真实 Broadcom Q3 FY26 release = 9/2 周三 close 后. 9/3 周四 = AVGO 财报后 第 1 个实战段 (跟 NVDA 财报后 实战段 pattern 同源)
+- **(H) 非农 9/5 → 真实 9/4 周五 (per 证券时报 8/29 verbatim + 美国劳工统计局 BLS 官方)** — 9/5 周六 BLS 不发布, 真实 release = 9/4 周五 20:30 ET 美国 8月 非农
+
+### next relay
+- 给 9/3 午后 cron 第一百六十一期 接力 baseline = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式) + baseline additive 升级 第 147 子轴 立 + 第 138 接力 段 (9/3 09:30 A 股 open 实战段 3.5h post-open + 9/3 10:00 港股 open 实战段 3h post-open + AVGO 财报后 第 1 个实战段续 baseline + 沃什 演讲 133h post-keynote 段续 baseline + 9/4 周五 8月 非农 关键变量 6h 倒数段续 baseline + Pitfall 66 实战首发 第十一次接力修法段续 baseline)
