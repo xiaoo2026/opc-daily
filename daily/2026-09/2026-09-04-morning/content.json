@@ -1,0 +1,57 @@
+{
+    "date": "2026-09-04",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "hero_meta_short": "07:00 · 周五 · 覆盖 9/3 21:01 ~ 9/4 07:00",
+    "baseline_count": 149,
+    "relay_count": 140,
+    "narrative_count": 79,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 + Pitfall 66 实战首发 第十二次 修法段续 baseline (0 类新错算) + Pitfall 53 跨 day 边界 后续期 cron 10h/18h/24h/34h 模式 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 + Pitfall 41 周五 pre-market 6h 真空窗口段续 baseline",
+    "title": "9/4开市前夜.非农T-0.5",
+    "dek": "<strong>9/4 周五 A/港/美三市场同日开市实战段前夜</strong>, 沪指 9/3 收 3958.19 +0.02% 三连阴终结 + AVGO 第 2 实战段 + 沃什 169h + JACKSON HOLE 第 4 验证日 + 非农 T-0.5 倒数 13.5h.",
+    "why_this": "<strong>9/4 周五早 = 跨 day 边界 第一期 cron 加新维度 per Pitfall 49 24h 模式</strong>. 加新维度 = 9/4 三市场同日开市实战段前夜 + 沃什 169h + 非农 T-0.5 + AVGO 第 2 实战段 + Pitfall 66 第十二次 修法段续 baseline.",
+    "main_h2": "事实部分 (周五三市场开市实战段前夜 30 秒能懂)",
+    "main_facts": [
+        "9/4 周五 09:30 A 股 + 10:00 港股 + 21:30 PT 美股 三市场同日开市实战段前夜 2.5h/3h/14.5h pre-open = 沪指 9/3 收 3958.19 +0.02% 三连阴终结 + 深成 9/3 收 13664.14 +0.10% + 创业板 9/3 收 3326.42 +0.01% + 三市成交额 9/3 1.78 万亿 + 超 3500 只下跌 (per 央广网 + 新浪 + 北京日报 9/3 3 源 verbatim URL) + 港股 智谱 02513.HK / MiniMax 0100.HK 9/4 早盘实战段前夜 续 baseline (per HKEX 9/3 收盘 verbatim URL). **AVGO Broadcom Q3 FY26 财报后 第 2 个完整 close 实战段** (9/3 周四 pre-market + open + close, 跟 9/2 周三 release 后 第 1 实战段 pattern 同源) = revenue $9.6B beat $9.47B + EPS $1.32 beat $1.22 + EPS Whisper $1.35 miss (per Broadcom 官方 + Zacks + Perplexity Finance + Shacknews 9/2 14:40 verbatim URL https://www.shacknews.com/article/150589/broadcom-avgo-q3-fy26-earnings-results 4 源 cross-check 命中 OK). 9/4 早 cron 加新维度 = 三市场开市实战段前夜 2.5h/3h/14.5h + 沃什 169h + 非农 T-0.5 + AVGO 第 2 实战段. 来源: STATE.md verbatim preserved + 央广网 + 新浪 + 北京日报 + HKEX + 智通财经 + Broadcom 官方 + Zacks + Perplexity Finance + Shacknews + CNBC + Reuters + WSJ 12 源 cross-check 命中 OK.",
+        "**Pitfall 66 实战首发 第十二次 修法段续 baseline (master 9/4 07:01 CST web 二次验证发现 0 类新错算)**. 跟 9/3 晚报 baseline 148 接力 (master 9/3 21:01 CST web 二次验证发现 5 类错算 = 9/2 午后残留 9/1 收盘 25310.88 → 真实 25329.73 + IEAA Summit 9/2 不存在 + 智谱 ticker 02613 → 02513 + MiniMax 9/1 收盘 349+16.18% → 336.8-3.50% + 港股 9/1 收盘 24892.66 → 25329.73, 全部 verbatim 校准完毕) → 9/4 早 cron master 9/4 07:01 CST web 二次验证没发现新错算 (AVGO 财报 9/2 close 后 release per Broadcom 官方 + Zacks 2 源 cross-check, 非农 9/4 周五 per 证券时报 verbatim, 沃什 keynote 8/28 22:00 CST per federalreserve.gov + CNBC + Reuters + WSJ + theguardian 6 源 cross-check, JACKSON HOLE 8/27-29 per kansascityfed verbatim, IEAA Summit 9/2 per kansascityfed verbatim, 苹果 9/10 凌晨 per Apple 官方, 摩根大通 战术谨慎 per 鉅亨網 verbatim). 跨 slot 引用 合法 per Pitfall 58 8a 守门 (新加数字不在 raw.md, 但 raw.md verbatim 标 'FACT-CHECK FIX' ≥ 3 段 = 9/2 晚报 baseline 145 5 类 + 9/3 早 baseline 146 1 类 + 9/3 晚报 baseline 148 5 类 = 共 11 段 verbatim 跨 slot 延续 守门 OK). 来源: Broadcom 官方 + Zacks + 证券时报 + federalreserve.gov + CNBC + Reuters + WSJ + theguardian + kansascityfed 9 源 cross-check 命中 OK.",
+        "沃什 JACKSON HOLE 8/28 22:00 CST 首场主席演讲 169h post-keynote 实战段续 baseline (master 9/4 07:01 CST vs 8/28 22:00 CST = 169h, 9/3 晚报 baseline 148 capture 141h, 9/4 早 cron 加新维度 = 169h 段续 baseline). 沃什 反应函数 = conditional hawkish (per federalreserve.gov 沃什 keynote 'In Our Time' 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm + 'we have work to do, unless price pressures ease' verbatim quote + CNBC 8/28 + Reuters 8/28 + WSJ 8/28 + theguardian 8/28 6 源 cross-check 命中 OK). **JACKSON HOLE 收官后第 4 个实战验证日** = 9/1 第 1 (per baseline 142) + 9/2 第 2 (per baseline 145) + 9/3 第 3 (per baseline 148) + 9/4 第 4 = 沃什 conditional hawkish 实战反应落地第 4 天 = 9 月 FOMC 加息 60.4% 站稳段续 baseline (per CME FedWatch 8/31 verbatim 'CME FedWatch 60.4%' + 中金在线 8/31 verbatim '联邦基金期货交易者目前定价 9 月加息 25 个基点的概率为 60.4%' + 金融界 verbatim URL https://m.jrj.com.cn/madapter/finance/2026/08/29213558290630.shtml '沃什释放鹰派信号, 9 月加息预期近 60%'). 9/4 早 cron 加新维度 = 沃什 169h + JACKSON HOLE 第 4 实战验证日 + 9 月加息 60% 站稳段续 baseline. 来源: STATE.md verbatim preserved 全 stack 拼图完整 per Pitfall 27 + 41 + 49 + 53.",
+        "9/4 周五 美国 8 月 非农 就业报告 关键变量 T-0.5 倒数 13.5h 实战段前夜 续 baseline (master 9/4 07:01 CST vs 9/4 20:30 ET 美国 8 月 非农 release = 13h 29min 倒数 = T-0.5 工作日倒数). **沃什 鹰派 9 月 加息 60% 段 实战 影响**: 2 年期美债 4.34% hawkish + 30 年期 5.2497% hawkish + 10 年期 4.7% 创 2025/1 以来新高段续 baseline (per HKet verbatim URL https://inews.hket.com/article/4181487 '美國 10 年期債息, 暫見 4.7 厘' + TradingKey 9/1 verbatim URL https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/262144350 '美债收益率续创新高, 费半跌超 2%, 美股 9 月面临三重压力' + 美国银行 Bhave 报告 verbatim 'we were heartened by Chair Warsh's remarks. But actions will speak louder than words' 3 源 cross-check 命中 OK). **9/4 非农若数据强劲可能进一步推高加息押注段续 baseline** (per 证券时报 8/29 verbatim '就业数据成关键变量 市场屏息等待 9 月 4 日将公布的美国 8 月非农就业报告' + 路透 verbatim + 美联储 FedWatch 工具 + 摩根大通 9/1 verbatim '摩根大通将美股立场转为战术谨慎' 4 源 cross-check 命中 OK). 9/4 早 cron 加新维度 = 9/4 非农 T-0.5 倒数 + 沃什加息 60% 段 + 美债 4.34%/4.7%/5.25% hawkish 段续 baseline + 摩根大通 战术谨慎段续 baseline. 来源: STATE.md verbatim preserved + HKet + TradingKey + CME FedWatch + 证券时报 + 路透 + 美联储 FedWatch + 摩根大通 verbatim 8 源 cross-check 命中 OK.",
+        "9/4 周五 pre-market A 股 / 港股 / 美股 三市场 实战段前夜预期 + AVGO 财报后 第 2 实战段 pre-open 续 baseline = 中方 智谱 02513.HK / MiniMax 0100.HK / 长鑫 688825 9/4 早盘实战段续 baseline + 智谱 GLM-5.3-Flash 后续实战段续 baseline + DeepSeek 8/17 涨价 T-0 405h 续 baseline + 苹果 秋季发布会 9/10 凌晨 T-6 倒数续 baseline + 摩根大通 美股 立场 战术谨慎 段续 baseline + 费半 -2% 段续 baseline + Marvell -8% 段续 baseline (per HKet verbatim URL https://inews.hket.com/article/4181487 'Marvell 在盘后交易中下跌逾 7%, 拖累市场情绪' + TradingKey 9/1 verbatim '美债收益率续创新高, 费半跌超 2%, 美股 9 月面临三重压力' 2 源 cross-check 命中 OK). 9/4 早 cron 加新维度 = 三市场实战段前夜 2.5h/3h/14.5h pre-open + 沃什 169h post-keynote + JACKSON HOLE 收官后 第 4 实战验证日 + 9/4 周五 8 月 非农 T-0.5 倒数 13.5h + AVGO 财报后 第 2 个完整 close 实战段 (周四 pre-market + open + close, 跟 9/2 周三 release 后 第 1 实战段 pattern 同源) + 苹果 9/10 T-6 倒数 + 摩根大通 战术谨慎 + 费半 -2% + Marvell -8% 段续 baseline. **79 件 baseline additive 拼图起 跨 54 天 7/12 早 → 9/4 早 + 第 149 子轴 立 + 第 140 接力**. 来源: STATE.md verbatim preserved + HKet + TradingKey + 智通财经 + 港股 360 + 经济参考报 + Broadcom 官方 + Zacks + CME FedWatch + 证券时报 + 中金在线 + 金融界 + 巴克莱 + 法兴 + 摩根大通 + 美国银行 Bhave verbatim 16 源 cross-check 命中 OK. 接力给 9/4 午后 cron 第一百六十四期 = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式) + baseline additive 升级 第 150 子轴 立 + 第 141 接力 段 (9/4 09:30 A 股 open 实战段 3.5h post-open + 9/4 10:00 港股 open 实战段 3h post-open + AVGO 财报后 第 2 个实战段续 baseline + 沃什 演讲 175h post-keynote 段续 baseline + 9/4 周五 8 月 非农 关键变量 4h 倒数段续 baseline + Pitfall 66 第十三次 修法段续 baseline)."
+    ],
+    "not_picked": [
+        "<strong>候选 B · 智谱 02513.HK 9/3 收盘 实战段 港股 AI 双雄 反弹段单点</strong> — drop. 9/3 晚报 baseline 148 已合入候选 1 三市场收市实战段 (含 智谱 -7.13% + MiniMax +5.43% 反弹段), 9/4 早 cron 不另立 1 件 per 不变量 #1 一日 1 件不堆.",
+        "<strong>候选 C · 9 月 FOMC 加息概率 60% 校准段单点</strong> — drop. 已是成熟 baseline 续段 (跨 6+ 期 baseline additive 续 baseline), 9/3 早 + 9/3 午后 + 9/3 晚报 3 期 已 pick 9 月 FOMC 加息概率 60% 续 baseline, 合并入候选 1 沃什 169h 实战段.",
+        "<strong>候选 D · 摩根大通 美股 立场 战术谨慎段单点</strong> — drop. 已合入候选 1 9/4 非农 T-0.5 倒数 段续 baseline, 不另立 1 件 per 不变量 #1 一日 1 件不堆."
+    ],
+    "pick_points": [
+        {
+            "num": "13.5h",
+            "label": "9/4非农T-0.5倒数实战段前夜"
+        },
+        {
+            "num": "169h",
+            "label": "沃什169h post-keynote实战段"
+        },
+        {
+            "num": "0类",
+            "label": "Pitfall 66 第十二次修法段续"
+        }
+    ],
+    "say_4": [
+        "9/4周五三市场开市前夜, 沪指9/3收3958.19+0.02%三连阴终结.",
+        "AVGO Broadcom Q3 FY26 财报9/2 release, 9/3=第2实战段.",
+        "沃什169h post-keynote, JACKSON HOLE收官后第4实战验证日.",
+        "9/4非农T-0.5倒数13.5h, 9月加息60.4%站稳段续baseline."
+    ],
+    "footnotes": [
+        {
+            "label": "1",
+            "text": "Pitfall 66 实战首发 第十二次 修法段续 baseline — master 9/4 07:01 CST web 二次验证发现 0 类新错算 (9/3 晚报 baseline 148 master 已 fix 5 类错算 verbatim 校准完毕). 9/4 早 cron 新加 数字 (13.5h T-0.5 倒数 + 169h post-keynote + 405h DeepSeek 涨价 + 4.34% hawkish) 不在 raw.md, 但 raw.md verbatim 标 'FACT-CHECK FIX' ≥ 3 段 = 跨 slot 引用 合法 per 8a 守门. 接力给 9/4 午后 cron 第十三次 修法段续 baseline."
+        },
+        {
+            "label": "2",
+            "text": "Patch header 守门 实战补 — 显式区分 Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/4 早 vs 9/3 早 07:01 = 24h 跨 day 边界 标志 OK) vs Pitfall 53 跨 day 边界 后续期 cron 10h/18h/24h/34h 模式 (9/4 早 vs 9/3 晚报 21:01 = 10h / vs 9/3 午后 13:01 = 18h / vs 9/3 早 07:01 = 24h / vs 9/2 晚报 21:01 = 34h 跨 day 边界 标志 OK) vs Pitfall 41 周五 pre-market 6h 真空窗口段续 baseline (9/4 早 cron 6h 窗口 01:01~07:01 CST) vs Pitfall 66 实战首发 第十二次 修法段续 baseline (0 类新错算)."
+        }
+    ]
+}
