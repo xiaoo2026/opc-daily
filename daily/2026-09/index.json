@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-04",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "html_url": "daily/2026-09/2026-09-04-morning/",
+    "baseline_count": 149,
+    "relay_count": 140,
+    "narrative_count": 79,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/4 早 vs 9/3 早 baseline 146 master 时点 9/3 07:01 = 24h 跨 day 边界 标志 OK) + Pitfall 66 实战首发 第十二次 修法段续 baseline (0 类新错算) + Pitfall 53 跨 day 边界 后续期 cron 10h/18h/24h/34h 模式 + Pitfall 41 周五 pre-market 6h 真空窗口段续 baseline + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段"
+  },
+  {
     "date": "2026-09-03",
     "type": "21evening",
     "slot": "21evening",
