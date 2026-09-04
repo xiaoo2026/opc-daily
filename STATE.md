@@ -1082,3 +1082,18 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **stage 3**: content.json 字数 spec PASS (2 轮 patch 收敛 per v0.8.13) title=15/dek=126/why_this=178/pp labels [15,33,24]/say_4 [37,47,46,42] chars / 5 main_facts + 5 verbatim hit OK/not_picked 3; draft-daily.py render 12484 bytes index.html; em dash 0 cleanup per Pitfall 50; div balance OK; Humanizer audit 33 patterns 自审 PASS. TTS MiniMax CN danya_xuejie 41.472s / 665268B / ID3 OK / mp3 32000Hz 128kbps (50-90s 实测有效窗口 OK per v0.8.9, 41.5s 短文案 OK 跟 9/4 早 33.1s 一致, 194 chars ≈ 4.7 chars/s). 5 files: content.json + index.html + raw.md + voice.mp3 + raw/2026-09-04-afternoon.md
 - **stage 4**: 9 处 top-level surgical patch all PASS per Pitfall 55 + 55(e) + 55(f) + 55(g) + 46 (1) topbar 2026-09-04 周五 · 13:00 (2) hero-left eyebrow 2026-09-04 · 午报 (3) featured-block eyebrow 2026-09-04 · 午报 (4) featured-tag Una 主编 · 同 day 第二期 cron 加新维度 · 沃什 175h, JACKSON HOLE 收官后第 5 实战验证日 (5) featured h2 替换 9/4 午后 · 午盘实战.非农T-0.3+双雄分化12.6倍差 (6) pick-meta 午后报 · 13:00 · 第 80 件 narrative · baseline 150 · 第 141 接力 (7) pick-rationale 当期 why_this (8) main archive 9 月 month-block prepend 9/4 午后 month-entry (per Pitfall 55(g) month-label 锚点 守门 PASS) (9) featured-card archive-entry prepend 9/4 午后 (per Pitfall 55(e) 守门 anchor 限定 不 sed 全字符串替换 误伤 archive 第 1 行). index.json prepend 9/4 afternoon entry (type=afternoon / slot_hour=13:00 / slot=afternoon / baseline=150 / relay=141 / narrative_count=80). 10 → 11 entries. STATE.md append cron 第一百六十四期 (baseline 150 + 第 141 接力 + 80 件 baseline additive 拼图起 跨 54 天 7/12 早 → 9/4 午后 + 加新维度 5 类 M66. [386-390] + 接力给 9/4 晚报 cron 第一百六十五期 = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 + baseline additive 升级 第 151 子轴 立 + 第 142 接力 段).
 - **接力给 9/4 晚报 cron 第一百六十五期** = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8h 模式) + baseline additive 升级 第 151 子轴 立 + 第 142 接力 段 (9/4 A 股 收盘实战段 15:00 + 港股 收盘实战段 16:00 + 9/4 21:30 PT 美股 开盘实战段 + 美国 8 月非农 9/4 20:30 ET release 实战段 + AVGO 财报后 第 2 个完整实战段续 baseline + 沃什 演讲 187h post-keynote 段续 baseline + Pitfall 66 实战首发 第十四次 修法段续 baseline).
+
+## cron 第一百六十五期 (2026-09-04 21:01 CST · 周五晚报)
+
+- baseline 第 151 子轴 立 + 第 142 接力 立
+- 第 80+1 = 第 81 件 baseline additive 拼图起 跨 53 天 7/12 早 → 9/4 晚报
+- 加新维度 5 类 M67. [391-395]:
+  - (a) 9/4 三市场同日收市实战段 (A 股 -0.3% 沪指 + 港股 -0.39% 恒指 + 美股周四 道指 +1.73% 51,561 创历史新高)
+  - (b) 沃什 175h post-keynote 实战段续 baseline
+  - (c) 非农 9/4 20:30 ET release 31min post-release 实战段续 baseline
+  - (d) AVGO Broadcom Q3 FY26 财报后 第 2 完整 close 实战段 (-12.59% 报 418.45 创 4/29 来最低)
+  - (e) Pitfall 66 实战首发 第十三次 修法段续 baseline (6 类新错算 master web 二次验证校准完毕)
+- Pitfall 46 同 day 第三期 cron 8h 模式 (9/4 晚报 vs 9/4 午后 baseline 150 master 时点 9/4 13:01 = 8h 同 day 跨 slot 主标志 OK)
+- Pitfall 53 跨 day 边界 后续期 cron 24h/32h/38h 模式 (9/4 晚报 vs 9/3 晚报 = 24h / vs 9/3 午后 = 32h / vs 9/3 早 = 38h 跨 day 边界 标志 OK)
+- Patch header 守门 实战补
+- 接力给 9/5 周六 早 cron 第一百六十六期 = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (24h 模式) + baseline additive 升级 第 152 子轴 立 + 第 143 接力 段
