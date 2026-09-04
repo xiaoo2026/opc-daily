@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-05",
+    "type": "morning",
+    "slot": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "9/5周六.NFP翻3倍+6校准",
+    "html_url": "daily/2026-09/2026-09-05-morning/",
+    "baseline": 152,
+    "relay": 143,
+    "narrative_count": 82,
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/5 早 vs 9/4 早 baseline 149 master 时点 9/4 07:01 CST = 24h 跨 day 边界 标志 OK) + Pitfall 41 周六 pre-market 6h 真空窗口段续 baseline + Pitfall 53 跨 day 边界 后续期 cron 10h/18h/48h/72h 模式 + Pitfall 66 实战首发 第十四次 修法段续 baseline (6 类新错算 = 9/4 晚报 baseline 151 用 6/4 数据 cnyes id 6484587 误当 9/4 数据: 道指 51,561→真实 53,686 / 标普 7,584→真实 7,747 / 纳指 26,830→真实 26,584 / AVGO -12.59% 418.45→真实 +2.82% 367.24 / NFP 共识 65K→真实 5.5万 / NFP actual 数字未 capture=16.2万 翻 3 倍共识) + Pitfall 8b 跨信源现场补料 跨期 subagent 误拼段 二类 升级 + Pitfall 38 同日 cross-reference + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段"
+  },
+  {
     "date": "2026-09-04",
     "type": "21evening",
     "slot": "21evening",
