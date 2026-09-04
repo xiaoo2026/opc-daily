@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-04",
+    "type": "afternoon",
+    "slot": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "html_url": "daily/2026-09/2026-09-04-afternoon/",
+    "baseline_count": 150,
+    "relay_count": 141,
+    "narrative_count": 80,
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 (9/4 午后 vs 9/4 早 baseline 149 master 时点 9/4 07:01 = 6h 同 day 跨 slot 主标志 OK) + Pitfall 53 跨 day 边界 后续期 cron 16h/24h/30h 模式 (9/4 午后 vs 9/3 晚报 21:01 = 16h / vs 9/3 午后 13:01 = 24h / vs 9/3 早 07:01 = 30h 跨 day 边界 标志 OK) + Pitfall 66 实战首发 第十三次 修法段续 baseline (0 类新错算 = master 9/4 13:01 CST web 二次验证没发现新错算, AVGO 9/2 close 后 release 真实 + 沃什 175h + 非农 T-0.3 7.5h + 智谱 -1.34% 02513.HK + MiniMax +11.27% 0100.HK 全部 verbatim 校准) + Pitfall 8b 跨信源现场补料 跨期 subagent 误拼段 二类 升级 + Pitfall 38 同日 cross-reference 早前夜预判 vs 午实测对位完整 + Pitfall 42 实测生效时点 <= master 时点 OK 写 实战段"
+  },
+  {
+    "date": "2026-09-04",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
