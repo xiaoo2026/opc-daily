@@ -1135,7 +1135,7 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 
 ## cron 第一百六十八期 (2026-09-05 21:01 CST · 周六晚报)
 
-- baseline 第 154 子轴 立 + 第 145 接力 立
+- baseline 第 154 子轴 立 + 第 145 接力 立 (= baseline 154 + 第 145 接力)
 - 第 83+1 = 第 84 件 baseline additive 拼图起 跨 54 天 7/12 早 → 9/5 晚报
 - 加新维度 5 类 M70. [406-410]:
   - (a) 9/5 周六晚 A 股 / 港股 8h 真空窗口段续 baseline (A 股 9/4 收盘 → 9/8 09:30 open T-2 工作日倒数)
