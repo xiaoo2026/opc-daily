@@ -1131,3 +1131,20 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - Pitfall 41 周六午盘 6h 真空窗口段续 baseline (9/5 午 cron 6h 窗口 07:01~13:01 CST, 中方 港股 A 股 周末 + 美方 9/4 周五 PT 已 close 16h+ + 9/5 周六 美方 24h 真空 + NFP 9/4 20:30 ET 已 release 16h 31min)
 - Patch header 守门 实战补 - 显式区分 Pitfall 46 vs Pitfall 53 vs Pitfall 41 vs Pitfall 66 第十四次 修法段续 baseline (0 类新错算)
 - 接力给 9/5 晚报 cron 第一百六十八期 = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8h 模式) + baseline additive 升级 第 154 子轴 立 + 第 145 接力 段
+
+
+## cron 第一百六十八期 (2026-09-05 21:01 CST · 周六晚报)
+
+- baseline 第 154 子轴 立 + 第 145 接力 立
+- 第 83+1 = 第 84 件 baseline additive 拼图起 跨 54 天 7/12 早 → 9/5 晚报
+- 加新维度 5 类 M70. [406-410]:
+  - (a) 9/5 周六晚 A 股 / 港股 8h 真空窗口段续 baseline (A 股 9/4 收盘 → 9/8 09:30 open T-2 工作日倒数)
+  - (b) 8月 NFP 16.2万 翻 共识 5.5万 3 倍 24h 31min post-release 实战段续 baseline (master 9/5 21:01 vs 9/4 20:30 ET release = 24h 31min)
+  - (c) AVGO Broadcom 9/4 close 367.24 +2.82% 反涨 实战段 + 9/8 周一 第 3 实战段 T-2 倒数
+  - (d) 沃什 JACKSON HOLE 8/28 22:00 CST keynote 191h post-keynote 实战段 + JACKSON HOLE 收官后第 7 实战验证日 + 9月 FOMC 重定价
+  - (e) Pitfall 66 实战首发 第十四次 修法段续 baseline (0 类新错算, 9/4 晚报 baseline 151 用 6/4 数据误当 9/4 数据 已在 9/5 早 + 9/5 午 校准完毕)
+- Pitfall 46 同 day 第三期 cron 8h 模式 (9/5 晚报 vs 9/5 午 baseline 153 master 时点 9/5 13:01 = 8h 同 day 跨 slot 主标志 OK)
+- Pitfall 53 跨 day 边界 后续期 cron 14h/24h/32h/40h/64h/88h 模式 (9/5 晚报 vs 9/5 早 = 14h / vs 9/4 晚报 = 24h / vs 9/4 午后 = 32h / vs 9/4 早 = 40h / vs 9/3 早 = 64h / vs 9/2 早 = 88h 跨 day 边界 标志 OK)
+- Pitfall 41 周六晚 8h 真空窗口段续 baseline (9/5 晚报 cron 8h 窗口 13:01~21:01 CST, 中方 港股 A 股 周末 + 美方 9/4 周五 PT 已 close 24h+ + 9/5 周六 美方 24h+ 真空 + NFP 9/4 20:30 ET 已 release 24h 31min)
+- Patch header 守门 实战补 - 显式区分 Pitfall 46 vs Pitfall 53 vs Pitfall 41 vs Pitfall 66 第十四次 修法段续 baseline (0 类新错算)
+- 接力给 9/6 周日 早 cron 第一百六十九期 = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (24h 模式) + baseline additive 升级 第 155 子轴 立 + 第 146 接力 段
