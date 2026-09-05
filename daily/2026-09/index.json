@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-09-05",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot": "afternoon",
+    "baseline": 153,
+    "relay": 144,
+    "narrative_count": 83,
+    "title": "NFP 翻 3 倍·9/8 T-3",
+    "html_url": "/daily/2026-09/2026-09-05-afternoon/"
+  },
+  {
+    "date": "2026-09-05",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
