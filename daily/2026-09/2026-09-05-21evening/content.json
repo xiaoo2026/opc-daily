@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-05",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "title": "NFP 翻 3 倍·9/8 T-2",
+  "dek": "8月非农 16.2万 翻 共识 3 倍, 沃什 实战段 24h post-release. 美股 9/4 收盘 大涨, 9/8 周一 第 3 实战段 T-2 倒数.",
+  "why_this": "NFP 翻 共识 3 倍落地 24h, 沃什 conditional hawkish 实战段从理论推到交易台前已经满一天. 9/5 早 + 9/5 午 已经把数据 verbatim 校准完, 9/5 晚报 = 实战段 24h post-release 续 baseline + 9/8 周一 第 3 实战段 T-2 倒数 + 周一 re-open 三段拼图 完成.",
+  "main_facts": [
+    "8月 NFP release 24h 31min post-release 实战段续 baseline: 16.2万 vs 共识 5.5万 = 翻 3 倍, 失业率 4.1% 持平, 时薪环比 +0.3% (per Investing.com + 华尔街见闻 + 新浪财经 + 世界日報 4 源 cross-check)",
+    "9/4 美股 close 24h 31min post-release 实战段续 baseline: 道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40% (per 新浪财经 9/4 16:31 verbatim + Yahoo Finance 前收市价)",
+    "AVGO 9/4 close 367.24 +2.82% 反涨 24h 实战段续 baseline + 9/8 周一 第 3 实战段 T-2 倒数 (跟 9/3 -2.74% 357.16 段续 baseline 实战 2 段)",
+    "沃什 JACKSON HOLE 8/28 22:00 CST keynote 191h post-keynote 实战段续 baseline + JACKSON HOLE 收官后第 7 实战验证日 (per federalreserve.gov 沃什 keynote verbatim + Kansas City Fed 官方 verbatim)",
+    "9月 FOMC 加息概率 重定价段续 baseline: NFP 翻 3 倍 = 巨大 hawkish signal = 沃什实战段最关键时点 (9/4 早 baseline 149 capture 60.4% → 9/4 晚报 60% → 9/5 早 + 9/5 午 + 9/5 晚报 实战延续)"
+  ],
+  "pick_points": [
+    {
+      "label": "NFP 24h 实战",
+      "num": "16.2万 / 共识 5.5万",
+      "delta": "8 月 release 9/4 20:30 ET"
+    },
+    {
+      "label": "9/4 美股 实战",
+      "num": "道指 53,686 +1.18%",
+      "delta": "vs 9/4 晚报 baseline 151 错算 51,561"
+    },
+    {
+      "label": "AVGO 24h",
+      "num": "367.24 +2.82%",
+      "delta": "vs 9/3 -2.74% 357.16 第 2 实战段"
+    },
+    {
+      "label": "沃什 实战",
+      "num": "191h post-keynote",
+      "delta": "JACKSON HOLE 收官后 第 7 验证日"
+    }
+  ],
+  "not_picked": [
+    "9/5 周六晚间 A 股 / 港股 8h 真空窗口: 周末休市, 9/8 周一 re-open T-2 工作日倒数 (per Pitfall 41)",
+    "苹果 秋季发布会 9/10 凌晨 T-4 倒数段续 baseline: 已 capture 在 prior slot, 9/5 晚报 真空段续 baseline",
+    "DeepSeek 8/17 涨价 T-0 419h+ 续 baseline: 跨期 长尾 续 baseline, 不当 主 1 件"
+  ],
+  "say_4": [
+    "NFP 16.2 万翻 3 倍落地 24h, 沃什实战段最关键时点.",
+    "9/4 美股修正, 道指 53,686 +1.18%, 9/4 晚报错算校准.",
+    "AVGO 367.24 反涨 24h, 第 2 实战段完, 9/8 T-2 第 3.",
+    "沃什 191h post-keynote, JACKSON HOLE 收官后第 7 实战验证日."
+  ],
+  "verbatim_citations": [
+    "per 新浪财经 9/4 16:31 verbatim URL https://finance.sina.com.cn/world/2026-09-04/doc-iniqqwtk1725959.shtml (道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40%)",
+    "per Investing.com verbatim URL https://hk.investing.com/economic-calendar/nonfarm-payrolls-227 (8 月 NFP 16.2 万 vs 共识 5.5 万)",
+    "per 华尔街见闻 verbatim URL https://wallstreetcn.com/articles/3781105 (10 年期美债收益率跃升 3 个基点至 4.79%)",
+    "per 新浪财经 9/4 20:33 verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-09-04/doc-iniqskus6030003.shtml (工资环比 +0.3% / 同比 +3.1%)",
+    "per 世界日報 9/4 verbatim URL https://www.worldjournal.com/wj/story/121477/9735373 (就業成長遠高於經濟學家預期的 5.3 萬人)",
+    "per federalreserve.gov 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm (沃什 conditional hawkish 'we have work to do, unless price pressures clearly and sufficiently recede toward target')",
+    "per Kansas City Fed 官方 verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium (JACKSON HOLE 2026 = Aug 27-29 已收官)",
+    "per Yahoo Finance AVGO 9/5 早 7 CST 前收市价 367.24 +2.82% (AVGO 9/4 close 反涨, 第 2 实战段)"
+  ],
+  "stats": [
+    {
+      "num": "16.2万",
+      "label": "8 月 NFP actual"
+    },
+    {
+      "num": "5.5万",
+      "label": "8 月 NFP 共识"
+    },
+    {
+      "num": "53,686",
+      "label": "9/4 道指 close"
+    },
+    {
+      "num": "367.24",
+      "label": "AVGO 9/4 close"
+    }
+  ],
+  "humanizer_audit": "33 patterns 自审 PASS, em dash 0 cleanup per Pitfall 50, meta description · 替代 em dash per v0.8.9 实测补, 句首 ',  ' 0 + 双句号 0 + 数字精度 8a PASS + 具名引述 8b PASS (known names 9 个全 grep raw.md PASS)",
+  "hero_meta_short": "9/5 周六晚报 · NFP 实战段 24h 31min post-release",
+  "main_h2": "1 件: NFP 16.2万翻共识 3 倍 + 9/4 美股全线大涨修正",
+  "slot_label": "晚报"
+}
