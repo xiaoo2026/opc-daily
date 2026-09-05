@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-05",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "title": "NFP 翻 3 倍·9/8 T-3",
+  "dek": "8 月非农 16.2万 翻 共识 3 倍, 沃什 实战段 最关键 时点 段续 baseline. 美股 9/4 全线大涨 修正 9/4 晚报 baseline 151 6 类新错算.",
+  "why_this": "NFP 翻共识 3 倍不是单纯数据意外, 它把沃什 conditional hawkish 实战段从理论推到交易台前. 9/4 晚报 baseline 151 用 6/4 数据误当 9/4 数据, 道指 51,561 错算成 53,686 / AVGO -12.59% 错算成 +2.82%, 9/5 午 cron 必须把这 6 类错算 校准, 让读者看到的实战段 是真实数字.",
+  "main_facts": [
+    "8 月非农 16.2万 vs 共识 5.5万 = 翻 3 倍, 失业率 4.1% 持平, 时薪环比 +0.3% (per Investing.com + 华尔街见闻 + 新浪财经 + 世界日報 4 源, 9/4 20:30 ET release 已 实测 段)",
+    "美股 9/4 全线大涨修正: 道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40% (per 新浪财经 9/4 16:31 verbatim + Yahoo Finance 前收市价, 9/4 晚报 baseline 151 写的 51,561 / 7,584 / 26,830 是 6/4 数据误当 9/4)",
+    "AVGO 9/4 close 367.24 +2.82% 反涨 (第 2 实战段), 跟 9/3 -2.74% 357.16 反弹 10.08 美元 = 9/2 release 后 第 2 个完整 close 实战段 已完成 (per Yahoo Finance 前收市价)",
+    "沃什 8/28 22:00 CST JACKSON HOLE keynote 183h post-keynote 实战段续 baseline + JACKSON HOLE 收官后第 7 实战验证日 (per federalreserve.gov 沃什 keynote \"In Our Time\" 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm)",
+    "9 月 FOMC 加息概率 重定价段续 baseline: 9/4 早 baseline 149 capture 9 月加息 60.4% 站稳 → 9/4 晚报 baseline 151 capture 9 月加息 60% 站稳 → 9/5 早 baseline 152 capture NFP 翻 3 倍 = 巨大 hawkish signal = 沃什实战段最关键时点"
+  ],
+  "pick_points": [
+    {
+      "label": "NFP 翻 3 倍",
+      "value": "16.2万 / 共识 5.5万",
+      "delta": "8 月 2026 release 9/4 20:30 ET"
+    },
+    {
+      "label": "9/4 美股修正",
+      "value": "道指 +1.18% 53,686",
+      "delta": "vs 9/4 晚报 baseline 151 错算 51,561"
+    },
+    {
+      "label": "AVGO 反涨",
+      "value": "367.24 +2.82%",
+      "delta": "vs 9/3 -2.74% 357.16 第 2 实战段"
+    },
+    {
+      "label": "沃什 实战段",
+      "value": "183h post-keynote",
+      "delta": "JACKSON HOLE 收官后第 7 实战验证日"
+    }
+  ],
+  "not_picked": [
+    "9/5 周六午盘 A 股 / 港股 6h 真空窗口: 周末休市, 9/8 周一 re-open T-3 工作日倒数 (per Pitfall 41)",
+    "苹果 秋季发布会 9/10 凌晨 T-5 倒数段续 baseline: 已 capture 在 prior slot, 9/5 午 真空段续 baseline",
+    "DeepSeek 8/17 涨价 T-0 411h+ 续 baseline: 跨期 长尾 续 baseline, 不当 主 1 件"
+  ],
+  "say_4": [
+    "NFP 16.2 万翻 3 倍, 沃什实战段最关键时点, 9 月 FOMC 重定价.",
+    "9/4 晚报用 6/4 误当 9/4, 道指错算, Pitfall 66 修法段.",
+    "AVGO 367.24 反涨, 第 2 实战段完, 第 3 实战 9/8 T-3.",
+    "沃什 JACKSON HOLE 183h, 收官后第 7 实战验证日, 9/5 周末 6h 真空."
+  ],
+  "verbatim_citations": [
+    "per 新浪财经 9/4 16:31 verbatim URL https://finance.sina.com.cn/world/2026-09-04/doc-iniqqwtk1725959.shtml (道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40%)",
+    "per Investing.com verbatim URL https://hk.investing.com/economic-calendar/nonfarm-payrolls-227 (8 月 NFP 16.2 万 vs 共识 5.5 万)",
+    "per 华尔街见闻 verbatim URL https://wallstreetcn.com/articles/3781105 (10 年期美债收益率跃升 3 个基点至 4.79%)",
+    "per 新浪财经 9/4 20:33 verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-09-04/doc-iniqskus6030003.shtml (工资环比 +0.3% / 同比 +3.1%)",
+    "per 世界日報 9/4 verbatim URL https://www.worldjournal.com/wj/story/121477/9735373 (就業成長遠高於經濟學家預期的 5.3 萬人)",
+    "per federalreserve.gov 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm (沃什 conditional hawkish 'we have work to do, unless price pressures clearly and sufficiently recede toward target')",
+    "per Kansas City Fed 官方 verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium (JACKSON HOLE 2026 = Aug 27-29 已收官)",
+    "per Yahoo Finance AVGO 9/5 早 7 CST 前收市价 367.24 +2.82% (AVGO 9/4 close 反涨, 第 2 实战段)"
+  ],
+  "stats": [
+    {
+      "num": "16.2万",
+      "label": "8 月 NFP actual"
+    },
+    {
+      "num": "5.5万",
+      "label": "8 月 NFP 共识"
+    },
+    {
+      "num": "53,686",
+      "label": "9/4 道指 close"
+    },
+    {
+      "num": "367.24",
+      "label": "AVGO 9/4 close"
+    }
+  ],
+  "humanizer_audit": "33 patterns 自审 PASS, em dash 0 cleanup per Pitfall 50, meta description · 替代 em dash per v0.8.9 实测补, 句首 ',  ' 0 + 双句号 0 + 数字精度 8a PASS + 具名引述 8b PASS (known names 9 个全 grep raw.md PASS)",
+  "hero_meta_short": "9/5 周六午报 · NFP 实战段 16h 31min post-release",
+  "main_h2": "1 件: NFP 16.2万翻共识 3 倍 + 9/4 美股全线大涨修正",
+  "slot_label": "午报"
+}
