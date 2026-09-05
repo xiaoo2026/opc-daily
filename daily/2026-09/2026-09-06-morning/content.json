@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-06",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "title": "NFP 翻3倍后周日·9/8 T-2",
+  "dek": "8月非农 16.2万 vs 共识 5.6万翻近3倍落地 34h, 9月 FOMC 加息概率 60% 站稳, 沃什 203h post-keynote. 苹果 9/9 周三 发布会 T-3 倒数, AVGO 第 3 实战段 9/8 周一 T-2 倒数.",
+  "why_this": "NFP 翻近3倍落地34h, 沃什 conditional hawkish 已从理论推到交易台前. 9/6 早 = 跨 day 边界 新一天 baseline 立 第 85 件 narrative 同期 对位 = 9/8 周一 re-open 实战段前夜 + 苹果 9/9 T-3 + AVGO 第 3 实战段 4 段 拼图完成. 1 件主轴 = NFP 落地后第一周关键变量集中披露的预热.",
+  "main_facts": [
+    "8月 NFP 16.2万 vs 共识 5.6万 翻近3倍落地 34h 实战段续 baseline: 失业率 4.1% 持平, 时薪环比 +0.3% / 同比 +3.1%, 7月就业上修至 +2.1万 (per 华尔街见闻 9/4 18:34 verbatim URL https://wallstreetcn.com/articles/3781113 + Investing.com verbatim + 新浪财经 verbatim 3 源 cross-check)",
+    "9月 FOMC 加息概率 重定价段续 baseline: NFP 翻近3倍 = 巨大 hawkish signal, 联邦基金期货隐含 9/15-16 加息概率从数据前 ~55% 升至 ~59-60%, 2 年期美债收益率 +5bp 至 4.38% (per 华尔街见闻 9/4 18:34 verbatim + Investing.com verbatim 2 源)",
+    "沃什 JACKSON HOLE 8/28 22:00 CST keynote 203h post-keynote 实战段续 baseline + JACKSON HOLE 收官后第 8 实战验证日 (per federalreserve.gov 沃什 keynote verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm + Kansas City Fed 官方 verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium)",
+    "苹果 秋季发布会 = 9/9 周三 10:00 AM PT (not 9/10) T-3 工作日倒数段续 baseline: 推出 iPhone 18 Pro / Pro Max / Foldable Ultra, A20 Pro 2nm, 因 内存 shortage 涨价 (per MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events)",
+    "9/4 美股 close 实战段续 baseline: 道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40% + AVGO 367.24 +2.82% 反涨 (跟 9/3 -2.74% 357.16 段续 第 2 实战段) + 9/8 周一 第 3 实战段 T-2 倒数 (per 新浪财经 9/4 16:31 verbatim + Yahoo Finance 前收市价 2 源)"
+  ],
+  "pick_points": [
+    {
+      "label": "NFP 34h 实战",
+      "num": "16.2万 / 共识 5.6万",
+      "delta": "8月 release 9/4 20:30 ET"
+    },
+    {
+      "label": "9月 FOMC",
+      "num": "55% → 60%",
+      "delta": "9/15-16 加息 概率 重定价"
+    },
+    {
+      "label": "AVGO 第3",
+      "num": "9/8 周一 T-2",
+      "delta": "跟 9/4 367.24 +2.82% 续"
+    },
+    {
+      "label": "苹果 9/9",
+      "num": "iPhone 18 Pro",
+      "delta": "T-3 倒数 A20 Pro 2nm"
+    }
+  ],
+  "not_picked": [
+    "9/6 周日 pre-market 6h 真空窗口段: 中方 港股/A 股 周末 + 美方 9/5 周五 PT 已 close 14h+ + 9/6 周日 美方 24h 真空 + NFP 9/4 20:30 ET release 已 34h 31min post-release (per Pitfall 41 守门)",
+    "9/5 周五美股 PT close 实战段: 周五收盘实战段已 capture 在 prior slot baseline 154 段续 baseline, 不重复 (per 不变量 #1 一日 1 件)",
+    "DeepSeek 8/17 涨价 T-0 470h+ 跨期 长尾续 baseline: 跨期 长尾续 baseline, 不当 主 1 件"
+  ],
+  "say_4": [
+    "NFP 16.2万翻共识近3倍落地 34h, 沃什实战段最关键时点.",
+    "9月 FOMC 加息概率 60% 站稳, 2 年美债 4.38% hawkish.",
+    "苹果 9/9 周三 10:00 PT iPhone 18 Pro + Foldable, T-3.",
+    "AVGO 第 3 实战段 9/8 周一 T-2, 跟 367.24 续 baseline."
+  ],
+  "verbatim_citations": [
+    "per 华尔街见闻 9/4 18:34 verbatim URL https://wallstreetcn.com/articles/3781113 (8月 NFP 16.2万 远超 5.6万共识, 9/15-16 加息概率从 55% 升至 60%)",
+    "per Investing.com verbatim URL https://hk.investing.com/economic-calendar/nonfarm-payrolls-227 (8 月 NFP 16.2 万 vs 共识 5.6 万)",
+    "per 新浪财经 9/4 16:31 verbatim URL https://finance.sina.com.cn/world/2026-09-04/doc-iniqqwtk1725959.shtml (道指 53,686.10 +1.18% / 标普 7,747.71 +1.06% / 纳指 26,584.06 +1.40%)",
+    "per MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 (Apple 9/9 周三 10:00 AM PT Apple Park, iPhone 18 Pro/Pro Max + Foldable Ultra, A20 Pro 2nm)",
+    "per Apple 官方 verbatim URL https://www.apple.com/apple-events (Apple Event 2026-09-09)",
+    "per federalreserve.gov 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm (沃什 conditional hawkish 'we have work to do, unless price pressures clearly and sufficiently recede toward target')",
+    "per Kansas City Fed 官方 verbatim URL https://www.kansascityfed.org/research/jackson-hole-economic-symposium (JACKSON HOLE 2026 = Aug 27-29 已收官)",
+    "per Yahoo Finance AVGO 9/5 早 7 CST 前收市价 367.24 +2.82% (AVGO 9/4 close 反涨, 第 2 实战段)"
+  ],
+  "stats": [
+    {
+      "num": "16.2万",
+      "label": "8月 NFP actual"
+    },
+    {
+      "num": "5.6万",
+      "label": "8月 NFP 共识"
+    },
+    {
+      "num": "60%",
+      "label": "9月 FOMC 加息概率"
+    },
+    {
+      "num": "9/9",
+      "label": "苹果 发布会"
+    }
+  ],
+  "humanizer_audit": "33 patterns 自审 PASS, em dash 0 cleanup per Pitfall 50, meta description · 替代 em dash per v0.8.9 实测补, 句首 ',  ' 0 + 双句号 0 + 数字精度 8a PASS (共识 5.6万 跨 slot 引用 per wallstreetcn 校准) + 具名引述 8b PASS (known names 9 个全 grep raw.md PASS, Pitfall 58 8a 跨 slot 引用合法 mark PASS)",
+  "hero_meta_short": "9/6 周日早报 · NFP 实战段 34h + 9/8 T-2 + 苹果 9/9 T-3",
+  "main_h2": "1 件: NFP 翻近3倍落地34h后, 9月 FOMC 60% 站稳 + 苹果 9/9 T-3 + AVGO 9/8 T-2",
+  "slot_label": "早报"
+}

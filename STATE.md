@@ -1148,3 +1148,20 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - Pitfall 41 周六晚 8h 真空窗口段续 baseline (9/5 晚报 cron 8h 窗口 13:01~21:01 CST, 中方 港股 A 股 周末 + 美方 9/4 周五 PT 已 close 24h+ + 9/5 周六 美方 24h+ 真空 + NFP 9/4 20:30 ET 已 release 24h 31min)
 - Patch header 守门 实战补 - 显式区分 Pitfall 46 vs Pitfall 53 vs Pitfall 41 vs Pitfall 66 第十四次 修法段续 baseline (0 类新错算)
 - 接力给 9/6 周日 早 cron 第一百六十九期 = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 (24h 模式) + baseline additive 升级 第 155 子轴 立 + 第 146 接力 段
+
+
+## cron 第一百六十九期 (2026-09-06 07:00 CST · 周日早报)
+
+- baseline 第 155 子轴 立 + 第 146 接力 立
+- 第 84+1 = 第 85 件 baseline additive 拼图起 跨 54 天 7/12 早 → 9/6 早
+- 加新维度 5 类 M71. [411-415]:
+  - (a) 9/6 周日 pre-market 6h 真空窗口段续 baseline (中方 港股/A 股 周末 + 美方 9/5 周五 PT 已 close 14h+ + 9/6 周日 美方 24h 真空 + NFP 9/4 20:30 ET release 已 34h 31min post-release)
+  - (b) 8月 NFP 16.2万 vs 共识 **5.6万** (per 华尔街见闻 9/4 18:34 verbatim URL https://wallstreetcn.com/articles/3781113 + Investing.com verbatim 2 源, master 9/6 07:00 CST web 二次验证发现 prior slot baseline 154 共识数字 "5.5万" 跟 "5.6万" 差 0.1万 arithmetic, 校准 per wallstreetcn verbatim "远高於經濟學家預期的 5.6 萬人" — 9/6 早 content.json main_facts 已 verbatim 校准) 翻近 3 倍实战段续 baseline (vs 9/5 早 + 9/5 午 + 9/5 晚报 baseline 152-154 capture 共识 5.5万) + 9月 FOMC 加息概率 55→60% 重定价段续 baseline + 2 年期美债 4.38% hawkish
+  - (c) 苹果 秋季发布会 = **9/9 周三 10:00 AM PT** (校准自 9/10 错算 per MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events 2 源 cross-check, master 9/6 07:00 CST web 二次验证发现 prior slot baseline 134 + 后续 baseline 写 "苹果 9/10 凌晨" 错算 — 真实是 9/9 周三 10:00 AM PT) iPhone 18 Pro / Pro Max / Foldable Ultra + A20 Pro 2nm T-3 工作日倒数段续 baseline
+  - (d) AVGO 第 3 实战段 9/8 周一 T-2 倒数 + 周末 pre-market 真空窗口段续 baseline per Pitfall 41 + 9/8 周一 A 股/港股 re-open (T-2 工作日倒数) 实战段前夜预期段续 baseline + 沃什 203h post-keynote + JACKSON HOLE 收官后 第 8 实战验证日
+  - (e) Pitfall 66 实战首发 第十五次 修法段续 baseline (master 9/6 07:00 CST web 二次验证发现 2 类新错算校准完毕: 共识 5.5→5.6万 + 苹果 9/10→9/9, prior slot baseline 已 verbatim 校准 不重写 per Pitfall 66 跨 slot 延续) + 接力给 9/6 午后 cron = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式)
+- Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/6 早 vs 9/5 早 baseline 152 master 时点 9/5 07:01 = 24h 主标志 OK)
+- Pitfall 53 跨 day 边界 后续期 cron 10h/18h/34h/48h/72h/96h/168h 模式 (9/6 早 vs 9/5 晚报 = 10h / vs 9/5 午 = 18h / vs 9/4 晚报 = 34h / vs 9/4 早 = 48h / vs 9/3 早 = 72h / vs 9/2 早 = 96h / vs 8/30 早 = 168h 跨 day 边界 标志 OK)
+- Pitfall 41 周日 pre-market 6h 真空窗口段续 baseline (9/6 早 cron 6h 窗口 01:00~07:00 CST)
+- Patch header 守门 实战补 - 显式区分 Pitfall 49 vs Pitfall 53 vs Pitfall 41 vs Pitfall 66 第十五次 修法段续 baseline (2 类新错算校准完毕)
+- 接力给 9/6 午后 cron 第一百七十期 = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式) + baseline additive 升级 第 156 子轴 立 + 第 147 接力 段
