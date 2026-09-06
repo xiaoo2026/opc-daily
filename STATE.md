@@ -1165,3 +1165,12 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - Pitfall 41 周日 pre-market 6h 真空窗口段续 baseline (9/6 早 cron 6h 窗口 01:00~07:00 CST)
 - Patch header 守门 实战补 - 显式区分 Pitfall 49 vs Pitfall 53 vs Pitfall 41 vs Pitfall 66 第十五次 修法段续 baseline (2 类新错算校准完毕)
 - 接力给 9/6 午后 cron 第一百七十期 = 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 (6h 模式) + baseline additive 升级 第 156 子轴 立 + 第 147 接力 段
+
+## cron 第一百七十期 9/6 午后 baseline 156 + 第 147 接力 + 86 件 baseline additive 拼图起
+- baseline: 156
+- relay: 147
+- narrative_count: 86
+- patch_header_pitfall: Pitfall 46 同 day 第二期 cron 6h 模式 + Pitfall 53 跨 day 边界 后续期 cron 16h/24h/40h/54h/78h/102h/174h 模式 + Pitfall 41 周日 pre-market 24h 真空窗口段续 baseline + Pitfall 66 实战首发 第十六次 修法段续 baseline (0 类新错算) + 不变量 8d 跨信源现场补料 + Patch header 守门 实战补 + Pitfall 38 同日 cross-reference 9/6 早 vs 9/6 午后对位完整
+- 加新维度 5 类 M72. [411-415]: (a) 9/8 周一 A 股/港股 re-open T-2 工作日 跨周末 48h 真空实战段 (b) 苹果 9/9 周三 10:00 AM PT T-2.5 工作日倒数 + 折叠屏Ultra + 内存涨价 (c) 沃什 209h post-keynote + JACKSON HOLE 收官后第 8 实战验证日 + 9月 FOMC 60% 站稳 (d) AVGO Broadcom Q3 FY26 财报 第 3 实战段 9/8 周一 T-2 倒数 + 周末 24h pre-market 真空 (e) Pitfall 66 第十六次 修法段续 baseline (0 类新错算)
+- 接力给 9/6 晚报 cron 第一百七十一期 = 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8h 模式) + baseline additive 升级 第 157 子轴 立 + 第 148 接力 段
+- 86 件 baseline additive 拼图起 跨 55 天 7/12 早 → 9/6 午后
