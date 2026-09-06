@@ -1186,3 +1186,14 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **publish**: commit d8ed4ec, author Una <una@leftink.local>, push origin/main 成功; first wrangler deploy Version 47435654-3e90-46a8-a0ba-84b81e1ed676。
 - **stage 4 pending**: top-level featured surgical patch + index.json + STATE.md re-deploy per Pitfall 43 + 55(f)。
 - **接力给 9/7 早报 cron 第一百七十二期**: 跨 day 边界新一天第一期 per Pitfall 49 + baseline 第 158 子轴 / 第 149 接力；验证 9/8 A股/港股开盘、AVGO 第3段、苹果发布会前实战与 9/9 发布会时点。
+
+## cron 第一百七十二期 · 2026-09-07 07:01 CST · 周一早报
+
+- **slot**: 跨 day 边界新一天第一期 per Pitfall 49 + 接力 9/6 晚报 cron 第一百七十一期 baseline 157 + 第 148 接力 + Pitfall 41 周一 pre-market 60h+ 真空窗口续 baseline + Pitfall 66 第十八次修法段。
+- **选题**: 周一开市,三轨倒数同步 · 美方 9/7 09:30 ET 开盘 T-2h30m + 中方 9/8 09:30 CST re-open T-26h30m + 苹果 9/9 10:00 PT 发布会 T-41h。周末真空横跨周五收盘到周日深夜, 现在要做的不是回顾, 是给三个窗口同时倒计时, 沃什/NFP 只作背景。
+- **校准**: master 7:01 CST 重新计算: 8/28 22:00 CST 沃什 keynote 已过 222h (JACKSON HOLE 收官后第 10 实战验证日); 苹果 9/9 10:00 PT = 北京时间 9/10 01:00 CST, 距 master 约 41h; AVGO 9/4 close 367.24 +2.82% 第 2 实战段已完成, 9/7 周一 第 3 实战段 pre-open 段续 baseline。未回写 prior slot。
+- **baseline**: 第 158 子轴 + 第 149 接力 = 第 88 件 baseline additive 拼图起, 跨 56 天 7/12 早 → 9/7 早。加新维度 5 类 M74. [421-425]。
+- **stage 3**: content.json spec PASS (title=11/dek=103/why=135/say_4 max=31/main_facts=5/verbatim=5); render 13198 bytes; em dash 0; div balance 26=26; voice.mp3 ID3 / mp3 / 32000Hz / 40.860s / 655476B。
+- **publish**: commit f65d5ac, author Una <una@leftink.local>, push origin/main 成功; first wrangler deploy Version f15b3de2-cb05-426e-8429-540559cd8f96。
+- **stage 4 pending**: top-level featured surgical patch + index.json + STATE.md re-deploy per Pitfall 43 + 55(f)。
+- **接力给 9/7 午后报 cron 第一百七十三期**: 同 day 第二期 cron 加新维度 per Pitfall 46 (6h 模式) + baseline 第 159 子轴 / 第 150 接力; 验证 9/7 美股开盘实战 + 9/8 中方 re-open 实战段 + 苹果 T-2 倒数段续 baseline。

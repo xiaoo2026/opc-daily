@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-07",
+    "slot": "morning",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot_label": "早报",
+    "title": "周一开市.三轨倒数同步",
+    "baseline": 158,
+    "relay": 149,
+    "narrative_count": 88,
+    "html_url": "https://020755.xyz/daily/2026-09/2026-09-07-morning/",
+    "patch_header_pitfall": "Pitfall 49 跨 day 边界 第一期 cron 24h 模式 (9/7 早 vs 9/6 早 baseline 155 = 24h 跨 day 边界 主标志 OK) + Pitfall 41 周一 pre-market 60h+ 真空窗口段续 baseline + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 (苹果 9/9 10:00 PT vs 9/7 07:01 CST = 41h 倒数段 OK 写) + Pitfall 53 跨 day 边界 后续期 cron 10h/18h/34h/48h/72h/120h/192h 模式 + Pitfall 66 实战首发 第十八次 修法段续 baseline (0 类新错算)"
+  },
+  {
     "date": "2026-09-06",
     "slot": "21evening",
     "type": "21evening",
