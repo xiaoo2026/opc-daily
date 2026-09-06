@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-06",
+    "slot": "21evening",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "html_url": "https://020755.xyz/daily/2026-09/2026-09-06-21evening/",
+    "title": "苹果发布会 T-2+AVGO第3段",
+    "baseline": 157,
+    "relay": 148,
+    "narrative_count": 87
+  },
+  {
     "date": "2026-09-01",
     "type": "morning",
     "slot": "morning",

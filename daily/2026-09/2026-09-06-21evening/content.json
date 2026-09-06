@@ -1,0 +1,46 @@
+{
+  "title": "苹果发布会 T-2+AVGO第3段",
+  "dek": "苹果 9/9 10:00 PT 发布会进入 T-2, AVGO 9/8 第3实战段也到窗口. 沃什 keynote 已 215h, 9月FOMC加息概率仍在60%附近.",
+  "why_this": "9/6 晚报不是把午后的倒数再念一遍。苹果发布会和 AVGO 财报后的第三个交易段，分别代表消费端和算力端，周一会同时给出新价格。今晚值得留下的是这两个价格怎么互相验证，而不是再堆一轮 NFP 数字。",
+  "main_facts": [
+    "苹果已确认 9/9 周三 10:00 AM PT 举行秋季发布会，市场预期 iPhone 18 Pro、Pro Max 和首款折叠屏 iPhone 出场；标准版 iPhone 18 预计不在本次发布会发布 (per AppleInsider verbatim https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9 + MacRumors verbatim)",
+    "按北京时间换算，发布会是 9/10 01:00 CST；9/6 21:01 CST 到开场约 52h. 这比午后沿用的 T-2.5 更准确，倒数已经进入最后两个交易日 (per AppleInsider verbatim)",
+    "AVGO Q3 FY26 财报已于 9/2 美股收盘后发布，Broadcom 披露季度营收同比增长 86% 至 159.5亿美元，净利润 130.9亿美元；9/8 是财报后的第三个完整交易段 (per CNBC verbatim https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html)",
+    "沃什 8/28 在 Jackson Hole 的 keynote 到 9/6 21:01 CST 已过去约 215h. 他的原话是 underlying inflation 若没有以足够速度回到目标，‘we have work to do’，市场随后把 9月加息概率推到 50%以上 (per federalreserve.gov verbatim https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm + CNBC verbatim)",
+    "9/8 周一 A股与港股重新开市，市场要同时消化周末信息、NFP 的鹰派重定价和 AVGO 财报后的股价反应. 这也是苹果发布会前最后一个完整的中国市场验证窗口 (per TradingHours HKEX calendar + 9/6 午后 baseline verbatim preserved)"
+  ],
+  "not_picked": [
+    "NFP 16.2万与共识5.6万已在9/6早报落地，今晚只保留它对利率和科技股的影响，不再重复数字",
+    "沃什 keynote 的原文和加息概率已连续多期校准，今晚把它当背景变量，不再当主标题",
+    "DeepSeek 涨价与 IEAA Summit 都没有比苹果和 AVGO 更近的实战时点，留作 baseline，不抢这一件"
+  ],
+  "say_4": [
+    "苹果 9/9 10:00 PT, 北京时间 9/10 01:00, 还剩约52小时",
+    "AVGO 9/8 第3个财报后交易段, 看指引能不能撑住股价",
+    "沃什 keynote 已过215小时, 9月加息概率仍在60%附近",
+    "周一两个市场先开, 再等苹果给消费端定价"
+  ],
+  "stat_grid": [
+    {"num": "52h", "label": "苹果发布会倒数"},
+    {"num": "第3段", "label": "AVGO 9/8实战"},
+    {"num": "215h", "label": "沃什 keynote"},
+    {"num": "60%", "label": "9月FOMC加息"}
+  ],
+  "baseline": 157,
+  "relay": 148,
+  "narrative_count": 87,
+  "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 53 跨 day 边界后续期 + Pitfall 41 周日真空窗口续 baseline + Pitfall 66 第十七次修法段续 baseline (苹果倒数与沃什小时数校准) + 不变量8d跨信源现场补料",
+  "date": "2026-09-06",
+  "slot": "21evening",
+  "slot_label": "晚报",
+  "date_label_short": "09-06",
+  "slot_hour": "21:00",
+  "hero_meta_short": "苹果9/9 T-2+AVGO第3实战段+沃什215h",
+  "main_h2": "苹果发布会前，先看周一两个价格",
+  "pick_points": [
+    {"label": "苹果 9/9 发布会", "value": "北京时间 9/10 01:00，T-2"},
+    {"label": "AVGO 第3实战段", "value": "9/8 财报后交易窗口"},
+    {"label": "沃什 215h", "value": "Jackson Hole 后第8验证日"},
+    {"label": "9月FOMC加息", "value": "市场概率约60%"}
+  ]
+}
