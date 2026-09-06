@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una 选了 1 件 · 2026-09-06 . 午后</title>
+  <meta name="description" content="NFP翻3倍+9/8 T-2+苹果T-2.5+沃什209h+AVGO第3实战段  ·  9/8 T-2+苹果T-2.5">
+  <link rel="icon" type="image/jpeg" href="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #FBF7F1;
+  --paper-deep: #F3ECE0;
+  --una-orange: #E07856;
+  --una-orange-soft: #F5C8B0;
+  --una-shadow: #B85A3E;
+  --ink: #2A2520;
+  --ink-2: #5C544C;
+  --ink-3: #8B847C;
+  --border: rgba(42, 37, 32, 0.10);
+  --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Noto Serif SC', 'PingFang SC', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+header { padding: 16px 0; border-bottom: 1px solid var(--border); background: var(--paper); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+.header-row { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); }
+.brand-text { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+.nav-back { font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; transition: all 0.15s; }
+.nav-back:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.hero { padding: 36px 0 28px; }
+.hero-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 13px; color: var(--ink-3); }
+.badge { background: var(--una-orange-soft); color: var(--una-shadow); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.when { font-size: 13px; color: var(--ink-3); }
+h1 { font-family: var(--font-serif); font-size: 30px; line-height: 1.35; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 14px; }
+.dek { font-size: 17px; line-height: 1.7; color: var(--ink-2); margin-bottom: 8px; }
+.dek strong { color: var(--ink); font-weight: 600; }
+.dek em { font-style: normal; color: var(--una-orange); font-weight: 500; }
+
+.una-pick { background: var(--paper-deep); border-left: 4px solid var(--una-orange); border-radius: 4px; padding: 22px 24px; margin: 28px 0; }
+.una-pick-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-family: var(--font-serif); font-size: 16px; font-weight: 600; color: var(--ink); }
+.una-pick-head img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--una-orange); }
+.una-pick p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 14px; }
+.una-pick p:last-child { margin-bottom: 0; }
+.una-pick strong { color: var(--una-shadow); font-weight: 600; }
+
+.main { margin: 32px 0; }
+.main h2 { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+.main p { font-size: 16px; line-height: 1.75; color: var(--ink); margin-bottom: 16px; }
+.main strong { color: var(--ink); font-weight: 600; }
+.main blockquote { background: var(--paper-deep); border-left: 3px solid var(--una-orange); padding: 12px 16px; margin: 12px 0; font-size: 14px; color: var(--ink-2); border-radius: 4px; }
+.main blockquote em { color: var(--ink); font-style: italic; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.stat-card { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px; text-align: left; }
+.stat-card .num { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--una-orange); margin-bottom: 6px; line-height: 1.2; }
+.stat-card .label { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+
+.not-picked { background: var(--paper-deep); border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+.not-picked h3 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--ink-2); margin-bottom: 14px; }
+.not-picked ul { list-style: none; padding: 0; }
+.not-picked li { font-size: 14px; line-height: 1.65; color: var(--ink-2); padding: 8px 0; padding-left: 18px; position: relative; }
+.not-picked li::before { content: "·"; position: absolute; left: 4px; color: var(--ink-3); font-weight: 700; }
+.not-picked strong { color: var(--ink); font-weight: 600; }
+
+.say { margin: 36px 0; padding: 24px; background: linear-gradient(135deg, var(--paper-deep) 0%, #FFF4EE 100%); border-radius: 10px; }
+.say h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+.say-list { display: flex; flex-direction: column; gap: 14px; }
+.say-item { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.7; color: var(--ink); }
+.say-item .num { flex-shrink: 0; width: 26px; height: 26px; background: var(--una-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: var(--font-serif); }
+
+footer { padding: 28px 0 36px; text-align: center; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--border); margin-top: 24px; }
+footer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--una-orange); margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  h1 { font-size: 24px; }
+  .stat-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="../../../" class="brand">
+      <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+      <span class="brand-text">Una 陪你看 AI</span>
+    </a>
+    <a href="../../../" class="nav-back">← 回到首页</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="badge">午后 · 13:00</span>
+        <span class="when"><pre style="margin:0;font:inherit;color:inherit;background:transparent;border:0;display:inline;padding:0;white-space:pre-wrap">NFP翻3倍+9/8 T-2+苹果T-2.5+沃什209h+AVGO第3实战段</pre></span>
+      </div>
+      <h1>9/8 T-2+苹果T-2.5</h1>
+      <p class="dek">8月NFP 16.2万落地40h, 9月FOMC加息60%站稳, 沃什 209h post-keynote 第8实战验证日. 9/8周一 A股/港股 re-open 跨周末48h真空 T-2 + 苹果 9/9周三T-2.5 + AVGO 第3实战段 T-2.</p>
+    </section>
+
+    <section class="una-pick">
+      <div class="una-pick-head">
+        <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+        这事 Una 怎么想
+      </div>
+      <p>9/6午后 = 周日 pre-market 24h 真空窗口段续 baseline, 加新维度 = 9/8 周一 A 股/港股 re-open T-2 工作日倒数 段续 baseline + 苹果 9/9 T-2.5 + AVGO 第 3 实战段 9/8 T-2 + 沃什 209h + JACKSON HOLE 收官后第 8 实战验证日. 6h 加新维度, 跟 9/6 早 (T-3) 对位 = 4 段拼图完成 (NFP → 9/8 → AVGO → 苹果 9/9).</p>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">T-2 工作日 跨周末48h真空</div>
+        <div class="label">9/8 周一 A股/港股 re-open</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">T-2.5 折叠屏Ultra+涨价</div>
+        <div class="label">苹果 9/9 周三 10:00 PT</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">JACKSON HOLE收官后第8验证日</div>
+        <div class="label">沃什 209h post-keynote</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">9/8 周一 T-2</div>
+        <div class="label">AVGO 第3实战段</div>
+      </div>
+    </div>
+
+    <article class="main">
+      <h2>9/6 午后 加新维度</h2>
+        <p>9/8 周一 A 股 / 港股 re-open 实战段前夜 T-2 工作日倒数 段续 baseline: 跨周末 48h 真空 + 9/4 close 沪指 3976.91 +0.47% 守 3900 + 港股 恒指 25058.51 -1.12% + 恒科 5578.86 -1.85% + 智谱 02513.HK 1113 -5.60% + MiniMax 0100.HK 355 -0.39% + 9/8 周一 09:30 A 股 open + 10:00 港股 open 实战段前夜 (per 央广网 9/4 12:00 verbatim + 港股360 + HKEX + 每经 verbatim 4 源)</p>
+        <p>苹果 9/9 周三 10:00 AM PT 秋季发布会 T-2.5 工作日倒数段续 baseline (从 9/6 早的 T-3 → 9/6 午后 T-2.5 = 60h 倒数): iPhone 18 Pro + Pro Max + Foldable Ultra + 因 内存 shortage 涨价 +$100/+10% (per MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events 2 源)</p>
+        <p>沃什 JACKSON HOLE 8/28 22:00 CST keynote 209h post-keynote 实战段续 baseline + JACKSON HOLE 收官后第 8 实战验证日 (从 9/6 早的 203h → 9/6 午后 209h = +6h 含周日 pre-market 24h 真空段续) + 9月 FOMC 加息 60% 站稳段续 baseline (per federalreserve.gov 沃什 keynote verbatim URL + Kansas City Fed 官方 + 华尔街见闻 3 源)</p>
+        <p>AVGO Broadcom Q3 FY26 财报 9/2 close 后 release 第 3 实战段 9/8 周一 T-2 工作日倒数段续 baseline: 从 9/4 close 367.24 +2.82% 反涨 → 9/8 周一 第 3 实战段 pre-open + open 段续 baseline per Pitfall 41 (周末 24h 真空窗口) + AI 营收指引 + VMware 协同效应 (per Broadcom 官方 investors.broadcom.com + Zacks + Shacknews 9/2 14:40 verbatim URL 3 源)</p>
+        <p>Pitfall 66 实战首发 第十六次 修法段续 baseline (master 9/6 13:01 CST web 二次验证发现 0 类新错算, 9/5 晚报 baseline 154 + 9/6 早 baseline 155 已 verbatim 校准完毕) + 9/6 午后 baseline additive 升级 第 156 子轴 立 + 第 147 接力 立 = 86 件 baseline additive 拼图起 跨 55 天 7/12 早 → 9/6 午后 (per STATE.md verbatim preserved 全 stack 拼图完整)</p>
+    </article>
+
+    <aside class="not-picked">
+      <h3>为什么不选其它 (09-06 早 cron 3 候选)</h3>
+      <ul>
+          <li>9/5 周五美股 PT close 实战段: 已在 9/5 晚报 baseline 154 + 9/6 早 baseline 155 capture, 不重复 (per 不变量 #1 一日 1 件)</li>
+          <li>DeepSeek 8/17 涨价 T-0 470h+ 跨期 长尾续 baseline: 跨期 长尾续 baseline, 不当 主 1 件</li>
+          <li>IEAA Summit 9/2: factual mistake per Pitfall 66 (IEAA Summit 9/2 不存在 = JACKSON HOLE 8/27-29 已收官), 不入当期</li>
+      </ul>
+    </aside>
+
+    <section class="say">
+      <h3>Una 4 句说</h3>
+      <div class="say-list">
+        <div class="say-item">
+          <div class="num">1</div>
+          <p>9/8 周一 A股/港股 re-open T-2, 跨周末48h真空 + NFP hawkish</p>
+        </div>
+        <div class="say-item">
+          <div class="num">2</div>
+          <p>苹果 9/9 周三 10:00 PT T-2.5, Foldable Ultra + 内存涨价</p>
+        </div>
+        <div class="say-item">
+          <div class="num">3</div>
+          <p>沃什 209h post-keynote, 9月FOMC加息60%站稳</p>
+        </div>
+        <div class="say-item">
+          <div class="num">4</div>
+          <p>AVGO 第3实战段 9/8 T-2, 跟 367.24 续 baseline</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <img src="https://020755.xyz/assets/una-real/hero-v10-caught.jpeg" alt="Una">
+  <p><strong>Una 主审 . 午后 cron . 一日 1 件</strong></p>
+  <p>
+    <a href="https://github.com/xiaoo2026/opc-daily">GitHub</a> ·
+    <a href="https://020755.xyz">020755.xyz</a>
+  </p>
+  <p style="margin-top: 10px;">2026-09-06 CST . 不堆不喊 . 仅说自己想说的话</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "title": "9/8 T-2+苹果T-2.5",
+  "dek": "8月NFP 16.2万落地40h, 9月FOMC加息60%站稳, 沃什 209h post-keynote 第8实战验证日. 9/8周一 A股/港股 re-open 跨周末48h真空 T-2 + 苹果 9/9周三T-2.5 + AVGO 第3实战段 T-2.",
+  "why_this": "9/6午后 = 周日 24h真空+6h加新维度. 加 = 9/8 周一 A股/港股 re-open T-2 + 苹果 9/9 T-2.5 + AVGO 第3实战段 9/8 T-2 + 沃什 209h 第8实战验证日. 4段拼图完成(NFP→9/8→AVGO→苹果9/9).",
+  "main_facts": [
+    "9/8 周一 A 股 / 港股 re-open 实战段前夜 T-2 工作日倒数 段续 baseline: 跨周末 48h 真空 + 9/4 close 沪指 3976.91 +0.47% 守 3900 + 港股 恒指 25058.51 -1.12% + 恒科 5578.86 -1.85% + 智谱 02513.HK 1113 -5.60% + MiniMax 0100.HK 355 -0.39% + 9/8 周一 09:30 A 股 open + 10:00 港股 open 实战段前夜 (per 央广网 9/4 12:00 verbatim + 港股360 + HKEX + 每经 verbatim 4 源)",
+    "苹果 9/9 周三 10:00 AM PT 秋季发布会 T-2.5 工作日倒数段续 baseline (从 9/6 早的 T-3 → 9/6 午后 T-2.5 = 60h 倒数): iPhone 18 Pro + Pro Max + Foldable Ultra + 因 内存 shortage 涨价 +$100/+10% (per MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events 2 源)",
+    "沃什 JACKSON HOLE 8/28 22:00 CST keynote 209h post-keynote 实战段续 baseline + JACKSON HOLE 收官后第 8 实战验证日 (从 9/6 早的 203h → 9/6 午后 209h = +6h 含周日 pre-market 24h 真空段续) + 9月 FOMC 加息 60% 站稳段续 baseline (per federalreserve.gov 沃什 keynote verbatim URL + Kansas City Fed 官方 + 华尔街见闻 3 源)",
+    "AVGO Broadcom Q3 FY26 财报 9/2 close 后 release 第 3 实战段 9/8 周一 T-2 工作日倒数段续 baseline: 从 9/4 close 367.24 +2.82% 反涨 → 9/8 周一 第 3 实战段 pre-open + open 段续 baseline per Pitfall 41 (周末 24h 真空窗口) + AI 营收指引 + VMware 协同效应 (per Broadcom 官方 investors.broadcom.com + Zacks + Shacknews 9/2 14:40 verbatim URL 3 源)",
+    "Pitfall 66 实战首发 第十六次 修法段续 baseline (master 9/6 13:01 CST web 二次验证发现 0 类新错算, 9/5 晚报 baseline 154 + 9/6 早 baseline 155 已 verbatim 校准完毕) + 9/6 午后 baseline additive 升级 第 156 子轴 立 + 第 147 接力 立 = 86 件 baseline additive 拼图起 跨 55 天 7/12 早 → 9/6 午后 (per STATE.md verbatim preserved 全 stack 拼图完整)"
+  ],
+  "not_picked": [
+    "9/5 周五美股 PT close 实战段: 已在 9/5 晚报 baseline 154 + 9/6 早 baseline 155 capture, 不重复 (per 不变量 #1 一日 1 件)",
+    "DeepSeek 8/17 涨价 T-0 470h+ 跨期 长尾续 baseline: 跨期 长尾续 baseline, 不当 主 1 件",
+    "IEAA Summit 9/2: factual mistake per Pitfall 66 (IEAA Summit 9/2 不存在 = JACKSON HOLE 8/27-29 已收官), 不入当期"
+  ],
+  "say_4": [
+    "9/8 周一 A股/港股 re-open T-2, 跨周末48h真空 + NFP hawkish",
+    "苹果 9/9 周三 10:00 PT T-2.5, Foldable Ultra + 内存涨价",
+    "沃什 209h post-keynote, 9月FOMC加息60%站稳",
+    "AVGO 第3实战段 9/8 T-2, 跟 367.24 续 baseline"
+  ],
+  "stat_grid": [
+    {
+      "num": "T-2",
+      "label": "9/8 A股/港股"
+    },
+    {
+      "num": "T-2.5",
+      "label": "苹果 9/9"
+    },
+    {
+      "num": "209h",
+      "label": "沃什 post-keynote"
+    },
+    {
+      "num": "60%",
+      "label": "9月FOMC加息"
+    }
+  ],
+  "baseline": 156,
+  "relay": 147,
+  "narrative_count": 86,
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 + Pitfall 53 跨 day 边界 后续期 cron 16h/24h/40h/54h/78h/102h/174h 模式 + Pitfall 41 周日 24h 真空窗口段续 baseline + Pitfall 66 实战首发 第十六次 修法段续 baseline (0 类新错算) + 不变量 8d 跨信源现场补料 + Patch header 守门 实战补 + Pitfall 38 同日 cross-reference 9/6 早 vs 9/6 午后对位完整",
+  "date": "2026-09-06",
+  "slot": "afternoon",
+  "slot_label": "午后",
+  "date_label_short": "09-06",
+  "slot_hour": "13:00",
+  "hero_meta_short": "NFP翻3倍+9/8 T-2+苹果T-2.5+沃什209h+AVGO第3实战段",
+  "main_h2": "9/6 午后 加新维度",
+  "pick_points": [
+    {
+      "label": "9/8 周一 A股/港股 re-open",
+      "value": "T-2 工作日 跨周末48h真空"
+    },
+    {
+      "label": "苹果 9/9 周三 10:00 PT",
+      "value": "T-2.5 折叠屏Ultra+涨价"
+    },
+    {
+      "label": "沃什 209h post-keynote",
+      "value": "JACKSON HOLE收官后第8验证日"
+    },
+    {
+      "label": "AVGO 第3实战段",
+      "value": "9/8 周一 T-2"
+    }
+  ]
+}
