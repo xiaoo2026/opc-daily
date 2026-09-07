@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-08",
+  "slot": "morning",
+  "slot_hour": "07:00",
+  "type": "morning",
+  "title": "9/8 周二开市 · 三轨 re-open 同步",
+  "dek": "9/7 美股 LABOR DAY 休市, 中美三市场 T-2h29m 同日 re-open. AVGO 第 3 实战段 pre-open + 苹果 9/9 T-0.75 工作日倒数.",
+  "why_this": "周末真空刚过,9/7 美股 LABOR DAY 休市 — 周一本来就没开盘. 今天三市场同步 re-open: 美方 9/8 09:30 ET + 中方 9/8 09:30 CST + AVGO 第 3 实战段 pre-open 同步. 一个窗口验证三件事 — 这才是周二该看的.",
+  "pick_points": [
+    {
+      "label": "9/7 美股 LABOR DAY 休市",
+      "num": "1天",
+      "value": "1天"
+    },
+    {
+      "label": "AVGO 9/4 close 真实 357.07",
+      "num": "-0.23%",
+      "value": "-0.23%"
+    },
+    {
+      "label": "9/8 三市场 re-open T-2h29m",
+      "num": "T-2h29m",
+      "value": "T-2h29m"
+    },
+    {
+      "label": "苹果 9/9 T-0.75 工作日",
+      "num": "T-0.75",
+      "value": "T-0.75"
+    }
+  ],
+  "not_picked": [
+    "9月 FOMC 加息 60% — 沃什 231h 段续, 当期只作背景变量.",
+    "苹果 9/9 发布会 — T-0.75 工作日倒数, 9/9 才是当期.",
+    "8月 NFP 翻 共识 3 倍 — 9/4 release 4 天实战验证, 跟 re-open 拼不强."
+  ],
+  "main_facts": [
+    "9/7 (周一) 美股 LABOR DAY 休市 — per cls.cn 9/7 23:04 verbatim \"美国股市9月7日(周一)休市一日\".",
+    "AVGO 9/4 close 真实 357.07 -0.23% — per yahoo finance hk verbatim \"收市:9月4日 下午4:00:01 [EDT] 357.07 -0.83 (-0.23%)\".",
+    "9/8 (周二) 三市场同日 re-open — 美股 09:30 ET + A股 09:30 CST + 港股 09:30 CST = 距 master 9/8 07:01 CST = T-2h29m.",
+    "AVGO 9/8 09:30 ET re-open 第 3 实战段 pre-open 段续 baseline — 9/4 close 357.07 起点 vs 9/8 07:01 = T-14h29m 倒数.",
+    "苹果 9/9 10:00 PT 发布会 vs 9/8 07:01 CST = T-17h59m ~T-0.75 工作日倒数 — 距周三 1 个 工作日 半段."
+  ],
+  "say_4": [
+    "9/7 美股 LABOR DAY 休市 — 周一本来就没开盘, 不是 数据 真空.",
+    "AVGO 9/4 close 357.07 -0.23%, 之前 367.24 +2.82% 错算.",
+    "9/8 三市场 re-open T-2h29m, 美方 + 中方 + AVGO 同步.",
+    "苹果 9/9 T-0.75 工作日, 周三 才是发布会当天."
+  ],
+  "stats": {
+    "AVGO_9_4_close": "357.07",
+    "AVGO_9_4_change": "-0.23%",
+    "reopen_T_minus": "T-2h29m",
+    "apple_event_T_minus": "T-0.75 工作日",
+    "warsh_hours_post_keynote": "231h",
+    "nfp_hours_post_release": "82h"
+  },
+  "voices": {
+    "duration_target": "50-90s",
+    "voice_id": "danya_xuejie"
+  },
+  "verbatim_sources": [
+    {
+      "url": "https://www.cls.cn/detail/2476358",
+      "cite": "财联社 9/7 23:04",
+      "quote": "美国股市9月7日(周一)休市一日"
+    },
+    {
+      "url": "https://hk.finance.yahoo.com/quote/AVGO",
+      "cite": "Yahoo Finance HK",
+      "quote": "收市:9月4日 下午4:00:01 [EDT] 357.07 -0.83 (-0.23%)"
+    },
+    {
+      "url": "https://www.icbcasia.com/hk/tc/promotion/stock-information/us-stock-20260903.html",
+      "cite": "工银亚洲 9/3",
+      "quote": "博通第三财季净营收同比增长86%至295.91亿美元"
+    },
+    {
+      "url": "https://stock.jrj.com.cn/2026/09/07092958369641.shtml",
+      "cite": "金融界 9/7 09:29",
+      "quote": "创业板指涨1.21%, 保险、国家大基金、半导体芯片概念股集体走高"
+    }
+  ],
+  "slot_label": "早报",
+  "main_h2": "9/8 周二,三市场同日 re-open",
+  "hero_meta_short": "9/8 · 周二 · 07:01 · 第 91 件 · baseline 161 · 第 152 接力"
+}
