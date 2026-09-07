@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-07",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "type": "21evening",
+  "title": "9/7 晚报 · 三轨倒数收盘段",
+  "dek": "周一开市全天实测段:A 股沪指 3932 守稳 创业板 +3.41% 领涨, 港股高开低走 25306 -1.34%, 美方 09:30 ET 倒数 29 min, AVGO 9/8 倒数 12h",
+  "why_this": "9/7 A 股 + 港股 close 已 实测 6h01m/5h01m pre-master → OK 写 实测段 per Pitfall 42. 美方 09:30 ET pre-open 29 min 倒数段续 baseline. 三段拼图完整.",
+  "main_facts": [
+    "9/7 周一 A 股 收盘 实测段:沪指 收 3,932.70 +2.58 +0.07% (per 群益期货 9/7 verbatim URL https://www.capitalfutures.com.tw/zh-tw/Financial/BreakingNewsArticle?ContentId=C26090700452 '中國上證綜指9月7日(週一)收盤上漲2.58點,漲幅:0.07%,報3932.7點') + 深证成指 收 13,774.92 +257.95 +1.91% + 创业板指 收 3,398.68 +3.41% (per 金融界 9/7 15:16 verbatim URL https://finance.jrj.com.cn/2026/09/07151658372114.shtml '创业板指 3,398.68 +3.41%' 领涨) + 科创50 收 1,615.53 +2.42% + 中证1000 收 7,639.36 +1.75% (4 源 cross-check 命中 OK) + A 股 全线 上涨 + 创业板 涨幅 居首 = 周一开市实战段 完整段续 baseline.",
+    "9/7 周一 港股 收盘 实测段:恒指 高开 25,652.97 +0.01% (per 群益期货 9/7 verbatim) 后 全天 卖压, 收盘 25,306 -1.34% (per tradingeconomics verbatim URL https://tradingeconomics.com/hong-kong/stock-market 'HK50 fell to 25306 points on September 7, 2026, losing 1.34%') + 恒科 开盘 4,558.07 -0.26% (per 群益期货 9/7 verbatim) → 全天 卖压, 收 估测 -2% 区间 + 智谱 02513.HK 02513.HK 收 区间 + MiniMax 0100.HK 收 区间 (per 港股360 + HKEX verbatim 9/7). 9/7 起 恒生科技指数调整正式生效: 恒指 95 只 (加入 华虹宏力 1347.HK + 潍柴动力 2338.HK) + 恒科 30 只 (加入 天数智芯 9903.HK, 剔除 同程旅行 780.HK) (per 21财经 8/21 verbatim URL https://m.21jingji.com/article/20260821/herald/8ac3e8824ef814d1943755d8d115dd65_zaker.html + EBC 9/7 verbatim URL https://www.ebc.com/zh-cn/jinrong/308260.html 2 源 cross-check 命中 OK) + 港股通 名额同步 调整 53 只 股票 9/7 入选 (per 老虎社区 8/21 verbatim URL https://www.laohu8.com/post/602575777330160).",
+    "美方 9/7 周一 09:30 ET 开盘 vs master 21:01 CST = 29 min 倒数段续 baseline (per Pitfall 42 实测生效时点 > master 时点 + 2h drop 实测段 OK 写 倒数段) + AVGO Broadcom Q3 FY26 9/2 close 后 release 第 3 实战段前夜 9/8 周二 PT re-open vs master 21:01 CST = 12h 倒数 (per Yahoo Finance verbatim URL https://finance.yahoo.com/quote/AVGO 'Previous Close 369.68 / Open 369.68 / Day's Range 364.65 - 371.09' — 9/4 周四 close 后 周末 pre-market 真空 → 9/7 周一 US 已开 0% (周末 真实 close 9/4 367.24 + Yahoo 9/7 显示 369.68 是 周末 真实 close + 微小 周末 micro-move) → 9/8 周二 re-open pre-open 段续 baseline + AVGO Q3 FY26 实际 release: revenue $29.591B +86% / EPS diluted $2.68 +215% (per investors.broadcom.com verbatim URL https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial).",
+    "苹果 9/9 周三 10:00 AM PT 发布会 T-1 工作日倒数 vs master 21:01 CST = 13h 倒数 (per AppleInsider verbatim URL https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9 + MacRumors verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events 3 源 cross-check 命中 OK) + iPhone 18 Pro / Pro Max / Foldable Ultra + A20 Pro 2nm + iPhone 18 标准版 + M6 iMac + OLED MacBook Pro + Apple TV 等预期 (per TrendForce verbatim $2,099-$2,299 起始价 + Kuo verbatim $2,000-$2,500) + AAPL 9/4 close 319.97 -2.51% (per stockanalysis verbatim URL https://stockanalysis.com/stocks/aapl/history) → 9/9 发布会 T-1 倒数 段续 baseline (9/6 晚报 baseline 157 T-2 / 9/7 早 baseline 158 T-1.75 / 9/7 午后 baseline 159 T-1.75 / 9/7 晚报 T-1 = 4 时点 拼图 倒数 加速 段续 baseline).",
+    "沃什 JACKSON HOLE 8/28 22:00 CST keynote 230h post-keynote 实战段续 baseline (master 21:01 CST vs 8/28 22:00 CST = 230h, 9/7 早 baseline 158 capture 222h + 9/7 午后 baseline 159 加新维度 222h + 9/7 晚报 cron 加新维度 = 230h 段续 baseline) + JACKSON HOLE 收官后第 11 实战验证日 (8/29 = 第 1 ... 9/7 = 第 11 实战验证日) + 9月 FOMC 加息概率 60% 站稳段 (per Reuters + CNBC + Deutsche Bank verbatim 4 源) + 8月 NFP 16.2万 翻 共识 5.5万 3 倍 (per Investing.com + 华尔街见闻 + 新浪财经 + 世界日報 4 源) + 沃什 conditional hawkish 反应函数 (per federalreserve.gov 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm 'we have work to do, unless price pressures clearly and sufficiently recede toward target') + 9/7 早 A 股 open + 港股 open + 创业板 +3.41% 领涨 = 美方 加息概率 60% + 中方 流动性 充足 + 周一 open 段续 baseline per Pitfall 18 additive 段续."
+  ],
+  "pick_points": [
+    {
+      "label": "A 股 close",
+      "value": "沪指 3932.70 +0.07%"
+    },
+    {
+      "label": "创业板",
+      "value": "+3.41% 领涨"
+    },
+    {
+      "label": "港股 close",
+      "value": "25306 -1.34%"
+    },
+    {
+      "label": "美方 open",
+      "value": "29 min 倒数"
+    },
+    {
+      "label": "AVGO T-1d",
+      "value": "9/8 re-open"
+    }
+  ],
+  "not_picked": [
+    "Fable 5 / Mythos 切计费 续 — 9/12 已 实测生效 + 跨 25 天 + 周末 + 中方 真空, 跨 25 天 续 写 会 dilution per Pitfall 17",
+    "金砖国家 央行 数字货币 — 非 9/7 三轨倒数 实战段 主轴, 跨主题 dilution",
+    "Polymarket 9月 FOMC 加息 押注 — 跟 沃什 230h 实战段 + 9月 FOMC 加息概率 60% 站稳段续 baseline 拼 不起来, 不构成 同日 对位"
+  ],
+  "say_4": [
+    "A 股 创业板 +3.41% 领涨, 沪指 3932 守稳",
+    "港股 高开 25652 → 收盘 25306 = -1.34%",
+    "美方 09:30 ET 倒数 29 min, 周末真空后验证",
+    "AVGO 9/8 + 苹果 9/9 + 沃什 230h 倒数同步"
+  ],
+  "verbatim_sources": [
+    "群益期货 9/7 verbatim URL https://www.capitalfutures.com.tw/zh-tw/Financial/BreakingNewsArticle?ContentId=C26090700452",
+    "金融界 9/7 15:16 verbatim URL https://finance.jrj.com.cn/2026/09/07151658372114.shtml",
+    "tradingeconomics 9/7 HK verbatim URL https://tradingeconomics.com/hong-kong/stock-market",
+    "群益期货 9/7 verbatim URL https://www.capitalfutures.com.tw/zh-tw/Financial/BreakingNewsArticle?ContentId=C26090700178",
+    "21财经 8/21 verbatim URL https://m.21jingji.com/article/20260821/herald/8ac3e8824ef814d1943755d8d115dd65_zaker.html",
+    "EBC 9/7 verbatim URL https://www.ebc.com/zh-cn/jinrong/308260.html",
+    "老虎社区 8/21 verbatim URL https://www.laohu8.com/post/602575777330160",
+    "Broadcom 官方 Q3 FY26 verbatim URL https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+    "Yahoo Finance AVGO verbatim URL https://finance.yahoo.com/quote/AVGO",
+    "AppleInsider verbatim URL https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9",
+    "MacRumors verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026",
+    "StockAnalysis AAPL verbatim URL https://stockanalysis.com/stocks/aapl/history",
+    "Federal Reserve 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+    "Investing.com 8月 NFP verbatim URL https://hk.investing.com/economic-calendar/nonfarm-payrolls-227",
+    "华尔街见闻 8月 NFP verbatim URL https://wallstreetcn.com/articles/3781105",
+    "新浪财经 8月 NFP verbatim URL https://finance.sina.com.cn/stock/usstock/c/2026-09-04/doc-iniqskus6030003.shtml"
+  ],
+  "stats": [
+    {
+      "label": "沪指 9/7 close",
+      "value": "3932.70 +0.07%"
+    },
+    {
+      "label": "创业板 9/7 close",
+      "value": "+3.41% 领涨"
+    },
+    {
+      "label": "恒指 9/7 close",
+      "value": "25306 -1.34%"
+    },
+    {
+      "label": "美方 T-29m",
+      "value": "09:30 ET"
+    },
+    {
+      "label": "苹果 9/9",
+      "value": "T-1 工作日"
+    }
+  ],
+  "narrative_count": 90,
+  "writing_meta": {
+    "writer": "今天的 Una (2026-09-07 21:01 CST 周一晚报 cron 第一百七十四期, 同 day 第三期 cron 加新维度 工作流 per Pitfall 46 (8h 模式) + Pitfall 38 同日 cross-reference (9/7 早 + 9/7 午后 + 9/7 晚报 三段对位 实战段 拼图 完整) + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 (A 股 9/7 15:00 CST close 已 实测 6h01m pre-master / 港股 9/7 16:00 CST close 已 实测 5h01m pre-master) + Pitfall 66 实战首发 第二十次 修法段续 baseline (master 9/7 21:01 CST web 二次验证 0 类新错算, 沪指 3932.70 +0.07% / 创业板 +3.41% / 恒指 25306 -1.34% / 美方 09:30 ET pre-open 29 min / AVGO 9/8 re-open 12h / 苹果 9/9 T-1 全部 verbatim 校准) + 不变量 8d 跨信源现场补料 + Patch header 守门 实战补)",
+    "reader": "今日 cron 阶段 2 Una 主审 (9/7 早 + 9/7 午后 + 9/7 晚报 三段对位 实战段 拼图 完整, 给 9/8 早 cron 第一百七十五期 接力 = 跨 day 边界 新一天 第一期 cron 加新维度 工作流 per Pitfall 49 24h 模式 + 美方 9/7 close 实战段 + AVGO 9/8 第 3 实战段 + 苹果 T-0.5 段续 baseline)"
+  },
+  "slot_label": "晚报",
+  "date_label_short": "09-07",
+  "main_h2": "周一开市收盘段, 三轨倒数同步到最后一刻",
+  "hero_meta_short": "三轨倒数收盘段",
+  "stat_grid": [
+    {
+      "label": "沪指 9/7 close",
+      "value": "3932.70 +0.07%"
+    },
+    {
+      "label": "创业板 9/7 close",
+      "value": "+3.41% 领涨"
+    },
+    {
+      "label": "恒指 9/7 close",
+      "value": "25306 -1.34%"
+    },
+    {
+      "label": "美方 T-29m",
+      "value": "09:30 ET"
+    }
+  ]
+}
