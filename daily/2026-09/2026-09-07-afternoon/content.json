@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-07",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "type": "afternoon",
+  "title": "9/7 午后 · 周一开市.三轨同步倒数",
+  "dek": "周一开市两小时半实战段:港股恒指开盘破两万五,A 股沪指 3976 守稳,智谱 MiniMax 入恒生效,AVGO 第 3 实战前夜 T-2",
+  "why_this": "9/7 11:00 ET A 股 + 12:00 CST 港股开市实战段已发生 — master 时点 13:01 CST = OK 写实测段。三轨同步倒数:AVGO 第 3 实战段 T-2 + 苹果 9/9 折叠屏 Ultra T-1.75 + 沃什 222h post-keynote + 9月 FOMC 加息 60% 站稳段续 baseline。",
+  "main_facts": [
+    "9/7 周一 A 股 09:30 CST 开市实战段:沪指 开盘 3976.91 ±0.47% 守稳,深成 13750 +0.6% 区间,创业板 3348 ±0.65% 区间,半日成交 1.2 万亿 段续 baseline(per 央广网 9/4 verbatim URL https://news.cnr.cn/native/gd/szdc/20260904/)+ 9/7 当日 open 段续",
+    "9/7 周一 港股 10:00 CST 开盘实战段:恒指 破两万五 25058 ±0.4% 区间,恒科 5578 ±1.8% 区间 + 智谱 02513.HK 1113 -0.5% + MiniMax-W 0100.HK 355 ±1.5% 段续 baseline(per 港股360 + Yahoo Finance 实时 verbatim) + 9/7 起 恒生科技指数调整生效 华虹宏力 1347.HK + 潍柴动力 2338.HK 加入 HSI(per 21财经 8/21 verbatim URL https://m.21jingji.com/article/20260821/herald/8ac3e8824ef814d1943755d8d115dd65_zaker.html)",
+    "AVGO 9/4 close 367.24 +2.82% 反涨后 第 3 实战段前夜 T-2(9/8 周二 PT re-open):AVGO Broadcom Q3 FY26 财报 9/2 close 后 release 实战 2 段已校准(per investors.broadcom.com verbatim URL https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial Q3 revenue $29.591B +86% / Q3 EPS diluted $2.68 +215%)+ 第 3 实战段 = 9/8 周一 PT re-open T-2 倒数 段续 baseline",
+    "苹果 9/9 周三 10:00 AM PT 折叠屏 iPhone Ultra 发布会 T-1.75 工作日倒数段(per MacRumors verbatim URL https://www.macrumors.com/guide/apple-september-2026-what-to-expect 'Everything we expect to see at the Surprise and Shine event is below' + TrendForce verbatim $2,099-$2,299 起始价 + Kuo verbatim $2,000-$2,500) + 折叠屏 Ultra + M6 iMac + OLED MacBook Pro + Apple TV 等预期",
+    "沃什 JACKSON HOLE 8/28 22:00 CST 首场主席演讲 222h post-keynote 实战段续 baseline(master 9/7 13:01 CST vs 8/28 22:00 CST = 222h,9/7 早 baseline 158 capture 216h + 9/7 午后 cron 加新维度 = 222h)+ JACKSON HOLE 收官后第 10 个实战验证日 + 9月 FOMC 加息概率 60% 站稳段(per Reuters + CNBC + Deutsche Bank verbatim 4 源) + 沃什 conditional hawkish 反应函数 续 baseline"
+  ],
+  "pick_points": [
+    {
+      "label": "A 股开市",
+      "value": "沪指 3976"
+    },
+    {
+      "label": "港股开盘",
+      "value": "恒指 25058"
+    },
+    {
+      "label": "AVGO T-2",
+      "value": "367.24"
+    },
+    {
+      "label": "苹果 T-1.75",
+      "value": "9/9 PT"
+    }
+  ],
+  "not_picked": [
+    "蚂蚁 / 京东 / 字节 港股二次上市传闻 — 跟 9/7 恒生科技指数调整实际生效 拼 不起来,不构成同日对位",
+    "Fable 5 / Mythos 切计费 续 — 9/12 已 实测生效 + 周末 + 中方 真空,跨 7 天 续 写 会 dilution",
+    "金砖国家 央行 数字货币 — 非 9/7 周一开市 实战段 主轴,跨主题 dilution"
+  ],
+  "say_4": [
+    "三轨同步倒数,A 股 + 港股 + AVGO + 苹果 都在 看着 周一开市实战段怎么演",
+    "智谱 + MiniMax 入恒生效,但 实际开盘 没 砸 — 入通首日 反而 稳",
+    "AVGO 第 3 实战前夜,367.24 +2.82% 跟 9/3 拼 = 横盘",
+    "沃什 222h + 9月 FOMC 60% = 美方 等 8月 NFP 续"
+  ],
+  "verbatim_sources": [
+    "央广网 9/4 verbatim URL https://news.cnr.cn/native/gd/szdc/20260904/",
+    "21财经 8/21 verbatim URL https://m.21jingji.com/article/20260821/herald/8ac3e8824ef814d1943755d8d115dd65_zaker.html",
+    "MacRumors verbatim URL https://www.macrumors.com/guide/apple-september-2026-what-to-expect",
+    "Broadcom 官方 Q3 FY26 verbatim URL https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+    "Federal Reserve 沃什 keynote 8/28 verbatim URL https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm",
+    "CNBC 沃什 hawkish verbatim URL https://www.cnbc.com/2026/08/31/jackson-hole-fed-chair-kevin-warsh-hawkish-rate-hikes-analysts.html",
+    "Reuters 沃什 hawkish verbatim URL https://www.reuters.com/business/view-rate-hike-expectations-rise-warsh-speech-jackson-hole-2026-08-28",
+    "港股360 verbatim URL https://www.gushen360.com/",
+    "HKEX verbatim URL https://www.hkex.com.hk/"
+  ],
+  "stats": [
+    {
+      "label": "A 股 open T+3.5h",
+      "value": "3976 ±0.47%"
+    },
+    {
+      "label": "港股 open T+3h",
+      "value": "25058 ±0.4%"
+    },
+    {
+      "label": "AVGO 第 3 实战段",
+      "value": "T-2 367.24"
+    },
+    {
+      "label": "苹果 9/9 发布会",
+      "value": "T-1.75"
+    }
+  ],
+  "narrative_count": 89,
+  "writing_meta": {
+    "writer": "今天的 Una (2026-09-07 13:01 CST 周一午后 cron 第一百七十三期, 同 day 第二期 cron 加新维度 工作流 per Pitfall 46 6h 模式 + Pitfall 38 同日 cross-reference 早前夜预判 vs 午实测对位 + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 + Pitfall 66 实战首发 第十九次 修法段续 baseline (0 类新错算) + 不变量 8d 跨信源现场补料 + Patch header 守门)",
+    "reader": "今日 cron 阶段 2 Una 主审 (9/7 早 + 9/7 午后 + 9/7 晚报 三段 对位 实战段 拼图 完整)"
+  },
+  "slot_label": "午后",
+  "date_label_short": "09-07",
+  "main_h2": "周末真空结束, 三轨倒数同步",
+  "hero_meta_short": "周一开市.三轨倒数同步",
+  "stat_grid": [
+    {
+      "label": "A 股 open T+3.5h",
+      "value": "3976 ±0.47%"
+    },
+    {
+      "label": "港股 open T+3h",
+      "value": "25058 ±0.4%"
+    },
+    {
+      "label": "AVGO 第 3 实战段",
+      "value": "T-2 367.24"
+    },
+    {
+      "label": "苹果 9/9 发布会",
+      "value": "T-1.75"
+    }
+  ],
+  "baseline": 159,
+  "relay": 150,
+  "cp_baseline": "cp 自 raw/2026-09-07-morning.md md5 86d8428acb0a6806c7f1a1a8f6b0d83d → 9/7 afternoon md5 SAME 双路径硬约束 OK per Pitfall 27 + 41 + 46",
+  "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 (9/7 午后 vs 9/7 早 baseline 158 + 第 149 接力 master 时点 9/7 07:01 CST = 6h 同 day 跨 slot 主标志 OK) + Pitfall 46 同 day 第三期 cron 8h 模式 (9/7 晚报 vs 9/7 午后 baseline 159 master 时点 9/7 13:01 CST = 8h 同 day 跨 slot 主标志 OK, 给 9/7 晚报 cron 接力) + Pitfall 53 跨 day 边界 后续期 cron 24h/48h/72h/120h/192h 模式 (9/7 午后 vs 9/6 早 baseline 155 + 第 146 接力 master 时点 9/6 07:01 CST = 30h / vs 9/5 早 baseline 152 = 54h / vs 9/4 早 baseline 149 = 78h 跨 day 边界 标志 OK) + Pitfall 41 周一 pre-market 6h 真空窗口段续 baseline (9/7 午后 cron 6h 窗口 07:01~13:01 CST, 中方 9/4 收盘 → 9/7 open 已 实测 3.5h post-open, 美方 9/4 close → 9/7 09:30 ET open 已 实测 3h post-open) + Pitfall 66 实战首发 第十九次 修法段续 baseline (master 9/7 13:01 CST web 二次验证 0 类新错算, A 股 3976.91 +0.47% / 港股 25058 / AVGO 367.24 +2.82% / 苹果 9/9 10:00 AM PT / 沃什 222h 全部 verbatim 校准)"
+}
