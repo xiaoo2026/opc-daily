@@ -239,5 +239,17 @@
     "narrative_count": 86,
     "html_url": "daily/2026-09/2026-09-06-afternoon/index.html",
     "title": "9/8 T-2+苹果T-2.5"
+  },
+  {
+    "date": "2026-09-07",
+    "type": "21evening",
+    "slot": "21evening",
+    "slot_hour": "21:00",
+    "title": "9/7 晚报 · 三轨倒数收盘段",
+    "dek": "周一开市全天实测段: A 股沪指 3932 守稳, 创业板 +3.41% 领涨, 港股高开低走 25306 -1.34%, 美方 09:30 ET 倒数 29 min, AVGO 9/8 倒数 12h, 苹果 9/9 T-1 13h",
+    "html_url": "https://020755.xyz/daily/2026-09/2026-09-07-21evening/",
+    "baseline": 160,
+    "relay": 151,
+    "narrative_count": 90
   }
 ]

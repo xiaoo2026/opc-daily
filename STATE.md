@@ -1207,3 +1207,13 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **publish**: commit 3ccaabf, author Una <una@leftink.local>, push origin/main 成功; first wrangler deploy Version 280d55b8-d53f-4ecf-9d77-cedaf4aa5fee。
 - **stage 4 pending**: top-level featured surgical patch + index.json + STATE.md re-deploy per Pitfall 43 + 55(f)。
 - **接力给 9/7 晚报 cron 第一百七十四期**: 同 day 第三期 cron 加新维度 per Pitfall 46 (8h 模式) + baseline 第 160 子轴 / 第 151 接力; 验证 9/7 美股收盘实战 + 9/8 中方 re-open 前夜 + 苹果 T-1.5 倒数段续 baseline。
+
+## cron 第一百七十四期 · 2026-09-07 21:01 CST · 周一晚报
+
+- **slot**: 同 day 第三期 cron 加新维度 per Pitfall 46 (8h 模式) + 接力 9/7 午后 cron 第一百七十三期 baseline 159 + 第 150 接力 + Pitfall 38 三段对位实战段完整 + Pitfall 42 实测生效时点 ≤ master 时点 OK 写 实战段 + Pitfall 66 第二十次修法段。
+- **选题**: 三轨倒数收盘段。A 股 9/7 close 实测段 (沪指 3932.70 +0.07% + 创业板 +3.41% 领涨 per 群益期货 + 金融界) + 港股 9/7 close (25306 -1.34% 高开低走 per tradingeconomics + 群益期货) + 美方 09:30 ET pre-open 29 min 倒数 (Pitfall 42 drop 实测段 OK 写 倒数段) + AVGO 9/8 re-open 12h + 苹果 9/9 T-1 工作日倒数 13h + 沃什 230h post-keynote + JACKSON HOLE 收官后第 11 实战验证日 + 9月 FOMC 加息 60% 站稳段续 baseline + 8月 NFP 翻 共识 3 倍。
+- **校准**: master 21:01 CST 重新计算 — 8/28 22:00 CST 沃什 keynote 已过 230h (JACKSON HOLE 收官后第 11 实战验证日); A 股 9/7 close 已 实测 6h01m pre-master (15:00 CST); 港股 9/7 close 已 实测 5h01m pre-master (16:00 CST); 美方 09:30 ET pre-open 29 min (Pitfall 42 drop 实测段 写 倒数段)。未回写 prior slot。
+- **baseline**: 第 160 子轴 + 第 151 接力 = 第 90 件 baseline additive 拼图起，跨 56 天 7/12 早 → 9/7 晚报。加新维度 5 类 M76. [431-435]。
+- **stage 3**: content.json spec PASS (title=16/dek=98/why=124/say_4 max=32/main_facts=5/verbatim=16); render 14519 bytes; em dash 0; div balance 29=29; voice.mp3 ID3 / mp3 / 32000Hz / 83.268s / 1334004B。
+- **publish**: commit 76050b6, author Una <una@leftink.local>, push origin/main 成功; first wrangler deploy Version a418a215-cbd3-4d63-b634-8597ea76e191。
+- **接力给 9/8 早报 cron 第一百七十五期**: 跨 day 边界新一天第一期 per Pitfall 49 + baseline 第 161 子轴 / 第 152 接力; 验证 9/7 美股收盘实战 + 9/8 中方 re-open 实战 + AVGO 第3实战段 + 苹果 T-0.5 倒数段续 baseline。
