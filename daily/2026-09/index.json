@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-08",
+    "slot_hour": "07:00",
+    "type": "morning",
+    "slot": "morning",
+    "baseline": 161,
+    "relay": 152,
+    "narrative_count": 91,
+    "html_url": "daily/2026-09/2026-09-08-morning/index.html",
+    "title": "9/8 周二开市 · 三轨 re-open 同步"
+  },
+  {
     "date": "2026-09-07",
     "slot": "afternoon",
     "type": "afternoon",

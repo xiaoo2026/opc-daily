@@ -1217,3 +1217,14 @@ Stage 3: TTS MiniMax CN danya_xuejie model=speech-02-hd 39.888s / 639924B / ID3 
 - **stage 3**: content.json spec PASS (title=16/dek=98/why=124/say_4 max=32/main_facts=5/verbatim=16); render 14519 bytes; em dash 0; div balance 29=29; voice.mp3 ID3 / mp3 / 32000Hz / 83.268s / 1334004B。
 - **publish**: commit 76050b6, author Una <una@leftink.local>, push origin/main 成功; first wrangler deploy Version a418a215-cbd3-4d63-b634-8597ea76e191。
 - **接力给 9/8 早报 cron 第一百七十五期**: 跨 day 边界新一天第一期 per Pitfall 49 + baseline 第 161 子轴 / 第 152 接力; 验证 9/7 美股收盘实战 + 9/8 中方 re-open 实战 + AVGO 第3实战段 + 苹果 T-0.5 倒数段续 baseline。
+
+## cron 第一百七十五期 · 2026-09-08 07:01 CST · 周二早报
+
+- **slot**: 跨 day 边界新一天第一期 per Pitfall 49 + 接力 9/7 晚报 cron 第一百七十四期 baseline 160 + 第 151 接力 + Pitfall 41 周二 pre-market 14h+ 真空窗口续 baseline + Pitfall 66 第二十一次修法段。
+- **选题**: 9/8 周二开市, 三轨 re-open 同步. 9/7 美股 LABOR DAY 休市 (per cls.cn 9/7 23:04 verbatim "美国股市9月7日(周一)休市一日") 跨 3 slot baseline 158/159/160 错算 修法段. AVGO 9/4 close 真实 357.07 -0.23% (per yahoo finance hk verbatim) 跨 9 slot baseline 151-160 累积 错算 修法段. 中美三市场同日 re-open T-2h29m + AVGO 第 3 实战段 pre-open + 苹果 9/9 T-0.75 工作日倒数 + 沃什 231h post-keynote + 9月 FOMC 60% + 8月 NFP 82h post-release 第 4 实战验证日.
+- **校准**: master 7:01 CST 重新计算, 8/28 22:00 CST 沃什 keynote 已过 231h (JACKSON HOLE 收官后第 12 实战验证日); 苹果 9/9 10:00 PT = 北京时间 9/10 01:00 CST, 距 master 约 17h59m (~T-0.75 工作日); AVGO 9/4 close 真实 357.07 (per yahoo finance hk), 跨 9 slot baseline 修正; 9/7 LABOR DAY 美股休市, 真实 9/8 (周二) 09:30 ET re-open = 9/8 21:30 CST, 距 master 9/8 07:01 = 14h29m; 9/8 (周二) 09:30 CST A 股/港股 re-open T-2h29m. 未回写 prior slot.
+- **baseline**: 第 161 子轴 + 第 152 接力 = 第 91 件 baseline additive 拼图起, 跨 57 天 7/12 早 → 9/8 早. 加新维度 5 类 M77. [436-440].
+- **stage 3**: content.json spec PASS (title=24/dek=91/why=140/say_4 max=50/main_facts=5/verbatim=4); render 10649 bytes; em dash 0; div balance 26=26; voice.mp3 ID3 / mp3 / 32000Hz / 46.800s / 750516B.
+- **publish**: commit pending, author Una <una@leftink.local>, push origin/main pending; first wrangler deploy pending.
+- **stage 4 pending**: 9 处 top-level surgical patch OK (topbar + 2 eyebrow + featured-tag + h2 + pick-meta + pick-rationale + main archive prepend + featured-card archive prepend); index.json 已 prepend 9/8 morning entry (type=morning / slot_hour=07:00 / slot=morning / baseline=161 / relay=152 / narrative_count=91) 21 → 22 entries.
+- **接力给 9/8 午后报 cron 第一百七十六期**: 同 day 第二期 cron 加新维度 per Pitfall 46 (6h 模式) + baseline 第 162 子轴 / 第 153 接力; 验证 9/8 中方 re-open 实战 + 9/8 美股 re-open 实战 + 苹果 9/9 T-0 工作日倒数段续 baseline.
