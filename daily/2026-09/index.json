@@ -1,6 +1,19 @@
 [
   {
     "date": "2026-09-07",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot_label": "午报",
+    "title": "周一开市.三轨倒数同步 (午盘实测段)",
+    "baseline": 159,
+    "relay": 150,
+    "narrative_count": 89,
+    "html_url": "https://020755.xyz/daily/2026-09/2026-09-07-afternoon/",
+    "patch_header_pitfall": "Pitfall 46 同 day 第二期 cron 6h 模式 (9/7 午后 vs 9/7 早 baseline 158 + 第 149 接力 master 时点 9/7 07:01 CST = 6h 同 day 跨 slot 主标志 OK) + Pitfall 53 跨 day 边界 后续期 cron 24h/30h/54h/78h/120h/192h 模式 + Pitfall 41 周一 pre-market 60h+ 真空窗口段续 baseline (9/7 11:00 ET A 股 open + 12:00 CST 港股 open 已 实测 3.5h/3h post-open 段续) + Pitfall 66 实战首发 第十九次 修法段续 baseline (0 类新错算)"
+  },
+  {
+    "date": "2026-09-07",
     "slot": "morning",
     "type": "morning",
     "slot_hour": "07:00",
