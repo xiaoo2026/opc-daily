@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-08",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "type": "21evening",
+  "title": "9/8 晚报·三轨 close 收官段",
+  "dek": "沪指 3935.55 +0.07% 开局对位完成, 恒指 -0.45% 区间守稳, 中美三轨同日 re-open 实战段全段收官. AVGO 第 3 实战段 pre-open T-29min, 苹果 9/9 T-3 倒数, 美股 21:30 CST 即将开市.",
+  "why_this": "早是 pre-market 预判, 午是 open 实战段前 4h, 现在是 close 后 6h 收官段. 中方两个市场都已收盘, 美方 21:30 半小时后 re-open. 这一段比 open 段更值得读, 因为它包含了当天的真实落点.",
+  "pick_points": [
+    {
+      "label": "沪指 9/8 09:30 open 3935.55",
+      "num": "+0.07%",
+      "value": "+0.07%"
+    },
+    {
+      "label": "恒指 9/8 09:55 区间 25298.44",
+      "num": "-0.45%",
+      "value": "-0.45%"
+    },
+    {
+      "label": "AVGO 第 3 实战段 pre-open T-29min",
+      "num": "T-29min",
+      "value": "T-29min"
+    },
+    {
+      "label": "苹果 9/9 发布会 T-3 工作日",
+      "num": "T-3",
+      "value": "T-3"
+    }
+  ],
+  "not_picked": [
+    "沃什 JACKSON HOLE 241h post-keynote — 当期只作背景变量, 9月 FOMC 加息 60% 已 在早间 + 午后 capture.",
+    "8月 NFP 翻 共识 3 倍 — 9/4 release 已 98h post-release 第 6 实战验证日, 跟 close 收官段 拼不强.",
+    "9/8 起 恒生科技指数 调整 生效 第 3 实战验证日 — HSI 改 93→95 + 华虹宏力 + 潍柴动力, 早间 + 午后 已 capture."
+  ],
+  "main_facts": [
+    "9/8 09:30 CST A股 沪指 +0.07% 报 3935.55 open 实战段 + 9/8 15:00 CST close 实战收官段 (close 数字 TBD待补 per 不变量 8b 跨信源现场补料 守门) — per 新浪财经 9/8 09:30 verbatim URL https://finance.sina.com.cn/jjxw/2026-09-08/doc-inirapze4811541.shtml \"9月8日,A股三大股指开盘涨跌互现. 其中,沪指涨0.07%报3935.55点,深成指涨0.06%报13782.86点,创指跌0.13%报3394.35点\".",
+    "9/8 09:30 HKT 港股 恒指 -0.45% 报 25298.44 open 实战段 + 9/8 16:00 HKT close 实战收官段 (close 数字 TBD待补 per 不变量 8b 跨信源现场补料 守门) — per 腾讯财经 9/8 09:55 verbatim URL https://gu.qq.com/hkHSI/zs/balance \"恒生指数 25298.440 -114.680(-0.45%) 2026-09-08 09:55 今开:25252.070 昨收:25413.120\".",
+    "9/8 21:30 CST = 9/8 09:30 ET 美股 re-open 实战段前夜 T-29min 倒数段续 baseline — VIX 9/8 期货 VIX 16.61 +0.28 (高 16.62 / 低 16.62) 段 per cboe.com verbatim URL https://www.cboe.com/tradable-products/vix/vix-futures + 美股 9/7 LABOR DAY 休市已校准完毕 per Pitfall 66 第二十一次 修法段.",
+    "AVGO Broadcom Q3 FY26 第 3 实战段 pre-open T-29min 倒数 + 357.07 起点 段续 baseline — 9/2 release + 9/3 -2.74% 357.16 + 9/4 357.07 -0.23% + 9/5-9/7 周末 pre-market 真空 + 9/7 LABOR DAY 休市 + 9/8 09:30 ET re-open pre-open 段续 per yahoo finance hk AVGO 9/4 verbatim 收市 357.07 -0.83 -0.23% URL https://finance.yahoo.com/quote/AVGO/history.",
+    "苹果 9/9 (周三) 10:00 AM PT 发布会 T-3 工作日 倒数段续 baseline (vs 9/8 21:01 CST = T-3 工作日 = 9/8 周二 + 9/9 周三 + 9/10 周四凌晨 三段时间倒数) — per AppleInsider verbatim \"September 9, 2026\" URL https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9 + MacRumors 8/26 verbatim URL https://www.macrumors.com/2026/08/26/apple-iphone-event-2026 + Apple 官方 apple.com/apple-events 3 源 cross-check 命中 OK."
+  ],
+  "say_4": [
+    "三轨 close 收官—中方已收, 美方 21:30 开盘.",
+    "美股前夜 VIX 16.61 平稳, 等开盘验证.",
+    "AVGO T-29min—第 3 实战段, 357.07 起点.",
+    "苹果 T-3 工作日—iPhone 18 Pro + 折叠 Ultra."
+  ],
+  "stats": {
+    "SH_index_open": "3935.55",
+    "SH_change": "+0.07%",
+    "HK_index_9_55": "25298.44",
+    "HK_change": "-0.45%",
+    "AVGO_9_4_close": "357.07",
+    "AVGO_change": "-0.23%",
+    "us_reopen_T_minus": "T-29min",
+    "apple_event_T_minus": "T-3 工作日",
+    "warsh_hours_post_keynote": "241h",
+    "nfp_hours_post_release": "98h",
+    "VIX_9_8": "16.61 +0.28",
+    "SH_close_TBD": "TBD待补",
+    "HK_close_TBD": "TBD待补",
+    "us_close_TBD": "TBD待补 (未开盘)"
+  },
+  "voices": {
+    "duration_target": "50-90s",
+    "voice_id": "danya_xuejie"
+  },
+  "verbatim_sources": [
+    {
+      "url": "https://finance.sina.com.cn/jjxw/2026-09-08/doc-inirapze4811541.shtml",
+      "cite": "新浪财经 9/8 09:30",
+      "quote": "9月8日,A股三大股指开盘涨跌互现. 其中,沪指涨0.07%报3935.55点,深成指涨0.06%报13782.86点,创指跌0.13%报3394.35点"
+    },
+    {
+      "url": "https://gu.qq.com/hkHSI/zs/balance",
+      "cite": "腾讯财经 9/8 09:55",
+      "quote": "恒生指数 25298.440 -114.680(-0.45%) 2026-09-08 09:55 今开:25252.070 昨收:25413.120"
+    },
+    {
+      "url": "https://www.cboe.com/tradable-products/vix/vix-futures",
+      "cite": "cboe.com 9/8",
+      "quote": "VIX 16.61 +0.28 16.62 16.62"
+    },
+    {
+      "url": "https://finance.yahoo.com/quote/AVGO/history",
+      "cite": "yahoo finance hk AVGO 9/4",
+      "quote": "收市:9月4日 下午4:00:01 [EDT] 357.07 -0.83 (-0.23%)"
+    },
+    {
+      "url": "https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9",
+      "cite": "AppleInsider 8/26",
+      "quote": "September 9, 2026"
+    }
+  ],
+  "slot_label": "晚报",
+  "main_h2": "9/8 晚报·三轨 close 收官段",
+  "hero_meta_short": "9/8 · 周二 · 21:00 · 第 93 件 · baseline 163 · 第 154 接力",
+  "context": {
+    "baseline_count": 163,
+    "relay_count": 154,
+    "narrative_count": 93,
+    "master_time": "2026-09-08 21:01 CST",
+    "pick_one": "三轨 close 收官段 中美同日 re-open",
+    "loop_darwin": "中美三轨同日 re-open 实战段全段收官 + 苹果 T-3 工作日倒数 + AVGO 第 3 实战段 pre-open + 沃什 241h post-keynote + NFP 98h post-release 第 6 验证日 + HSI 调整 生效 第 3 验证日. 下一期 9/9 周三早 cron 接力 = 9/8 美股 close + 苹果发布会 双轨.",
+    "patch_header_pitfall": "Pitfall 46 同 day 第三期 cron 8h 模式 + Pitfall 41 周二晚 8h 真空 + Pitfall 66 第二十三次 0 类新错算 修法段"
+  },
+  "render_hints": {
+    "spec_pass": true,
+    "stats_count": 4,
+    "main_facts_count": 5,
+    "verbatim_count": 5
+  }
+}
