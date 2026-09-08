@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-08",
+    "slot_hour": "21:00",
+    "type": "21evening",
+    "slot": "21evening",
+    "baseline": 163,
+    "relay": 154,
+    "narrative_count": 93,
+    "html_url": "daily/2026-09/2026-09-08-21evening/index.html",
+    "title": "9/8 晚报 · 三轨 close 收官段",
+    "dek": "沪指 3935.55 +0.07% 开局对位完成, 恒指 -0.45% 区间守稳, 中美三轨同日 re-open 实战段全段收官. AVGO 第 3 实战段 pre-open T-29min, 苹果 9/9 T-3 倒数, 美股 21:30 CST 即将开市."
+  },
+  {
+    "date": "2026-09-08",
     "slot_hour": "13:00",
     "type": "afternoon",
     "slot": "afternoon",
