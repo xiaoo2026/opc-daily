@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-08",
+    "slot_hour": "13:00",
+    "type": "afternoon",
+    "slot": "afternoon",
+    "baseline": 162,
+    "relay": 153,
+    "narrative_count": 92,
+    "html_url": "daily/2026-09/2026-09-08-afternoon/index.html",
+    "title": "9/8 午后 · 开市实测对位预判",
+    "dek": "沪指 3935.55 +0.07% 守稳, 恒指 -0.45% 25298.44 区间, 中美同日 re-open 实战段对位早间预判. AVGO 第 3 实战段 pre-open + 苹果 9/9 T-0.5 工作日."
+  },
+  {
+    "date": "2026-09-08",
     "slot_hour": "07:00",
     "type": "morning",
     "slot": "morning",
