@@ -7,7 +7,7 @@
   "slot_label": "晚报",
   "hero_meta_short": "9/9 周三 · 21:00 · 晚报 · 第 96 件",
   "main_h2": "三轨同日 close 实战段收官 + 苹果 Surprise and Shine 凌晨一点开讲",
-  "title": "A 股 + 港股 同日反弹 1%, 苹果 Surprise and Shine 凌晨一点开讲",
+  "title": "三轨同日反弹, 苹果凌晨一点开讲",
   "dek": "A 股沪指 3951.51 收涨 0.28%, 港股恒指 25938.13 升 1.19%. 苹果首款折叠机 iPhone Ultra 即将揭幕, 沃什 289h post-keynote, 9 月 FOMC 加息 65.4% 站稳.",
   "why_this": "今天三轨同日 close 实战段收官 (A 股 + 港股 + 美股即将 re-open). 苹果 John Ternus 首场发布会 + 折叠机首秀 + 沃什 JACKSON HOLE 289h 实战段 = 三线合击. 一日 1 件, 不堆.",
   "main_facts": [
@@ -18,10 +18,22 @@
     "9 月 FOMC 加息概率 65.4% 站稳, 沃什 289h post-keynote, JACKSON HOLE 第 12 实战验证日"
   ],
   "pick_points": [
-    {"label": "A 股 + 港股同日反弹 1%, 沪指 3951", "num": "1"},
-    {"label": "苹果折叠机首秀, 凌晨一点", "num": "2"},
-    {"label": "沃什 289h 实战段", "num": "3"},
-    {"label": "9月 FOMC 65.4% 站稳", "num": "4"}
+    {
+      "label": "A 股 + 港股同日反弹 1%, 沪指 3951",
+      "num": "1"
+    },
+    {
+      "label": "苹果折叠机首秀, 凌晨一点",
+      "num": "2"
+    },
+    {
+      "label": "沃什 289h 实战段",
+      "num": "3"
+    },
+    {
+      "label": "9月 FOMC 65.4% 站稳",
+      "num": "4"
+    }
   ],
   "say_4": [
     "A 股沪指 3951.51 收涨 0.28%, 全天成交 8737 亿.",
