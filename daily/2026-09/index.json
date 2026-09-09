@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-09-09",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "baseline": 166,
+    "relay": 157,
+    "narrative_count": 96,
+    "html_url": "daily/2026-09/2026-09-09-21evening/index.html",
+    "title": "三轨同日 close 实战段收官 + 苹果 Surprise and Shine 凌晨一点开讲"
+  },
+  {
+    "date": "2026-09-09",
     "slot": "afternoon",
     "type": "afternoon",
     "slot_hour": "13:00",
