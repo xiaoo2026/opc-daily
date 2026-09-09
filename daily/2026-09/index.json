@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-10",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 167,
+    "relay": 158,
+    "narrative_count": 97,
+    "html_url": "daily/2026-09/2026-09-10-morning/index.html",
+    "title": "苹果终于把折叠机做成了 Duo · 7.6 英寸内屏 · 10/23 发售",
+    "dek": "Apple 正式发布首款折叠 iPhone Duo；DeepSeek 同日推进 V4.1 Flash 与科创板 IPO。"
+  },
+  {
     "date": "2026-09-09",
     "type": "21evening",
     "slot_hour": "21:00",
