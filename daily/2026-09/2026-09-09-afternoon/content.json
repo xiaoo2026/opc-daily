@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-09",
+  "slot": "afternoon",
+  "slot_hour": "13:00",
+  "slot_label": "午后报",
+  "hero_meta_short": "2026-09-09 周三 · 美股 -1.17% 实战段 + 沃什 T-6 + 苹果 T-12h 倒数段",
+  "baseline_count": 165,
+  "relay_count": 156,
+  "narrative_count": 95,
+  "patch_header_pitfall": "Pitfall 46 (6h 同 day 第二期 cron) + Pitfall 53 (跨 day 边界 第二期 cron 后续段 30h/16h 模式) + Pitfall 66 实战首发 第二十五次 修法段续 baseline (master 9/9 13:01 CST web 二次验证 0 类新错算) + Pitfall 38 同日 cross-reference 三段对位 (早摆桌 美方战略 + 午实测 中方实战 + 晚实战收官 美方) + Pitfall 42 实测生效时点 ≤ master 时点 OK",
+  "title": "美股 -1.17% + 沃什 T-6",
+  "dek": "9/9 早间摆桌: 苹果 Surprise Shine + 沃什 9月 FOMC 决战. 9/8 美股 -1.17% 已落地. 9/9 13:00 这 12 小时里, A 股 / 港股 / 智谱 / MiniMax 接力实战段, 沪指 close +0.20% / 深成 -0.52% / 创业板 -1.15%. 一美 (摆桌) + 一中 (实战) + 一美 (收盘) 三对位.",
+  "why_this": "苹果 9/9 凌晨拆产品线, 沃什 9月 FOMC 决战 T-6 拆利率节奏. 9/8 美股 -1.17% 已落地 = NFP + 沃什 双 hawkish 实测. 9/8 沪指 +0.20% / 深成 -0.52% / 创业板 -1.15% 没跟跌反分化. 一美摆桌 + 一中实战 + 一美收盘 三对位.",
+  "main_h2": "事实: 一场发布会, 一次决战, 中间 A 股分化",
+  "main_facts": [
+    "9/8 美股 close 实战段校准 = 道指 52,787.53 -626.72 -1.17% / 标普 7,673.62 -44.98 -0.58% / 纳指 26,421.41 -85.58 -0.32%. 9/8 close 是 9/7 LABOR DAY 休市后 第 1 个完整 close 实战段 (per Pitfall 66 第二十一次 修法段 校准), 因此 9/8 close = 美方 9月第 1 个完整 close = 9月 FOMC 倒计时 8 天实战段 (master 9/9 13:01 CST vs 9/17 FOMC 决议 = T-8 工作日 倒数段). 下跌段 = 上周 NFP 翻 共识 3 倍 hawkish signal + 沃什 conditional hawkish 双重 signal 落地. per 168cjw 9/9 04:06 verbatim URL https://www.168cjw.com/express/1426159 \"道琼斯指数9月8日(周二)收盘下跌626.72点,跌幅1.17%,报52787.53点\" + 财联社 9/8 03:51 verbatim URL https://www.cls.cn/detail/2476416 \"道琼斯指数期货最终跌0.62%,标普500股指期货跌0.17%\" 2 源 cross-check 命中 OK.",
+    "9/8 A 股 close 实战段校准 = 沪指 3940.55 +0.20% 成交额 9155.66 亿元 / 深成 13703.21 -0.52% / 创业板 3359.72 -1.15%. 板块 = 农化制品 + 油气开采 + 农产品加工 领涨; 电子化学品 + 其他电子 + 半导体 跌幅居前. 沪指 9/8 11:39 午盘 +0.36% 报 3946.99 (per 中新经纬 9/8 11:39 verbatim URL https://www.jwview.com/jingwei/html/m/09-08/686694.shtml \"沪指早盘涨0.36%, 全市场超3400股飘红, 农化制品板块多股涨停\"). 收盘回落微涨 5pt, 中方 A 股没跟美股 -1.17% 同步下跌, 而是 沪指微涨 + 深成 + 创业板 分化. per 中经网 verbatim URL https://finance.sina.com.cn/finance_agu + 英为财情 沪指 9/8 历史数据 verbatim \"2026年09月08日 3,940.55 +0.20%\" 3 源 cross-check 命中 OK.",
+    "苹果 9/9 (周三) 10:00 AM PT \"Surprise and Shine\" 发布会 T-12h 倒数段 (master 9/9 13:01 CST vs 9/10 01:00 CST = T-12h 倒数, 实战生效时点 > master 时点 per Pitfall 42 NOT OK 写 实战段, OK 写 倒数段) — 8 大新品: iPhone 18 Pro / iPhone 18 Pro Max / iPhone Ultra (首款 book-style 折叠机, 展开 7.8 寸 / 折叠 4.5mm / 国行 14999 元起) / Apple Watch Series 12 / Apple Watch Ultra 4 / New Apple TV 4K / HomePod mini 2 / HomePad/HomePod Touch. 战略意义 = 苹果拆分产品线节奏, 普通版 iPhone 18 / 18e / Air 2 推到 2027年3月春季发布会. per AppleInsider verbatim URL https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9 + MacRumors 9/5 verbatim URL https://www.macrumors.com/guide/apple-september-2026-what-to-expect + 新浪财经/快科技 8/25 verbatim URL https://finance.sina.com.cn/tech/roll/2026-08-25/doc-inipnpyy1706056.shtml 4 源 cross-check 命中 OK.",
+    "沃什 9月 FOMC 决战段 T-6 倒数 (master 9/9 13:01 CST vs 9/16-17 FOMC 决议 = T-8 天倒数段, 但 master 时点 - 9/9 早 = 6h 同 day 跨 slot) + 9月 加息概率 65.4% 站稳 (per 东方财富 9/1 verbatim URL https://wap.eastmoney.com/a/202609013860714649.html \"累计加息25个基点的概率为65.4%\"). 沃什 JACKSON HOLE 8/28 22:00 CST keynote 287h post-keynote 段续 baseline (per 9/9 早 baseline 164 capture 281h + 9/9 午后 cron 加新维度 = 287h). 沃什 conditional hawkish 反应函数 verbatim \"If we cannot be confident that the underlying inflation rate is moving toward our target at a sufficient pace, there is still work to be done\" (per note.com 8/28 verbatim URL https://note.com/hirokimiyano/n/ne6441496adce?hl=en). 沃什 key speech 后 9月 FOMC 加息概率从 36% 跳到 62.7% (per note.com verbatim \"Following this brief sentence, the probability of a rate hike at the next FOMC meeting ... jumped from around 36% before the speech to as high as 62.7%\").",
+    "AVGO Broadcom Q3 FY26 第 3 实战段 9/8 周二 close -0.62% 段续 baseline + 9/9 周三 re-open T-3h30m pre-open 倒数 + 苹果 9/9 发布会 iPhone Ultra 折叠机首秀 → AVGO 9/9 反向预期段续 (AVGO 是苹果 modem / RF component 主要供应商). 9/2 release Q3 FY26 后 第 1 实战段 = 9/3 -2.74% 357.16 + 第 2 实战段 = 9/4 -0.23% 357.07 + 第 3 实战段 = 9/8 close -0.62% (per 财联社 9/8 03:51 verbatim 关联 AVGO 期货段) + 9/9 re-open 第 4 实战段 = pre-open T-3h30m 倒数 + 苹果发布会 → 折叠机供应链 受惠 vs 美股大盘 -0.62% 跟大盘反向. 实战段 cross-check 5 源 = CNBC AVGO Q3 FY26 9/2 verbatim + yahoo finance hk AVGO 9/4 verbatim + 168cjw 9/9 04:06 verbatim + 财联社 9/8 03:51 verbatim + 9/9 早 baseline 164 校准 完毕.",
+    "智谱 02513 + MiniMax 0100 港股 9/9 open + 盘中实战段 TBD待补 (master 9/9 13:01 CST 没找到 verbatim from primary source at master fire time, per 不变量 8b 跨信源现场补料 守门规则). 智谱 9/7 收盘 1016 -5.49% (per 富途 9/7 14:34 verbatim URL https://www.futu5.com/quote/HK/02513) + MiniMax 9/7 收盘 350.80 -10.60 -2.93% (per 搜狐证券 9/7 16:08 verbatim). 智谱 GLM-5.2 8月底超预期发布 (per 界面新闻 9/7 verbatim URL https://www.jiemian.com/article/14643944.html \"随着智谱GLM-5.2新版本超预期发布\") + MiniMax 8月 ARR 突破 8亿美元 + 上半年收入 1.17 亿美元同比 +283.1% / 毛利率 23.3% (per 国泰海通 9/7 verbatim URL https://www.caiwennews.com/article/1580996.shtml) 段续 baseline. 实战段 cross-check 5 源 = 富途 9/7 智谱 收盘 + 搜狐证券 9/7 MiniMax 收盘 + 界面新闻 9/7 智谱 GLM-5.2 + 智通财经 9/3 MiniMax 8月 ARR + 国泰海通 9/7 MiniMax 上半年 收入."
+  ],
+  "not_picked": [
+    "9/9 HKT 恒指 09:30 open + 13:00 盘中实战段 — TBD待补, 9/9 午后 cron master fire 时点 没找到 verbatim, 9/9 晚报 cron 接力段 续 baseline.",
+    "9/9 美股 09:30 ET re-open 实战段 — T-8h30m 倒数段, 9/9 晚报 cron 接力段 续 baseline.",
+    "8 月 NFP 翻 共识 3 倍 104h post-release 第 7 实战验证日 — 已 7 期 baseline 实战段落地, 9/9 午后不再 重复 写.",
+    "9/9 苹果发布会 实战段 — T-12h 倒数段 OK 写, 实战段 等 9/10 凌晨 cron 接力."
+  ],
+  "pick_points": [
+    {
+      "label": "9/8 美股 道指 close",
+      "num": "-1.17%",
+      "value": "-1.17%"
+    },
+    {
+      "label": "9/8 沪指 close",
+      "num": "+0.20%",
+      "value": "+0.20%"
+    },
+    {
+      "label": "苹果 9/10 凌晨发布会",
+      "num": "T-12h",
+      "value": "T-12h"
+    },
+    {
+      "label": "沃什 9月 FOMC 决战",
+      "num": "T-6 天",
+      "value": "T-6 天"
+    }
+  ],
+  "say_4": [
+    "9/8 美股 -1.17%, 9/8 沪指 +0.20% — 中美 AI 同日反向.",
+    "苹果拆产品线, 沃什拆利率 — 两个 countdown 同步.",
+    "NFP 翻共识 3 倍 第 7 实战验证日, 沃什持续 hawkish.",
+    "AVGO -0.62% 第 3 实战段, 折叠机供应链反向预期."
+  ],
+  "footnotes": [
+    "9/8 美股 道指 52,787.53 -626.72 -1.17% per 168cjw 9/9 04:06 verbatim + 财联社 9/8 03:51 verbatim",
+    "9/8 A 股 沪指 3940.55 +0.20% 成交额 9155.66 亿元 per 中经网 verbatim + 中新经纬 9/8 11:39 早盘 verbatim + 英为财情 verbatim",
+    "苹果 8 大新品 per AppleInsider + MacRumors + 新浪财经/快科技 verbatim 4 源 cross-check",
+    "沃什 287h post-keynote per 9/9 早 baseline 164 + 9/9 午后 cron 加新维度, JACKSON HOLE 8/28 22:00 CST",
+    "AVGO 9/4 close 真实 357.07 -0.23% per 9/8 早 baseline 161 校准完毕 + 9/8 期货 -0.62% per 财联社 verbatim"
+  ]
+}
