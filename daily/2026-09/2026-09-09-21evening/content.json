@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-09",
+  "date_zh": "9月9日 · 周三 · 晚报",
+  "slot": "21evening",
+  "slot_hour": "21:00",
+  "slot_zh": "晚报",
+  "slot_label": "晚报",
+  "hero_meta_short": "9/9 周三 · 21:00 · 晚报 · 第 96 件",
+  "main_h2": "三轨同日 close 实战段收官 + 苹果 Surprise and Shine 凌晨一点开讲",
+  "title": "A 股 + 港股 同日反弹 1%, 苹果 Surprise and Shine 凌晨一点开讲",
+  "dek": "A 股沪指 3951.51 收涨 0.28%, 港股恒指 25938.13 升 1.19%. 苹果首款折叠机 iPhone Ultra 即将揭幕, 沃什 289h post-keynote, 9 月 FOMC 加息 65.4% 站稳.",
+  "why_this": "今天三轨同日 close 实战段收官 (A 股 + 港股 + 美股即将 re-open). 苹果 John Ternus 首场发布会 + 折叠机首秀 + 沃什 JACKSON HOLE 289h 实战段 = 三线合击. 一日 1 件, 不堆.",
+  "main_facts": [
+    "9/9 A 股 close 沪指 3951.51 +0.28% 报 +10.96 (per 新浪财经 verbatim 15:35:32)",
+    "9/9 港股 close 恒指 25,938.13 +304.22 +1.19% (per 新华社 9/9 verbatim)",
+    "9/9 10:00 PT 苹果 'Surprise and Shine' 发布会 = 9/10 01:00 CST, John Ternus 首场, iPhone Ultra 折叠机首秀",
+    "9/9 21:30 CST 美股 re-open T-29min, AVGO 9/9 收盘 365.91 +1.7% from low (per robinhood)",
+    "9 月 FOMC 加息概率 65.4% 站稳, 沃什 289h post-keynote, JACKSON HOLE 第 12 实战验证日"
+  ],
+  "pick_points": [
+    {"label": "A 股 + 港股同日反弹 1%, 沪指 3951", "num": "1"},
+    {"label": "苹果折叠机首秀, 凌晨一点", "num": "2"},
+    {"label": "沃什 289h 实战段", "num": "3"},
+    {"label": "9月 FOMC 65.4% 站稳", "num": "4"}
+  ],
+  "say_4": [
+    "A 股沪指 3951.51 收涨 0.28%, 全天成交 8737 亿.",
+    "港股恒指 25938.13 升 1.19%, 主板成交 2940 亿港元.",
+    "苹果 Ternus 首讲, iPhone Ultra 折叠机首秀.",
+    "沃什 289h post-keynote, 9月 FOMC 加息 65.4%."
+  ],
+  "not_picked": [
+    "DeepSeek 拟登陆科创板 (中信证券承办, TBD 待续 baseline).",
+    "DeepSeek 宣布降价 最高 60% (跟科创板 IPO 同日, 短期炒作信号).",
+    "中东战事升级 美军摧毁 5 艘伊朗油轮 (宏观地缘, 不入 Una 当日)."
+  ],
+  "baseline_count": 166,
+  "relay_count": 157,
+  "narrative_count": 96
+}
