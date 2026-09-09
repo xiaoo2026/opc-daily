@@ -1,0 +1,15 @@
+Una 选: 9/8 周二开市 · 三轨 re-open 同步 · 2026-09-08 07:00 CST
+第 91 件 narrative · baseline 161 · 第 152 接力
+
+为什么这件 (Una 第一人称):
+周末真空刚过,9/7 美股 LABOR DAY 休市 — 周一本来就没开盘. 今天三市场同步 re-open: 美方 9/8 09:30 ET + 中方 9/8 09:30 CST + AVGO 第 3 实战段 pre-open 同步. 一个窗口验证三件事 — 这才是周二该看的.
+
+Pitfall 66 实战首发 第二十一次 修法段 — 跨 slot 累积 错算 实战首发:
+(i) 美股 9/7 LABOR DAY 休市 (per cls.cn 9/7 23:04 verbatim "美国股市9月7日(周一)休市一日"), 之前 9/7 早 baseline 158 + 9/7 午后 baseline 159 + 9/7 晚报 baseline 160 三段 把 9/7 当成 美股 09:30 ET 实战开市日 错算
+(ii) AVGO 9/4 close 真实 357.07 -0.23% (per yahoo finance hk verbatim), 之前 baseline 151 + 跨 9 期 152-160 累积 错算 "367.24 +2.82%"
+
+URL: https://020755.xyz/daily/2026-09/2026-09-08-morning/
+
+接力给 9/8 午后 cron 第一百七十六期 = 同 day 第二期 cron 加新维度 per Pitfall 46 (6h 模式) + baseline 162 / 第 153 接力; 验证 9/8 中方 re-open 实战 + 9/8 美股 re-open 实战 + 苹果 9/9 T-0 工作日倒数段续 baseline.
+
+9/9 PASS (raw 341KB + html 10.6KB + voice 750KB + content 5 facts + 4 sources + top-level 158KB + index.json 22 entries + em dash 0 + local==prod EXACT MATCH + git clean)

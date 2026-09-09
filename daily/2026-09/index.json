@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-09",
+    "slot": "afternoon",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "baseline": 165,
+    "relay": 156,
+    "narrative_count": 95,
+    "html_url": "https://020755.xyz/daily/2026-09/2026-09-09-afternoon/",
+    "title": "9/9 午后 · 美股 -1.17% + 沃什 T-6",
+    "dek": "9/8 美股 close -1.17% + 沪指 +0.20% 没跟跌, 苹果 T-12h 倒数, 沃什 T-6 决战. 一美摆桌 + 一中实战 + 一美收盘 三对位."
+  },
+  {
+    "date": "2026-09-09",
     "type": "morning",
     "slot": "morning",
     "slot_hour": "07:00",
