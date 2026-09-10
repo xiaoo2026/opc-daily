@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-10",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot": "afternoon",
+    "baseline": 168,
+    "relay": 159,
+    "narrative_count": 98,
+    "html_url": "daily/2026-09/2026-09-10-afternoon/index.html",
+    "title": "DeepSeek 降价, V4.1 未落表 · 公告价与官方页面状态分离",
+    "dek": "12:00 价格调整时点已过，但 DeepSeek 官方更新日志仍没有 V4.1，价目表仍列 V4 Flash 0731。"
+  },
+  {
+    "date": "2026-09-10",
     "type": "morning",
     "slot_hour": "07:00",
     "slot": "morning",
