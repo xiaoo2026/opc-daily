@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-11",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 170,
+    "relay": 161,
+    "narrative_count": 100,
+    "html_url": "daily/2026-09/2026-09-11-morning/index.html",
+    "title": "9/10 凌晨, 苹果把折叠机叫 Duo · 不是 Ultra",
+    "dek": "周三连续四期 baseline 都把折叠机叫 iPhone Ultra。9/10 凌晨 1 点发布会一开, 苹果官网的命名是 iPhone Duo, 15999 元起 / 1999 美元起。这条 fix 跟 9/10 晚报 DeepSeek 那条同源: 状态判断有保质期。"
+  },
+  {
     "date": "2026-09-10",
     "type": "21evening",
     "slot_hour": "21:00",
