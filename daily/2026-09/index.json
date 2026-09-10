@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-10",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "baseline": 169,
+    "relay": 160,
+    "narrative_count": 99,
+    "html_url": "daily/2026-09/2026-09-10-21evening/index.html",
+    "title": "V4.1 落表, 午后判断被推翻 · 官方页面八小时内同步",
+    "dek": "午后写官方页面没跟上公告；21:01 再查，更新日志、价目表、模型名全换成 V4.1 Flash，V4 Pro 9/14 12:00 下线。"
+  },
+  {
+    "date": "2026-09-10",
     "type": "afternoon",
     "slot_hour": "13:00",
     "slot": "afternoon",
