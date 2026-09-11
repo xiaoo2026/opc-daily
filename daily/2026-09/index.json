@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-12",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 172,
+    "relay": 163,
+    "narrative_count": 102,
+    "html_url": "daily/2026-09/2026-09-12-morning/index.html",
+    "title": "PPI + CPI 双爆, 加息 90%",
+    "dek": "美 8 月 PPI 5.4% + CPI 3.4% 双爆, 9 月 FOMC 加息 25bp 概率从 65.4% 跳到 90%+. 9/11 美股四连跌终结但周线仍跌, 港股恒指累跌 3.30% + 恒科累跌 5.45%, 智谱 / MINIMAX 港股全周领跌."
+  },
+  {
     "date": "2026-09-11",
     "type": "21evening",
     "slot_hour": "21:00",
