@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-09-11",
+    "type": "21evening",
+    "slot_hour": "21:00",
+    "slot": "21evening",
+    "baseline": 171,
+    "relay": 162,
+    "narrative_count": 101,
+    "html_url": "daily/2026-09/2026-09-11-21evening/index.html",
+    "title": "PPI 5.4%, A股港股美股三轨同跌",
+    "dek": "美 8 月 PPI 同比 5.4% 超预期, 核心 PPI 4.6%, 加息预期骤升。A 股早盘沪指跌 1.82% 失守 3900, 港股两日累计跌 2.65%, 美股三连跌, 沃什 9 月 FOMC 决战段 T-5 倒数。"
+  },
+  {
+    "date": "2026-09-11",
     "type": "morning",
     "slot_hour": "07:00",
     "slot": "morning",
