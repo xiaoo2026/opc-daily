@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-13",
+    "type": "morning",
+    "slot_hour": "07:00",
+    "slot": "morning",
+    "baseline": 173,
+    "relay": 164,
+    "narrative_count": 103,
+    "html_url": "daily/2026-09/2026-09-13-morning/index.html",
+    "title": "9 月 FOMC 倒计时 4 天, 售罄夜",
+    "dek": "PPI 5.4% + CPI 3.4% 双爆后, CME FedWatch 加息概率 87% 站稳. 9/12 晚 8 点 iPhone 18 Pro 预购开闸几分钟内售罄, 苹果官网发货推迟至 9/30. 9/11 美股四连跌终结. 一日 1 件 = 沃什加息 + iPhone 售罄 双线决战前夜."
+  },
+  {
     "date": "2026-09-12",
     "type": "morning",
     "slot_hour": "07:00",
