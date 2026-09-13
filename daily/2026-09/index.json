@@ -1,6 +1,22 @@
 [
   {
     "date": "2026-09-13",
+    "type": "afternoon",
+    "slot_hour": "13:00",
+    "slot": "afternoon",
+    "slot_label": "午后报",
+    "title": "售罄 17h 后, 苹果三角落点",
+    "main_h2": "售罄 17h 后. iPhone 18 Pro 第三方溢价 1000-3000 元. 老款反向走俏",
+    "dek": "iPhone 18 Pro 售罄 17h 后实战落地段",
+    "url": "/daily/2026-09/2026-09-13-afternoon/",
+    "html_url": "/daily/2026-09/2026-09-13-afternoon/index.html",
+    "baseline": 174,
+    "relay": 165,
+    "narrative_count": 92,
+    "cron_id": 189
+  },
+  {
+    "date": "2026-09-13",
     "type": "morning",
     "slot_hour": "07:00",
     "slot": "morning",
